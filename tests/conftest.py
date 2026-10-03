@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import json
 import socket
+import sys
 from typing import Any
 
 import pytest
@@ -13,6 +14,25 @@ from navigator.extraction.extractor import extract_document, load_source
 from navigator.extraction.provider import ProviderResult
 
 _LOOPBACK = {"localhost", "127.0.0.1", "::1"}
+
+# Every non-loopback network attempt in this process, whether blocked by the
+# patched socket functions below or seen by the audit hook (which also covers
+# C-level socket calls that bypass the patches). A test that records one fails,
+# even if the resulting exception was caught and wrapped by library code.
+NETWORK_ATTEMPTS: list[str] = []
+
+
+def _audit(event: str, args: tuple) -> None:
+    if event == "socket.connect":
+        address = args[1]
+        host = address[0] if isinstance(address, tuple) else address
+        if host not in _LOOPBACK:
+            NETWORK_ATTEMPTS.append(f"connect {address!r}")
+    elif event == "socket.getaddrinfo" and args[0] not in _LOOPBACK and args[0] is not None:
+        NETWORK_ATTEMPTS.append(f"getaddrinfo {args[0]!r}")
+
+
+sys.addaudithook(_audit)
 
 
 class NetworkBlocked(RuntimeError):
@@ -26,17 +46,24 @@ def no_network(monkeypatch):
     def guarded_connect(self, address):
         host = address[0] if isinstance(address, tuple) else address
         if host not in _LOOPBACK:
+            NETWORK_ATTEMPTS.append(f"connect {address!r}")
             raise NetworkBlocked(f"network access attempted during tests: {address!r}")
         return real_connect(self, address)
 
     def guarded_getaddrinfo(host, *args, **kwargs):
         if host not in _LOOPBACK:
+            NETWORK_ATTEMPTS.append(f"getaddrinfo {host!r}")
             raise NetworkBlocked(f"DNS lookup attempted during tests: {host!r}")
         return real_getaddrinfo(host, *args, **kwargs)
 
     monkeypatch.setattr(socket.socket, "connect", guarded_connect)
     monkeypatch.setattr(socket, "getaddrinfo", guarded_getaddrinfo)
     monkeypatch.delenv("GEMINI_API_KEY", raising=False)
+    NETWORK_ATTEMPTS.clear()
+    yield
+    attempts = list(NETWORK_ATTEMPTS)
+    NETWORK_ATTEMPTS.clear()
+    assert not attempts, f"test attempted network access: {attempts}"
 
 
 class FakeProvider:

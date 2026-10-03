@@ -43,6 +43,6 @@ Without `--live` the script never contacts a provider. `--doc-id` takes exactly 
 | `src/navigator/` | Project code: `starter_pack.py` (loaders), `validation.py` (structural checks), `extraction/` (Module A). |
 | `scripts/` | Command-line entry points. |
 | `tests/` | pytest suite. |
-| `cache/extraction/` | Content-addressed cache of raw LLM responses, kept so runs can be reproduced offline. |
+| `cache/extraction/` | Local, gitignored cache of raw LLM responses, keyed by content. Offline reruns work only on a machine that has the entry. |
 | `outputs/` | Generated artifacts and validation reports. |
 | `docs/` | Project documentation, including the [starter-pack audit](starter_pack_audit.md). |

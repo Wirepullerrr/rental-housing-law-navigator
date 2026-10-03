@@ -22,6 +22,9 @@ Thumbs.db
 # Logs
 *.log
 
+# Local LLM response cache (scripts/extract_rules.py)
+cache/
+
 # Node, if frontend is added later
 node_modules/
 dist/
