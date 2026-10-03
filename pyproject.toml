@@ -1,5 +1,28 @@
-# Tool configuration only; dependencies live in requirements.in / requirements.txt.
+# Canonical dependency definition (managed with uv; see docs/SETUP.md).
+# requirements.in / requirements.txt are the M1 pip-compatible lockfiles, kept for now.
+[project]
+name = "rental-housing-law-navigator"
+version = "0.1.0"
+description = "Rental Housing Law Navigator (Hack-Nation 2026). Not legal advice."
+requires-python = ">=3.11,<3.12"
+dependencies = [
+    "google-genai>=2.28.0",
+    "httpx>=0.28.1",
+    "jsonschema>=4.26.0",
+    "pydantic>=2.13.5",
+    "tenacity>=9.1.4",
+]
+
+[tool.uv]
+# Not an installable package: src/ is put on the path by pytest and the scripts.
+package = false
+
 [tool.pytest.ini_options]
 pythonpath = ["src"]
 testpaths = ["tests"]
 addopts = "-ra"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]
