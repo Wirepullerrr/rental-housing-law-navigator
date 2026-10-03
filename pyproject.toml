@@ -1,0 +1,5 @@
+# Tool configuration only; dependencies live in requirements.in / requirements.txt.
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = "-ra"

@@ -1,0 +1,267 @@
+{
+  "ok": true,
+  "counts": {
+    "corpus_text": {
+      "files_on_disk": 54,
+      "referenced": 54,
+      "body_characters": 680602
+    },
+    "links_only": {
+      "rows": 33
+    },
+    "manifest": {
+      "rows": 87,
+      "by_availability": {
+        "supplied_text": 54,
+        "link_only": 32,
+        "capture_failed": 1
+      },
+      "by_source_type": {
+        "official": 54,
+        "secondary (law firm / news / mirror)": 23,
+        "official city-linked policy": 1,
+        "code publisher": 9
+      },
+      "by_capture": {
+        "yes": 55,
+        "link-only": 23,
+        "check-terms": 9
+      },
+      "by_jurisdiction": {
+        "Berkeley, CA": {
+          "supplied_text": 8,
+          "link_only": 1
+        },
+        "Boston, MA": {
+          "supplied_text": 5
+        },
+        "CA": {
+          "link_only": 7,
+          "supplied_text": 7
+        },
+        "Cambridge, MA": {
+          "supplied_text": 2,
+          "link_only": 1
+        },
+        "Hoboken, NJ": {
+          "link_only": 3
+        },
+        "Jersey City, NJ": {
+          "link_only": 2,
+          "supplied_text": 1
+        },
+        "Los Angeles, CA": {
+          "link_only": 2,
+          "supplied_text": 5
+        },
+        "MA": {
+          "supplied_text": 11,
+          "link_only": 3,
+          "capture_failed": 1
+        },
+        "NJ": {
+          "link_only": 5,
+          "supplied_text": 5
+        },
+        "Newark, NJ": {
+          "link_only": 3
+        },
+        "San Diego, CA": {
+          "supplied_text": 2,
+          "link_only": 3
+        },
+        "San Francisco, CA": {
+          "supplied_text": 6
+        },
+        "Santa Ana, CA": {
+          "supplied_text": 2,
+          "link_only": 2
+        }
+      }
+    },
+    "schema": {
+      "dialect": "https://json-schema.org/draft/2020-12/schema",
+      "required_fields": 10,
+      "properties": 20,
+      "categories": [
+        "rent_increase_limits",
+        "just_cause_eviction",
+        "security_deposits",
+        "application_screening_fees",
+        "screening_restrictions",
+        "algorithmic_rent_setting"
+      ],
+      "statuses": [
+        "in_force",
+        "not_yet_effective",
+        "pending",
+        "failed"
+      ]
+    },
+    "rules_template": {
+      "records": 1,
+      "wrapper": "{'rules': [...]}"
+    },
+    "addresses": {
+      "rows": 500,
+      "by_state": {
+        "CA": 250,
+        "MA": 110,
+        "NJ": 140
+      },
+      "by_postal_city": {
+        "Los Angeles, CA": 80,
+        "San Francisco, CA": 80,
+        "Newark, NJ": 50,
+        "Jersey City, NJ": 50,
+        "Cambridge, MA": 50,
+        "San Diego, CA": 49,
+        "Hoboken, NJ": 40,
+        "Berkeley, CA": 40,
+        "Boston, MA": 23,
+        "Dorchester, MA": 13,
+        "Roxbury, MA": 7,
+        "East Boston, MA": 6,
+        "Brighton, MA": 4,
+        "Allston, MA": 3,
+        "South Boston, MA": 1,
+        "Jamaica Plain, MA": 1,
+        "Hyde Park, MA": 1,
+        "Mattapan, MA": 1,
+        "San Ysidro, CA": 1
+      },
+      "by_source_dataset": {
+        "Alameda County parcels": {
+          "rows": 40,
+          "missing_year_built": 40,
+          "missing_units": 40,
+          "missing_zip": 0
+        },
+        "Boston Property Assessment FY2026": {
+          "rows": 60,
+          "missing_year_built": 8,
+          "missing_units": 60,
+          "missing_zip": 0
+        },
+        "Cambridge Property Database FY2026 (waa7-ibdu)": {
+          "rows": 50,
+          "missing_year_built": 0,
+          "missing_units": 0,
+          "missing_zip": 50
+        },
+        "DataSF wv5m-vpq2 (2025 roll)": {
+          "rows": 80,
+          "missing_year_built": 2,
+          "missing_units": 0,
+          "missing_zip": 80
+        },
+        "LA County eGIS parcels": {
+          "rows": 80,
+          "missing_year_built": 6,
+          "missing_units": 3,
+          "missing_zip": 0
+        },
+        "NJOGIS Parcels & MOD-IV Composite": {
+          "rows": 140,
+          "missing_year_built": 106,
+          "missing_units": 139,
+          "missing_zip": 0
+        },
+        "SANDAG/SanGIS parcels": {
+          "rows": 50,
+          "missing_year_built": 50,
+          "missing_units": 0,
+          "missing_zip": 0
+        }
+      },
+      "missing_year_built": 212,
+      "missing_units": 242,
+      "missing_zip": 130,
+      "out_of_state_zip": 27
+    },
+    "change_tests": {
+      "tests": 5,
+      "ids": [
+        "T1",
+        "T2",
+        "T3",
+        "T4",
+        "T5"
+      ],
+      "by_type": {
+        "as_of": 2,
+        "boundary": 1,
+        "pending": 1,
+        "negative": 1
+      }
+    },
+    "lookups_template": {
+      "as_of": "2026-10-01",
+      "addresses": 1,
+      "entries": 2
+    },
+    "changes_template": {
+      "tests": [
+        "T1",
+        "T3"
+      ]
+    }
+  },
+  "findings": [
+    {
+      "severity": "WARNING",
+      "check": "manifest",
+      "message": "same source URL listed under ['D002', 'D037']: morganlewis.com/pubs/2026/08/algorithmic-rent-pricing-litigation-expands-under-new-state-and-local-laws"
+    },
+    {
+      "severity": "WARNING",
+      "check": "corpus_text",
+      "message": "manifest sha256 does not match 54/54 text files; the hash appears to be of the original capture (PDF/HTML), so text integrity cannot be verified against it"
+    },
+    {
+      "severity": "INFO",
+      "check": "manifest",
+      "message": "jurisdictions with no supplied local text: ['Hoboken, NJ', 'Newark, NJ']"
+    },
+    {
+      "severity": "INFO",
+      "check": "manifest",
+      "message": "capture attempted but failed, no text supplied: ['D056 (manual: 403 Client Error: Forbidden for url: https://www.mass.gov/doc/803-cmr-5-criminal-offender-record-information-cori-housing/download)']"
+    },
+    {
+      "severity": "WARNING",
+      "check": "sample_rule",
+      "message": "source_doc_id 'D0xx' is not in corpus_manifest.csv (placeholder?)"
+    },
+    {
+      "severity": "WARNING",
+      "check": "sample_rule",
+      "message": "quoted_span is a placeholder; the schema alone cannot catch this, so citation checks must verify spans against source text"
+    },
+    {
+      "severity": "WARNING",
+      "check": "rules_template",
+      "message": "template wraps records as {'rules': [...]}; README section 5 says 'a list of rule records'. Keep the output wrapper configurable."
+    },
+    {
+      "severity": "WARNING",
+      "check": "rules_template r-0007",
+      "message": "source_doc_id 'D0xx' is not in corpus_manifest.csv (placeholder?)"
+    },
+    {
+      "severity": "WARNING",
+      "check": "rules_template r-0007",
+      "message": "quoted_span is a placeholder; the schema alone cannot catch this, so citation checks must verify spans against source text"
+    },
+    {
+      "severity": "WARNING",
+      "check": "addresses",
+      "message": "27 rows have a ZIP outside their state's range (likely a mailing ZIP; do not use it for geocoding): ['A0003', 'A0008', 'A0017', 'A0044', 'A0102', 'A0132', 'A0159', 'A0177'] ..."
+    },
+    {
+      "severity": "WARNING",
+      "check": "lookups_template",
+      "message": "A0001: 'r-0031' is not in the rules template (templates are illustrative only)"
+    }
+  ]
+}
