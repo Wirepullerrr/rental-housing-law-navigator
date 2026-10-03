@@ -6,17 +6,40 @@
 supplied corpus text (manifest-verified)
   -> versioned prompt (prompt.py)
   -> content-addressed cache, or a live provider call (gemini.py, behind provider.py)
+  -> provision inventory (audit only)
   -> per candidate:
        Pydantic ExtractedRule            the model's semantic fields only
-       citation check                    quoted_span and any date evidence must be in the source
+       citation check                    quoted_span, date evidence and version evidence must be in the source
        status derivation                 deterministic, from enactment_status + effective_date + as_of
        trusted metadata + team_rule_id   from the repository, not from the model
        Pydantic RuleRecord               the internal mirror of the official schema
        official JSON Schema              schema/rule_record.schema.json
+       review checks (review.py)         warnings only
   -> ExtractionRun audit artifact (outputs/m2/<doc_id>_extraction.json)
 ```
 
-A candidate is **accepted only if every stage passes**. Failures are recorded per stage (`pydantic`, `citation`, `effective_date`, `status`, `official schema`, `duplicate`) and are never retried or repaired.
+A candidate is **accepted only if every stage passes**. Failures are recorded per stage (`pydantic`, `citation`, `effective_date`, `status`, `official schema`, `duplicate`) and are never retried or repaired. Review checks add warnings and never change acceptance.
+
+## Prompt v2 contract
+
+The prompt (`prompt.py`, `EXTRACTION_PROMPT_VERSION = "v2"`) works in two steps. The model first fills `provisions`, an inventory of every operative provision with its official category or `null`. It then emits one record per distinct obligation, prohibition, entitlement, remedy, procedural requirement or monetary limit in scope. Both fields are generated in that order.
+
+- **Exemptions** are attached to the `exemptions` field of each record they limit; they are not records of their own.
+- **Claims and quotes:** every assertion in `requirement` and `key_value` must be supported by that record's `quoted_span`. If one quote is not enough, the model takes a longer quote or splits the record.
+- **Temporal versions:** amendment history goes in `version_note`, with the verbatim annotation in `version_evidence`. It never goes in `conflict_note`. An amendment date applies only to the amended wording and is not the obligation's `effective_date`.
+- **`interaction`** is only for relationships with other legal regimes (preemption, override, "in addition to"). Internal cross-references do not count.
+- **`conflict_note`** is only for genuine conflicts or ambiguities that apply at the same time.
+- **`confidence`** is per record and must not be a single default value.
+
+`conflict_flag` is derived from `conflict_note` alone, so version history can never set it. If `version_evidence` is given, it must be found in the source, or the candidate is rejected. If a verified version annotation is dated after `--as-of`, the record is rejected conservatively, because the extracted (latest) wording may not apply yet.
+
+## Review checks (`review.py`, warnings only)
+
+- **Figures missing from the quote:** monetary amounts, percentages, durations and calendar dates in `requirement` or `key_value` that are absent from the `quoted_span`. Number words, "per cent" and the drafting style "ten (10) days" are normalized first.
+- **Uniform confidence:** identical confidence on 3 or more accepted records.
+- **Uncited provisions:** provisions the model marked in scope in its inventory that no accepted record cites.
+
+Not implemented, because it would be brittle or statute-specific: entailment checks for non-numeric claims, keyword detection of version history in `conflict_note`, and validating citation formats. Known false positives: fractions written in words, ordinals ("first month" vs "1 month"), and inventory references written in a different style from the citation.
 
 ## Trust boundary
 
@@ -28,6 +51,7 @@ A candidate is **accepted only if every stage passes**. Failures are recorded pe
 | `status` | `normalize.derive_status`, deterministic and relative to `--as-of` (default 2026-10-01) |
 | `overrides` | always `[]` at single-document extraction; precedence belongs to the rule engine |
 | `category`, `title`, `requirement`, `key_value`, `coverage_conditions`, `exemptions`, `interaction`, `citation`, `quoted_span`, `confidence`, `conflict_note` | model |
+| `version_note`, `version_evidence`, provision inventory | model; kept in the audit artifact only, not in rule records |
 
 If the model returns any trusted field, the value is dropped and a warning is recorded. `conflict_flag` is true exactly when the model reports a `conflict_note`.
 

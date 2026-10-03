@@ -43,6 +43,8 @@ def print_summary(run: ExtractionRun, out: Path) -> None:
         mark = "ACCEPT" if c.accepted else "REJECT"
         print(f"   [{c.index}] {mark} {rule.get('team_rule_id', '-'):13} {rule.get('category', '-'):26} "
               f"span={cite:16} status={rule.get('status')}  {rule.get('title', '')}")
+        for msg in c.warnings:
+            print(f"         warning: {msg}")
     for label, items in (("warnings", run.warnings), ("errors", run.errors)):
         for msg in items:
             print(f"  {label[:-1]}: {msg}")

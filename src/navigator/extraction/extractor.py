@@ -19,18 +19,21 @@ from functools import lru_cache
 from pathlib import Path
 from typing import Any
 
-from pydantic import ValidationError
+from pydantic import TypeAdapter, ValidationError
 
 from navigator import starter_pack as sp
 from navigator.extraction.cache import ResponseCache, cache_key, canonical_json, sha256_hex
 from navigator.extraction.citation import verify_span
 from navigator.extraction.config import DEFAULT_AS_OF, GENERATION_SETTINGS
-from navigator.extraction.models import (CandidateResult, ExtractedRule, ExtractionRun, RuleRecord, SourceMeta,
-                                         generation_json_schema)
+from navigator.extraction.models import (CandidateResult, ExtractedRule, ExtractionRun, ProvisionNote, RuleRecord,
+                                         SourceMeta, generation_json_schema)
 from navigator.extraction.normalize import build_record, derive_status, split_trusted
 from navigator.extraction.prompt import EXTRACTION_PROMPT_VERSION, render_prompt
 from navigator.extraction.provider import StructuredLLMProvider
+from navigator.extraction.review import calendar_dates, uncovered_provisions, uniform_confidence, unsupported_figures
 from navigator.validation import make_rule_validator
+
+_INVENTORY = TypeAdapter(list[ProvisionNote])
 
 
 class SourceNotAvailable(ValueError):
@@ -147,8 +150,9 @@ def _evaluate_response(run: ExtractionRun, source: SourceDocument, as_of: date, 
     if not isinstance(payload, dict) or not isinstance(payload.get("rules"), list):
         run.errors.append("response must be a JSON object with a 'rules' list")
         return
-    if set(payload) - {"rules"}:
-        run.warnings.append(f"ignored unexpected top-level keys: {sorted(set(payload) - {'rules'})}")
+    if set(payload) - {"rules", "provisions"}:
+        run.warnings.append(f"ignored unexpected top-level keys: {sorted(set(payload) - {'rules', 'provisions'})}")
+    _record_inventory(run, payload.get("provisions"))
 
     run.candidates = [evaluate_candidate(i, raw, source, as_of, validator) for i, raw in enumerate(payload["rules"])]
     seen: dict[str, int] = {}
@@ -166,6 +170,23 @@ def _evaluate_response(run: ExtractionRun, source: SourceDocument, as_of: date, 
     for c in run.candidates:
         if not c.accepted:
             run.warnings.append(f"candidate {c.index} rejected: {'; '.join(c.rejection_reasons)}")
+    if (msg := uniform_confidence(r["confidence"] for r in run.rules)) is not None:
+        run.warnings.append(msg)
+    # Recall check: any extracted record counts, including ones rejected later (e.g. for status).
+    extracted = [c.rule["citation"] for c in run.candidates if c.rule]
+    if uncovered := uncovered_provisions(run.provision_inventory, extracted):
+        run.warnings.append(f"review: provisions marked in scope but cited by no extracted record: {uncovered}")
+
+
+def _record_inventory(run: ExtractionRun, inventory: Any) -> None:
+    """The model's provision inventory is audit-only: a malformed one is a warning, never an error."""
+    if inventory is None:
+        run.warnings.append("review: response has no provision inventory")
+        return
+    try:
+        run.provision_inventory = [n.model_dump() for n in _INVENTORY.validate_python(inventory)]
+    except ValidationError:
+        run.warnings.append("review: provision inventory is malformed; ignored")
 
 
 def _pydantic_errors(exc: ValidationError, prefix: str = "") -> list[str]:
@@ -208,7 +229,23 @@ def evaluate_candidate(index: int, raw: Any, source: SourceDocument, as_of: date
     if status is None:
         res.rejection_reasons.append(f"status: {res.status_derivation}")
 
+    # Version history is evidence for later temporal modelling, never a conflict.
+    # A verified annotation dated after as_of means the extracted (latest) wording
+    # may not apply yet: reject conservatively rather than publish it as in force.
+    if rule.version_evidence is not None:
+        res.version_evidence = verify_span(rule.version_evidence, source.body)
+        if res.version_evidence.status == "failed":
+            res.rejection_reasons.append("citation: version_evidence not found in source text")
+        elif later := [d for d in calendar_dates(res.version_evidence.source_span) if d > as_of]:
+            res.rejection_reasons.append(f"status: a version annotation is dated {later[0]}, after as_of {as_of}; "
+                                         "the extracted wording may not apply yet")
+    elif rule.version_note is not None:
+        res.warnings.append("review: version_note given without verbatim version_evidence")
+
     res.rule = build_record(rule, source.meta, res.citation, status)
+    for field, text in (("requirement", rule.requirement), ("key_value", rule.key_value)):
+        for figure in unsupported_figures(text or "", res.rule["quoted_span"]):
+            res.warnings.append(f"review: {field} states '{figure}', which its quoted_span does not contain")
     try:
         RuleRecord.model_validate(res.rule)
         res.pydantic_valid = True

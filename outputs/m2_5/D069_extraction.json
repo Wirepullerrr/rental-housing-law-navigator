@@ -1,0 +1,526 @@
+{
+  "disclaimer": "Not legal advice. Automated extraction for a research prototype; verify against the cited source.",
+  "run_at": "2026-10-03T23:13:43+00:00",
+  "source": {
+    "doc_id": "D069",
+    "jurisdiction": "NJ",
+    "url": "https://pub.njleg.state.nj.us/Bills/2026/AL26/43_.HTM",
+    "source_type": "official",
+    "retrieved_at": "2026-10-01T22:56Z",
+    "text_file": "text/D069.txt",
+    "content_sha256": "15389a12d31abf65107fee4d68fe7e718aeff6f6abe49f50b151e97966c6f6cd",
+    "body_chars": 10259
+  },
+  "provider": "gemini",
+  "model": "gemini-3.8-flash",
+  "prompt_version": "v2",
+  "prompt_sha256": "a6a789c7ccf340b3eef104d0862dffd8abf5572e42ae2dcd8c1771987f7f431a",
+  "response_schema_sha256": "602ca89a41075eed7b51b1cc283099396bf2b1a73ef2c7f731af320c785dc635",
+  "generation_settings": {
+    "temperature": null,
+    "seed": 20261001
+  },
+  "as_of": "2026-10-01",
+  "cache_key": "0221302186a531651ba3270d2f33544ff66b3fea8a9e8579913d392b9d3818bb",
+  "cache_hit": false,
+  "cache_entry": "cache/extraction/0221302186a531651ba3270d2f33544ff66b3fea8a9e8579913d392b9d3818bb.json",
+  "provider_metadata": {
+    "api": "interactions.create",
+    "interaction_id": "",
+    "model": "gemini-3.8-flash",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4033,
+      "output_tokens": 2461,
+      "thinking_tokens": 36634,
+      "total_tokens": 43128
+    }
+  },
+  "candidate_count": 5,
+  "accepted_count": 0,
+  "rules": [],
+  "candidates": [
+    {
+      "index": 0,
+      "accepted": false,
+      "rejection_reasons": [
+        "status: enacted, but the effective date is stated only in relative or conditional terms; it must be resolved deterministically before a status can be assigned",
+        "pydantic: normalized record does not match RuleRecord",
+        "official schema: normalized record is invalid"
+      ],
+      "pydantic_valid": false,
+      "pydantic_errors": [
+        "record.status: Input should be 'in_force', 'not_yet_effective', 'pending' or 'failed'"
+      ],
+      "schema_valid": false,
+      "schema_errors": [
+        "status: None is not one of ['in_force', 'not_yet_effective', 'pending', 'failed']"
+      ],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 7976,
+        "end": 8325,
+        "occurrences": 1,
+        "model_span": "4.    It\nshall be unlawful and a violation of the “New Jersey Antitrust Act,” P.L.1970,\nc.73 (C.56:9-1 et seq.) for:\na.     a rental property owner, or any agent,\nrepresentative, or subcontractor thereof, to receive, subscribe to, contract\nfor, or otherwise exchange any form of consideration in return for the use of,\nthe services of a coordinator;",
+        "source_span": "4.    It\nshall be unlawful and a violation of the “New Jersey Antitrust Act,” P.L.1970,\nc.73 (C.56:9-1 et seq.) for:\na.     a rental property owner, or any agent,\nrepresentative, or subcontractor thereof, to receive, subscribe to, contract\nfor, or otherwise exchange any form of consideration in return for the use of,\nthe services of a coordinator;",
+        "reason": null
+      },
+      "effective_date_evidence": {
+        "status": "normalized_match",
+        "normalization": "Unicode NFC; each whitespace run (incl. line breaks) compared as one space; span ends trimmed",
+        "start": 10086,
+        "end": 10188,
+        "occurrences": 1,
+        "model_span": "This act shall take effect on the first day of the twelfth month next following the date of enactment.",
+        "source_span": "This act shall take effect on the first day of\nthe twelfth month next following the date of enactment.",
+        "reason": null
+      },
+      "version_evidence": null,
+      "status_derivation": "enacted, but the effective date is stated only in relative or conditional terms; it must be resolved deterministically before a status can be assigned",
+      "warnings": [],
+      "rule": {
+        "team_rule_id": "r-d99da3122d",
+        "jurisdiction": "NJ",
+        "level": "state",
+        "category": "algorithmic_rent_setting",
+        "status": null,
+        "title": "FAIR Act - Prohibition on Property Owners Using Coordinator Services",
+        "requirement": "It is unlawful and a violation of the New Jersey Antitrust Act for a rental property owner, or any agent, representative, or subcontractor thereof, to receive, subscribe to, contract for, or otherwise exchange any form of consideration in return for the use of, the services of a coordinator.",
+        "key_value": null,
+        "coverage_conditions": "Applies to rental property owners (persons that own, directly or indirectly, one or more rental residential dwelling units) or any agent, representative, or subcontractor thereof.",
+        "exemptions": "Residential dwelling units exclude inpatient medical care, licensed long-term care, or detention or correctional facilities. Coordinators exclude government entities setting or limiting rents or sale prices through affordability controls.",
+        "overrides": [],
+        "interaction": "Provides that violations constitute a violation of the New Jersey Antitrust Act, P.L.1970, c.73 (C.56:9-1 et seq.). Section 5 provides that the act does not limit the application of sections 6 through 17 of P.L.1970, c.73. Section 6(a) states the act is in addition to the New Jersey Antitrust Act. Section 6(b) prohibits municipalities from enacting conflicting ordinances.",
+        "effective_date": null,
+        "citation": "P.L. 2026, c. 43, § 4(a)",
+        "source_doc_id": "D069",
+        "source_url": "https://pub.njleg.state.nj.us/Bills/2026/AL26/43_.HTM",
+        "quoted_span": "4.    It\nshall be unlawful and a violation of the “New Jersey Antitrust Act,” P.L.1970,\nc.73 (C.56:9-1 et seq.) for:\na.     a rental property owner, or any agent,\nrepresentative, or subcontractor thereof, to receive, subscribe to, contract\nfor, or otherwise exchange any form of consideration in return for the use of,\nthe services of a coordinator;",
+        "confidence": 0.95,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "algorithmic_rent_setting",
+        "title": "FAIR Act - Prohibition on Property Owners Using Coordinator Services",
+        "requirement": "It is unlawful and a violation of the New Jersey Antitrust Act for a rental property owner, or any agent, representative, or subcontractor thereof, to receive, subscribe to, contract for, or otherwise exchange any form of consideration in return for the use of, the services of a coordinator.",
+        "key_value": null,
+        "coverage_conditions": "Applies to rental property owners (persons that own, directly or indirectly, one or more rental residential dwelling units) or any agent, representative, or subcontractor thereof.",
+        "exemptions": "Residential dwelling units exclude inpatient medical care, licensed long-term care, or detention or correctional facilities. Coordinators exclude government entities setting or limiting rents or sale prices through affordability controls.",
+        "interaction": "Provides that violations constitute a violation of the New Jersey Antitrust Act, P.L.1970, c.73 (C.56:9-1 et seq.). Section 5 provides that the act does not limit the application of sections 6 through 17 of P.L.1970, c.73. Section 6(a) states the act is in addition to the New Jersey Antitrust Act. Section 6(b) prohibits municipalities from enacting conflicting ordinances.",
+        "enactment_status": "enacted",
+        "effective_date": null,
+        "effective_date_evidence": "This act shall take effect on the first day of the twelfth month next following the date of enactment.",
+        "citation": "P.L. 2026, c. 43, § 4(a)",
+        "quoted_span": "4.    It\nshall be unlawful and a violation of the “New Jersey Antitrust Act,” P.L.1970,\nc.73 (C.56:9-1 et seq.) for:\na.     a rental property owner, or any agent,\nrepresentative, or subcontractor thereof, to receive, subscribe to, contract\nfor, or otherwise exchange any form of consideration in return for the use of,\nthe services of a coordinator;",
+        "confidence": 0.95,
+        "conflict_note": null,
+        "version_note": null,
+        "version_evidence": null
+      }
+    },
+    {
+      "index": 1,
+      "accepted": false,
+      "rejection_reasons": [
+        "status: enacted, but the effective date is stated only in relative or conditional terms; it must be resolved deterministically before a status can be assigned",
+        "pydantic: normalized record does not match RuleRecord",
+        "official schema: normalized record is invalid"
+      ],
+      "pydantic_valid": false,
+      "pydantic_errors": [
+        "record.status: Input should be 'in_force', 'not_yet_effective', 'pending' or 'failed'"
+      ],
+      "schema_valid": false,
+      "schema_errors": [
+        "status: None is not one of ['in_force', 'not_yet_effective', 'pending', 'failed']"
+      ],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 8326,
+        "end": 8537,
+        "occurrences": 1,
+        "model_span": "b.    a coordinator to facilitate a tacit or express\nagreement among rental property owners that restricts competition with respect\nto residential dwelling units, including by performing a coordinating\nfunction;",
+        "source_span": "b.    a coordinator to facilitate a tacit or express\nagreement among rental property owners that restricts competition with respect\nto residential dwelling units, including by performing a coordinating\nfunction;",
+        "reason": null
+      },
+      "effective_date_evidence": {
+        "status": "normalized_match",
+        "normalization": "Unicode NFC; each whitespace run (incl. line breaks) compared as one space; span ends trimmed",
+        "start": 10086,
+        "end": 10188,
+        "occurrences": 1,
+        "model_span": "This act shall take effect on the first day of the twelfth month next following the date of enactment.",
+        "source_span": "This act shall take effect on the first day of\nthe twelfth month next following the date of enactment.",
+        "reason": null
+      },
+      "version_evidence": null,
+      "status_derivation": "enacted, but the effective date is stated only in relative or conditional terms; it must be resolved deterministically before a status can be assigned",
+      "warnings": [],
+      "rule": {
+        "team_rule_id": "r-1370bb51fb",
+        "jurisdiction": "NJ",
+        "level": "state",
+        "category": "algorithmic_rent_setting",
+        "status": null,
+        "title": "FAIR Act - Prohibition on Coordinators Facilitating Anticompetitive Agreements",
+        "requirement": "A coordinator is prohibited from facilitating a tacit or express agreement among rental property owners that restricts competition with respect to residential dwelling units, including by performing a coordinating function.",
+        "key_value": null,
+        "coverage_conditions": "Applies to coordinators operating algorithmic revenue management software or an algorithmic device that performs a coordinating function for any rental property owner.",
+        "exemptions": "Excludes government entities setting or limiting rents or sale prices through affordability controls in accordance with law. Coordinating function excludes research/testing not used in setting lease terms, free public rent estimates, qualifying brokerage databases, and government affordability controls.",
+        "overrides": [],
+        "interaction": "Governed by the introductory clause of Section 4 establishing violations as violations of the New Jersey Antitrust Act, P.L.1970, c.73 (C.56:9-1 et seq.). Section 6(b) prohibits municipalities from enacting conflicting ordinances.",
+        "effective_date": null,
+        "citation": "P.L. 2026, c. 43, § 4(b)",
+        "source_doc_id": "D069",
+        "source_url": "https://pub.njleg.state.nj.us/Bills/2026/AL26/43_.HTM",
+        "quoted_span": "b.    a coordinator to facilitate a tacit or express\nagreement among rental property owners that restricts competition with respect\nto residential dwelling units, including by performing a coordinating\nfunction;",
+        "confidence": 0.85,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "algorithmic_rent_setting",
+        "title": "FAIR Act - Prohibition on Coordinators Facilitating Anticompetitive Agreements",
+        "requirement": "A coordinator is prohibited from facilitating a tacit or express agreement among rental property owners that restricts competition with respect to residential dwelling units, including by performing a coordinating function.",
+        "key_value": null,
+        "coverage_conditions": "Applies to coordinators operating algorithmic revenue management software or an algorithmic device that performs a coordinating function for any rental property owner.",
+        "exemptions": "Excludes government entities setting or limiting rents or sale prices through affordability controls in accordance with law. Coordinating function excludes research/testing not used in setting lease terms, free public rent estimates, qualifying brokerage databases, and government affordability controls.",
+        "interaction": "Governed by the introductory clause of Section 4 establishing violations as violations of the New Jersey Antitrust Act, P.L.1970, c.73 (C.56:9-1 et seq.). Section 6(b) prohibits municipalities from enacting conflicting ordinances.",
+        "enactment_status": "enacted",
+        "effective_date": null,
+        "effective_date_evidence": "This act shall take effect on the first day of the twelfth month next following the date of enactment.",
+        "citation": "P.L. 2026, c. 43, § 4(b)",
+        "quoted_span": "b.    a coordinator to facilitate a tacit or express\nagreement among rental property owners that restricts competition with respect\nto residential dwelling units, including by performing a coordinating\nfunction;",
+        "confidence": 0.85,
+        "conflict_note": null,
+        "version_note": null,
+        "version_evidence": null
+      }
+    },
+    {
+      "index": 2,
+      "accepted": false,
+      "rejection_reasons": [
+        "status: enacted, but the effective date is stated only in relative or conditional terms; it must be resolved deterministically before a status can be assigned",
+        "pydantic: normalized record does not match RuleRecord",
+        "official schema: normalized record is invalid"
+      ],
+      "pydantic_valid": false,
+      "pydantic_errors": [
+        "record.status: Input should be 'in_force', 'not_yet_effective', 'pending' or 'failed'"
+      ],
+      "schema_valid": false,
+      "schema_errors": [
+        "status: None is not one of ['in_force', 'not_yet_effective', 'pending', 'failed']"
+      ],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 8538,
+        "end": 8636,
+        "occurrences": 1,
+        "model_span": "c.     two or more persons to engage in\n1\nor\notherwise facilitate\n1\nparallel pricing coordination;",
+        "source_span": "c.     two or more persons to engage in\n1\nor\notherwise facilitate\n1\nparallel pricing coordination;",
+        "reason": null
+      },
+      "effective_date_evidence": {
+        "status": "normalized_match",
+        "normalization": "Unicode NFC; each whitespace run (incl. line breaks) compared as one space; span ends trimmed",
+        "start": 10086,
+        "end": 10188,
+        "occurrences": 1,
+        "model_span": "This act shall take effect on the first day of the twelfth month next following the date of enactment.",
+        "source_span": "This act shall take effect on the first day of\nthe twelfth month next following the date of enactment.",
+        "reason": null
+      },
+      "version_evidence": null,
+      "status_derivation": "enacted, but the effective date is stated only in relative or conditional terms; it must be resolved deterministically before a status can be assigned",
+      "warnings": [],
+      "rule": {
+        "team_rule_id": "r-952ee049fa",
+        "jurisdiction": "NJ",
+        "level": "state",
+        "category": "algorithmic_rent_setting",
+        "status": null,
+        "title": "FAIR Act - Prohibition on Parallel Pricing Coordination",
+        "requirement": "Two or more persons are prohibited from engaging in or otherwise facilitating parallel pricing coordination.",
+        "key_value": null,
+        "coverage_conditions": "Applies to two or more persons.",
+        "exemptions": "Pricing agreements required in accordance with affordability controls are excluded from parallel pricing coordination.",
+        "overrides": [],
+        "interaction": "Governed by the introductory clause of Section 4 establishing violations as violations of the New Jersey Antitrust Act, P.L.1970, c.73 (C.56:9-1 et seq.). Section 6(b) prohibits municipalities from enacting conflicting ordinances.",
+        "effective_date": null,
+        "citation": "P.L. 2026, c. 43, § 4(c)",
+        "source_doc_id": "D069",
+        "source_url": "https://pub.njleg.state.nj.us/Bills/2026/AL26/43_.HTM",
+        "quoted_span": "c.     two or more persons to engage in\n1\nor\notherwise facilitate\n1\nparallel pricing coordination;",
+        "confidence": 0.85,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "algorithmic_rent_setting",
+        "title": "FAIR Act - Prohibition on Parallel Pricing Coordination",
+        "requirement": "Two or more persons are prohibited from engaging in or otherwise facilitating parallel pricing coordination.",
+        "key_value": null,
+        "coverage_conditions": "Applies to two or more persons.",
+        "exemptions": "Pricing agreements required in accordance with affordability controls are excluded from parallel pricing coordination.",
+        "interaction": "Governed by the introductory clause of Section 4 establishing violations as violations of the New Jersey Antitrust Act, P.L.1970, c.73 (C.56:9-1 et seq.). Section 6(b) prohibits municipalities from enacting conflicting ordinances.",
+        "enactment_status": "enacted",
+        "effective_date": null,
+        "effective_date_evidence": "This act shall take effect on the first day of the twelfth month next following the date of enactment.",
+        "citation": "P.L. 2026, c. 43, § 4(c)",
+        "quoted_span": "c.     two or more persons to engage in\n1\nor\notherwise facilitate\n1\nparallel pricing coordination;",
+        "confidence": 0.85,
+        "conflict_note": null,
+        "version_note": null,
+        "version_evidence": null
+      }
+    },
+    {
+      "index": 3,
+      "accepted": false,
+      "rejection_reasons": [
+        "status: enacted, but the effective date is stated only in relative or conditional terms; it must be resolved deterministically before a status can be assigned",
+        "pydantic: normalized record does not match RuleRecord",
+        "official schema: normalized record is invalid"
+      ],
+      "pydantic_valid": false,
+      "pydantic_errors": [
+        "record.status: Input should be 'in_force', 'not_yet_effective', 'pending' or 'failed'"
+      ],
+      "schema_valid": false,
+      "schema_errors": [
+        "status: None is not one of ['in_force', 'not_yet_effective', 'pending', 'failed']"
+      ],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 8637,
+        "end": 8759,
+        "occurrences": 1,
+        "model_span": "d.    any agent or representative of a coordinator or\nsubcontractor thereof to engage in parallel pricing coordination; or",
+        "source_span": "d.    any agent or representative of a coordinator or\nsubcontractor thereof to engage in parallel pricing coordination; or",
+        "reason": null
+      },
+      "effective_date_evidence": {
+        "status": "normalized_match",
+        "normalization": "Unicode NFC; each whitespace run (incl. line breaks) compared as one space; span ends trimmed",
+        "start": 10086,
+        "end": 10188,
+        "occurrences": 1,
+        "model_span": "This act shall take effect on the first day of the twelfth month next following the date of enactment.",
+        "source_span": "This act shall take effect on the first day of\nthe twelfth month next following the date of enactment.",
+        "reason": null
+      },
+      "version_evidence": null,
+      "status_derivation": "enacted, but the effective date is stated only in relative or conditional terms; it must be resolved deterministically before a status can be assigned",
+      "warnings": [],
+      "rule": {
+        "team_rule_id": "r-ce45a59424",
+        "jurisdiction": "NJ",
+        "level": "state",
+        "category": "algorithmic_rent_setting",
+        "status": null,
+        "title": "FAIR Act - Prohibition on Coordinator Agents Engaging in Parallel Pricing Coordination",
+        "requirement": "Any agent or representative of a coordinator or subcontractor thereof is prohibited from engaging in parallel pricing coordination.",
+        "key_value": null,
+        "coverage_conditions": "Applies to any agent, representative, or subcontractor of a coordinator.",
+        "exemptions": "Agreements required to be made in accordance with affordability controls are excluded.",
+        "overrides": [],
+        "interaction": "Governed by the introductory clause of Section 4 establishing violations as violations of the New Jersey Antitrust Act, P.L.1970, c.73 (C.56:9-1 et seq.). Section 6(b) prohibits municipalities from enacting conflicting ordinances.",
+        "effective_date": null,
+        "citation": "P.L. 2026, c. 43, § 4(d)",
+        "source_doc_id": "D069",
+        "source_url": "https://pub.njleg.state.nj.us/Bills/2026/AL26/43_.HTM",
+        "quoted_span": "d.    any agent or representative of a coordinator or\nsubcontractor thereof to engage in parallel pricing coordination; or",
+        "confidence": 0.85,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "algorithmic_rent_setting",
+        "title": "FAIR Act - Prohibition on Coordinator Agents Engaging in Parallel Pricing Coordination",
+        "requirement": "Any agent or representative of a coordinator or subcontractor thereof is prohibited from engaging in parallel pricing coordination.",
+        "key_value": null,
+        "coverage_conditions": "Applies to any agent, representative, or subcontractor of a coordinator.",
+        "exemptions": "Agreements required to be made in accordance with affordability controls are excluded.",
+        "interaction": "Governed by the introductory clause of Section 4 establishing violations as violations of the New Jersey Antitrust Act, P.L.1970, c.73 (C.56:9-1 et seq.). Section 6(b) prohibits municipalities from enacting conflicting ordinances.",
+        "enactment_status": "enacted",
+        "effective_date": null,
+        "effective_date_evidence": "This act shall take effect on the first day of the twelfth month next following the date of enactment.",
+        "citation": "P.L. 2026, c. 43, § 4(d)",
+        "quoted_span": "d.    any agent or representative of a coordinator or\nsubcontractor thereof to engage in parallel pricing coordination; or",
+        "confidence": 0.85,
+        "conflict_note": null,
+        "version_note": null,
+        "version_evidence": null
+      }
+    },
+    {
+      "index": 4,
+      "accepted": false,
+      "rejection_reasons": [
+        "status: enacted, but the effective date is stated only in relative or conditional terms; it must be resolved deterministically before a status can be assigned",
+        "pydantic: normalized record does not match RuleRecord",
+        "official schema: normalized record is invalid"
+      ],
+      "pydantic_valid": false,
+      "pydantic_errors": [
+        "record.status: Input should be 'in_force', 'not_yet_effective', 'pending' or 'failed'"
+      ],
+      "schema_valid": false,
+      "schema_errors": [
+        "status: None is not one of ['in_force', 'not_yet_effective', 'pending', 'failed']"
+      ],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 8760,
+        "end": 8813,
+        "occurrences": 1,
+        "model_span": "e.     any person to perform a coordinating function.",
+        "source_span": "e.     any person to perform a coordinating function.",
+        "reason": null
+      },
+      "effective_date_evidence": {
+        "status": "normalized_match",
+        "normalization": "Unicode NFC; each whitespace run (incl. line breaks) compared as one space; span ends trimmed",
+        "start": 10086,
+        "end": 10188,
+        "occurrences": 1,
+        "model_span": "This act shall take effect on the first day of the twelfth month next following the date of enactment.",
+        "source_span": "This act shall take effect on the first day of\nthe twelfth month next following the date of enactment.",
+        "reason": null
+      },
+      "version_evidence": null,
+      "status_derivation": "enacted, but the effective date is stated only in relative or conditional terms; it must be resolved deterministically before a status can be assigned",
+      "warnings": [],
+      "rule": {
+        "team_rule_id": "r-c541d75f6c",
+        "jurisdiction": "NJ",
+        "level": "state",
+        "category": "algorithmic_rent_setting",
+        "status": null,
+        "title": "FAIR Act - Prohibition on Performing a Coordinating Function",
+        "requirement": "Any person is prohibited from performing a coordinating function.",
+        "key_value": null,
+        "coverage_conditions": "Applies to any person.",
+        "exemptions": "Coordinating function excludes research/testing not used in setting lease terms, free public rent estimates, qualifying brokerage databases, and government affordability controls.",
+        "overrides": [],
+        "interaction": "Governed by the introductory clause of Section 4 establishing violations as violations of the New Jersey Antitrust Act, P.L.1970, c.73 (C.56:9-1 et seq.). Section 6(b) prohibits municipalities from enacting conflicting ordinances.",
+        "effective_date": null,
+        "citation": "P.L. 2026, c. 43, § 4(e)",
+        "source_doc_id": "D069",
+        "source_url": "https://pub.njleg.state.nj.us/Bills/2026/AL26/43_.HTM",
+        "quoted_span": "e.     any person to perform a coordinating function.",
+        "confidence": 0.85,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "algorithmic_rent_setting",
+        "title": "FAIR Act - Prohibition on Performing a Coordinating Function",
+        "requirement": "Any person is prohibited from performing a coordinating function.",
+        "key_value": null,
+        "coverage_conditions": "Applies to any person.",
+        "exemptions": "Coordinating function excludes research/testing not used in setting lease terms, free public rent estimates, qualifying brokerage databases, and government affordability controls.",
+        "interaction": "Governed by the introductory clause of Section 4 establishing violations as violations of the New Jersey Antitrust Act, P.L.1970, c.73 (C.56:9-1 et seq.). Section 6(b) prohibits municipalities from enacting conflicting ordinances.",
+        "enactment_status": "enacted",
+        "effective_date": null,
+        "effective_date_evidence": "This act shall take effect on the first day of the twelfth month next following the date of enactment.",
+        "citation": "P.L. 2026, c. 43, § 4(e)",
+        "quoted_span": "e.     any person to perform a coordinating function.",
+        "confidence": 0.85,
+        "conflict_note": null,
+        "version_note": null,
+        "version_evidence": null
+      }
+    }
+  ],
+  "provision_inventory": [
+    {
+      "ref": "1",
+      "summary": "Short title",
+      "category": null
+    },
+    {
+      "ref": "2",
+      "summary": "Legislative findings",
+      "category": null
+    },
+    {
+      "ref": "3",
+      "summary": "Definitions",
+      "category": null
+    },
+    {
+      "ref": "4.a",
+      "summary": "Prohibits rental property owners from using coordinator services",
+      "category": "algorithmic_rent_setting"
+    },
+    {
+      "ref": "4.b",
+      "summary": "Prohibits coordinators from facilitating anticompetitive agreements",
+      "category": "algorithmic_rent_setting"
+    },
+    {
+      "ref": "4.c",
+      "summary": "Prohibits persons from parallel pricing coordination",
+      "category": "algorithmic_rent_setting"
+    },
+    {
+      "ref": "4.d",
+      "summary": "Prohibits coordinator agents or subcontractors from parallel pricing coordination",
+      "category": "algorithmic_rent_setting"
+    },
+    {
+      "ref": "4.e",
+      "summary": "Prohibits any person from performing a coordinating function",
+      "category": "algorithmic_rent_setting"
+    },
+    {
+      "ref": "5",
+      "summary": "Construction with New Jersey Antitrust Act remedies",
+      "category": null
+    },
+    {
+      "ref": "6.a",
+      "summary": "Construction as in addition to New Jersey Antitrust Act",
+      "category": null
+    },
+    {
+      "ref": "6.b",
+      "summary": "Prohibition on conflicting municipal ordinances",
+      "category": null
+    },
+    {
+      "ref": "7",
+      "summary": "Attorney General complaint intake location",
+      "category": null
+    },
+    {
+      "ref": "8",
+      "summary": "Rulemaking authorization",
+      "category": null
+    },
+    {
+      "ref": "9",
+      "summary": "Effective date",
+      "category": null
+    }
+  ],
+  "warnings": [
+    "candidate 0 rejected: status: enacted, but the effective date is stated only in relative or conditional terms; it must be resolved deterministically before a status can be assigned; pydantic: normalized record does not match RuleRecord; official schema: normalized record is invalid",
+    "candidate 1 rejected: status: enacted, but the effective date is stated only in relative or conditional terms; it must be resolved deterministically before a status can be assigned; pydantic: normalized record does not match RuleRecord; official schema: normalized record is invalid",
+    "candidate 2 rejected: status: enacted, but the effective date is stated only in relative or conditional terms; it must be resolved deterministically before a status can be assigned; pydantic: normalized record does not match RuleRecord; official schema: normalized record is invalid",
+    "candidate 3 rejected: status: enacted, but the effective date is stated only in relative or conditional terms; it must be resolved deterministically before a status can be assigned; pydantic: normalized record does not match RuleRecord; official schema: normalized record is invalid",
+    "candidate 4 rejected: status: enacted, but the effective date is stated only in relative or conditional terms; it must be resolved deterministically before a status can be assigned; pydantic: normalized record does not match RuleRecord; official schema: normalized record is invalid",
+    "review: provisions marked in scope but cited by no accepted record: ['4.a', '4.b', '4.c', '4.d', '4.e']"
+  ],
+  "errors": [],
+  "raw_response_text": "{\n  \"provisions\": [\n    {\n      \"ref\": \"1\",\n      \"summary\": \"Short title\",\n      \"category\": null\n    },\n    {\n      \"ref\": \"2\",\n      \"summary\": \"Legislative findings\",\n      \"category\": null\n    },\n    {\n      \"ref\": \"3\",\n      \"summary\": \"Definitions\",\n      \"category\": null\n    },\n    {\n      \"ref\": \"4.a\",\n      \"summary\": \"Prohibits rental property owners from using coordinator services\",\n      \"category\": \"algorithmic_rent_setting\"\n    },\n    {\n      \"ref\": \"4.b\",\n      \"summary\": \"Prohibits coordinators from facilitating anticompetitive agreements\",\n      \"category\": \"algorithmic_rent_setting\"\n    },\n    {\n      \"ref\": \"4.c\",\n      \"summary\": \"Prohibits persons from parallel pricing coordination\",\n      \"category\": \"algorithmic_rent_setting\"\n    },\n    {\n      \"ref\": \"4.d\",\n      \"summary\": \"Prohibits coordinator agents or subcontractors from parallel pricing coordination\",\n      \"category\": \"algorithmic_rent_setting\"\n    },\n    {\n      \"ref\": \"4.e\",\n      \"summary\": \"Prohibits any person from performing a coordinating function\",\n      \"category\": \"algorithmic_rent_setting\"\n    },\n    {\n      \"ref\": \"5\",\n      \"summary\": \"Construction with New Jersey Antitrust Act remedies\",\n      \"category\": null\n    },\n    {\n      \"ref\": \"6.a\",\n      \"summary\": \"Construction as in addition to New Jersey Antitrust Act\",\n      \"category\": null\n    },\n    {\n      \"ref\": \"6.b\",\n      \"summary\": \"Prohibition on conflicting municipal ordinances\",\n      \"category\": null\n    },\n    {\n      \"ref\": \"7\",\n      \"summary\": \"Attorney General complaint intake location\",\n      \"category\": null\n    },\n    {\n      \"ref\": \"8\",\n      \"summary\": \"Rulemaking authorization\",\n      \"category\": null\n    },\n    {\n      \"ref\": \"9\",\n      \"summary\": \"Effective date\",\n      \"category\": null\n    }\n  ],\n  \"rules\": [\n    {\n      \"category\": \"algorithmic_rent_setting\",\n      \"title\": \"FAIR Act - Prohibition on Property Owners Using Coordinator Services\",\n      \"requirement\": \"It is unlawful and a violation of the New Jersey Antitrust Act for a rental property owner, or any agent, representative, or subcontractor thereof, to receive, subscribe to, contract for, or otherwise exchange any form of consideration in return for the use of, the services of a coordinator.\",\n      \"key_value\": null,\n      \"coverage_conditions\": \"Applies to rental property owners (persons that own, directly or indirectly, one or more rental residential dwelling units) or any agent, representative, or subcontractor thereof.\",\n      \"exemptions\": \"Residential dwelling units exclude inpatient medical care, licensed long-term care, or detention or correctional facilities. Coordinators exclude government entities setting or limiting rents or sale prices through affordability controls.\",\n      \"interaction\": \"Provides that violations constitute a violation of the New Jersey Antitrust Act, P.L.1970, c.73 (C.56:9-1 et seq.). Section 5 provides that the act does not limit the application of sections 6 through 17 of P.L.1970, c.73. Section 6(a) states the act is in addition to the New Jersey Antitrust Act. Section 6(b) prohibits municipalities from enacting conflicting ordinances.\",\n      \"enactment_status\": \"enacted\",\n      \"effective_date\": null,\n      \"effective_date_evidence\": \"This act shall take effect on the first day of the twelfth month next following the date of enactment.\",\n      \"citation\": \"P.L. 2026, c. 43, § 4(a)\",\n      \"quoted_span\": \"4.    It\\nshall be unlawful and a violation of the “New Jersey Antitrust Act,” P.L.1970,\\nc.73 (C.56:9-1 et seq.) for:\\na.     a rental property owner, or any agent,\\nrepresentative, or subcontractor thereof, to receive, subscribe to, contract\\nfor, or otherwise exchange any form of consideration in return for the use of,\\nthe services of a coordinator;\",\n      \"confidence\": 0.95,\n      \"conflict_note\": null,\n      \"version_note\": null,\n      \"version_evidence\": null\n    },\n    {\n      \"category\": \"algorithmic_rent_setting\",\n      \"title\": \"FAIR Act - Prohibition on Coordinators Facilitating Anticompetitive Agreements\",\n      \"requirement\": \"A coordinator is prohibited from facilitating a tacit or express agreement among rental property owners that restricts competition with respect to residential dwelling units, including by performing a coordinating function.\",\n      \"key_value\": null,\n      \"coverage_conditions\": \"Applies to coordinators operating algorithmic revenue management software or an algorithmic device that performs a coordinating function for any rental property owner.\",\n      \"exemptions\": \"Excludes government entities setting or limiting rents or sale prices through affordability controls in accordance with law. Coordinating function excludes research/testing not used in setting lease terms, free public rent estimates, qualifying brokerage databases, and government affordability controls.\",\n      \"interaction\": \"Governed by the introductory clause of Section 4 establishing violations as violations of the New Jersey Antitrust Act, P.L.1970, c.73 (C.56:9-1 et seq.). Section 6(b) prohibits municipalities from enacting conflicting ordinances.\",\n      \"enactment_status\": \"enacted\",\n      \"effective_date\": null,\n      \"effective_date_evidence\": \"This act shall take effect on the first day of the twelfth month next following the date of enactment.\",\n      \"citation\": \"P.L. 2026, c. 43, § 4(b)\",\n      \"quoted_span\": \"b.    a coordinator to facilitate a tacit or express\\nagreement among rental property owners that restricts competition with respect\\nto residential dwelling units, including by performing a coordinating\\nfunction;\",\n      \"confidence\": 0.85,\n      \"conflict_note\": null,\n      \"version_note\": null,\n      \"version_evidence\": null\n    },\n    {\n      \"category\": \"algorithmic_rent_setting\",\n      \"title\": \"FAIR Act - Prohibition on Parallel Pricing Coordination\",\n      \"requirement\": \"Two or more persons are prohibited from engaging in or otherwise facilitating parallel pricing coordination.\",\n      \"key_value\": null,\n      \"coverage_conditions\": \"Applies to two or more persons.\",\n      \"exemptions\": \"Pricing agreements required in accordance with affordability controls are excluded from parallel pricing coordination.\",\n      \"interaction\": \"Governed by the introductory clause of Section 4 establishing violations as violations of the New Jersey Antitrust Act, P.L.1970, c.73 (C.56:9-1 et seq.). Section 6(b) prohibits municipalities from enacting conflicting ordinances.\",\n      \"enactment_status\": \"enacted\",\n      \"effective_date\": null,\n      \"effective_date_evidence\": \"This act shall take effect on the first day of the twelfth month next following the date of enactment.\",\n      \"citation\": \"P.L. 2026, c. 43, § 4(c)\",\n      \"quoted_span\": \"c.     two or more persons to engage in\\n1\\nor\\notherwise facilitate\\n1\\nparallel pricing coordination;\",\n      \"confidence\": 0.85,\n      \"conflict_note\": null,\n      \"version_note\": null,\n      \"version_evidence\": null\n    },\n    {\n      \"category\": \"algorithmic_rent_setting\",\n      \"title\": \"FAIR Act - Prohibition on Coordinator Agents Engaging in Parallel Pricing Coordination\",\n      \"requirement\": \"Any agent or representative of a coordinator or subcontractor thereof is prohibited from engaging in parallel pricing coordination.\",\n      \"key_value\": null,\n      \"coverage_conditions\": \"Applies to any agent, representative, or subcontractor of a coordinator.\",\n      \"exemptions\": \"Agreements required to be made in accordance with affordability controls are excluded.\",\n      \"interaction\": \"Governed by the introductory clause of Section 4 establishing violations as violations of the New Jersey Antitrust Act, P.L.1970, c.73 (C.56:9-1 et seq.). Section 6(b) prohibits municipalities from enacting conflicting ordinances.\",\n      \"enactment_status\": \"enacted\",\n      \"effective_date\": null,\n      \"effective_date_evidence\": \"This act shall take effect on the first day of the twelfth month next following the date of enactment.\",\n      \"citation\": \"P.L. 2026, c. 43, § 4(d)\",\n      \"quoted_span\": \"d.    any agent or representative of a coordinator or\\nsubcontractor thereof to engage in parallel pricing coordination; or\",\n      \"confidence\": 0.85,\n      \"conflict_note\": null,\n      \"version_note\": null,\n      \"version_evidence\": null\n    },\n    {\n      \"category\": \"algorithmic_rent_setting\",\n      \"title\": \"FAIR Act - Prohibition on Performing a Coordinating Function\",\n      \"requirement\": \"Any person is prohibited from performing a coordinating function.\",\n      \"key_value\": null,\n      \"coverage_conditions\": \"Applies to any person.\",\n      \"exemptions\": \"Coordinating function excludes research/testing not used in setting lease terms, free public rent estimates, qualifying brokerage databases, and government affordability controls.\",\n      \"interaction\": \"Governed by the introductory clause of Section 4 establishing violations as violations of the New Jersey Antitrust Act, P.L.1970, c.73 (C.56:9-1 et seq.). Section 6(b) prohibits municipalities from enacting conflicting ordinances.\",\n      \"enactment_status\": \"enacted\",\n      \"effective_date\": null,\n      \"effective_date_evidence\": \"This act shall take effect on the first day of the twelfth month next following the date of enactment.\",\n      \"citation\": \"P.L. 2026, c. 43, § 4(e)\",\n      \"quoted_span\": \"e.     any person to perform a coordinating function.\",\n      \"confidence\": 0.85,\n      \"conflict_note\": null,\n      \"version_note\": null,\n      \"version_evidence\": null\n    }\n  ]\n}"
+}

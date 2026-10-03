@@ -91,7 +91,7 @@ def test_key_changes_with_source_content(d052):
 
 def test_key_changes_with_prompt_version(d052, monkeypatch):
     before = extractor.prepare_request(d052, "gemini", "m1").key
-    monkeypatch.setattr(extractor, "EXTRACTION_PROMPT_VERSION", "v2")
+    monkeypatch.setattr(extractor, "EXTRACTION_PROMPT_VERSION", extractor.EXTRACTION_PROMPT_VERSION + "-changed")
     assert extractor.prepare_request(d052, "gemini", "m1").key != before
 
 

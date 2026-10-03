@@ -106,6 +106,8 @@ def make_candidate(**overrides: Any) -> dict[str, Any]:
         "quoted_span": D052_DEPOSIT_SPAN,
         "confidence": 0.9,
         "conflict_note": None,
+        "version_note": None,
+        "version_evidence": None,
     }
     rule.update(overrides)
     return rule

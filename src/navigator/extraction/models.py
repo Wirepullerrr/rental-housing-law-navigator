@@ -49,13 +49,26 @@ class ExtractedRule(BaseModel):
     effective_date_evidence: str | None = Field(description="Verbatim text stating when the provision takes effect.")
     citation: str = Field(min_length=1, description="Official citation as identified in the document.")
     quoted_span: str = Field(min_length=1, description="Verbatim, contiguous text copied from the document.")
-    confidence: float = Field(ge=0, le=1, description="Confidence that the record faithfully reflects the quoted text.")
-    conflict_note: str | None = Field(description="Conflicting/superseded versions or ambiguity shown in the text.")
+    confidence: float = Field(ge=0, le=1, description="Genuine uncertainty that the quote fully supports the record.")
+    conflict_note: str | None = Field(description="Only a genuine simultaneous conflict or ambiguity; never version history.")
+    version_note: str | None = Field(description="Amendment/version history of this provision shown in the text.")
+    version_evidence: str | None = Field(description="Verbatim text of the version or amendment annotation.")
+
+
+class ProvisionNote(BaseModel):
+    """One entry of the model's provision inventory (audit only; never published)."""
+
+    model_config = ConfigDict(extra="forbid", strict=True)
+
+    ref: str = Field(min_length=1, description="Provision reference as shown in the document, e.g. '(2)(b)'.")
+    summary: str = Field(description="A few words on what the provision does.")
+    category: Category | None = Field(description="Official category if in scope, else null.")
 
 
 class ExtractionResponse(BaseModel):
     model_config = ConfigDict(extra="forbid", strict=True)
 
+    provisions: list[ProvisionNote]
     rules: list[ExtractedRule]
 
 
@@ -154,6 +167,7 @@ class CandidateResult(BaseModel):
     schema_errors: list[str] = Field(default_factory=list)
     citation: CitationCheck | None = None
     effective_date_evidence: CitationCheck | None = None
+    version_evidence: CitationCheck | None = None
     status_derivation: str | None = None
     warnings: list[str] = Field(default_factory=list)
     rule: dict[str, Any] | None = None  # normalized record (kept for review even if rejected)
@@ -180,6 +194,7 @@ class ExtractionRun(BaseModel):
     accepted_count: int = 0
     rules: list[dict[str, Any]] = Field(default_factory=list)
     candidates: list[CandidateResult] = Field(default_factory=list)
+    provision_inventory: list[dict[str, Any]] = Field(default_factory=list)
     warnings: list[str] = Field(default_factory=list)
     errors: list[str] = Field(default_factory=list)
     raw_response_text: str = ""
