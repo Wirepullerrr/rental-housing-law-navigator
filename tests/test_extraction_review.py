@@ -13,9 +13,9 @@ from navigator.extraction.review import uncovered_provisions, unsupported_figure
 
 def test_generation_schema_requests_inventory_before_rules():
     schema = generation_json_schema()
-    assert list(schema["properties"]) == ["provisions", "rules"]  # decoded in this order
+    assert list(schema["properties"]) == ["provisions", "global_scope", "rules"]  # decoded in this order
     rule = schema["properties"]["rules"]["items"]
-    assert {"version_note", "version_evidence"} <= set(rule["required"])
+    assert {"version_note", "version_evidence", "operative_conditions", "scope_carve_outs"} <= set(rule["required"])
 
 
 # ---------------------------------------------------------- temporal versions
@@ -70,17 +70,6 @@ def test_unsupported_figure_warns_but_does_not_reject(run_fake):
 
 
 # ------------------------------------------------------- run-level review
-
-CATEGORIES = ["security_deposits", "rent_increase_limits", "just_cause_eviction"]
-
-
-@pytest.mark.parametrize("confidences, flagged", [([0.95, 0.95, 0.95], True), ([0.9, 0.7, 0.8], False)])
-def test_uniform_confidence_is_flagged(run_fake, confidences, flagged):
-    rules = [make_candidate(category=cat, confidence=conf) for cat, conf in zip(CATEGORIES, confidences)]
-    run, _ = run_fake({"rules": rules})
-    assert run.accepted_count == 3
-    assert any("carries no signal" in w for w in run.warnings) is flagged
-
 
 def test_inventory_is_recorded_and_uncited_in_scope_provisions_are_flagged(run_fake):
     provisions = [{"ref": "(1)(b)", "summary": "upfront payment cap", "category": "security_deposits"},

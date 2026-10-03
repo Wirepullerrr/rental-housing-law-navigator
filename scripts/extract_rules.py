@@ -24,7 +24,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
 from navigator.extraction.cache import ResponseCache  # noqa: E402
 from navigator.extraction.config import (CACHE_DIR, DEFAULT_AS_OF, DEFAULT_GEMINI_MODEL,  # noqa: E402
-                                         PROVIDER_GEMINI, artifact_path)
+                                         GENERATION_SETTINGS, PROVIDER_GEMINI, THINKING_LEVELS, artifact_path)
 from navigator.extraction.extractor import (CacheMiss, SourceNotAvailable, extract_document,  # noqa: E402
                                             load_source, write_artifact)
 from navigator.extraction.models import ExtractionRun  # noqa: E402
@@ -34,8 +34,15 @@ from navigator.extraction.provider import MissingCredentialsError, ProviderError
 def print_summary(run: ExtractionRun, out: Path) -> None:
     print("Rule extraction (Not legal advice)")
     print(f"  document   : {run.source.doc_id}  {run.source.jurisdiction}  {run.source.url}")
-    print(f"  provider   : {run.provider} / {run.model}   prompt {run.prompt_version}   as_of {run.as_of}")
+    print(f"  provider   : {run.provider} / {run.model}   prompt {run.prompt_version}   as_of {run.as_of}   "
+          f"thinking {run.generation_settings.get('thinking_level')}")
     print(f"  cache      : {'HIT' if run.cache_hit else 'MISS (provider called)'}  {run.cache_key[:16]}")
+    usage = run.provider_metadata.get("usage") or {}
+    if usage:
+        print(f"  tokens     : in {usage.get('input_tokens')}  out {usage.get('output_tokens')}  "
+              f"thinking {usage.get('thinking_tokens')}  total {usage.get('total_tokens')}")
+    print(f"  source view: {run.source_view.get('artifacts_removed', 0)} page artifacts marked   "
+          f"global scope: {sum(g['propagated'] for g in run.global_scope)}/{len(run.global_scope)} verified")
     print(f"  candidates : {run.candidate_count}   accepted: {run.accepted_count}")
     for c in run.candidates:
         rule = c.rule or {}
@@ -57,6 +64,8 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--live", action="store_true", help="allow a real provider call on cache miss")
     parser.add_argument("--force", action="store_true", help="bypass the cache (requires --live)")
     parser.add_argument("--model", default=DEFAULT_GEMINI_MODEL, help=f"Gemini model (default {DEFAULT_GEMINI_MODEL})")
+    parser.add_argument("--thinking-level", choices=THINKING_LEVELS, default=GENERATION_SETTINGS["thinking_level"],
+                        help="model thinking level (part of the cache identity)")
     parser.add_argument("--as-of", type=date.fromisoformat, default=DEFAULT_AS_OF, help="query date for status")
     parser.add_argument("--out", type=Path, help="audit artifact path")
     parser.add_argument("--cache-dir", type=Path, default=CACHE_DIR)
@@ -84,8 +93,10 @@ def main(argv: list[str] | None = None) -> int:
             return 2
 
     try:
+        settings = {**GENERATION_SETTINGS, "thinking_level": args.thinking_level}
         run = extract_document(source, provider_name=PROVIDER_GEMINI, model=args.model, provider=provider,
-                               cache=ResponseCache(args.cache_dir), as_of=args.as_of, force=args.force)
+                               cache=ResponseCache(args.cache_dir), as_of=args.as_of, force=args.force,
+                               settings=settings)
     except CacheMiss as exc:
         print(f"error: {exc}. Re-run with --live to call the provider.", file=sys.stderr)
         return 2

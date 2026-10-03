@@ -4,8 +4,10 @@ Trust boundary:
   from the repository  team_rule_id (ids.py), jurisdiction, level, source_doc_id,
                        source_url, overrides ([] at single-document extraction)
   derived in Python    status, from the model's enactment_status and
-                       effective_date and the query date
+                       effective_date and the query date; document-level scope
+                       conditions propagated to each rule they govern
   from the model       the semantic fields (category, title, requirement, ...)
+  never used           model confidence: dropped, published as null
 """
 
 from __future__ import annotations
@@ -16,11 +18,13 @@ from datetime import date
 from typing import Any
 
 from navigator.extraction.ids import make_team_rule_id
-from navigator.extraction.models import CitationCheck, ExtractedRule, SourceMeta, Status
+from navigator.extraction.models import CitationCheck, ExtractedRule, OperativeCondition, SourceMeta, Status
 
 # Fields the model must not supply. If present they are dropped and reported.
 TRUSTED_FIELDS = ("team_rule_id", "jurisdiction", "level", "status", "source_doc_id", "source_url",
                   "overrides", "retrieved_at", "conflict_flag")
+# Model output that is never used for acceptance or applicability (kept only in `raw`).
+IGNORED_FIELDS = ("confidence",)
 
 
 def level_for(jurisdiction: str) -> str:
@@ -40,7 +44,25 @@ def split_trusted(raw: dict[str, Any], meta: SourceMeta) -> tuple[dict[str, Any]
         expected = trusted_values.get(name)
         detail = f" (model said {value!r}, repository says {expected!r})" if expected is not None and value != expected else ""
         warnings.append(f"model supplied trusted field {name!r}; ignored, repository value used{detail}")
+    for name in IGNORED_FIELDS:
+        if semantic.pop(name, None) is not None:
+            warnings.append(f"model supplied {name!r}; ignored (never used for acceptance or applicability)")
     return semantic, warnings
+
+
+def _scope_text(statement: str, citation: str, governs: str | None) -> str:
+    return f"{statement} [{citation}; {'document-wide' if governs is None else 'applies to ' + governs}]"
+
+
+def compose_scope(rule_text: str | None, propagated: list[dict[str, Any]], kind: str,
+                  operative: list[OperativeCondition] = ()) -> str | None:
+    """Rule-specific text first, then propagated document-level conditions of `kind`,
+    then unresolved operative conditions. Exact duplicates are dropped."""
+    parts = [rule_text] if rule_text else []
+    parts += [_scope_text(p["statement"], p["citation"], p["governs"]) for p in propagated if p["kind"] == kind]
+    parts += [f"Operative condition (unresolved; applicability may be unknown): {c.statement}" for c in operative]
+    unique = list(dict.fromkeys(p.strip() for p in parts if p and p.strip()))
+    return "; ".join(unique) or None
 
 
 def _date_bounds(partial: str) -> tuple[date, date]:
@@ -75,13 +97,16 @@ def derive_status(enactment_status: str, effective_date: str | None, has_date_ev
     return None, f"effective_date {effective_date!r} is too imprecise to compare with as_of {as_of}"
 
 
-def build_record(rule: ExtractedRule, meta: SourceMeta, citation: CitationCheck,
-                 status: Status | None) -> dict[str, Any]:
+def build_record(rule: ExtractedRule, meta: SourceMeta, citation: CitationCheck, status: Status | None,
+                 propagated: list[dict[str, Any]] = (),
+                 operative: list[OperativeCondition] = ()) -> dict[str, Any]:
     """Assemble a record in official-schema shape.
 
     For a normalized_match, quoted_span is the exact source text located by the
     match (citation.source_span), so the published span is a true substring of
     the source. The model's original span stays in the audit record.
+    `propagated` are verified document-level scope conditions governing this rule;
+    `operative` are verified operative conditions (status is not changed by them).
     """
     span = citation.source_span if citation.status != "failed" and citation.source_span else rule.quoted_span
     return {
@@ -94,8 +119,9 @@ def build_record(rule: ExtractedRule, meta: SourceMeta, citation: CitationCheck,
         "title": rule.title,
         "requirement": rule.requirement,
         "key_value": rule.key_value,
-        "coverage_conditions": rule.coverage_conditions,
-        "exemptions": rule.exemptions,
+        "coverage_conditions": compose_scope(rule.coverage_conditions, list(propagated), "coverage_condition",
+                                             list(operative)),
+        "exemptions": compose_scope(rule.exemptions, list(propagated), "exemption"),
         "overrides": [],
         "interaction": rule.interaction,
         "effective_date": rule.effective_date,
@@ -103,7 +129,7 @@ def build_record(rule: ExtractedRule, meta: SourceMeta, citation: CitationCheck,
         "source_doc_id": meta.doc_id,
         "source_url": meta.url,
         "quoted_span": span,
-        "confidence": rule.confidence,
+        "confidence": None,  # model self-confidence is not used (see IGNORED_FIELDS)
         "conflict_flag": rule.conflict_note is not None,
         "conflict_note": rule.conflict_note,
     }

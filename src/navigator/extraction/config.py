@@ -13,11 +13,13 @@ PROVIDER_GEMINI = "gemini"
 # unavailable the live run fails and says so. Override with --model.
 DEFAULT_GEMINI_MODEL = "gemini-3.5-flash"
 
-# Generation settings sent to the provider and recorded in the cache key.
+# Generation settings sent to the provider and recorded in the cache key and audit.
 # Temperature is left at the model default (Google advises against lowering it
 # for Gemini 3 models); reproducibility comes from the content-addressed cache,
-# with a fixed seed as a best-effort extra.
-GENERATION_SETTINGS: dict = {"temperature": None, "seed": 20261001}
+# with a fixed seed as a best-effort extra. Thinking tokens are billed as output,
+# so the thinking level is explicit (override with --thinking-level).
+THINKING_LEVELS = ("minimal", "low", "medium", "high")
+GENERATION_SETTINGS: dict = {"temperature": None, "seed": 20261001, "thinking_level": "low"}
 
 # README section 1: default query date. Used only to derive `status`.
 DEFAULT_AS_OF = date(2026, 10, 1)

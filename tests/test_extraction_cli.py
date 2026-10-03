@@ -68,6 +68,7 @@ def test_offline_rerun_from_cache_writes_artifact(paths, d052, capsys):
     assert cli.main(["--doc-id", "D052", *args]) == 0
     artifact = json.loads((tmp / "out" / "artifact.json").read_text(encoding="utf-8"))
     assert artifact["cache_hit"] is True and artifact["accepted_count"] == 1
+    assert artifact["generation_settings"]["thinking_level"] == "low"
     assert "HIT" in capsys.readouterr().out
 
 

@@ -131,7 +131,8 @@ class GeminiProvider:
     def build_request(model: str, system_instruction: str, prompt: str,
                       response_json_schema: dict[str, Any], settings: dict[str, Any]) -> dict[str, Any]:
         """Keyword arguments for interactions.create: one structured-output model call."""
-        generation_config = {k: settings[k] for k in ("temperature", "seed") if settings.get(k) is not None}
+        generation_config = {k: settings[k] for k in ("temperature", "seed", "thinking_level")
+                             if settings.get(k) is not None}
         request: dict[str, Any] = {
             "model": model,
             "input": prompt,

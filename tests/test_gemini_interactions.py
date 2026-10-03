@@ -115,6 +115,12 @@ def test_sends_one_structured_interactions_request(api):
     assert KEY not in json.dumps(result.metadata)
 
 
+def test_thinking_level_is_sent_in_generation_config(api):
+    api.script = [ok()]
+    generate(api, settings={"temperature": None, "seed": 7, "thinking_level": "low"})
+    assert api.body()["generation_config"] == {"seed": 7, "thinking_level": "low"}
+
+
 def test_sdk_owned_http_client_survives_garbage_collection(monkeypatch):
     """Regression (live run 2026-10-03): with an SDK-owned httpx client, a provider that
     does not keep its genai.Client alive fails every request with "client has been closed".

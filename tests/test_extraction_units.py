@@ -159,8 +159,9 @@ def test_generation_schema_is_self_contained():
     assert set(rule["required"]) == set(ExtractedRule.model_fields)
 
 
-@pytest.mark.parametrize("override", [{"category": "rent_control"}, {"confidence": 1.5}, {"confidence": "0.9"},
-                                      {"effective_date": "Aug 1, 2025"}, {"unexpected": "field"}])
+@pytest.mark.parametrize("override", [{"category": "rent_control"}, {"effective_date": "Aug 1, 2025"},
+                                      {"operative_conditions": [{"statement": "no evidence"}]},
+                                      {"scope_carve_outs": "none"}, {"unexpected": "field"}])
 def test_extracted_rule_rejects_invalid_values(override):
     with pytest.raises(ValidationError):
         ExtractedRule.model_validate(make_candidate(**override))

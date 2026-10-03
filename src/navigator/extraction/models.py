@@ -32,6 +32,39 @@ PartialDate = Annotated[str, StringConstraints(pattern=r"^\d{4}(-\d{2}(-\d{2})?)
 
 # ------------------------------------------------------------ generation layer
 
+class OperativeCondition(BaseModel):
+    """A non-calendar trigger on which a rule's applicability depends (e.g. an agency
+    action or a system becoming available). Not an effective date, not an exemption."""
+
+    model_config = ConfigDict(extra="forbid", strict=True)
+
+    statement: str = Field(min_length=1, description="The trigger in plain language.")
+    evidence: str = Field(min_length=1, description="Verbatim text stating the trigger.")
+
+
+class ScopeCarveOut(BaseModel):
+    """The source explicitly excludes this rule from a document-level scope condition."""
+
+    model_config = ConfigDict(extra="forbid", strict=True)
+
+    scope_id: str = Field(min_length=1, description="id of the global_scope entry this rule is not subject to.")
+    evidence: str = Field(min_length=1, description="Verbatim text showing the exclusion.")
+
+
+class ScopeCondition(BaseModel):
+    """A document- or division-level exemption or coverage condition, extracted once
+    and propagated deterministically to every rule it governs."""
+
+    model_config = ConfigDict(extra="forbid", strict=True)
+
+    id: str = Field(min_length=1, description="Short id, e.g. 'S1'.")
+    kind: Literal["exemption", "coverage_condition"]
+    statement: str = Field(min_length=1, description="The condition in plain language.")
+    citation: str = Field(min_length=1, description="Official citation of the provision stating it.")
+    governs: str | None = Field(description="Provision ref it governs; null if it governs the whole document.")
+    evidence: str = Field(min_length=1, description="Verbatim text stating the condition.")
+
+
 class ExtractedRule(BaseModel):
     """One rule as returned by the model, before trusted metadata is added."""
 
@@ -40,16 +73,17 @@ class ExtractedRule(BaseModel):
     category: Category
     title: str = Field(min_length=1, description="Short name of the law or provision.")
     requirement: str = Field(min_length=1, description="One or two plain-language sentences stating the rule.")
-    key_value: str | None = Field(description="Headline number or formula, if the text states one.")
-    coverage_conditions: str | None = Field(description="Who/what is covered, as stated in the text.")
-    exemptions: str | None = Field(description="Exemptions, as stated in the text.")
-    interaction: str | None = Field(description="What the text explicitly says about other laws.")
+    key_value: str | None = Field(description="Headline number or formula, if the quote states one.")
+    coverage_conditions: str | None = Field(description="Coverage specific to this rule only (not document-wide).")
+    exemptions: str | None = Field(description="Exemptions specific to this rule only (not document-wide).")
+    scope_carve_outs: list[ScopeCarveOut]
+    operative_conditions: list[OperativeCondition]
+    interaction: str | None = Field(description="Stated relationship with another legal regime; not a mere citation.")
     enactment_status: EnactmentStatus = Field(description="enacted law, pending bill/proposal, or failed proposal.")
     effective_date: PartialDate | None = Field(description="Only an explicitly stated calendar date: YYYY-MM-DD, YYYY-MM or YYYY.")
-    effective_date_evidence: str | None = Field(description="Verbatim text stating when the provision takes effect.")
+    effective_date_evidence: str | None = Field(description="Verbatim text stating when the law/obligation takes effect.")
     citation: str = Field(min_length=1, description="Official citation as identified in the document.")
-    quoted_span: str = Field(min_length=1, description="Verbatim, contiguous text copied from the document.")
-    confidence: float = Field(ge=0, le=1, description="Genuine uncertainty that the quote fully supports the record.")
+    quoted_span: str = Field(min_length=1, description="Verbatim, contiguous text from ONE segment of the document.")
     conflict_note: str | None = Field(description="Only a genuine simultaneous conflict or ambiguity; never version history.")
     version_note: str | None = Field(description="Amendment/version history of this provision shown in the text.")
     version_evidence: str | None = Field(description="Verbatim text of the version or amendment annotation.")
@@ -69,6 +103,7 @@ class ExtractionResponse(BaseModel):
     model_config = ConfigDict(extra="forbid", strict=True)
 
     provisions: list[ProvisionNote]
+    global_scope: list[ScopeCondition]
     rules: list[ExtractedRule]
 
 
@@ -168,6 +203,8 @@ class CandidateResult(BaseModel):
     citation: CitationCheck | None = None
     effective_date_evidence: CitationCheck | None = None
     version_evidence: CitationCheck | None = None
+    operative_conditions: list[dict[str, Any]] = Field(default_factory=list)  # statement + verified evidence
+    propagated_scope: list[dict[str, Any]] = Field(default_factory=list)      # global conditions applied/carved out
     status_derivation: str | None = None
     warnings: list[str] = Field(default_factory=list)
     rule: dict[str, Any] | None = None  # normalized record (kept for review even if rejected)
@@ -195,6 +232,8 @@ class ExtractionRun(BaseModel):
     rules: list[dict[str, Any]] = Field(default_factory=list)
     candidates: list[CandidateResult] = Field(default_factory=list)
     provision_inventory: list[dict[str, Any]] = Field(default_factory=list)
+    global_scope: list[dict[str, Any]] = Field(default_factory=list)  # each with its evidence check
+    source_view: dict[str, Any] = Field(default_factory=dict)         # removed page artifacts, verbatim
     warnings: list[str] = Field(default_factory=list)
     errors: list[str] = Field(default_factory=list)
     raw_response_text: str = ""

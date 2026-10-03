@@ -3,14 +3,16 @@
 *Not legal advice.* This is an automated extraction pipeline for a research prototype.
 
 ```
-supplied corpus text (manifest-verified)
+supplied corpus text (manifest-verified; raw text never modified)
+  -> canonical view (source_view.py): page furniture replaced by [[PAGE BREAK]] markers
   -> versioned prompt (prompt.py)
   -> content-addressed cache, or a live provider call (gemini.py, behind provider.py)
-  -> provision inventory (audit only)
+  -> provision inventory (audit only); global_scope conditions (evidence verified)
   -> per candidate:
        Pydantic ExtractedRule            the model's semantic fields only
-       citation check                    quoted_span, date evidence and version evidence must be in the source
+       citation check (RAW text)         quoted_span and every evidence field must be in the raw source
        status derivation                 deterministic, from enactment_status + effective_date + as_of
+       scope propagation                 verified document-level conditions applied by citation, never similarity
        trusted metadata + team_rule_id   from the repository, not from the model
        Pydantic RuleRecord               the internal mirror of the official schema
        official JSON Schema              schema/rule_record.schema.json
@@ -20,26 +22,58 @@ supplied corpus text (manifest-verified)
 
 A candidate is **accepted only if every stage passes**. Failures are recorded per stage (`pydantic`, `citation`, `effective_date`, `status`, `official schema`, `duplicate`) and are never retried or repaired. Review checks add warnings and never change acceptance.
 
-## Prompt v2 contract
+## Prompt v3 contract
 
-The prompt (`prompt.py`, `EXTRACTION_PROMPT_VERSION = "v2"`) works in two steps. The model first fills `provisions`, an inventory of every operative provision with its official category or `null`. It then emits one record per distinct obligation, prohibition, entitlement, remedy, procedural requirement or monetary limit in scope. Both fields are generated in that order.
+The prompt (`prompt.py`, `EXTRACTION_PROMPT_VERSION = "v3"`) works in three generated steps, in this order:
 
-- **Exemptions** are attached to the `exemptions` field of each record they limit; they are not records of their own.
-- **Claims and quotes:** every assertion in `requirement` and `key_value` must be supported by that record's `quoted_span`. If one quote is not enough, the model takes a longer quote or splits the record.
-- **Temporal versions:** amendment history goes in `version_note`, with the verbatim annotation in `version_evidence`. It never goes in `conflict_note`. An amendment date applies only to the amended wording and is not the obligation's `effective_date`.
-- **`interaction`** is only for relationships with other legal regimes (preemption, override, "in addition to"). Internal cross-references do not count.
-- **`conflict_note`** is only for genuine conflicts or ambiguities that apply at the same time.
-- **`confidence`** is per record and must not be a single default value.
+1. **`provisions`:** an inventory of every operative provision with its official category or `null` (audit only).
+2. **`global_scope`:** every exemption or coverage condition that governs a whole document, division or section. Each entry has an id, kind, statement, citation, `governs` (a provision ref, or `null` for the whole document) and verbatim `evidence`.
+3. **`rules`:** one record per distinct obligation, prohibition, entitlement, remedy, procedural requirement or monetary limit in scope.
 
-`conflict_flag` is derived from `conflict_note` alone, so version history can never set it. If `version_evidence` is given, it must be found in the source, or the candidate is rejected. If a verified version annotation is dated after `--as-of`, the record is rejected conservatively, because the extracted (latest) wording may not apply yet.
+Contract details:
+
+- A rule's own `coverage_conditions` and `exemptions` hold only conditions specific to that rule. Global conditions are attached by code, not repeated by the model. A rule escapes a global condition only through a `scope_carve_outs` entry with verbatim evidence.
+- **Quotes:** each `quoted_span` must be the shortest verbatim passage that fully supports the record. It must not include or cross a `[[PAGE BREAK]]` marker; if the supporting text runs across one, the model quotes within one segment or splits the record.
+- **Claims and quotes:** every assertion in `requirement` and `key_value` must be supported by the record's own `quoted_span`.
+- **Time has three separate parts:**
+  - **`enactment_status`:** enacted, pending or failed.
+  - **`effective_date`** plus **`effective_date_evidence`:** when the law or obligation takes effect. Formulas relative to enactment are kept as evidence only and are never computed.
+  - **`operative_conditions`:** non-calendar triggers, such as an agency establishing a portal. These are neither an effective date nor an exemption.
+- **Temporal versions:** amendment history goes in `version_note` with verbatim `version_evidence`. It never goes in `conflict_note`, and an amendment date is not the obligation's `effective_date`.
+- **`interaction`:** only a stated relationship with another legal regime (preemption, override, cumulative application, crediting against other law, savings clauses). A mere citation of another statute or section does not count.
+- **`conflict_note`:** only genuine conflicts or ambiguities that apply at the same time.
+- **No model confidence.** The model is not asked for one. If it supplies one anyway, it is dropped with a warning and the published `confidence` is `null`. Acceptance relies on deterministic signals only.
+
+Deterministic consequences:
+
+- `conflict_flag` comes from `conflict_note` alone.
+- All evidence must be found in the raw source; fabricated evidence rejects the candidate. The exception is a scope condition or carve-out without verified evidence: it is simply not propagated, or not honoured, and a warning is recorded.
+- A verified version annotation dated after `--as-of` rejects the record conservatively.
+- An operative condition never changes `status` or `effective_date`. It is published in `coverage_conditions` as "Operative condition (unresolved ...)" and flagged for review, so the rule engine can later return `unknown`.
+- The thinking level (`--thinking-level`, default `low`) is a generation setting, so it is part of the cache key and the audit record.
+
+## Page artifacts (`source_view.py`)
+
+PDF-derived text carries running headers and footers in the middle of legal text. They are detected **structurally**, with no legal or document-specific knowledge. A block is treated as page furniture only when all of the following hold:
+
+- It has at least two lines, each of which repeats in the document once digits are normalized.
+- The same block recurs at least 3 times.
+- Across those occurrences the text is identical except for numbers that strictly increase (a page counter).
+- The occurrences are at least 8 non-blank lines apart.
+
+Matching blocks are replaced by `[[PAGE BREAK]]` in the text the model reads. Each removed block is recorded verbatim with its raw offsets in the audit (`source_view.artifacts`), and every view segment maps back to identical raw text.
+
+Citation verification is unchanged and still runs against the raw text. A quote that includes the marker, or that joins text across a removed artifact, is rejected with a diagnosis; it is never accepted.
+
+Over the 54 local documents, this removes only page furniture, in D001, D014, D043 and D073. Bill-history rows, regulation numbers, repeated titles and phone listings are left untouched.
 
 ## Review checks (`review.py`, warnings only)
 
 - **Figures missing from the quote:** monetary amounts, percentages, durations and calendar dates in `requirement` or `key_value` that are absent from the `quoted_span`. Number words, "per cent" and the drafting style "ten (10) days" are normalized first.
-- **Uniform confidence:** identical confidence on 3 or more accepted records.
-- **Uncited provisions:** provisions the model marked in scope in its inventory that no accepted record cites.
+- **Uncited provisions:** in-scope inventory provisions that no extracted record cites. Refs and citations are compared as token sequences, with ranges such as "(a)-(c)" expanded.
+- **Unresolved operative conditions.**
 
-Not implemented, because it would be brittle or statute-specific: entailment checks for non-numeric claims, keyword detection of version history in `conflict_note`, and validating citation formats. Known false positives: fractions written in words, ordinals ("first month" vs "1 month"), and inventory references written in a different style from the citation.
+Not implemented, because it would be brittle or statute-specific: entailment checks for non-numeric claims, keyword detection of version history in `conflict_note`, and validating citation formats. Known false positives: fractions written in words, and ordinals ("first month" vs "1 month").
 
 ## Trust boundary
 
@@ -50,8 +84,9 @@ Not implemented, because it would be brittle or statute-specific: entailment che
 | `team_rule_id` | `ids.py`, deterministic |
 | `status` | `normalize.derive_status`, deterministic and relative to `--as-of` (default 2026-10-01) |
 | `overrides` | always `[]` at single-document extraction; precedence belongs to the rule engine |
-| `category`, `title`, `requirement`, `key_value`, `coverage_conditions`, `exemptions`, `interaction`, `citation`, `quoted_span`, `confidence`, `conflict_note` | model |
-| `version_note`, `version_evidence`, provision inventory | model; kept in the audit artifact only, not in rule records |
+| `category`, `title`, `requirement`, `key_value`, `coverage_conditions`, `exemptions`, `interaction`, `citation`, `quoted_span`, `conflict_note` | model |
+| `version_note`, `version_evidence`, `operative_conditions`, `scope_carve_outs`, `global_scope`, provision inventory | model; verified and kept in the audit artifact. Global scope and operative conditions are also composed into the published `exemptions` and `coverage_conditions` text |
+| `confidence` | never used; published as `null` |
 
 If the model returns any trusted field, the value is dropped and a warning is recorded. `conflict_flag` is true exactly when the model reports a `conflict_note`.
 
@@ -87,5 +122,4 @@ The key is a SHA-256 over canonical JSON of: source content hash, doc id, provid
 ## Known limitations (to revisit in M3)
 
 - Each document is extracted on its own. Cross-document conflicts, `overrides`, and jurisdiction scope for documents that cover several jurisdictions are not handled yet.
-- `confidence` is the model's own estimate, not a calibrated probability.
 - `citation` text is model-produced and is not yet checked against the source (only `quoted_span` and the date evidence are).
