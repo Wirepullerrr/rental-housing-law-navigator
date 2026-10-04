@@ -33,6 +33,17 @@ _STATE_ZIP_PREFIXES = {
     "NJ": tuple(f"{p:03d}" for p in range(70, 90)),
     "MA": tuple(f"{p:03d}" for p in range(10, 28)),
 }
+
+
+def zip_outside_state(state: str, zip_code: str) -> bool | None:
+    """True if a ZIP is outside its state's USPS prefix range; None if there is no ZIP or the
+    state is not checked."""
+    prefixes = _STATE_ZIP_PREFIXES.get(state)
+    if not zip_code or not prefixes:
+        return None
+    return not zip_code.startswith(prefixes)
+
+
 _JURISDICTION_RE = re.compile(r"^[A-Z]{2}$|^[A-Za-z .'-]+, [A-Z]{2}$")
 
 
@@ -192,8 +203,7 @@ def check_addresses(root: Path, report: Report, covered_states: set[str]) -> set
             bad_units.append(aid)
         if not re.fullmatch(r"[A-Z]{2}", r["state"]):
             bad_state.append(aid)
-        prefixes = _STATE_ZIP_PREFIXES.get(r["state"])
-        if r["zip"] and prefixes and not r["zip"].startswith(prefixes):
+        if zip_outside_state(r["state"], r["zip"]):
             foreign_zip.append(aid)
         ds = by_dataset[r["source_dataset"]]
         ds["rows"] += 1

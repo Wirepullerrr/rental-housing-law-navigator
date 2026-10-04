@@ -1,0 +1,291 @@
+{
+  "about": "M4 manual review of address -> jurisdiction resolution. Overrides are applied by scripts/resolve_jurisdictions.py only if their original_census_evidence still matches and every census_verification query returns exactly one Census candidate inside an incorporated place that maps to the corrected jurisdiction. Notes never change a result. Not legal advice.",
+  "reviewed_on": "2026-10-04",
+  "reviewer": "M4 manual review (Claude Code session), pending confirmation by the project owner",
+  "overrides": [
+    {
+      "address_id": "A0115",
+      "original_census_evidence": {
+        "resolution_status": "unresolved",
+        "match_indicator": "No_Match",
+        "census_place_geoid": null
+      },
+      "corrected_state_jurisdiction": "CA",
+      "corrected_jurisdiction": "San Francisco, CA",
+      "authoritative_reason": "Census evidence. The source street '397 05TH AV' uses a zero-padded ordinal (DataSF formatting) that the Census matcher does not parse. The reviewer query removes only the leading zero ('397 5TH AV'), with the same city and state and no ZIP (none in the source); Census matches it to exactly one address inside San Francisco city (see verification_result).",
+      "census_verification": [
+        {
+          "street": "397 5TH AV",
+          "city": "San Francisco",
+          "state": "CA",
+          "zip": ""
+        }
+      ],
+      "reviewer_note": "Only the zero padding was removed; the suffix 'AV' and every other character are as in the source."
+    },
+    {
+      "address_id": "A0229",
+      "original_census_evidence": {
+        "resolution_status": "unresolved",
+        "match_indicator": "No_Match",
+        "census_place_geoid": null
+      },
+      "corrected_state_jurisdiction": "CA",
+      "corrected_jurisdiction": "San Francisco, CA",
+      "authoritative_reason": "Census evidence. Zero-padded ordinal '03RD' (DataSF formatting). The reviewer query '5164 3RD ST' removes only the leading zero; Census matches it to exactly one address inside San Francisco city (see verification_result).",
+      "census_verification": [
+        {
+          "street": "5164 3RD ST",
+          "city": "San Francisco",
+          "state": "CA",
+          "zip": ""
+        }
+      ],
+      "reviewer_note": "Only the zero padding was removed."
+    },
+    {
+      "address_id": "A0328",
+      "original_census_evidence": {
+        "resolution_status": "unresolved",
+        "match_indicator": "No_Match",
+        "census_place_geoid": null
+      },
+      "corrected_state_jurisdiction": "CA",
+      "corrected_jurisdiction": "San Francisco, CA",
+      "authoritative_reason": "Census evidence. Zero-padded ordinal '08TH' (DataSF formatting). The reviewer query '1845 8TH AV' removes only the leading zero; Census matches it to exactly one address inside San Francisco city (see verification_result).",
+      "census_verification": [
+        {
+          "street": "1845 8TH AV",
+          "city": "San Francisco",
+          "state": "CA",
+          "zip": ""
+        }
+      ],
+      "reviewer_note": "Only the zero padding was removed."
+    },
+    {
+      "address_id": "A0357",
+      "original_census_evidence": {
+        "resolution_status": "unresolved",
+        "match_indicator": "No_Match",
+        "census_place_geoid": null
+      },
+      "corrected_state_jurisdiction": "CA",
+      "corrected_jurisdiction": "San Francisco, CA",
+      "authoritative_reason": "Census evidence. Zero-padded ordinal '07TH' (DataSF formatting). The reviewer query '173 7TH ST' removes only the leading zero; Census matches it to exactly one address inside San Francisco city (see verification_result).",
+      "census_verification": [
+        {
+          "street": "173 7TH ST",
+          "city": "San Francisco",
+          "state": "CA",
+          "zip": ""
+        }
+      ],
+      "reviewer_note": "Only the zero padding was removed."
+    },
+    {
+      "address_id": "A0364",
+      "original_census_evidence": {
+        "resolution_status": "unresolved",
+        "match_indicator": "No_Match",
+        "census_place_geoid": null
+      },
+      "corrected_state_jurisdiction": "CA",
+      "corrected_jurisdiction": "San Francisco, CA",
+      "authoritative_reason": "Census evidence. Zero-padded ordinal '03RD' (DataSF formatting). The reviewer query '125 3RD AV' removes only the leading zero; Census matches it to exactly one address inside San Francisco city (see verification_result).",
+      "census_verification": [
+        {
+          "street": "125 3RD AV",
+          "city": "San Francisco",
+          "state": "CA",
+          "zip": ""
+        }
+      ],
+      "reviewer_note": "Only the zero padding was removed."
+    },
+    {
+      "address_id": "A0484",
+      "original_census_evidence": {
+        "resolution_status": "unresolved",
+        "match_indicator": "No_Match",
+        "census_place_geoid": null
+      },
+      "corrected_state_jurisdiction": "CA",
+      "corrected_jurisdiction": "San Francisco, CA",
+      "authoritative_reason": "Census evidence. Zero-padded ordinal '08TH' (DataSF formatting). The reviewer query '1801 8TH AV' removes only the leading zero; Census matches it to exactly one address inside San Francisco city (see verification_result).",
+      "census_verification": [
+        {
+          "street": "1801 8TH AV",
+          "city": "San Francisco",
+          "state": "CA",
+          "zip": ""
+        }
+      ],
+      "reviewer_note": "Only the zero padding was removed."
+    },
+    {
+      "address_id": "A0168",
+      "original_census_evidence": {
+        "resolution_status": "unresolved",
+        "match_indicator": "No_Match",
+        "census_place_geoid": null
+      },
+      "corrected_state_jurisdiction": "NJ",
+      "corrected_jurisdiction": "Hoboken, NJ",
+      "authoritative_reason": "Census evidence. The source '600 JACKSON/601 HARRISON' names two street frontages of one parcel, which the Census matcher cannot parse as one address. Each frontage, exactly as written in the source (split at '/', nothing added), with the source city, state and ZIP, is matched by Census to exactly one address, and both lie inside Hoboken city (see verification_result).",
+      "census_verification": [
+        {
+          "street": "600 JACKSON",
+          "city": "Hoboken",
+          "state": "NJ",
+          "zip": "07030"
+        },
+        {
+          "street": "601 HARRISON",
+          "city": "Hoboken",
+          "state": "NJ",
+          "zip": "07030"
+        }
+      ],
+      "reviewer_note": "Both frontages agree; no suffix or number was invented."
+    },
+    {
+      "address_id": "A0009",
+      "original_census_evidence": {
+        "resolution_status": "review_required",
+        "match_indicator": "Tie",
+        "census_place_geoid": null,
+        "local_jurisdiction": null
+      },
+      "corrected_state_jurisdiction": "MA",
+      "corrected_jurisdiction": "Cambridge, MA",
+      "authoritative_reason": "Census evidence. Census misread the decimal range '322-322.5' as house number 5, giving two '5 WESTERN AVE' candidates on either side of the Charles River (Boston city and Cambridge city), so no jurisdiction was reported. The reviewer query is the first number of the source's own range, '322 Western Ave', with the source city and state; Census matches it to exactly one address inside Cambridge city (see verification_result). This is the range-endpoint reading that Census applies by itself to the other ranged addresses.",
+      "census_verification": [
+        {
+          "street": "322 Western Ave",
+          "city": "Cambridge",
+          "state": "MA",
+          "zip": ""
+        }
+      ],
+      "reviewer_note": "Western Ave crosses from Cambridge into Boston (Allston); the tied candidates were at the wrong house number, so the disagreement was not real evidence of a Boston location."
+    }
+  ],
+  "notes": {
+    "A0028": {
+      "reported_jurisdiction_supported": true,
+      "note": "Census's single candidate (no Tie) adds the directional: 585 N 5TH ST, Newark. Inside Newark city. Kept review_required because a directional can name a different street."
+    },
+    "A0104": {
+      "reported_jurisdiction_supported": true,
+      "note": "Single candidate 409 N 5TH ST, Newark (directional added; source ZIP 07012 is a non-Newark NJ ZIP). Inside Newark city. Kept review_required (directional)."
+    },
+    "A0343": {
+      "reported_jurisdiction_supported": true,
+      "note": "Matched by fallback C (source ZIP 10997 is out of state) to the single candidate 410 N 5TH ST, Newark. Inside Newark city. Kept review_required (directional)."
+    },
+    "A0127": {
+      "reported_jurisdiction_supported": true,
+      "note": "Single candidate 10029 N SEPULVEDA BLVD (mailing city Mission Hills), inside Los Angeles city. Kept review_required (directional)."
+    },
+    "A0427": {
+      "reported_jurisdiction_supported": true,
+      "note": "Single candidate 7665 W FOUNTAIN AVE (Census side R), inside Los Angeles city. A point about 65-80 m south is inside West Hollywood city (checked; see boundary_check), so the result rests on Census's side-of-street assignment. Kept review_required (directional, boundary street)."
+    },
+    "A0150": {
+      "reported_jurisdiction_supported": true,
+      "note": "Single candidate 3784 BROADWAY (source adds 'E'), inside San Diego city. Kept review_required (directional)."
+    },
+    "A0262": {
+      "reported_jurisdiction_supported": true,
+      "note": "Single candidate 2924 JUNIPER ST (source adds 'E'), inside San Diego city. Kept review_required (directional)."
+    },
+    "A0392": {
+      "reported_jurisdiction_supported": true,
+      "note": "Single candidate 4545 39TH ST (source adds 'N'), inside San Diego city. Kept review_required (directional)."
+    },
+    "A0480": {
+      "reported_jurisdiction_supported": true,
+      "note": "Single candidate 4046 43RD ST (source adds 'N'), inside San Diego city. Kept review_required (directional)."
+    },
+    "A0137": {
+      "reported_jurisdiction_supported": true,
+      "note": "Source typo 'NORFLOK'; Census matched 71 NORFOLK ST, Newark (range endpoint), inside Newark city."
+    },
+    "A0245": {
+      "reported_jurisdiction_supported": true,
+      "note": "Trailing 'M-D' in the source street (not a USPS unit designator); Census matched 30 W HOWELL ST, Dorchester, inside Boston city."
+    },
+    "A0311": {
+      "reported_jurisdiction_supported": true,
+      "note": "Malformed source house number '38-38-'; Census matched 38 SOMME ST, Newark, inside Newark city."
+    },
+    "A0331": {
+      "reported_jurisdiction_supported": true,
+      "note": "Truncated suffix 'BLV' and out-of-state source ZIP 11219; Census matched 344 IRVINE TURNER BLVD, Newark (range endpoint), inside Newark city."
+    },
+    "A0344": {
+      "reported_jurisdiction_supported": true,
+      "note": "Source lists two house numbers ('238 & 242'); Census matched 242 GARFIELD AVE, inside Jersey City city. 238 was not geocoded separately."
+    },
+    "A0156": {
+      "reported_jurisdiction_supported": true,
+      "note": "Tie: two TIGER segments carry 290 GREEN ST (ZIPs 94111 and 94133), both inside San Francisco city. The point is ambiguous, the jurisdiction is not."
+    },
+    "A0279": {
+      "reported_jurisdiction_supported": true,
+      "note": "Tie: two Kensington Ave segments with overlapping ranges, both inside Jersey City city. The point is ambiguous, the jurisdiction is not."
+    },
+    "A0291": {
+      "reported_jurisdiction_supported": true,
+      "note": "Tie between two spellings (CAMBRIDGEPARK / CAMBRIDGE PARK) of the same segment and point, inside Cambridge city."
+    },
+    "A0400": {
+      "reported_jurisdiction_supported": true,
+      "note": "Tie between the spellings MT / MOUNT PROSPECT AVE at the same point, inside Newark city."
+    },
+    "A0428": {
+      "reported_jurisdiction_supported": true,
+      "note": "Tie between the spellings MT / MOUNT PROSPECT AVE at the same point, inside Newark city."
+    },
+    "A0352": {
+      "reported_jurisdiction_supported": null,
+      "note": "Tie with a real disagreement: Census address data also has a 'MOUNT PROSPECT AVE, NEWARK 07102' segment that lies in Verona township (no incorporated place), about 8 km from the Newark candidates. Single-number reviewer queries (40 or 42) are ambiguous the same way, and adding a ZIP would fabricate one. No jurisdiction reported; left for the owner."
+    },
+    "A0098": {
+      "reported_jurisdiction_supported": null,
+      "note": "Source has no house number ('WILLOWWOOD ST'); it cannot be geocoded to a point. Not guessed."
+    },
+    "A0128": {
+      "reported_jurisdiction_supported": null,
+      "note": "Source has no house number ('Harvard ST'). Harvard St exists in Boston, Brookline and Cambridge, so the street name alone does not determine the city. Not guessed."
+    },
+    "A0295": {
+      "reported_jurisdiction_supported": null,
+      "note": "Source has no house number ('Harvard ST LOT 2A-13'). Same ambiguity as A0128. Not guessed."
+    },
+    "A0376": {
+      "reported_jurisdiction_supported": null,
+      "note": "Source has no house number ('ST JAMES ST'). Not guessed."
+    },
+    "A0380": {
+      "reported_jurisdiction_supported": null,
+      "note": "Source has no house number ('GREENVILLE ST'). Not guessed."
+    },
+    "A0346": {
+      "reported_jurisdiction_supported": null,
+      "note": "Source has no house number ('AUBURN DR'); the SANDAG/SanGIS source covers the whole county. Not guessed."
+    },
+    "A0384": {
+      "reported_jurisdiction_supported": null,
+      "note": "'21 GUERRERO ST' has no Census candidate, even from the single-record lookup (no address range covers 21). Not guessed."
+    }
+  },
+  "target_notes": {
+    "non_exact_match": "Reviewed every Non_Exact match (164). For the 150 resolved ones, the differences are a range endpoint, a ZIP, the Census mailing city, ordinal spelling, a one-sided suffix or a unit designator only, and in each case the Census place is the city named by the source row (Boston neighborhoods inside Boston city). The other 14 are review_required and have their own notes.",
+    "postal_city_differs_from_legal_jurisdiction": "Reviewed all 33 rows (32 Boston neighborhood names, 1 San Ysidro): 32 resolved, A0245 review_required for a street token. In each, the Census matched address uses the same postal name, and the Census place is Boston city or San Diego city. Using postal_city as the jurisdiction would have missed every Boston or San Diego local rule for these rows.",
+    "zip_outside_state": "Reviewed all 27 (NJ rows with NY, TX or CT ZIPs). No attempt matched outside NJ. 25 were matched by attempt A (street and city) and resolved, with the corrected NJ ZIP in the matched address. A0331 was matched by A and is review_required for its truncated suffix. A0343 was matched only by fallback C (ZIP omitted) and is review_required for a directional. Many other NJ rows have in-state but non-local ZIPs (e.g. Hoboken 07856); they matched the same way.",
+    "fallback_attempt_C": "A0338 (in-state but non-local ZIP 07417, no suffix) and A0343 matched only with the ZIP omitted. Both matches are inside Newark city.",
+    "near_place_boundary": "Reviewed all 12. Each Census point lies inside the reported place, on the address range's side of the street. Within about 80 m there is a different jurisdiction:\n- Somerville city: 5 North Cambridge rows (Oxford, Chester, Forest and Roseland St).\n- West Hollywood city: A0067 and A0427.\n- Oakland city: A0197.\n- Brookline town: A0233, A0356 and A0362 (an MCD, not an incorporated place).\n- No incorporated place west of A0165 (San Diego CCD).\nNo sample address is within about 80 m of the Hoboken-Jersey City line. Results unchanged; the flags are for M5 and T2."
+  }
+}

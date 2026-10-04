@@ -1,0 +1,461 @@
+{
+  "resolver": "census-geocoder/m4-v1",
+  "not_legal_advice": true,
+  "census": {
+    "benchmark": "Public_AR_Current",
+    "vintage": "Current_Current",
+    "batch_url": "https://geocoding.geo.census.gov/geocoder/geographies/addressbatch",
+    "point_url": "https://geocoding.geo.census.gov/geocoder/geographies/coordinates",
+    "point_layers": "80,82,22,28,30,12",
+    "batch_requests": [
+      {
+        "attempt": "A",
+        "rows": 500,
+        "cache_key": "994419cb94f94545cb80b4c25a3dfd3684e0dd735286ee61050e7df95b3184b7",
+        "cache_hit": true,
+        "retrieved_at": "2026-10-04T07:20:58Z"
+      },
+      {
+        "attempt": "B",
+        "rows": 13,
+        "cache_key": "310b0cba9894b7989398155643caa195a248f756258d8491ddaf4bab2fb6da9a",
+        "cache_hit": true,
+        "retrieved_at": "2026-10-04T07:20:59Z"
+      },
+      {
+        "attempt": "C",
+        "rows": 13,
+        "cache_key": "66b95937a5d9b60b3b58e9d693ab17397fccb83c658daa27cc3e8b6b9ba12901",
+        "cache_hit": true,
+        "retrieved_at": "2026-10-04T07:20:59Z"
+      }
+    ],
+    "point_requests": 479,
+    "tie_lookups": 7,
+    "point_failures": 0,
+    "http_requests_this_run": 0,
+    "cache_hits_this_run": 2414,
+    "failures_this_run": []
+  },
+  "rules_source": "outputs/m3/full_v2/rules.json",
+  "totals": {
+    "addresses": 500,
+    "resolved": 473,
+    "review_required": 20,
+    "unresolved": 7,
+    "overrides": 8
+  },
+  "match": {
+    "exact": 315,
+    "non_exact": 164,
+    "no_usable_match": 21,
+    "attempt_used": {
+      "A": 477,
+      "C": 2,
+      "none": 21
+    },
+    "attempts_run": {
+      "A": 500,
+      "B": 13,
+      "C": 13
+    },
+    "attempts_skipped": {
+      "B": 10,
+      "C": 10
+    },
+    "indicators_by_attempt": {
+      "A": {
+        "Match/Exact": 315,
+        "Match/Non_Exact": 162,
+        "No_Match": 16,
+        "Tie": 7
+      },
+      "B": {
+        "No_Match": 13
+      },
+      "C": {
+        "Match/Non_Exact": 2,
+        "No_Match": 7,
+        "Tie": 4
+      }
+    }
+  },
+  "input_flags": {
+    "zip_missing": 130,
+    "zip_outside_state": 27
+  },
+  "review_reason_codes": {
+    "no_match_after_bounded_fallbacks": 7,
+    "non_exact_meaningful_difference": 16,
+    "tie_candidates_disagree": 1,
+    "tie_candidates_share_place": 5,
+    "tie_in_attempt_A": 6,
+    "tie_in_attempt_C": 4
+  },
+  "postal_city": {
+    "categories": {
+      "known_neighborhood_or_postal_difference": 33,
+      "same_name": 459,
+      "unresolved": 8
+    },
+    "differs_from_legal_jurisdiction": 33,
+    "by_pair": {
+      "Allston -> Boston, MA": 3,
+      "Berkeley -> Berkeley, CA": 40,
+      "Boston -> Boston, MA": 23,
+      "Brighton -> Boston, MA": 4,
+      "Cambridge -> Cambridge, MA": 50,
+      "Dorchester -> (none)": 3,
+      "Dorchester -> Boston, MA": 10,
+      "East Boston -> Boston, MA": 6,
+      "Hoboken -> Hoboken, NJ": 40,
+      "Hyde Park -> Boston, MA": 1,
+      "Jamaica Plain -> Boston, MA": 1,
+      "Jersey City -> Jersey City, NJ": 50,
+      "Los Angeles -> Los Angeles, CA": 80,
+      "Mattapan -> Boston, MA": 1,
+      "Newark -> (none)": 1,
+      "Newark -> Newark, NJ": 49,
+      "Roxbury -> (none)": 2,
+      "Roxbury -> Boston, MA": 5,
+      "San Diego -> (none)": 1,
+      "San Diego -> San Diego, CA": 48,
+      "San Francisco -> (none)": 1,
+      "San Francisco -> San Francisco, CA": 79,
+      "San Ysidro -> San Diego, CA": 1,
+      "South Boston -> Boston, MA": 1
+    }
+  },
+  "boundary_check": {
+    "points_checked": 479,
+    "different_place_within_about_80m": 12,
+    "by_pair": {
+      "Berkeley, CA ~ Oakland city": 1,
+      "Boston, MA ~ no incorporated place (Brookline town)": 3,
+      "Cambridge, MA ~ Somerville city": 5,
+      "Los Angeles, CA ~ West Hollywood city": 2,
+      "San Diego, CA ~ no incorporated place (San Diego CCD)": 1
+    }
+  },
+  "overrides": [
+    {
+      "address_id": "A0115",
+      "corrected_jurisdiction": "San Francisco, CA",
+      "census_status": "unresolved"
+    },
+    {
+      "address_id": "A0229",
+      "corrected_jurisdiction": "San Francisco, CA",
+      "census_status": "unresolved"
+    },
+    {
+      "address_id": "A0328",
+      "corrected_jurisdiction": "San Francisco, CA",
+      "census_status": "unresolved"
+    },
+    {
+      "address_id": "A0357",
+      "corrected_jurisdiction": "San Francisco, CA",
+      "census_status": "unresolved"
+    },
+    {
+      "address_id": "A0364",
+      "corrected_jurisdiction": "San Francisco, CA",
+      "census_status": "unresolved"
+    },
+    {
+      "address_id": "A0484",
+      "corrected_jurisdiction": "San Francisco, CA",
+      "census_status": "unresolved"
+    },
+    {
+      "address_id": "A0168",
+      "corrected_jurisdiction": "Hoboken, NJ",
+      "census_status": "unresolved"
+    },
+    {
+      "address_id": "A0009",
+      "corrected_jurisdiction": "Cambridge, MA",
+      "census_status": "review_required"
+    }
+  ],
+  "by_state": {
+    "(none)": {
+      "review_required": 1,
+      "unresolved": 7
+    },
+    "CA": {
+      "resolved": 241,
+      "review_required": 7
+    },
+    "MA": {
+      "resolved": 103,
+      "review_required": 2
+    },
+    "NJ": {
+      "resolved": 129,
+      "review_required": 10
+    }
+  },
+  "by_local_jurisdiction": {
+    "(none)": {
+      "review_required": 1,
+      "unresolved": 7
+    },
+    "Berkeley, CA": {
+      "resolved": 40
+    },
+    "Boston, MA": {
+      "resolved": 54,
+      "review_required": 1
+    },
+    "Cambridge, MA": {
+      "resolved": 49,
+      "review_required": 1
+    },
+    "Hoboken, NJ": {
+      "resolved": 40
+    },
+    "Jersey City, NJ": {
+      "resolved": 48,
+      "review_required": 2
+    },
+    "Los Angeles, CA": {
+      "resolved": 78,
+      "review_required": 2
+    },
+    "Newark, NJ": {
+      "resolved": 41,
+      "review_required": 8
+    },
+    "San Diego, CA": {
+      "resolved": 45,
+      "review_required": 4
+    },
+    "San Francisco, CA": {
+      "resolved": 78,
+      "review_required": 1
+    }
+  },
+  "coverage": {
+    "Berkeley, CA": {
+      "level": "local",
+      "published_rules": 13,
+      "manifest_docs": 9,
+      "addresses_resolved": 40,
+      "addresses_review_required": 0
+    },
+    "Boston, MA": {
+      "level": "local",
+      "published_rules": 6,
+      "manifest_docs": 5,
+      "addresses_resolved": 54,
+      "addresses_review_required": 1
+    },
+    "CA": {
+      "level": "state",
+      "published_rules": 74,
+      "manifest_docs": 14,
+      "addresses_resolved": 241,
+      "addresses_review_required": 7
+    },
+    "Cambridge, MA": {
+      "level": "local",
+      "published_rules": 0,
+      "manifest_docs": 3,
+      "addresses_resolved": 49,
+      "addresses_review_required": 1
+    },
+    "Hoboken, NJ": {
+      "level": "local",
+      "published_rules": 0,
+      "manifest_docs": 3,
+      "addresses_resolved": 40,
+      "addresses_review_required": 0
+    },
+    "Jersey City, NJ": {
+      "level": "local",
+      "published_rules": 0,
+      "manifest_docs": 3,
+      "addresses_resolved": 48,
+      "addresses_review_required": 2
+    },
+    "Los Angeles, CA": {
+      "level": "local",
+      "published_rules": 13,
+      "manifest_docs": 7,
+      "addresses_resolved": 78,
+      "addresses_review_required": 2
+    },
+    "MA": {
+      "level": "state",
+      "published_rules": 33,
+      "manifest_docs": 15,
+      "addresses_resolved": 103,
+      "addresses_review_required": 2
+    },
+    "NJ": {
+      "level": "state",
+      "published_rules": 22,
+      "manifest_docs": 10,
+      "addresses_resolved": 129,
+      "addresses_review_required": 10
+    },
+    "Newark, NJ": {
+      "level": "local",
+      "published_rules": 0,
+      "manifest_docs": 3,
+      "addresses_resolved": 41,
+      "addresses_review_required": 8
+    },
+    "San Diego, CA": {
+      "level": "local",
+      "published_rules": 51,
+      "manifest_docs": 5,
+      "addresses_resolved": 45,
+      "addresses_review_required": 4
+    },
+    "San Francisco, CA": {
+      "level": "local",
+      "published_rules": 6,
+      "manifest_docs": 6,
+      "addresses_resolved": 78,
+      "addresses_review_required": 1
+    },
+    "Santa Ana, CA": {
+      "level": "local",
+      "published_rules": 10,
+      "manifest_docs": 4,
+      "addresses_resolved": 0,
+      "addresses_review_required": 0
+    }
+  },
+  "rule_jurisdictions_with_zero_addresses": [
+    "Santa Ana, CA"
+  ],
+  "corpus_jurisdictions_with_addresses_but_no_published_rules": [
+    "Cambridge, MA",
+    "Hoboken, NJ",
+    "Jersey City, NJ",
+    "Newark, NJ"
+  ],
+  "join_check": {
+    "rule_jurisdictions": [
+      "Berkeley, CA",
+      "Boston, MA",
+      "CA",
+      "Los Angeles, CA",
+      "MA",
+      "NJ",
+      "San Diego, CA",
+      "San Francisco, CA",
+      "Santa Ana, CA"
+    ],
+    "state_jurisdictions_not_in_corpus": [
+      null
+    ],
+    "local_jurisdictions_not_in_corpus": [],
+    "in_corpus_flag_consistent": true
+  },
+  "crosswalk": [
+    {
+      "census_place_geoid": "0606000",
+      "census_place_name": "Berkeley city",
+      "census_basename": "Berkeley",
+      "census_lsadc": "25",
+      "census_funcstat": "A",
+      "state": "CA",
+      "canonical_jurisdiction": "Berkeley, CA",
+      "in_corpus": true,
+      "reason": "Census incorporated place BASENAME 'Berkeley' in CA equals corpus jurisdiction 'Berkeley, CA' (9 manifest docs, 13 published rules)"
+    },
+    {
+      "census_place_geoid": "0644000",
+      "census_place_name": "Los Angeles city",
+      "census_basename": "Los Angeles",
+      "census_lsadc": "25",
+      "census_funcstat": "A",
+      "state": "CA",
+      "canonical_jurisdiction": "Los Angeles, CA",
+      "in_corpus": true,
+      "reason": "Census incorporated place BASENAME 'Los Angeles' in CA equals corpus jurisdiction 'Los Angeles, CA' (7 manifest docs, 13 published rules)"
+    },
+    {
+      "census_place_geoid": "0666000",
+      "census_place_name": "San Diego city",
+      "census_basename": "San Diego",
+      "census_lsadc": "25",
+      "census_funcstat": "A",
+      "state": "CA",
+      "canonical_jurisdiction": "San Diego, CA",
+      "in_corpus": true,
+      "reason": "Census incorporated place BASENAME 'San Diego' in CA equals corpus jurisdiction 'San Diego, CA' (5 manifest docs, 51 published rules)"
+    },
+    {
+      "census_place_geoid": "0667000",
+      "census_place_name": "San Francisco city",
+      "census_basename": "San Francisco",
+      "census_lsadc": "25",
+      "census_funcstat": "A",
+      "state": "CA",
+      "canonical_jurisdiction": "San Francisco, CA",
+      "in_corpus": true,
+      "reason": "Census incorporated place BASENAME 'San Francisco' in CA equals corpus jurisdiction 'San Francisco, CA' (6 manifest docs, 6 published rules)"
+    },
+    {
+      "census_place_geoid": "2507000",
+      "census_place_name": "Boston city",
+      "census_basename": "Boston",
+      "census_lsadc": "25",
+      "census_funcstat": "A",
+      "state": "MA",
+      "canonical_jurisdiction": "Boston, MA",
+      "in_corpus": true,
+      "reason": "Census incorporated place BASENAME 'Boston' in MA equals corpus jurisdiction 'Boston, MA' (5 manifest docs, 6 published rules)"
+    },
+    {
+      "census_place_geoid": "2511000",
+      "census_place_name": "Cambridge city",
+      "census_basename": "Cambridge",
+      "census_lsadc": "25",
+      "census_funcstat": "A",
+      "state": "MA",
+      "canonical_jurisdiction": "Cambridge, MA",
+      "in_corpus": true,
+      "reason": "Census incorporated place BASENAME 'Cambridge' in MA equals corpus jurisdiction 'Cambridge, MA' (3 manifest docs, 0 published rules)"
+    },
+    {
+      "census_place_geoid": "3432250",
+      "census_place_name": "Hoboken city",
+      "census_basename": "Hoboken",
+      "census_lsadc": "25",
+      "census_funcstat": "A",
+      "state": "NJ",
+      "canonical_jurisdiction": "Hoboken, NJ",
+      "in_corpus": true,
+      "reason": "Census incorporated place BASENAME 'Hoboken' in NJ equals corpus jurisdiction 'Hoboken, NJ' (3 manifest docs, 0 published rules)"
+    },
+    {
+      "census_place_geoid": "3436000",
+      "census_place_name": "Jersey City city",
+      "census_basename": "Jersey City",
+      "census_lsadc": "25",
+      "census_funcstat": "A",
+      "state": "NJ",
+      "canonical_jurisdiction": "Jersey City, NJ",
+      "in_corpus": true,
+      "reason": "Census incorporated place BASENAME 'Jersey City' in NJ equals corpus jurisdiction 'Jersey City, NJ' (3 manifest docs, 0 published rules)"
+    },
+    {
+      "census_place_geoid": "3451000",
+      "census_place_name": "Newark city",
+      "census_basename": "Newark",
+      "census_lsadc": "25",
+      "census_funcstat": "A",
+      "state": "NJ",
+      "canonical_jurisdiction": "Newark, NJ",
+      "in_corpus": true,
+      "reason": "Census incorporated place BASENAME 'Newark' in NJ equals corpus jurisdiction 'Newark, NJ' (3 manifest docs, 0 published rules)"
+    }
+  ]
+}

@@ -35,14 +35,26 @@ uv run python scripts/extract_rules.py --doc-id D052                            
 
 Without `--live` the script never contacts a provider. `--doc-id` takes exactly one document; there is no all-documents mode. The audit artifact goes to `outputs/m2/<doc_id>_extraction.json`, and raw responses are cached in `cache/extraction/`. The model can be chosen with `--model` (default in `src/navigator/extraction/config.py`). See [extraction.md](extraction.md) for the design.
 
+## Jurisdiction resolution (M4)
+
+Resolves every sample address to its state and municipal jurisdiction with the U.S. Census Geocoder (no key). See [jurisdiction.md](jurisdiction.md).
+
+```sh
+uv run python scripts/resolve_jurisdictions.py          # offline: cached Census responses only
+uv run python scripts/resolve_jurisdictions.py --live   # fetch Census responses that are not cached
+```
+
+Raw Census responses are cached in `cache/census/` (gitignored). Audited overrides and manual-review notes live in `review/m4_jurisdiction_review.json`.
+
 ## Layout
 
 | Path | Purpose |
 |---|---|
 | `corpus/`, `data/`, `dev/`, `schema/`, `submission_templates/` | Official starter pack. These files are read-only, and nothing in this project writes to them. |
-| `src/navigator/` | Project code: `starter_pack.py` (loaders), `validation.py` (structural checks), `extraction/` (Module A). |
+| `src/navigator/` | Project code: `starter_pack.py` (loaders), `validation.py` (structural checks), `extraction/` (Module A), `jurisdiction/` (M4: address → jurisdiction). |
 | `scripts/` | Command-line entry points. |
 | `tests/` | pytest suite. |
-| `cache/extraction/` | Local, gitignored cache of raw LLM responses, keyed by content. Offline reruns work only on a machine that has the entry. |
+| `cache/extraction/`, `cache/census/` | Local, gitignored caches of raw LLM and Census responses, keyed by content. Offline reruns work only on a machine that has the entries. |
+| `review/` | Human-reviewed inputs: M4 jurisdiction overrides and review notes. |
 | `outputs/` | Generated artifacts and validation reports. |
 | `docs/` | Project documentation, including the [starter-pack audit](starter_pack_audit.md). |
