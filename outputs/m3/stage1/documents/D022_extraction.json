@@ -1,0 +1,448 @@
+{
+  "disclaimer": "Not legal advice. Automated extraction for a research prototype; verify against the cited source.",
+  "run_at": "2026-10-04T01:14:14+00:00",
+  "source": {
+    "doc_id": "D022",
+    "jurisdiction": "CA",
+    "url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB325",
+    "source_type": "official",
+    "retrieved_at": "2026-10-01T22:35Z",
+    "text_file": "text/D022.txt",
+    "content_sha256": "d42cb41f876285d69e316e253d18a1366d88dc84057179774e7055ead39bd631",
+    "body_chars": 6452
+  },
+  "provider": "gemini",
+  "model": "gemini-3.8-flash",
+  "prompt_version": "v5",
+  "prompt_sha256": "09c89b4a184c740dc38e973634de798b73f0557a6ef34ad072b5bffc3fbdec8a",
+  "response_schema_sha256": "e026d3eb1843386b41cefc73c797a00d71962f94869af598755dcc32be30d03b",
+  "generation_settings": {
+    "temperature": null,
+    "seed": 20261001,
+    "thinking_level": "medium"
+  },
+  "as_of": "2026-10-01",
+  "cache_key": "e649ed2f97ab35f224d143ce90724da630c7b7b8223cf457e7fc5f66dd1b956a",
+  "cache_hit": false,
+  "cache_entry": "cache/extraction/e649ed2f97ab35f224d143ce90724da630c7b7b8223cf457e7fc5f66dd1b956a.json",
+  "provider_metadata": {
+    "api": "interactions.create",
+    "interaction_id": "",
+    "model": "gemini-3.8-flash",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4252,
+      "output_tokens": 1371,
+      "thinking_tokens": 13224,
+      "total_tokens": 18847
+    }
+  },
+  "candidate_count": 2,
+  "accepted_count": 2,
+  "rules": [
+    {
+      "team_rule_id": "r-80db126e49",
+      "jurisdiction": "CA",
+      "level": "state",
+      "category": "algorithmic_rent_setting",
+      "status": "in_force",
+      "title": "Cartwright Act: Prohibition on Common Pricing Algorithms in Restraint of Trade",
+      "requirement": "A person is prohibited from using or distributing a common pricing algorithm as part of a contract, combination in the form of a trust, or conspiracy to restrain trade or commerce.",
+      "key_value": null,
+      "coverage_conditions": null,
+      "exemptions": "The prohibitions of Section 16729 do not apply to the end consumer of a product or service. [§ 16729(d)(5); applies to § 16729]",
+      "overrides": [],
+      "interaction": "Nothing in Section 16729 impairs or limits the applicability of antitrust laws (§ 16729(c)).",
+      "effective_date": null,
+      "citation": "§ 16729(a)",
+      "source_doc_id": "D022",
+      "source_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB325",
+      "quoted_span": "It shall be unlawful for a person to use or distribute a common pricing algorithm as part of a contract, combination in the form of a trust, or conspiracy to restrain trade or commerce in violation of this chapter.",
+      "confidence": null,
+      "conflict_flag": false,
+      "conflict_note": null
+    },
+    {
+      "team_rule_id": "r-fe7c9ba5e9",
+      "jurisdiction": "CA",
+      "level": "state",
+      "category": "algorithmic_rent_setting",
+      "status": "in_force",
+      "title": "Cartwright Act: Prohibition on Coercive Common Pricing Algorithms",
+      "requirement": "A person is prohibited from using or distributing a common pricing algorithm if the person coerces another person to set or adopt a recommended price or commercial term recommended by the common pricing algorithm for the same or similar products or services in the jurisdiction of this state.",
+      "key_value": null,
+      "coverage_conditions": "Applies to products or services in the jurisdiction of this state.",
+      "exemptions": "The prohibitions of Section 16729 do not apply to the end consumer of a product or service. [§ 16729(d)(5); applies to § 16729]",
+      "overrides": [],
+      "interaction": "Nothing in Section 16729 impairs or limits the applicability of antitrust laws (§ 16729(c)).",
+      "effective_date": null,
+      "citation": "§ 16729(b)",
+      "source_doc_id": "D022",
+      "source_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB325",
+      "quoted_span": "It shall be unlawful for a person to use or distribute a common pricing algorithm if the person coerces another person to set or adopt a recommended price or commercial term recommended by the common pricing algorithm for the same or similar products or services in the jurisdiction of this state.",
+      "confidence": null,
+      "conflict_flag": false,
+      "conflict_note": null
+    }
+  ],
+  "candidates": [
+    {
+      "index": 0,
+      "origin": "primary",
+      "accepted": true,
+      "rejection_reasons": [],
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 3664,
+        "end": 3878,
+        "occurrences": 1,
+        "model_span": "It shall be unlawful for a person to use or distribute a common pricing algorithm as part of a contract, combination in the form of a trust, or conspiracy to restrain trade or commerce in violation of this chapter.",
+        "source_span": "It shall be unlawful for a person to use or distribute a common pricing algorithm as part of a contract, combination in the form of a trust, or conspiracy to restrain trade or commerce in violation of this chapter.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "It shall be unlawful for a person to use or distribute a common pricing algorithm as part of a contract, combination in the form of a trust, or conspiracy to restrain trade or commerce in violation of this chapter.",
+            "status": "exact_match",
+            "start": 3664,
+            "end": 3878
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": null,
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [
+        {
+          "id": "S1",
+          "kind": "exemption",
+          "applied": true,
+          "basis": "rule citation is within § 16729"
+        }
+      ],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": null,
+        "applied_kind": null,
+        "effective_date": null,
+        "history_evidence": null
+      },
+      "status_derivation": "enacted; the document states no effective date",
+      "warnings": [],
+      "rule": {
+        "team_rule_id": "r-80db126e49",
+        "jurisdiction": "CA",
+        "level": "state",
+        "category": "algorithmic_rent_setting",
+        "status": "in_force",
+        "title": "Cartwright Act: Prohibition on Common Pricing Algorithms in Restraint of Trade",
+        "requirement": "A person is prohibited from using or distributing a common pricing algorithm as part of a contract, combination in the form of a trust, or conspiracy to restrain trade or commerce.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": "The prohibitions of Section 16729 do not apply to the end consumer of a product or service. [§ 16729(d)(5); applies to § 16729]",
+        "overrides": [],
+        "interaction": "Nothing in Section 16729 impairs or limits the applicability of antitrust laws (§ 16729(c)).",
+        "effective_date": null,
+        "citation": "§ 16729(a)",
+        "source_doc_id": "D022",
+        "source_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB325",
+        "quoted_span": "It shall be unlawful for a person to use or distribute a common pricing algorithm as part of a contract, combination in the form of a trust, or conspiracy to restrain trade or commerce in violation of this chapter.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "algorithmic_rent_setting",
+        "citation": "§ 16729(a)",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "It shall be unlawful for a person to use or distribute a common pricing algorithm as part of a contract, combination in the form of a trust, or conspiracy to restrain trade or commerce in violation of this chapter."
+          }
+        ],
+        "title": "Cartwright Act: Prohibition on Common Pricing Algorithms in Restraint of Trade",
+        "requirement": "A person is prohibited from using or distributing a common pricing algorithm as part of a contract, combination in the form of a trust, or conspiracy to restrain trade or commerce.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": "Nothing in Section 16729 impairs or limits the applicability of antitrust laws (§ 16729(c)).",
+        "enactment_status": "enacted",
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": null,
+        "effective_date_evidence_kind": null,
+        "effective_date": null,
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 1,
+      "origin": "primary",
+      "accepted": true,
+      "rejection_reasons": [],
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 3883,
+        "end": 4180,
+        "occurrences": 1,
+        "model_span": "It shall be unlawful for a person to use or distribute a common pricing algorithm if the person coerces another person to set or adopt a recommended price or commercial term recommended by the common pricing algorithm for the same or similar products or services in the jurisdiction of this state.",
+        "source_span": "It shall be unlawful for a person to use or distribute a common pricing algorithm if the person coerces another person to set or adopt a recommended price or commercial term recommended by the common pricing algorithm for the same or similar products or services in the jurisdiction of this state.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "It shall be unlawful for a person to use or distribute a common pricing algorithm if the person coerces another person to set or adopt a recommended price or commercial term recommended by the common pricing algorithm for the same or similar products or services in the jurisdiction of this state.",
+            "status": "exact_match",
+            "start": 3883,
+            "end": 4180
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": null,
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [
+        {
+          "id": "S1",
+          "kind": "exemption",
+          "applied": true,
+          "basis": "rule citation is within § 16729"
+        }
+      ],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": null,
+        "applied_kind": null,
+        "effective_date": null,
+        "history_evidence": null
+      },
+      "status_derivation": "enacted; the document states no effective date",
+      "warnings": [],
+      "rule": {
+        "team_rule_id": "r-fe7c9ba5e9",
+        "jurisdiction": "CA",
+        "level": "state",
+        "category": "algorithmic_rent_setting",
+        "status": "in_force",
+        "title": "Cartwright Act: Prohibition on Coercive Common Pricing Algorithms",
+        "requirement": "A person is prohibited from using or distributing a common pricing algorithm if the person coerces another person to set or adopt a recommended price or commercial term recommended by the common pricing algorithm for the same or similar products or services in the jurisdiction of this state.",
+        "key_value": null,
+        "coverage_conditions": "Applies to products or services in the jurisdiction of this state.",
+        "exemptions": "The prohibitions of Section 16729 do not apply to the end consumer of a product or service. [§ 16729(d)(5); applies to § 16729]",
+        "overrides": [],
+        "interaction": "Nothing in Section 16729 impairs or limits the applicability of antitrust laws (§ 16729(c)).",
+        "effective_date": null,
+        "citation": "§ 16729(b)",
+        "source_doc_id": "D022",
+        "source_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB325",
+        "quoted_span": "It shall be unlawful for a person to use or distribute a common pricing algorithm if the person coerces another person to set or adopt a recommended price or commercial term recommended by the common pricing algorithm for the same or similar products or services in the jurisdiction of this state.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "algorithmic_rent_setting",
+        "citation": "§ 16729(b)",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "It shall be unlawful for a person to use or distribute a common pricing algorithm if the person coerces another person to set or adopt a recommended price or commercial term recommended by the common pricing algorithm for the same or similar products or services in the jurisdiction of this state."
+          }
+        ],
+        "title": "Cartwright Act: Prohibition on Coercive Common Pricing Algorithms",
+        "requirement": "A person is prohibited from using or distributing a common pricing algorithm if the person coerces another person to set or adopt a recommended price or commercial term recommended by the common pricing algorithm for the same or similar products or services in the jurisdiction of this state.",
+        "key_value": null,
+        "coverage_conditions": "Applies to products or services in the jurisdiction of this state.",
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": "Nothing in Section 16729 impairs or limits the applicability of antitrust laws (§ 16729(c)).",
+        "enactment_status": "enacted",
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": null,
+        "effective_date_evidence_kind": null,
+        "effective_date": null,
+        "conflict_note": null
+      }
+    }
+  ],
+  "provision_inventory": [
+    {
+      "ref": "§ 16729(a)",
+      "summary": "Prohibition on using or distributing a common pricing algorithm as part of a contract, combination, or conspiracy to restrain trade",
+      "scope": "in_scope",
+      "category": "algorithmic_rent_setting",
+      "reason": null,
+      "rule_indices": [
+        0
+      ]
+    },
+    {
+      "ref": "§ 16729(b)",
+      "summary": "Prohibition on using or distributing a common pricing algorithm if coercing another to set or adopt a recommended price or commercial term",
+      "scope": "in_scope",
+      "category": "algorithmic_rent_setting",
+      "reason": null,
+      "rule_indices": [
+        1
+      ]
+    },
+    {
+      "ref": "§ 16729(c)",
+      "summary": "Savings clause stating that nothing in the section impairs or limits the applicability of antitrust laws",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "savings clause and boilerplate non-impairment provision",
+      "rule_indices": []
+    },
+    {
+      "ref": "§ 16729(d)",
+      "summary": "Definitions for Section 16729",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "statutory definitions; see global_scope S1 for end-consumer exclusion",
+      "rule_indices": []
+    },
+    {
+      "ref": "§ 16756.1",
+      "summary": "Pleading standard for complaints alleging Cartwright Act violations",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "generic civil procedure and pleading standard",
+      "rule_indices": []
+    },
+    {
+      "ref": "Section 3",
+      "summary": "State-mandated local program reimbursement exclusion",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "state mandate reimbursement boilerplate",
+      "rule_indices": []
+    }
+  ],
+  "global_scope": [
+    {
+      "id": "S1",
+      "kind": "exemption",
+      "statement": "The prohibitions of Section 16729 do not apply to the end consumer of a product or service.",
+      "citation": "§ 16729(d)(5)",
+      "governs": "§ 16729",
+      "evidence_parts": [
+        {
+          "segment_id": 1,
+          "quoted_text": "“Person” has the same meaning as defined in Section 16702 and does not include the end consumer of a product or service."
+        }
+      ],
+      "evidence_check": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 5077,
+        "end": 5197,
+        "occurrences": 1,
+        "model_span": "“Person” has the same meaning as defined in Section 16702 and does not include the end consumer of a product or service.",
+        "source_span": "“Person” has the same meaning as defined in Section 16702 and does not include the end consumer of a product or service.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "“Person” has the same meaning as defined in Section 16702 and does not include the end consumer of a product or service.",
+            "status": "exact_match",
+            "start": 5077,
+            "end": 5197
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "propagated": true
+    }
+  ],
+  "source_view": {
+    "marker": "[[PAGE BREAK]]",
+    "segment_label": "[[SEGMENT {}]]",
+    "view_sha256": "f2b286054e11791e9528571ffdd3354cb42b0b427c97abf861ae0e1710bb4366",
+    "segments": [
+      {
+        "id": 1,
+        "raw_start": 0,
+        "raw_end": 6452
+      }
+    ],
+    "artifacts_removed": 0,
+    "artifacts": []
+  },
+  "coverage": {
+    "inventory_valid": true,
+    "after_primary": {
+      "uncovered": [],
+      "unaccepted": [],
+      "unrecorded_subdivisions": []
+    },
+    "inventory_items": 6,
+    "in_scope_items": 2,
+    "in_scope_refs": 2,
+    "uncertain": [],
+    "final": {
+      "uncovered": [],
+      "unaccepted": [],
+      "unrecorded_subdivisions": []
+    },
+    "link_mismatches": [],
+    "provisions": [
+      {
+        "ref": "§ 16729(a)",
+        "inventory_item": 0,
+        "summary": "Prohibition on using or distributing a common pricing algorithm as part of a contract, combination, or conspiracy to restrain trade",
+        "category": "algorithmic_rent_setting",
+        "candidates": [
+          0
+        ],
+        "accepted": [
+          0
+        ],
+        "basis": {
+          "0": "citation"
+        }
+      },
+      {
+        "ref": "§ 16729(b)",
+        "inventory_item": 1,
+        "summary": "Prohibition on using or distributing a common pricing algorithm if coercing another to set or adopt a recommended price or commercial term",
+        "category": "algorithmic_rent_setting",
+        "candidates": [
+          1
+        ],
+        "accepted": [
+          1
+        ],
+        "basis": {
+          "1": "citation"
+        }
+      }
+    ],
+    "unrecorded_subdivisions": []
+  },
+  "repair": null,
+  "document_status": "complete",
+  "review_reasons": [],
+  "warnings": [],
+  "errors": [],
+  "raw_response_text": "{\n  \"provisions\": [\n    {\n      \"ref\": \"§ 16729(a)\",\n      \"summary\": \"Prohibition on using or distributing a common pricing algorithm as part of a contract, combination, or conspiracy to restrain trade\",\n      \"scope\": \"in_scope\",\n      \"category\": \"algorithmic_rent_setting\",\n      \"reason\": null,\n      \"rule_indices\": [0]\n    },\n    {\n      \"ref\": \"§ 16729(b)\",\n      \"summary\": \"Prohibition on using or distributing a common pricing algorithm if coercing another to set or adopt a recommended price or commercial term\",\n      \"scope\": \"in_scope\",\n      \"category\": \"algorithmic_rent_setting\",\n      \"reason\": null,\n      \"rule_indices\": [1]\n    },\n    {\n      \"ref\": \"§ 16729(c)\",\n      \"summary\": \"Savings clause stating that nothing in the section impairs or limits the applicability of antitrust laws\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"savings clause and boilerplate non-impairment provision\",\n      \"rule_indices\": []\n    },\n    {\n      \"ref\": \"§ 16729(d)\",\n      \"summary\": \"Definitions for Section 16729\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"statutory definitions; see global_scope S1 for end-consumer exclusion\",\n      \"rule_indices\": []\n    },\n    {\n      \"ref\": \"§ 16756.1\",\n      \"summary\": \"Pleading standard for complaints alleging Cartwright Act violations\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"generic civil procedure and pleading standard\",\n      \"rule_indices\": []\n    },\n    {\n      \"ref\": \"Section 3\",\n      \"summary\": \"State-mandated local program reimbursement exclusion\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"state mandate reimbursement boilerplate\",\n      \"rule_indices\": []\n    }\n  ],\n  \"global_scope\": [\n    {\n      \"id\": \"S1\",\n      \"kind\": \"exemption\",\n      \"statement\": \"The prohibitions of Section 16729 do not apply to the end consumer of a product or service.\",\n      \"citation\": \"§ 16729(d)(5)\",\n      \"governs\": \"§ 16729\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"“Person” has the same meaning as defined in Section 16702 and does not include the end consumer of a product or service.\"\n        }\n      ]\n    }\n  ],\n  \"rules\": [\n    {\n      \"category\": \"algorithmic_rent_setting\",\n      \"citation\": \"§ 16729(a)\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"It shall be unlawful for a person to use or distribute a common pricing algorithm as part of a contract, combination in the form of a trust, or conspiracy to restrain trade or commerce in violation of this chapter.\"\n        }\n      ],\n      \"title\": \"Cartwright Act: Prohibition on Common Pricing Algorithms in Restraint of Trade\",\n      \"requirement\": \"A person is prohibited from using or distributing a common pricing algorithm as part of a contract, combination in the form of a trust, or conspiracy to restrain trade or commerce.\",\n      \"key_value\": null,\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": \"Nothing in Section 16729 impairs or limits the applicability of antitrust laws (§ 16729(c)).\",\n      \"enactment_status\": \"enacted\",\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": null,\n      \"effective_date_evidence_kind\": null,\n      \"effective_date\": null,\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"algorithmic_rent_setting\",\n      \"citation\": \"§ 16729(b)\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"It shall be unlawful for a person to use or distribute a common pricing algorithm if the person coerces another person to set or adopt a recommended price or commercial term recommended by the common pricing algorithm for the same or similar products or services in the jurisdiction of this state.\"\n        }\n      ],\n      \"title\": \"Cartwright Act: Prohibition on Coercive Common Pricing Algorithms\",\n      \"requirement\": \"A person is prohibited from using or distributing a common pricing algorithm if the person coerces another person to set or adopt a recommended price or commercial term recommended by the common pricing algorithm for the same or similar products or services in the jurisdiction of this state.\",\n      \"key_value\": null,\n      \"coverage_conditions\": \"Applies to products or services in the jurisdiction of this state.\",\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": \"Nothing in Section 16729 impairs or limits the applicability of antitrust laws (§ 16729(c)).\",\n      \"enactment_status\": \"enacted\",\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": null,\n      \"effective_date_evidence_kind\": null,\n      \"effective_date\": null,\n      \"conflict_note\": null\n    }\n  ]\n}"
+}

@@ -1,0 +1,716 @@
+{
+  "disclaimer": "Not legal advice. Automated extraction for a research prototype; verify against the cited source.",
+  "run_at": "2026-10-04T01:13:29+00:00",
+  "source": {
+    "doc_id": "D001",
+    "jurisdiction": "Berkeley, CA",
+    "url": "https://berkeleyca.gov/sites/default/files/documents/2025-12-02%20Item%2001%20Ordinance%207992.pdf",
+    "source_type": "official",
+    "retrieved_at": "2026-10-01T22:44Z",
+    "text_file": "text/D001.txt",
+    "content_sha256": "f89a1563dce4e84f48dbde53da6e5e7fbb7dfaf88af12243735685fbfc288274",
+    "body_chars": 7860
+  },
+  "provider": "gemini",
+  "model": "gemini-3.8-flash",
+  "prompt_version": "v5",
+  "prompt_sha256": "5247cc8f5719e958d19d3641754438f4b57bc898e31636c0bbdc28991f46a150",
+  "response_schema_sha256": "e026d3eb1843386b41cefc73c797a00d71962f94869af598755dcc32be30d03b",
+  "generation_settings": {
+    "temperature": null,
+    "seed": 20261001,
+    "thinking_level": "medium"
+  },
+  "as_of": "2026-10-01",
+  "cache_key": "e670949dbda915d3f40527c8a9a92bb7a129f4a29a9231d24d12e0a16f2fa658",
+  "cache_hit": false,
+  "cache_entry": "cache/extraction/e670949dbda915d3f40527c8a9a92bb7a129f4a29a9231d24d12e0a16f2fa658.json",
+  "provider_metadata": {
+    "api": "interactions.create",
+    "interaction_id": "",
+    "model": "gemini-3.8-flash",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4619,
+      "output_tokens": 2132,
+      "thinking_tokens": 15905,
+      "total_tokens": 22656
+    }
+  },
+  "candidate_count": 4,
+  "accepted_count": 4,
+  "rules": [
+    {
+      "team_rule_id": "r-a1b5eeb54d",
+      "jurisdiction": "Berkeley, CA",
+      "level": "city",
+      "category": "algorithmic_rent_setting",
+      "status": "pending",
+      "title": "Prohibition on Sale or Provision of Coordinated Pricing Algorithms",
+      "requirement": "It is unlawful to sell, license, or otherwise provide to City of Berkeley landlords any coordinated pricing algorithm that sets or recommends rents or occupancy levels that may be achieved for residential dwelling units in the City of Berkeley.",
+      "key_value": null,
+      "coverage_conditions": null,
+      "exemptions": null,
+      "overrides": [],
+      "interaction": null,
+      "effective_date": null,
+      "citation": "13.63.030(A)",
+      "source_doc_id": "D001",
+      "source_url": "https://berkeleyca.gov/sites/default/files/documents/2025-12-02%20Item%2001%20Ordinance%207992.pdf",
+      "quoted_span": "It shall be unlawful to sell, license, or otherwise provide to City of Berkeley \nlandlords any coordinated pricing algorithm that sets or recommends rents or occupancy \nlevels that may be achieved for residential dwelling units in the City of Berkeley.",
+      "confidence": null,
+      "conflict_flag": false,
+      "conflict_note": null
+    },
+    {
+      "team_rule_id": "r-ec0e3ab2a2",
+      "jurisdiction": "Berkeley, CA",
+      "level": "city",
+      "category": "algorithmic_rent_setting",
+      "status": "pending",
+      "title": "Prohibition on Landlord Use of Coordinated Pricing Algorithms",
+      "requirement": "Landlords are prohibited from using a coordinated pricing algorithm when setting rents or occupancy levels for residential dwelling units in the City of Berkeley. Each separate month a violation continues and each separate residential dwelling unit for which the algorithm was used constitutes a distinct violation.",
+      "key_value": null,
+      "coverage_conditions": null,
+      "exemptions": null,
+      "overrides": [],
+      "interaction": null,
+      "effective_date": null,
+      "citation": "13.63.030(B)",
+      "source_doc_id": "D001",
+      "source_url": "https://berkeleyca.gov/sites/default/files/documents/2025-12-02%20Item%2001%20Ordinance%207992.pdf",
+      "quoted_span": "It shall be unlawful for a landlord to use a coordinated pricing algorithm described \nin subsection A when setting rents or occupancy levels for residential dwelling units in \nthe City of Berkeley. Each separate month that a violation exists or continues, and each \nseparate residential dwelling unit for which the landlord used the coordinated pricing \nalgorithm, shall constitute a separate and distinct violation.",
+      "confidence": null,
+      "conflict_flag": false,
+      "conflict_note": null
+    },
+    {
+      "team_rule_id": "r-562e8c0b31",
+      "jurisdiction": "Berkeley, CA",
+      "level": "city",
+      "category": "algorithmic_rent_setting",
+      "status": "pending",
+      "title": "Tenant Private Right of Action and Remedies for Coordinated Pricing Algorithm Violations",
+      "requirement": "An aggrieved tenant may file a civil action against a landlord for violations of section 13.63.030(B) for injunctive relief, money damages, and civil penalties of up to $1,000 per violation. The court must award reasonable attorney's fees and costs to the tenant if the tenant prevails.",
+      "key_value": "up to $1,000 per violation",
+      "coverage_conditions": null,
+      "exemptions": null,
+      "overrides": [],
+      "interaction": null,
+      "effective_date": null,
+      "citation": "13.63.040(B)",
+      "source_doc_id": "D001",
+      "source_url": "https://berkeleyca.gov/sites/default/files/documents/2025-12-02%20Item%2001%20Ordinance%207992.pdf",
+      "quoted_span": "An aggrieved tenant may file a civil action for violations of section 13.63.030, \nsubsection B, for injunctive relief, money damages, and/or civil penalties of up to $1,000 \nper violation. The court shall award reasonable attorney’s fees and costs to the tenant if \nthe tenant is the prevailing party in such a civil action.",
+      "confidence": null,
+      "conflict_flag": false,
+      "conflict_note": null
+    },
+    {
+      "team_rule_id": "r-882f4fc3e2",
+      "jurisdiction": "Berkeley, CA",
+      "level": "city",
+      "category": "algorithmic_rent_setting",
+      "status": "pending",
+      "title": "Unenforceability of Lease Provisions Restricting Prevailing Tenant Attorney's Fees",
+      "requirement": "Any lease provision that limits a prevailing tenant from recovering attorney's fees is unenforceable against a tenant's claim for attorney's fees arising under subsection 13.63.040(B).",
+      "key_value": null,
+      "coverage_conditions": null,
+      "exemptions": null,
+      "overrides": [],
+      "interaction": null,
+      "effective_date": null,
+      "citation": "13.63.040(B)",
+      "source_doc_id": "D001",
+      "source_url": "https://berkeleyca.gov/sites/default/files/documents/2025-12-02%20Item%2001%20Ordinance%207992.pdf",
+      "quoted_span": "A lease provision that limits a \nprevailing tenant from obtaining attorneys’ fees shall not be enforceable against a \ntenant’s claim for attorneys’ fees that arises under this subsection 13.63.040(B).",
+      "confidence": null,
+      "conflict_flag": false,
+      "conflict_note": null
+    }
+  ],
+  "candidates": [
+    {
+      "index": 0,
+      "origin": "primary",
+      "accepted": true,
+      "rejection_reasons": [],
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "normalized_match",
+        "normalization": "Unicode NFC; each whitespace run (incl. line breaks) compared as one space; span ends trimmed",
+        "start": 4689,
+        "end": 4941,
+        "occurrences": 1,
+        "model_span": "It shall be unlawful to sell, license, or otherwise provide to City of Berkeley landlords any coordinated pricing algorithm that sets or recommends rents or occupancy levels that may be achieved for residential dwelling units in the City of Berkeley.",
+        "source_span": "It shall be unlawful to sell, license, or otherwise provide to City of Berkeley \nlandlords any coordinated pricing algorithm that sets or recommends rents or occupancy \nlevels that may be achieved for residential dwelling units in the City of Berkeley.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 3,
+            "model_text": "It shall be unlawful to sell, license, or otherwise provide to City of Berkeley landlords any coordinated pricing algorithm that sets or recommends rents or occupancy levels that may be achieved for residential dwelling units in the City of Berkeley.",
+            "status": "normalized_match",
+            "start": 4689,
+            "end": 4941
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": null,
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": null,
+        "applied_kind": null,
+        "effective_date": null,
+        "history_evidence": null
+      },
+      "status_derivation": "enactment_status=pending",
+      "warnings": [
+        "quoted_span matched only after safe normalization; exact source text used in the record"
+      ],
+      "rule": {
+        "team_rule_id": "r-a1b5eeb54d",
+        "jurisdiction": "Berkeley, CA",
+        "level": "city",
+        "category": "algorithmic_rent_setting",
+        "status": "pending",
+        "title": "Prohibition on Sale or Provision of Coordinated Pricing Algorithms",
+        "requirement": "It is unlawful to sell, license, or otherwise provide to City of Berkeley landlords any coordinated pricing algorithm that sets or recommends rents or occupancy levels that may be achieved for residential dwelling units in the City of Berkeley.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "13.63.030(A)",
+        "source_doc_id": "D001",
+        "source_url": "https://berkeleyca.gov/sites/default/files/documents/2025-12-02%20Item%2001%20Ordinance%207992.pdf",
+        "quoted_span": "It shall be unlawful to sell, license, or otherwise provide to City of Berkeley \nlandlords any coordinated pricing algorithm that sets or recommends rents or occupancy \nlevels that may be achieved for residential dwelling units in the City of Berkeley.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "algorithmic_rent_setting",
+        "citation": "13.63.030(A)",
+        "quote_parts": [
+          {
+            "segment_id": 3,
+            "quoted_text": "It shall be unlawful to sell, license, or otherwise provide to City of Berkeley landlords any coordinated pricing algorithm that sets or recommends rents or occupancy levels that may be achieved for residential dwelling units in the City of Berkeley."
+          }
+        ],
+        "title": "Prohibition on Sale or Provision of Coordinated Pricing Algorithms",
+        "requirement": "It is unlawful to sell, license, or otherwise provide to City of Berkeley landlords any coordinated pricing algorithm that sets or recommends rents or occupancy levels that may be achieved for residential dwelling units in the City of Berkeley.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "pending",
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": null,
+        "effective_date_evidence_kind": null,
+        "effective_date": null,
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 1,
+      "origin": "primary",
+      "accepted": true,
+      "rejection_reasons": [],
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "normalized_match",
+        "normalization": "Unicode NFC; each whitespace run (incl. line breaks) compared as one space; span ends trimmed",
+        "start": 4946,
+        "end": 5362,
+        "occurrences": 1,
+        "model_span": "It shall be unlawful for a landlord to use a coordinated pricing algorithm described in subsection A when setting rents or occupancy levels for residential dwelling units in the City of Berkeley. Each separate month that a violation exists or continues, and each separate residential dwelling unit for which the landlord used the coordinated pricing algorithm, shall constitute a separate and distinct violation.",
+        "source_span": "It shall be unlawful for a landlord to use a coordinated pricing algorithm described \nin subsection A when setting rents or occupancy levels for residential dwelling units in \nthe City of Berkeley. Each separate month that a violation exists or continues, and each \nseparate residential dwelling unit for which the landlord used the coordinated pricing \nalgorithm, shall constitute a separate and distinct violation.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 3,
+            "model_text": "It shall be unlawful for a landlord to use a coordinated pricing algorithm described in subsection A when setting rents or occupancy levels for residential dwelling units in the City of Berkeley. Each separate month that a violation exists or continues, and each separate residential dwelling unit for which the landlord used the coordinated pricing algorithm, shall constitute a separate and distinct violation.",
+            "status": "normalized_match",
+            "start": 4946,
+            "end": 5362
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": null,
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": null,
+        "applied_kind": null,
+        "effective_date": null,
+        "history_evidence": null
+      },
+      "status_derivation": "enactment_status=pending",
+      "warnings": [
+        "quoted_span matched only after safe normalization; exact source text used in the record"
+      ],
+      "rule": {
+        "team_rule_id": "r-ec0e3ab2a2",
+        "jurisdiction": "Berkeley, CA",
+        "level": "city",
+        "category": "algorithmic_rent_setting",
+        "status": "pending",
+        "title": "Prohibition on Landlord Use of Coordinated Pricing Algorithms",
+        "requirement": "Landlords are prohibited from using a coordinated pricing algorithm when setting rents or occupancy levels for residential dwelling units in the City of Berkeley. Each separate month a violation continues and each separate residential dwelling unit for which the algorithm was used constitutes a distinct violation.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "13.63.030(B)",
+        "source_doc_id": "D001",
+        "source_url": "https://berkeleyca.gov/sites/default/files/documents/2025-12-02%20Item%2001%20Ordinance%207992.pdf",
+        "quoted_span": "It shall be unlawful for a landlord to use a coordinated pricing algorithm described \nin subsection A when setting rents or occupancy levels for residential dwelling units in \nthe City of Berkeley. Each separate month that a violation exists or continues, and each \nseparate residential dwelling unit for which the landlord used the coordinated pricing \nalgorithm, shall constitute a separate and distinct violation.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "algorithmic_rent_setting",
+        "citation": "13.63.030(B)",
+        "quote_parts": [
+          {
+            "segment_id": 3,
+            "quoted_text": "It shall be unlawful for a landlord to use a coordinated pricing algorithm described in subsection A when setting rents or occupancy levels for residential dwelling units in the City of Berkeley. Each separate month that a violation exists or continues, and each separate residential dwelling unit for which the landlord used the coordinated pricing algorithm, shall constitute a separate and distinct violation."
+          }
+        ],
+        "title": "Prohibition on Landlord Use of Coordinated Pricing Algorithms",
+        "requirement": "Landlords are prohibited from using a coordinated pricing algorithm when setting rents or occupancy levels for residential dwelling units in the City of Berkeley. Each separate month a violation continues and each separate residential dwelling unit for which the algorithm was used constitutes a distinct violation.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "pending",
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": null,
+        "effective_date_evidence_kind": null,
+        "effective_date": null,
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 2,
+      "origin": "primary",
+      "accepted": true,
+      "rejection_reasons": [],
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "normalized_match",
+        "normalization": "Unicode NFC; each whitespace run (incl. line breaks) compared as one space; span ends trimmed",
+        "start": 5779,
+        "end": 6103,
+        "occurrences": 1,
+        "model_span": "An aggrieved tenant may file a civil action for violations of section 13.63.030, subsection B, for injunctive relief, money damages, and/or civil penalties of up to $1,000 per violation. The court shall award reasonable attorney’s fees and costs to the tenant if the tenant is the prevailing party in such a civil action.",
+        "source_span": "An aggrieved tenant may file a civil action for violations of section 13.63.030, \nsubsection B, for injunctive relief, money damages, and/or civil penalties of up to $1,000 \nper violation. The court shall award reasonable attorney’s fees and costs to the tenant if \nthe tenant is the prevailing party in such a civil action.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 3,
+            "model_text": "An aggrieved tenant may file a civil action for violations of section 13.63.030, subsection B, for injunctive relief, money damages, and/or civil penalties of up to $1,000 per violation. The court shall award reasonable attorney’s fees and costs to the tenant if the tenant is the prevailing party in such a civil action.",
+            "status": "normalized_match",
+            "start": 5779,
+            "end": 6103
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": null,
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": null,
+        "applied_kind": null,
+        "effective_date": null,
+        "history_evidence": null
+      },
+      "status_derivation": "enactment_status=pending",
+      "warnings": [
+        "quoted_span matched only after safe normalization; exact source text used in the record"
+      ],
+      "rule": {
+        "team_rule_id": "r-562e8c0b31",
+        "jurisdiction": "Berkeley, CA",
+        "level": "city",
+        "category": "algorithmic_rent_setting",
+        "status": "pending",
+        "title": "Tenant Private Right of Action and Remedies for Coordinated Pricing Algorithm Violations",
+        "requirement": "An aggrieved tenant may file a civil action against a landlord for violations of section 13.63.030(B) for injunctive relief, money damages, and civil penalties of up to $1,000 per violation. The court must award reasonable attorney's fees and costs to the tenant if the tenant prevails.",
+        "key_value": "up to $1,000 per violation",
+        "coverage_conditions": null,
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "13.63.040(B)",
+        "source_doc_id": "D001",
+        "source_url": "https://berkeleyca.gov/sites/default/files/documents/2025-12-02%20Item%2001%20Ordinance%207992.pdf",
+        "quoted_span": "An aggrieved tenant may file a civil action for violations of section 13.63.030, \nsubsection B, for injunctive relief, money damages, and/or civil penalties of up to $1,000 \nper violation. The court shall award reasonable attorney’s fees and costs to the tenant if \nthe tenant is the prevailing party in such a civil action.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "algorithmic_rent_setting",
+        "citation": "13.63.040(B)",
+        "quote_parts": [
+          {
+            "segment_id": 3,
+            "quoted_text": "An aggrieved tenant may file a civil action for violations of section 13.63.030, subsection B, for injunctive relief, money damages, and/or civil penalties of up to $1,000 per violation. The court shall award reasonable attorney’s fees and costs to the tenant if the tenant is the prevailing party in such a civil action."
+          }
+        ],
+        "title": "Tenant Private Right of Action and Remedies for Coordinated Pricing Algorithm Violations",
+        "requirement": "An aggrieved tenant may file a civil action against a landlord for violations of section 13.63.030(B) for injunctive relief, money damages, and civil penalties of up to $1,000 per violation. The court must award reasonable attorney's fees and costs to the tenant if the tenant prevails.",
+        "key_value": "up to $1,000 per violation",
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "pending",
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": null,
+        "effective_date_evidence_kind": null,
+        "effective_date": null,
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 3,
+      "origin": "primary",
+      "accepted": true,
+      "rejection_reasons": [],
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "normalized_match",
+        "normalization": "Unicode NFC; each whitespace run (incl. line breaks) compared as one space; span ends trimmed",
+        "start": 6104,
+        "end": 6304,
+        "occurrences": 1,
+        "model_span": "A lease provision that limits a prevailing tenant from obtaining attorneys’ fees shall not be enforceable against a tenant’s claim for attorneys’ fees that arises under this subsection 13.63.040(B).",
+        "source_span": "A lease provision that limits a \nprevailing tenant from obtaining attorneys’ fees shall not be enforceable against a \ntenant’s claim for attorneys’ fees that arises under this subsection 13.63.040(B).",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 3,
+            "model_text": "A lease provision that limits a prevailing tenant from obtaining attorneys’ fees shall not be enforceable against a tenant’s claim for attorneys’ fees that arises under this subsection 13.63.040(B).",
+            "status": "normalized_match",
+            "start": 6104,
+            "end": 6304
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": null,
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": null,
+        "applied_kind": null,
+        "effective_date": null,
+        "history_evidence": null
+      },
+      "status_derivation": "enactment_status=pending",
+      "warnings": [
+        "quoted_span matched only after safe normalization; exact source text used in the record"
+      ],
+      "rule": {
+        "team_rule_id": "r-882f4fc3e2",
+        "jurisdiction": "Berkeley, CA",
+        "level": "city",
+        "category": "algorithmic_rent_setting",
+        "status": "pending",
+        "title": "Unenforceability of Lease Provisions Restricting Prevailing Tenant Attorney's Fees",
+        "requirement": "Any lease provision that limits a prevailing tenant from recovering attorney's fees is unenforceable against a tenant's claim for attorney's fees arising under subsection 13.63.040(B).",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "13.63.040(B)",
+        "source_doc_id": "D001",
+        "source_url": "https://berkeleyca.gov/sites/default/files/documents/2025-12-02%20Item%2001%20Ordinance%207992.pdf",
+        "quoted_span": "A lease provision that limits a \nprevailing tenant from obtaining attorneys’ fees shall not be enforceable against a \ntenant’s claim for attorneys’ fees that arises under this subsection 13.63.040(B).",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "algorithmic_rent_setting",
+        "citation": "13.63.040(B)",
+        "quote_parts": [
+          {
+            "segment_id": 3,
+            "quoted_text": "A lease provision that limits a prevailing tenant from obtaining attorneys’ fees shall not be enforceable against a tenant’s claim for attorneys’ fees that arises under this subsection 13.63.040(B)."
+          }
+        ],
+        "title": "Unenforceability of Lease Provisions Restricting Prevailing Tenant Attorney's Fees",
+        "requirement": "Any lease provision that limits a prevailing tenant from recovering attorney's fees is unenforceable against a tenant's claim for attorney's fees arising under subsection 13.63.040(B).",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "pending",
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": null,
+        "effective_date_evidence_kind": null,
+        "effective_date": null,
+        "conflict_note": null
+      }
+    }
+  ],
+  "provision_inventory": [
+    {
+      "ref": "13.63.010",
+      "summary": "Legislative findings and purpose regarding coordinated pricing algorithms",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "purpose statements",
+      "rule_indices": []
+    },
+    {
+      "ref": "13.63.020(A)",
+      "summary": "Definition of coordinated pricing algorithm",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "definitions",
+      "rule_indices": []
+    },
+    {
+      "ref": "13.63.020(B)",
+      "summary": "Definition of competitor data",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "definitions",
+      "rule_indices": []
+    },
+    {
+      "ref": "13.63.030(A)",
+      "summary": "Prohibition on selling, licensing, or providing coordinated pricing algorithms to Berkeley landlords",
+      "scope": "in_scope",
+      "category": "algorithmic_rent_setting",
+      "reason": null,
+      "rule_indices": [
+        0
+      ]
+    },
+    {
+      "ref": "13.63.030(B)",
+      "summary": "Prohibition on landlord use of coordinated pricing algorithms and violation calculation",
+      "scope": "in_scope",
+      "category": "algorithmic_rent_setting",
+      "reason": null,
+      "rule_indices": [
+        1
+      ]
+    },
+    {
+      "ref": "13.63.040(A)",
+      "summary": "City Attorney civil enforcement authority, remedies, penalties, and fee recovery",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "government enforcement authority",
+      "rule_indices": []
+    },
+    {
+      "ref": "13.63.040(B)",
+      "summary": "Private right of action for aggrieved tenants, remedies, attorney's fees, and anti-waiver rule",
+      "scope": "in_scope",
+      "category": "algorithmic_rent_setting",
+      "reason": null,
+      "rule_indices": [
+        2,
+        3
+      ]
+    },
+    {
+      "ref": "13.63.050",
+      "summary": "City undertaking for general welfare and disclaimer of liability in money damages",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "administrative liability limitation",
+      "rule_indices": []
+    },
+    {
+      "ref": "13.63.060",
+      "summary": "Severability clause",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "severability boilerplate",
+      "rule_indices": []
+    },
+    {
+      "ref": "Section 2",
+      "summary": "Requirements for posting, library filing, and newspaper publication of the ordinance",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "procedural ordinance publication requirements",
+      "rule_indices": []
+    }
+  ],
+  "global_scope": [],
+  "source_view": {
+    "marker": "[[PAGE BREAK]]",
+    "segment_label": "[[SEGMENT {}]]",
+    "view_sha256": "2e751e8b8b216ccc5d49501a84a4e2b5f02027e527a86fec2b09bd0733287f44",
+    "segments": [
+      {
+        "id": 1,
+        "raw_start": 0,
+        "raw_end": 1737
+      },
+      {
+        "id": 2,
+        "raw_start": 1786,
+        "raw_end": 4637
+      },
+      {
+        "id": 3,
+        "raw_start": 4686,
+        "raw_end": 7377
+      },
+      {
+        "id": 4,
+        "raw_start": 7426,
+        "raw_end": 7860
+      }
+    ],
+    "artifacts_removed": 3,
+    "artifacts": [
+      {
+        "raw_start": 1737,
+        "raw_end": 1786,
+        "text": "Page 1 of 4\nOrdinance No. 7,992-N.S. Page 2 of 4\n"
+      },
+      {
+        "raw_start": 4637,
+        "raw_end": 4686,
+        "text": "Page 2 of 4\nOrdinance No. 7,992-N.S. Page 3 of 4\n"
+      },
+      {
+        "raw_start": 7377,
+        "raw_end": 7426,
+        "text": "Page 3 of 4\nOrdinance No. 7,992-N.S. Page 4 of 4\n"
+      }
+    ]
+  },
+  "coverage": {
+    "inventory_valid": true,
+    "after_primary": {
+      "uncovered": [],
+      "unaccepted": [],
+      "unrecorded_subdivisions": []
+    },
+    "inventory_items": 10,
+    "in_scope_items": 3,
+    "in_scope_refs": 3,
+    "uncertain": [],
+    "final": {
+      "uncovered": [],
+      "unaccepted": [],
+      "unrecorded_subdivisions": []
+    },
+    "link_mismatches": [],
+    "provisions": [
+      {
+        "ref": "13.63.030(A)",
+        "inventory_item": 3,
+        "summary": "Prohibition on selling, licensing, or providing coordinated pricing algorithms to Berkeley landlords",
+        "category": "algorithmic_rent_setting",
+        "candidates": [
+          0
+        ],
+        "accepted": [
+          0
+        ],
+        "basis": {
+          "0": "citation"
+        }
+      },
+      {
+        "ref": "13.63.030(B)",
+        "inventory_item": 4,
+        "summary": "Prohibition on landlord use of coordinated pricing algorithms and violation calculation",
+        "category": "algorithmic_rent_setting",
+        "candidates": [
+          1
+        ],
+        "accepted": [
+          1
+        ],
+        "basis": {
+          "1": "citation"
+        }
+      },
+      {
+        "ref": "13.63.040(B)",
+        "inventory_item": 6,
+        "summary": "Private right of action for aggrieved tenants, remedies, attorney's fees, and anti-waiver rule",
+        "category": "algorithmic_rent_setting",
+        "candidates": [
+          2,
+          3
+        ],
+        "accepted": [
+          2,
+          3
+        ],
+        "basis": {
+          "2": "citation",
+          "3": "citation"
+        }
+      }
+    ],
+    "unrecorded_subdivisions": []
+  },
+  "repair": null,
+  "document_status": "complete",
+  "review_reasons": [],
+  "warnings": [],
+  "errors": [],
+  "raw_response_text": "{\n  \"provisions\": [\n    {\n      \"ref\": \"13.63.010\",\n      \"summary\": \"Legislative findings and purpose regarding coordinated pricing algorithms\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"purpose statements\",\n      \"rule_indices\": []\n    },\n    {\n      \"ref\": \"13.63.020(A)\",\n      \"summary\": \"Definition of coordinated pricing algorithm\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"definitions\",\n      \"rule_indices\": []\n    },\n    {\n      \"ref\": \"13.63.020(B)\",\n      \"summary\": \"Definition of competitor data\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"definitions\",\n      \"rule_indices\": []\n    },\n    {\n      \"ref\": \"13.63.030(A)\",\n      \"summary\": \"Prohibition on selling, licensing, or providing coordinated pricing algorithms to Berkeley landlords\",\n      \"scope\": \"in_scope\",\n      \"category\": \"algorithmic_rent_setting\",\n      \"reason\": null,\n      \"rule_indices\": [0]\n    },\n    {\n      \"ref\": \"13.63.030(B)\",\n      \"summary\": \"Prohibition on landlord use of coordinated pricing algorithms and violation calculation\",\n      \"scope\": \"in_scope\",\n      \"category\": \"algorithmic_rent_setting\",\n      \"reason\": null,\n      \"rule_indices\": [1]\n    },\n    {\n      \"ref\": \"13.63.040(A)\",\n      \"summary\": \"City Attorney civil enforcement authority, remedies, penalties, and fee recovery\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"government enforcement authority\",\n      \"rule_indices\": []\n    },\n    {\n      \"ref\": \"13.63.040(B)\",\n      \"summary\": \"Private right of action for aggrieved tenants, remedies, attorney's fees, and anti-waiver rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"algorithmic_rent_setting\",\n      \"reason\": null,\n      \"rule_indices\": [2, 3]\n    },\n    {\n      \"ref\": \"13.63.050\",\n      \"summary\": \"City undertaking for general welfare and disclaimer of liability in money damages\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"administrative liability limitation\",\n      \"rule_indices\": []\n    },\n    {\n      \"ref\": \"13.63.060\",\n      \"summary\": \"Severability clause\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"severability boilerplate\",\n      \"rule_indices\": []\n    },\n    {\n      \"ref\": \"Section 2\",\n      \"summary\": \"Requirements for posting, library filing, and newspaper publication of the ordinance\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"procedural ordinance publication requirements\",\n      \"rule_indices\": []\n    }\n  ],\n  \"global_scope\": [],\n  \"rules\": [\n    {\n      \"category\": \"algorithmic_rent_setting\",\n      \"citation\": \"13.63.030(A)\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 3,\n          \"quoted_text\": \"It shall be unlawful to sell, license, or otherwise provide to City of Berkeley landlords any coordinated pricing algorithm that sets or recommends rents or occupancy levels that may be achieved for residential dwelling units in the City of Berkeley.\"\n        }\n      ],\n      \"title\": \"Prohibition on Sale or Provision of Coordinated Pricing Algorithms\",\n      \"requirement\": \"It is unlawful to sell, license, or otherwise provide to City of Berkeley landlords any coordinated pricing algorithm that sets or recommends rents or occupancy levels that may be achieved for residential dwelling units in the City of Berkeley.\",\n      \"key_value\": null,\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"pending\",\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": null,\n      \"effective_date_evidence_kind\": null,\n      \"effective_date\": null,\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"algorithmic_rent_setting\",\n      \"citation\": \"13.63.030(B)\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 3,\n          \"quoted_text\": \"It shall be unlawful for a landlord to use a coordinated pricing algorithm described in subsection A when setting rents or occupancy levels for residential dwelling units in the City of Berkeley. Each separate month that a violation exists or continues, and each separate residential dwelling unit for which the landlord used the coordinated pricing algorithm, shall constitute a separate and distinct violation.\"\n        }\n      ],\n      \"title\": \"Prohibition on Landlord Use of Coordinated Pricing Algorithms\",\n      \"requirement\": \"Landlords are prohibited from using a coordinated pricing algorithm when setting rents or occupancy levels for residential dwelling units in the City of Berkeley. Each separate month a violation continues and each separate residential dwelling unit for which the algorithm was used constitutes a distinct violation.\",\n      \"key_value\": null,\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"pending\",\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": null,\n      \"effective_date_evidence_kind\": null,\n      \"effective_date\": null,\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"algorithmic_rent_setting\",\n      \"citation\": \"13.63.040(B)\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 3,\n          \"quoted_text\": \"An aggrieved tenant may file a civil action for violations of section 13.63.030, subsection B, for injunctive relief, money damages, and/or civil penalties of up to $1,000 per violation. The court shall award reasonable attorney’s fees and costs to the tenant if the tenant is the prevailing party in such a civil action.\"\n        }\n      ],\n      \"title\": \"Tenant Private Right of Action and Remedies for Coordinated Pricing Algorithm Violations\",\n      \"requirement\": \"An aggrieved tenant may file a civil action against a landlord for violations of section 13.63.030(B) for injunctive relief, money damages, and civil penalties of up to $1,000 per violation. The court must award reasonable attorney's fees and costs to the tenant if the tenant prevails.\",\n      \"key_value\": \"up to $1,000 per violation\",\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"pending\",\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": null,\n      \"effective_date_evidence_kind\": null,\n      \"effective_date\": null,\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"algorithmic_rent_setting\",\n      \"citation\": \"13.63.040(B)\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 3,\n          \"quoted_text\": \"A lease provision that limits a prevailing tenant from obtaining attorneys’ fees shall not be enforceable against a tenant’s claim for attorneys’ fees that arises under this subsection 13.63.040(B).\"\n        }\n      ],\n      \"title\": \"Unenforceability of Lease Provisions Restricting Prevailing Tenant Attorney's Fees\",\n      \"requirement\": \"Any lease provision that limits a prevailing tenant from recovering attorney's fees is unenforceable against a tenant's claim for attorney's fees arising under subsection 13.63.040(B).\",\n      \"key_value\": null,\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"pending\",\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": null,\n      \"effective_date_evidence_kind\": null,\n      \"effective_date\": null,\n      \"conflict_note\": null\n    }\n  ]\n}"
+}

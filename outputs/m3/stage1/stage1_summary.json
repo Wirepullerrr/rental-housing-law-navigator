@@ -1,0 +1,395 @@
+{
+  "disclaimer": "Not legal advice. Spend figures are estimates computed from API-reported token usage at the configured rates; they are not the account's billing balance.",
+  "generated_at": "2026-10-04T01:15:51+00:00",
+  "stage_dir": "outputs/m3/stage1",
+  "selection": [
+    "D065",
+    "D001",
+    "D022",
+    "D011",
+    "D085"
+  ],
+  "model": "gemini-3.8-flash",
+  "settings": {
+    "temperature": null,
+    "seed": 20261001,
+    "thinking_level": "medium"
+  },
+  "pricing_usd_per_million_tokens": {
+    "input": 0.75,
+    "output": 3.75
+  },
+  "budget_usd": 0.75,
+  "stop_reason": null,
+  "estimated_new_spend_usd": {
+    "this_invocation": 0.312724,
+    "stage_ledger_total": 0.312724
+  },
+  "totals": {
+    "selected": 5,
+    "processed": 5,
+    "resumed": 0,
+    "not_run": 0,
+    "errors": 0,
+    "complete": 4,
+    "review_required": 1,
+    "candidates": 32,
+    "accepted_rules": 13,
+    "rejected_candidates": 19,
+    "accepted_quotes_raw_substring": 13,
+    "exact_citation_rate": 1.0,
+    "reconstructed_cross_page_quotes": 0,
+    "documents_requiring_repair": 0,
+    "repair_targets": 0,
+    "repair_classifications": {},
+    "repair_resolved_by_rule": 0,
+    "repair_resolved_out_of_scope": 0,
+    "unresolved_targets": 0,
+    "primary_provider_calls": 5,
+    "repair_provider_calls": 0,
+    "primary_cache_hits": 0,
+    "repair_cache_hits": 0,
+    "new_tokens": {
+      "primary": {
+        "input_tokens": 23960,
+        "output_tokens": 18996,
+        "thinking_tokens": 59605
+      },
+      "repair": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0
+      }
+    },
+    "estimated_new_cost_usd": 0.312724,
+    "new_cost_per_processed_document_usd": {
+      "mean": 0.062545,
+      "median": 0.05792,
+      "max": 0.119447
+    }
+  },
+  "documents": [
+    {
+      "doc_id": "D065",
+      "jurisdiction": "NJ",
+      "level": "state",
+      "source_type": "official",
+      "body_chars": 20827,
+      "page_artifacts": 0,
+      "model": "gemini-3.8-flash",
+      "reported_model": "gemini-3.8-flash",
+      "thinking_level": "medium",
+      "prompt_version": "v5",
+      "run_mode": "processed",
+      "primary_cache_hit": false,
+      "repair_cache_hit": null,
+      "primary_provider_calls": 1,
+      "repair_provider_calls": 0,
+      "candidates": 19,
+      "accepted": 0,
+      "rejected": 19,
+      "primary_candidates": 19,
+      "repair_candidates": 0,
+      "repair_targets": 0,
+      "repair_classifications": {},
+      "repair_resolution": null,
+      "unresolved_targets": [],
+      "document_status": "review_required",
+      "review_reasons": [
+        "in-scope provisions whose candidate records were all rejected: ['C.46:8-55(a)(1)', 'C.46:8-55(a)(2)', 'C.46:8-55(a)(3)', 'C.46:8-55(b)', 'C.46:8-55(c)', 'C.46:8-56(a)', 'C.46:8-56(b)', 'C.46:8-56(c)(1)', 'C.46:8-56(c)(2)', 'C.46:8-56(c)(3)', 'C.46:8-56(d)', 'C.46:8-58(a)', 'C.46:8-58(b)', 'C.46:8-58(c)', 'C.46:8-60', 'C.46:8-61', 'C.46:8-63(d)(2)', 'C.46:8-63(d)(3)', 'C.46:8-63(d)(4)']"
+      ],
+      "citations": {
+        "accepted": 0,
+        "exact_match": 0,
+        "normalized_match": 0,
+        "raw_substring": 0,
+        "reconstructed_cross_page": 0
+      },
+      "global_scope": {
+        "proposed": 1,
+        "verified": 1
+      },
+      "errors": [],
+      "tokens_reported": {
+        "primary": {
+          "input_tokens": 7581,
+          "output_tokens": 10354,
+          "thinking_tokens": 2255,
+          "total_tokens": 20190
+        },
+        "repair": {}
+      },
+      "new_tokens": {
+        "primary": {
+          "input_tokens": 7581,
+          "output_tokens": 10354,
+          "thinking_tokens": 2255,
+          "total_tokens": 20190
+        },
+        "repair": {}
+      },
+      "estimated_new_cost_usd": {
+        "primary": 0.05297,
+        "repair": 0.0,
+        "total": 0.05297
+      },
+      "artifact": "outputs/m3/stage1/documents/D065_extraction.json"
+    },
+    {
+      "doc_id": "D001",
+      "jurisdiction": "Berkeley, CA",
+      "level": "city",
+      "source_type": "official",
+      "body_chars": 7860,
+      "page_artifacts": 3,
+      "model": "gemini-3.8-flash",
+      "reported_model": "gemini-3.8-flash",
+      "thinking_level": "medium",
+      "prompt_version": "v5",
+      "run_mode": "processed",
+      "primary_cache_hit": false,
+      "repair_cache_hit": null,
+      "primary_provider_calls": 1,
+      "repair_provider_calls": 0,
+      "candidates": 4,
+      "accepted": 4,
+      "rejected": 0,
+      "primary_candidates": 4,
+      "repair_candidates": 0,
+      "repair_targets": 0,
+      "repair_classifications": {},
+      "repair_resolution": null,
+      "unresolved_targets": [],
+      "document_status": "complete",
+      "review_reasons": [],
+      "citations": {
+        "accepted": 4,
+        "exact_match": 0,
+        "normalized_match": 4,
+        "raw_substring": 4,
+        "reconstructed_cross_page": 0
+      },
+      "global_scope": {
+        "proposed": 0,
+        "verified": 0
+      },
+      "errors": [],
+      "tokens_reported": {
+        "primary": {
+          "input_tokens": 4619,
+          "output_tokens": 2132,
+          "thinking_tokens": 15905,
+          "total_tokens": 22656
+        },
+        "repair": {}
+      },
+      "new_tokens": {
+        "primary": {
+          "input_tokens": 4619,
+          "output_tokens": 2132,
+          "thinking_tokens": 15905,
+          "total_tokens": 22656
+        },
+        "repair": {}
+      },
+      "estimated_new_cost_usd": {
+        "primary": 0.071103,
+        "repair": 0.0,
+        "total": 0.071103
+      },
+      "artifact": "outputs/m3/stage1/documents/D001_extraction.json"
+    },
+    {
+      "doc_id": "D022",
+      "jurisdiction": "CA",
+      "level": "state",
+      "source_type": "official",
+      "body_chars": 6452,
+      "page_artifacts": 0,
+      "model": "gemini-3.8-flash",
+      "reported_model": "gemini-3.8-flash",
+      "thinking_level": "medium",
+      "prompt_version": "v5",
+      "run_mode": "processed",
+      "primary_cache_hit": false,
+      "repair_cache_hit": null,
+      "primary_provider_calls": 1,
+      "repair_provider_calls": 0,
+      "candidates": 2,
+      "accepted": 2,
+      "rejected": 0,
+      "primary_candidates": 2,
+      "repair_candidates": 0,
+      "repair_targets": 0,
+      "repair_classifications": {},
+      "repair_resolution": null,
+      "unresolved_targets": [],
+      "document_status": "complete",
+      "review_reasons": [],
+      "citations": {
+        "accepted": 2,
+        "exact_match": 2,
+        "normalized_match": 0,
+        "raw_substring": 2,
+        "reconstructed_cross_page": 0
+      },
+      "global_scope": {
+        "proposed": 1,
+        "verified": 1
+      },
+      "errors": [],
+      "tokens_reported": {
+        "primary": {
+          "input_tokens": 4252,
+          "output_tokens": 1371,
+          "thinking_tokens": 13224,
+          "total_tokens": 18847
+        },
+        "repair": {}
+      },
+      "new_tokens": {
+        "primary": {
+          "input_tokens": 4252,
+          "output_tokens": 1371,
+          "thinking_tokens": 13224,
+          "total_tokens": 18847
+        },
+        "repair": {}
+      },
+      "estimated_new_cost_usd": {
+        "primary": 0.05792,
+        "repair": 0.0,
+        "total": 0.05792
+      },
+      "artifact": "outputs/m3/stage1/documents/D022_extraction.json"
+    },
+    {
+      "doc_id": "D011",
+      "jurisdiction": "Boston, MA",
+      "level": "city",
+      "source_type": "official",
+      "body_chars": 3627,
+      "page_artifacts": 0,
+      "model": "gemini-3.8-flash",
+      "reported_model": "gemini-3.8-flash",
+      "thinking_level": "medium",
+      "prompt_version": "v5",
+      "run_mode": "processed",
+      "primary_cache_hit": false,
+      "repair_cache_hit": null,
+      "primary_provider_calls": 1,
+      "repair_provider_calls": 0,
+      "candidates": 0,
+      "accepted": 0,
+      "rejected": 0,
+      "primary_candidates": 0,
+      "repair_candidates": 0,
+      "repair_targets": 0,
+      "repair_classifications": {},
+      "repair_resolution": null,
+      "unresolved_targets": [],
+      "document_status": "complete",
+      "review_reasons": [],
+      "citations": {
+        "accepted": 0,
+        "exact_match": 0,
+        "normalized_match": 0,
+        "raw_substring": 0,
+        "reconstructed_cross_page": 0
+      },
+      "global_scope": {
+        "proposed": 0,
+        "verified": 0
+      },
+      "errors": [],
+      "tokens_reported": {
+        "primary": {
+          "input_tokens": 3655,
+          "output_tokens": 24,
+          "thinking_tokens": 2254,
+          "total_tokens": 5933
+        },
+        "repair": {}
+      },
+      "new_tokens": {
+        "primary": {
+          "input_tokens": 3655,
+          "output_tokens": 24,
+          "thinking_tokens": 2254,
+          "total_tokens": 5933
+        },
+        "repair": {}
+      },
+      "estimated_new_cost_usd": {
+        "primary": 0.011284,
+        "repair": 0.0,
+        "total": 0.011284
+      },
+      "artifact": "outputs/m3/stage1/documents/D011_extraction.json"
+    },
+    {
+      "doc_id": "D085",
+      "jurisdiction": "Santa Ana, CA",
+      "level": "city",
+      "source_type": "official",
+      "body_chars": 5095,
+      "page_artifacts": 0,
+      "model": "gemini-3.8-flash",
+      "reported_model": "gemini-3.8-flash",
+      "thinking_level": "medium",
+      "prompt_version": "v5",
+      "run_mode": "processed",
+      "primary_cache_hit": false,
+      "repair_cache_hit": null,
+      "primary_provider_calls": 1,
+      "repair_provider_calls": 0,
+      "candidates": 7,
+      "accepted": 7,
+      "rejected": 0,
+      "primary_candidates": 7,
+      "repair_candidates": 0,
+      "repair_targets": 0,
+      "repair_classifications": {},
+      "repair_resolution": null,
+      "unresolved_targets": [],
+      "document_status": "complete",
+      "review_reasons": [],
+      "citations": {
+        "accepted": 7,
+        "exact_match": 7,
+        "normalized_match": 0,
+        "raw_substring": 7,
+        "reconstructed_cross_page": 0
+      },
+      "global_scope": {
+        "proposed": 8,
+        "verified": 8
+      },
+      "errors": [],
+      "tokens_reported": {
+        "primary": {
+          "input_tokens": 3853,
+          "output_tokens": 5115,
+          "thinking_tokens": 25967,
+          "total_tokens": 34935
+        },
+        "repair": {}
+      },
+      "new_tokens": {
+        "primary": {
+          "input_tokens": 3853,
+          "output_tokens": 5115,
+          "thinking_tokens": 25967,
+          "total_tokens": 34935
+        },
+        "repair": {}
+      },
+      "estimated_new_cost_usd": {
+        "primary": 0.119447,
+        "repair": 0.0,
+        "total": 0.119447
+      },
+      "artifact": "outputs/m3/stage1/documents/D085_extraction.json"
+    }
+  ]
+}

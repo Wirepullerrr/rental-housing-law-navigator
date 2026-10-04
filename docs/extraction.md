@@ -28,6 +28,28 @@ supplied corpus text (manifest-verified; raw text never modified)
 
 A candidate is **accepted only if every stage passes**. Failures are recorded per stage (`pydantic`, `citation`, `temporal`, `effective_date`, `status`, `official schema`, `duplicate`, `repair`) and rejected candidates are never retried or repaired. Review checks add warnings and never change acceptance.
 
+## Remedy and enforcement scope (prompt v5)
+
+This rule is frozen for M3 and applies to both prompts. It is general: it names no document or citation.
+
+A remedy or enforcement provision is a rule record **only** when it creates a concrete legal consequence directly tied to an in-scope housing rule. Such a record takes the category of that underlying rule. Concrete consequences include:
+
+- monetary or statutory damages;
+- a tenant or landlord entitlement;
+- an affirmative defense;
+- injunctive or equitable relief;
+- attorney-fee or cost liability;
+- another concrete consequence of violating the rule (e.g. a notice made void, or forfeiture of the right to retain a deposit).
+
+None of the following is a standalone record: authorization to file a lawsuit, choice of forum, government enforcement authority, cumulative-remedies boilerplate, severability, generic procedure, or administrative machinery that creates no obligation, right or consequence applicable to a rental. These are classified `out_of_scope` with a reason. Where legally useful, they may be mentioned in the `interaction` of the records they affect.
+
+The existing validation artifacts already satisfy this rule, so they were not rerun:
+
+- **D052:** the treble damages in § 15B(2)(a) and (7), the forfeiture in (6) and the anti-waiver rule in (8) are in scope, under `security_deposits`.
+- **D073:** § 98.0709(b) to (f) (relief, the affirmative defense, treble damages, damages and attorney fees) and the void-notice and anti-waiver provisions are in scope, under `just_cause_eviction`. § 98.0709(a) (authorization to sue), (g) (cumulative remedies) and (h) (City enforcement) are out of scope.
+
+Because the prompt wording changed, the version moved to v5 (`v5-repair-1` for the repair prompt). Cached v4 responses therefore do not match v5 requests.
+
 ## Prompt v4 contract
 
 The primary prompt (`prompt.py`, `EXTRACTION_PROMPT_VERSION = "v4"`) works in three generated steps, in this order:
@@ -216,6 +238,36 @@ The key is a SHA-256 over canonical JSON of: the pass (`primary` or `repair`), s
 - The Interactions client retries on its own by default (up to 3 HTTP attempts). `HttpRetryOptions` cannot switch that off, because the SDK rewrites `attempts=0` to `1`. The adapter therefore sets the client's retry config to `"none"`. The error classes and the retry config are not exported publicly by google-genai 2.28.0, so the adapter imports them from the SDK's private `_gaos` package. That dependency is confined to `gemini.py`, pinned by `uv.lock`, and covered by HTTP-level tests (`tests/test_gemini_interactions.py`, which run the real SDK against an `httpx.MockTransport`).
 - Retries cover transient failures only: HTTP 429, any 5xx, and network timeouts or connection errors. Other 4xx responses (400/401/403/404) are never retried, and neither are validation failures. At most 3 HTTP attempts are made in total. The wait is 30 s after the first failure and 60 s after the second; if the API supplies a delay, through a `Retry-After` header or `google.rpc.RetryInfo.retryDelay`, that delay is used instead. A requested delay longer than 120 s is not waited out: the run stops and reports it. Because the SDK's internal retry is disabled, this is the only retry layer.
 - Tests block every non-loopback socket and DNS lookup and unset `GEMINI_API_KEY`. Each attempt is recorded, both by the patched socket functions and by a Python audit hook, and any test that records one fails at teardown, even if library code caught and wrapped the resulting error.
+
+## Corpus runner (`corpus.py`, `scripts/run_corpus.py`)
+
+The runner is for M3 and processes an explicitly selected set of documents. It does not replace the single-document CLI.
+
+```
+uv run python scripts/run_corpus.py --list
+uv run --env-file .env python scripts/run_corpus.py --doc-ids D065,D001 --out-dir outputs/m3/stage1 --live --budget 0.75
+```
+
+- **Selection:** only the given doc_ids are processed, one at a time, in the given order. There is no "all documents" option, and discovery reads the manifest rather than assuming a corpus size.
+- **Pipeline:** each document runs the normal single-document pipeline: primary pass, both completeness checks, at most one repair, and a final status.
+- **Budget gate:** every provider request goes through `MeteredProvider`.
+  - It refuses to *start* a request once the stage's estimated new spend has reached `--budget`; a request already in flight is never interrupted.
+  - Spend is recorded in `spend_ledger.json` in the stage directory, so the total survives interruptions.
+  - It also refuses a second primary or repair request for the same document, raising an integrity violation.
+- **Cost estimates:** `config.PRICE_PER_MTOK` holds $0.75 and $3.75 per 1M input and output tokens, with thinking billed as output, applied to API-reported usage. Cache hits cost nothing. These are estimates, never the account's billing balance.
+- **Resume:**
+  - An existing per-document artifact whose primary cache identity matches the current inputs is reused unchanged.
+  - One whose identity differs is never overwritten unless `--replace <doc_id>` is given; the old file is then kept as `*.superseded-<time>.json`.
+  - Provider responses already obtained are reused through the content-addressed cache.
+- **Stops:** the batch stops at the budget gate, on a provider failure, or on an integrity violation. The integrity checks catch:
+  - an accepted quote that is not raw source text;
+  - a schema-invalid published rule;
+  - propagation of an unverified global-scope condition;
+  - a cache identity mismatch;
+  - lost raw provenance;
+  - a second provider request for one document.
+- **What does not stop it:** a `review_required` document, or a document-level failure such as a missing supplied text. These are recorded and the batch continues.
+- **Outputs:** `<out-dir>/documents/<doc_id>_extraction.json`, plus `<out-dir>/<stage name>_summary.json`, which is rewritten after every document. The summary has one row per document (status, calls, cache hits, quote and scope counts, tokens and estimated new cost) and corpus totals.
 
 ## Known limitations (to revisit in M3)
 

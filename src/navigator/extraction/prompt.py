@@ -17,6 +17,9 @@ provisions; effective-date evidence classified, with history/codification
 notes kept out of effective_date.
 v4-repair-2 (repair prompt only): targets may be structural subdivisions; every
 target is classified in_scope / out_of_scope / uncertain, and only in-scope targets get rules.
+v4 -> v5 (both prompts): a general remedy/enforcement scope rule. Concrete consequences tied to
+an in-scope rule are records under that rule's category; authorization to sue, government
+enforcement authority, cumulative-remedies boilerplate and generic procedure are not.
 """
 
 from __future__ import annotations
@@ -26,9 +29,9 @@ from typing import Any
 from navigator.extraction.models import SourceMeta
 from navigator.extraction.source_view import PAGE_BREAK_MARKER, SEGMENT_LABEL
 
-EXTRACTION_PROMPT_VERSION = "v4"
+EXTRACTION_PROMPT_VERSION = "v5"
 # The repair prompt is versioned on its own, so a repair-only change keeps the primary cache key.
-REPAIR_PROMPT_VERSION = "v4-repair-2"
+REPAIR_PROMPT_VERSION = "v5-repair-1"
 
 _PREAMBLE = """\
 You are the rule-extraction component of a rental-housing-law research prototype. \
@@ -54,6 +57,15 @@ of a tenancy (amount, receipts, holding, interest, records, transfer, return, de
 manage occupancy.
    Scope discipline: extract nothing that fits none of these categories, however important it is \
 otherwise. Do not raise the number of records with out-of-scope provisions.""",
+    """Remedies and enforcement. A remedy or enforcement provision is a rule record only when it creates a \
+concrete legal consequence directly tied to an in-scope housing rule: monetary or statutory damages, a \
+tenant or landlord entitlement, an affirmative defense, injunctive or equitable relief, attorney-fee or \
+cost liability, or another concrete consequence of violating that rule. Give it the category of the \
+underlying rule. Do NOT make a record merely for: authorization to file a lawsuit or a choice of forum; \
+government enforcement authority; cumulative-remedies boilerplate; severability or generic procedure; \
+administrative machinery that creates no obligation, right or consequence applicable to a rental. Such \
+provisions are out_of_scope (give the reason); where legally useful, mention them in the `interaction` \
+of the records they affect (e.g. remedies that are cumulative with other law).""",
     f"The document is divided into numbered segments. Each segment starts with a line "
     f"{SEGMENT_LABEL.format('n')}. Where a repeated page header or footer was removed, a line "
     f"{PAGE_BREAK_MARKER} stands between two segments. These marker lines are not document text: never "
