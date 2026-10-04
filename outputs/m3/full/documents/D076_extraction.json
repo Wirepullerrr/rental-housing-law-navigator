@@ -1,0 +1,1543 @@
+{
+  "disclaimer": "Not legal advice. Automated extraction for a research prototype; verify against the cited source.",
+  "run_at": "2026-10-04T03:34:08+00:00",
+  "source": {
+    "doc_id": "D076",
+    "jurisdiction": "San Diego, CA",
+    "url": "https://sandiego.gov/sites/default/files/2025-04/automated-rent-price-fixing-prohibition-ordinance-materials.pdf",
+    "source_type": "official",
+    "retrieved_at": "2026-10-01T22:37Z",
+    "text_file": "text/D076.txt",
+    "content_sha256": "4b40eade4290b9908358b99113cff5b84946806215a12c0dea3efb500955b14f",
+    "body_chars": 23097
+  },
+  "provider": "gemini",
+  "model": "gemini-3.8-flash",
+  "prompt_version": "v7",
+  "prompt_sha256": "ba6c3c4897db62f7b840acd5b7ed52560efeee2c795af48ebe0e80499ceb5eed",
+  "response_schema_sha256": "c15306da6f21dc72f06e78405f94ed61dc9e59288138cc98b5b5bf9b62ac403c",
+  "generation_settings": {
+    "temperature": null,
+    "seed": 20261001,
+    "thinking_level": "medium"
+  },
+  "as_of": "2026-10-01",
+  "cache_key": "3e8a577df64a57257901bf734af2d4b1f3e06a63a8fdb972ca3742f8605fa24c",
+  "cache_hit": false,
+  "cache_entry": "cache/extraction/3e8a577df64a57257901bf734af2d4b1f3e06a63a8fdb972ca3742f8605fa24c.json",
+  "provider_metadata": {
+    "api": "interactions.create",
+    "interaction_id": "",
+    "model": "gemini-3.8-flash",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 9783,
+      "output_tokens": 2934,
+      "thinking_tokens": 13011,
+      "total_tokens": 25728
+    }
+  },
+  "candidate_count": 3,
+  "accepted_count": 3,
+  "rules": [
+    {
+      "team_rule_id": "r-7a2251b242",
+      "jurisdiction": "San Diego, CA",
+      "level": "city",
+      "category": "algorithmic_rent_setting",
+      "status": "pending",
+      "title": "Prohibition on Providing Algorithmic Devices to Landlords",
+      "requirement": "It is unlawful for any person to sell, license, or otherwise provide an algorithmic device to a landlord.",
+      "key_value": null,
+      "coverage_conditions": null,
+      "exemptions": "An algorithmic device does not include software or a product used to publish reports regarding rental rates or occupancy levels from aggregated historical nonpublic competitor data more than 90 days old or from information available to the general public, that does not recommend rental rates or occupancy levels for future leases or renewals. [§ 98.1102(a)]; An algorithmic device does not include software or a product used by a person to establish rental rates or income limits in accordance with local, state, or federal affordable housing program guidelines. [§ 98.1102(b)]",
+      "overrides": [],
+      "interaction": null,
+      "effective_date": null,
+      "citation": "§ 98.1103(a)",
+      "source_doc_id": "D076",
+      "source_url": "https://sandiego.gov/sites/default/files/2025-04/automated-rent-price-fixing-prohibition-ordinance-materials.pdf",
+      "quoted_span": "(a) It is unlawful for a person to sell, license, or otherwise provide an\nalgorithmic device to a landlord.",
+      "confidence": null,
+      "conflict_flag": false,
+      "conflict_note": null
+    },
+    {
+      "team_rule_id": "r-9fa99232e4",
+      "jurisdiction": "San Diego, CA",
+      "level": "city",
+      "category": "algorithmic_rent_setting",
+      "status": "pending",
+      "title": "Prohibition on Landlord Use of Algorithmic Devices",
+      "requirement": "It is unlawful for a landlord to use an algorithmic device to set rental rates or occupancy levels for residential rental property. Each month a violation continues and each residential rental property for which an algorithmic device is used constitutes a separate and distinct violation.",
+      "key_value": null,
+      "coverage_conditions": null,
+      "exemptions": "An algorithmic device does not include software or a product used to publish reports regarding rental rates or occupancy levels from aggregated historical nonpublic competitor data more than 90 days old or from information available to the general public, that does not recommend rental rates or occupancy levels for future leases or renewals. [§ 98.1102(a)]; An algorithmic device does not include software or a product used by a person to establish rental rates or income limits in accordance with local, state, or federal affordable housing program guidelines. [§ 98.1102(b)]",
+      "overrides": [],
+      "interaction": null,
+      "effective_date": null,
+      "citation": "§ 98.1103(b)",
+      "source_doc_id": "D076",
+      "source_url": "https://sandiego.gov/sites/default/files/2025-04/automated-rent-price-fixing-prohibition-ordinance-materials.pdf",
+      "quoted_span": "(b) It is unlawful for a landlord to use an algorithmic device to set rental rates\nor occupancy levels for residential rental property.\nFor each month a violation of section 98.1103(b) exists or continues, and\nfor each residential rental property a landlord uses an algorithmic device,\nit shall constitute a separate and distinct violation.",
+      "confidence": null,
+      "conflict_flag": false,
+      "conflict_note": null
+    },
+    {
+      "team_rule_id": "r-1fa42a638d",
+      "jurisdiction": "San Diego, CA",
+      "level": "city",
+      "category": "algorithmic_rent_setting",
+      "status": "pending",
+      "title": "Tenant Remedies and Civil Penalties for Algorithmic Rent-Setting",
+      "requirement": "A tenant may bring a civil action against a landlord for injunctive relief, damages, or civil penalties of up to $1,000 per violation of Division 11. A prevailing tenant is entitled to recover costs and reasonable attorney's fees, and lease provisions limiting a tenant's attorney fee recovery are unenforceable.",
+      "key_value": "$1,000 per violation",
+      "coverage_conditions": null,
+      "exemptions": null,
+      "overrides": [],
+      "interaction": "The remedies under section 98.1104 are cumulative and are in addition to any other remedies in Division 11 or at law, statute, or ordinance.",
+      "effective_date": null,
+      "citation": "§ 98.1104(a)",
+      "source_doc_id": "D076",
+      "source_url": "https://sandiego.gov/sites/default/files/2025-04/automated-rent-price-fixing-prohibition-ordinance-materials.pdf",
+      "quoted_span": "( a ) A tenant may seek injunctive relief, damages, or civil penalties of up to\n$1,000 per violation of this Division, in a civil action against a landlord.\nIn an action brought under this Division, a prevailing tenant shall recover\ncosts and reasonable attorney’s fees. A prevailing tenant includes a tenant\ngranted an order for injunctive relief. A lease provision that limits a tenant\nfrom recovering attorney’s fees shall not be enforceable against a tenant’s\nclaim for attorney’s fees that arise under this Division.",
+      "confidence": null,
+      "conflict_flag": false,
+      "conflict_note": null
+    }
+  ],
+  "candidates": [
+    {
+      "index": 0,
+      "origin": "primary",
+      "accepted": true,
+      "held": false,
+      "rejection_reasons": [],
+      "provision_ids": [
+        "P3"
+      ],
+      "source_basis": "operative_text",
+      "status_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 9517,
+        "end": 9608,
+        "occurrences": 3,
+        "model_span": "ORDINANCE NUMBER O-__________________ (NEW SERIES)\nDATE OF FINAL PASSAGE __________________",
+        "source_span": "ORDINANCE NUMBER O-__________________ (NEW SERIES)\nDATE OF FINAL PASSAGE __________________",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "legislative": {
+        "model_status": "pending",
+        "query_date": "2026-10-01",
+        "session": null,
+        "terminal_action": null,
+        "enactment_evidence": null,
+        "status": "pending",
+        "status_basis": "model_status_with_evidence",
+        "conflict": null
+      },
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 15362,
+        "end": 15469,
+        "occurrences": 2,
+        "model_span": "(a) It is unlawful for a person to sell, license, or otherwise provide an\nalgorithmic device to a landlord.",
+        "source_span": "(a) It is unlawful for a person to sell, license, or otherwise provide an\nalgorithmic device to a landlord.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "(a) It is unlawful for a person to sell, license, or otherwise provide an\nalgorithmic device to a landlord.",
+            "status": "exact_match",
+            "start": 15362,
+            "end": 15469
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 16749,
+        "end": 16851,
+        "occurrences": 1,
+        "model_span": "This Ordinance will take effect and be in force on the thirtieth day from\nand after its final passage.",
+        "source_span": "This Ordinance will take effect and be in force on the thirtieth day from\nand after its final passage.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [
+        {
+          "id": "S1",
+          "kind": "exemption",
+          "mode": "named_subject",
+          "governed_provision_ids": [
+            "P3"
+          ],
+          "basis": "named-subject mapping to P3 verified by repair",
+          "applied": true
+        },
+        {
+          "id": "S2",
+          "kind": "exemption",
+          "mode": "named_subject",
+          "governed_provision_ids": [
+            "P3"
+          ],
+          "basis": "named-subject mapping to P3 verified by repair",
+          "applied": true
+        }
+      ],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": "relative_date_formula",
+        "applied_kind": "relative_date_formula",
+        "effective_date": null,
+        "history_evidence": null,
+        "relative_resolution": {
+          "resolver": "first-day-of-nth-month-next-following/v1",
+          "outcome": "unresolved",
+          "reason": "the evidence does not state exactly one formula of the supported grammar",
+          "formula": null,
+          "formula_evidence": {
+            "text": "This Ordinance will take effect and be in force on the thirtieth day from\nand after its final passage.",
+            "start": 16749,
+            "end": 16851
+          },
+          "base_date": null,
+          "base_date_evidence": null,
+          "base_date_candidates": [],
+          "resolved_date": null
+        },
+        "posture": "pending_bill",
+        "posture_consistent": true
+      },
+      "status_derivation": "legislative: model_status_with_evidence",
+      "warnings": [],
+      "rule": {
+        "team_rule_id": "r-7a2251b242",
+        "jurisdiction": "San Diego, CA",
+        "level": "city",
+        "category": "algorithmic_rent_setting",
+        "status": "pending",
+        "title": "Prohibition on Providing Algorithmic Devices to Landlords",
+        "requirement": "It is unlawful for any person to sell, license, or otherwise provide an algorithmic device to a landlord.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": "An algorithmic device does not include software or a product used to publish reports regarding rental rates or occupancy levels from aggregated historical nonpublic competitor data more than 90 days old or from information available to the general public, that does not recommend rental rates or occupancy levels for future leases or renewals. [§ 98.1102(a)]; An algorithmic device does not include software or a product used by a person to establish rental rates or income limits in accordance with local, state, or federal affordable housing program guidelines. [§ 98.1102(b)]",
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "§ 98.1103(a)",
+        "source_doc_id": "D076",
+        "source_url": "https://sandiego.gov/sites/default/files/2025-04/automated-rent-price-fixing-prohibition-ordinance-materials.pdf",
+        "quoted_span": "(a) It is unlawful for a person to sell, license, or otherwise provide an\nalgorithmic device to a landlord.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "algorithmic_rent_setting",
+        "citation": "§ 98.1103(a)",
+        "provision_ids": [
+          "P3"
+        ],
+        "source_basis": "operative_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "(a) It is unlawful for a person to sell, license, or otherwise provide an\nalgorithmic device to a landlord."
+          }
+        ],
+        "title": "Prohibition on Providing Algorithmic Devices to Landlords",
+        "requirement": "It is unlawful for any person to sell, license, or otherwise provide an algorithmic device to a landlord.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "pending",
+        "enactment_status_evidence": "ORDINANCE NUMBER O-__________________ (NEW SERIES)\nDATE OF FINAL PASSAGE __________________",
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": "This Ordinance will take effect and be in force on the thirtieth day from\nand after its final passage.",
+        "effective_date_evidence_kind": "relative_date_formula",
+        "effective_date": null,
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 1,
+      "origin": "primary",
+      "accepted": true,
+      "held": false,
+      "rejection_reasons": [],
+      "provision_ids": [
+        "P4"
+      ],
+      "source_basis": "operative_text",
+      "status_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 9517,
+        "end": 9608,
+        "occurrences": 3,
+        "model_span": "ORDINANCE NUMBER O-__________________ (NEW SERIES)\nDATE OF FINAL PASSAGE __________________",
+        "source_span": "ORDINANCE NUMBER O-__________________ (NEW SERIES)\nDATE OF FINAL PASSAGE __________________",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "legislative": {
+        "model_status": "pending",
+        "query_date": "2026-10-01",
+        "session": null,
+        "terminal_action": null,
+        "enactment_evidence": null,
+        "status": "pending",
+        "status_basis": "model_status_with_evidence",
+        "conflict": null
+      },
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 15470,
+        "end": 15810,
+        "occurrences": 2,
+        "model_span": "(b) It is unlawful for a landlord to use an algorithmic device to set rental rates\nor occupancy levels for residential rental property.\nFor each month a violation of section 98.1103(b) exists or continues, and\nfor each residential rental property a landlord uses an algorithmic device,\nit shall constitute a separate and distinct violation.",
+        "source_span": "(b) It is unlawful for a landlord to use an algorithmic device to set rental rates\nor occupancy levels for residential rental property.\nFor each month a violation of section 98.1103(b) exists or continues, and\nfor each residential rental property a landlord uses an algorithmic device,\nit shall constitute a separate and distinct violation.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "(b) It is unlawful for a landlord to use an algorithmic device to set rental rates\nor occupancy levels for residential rental property.\nFor each month a violation of section 98.1103(b) exists or continues, and\nfor each residential rental property a landlord uses an algorithmic device,\nit shall constitute a separate and distinct violation.",
+            "status": "exact_match",
+            "start": 15470,
+            "end": 15810
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 16749,
+        "end": 16851,
+        "occurrences": 1,
+        "model_span": "This Ordinance will take effect and be in force on the thirtieth day from\nand after its final passage.",
+        "source_span": "This Ordinance will take effect and be in force on the thirtieth day from\nand after its final passage.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [
+        {
+          "id": "S1",
+          "kind": "exemption",
+          "mode": "named_subject",
+          "governed_provision_ids": [
+            "P4"
+          ],
+          "basis": "named-subject mapping to P4 verified by repair",
+          "applied": true
+        },
+        {
+          "id": "S2",
+          "kind": "exemption",
+          "mode": "named_subject",
+          "governed_provision_ids": [
+            "P4"
+          ],
+          "basis": "named-subject mapping to P4 verified by repair",
+          "applied": true
+        }
+      ],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": "relative_date_formula",
+        "applied_kind": "relative_date_formula",
+        "effective_date": null,
+        "history_evidence": null,
+        "relative_resolution": {
+          "resolver": "first-day-of-nth-month-next-following/v1",
+          "outcome": "unresolved",
+          "reason": "the evidence does not state exactly one formula of the supported grammar",
+          "formula": null,
+          "formula_evidence": {
+            "text": "This Ordinance will take effect and be in force on the thirtieth day from\nand after its final passage.",
+            "start": 16749,
+            "end": 16851
+          },
+          "base_date": null,
+          "base_date_evidence": null,
+          "base_date_candidates": [],
+          "resolved_date": null
+        },
+        "posture": "pending_bill",
+        "posture_consistent": true
+      },
+      "status_derivation": "legislative: model_status_with_evidence",
+      "warnings": [],
+      "rule": {
+        "team_rule_id": "r-9fa99232e4",
+        "jurisdiction": "San Diego, CA",
+        "level": "city",
+        "category": "algorithmic_rent_setting",
+        "status": "pending",
+        "title": "Prohibition on Landlord Use of Algorithmic Devices",
+        "requirement": "It is unlawful for a landlord to use an algorithmic device to set rental rates or occupancy levels for residential rental property. Each month a violation continues and each residential rental property for which an algorithmic device is used constitutes a separate and distinct violation.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": "An algorithmic device does not include software or a product used to publish reports regarding rental rates or occupancy levels from aggregated historical nonpublic competitor data more than 90 days old or from information available to the general public, that does not recommend rental rates or occupancy levels for future leases or renewals. [§ 98.1102(a)]; An algorithmic device does not include software or a product used by a person to establish rental rates or income limits in accordance with local, state, or federal affordable housing program guidelines. [§ 98.1102(b)]",
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "§ 98.1103(b)",
+        "source_doc_id": "D076",
+        "source_url": "https://sandiego.gov/sites/default/files/2025-04/automated-rent-price-fixing-prohibition-ordinance-materials.pdf",
+        "quoted_span": "(b) It is unlawful for a landlord to use an algorithmic device to set rental rates\nor occupancy levels for residential rental property.\nFor each month a violation of section 98.1103(b) exists or continues, and\nfor each residential rental property a landlord uses an algorithmic device,\nit shall constitute a separate and distinct violation.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "algorithmic_rent_setting",
+        "citation": "§ 98.1103(b)",
+        "provision_ids": [
+          "P4"
+        ],
+        "source_basis": "operative_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "(b) It is unlawful for a landlord to use an algorithmic device to set rental rates\nor occupancy levels for residential rental property.\nFor each month a violation of section 98.1103(b) exists or continues, and\nfor each residential rental property a landlord uses an algorithmic device,\nit shall constitute a separate and distinct violation."
+          }
+        ],
+        "title": "Prohibition on Landlord Use of Algorithmic Devices",
+        "requirement": "It is unlawful for a landlord to use an algorithmic device to set rental rates or occupancy levels for residential rental property. Each month a violation continues and each residential rental property for which an algorithmic device is used constitutes a separate and distinct violation.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "pending",
+        "enactment_status_evidence": "ORDINANCE NUMBER O-__________________ (NEW SERIES)\nDATE OF FINAL PASSAGE __________________",
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": "This Ordinance will take effect and be in force on the thirtieth day from\nand after its final passage.",
+        "effective_date_evidence_kind": "relative_date_formula",
+        "effective_date": null,
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 2,
+      "origin": "primary",
+      "accepted": true,
+      "held": false,
+      "rejection_reasons": [],
+      "provision_ids": [
+        "P5"
+      ],
+      "source_basis": "operative_text",
+      "status_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 9517,
+        "end": 9608,
+        "occurrences": 3,
+        "model_span": "ORDINANCE NUMBER O-__________________ (NEW SERIES)\nDATE OF FINAL PASSAGE __________________",
+        "source_span": "ORDINANCE NUMBER O-__________________ (NEW SERIES)\nDATE OF FINAL PASSAGE __________________",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "legislative": {
+        "model_status": "pending",
+        "query_date": "2026-10-01",
+        "session": null,
+        "terminal_action": null,
+        "enactment_evidence": null,
+        "status": "pending",
+        "status_basis": "model_status_with_evidence",
+        "conflict": null
+      },
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 15857,
+        "end": 16378,
+        "occurrences": 2,
+        "model_span": "( a ) A tenant may seek injunctive relief, damages, or civil penalties of up to\n$1,000 per violation of this Division, in a civil action against a landlord.\nIn an action brought under this Division, a prevailing tenant shall recover\ncosts and reasonable attorney’s fees. A prevailing tenant includes a tenant\ngranted an order for injunctive relief. A lease provision that limits a tenant\nfrom recovering attorney’s fees shall not be enforceable against a tenant’s\nclaim for attorney’s fees that arise under this Division.",
+        "source_span": "( a ) A tenant may seek injunctive relief, damages, or civil penalties of up to\n$1,000 per violation of this Division, in a civil action against a landlord.\nIn an action brought under this Division, a prevailing tenant shall recover\ncosts and reasonable attorney’s fees. A prevailing tenant includes a tenant\ngranted an order for injunctive relief. A lease provision that limits a tenant\nfrom recovering attorney’s fees shall not be enforceable against a tenant’s\nclaim for attorney’s fees that arise under this Division.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "( a ) A tenant may seek injunctive relief, damages, or civil penalties of up to\n$1,000 per violation of this Division, in a civil action against a landlord.\nIn an action brought under this Division, a prevailing tenant shall recover\ncosts and reasonable attorney’s fees. A prevailing tenant includes a tenant\ngranted an order for injunctive relief. A lease provision that limits a tenant\nfrom recovering attorney’s fees shall not be enforceable against a tenant’s\nclaim for attorney’s fees that arise under this Division.",
+            "status": "exact_match",
+            "start": 15857,
+            "end": 16378
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 16749,
+        "end": 16851,
+        "occurrences": 1,
+        "model_span": "This Ordinance will take effect and be in force on the thirtieth day from\nand after its final passage.",
+        "source_span": "This Ordinance will take effect and be in force on the thirtieth day from\nand after its final passage.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": "relative_date_formula",
+        "applied_kind": "relative_date_formula",
+        "effective_date": null,
+        "history_evidence": null,
+        "relative_resolution": {
+          "resolver": "first-day-of-nth-month-next-following/v1",
+          "outcome": "unresolved",
+          "reason": "the evidence does not state exactly one formula of the supported grammar",
+          "formula": null,
+          "formula_evidence": {
+            "text": "This Ordinance will take effect and be in force on the thirtieth day from\nand after its final passage.",
+            "start": 16749,
+            "end": 16851
+          },
+          "base_date": null,
+          "base_date_evidence": null,
+          "base_date_candidates": [],
+          "resolved_date": null
+        },
+        "posture": "pending_bill",
+        "posture_consistent": true
+      },
+      "status_derivation": "legislative: model_status_with_evidence",
+      "warnings": [],
+      "rule": {
+        "team_rule_id": "r-1fa42a638d",
+        "jurisdiction": "San Diego, CA",
+        "level": "city",
+        "category": "algorithmic_rent_setting",
+        "status": "pending",
+        "title": "Tenant Remedies and Civil Penalties for Algorithmic Rent-Setting",
+        "requirement": "A tenant may bring a civil action against a landlord for injunctive relief, damages, or civil penalties of up to $1,000 per violation of Division 11. A prevailing tenant is entitled to recover costs and reasonable attorney's fees, and lease provisions limiting a tenant's attorney fee recovery are unenforceable.",
+        "key_value": "$1,000 per violation",
+        "coverage_conditions": null,
+        "exemptions": null,
+        "overrides": [],
+        "interaction": "The remedies under section 98.1104 are cumulative and are in addition to any other remedies in Division 11 or at law, statute, or ordinance.",
+        "effective_date": null,
+        "citation": "§ 98.1104(a)",
+        "source_doc_id": "D076",
+        "source_url": "https://sandiego.gov/sites/default/files/2025-04/automated-rent-price-fixing-prohibition-ordinance-materials.pdf",
+        "quoted_span": "( a ) A tenant may seek injunctive relief, damages, or civil penalties of up to\n$1,000 per violation of this Division, in a civil action against a landlord.\nIn an action brought under this Division, a prevailing tenant shall recover\ncosts and reasonable attorney’s fees. A prevailing tenant includes a tenant\ngranted an order for injunctive relief. A lease provision that limits a tenant\nfrom recovering attorney’s fees shall not be enforceable against a tenant’s\nclaim for attorney’s fees that arise under this Division.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "algorithmic_rent_setting",
+        "citation": "§ 98.1104(a)",
+        "provision_ids": [
+          "P5"
+        ],
+        "source_basis": "operative_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "( a ) A tenant may seek injunctive relief, damages, or civil penalties of up to\n$1,000 per violation of this Division, in a civil action against a landlord.\nIn an action brought under this Division, a prevailing tenant shall recover\ncosts and reasonable attorney’s fees. A prevailing tenant includes a tenant\ngranted an order for injunctive relief. A lease provision that limits a tenant\nfrom recovering attorney’s fees shall not be enforceable against a tenant’s\nclaim for attorney’s fees that arise under this Division."
+          }
+        ],
+        "title": "Tenant Remedies and Civil Penalties for Algorithmic Rent-Setting",
+        "requirement": "A tenant may bring a civil action against a landlord for injunctive relief, damages, or civil penalties of up to $1,000 per violation of Division 11. A prevailing tenant is entitled to recover costs and reasonable attorney's fees, and lease provisions limiting a tenant's attorney fee recovery are unenforceable.",
+        "key_value": "$1,000 per violation",
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": "The remedies under section 98.1104 are cumulative and are in addition to any other remedies in Division 11 or at law, statute, or ordinance.",
+        "enactment_status": "pending",
+        "enactment_status_evidence": "ORDINANCE NUMBER O-__________________ (NEW SERIES)\nDATE OF FINAL PASSAGE __________________",
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": "This Ordinance will take effect and be in force on the thirtieth day from\nand after its final passage.",
+        "effective_date_evidence_kind": "relative_date_formula",
+        "effective_date": null,
+        "conflict_note": null
+      }
+    }
+  ],
+  "posture": {
+    "declared": "pending_bill",
+    "evidence": "ORDINANCE NUMBER O-__________________ (NEW SERIES)\nDATE OF FINAL PASSAGE __________________",
+    "evidence_check": {
+      "status": "exact_match",
+      "normalization": null,
+      "start": 9517,
+      "end": 9608,
+      "occurrences": 3,
+      "model_span": "ORDINANCE NUMBER O-__________________ (NEW SERIES)\nDATE OF FINAL PASSAGE __________________",
+      "source_span": "ORDINANCE NUMBER O-__________________ (NEW SERIES)\nDATE OF FINAL PASSAGE __________________",
+      "reason": null,
+      "reconstructed": false,
+      "parts": [],
+      "crossed_artifacts": []
+    },
+    "established": "pending_bill",
+    "basis": "declared posture with verified evidence"
+  },
+  "base_dates": [],
+  "provision_inventory": [
+    {
+      "id": "P1",
+      "ref": "§ 98.1101",
+      "anchor": "§98.1101  Purpose and Intent",
+      "summary": "States the purpose and intent of Division 11 to prohibit algorithmic devices and provide tenant remedies.",
+      "role": "boilerplate",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "purpose and intent statement"
+    },
+    {
+      "id": "P2",
+      "ref": "§ 98.1102",
+      "anchor": "§98.1102  Definitions",
+      "summary": "Defines algorithmic device and other terms, and specifies exceptions to algorithmic devices.",
+      "role": "definition",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "definitions and scope exemptions; see global_scope S1 and S2"
+    },
+    {
+      "id": "P3",
+      "ref": "§ 98.1103(a)",
+      "anchor": "(a) It is unlawful for a person to sell, license, or",
+      "summary": "Prohibits selling, licensing, or providing an algorithmic device to a landlord.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "algorithmic_rent_setting",
+      "reason": null
+    },
+    {
+      "id": "P4",
+      "ref": "§ 98.1103(b)",
+      "anchor": "(b) It is unlawful for a landlord to use an algorithmic",
+      "summary": "Prohibits landlords from using an algorithmic device to set rental rates or occupancy levels, and defines separate violations.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "algorithmic_rent_setting",
+      "reason": null
+    },
+    {
+      "id": "P5",
+      "ref": "§ 98.1104(a)",
+      "anchor": "( a ) A tenant may seek injunctive relief, damages, or",
+      "summary": "Provides tenant remedies including injunctive relief, damages, civil penalties up to $1,000, and attorney's fees.",
+      "role": "remedy",
+      "scope": "in_scope",
+      "category": "algorithmic_rent_setting",
+      "reason": null
+    },
+    {
+      "id": "P6",
+      "ref": "§ 98.1104(b)",
+      "anchor": "(b) The remedies under section 98.1104 are cumulative",
+      "summary": "Specifies that remedies are cumulative and in addition to other remedies at law.",
+      "role": "procedure",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "cumulative-remedies boilerplate"
+    },
+    {
+      "id": "P7",
+      "ref": "Section 2",
+      "anchor": "Section 2. The Council dispenses with a full reading",
+      "summary": "Dispenses with a full reading of the ordinance before passage.",
+      "role": "procedure",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "procedural boilerplate"
+    },
+    {
+      "id": "P8",
+      "ref": "Section 3",
+      "anchor": "Section 3. This Ordinance will take effect and be",
+      "summary": "Sets the effective date of the ordinance to 30 days after final passage.",
+      "role": "procedure",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "effective date provision"
+    }
+  ],
+  "global_scope": [
+    {
+      "id": "S1",
+      "kind": "exemption",
+      "statement": "An algorithmic device does not include software or a product used to publish reports regarding rental rates or occupancy levels from aggregated historical nonpublic competitor data more than 90 days old or from information available to the general public, that does not recommend rental rates or occupancy levels for future leases or renewals.",
+      "citation": "§ 98.1102(a)",
+      "scope_mode": "named_subject",
+      "scope_quote": "Algorithmic device does not include either of\nthe following:",
+      "source_provision_id": "P2",
+      "governed_provision_ids": [
+        "P3",
+        "P4",
+        "P5"
+      ],
+      "evidence_parts": [
+        {
+          "segment_id": 1,
+          "quoted_text": "Algorithmic device does not include either of\nthe following:\n(a) A software or product used by a person to publish reports regarding rental\nrates or occupancy levels from aggregated historical nonpublic competitor\ndata that is more than 90 days old, or from information available to the\ngeneral public, and does not recommend rental rates or occupancy levels\nfor future residential rental property leases or renewals."
+        }
+      ],
+      "evidence_check": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 13756,
+        "end": 14173,
+        "occurrences": 2,
+        "model_span": "Algorithmic device does not include either of\nthe following:\n(a) A software or product used by a person to publish reports regarding rental\nrates or occupancy levels from aggregated historical nonpublic competitor\ndata that is more than 90 days old, or from information available to the\ngeneral public, and does not recommend rental rates or occupancy levels\nfor future residential rental property leases or renewals.",
+        "source_span": "Algorithmic device does not include either of\nthe following:\n(a) A software or product used by a person to publish reports regarding rental\nrates or occupancy levels from aggregated historical nonpublic competitor\ndata that is more than 90 days old, or from information available to the\ngeneral public, and does not recommend rental rates or occupancy levels\nfor future residential rental property leases or renewals.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "Algorithmic device does not include either of\nthe following:\n(a) A software or product used by a person to publish reports regarding rental\nrates or occupancy levels from aggregated historical nonpublic competitor\ndata that is more than 90 days old, or from information available to the\ngeneral public, and does not recommend rental rates or occupancy levels\nfor future residential rental property leases or renewals.",
+            "status": "exact_match",
+            "start": 13756,
+            "end": 14173
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "propagated": true,
+      "problem": null,
+      "scope": {
+        "resolver": "scope-modes/v1",
+        "declared_mode": "named_subject",
+        "mode": "named_subject",
+        "scope_words": {
+          "scope_quote": "Algorithmic device does not include either of\nthe following:",
+          "scope_quote_check": "exact_match",
+          "text": "Algorithmic device does not include either of\nthe following:",
+          "from": "scope_quote"
+        },
+        "detail": null,
+        "propagate_ids": [],
+        "mapping_targets": [
+          "P3",
+          "P4",
+          "P5"
+        ],
+        "verification": null
+      }
+    },
+    {
+      "id": "S2",
+      "kind": "exemption",
+      "statement": "An algorithmic device does not include software or a product used by a person to establish rental rates or income limits in accordance with local, state, or federal affordable housing program guidelines.",
+      "citation": "§ 98.1102(b)",
+      "scope_mode": "named_subject",
+      "scope_quote": "Algorithmic device does not include either of\nthe following:",
+      "source_provision_id": "P2",
+      "governed_provision_ids": [
+        "P3",
+        "P4",
+        "P5"
+      ],
+      "evidence_parts": [
+        {
+          "segment_id": 1,
+          "quoted_text": "Algorithmic device does not include either of\nthe following:\n(a) A software or product used by a person to publish reports regarding rental\nrates or occupancy levels from aggregated historical nonpublic competitor\ndata that is more than 90 days old, or from information available to the\ngeneral public, and does not recommend rental rates or occupancy levels\nfor future residential rental property leases or renewals.\n(b) A software or product used by a person to establish rental rates or income\nlimits in accordance with local, state, or federal affordable housing\nprogram guidelines."
+        }
+      ],
+      "evidence_check": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 13756,
+        "end": 14342,
+        "occurrences": 2,
+        "model_span": "Algorithmic device does not include either of\nthe following:\n(a) A software or product used by a person to publish reports regarding rental\nrates or occupancy levels from aggregated historical nonpublic competitor\ndata that is more than 90 days old, or from information available to the\ngeneral public, and does not recommend rental rates or occupancy levels\nfor future residential rental property leases or renewals.\n(b) A software or product used by a person to establish rental rates or income\nlimits in accordance with local, state, or federal affordable housing\nprogram guidelines.",
+        "source_span": "Algorithmic device does not include either of\nthe following:\n(a) A software or product used by a person to publish reports regarding rental\nrates or occupancy levels from aggregated historical nonpublic competitor\ndata that is more than 90 days old, or from information available to the\ngeneral public, and does not recommend rental rates or occupancy levels\nfor future residential rental property leases or renewals.\n(b) A software or product used by a person to establish rental rates or income\nlimits in accordance with local, state, or federal affordable housing\nprogram guidelines.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "Algorithmic device does not include either of\nthe following:\n(a) A software or product used by a person to publish reports regarding rental\nrates or occupancy levels from aggregated historical nonpublic competitor\ndata that is more than 90 days old, or from information available to the\ngeneral public, and does not recommend rental rates or occupancy levels\nfor future residential rental property leases or renewals.\n(b) A software or product used by a person to establish rental rates or income\nlimits in accordance with local, state, or federal affordable housing\nprogram guidelines.",
+            "status": "exact_match",
+            "start": 13756,
+            "end": 14342
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "propagated": true,
+      "problem": null,
+      "scope": {
+        "resolver": "scope-modes/v1",
+        "declared_mode": "named_subject",
+        "mode": "named_subject",
+        "scope_words": {
+          "scope_quote": "Algorithmic device does not include either of\nthe following:",
+          "scope_quote_check": "exact_match",
+          "text": "Algorithmic device does not include either of\nthe following:",
+          "from": "scope_quote"
+        },
+        "detail": null,
+        "propagate_ids": [],
+        "mapping_targets": [
+          "P3",
+          "P4",
+          "P5"
+        ],
+        "verification": null
+      }
+    }
+  ],
+  "source_view": {
+    "marker": "[[PAGE BREAK]]",
+    "segment_label": "[[SEGMENT {}]]",
+    "view_sha256": "ae3fa0bedddcb9286e53d6991524c9d3962f220c957fe3de46e7b7739069cf89",
+    "segments": [
+      {
+        "id": 1,
+        "raw_start": 0,
+        "raw_end": 23097
+      }
+    ],
+    "artifacts_removed": 0,
+    "artifacts": []
+  },
+  "coverage": {
+    "inventory_valid": true,
+    "anchors_located": "8/8",
+    "after_primary": {
+      "uncovered": [],
+      "unaccepted": [],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "scope_mappings": {
+      "requested": 6,
+      "applies": 4,
+      "does_not_apply": 2,
+      "unresolved": 0
+    },
+    "after_repair": {
+      "uncovered": [],
+      "unaccepted": [],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "repair_targets": {
+      "before_repair": 0,
+      "resolved_by_accepted_rule": 0,
+      "resolved_out_of_scope": 0,
+      "still_unresolved": 0
+    },
+    "inventory_items": 8,
+    "in_scope_items": 3,
+    "in_scope_refs": 3,
+    "uncertain": [],
+    "final": {
+      "uncovered": [],
+      "unaccepted": [],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "link_mismatches": [],
+    "provisions": [
+      {
+        "ref": "§ 98.1103(a)",
+        "inventory_item": 2,
+        "provision_id": "P3",
+        "summary": "Prohibits selling, licensing, or providing an algorithmic device to a landlord.",
+        "category": "algorithmic_rent_setting",
+        "candidates": [
+          0
+        ],
+        "accepted": [
+          0
+        ],
+        "basis": {
+          "0": "provision link; citation names it"
+        }
+      },
+      {
+        "ref": "§ 98.1103(b)",
+        "inventory_item": 3,
+        "provision_id": "P4",
+        "summary": "Prohibits landlords from using an algorithmic device to set rental rates or occupancy levels, and defines separate violations.",
+        "category": "algorithmic_rent_setting",
+        "candidates": [
+          1
+        ],
+        "accepted": [
+          1
+        ],
+        "basis": {
+          "1": "provision link; citation names it"
+        }
+      },
+      {
+        "ref": "§ 98.1104(a)",
+        "inventory_item": 4,
+        "provision_id": "P5",
+        "summary": "Provides tenant remedies including injunctive relief, damages, civil penalties up to $1,000, and attorney's fees.",
+        "category": "algorithmic_rent_setting",
+        "candidates": [
+          2
+        ],
+        "accepted": [
+          2
+        ],
+        "basis": {
+          "2": "provision link; citation names it"
+        }
+      }
+    ],
+    "unrecorded_subdivisions": []
+  },
+  "scope_challenges": [
+    {
+      "ref": "§ 98.1101",
+      "provision_id": "P1",
+      "role": "boilerplate",
+      "reason": "purpose and intent statement",
+      "summary": "States the purpose and intent of Division 11 to prohibit algorithmic devices and provide tenant remedies.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role boilerplate is decided by other rules"
+    },
+    {
+      "ref": "§ 98.1102",
+      "provision_id": "P2",
+      "role": "definition",
+      "reason": "definitions and scope exemptions; see global_scope S1 and S2",
+      "summary": "Defines algorithmic device and other terms, and specifies exceptions to algorithmic devices.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "its content is a verified document-level scope condition"
+    },
+    {
+      "ref": "§ 98.1104(b)",
+      "provision_id": "P6",
+      "role": "procedure",
+      "reason": "cumulative-remedies boilerplate",
+      "summary": "Specifies that remedies are cumulative and in addition to other remedies at law.",
+      "signals": {
+        "in_scope_neighbour": true,
+        "enumeration": false,
+        "normative_language": false,
+        "grounds_or_conditions": false
+      },
+      "challenged": false,
+      "why_not": "too few substantive signals",
+      "raw_start": 16379,
+      "raw_end": 16526
+    },
+    {
+      "ref": "Section 2",
+      "provision_id": "P7",
+      "role": "procedure",
+      "reason": "procedural boilerplate",
+      "summary": "Dispenses with a full reading of the ordinance before passage.",
+      "signals": {
+        "in_scope_neighbour": false,
+        "enumeration": false,
+        "normative_language": false,
+        "grounds_or_conditions": false
+      },
+      "challenged": false,
+      "why_not": "too few substantive signals",
+      "raw_start": 16526,
+      "raw_end": 16738
+    },
+    {
+      "ref": "Section 3",
+      "provision_id": "P8",
+      "role": "procedure",
+      "reason": "effective date provision",
+      "summary": "Sets the effective date of the ordinance to 30 days after final passage.",
+      "signals": {
+        "in_scope_neighbour": false,
+        "enumeration": false,
+        "normative_language": false,
+        "grounds_or_conditions": false
+      },
+      "challenged": false,
+      "why_not": "too few substantive signals",
+      "raw_start": 16738,
+      "raw_end": 18738
+    }
+  ],
+  "scope_mappings": [
+    {
+      "condition_id": "S1",
+      "provision_id": "P3",
+      "kind": "exemption",
+      "statement": "An algorithmic device does not include software or a product used to publish reports regarding rental rates or occupancy levels from aggregated historical nonpublic competitor data more than 90 days old or from information available to the general public, that does not recommend rental rates or occupancy levels for future leases or renewals.",
+      "scope_words": "Algorithmic device does not include either of\nthe following:",
+      "condition_evidence": "Algorithmic device does not include either of\nthe following:\n(a) A software or product used by a person to publish reports regarding rental\nrates or occupancy levels from aggregated historical nonpublic competitor\ndata that is more than 90 days old, or from information available to the\ngeneral public, and does not recommend rental rates or occupancy levels\nfor future residential rental property leases or renewals.",
+      "target_ref": "§ 98.1103(a)",
+      "target_anchor": "(a) It is unlawful for a person to sell, license, or",
+      "target_quote": "(a) It is unlawful for a person to sell, license, or otherwise provide an\nalgorithmic device to a landlord.",
+      "decision": {
+        "decision": "applies",
+        "reason": "The exemption excludes certain reporting software from the definition of an algorithmic device, limiting the scope of products prohibited from being sold, licensed, or provided under section 98.1103(a).",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 15362,
+          "end": 15469,
+          "occurrences": 2,
+          "model_span": "(a) It is unlawful for a person to sell, license, or otherwise provide an\nalgorithmic device to a landlord.",
+          "source_span": "(a) It is unlawful for a person to sell, license, or otherwise provide an\nalgorithmic device to a landlord.",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 1,
+              "model_text": "(a) It is unlawful for a person to sell, license, or otherwise provide an\nalgorithmic device to a landlord.",
+              "status": "exact_match",
+              "start": 15362,
+              "end": 15469
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "applies",
+      "unresolved_reason": null
+    },
+    {
+      "condition_id": "S1",
+      "provision_id": "P4",
+      "kind": "exemption",
+      "statement": "An algorithmic device does not include software or a product used to publish reports regarding rental rates or occupancy levels from aggregated historical nonpublic competitor data more than 90 days old or from information available to the general public, that does not recommend rental rates or occupancy levels for future leases or renewals.",
+      "scope_words": "Algorithmic device does not include either of\nthe following:",
+      "condition_evidence": "Algorithmic device does not include either of\nthe following:\n(a) A software or product used by a person to publish reports regarding rental\nrates or occupancy levels from aggregated historical nonpublic competitor\ndata that is more than 90 days old, or from information available to the\ngeneral public, and does not recommend rental rates or occupancy levels\nfor future residential rental property leases or renewals.",
+      "target_ref": "§ 98.1103(b)",
+      "target_anchor": "(b) It is unlawful for a landlord to use an algorithmic",
+      "target_quote": "(b) It is unlawful for a landlord to use an algorithmic device to set rental rates\nor occupancy levels for residential rental property.\nFor each month a violation of section 98.1103(b) exists or continues, and\nfor each residential rental property a landlord uses an algorithmic device,\nit shall constitute a separate and distinct violation.",
+      "decision": {
+        "decision": "applies",
+        "reason": "The exemption excludes qualifying reporting software from the definition of an algorithmic device, limiting what devices a landlord is prohibited from using under section 98.1103(b).",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 15470,
+          "end": 15605,
+          "occurrences": 2,
+          "model_span": "(b) It is unlawful for a landlord to use an algorithmic device to set rental rates\nor occupancy levels for residential rental property.",
+          "source_span": "(b) It is unlawful for a landlord to use an algorithmic device to set rental rates\nor occupancy levels for residential rental property.",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 1,
+              "model_text": "(b) It is unlawful for a landlord to use an algorithmic device to set rental rates\nor occupancy levels for residential rental property.",
+              "status": "exact_match",
+              "start": 15470,
+              "end": 15605
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "applies",
+      "unresolved_reason": null
+    },
+    {
+      "condition_id": "S1",
+      "provision_id": "P5",
+      "kind": "exemption",
+      "statement": "An algorithmic device does not include software or a product used to publish reports regarding rental rates or occupancy levels from aggregated historical nonpublic competitor data more than 90 days old or from information available to the general public, that does not recommend rental rates or occupancy levels for future leases or renewals.",
+      "scope_words": "Algorithmic device does not include either of\nthe following:",
+      "condition_evidence": "Algorithmic device does not include either of\nthe following:\n(a) A software or product used by a person to publish reports regarding rental\nrates or occupancy levels from aggregated historical nonpublic competitor\ndata that is more than 90 days old, or from information available to the\ngeneral public, and does not recommend rental rates or occupancy levels\nfor future residential rental property leases or renewals.",
+      "target_ref": "§ 98.1104(a)",
+      "target_anchor": "( a ) A tenant may seek injunctive relief, damages, or",
+      "target_quote": "( a ) A tenant may seek injunctive relief, damages, or civil penalties of up to\n$1,000 per violation of this Division, in a civil action against a landlord.\nIn an action brought under this Division, a prevailing tenant shall recover\ncosts and reasonable attorney’s fees. A prevailing tenant includes a tenant\ngranted an order for injunctive relief. A lease provision that limits a tenant\nfrom recovering attorney’s fees shall not be enforceable against a tenant’s\nclaim for attorney’s fees that arise under this Division.",
+      "decision": {
+        "decision": "does_not_apply",
+        "reason": "Section 98.1104(a) establishes civil remedies, damages, penalties, and fee recovery rather than defining or restricting the use of algorithmic devices.",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 15857,
+          "end": 16378,
+          "occurrences": 2,
+          "model_span": "( a ) A tenant may seek injunctive relief, damages, or civil penalties of up to\n$1,000 per violation of this Division, in a civil action against a landlord.\nIn an action brought under this Division, a prevailing tenant shall recover\ncosts and reasonable attorney’s fees. A prevailing tenant includes a tenant\ngranted an order for injunctive relief. A lease provision that limits a tenant\nfrom recovering attorney’s fees shall not be enforceable against a tenant’s\nclaim for attorney’s fees that arise under this Division.",
+          "source_span": "( a ) A tenant may seek injunctive relief, damages, or civil penalties of up to\n$1,000 per violation of this Division, in a civil action against a landlord.\nIn an action brought under this Division, a prevailing tenant shall recover\ncosts and reasonable attorney’s fees. A prevailing tenant includes a tenant\ngranted an order for injunctive relief. A lease provision that limits a tenant\nfrom recovering attorney’s fees shall not be enforceable against a tenant’s\nclaim for attorney’s fees that arise under this Division.",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 1,
+              "model_text": "( a ) A tenant may seek injunctive relief, damages, or civil penalties of up to\n$1,000 per violation of this Division, in a civil action against a landlord.\nIn an action brought under this Division, a prevailing tenant shall recover\ncosts and reasonable attorney’s fees. A prevailing tenant includes a tenant\ngranted an order for injunctive relief. A lease provision that limits a tenant\nfrom recovering attorney’s fees shall not be enforceable against a tenant’s\nclaim for attorney’s fees that arise under this Division.",
+              "status": "exact_match",
+              "start": 15857,
+              "end": 16378
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "does_not_apply",
+      "unresolved_reason": null
+    },
+    {
+      "condition_id": "S2",
+      "provision_id": "P3",
+      "kind": "exemption",
+      "statement": "An algorithmic device does not include software or a product used by a person to establish rental rates or income limits in accordance with local, state, or federal affordable housing program guidelines.",
+      "scope_words": "Algorithmic device does not include either of\nthe following:",
+      "condition_evidence": "Algorithmic device does not include either of\nthe following:\n(a) A software or product used by a person to publish reports regarding rental\nrates or occupancy levels from aggregated historical nonpublic competitor\ndata that is more than 90 days old, or from information available to the\ngeneral public, and does not recommend rental rates or occupancy levels\nfor future residential rental property leases or renewals.\n(b) A software or product used by a person to establish rental rates or income\nlimits in accordance with local, state, or federal affordable housing\nprogram guidelines.",
+      "target_ref": "§ 98.1103(a)",
+      "target_anchor": "(a) It is unlawful for a person to sell, license, or",
+      "target_quote": "(a) It is unlawful for a person to sell, license, or otherwise provide an\nalgorithmic device to a landlord.",
+      "decision": {
+        "decision": "applies",
+        "reason": "The exemption excludes affordable housing software from the definition of an algorithmic device, limiting the scope of products prohibited from being sold, licensed, or provided under section 98.1103(a).",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 15362,
+          "end": 15469,
+          "occurrences": 2,
+          "model_span": "(a) It is unlawful for a person to sell, license, or otherwise provide an\nalgorithmic device to a landlord.",
+          "source_span": "(a) It is unlawful for a person to sell, license, or otherwise provide an\nalgorithmic device to a landlord.",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 1,
+              "model_text": "(a) It is unlawful for a person to sell, license, or otherwise provide an\nalgorithmic device to a landlord.",
+              "status": "exact_match",
+              "start": 15362,
+              "end": 15469
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "applies",
+      "unresolved_reason": null
+    },
+    {
+      "condition_id": "S2",
+      "provision_id": "P4",
+      "kind": "exemption",
+      "statement": "An algorithmic device does not include software or a product used by a person to establish rental rates or income limits in accordance with local, state, or federal affordable housing program guidelines.",
+      "scope_words": "Algorithmic device does not include either of\nthe following:",
+      "condition_evidence": "Algorithmic device does not include either of\nthe following:\n(a) A software or product used by a person to publish reports regarding rental\nrates or occupancy levels from aggregated historical nonpublic competitor\ndata that is more than 90 days old, or from information available to the\ngeneral public, and does not recommend rental rates or occupancy levels\nfor future residential rental property leases or renewals.\n(b) A software or product used by a person to establish rental rates or income\nlimits in accordance with local, state, or federal affordable housing\nprogram guidelines.",
+      "target_ref": "§ 98.1103(b)",
+      "target_anchor": "(b) It is unlawful for a landlord to use an algorithmic",
+      "target_quote": "(b) It is unlawful for a landlord to use an algorithmic device to set rental rates\nor occupancy levels for residential rental property.\nFor each month a violation of section 98.1103(b) exists or continues, and\nfor each residential rental property a landlord uses an algorithmic device,\nit shall constitute a separate and distinct violation.",
+      "decision": {
+        "decision": "applies",
+        "reason": "The exemption excludes affordable housing software from the definition of an algorithmic device, limiting what devices landlords are prohibited from using under section 98.1103(b).",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 15470,
+          "end": 15605,
+          "occurrences": 2,
+          "model_span": "(b) It is unlawful for a landlord to use an algorithmic device to set rental rates\nor occupancy levels for residential rental property.",
+          "source_span": "(b) It is unlawful for a landlord to use an algorithmic device to set rental rates\nor occupancy levels for residential rental property.",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 1,
+              "model_text": "(b) It is unlawful for a landlord to use an algorithmic device to set rental rates\nor occupancy levels for residential rental property.",
+              "status": "exact_match",
+              "start": 15470,
+              "end": 15605
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "applies",
+      "unresolved_reason": null
+    },
+    {
+      "condition_id": "S2",
+      "provision_id": "P5",
+      "kind": "exemption",
+      "statement": "An algorithmic device does not include software or a product used by a person to establish rental rates or income limits in accordance with local, state, or federal affordable housing program guidelines.",
+      "scope_words": "Algorithmic device does not include either of\nthe following:",
+      "condition_evidence": "Algorithmic device does not include either of\nthe following:\n(a) A software or product used by a person to publish reports regarding rental\nrates or occupancy levels from aggregated historical nonpublic competitor\ndata that is more than 90 days old, or from information available to the\ngeneral public, and does not recommend rental rates or occupancy levels\nfor future residential rental property leases or renewals.\n(b) A software or product used by a person to establish rental rates or income\nlimits in accordance with local, state, or federal affordable housing\nprogram guidelines.",
+      "target_ref": "§ 98.1104(a)",
+      "target_anchor": "( a ) A tenant may seek injunctive relief, damages, or",
+      "target_quote": "( a ) A tenant may seek injunctive relief, damages, or civil penalties of up to\n$1,000 per violation of this Division, in a civil action against a landlord.\nIn an action brought under this Division, a prevailing tenant shall recover\ncosts and reasonable attorney’s fees. A prevailing tenant includes a tenant\ngranted an order for injunctive relief. A lease provision that limits a tenant\nfrom recovering attorney’s fees shall not be enforceable against a tenant’s\nclaim for attorney’s fees that arise under this Division.",
+      "decision": {
+        "decision": "does_not_apply",
+        "reason": "Section 98.1104(a) establishes civil remedies, damages, penalties, and fee recovery rather than defining or restricting the use of algorithmic devices.",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 15857,
+          "end": 16378,
+          "occurrences": 2,
+          "model_span": "( a ) A tenant may seek injunctive relief, damages, or civil penalties of up to\n$1,000 per violation of this Division, in a civil action against a landlord.\nIn an action brought under this Division, a prevailing tenant shall recover\ncosts and reasonable attorney’s fees. A prevailing tenant includes a tenant\ngranted an order for injunctive relief. A lease provision that limits a tenant\nfrom recovering attorney’s fees shall not be enforceable against a tenant’s\nclaim for attorney’s fees that arise under this Division.",
+          "source_span": "( a ) A tenant may seek injunctive relief, damages, or civil penalties of up to\n$1,000 per violation of this Division, in a civil action against a landlord.\nIn an action brought under this Division, a prevailing tenant shall recover\ncosts and reasonable attorney’s fees. A prevailing tenant includes a tenant\ngranted an order for injunctive relief. A lease provision that limits a tenant\nfrom recovering attorney’s fees shall not be enforceable against a tenant’s\nclaim for attorney’s fees that arise under this Division.",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 1,
+              "model_text": "( a ) A tenant may seek injunctive relief, damages, or civil penalties of up to\n$1,000 per violation of this Division, in a civil action against a landlord.\nIn an action brought under this Division, a prevailing tenant shall recover\ncosts and reasonable attorney’s fees. A prevailing tenant includes a tenant\ngranted an order for injunctive relief. A lease provision that limits a tenant\nfrom recovering attorney’s fees shall not be enforceable against a tenant’s\nclaim for attorney’s fees that arise under this Division.",
+              "status": "exact_match",
+              "start": 15857,
+              "end": 16378
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "does_not_apply",
+      "unresolved_reason": null
+    }
+  ],
+  "legislative_session": null,
+  "empty_result": null,
+  "legacy_replay": null,
+  "repair": {
+    "invoked": true,
+    "reason": "0 repair target(s) from no check; 6 scope_mapping_challenge(s)",
+    "prompt_version": "v7-repair-1",
+    "targets": [],
+    "cache_key": "ef4a7fbdfef0482d941b40c04268dd5229f29e1f521cc6eb919c17469896f8c1",
+    "cache_hit": false,
+    "cache_entry": "cache/extraction/ef4a7fbdfef0482d941b40c04268dd5229f29e1f521cc6eb919c17469896f8c1.json",
+    "prompt_sha256": "8c992e85e0d77cc426dd70e5410609f6c8fdd3ebb0ae9b92e8bc448d9a4d650a",
+    "provider_metadata": {
+      "api": "interactions.create",
+      "interaction_id": "",
+      "model": "gemini-3.8-flash",
+      "status": "completed",
+      "usage": {
+        "input_tokens": 10593,
+        "output_tokens": 1068,
+        "thinking_tokens": 5530,
+        "total_tokens": 17191
+      }
+    },
+    "raw_response_text": "{\n  \"target_resolutions\": [],\n  \"scope_mappings\": [\n    {\n      \"condition_id\": \"S1\",\n      \"provision_id\": \"P3\",\n      \"decision\": \"applies\",\n      \"reason\": \"The exemption excludes certain reporting software from the definition of an algorithmic device, limiting the scope of products prohibited from being sold, licensed, or provided under section 98.1103(a).\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"(a) It is unlawful for a person to sell, license, or otherwise provide an\\nalgorithmic device to a landlord.\"\n        }\n      ]\n    },\n    {\n      \"condition_id\": \"S1\",\n      \"provision_id\": \"P4\",\n      \"decision\": \"applies\",\n      \"reason\": \"The exemption excludes qualifying reporting software from the definition of an algorithmic device, limiting what devices a landlord is prohibited from using under section 98.1103(b).\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"(b) It is unlawful for a landlord to use an algorithmic device to set rental rates\\nor occupancy levels for residential rental property.\"\n        }\n      ]\n    },\n    {\n      \"condition_id\": \"S1\",\n      \"provision_id\": \"P5\",\n      \"decision\": \"does_not_apply\",\n      \"reason\": \"Section 98.1104(a) establishes civil remedies, damages, penalties, and fee recovery rather than defining or restricting the use of algorithmic devices.\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"( a ) A tenant may seek injunctive relief, damages, or civil penalties of up to\\n$1,000 per violation of this Division, in a civil action against a landlord.\\nIn an action brought under this Division, a prevailing tenant shall recover\\ncosts and reasonable attorney’s fees. A prevailing tenant includes a tenant\\ngranted an order for injunctive relief. A lease provision that limits a tenant\\nfrom recovering attorney’s fees shall not be enforceable against a tenant’s\\nclaim for attorney’s fees that arise under this Division.\"\n        }\n      ]\n    },\n    {\n      \"condition_id\": \"S2\",\n      \"provision_id\": \"P3\",\n      \"decision\": \"applies\",\n      \"reason\": \"The exemption excludes affordable housing software from the definition of an algorithmic device, limiting the scope of products prohibited from being sold, licensed, or provided under section 98.1103(a).\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"(a) It is unlawful for a person to sell, license, or otherwise provide an\\nalgorithmic device to a landlord.\"\n        }\n      ]\n    },\n    {\n      \"condition_id\": \"S2\",\n      \"provision_id\": \"P4\",\n      \"decision\": \"applies\",\n      \"reason\": \"The exemption excludes affordable housing software from the definition of an algorithmic device, limiting what devices landlords are prohibited from using under section 98.1103(b).\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"(b) It is unlawful for a landlord to use an algorithmic device to set rental rates\\nor occupancy levels for residential rental property.\"\n        }\n      ]\n    },\n    {\n      \"condition_id\": \"S2\",\n      \"provision_id\": \"P5\",\n      \"decision\": \"does_not_apply\",\n      \"reason\": \"Section 98.1104(a) establishes civil remedies, damages, penalties, and fee recovery rather than defining or restricting the use of algorithmic devices.\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"( a ) A tenant may seek injunctive relief, damages, or civil penalties of up to\\n$1,000 per violation of this Division, in a civil action against a landlord.\\nIn an action brought under this Division, a prevailing tenant shall recover\\ncosts and reasonable attorney’s fees. A prevailing tenant includes a tenant\\ngranted an order for injunctive relief. A lease provision that limits a tenant\\nfrom recovering attorney’s fees shall not be enforceable against a tenant’s\\nclaim for attorney’s fees that arise under this Division.\"\n        }\n      ]\n    }\n  ],\n  \"rules\": []\n}",
+    "mappings": [
+      {
+        "condition_id": "S1",
+        "provision_id": "P3",
+        "kind": "exemption",
+        "statement": "An algorithmic device does not include software or a product used to publish reports regarding rental rates or occupancy levels from aggregated historical nonpublic competitor data more than 90 days old or from information available to the general public, that does not recommend rental rates or occupancy levels for future leases or renewals.",
+        "scope_words": "Algorithmic device does not include either of\nthe following:",
+        "condition_evidence": "Algorithmic device does not include either of\nthe following:\n(a) A software or product used by a person to publish reports regarding rental\nrates or occupancy levels from aggregated historical nonpublic competitor\ndata that is more than 90 days old, or from information available to the\ngeneral public, and does not recommend rental rates or occupancy levels\nfor future residential rental property leases or renewals.",
+        "target_ref": "§ 98.1103(a)",
+        "target_anchor": "(a) It is unlawful for a person to sell, license, or",
+        "target_quote": "(a) It is unlawful for a person to sell, license, or otherwise provide an\nalgorithmic device to a landlord.",
+        "decision": {
+          "decision": "applies",
+          "reason": "The exemption excludes certain reporting software from the definition of an algorithmic device, limiting the scope of products prohibited from being sold, licensed, or provided under section 98.1103(a).",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 15362,
+            "end": 15469,
+            "occurrences": 2,
+            "model_span": "(a) It is unlawful for a person to sell, license, or otherwise provide an\nalgorithmic device to a landlord.",
+            "source_span": "(a) It is unlawful for a person to sell, license, or otherwise provide an\nalgorithmic device to a landlord.",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 1,
+                "model_text": "(a) It is unlawful for a person to sell, license, or otherwise provide an\nalgorithmic device to a landlord.",
+                "status": "exact_match",
+                "start": 15362,
+                "end": 15469
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "applies",
+        "unresolved_reason": null
+      },
+      {
+        "condition_id": "S1",
+        "provision_id": "P4",
+        "kind": "exemption",
+        "statement": "An algorithmic device does not include software or a product used to publish reports regarding rental rates or occupancy levels from aggregated historical nonpublic competitor data more than 90 days old or from information available to the general public, that does not recommend rental rates or occupancy levels for future leases or renewals.",
+        "scope_words": "Algorithmic device does not include either of\nthe following:",
+        "condition_evidence": "Algorithmic device does not include either of\nthe following:\n(a) A software or product used by a person to publish reports regarding rental\nrates or occupancy levels from aggregated historical nonpublic competitor\ndata that is more than 90 days old, or from information available to the\ngeneral public, and does not recommend rental rates or occupancy levels\nfor future residential rental property leases or renewals.",
+        "target_ref": "§ 98.1103(b)",
+        "target_anchor": "(b) It is unlawful for a landlord to use an algorithmic",
+        "target_quote": "(b) It is unlawful for a landlord to use an algorithmic device to set rental rates\nor occupancy levels for residential rental property.\nFor each month a violation of section 98.1103(b) exists or continues, and\nfor each residential rental property a landlord uses an algorithmic device,\nit shall constitute a separate and distinct violation.",
+        "decision": {
+          "decision": "applies",
+          "reason": "The exemption excludes qualifying reporting software from the definition of an algorithmic device, limiting what devices a landlord is prohibited from using under section 98.1103(b).",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 15470,
+            "end": 15605,
+            "occurrences": 2,
+            "model_span": "(b) It is unlawful for a landlord to use an algorithmic device to set rental rates\nor occupancy levels for residential rental property.",
+            "source_span": "(b) It is unlawful for a landlord to use an algorithmic device to set rental rates\nor occupancy levels for residential rental property.",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 1,
+                "model_text": "(b) It is unlawful for a landlord to use an algorithmic device to set rental rates\nor occupancy levels for residential rental property.",
+                "status": "exact_match",
+                "start": 15470,
+                "end": 15605
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "applies",
+        "unresolved_reason": null
+      },
+      {
+        "condition_id": "S1",
+        "provision_id": "P5",
+        "kind": "exemption",
+        "statement": "An algorithmic device does not include software or a product used to publish reports regarding rental rates or occupancy levels from aggregated historical nonpublic competitor data more than 90 days old or from information available to the general public, that does not recommend rental rates or occupancy levels for future leases or renewals.",
+        "scope_words": "Algorithmic device does not include either of\nthe following:",
+        "condition_evidence": "Algorithmic device does not include either of\nthe following:\n(a) A software or product used by a person to publish reports regarding rental\nrates or occupancy levels from aggregated historical nonpublic competitor\ndata that is more than 90 days old, or from information available to the\ngeneral public, and does not recommend rental rates or occupancy levels\nfor future residential rental property leases or renewals.",
+        "target_ref": "§ 98.1104(a)",
+        "target_anchor": "( a ) A tenant may seek injunctive relief, damages, or",
+        "target_quote": "( a ) A tenant may seek injunctive relief, damages, or civil penalties of up to\n$1,000 per violation of this Division, in a civil action against a landlord.\nIn an action brought under this Division, a prevailing tenant shall recover\ncosts and reasonable attorney’s fees. A prevailing tenant includes a tenant\ngranted an order for injunctive relief. A lease provision that limits a tenant\nfrom recovering attorney’s fees shall not be enforceable against a tenant’s\nclaim for attorney’s fees that arise under this Division.",
+        "decision": {
+          "decision": "does_not_apply",
+          "reason": "Section 98.1104(a) establishes civil remedies, damages, penalties, and fee recovery rather than defining or restricting the use of algorithmic devices.",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 15857,
+            "end": 16378,
+            "occurrences": 2,
+            "model_span": "( a ) A tenant may seek injunctive relief, damages, or civil penalties of up to\n$1,000 per violation of this Division, in a civil action against a landlord.\nIn an action brought under this Division, a prevailing tenant shall recover\ncosts and reasonable attorney’s fees. A prevailing tenant includes a tenant\ngranted an order for injunctive relief. A lease provision that limits a tenant\nfrom recovering attorney’s fees shall not be enforceable against a tenant’s\nclaim for attorney’s fees that arise under this Division.",
+            "source_span": "( a ) A tenant may seek injunctive relief, damages, or civil penalties of up to\n$1,000 per violation of this Division, in a civil action against a landlord.\nIn an action brought under this Division, a prevailing tenant shall recover\ncosts and reasonable attorney’s fees. A prevailing tenant includes a tenant\ngranted an order for injunctive relief. A lease provision that limits a tenant\nfrom recovering attorney’s fees shall not be enforceable against a tenant’s\nclaim for attorney’s fees that arise under this Division.",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 1,
+                "model_text": "( a ) A tenant may seek injunctive relief, damages, or civil penalties of up to\n$1,000 per violation of this Division, in a civil action against a landlord.\nIn an action brought under this Division, a prevailing tenant shall recover\ncosts and reasonable attorney’s fees. A prevailing tenant includes a tenant\ngranted an order for injunctive relief. A lease provision that limits a tenant\nfrom recovering attorney’s fees shall not be enforceable against a tenant’s\nclaim for attorney’s fees that arise under this Division.",
+                "status": "exact_match",
+                "start": 15857,
+                "end": 16378
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "does_not_apply",
+        "unresolved_reason": null
+      },
+      {
+        "condition_id": "S2",
+        "provision_id": "P3",
+        "kind": "exemption",
+        "statement": "An algorithmic device does not include software or a product used by a person to establish rental rates or income limits in accordance with local, state, or federal affordable housing program guidelines.",
+        "scope_words": "Algorithmic device does not include either of\nthe following:",
+        "condition_evidence": "Algorithmic device does not include either of\nthe following:\n(a) A software or product used by a person to publish reports regarding rental\nrates or occupancy levels from aggregated historical nonpublic competitor\ndata that is more than 90 days old, or from information available to the\ngeneral public, and does not recommend rental rates or occupancy levels\nfor future residential rental property leases or renewals.\n(b) A software or product used by a person to establish rental rates or income\nlimits in accordance with local, state, or federal affordable housing\nprogram guidelines.",
+        "target_ref": "§ 98.1103(a)",
+        "target_anchor": "(a) It is unlawful for a person to sell, license, or",
+        "target_quote": "(a) It is unlawful for a person to sell, license, or otherwise provide an\nalgorithmic device to a landlord.",
+        "decision": {
+          "decision": "applies",
+          "reason": "The exemption excludes affordable housing software from the definition of an algorithmic device, limiting the scope of products prohibited from being sold, licensed, or provided under section 98.1103(a).",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 15362,
+            "end": 15469,
+            "occurrences": 2,
+            "model_span": "(a) It is unlawful for a person to sell, license, or otherwise provide an\nalgorithmic device to a landlord.",
+            "source_span": "(a) It is unlawful for a person to sell, license, or otherwise provide an\nalgorithmic device to a landlord.",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 1,
+                "model_text": "(a) It is unlawful for a person to sell, license, or otherwise provide an\nalgorithmic device to a landlord.",
+                "status": "exact_match",
+                "start": 15362,
+                "end": 15469
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "applies",
+        "unresolved_reason": null
+      },
+      {
+        "condition_id": "S2",
+        "provision_id": "P4",
+        "kind": "exemption",
+        "statement": "An algorithmic device does not include software or a product used by a person to establish rental rates or income limits in accordance with local, state, or federal affordable housing program guidelines.",
+        "scope_words": "Algorithmic device does not include either of\nthe following:",
+        "condition_evidence": "Algorithmic device does not include either of\nthe following:\n(a) A software or product used by a person to publish reports regarding rental\nrates or occupancy levels from aggregated historical nonpublic competitor\ndata that is more than 90 days old, or from information available to the\ngeneral public, and does not recommend rental rates or occupancy levels\nfor future residential rental property leases or renewals.\n(b) A software or product used by a person to establish rental rates or income\nlimits in accordance with local, state, or federal affordable housing\nprogram guidelines.",
+        "target_ref": "§ 98.1103(b)",
+        "target_anchor": "(b) It is unlawful for a landlord to use an algorithmic",
+        "target_quote": "(b) It is unlawful for a landlord to use an algorithmic device to set rental rates\nor occupancy levels for residential rental property.\nFor each month a violation of section 98.1103(b) exists or continues, and\nfor each residential rental property a landlord uses an algorithmic device,\nit shall constitute a separate and distinct violation.",
+        "decision": {
+          "decision": "applies",
+          "reason": "The exemption excludes affordable housing software from the definition of an algorithmic device, limiting what devices landlords are prohibited from using under section 98.1103(b).",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 15470,
+            "end": 15605,
+            "occurrences": 2,
+            "model_span": "(b) It is unlawful for a landlord to use an algorithmic device to set rental rates\nor occupancy levels for residential rental property.",
+            "source_span": "(b) It is unlawful for a landlord to use an algorithmic device to set rental rates\nor occupancy levels for residential rental property.",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 1,
+                "model_text": "(b) It is unlawful for a landlord to use an algorithmic device to set rental rates\nor occupancy levels for residential rental property.",
+                "status": "exact_match",
+                "start": 15470,
+                "end": 15605
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "applies",
+        "unresolved_reason": null
+      },
+      {
+        "condition_id": "S2",
+        "provision_id": "P5",
+        "kind": "exemption",
+        "statement": "An algorithmic device does not include software or a product used by a person to establish rental rates or income limits in accordance with local, state, or federal affordable housing program guidelines.",
+        "scope_words": "Algorithmic device does not include either of\nthe following:",
+        "condition_evidence": "Algorithmic device does not include either of\nthe following:\n(a) A software or product used by a person to publish reports regarding rental\nrates or occupancy levels from aggregated historical nonpublic competitor\ndata that is more than 90 days old, or from information available to the\ngeneral public, and does not recommend rental rates or occupancy levels\nfor future residential rental property leases or renewals.\n(b) A software or product used by a person to establish rental rates or income\nlimits in accordance with local, state, or federal affordable housing\nprogram guidelines.",
+        "target_ref": "§ 98.1104(a)",
+        "target_anchor": "( a ) A tenant may seek injunctive relief, damages, or",
+        "target_quote": "( a ) A tenant may seek injunctive relief, damages, or civil penalties of up to\n$1,000 per violation of this Division, in a civil action against a landlord.\nIn an action brought under this Division, a prevailing tenant shall recover\ncosts and reasonable attorney’s fees. A prevailing tenant includes a tenant\ngranted an order for injunctive relief. A lease provision that limits a tenant\nfrom recovering attorney’s fees shall not be enforceable against a tenant’s\nclaim for attorney’s fees that arise under this Division.",
+        "decision": {
+          "decision": "does_not_apply",
+          "reason": "Section 98.1104(a) establishes civil remedies, damages, penalties, and fee recovery rather than defining or restricting the use of algorithmic devices.",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 15857,
+            "end": 16378,
+            "occurrences": 2,
+            "model_span": "( a ) A tenant may seek injunctive relief, damages, or civil penalties of up to\n$1,000 per violation of this Division, in a civil action against a landlord.\nIn an action brought under this Division, a prevailing tenant shall recover\ncosts and reasonable attorney’s fees. A prevailing tenant includes a tenant\ngranted an order for injunctive relief. A lease provision that limits a tenant\nfrom recovering attorney’s fees shall not be enforceable against a tenant’s\nclaim for attorney’s fees that arise under this Division.",
+            "source_span": "( a ) A tenant may seek injunctive relief, damages, or civil penalties of up to\n$1,000 per violation of this Division, in a civil action against a landlord.\nIn an action brought under this Division, a prevailing tenant shall recover\ncosts and reasonable attorney’s fees. A prevailing tenant includes a tenant\ngranted an order for injunctive relief. A lease provision that limits a tenant\nfrom recovering attorney’s fees shall not be enforceable against a tenant’s\nclaim for attorney’s fees that arise under this Division.",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 1,
+                "model_text": "( a ) A tenant may seek injunctive relief, damages, or civil penalties of up to\n$1,000 per violation of this Division, in a civil action against a landlord.\nIn an action brought under this Division, a prevailing tenant shall recover\ncosts and reasonable attorney’s fees. A prevailing tenant includes a tenant\ngranted an order for injunctive relief. A lease provision that limits a tenant\nfrom recovering attorney’s fees shall not be enforceable against a tenant’s\nclaim for attorney’s fees that arise under this Division.",
+                "status": "exact_match",
+                "start": 15857,
+                "end": 16378
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "does_not_apply",
+        "unresolved_reason": null
+      }
+    ],
+    "candidate_indices": [],
+    "accepted_count": 0,
+    "rejected_count": 0,
+    "errors": []
+  },
+  "document_status": "complete",
+  "review_reasons": [],
+  "warnings": [],
+  "errors": [],
+  "raw_response_text": "{\n  \"document\": {\n    \"posture\": \"pending_bill\",\n    \"evidence\": \"ORDINANCE NUMBER O-__________________ (NEW SERIES)\\nDATE OF FINAL PASSAGE __________________\"\n  },\n  \"provisions\": [\n    {\n      \"id\": \"P1\",\n      \"ref\": \"§ 98.1101\",\n      \"anchor\": \"§98.1101  Purpose and Intent\",\n      \"summary\": \"States the purpose and intent of Division 11 to prohibit algorithmic devices and provide tenant remedies.\",\n      \"role\": \"boilerplate\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"purpose and intent statement\"\n    },\n    {\n      \"id\": \"P2\",\n      \"ref\": \"§ 98.1102\",\n      \"anchor\": \"§98.1102  Definitions\",\n      \"summary\": \"Defines algorithmic device and other terms, and specifies exceptions to algorithmic devices.\",\n      \"role\": \"definition\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"definitions and scope exemptions; see global_scope S1 and S2\"\n    },\n    {\n      \"id\": \"P3\",\n      \"ref\": \"§ 98.1103(a)\",\n      \"anchor\": \"(a) It is unlawful for a person to sell, license, or\",\n      \"summary\": \"Prohibits selling, licensing, or providing an algorithmic device to a landlord.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"algorithmic_rent_setting\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P4\",\n      \"ref\": \"§ 98.1103(b)\",\n      \"anchor\": \"(b) It is unlawful for a landlord to use an algorithmic\",\n      \"summary\": \"Prohibits landlords from using an algorithmic device to set rental rates or occupancy levels, and defines separate violations.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"algorithmic_rent_setting\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P5\",\n      \"ref\": \"§ 98.1104(a)\",\n      \"anchor\": \"( a ) A tenant may seek injunctive relief, damages, or\",\n      \"summary\": \"Provides tenant remedies including injunctive relief, damages, civil penalties up to $1,000, and attorney's fees.\",\n      \"role\": \"remedy\",\n      \"scope\": \"in_scope\",\n      \"category\": \"algorithmic_rent_setting\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P6\",\n      \"ref\": \"§ 98.1104(b)\",\n      \"anchor\": \"(b) The remedies under section 98.1104 are cumulative\",\n      \"summary\": \"Specifies that remedies are cumulative and in addition to other remedies at law.\",\n      \"role\": \"procedure\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"cumulative-remedies boilerplate\"\n    },\n    {\n      \"id\": \"P7\",\n      \"ref\": \"Section 2\",\n      \"anchor\": \"Section 2. The Council dispenses with a full reading\",\n      \"summary\": \"Dispenses with a full reading of the ordinance before passage.\",\n      \"role\": \"procedure\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"procedural boilerplate\"\n    },\n    {\n      \"id\": \"P8\",\n      \"ref\": \"Section 3\",\n      \"anchor\": \"Section 3. This Ordinance will take effect and be\",\n      \"summary\": \"Sets the effective date of the ordinance to 30 days after final passage.\",\n      \"role\": \"procedure\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"effective date provision\"\n    }\n  ],\n  \"global_scope\": [\n    {\n      \"id\": \"S1\",\n      \"kind\": \"exemption\",\n      \"statement\": \"An algorithmic device does not include software or a product used to publish reports regarding rental rates or occupancy levels from aggregated historical nonpublic competitor data more than 90 days old or from information available to the general public, that does not recommend rental rates or occupancy levels for future leases or renewals.\",\n      \"citation\": \"§ 98.1102(a)\",\n      \"scope_mode\": \"named_subject\",\n      \"scope_quote\": \"Algorithmic device does not include either of\\nthe following:\",\n      \"source_provision_id\": \"P2\",\n      \"governed_provision_ids\": [\n        \"P3\",\n        \"P4\",\n        \"P5\"\n      ],\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Algorithmic device does not include either of\\nthe following:\\n(a) A software or product used by a person to publish reports regarding rental\\nrates or occupancy levels from aggregated historical nonpublic competitor\\ndata that is more than 90 days old, or from information available to the\\ngeneral public, and does not recommend rental rates or occupancy levels\\nfor future residential rental property leases or renewals.\"\n        }\n      ]\n    },\n    {\n      \"id\": \"S2\",\n      \"kind\": \"exemption\",\n      \"statement\": \"An algorithmic device does not include software or a product used by a person to establish rental rates or income limits in accordance with local, state, or federal affordable housing program guidelines.\",\n      \"citation\": \"§ 98.1102(b)\",\n      \"scope_mode\": \"named_subject\",\n      \"scope_quote\": \"Algorithmic device does not include either of\\nthe following:\",\n      \"source_provision_id\": \"P2\",\n      \"governed_provision_ids\": [\n        \"P3\",\n        \"P4\",\n        \"P5\"\n      ],\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Algorithmic device does not include either of\\nthe following:\\n(a) A software or product used by a person to publish reports regarding rental\\nrates or occupancy levels from aggregated historical nonpublic competitor\\ndata that is more than 90 days old, or from information available to the\\ngeneral public, and does not recommend rental rates or occupancy levels\\nfor future residential rental property leases or renewals.\\n(b) A software or product used by a person to establish rental rates or income\\nlimits in accordance with local, state, or federal affordable housing\\nprogram guidelines.\"\n        }\n      ]\n    }\n  ],\n  \"rules\": [\n    {\n      \"category\": \"algorithmic_rent_setting\",\n      \"citation\": \"§ 98.1103(a)\",\n      \"provision_ids\": [\n        \"P3\"\n      ],\n      \"source_basis\": \"operative_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"(a) It is unlawful for a person to sell, license, or otherwise provide an\\nalgorithmic device to a landlord.\"\n        }\n      ],\n      \"title\": \"Prohibition on Providing Algorithmic Devices to Landlords\",\n      \"requirement\": \"It is unlawful for any person to sell, license, or otherwise provide an algorithmic device to a landlord.\",\n      \"key_value\": null,\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"pending\",\n      \"enactment_status_evidence\": \"ORDINANCE NUMBER O-__________________ (NEW SERIES)\\nDATE OF FINAL PASSAGE __________________\",\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": \"This Ordinance will take effect and be in force on the thirtieth day from\\nand after its final passage.\",\n      \"effective_date_evidence_kind\": \"relative_date_formula\",\n      \"effective_date\": null,\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"algorithmic_rent_setting\",\n      \"citation\": \"§ 98.1103(b)\",\n      \"provision_ids\": [\n        \"P4\"\n      ],\n      \"source_basis\": \"operative_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"(b) It is unlawful for a landlord to use an algorithmic device to set rental rates\\nor occupancy levels for residential rental property.\\nFor each month a violation of section 98.1103(b) exists or continues, and\\nfor each residential rental property a landlord uses an algorithmic device,\\nit shall constitute a separate and distinct violation.\"\n        }\n      ],\n      \"title\": \"Prohibition on Landlord Use of Algorithmic Devices\",\n      \"requirement\": \"It is unlawful for a landlord to use an algorithmic device to set rental rates or occupancy levels for residential rental property. Each month a violation continues and each residential rental property for which an algorithmic device is used constitutes a separate and distinct violation.\",\n      \"key_value\": null,\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"pending\",\n      \"enactment_status_evidence\": \"ORDINANCE NUMBER O-__________________ (NEW SERIES)\\nDATE OF FINAL PASSAGE __________________\",\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": \"This Ordinance will take effect and be in force on the thirtieth day from\\nand after its final passage.\",\n      \"effective_date_evidence_kind\": \"relative_date_formula\",\n      \"effective_date\": null,\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"algorithmic_rent_setting\",\n      \"citation\": \"§ 98.1104(a)\",\n      \"provision_ids\": [\n        \"P5\"\n      ],\n      \"source_basis\": \"operative_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"( a ) A tenant may seek injunctive relief, damages, or civil penalties of up to\\n$1,000 per violation of this Division, in a civil action against a landlord.\\nIn an action brought under this Division, a prevailing tenant shall recover\\ncosts and reasonable attorney’s fees. A prevailing tenant includes a tenant\\ngranted an order for injunctive relief. A lease provision that limits a tenant\\nfrom recovering attorney’s fees shall not be enforceable against a tenant’s\\nclaim for attorney’s fees that arise under this Division.\"\n        }\n      ],\n      \"title\": \"Tenant Remedies and Civil Penalties for Algorithmic Rent-Setting\",\n      \"requirement\": \"A tenant may bring a civil action against a landlord for injunctive relief, damages, or civil penalties of up to $1,000 per violation of Division 11. A prevailing tenant is entitled to recover costs and reasonable attorney's fees, and lease provisions limiting a tenant's attorney fee recovery are unenforceable.\",\n      \"key_value\": \"$1,000 per violation\",\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": \"The remedies under section 98.1104 are cumulative and are in addition to any other remedies in Division 11 or at law, statute, or ordinance.\",\n      \"enactment_status\": \"pending\",\n      \"enactment_status_evidence\": \"ORDINANCE NUMBER O-__________________ (NEW SERIES)\\nDATE OF FINAL PASSAGE __________________\",\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": \"This Ordinance will take effect and be in force on the thirtieth day from\\nand after its final passage.\",\n      \"effective_date_evidence_kind\": \"relative_date_formula\",\n      \"effective_date\": null,\n      \"conflict_note\": null\n    }\n  ],\n  \"no_rules_justification\": null\n}"
+}

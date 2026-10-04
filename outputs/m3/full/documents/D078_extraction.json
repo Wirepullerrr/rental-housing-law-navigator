@@ -1,0 +1,138 @@
+{
+  "disclaimer": "Not legal advice. Automated extraction for a research prototype; verify against the cited source.",
+  "run_at": "2026-10-04T03:35:00+00:00",
+  "source": {
+    "doc_id": "D078",
+    "jurisdiction": "San Francisco, CA",
+    "url": "https://sf-hrc.org/fair-chance-ordinance",
+    "source_type": "official",
+    "retrieved_at": "2026-10-01T22:37Z",
+    "text_file": "text/D078.txt",
+    "content_sha256": "c07afe588658a1df18ba37f7968de0848e84256c34d2005ac75dd810820cf578",
+    "body_chars": 6944
+  },
+  "provider": "gemini",
+  "model": "gemini-3.8-flash",
+  "prompt_version": "v7",
+  "prompt_sha256": "0c5c0e69c4e13c183f278bf95df5c8373104422d7f86781d5714a7056c83affc",
+  "response_schema_sha256": "c15306da6f21dc72f06e78405f94ed61dc9e59288138cc98b5b5bf9b62ac403c",
+  "generation_settings": {
+    "temperature": null,
+    "seed": 20261001,
+    "thinking_level": "medium"
+  },
+  "as_of": "2026-10-01",
+  "cache_key": "1b89bca88e31e1cc80f98faa3dba3446564f3408fb673a45dc947ea66845ded4",
+  "cache_hit": false,
+  "cache_entry": "cache/extraction/1b89bca88e31e1cc80f98faa3dba3446564f3408fb673a45dc947ea66845ded4.json",
+  "provider_metadata": {
+    "api": "interactions.create",
+    "interaction_id": "",
+    "model": "gemini-3.8-flash",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 5513,
+      "output_tokens": 182,
+      "thinking_tokens": 7592,
+      "total_tokens": 13287
+    }
+  },
+  "candidate_count": 0,
+  "accepted_count": 0,
+  "rules": [],
+  "candidates": [],
+  "posture": {
+    "declared": "official_explanatory_page",
+    "evidence": "Rooted in community, the Human Rights Commission works in service of the City’s anti-discrimination laws by protecting civil rights, upholding dignity, and advancing equitable outcomes in San Francisco.",
+    "evidence_check": {
+      "status": "exact_match",
+      "normalization": null,
+      "start": 85,
+      "end": 287,
+      "occurrences": 1,
+      "model_span": "Rooted in community, the Human Rights Commission works in service of the City’s anti-discrimination laws by protecting civil rights, upholding dignity, and advancing equitable outcomes in San Francisco.",
+      "source_span": "Rooted in community, the Human Rights Commission works in service of the City’s anti-discrimination laws by protecting civil rights, upholding dignity, and advancing equitable outcomes in San Francisco.",
+      "reason": null,
+      "reconstructed": false,
+      "parts": [],
+      "crossed_artifacts": []
+    },
+    "established": "official_explanatory_page",
+    "basis": "declared posture with verified evidence"
+  },
+  "base_dates": [],
+  "provision_inventory": [],
+  "global_scope": [],
+  "source_view": {
+    "marker": "[[PAGE BREAK]]",
+    "segment_label": "[[SEGMENT {}]]",
+    "view_sha256": "05b5e24b5888e4b03585336b7a551da8bec38a1eaeee3f5d23d25152b176dc3d",
+    "segments": [
+      {
+        "id": 1,
+        "raw_start": 0,
+        "raw_end": 6944
+      }
+    ],
+    "artifacts_removed": 0,
+    "artifacts": []
+  },
+  "coverage": {
+    "inventory_valid": true,
+    "anchors_located": "0/0",
+    "after_primary": {
+      "uncovered": [],
+      "unaccepted": [],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "scope_mappings": {
+      "requested": 0,
+      "applies": 0,
+      "does_not_apply": 0,
+      "unresolved": 0
+    },
+    "inventory_items": 0,
+    "in_scope_items": 0,
+    "in_scope_refs": 0,
+    "uncertain": [],
+    "final": {
+      "uncovered": [],
+      "unaccepted": [],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "link_mismatches": [],
+    "provisions": [],
+    "unrecorded_subdivisions": []
+  },
+  "scope_challenges": [],
+  "scope_mappings": [],
+  "legislative_session": null,
+  "empty_result": {
+    "reason": "The document is a municipal agency website homepage containing calendar events, announcements, and general informational links, with no substantive legal provisions or operative rental housing rules.",
+    "evidence": "Rooted in community, the Human Rights Commission works in service of the City’s anti-discrimination laws by protecting civil rights, upholding dignity, and advancing equitable outcomes in San Francisco.",
+    "evidence_check": {
+      "status": "exact_match",
+      "normalization": null,
+      "start": 85,
+      "end": 287,
+      "occurrences": 1,
+      "model_span": "Rooted in community, the Human Rights Commission works in service of the City’s anti-discrimination laws by protecting civil rights, upholding dignity, and advancing equitable outcomes in San Francisco.",
+      "source_span": "Rooted in community, the Human Rights Commission works in service of the City’s anti-discrimination laws by protecting civil rights, upholding dignity, and advancing equitable outcomes in San Francisco.",
+      "reason": null,
+      "reconstructed": false,
+      "parts": [],
+      "crossed_artifacts": []
+    },
+    "verified": true,
+    "problem": null
+  },
+  "legacy_replay": null,
+  "repair": null,
+  "document_status": "complete",
+  "review_reasons": [],
+  "warnings": [],
+  "errors": [],
+  "raw_response_text": "{\n  \"document\": {\n    \"posture\": \"official_explanatory_page\",\n    \"evidence\": \"Rooted in community, the Human Rights Commission works in service of the City’s anti-discrimination laws by protecting civil rights, upholding dignity, and advancing equitable outcomes in San Francisco.\"\n  },\n  \"provisions\": [],\n  \"global_scope\": [],\n  \"rules\": [],\n  \"no_rules_justification\": {\n    \"reason\": \"The document is a municipal agency website homepage containing calendar events, announcements, and general informational links, with no substantive legal provisions or operative rental housing rules.\",\n    \"evidence\": \"Rooted in community, the Human Rights Commission works in service of the City’s anti-discrimination laws by protecting civil rights, upholding dignity, and advancing equitable outcomes in San Francisco.\"\n  }\n}"
+}

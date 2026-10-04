@@ -1,0 +1,356 @@
+{
+  "disclaimer": "Not legal advice. Automated extraction for a research prototype; verify against the cited source.",
+  "run_at": "2026-10-04T03:17:08+00:00",
+  "source": {
+    "doc_id": "D046",
+    "jurisdiction": "MA",
+    "url": "https://malegislature.gov/Bills/194/S2983",
+    "source_type": "official",
+    "retrieved_at": "2026-10-01T22:36Z",
+    "text_file": "text/D046.txt",
+    "content_sha256": "4234de431d885b3b78471746482b56784f6f39b51c525a6e0d541d8eeb3d7296",
+    "body_chars": 3117
+  },
+  "provider": "gemini",
+  "model": "gemini-3.8-flash",
+  "prompt_version": "v7",
+  "prompt_sha256": "cff0739beff92a5053433563dc8c846873a41f36b4fcd1a44f7814c9db5ec59b",
+  "response_schema_sha256": "c15306da6f21dc72f06e78405f94ed61dc9e59288138cc98b5b5bf9b62ac403c",
+  "generation_settings": {
+    "temperature": null,
+    "seed": 20261001,
+    "thinking_level": "medium"
+  },
+  "as_of": "2026-10-01",
+  "cache_key": "a5e48900cc5d32125af7d104bd7803a3d137ec1585eb7965e10b717db8531308",
+  "cache_hit": false,
+  "cache_entry": "cache/extraction/a5e48900cc5d32125af7d104bd7803a3d137ec1585eb7965e10b717db8531308.json",
+  "provider_metadata": {
+    "api": "interactions.create",
+    "interaction_id": "",
+    "model": "gemini-3.8-flash",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4670,
+      "output_tokens": 579,
+      "thinking_tokens": 5710,
+      "total_tokens": 10959
+    }
+  },
+  "candidate_count": 1,
+  "accepted_count": 1,
+  "rules": [
+    {
+      "team_rule_id": "r-655b2201a6",
+      "jurisdiction": "MA",
+      "level": "state",
+      "category": "algorithmic_rent_setting",
+      "status": "pending",
+      "title": "Prohibition of algorithmic rent setting",
+      "requirement": "[Basis: official bill summary, not operative legal text] The proposed bill would prohibit algorithmic rent setting.",
+      "key_value": null,
+      "coverage_conditions": null,
+      "exemptions": null,
+      "overrides": [],
+      "interaction": null,
+      "effective_date": null,
+      "citation": "Bill S.2983",
+      "source_doc_id": "D046",
+      "source_url": "https://malegislature.gov/Bills/194/S2983",
+      "quoted_span": "An Act prohibiting algorithmic rent setting",
+      "confidence": null,
+      "conflict_flag": false,
+      "conflict_note": null
+    }
+  ],
+  "candidates": [
+    {
+      "index": 0,
+      "origin": "primary",
+      "accepted": true,
+      "held": false,
+      "rejection_reasons": [],
+      "provision_ids": [
+        "P1"
+      ],
+      "source_basis": "official_bill_summary",
+      "status_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 1048,
+        "end": 1139,
+        "occurrences": 1,
+        "model_span": "Bill reported favorably by committee and referred to the committee on\nSenate Ways and Means",
+        "source_span": "Bill reported favorably by committee and referred to the committee on\nSenate Ways and Means",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "legislative": {
+        "model_status": "pending",
+        "query_date": "2026-10-01",
+        "session": {
+          "resolver": "ma-general-court-session/v1",
+          "jurisdiction": "MA",
+          "general_court": 194,
+          "label": "194th (Current)",
+          "raw_start": 40,
+          "raw_end": 55,
+          "years": [
+            2025,
+            2026
+          ],
+          "ends_by": "2027-02-01",
+          "consistent": true,
+          "other_labels": []
+        },
+        "terminal_action": null,
+        "enactment_evidence": null,
+        "status": "pending",
+        "status_basis": "current_session_pending",
+        "conflict": null
+      },
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 109,
+        "end": 152,
+        "occurrences": 1,
+        "model_span": "An Act prohibiting algorithmic rent setting",
+        "source_span": "An Act prohibiting algorithmic rent setting",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "An Act prohibiting algorithmic rent setting",
+            "status": "exact_match",
+            "start": 109,
+            "end": 152
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": null,
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": null,
+        "applied_kind": null,
+        "effective_date": null,
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "bill_status_or_summary_page",
+        "posture_consistent": null
+      },
+      "status_derivation": "legislative: current_session_pending",
+      "warnings": [
+        "review: the record rests on official_bill_summary, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-655b2201a6",
+        "jurisdiction": "MA",
+        "level": "state",
+        "category": "algorithmic_rent_setting",
+        "status": "pending",
+        "title": "Prohibition of algorithmic rent setting",
+        "requirement": "[Basis: official bill summary, not operative legal text] The proposed bill would prohibit algorithmic rent setting.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "Bill S.2983",
+        "source_doc_id": "D046",
+        "source_url": "https://malegislature.gov/Bills/194/S2983",
+        "quoted_span": "An Act prohibiting algorithmic rent setting",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "algorithmic_rent_setting",
+        "citation": "Bill S.2983",
+        "provision_ids": [
+          "P1"
+        ],
+        "source_basis": "official_bill_summary",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "An Act prohibiting algorithmic rent setting"
+          }
+        ],
+        "title": "Prohibition of algorithmic rent setting",
+        "requirement": "The proposed bill would prohibit algorithmic rent setting.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "pending",
+        "enactment_status_evidence": "Bill reported favorably by committee and referred to the committee on\nSenate Ways and Means",
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": null,
+        "effective_date_evidence_kind": null,
+        "effective_date": null,
+        "conflict_note": null
+      }
+    }
+  ],
+  "posture": {
+    "declared": "bill_status_or_summary_page",
+    "evidence": "Status:\nReferred to\nSenate Committee on Ways and Means",
+    "evidence_check": {
+      "status": "exact_match",
+      "normalization": null,
+      "start": 734,
+      "end": 788,
+      "occurrences": 1,
+      "model_span": "Status:\nReferred to\nSenate Committee on Ways and Means",
+      "source_span": "Status:\nReferred to\nSenate Committee on Ways and Means",
+      "reason": null,
+      "reconstructed": false,
+      "parts": [],
+      "crossed_artifacts": []
+    },
+    "established": "bill_status_or_summary_page",
+    "basis": "declared posture with verified evidence"
+  },
+  "base_dates": [],
+  "provision_inventory": [
+    {
+      "id": "P1",
+      "ref": "Bill S.2983",
+      "anchor": "An Act prohibiting algorithmic rent setting",
+      "summary": "Official bill title proposing legislation to prohibit algorithmic rent setting.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "algorithmic_rent_setting",
+      "reason": null
+    },
+    {
+      "id": "P2",
+      "ref": "Senate, March 12, 2026",
+      "anchor": "Senate, March 12, 2026 -- The committee on Housing",
+      "summary": "Housing committee report accompanying Bill S.2983.",
+      "role": "history",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "legislative reporting record and history"
+    }
+  ],
+  "global_scope": [],
+  "source_view": {
+    "marker": "[[PAGE BREAK]]",
+    "segment_label": "[[SEGMENT {}]]",
+    "view_sha256": "a1b78929dc4ac3b799975f7a3fb604212fcd8a722f3f604509fdfba8ee5a61bc",
+    "segments": [
+      {
+        "id": 1,
+        "raw_start": 0,
+        "raw_end": 3117
+      }
+    ],
+    "artifacts_removed": 0,
+    "artifacts": []
+  },
+  "coverage": {
+    "inventory_valid": true,
+    "anchors_located": "2/2",
+    "after_primary": {
+      "uncovered": [],
+      "unaccepted": [],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "scope_mappings": {
+      "requested": 0,
+      "applies": 0,
+      "does_not_apply": 0,
+      "unresolved": 0
+    },
+    "inventory_items": 2,
+    "in_scope_items": 1,
+    "in_scope_refs": 1,
+    "uncertain": [],
+    "final": {
+      "uncovered": [],
+      "unaccepted": [],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "link_mismatches": [],
+    "provisions": [
+      {
+        "ref": "Bill S.2983",
+        "inventory_item": 0,
+        "provision_id": "P1",
+        "summary": "Official bill title proposing legislation to prohibit algorithmic rent setting.",
+        "category": "algorithmic_rent_setting",
+        "candidates": [
+          0
+        ],
+        "accepted": [
+          0
+        ],
+        "basis": {
+          "0": "provision link; citation names it"
+        }
+      }
+    ],
+    "unrecorded_subdivisions": []
+  },
+  "scope_challenges": [
+    {
+      "ref": "Senate, March 12, 2026",
+      "provision_id": "P2",
+      "role": "history",
+      "reason": "legislative reporting record and history",
+      "summary": "Housing committee report accompanying Bill S.2983.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role history is decided by other rules"
+    }
+  ],
+  "scope_mappings": [],
+  "legislative_session": {
+    "resolver": "ma-general-court-session/v1",
+    "jurisdiction": "MA",
+    "general_court": 194,
+    "label": "194th (Current)",
+    "raw_start": 40,
+    "raw_end": 55,
+    "years": [
+      2025,
+      2026
+    ],
+    "ends_by": "2027-02-01",
+    "consistent": true,
+    "other_labels": []
+  },
+  "empty_result": null,
+  "legacy_replay": null,
+  "repair": null,
+  "document_status": "complete",
+  "review_reasons": [],
+  "warnings": [],
+  "errors": [],
+  "raw_response_text": "{\n  \"document\": {\n    \"posture\": \"bill_status_or_summary_page\",\n    \"evidence\": \"Status:\\nReferred to\\nSenate Committee on Ways and Means\"\n  },\n  \"provisions\": [\n    {\n      \"id\": \"P1\",\n      \"ref\": \"Bill S.2983\",\n      \"anchor\": \"An Act prohibiting algorithmic rent setting\",\n      \"summary\": \"Official bill title proposing legislation to prohibit algorithmic rent setting.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"algorithmic_rent_setting\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P2\",\n      \"ref\": \"Senate, March 12, 2026\",\n      \"anchor\": \"Senate, March 12, 2026 -- The committee on Housing\",\n      \"summary\": \"Housing committee report accompanying Bill S.2983.\",\n      \"role\": \"history\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"legislative reporting record and history\"\n    }\n  ],\n  \"global_scope\": [],\n  \"rules\": [\n    {\n      \"category\": \"algorithmic_rent_setting\",\n      \"citation\": \"Bill S.2983\",\n      \"provision_ids\": [\"P1\"],\n      \"source_basis\": \"official_bill_summary\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"An Act prohibiting algorithmic rent setting\"\n        }\n      ],\n      \"title\": \"Prohibition of algorithmic rent setting\",\n      \"requirement\": \"The proposed bill would prohibit algorithmic rent setting.\",\n      \"key_value\": null,\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"pending\",\n      \"enactment_status_evidence\": \"Bill reported favorably by committee and referred to the committee on\\nSenate Ways and Means\",\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": null,\n      \"effective_date_evidence_kind\": null,\n      \"effective_date\": null,\n      \"conflict_note\": null\n    }\n  ],\n  \"no_rules_justification\": null\n}"
+}

@@ -1,0 +1,1527 @@
+{
+  "disclaimer": "Not legal advice. Automated extraction for a research prototype; verify against the cited source.",
+  "run_at": "2026-10-04T02:42:54+00:00",
+  "source": {
+    "doc_id": "D004",
+    "jurisdiction": "Berkeley, CA",
+    "url": "https://rentboard.berkeleyca.gov/elected-rent-board/news/2026-adjustments-relocation-assistance-payments",
+    "source_type": "official",
+    "retrieved_at": "2026-10-01T22:35Z",
+    "text_file": "text/D004.txt",
+    "content_sha256": "b7e786aa64ece248199cfdfeb8bd8e3c3b9e7b16105381f790eb06a25d74474b",
+    "body_chars": 2316
+  },
+  "provider": "gemini",
+  "model": "gemini-3.8-flash",
+  "prompt_version": "v7",
+  "prompt_sha256": "890c0ca6c48bce7e71b7cd3c0bb37bdab02443f269f0baa64f66ef1348af19b1",
+  "response_schema_sha256": "c15306da6f21dc72f06e78405f94ed61dc9e59288138cc98b5b5bf9b62ac403c",
+  "generation_settings": {
+    "temperature": null,
+    "seed": 20261001,
+    "thinking_level": "medium"
+  },
+  "as_of": "2026-10-01",
+  "cache_key": "09f2efa8cacdfb98c344c5f2158c2ef56a58beb7a7d9b91294eb549b9201791f",
+  "cache_hit": false,
+  "cache_entry": "cache/extraction/09f2efa8cacdfb98c344c5f2158c2ef56a58beb7a7d9b91294eb549b9201791f.json",
+  "provider_metadata": {
+    "api": "interactions.create",
+    "interaction_id": "",
+    "model": "gemini-3.8-flash",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4435,
+      "output_tokens": 1977,
+      "thinking_tokens": 27234,
+      "total_tokens": 33646
+    }
+  },
+  "candidate_count": 4,
+  "accepted_count": 2,
+  "rules": [
+    {
+      "team_rule_id": "r-b415fab204",
+      "jurisdiction": "Berkeley, CA",
+      "level": "city",
+      "category": "just_cause_eviction",
+      "status": "in_force",
+      "title": "Standard Relocation Assistance Payment (2026)",
+      "requirement": "[Basis: official explanatory text, not operative legal text] The standard relocation assistance payment will increase to $19,413.",
+      "key_value": "$19,413",
+      "coverage_conditions": "Relocation assistance is required in the event of an owner move-in eviction under the Rent Stabilization and Good Cause for Eviction Ordinance. [Rent Stabilization and Good Cause for Eviction Ordinance]; Relocation assistance is required for tenants evicted so the owner can remove a property from the rental housing market under the Ellis Implementation Ordinance. [Ellis Implementation Ordinance]",
+      "exemptions": null,
+      "overrides": [],
+      "interaction": null,
+      "effective_date": "2026-01-01",
+      "citation": "2026 Adjustments of Relocation Assistance Payments",
+      "source_doc_id": "D004",
+      "source_url": "https://rentboard.berkeleyca.gov/elected-rent-board/news/2026-adjustments-relocation-assistance-payments",
+      "quoted_span": "The standard relocation assistance payment will increase to\n$19,413\n.",
+      "confidence": null,
+      "conflict_flag": false,
+      "conflict_note": null
+    },
+    {
+      "team_rule_id": "r-e28ffe138f",
+      "jurisdiction": "Berkeley, CA",
+      "level": "city",
+      "category": "just_cause_eviction",
+      "status": "in_force",
+      "title": "Additional Relocation Assistance Payment for Qualifying Households (2026)",
+      "requirement": "[Basis: official explanatory text, not operative legal text] The additional relocation assistance payment for qualifying households will increase to $6,471.",
+      "key_value": "$6,471",
+      "coverage_conditions": "Relocation assistance is required in the event of an owner move-in eviction under the Rent Stabilization and Good Cause for Eviction Ordinance. [Rent Stabilization and Good Cause for Eviction Ordinance]; Relocation assistance is required for tenants evicted so the owner can remove a property from the rental housing market under the Ellis Implementation Ordinance. [Ellis Implementation Ordinance]",
+      "exemptions": null,
+      "overrides": [],
+      "interaction": null,
+      "effective_date": "2026-01-01",
+      "citation": "2026 Adjustments of Relocation Assistance Payments",
+      "source_doc_id": "D004",
+      "source_url": "https://rentboard.berkeleyca.gov/elected-rent-board/news/2026-adjustments-relocation-assistance-payments",
+      "quoted_span": "The additional relocation assistance payment for qualifying households will increase to\n$6,471\n.",
+      "confidence": null,
+      "conflict_flag": false,
+      "conflict_note": null
+    }
+  ],
+  "candidates": [
+    {
+      "index": 0,
+      "origin": "primary",
+      "accepted": true,
+      "held": false,
+      "rejection_reasons": [],
+      "provision_ids": [
+        "P3"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 843,
+        "end": 992,
+        "occurrences": 1,
+        "model_span": "At its October 16, 2025 Special Meeting, the Rent Board approved relocation assistance payment increases that will go into effect on January 1, 2026.",
+        "source_span": "At its October 16, 2025 Special Meeting, the Rent Board approved relocation assistance payment increases that will go into effect on January 1, 2026.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 993,
+        "end": 1062,
+        "occurrences": 1,
+        "model_span": "The standard relocation assistance payment will increase to\n$19,413\n.",
+        "source_span": "The standard relocation assistance payment will increase to\n$19,413\n.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "The standard relocation assistance payment will increase to\n$19,413\n.",
+            "status": "exact_match",
+            "start": 993,
+            "end": 1062
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 908,
+        "end": 991,
+        "occurrences": 1,
+        "model_span": "relocation assistance payment increases that will go into effect on January 1, 2026",
+        "source_span": "relocation assistance payment increases that will go into effect on January 1, 2026",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [
+        {
+          "id": "S1",
+          "kind": "coverage_condition",
+          "mode": "named_subject",
+          "governed_provision_ids": [
+            "P3"
+          ],
+          "basis": "named-subject mapping to P3 verified by repair",
+          "applied": true
+        },
+        {
+          "id": "S2",
+          "kind": "coverage_condition",
+          "mode": "named_subject",
+          "governed_provision_ids": [
+            "P3"
+          ],
+          "basis": "named-subject mapping to P3 verified by repair",
+          "applied": true
+        }
+      ],
+      "temporal": {
+        "model_effective_date": "2026-01-01",
+        "model_kind": "explicit_operative_date",
+        "applied_kind": "explicit_operative_date",
+        "effective_date": "2026-01-01",
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null
+      },
+      "status_derivation": "enacted; effective 2026-01-01 is on or before as_of 2026-10-01",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-b415fab204",
+        "jurisdiction": "Berkeley, CA",
+        "level": "city",
+        "category": "just_cause_eviction",
+        "status": "in_force",
+        "title": "Standard Relocation Assistance Payment (2026)",
+        "requirement": "[Basis: official explanatory text, not operative legal text] The standard relocation assistance payment will increase to $19,413.",
+        "key_value": "$19,413",
+        "coverage_conditions": "Relocation assistance is required in the event of an owner move-in eviction under the Rent Stabilization and Good Cause for Eviction Ordinance. [Rent Stabilization and Good Cause for Eviction Ordinance]; Relocation assistance is required for tenants evicted so the owner can remove a property from the rental housing market under the Ellis Implementation Ordinance. [Ellis Implementation Ordinance]",
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": "2026-01-01",
+        "citation": "2026 Adjustments of Relocation Assistance Payments",
+        "source_doc_id": "D004",
+        "source_url": "https://rentboard.berkeleyca.gov/elected-rent-board/news/2026-adjustments-relocation-assistance-payments",
+        "quoted_span": "The standard relocation assistance payment will increase to\n$19,413\n.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "just_cause_eviction",
+        "citation": "2026 Adjustments of Relocation Assistance Payments",
+        "provision_ids": [
+          "P3"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "The standard relocation assistance payment will increase to\n$19,413\n."
+          }
+        ],
+        "title": "Standard Relocation Assistance Payment (2026)",
+        "requirement": "The standard relocation assistance payment will increase to $19,413.",
+        "key_value": "$19,413",
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": "At its October 16, 2025 Special Meeting, the Rent Board approved relocation assistance payment increases that will go into effect on January 1, 2026.",
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": "relocation assistance payment increases that will go into effect on January 1, 2026",
+        "effective_date_evidence_kind": "explicit_operative_date",
+        "effective_date": "2026-01-01",
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 1,
+      "origin": "primary",
+      "accepted": true,
+      "held": false,
+      "rejection_reasons": [],
+      "provision_ids": [
+        "P4"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 843,
+        "end": 992,
+        "occurrences": 1,
+        "model_span": "At its October 16, 2025 Special Meeting, the Rent Board approved relocation assistance payment increases that will go into effect on January 1, 2026.",
+        "source_span": "At its October 16, 2025 Special Meeting, the Rent Board approved relocation assistance payment increases that will go into effect on January 1, 2026.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 1063,
+        "end": 1159,
+        "occurrences": 1,
+        "model_span": "The additional relocation assistance payment for qualifying households will increase to\n$6,471\n.",
+        "source_span": "The additional relocation assistance payment for qualifying households will increase to\n$6,471\n.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "The additional relocation assistance payment for qualifying households will increase to\n$6,471\n.",
+            "status": "exact_match",
+            "start": 1063,
+            "end": 1159
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 908,
+        "end": 991,
+        "occurrences": 1,
+        "model_span": "relocation assistance payment increases that will go into effect on January 1, 2026",
+        "source_span": "relocation assistance payment increases that will go into effect on January 1, 2026",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [
+        {
+          "id": "S1",
+          "kind": "coverage_condition",
+          "mode": "named_subject",
+          "governed_provision_ids": [
+            "P4"
+          ],
+          "basis": "named-subject mapping to P4 verified by repair",
+          "applied": true
+        },
+        {
+          "id": "S2",
+          "kind": "coverage_condition",
+          "mode": "named_subject",
+          "governed_provision_ids": [
+            "P4"
+          ],
+          "basis": "named-subject mapping to P4 verified by repair",
+          "applied": true
+        }
+      ],
+      "temporal": {
+        "model_effective_date": "2026-01-01",
+        "model_kind": "explicit_operative_date",
+        "applied_kind": "explicit_operative_date",
+        "effective_date": "2026-01-01",
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null
+      },
+      "status_derivation": "enacted; effective 2026-01-01 is on or before as_of 2026-10-01",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-e28ffe138f",
+        "jurisdiction": "Berkeley, CA",
+        "level": "city",
+        "category": "just_cause_eviction",
+        "status": "in_force",
+        "title": "Additional Relocation Assistance Payment for Qualifying Households (2026)",
+        "requirement": "[Basis: official explanatory text, not operative legal text] The additional relocation assistance payment for qualifying households will increase to $6,471.",
+        "key_value": "$6,471",
+        "coverage_conditions": "Relocation assistance is required in the event of an owner move-in eviction under the Rent Stabilization and Good Cause for Eviction Ordinance. [Rent Stabilization and Good Cause for Eviction Ordinance]; Relocation assistance is required for tenants evicted so the owner can remove a property from the rental housing market under the Ellis Implementation Ordinance. [Ellis Implementation Ordinance]",
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": "2026-01-01",
+        "citation": "2026 Adjustments of Relocation Assistance Payments",
+        "source_doc_id": "D004",
+        "source_url": "https://rentboard.berkeleyca.gov/elected-rent-board/news/2026-adjustments-relocation-assistance-payments",
+        "quoted_span": "The additional relocation assistance payment for qualifying households will increase to\n$6,471\n.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "just_cause_eviction",
+        "citation": "2026 Adjustments of Relocation Assistance Payments",
+        "provision_ids": [
+          "P4"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "The additional relocation assistance payment for qualifying households will increase to\n$6,471\n."
+          }
+        ],
+        "title": "Additional Relocation Assistance Payment for Qualifying Households (2026)",
+        "requirement": "The additional relocation assistance payment for qualifying households will increase to $6,471.",
+        "key_value": "$6,471",
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": "At its October 16, 2025 Special Meeting, the Rent Board approved relocation assistance payment increases that will go into effect on January 1, 2026.",
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": "relocation assistance payment increases that will go into effect on January 1, 2026",
+        "effective_date_evidence_kind": "explicit_operative_date",
+        "effective_date": "2026-01-01",
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 2,
+      "origin": "repair",
+      "accepted": false,
+      "held": false,
+      "rejection_reasons": [
+        "repair: candidate does not answer a repair target (cite it, or link its provision id)"
+      ],
+      "provision_ids": [
+        "P3"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 843,
+        "end": 992,
+        "occurrences": 1,
+        "model_span": "At its October 16, 2025 Special Meeting, the Rent Board approved relocation assistance payment increases that will go into effect on January 1, 2026.",
+        "source_span": "At its October 16, 2025 Special Meeting, the Rent Board approved relocation assistance payment increases that will go into effect on January 1, 2026.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 993,
+        "end": 1062,
+        "occurrences": 1,
+        "model_span": "The standard relocation assistance payment will increase to\n$19,413\n.",
+        "source_span": "The standard relocation assistance payment will increase to\n$19,413\n.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "The standard relocation assistance payment will increase to\n$19,413\n.",
+            "status": "exact_match",
+            "start": 993,
+            "end": 1062
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 194,
+        "end": 314,
+        "occurrences": 1,
+        "model_span": "Annual increases for owner move-in and Ellis Act eviction relocation assistance payments go into effect January 1, 2026.",
+        "source_span": "Annual increases for owner move-in and Ellis Act eviction relocation assistance payments go into effect January 1, 2026.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [
+        {
+          "id": "S1",
+          "kind": "coverage_condition",
+          "mode": "named_subject",
+          "governed_provision_ids": [
+            "P3"
+          ],
+          "basis": "named-subject mapping to P3 verified by repair",
+          "applied": true
+        },
+        {
+          "id": "S2",
+          "kind": "coverage_condition",
+          "mode": "named_subject",
+          "governed_provision_ids": [
+            "P3"
+          ],
+          "basis": "named-subject mapping to P3 verified by repair",
+          "applied": true
+        }
+      ],
+      "temporal": {
+        "model_effective_date": "2026-01-01",
+        "model_kind": "explicit_operative_date",
+        "applied_kind": "explicit_operative_date",
+        "effective_date": "2026-01-01",
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null
+      },
+      "status_derivation": "enacted; effective 2026-01-01 is on or before as_of 2026-10-01",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-b415fab204",
+        "jurisdiction": "Berkeley, CA",
+        "level": "city",
+        "category": "just_cause_eviction",
+        "status": "in_force",
+        "title": "Standard Relocation Assistance Payment (2026)",
+        "requirement": "[Basis: official explanatory text, not operative legal text] The standard relocation assistance payment will increase to $19,413.",
+        "key_value": "$19,413",
+        "coverage_conditions": "Relocation assistance is required in the event of an owner move-in eviction under the Rent Stabilization and Good Cause for Eviction Ordinance. [Rent Stabilization and Good Cause for Eviction Ordinance]; Relocation assistance is required for tenants evicted so the owner can remove a property from the rental housing market under the Ellis Implementation Ordinance. [Ellis Implementation Ordinance]",
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": "2026-01-01",
+        "citation": "2026 Adjustments of Relocation Assistance Payments",
+        "source_doc_id": "D004",
+        "source_url": "https://rentboard.berkeleyca.gov/elected-rent-board/news/2026-adjustments-relocation-assistance-payments",
+        "quoted_span": "The standard relocation assistance payment will increase to\n$19,413\n.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "just_cause_eviction",
+        "citation": "2026 Adjustments of Relocation Assistance Payments",
+        "provision_ids": [
+          "P3"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "The standard relocation assistance payment will increase to\n$19,413\n."
+          }
+        ],
+        "title": "Standard Relocation Assistance Payment (2026)",
+        "requirement": "The standard relocation assistance payment will increase to $19,413.",
+        "key_value": "$19,413",
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": "At its October 16, 2025 Special Meeting, the Rent Board approved relocation assistance payment increases that will go into effect on January 1, 2026.",
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": "Annual increases for owner move-in and Ellis Act eviction relocation assistance payments go into effect January 1, 2026.",
+        "effective_date_evidence_kind": "explicit_operative_date",
+        "effective_date": "2026-01-01",
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 3,
+      "origin": "repair",
+      "accepted": false,
+      "held": false,
+      "rejection_reasons": [
+        "repair: candidate does not answer a repair target (cite it, or link its provision id)"
+      ],
+      "provision_ids": [
+        "P4"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 843,
+        "end": 992,
+        "occurrences": 1,
+        "model_span": "At its October 16, 2025 Special Meeting, the Rent Board approved relocation assistance payment increases that will go into effect on January 1, 2026.",
+        "source_span": "At its October 16, 2025 Special Meeting, the Rent Board approved relocation assistance payment increases that will go into effect on January 1, 2026.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 1063,
+        "end": 1159,
+        "occurrences": 1,
+        "model_span": "The additional relocation assistance payment for qualifying households will increase to\n$6,471\n.",
+        "source_span": "The additional relocation assistance payment for qualifying households will increase to\n$6,471\n.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "The additional relocation assistance payment for qualifying households will increase to\n$6,471\n.",
+            "status": "exact_match",
+            "start": 1063,
+            "end": 1159
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 194,
+        "end": 314,
+        "occurrences": 1,
+        "model_span": "Annual increases for owner move-in and Ellis Act eviction relocation assistance payments go into effect January 1, 2026.",
+        "source_span": "Annual increases for owner move-in and Ellis Act eviction relocation assistance payments go into effect January 1, 2026.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [
+        {
+          "id": "S1",
+          "kind": "coverage_condition",
+          "mode": "named_subject",
+          "governed_provision_ids": [
+            "P4"
+          ],
+          "basis": "named-subject mapping to P4 verified by repair",
+          "applied": true
+        },
+        {
+          "id": "S2",
+          "kind": "coverage_condition",
+          "mode": "named_subject",
+          "governed_provision_ids": [
+            "P4"
+          ],
+          "basis": "named-subject mapping to P4 verified by repair",
+          "applied": true
+        }
+      ],
+      "temporal": {
+        "model_effective_date": "2026-01-01",
+        "model_kind": "explicit_operative_date",
+        "applied_kind": "explicit_operative_date",
+        "effective_date": "2026-01-01",
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null
+      },
+      "status_derivation": "enacted; effective 2026-01-01 is on or before as_of 2026-10-01",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-e28ffe138f",
+        "jurisdiction": "Berkeley, CA",
+        "level": "city",
+        "category": "just_cause_eviction",
+        "status": "in_force",
+        "title": "Additional Relocation Assistance Payment for Qualifying Households (2026)",
+        "requirement": "[Basis: official explanatory text, not operative legal text] The additional relocation assistance payment for qualifying households will increase to $6,471.",
+        "key_value": "$6,471",
+        "coverage_conditions": "Relocation assistance is required in the event of an owner move-in eviction under the Rent Stabilization and Good Cause for Eviction Ordinance. [Rent Stabilization and Good Cause for Eviction Ordinance]; Relocation assistance is required for tenants evicted so the owner can remove a property from the rental housing market under the Ellis Implementation Ordinance. [Ellis Implementation Ordinance]",
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": "2026-01-01",
+        "citation": "2026 Adjustments of Relocation Assistance Payments",
+        "source_doc_id": "D004",
+        "source_url": "https://rentboard.berkeleyca.gov/elected-rent-board/news/2026-adjustments-relocation-assistance-payments",
+        "quoted_span": "The additional relocation assistance payment for qualifying households will increase to\n$6,471\n.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "just_cause_eviction",
+        "citation": "2026 Adjustments of Relocation Assistance Payments",
+        "provision_ids": [
+          "P4"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "The additional relocation assistance payment for qualifying households will increase to\n$6,471\n."
+          }
+        ],
+        "title": "Additional Relocation Assistance Payment for Qualifying Households (2026)",
+        "requirement": "The additional relocation assistance payment for qualifying households will increase to $6,471.",
+        "key_value": "$6,471",
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": "At its October 16, 2025 Special Meeting, the Rent Board approved relocation assistance payment increases that will go into effect on January 1, 2026.",
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": "Annual increases for owner move-in and Ellis Act eviction relocation assistance payments go into effect January 1, 2026.",
+        "effective_date_evidence_kind": "explicit_operative_date",
+        "effective_date": "2026-01-01",
+        "conflict_note": null
+      }
+    }
+  ],
+  "posture": {
+    "declared": "official_explanatory_page",
+    "evidence": "2026 Adjustments of Relocation Assistance Payments | Berkeley Rent Board",
+    "evidence_check": {
+      "status": "exact_match",
+      "normalization": null,
+      "start": 0,
+      "end": 72,
+      "occurrences": 1,
+      "model_span": "2026 Adjustments of Relocation Assistance Payments | Berkeley Rent Board",
+      "source_span": "2026 Adjustments of Relocation Assistance Payments | Berkeley Rent Board",
+      "reason": null,
+      "reconstructed": false,
+      "parts": [],
+      "crossed_artifacts": []
+    },
+    "established": "official_explanatory_page",
+    "basis": "declared posture with verified evidence"
+  },
+  "base_dates": [],
+  "provision_inventory": [
+    {
+      "id": "P1",
+      "ref": "Relocation Assistance Scope and Authority",
+      "anchor": "The Rent Stabilization and Good Cause for Eviction Ordinance requires",
+      "summary": "Specifies that relocation assistance is required for owner move-in evictions and Ellis Act market withdrawals, indexed to inflation.",
+      "role": "scope_condition",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "scope condition, see global_scope"
+    },
+    {
+      "id": "P2",
+      "ref": "Approval of 2026 Relocation Assistance Payment Increases",
+      "anchor": "At its October 16, 2025 Special Meeting, the Rent Board approved",
+      "summary": "Announces Rent Board approval on October 16, 2025, of relocation assistance increases taking effect January 1, 2026.",
+      "role": "procedure",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "Administrative action and procedural adoption date; effective date captured in rules."
+    },
+    {
+      "id": "P3",
+      "ref": "Standard Relocation Assistance Payment (2026)",
+      "anchor": "The standard relocation assistance payment will increase to",
+      "summary": "Sets the standard relocation assistance payment at $19,413.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "just_cause_eviction",
+      "reason": null
+    },
+    {
+      "id": "P4",
+      "ref": "Additional Relocation Assistance Payment for Qualifying Households (2026)",
+      "anchor": "The additional relocation assistance payment for qualifying households will",
+      "summary": "Sets the additional relocation assistance payment for qualifying households at $6,471.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "just_cause_eviction",
+      "reason": null
+    },
+    {
+      "id": "P5",
+      "ref": "Consumer Price Index Adjustment Factor",
+      "anchor": "These increases represent a 1.5% upward adjustment in the previous",
+      "summary": "Explains that the payment increases represent a 1.5% upward adjustment based on the regional Consumer Price Index.",
+      "role": "procedure",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "Explains the CPI calculation methodology underlying the rate adjustments."
+    },
+    {
+      "id": "P6",
+      "ref": "Staff Report and Additional Resources",
+      "anchor": "You can read the\n2026 Inflationary Adjustment of Relocation",
+      "summary": "Directs readers to the staff report and eviction information pages.",
+      "role": "boilerplate",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "Informational links and staff report references."
+    }
+  ],
+  "global_scope": [
+    {
+      "id": "S1",
+      "kind": "coverage_condition",
+      "statement": "Relocation assistance is required in the event of an owner move-in eviction under the Rent Stabilization and Good Cause for Eviction Ordinance.",
+      "citation": "Rent Stabilization and Good Cause for Eviction Ordinance",
+      "scope_mode": "named_subject",
+      "scope_quote": "relocation assistance in the event of an owner move-in eviction",
+      "source_provision_id": "P1",
+      "governed_provision_ids": [
+        "P3",
+        "P4"
+      ],
+      "evidence_parts": [
+        {
+          "segment_id": 1,
+          "quoted_text": "The Rent Stabilization and Good Cause for Eviction Ordinance requires owners to pay tenants relocation assistance in the event of an owner move-in eviction."
+        }
+      ],
+      "evidence_check": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 374,
+        "end": 530,
+        "occurrences": 1,
+        "model_span": "The Rent Stabilization and Good Cause for Eviction Ordinance requires owners to pay tenants relocation assistance in the event of an owner move-in eviction.",
+        "source_span": "The Rent Stabilization and Good Cause for Eviction Ordinance requires owners to pay tenants relocation assistance in the event of an owner move-in eviction.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "The Rent Stabilization and Good Cause for Eviction Ordinance requires owners to pay tenants relocation assistance in the event of an owner move-in eviction.",
+            "status": "exact_match",
+            "start": 374,
+            "end": 530
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "propagated": true,
+      "problem": null,
+      "scope": {
+        "resolver": "scope-modes/v1",
+        "declared_mode": "named_subject",
+        "mode": "named_subject",
+        "scope_words": {
+          "scope_quote": "relocation assistance in the event of an owner move-in eviction",
+          "scope_quote_check": "exact_match",
+          "text": "relocation assistance in the event of an owner move-in eviction",
+          "from": "scope_quote"
+        },
+        "detail": null,
+        "propagate_ids": [],
+        "mapping_targets": [
+          "P3",
+          "P4"
+        ],
+        "verification": null
+      }
+    },
+    {
+      "id": "S2",
+      "kind": "coverage_condition",
+      "statement": "Relocation assistance is required for tenants evicted so the owner can remove a property from the rental housing market under the Ellis Implementation Ordinance.",
+      "citation": "Ellis Implementation Ordinance",
+      "scope_mode": "named_subject",
+      "scope_quote": "relocation assistance payments for tenants evicted so the owner can remove a property from the rental housing market",
+      "source_provision_id": "P1",
+      "governed_provision_ids": [
+        "P3",
+        "P4"
+      ],
+      "evidence_parts": [
+        {
+          "segment_id": 1,
+          "quoted_text": "The Ellis Implementation Ordinance requires the same relocation assistance payments for tenants evicted so the owner can remove a property from the rental housing market."
+        }
+      ],
+      "evidence_check": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 531,
+        "end": 701,
+        "occurrences": 1,
+        "model_span": "The Ellis Implementation Ordinance requires the same relocation assistance payments for tenants evicted so the owner can remove a property from the rental housing market.",
+        "source_span": "The Ellis Implementation Ordinance requires the same relocation assistance payments for tenants evicted so the owner can remove a property from the rental housing market.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "The Ellis Implementation Ordinance requires the same relocation assistance payments for tenants evicted so the owner can remove a property from the rental housing market.",
+            "status": "exact_match",
+            "start": 531,
+            "end": 701
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "propagated": true,
+      "problem": null,
+      "scope": {
+        "resolver": "scope-modes/v1",
+        "declared_mode": "named_subject",
+        "mode": "named_subject",
+        "scope_words": {
+          "scope_quote": "relocation assistance payments for tenants evicted so the owner can remove a property from the rental housing market",
+          "scope_quote_check": "exact_match",
+          "text": "relocation assistance payments for tenants evicted so the owner can remove a property from the rental housing market",
+          "from": "scope_quote"
+        },
+        "detail": null,
+        "propagate_ids": [],
+        "mapping_targets": [
+          "P3",
+          "P4"
+        ],
+        "verification": null
+      }
+    }
+  ],
+  "source_view": {
+    "marker": "[[PAGE BREAK]]",
+    "segment_label": "[[SEGMENT {}]]",
+    "view_sha256": "f07a7744dd69ef0bbece94e3ea26e8616b6184db7b710ac13c6b4a20c6d9e6c3",
+    "segments": [
+      {
+        "id": 1,
+        "raw_start": 0,
+        "raw_end": 2316
+      }
+    ],
+    "artifacts_removed": 0,
+    "artifacts": []
+  },
+  "coverage": {
+    "inventory_valid": true,
+    "anchors_located": "6/6",
+    "after_primary": {
+      "uncovered": [
+        "Standard Relocation Assistance Payment (2026)",
+        "Additional Relocation Assistance Payment for Qualifying Households (2026)"
+      ],
+      "unaccepted": [],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "scope_mappings": {
+      "requested": 4,
+      "applies": 4,
+      "does_not_apply": 0,
+      "unresolved": 0
+    },
+    "after_repair": {
+      "uncovered": [
+        "Standard Relocation Assistance Payment (2026)",
+        "Additional Relocation Assistance Payment for Qualifying Households (2026)"
+      ],
+      "unaccepted": [],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "repair_targets": {
+      "before_repair": 2,
+      "resolved_by_accepted_rule": 0,
+      "resolved_out_of_scope": 0,
+      "still_unresolved": 2
+    },
+    "inventory_items": 6,
+    "in_scope_items": 2,
+    "in_scope_refs": 2,
+    "uncertain": [],
+    "final": {
+      "uncovered": [
+        "Standard Relocation Assistance Payment (2026)",
+        "Additional Relocation Assistance Payment for Qualifying Households (2026)"
+      ],
+      "unaccepted": [],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "link_mismatches": [
+      "rule 0 links P3 ('Standard Relocation Assistance Payment (2026)') but cites '2026 Adjustments of Relocation Assistance Payments'",
+      "rule 2 links P3 ('Standard Relocation Assistance Payment (2026)') but cites '2026 Adjustments of Relocation Assistance Payments'",
+      "rule 1 links P4 ('Additional Relocation Assistance Payment for Qualifying Households (2026)') but cites '2026 Adjustments of Relocation Assistance Payments'",
+      "rule 3 links P4 ('Additional Relocation Assistance Payment for Qualifying Households (2026)') but cites '2026 Adjustments of Relocation Assistance Payments'"
+    ],
+    "provisions": [
+      {
+        "ref": "Standard Relocation Assistance Payment (2026)",
+        "inventory_item": 2,
+        "provision_id": "P3",
+        "summary": "Sets the standard relocation assistance payment at $19,413.",
+        "category": "just_cause_eviction",
+        "candidates": [],
+        "accepted": [],
+        "basis": {}
+      },
+      {
+        "ref": "Additional Relocation Assistance Payment for Qualifying Households (2026)",
+        "inventory_item": 3,
+        "provision_id": "P4",
+        "summary": "Sets the additional relocation assistance payment for qualifying households at $6,471.",
+        "category": "just_cause_eviction",
+        "candidates": [],
+        "accepted": [],
+        "basis": {}
+      }
+    ],
+    "unrecorded_subdivisions": []
+  },
+  "scope_challenges": [
+    {
+      "ref": "Relocation Assistance Scope and Authority",
+      "provision_id": "P1",
+      "role": "scope_condition",
+      "reason": "scope condition, see global_scope",
+      "summary": "Specifies that relocation assistance is required for owner move-in evictions and Ellis Act market withdrawals, indexed to inflation.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role scope_condition is decided by other rules"
+    },
+    {
+      "ref": "Approval of 2026 Relocation Assistance Payment Increases",
+      "provision_id": "P2",
+      "role": "procedure",
+      "reason": "Administrative action and procedural adoption date; effective date captured in rules.",
+      "summary": "Announces Rent Board approval on October 16, 2025, of relocation assistance increases taking effect January 1, 2026.",
+      "signals": {
+        "in_scope_neighbour": true,
+        "enumeration": false,
+        "normative_language": false,
+        "grounds_or_conditions": false
+      },
+      "challenged": false,
+      "why_not": "too few substantive signals",
+      "raw_start": 843,
+      "raw_end": 993
+    },
+    {
+      "ref": "Consumer Price Index Adjustment Factor",
+      "provision_id": "P5",
+      "role": "procedure",
+      "reason": "Explains the CPI calculation methodology underlying the rate adjustments.",
+      "summary": "Explains that the payment increases represent a 1.5% upward adjustment based on the regional Consumer Price Index.",
+      "signals": {
+        "in_scope_neighbour": true,
+        "enumeration": false,
+        "normative_language": true,
+        "grounds_or_conditions": false
+      },
+      "challenged": false,
+      "why_not": "too few substantive signals",
+      "raw_start": 1160,
+      "raw_end": 1473
+    },
+    {
+      "ref": "Staff Report and Additional Resources",
+      "provision_id": "P6",
+      "role": "boilerplate",
+      "reason": "Informational links and staff report references.",
+      "summary": "Directs readers to the staff report and eviction information pages.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role boilerplate is decided by other rules"
+    }
+  ],
+  "scope_mappings": [
+    {
+      "condition_id": "S1",
+      "provision_id": "P3",
+      "kind": "coverage_condition",
+      "statement": "Relocation assistance is required in the event of an owner move-in eviction under the Rent Stabilization and Good Cause for Eviction Ordinance.",
+      "scope_words": "relocation assistance in the event of an owner move-in eviction",
+      "condition_evidence": "The Rent Stabilization and Good Cause for Eviction Ordinance requires owners to pay tenants relocation assistance in the event of an owner move-in eviction.",
+      "target_ref": "Standard Relocation Assistance Payment (2026)",
+      "target_anchor": "The standard relocation assistance payment will increase to",
+      "target_quote": "The standard relocation assistance payment will increase to\n$19,413\n.",
+      "decision": {
+        "decision": "applies",
+        "reason": "The standard relocation assistance payment applies to owner move-in evictions under the Rent Stabilization and Good Cause for Eviction Ordinance.",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 374,
+          "end": 530,
+          "occurrences": 1,
+          "model_span": "The Rent Stabilization and Good Cause for Eviction Ordinance requires owners to pay tenants relocation assistance in the event of an owner move-in eviction.",
+          "source_span": "The Rent Stabilization and Good Cause for Eviction Ordinance requires owners to pay tenants relocation assistance in the event of an owner move-in eviction.",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 1,
+              "model_text": "The Rent Stabilization and Good Cause for Eviction Ordinance requires owners to pay tenants relocation assistance in the event of an owner move-in eviction.",
+              "status": "exact_match",
+              "start": 374,
+              "end": 530
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "applies",
+      "unresolved_reason": null
+    },
+    {
+      "condition_id": "S1",
+      "provision_id": "P4",
+      "kind": "coverage_condition",
+      "statement": "Relocation assistance is required in the event of an owner move-in eviction under the Rent Stabilization and Good Cause for Eviction Ordinance.",
+      "scope_words": "relocation assistance in the event of an owner move-in eviction",
+      "condition_evidence": "The Rent Stabilization and Good Cause for Eviction Ordinance requires owners to pay tenants relocation assistance in the event of an owner move-in eviction.",
+      "target_ref": "Additional Relocation Assistance Payment for Qualifying Households (2026)",
+      "target_anchor": "The additional relocation assistance payment for qualifying households will",
+      "target_quote": "The additional relocation assistance payment for qualifying households will increase to\n$6,471\n.",
+      "decision": {
+        "decision": "applies",
+        "reason": "The additional relocation assistance payment applies to owner move-in evictions under the Rent Stabilization and Good Cause for Eviction Ordinance.",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 374,
+          "end": 530,
+          "occurrences": 1,
+          "model_span": "The Rent Stabilization and Good Cause for Eviction Ordinance requires owners to pay tenants relocation assistance in the event of an owner move-in eviction.",
+          "source_span": "The Rent Stabilization and Good Cause for Eviction Ordinance requires owners to pay tenants relocation assistance in the event of an owner move-in eviction.",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 1,
+              "model_text": "The Rent Stabilization and Good Cause for Eviction Ordinance requires owners to pay tenants relocation assistance in the event of an owner move-in eviction.",
+              "status": "exact_match",
+              "start": 374,
+              "end": 530
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "applies",
+      "unresolved_reason": null
+    },
+    {
+      "condition_id": "S2",
+      "provision_id": "P3",
+      "kind": "coverage_condition",
+      "statement": "Relocation assistance is required for tenants evicted so the owner can remove a property from the rental housing market under the Ellis Implementation Ordinance.",
+      "scope_words": "relocation assistance payments for tenants evicted so the owner can remove a property from the rental housing market",
+      "condition_evidence": "The Ellis Implementation Ordinance requires the same relocation assistance payments for tenants evicted so the owner can remove a property from the rental housing market.",
+      "target_ref": "Standard Relocation Assistance Payment (2026)",
+      "target_anchor": "The standard relocation assistance payment will increase to",
+      "target_quote": "The standard relocation assistance payment will increase to\n$19,413\n.",
+      "decision": {
+        "decision": "applies",
+        "reason": "The Ellis Implementation Ordinance requires the same relocation assistance payments for tenants evicted so the owner can remove a property from the rental housing market.",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 531,
+          "end": 701,
+          "occurrences": 1,
+          "model_span": "The Ellis Implementation Ordinance requires the same relocation assistance payments for tenants evicted so the owner can remove a property from the rental housing market.",
+          "source_span": "The Ellis Implementation Ordinance requires the same relocation assistance payments for tenants evicted so the owner can remove a property from the rental housing market.",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 1,
+              "model_text": "The Ellis Implementation Ordinance requires the same relocation assistance payments for tenants evicted so the owner can remove a property from the rental housing market.",
+              "status": "exact_match",
+              "start": 531,
+              "end": 701
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "applies",
+      "unresolved_reason": null
+    },
+    {
+      "condition_id": "S2",
+      "provision_id": "P4",
+      "kind": "coverage_condition",
+      "statement": "Relocation assistance is required for tenants evicted so the owner can remove a property from the rental housing market under the Ellis Implementation Ordinance.",
+      "scope_words": "relocation assistance payments for tenants evicted so the owner can remove a property from the rental housing market",
+      "condition_evidence": "The Ellis Implementation Ordinance requires the same relocation assistance payments for tenants evicted so the owner can remove a property from the rental housing market.",
+      "target_ref": "Additional Relocation Assistance Payment for Qualifying Households (2026)",
+      "target_anchor": "The additional relocation assistance payment for qualifying households will",
+      "target_quote": "The additional relocation assistance payment for qualifying households will increase to\n$6,471\n.",
+      "decision": {
+        "decision": "applies",
+        "reason": "The Ellis Implementation Ordinance requires the same relocation assistance payments for tenants evicted so the owner can remove a property from the rental housing market.",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 531,
+          "end": 701,
+          "occurrences": 1,
+          "model_span": "The Ellis Implementation Ordinance requires the same relocation assistance payments for tenants evicted so the owner can remove a property from the rental housing market.",
+          "source_span": "The Ellis Implementation Ordinance requires the same relocation assistance payments for tenants evicted so the owner can remove a property from the rental housing market.",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 1,
+              "model_text": "The Ellis Implementation Ordinance requires the same relocation assistance payments for tenants evicted so the owner can remove a property from the rental housing market.",
+              "status": "exact_match",
+              "start": 531,
+              "end": 701
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "applies",
+      "unresolved_reason": null
+    }
+  ],
+  "legislative_session": null,
+  "empty_result": null,
+  "legacy_replay": null,
+  "repair": {
+    "invoked": true,
+    "reason": "2 repair target(s) from inventory_uncovered; 4 scope_mapping_challenge(s)",
+    "prompt_version": "v7-repair-1",
+    "targets": [
+      {
+        "ref": "Additional Relocation Assistance Payment for Qualifying Households (2026)",
+        "sources": [
+          "inventory_uncovered"
+        ],
+        "provision_id": "P4",
+        "summary": "Sets the additional relocation assistance payment for qualifying households at $6,471.",
+        "category": "just_cause_eviction",
+        "pre_repair_state": "in-scope inventory provision with no candidate",
+        "resolution": {
+          "scope": "in_scope",
+          "reason": null,
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 1063,
+            "end": 1159,
+            "occurrences": 1,
+            "model_span": "The additional relocation assistance payment for qualifying households will increase to\n$6,471\n.",
+            "source_span": "The additional relocation assistance payment for qualifying households will increase to\n$6,471\n.",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 1,
+                "model_text": "The additional relocation assistance payment for qualifying households will increase to\n$6,471\n.",
+                "status": "exact_match",
+                "start": 1063,
+                "end": 1159
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true,
+          "evidence_problem": null
+        },
+        "repair_scope": "in_scope",
+        "reason": null,
+        "candidate_indices": [],
+        "accepted_indices": [],
+        "final_resolution": "unresolved",
+        "unresolved_reason": "classified in_scope, but no candidate was produced"
+      },
+      {
+        "ref": "Standard Relocation Assistance Payment (2026)",
+        "sources": [
+          "inventory_uncovered"
+        ],
+        "provision_id": "P3",
+        "summary": "Sets the standard relocation assistance payment at $19,413.",
+        "category": "just_cause_eviction",
+        "pre_repair_state": "in-scope inventory provision with no candidate",
+        "resolution": {
+          "scope": "in_scope",
+          "reason": null,
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 993,
+            "end": 1062,
+            "occurrences": 1,
+            "model_span": "The standard relocation assistance payment will increase to\n$19,413\n.",
+            "source_span": "The standard relocation assistance payment will increase to\n$19,413\n.",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 1,
+                "model_text": "The standard relocation assistance payment will increase to\n$19,413\n.",
+                "status": "exact_match",
+                "start": 993,
+                "end": 1062
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true,
+          "evidence_problem": null
+        },
+        "repair_scope": "in_scope",
+        "reason": null,
+        "candidate_indices": [],
+        "accepted_indices": [],
+        "final_resolution": "unresolved",
+        "unresolved_reason": "classified in_scope, but no candidate was produced"
+      }
+    ],
+    "cache_key": "37b4903ad212c47d6330da964361c8008aeafa4f985278946b2a44adb1b7d297",
+    "cache_hit": false,
+    "cache_entry": "cache/extraction/37b4903ad212c47d6330da964361c8008aeafa4f985278946b2a44adb1b7d297.json",
+    "prompt_sha256": "c0fd833df56b29d7df0cec577a4ba698a745fbe0c080e48312ff2214cece6ca1",
+    "provider_metadata": {
+      "api": "interactions.create",
+      "interaction_id": "",
+      "model": "gemini-3.8-flash",
+      "status": "completed",
+      "usage": {
+        "input_tokens": 4511,
+        "output_tokens": 1522,
+        "thinking_tokens": 4057,
+        "total_tokens": 10090
+      }
+    },
+    "raw_response_text": "{\n  \"target_resolutions\": [\n    {\n      \"ref\": \"Additional Relocation Assistance Payment for Qualifying Households (2026)\",\n      \"scope\": \"in_scope\",\n      \"reason\": null,\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"The additional relocation assistance payment for qualifying households will increase to\\n$6,471\\n.\"\n        }\n      ]\n    },\n    {\n      \"ref\": \"Standard Relocation Assistance Payment (2026)\",\n      \"scope\": \"in_scope\",\n      \"reason\": null,\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"The standard relocation assistance payment will increase to\\n$19,413\\n.\"\n        }\n      ]\n    }\n  ],\n  \"scope_mappings\": [\n    {\n      \"condition_id\": \"S1\",\n      \"provision_id\": \"P3\",\n      \"decision\": \"applies\",\n      \"reason\": \"The standard relocation assistance payment applies to owner move-in evictions under the Rent Stabilization and Good Cause for Eviction Ordinance.\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"The Rent Stabilization and Good Cause for Eviction Ordinance requires owners to pay tenants relocation assistance in the event of an owner move-in eviction.\"\n        }\n      ]\n    },\n    {\n      \"condition_id\": \"S1\",\n      \"provision_id\": \"P4\",\n      \"decision\": \"applies\",\n      \"reason\": \"The additional relocation assistance payment applies to owner move-in evictions under the Rent Stabilization and Good Cause for Eviction Ordinance.\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"The Rent Stabilization and Good Cause for Eviction Ordinance requires owners to pay tenants relocation assistance in the event of an owner move-in eviction.\"\n        }\n      ]\n    },\n    {\n      \"condition_id\": \"S2\",\n      \"provision_id\": \"P3\",\n      \"decision\": \"applies\",\n      \"reason\": \"The Ellis Implementation Ordinance requires the same relocation assistance payments for tenants evicted so the owner can remove a property from the rental housing market.\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"The Ellis Implementation Ordinance requires the same relocation assistance payments for tenants evicted so the owner can remove a property from the rental housing market.\"\n        }\n      ]\n    },\n    {\n      \"condition_id\": \"S2\",\n      \"provision_id\": \"P4\",\n      \"decision\": \"applies\",\n      \"reason\": \"The Ellis Implementation Ordinance requires the same relocation assistance payments for tenants evicted so the owner can remove a property from the rental housing market.\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"The Ellis Implementation Ordinance requires the same relocation assistance payments for tenants evicted so the owner can remove a property from the rental housing market.\"\n        }\n      ]\n    }\n  ],\n  \"rules\": [\n    {\n      \"category\": \"just_cause_eviction\",\n      \"citation\": \"2026 Adjustments of Relocation Assistance Payments\",\n      \"provision_ids\": [\n        \"P3\"\n      ],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"The standard relocation assistance payment will increase to\\n$19,413\\n.\"\n        }\n      ],\n      \"title\": \"Standard Relocation Assistance Payment (2026)\",\n      \"requirement\": \"The standard relocation assistance payment will increase to $19,413.\",\n      \"key_value\": \"$19,413\",\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": \"At its October 16, 2025 Special Meeting, the Rent Board approved relocation assistance payment increases that will go into effect on January 1, 2026.\",\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": \"Annual increases for owner move-in and Ellis Act eviction relocation assistance payments go into effect January 1, 2026.\",\n      \"effective_date_evidence_kind\": \"explicit_operative_date\",\n      \"effective_date\": \"2026-01-01\",\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"just_cause_eviction\",\n      \"citation\": \"2026 Adjustments of Relocation Assistance Payments\",\n      \"provision_ids\": [\n        \"P4\"\n      ],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"The additional relocation assistance payment for qualifying households will increase to\\n$6,471\\n.\"\n        }\n      ],\n      \"title\": \"Additional Relocation Assistance Payment for Qualifying Households (2026)\",\n      \"requirement\": \"The additional relocation assistance payment for qualifying households will increase to $6,471.\",\n      \"key_value\": \"$6,471\",\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": \"At its October 16, 2025 Special Meeting, the Rent Board approved relocation assistance payment increases that will go into effect on January 1, 2026.\",\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": \"Annual increases for owner move-in and Ellis Act eviction relocation assistance payments go into effect January 1, 2026.\",\n      \"effective_date_evidence_kind\": \"explicit_operative_date\",\n      \"effective_date\": \"2026-01-01\",\n      \"conflict_note\": null\n    }\n  ]\n}",
+    "mappings": [
+      {
+        "condition_id": "S1",
+        "provision_id": "P3",
+        "kind": "coverage_condition",
+        "statement": "Relocation assistance is required in the event of an owner move-in eviction under the Rent Stabilization and Good Cause for Eviction Ordinance.",
+        "scope_words": "relocation assistance in the event of an owner move-in eviction",
+        "condition_evidence": "The Rent Stabilization and Good Cause for Eviction Ordinance requires owners to pay tenants relocation assistance in the event of an owner move-in eviction.",
+        "target_ref": "Standard Relocation Assistance Payment (2026)",
+        "target_anchor": "The standard relocation assistance payment will increase to",
+        "target_quote": "The standard relocation assistance payment will increase to\n$19,413\n.",
+        "decision": {
+          "decision": "applies",
+          "reason": "The standard relocation assistance payment applies to owner move-in evictions under the Rent Stabilization and Good Cause for Eviction Ordinance.",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 374,
+            "end": 530,
+            "occurrences": 1,
+            "model_span": "The Rent Stabilization and Good Cause for Eviction Ordinance requires owners to pay tenants relocation assistance in the event of an owner move-in eviction.",
+            "source_span": "The Rent Stabilization and Good Cause for Eviction Ordinance requires owners to pay tenants relocation assistance in the event of an owner move-in eviction.",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 1,
+                "model_text": "The Rent Stabilization and Good Cause for Eviction Ordinance requires owners to pay tenants relocation assistance in the event of an owner move-in eviction.",
+                "status": "exact_match",
+                "start": 374,
+                "end": 530
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "applies",
+        "unresolved_reason": null
+      },
+      {
+        "condition_id": "S1",
+        "provision_id": "P4",
+        "kind": "coverage_condition",
+        "statement": "Relocation assistance is required in the event of an owner move-in eviction under the Rent Stabilization and Good Cause for Eviction Ordinance.",
+        "scope_words": "relocation assistance in the event of an owner move-in eviction",
+        "condition_evidence": "The Rent Stabilization and Good Cause for Eviction Ordinance requires owners to pay tenants relocation assistance in the event of an owner move-in eviction.",
+        "target_ref": "Additional Relocation Assistance Payment for Qualifying Households (2026)",
+        "target_anchor": "The additional relocation assistance payment for qualifying households will",
+        "target_quote": "The additional relocation assistance payment for qualifying households will increase to\n$6,471\n.",
+        "decision": {
+          "decision": "applies",
+          "reason": "The additional relocation assistance payment applies to owner move-in evictions under the Rent Stabilization and Good Cause for Eviction Ordinance.",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 374,
+            "end": 530,
+            "occurrences": 1,
+            "model_span": "The Rent Stabilization and Good Cause for Eviction Ordinance requires owners to pay tenants relocation assistance in the event of an owner move-in eviction.",
+            "source_span": "The Rent Stabilization and Good Cause for Eviction Ordinance requires owners to pay tenants relocation assistance in the event of an owner move-in eviction.",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 1,
+                "model_text": "The Rent Stabilization and Good Cause for Eviction Ordinance requires owners to pay tenants relocation assistance in the event of an owner move-in eviction.",
+                "status": "exact_match",
+                "start": 374,
+                "end": 530
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "applies",
+        "unresolved_reason": null
+      },
+      {
+        "condition_id": "S2",
+        "provision_id": "P3",
+        "kind": "coverage_condition",
+        "statement": "Relocation assistance is required for tenants evicted so the owner can remove a property from the rental housing market under the Ellis Implementation Ordinance.",
+        "scope_words": "relocation assistance payments for tenants evicted so the owner can remove a property from the rental housing market",
+        "condition_evidence": "The Ellis Implementation Ordinance requires the same relocation assistance payments for tenants evicted so the owner can remove a property from the rental housing market.",
+        "target_ref": "Standard Relocation Assistance Payment (2026)",
+        "target_anchor": "The standard relocation assistance payment will increase to",
+        "target_quote": "The standard relocation assistance payment will increase to\n$19,413\n.",
+        "decision": {
+          "decision": "applies",
+          "reason": "The Ellis Implementation Ordinance requires the same relocation assistance payments for tenants evicted so the owner can remove a property from the rental housing market.",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 531,
+            "end": 701,
+            "occurrences": 1,
+            "model_span": "The Ellis Implementation Ordinance requires the same relocation assistance payments for tenants evicted so the owner can remove a property from the rental housing market.",
+            "source_span": "The Ellis Implementation Ordinance requires the same relocation assistance payments for tenants evicted so the owner can remove a property from the rental housing market.",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 1,
+                "model_text": "The Ellis Implementation Ordinance requires the same relocation assistance payments for tenants evicted so the owner can remove a property from the rental housing market.",
+                "status": "exact_match",
+                "start": 531,
+                "end": 701
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "applies",
+        "unresolved_reason": null
+      },
+      {
+        "condition_id": "S2",
+        "provision_id": "P4",
+        "kind": "coverage_condition",
+        "statement": "Relocation assistance is required for tenants evicted so the owner can remove a property from the rental housing market under the Ellis Implementation Ordinance.",
+        "scope_words": "relocation assistance payments for tenants evicted so the owner can remove a property from the rental housing market",
+        "condition_evidence": "The Ellis Implementation Ordinance requires the same relocation assistance payments for tenants evicted so the owner can remove a property from the rental housing market.",
+        "target_ref": "Additional Relocation Assistance Payment for Qualifying Households (2026)",
+        "target_anchor": "The additional relocation assistance payment for qualifying households will",
+        "target_quote": "The additional relocation assistance payment for qualifying households will increase to\n$6,471\n.",
+        "decision": {
+          "decision": "applies",
+          "reason": "The Ellis Implementation Ordinance requires the same relocation assistance payments for tenants evicted so the owner can remove a property from the rental housing market.",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 531,
+            "end": 701,
+            "occurrences": 1,
+            "model_span": "The Ellis Implementation Ordinance requires the same relocation assistance payments for tenants evicted so the owner can remove a property from the rental housing market.",
+            "source_span": "The Ellis Implementation Ordinance requires the same relocation assistance payments for tenants evicted so the owner can remove a property from the rental housing market.",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 1,
+                "model_text": "The Ellis Implementation Ordinance requires the same relocation assistance payments for tenants evicted so the owner can remove a property from the rental housing market.",
+                "status": "exact_match",
+                "start": 531,
+                "end": 701
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "applies",
+        "unresolved_reason": null
+      }
+    ],
+    "candidate_indices": [
+      2,
+      3
+    ],
+    "accepted_count": 0,
+    "rejected_count": 2,
+    "errors": []
+  },
+  "document_status": "review_required",
+  "review_reasons": [
+    "repair targets still unresolved: Additional Relocation Assistance Payment for Qualifying Households (2026) (classified in_scope, but no candidate was produced); Standard Relocation Assistance Payment (2026) (classified in_scope, but no candidate was produced)"
+  ],
+  "warnings": [
+    "candidate 2 rejected: repair: candidate does not answer a repair target (cite it, or link its provision id)",
+    "candidate 3 rejected: repair: candidate does not answer a repair target (cite it, or link its provision id)",
+    "review: provision links whose rule citation does not name the provision: 4"
+  ],
+  "errors": [],
+  "raw_response_text": "{\n  \"document\": {\n    \"posture\": \"official_explanatory_page\",\n    \"evidence\": \"2026 Adjustments of Relocation Assistance Payments | Berkeley Rent Board\"\n  },\n  \"provisions\": [\n    {\n      \"id\": \"P1\",\n      \"ref\": \"Relocation Assistance Scope and Authority\",\n      \"anchor\": \"The Rent Stabilization and Good Cause for Eviction Ordinance requires\",\n      \"summary\": \"Specifies that relocation assistance is required for owner move-in evictions and Ellis Act market withdrawals, indexed to inflation.\",\n      \"role\": \"scope_condition\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"scope condition, see global_scope\"\n    },\n    {\n      \"id\": \"P2\",\n      \"ref\": \"Approval of 2026 Relocation Assistance Payment Increases\",\n      \"anchor\": \"At its October 16, 2025 Special Meeting, the Rent Board approved\",\n      \"summary\": \"Announces Rent Board approval on October 16, 2025, of relocation assistance increases taking effect January 1, 2026.\",\n      \"role\": \"procedure\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"Administrative action and procedural adoption date; effective date captured in rules.\"\n    },\n    {\n      \"id\": \"P3\",\n      \"ref\": \"Standard Relocation Assistance Payment (2026)\",\n      \"anchor\": \"The standard relocation assistance payment will increase to\",\n      \"summary\": \"Sets the standard relocation assistance payment at $19,413.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"just_cause_eviction\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P4\",\n      \"ref\": \"Additional Relocation Assistance Payment for Qualifying Households (2026)\",\n      \"anchor\": \"The additional relocation assistance payment for qualifying households will\",\n      \"summary\": \"Sets the additional relocation assistance payment for qualifying households at $6,471.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"just_cause_eviction\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P5\",\n      \"ref\": \"Consumer Price Index Adjustment Factor\",\n      \"anchor\": \"These increases represent a 1.5% upward adjustment in the previous\",\n      \"summary\": \"Explains that the payment increases represent a 1.5% upward adjustment based on the regional Consumer Price Index.\",\n      \"role\": \"procedure\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"Explains the CPI calculation methodology underlying the rate adjustments.\"\n    },\n    {\n      \"id\": \"P6\",\n      \"ref\": \"Staff Report and Additional Resources\",\n      \"anchor\": \"You can read the\\n2026 Inflationary Adjustment of Relocation\",\n      \"summary\": \"Directs readers to the staff report and eviction information pages.\",\n      \"role\": \"boilerplate\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"Informational links and staff report references.\"\n    }\n  ],\n  \"global_scope\": [\n    {\n      \"id\": \"S1\",\n      \"kind\": \"coverage_condition\",\n      \"statement\": \"Relocation assistance is required in the event of an owner move-in eviction under the Rent Stabilization and Good Cause for Eviction Ordinance.\",\n      \"citation\": \"Rent Stabilization and Good Cause for Eviction Ordinance\",\n      \"scope_mode\": \"named_subject\",\n      \"scope_quote\": \"relocation assistance in the event of an owner move-in eviction\",\n      \"source_provision_id\": \"P1\",\n      \"governed_provision_ids\": [\n        \"P3\",\n        \"P4\"\n      ],\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"The Rent Stabilization and Good Cause for Eviction Ordinance requires owners to pay tenants relocation assistance in the event of an owner move-in eviction.\"\n        }\n      ]\n    },\n    {\n      \"id\": \"S2\",\n      \"kind\": \"coverage_condition\",\n      \"statement\": \"Relocation assistance is required for tenants evicted so the owner can remove a property from the rental housing market under the Ellis Implementation Ordinance.\",\n      \"citation\": \"Ellis Implementation Ordinance\",\n      \"scope_mode\": \"named_subject\",\n      \"scope_quote\": \"relocation assistance payments for tenants evicted so the owner can remove a property from the rental housing market\",\n      \"source_provision_id\": \"P1\",\n      \"governed_provision_ids\": [\n        \"P3\",\n        \"P4\"\n      ],\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"The Ellis Implementation Ordinance requires the same relocation assistance payments for tenants evicted so the owner can remove a property from the rental housing market.\"\n        }\n      ]\n    }\n  ],\n  \"rules\": [\n    {\n      \"category\": \"just_cause_eviction\",\n      \"citation\": \"2026 Adjustments of Relocation Assistance Payments\",\n      \"provision_ids\": [\n        \"P3\"\n      ],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"The standard relocation assistance payment will increase to\\n$19,413\\n.\"\n        }\n      ],\n      \"title\": \"Standard Relocation Assistance Payment (2026)\",\n      \"requirement\": \"The standard relocation assistance payment will increase to $19,413.\",\n      \"key_value\": \"$19,413\",\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": \"At its October 16, 2025 Special Meeting, the Rent Board approved relocation assistance payment increases that will go into effect on January 1, 2026.\",\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": \"relocation assistance payment increases that will go into effect on January 1, 2026\",\n      \"effective_date_evidence_kind\": \"explicit_operative_date\",\n      \"effective_date\": \"2026-01-01\",\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"just_cause_eviction\",\n      \"citation\": \"2026 Adjustments of Relocation Assistance Payments\",\n      \"provision_ids\": [\n        \"P4\"\n      ],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"The additional relocation assistance payment for qualifying households will increase to\\n$6,471\\n.\"\n        }\n      ],\n      \"title\": \"Additional Relocation Assistance Payment for Qualifying Households (2026)\",\n      \"requirement\": \"The additional relocation assistance payment for qualifying households will increase to $6,471.\",\n      \"key_value\": \"$6,471\",\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": \"At its October 16, 2025 Special Meeting, the Rent Board approved relocation assistance payment increases that will go into effect on January 1, 2026.\",\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": \"relocation assistance payment increases that will go into effect on January 1, 2026\",\n      \"effective_date_evidence_kind\": \"explicit_operative_date\",\n      \"effective_date\": \"2026-01-01\",\n      \"conflict_note\": null\n    }\n  ],\n  \"no_rules_justification\": null\n}"
+}

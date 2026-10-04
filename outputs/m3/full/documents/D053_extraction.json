@@ -1,0 +1,200 @@
+{
+  "disclaimer": "Not legal advice. Automated extraction for a research prototype; verify against the cited source.",
+  "run_at": "2026-10-04T03:21:35+00:00",
+  "source": {
+    "doc_id": "D053",
+    "jurisdiction": "MA",
+    "url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section18",
+    "source_type": "official",
+    "retrieved_at": "2026-10-01T22:37Z",
+    "text_file": "text/D053.txt",
+    "content_sha256": "d5eca5de1449b5c3c5a4d2db2512c61fa632d89032360be0603ecbc80657dda3",
+    "body_chars": 4148
+  },
+  "provider": "gemini",
+  "model": "gemini-3.8-flash",
+  "prompt_version": "v7",
+  "prompt_sha256": "b95f803b801f2a099b287b74d06ae3eb6c255089ef026e7841ebc068690c412d",
+  "response_schema_sha256": "c15306da6f21dc72f06e78405f94ed61dc9e59288138cc98b5b5bf9b62ac403c",
+  "generation_settings": {
+    "temperature": null,
+    "seed": 20261001,
+    "thinking_level": "medium"
+  },
+  "as_of": "2026-10-01",
+  "cache_key": "99513d6f84fbc9ce93fec16e415d5757182eb49575e175b0fc970b0d4c7c94f3",
+  "cache_hit": false,
+  "cache_entry": "cache/extraction/99513d6f84fbc9ce93fec16e415d5757182eb49575e175b0fc970b0d4c7c94f3.json",
+  "provider_metadata": {
+    "api": "interactions.create",
+    "interaction_id": "",
+    "model": "gemini-3.8-flash",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4779,
+      "output_tokens": 655,
+      "thinking_tokens": 16519,
+      "total_tokens": 21953
+    }
+  },
+  "candidate_count": 0,
+  "accepted_count": 0,
+  "rules": [],
+  "candidates": [],
+  "posture": {
+    "declared": "codified_current_law",
+    "evidence": "General Law - Part II, Title I, Chapter 186, Section 18",
+    "evidence_check": {
+      "status": "exact_match",
+      "normalization": null,
+      "start": 0,
+      "end": 55,
+      "occurrences": 1,
+      "model_span": "General Law - Part II, Title I, Chapter 186, Section 18",
+      "source_span": "General Law - Part II, Title I, Chapter 186, Section 18",
+      "reason": null,
+      "reconstructed": false,
+      "parts": [],
+      "crossed_artifacts": []
+    },
+    "established": "codified_current_law",
+    "basis": "declared posture with verified evidence"
+  },
+  "base_dates": [],
+  "provision_inventory": [
+    {
+      "id": "P1",
+      "ref": "M.G.L. c. 186, § 18, ¶ 1",
+      "anchor": "Any person or agent thereof who threatens to or takes reprisals",
+      "summary": "Prohibits landlord threats or reprisals against residential tenants for reporting violations, exercising statutory rights, joining a tenant union, or paying rent to a unit owners association, and establishes liability for damages and attorney fees.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "Anti-retaliation and reprisal protection for tenants; falls outside the six official categories."
+    },
+    {
+      "id": "P2",
+      "ref": "M.G.L. c. 186, § 18, ¶ 2",
+      "anchor": "The receipt of any notice of termination of tenancy, except",
+      "summary": "Establishes a rebuttable presumption that notice of termination, rent increase, or substantial alteration in tenancy terms within six months of protected tenant activities is an unlawful reprisal.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "Evidentiary presumption of retaliation; does not establish a just cause eviction scheme or limit how much or often rent may be increased."
+    },
+    {
+      "id": "P3",
+      "ref": "M.G.L. c. 186, § 18, ¶ 3",
+      "anchor": "Any waiver of this provision in any lease or other",
+      "summary": "Declares any lease or rental agreement waiver of Section 18 void and unenforceable.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "Anti-waiver provision for out-of-scope anti-retaliation law."
+    }
+  ],
+  "global_scope": [],
+  "source_view": {
+    "marker": "[[PAGE BREAK]]",
+    "segment_label": "[[SEGMENT {}]]",
+    "view_sha256": "ef0a2c7d7483b80c05df13046f4a992802133795711fa5333bc3ec869e635e45",
+    "segments": [
+      {
+        "id": 1,
+        "raw_start": 0,
+        "raw_end": 4148
+      }
+    ],
+    "artifacts_removed": 0,
+    "artifacts": []
+  },
+  "coverage": {
+    "inventory_valid": true,
+    "anchors_located": "3/3",
+    "after_primary": {
+      "uncovered": [],
+      "unaccepted": [],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "scope_mappings": {
+      "requested": 0,
+      "applies": 0,
+      "does_not_apply": 0,
+      "unresolved": 0
+    },
+    "inventory_items": 3,
+    "in_scope_items": 0,
+    "in_scope_refs": 0,
+    "uncertain": [],
+    "final": {
+      "uncovered": [],
+      "unaccepted": [],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "link_mismatches": [],
+    "provisions": [],
+    "unrecorded_subdivisions": []
+  },
+  "scope_challenges": [
+    {
+      "ref": "M.G.L. c. 186, § 18, ¶ 1",
+      "provision_id": "P1",
+      "role": "operative_rule",
+      "reason": "Anti-retaliation and reprisal protection for tenants; falls outside the six official categories.",
+      "summary": "Prohibits landlord threats or reprisals against residential tenants for reporting violations, exercising statutory rights, joining a tenant union, or paying rent to a unit owners association, and establishes liability for damages and attorney fees.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    },
+    {
+      "ref": "M.G.L. c. 186, § 18, ¶ 2",
+      "provision_id": "P2",
+      "role": "operative_rule",
+      "reason": "Evidentiary presumption of retaliation; does not establish a just cause eviction scheme or limit how much or often rent may be increased.",
+      "summary": "Establishes a rebuttable presumption that notice of termination, rent increase, or substantial alteration in tenancy terms within six months of protected tenant activities is an unlawful reprisal.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    },
+    {
+      "ref": "M.G.L. c. 186, § 18, ¶ 3",
+      "provision_id": "P3",
+      "role": "operative_rule",
+      "reason": "Anti-waiver provision for out-of-scope anti-retaliation law.",
+      "summary": "Declares any lease or rental agreement waiver of Section 18 void and unenforceable.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    }
+  ],
+  "scope_mappings": [],
+  "legislative_session": null,
+  "empty_result": {
+    "reason": "This section provides protections and remedies against landlord reprisals for tenant organizing and reporting violations of law, which is an anti-retaliation statute that does not fit into just cause eviction, rent increase limits, security deposits, application screening fees, screening restrictions, or algorithmic rent setting.",
+    "evidence": "Reprisal for reporting violations of law or for tenant's union activity; damages and costs; notice of termination, presumption; waiver in leases or other rental agreements prohibited",
+    "evidence_check": {
+      "status": "exact_match",
+      "normalization": null,
+      "start": 266,
+      "end": 448,
+      "occurrences": 1,
+      "model_span": "Reprisal for reporting violations of law or for tenant's union activity; damages and costs; notice of termination, presumption; waiver in leases or other rental agreements prohibited",
+      "source_span": "Reprisal for reporting violations of law or for tenant's union activity; damages and costs; notice of termination, presumption; waiver in leases or other rental agreements prohibited",
+      "reason": null,
+      "reconstructed": false,
+      "parts": [],
+      "crossed_artifacts": []
+    },
+    "verified": true,
+    "problem": null
+  },
+  "legacy_replay": null,
+  "repair": null,
+  "document_status": "complete",
+  "review_reasons": [],
+  "warnings": [],
+  "errors": [],
+  "raw_response_text": "{\n  \"document\": {\n    \"posture\": \"codified_current_law\",\n    \"evidence\": \"General Law - Part II, Title I, Chapter 186, Section 18\"\n  },\n  \"provisions\": [\n    {\n      \"id\": \"P1\",\n      \"ref\": \"M.G.L. c. 186, § 18, ¶ 1\",\n      \"anchor\": \"Any person or agent thereof who threatens to or takes reprisals\",\n      \"summary\": \"Prohibits landlord threats or reprisals against residential tenants for reporting violations, exercising statutory rights, joining a tenant union, or paying rent to a unit owners association, and establishes liability for damages and attorney fees.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"Anti-retaliation and reprisal protection for tenants; falls outside the six official categories.\"\n    },\n    {\n      \"id\": \"P2\",\n      \"ref\": \"M.G.L. c. 186, § 18, ¶ 2\",\n      \"anchor\": \"The receipt of any notice of termination of tenancy, except\",\n      \"summary\": \"Establishes a rebuttable presumption that notice of termination, rent increase, or substantial alteration in tenancy terms within six months of protected tenant activities is an unlawful reprisal.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"Evidentiary presumption of retaliation; does not establish a just cause eviction scheme or limit how much or often rent may be increased.\"\n    },\n    {\n      \"id\": \"P3\",\n      \"ref\": \"M.G.L. c. 186, § 18, ¶ 3\",\n      \"anchor\": \"Any waiver of this provision in any lease or other\",\n      \"summary\": \"Declares any lease or rental agreement waiver of Section 18 void and unenforceable.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"Anti-waiver provision for out-of-scope anti-retaliation law.\"\n    }\n  ],\n  \"global_scope\": [],\n  \"rules\": [],\n  \"no_rules_justification\": {\n    \"reason\": \"This section provides protections and remedies against landlord reprisals for tenant organizing and reporting violations of law, which is an anti-retaliation statute that does not fit into just cause eviction, rent increase limits, security deposits, application screening fees, screening restrictions, or algorithmic rent setting.\",\n    \"evidence\": \"Reprisal for reporting violations of law or for tenant's union activity; damages and costs; notice of termination, presumption; waiver in leases or other rental agreements prohibited\"\n  }\n}"
+}

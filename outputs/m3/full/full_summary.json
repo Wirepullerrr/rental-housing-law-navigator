@@ -1,0 +1,5308 @@
+{
+  "disclaimer": "Not legal advice. Spend figures are estimates computed from API-reported token usage at the configured rates; they are not the account's billing balance.",
+  "generated_at": "2026-10-04T03:40:24+00:00",
+  "stage_dir": "outputs/m3/full",
+  "selection": [
+    "D001",
+    "D003",
+    "D004",
+    "D005",
+    "D006",
+    "D007",
+    "D008",
+    "D009",
+    "D010",
+    "D011",
+    "D012",
+    "D013",
+    "D014",
+    "D016",
+    "D022",
+    "D023",
+    "D024",
+    "D025",
+    "D026",
+    "D027",
+    "D029",
+    "D031",
+    "D036",
+    "D039",
+    "D040",
+    "D041",
+    "D042",
+    "D043",
+    "D045",
+    "D046",
+    "D047",
+    "D048",
+    "D049",
+    "D050",
+    "D051",
+    "D052",
+    "D053",
+    "D057",
+    "D058",
+    "D065",
+    "D066",
+    "D068",
+    "D069",
+    "D073",
+    "D076",
+    "D078",
+    "D079",
+    "D080",
+    "D081",
+    "D082",
+    "D083",
+    "D084",
+    "D085"
+  ],
+  "model": "gemini-3.8-flash",
+  "settings": {
+    "temperature": null,
+    "seed": 20261001,
+    "thinking_level": "medium"
+  },
+  "pricing_usd_per_million_tokens": {
+    "input": 0.75,
+    "output": 3.75
+  },
+  "budget_usd": 9.0,
+  "stop_reason": null,
+  "estimated_new_spend_usd": {
+    "this_invocation": 5.449209,
+    "stage_ledger_total": 5.449209
+  },
+  "totals": {
+    "selected": 53,
+    "processed": 53,
+    "resumed": 0,
+    "not_run": 0,
+    "errors": 0,
+    "complete": 26,
+    "review_required": 27,
+    "candidates": 347,
+    "accepted_rules": 201,
+    "rejected_candidates": 47,
+    "held_candidates": 99,
+    "accepted_quotes_raw_substring": 201,
+    "exact_citation_rate": 1.0,
+    "reconstructed_cross_page_quotes": 0,
+    "documents_requiring_repair": 16,
+    "repair_targets": 50,
+    "repair_classifications": {
+      "in_scope": 44,
+      "out_of_scope": 6
+    },
+    "repair_resolved_by_rule": 25,
+    "repair_resolved_out_of_scope": 3,
+    "unresolved_targets": 22,
+    "primary_provider_calls": 51,
+    "repair_provider_calls": 28,
+    "primary_cache_hits": 2,
+    "repair_cache_hits": 1,
+    "new_tokens": {
+      "primary": {
+        "input_tokens": 313833,
+        "output_tokens": 227821,
+        "thinking_tokens": 828800
+      },
+      "repair": {
+        "input_tokens": 213829,
+        "output_tokens": 51218,
+        "thinking_tokens": 239751
+      }
+    },
+    "estimated_new_cost_usd": 5.449213,
+    "new_cost_per_processed_document_usd": {
+      "mean": 0.102815,
+      "median": 0.089027,
+      "max": 0.382715
+    }
+  },
+  "documents": [
+    {
+      "doc_id": "D001",
+      "jurisdiction": "Berkeley, CA",
+      "level": "city",
+      "source_type": "official",
+      "body_chars": 7860,
+      "page_artifacts": 3,
+      "model": "gemini-3.8-flash",
+      "reported_model": "gemini-3.8-flash",
+      "thinking_level": "medium",
+      "prompt_version": "v7",
+      "run_mode": "processed",
+      "primary_cache_hit": false,
+      "repair_cache_hit": false,
+      "primary_provider_calls": 1,
+      "repair_provider_calls": 1,
+      "candidates": 5,
+      "accepted": 5,
+      "rejected": 0,
+      "primary_candidates": 5,
+      "repair_candidates": 0,
+      "repair_targets": 0,
+      "repair_classifications": {},
+      "repair_resolution": {
+        "before_repair": 0,
+        "resolved_by_accepted_rule": 0,
+        "resolved_out_of_scope": 0,
+        "still_unresolved": 0
+      },
+      "unresolved_targets": [],
+      "document_status": "complete",
+      "review_reasons": [],
+      "posture": {
+        "declared": "pending_bill",
+        "established": "pending_bill"
+      },
+      "held": 0,
+      "relative_dates_resolved": 0,
+      "source_basis": {
+        "operative_text": 5
+      },
+      "scope_challenges": [],
+      "scope_modes": {
+        "S1": "named_subject",
+        "S2": "named_subject",
+        "S3": "named_subject"
+      },
+      "scope_mappings": [
+        "S1->P4: applies",
+        "S1->P5: applies",
+        "S2->P4: applies",
+        "S2->P5: applies",
+        "S3->P4: applies",
+        "S3->P5: applies"
+      ],
+      "legislative": [
+        {
+          "index": 0,
+          "status": "pending",
+          "basis": "model_status_with_evidence"
+        },
+        {
+          "index": 1,
+          "status": "pending",
+          "basis": "model_status_with_evidence"
+        },
+        {
+          "index": 2,
+          "status": "pending",
+          "basis": "model_status_with_evidence"
+        },
+        {
+          "index": 3,
+          "status": "pending",
+          "basis": "model_status_with_evidence"
+        },
+        {
+          "index": 4,
+          "status": "pending",
+          "basis": "model_status_with_evidence"
+        }
+      ],
+      "empty_result": null,
+      "citations": {
+        "accepted": 5,
+        "exact_match": 5,
+        "normalized_match": 0,
+        "raw_substring": 5,
+        "reconstructed_cross_page": 0
+      },
+      "global_scope": {
+        "proposed": 3,
+        "verified": 3
+      },
+      "errors": [],
+      "tokens_reported": {
+        "primary": {
+          "input_tokens": 5844,
+          "output_tokens": 4407,
+          "thinking_tokens": 26315,
+          "total_tokens": 36566
+        },
+        "repair": {
+          "input_tokens": 6696,
+          "output_tokens": 860,
+          "thinking_tokens": 2821,
+          "total_tokens": 10377
+        }
+      },
+      "new_tokens": {
+        "primary": {
+          "input_tokens": 5844,
+          "output_tokens": 4407,
+          "thinking_tokens": 26315,
+          "total_tokens": 36566
+        },
+        "repair": {
+          "input_tokens": 6696,
+          "output_tokens": 860,
+          "thinking_tokens": 2821,
+          "total_tokens": 10377
+        }
+      },
+      "estimated_new_cost_usd": {
+        "primary": 0.119591,
+        "repair": 0.018826,
+        "total": 0.138417
+      },
+      "artifact": "outputs/m3/full/documents/D001_extraction.json"
+    },
+    {
+      "doc_id": "D003",
+      "jurisdiction": "Berkeley, CA",
+      "level": "city",
+      "source_type": "official",
+      "body_chars": 5841,
+      "page_artifacts": 0,
+      "model": "gemini-3.8-flash",
+      "reported_model": "gemini-3.8-flash",
+      "thinking_level": "medium",
+      "prompt_version": "v7",
+      "run_mode": "processed",
+      "primary_cache_hit": false,
+      "repair_cache_hit": false,
+      "primary_provider_calls": 1,
+      "repair_provider_calls": 1,
+      "candidates": 4,
+      "accepted": 0,
+      "rejected": 4,
+      "primary_candidates": 4,
+      "repair_candidates": 0,
+      "repair_targets": 0,
+      "repair_classifications": {},
+      "repair_resolution": {
+        "before_repair": 0,
+        "resolved_by_accepted_rule": 0,
+        "resolved_out_of_scope": 0,
+        "still_unresolved": 0
+      },
+      "unresolved_targets": [],
+      "document_status": "review_required",
+      "review_reasons": [
+        "4 candidate record(s) held, not published, because the time of application is unresolved: ['temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force']"
+      ],
+      "posture": {
+        "declared": "official_explanatory_page",
+        "established": "official_explanatory_page"
+      },
+      "held": 4,
+      "relative_dates_resolved": 0,
+      "source_basis": {},
+      "scope_challenges": [],
+      "scope_modes": {
+        "S1": "named_subject",
+        "S2": "named_subject",
+        "S3": "named_subject",
+        "S4": "named_subject",
+        "S5": "named_subject"
+      },
+      "scope_mappings": [
+        "S1->P3: applies",
+        "S1->P5: does_not_apply",
+        "S1->P6: does_not_apply",
+        "S1->P9: does_not_apply",
+        "S2->P3: applies",
+        "S2->P5: does_not_apply",
+        "S2->P6: does_not_apply",
+        "S2->P9: does_not_apply",
+        "S3->P3: applies",
+        "S3->P5: does_not_apply",
+        "S3->P6: does_not_apply",
+        "S3->P9: does_not_apply",
+        "S4->P3: applies",
+        "S4->P5: does_not_apply",
+        "S4->P6: does_not_apply",
+        "S4->P9: does_not_apply",
+        "S5->P3: applies",
+        "S5->P5: does_not_apply",
+        "S5->P6: does_not_apply",
+        "S5->P9: does_not_apply"
+      ],
+      "legislative": [],
+      "empty_result": null,
+      "citations": {
+        "accepted": 0,
+        "exact_match": 0,
+        "normalized_match": 0,
+        "raw_substring": 0,
+        "reconstructed_cross_page": 0
+      },
+      "global_scope": {
+        "proposed": 5,
+        "verified": 5
+      },
+      "errors": [],
+      "tokens_reported": {
+        "primary": {
+          "input_tokens": 5108,
+          "output_tokens": 3889,
+          "thinking_tokens": 18638,
+          "total_tokens": 27635
+        },
+        "repair": {
+          "input_tokens": 7212,
+          "output_tokens": 3145,
+          "thinking_tokens": 12935,
+          "total_tokens": 23292
+        }
+      },
+      "new_tokens": {
+        "primary": {
+          "input_tokens": 5108,
+          "output_tokens": 3889,
+          "thinking_tokens": 18638,
+          "total_tokens": 27635
+        },
+        "repair": {
+          "input_tokens": 7212,
+          "output_tokens": 3145,
+          "thinking_tokens": 12935,
+          "total_tokens": 23292
+        }
+      },
+      "estimated_new_cost_usd": {
+        "primary": 0.088307,
+        "repair": 0.065709,
+        "total": 0.154016
+      },
+      "artifact": "outputs/m3/full/documents/D003_extraction.json"
+    },
+    {
+      "doc_id": "D004",
+      "jurisdiction": "Berkeley, CA",
+      "level": "city",
+      "source_type": "official",
+      "body_chars": 2316,
+      "page_artifacts": 0,
+      "model": "gemini-3.8-flash",
+      "reported_model": "gemini-3.8-flash",
+      "thinking_level": "medium",
+      "prompt_version": "v7",
+      "run_mode": "processed",
+      "primary_cache_hit": false,
+      "repair_cache_hit": false,
+      "primary_provider_calls": 1,
+      "repair_provider_calls": 1,
+      "candidates": 4,
+      "accepted": 2,
+      "rejected": 2,
+      "primary_candidates": 2,
+      "repair_candidates": 2,
+      "repair_targets": 2,
+      "repair_classifications": {
+        "in_scope": 2
+      },
+      "repair_resolution": {
+        "before_repair": 2,
+        "resolved_by_accepted_rule": 0,
+        "resolved_out_of_scope": 0,
+        "still_unresolved": 2
+      },
+      "unresolved_targets": [
+        "Additional Relocation Assistance Payment for Qualifying Households (2026)",
+        "Standard Relocation Assistance Payment (2026)"
+      ],
+      "document_status": "review_required",
+      "review_reasons": [
+        "repair targets still unresolved: Additional Relocation Assistance Payment for Qualifying Households (2026) (classified in_scope, but no candidate was produced); Standard Relocation Assistance Payment (2026) (classified in_scope, but no candidate was produced)"
+      ],
+      "posture": {
+        "declared": "official_explanatory_page",
+        "established": "official_explanatory_page"
+      },
+      "held": 0,
+      "relative_dates_resolved": 0,
+      "source_basis": {
+        "official_explanatory_text": 2
+      },
+      "scope_challenges": [],
+      "scope_modes": {
+        "S1": "named_subject",
+        "S2": "named_subject"
+      },
+      "scope_mappings": [
+        "S1->P3: applies",
+        "S1->P4: applies",
+        "S2->P3: applies",
+        "S2->P4: applies"
+      ],
+      "legislative": [],
+      "empty_result": null,
+      "citations": {
+        "accepted": 2,
+        "exact_match": 2,
+        "normalized_match": 0,
+        "raw_substring": 2,
+        "reconstructed_cross_page": 0
+      },
+      "global_scope": {
+        "proposed": 2,
+        "verified": 2
+      },
+      "errors": [],
+      "tokens_reported": {
+        "primary": {
+          "input_tokens": 4435,
+          "output_tokens": 1977,
+          "thinking_tokens": 27234,
+          "total_tokens": 33646
+        },
+        "repair": {
+          "input_tokens": 4511,
+          "output_tokens": 1522,
+          "thinking_tokens": 4057,
+          "total_tokens": 10090
+        }
+      },
+      "new_tokens": {
+        "primary": {
+          "input_tokens": 4435,
+          "output_tokens": 1977,
+          "thinking_tokens": 27234,
+          "total_tokens": 33646
+        },
+        "repair": {
+          "input_tokens": 4511,
+          "output_tokens": 1522,
+          "thinking_tokens": 4057,
+          "total_tokens": 10090
+        }
+      },
+      "estimated_new_cost_usd": {
+        "primary": 0.112867,
+        "repair": 0.024304,
+        "total": 0.137171
+      },
+      "artifact": "outputs/m3/full/documents/D004_extraction.json"
+    },
+    {
+      "doc_id": "D005",
+      "jurisdiction": "Berkeley, CA",
+      "level": "city",
+      "source_type": "official",
+      "body_chars": 3571,
+      "page_artifacts": 0,
+      "model": "gemini-3.8-flash",
+      "reported_model": "gemini-3.8-flash",
+      "thinking_level": "medium",
+      "prompt_version": "v7",
+      "run_mode": "processed",
+      "primary_cache_hit": false,
+      "repair_cache_hit": false,
+      "primary_provider_calls": 1,
+      "repair_provider_calls": 1,
+      "candidates": 10,
+      "accepted": 0,
+      "rejected": 10,
+      "primary_candidates": 10,
+      "repair_candidates": 0,
+      "repair_targets": 0,
+      "repair_classifications": {},
+      "repair_resolution": {
+        "before_repair": 0,
+        "resolved_by_accepted_rule": 0,
+        "resolved_out_of_scope": 0,
+        "still_unresolved": 0
+      },
+      "unresolved_targets": [],
+      "document_status": "review_required",
+      "review_reasons": [
+        "9 candidate record(s) held, not published, because the time of application is unresolved: ['temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force']"
+      ],
+      "posture": {
+        "declared": "official_explanatory_page",
+        "established": "official_explanatory_page"
+      },
+      "held": 9,
+      "relative_dates_resolved": 0,
+      "source_basis": {},
+      "scope_challenges": [],
+      "scope_modes": {
+        "S1": "named_subject"
+      },
+      "scope_mappings": [
+        "S1->P8: does_not_apply",
+        "S1->P9: applies",
+        "S1->P11: applies"
+      ],
+      "legislative": [],
+      "empty_result": null,
+      "citations": {
+        "accepted": 0,
+        "exact_match": 0,
+        "normalized_match": 0,
+        "raw_substring": 0,
+        "reconstructed_cross_page": 0
+      },
+      "global_scope": {
+        "proposed": 1,
+        "verified": 1
+      },
+      "errors": [],
+      "tokens_reported": {
+        "primary": {
+          "input_tokens": 4714,
+          "output_tokens": 5144,
+          "thinking_tokens": 26839,
+          "total_tokens": 36697
+        },
+        "repair": {
+          "input_tokens": 4631,
+          "output_tokens": 526,
+          "thinking_tokens": 6142,
+          "total_tokens": 11299
+        }
+      },
+      "new_tokens": {
+        "primary": {
+          "input_tokens": 4714,
+          "output_tokens": 5144,
+          "thinking_tokens": 26839,
+          "total_tokens": 36697
+        },
+        "repair": {
+          "input_tokens": 4631,
+          "output_tokens": 526,
+          "thinking_tokens": 6142,
+          "total_tokens": 11299
+        }
+      },
+      "estimated_new_cost_usd": {
+        "primary": 0.123472,
+        "repair": 0.028478,
+        "total": 0.15195
+      },
+      "artifact": "outputs/m3/full/documents/D005_extraction.json"
+    },
+    {
+      "doc_id": "D006",
+      "jurisdiction": "Berkeley, CA",
+      "level": "city",
+      "source_type": "official",
+      "body_chars": 13750,
+      "page_artifacts": 0,
+      "model": "gemini-3.8-flash",
+      "reported_model": "gemini-3.8-flash",
+      "thinking_level": "medium",
+      "prompt_version": "v7",
+      "run_mode": "processed",
+      "primary_cache_hit": false,
+      "repair_cache_hit": false,
+      "primary_provider_calls": 1,
+      "repair_provider_calls": 1,
+      "candidates": 9,
+      "accepted": 0,
+      "rejected": 9,
+      "primary_candidates": 9,
+      "repair_candidates": 0,
+      "repair_targets": 0,
+      "repair_classifications": {},
+      "repair_resolution": {
+        "before_repair": 0,
+        "resolved_by_accepted_rule": 0,
+        "resolved_out_of_scope": 0,
+        "still_unresolved": 0
+      },
+      "unresolved_targets": [],
+      "document_status": "review_required",
+      "review_reasons": [
+        "9 candidate record(s) held, not published, because the time of application is unresolved: ['temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force']"
+      ],
+      "posture": {
+        "declared": "official_explanatory_page",
+        "established": "official_explanatory_page"
+      },
+      "held": 9,
+      "relative_dates_resolved": 0,
+      "source_basis": {},
+      "scope_challenges": [],
+      "scope_modes": {
+        "S1": "named_subject"
+      },
+      "scope_mappings": [
+        "S1->P4: applies",
+        "S1->P5: applies",
+        "S1->P6: applies",
+        "S1->P7: applies",
+        "S1->P11: applies",
+        "S1->P13: applies",
+        "S1->P14: does_not_apply"
+      ],
+      "legislative": [],
+      "empty_result": null,
+      "citations": {
+        "accepted": 0,
+        "exact_match": 0,
+        "normalized_match": 0,
+        "raw_substring": 0,
+        "reconstructed_cross_page": 0
+      },
+      "global_scope": {
+        "proposed": 1,
+        "verified": 1
+      },
+      "errors": [],
+      "tokens_reported": {
+        "primary": {
+          "input_tokens": 6864,
+          "output_tokens": 5693,
+          "thinking_tokens": 20673,
+          "total_tokens": 33230
+        },
+        "repair": {
+          "input_tokens": 7426,
+          "output_tokens": 930,
+          "thinking_tokens": 5526,
+          "total_tokens": 13882
+        }
+      },
+      "new_tokens": {
+        "primary": {
+          "input_tokens": 6864,
+          "output_tokens": 5693,
+          "thinking_tokens": 20673,
+          "total_tokens": 33230
+        },
+        "repair": {
+          "input_tokens": 7426,
+          "output_tokens": 930,
+          "thinking_tokens": 5526,
+          "total_tokens": 13882
+        }
+      },
+      "estimated_new_cost_usd": {
+        "primary": 0.104021,
+        "repair": 0.02978,
+        "total": 0.133801
+      },
+      "artifact": "outputs/m3/full/documents/D006_extraction.json"
+    },
+    {
+      "doc_id": "D007",
+      "jurisdiction": "Berkeley, CA",
+      "level": "city",
+      "source_type": "official",
+      "body_chars": 4734,
+      "page_artifacts": 0,
+      "model": "gemini-3.8-flash",
+      "reported_model": "gemini-3.8-flash",
+      "thinking_level": "medium",
+      "prompt_version": "v7",
+      "run_mode": "processed",
+      "primary_cache_hit": false,
+      "repair_cache_hit": false,
+      "primary_provider_calls": 1,
+      "repair_provider_calls": 1,
+      "candidates": 13,
+      "accepted": 5,
+      "rejected": 8,
+      "primary_candidates": 12,
+      "repair_candidates": 1,
+      "repair_targets": 1,
+      "repair_classifications": {
+        "in_scope": 1
+      },
+      "repair_resolution": {
+        "before_repair": 1,
+        "resolved_by_accepted_rule": 0,
+        "resolved_out_of_scope": 0,
+        "still_unresolved": 1
+      },
+      "unresolved_targets": [
+        "Return of Security Deposit - 21 days"
+      ],
+      "document_status": "review_required",
+      "review_reasons": [
+        "8 candidate record(s) held, not published, because the time of application is unresolved: ['temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force']",
+        "repair targets still unresolved: Return of Security Deposit - 21 days (classified in_scope, but every candidate was rejected)"
+      ],
+      "posture": {
+        "declared": "official_explanatory_page",
+        "established": "official_explanatory_page"
+      },
+      "held": 8,
+      "relative_dates_resolved": 0,
+      "source_basis": {
+        "official_explanatory_text": 5
+      },
+      "scope_challenges": [],
+      "scope_modes": {},
+      "scope_mappings": [],
+      "legislative": [],
+      "empty_result": null,
+      "citations": {
+        "accepted": 5,
+        "exact_match": 5,
+        "normalized_match": 0,
+        "raw_substring": 5,
+        "reconstructed_cross_page": 0
+      },
+      "global_scope": {
+        "proposed": 0,
+        "verified": 0
+      },
+      "errors": [],
+      "tokens_reported": {
+        "primary": {
+          "input_tokens": 4929,
+          "output_tokens": 5824,
+          "thinking_tokens": 14355,
+          "total_tokens": 25108
+        },
+        "repair": {
+          "input_tokens": 4449,
+          "output_tokens": 448,
+          "thinking_tokens": 2123,
+          "total_tokens": 7020
+        }
+      },
+      "new_tokens": {
+        "primary": {
+          "input_tokens": 4929,
+          "output_tokens": 5824,
+          "thinking_tokens": 14355,
+          "total_tokens": 25108
+        },
+        "repair": {
+          "input_tokens": 4449,
+          "output_tokens": 448,
+          "thinking_tokens": 2123,
+          "total_tokens": 7020
+        }
+      },
+      "estimated_new_cost_usd": {
+        "primary": 0.079368,
+        "repair": 0.012978,
+        "total": 0.092346
+      },
+      "artifact": "outputs/m3/full/documents/D007_extraction.json"
+    },
+    {
+      "doc_id": "D008",
+      "jurisdiction": "Berkeley, CA",
+      "level": "city",
+      "source_type": "official",
+      "body_chars": 1716,
+      "page_artifacts": 0,
+      "model": "gemini-3.8-flash",
+      "reported_model": "gemini-3.8-flash",
+      "thinking_level": "medium",
+      "prompt_version": "v7",
+      "run_mode": "processed",
+      "primary_cache_hit": false,
+      "repair_cache_hit": false,
+      "primary_provider_calls": 1,
+      "repair_provider_calls": 1,
+      "candidates": 1,
+      "accepted": 1,
+      "rejected": 0,
+      "primary_candidates": 1,
+      "repair_candidates": 0,
+      "repair_targets": 0,
+      "repair_classifications": {},
+      "repair_resolution": {
+        "before_repair": 0,
+        "resolved_by_accepted_rule": 0,
+        "resolved_out_of_scope": 0,
+        "still_unresolved": 0
+      },
+      "unresolved_targets": [],
+      "document_status": "complete",
+      "review_reasons": [],
+      "posture": {
+        "declared": "official_explanatory_page",
+        "established": "official_explanatory_page"
+      },
+      "held": 0,
+      "relative_dates_resolved": 0,
+      "source_basis": {
+        "official_explanatory_text": 1
+      },
+      "scope_challenges": [],
+      "scope_modes": {
+        "S1": "named_subject"
+      },
+      "scope_mappings": [
+        "S1->P1: applies"
+      ],
+      "legislative": [],
+      "empty_result": null,
+      "citations": {
+        "accepted": 1,
+        "exact_match": 1,
+        "normalized_match": 0,
+        "raw_substring": 1,
+        "reconstructed_cross_page": 0
+      },
+      "global_scope": {
+        "proposed": 1,
+        "verified": 1
+      },
+      "errors": [],
+      "tokens_reported": {
+        "primary": {
+          "input_tokens": 4489,
+          "output_tokens": 1145,
+          "thinking_tokens": 6334,
+          "total_tokens": 11968
+        },
+        "repair": {
+          "input_tokens": 4193,
+          "output_tokens": 183,
+          "thinking_tokens": 1025,
+          "total_tokens": 5401
+        }
+      },
+      "new_tokens": {
+        "primary": {
+          "input_tokens": 4489,
+          "output_tokens": 1145,
+          "thinking_tokens": 6334,
+          "total_tokens": 11968
+        },
+        "repair": {
+          "input_tokens": 4193,
+          "output_tokens": 183,
+          "thinking_tokens": 1025,
+          "total_tokens": 5401
+        }
+      },
+      "estimated_new_cost_usd": {
+        "primary": 0.031413,
+        "repair": 0.007675,
+        "total": 0.039088
+      },
+      "artifact": "outputs/m3/full/documents/D008_extraction.json"
+    },
+    {
+      "doc_id": "D009",
+      "jurisdiction": "Berkeley, CA",
+      "level": "city",
+      "source_type": "official",
+      "body_chars": 2522,
+      "page_artifacts": 0,
+      "model": "gemini-3.8-flash",
+      "reported_model": "gemini-3.8-flash",
+      "thinking_level": "medium",
+      "prompt_version": "v7",
+      "run_mode": "processed",
+      "primary_cache_hit": false,
+      "repair_cache_hit": null,
+      "primary_provider_calls": 1,
+      "repair_provider_calls": 0,
+      "candidates": 0,
+      "accepted": 0,
+      "rejected": 0,
+      "primary_candidates": 0,
+      "repair_candidates": 0,
+      "repair_targets": 0,
+      "repair_classifications": {},
+      "repair_resolution": null,
+      "unresolved_targets": [],
+      "document_status": "complete",
+      "review_reasons": [],
+      "posture": {
+        "declared": "official_explanatory_page",
+        "established": "official_explanatory_page"
+      },
+      "held": 0,
+      "relative_dates_resolved": 0,
+      "source_basis": {},
+      "scope_challenges": [],
+      "scope_modes": {},
+      "scope_mappings": [],
+      "legislative": [],
+      "empty_result": {
+        "reason": "The document is an informational guide table detailing whether various unit types are covered by or exempt from Berkeley's rent stabilization and eviction ordinance, and it sets forth no substantive legal duties, limitations, or tenant rights.",
+        "evidence": "Guide to Coverage under Berkeley’s Rent Stabilization and Eviction for Just Cause Ordinance",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 171,
+          "end": 262,
+          "occurrences": 1,
+          "model_span": "Guide to Coverage under Berkeley’s Rent Stabilization and Eviction for Just Cause Ordinance",
+          "source_span": "Guide to Coverage under Berkeley’s Rent Stabilization and Eviction for Just Cause Ordinance",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [],
+          "crossed_artifacts": []
+        },
+        "verified": true,
+        "problem": null
+      },
+      "citations": {
+        "accepted": 0,
+        "exact_match": 0,
+        "normalized_match": 0,
+        "raw_substring": 0,
+        "reconstructed_cross_page": 0
+      },
+      "global_scope": {
+        "proposed": 0,
+        "verified": 0
+      },
+      "errors": [],
+      "tokens_reported": {
+        "primary": {
+          "input_tokens": 4584,
+          "output_tokens": 1719,
+          "thinking_tokens": 6370,
+          "total_tokens": 12673
+        },
+        "repair": {}
+      },
+      "new_tokens": {
+        "primary": {
+          "input_tokens": 4584,
+          "output_tokens": 1719,
+          "thinking_tokens": 6370,
+          "total_tokens": 12673
+        },
+        "repair": {}
+      },
+      "estimated_new_cost_usd": {
+        "primary": 0.033772,
+        "repair": 0.0,
+        "total": 0.033772
+      },
+      "artifact": "outputs/m3/full/documents/D009_extraction.json"
+    },
+    {
+      "doc_id": "D010",
+      "jurisdiction": "Boston, MA",
+      "level": "city",
+      "source_type": "official city-linked policy",
+      "body_chars": 6384,
+      "page_artifacts": 0,
+      "model": "gemini-3.8-flash",
+      "reported_model": "gemini-3.8-flash",
+      "thinking_level": "medium",
+      "prompt_version": "v7",
+      "run_mode": "processed",
+      "primary_cache_hit": false,
+      "repair_cache_hit": false,
+      "primary_provider_calls": 1,
+      "repair_provider_calls": 1,
+      "candidates": 6,
+      "accepted": 0,
+      "rejected": 6,
+      "primary_candidates": 6,
+      "repair_candidates": 0,
+      "repair_targets": 1,
+      "repair_classifications": {
+        "out_of_scope": 1
+      },
+      "repair_resolution": {
+        "before_repair": 1,
+        "resolved_by_accepted_rule": 0,
+        "resolved_out_of_scope": 1,
+        "still_unresolved": 0
+      },
+      "unresolved_targets": [],
+      "document_status": "review_required",
+      "review_reasons": [
+        "6 candidate record(s) held, not published, because the time of application is unresolved: ['temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force']"
+      ],
+      "posture": {
+        "declared": "official_explanatory_page",
+        "established": "official_explanatory_page"
+      },
+      "held": 6,
+      "relative_dates_resolved": 0,
+      "source_basis": {},
+      "scope_challenges": [
+        "Factors to Consider"
+      ],
+      "scope_modes": {
+        "S1": "named_subject",
+        "S2": "named_subject"
+      },
+      "scope_mappings": [
+        "S1->P2: applies",
+        "S1->P8: applies",
+        "S1->P9: applies",
+        "S1->P10: applies",
+        "S1->P11: applies",
+        "S2->P1: applies",
+        "S2->P2: applies",
+        "S2->P8: applies",
+        "S2->P9: applies",
+        "S2->P10: applies",
+        "S2->P11: applies"
+      ],
+      "legislative": [],
+      "empty_result": null,
+      "citations": {
+        "accepted": 0,
+        "exact_match": 0,
+        "normalized_match": 0,
+        "raw_substring": 0,
+        "reconstructed_cross_page": 0
+      },
+      "global_scope": {
+        "proposed": 2,
+        "verified": 2
+      },
+      "errors": [],
+      "tokens_reported": {
+        "primary": {
+          "input_tokens": 5334,
+          "output_tokens": 4476,
+          "thinking_tokens": 27609,
+          "total_tokens": 37419
+        },
+        "repair": {
+          "input_tokens": 6672,
+          "output_tokens": 2023,
+          "thinking_tokens": 15923,
+          "total_tokens": 24618
+        }
+      },
+      "new_tokens": {
+        "primary": {
+          "input_tokens": 5334,
+          "output_tokens": 4476,
+          "thinking_tokens": 27609,
+          "total_tokens": 37419
+        },
+        "repair": {
+          "input_tokens": 6672,
+          "output_tokens": 2023,
+          "thinking_tokens": 15923,
+          "total_tokens": 24618
+        }
+      },
+      "estimated_new_cost_usd": {
+        "primary": 0.124319,
+        "repair": 0.072302,
+        "total": 0.196621
+      },
+      "artifact": "outputs/m3/full/documents/D010_extraction.json"
+    },
+    {
+      "doc_id": "D011",
+      "jurisdiction": "Boston, MA",
+      "level": "city",
+      "source_type": "official",
+      "body_chars": 3627,
+      "page_artifacts": 0,
+      "model": "gemini-3.8-flash",
+      "reported_model": "gemini-3.8-flash",
+      "thinking_level": "medium",
+      "prompt_version": "v7",
+      "run_mode": "processed",
+      "primary_cache_hit": false,
+      "repair_cache_hit": null,
+      "primary_provider_calls": 1,
+      "repair_provider_calls": 0,
+      "candidates": 2,
+      "accepted": 2,
+      "rejected": 0,
+      "primary_candidates": 2,
+      "repair_candidates": 0,
+      "repair_targets": 0,
+      "repair_classifications": {},
+      "repair_resolution": null,
+      "unresolved_targets": [],
+      "document_status": "complete",
+      "review_reasons": [],
+      "posture": {
+        "declared": "bill_status_or_summary_page",
+        "established": "bill_status_or_summary_page"
+      },
+      "held": 0,
+      "relative_dates_resolved": 0,
+      "source_basis": {
+        "official_bill_summary": 2
+      },
+      "scope_challenges": [],
+      "scope_modes": {},
+      "scope_mappings": [],
+      "legislative": [
+        {
+          "index": 0,
+          "status": "failed",
+          "basis": "session_expired"
+        },
+        {
+          "index": 1,
+          "status": "failed",
+          "basis": "session_expired"
+        }
+      ],
+      "empty_result": null,
+      "citations": {
+        "accepted": 2,
+        "exact_match": 2,
+        "normalized_match": 0,
+        "raw_substring": 2,
+        "reconstructed_cross_page": 0
+      },
+      "global_scope": {
+        "proposed": 0,
+        "verified": 0
+      },
+      "errors": [],
+      "tokens_reported": {
+        "primary": {
+          "input_tokens": 4880,
+          "output_tokens": 975,
+          "thinking_tokens": 13884,
+          "total_tokens": 19739
+        },
+        "repair": {}
+      },
+      "new_tokens": {
+        "primary": {
+          "input_tokens": 4880,
+          "output_tokens": 975,
+          "thinking_tokens": 13884,
+          "total_tokens": 19739
+        },
+        "repair": {}
+      },
+      "estimated_new_cost_usd": {
+        "primary": 0.059381,
+        "repair": 0.0,
+        "total": 0.059381
+      },
+      "artifact": "outputs/m3/full/documents/D011_extraction.json"
+    },
+    {
+      "doc_id": "D012",
+      "jurisdiction": "Boston, MA",
+      "level": "city",
+      "source_type": "official",
+      "body_chars": 3856,
+      "page_artifacts": 0,
+      "model": "gemini-3.8-flash",
+      "reported_model": "gemini-3.8-flash",
+      "thinking_level": "medium",
+      "prompt_version": "v7",
+      "run_mode": "processed",
+      "primary_cache_hit": false,
+      "repair_cache_hit": null,
+      "primary_provider_calls": 1,
+      "repair_provider_calls": 0,
+      "candidates": 1,
+      "accepted": 0,
+      "rejected": 1,
+      "primary_candidates": 1,
+      "repair_candidates": 0,
+      "repair_targets": 0,
+      "repair_classifications": {},
+      "repair_resolution": null,
+      "unresolved_targets": [],
+      "document_status": "review_required",
+      "review_reasons": [
+        "1 candidate record(s) held, not published, because the time of application is unresolved: ['temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force']"
+      ],
+      "posture": {
+        "declared": "official_explanatory_page",
+        "established": "official_explanatory_page"
+      },
+      "held": 1,
+      "relative_dates_resolved": 0,
+      "source_basis": {},
+      "scope_challenges": [],
+      "scope_modes": {},
+      "scope_mappings": [],
+      "legislative": [],
+      "empty_result": null,
+      "citations": {
+        "accepted": 0,
+        "exact_match": 0,
+        "normalized_match": 0,
+        "raw_substring": 0,
+        "reconstructed_cross_page": 0
+      },
+      "global_scope": {
+        "proposed": 0,
+        "verified": 0
+      },
+      "errors": [],
+      "tokens_reported": {
+        "primary": {
+          "input_tokens": 4799,
+          "output_tokens": 1012,
+          "thinking_tokens": 12759,
+          "total_tokens": 18570
+        },
+        "repair": {}
+      },
+      "new_tokens": {
+        "primary": {
+          "input_tokens": 4799,
+          "output_tokens": 1012,
+          "thinking_tokens": 12759,
+          "total_tokens": 18570
+        },
+        "repair": {}
+      },
+      "estimated_new_cost_usd": {
+        "primary": 0.05524,
+        "repair": 0.0,
+        "total": 0.05524
+      },
+      "artifact": "outputs/m3/full/documents/D012_extraction.json"
+    },
+    {
+      "doc_id": "D013",
+      "jurisdiction": "Boston, MA",
+      "level": "city",
+      "source_type": "official",
+      "body_chars": 6183,
+      "page_artifacts": 0,
+      "model": "gemini-3.8-flash",
+      "reported_model": "gemini-3.8-flash",
+      "thinking_level": "medium",
+      "prompt_version": "v7",
+      "run_mode": "processed",
+      "primary_cache_hit": false,
+      "repair_cache_hit": false,
+      "primary_provider_calls": 1,
+      "repair_provider_calls": 1,
+      "candidates": 3,
+      "accepted": 0,
+      "rejected": 3,
+      "primary_candidates": 2,
+      "repair_candidates": 1,
+      "repair_targets": 1,
+      "repair_classifications": {
+        "in_scope": 1
+      },
+      "repair_resolution": {
+        "before_repair": 1,
+        "resolved_by_accepted_rule": 0,
+        "resolved_out_of_scope": 0,
+        "still_unresolved": 1
+      },
+      "unresolved_targets": [
+        "Housing Stability Notification Act"
+      ],
+      "document_status": "review_required",
+      "review_reasons": [
+        "3 candidate record(s) held, not published, because the time of application is unresolved: ['temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force']",
+        "repair targets still unresolved: Housing Stability Notification Act (classified in_scope, but every candidate was rejected)"
+      ],
+      "posture": {
+        "declared": "official_explanatory_page",
+        "established": "official_explanatory_page"
+      },
+      "held": 3,
+      "relative_dates_resolved": 0,
+      "source_basis": {},
+      "scope_challenges": [],
+      "scope_modes": {},
+      "scope_mappings": [],
+      "legislative": [],
+      "empty_result": null,
+      "citations": {
+        "accepted": 0,
+        "exact_match": 0,
+        "normalized_match": 0,
+        "raw_substring": 0,
+        "reconstructed_cross_page": 0
+      },
+      "global_scope": {
+        "proposed": 0,
+        "verified": 0
+      },
+      "errors": [],
+      "tokens_reported": {
+        "primary": {
+          "input_tokens": 5576,
+          "output_tokens": 1589,
+          "thinking_tokens": 10861,
+          "total_tokens": 18026
+        },
+        "repair": {
+          "input_tokens": 5094,
+          "output_tokens": 378,
+          "thinking_tokens": 13284,
+          "total_tokens": 18756
+        }
+      },
+      "new_tokens": {
+        "primary": {
+          "input_tokens": 5576,
+          "output_tokens": 1589,
+          "thinking_tokens": 10861,
+          "total_tokens": 18026
+        },
+        "repair": {
+          "input_tokens": 5094,
+          "output_tokens": 378,
+          "thinking_tokens": 13284,
+          "total_tokens": 18756
+        }
+      },
+      "estimated_new_cost_usd": {
+        "primary": 0.050869,
+        "repair": 0.055053,
+        "total": 0.105922
+      },
+      "artifact": "outputs/m3/full/documents/D013_extraction.json"
+    },
+    {
+      "doc_id": "D014",
+      "jurisdiction": "Boston, MA",
+      "level": "city",
+      "source_type": "official",
+      "body_chars": 5727,
+      "page_artifacts": 3,
+      "model": "gemini-3.8-flash",
+      "reported_model": "gemini-3.8-flash",
+      "thinking_level": "medium",
+      "prompt_version": "v7",
+      "run_mode": "processed",
+      "primary_cache_hit": false,
+      "repair_cache_hit": false,
+      "primary_provider_calls": 1,
+      "repair_provider_calls": 1,
+      "candidates": 4,
+      "accepted": 4,
+      "rejected": 0,
+      "primary_candidates": 4,
+      "repair_candidates": 0,
+      "repair_targets": 1,
+      "repair_classifications": {
+        "out_of_scope": 1
+      },
+      "repair_resolution": {
+        "before_repair": 1,
+        "resolved_by_accepted_rule": 0,
+        "resolved_out_of_scope": 0,
+        "still_unresolved": 1
+      },
+      "unresolved_targets": [
+        "Question 7"
+      ],
+      "document_status": "review_required",
+      "review_reasons": [
+        "repair targets still unresolved: Question 7 (classified out_of_scope without a reason and verified evidence (evidence is not text of the target subdivision))"
+      ],
+      "posture": {
+        "declared": "official_explanatory_page",
+        "established": "official_explanatory_page"
+      },
+      "held": 0,
+      "relative_dates_resolved": 0,
+      "source_basis": {
+        "official_explanatory_text": 4
+      },
+      "scope_challenges": [
+        "Question 7"
+      ],
+      "scope_modes": {
+        "S1": "named_subject",
+        "S2": "named_subject",
+        "S3": "named_subject"
+      },
+      "scope_mappings": [
+        "S1->P1: applies",
+        "S1->P2: applies",
+        "S1->P7: applies",
+        "S1->P9: applies",
+        "S2->P1: applies",
+        "S2->P2: applies",
+        "S2->P7: applies",
+        "S2->P9: applies",
+        "S3->P1: applies",
+        "S3->P2: applies",
+        "S3->P7: applies",
+        "S3->P9: applies"
+      ],
+      "legislative": [],
+      "empty_result": null,
+      "citations": {
+        "accepted": 4,
+        "exact_match": 4,
+        "normalized_match": 0,
+        "raw_substring": 4,
+        "reconstructed_cross_page": 0
+      },
+      "global_scope": {
+        "proposed": 3,
+        "verified": 3
+      },
+      "errors": [],
+      "tokens_reported": {
+        "primary": {
+          "input_tokens": 5237,
+          "output_tokens": 3438,
+          "thinking_tokens": 20271,
+          "total_tokens": 28946
+        },
+        "repair": {
+          "input_tokens": 6515,
+          "output_tokens": 2125,
+          "thinking_tokens": 6733,
+          "total_tokens": 15373
+        }
+      },
+      "new_tokens": {
+        "primary": {
+          "input_tokens": 5237,
+          "output_tokens": 3438,
+          "thinking_tokens": 20271,
+          "total_tokens": 28946
+        },
+        "repair": {
+          "input_tokens": 6515,
+          "output_tokens": 2125,
+          "thinking_tokens": 6733,
+          "total_tokens": 15373
+        }
+      },
+      "estimated_new_cost_usd": {
+        "primary": 0.092837,
+        "repair": 0.038104,
+        "total": 0.130941
+      },
+      "artifact": "outputs/m3/full/documents/D014_extraction.json"
+    },
+    {
+      "doc_id": "D016",
+      "jurisdiction": "CA",
+      "level": "state",
+      "source_type": "official",
+      "body_chars": 26505,
+      "page_artifacts": 0,
+      "model": "gemini-3.8-flash",
+      "reported_model": "gemini-3.8-flash",
+      "thinking_level": "medium",
+      "prompt_version": "v7",
+      "run_mode": "processed",
+      "primary_cache_hit": false,
+      "repair_cache_hit": false,
+      "primary_provider_calls": 1,
+      "repair_provider_calls": 1,
+      "candidates": 8,
+      "accepted": 0,
+      "rejected": 8,
+      "primary_candidates": 8,
+      "repair_candidates": 0,
+      "repair_targets": 0,
+      "repair_classifications": {},
+      "repair_resolution": {
+        "before_repair": 0,
+        "resolved_by_accepted_rule": 0,
+        "resolved_out_of_scope": 0,
+        "still_unresolved": 0
+      },
+      "unresolved_targets": [],
+      "document_status": "review_required",
+      "review_reasons": [
+        "8 candidate record(s) held, not published, because the time of application is unresolved: ['temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force']"
+      ],
+      "posture": {
+        "declared": "official_explanatory_page",
+        "established": "official_explanatory_page"
+      },
+      "held": 8,
+      "relative_dates_resolved": 0,
+      "source_basis": {},
+      "scope_challenges": [],
+      "scope_modes": {
+        "S1": "named_subject",
+        "S2": "named_subject"
+      },
+      "scope_mappings": [
+        "S1->P19: applies",
+        "S1->P24: applies",
+        "S1->P25: applies",
+        "S2->P24: applies"
+      ],
+      "legislative": [],
+      "empty_result": null,
+      "citations": {
+        "accepted": 0,
+        "exact_match": 0,
+        "normalized_match": 0,
+        "raw_substring": 0,
+        "reconstructed_cross_page": 0
+      },
+      "global_scope": {
+        "proposed": 2,
+        "verified": 2
+      },
+      "errors": [],
+      "tokens_reported": {
+        "primary": {
+          "input_tokens": 8966,
+          "output_tokens": 7010,
+          "thinking_tokens": 20619,
+          "total_tokens": 36595
+        },
+        "repair": {
+          "input_tokens": 9386,
+          "output_tokens": 583,
+          "thinking_tokens": 3161,
+          "total_tokens": 13130
+        }
+      },
+      "new_tokens": {
+        "primary": {
+          "input_tokens": 8966,
+          "output_tokens": 7010,
+          "thinking_tokens": 20619,
+          "total_tokens": 36595
+        },
+        "repair": {
+          "input_tokens": 9386,
+          "output_tokens": 583,
+          "thinking_tokens": 3161,
+          "total_tokens": 13130
+        }
+      },
+      "estimated_new_cost_usd": {
+        "primary": 0.110333,
+        "repair": 0.02108,
+        "total": 0.131413
+      },
+      "artifact": "outputs/m3/full/documents/D016_extraction.json"
+    },
+    {
+      "doc_id": "D022",
+      "jurisdiction": "CA",
+      "level": "state",
+      "source_type": "official",
+      "body_chars": 6452,
+      "page_artifacts": 0,
+      "model": "gemini-3.8-flash",
+      "reported_model": "gemini-3.8-flash",
+      "thinking_level": "medium",
+      "prompt_version": "v7",
+      "run_mode": "processed",
+      "primary_cache_hit": false,
+      "repair_cache_hit": null,
+      "primary_provider_calls": 1,
+      "repair_provider_calls": 0,
+      "candidates": 2,
+      "accepted": 0,
+      "rejected": 2,
+      "primary_candidates": 2,
+      "repair_candidates": 0,
+      "repair_targets": 0,
+      "repair_classifications": {},
+      "repair_resolution": null,
+      "unresolved_targets": [],
+      "document_status": "review_required",
+      "review_reasons": [
+        "2 candidate record(s) held, not published, because the time of application is unresolved: ['temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force']"
+      ],
+      "posture": {
+        "declared": "enacted_session_law",
+        "established": "enacted_session_law"
+      },
+      "held": 2,
+      "relative_dates_resolved": 0,
+      "source_basis": {},
+      "scope_challenges": [],
+      "scope_modes": {
+        "S1": "structural"
+      },
+      "scope_mappings": [],
+      "legislative": [],
+      "empty_result": null,
+      "citations": {
+        "accepted": 0,
+        "exact_match": 0,
+        "normalized_match": 0,
+        "raw_substring": 0,
+        "reconstructed_cross_page": 0
+      },
+      "global_scope": {
+        "proposed": 1,
+        "verified": 1
+      },
+      "errors": [],
+      "tokens_reported": {
+        "primary": {
+          "input_tokens": 5477,
+          "output_tokens": 1738,
+          "thinking_tokens": 18981,
+          "total_tokens": 26196
+        },
+        "repair": {}
+      },
+      "new_tokens": {
+        "primary": {
+          "input_tokens": 5477,
+          "output_tokens": 1738,
+          "thinking_tokens": 18981,
+          "total_tokens": 26196
+        },
+        "repair": {}
+      },
+      "estimated_new_cost_usd": {
+        "primary": 0.081804,
+        "repair": 0.0,
+        "total": 0.081804
+      },
+      "artifact": "outputs/m3/full/documents/D022_extraction.json"
+    },
+    {
+      "doc_id": "D023",
+      "jurisdiction": "CA",
+      "level": "state",
+      "source_type": "official",
+      "body_chars": 24849,
+      "page_artifacts": 0,
+      "model": "gemini-3.8-flash",
+      "reported_model": "gemini-3.8-flash",
+      "thinking_level": "medium",
+      "prompt_version": "v7",
+      "run_mode": "processed",
+      "primary_cache_hit": false,
+      "repair_cache_hit": null,
+      "primary_provider_calls": 1,
+      "repair_provider_calls": 0,
+      "candidates": 19,
+      "accepted": 0,
+      "rejected": 19,
+      "primary_candidates": 19,
+      "repair_candidates": 0,
+      "repair_targets": 0,
+      "repair_classifications": {},
+      "repair_resolution": null,
+      "unresolved_targets": [],
+      "document_status": "review_required",
+      "review_reasons": [
+        "in-scope provisions whose candidate records were all rejected: ['§ 1946.2(a)', '§ 1946.2(b)(1)', '§ 1946.2(b)(2)(A)', '§ 1946.2(b)(2)(B)', '§ 1946.2(b)(2)(C)', '§ 1946.2(b)(2)(D)', '§ 1946.2(c)', '§ 1946.2(d)(1)', '§ 1946.2(d)(2)', '§ 1946.2(d)(3)', '§ 1946.2(d)(4)', '§ 1946.2(f)', '§ 1946.2(g)', '§ 1946.2(h)(1)', '§ 1946.2(j)']"
+      ],
+      "posture": {
+        "declared": "codified_current_law",
+        "established": "codified_current_law"
+      },
+      "held": 0,
+      "relative_dates_resolved": 0,
+      "source_basis": {},
+      "scope_challenges": [],
+      "scope_modes": {
+        "S1": "structural",
+        "S2": "structural",
+        "S3": "structural",
+        "S4": "structural",
+        "S5": "structural",
+        "S6": "structural",
+        "S7": "structural",
+        "S8": "structural",
+        "S9": "structural",
+        "S10": "structural",
+        "S11": "structural",
+        "S12": "structural"
+      },
+      "scope_mappings": [],
+      "legislative": [],
+      "empty_result": null,
+      "citations": {
+        "accepted": 0,
+        "exact_match": 0,
+        "normalized_match": 0,
+        "raw_substring": 0,
+        "reconstructed_cross_page": 0
+      },
+      "global_scope": {
+        "proposed": 12,
+        "verified": 12
+      },
+      "errors": [],
+      "tokens_reported": {
+        "primary": {
+          "input_tokens": 9935,
+          "output_tokens": 20050,
+          "thinking_tokens": 19091,
+          "total_tokens": 49076
+        },
+        "repair": {}
+      },
+      "new_tokens": {
+        "primary": {
+          "input_tokens": 9935,
+          "output_tokens": 20050,
+          "thinking_tokens": 19091,
+          "total_tokens": 49076
+        },
+        "repair": {}
+      },
+      "estimated_new_cost_usd": {
+        "primary": 0.15423,
+        "repair": 0.0,
+        "total": 0.15423
+      },
+      "artifact": "outputs/m3/full/documents/D023_extraction.json"
+    },
+    {
+      "doc_id": "D024",
+      "jurisdiction": "CA",
+      "level": "state",
+      "source_type": "official",
+      "body_chars": 15733,
+      "page_artifacts": 0,
+      "model": "gemini-3.8-flash",
+      "reported_model": "gemini-3.8-flash",
+      "thinking_level": "medium",
+      "prompt_version": "v7",
+      "run_mode": "processed",
+      "primary_cache_hit": false,
+      "repair_cache_hit": false,
+      "primary_provider_calls": 1,
+      "repair_provider_calls": 1,
+      "candidates": 8,
+      "accepted": 0,
+      "rejected": 8,
+      "primary_candidates": 8,
+      "repair_candidates": 0,
+      "repair_targets": 1,
+      "repair_classifications": {
+        "out_of_scope": 1
+      },
+      "repair_resolution": {
+        "before_repair": 1,
+        "resolved_by_accepted_rule": 0,
+        "resolved_out_of_scope": 1,
+        "still_unresolved": 0
+      },
+      "unresolved_targets": [],
+      "document_status": "review_required",
+      "review_reasons": [
+        "in-scope provisions whose candidate records were all rejected: ['§ 1947.12(a)(1)', '§ 1947.12(a)(2)', '§ 1947.12(b)', '§ 1947.12(c)', '§ 1947.12(e)', '§ 1947.12(k)(1)', '§ 1947.12(l)']"
+      ],
+      "posture": {
+        "declared": "codified_current_law",
+        "established": "codified_current_law"
+      },
+      "held": 0,
+      "relative_dates_resolved": 0,
+      "source_basis": {},
+      "scope_challenges": [
+        "§ 1947.12(f)"
+      ],
+      "scope_modes": {
+        "S1": "structural",
+        "S2": "structural",
+        "S3": "structural",
+        "S4": "structural",
+        "S5": "structural",
+        "S6": "structural",
+        "S7": "structural"
+      },
+      "scope_mappings": [],
+      "legislative": [],
+      "empty_result": null,
+      "citations": {
+        "accepted": 0,
+        "exact_match": 0,
+        "normalized_match": 0,
+        "raw_substring": 0,
+        "reconstructed_cross_page": 0
+      },
+      "global_scope": {
+        "proposed": 7,
+        "verified": 7
+      },
+      "errors": [],
+      "tokens_reported": {
+        "primary": {
+          "input_tokens": 7960,
+          "output_tokens": 11229,
+          "thinking_tokens": 24636,
+          "total_tokens": 43825
+        },
+        "repair": {
+          "input_tokens": 8475,
+          "output_tokens": 246,
+          "thinking_tokens": 1067,
+          "total_tokens": 9788
+        }
+      },
+      "new_tokens": {
+        "primary": {
+          "input_tokens": 7960,
+          "output_tokens": 11229,
+          "thinking_tokens": 24636,
+          "total_tokens": 43825
+        },
+        "repair": {
+          "input_tokens": 8475,
+          "output_tokens": 246,
+          "thinking_tokens": 1067,
+          "total_tokens": 9788
+        }
+      },
+      "estimated_new_cost_usd": {
+        "primary": 0.140464,
+        "repair": 0.01128,
+        "total": 0.151744
+      },
+      "artifact": "outputs/m3/full/documents/D024_extraction.json"
+    },
+    {
+      "doc_id": "D025",
+      "jurisdiction": "CA",
+      "level": "state",
+      "source_type": "official",
+      "body_chars": 27294,
+      "page_artifacts": 0,
+      "model": "gemini-3.8-flash",
+      "reported_model": "gemini-3.8-flash",
+      "thinking_level": "medium",
+      "prompt_version": "v7",
+      "run_mode": "processed",
+      "primary_cache_hit": false,
+      "repair_cache_hit": false,
+      "primary_provider_calls": 1,
+      "repair_provider_calls": 1,
+      "candidates": 33,
+      "accepted": 33,
+      "rejected": 0,
+      "primary_candidates": 28,
+      "repair_candidates": 5,
+      "repair_targets": 5,
+      "repair_classifications": {
+        "in_scope": 5
+      },
+      "repair_resolution": {
+        "before_repair": 5,
+        "resolved_by_accepted_rule": 5,
+        "resolved_out_of_scope": 0,
+        "still_unresolved": 0
+      },
+      "unresolved_targets": [],
+      "document_status": "complete",
+      "review_reasons": [],
+      "posture": {
+        "declared": "codified_current_law",
+        "established": "codified_current_law"
+      },
+      "held": 0,
+      "relative_dates_resolved": 0,
+      "source_basis": {
+        "operative_text": 33
+      },
+      "scope_challenges": [
+        "§ 1950.5(b)"
+      ],
+      "scope_modes": {
+        "S1": "structural",
+        "S2": "structural",
+        "S3": "structural"
+      },
+      "scope_mappings": [],
+      "legislative": [],
+      "empty_result": null,
+      "citations": {
+        "accepted": 33,
+        "exact_match": 16,
+        "normalized_match": 17,
+        "raw_substring": 33,
+        "reconstructed_cross_page": 0
+      },
+      "global_scope": {
+        "proposed": 3,
+        "verified": 3
+      },
+      "errors": [],
+      "tokens_reported": {
+        "primary": {
+          "input_tokens": 10007,
+          "output_tokens": 19146,
+          "thinking_tokens": 1860,
+          "total_tokens": 31013
+        },
+        "repair": {
+          "input_tokens": 9952,
+          "output_tokens": 2397,
+          "thinking_tokens": 18174,
+          "total_tokens": 30523
+        }
+      },
+      "new_tokens": {
+        "primary": {
+          "input_tokens": 10007,
+          "output_tokens": 19146,
+          "thinking_tokens": 1860,
+          "total_tokens": 31013
+        },
+        "repair": {
+          "input_tokens": 9952,
+          "output_tokens": 2397,
+          "thinking_tokens": 18174,
+          "total_tokens": 30523
+        }
+      },
+      "estimated_new_cost_usd": {
+        "primary": 0.086278,
+        "repair": 0.084605,
+        "total": 0.170883
+      },
+      "artifact": "outputs/m3/full/documents/D025_extraction.json"
+    },
+    {
+      "doc_id": "D026",
+      "jurisdiction": "CA",
+      "level": "state",
+      "source_type": "official",
+      "body_chars": 7045,
+      "page_artifacts": 0,
+      "model": "gemini-3.8-flash",
+      "reported_model": "gemini-3.8-flash",
+      "thinking_level": "medium",
+      "prompt_version": "v7",
+      "run_mode": "processed",
+      "primary_cache_hit": false,
+      "repair_cache_hit": null,
+      "primary_provider_calls": 1,
+      "repair_provider_calls": 0,
+      "candidates": 7,
+      "accepted": 7,
+      "rejected": 0,
+      "primary_candidates": 7,
+      "repair_candidates": 0,
+      "repair_targets": 0,
+      "repair_classifications": {},
+      "repair_resolution": null,
+      "unresolved_targets": [],
+      "document_status": "complete",
+      "review_reasons": [],
+      "posture": {
+        "declared": "codified_current_law",
+        "established": "codified_current_law"
+      },
+      "held": 0,
+      "relative_dates_resolved": 0,
+      "source_basis": {
+        "operative_text": 7
+      },
+      "scope_challenges": [],
+      "scope_modes": {},
+      "scope_mappings": [],
+      "legislative": [],
+      "empty_result": null,
+      "citations": {
+        "accepted": 7,
+        "exact_match": 7,
+        "normalized_match": 0,
+        "raw_substring": 7,
+        "reconstructed_cross_page": 0
+      },
+      "global_scope": {
+        "proposed": 0,
+        "verified": 0
+      },
+      "errors": [],
+      "tokens_reported": {
+        "primary": {
+          "input_tokens": 5642,
+          "output_tokens": 5527,
+          "thinking_tokens": 15980,
+          "total_tokens": 27149
+        },
+        "repair": {}
+      },
+      "new_tokens": {
+        "primary": {
+          "input_tokens": 5642,
+          "output_tokens": 5527,
+          "thinking_tokens": 15980,
+          "total_tokens": 27149
+        },
+        "repair": {}
+      },
+      "estimated_new_cost_usd": {
+        "primary": 0.084883,
+        "repair": 0.0,
+        "total": 0.084883
+      },
+      "artifact": "outputs/m3/full/documents/D026_extraction.json"
+    },
+    {
+      "doc_id": "D027",
+      "jurisdiction": "CA",
+      "level": "state",
+      "source_type": "official",
+      "body_chars": 10709,
+      "page_artifacts": 0,
+      "model": "gemini-3.8-flash",
+      "reported_model": "gemini-3.8-flash",
+      "thinking_level": "medium",
+      "prompt_version": "v7",
+      "run_mode": "processed",
+      "primary_cache_hit": false,
+      "repair_cache_hit": null,
+      "primary_provider_calls": 1,
+      "repair_provider_calls": 0,
+      "candidates": 7,
+      "accepted": 0,
+      "rejected": 7,
+      "primary_candidates": 7,
+      "repair_candidates": 0,
+      "repair_targets": 0,
+      "repair_classifications": {},
+      "repair_resolution": null,
+      "unresolved_targets": [],
+      "document_status": "review_required",
+      "review_reasons": [
+        "in-scope provisions whose candidate records were all rejected: ['§ 12955(a)', '§ 12955(b)', '§ 12955(k)', '§ 12955(n)', '§ 12955(o)(1)(A)', '§ 12955(o)(1)(B)(i)', '§ 12955(o)(1)(B)(ii)']"
+      ],
+      "posture": {
+        "declared": "codified_current_law",
+        "established": "codified_current_law"
+      },
+      "held": 0,
+      "relative_dates_resolved": 0,
+      "source_basis": {},
+      "scope_challenges": [],
+      "scope_modes": {
+        "S1": "named_subject",
+        "S2": "structural",
+        "S3": "named_subject"
+      },
+      "scope_mappings": [],
+      "legislative": [],
+      "empty_result": null,
+      "citations": {
+        "accepted": 0,
+        "exact_match": 0,
+        "normalized_match": 0,
+        "raw_substring": 0,
+        "reconstructed_cross_page": 0
+      },
+      "global_scope": {
+        "proposed": 3,
+        "verified": 3
+      },
+      "errors": [],
+      "tokens_reported": {
+        "primary": {
+          "input_tokens": 6394,
+          "output_tokens": 7214,
+          "thinking_tokens": 40010,
+          "total_tokens": 53618
+        },
+        "repair": {}
+      },
+      "new_tokens": {
+        "primary": {
+          "input_tokens": 6394,
+          "output_tokens": 7214,
+          "thinking_tokens": 40010,
+          "total_tokens": 53618
+        },
+        "repair": {}
+      },
+      "estimated_new_cost_usd": {
+        "primary": 0.181886,
+        "repair": 0.0,
+        "total": 0.181886
+      },
+      "artifact": "outputs/m3/full/documents/D027_extraction.json"
+    },
+    {
+      "doc_id": "D029",
+      "jurisdiction": "Cambridge, MA",
+      "level": "city",
+      "source_type": "official",
+      "body_chars": 12356,
+      "page_artifacts": 0,
+      "model": "gemini-3.8-flash",
+      "reported_model": "gemini-3.8-flash",
+      "thinking_level": "medium",
+      "prompt_version": "v7",
+      "run_mode": "processed",
+      "primary_cache_hit": false,
+      "repair_cache_hit": false,
+      "primary_provider_calls": 1,
+      "repair_provider_calls": 1,
+      "candidates": 2,
+      "accepted": 0,
+      "rejected": 2,
+      "primary_candidates": 1,
+      "repair_candidates": 1,
+      "repair_targets": 1,
+      "repair_classifications": {
+        "in_scope": 1
+      },
+      "repair_resolution": {
+        "before_repair": 1,
+        "resolved_by_accepted_rule": 0,
+        "resolved_out_of_scope": 0,
+        "still_unresolved": 1
+      },
+      "unresolved_targets": [
+        "Tips and FAQs - Housing Discrimination - Tenant Selection"
+      ],
+      "document_status": "review_required",
+      "review_reasons": [
+        "1 candidate record(s) held, not published, because the time of application is unresolved: ['temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force']",
+        "repair targets still unresolved: Tips and FAQs - Housing Discrimination - Tenant Selection (classified in_scope, but no candidate was produced)"
+      ],
+      "posture": {
+        "declared": "official_explanatory_page",
+        "established": "official_explanatory_page"
+      },
+      "held": 1,
+      "relative_dates_resolved": 0,
+      "source_basis": {},
+      "scope_challenges": [],
+      "scope_modes": {
+        "S1": "named_subject"
+      },
+      "scope_mappings": [],
+      "legislative": [],
+      "empty_result": null,
+      "citations": {
+        "accepted": 0,
+        "exact_match": 0,
+        "normalized_match": 0,
+        "raw_substring": 0,
+        "reconstructed_cross_page": 0
+      },
+      "global_scope": {
+        "proposed": 1,
+        "verified": 1
+      },
+      "errors": [],
+      "tokens_reported": {
+        "primary": {
+          "input_tokens": 6266,
+          "output_tokens": 2140,
+          "thinking_tokens": 13102,
+          "total_tokens": 21508
+        },
+        "repair": {
+          "input_tokens": 5828,
+          "output_tokens": 574,
+          "thinking_tokens": 2905,
+          "total_tokens": 9307
+        }
+      },
+      "new_tokens": {
+        "primary": {
+          "input_tokens": 6266,
+          "output_tokens": 2140,
+          "thinking_tokens": 13102,
+          "total_tokens": 21508
+        },
+        "repair": {
+          "input_tokens": 5828,
+          "output_tokens": 574,
+          "thinking_tokens": 2905,
+          "total_tokens": 9307
+        }
+      },
+      "estimated_new_cost_usd": {
+        "primary": 0.061857,
+        "repair": 0.017417,
+        "total": 0.079274
+      },
+      "artifact": "outputs/m3/full/documents/D029_extraction.json"
+    },
+    {
+      "doc_id": "D031",
+      "jurisdiction": "Cambridge, MA",
+      "level": "city",
+      "source_type": "official",
+      "body_chars": 5943,
+      "page_artifacts": 0,
+      "model": "gemini-3.8-flash",
+      "reported_model": "gemini-3.8-flash",
+      "thinking_level": "medium",
+      "prompt_version": "v7",
+      "run_mode": "processed",
+      "primary_cache_hit": false,
+      "repair_cache_hit": null,
+      "primary_provider_calls": 1,
+      "repair_provider_calls": 0,
+      "candidates": 0,
+      "accepted": 0,
+      "rejected": 0,
+      "primary_candidates": 0,
+      "repair_candidates": 0,
+      "repair_targets": 0,
+      "repair_classifications": {},
+      "repair_resolution": null,
+      "unresolved_targets": [],
+      "document_status": "complete",
+      "review_reasons": [],
+      "posture": {
+        "declared": "official_explanatory_page",
+        "established": "official_explanatory_page"
+      },
+      "held": 0,
+      "relative_dates_resolved": 0,
+      "source_basis": {},
+      "scope_challenges": [],
+      "scope_modes": {},
+      "scope_mappings": [],
+      "legislative": [],
+      "empty_result": {
+        "reason": "The document solely covers requirements to distribute an informational tenant rights and resources guide under Cambridge Municipal Code Chapter 8.71, and contains no provisions within the official categories of rent increase limits, just cause eviction, security deposits, application screening fees, screening restrictions, or algorithmic rent setting.",
+        "evidence": "The Ordinance requires owners, landlords, and management companies to provide you with information at the start of your lease or tenancy as well as when your tenancy is being terminated.",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 721,
+          "end": 907,
+          "occurrences": 1,
+          "model_span": "The Ordinance requires owners, landlords, and management companies to provide you with information at the start of your lease or tenancy as well as when your tenancy is being terminated.",
+          "source_span": "The Ordinance requires owners, landlords, and management companies to provide you with information at the start of your lease or tenancy as well as when your tenancy is being terminated.",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [],
+          "crossed_artifacts": []
+        },
+        "verified": true,
+        "problem": null
+      },
+      "citations": {
+        "accepted": 0,
+        "exact_match": 0,
+        "normalized_match": 0,
+        "raw_substring": 0,
+        "reconstructed_cross_page": 0
+      },
+      "global_scope": {
+        "proposed": 0,
+        "verified": 0
+      },
+      "errors": [],
+      "tokens_reported": {
+        "primary": {
+          "input_tokens": 5216,
+          "output_tokens": 1487,
+          "thinking_tokens": 4505,
+          "total_tokens": 11208
+        },
+        "repair": {}
+      },
+      "new_tokens": {
+        "primary": {
+          "input_tokens": 5216,
+          "output_tokens": 1487,
+          "thinking_tokens": 4505,
+          "total_tokens": 11208
+        },
+        "repair": {}
+      },
+      "estimated_new_cost_usd": {
+        "primary": 0.026382,
+        "repair": 0.0,
+        "total": 0.026382
+      },
+      "artifact": "outputs/m3/full/documents/D031_extraction.json"
+    },
+    {
+      "doc_id": "D036",
+      "jurisdiction": "Jersey City, NJ",
+      "level": "city",
+      "source_type": "official",
+      "body_chars": 7428,
+      "page_artifacts": 0,
+      "model": "gemini-3.8-flash",
+      "reported_model": "gemini-3.8-flash",
+      "thinking_level": "medium",
+      "prompt_version": "v7",
+      "run_mode": "processed",
+      "primary_cache_hit": false,
+      "repair_cache_hit": null,
+      "primary_provider_calls": 1,
+      "repair_provider_calls": 0,
+      "candidates": 0,
+      "accepted": 0,
+      "rejected": 0,
+      "primary_candidates": 0,
+      "repair_candidates": 0,
+      "repair_targets": 0,
+      "repair_classifications": {},
+      "repair_resolution": null,
+      "unresolved_targets": [],
+      "document_status": "complete",
+      "review_reasons": [],
+      "posture": {
+        "declared": "official_explanatory_page",
+        "established": "official_explanatory_page"
+      },
+      "held": 0,
+      "relative_dates_resolved": 0,
+      "source_basis": {},
+      "scope_challenges": [],
+      "scope_modes": {},
+      "scope_mappings": [],
+      "legislative": [],
+      "empty_result": {
+        "reason": "The document is an informational municipal web page providing administrative instructions, application links, and meeting announcements without containing substantive legal rules in any official category.",
+        "evidence": "The Office of Landlord Tenant Relations administers and enforces the\nRent Control Ordinance, Chapter 260\nof the Jersey City Municipal Code and provides education, information and referrals to city residents in connection with landlord/tenant issues.",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 2958,
+          "end": 3207,
+          "occurrences": 1,
+          "model_span": "The Office of Landlord Tenant Relations administers and enforces the\nRent Control Ordinance, Chapter 260\nof the Jersey City Municipal Code and provides education, information and referrals to city residents in connection with landlord/tenant issues.",
+          "source_span": "The Office of Landlord Tenant Relations administers and enforces the\nRent Control Ordinance, Chapter 260\nof the Jersey City Municipal Code and provides education, information and referrals to city residents in connection with landlord/tenant issues.",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [],
+          "crossed_artifacts": []
+        },
+        "verified": true,
+        "problem": null
+      },
+      "citations": {
+        "accepted": 0,
+        "exact_match": 0,
+        "normalized_match": 0,
+        "raw_substring": 0,
+        "reconstructed_cross_page": 0
+      },
+      "global_scope": {
+        "proposed": 0,
+        "verified": 0
+      },
+      "errors": [],
+      "tokens_reported": {
+        "primary": {
+          "input_tokens": 5653,
+          "output_tokens": 873,
+          "thinking_tokens": 4357,
+          "total_tokens": 10883
+        },
+        "repair": {}
+      },
+      "new_tokens": {
+        "primary": {
+          "input_tokens": 5653,
+          "output_tokens": 873,
+          "thinking_tokens": 4357,
+          "total_tokens": 10883
+        },
+        "repair": {}
+      },
+      "estimated_new_cost_usd": {
+        "primary": 0.023852,
+        "repair": 0.0,
+        "total": 0.023852
+      },
+      "artifact": "outputs/m3/full/documents/D036_extraction.json"
+    },
+    {
+      "doc_id": "D039",
+      "jurisdiction": "Los Angeles, CA",
+      "level": "city",
+      "source_type": "official",
+      "body_chars": 2975,
+      "page_artifacts": 0,
+      "model": "gemini-3.8-flash",
+      "reported_model": "gemini-3.8-flash",
+      "thinking_level": "medium",
+      "prompt_version": "v7",
+      "run_mode": "processed",
+      "primary_cache_hit": false,
+      "repair_cache_hit": null,
+      "primary_provider_calls": 1,
+      "repair_provider_calls": 0,
+      "candidates": 0,
+      "accepted": 0,
+      "rejected": 0,
+      "primary_candidates": 0,
+      "repair_candidates": 0,
+      "repair_targets": 0,
+      "repair_classifications": {},
+      "repair_resolution": null,
+      "unresolved_targets": [],
+      "document_status": "complete",
+      "review_reasons": [],
+      "posture": {
+        "declared": "pending_bill",
+        "established": "pending_bill"
+      },
+      "held": 0,
+      "relative_dates_resolved": 0,
+      "source_basis": {},
+      "scope_challenges": [],
+      "scope_modes": {},
+      "scope_mappings": [],
+      "legislative": [],
+      "empty_result": {
+        "reason": "The document is a city council motion directing a city department to conduct a study and report on the feasibility of an algorithm-based rent-setting ban, and does not contain any operative legal requirements or prohibitions.",
+        "evidence": "I THEREFORE MOVE that the City Council instruct the Los Angeles Housing Department to \nreport on the number of ownership and management entities that are using algorithm-based \nsoftware to establish rents and the feasibility of instituting a ban on the use of this software to set \nrents in the City.",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 20,
+          "end": 320,
+          "occurrences": 1,
+          "model_span": "I THEREFORE MOVE that the City Council instruct the Los Angeles Housing Department to \nreport on the number of ownership and management entities that are using algorithm-based \nsoftware to establish rents and the feasibility of instituting a ban on the use of this software to set \nrents in the City.",
+          "source_span": "I THEREFORE MOVE that the City Council instruct the Los Angeles Housing Department to \nreport on the number of ownership and management entities that are using algorithm-based \nsoftware to establish rents and the feasibility of instituting a ban on the use of this software to set \nrents in the City.",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [],
+          "crossed_artifacts": []
+        },
+        "verified": true,
+        "problem": null
+      },
+      "citations": {
+        "accepted": 0,
+        "exact_match": 0,
+        "normalized_match": 0,
+        "raw_substring": 0,
+        "reconstructed_cross_page": 0
+      },
+      "global_scope": {
+        "proposed": 0,
+        "verified": 0
+      },
+      "errors": [],
+      "tokens_reported": {
+        "primary": {
+          "input_tokens": 4567,
+          "output_tokens": 443,
+          "thinking_tokens": 3474,
+          "total_tokens": 8484
+        },
+        "repair": {}
+      },
+      "new_tokens": {
+        "primary": {
+          "input_tokens": 4567,
+          "output_tokens": 443,
+          "thinking_tokens": 3474,
+          "total_tokens": 8484
+        },
+        "repair": {}
+      },
+      "estimated_new_cost_usd": {
+        "primary": 0.018114,
+        "repair": 0.0,
+        "total": 0.018114
+      },
+      "artifact": "outputs/m3/full/documents/D039_extraction.json"
+    },
+    {
+      "doc_id": "D040",
+      "jurisdiction": "Los Angeles, CA",
+      "level": "city",
+      "source_type": "official",
+      "body_chars": 9631,
+      "page_artifacts": 0,
+      "model": "gemini-3.8-flash",
+      "reported_model": "gemini-3.8-flash",
+      "thinking_level": "medium",
+      "prompt_version": "v7",
+      "run_mode": "processed",
+      "primary_cache_hit": false,
+      "repair_cache_hit": false,
+      "primary_provider_calls": 1,
+      "repair_provider_calls": 1,
+      "candidates": 7,
+      "accepted": 2,
+      "rejected": 5,
+      "primary_candidates": 7,
+      "repair_candidates": 0,
+      "repair_targets": 0,
+      "repair_classifications": {},
+      "repair_resolution": {
+        "before_repair": 0,
+        "resolved_by_accepted_rule": 0,
+        "resolved_out_of_scope": 0,
+        "still_unresolved": 0
+      },
+      "unresolved_targets": [],
+      "document_status": "review_required",
+      "review_reasons": [
+        "4 candidate record(s) held, not published, because the time of application is unresolved: ['temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force']",
+        "in-scope provisions whose candidate records were all rejected: ['When Can Rent Be Increased Under State Law AB1482']"
+      ],
+      "posture": {
+        "declared": "official_explanatory_page",
+        "established": "official_explanatory_page"
+      },
+      "held": 4,
+      "relative_dates_resolved": 0,
+      "source_basis": {
+        "official_explanatory_text": 2
+      },
+      "scope_challenges": [],
+      "scope_modes": {
+        "S1": "named_subject",
+        "S2": "named_subject",
+        "S3": "named_subject",
+        "S4": "named_subject",
+        "S5": "named_subject",
+        "S6": "named_subject",
+        "S7": "named_subject",
+        "S8": "named_subject",
+        "S9": "named_subject"
+      },
+      "scope_mappings": [
+        "S1->P1: applies",
+        "S1->P3: applies",
+        "S1->P4: applies",
+        "S2->P1: applies",
+        "S2->P3: applies",
+        "S2->P4: applies",
+        "S3->P1: applies",
+        "S3->P3: applies",
+        "S3->P4: applies"
+      ],
+      "legislative": [],
+      "empty_result": null,
+      "citations": {
+        "accepted": 2,
+        "exact_match": 2,
+        "normalized_match": 0,
+        "raw_substring": 2,
+        "reconstructed_cross_page": 0
+      },
+      "global_scope": {
+        "proposed": 9,
+        "verified": 9
+      },
+      "errors": [],
+      "tokens_reported": {
+        "primary": {
+          "input_tokens": 6219,
+          "output_tokens": 6707,
+          "thinking_tokens": 21863,
+          "total_tokens": 34789
+        },
+        "repair": {
+          "input_tokens": 7617,
+          "output_tokens": 1334,
+          "thinking_tokens": 2612,
+          "total_tokens": 11563
+        }
+      },
+      "new_tokens": {
+        "primary": {
+          "input_tokens": 6219,
+          "output_tokens": 6707,
+          "thinking_tokens": 21863,
+          "total_tokens": 34789
+        },
+        "repair": {
+          "input_tokens": 7617,
+          "output_tokens": 1334,
+          "thinking_tokens": 2612,
+          "total_tokens": 11563
+        }
+      },
+      "estimated_new_cost_usd": {
+        "primary": 0.111802,
+        "repair": 0.02051,
+        "total": 0.132312
+      },
+      "artifact": "outputs/m3/full/documents/D040_extraction.json"
+    },
+    {
+      "doc_id": "D041",
+      "jurisdiction": "Los Angeles, CA",
+      "level": "city",
+      "source_type": "official",
+      "body_chars": 10359,
+      "page_artifacts": 0,
+      "model": "gemini-3.8-flash",
+      "reported_model": "gemini-3.8-flash",
+      "thinking_level": "medium",
+      "prompt_version": "v7",
+      "run_mode": "processed",
+      "primary_cache_hit": false,
+      "repair_cache_hit": false,
+      "primary_provider_calls": 1,
+      "repair_provider_calls": 1,
+      "candidates": 30,
+      "accepted": 10,
+      "rejected": 20,
+      "primary_candidates": 20,
+      "repair_candidates": 10,
+      "repair_targets": 10,
+      "repair_classifications": {
+        "in_scope": 10
+      },
+      "repair_resolution": {
+        "before_repair": 10,
+        "resolved_by_accepted_rule": 4,
+        "resolved_out_of_scope": 0,
+        "still_unresolved": 6
+      },
+      "unresolved_targets": [
+        "At-Fault Eviction Grounds",
+        "Market Rate Rent Increases",
+        "No-Fault Eviction Checklist & Relocation",
+        "No-Fault Eviction Grounds",
+        "Smoke Detector Surcharge",
+        "Soft-Story Ord. 183893"
+      ],
+      "document_status": "review_required",
+      "review_reasons": [
+        "19 candidate record(s) held, not published, because the time of application is unresolved: ['temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force']",
+        "repair targets still unresolved: At-Fault Eviction Grounds (classified in_scope, but every candidate was rejected); Market Rate Rent Increases (classified in_scope, but every candidate was rejected); No-Fault Eviction Checklist & Relocation (classified in_scope, but every candidate was rejected); No-Fault Eviction Grounds (classified in_scope, but every candidate was rejected); Smoke Detector Surcharge (classified in_scope, but every candidate was rejected); Soft-Story Ord. 183893 (classified in_scope, but no candidate was produced)"
+      ],
+      "posture": {
+        "declared": "official_explanatory_page",
+        "established": "unknown"
+      },
+      "held": 19,
+      "relative_dates_resolved": 0,
+      "source_basis": {
+        "official_explanatory_text": 10
+      },
+      "scope_challenges": [],
+      "scope_modes": {
+        "S1": "named_subject",
+        "S2": "named_subject",
+        "S3": "named_subject",
+        "S4": "named_subject"
+      },
+      "scope_mappings": [
+        "S1->P3: applies",
+        "S1->P4: applies",
+        "S1->P5: applies",
+        "S1->P6: applies",
+        "S1->P7: applies",
+        "S1->P8: applies",
+        "S1->P9: applies",
+        "S1->P10: applies",
+        "S1->P11: applies",
+        "S1->P12: applies",
+        "S1->P13: applies",
+        "S1->P14: applies",
+        "S1->P17: applies",
+        "S1->P18: applies",
+        "S1->P19: applies",
+        "S1->P20: applies",
+        "S1->P21: applies",
+        "S2->P3: applies",
+        "S2->P4: applies",
+        "S2->P5: applies",
+        "S2->P6: applies",
+        "S2->P7: applies",
+        "S2->P8: applies",
+        "S2->P9: applies",
+        "S2->P10: applies",
+        "S2->P11: applies",
+        "S2->P12: applies",
+        "S2->P13: applies",
+        "S2->P14: applies",
+        "S3->P3: applies",
+        "S3->P4: applies",
+        "S3->P5: applies",
+        "S3->P6: applies",
+        "S3->P7: applies",
+        "S3->P8: applies",
+        "S3->P9: applies",
+        "S3->P10: applies",
+        "S3->P11: applies",
+        "S3->P12: applies",
+        "S3->P13: applies",
+        "S3->P14: applies",
+        "S4->P3: applies",
+        "S4->P4: applies",
+        "S4->P5: applies",
+        "S4->P6: applies",
+        "S4->P7: applies",
+        "S4->P8: applies",
+        "S4->P9: applies",
+        "S4->P10: applies",
+        "S4->P11: applies",
+        "S4->P12: applies",
+        "S4->P13: applies",
+        "S4->P14: applies",
+        "S4->P17: applies",
+        "S4->P18: applies",
+        "S4->P19: applies",
+        "S4->P20: applies",
+        "S4->P21: applies"
+      ],
+      "legislative": [],
+      "empty_result": null,
+      "citations": {
+        "accepted": 10,
+        "exact_match": 10,
+        "normalized_match": 0,
+        "raw_substring": 10,
+        "reconstructed_cross_page": 0
+      },
+      "global_scope": {
+        "proposed": 4,
+        "verified": 4
+      },
+      "errors": [],
+      "tokens_reported": {
+        "primary": {
+          "input_tokens": 6378,
+          "output_tokens": 11083,
+          "thinking_tokens": 27657,
+          "total_tokens": 45118
+        },
+        "repair": {
+          "input_tokens": 16334,
+          "output_tokens": 11841,
+          "thinking_tokens": 14944,
+          "total_tokens": 43119
+        }
+      },
+      "new_tokens": {
+        "primary": {
+          "input_tokens": 6378,
+          "output_tokens": 11083,
+          "thinking_tokens": 27657,
+          "total_tokens": 45118
+        },
+        "repair": {
+          "input_tokens": 16334,
+          "output_tokens": 11841,
+          "thinking_tokens": 14944,
+          "total_tokens": 43119
+        }
+      },
+      "estimated_new_cost_usd": {
+        "primary": 0.150059,
+        "repair": 0.112694,
+        "total": 0.262753
+      },
+      "artifact": "outputs/m3/full/documents/D041_extraction.json"
+    },
+    {
+      "doc_id": "D042",
+      "jurisdiction": "Los Angeles, CA",
+      "level": "city",
+      "source_type": "official",
+      "body_chars": 5003,
+      "page_artifacts": 0,
+      "model": "gemini-3.8-flash",
+      "reported_model": "gemini-3.8-flash",
+      "thinking_level": "medium",
+      "prompt_version": "v7",
+      "run_mode": "processed",
+      "primary_cache_hit": false,
+      "repair_cache_hit": false,
+      "primary_provider_calls": 1,
+      "repair_provider_calls": 1,
+      "candidates": 4,
+      "accepted": 2,
+      "rejected": 2,
+      "primary_candidates": 3,
+      "repair_candidates": 1,
+      "repair_targets": 1,
+      "repair_classifications": {
+        "in_scope": 1
+      },
+      "repair_resolution": {
+        "before_repair": 1,
+        "resolved_by_accepted_rule": 0,
+        "resolved_out_of_scope": 0,
+        "still_unresolved": 1
+      },
+      "unresolved_targets": [
+        "State Law Notice Requirement"
+      ],
+      "document_status": "review_required",
+      "review_reasons": [
+        "2 candidate record(s) held, not published, because the time of application is unresolved: ['temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force']",
+        "repair targets still unresolved: State Law Notice Requirement (classified in_scope, but every candidate was rejected)"
+      ],
+      "posture": {
+        "declared": "official_explanatory_page",
+        "established": "official_explanatory_page"
+      },
+      "held": 2,
+      "relative_dates_resolved": 0,
+      "source_basis": {
+        "official_explanatory_text": 2
+      },
+      "scope_challenges": [],
+      "scope_modes": {},
+      "scope_mappings": [],
+      "legislative": [],
+      "empty_result": null,
+      "citations": {
+        "accepted": 2,
+        "exact_match": 2,
+        "normalized_match": 0,
+        "raw_substring": 2,
+        "reconstructed_cross_page": 0
+      },
+      "global_scope": {
+        "proposed": 0,
+        "verified": 0
+      },
+      "errors": [],
+      "tokens_reported": {
+        "primary": {
+          "input_tokens": 5149,
+          "output_tokens": 2044,
+          "thinking_tokens": 13652,
+          "total_tokens": 20845
+        },
+        "repair": {
+          "input_tokens": 4666,
+          "output_tokens": 388,
+          "thinking_tokens": 16134,
+          "total_tokens": 21188
+        }
+      },
+      "new_tokens": {
+        "primary": {
+          "input_tokens": 5149,
+          "output_tokens": 2044,
+          "thinking_tokens": 13652,
+          "total_tokens": 20845
+        },
+        "repair": {
+          "input_tokens": 4666,
+          "output_tokens": 388,
+          "thinking_tokens": 16134,
+          "total_tokens": 21188
+        }
+      },
+      "estimated_new_cost_usd": {
+        "primary": 0.062722,
+        "repair": 0.065457,
+        "total": 0.128179
+      },
+      "artifact": "outputs/m3/full/documents/D042_extraction.json"
+    },
+    {
+      "doc_id": "D043",
+      "jurisdiction": "Los Angeles, CA",
+      "level": "city",
+      "source_type": "official",
+      "body_chars": 34574,
+      "page_artifacts": 5,
+      "model": "gemini-3.8-flash",
+      "reported_model": "gemini-3.8-flash",
+      "thinking_level": "medium",
+      "prompt_version": "v7",
+      "run_mode": "processed",
+      "primary_cache_hit": false,
+      "repair_cache_hit": false,
+      "primary_provider_calls": 1,
+      "repair_provider_calls": 1,
+      "candidates": 20,
+      "accepted": 5,
+      "rejected": 15,
+      "primary_candidates": 13,
+      "repair_candidates": 7,
+      "repair_targets": 8,
+      "repair_classifications": {
+        "out_of_scope": 1,
+        "in_scope": 7
+      },
+      "repair_resolution": {
+        "before_repair": 8,
+        "resolved_by_accepted_rule": 2,
+        "resolved_out_of_scope": 1,
+        "still_unresolved": 5
+      },
+      "unresolved_targets": [
+        "Bulletin A - Remedies",
+        "Bulletin B - Landlord Requirements",
+        "Resident Protections Ordinance - Option 2",
+        "Resident Protections Ordinance - Option 3",
+        "Resident Protections Ordinance - Options & Penalties"
+      ],
+      "document_status": "review_required",
+      "review_reasons": [
+        "14 candidate record(s) held, not published, because the time of application is unresolved: ['temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force']",
+        "named-subject scope mappings never verified (not applied): ['S3->P18', 'S3->P19']",
+        "repair targets still unresolved: Bulletin A - Remedies (classified in_scope, but every candidate was rejected); Bulletin B - Landlord Requirements (classified in_scope, but every candidate was rejected); Resident Protections Ordinance - Option 2 (classified in_scope, but every candidate was rejected); Resident Protections Ordinance - Option 3 (classified in_scope, but every candidate was rejected); Resident Protections Ordinance - Options & Penalties (classified in_scope, but no candidate was produced)"
+      ],
+      "posture": {
+        "declared": "official_explanatory_page",
+        "established": "official_explanatory_page"
+      },
+      "held": 14,
+      "relative_dates_resolved": 0,
+      "source_basis": {
+        "official_explanatory_text": 5
+      },
+      "scope_challenges": [
+        "Bulletin A - Administrative Fees"
+      ],
+      "scope_modes": {
+        "S1": "named_subject",
+        "S2": "named_subject",
+        "S3": "named_subject"
+      },
+      "scope_mappings": [
+        "S1->P1: applies",
+        "S1->P7: applies",
+        "S1->P8: does_not_apply",
+        "S2->P1: applies",
+        "S2->P7: applies",
+        "S2->P8: does_not_apply",
+        "S3->P16: applies",
+        "S3->P17: applies"
+      ],
+      "legislative": [],
+      "empty_result": null,
+      "citations": {
+        "accepted": 5,
+        "exact_match": 5,
+        "normalized_match": 0,
+        "raw_substring": 5,
+        "reconstructed_cross_page": 0
+      },
+      "global_scope": {
+        "proposed": 3,
+        "verified": 3
+      },
+      "errors": [],
+      "tokens_reported": {
+        "primary": {
+          "input_tokens": 12585,
+          "output_tokens": 10655,
+          "thinking_tokens": 20886,
+          "total_tokens": 44126
+        },
+        "repair": {
+          "input_tokens": 14177,
+          "output_tokens": 5658,
+          "thinking_tokens": 44097,
+          "total_tokens": 63932
+        }
+      },
+      "new_tokens": {
+        "primary": {
+          "input_tokens": 12585,
+          "output_tokens": 10655,
+          "thinking_tokens": 20886,
+          "total_tokens": 44126
+        },
+        "repair": {
+          "input_tokens": 14177,
+          "output_tokens": 5658,
+          "thinking_tokens": 44097,
+          "total_tokens": 63932
+        }
+      },
+      "estimated_new_cost_usd": {
+        "primary": 0.127718,
+        "repair": 0.197214,
+        "total": 0.324932
+      },
+      "artifact": "outputs/m3/full/documents/D043_extraction.json"
+    },
+    {
+      "doc_id": "D045",
+      "jurisdiction": "MA",
+      "level": "state",
+      "source_type": "official",
+      "body_chars": 2668,
+      "page_artifacts": 0,
+      "model": "gemini-3.8-flash",
+      "reported_model": "gemini-3.8-flash",
+      "thinking_level": "medium",
+      "prompt_version": "v7",
+      "run_mode": "processed",
+      "primary_cache_hit": false,
+      "repair_cache_hit": null,
+      "primary_provider_calls": 1,
+      "repair_provider_calls": 0,
+      "candidates": 1,
+      "accepted": 1,
+      "rejected": 0,
+      "primary_candidates": 1,
+      "repair_candidates": 0,
+      "repair_targets": 0,
+      "repair_classifications": {},
+      "repair_resolution": null,
+      "unresolved_targets": [],
+      "document_status": "complete",
+      "review_reasons": [],
+      "posture": {
+        "declared": "bill_status_or_summary_page",
+        "established": "bill_status_or_summary_page"
+      },
+      "held": 0,
+      "relative_dates_resolved": 0,
+      "source_basis": {
+        "official_bill_summary": 1
+      },
+      "scope_challenges": [],
+      "scope_modes": {},
+      "scope_mappings": [],
+      "legislative": [
+        {
+          "index": 0,
+          "status": "pending",
+          "basis": "current_session_pending"
+        }
+      ],
+      "empty_result": null,
+      "citations": {
+        "accepted": 1,
+        "exact_match": 1,
+        "normalized_match": 0,
+        "raw_substring": 1,
+        "reconstructed_cross_page": 0
+      },
+      "global_scope": {
+        "proposed": 0,
+        "verified": 0
+      },
+      "errors": [],
+      "tokens_reported": {
+        "primary": {
+          "input_tokens": 4549,
+          "output_tokens": 495,
+          "thinking_tokens": 5043,
+          "total_tokens": 10087
+        },
+        "repair": {}
+      },
+      "new_tokens": {
+        "primary": {
+          "input_tokens": 4549,
+          "output_tokens": 495,
+          "thinking_tokens": 5043,
+          "total_tokens": 10087
+        },
+        "repair": {}
+      },
+      "estimated_new_cost_usd": {
+        "primary": 0.024179,
+        "repair": 0.0,
+        "total": 0.024179
+      },
+      "artifact": "outputs/m3/full/documents/D045_extraction.json"
+    },
+    {
+      "doc_id": "D046",
+      "jurisdiction": "MA",
+      "level": "state",
+      "source_type": "official",
+      "body_chars": 3117,
+      "page_artifacts": 0,
+      "model": "gemini-3.8-flash",
+      "reported_model": "gemini-3.8-flash",
+      "thinking_level": "medium",
+      "prompt_version": "v7",
+      "run_mode": "processed",
+      "primary_cache_hit": false,
+      "repair_cache_hit": null,
+      "primary_provider_calls": 1,
+      "repair_provider_calls": 0,
+      "candidates": 1,
+      "accepted": 1,
+      "rejected": 0,
+      "primary_candidates": 1,
+      "repair_candidates": 0,
+      "repair_targets": 0,
+      "repair_classifications": {},
+      "repair_resolution": null,
+      "unresolved_targets": [],
+      "document_status": "complete",
+      "review_reasons": [],
+      "posture": {
+        "declared": "bill_status_or_summary_page",
+        "established": "bill_status_or_summary_page"
+      },
+      "held": 0,
+      "relative_dates_resolved": 0,
+      "source_basis": {
+        "official_bill_summary": 1
+      },
+      "scope_challenges": [],
+      "scope_modes": {},
+      "scope_mappings": [],
+      "legislative": [
+        {
+          "index": 0,
+          "status": "pending",
+          "basis": "current_session_pending"
+        }
+      ],
+      "empty_result": null,
+      "citations": {
+        "accepted": 1,
+        "exact_match": 1,
+        "normalized_match": 0,
+        "raw_substring": 1,
+        "reconstructed_cross_page": 0
+      },
+      "global_scope": {
+        "proposed": 0,
+        "verified": 0
+      },
+      "errors": [],
+      "tokens_reported": {
+        "primary": {
+          "input_tokens": 4670,
+          "output_tokens": 579,
+          "thinking_tokens": 5710,
+          "total_tokens": 10959
+        },
+        "repair": {}
+      },
+      "new_tokens": {
+        "primary": {
+          "input_tokens": 4670,
+          "output_tokens": 579,
+          "thinking_tokens": 5710,
+          "total_tokens": 10959
+        },
+        "repair": {}
+      },
+      "estimated_new_cost_usd": {
+        "primary": 0.027086,
+        "repair": 0.0,
+        "total": 0.027086
+      },
+      "artifact": "outputs/m3/full/documents/D046_extraction.json"
+    },
+    {
+      "doc_id": "D047",
+      "jurisdiction": "MA",
+      "level": "state",
+      "source_type": "official",
+      "body_chars": 3117,
+      "page_artifacts": 0,
+      "model": "gemini-3.8-flash",
+      "reported_model": "gemini-3.8-flash",
+      "thinking_level": "medium",
+      "prompt_version": "v7",
+      "run_mode": "processed",
+      "primary_cache_hit": false,
+      "repair_cache_hit": null,
+      "primary_provider_calls": 1,
+      "repair_provider_calls": 0,
+      "candidates": 1,
+      "accepted": 1,
+      "rejected": 0,
+      "primary_candidates": 1,
+      "repair_candidates": 0,
+      "repair_targets": 0,
+      "repair_classifications": {},
+      "repair_resolution": null,
+      "unresolved_targets": [],
+      "document_status": "complete",
+      "review_reasons": [],
+      "posture": {
+        "declared": "bill_status_or_summary_page",
+        "established": "bill_status_or_summary_page"
+      },
+      "held": 0,
+      "relative_dates_resolved": 0,
+      "source_basis": {
+        "official_bill_summary": 1
+      },
+      "scope_challenges": [],
+      "scope_modes": {},
+      "scope_mappings": [],
+      "legislative": [
+        {
+          "index": 0,
+          "status": "pending",
+          "basis": "current_session_pending"
+        }
+      ],
+      "empty_result": null,
+      "citations": {
+        "accepted": 1,
+        "exact_match": 1,
+        "normalized_match": 0,
+        "raw_substring": 1,
+        "reconstructed_cross_page": 0
+      },
+      "global_scope": {
+        "proposed": 0,
+        "verified": 0
+      },
+      "errors": [],
+      "tokens_reported": {
+        "primary": {
+          "input_tokens": 4673,
+          "output_tokens": 474,
+          "thinking_tokens": 5609,
+          "total_tokens": 10756
+        },
+        "repair": {}
+      },
+      "new_tokens": {
+        "primary": {
+          "input_tokens": 4673,
+          "output_tokens": 474,
+          "thinking_tokens": 5609,
+          "total_tokens": 10756
+        },
+        "repair": {}
+      },
+      "estimated_new_cost_usd": {
+        "primary": 0.026316,
+        "repair": 0.0,
+        "total": 0.026316
+      },
+      "artifact": "outputs/m3/full/documents/D047_extraction.json"
+    },
+    {
+      "doc_id": "D048",
+      "jurisdiction": "MA",
+      "level": "state",
+      "source_type": "official",
+      "body_chars": 2640,
+      "page_artifacts": 0,
+      "model": "gemini-3.8-flash",
+      "reported_model": "gemini-3.8-flash",
+      "thinking_level": "medium",
+      "prompt_version": "v7",
+      "run_mode": "processed",
+      "primary_cache_hit": false,
+      "repair_cache_hit": null,
+      "primary_provider_calls": 1,
+      "repair_provider_calls": 0,
+      "candidates": 0,
+      "accepted": 0,
+      "rejected": 0,
+      "primary_candidates": 0,
+      "repair_candidates": 0,
+      "repair_targets": 0,
+      "repair_classifications": {},
+      "repair_resolution": null,
+      "unresolved_targets": [],
+      "document_status": "complete",
+      "review_reasons": [],
+      "posture": {
+        "declared": "codified_current_law",
+        "established": "codified_current_law"
+      },
+      "held": 0,
+      "relative_dates_resolved": 0,
+      "source_basis": {},
+      "scope_challenges": [],
+      "scope_modes": {},
+      "scope_mappings": [],
+      "legislative": [],
+      "empty_result": {
+        "reason": "The statute preempts and prohibits municipalities from enacting or enforcing rent control rather than imposing limits on how much or how often rent may be increased or enacting any other in-scope housing requirement.",
+        "evidence": "No city or town may enact, maintain or enforce rent control of any kind",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 306,
+          "end": 377,
+          "occurrences": 1,
+          "model_span": "No city or town may enact, maintain or enforce rent control of any kind",
+          "source_span": "No city or town may enact, maintain or enforce rent control of any kind",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [],
+          "crossed_artifacts": []
+        },
+        "verified": true,
+        "problem": null
+      },
+      "citations": {
+        "accepted": 0,
+        "exact_match": 0,
+        "normalized_match": 0,
+        "raw_substring": 0,
+        "reconstructed_cross_page": 0
+      },
+      "global_scope": {
+        "proposed": 0,
+        "verified": 0
+      },
+      "errors": [],
+      "tokens_reported": {
+        "primary": {
+          "input_tokens": 4479,
+          "output_tokens": 669,
+          "thinking_tokens": 14925,
+          "total_tokens": 20073
+        },
+        "repair": {}
+      },
+      "new_tokens": {
+        "primary": {
+          "input_tokens": 4479,
+          "output_tokens": 669,
+          "thinking_tokens": 14925,
+          "total_tokens": 20073
+        },
+        "repair": {}
+      },
+      "estimated_new_cost_usd": {
+        "primary": 0.061837,
+        "repair": 0.0,
+        "total": 0.061837
+      },
+      "artifact": "outputs/m3/full/documents/D048_extraction.json"
+    },
+    {
+      "doc_id": "D049",
+      "jurisdiction": "MA",
+      "level": "state",
+      "source_type": "official",
+      "body_chars": 55862,
+      "page_artifacts": 0,
+      "model": "gemini-3.8-flash",
+      "reported_model": "gemini-3.8-flash",
+      "thinking_level": "medium",
+      "prompt_version": "v7",
+      "run_mode": "processed",
+      "primary_cache_hit": false,
+      "repair_cache_hit": false,
+      "primary_provider_calls": 1,
+      "repair_provider_calls": 1,
+      "candidates": 1,
+      "accepted": 1,
+      "rejected": 0,
+      "primary_candidates": 1,
+      "repair_candidates": 0,
+      "repair_targets": 0,
+      "repair_classifications": {},
+      "repair_resolution": {
+        "before_repair": 0,
+        "resolved_by_accepted_rule": 0,
+        "resolved_out_of_scope": 0,
+        "still_unresolved": 0
+      },
+      "unresolved_targets": [],
+      "document_status": "complete",
+      "review_reasons": [],
+      "posture": {
+        "declared": "codified_current_law",
+        "established": "codified_current_law"
+      },
+      "held": 0,
+      "relative_dates_resolved": 0,
+      "source_basis": {
+        "operative_text": 1
+      },
+      "scope_challenges": [],
+      "scope_modes": {
+        "S1": "named_subject"
+      },
+      "scope_mappings": [
+        "S1->P23: does_not_apply"
+      ],
+      "legislative": [],
+      "empty_result": null,
+      "citations": {
+        "accepted": 1,
+        "exact_match": 1,
+        "normalized_match": 0,
+        "raw_substring": 1,
+        "reconstructed_cross_page": 0
+      },
+      "global_scope": {
+        "proposed": 1,
+        "verified": 1
+      },
+      "errors": [],
+      "tokens_reported": {
+        "primary": {
+          "input_tokens": 14547,
+          "output_tokens": 5044,
+          "thinking_tokens": 12266,
+          "total_tokens": 31857
+        },
+        "repair": {
+          "input_tokens": 14308,
+          "output_tokens": 228,
+          "thinking_tokens": 1341,
+          "total_tokens": 15877
+        }
+      },
+      "new_tokens": {
+        "primary": {
+          "input_tokens": 14547,
+          "output_tokens": 5044,
+          "thinking_tokens": 12266,
+          "total_tokens": 31857
+        },
+        "repair": {
+          "input_tokens": 14308,
+          "output_tokens": 228,
+          "thinking_tokens": 1341,
+          "total_tokens": 15877
+        }
+      },
+      "estimated_new_cost_usd": {
+        "primary": 0.075823,
+        "repair": 0.016615,
+        "total": 0.092438
+      },
+      "artifact": "outputs/m3/full/documents/D049_extraction.json"
+    },
+    {
+      "doc_id": "D050",
+      "jurisdiction": "MA",
+      "level": "state",
+      "source_type": "official",
+      "body_chars": 2282,
+      "page_artifacts": 0,
+      "model": "gemini-3.8-flash",
+      "reported_model": "gemini-3.8-flash",
+      "thinking_level": "medium",
+      "prompt_version": "v7",
+      "run_mode": "processed",
+      "primary_cache_hit": false,
+      "repair_cache_hit": null,
+      "primary_provider_calls": 1,
+      "repair_provider_calls": 0,
+      "candidates": 2,
+      "accepted": 2,
+      "rejected": 0,
+      "primary_candidates": 2,
+      "repair_candidates": 0,
+      "repair_targets": 0,
+      "repair_classifications": {},
+      "repair_resolution": null,
+      "unresolved_targets": [],
+      "document_status": "complete",
+      "review_reasons": [],
+      "posture": {
+        "declared": "codified_current_law",
+        "established": "codified_current_law"
+      },
+      "held": 0,
+      "relative_dates_resolved": 0,
+      "source_basis": {
+        "operative_text": 2
+      },
+      "scope_challenges": [],
+      "scope_modes": {},
+      "scope_mappings": [],
+      "legislative": [],
+      "empty_result": null,
+      "citations": {
+        "accepted": 2,
+        "exact_match": 2,
+        "normalized_match": 0,
+        "raw_substring": 2,
+        "reconstructed_cross_page": 0
+      },
+      "global_scope": {
+        "proposed": 0,
+        "verified": 0
+      },
+      "errors": [],
+      "tokens_reported": {
+        "primary": {
+          "input_tokens": 4422,
+          "output_tokens": 1227,
+          "thinking_tokens": 17566,
+          "total_tokens": 23215
+        },
+        "repair": {}
+      },
+      "new_tokens": {
+        "primary": {
+          "input_tokens": 4422,
+          "output_tokens": 1227,
+          "thinking_tokens": 17566,
+          "total_tokens": 23215
+        },
+        "repair": {}
+      },
+      "estimated_new_cost_usd": {
+        "primary": 0.07379,
+        "repair": 0.0,
+        "total": 0.07379
+      },
+      "artifact": "outputs/m3/full/documents/D050_extraction.json"
+    },
+    {
+      "doc_id": "D051",
+      "jurisdiction": "MA",
+      "level": "state",
+      "source_type": "official",
+      "body_chars": 3945,
+      "page_artifacts": 0,
+      "model": "gemini-3.8-flash",
+      "reported_model": "gemini-3.8-flash",
+      "thinking_level": "medium",
+      "prompt_version": "v7",
+      "run_mode": "processed",
+      "primary_cache_hit": false,
+      "repair_cache_hit": null,
+      "primary_provider_calls": 1,
+      "repair_provider_calls": 0,
+      "candidates": 7,
+      "accepted": 7,
+      "rejected": 0,
+      "primary_candidates": 7,
+      "repair_candidates": 0,
+      "repair_targets": 0,
+      "repair_classifications": {},
+      "repair_resolution": null,
+      "unresolved_targets": [],
+      "document_status": "complete",
+      "review_reasons": [],
+      "posture": {
+        "declared": "codified_current_law",
+        "established": "codified_current_law"
+      },
+      "held": 0,
+      "relative_dates_resolved": 0,
+      "source_basis": {
+        "operative_text": 7
+      },
+      "scope_challenges": [],
+      "scope_modes": {},
+      "scope_mappings": [],
+      "legislative": [],
+      "empty_result": null,
+      "citations": {
+        "accepted": 7,
+        "exact_match": 7,
+        "normalized_match": 0,
+        "raw_substring": 7,
+        "reconstructed_cross_page": 0
+      },
+      "global_scope": {
+        "proposed": 0,
+        "verified": 0
+      },
+      "errors": [],
+      "tokens_reported": {
+        "primary": {
+          "input_tokens": 4738,
+          "output_tokens": 3972,
+          "thinking_tokens": 10811,
+          "total_tokens": 19521
+        },
+        "repair": {}
+      },
+      "new_tokens": {
+        "primary": {
+          "input_tokens": 4738,
+          "output_tokens": 3972,
+          "thinking_tokens": 10811,
+          "total_tokens": 19521
+        },
+        "repair": {}
+      },
+      "estimated_new_cost_usd": {
+        "primary": 0.05899,
+        "repair": 0.0,
+        "total": 0.05899
+      },
+      "artifact": "outputs/m3/full/documents/D051_extraction.json"
+    },
+    {
+      "doc_id": "D052",
+      "jurisdiction": "MA",
+      "level": "state",
+      "source_type": "official",
+      "body_chars": 26006,
+      "page_artifacts": 0,
+      "model": "gemini-3.8-flash",
+      "reported_model": "gemini-3.8-flash",
+      "thinking_level": "medium",
+      "prompt_version": "v7",
+      "run_mode": "processed",
+      "primary_cache_hit": true,
+      "repair_cache_hit": null,
+      "primary_provider_calls": 0,
+      "repair_provider_calls": 0,
+      "candidates": 17,
+      "accepted": 17,
+      "rejected": 0,
+      "primary_candidates": 17,
+      "repair_candidates": 0,
+      "repair_targets": 0,
+      "repair_classifications": {},
+      "repair_resolution": null,
+      "unresolved_targets": [],
+      "document_status": "complete",
+      "review_reasons": [],
+      "posture": {
+        "declared": "codified_current_law",
+        "established": "codified_current_law"
+      },
+      "held": 0,
+      "relative_dates_resolved": 0,
+      "source_basis": {
+        "operative_text": 17
+      },
+      "scope_challenges": [],
+      "scope_modes": {
+        "S1": "structural"
+      },
+      "scope_mappings": [],
+      "legislative": [],
+      "empty_result": null,
+      "citations": {
+        "accepted": 17,
+        "exact_match": 17,
+        "normalized_match": 0,
+        "raw_substring": 17,
+        "reconstructed_cross_page": 0
+      },
+      "global_scope": {
+        "proposed": 1,
+        "verified": 1
+      },
+      "errors": [],
+      "tokens_reported": {
+        "primary": {
+          "input_tokens": 9221,
+          "output_tokens": 13043,
+          "thinking_tokens": 25564,
+          "total_tokens": 47828
+        },
+        "repair": {}
+      },
+      "new_tokens": {
+        "primary": {},
+        "repair": {}
+      },
+      "estimated_new_cost_usd": {
+        "primary": 0.0,
+        "repair": 0.0,
+        "total": 0.0
+      },
+      "artifact": "outputs/m3/full/documents/D052_extraction.json"
+    },
+    {
+      "doc_id": "D053",
+      "jurisdiction": "MA",
+      "level": "state",
+      "source_type": "official",
+      "body_chars": 4148,
+      "page_artifacts": 0,
+      "model": "gemini-3.8-flash",
+      "reported_model": "gemini-3.8-flash",
+      "thinking_level": "medium",
+      "prompt_version": "v7",
+      "run_mode": "processed",
+      "primary_cache_hit": false,
+      "repair_cache_hit": null,
+      "primary_provider_calls": 1,
+      "repair_provider_calls": 0,
+      "candidates": 0,
+      "accepted": 0,
+      "rejected": 0,
+      "primary_candidates": 0,
+      "repair_candidates": 0,
+      "repair_targets": 0,
+      "repair_classifications": {},
+      "repair_resolution": null,
+      "unresolved_targets": [],
+      "document_status": "complete",
+      "review_reasons": [],
+      "posture": {
+        "declared": "codified_current_law",
+        "established": "codified_current_law"
+      },
+      "held": 0,
+      "relative_dates_resolved": 0,
+      "source_basis": {},
+      "scope_challenges": [],
+      "scope_modes": {},
+      "scope_mappings": [],
+      "legislative": [],
+      "empty_result": {
+        "reason": "This section provides protections and remedies against landlord reprisals for tenant organizing and reporting violations of law, which is an anti-retaliation statute that does not fit into just cause eviction, rent increase limits, security deposits, application screening fees, screening restrictions, or algorithmic rent setting.",
+        "evidence": "Reprisal for reporting violations of law or for tenant's union activity; damages and costs; notice of termination, presumption; waiver in leases or other rental agreements prohibited",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 266,
+          "end": 448,
+          "occurrences": 1,
+          "model_span": "Reprisal for reporting violations of law or for tenant's union activity; damages and costs; notice of termination, presumption; waiver in leases or other rental agreements prohibited",
+          "source_span": "Reprisal for reporting violations of law or for tenant's union activity; damages and costs; notice of termination, presumption; waiver in leases or other rental agreements prohibited",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [],
+          "crossed_artifacts": []
+        },
+        "verified": true,
+        "problem": null
+      },
+      "citations": {
+        "accepted": 0,
+        "exact_match": 0,
+        "normalized_match": 0,
+        "raw_substring": 0,
+        "reconstructed_cross_page": 0
+      },
+      "global_scope": {
+        "proposed": 0,
+        "verified": 0
+      },
+      "errors": [],
+      "tokens_reported": {
+        "primary": {
+          "input_tokens": 4779,
+          "output_tokens": 655,
+          "thinking_tokens": 16519,
+          "total_tokens": 21953
+        },
+        "repair": {}
+      },
+      "new_tokens": {
+        "primary": {
+          "input_tokens": 4779,
+          "output_tokens": 655,
+          "thinking_tokens": 16519,
+          "total_tokens": 21953
+        },
+        "repair": {}
+      },
+      "estimated_new_cost_usd": {
+        "primary": 0.067987,
+        "repair": 0.0,
+        "total": 0.067987
+      },
+      "artifact": "outputs/m3/full/documents/D053_extraction.json"
+    },
+    {
+      "doc_id": "D057",
+      "jurisdiction": "MA",
+      "level": "state",
+      "source_type": "official",
+      "body_chars": 2627,
+      "page_artifacts": 0,
+      "model": "gemini-3.8-flash",
+      "reported_model": "gemini-3.8-flash",
+      "thinking_level": "medium",
+      "prompt_version": "v7",
+      "run_mode": "processed",
+      "primary_cache_hit": false,
+      "repair_cache_hit": null,
+      "primary_provider_calls": 1,
+      "repair_provider_calls": 0,
+      "candidates": 1,
+      "accepted": 1,
+      "rejected": 0,
+      "primary_candidates": 1,
+      "repair_candidates": 0,
+      "repair_targets": 0,
+      "repair_classifications": {},
+      "repair_resolution": null,
+      "unresolved_targets": [],
+      "document_status": "complete",
+      "review_reasons": [],
+      "posture": {
+        "declared": "codified_current_law",
+        "established": "codified_current_law"
+      },
+      "held": 0,
+      "relative_dates_resolved": 0,
+      "source_basis": {
+        "operative_text": 1
+      },
+      "scope_challenges": [],
+      "scope_modes": {},
+      "scope_mappings": [],
+      "legislative": [],
+      "empty_result": null,
+      "citations": {
+        "accepted": 1,
+        "exact_match": 1,
+        "normalized_match": 0,
+        "raw_substring": 1,
+        "reconstructed_cross_page": 0
+      },
+      "global_scope": {
+        "proposed": 0,
+        "verified": 0
+      },
+      "errors": [],
+      "tokens_reported": {
+        "primary": {
+          "input_tokens": 4563,
+          "output_tokens": 1117,
+          "thinking_tokens": 21711,
+          "total_tokens": 27391
+        },
+        "repair": {}
+      },
+      "new_tokens": {
+        "primary": {
+          "input_tokens": 4563,
+          "output_tokens": 1117,
+          "thinking_tokens": 21711,
+          "total_tokens": 27391
+        },
+        "repair": {}
+      },
+      "estimated_new_cost_usd": {
+        "primary": 0.089027,
+        "repair": 0.0,
+        "total": 0.089027
+      },
+      "artifact": "outputs/m3/full/documents/D057_extraction.json"
+    },
+    {
+      "doc_id": "D058",
+      "jurisdiction": "MA",
+      "level": "state",
+      "source_type": "official",
+      "body_chars": 2828,
+      "page_artifacts": 0,
+      "model": "gemini-3.8-flash",
+      "reported_model": "gemini-3.8-flash",
+      "thinking_level": "medium",
+      "prompt_version": "v7",
+      "run_mode": "processed",
+      "primary_cache_hit": false,
+      "repair_cache_hit": null,
+      "primary_provider_calls": 1,
+      "repair_provider_calls": 0,
+      "candidates": 2,
+      "accepted": 2,
+      "rejected": 0,
+      "primary_candidates": 2,
+      "repair_candidates": 0,
+      "repair_targets": 0,
+      "repair_classifications": {},
+      "repair_resolution": null,
+      "unresolved_targets": [],
+      "document_status": "complete",
+      "review_reasons": [],
+      "posture": {
+        "declared": "codified_current_law",
+        "established": "codified_current_law"
+      },
+      "held": 0,
+      "relative_dates_resolved": 0,
+      "source_basis": {
+        "operative_text": 2
+      },
+      "scope_challenges": [],
+      "scope_modes": {},
+      "scope_mappings": [],
+      "legislative": [],
+      "empty_result": null,
+      "citations": {
+        "accepted": 2,
+        "exact_match": 2,
+        "normalized_match": 0,
+        "raw_substring": 2,
+        "reconstructed_cross_page": 0
+      },
+      "global_scope": {
+        "proposed": 0,
+        "verified": 0
+      },
+      "errors": [],
+      "tokens_reported": {
+        "primary": {
+          "input_tokens": 4539,
+          "output_tokens": 1443,
+          "thinking_tokens": 7244,
+          "total_tokens": 13226
+        },
+        "repair": {}
+      },
+      "new_tokens": {
+        "primary": {
+          "input_tokens": 4539,
+          "output_tokens": 1443,
+          "thinking_tokens": 7244,
+          "total_tokens": 13226
+        },
+        "repair": {}
+      },
+      "estimated_new_cost_usd": {
+        "primary": 0.03598,
+        "repair": 0.0,
+        "total": 0.03598
+      },
+      "artifact": "outputs/m3/full/documents/D058_extraction.json"
+    },
+    {
+      "doc_id": "D065",
+      "jurisdiction": "NJ",
+      "level": "state",
+      "source_type": "official",
+      "body_chars": 20827,
+      "page_artifacts": 0,
+      "model": "gemini-3.8-flash",
+      "reported_model": "gemini-3.8-flash",
+      "thinking_level": "medium",
+      "prompt_version": "v7",
+      "run_mode": "processed",
+      "primary_cache_hit": false,
+      "repair_cache_hit": false,
+      "primary_provider_calls": 1,
+      "repair_provider_calls": 1,
+      "candidates": 19,
+      "accepted": 19,
+      "rejected": 0,
+      "primary_candidates": 19,
+      "repair_candidates": 0,
+      "repair_targets": 1,
+      "repair_classifications": {
+        "out_of_scope": 1
+      },
+      "repair_resolution": {
+        "before_repair": 1,
+        "resolved_by_accepted_rule": 0,
+        "resolved_out_of_scope": 0,
+        "still_unresolved": 1
+      },
+      "unresolved_targets": [
+        "§ 6 (C.46:8-57)"
+      ],
+      "document_status": "review_required",
+      "review_reasons": [
+        "named-subject scope mappings unresolved (not applied): ['S1->P6 (its evidence is not source text)']",
+        "repair targets still unresolved: § 6 (C.46:8-57) (classified out_of_scope without a reason and verified evidence (evidence is not text of the target subdivision))"
+      ],
+      "posture": {
+        "declared": "enacted_session_law",
+        "established": "enacted_session_law"
+      },
+      "held": 0,
+      "relative_dates_resolved": 19,
+      "source_basis": {
+        "operative_text": 19
+      },
+      "scope_challenges": [
+        "§ 6 (C.46:8-57)"
+      ],
+      "scope_modes": {
+        "S1": "named_subject"
+      },
+      "scope_mappings": [
+        "S1->P4: applies",
+        "S1->P5: applies",
+        "S1->P6: unresolved",
+        "S1->P7: applies",
+        "S1->P8: applies",
+        "S1->P9: applies",
+        "S1->P10: applies",
+        "S1->P11: applies",
+        "S1->P12: applies",
+        "S1->P13: applies",
+        "S1->P14: applies",
+        "S1->P16: applies",
+        "S1->P17: applies",
+        "S1->P18: applies",
+        "S1->P20: applies",
+        "S1->P21: applies",
+        "S1->P24: applies",
+        "S1->P25: applies",
+        "S1->P26: applies"
+      ],
+      "legislative": [],
+      "empty_result": null,
+      "citations": {
+        "accepted": 19,
+        "exact_match": 19,
+        "normalized_match": 0,
+        "raw_substring": 19,
+        "reconstructed_cross_page": 0
+      },
+      "global_scope": {
+        "proposed": 1,
+        "verified": 1
+      },
+      "errors": [],
+      "tokens_reported": {
+        "primary": {
+          "input_tokens": 8806,
+          "output_tokens": 13242,
+          "thinking_tokens": 32153,
+          "total_tokens": 54201
+        },
+        "repair": {
+          "input_tokens": 11430,
+          "output_tokens": 3357,
+          "thinking_tokens": 7620,
+          "total_tokens": 22407
+        }
+      },
+      "new_tokens": {
+        "primary": {
+          "input_tokens": 8806,
+          "output_tokens": 13242,
+          "thinking_tokens": 32153,
+          "total_tokens": 54201
+        },
+        "repair": {
+          "input_tokens": 11430,
+          "output_tokens": 3357,
+          "thinking_tokens": 7620,
+          "total_tokens": 22407
+        }
+      },
+      "estimated_new_cost_usd": {
+        "primary": 0.176836,
+        "repair": 0.049736,
+        "total": 0.226572
+      },
+      "artifact": "outputs/m3/full/documents/D065_extraction.json"
+    },
+    {
+      "doc_id": "D066",
+      "jurisdiction": "NJ",
+      "level": "state",
+      "source_type": "official",
+      "body_chars": 4064,
+      "page_artifacts": 0,
+      "model": "gemini-3.8-flash",
+      "reported_model": "gemini-3.8-flash",
+      "thinking_level": "medium",
+      "prompt_version": "v7",
+      "run_mode": "processed",
+      "primary_cache_hit": false,
+      "repair_cache_hit": false,
+      "primary_provider_calls": 1,
+      "repair_provider_calls": 1,
+      "candidates": 3,
+      "accepted": 3,
+      "rejected": 0,
+      "primary_candidates": 3,
+      "repair_candidates": 0,
+      "repair_targets": 0,
+      "repair_classifications": {},
+      "repair_resolution": {
+        "before_repair": 0,
+        "resolved_by_accepted_rule": 0,
+        "resolved_out_of_scope": 0,
+        "still_unresolved": 0
+      },
+      "unresolved_targets": [],
+      "document_status": "complete",
+      "review_reasons": [],
+      "posture": {
+        "declared": "enacted_session_law",
+        "established": "enacted_session_law"
+      },
+      "held": 0,
+      "relative_dates_resolved": 3,
+      "source_basis": {
+        "operative_text": 3
+      },
+      "scope_challenges": [],
+      "scope_modes": {
+        "S1": "named_subject",
+        "S2": "named_subject"
+      },
+      "scope_mappings": [
+        "S1->P1: applies",
+        "S2->P1: applies"
+      ],
+      "legislative": [],
+      "empty_result": null,
+      "citations": {
+        "accepted": 3,
+        "exact_match": 3,
+        "normalized_match": 0,
+        "raw_substring": 3,
+        "reconstructed_cross_page": 0
+      },
+      "global_scope": {
+        "proposed": 2,
+        "verified": 2
+      },
+      "errors": [],
+      "tokens_reported": {
+        "primary": {
+          "input_tokens": 4956,
+          "output_tokens": 3059,
+          "thinking_tokens": 14330,
+          "total_tokens": 22345
+        },
+        "repair": {
+          "input_tokens": 4831,
+          "output_tokens": 373,
+          "thinking_tokens": 1317,
+          "total_tokens": 6521
+        }
+      },
+      "new_tokens": {
+        "primary": {
+          "input_tokens": 4956,
+          "output_tokens": 3059,
+          "thinking_tokens": 14330,
+          "total_tokens": 22345
+        },
+        "repair": {
+          "input_tokens": 4831,
+          "output_tokens": 373,
+          "thinking_tokens": 1317,
+          "total_tokens": 6521
+        }
+      },
+      "estimated_new_cost_usd": {
+        "primary": 0.068926,
+        "repair": 0.009961,
+        "total": 0.078887
+      },
+      "artifact": "outputs/m3/full/documents/D066_extraction.json"
+    },
+    {
+      "doc_id": "D068",
+      "jurisdiction": "NJ",
+      "level": "state",
+      "source_type": "official",
+      "body_chars": 6719,
+      "page_artifacts": 0,
+      "model": "gemini-3.8-flash",
+      "reported_model": "gemini-3.8-flash",
+      "thinking_level": "medium",
+      "prompt_version": "v7",
+      "run_mode": "processed",
+      "primary_cache_hit": false,
+      "repair_cache_hit": false,
+      "primary_provider_calls": 1,
+      "repair_provider_calls": 1,
+      "candidates": 1,
+      "accepted": 0,
+      "rejected": 1,
+      "primary_candidates": 1,
+      "repair_candidates": 0,
+      "repair_targets": 0,
+      "repair_classifications": {},
+      "repair_resolution": {
+        "before_repair": 0,
+        "resolved_by_accepted_rule": 0,
+        "resolved_out_of_scope": 0,
+        "still_unresolved": 0
+      },
+      "unresolved_targets": [],
+      "document_status": "review_required",
+      "review_reasons": [
+        "1 candidate record(s) held, not published, because the time of application is unresolved: ['temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force']"
+      ],
+      "posture": {
+        "declared": "official_explanatory_page",
+        "established": "official_explanatory_page"
+      },
+      "held": 1,
+      "relative_dates_resolved": 0,
+      "source_basis": {},
+      "scope_challenges": [],
+      "scope_modes": {
+        "S1": "named_subject",
+        "S2": "named_subject",
+        "S3": "named_subject",
+        "S4": "named_subject",
+        "S5": "named_subject"
+      },
+      "scope_mappings": [
+        "S1->P12: applies",
+        "S2->P12: applies",
+        "S3->P12: applies",
+        "S4->P12: does_not_apply"
+      ],
+      "legislative": [],
+      "empty_result": null,
+      "citations": {
+        "accepted": 0,
+        "exact_match": 0,
+        "normalized_match": 0,
+        "raw_substring": 0,
+        "reconstructed_cross_page": 0
+      },
+      "global_scope": {
+        "proposed": 5,
+        "verified": 5
+      },
+      "errors": [],
+      "tokens_reported": {
+        "primary": {
+          "input_tokens": 5531,
+          "output_tokens": 3604,
+          "thinking_tokens": 22605,
+          "total_tokens": 31740
+        },
+        "repair": {
+          "input_tokens": 5946,
+          "output_tokens": 661,
+          "thinking_tokens": 4692,
+          "total_tokens": 11299
+        }
+      },
+      "new_tokens": {
+        "primary": {
+          "input_tokens": 5531,
+          "output_tokens": 3604,
+          "thinking_tokens": 22605,
+          "total_tokens": 31740
+        },
+        "repair": {
+          "input_tokens": 5946,
+          "output_tokens": 661,
+          "thinking_tokens": 4692,
+          "total_tokens": 11299
+        }
+      },
+      "estimated_new_cost_usd": {
+        "primary": 0.102432,
+        "repair": 0.024533,
+        "total": 0.126965
+      },
+      "artifact": "outputs/m3/full/documents/D068_extraction.json"
+    },
+    {
+      "doc_id": "D069",
+      "jurisdiction": "NJ",
+      "level": "state",
+      "source_type": "official",
+      "body_chars": 10259,
+      "page_artifacts": 0,
+      "model": "gemini-3.8-flash",
+      "reported_model": "gemini-3.8-flash",
+      "thinking_level": "medium",
+      "prompt_version": "v7",
+      "run_mode": "processed",
+      "primary_cache_hit": false,
+      "repair_cache_hit": null,
+      "primary_provider_calls": 1,
+      "repair_provider_calls": 0,
+      "candidates": 1,
+      "accepted": 0,
+      "rejected": 1,
+      "primary_candidates": 1,
+      "repair_candidates": 0,
+      "repair_targets": 0,
+      "repair_classifications": {},
+      "repair_resolution": null,
+      "unresolved_targets": [],
+      "document_status": "review_required",
+      "review_reasons": [
+        "in-scope provisions whose candidate records were all rejected: ['§ 4']"
+      ],
+      "posture": {
+        "declared": "enacted_session_law",
+        "established": "enacted_session_law"
+      },
+      "held": 0,
+      "relative_dates_resolved": 1,
+      "source_basis": {},
+      "scope_challenges": [],
+      "scope_modes": {
+        "S1": "named_subject",
+        "S2": "named_subject",
+        "S3": "named_subject",
+        "S4": "named_subject",
+        "S5": "named_subject",
+        "S6": "named_subject",
+        "S7": "named_subject"
+      },
+      "scope_mappings": [],
+      "legislative": [],
+      "empty_result": null,
+      "citations": {
+        "accepted": 0,
+        "exact_match": 0,
+        "normalized_match": 0,
+        "raw_substring": 0,
+        "reconstructed_cross_page": 0
+      },
+      "global_scope": {
+        "proposed": 7,
+        "verified": 7
+      },
+      "errors": [],
+      "tokens_reported": {
+        "primary": {
+          "input_tokens": 6443,
+          "output_tokens": 3516,
+          "thinking_tokens": 23438,
+          "total_tokens": 33397
+        },
+        "repair": {}
+      },
+      "new_tokens": {
+        "primary": {
+          "input_tokens": 6443,
+          "output_tokens": 3516,
+          "thinking_tokens": 23438,
+          "total_tokens": 33397
+        },
+        "repair": {}
+      },
+      "estimated_new_cost_usd": {
+        "primary": 0.10591,
+        "repair": 0.0,
+        "total": 0.10591
+      },
+      "artifact": "outputs/m3/full/documents/D069_extraction.json"
+    },
+    {
+      "doc_id": "D073",
+      "jurisdiction": "San Diego, CA",
+      "level": "city",
+      "source_type": "official",
+      "body_chars": 38916,
+      "page_artifacts": 19,
+      "model": "gemini-3.8-flash",
+      "reported_model": "gemini-3.8-flash",
+      "thinking_level": "medium",
+      "prompt_version": "v7",
+      "run_mode": "processed",
+      "primary_cache_hit": false,
+      "repair_cache_hit": false,
+      "primary_provider_calls": 1,
+      "repair_provider_calls": 1,
+      "candidates": 48,
+      "accepted": 48,
+      "rejected": 0,
+      "primary_candidates": 36,
+      "repair_candidates": 12,
+      "repair_targets": 12,
+      "repair_classifications": {
+        "in_scope": 12
+      },
+      "repair_resolution": {
+        "before_repair": 12,
+        "resolved_by_accepted_rule": 12,
+        "resolved_out_of_scope": 0,
+        "still_unresolved": 0
+      },
+      "unresolved_targets": [],
+      "document_status": "complete",
+      "review_reasons": [],
+      "posture": {
+        "declared": "codified_current_law",
+        "established": "codified_current_law"
+      },
+      "held": 0,
+      "relative_dates_resolved": 0,
+      "source_basis": {
+        "operative_text": 48
+      },
+      "scope_challenges": [],
+      "scope_modes": {
+        "S1": "structural",
+        "S2": "structural",
+        "S3": "structural",
+        "S4": "structural",
+        "S5": "structural",
+        "S6": "structural",
+        "S7": "structural",
+        "S8": "structural",
+        "S9": "structural",
+        "S10": "structural",
+        "S11": "structural",
+        "S12": "structural"
+      },
+      "scope_mappings": [],
+      "legislative": [],
+      "empty_result": null,
+      "citations": {
+        "accepted": 48,
+        "exact_match": 47,
+        "normalized_match": 1,
+        "raw_substring": 48,
+        "reconstructed_cross_page": 0
+      },
+      "global_scope": {
+        "proposed": 12,
+        "verified": 12
+      },
+      "errors": [],
+      "tokens_reported": {
+        "primary": {
+          "input_tokens": 13664,
+          "output_tokens": 23008,
+          "thinking_tokens": 35301,
+          "total_tokens": 71973
+        },
+        "repair": {
+          "input_tokens": 14423,
+          "output_tokens": 7980,
+          "thinking_tokens": 30151,
+          "total_tokens": 52554
+        }
+      },
+      "new_tokens": {
+        "primary": {
+          "input_tokens": 13664,
+          "output_tokens": 23008,
+          "thinking_tokens": 35301,
+          "total_tokens": 71973
+        },
+        "repair": {
+          "input_tokens": 14423,
+          "output_tokens": 7980,
+          "thinking_tokens": 30151,
+          "total_tokens": 52554
+        }
+      },
+      "estimated_new_cost_usd": {
+        "primary": 0.228907,
+        "repair": 0.153808,
+        "total": 0.382715
+      },
+      "artifact": "outputs/m3/full/documents/D073_extraction.json"
+    },
+    {
+      "doc_id": "D076",
+      "jurisdiction": "San Diego, CA",
+      "level": "city",
+      "source_type": "official",
+      "body_chars": 23097,
+      "page_artifacts": 0,
+      "model": "gemini-3.8-flash",
+      "reported_model": "gemini-3.8-flash",
+      "thinking_level": "medium",
+      "prompt_version": "v7",
+      "run_mode": "processed",
+      "primary_cache_hit": false,
+      "repair_cache_hit": false,
+      "primary_provider_calls": 1,
+      "repair_provider_calls": 1,
+      "candidates": 3,
+      "accepted": 3,
+      "rejected": 0,
+      "primary_candidates": 3,
+      "repair_candidates": 0,
+      "repair_targets": 0,
+      "repair_classifications": {},
+      "repair_resolution": {
+        "before_repair": 0,
+        "resolved_by_accepted_rule": 0,
+        "resolved_out_of_scope": 0,
+        "still_unresolved": 0
+      },
+      "unresolved_targets": [],
+      "document_status": "complete",
+      "review_reasons": [],
+      "posture": {
+        "declared": "pending_bill",
+        "established": "pending_bill"
+      },
+      "held": 0,
+      "relative_dates_resolved": 0,
+      "source_basis": {
+        "operative_text": 3
+      },
+      "scope_challenges": [],
+      "scope_modes": {
+        "S1": "named_subject",
+        "S2": "named_subject"
+      },
+      "scope_mappings": [
+        "S1->P3: applies",
+        "S1->P4: applies",
+        "S1->P5: does_not_apply",
+        "S2->P3: applies",
+        "S2->P4: applies",
+        "S2->P5: does_not_apply"
+      ],
+      "legislative": [
+        {
+          "index": 0,
+          "status": "pending",
+          "basis": "model_status_with_evidence"
+        },
+        {
+          "index": 1,
+          "status": "pending",
+          "basis": "model_status_with_evidence"
+        },
+        {
+          "index": 2,
+          "status": "pending",
+          "basis": "model_status_with_evidence"
+        }
+      ],
+      "empty_result": null,
+      "citations": {
+        "accepted": 3,
+        "exact_match": 3,
+        "normalized_match": 0,
+        "raw_substring": 3,
+        "reconstructed_cross_page": 0
+      },
+      "global_scope": {
+        "proposed": 2,
+        "verified": 2
+      },
+      "errors": [],
+      "tokens_reported": {
+        "primary": {
+          "input_tokens": 9783,
+          "output_tokens": 2934,
+          "thinking_tokens": 13011,
+          "total_tokens": 25728
+        },
+        "repair": {
+          "input_tokens": 10593,
+          "output_tokens": 1068,
+          "thinking_tokens": 5530,
+          "total_tokens": 17191
+        }
+      },
+      "new_tokens": {
+        "primary": {
+          "input_tokens": 9783,
+          "output_tokens": 2934,
+          "thinking_tokens": 13011,
+          "total_tokens": 25728
+        },
+        "repair": {
+          "input_tokens": 10593,
+          "output_tokens": 1068,
+          "thinking_tokens": 5530,
+          "total_tokens": 17191
+        }
+      },
+      "estimated_new_cost_usd": {
+        "primary": 0.067131,
+        "repair": 0.032687,
+        "total": 0.099818
+      },
+      "artifact": "outputs/m3/full/documents/D076_extraction.json"
+    },
+    {
+      "doc_id": "D078",
+      "jurisdiction": "San Francisco, CA",
+      "level": "city",
+      "source_type": "official",
+      "body_chars": 6944,
+      "page_artifacts": 0,
+      "model": "gemini-3.8-flash",
+      "reported_model": "gemini-3.8-flash",
+      "thinking_level": "medium",
+      "prompt_version": "v7",
+      "run_mode": "processed",
+      "primary_cache_hit": false,
+      "repair_cache_hit": null,
+      "primary_provider_calls": 1,
+      "repair_provider_calls": 0,
+      "candidates": 0,
+      "accepted": 0,
+      "rejected": 0,
+      "primary_candidates": 0,
+      "repair_candidates": 0,
+      "repair_targets": 0,
+      "repair_classifications": {},
+      "repair_resolution": null,
+      "unresolved_targets": [],
+      "document_status": "complete",
+      "review_reasons": [],
+      "posture": {
+        "declared": "official_explanatory_page",
+        "established": "official_explanatory_page"
+      },
+      "held": 0,
+      "relative_dates_resolved": 0,
+      "source_basis": {},
+      "scope_challenges": [],
+      "scope_modes": {},
+      "scope_mappings": [],
+      "legislative": [],
+      "empty_result": {
+        "reason": "The document is a municipal agency website homepage containing calendar events, announcements, and general informational links, with no substantive legal provisions or operative rental housing rules.",
+        "evidence": "Rooted in community, the Human Rights Commission works in service of the City’s anti-discrimination laws by protecting civil rights, upholding dignity, and advancing equitable outcomes in San Francisco.",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 85,
+          "end": 287,
+          "occurrences": 1,
+          "model_span": "Rooted in community, the Human Rights Commission works in service of the City’s anti-discrimination laws by protecting civil rights, upholding dignity, and advancing equitable outcomes in San Francisco.",
+          "source_span": "Rooted in community, the Human Rights Commission works in service of the City’s anti-discrimination laws by protecting civil rights, upholding dignity, and advancing equitable outcomes in San Francisco.",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [],
+          "crossed_artifacts": []
+        },
+        "verified": true,
+        "problem": null
+      },
+      "citations": {
+        "accepted": 0,
+        "exact_match": 0,
+        "normalized_match": 0,
+        "raw_substring": 0,
+        "reconstructed_cross_page": 0
+      },
+      "global_scope": {
+        "proposed": 0,
+        "verified": 0
+      },
+      "errors": [],
+      "tokens_reported": {
+        "primary": {
+          "input_tokens": 5513,
+          "output_tokens": 182,
+          "thinking_tokens": 7592,
+          "total_tokens": 13287
+        },
+        "repair": {}
+      },
+      "new_tokens": {
+        "primary": {
+          "input_tokens": 5513,
+          "output_tokens": 182,
+          "thinking_tokens": 7592,
+          "total_tokens": 13287
+        },
+        "repair": {}
+      },
+      "estimated_new_cost_usd": {
+        "primary": 0.033287,
+        "repair": 0.0,
+        "total": 0.033287
+      },
+      "artifact": "outputs/m3/full/documents/D078_extraction.json"
+    },
+    {
+      "doc_id": "D079",
+      "jurisdiction": "San Francisco, CA",
+      "level": "city",
+      "source_type": "official",
+      "body_chars": 5264,
+      "page_artifacts": 0,
+      "model": "gemini-3.8-flash",
+      "reported_model": "gemini-3.8-flash",
+      "thinking_level": "medium",
+      "prompt_version": "v7",
+      "run_mode": "processed",
+      "primary_cache_hit": false,
+      "repair_cache_hit": false,
+      "primary_provider_calls": 1,
+      "repair_provider_calls": 1,
+      "candidates": 3,
+      "accepted": 0,
+      "rejected": 3,
+      "primary_candidates": 3,
+      "repair_candidates": 0,
+      "repair_targets": 0,
+      "repair_classifications": {},
+      "repair_resolution": {
+        "before_repair": 0,
+        "resolved_by_accepted_rule": 0,
+        "resolved_out_of_scope": 0,
+        "still_unresolved": 0
+      },
+      "unresolved_targets": [],
+      "document_status": "review_required",
+      "review_reasons": [
+        "3 candidate record(s) held, not published, because the time of application is unresolved: ['temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force']"
+      ],
+      "posture": {
+        "declared": "official_explanatory_page",
+        "established": "official_explanatory_page"
+      },
+      "held": 3,
+      "relative_dates_resolved": 0,
+      "source_basis": {},
+      "scope_challenges": [],
+      "scope_modes": {
+        "S1": "named_subject"
+      },
+      "scope_mappings": [
+        "S1->P1: applies",
+        "S1->P2: does_not_apply"
+      ],
+      "legislative": [],
+      "empty_result": null,
+      "citations": {
+        "accepted": 0,
+        "exact_match": 0,
+        "normalized_match": 0,
+        "raw_substring": 0,
+        "reconstructed_cross_page": 0
+      },
+      "global_scope": {
+        "proposed": 1,
+        "verified": 1
+      },
+      "errors": [],
+      "tokens_reported": {
+        "primary": {
+          "input_tokens": 5009,
+          "output_tokens": 2888,
+          "thinking_tokens": 22233,
+          "total_tokens": 30130
+        },
+        "repair": {
+          "input_tokens": 5037,
+          "output_tokens": 336,
+          "thinking_tokens": 3819,
+          "total_tokens": 9192
+        }
+      },
+      "new_tokens": {
+        "primary": {
+          "input_tokens": 5009,
+          "output_tokens": 2888,
+          "thinking_tokens": 22233,
+          "total_tokens": 30130
+        },
+        "repair": {
+          "input_tokens": 5037,
+          "output_tokens": 336,
+          "thinking_tokens": 3819,
+          "total_tokens": 9192
+        }
+      },
+      "estimated_new_cost_usd": {
+        "primary": 0.097961,
+        "repair": 0.019359,
+        "total": 0.11732
+      },
+      "artifact": "outputs/m3/full/documents/D079_extraction.json"
+    },
+    {
+      "doc_id": "D080",
+      "jurisdiction": "San Francisco, CA",
+      "level": "city",
+      "source_type": "official",
+      "body_chars": 976,
+      "page_artifacts": 0,
+      "model": "gemini-3.8-flash",
+      "reported_model": "gemini-3.8-flash",
+      "thinking_level": "medium",
+      "prompt_version": "v7",
+      "run_mode": "processed",
+      "primary_cache_hit": false,
+      "repair_cache_hit": false,
+      "primary_provider_calls": 1,
+      "repair_provider_calls": 1,
+      "candidates": 4,
+      "accepted": 2,
+      "rejected": 2,
+      "primary_candidates": 2,
+      "repair_candidates": 2,
+      "repair_targets": 2,
+      "repair_classifications": {
+        "in_scope": 2
+      },
+      "repair_resolution": {
+        "before_repair": 2,
+        "resolved_by_accepted_rule": 0,
+        "resolved_out_of_scope": 0,
+        "still_unresolved": 2
+      },
+      "unresolved_targets": [
+        "Announcement (2025-2026)",
+        "Announcement (2026-2027)"
+      ],
+      "document_status": "review_required",
+      "review_reasons": [
+        "repair targets still unresolved: Announcement (2025-2026) (classified in_scope, but no candidate was produced); Announcement (2026-2027) (classified in_scope, but no candidate was produced)"
+      ],
+      "posture": {
+        "declared": "official_explanatory_page",
+        "established": "official_explanatory_page"
+      },
+      "held": 0,
+      "relative_dates_resolved": 0,
+      "source_basis": {
+        "official_explanatory_text": 2
+      },
+      "scope_challenges": [],
+      "scope_modes": {},
+      "scope_mappings": [],
+      "legislative": [],
+      "empty_result": null,
+      "citations": {
+        "accepted": 2,
+        "exact_match": 2,
+        "normalized_match": 0,
+        "raw_substring": 2,
+        "reconstructed_cross_page": 0
+      },
+      "global_scope": {
+        "proposed": 0,
+        "verified": 0
+      },
+      "errors": [],
+      "tokens_reported": {
+        "primary": {
+          "input_tokens": 4242,
+          "output_tokens": 1248,
+          "thinking_tokens": 5595,
+          "total_tokens": 11085
+        },
+        "repair": {
+          "input_tokens": 3854,
+          "output_tokens": 906,
+          "thinking_tokens": 2762,
+          "total_tokens": 7522
+        }
+      },
+      "new_tokens": {
+        "primary": {
+          "input_tokens": 4242,
+          "output_tokens": 1248,
+          "thinking_tokens": 5595,
+          "total_tokens": 11085
+        },
+        "repair": {
+          "input_tokens": 3854,
+          "output_tokens": 906,
+          "thinking_tokens": 2762,
+          "total_tokens": 7522
+        }
+      },
+      "estimated_new_cost_usd": {
+        "primary": 0.028843,
+        "repair": 0.016646,
+        "total": 0.045489
+      },
+      "artifact": "outputs/m3/full/documents/D080_extraction.json"
+    },
+    {
+      "doc_id": "D081",
+      "jurisdiction": "San Francisco, CA",
+      "level": "city",
+      "source_type": "official",
+      "body_chars": 993,
+      "page_artifacts": 0,
+      "model": "gemini-3.8-flash",
+      "reported_model": "gemini-3.8-flash",
+      "thinking_level": "medium",
+      "prompt_version": "v7",
+      "run_mode": "processed",
+      "primary_cache_hit": false,
+      "repair_cache_hit": null,
+      "primary_provider_calls": 1,
+      "repair_provider_calls": 0,
+      "candidates": 1,
+      "accepted": 1,
+      "rejected": 0,
+      "primary_candidates": 1,
+      "repair_candidates": 0,
+      "repair_targets": 0,
+      "repair_classifications": {},
+      "repair_resolution": null,
+      "unresolved_targets": [],
+      "document_status": "complete",
+      "review_reasons": [],
+      "posture": {
+        "declared": "official_explanatory_page",
+        "established": "official_explanatory_page"
+      },
+      "held": 0,
+      "relative_dates_resolved": 0,
+      "source_basis": {
+        "official_explanatory_text": 1
+      },
+      "scope_challenges": [],
+      "scope_modes": {},
+      "scope_mappings": [],
+      "legislative": [],
+      "empty_result": null,
+      "citations": {
+        "accepted": 1,
+        "exact_match": 1,
+        "normalized_match": 0,
+        "raw_substring": 1,
+        "reconstructed_cross_page": 0
+      },
+      "global_scope": {
+        "proposed": 0,
+        "verified": 0
+      },
+      "errors": [],
+      "tokens_reported": {
+        "primary": {
+          "input_tokens": 4121,
+          "output_tokens": 919,
+          "thinking_tokens": 15325,
+          "total_tokens": 20365
+        },
+        "repair": {}
+      },
+      "new_tokens": {
+        "primary": {
+          "input_tokens": 4121,
+          "output_tokens": 919,
+          "thinking_tokens": 15325,
+          "total_tokens": 20365
+        },
+        "repair": {}
+      },
+      "estimated_new_cost_usd": {
+        "primary": 0.064006,
+        "repair": 0.0,
+        "total": 0.064006
+      },
+      "artifact": "outputs/m3/full/documents/D081_extraction.json"
+    },
+    {
+      "doc_id": "D082",
+      "jurisdiction": "San Francisco, CA",
+      "level": "city",
+      "source_type": "official",
+      "body_chars": 3466,
+      "page_artifacts": 0,
+      "model": "gemini-3.8-flash",
+      "reported_model": "gemini-3.8-flash",
+      "thinking_level": "medium",
+      "prompt_version": "v7",
+      "run_mode": "processed",
+      "primary_cache_hit": false,
+      "repair_cache_hit": null,
+      "primary_provider_calls": 1,
+      "repair_provider_calls": 0,
+      "candidates": 2,
+      "accepted": 0,
+      "rejected": 2,
+      "primary_candidates": 2,
+      "repair_candidates": 0,
+      "repair_targets": 0,
+      "repair_classifications": {},
+      "repair_resolution": null,
+      "unresolved_targets": [],
+      "document_status": "review_required",
+      "review_reasons": [
+        "2 candidate record(s) held, not published, because the time of application is unresolved: ['temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force']"
+      ],
+      "posture": {
+        "declared": "official_explanatory_page",
+        "established": "official_explanatory_page"
+      },
+      "held": 2,
+      "relative_dates_resolved": 0,
+      "source_basis": {},
+      "scope_challenges": [],
+      "scope_modes": {
+        "S1": "explicit_reference"
+      },
+      "scope_mappings": [],
+      "legislative": [],
+      "empty_result": null,
+      "citations": {
+        "accepted": 0,
+        "exact_match": 0,
+        "normalized_match": 0,
+        "raw_substring": 0,
+        "reconstructed_cross_page": 0
+      },
+      "global_scope": {
+        "proposed": 1,
+        "verified": 1
+      },
+      "errors": [],
+      "tokens_reported": {
+        "primary": {
+          "input_tokens": 6223,
+          "output_tokens": 2093,
+          "thinking_tokens": 12780,
+          "total_tokens": 21096
+        },
+        "repair": {}
+      },
+      "new_tokens": {
+        "primary": {
+          "input_tokens": 6223,
+          "output_tokens": 2093,
+          "thinking_tokens": 12780,
+          "total_tokens": 21096
+        },
+        "repair": {}
+      },
+      "estimated_new_cost_usd": {
+        "primary": 0.060441,
+        "repair": 0.0,
+        "total": 0.060441
+      },
+      "artifact": "outputs/m3/full/documents/D082_extraction.json"
+    },
+    {
+      "doc_id": "D083",
+      "jurisdiction": "San Francisco, CA",
+      "level": "city",
+      "source_type": "official",
+      "body_chars": 4526,
+      "page_artifacts": 0,
+      "model": "gemini-3.8-flash",
+      "reported_model": "gemini-3.8-flash",
+      "thinking_level": "medium",
+      "prompt_version": "v7",
+      "run_mode": "processed",
+      "primary_cache_hit": false,
+      "repair_cache_hit": false,
+      "primary_provider_calls": 1,
+      "repair_provider_calls": 1,
+      "candidates": 7,
+      "accepted": 4,
+      "rejected": 3,
+      "primary_candidates": 5,
+      "repair_candidates": 2,
+      "repair_targets": 2,
+      "repair_classifications": {
+        "in_scope": 2
+      },
+      "repair_resolution": {
+        "before_repair": 2,
+        "resolved_by_accepted_rule": 2,
+        "resolved_out_of_scope": 0,
+        "still_unresolved": 0
+      },
+      "unresolved_targets": [],
+      "document_status": "review_required",
+      "review_reasons": [
+        "in-scope provisions whose candidate records were all rejected: ['Rent Ordinance § 37.9C', 'Rent Ordinance § 37.9A', 'California Civil Code § 1947.9']"
+      ],
+      "posture": {
+        "declared": "official_explanatory_page",
+        "established": "official_explanatory_page"
+      },
+      "held": 0,
+      "relative_dates_resolved": 0,
+      "source_basis": {
+        "official_explanatory_text": 4
+      },
+      "scope_challenges": [],
+      "scope_modes": {
+        "S1": "named_subject"
+      },
+      "scope_mappings": [],
+      "legislative": [],
+      "empty_result": null,
+      "citations": {
+        "accepted": 4,
+        "exact_match": 4,
+        "normalized_match": 0,
+        "raw_substring": 4,
+        "reconstructed_cross_page": 0
+      },
+      "global_scope": {
+        "proposed": 1,
+        "verified": 1
+      },
+      "errors": [],
+      "tokens_reported": {
+        "primary": {
+          "input_tokens": 5508,
+          "output_tokens": 4463,
+          "thinking_tokens": 16490,
+          "total_tokens": 26461
+        },
+        "repair": {
+          "input_tokens": 5168,
+          "output_tokens": 985,
+          "thinking_tokens": 7199,
+          "total_tokens": 13352
+        }
+      },
+      "new_tokens": {
+        "primary": {
+          "input_tokens": 5508,
+          "output_tokens": 4463,
+          "thinking_tokens": 16490,
+          "total_tokens": 26461
+        },
+        "repair": {
+          "input_tokens": 5168,
+          "output_tokens": 985,
+          "thinking_tokens": 7199,
+          "total_tokens": 13352
+        }
+      },
+      "estimated_new_cost_usd": {
+        "primary": 0.082705,
+        "repair": 0.034566,
+        "total": 0.117271
+      },
+      "artifact": "outputs/m3/full/documents/D083_extraction.json"
+    },
+    {
+      "doc_id": "D084",
+      "jurisdiction": "Santa Ana, CA",
+      "level": "city",
+      "source_type": "official",
+      "body_chars": 4237,
+      "page_artifacts": 0,
+      "model": "gemini-3.8-flash",
+      "reported_model": "gemini-3.8-flash",
+      "thinking_level": "medium",
+      "prompt_version": "v7",
+      "run_mode": "processed",
+      "primary_cache_hit": false,
+      "repair_cache_hit": false,
+      "primary_provider_calls": 1,
+      "repair_provider_calls": 1,
+      "candidates": 4,
+      "accepted": 1,
+      "rejected": 3,
+      "primary_candidates": 4,
+      "repair_candidates": 0,
+      "repair_targets": 1,
+      "repair_classifications": {
+        "out_of_scope": 1
+      },
+      "repair_resolution": {
+        "before_repair": 1,
+        "resolved_by_accepted_rule": 0,
+        "resolved_out_of_scope": 0,
+        "still_unresolved": 1
+      },
+      "unresolved_targets": [
+        "Petitions"
+      ],
+      "document_status": "review_required",
+      "review_reasons": [
+        "3 candidate record(s) held, not published, because the time of application is unresolved: ['temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force']",
+        "repair targets still unresolved: Petitions (classified out_of_scope without a reason and verified evidence (evidence is not text of the target subdivision))"
+      ],
+      "posture": {
+        "declared": "official_explanatory_page",
+        "established": "official_explanatory_page"
+      },
+      "held": 3,
+      "relative_dates_resolved": 0,
+      "source_basis": {
+        "official_explanatory_text": 1
+      },
+      "scope_challenges": [
+        "Petitions"
+      ],
+      "scope_modes": {},
+      "scope_mappings": [],
+      "legislative": [],
+      "empty_result": null,
+      "citations": {
+        "accepted": 1,
+        "exact_match": 1,
+        "normalized_match": 0,
+        "raw_substring": 1,
+        "reconstructed_cross_page": 0
+      },
+      "global_scope": {
+        "proposed": 0,
+        "verified": 0
+      },
+      "errors": [],
+      "tokens_reported": {
+        "primary": {
+          "input_tokens": 4868,
+          "output_tokens": 2356,
+          "thinking_tokens": 7728,
+          "total_tokens": 14952
+        },
+        "repair": {
+          "input_tokens": 4405,
+          "output_tokens": 163,
+          "thinking_tokens": 1657,
+          "total_tokens": 6225
+        }
+      },
+      "new_tokens": {
+        "primary": {
+          "input_tokens": 4868,
+          "output_tokens": 2356,
+          "thinking_tokens": 7728,
+          "total_tokens": 14952
+        },
+        "repair": {
+          "input_tokens": 4405,
+          "output_tokens": 163,
+          "thinking_tokens": 1657,
+          "total_tokens": 6225
+        }
+      },
+      "estimated_new_cost_usd": {
+        "primary": 0.041466,
+        "repair": 0.010129,
+        "total": 0.051595
+      },
+      "artifact": "outputs/m3/full/documents/D084_extraction.json"
+    },
+    {
+      "doc_id": "D085",
+      "jurisdiction": "Santa Ana, CA",
+      "level": "city",
+      "source_type": "official",
+      "body_chars": 5095,
+      "page_artifacts": 0,
+      "model": "gemini-3.8-flash",
+      "reported_model": "gemini-3.8-flash",
+      "thinking_level": "medium",
+      "prompt_version": "v7",
+      "run_mode": "processed",
+      "primary_cache_hit": true,
+      "repair_cache_hit": true,
+      "primary_provider_calls": 0,
+      "repair_provider_calls": 0,
+      "candidates": 9,
+      "accepted": 9,
+      "rejected": 0,
+      "primary_candidates": 9,
+      "repair_candidates": 0,
+      "repair_targets": 0,
+      "repair_classifications": {},
+      "repair_resolution": {
+        "before_repair": 0,
+        "resolved_by_accepted_rule": 0,
+        "resolved_out_of_scope": 0,
+        "still_unresolved": 0
+      },
+      "unresolved_targets": [],
+      "document_status": "complete",
+      "review_reasons": [],
+      "posture": {
+        "declared": "official_explanatory_page",
+        "established": "official_explanatory_page"
+      },
+      "held": 0,
+      "relative_dates_resolved": 0,
+      "source_basis": {
+        "official_explanatory_text": 9
+      },
+      "scope_challenges": [],
+      "scope_modes": {
+        "S1": "named_subject",
+        "S2": "named_subject",
+        "S3": "named_subject"
+      },
+      "scope_mappings": [
+        "S1->P2: applies",
+        "S2->P2: applies",
+        "S3->P7: applies",
+        "S3->P8: applies",
+        "S3->P9: applies",
+        "S3->P10: applies",
+        "S3->P11: applies",
+        "S3->P13: applies"
+      ],
+      "legislative": [],
+      "empty_result": null,
+      "citations": {
+        "accepted": 9,
+        "exact_match": 9,
+        "normalized_match": 0,
+        "raw_substring": 9,
+        "reconstructed_cross_page": 0
+      },
+      "global_scope": {
+        "proposed": 3,
+        "verified": 3
+      },
+      "errors": [],
+      "tokens_reported": {
+        "primary": {
+          "input_tokens": 5078,
+          "output_tokens": 5924,
+          "thinking_tokens": 12358,
+          "total_tokens": 23360
+        },
+        "repair": {
+          "input_tokens": 5732,
+          "output_tokens": 1208,
+          "thinking_tokens": 1961,
+          "total_tokens": 8901
+        }
+      },
+      "new_tokens": {
+        "primary": {},
+        "repair": {}
+      },
+      "estimated_new_cost_usd": {
+        "primary": 0.0,
+        "repair": 0.0,
+        "total": 0.0
+      },
+      "artifact": "outputs/m3/full/documents/D085_extraction.json"
+    }
+  ]
+}

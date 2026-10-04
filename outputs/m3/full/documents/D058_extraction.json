@@ -1,0 +1,472 @@
+{
+  "disclaimer": "Not legal advice. Automated extraction for a research prototype; verify against the cited source.",
+  "run_at": "2026-10-04T03:23:09+00:00",
+  "source": {
+    "doc_id": "D058",
+    "jurisdiction": "MA",
+    "url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section31",
+    "source_type": "official",
+    "retrieved_at": "2026-10-01T22:54Z",
+    "text_file": "text/D058.txt",
+    "content_sha256": "80a0a75992f78ba662f081b70c22af0def0e96475934f3818d6d37c56120a12d",
+    "body_chars": 2828
+  },
+  "provider": "gemini",
+  "model": "gemini-3.8-flash",
+  "prompt_version": "v7",
+  "prompt_sha256": "76d111cb3eb27f446a7d172523f45e9a123f42694c549e8656770c6427bc75ea",
+  "response_schema_sha256": "c15306da6f21dc72f06e78405f94ed61dc9e59288138cc98b5b5bf9b62ac403c",
+  "generation_settings": {
+    "temperature": null,
+    "seed": 20261001,
+    "thinking_level": "medium"
+  },
+  "as_of": "2026-10-01",
+  "cache_key": "8a7852b0bf21a24b0fbafa23e4889d975948e14624161c700bca1bf466bf1dd2",
+  "cache_hit": false,
+  "cache_entry": "cache/extraction/8a7852b0bf21a24b0fbafa23e4889d975948e14624161c700bca1bf466bf1dd2.json",
+  "provider_metadata": {
+    "api": "interactions.create",
+    "interaction_id": "",
+    "model": "gemini-3.8-flash",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4539,
+      "output_tokens": 1443,
+      "thinking_tokens": 7244,
+      "total_tokens": 13226
+    }
+  },
+  "candidate_count": 2,
+  "accepted_count": 2,
+  "rules": [
+    {
+      "team_rule_id": "r-b826f05ca2",
+      "jurisdiction": "MA",
+      "level": "state",
+      "category": "just_cause_eviction",
+      "status": "in_force",
+      "title": "Notice to quit for nonpayment of rent - Required accompanying form and disclosures",
+      "requirement": "A written notice to quit for nonpayment of rent served by a landlord on a residential tenant must be accompanied by a form documenting any tenant repayment agreements, providing information on rental assistance programs, trial court summary process rules/orders, and eviction restrictions, and prominently displaying the mandatory notice that a notice to quit is not an eviction.",
+      "key_value": null,
+      "coverage_conditions": "Applies to any notice to quit for nonpayment of rent given in writing by a landlord to a residential tenant pursuant to this chapter.",
+      "exemptions": null,
+      "overrides": [],
+      "interaction": null,
+      "effective_date": null,
+      "citation": "Chapter 186, Section 31(a)",
+      "source_doc_id": "D058",
+      "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section31",
+      "quoted_span": "Section 31. (a) A notice to quit for nonpayment of rent given in writing by a landlord to a residential tenant pursuant to this chapter shall be accompanied by a form that shall include, but not be limited to: (i) documentation of any agreements between the tenant and landlord for the tenant to repay the landlord for nonpayment of rent; and (ii) information on: (1) rental assistance programs including, but not limited to, the residential assistance for families in transition program; (2) applicable trial court rules, standing orders or emergency administrative orders pertaining to actions for summary process; and (3) any relevant federal or state legal restrictions on residential evictions. The form shall also prominently display the following statement:\n''THIS NOTICE TO QUIT IS NOT AN EVICTION. YOU DO NOT NEED TO IMMEDIATELY LEAVE YOUR UNIT. YOU ARE ENTITLED TO A LEGAL PROCEEDING IN WHICH YOU CAN DEFEND AGAINST THE EVICTION. ONLY A COURT ORDER CAN FORCE YOU TO LEAVE YOUR UNIT.''",
+      "confidence": null,
+      "conflict_flag": false,
+      "conflict_note": null
+    },
+    {
+      "team_rule_id": "r-bee1638198",
+      "jurisdiction": "MA",
+      "level": "state",
+      "category": "just_cause_eviction",
+      "status": "in_force",
+      "title": "Notice to quit for nonpayment of rent - Proof of form delivery required for court filing",
+      "requirement": "In an eviction for nonpayment of rent for a residential dwelling unit, no court having jurisdiction over summary process may accept for filing a writ, summons, or complaint without proof of delivery of the required form.",
+      "key_value": null,
+      "coverage_conditions": "Applies to an eviction for nonpayment of rent for a residential dwelling unit in actions for summary process pursuant to chapter 239.",
+      "exemptions": null,
+      "overrides": [],
+      "interaction": null,
+      "effective_date": null,
+      "citation": "Chapter 186, Section 31(b)",
+      "source_doc_id": "D058",
+      "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section31",
+      "quoted_span": "No court having jurisdiction over an action for summary process pursuant to chapter 239, including the Boston municipal court department, shall, in an eviction for nonpayment of rent for a residential dwelling unit, accept for filing a writ, summons or complaint without proof of delivery of the form required under this section.",
+      "confidence": null,
+      "conflict_flag": false,
+      "conflict_note": null
+    }
+  ],
+  "candidates": [
+    {
+      "index": 0,
+      "origin": "primary",
+      "accepted": true,
+      "held": false,
+      "rejection_reasons": [],
+      "provision_ids": [
+        "P1"
+      ],
+      "source_basis": "operative_text",
+      "status_evidence": null,
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": "Applies to any notice to quit for nonpayment of rent given in writing by a landlord to a residential tenant pursuant to this chapter.",
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 304,
+        "end": 1298,
+        "occurrences": 1,
+        "model_span": "Section 31. (a) A notice to quit for nonpayment of rent given in writing by a landlord to a residential tenant pursuant to this chapter shall be accompanied by a form that shall include, but not be limited to: (i) documentation of any agreements between the tenant and landlord for the tenant to repay the landlord for nonpayment of rent; and (ii) information on: (1) rental assistance programs including, but not limited to, the residential assistance for families in transition program; (2) applicable trial court rules, standing orders or emergency administrative orders pertaining to actions for summary process; and (3) any relevant federal or state legal restrictions on residential evictions. The form shall also prominently display the following statement:\n''THIS NOTICE TO QUIT IS NOT AN EVICTION. YOU DO NOT NEED TO IMMEDIATELY LEAVE YOUR UNIT. YOU ARE ENTITLED TO A LEGAL PROCEEDING IN WHICH YOU CAN DEFEND AGAINST THE EVICTION. ONLY A COURT ORDER CAN FORCE YOU TO LEAVE YOUR UNIT.''",
+        "source_span": "Section 31. (a) A notice to quit for nonpayment of rent given in writing by a landlord to a residential tenant pursuant to this chapter shall be accompanied by a form that shall include, but not be limited to: (i) documentation of any agreements between the tenant and landlord for the tenant to repay the landlord for nonpayment of rent; and (ii) information on: (1) rental assistance programs including, but not limited to, the residential assistance for families in transition program; (2) applicable trial court rules, standing orders or emergency administrative orders pertaining to actions for summary process; and (3) any relevant federal or state legal restrictions on residential evictions. The form shall also prominently display the following statement:\n''THIS NOTICE TO QUIT IS NOT AN EVICTION. YOU DO NOT NEED TO IMMEDIATELY LEAVE YOUR UNIT. YOU ARE ENTITLED TO A LEGAL PROCEEDING IN WHICH YOU CAN DEFEND AGAINST THE EVICTION. ONLY A COURT ORDER CAN FORCE YOU TO LEAVE YOUR UNIT.''",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "Section 31. (a) A notice to quit for nonpayment of rent given in writing by a landlord to a residential tenant pursuant to this chapter shall be accompanied by a form that shall include, but not be limited to: (i) documentation of any agreements between the tenant and landlord for the tenant to repay the landlord for nonpayment of rent; and (ii) information on: (1) rental assistance programs including, but not limited to, the residential assistance for families in transition program; (2) applicable trial court rules, standing orders or emergency administrative orders pertaining to actions for summary process; and (3) any relevant federal or state legal restrictions on residential evictions. The form shall also prominently display the following statement:\n''THIS NOTICE TO QUIT IS NOT AN EVICTION. YOU DO NOT NEED TO IMMEDIATELY LEAVE YOUR UNIT. YOU ARE ENTITLED TO A LEGAL PROCEEDING IN WHICH YOU CAN DEFEND AGAINST THE EVICTION. ONLY A COURT ORDER CAN FORCE YOU TO LEAVE YOUR UNIT.''",
+            "status": "exact_match",
+            "start": 304,
+            "end": 1298
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": null,
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": null,
+        "applied_kind": null,
+        "effective_date": null,
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "codified_current_law",
+        "posture_consistent": true
+      },
+      "status_derivation": "enacted; codified current law that states no effective date",
+      "warnings": [],
+      "rule": {
+        "team_rule_id": "r-b826f05ca2",
+        "jurisdiction": "MA",
+        "level": "state",
+        "category": "just_cause_eviction",
+        "status": "in_force",
+        "title": "Notice to quit for nonpayment of rent - Required accompanying form and disclosures",
+        "requirement": "A written notice to quit for nonpayment of rent served by a landlord on a residential tenant must be accompanied by a form documenting any tenant repayment agreements, providing information on rental assistance programs, trial court summary process rules/orders, and eviction restrictions, and prominently displaying the mandatory notice that a notice to quit is not an eviction.",
+        "key_value": null,
+        "coverage_conditions": "Applies to any notice to quit for nonpayment of rent given in writing by a landlord to a residential tenant pursuant to this chapter.",
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "Chapter 186, Section 31(a)",
+        "source_doc_id": "D058",
+        "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section31",
+        "quoted_span": "Section 31. (a) A notice to quit for nonpayment of rent given in writing by a landlord to a residential tenant pursuant to this chapter shall be accompanied by a form that shall include, but not be limited to: (i) documentation of any agreements between the tenant and landlord for the tenant to repay the landlord for nonpayment of rent; and (ii) information on: (1) rental assistance programs including, but not limited to, the residential assistance for families in transition program; (2) applicable trial court rules, standing orders or emergency administrative orders pertaining to actions for summary process; and (3) any relevant federal or state legal restrictions on residential evictions. The form shall also prominently display the following statement:\n''THIS NOTICE TO QUIT IS NOT AN EVICTION. YOU DO NOT NEED TO IMMEDIATELY LEAVE YOUR UNIT. YOU ARE ENTITLED TO A LEGAL PROCEEDING IN WHICH YOU CAN DEFEND AGAINST THE EVICTION. ONLY A COURT ORDER CAN FORCE YOU TO LEAVE YOUR UNIT.''",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "just_cause_eviction",
+        "citation": "Chapter 186, Section 31(a)",
+        "provision_ids": [
+          "P1"
+        ],
+        "source_basis": "operative_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "Section 31. (a) A notice to quit for nonpayment of rent given in writing by a landlord to a residential tenant pursuant to this chapter shall be accompanied by a form that shall include, but not be limited to: (i) documentation of any agreements between the tenant and landlord for the tenant to repay the landlord for nonpayment of rent; and (ii) information on: (1) rental assistance programs including, but not limited to, the residential assistance for families in transition program; (2) applicable trial court rules, standing orders or emergency administrative orders pertaining to actions for summary process; and (3) any relevant federal or state legal restrictions on residential evictions. The form shall also prominently display the following statement:\n''THIS NOTICE TO QUIT IS NOT AN EVICTION. YOU DO NOT NEED TO IMMEDIATELY LEAVE YOUR UNIT. YOU ARE ENTITLED TO A LEGAL PROCEEDING IN WHICH YOU CAN DEFEND AGAINST THE EVICTION. ONLY A COURT ORDER CAN FORCE YOU TO LEAVE YOUR UNIT.''"
+          }
+        ],
+        "title": "Notice to quit for nonpayment of rent - Required accompanying form and disclosures",
+        "requirement": "A written notice to quit for nonpayment of rent served by a landlord on a residential tenant must be accompanied by a form documenting any tenant repayment agreements, providing information on rental assistance programs, trial court summary process rules/orders, and eviction restrictions, and prominently displaying the mandatory notice that a notice to quit is not an eviction.",
+        "key_value": null,
+        "coverage_conditions": "Applies to any notice to quit for nonpayment of rent given in writing by a landlord to a residential tenant pursuant to this chapter.",
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": null,
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": null,
+        "effective_date_evidence_kind": null,
+        "effective_date": null,
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 1,
+      "origin": "primary",
+      "accepted": true,
+      "held": false,
+      "rejection_reasons": [],
+      "provision_ids": [
+        "P3"
+      ],
+      "source_basis": "operative_text",
+      "status_evidence": null,
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": "Applies to an eviction for nonpayment of rent for a residential dwelling unit in actions for summary process pursuant to chapter 239.",
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 1618,
+        "end": 1947,
+        "occurrences": 1,
+        "model_span": "No court having jurisdiction over an action for summary process pursuant to chapter 239, including the Boston municipal court department, shall, in an eviction for nonpayment of rent for a residential dwelling unit, accept for filing a writ, summons or complaint without proof of delivery of the form required under this section.",
+        "source_span": "No court having jurisdiction over an action for summary process pursuant to chapter 239, including the Boston municipal court department, shall, in an eviction for nonpayment of rent for a residential dwelling unit, accept for filing a writ, summons or complaint without proof of delivery of the form required under this section.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "No court having jurisdiction over an action for summary process pursuant to chapter 239, including the Boston municipal court department, shall, in an eviction for nonpayment of rent for a residential dwelling unit, accept for filing a writ, summons or complaint without proof of delivery of the form required under this section.",
+            "status": "exact_match",
+            "start": 1618,
+            "end": 1947
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": null,
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": null,
+        "applied_kind": null,
+        "effective_date": null,
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "codified_current_law",
+        "posture_consistent": true
+      },
+      "status_derivation": "enacted; codified current law that states no effective date",
+      "warnings": [],
+      "rule": {
+        "team_rule_id": "r-bee1638198",
+        "jurisdiction": "MA",
+        "level": "state",
+        "category": "just_cause_eviction",
+        "status": "in_force",
+        "title": "Notice to quit for nonpayment of rent - Proof of form delivery required for court filing",
+        "requirement": "In an eviction for nonpayment of rent for a residential dwelling unit, no court having jurisdiction over summary process may accept for filing a writ, summons, or complaint without proof of delivery of the required form.",
+        "key_value": null,
+        "coverage_conditions": "Applies to an eviction for nonpayment of rent for a residential dwelling unit in actions for summary process pursuant to chapter 239.",
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "Chapter 186, Section 31(b)",
+        "source_doc_id": "D058",
+        "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section31",
+        "quoted_span": "No court having jurisdiction over an action for summary process pursuant to chapter 239, including the Boston municipal court department, shall, in an eviction for nonpayment of rent for a residential dwelling unit, accept for filing a writ, summons or complaint without proof of delivery of the form required under this section.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "just_cause_eviction",
+        "citation": "Chapter 186, Section 31(b)",
+        "provision_ids": [
+          "P3"
+        ],
+        "source_basis": "operative_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "No court having jurisdiction over an action for summary process pursuant to chapter 239, including the Boston municipal court department, shall, in an eviction for nonpayment of rent for a residential dwelling unit, accept for filing a writ, summons or complaint without proof of delivery of the form required under this section."
+          }
+        ],
+        "title": "Notice to quit for nonpayment of rent - Proof of form delivery required for court filing",
+        "requirement": "In an eviction for nonpayment of rent for a residential dwelling unit, no court having jurisdiction over summary process may accept for filing a writ, summons, or complaint without proof of delivery of the required form.",
+        "key_value": null,
+        "coverage_conditions": "Applies to an eviction for nonpayment of rent for a residential dwelling unit in actions for summary process pursuant to chapter 239.",
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": null,
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": null,
+        "effective_date_evidence_kind": null,
+        "effective_date": null,
+        "conflict_note": null
+      }
+    }
+  ],
+  "posture": {
+    "declared": "codified_current_law",
+    "evidence": "General Law - Part II, Title I, Chapter 186, Section 31",
+    "evidence_check": {
+      "status": "exact_match",
+      "normalization": null,
+      "start": 0,
+      "end": 55,
+      "occurrences": 1,
+      "model_span": "General Law - Part II, Title I, Chapter 186, Section 31",
+      "source_span": "General Law - Part II, Title I, Chapter 186, Section 31",
+      "reason": null,
+      "reconstructed": false,
+      "parts": [],
+      "crossed_artifacts": []
+    },
+    "established": "codified_current_law",
+    "basis": "declared posture with verified evidence"
+  },
+  "base_dates": [],
+  "provision_inventory": [
+    {
+      "id": "P1",
+      "ref": "§ 31(a)",
+      "anchor": "Section 31. (a) A notice to quit for nonpayment of rent",
+      "summary": "Mandates that any written notice to quit for nonpayment of rent given to a residential tenant be accompanied by a form containing specified repayment documentation, assistance resources, court rules, eviction restrictions, and a mandatory tenant rights statement.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "just_cause_eviction",
+      "reason": null
+    },
+    {
+      "id": "P2",
+      "ref": "§ 31(b)",
+      "anchor": "(b) The executive office of housing and livable communities shall develop",
+      "summary": "Directs the executive office of housing and livable communities to develop the required form, publish it online, and provide specified information in five common languages in addition to English.",
+      "role": "procedure",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "administrative agency duty and machinery that creates no direct housing obligation or right on landlords or tenants"
+    },
+    {
+      "id": "P3",
+      "ref": "§ 31(b)",
+      "anchor": "No court having jurisdiction over an action for summary process",
+      "summary": "Bars courts having summary process jurisdiction from accepting for filing an eviction action for nonpayment of rent for a residential dwelling unit without proof of delivery of the required form.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "just_cause_eviction",
+      "reason": null
+    }
+  ],
+  "global_scope": [],
+  "source_view": {
+    "marker": "[[PAGE BREAK]]",
+    "segment_label": "[[SEGMENT {}]]",
+    "view_sha256": "0be447eb7fc0b057b8a8138858c076f9624b8fc3ff34e01bbcf7e35b6e607b79",
+    "segments": [
+      {
+        "id": 1,
+        "raw_start": 0,
+        "raw_end": 2828
+      }
+    ],
+    "artifacts_removed": 0,
+    "artifacts": []
+  },
+  "coverage": {
+    "inventory_valid": true,
+    "anchors_located": "3/3",
+    "after_primary": {
+      "uncovered": [],
+      "unaccepted": [],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "scope_mappings": {
+      "requested": 0,
+      "applies": 0,
+      "does_not_apply": 0,
+      "unresolved": 0
+    },
+    "inventory_items": 3,
+    "in_scope_items": 2,
+    "in_scope_refs": 2,
+    "uncertain": [],
+    "final": {
+      "uncovered": [],
+      "unaccepted": [],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "link_mismatches": [],
+    "provisions": [
+      {
+        "ref": "§ 31(a)",
+        "inventory_item": 0,
+        "provision_id": "P1",
+        "summary": "Mandates that any written notice to quit for nonpayment of rent given to a residential tenant be accompanied by a form containing specified repayment documentation, assistance resources, court rules, eviction restrictions, and a mandatory tenant rights statement.",
+        "category": "just_cause_eviction",
+        "candidates": [
+          0
+        ],
+        "accepted": [
+          0
+        ],
+        "basis": {
+          "0": "provision link; citation names it"
+        }
+      },
+      {
+        "ref": "§ 31(b)",
+        "inventory_item": 2,
+        "provision_id": "P3",
+        "summary": "Bars courts having summary process jurisdiction from accepting for filing an eviction action for nonpayment of rent for a residential dwelling unit without proof of delivery of the required form.",
+        "category": "just_cause_eviction",
+        "candidates": [
+          1
+        ],
+        "accepted": [
+          1
+        ],
+        "basis": {
+          "1": "provision link; citation names it"
+        }
+      }
+    ],
+    "unrecorded_subdivisions": []
+  },
+  "scope_challenges": [
+    {
+      "ref": "§ 31(b)",
+      "provision_id": "P2",
+      "role": "procedure",
+      "reason": "administrative agency duty and machinery that creates no direct housing obligation or right on landlords or tenants",
+      "summary": "Directs the executive office of housing and livable communities to develop the required form, publish it online, and provide specified information in five common languages in addition to English.",
+      "signals": {
+        "in_scope_neighbour": true,
+        "enumeration": false,
+        "normative_language": true,
+        "grounds_or_conditions": false
+      },
+      "challenged": false,
+      "why_not": "too few substantive signals",
+      "raw_start": 1299,
+      "raw_end": 1618
+    }
+  ],
+  "scope_mappings": [],
+  "legislative_session": null,
+  "empty_result": null,
+  "legacy_replay": null,
+  "repair": null,
+  "document_status": "complete",
+  "review_reasons": [],
+  "warnings": [],
+  "errors": [],
+  "raw_response_text": "{\n  \"document\": {\n    \"posture\": \"codified_current_law\",\n    \"evidence\": \"General Law - Part II, Title I, Chapter 186, Section 31\"\n  },\n  \"provisions\": [\n    {\n      \"id\": \"P1\",\n      \"ref\": \"§ 31(a)\",\n      \"anchor\": \"Section 31. (a) A notice to quit for nonpayment of rent\",\n      \"summary\": \"Mandates that any written notice to quit for nonpayment of rent given to a residential tenant be accompanied by a form containing specified repayment documentation, assistance resources, court rules, eviction restrictions, and a mandatory tenant rights statement.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"just_cause_eviction\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P2\",\n      \"ref\": \"§ 31(b)\",\n      \"anchor\": \"(b) The executive office of housing and livable communities shall develop\",\n      \"summary\": \"Directs the executive office of housing and livable communities to develop the required form, publish it online, and provide specified information in five common languages in addition to English.\",\n      \"role\": \"procedure\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"administrative agency duty and machinery that creates no direct housing obligation or right on landlords or tenants\"\n    },\n    {\n      \"id\": \"P3\",\n      \"ref\": \"§ 31(b)\",\n      \"anchor\": \"No court having jurisdiction over an action for summary process\",\n      \"summary\": \"Bars courts having summary process jurisdiction from accepting for filing an eviction action for nonpayment of rent for a residential dwelling unit without proof of delivery of the required form.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"just_cause_eviction\",\n      \"reason\": null\n    }\n  ],\n  \"global_scope\": [],\n  \"rules\": [\n    {\n      \"category\": \"just_cause_eviction\",\n      \"citation\": \"Chapter 186, Section 31(a)\",\n      \"provision_ids\": [\"P1\"],\n      \"source_basis\": \"operative_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Section 31. (a) A notice to quit for nonpayment of rent given in writing by a landlord to a residential tenant pursuant to this chapter shall be accompanied by a form that shall include, but not be limited to: (i) documentation of any agreements between the tenant and landlord for the tenant to repay the landlord for nonpayment of rent; and (ii) information on: (1) rental assistance programs including, but not limited to, the residential assistance for families in transition program; (2) applicable trial court rules, standing orders or emergency administrative orders pertaining to actions for summary process; and (3) any relevant federal or state legal restrictions on residential evictions. The form shall also prominently display the following statement:\\n''THIS NOTICE TO QUIT IS NOT AN EVICTION. YOU DO NOT NEED TO IMMEDIATELY LEAVE YOUR UNIT. YOU ARE ENTITLED TO A LEGAL PROCEEDING IN WHICH YOU CAN DEFEND AGAINST THE EVICTION. ONLY A COURT ORDER CAN FORCE YOU TO LEAVE YOUR UNIT.''\"\n        }\n      ],\n      \"title\": \"Notice to quit for nonpayment of rent - Required accompanying form and disclosures\",\n      \"requirement\": \"A written notice to quit for nonpayment of rent served by a landlord on a residential tenant must be accompanied by a form documenting any tenant repayment agreements, providing information on rental assistance programs, trial court summary process rules/orders, and eviction restrictions, and prominently displaying the mandatory notice that a notice to quit is not an eviction.\",\n      \"key_value\": null,\n      \"coverage_conditions\": \"Applies to any notice to quit for nonpayment of rent given in writing by a landlord to a residential tenant pursuant to this chapter.\",\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": null,\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": null,\n      \"effective_date_evidence_kind\": null,\n      \"effective_date\": null,\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"just_cause_eviction\",\n      \"citation\": \"Chapter 186, Section 31(b)\",\n      \"provision_ids\": [\"P3\"],\n      \"source_basis\": \"operative_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"No court having jurisdiction over an action for summary process pursuant to chapter 239, including the Boston municipal court department, shall, in an eviction for nonpayment of rent for a residential dwelling unit, accept for filing a writ, summons or complaint without proof of delivery of the form required under this section.\"\n        }\n      ],\n      \"title\": \"Notice to quit for nonpayment of rent - Proof of form delivery required for court filing\",\n      \"requirement\": \"In an eviction for nonpayment of rent for a residential dwelling unit, no court having jurisdiction over summary process may accept for filing a writ, summons, or complaint without proof of delivery of the required form.\",\n      \"key_value\": null,\n      \"coverage_conditions\": \"Applies to an eviction for nonpayment of rent for a residential dwelling unit in actions for summary process pursuant to chapter 239.\",\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": null,\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": null,\n      \"effective_date_evidence_kind\": null,\n      \"effective_date\": null,\n      \"conflict_note\": null\n    }\n  ],\n  \"no_rules_justification\": null\n}"
+}

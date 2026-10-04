@@ -1,0 +1,838 @@
+{
+  "disclaimer": "Not legal advice. Automated extraction for a research prototype; verify against the cited source.",
+  "run_at": "2026-10-04T03:06:49+00:00",
+  "source": {
+    "doc_id": "D029",
+    "jurisdiction": "Cambridge, MA",
+    "url": "https://www.cambridgema.gov/departments/humanrightscommission",
+    "source_type": "official",
+    "retrieved_at": "2026-10-01T22:36Z",
+    "text_file": "text/D029.txt",
+    "content_sha256": "f37817a8482b0a81787508768d5c3d35e5279cd0f5d5d3c3a7f43c5b68ecc016",
+    "body_chars": 12356
+  },
+  "provider": "gemini",
+  "model": "gemini-3.8-flash",
+  "prompt_version": "v7",
+  "prompt_sha256": "98f51e922188565232d8150a678c9aaf0b5a8ccce7299c4715e48b09982da293",
+  "response_schema_sha256": "c15306da6f21dc72f06e78405f94ed61dc9e59288138cc98b5b5bf9b62ac403c",
+  "generation_settings": {
+    "temperature": null,
+    "seed": 20261001,
+    "thinking_level": "medium"
+  },
+  "as_of": "2026-10-01",
+  "cache_key": "97a3f694974952faa53e60bd7148d5b871a1751ed29fd1e644b204dd9bc396e4",
+  "cache_hit": false,
+  "cache_entry": "cache/extraction/97a3f694974952faa53e60bd7148d5b871a1751ed29fd1e644b204dd9bc396e4.json",
+  "provider_metadata": {
+    "api": "interactions.create",
+    "interaction_id": "",
+    "model": "gemini-3.8-flash",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 6266,
+      "output_tokens": 2140,
+      "thinking_tokens": 13102,
+      "total_tokens": 21508
+    }
+  },
+  "candidate_count": 2,
+  "accepted_count": 0,
+  "rules": [],
+  "candidates": [
+    {
+      "index": 0,
+      "origin": "primary",
+      "accepted": false,
+      "held": true,
+      "rejection_reasons": [
+        "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      ],
+      "provision_ids": [
+        "P7"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 1301,
+        "end": 1447,
+        "occurrences": 1,
+        "model_span": "The Commission enforces two ordinances: the\nCambridge Human Rights Ordinance, chapter 2.76\nand the\nCambridge Fair Housing Ordinance, chapter 14.04",
+        "source_span": "The Commission enforces two ordinances: the\nCambridge Human Rights Ordinance, chapter 2.76\nand the\nCambridge Fair Housing Ordinance, chapter 14.04",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 6542,
+        "end": 6908,
+        "occurrences": 1,
+        "model_span": "Under the law, landlords, sellers and rental agents may use any reasonable standard to determine which applicants are selected, as long as that standard is applied equally and uniformly to all applicants. Tenant selection may be based on:\nan applicant's ability to pay the rent\nan applicant's ability to take care of the apartment and to respect the rights of others",
+        "source_span": "Under the law, landlords, sellers and rental agents may use any reasonable standard to determine which applicants are selected, as long as that standard is applied equally and uniformly to all applicants. Tenant selection may be based on:\nan applicant's ability to pay the rent\nan applicant's ability to take care of the apartment and to respect the rights of others",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "Under the law, landlords, sellers and rental agents may use any reasonable standard to determine which applicants are selected, as long as that standard is applied equally and uniformly to all applicants. Tenant selection may be based on:\nan applicant's ability to pay the rent\nan applicant's ability to take care of the apartment and to respect the rights of others",
+            "status": "exact_match",
+            "start": 6542,
+            "end": 6908
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": null,
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": null,
+        "applied_kind": null,
+        "effective_date": null,
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null,
+        "unresolved_reason": "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      },
+      "status_derivation": "temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-4af17b4242",
+        "jurisdiction": "Cambridge, MA",
+        "level": "city",
+        "category": "screening_restrictions",
+        "status": null,
+        "title": "Tenant Selection Standards",
+        "requirement": "[Basis: official explanatory text, not operative legal text] Landlords, sellers, and rental agents may use any reasonable standard to select applicants, provided that standard is applied equally and uniformly to all applicants. Tenant selection may be based on an applicant's ability to pay the rent and ability to take care of the apartment and respect the rights of others.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "Cambridge Fair Housing Ordinance, chapter 14.04",
+        "source_doc_id": "D029",
+        "source_url": "https://www.cambridgema.gov/departments/humanrightscommission",
+        "quoted_span": "Under the law, landlords, sellers and rental agents may use any reasonable standard to determine which applicants are selected, as long as that standard is applied equally and uniformly to all applicants. Tenant selection may be based on:\nan applicant's ability to pay the rent\nan applicant's ability to take care of the apartment and to respect the rights of others",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "screening_restrictions",
+        "citation": "Cambridge Fair Housing Ordinance, chapter 14.04",
+        "provision_ids": [
+          "P7"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "Under the law, landlords, sellers and rental agents may use any reasonable standard to determine which applicants are selected, as long as that standard is applied equally and uniformly to all applicants. Tenant selection may be based on:\nan applicant's ability to pay the rent\nan applicant's ability to take care of the apartment and to respect the rights of others"
+          }
+        ],
+        "title": "Tenant Selection Standards",
+        "requirement": "Landlords, sellers, and rental agents may use any reasonable standard to select applicants, provided that standard is applied equally and uniformly to all applicants. Tenant selection may be based on an applicant's ability to pay the rent and ability to take care of the apartment and respect the rights of others.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": "The Commission enforces two ordinances: the\nCambridge Human Rights Ordinance, chapter 2.76\nand the\nCambridge Fair Housing Ordinance, chapter 14.04",
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": null,
+        "effective_date_evidence_kind": null,
+        "effective_date": null,
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 1,
+      "origin": "repair",
+      "accepted": false,
+      "held": false,
+      "rejection_reasons": [
+        "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+        "repair: candidate does not answer a repair target (cite it, or link its provision id)"
+      ],
+      "provision_ids": [
+        "P7"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": null,
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 6542,
+        "end": 6908,
+        "occurrences": 1,
+        "model_span": "Under the law, landlords, sellers and rental agents may use any reasonable standard to determine which applicants are selected, as long as that standard is applied equally and uniformly to all applicants. Tenant selection may be based on:\nan applicant's ability to pay the rent\nan applicant's ability to take care of the apartment and to respect the rights of others",
+        "source_span": "Under the law, landlords, sellers and rental agents may use any reasonable standard to determine which applicants are selected, as long as that standard is applied equally and uniformly to all applicants. Tenant selection may be based on:\nan applicant's ability to pay the rent\nan applicant's ability to take care of the apartment and to respect the rights of others",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "Under the law, landlords, sellers and rental agents may use any reasonable standard to determine which applicants are selected, as long as that standard is applied equally and uniformly to all applicants. Tenant selection may be based on:\nan applicant's ability to pay the rent\nan applicant's ability to take care of the apartment and to respect the rights of others",
+            "status": "exact_match",
+            "start": 6542,
+            "end": 6908
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": null,
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": null,
+        "applied_kind": null,
+        "effective_date": null,
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null,
+        "unresolved_reason": "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      },
+      "status_derivation": "temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-4af17b4242",
+        "jurisdiction": "Cambridge, MA",
+        "level": "city",
+        "category": "screening_restrictions",
+        "status": null,
+        "title": "Tenant Selection Standards",
+        "requirement": "[Basis: official explanatory text, not operative legal text] Landlords, sellers, and rental agents may only select applicants using reasonable standards that are applied equally and uniformly to all applicants; selection may be based on an applicant's ability to pay rent and ability to care for the apartment and respect the rights of others.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "Cambridge Fair Housing Ordinance, chapter 14.04",
+        "source_doc_id": "D029",
+        "source_url": "https://www.cambridgema.gov/departments/humanrightscommission",
+        "quoted_span": "Under the law, landlords, sellers and rental agents may use any reasonable standard to determine which applicants are selected, as long as that standard is applied equally and uniformly to all applicants. Tenant selection may be based on:\nan applicant's ability to pay the rent\nan applicant's ability to take care of the apartment and to respect the rights of others",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "screening_restrictions",
+        "citation": "Cambridge Fair Housing Ordinance, chapter 14.04",
+        "provision_ids": [
+          "P7"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "Under the law, landlords, sellers and rental agents may use any reasonable standard to determine which applicants are selected, as long as that standard is applied equally and uniformly to all applicants. Tenant selection may be based on:\nan applicant's ability to pay the rent\nan applicant's ability to take care of the apartment and to respect the rights of others"
+          }
+        ],
+        "title": "Tenant Selection Standards",
+        "requirement": "Landlords, sellers, and rental agents may only select applicants using reasonable standards that are applied equally and uniformly to all applicants; selection may be based on an applicant's ability to pay rent and ability to care for the apartment and respect the rights of others.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": null,
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": null,
+        "effective_date_evidence_kind": null,
+        "effective_date": null,
+        "conflict_note": null
+      }
+    }
+  ],
+  "posture": {
+    "declared": "official_explanatory_page",
+    "evidence": "The Cambridge Human Rights Commission (CHRC) was established in 1984 to protect the civil rights of residents and visitors to the city.",
+    "evidence_check": {
+      "status": "exact_match",
+      "normalization": null,
+      "start": 1165,
+      "end": 1300,
+      "occurrences": 1,
+      "model_span": "The Cambridge Human Rights Commission (CHRC) was established in 1984 to protect the civil rights of residents and visitors to the city.",
+      "source_span": "The Cambridge Human Rights Commission (CHRC) was established in 1984 to protect the civil rights of residents and visitors to the city.",
+      "reason": null,
+      "reconstructed": false,
+      "parts": [],
+      "crossed_artifacts": []
+    },
+    "established": "official_explanatory_page",
+    "basis": "declared posture with verified evidence"
+  },
+  "base_dates": [],
+  "provision_inventory": [
+    {
+      "id": "P1",
+      "ref": "Overview",
+      "anchor": "The Cambridge Human Rights Commission (CHRC) was established in 1984",
+      "summary": "Overview of CHRC's establishment, enforcement of Chapters 2.76 and 14.04, and community functions.",
+      "role": "enforcement",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "agency background and general administrative enforcement authority"
+    },
+    {
+      "id": "P2",
+      "ref": "Tips and FAQs - What is discrimination?",
+      "anchor": "Discrimination occurs when a policy or practice segregates, creates unequal",
+      "summary": "General definition of discrimination and enumeration of protected categories under city ordinances.",
+      "role": "definition",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "general civil rights definitions and protected classes spanning multiple non-housing contexts"
+    },
+    {
+      "id": "P3",
+      "ref": "Tips and FAQs - What is the CHRC complaint process?",
+      "anchor": "The Commission will provide a thorough, impartial investigation of the",
+      "summary": "Description of the CHRC complaint intake and investigation procedure.",
+      "role": "procedure",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "administrative agency investigation procedure"
+    },
+    {
+      "id": "P4",
+      "ref": "Tips and FAQs - What are the possible outcomes of an investigation?",
+      "anchor": "The investigation of your complaint may result in:",
+      "summary": "Possible outcomes of an investigation including settlement, dismissal, or hearing.",
+      "role": "procedure",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "administrative dispute resolution procedure"
+    },
+    {
+      "id": "P5",
+      "ref": "Tips and FAQs - What are some remedies if discrimination is found?",
+      "anchor": "If, during the Commission’s investigation, the evidence is sufficient",
+      "summary": "Administrative and court remedies including conciliation, civil fines up to $300, and court actions.",
+      "role": "remedy",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "general agency enforcement authority and remedies for discrimination across all domains"
+    },
+    {
+      "id": "P6",
+      "ref": "Tips and FAQs - Housing Discrimination - Prohibited Transactions",
+      "anchor": "The Fair Housing Ordinance prohibits discrimination in real estate transactions",
+      "summary": "List of real estate transactions subject to fair housing anti-discrimination requirements.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "general fair housing anti-discrimination coverage not specific to designated categories"
+    },
+    {
+      "id": "P7",
+      "ref": "Tips and FAQs - Housing Discrimination - Tenant Selection",
+      "anchor": "Under the law, landlords, sellers and rental agents may use",
+      "summary": "Tenant selection standard requirements, permitted criteria, and owner-occupied two-family dwelling exemption.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "screening_restrictions",
+      "reason": null
+    },
+    {
+      "id": "P8",
+      "ref": "Tips and FAQs - Housing Discrimination - Intake",
+      "anchor": "A person who believes he or she has been discriminated",
+      "summary": "Instructions for individuals to contact CHRC to schedule an intake interview.",
+      "role": "procedure",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "complaint intake procedure"
+    },
+    {
+      "id": "P9",
+      "ref": "Tips and FAQs - Do I need a lawyer to file a complaint?",
+      "anchor": "You are not required to have an attorney to file",
+      "summary": "Information about legal representation during CHRC proceedings.",
+      "role": "procedure",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "administrative hearing procedure"
+    },
+    {
+      "id": "P10",
+      "ref": "Tips and FAQs - What information should I provide for a complaint?",
+      "anchor": "At the intake meeting, you should be able to",
+      "summary": "Checklist of documentation and details needed to file a complaint.",
+      "role": "procedure",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "intake procedure"
+    },
+    {
+      "id": "P11",
+      "ref": "Tips and FAQs - What is employment discrimination?",
+      "anchor": "The Human Rights Ordinance prohibits employment discrimination in Cambridge.",
+      "summary": "Explanations of disparate treatment and disparate impact in employment.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "employment discrimination is outside rental housing law"
+    },
+    {
+      "id": "P12",
+      "ref": "Tips and FAQs - What is public accommodation discrimination?",
+      "anchor": "Discrimination in places of public accommodation in Cambridge is prohibited",
+      "summary": "Prohibitions against discrimination and barrier-removal duties in places of public accommodation.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "public accommodations discrimination is outside rental housing law"
+    },
+    {
+      "id": "P13",
+      "ref": "Tips and FAQs - Who are the members of the commission?",
+      "anchor": "As provided under the Cambridge Human Rights Ordinance, the City",
+      "summary": "Composition and appointment of the eleven Human Rights Commissioners.",
+      "role": "procedure",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "commission governance structure"
+    }
+  ],
+  "global_scope": [
+    {
+      "id": "S1",
+      "kind": "exemption",
+      "statement": "Two-family dwellings where the owner resides are exempt from the fair housing tenant selection provisions.",
+      "citation": "Cambridge Fair Housing Ordinance, chapter 14.04",
+      "scope_mode": "named_subject",
+      "scope_quote": "there is an exemption for",
+      "source_provision_id": "P7",
+      "governed_provision_ids": [
+        "P7"
+      ],
+      "evidence_parts": [
+        {
+          "segment_id": 1,
+          "quoted_text": "NOTE: there is an exemption for 2-family dwellings, when the owner lives there"
+        }
+      ],
+      "evidence_check": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 6909,
+        "end": 6987,
+        "occurrences": 1,
+        "model_span": "NOTE: there is an exemption for 2-family dwellings, when the owner lives there",
+        "source_span": "NOTE: there is an exemption for 2-family dwellings, when the owner lives there",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "NOTE: there is an exemption for 2-family dwellings, when the owner lives there",
+            "status": "exact_match",
+            "start": 6909,
+            "end": 6987
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "propagated": true,
+      "problem": null,
+      "scope": {
+        "resolver": "scope-modes/v1",
+        "declared_mode": "named_subject",
+        "mode": "named_subject",
+        "scope_words": {
+          "scope_quote": "there is an exemption for",
+          "scope_quote_check": "exact_match",
+          "text": "there is an exemption for",
+          "from": "scope_quote"
+        },
+        "detail": null,
+        "propagate_ids": [],
+        "mapping_targets": [],
+        "verification": null
+      }
+    }
+  ],
+  "source_view": {
+    "marker": "[[PAGE BREAK]]",
+    "segment_label": "[[SEGMENT {}]]",
+    "view_sha256": "b0f0fdd449a6ba43355023b4ae3a9f40ed1cc06382320b7d1e91eeb0d186391e",
+    "segments": [
+      {
+        "id": 1,
+        "raw_start": 0,
+        "raw_end": 12356
+      }
+    ],
+    "artifacts_removed": 0,
+    "artifacts": []
+  },
+  "coverage": {
+    "inventory_valid": true,
+    "anchors_located": "13/13",
+    "after_primary": {
+      "uncovered": [
+        "Tips and FAQs - Housing Discrimination - Tenant Selection"
+      ],
+      "unaccepted": [],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "scope_mappings": {
+      "requested": 0,
+      "applies": 0,
+      "does_not_apply": 0,
+      "unresolved": 0
+    },
+    "after_repair": {
+      "uncovered": [
+        "Tips and FAQs - Housing Discrimination - Tenant Selection"
+      ],
+      "unaccepted": [],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "repair_targets": {
+      "before_repair": 1,
+      "resolved_by_accepted_rule": 0,
+      "resolved_out_of_scope": 0,
+      "still_unresolved": 1
+    },
+    "inventory_items": 13,
+    "in_scope_items": 1,
+    "in_scope_refs": 1,
+    "uncertain": [],
+    "final": {
+      "uncovered": [
+        "Tips and FAQs - Housing Discrimination - Tenant Selection"
+      ],
+      "unaccepted": [],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "link_mismatches": [
+      "rule 0 links P7 ('Tips and FAQs - Housing Discrimination - Tenant Selection') but cites 'Cambridge Fair Housing Ordinance, chapter 14.04'",
+      "rule 1 links P7 ('Tips and FAQs - Housing Discrimination - Tenant Selection') but cites 'Cambridge Fair Housing Ordinance, chapter 14.04'"
+    ],
+    "provisions": [
+      {
+        "ref": "Tips and FAQs - Housing Discrimination - Tenant Selection",
+        "inventory_item": 6,
+        "provision_id": "P7",
+        "summary": "Tenant selection standard requirements, permitted criteria, and owner-occupied two-family dwelling exemption.",
+        "category": "screening_restrictions",
+        "candidates": [],
+        "accepted": [],
+        "basis": {}
+      }
+    ],
+    "unrecorded_subdivisions": []
+  },
+  "scope_challenges": [
+    {
+      "ref": "Overview",
+      "provision_id": "P1",
+      "role": "enforcement",
+      "reason": "agency background and general administrative enforcement authority",
+      "summary": "Overview of CHRC's establishment, enforcement of Chapters 2.76 and 14.04, and community functions.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role enforcement is decided by other rules"
+    },
+    {
+      "ref": "Tips and FAQs - What is discrimination?",
+      "provision_id": "P2",
+      "role": "definition",
+      "reason": "general civil rights definitions and protected classes spanning multiple non-housing contexts",
+      "summary": "General definition of discrimination and enumeration of protected categories under city ordinances.",
+      "signals": {
+        "in_scope_neighbour": false,
+        "enumeration": true,
+        "normative_language": false,
+        "grounds_or_conditions": false
+      },
+      "challenged": false,
+      "why_not": "too few substantive signals",
+      "raw_start": 2456,
+      "raw_end": 3741
+    },
+    {
+      "ref": "Tips and FAQs - What is the CHRC complaint process?",
+      "provision_id": "P3",
+      "role": "procedure",
+      "reason": "administrative agency investigation procedure",
+      "summary": "Description of the CHRC complaint intake and investigation procedure.",
+      "signals": {
+        "in_scope_neighbour": false,
+        "enumeration": true,
+        "normative_language": false,
+        "grounds_or_conditions": false
+      },
+      "challenged": false,
+      "why_not": "too few substantive signals",
+      "raw_start": 3741,
+      "raw_end": 4192
+    },
+    {
+      "ref": "Tips and FAQs - What are the possible outcomes of an investigation?",
+      "provision_id": "P4",
+      "role": "procedure",
+      "reason": "administrative dispute resolution procedure",
+      "summary": "Possible outcomes of an investigation including settlement, dismissal, or hearing.",
+      "signals": {
+        "in_scope_neighbour": false,
+        "enumeration": false,
+        "normative_language": false,
+        "grounds_or_conditions": true
+      },
+      "challenged": false,
+      "why_not": "too few substantive signals",
+      "raw_start": 4192,
+      "raw_end": 5109
+    },
+    {
+      "ref": "Tips and FAQs - What are some remedies if discrimination is found?",
+      "provision_id": "P5",
+      "role": "remedy",
+      "reason": "general agency enforcement authority and remedies for discrimination across all domains",
+      "summary": "Administrative and court remedies including conciliation, civil fines up to $300, and court actions.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role remedy is decided by other rules"
+    },
+    {
+      "ref": "Tips and FAQs - Housing Discrimination - Prohibited Transactions",
+      "provision_id": "P6",
+      "role": "operative_rule",
+      "reason": "general fair housing anti-discrimination coverage not specific to designated categories",
+      "summary": "List of real estate transactions subject to fair housing anti-discrimination requirements.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    },
+    {
+      "ref": "Tips and FAQs - Housing Discrimination - Intake",
+      "provision_id": "P8",
+      "role": "procedure",
+      "reason": "complaint intake procedure",
+      "summary": "Instructions for individuals to contact CHRC to schedule an intake interview.",
+      "signals": {
+        "in_scope_neighbour": true,
+        "enumeration": false,
+        "normative_language": false,
+        "grounds_or_conditions": false
+      },
+      "challenged": false,
+      "why_not": "too few substantive signals",
+      "raw_start": 6988,
+      "raw_end": 7216
+    },
+    {
+      "ref": "Tips and FAQs - Do I need a lawyer to file a complaint?",
+      "provision_id": "P9",
+      "role": "procedure",
+      "reason": "administrative hearing procedure",
+      "summary": "Information about legal representation during CHRC proceedings.",
+      "signals": {
+        "in_scope_neighbour": false,
+        "enumeration": false,
+        "normative_language": true,
+        "grounds_or_conditions": false
+      },
+      "challenged": false,
+      "why_not": "too few substantive signals",
+      "raw_start": 7216,
+      "raw_end": 8016
+    },
+    {
+      "ref": "Tips and FAQs - What information should I provide for a complaint?",
+      "provision_id": "P10",
+      "role": "procedure",
+      "reason": "intake procedure",
+      "summary": "Checklist of documentation and details needed to file a complaint.",
+      "signals": {
+        "in_scope_neighbour": false,
+        "enumeration": true,
+        "normative_language": false,
+        "grounds_or_conditions": false
+      },
+      "challenged": false,
+      "why_not": "too few substantive signals",
+      "raw_start": 8016,
+      "raw_end": 8616
+    },
+    {
+      "ref": "Tips and FAQs - What is employment discrimination?",
+      "provision_id": "P11",
+      "role": "operative_rule",
+      "reason": "employment discrimination is outside rental housing law",
+      "summary": "Explanations of disparate treatment and disparate impact in employment.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    },
+    {
+      "ref": "Tips and FAQs - What is public accommodation discrimination?",
+      "provision_id": "P12",
+      "role": "operative_rule",
+      "reason": "public accommodations discrimination is outside rental housing law",
+      "summary": "Prohibitions against discrimination and barrier-removal duties in places of public accommodation.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    },
+    {
+      "ref": "Tips and FAQs - Who are the members of the commission?",
+      "provision_id": "P13",
+      "role": "procedure",
+      "reason": "commission governance structure",
+      "summary": "Composition and appointment of the eleven Human Rights Commissioners.",
+      "signals": {
+        "in_scope_neighbour": false,
+        "enumeration": false,
+        "normative_language": false,
+        "grounds_or_conditions": false
+      },
+      "challenged": false,
+      "why_not": "too few substantive signals",
+      "raw_start": 11466,
+      "raw_end": 12356
+    }
+  ],
+  "scope_mappings": [],
+  "legislative_session": null,
+  "empty_result": null,
+  "legacy_replay": null,
+  "repair": {
+    "invoked": true,
+    "reason": "1 repair target(s) from inventory_uncovered",
+    "prompt_version": "v7-repair-1",
+    "targets": [
+      {
+        "ref": "Tips and FAQs - Housing Discrimination - Tenant Selection",
+        "sources": [
+          "inventory_uncovered"
+        ],
+        "provision_id": "P7",
+        "summary": "Tenant selection standard requirements, permitted criteria, and owner-occupied two-family dwelling exemption.",
+        "category": "screening_restrictions",
+        "pre_repair_state": "in-scope inventory provision with no candidate",
+        "resolution": {
+          "scope": "in_scope",
+          "reason": null,
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 6542,
+            "end": 6987,
+            "occurrences": 1,
+            "model_span": "Under the law, landlords, sellers and rental agents may use any reasonable standard to determine which applicants are selected, as long as that standard is applied equally and uniformly to all applicants. Tenant selection may be based on:\nan applicant's ability to pay the rent\nan applicant's ability to take care of the apartment and to respect the rights of others\nNOTE: there is an exemption for 2-family dwellings, when the owner lives there",
+            "source_span": "Under the law, landlords, sellers and rental agents may use any reasonable standard to determine which applicants are selected, as long as that standard is applied equally and uniformly to all applicants. Tenant selection may be based on:\nan applicant's ability to pay the rent\nan applicant's ability to take care of the apartment and to respect the rights of others\nNOTE: there is an exemption for 2-family dwellings, when the owner lives there",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 1,
+                "model_text": "Under the law, landlords, sellers and rental agents may use any reasonable standard to determine which applicants are selected, as long as that standard is applied equally and uniformly to all applicants. Tenant selection may be based on:\nan applicant's ability to pay the rent\nan applicant's ability to take care of the apartment and to respect the rights of others\nNOTE: there is an exemption for 2-family dwellings, when the owner lives there",
+                "status": "exact_match",
+                "start": 6542,
+                "end": 6987
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true,
+          "evidence_problem": null
+        },
+        "repair_scope": "in_scope",
+        "reason": null,
+        "candidate_indices": [],
+        "accepted_indices": [],
+        "final_resolution": "unresolved",
+        "unresolved_reason": "classified in_scope, but no candidate was produced"
+      }
+    ],
+    "cache_key": "1103872738d7d62a548b0dcc852c1ba084b91df2595a255c4d6111f37c168c7f",
+    "cache_hit": false,
+    "cache_entry": "cache/extraction/1103872738d7d62a548b0dcc852c1ba084b91df2595a255c4d6111f37c168c7f.json",
+    "prompt_sha256": "459adefaa14c05795ddaf19190a99cbfb6b2d574f8e96042c42562af48c93b47",
+    "provider_metadata": {
+      "api": "interactions.create",
+      "interaction_id": "",
+      "model": "gemini-3.8-flash",
+      "status": "completed",
+      "usage": {
+        "input_tokens": 5828,
+        "output_tokens": 574,
+        "thinking_tokens": 2905,
+        "total_tokens": 9307
+      }
+    },
+    "raw_response_text": "{\n  \"target_resolutions\": [\n    {\n      \"ref\": \"Tips and FAQs - Housing Discrimination - Tenant Selection\",\n      \"scope\": \"in_scope\",\n      \"reason\": null,\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Under the law, landlords, sellers and rental agents may use any reasonable standard to determine which applicants are selected, as long as that standard is applied equally and uniformly to all applicants. Tenant selection may be based on:\\nan applicant's ability to pay the rent\\nan applicant's ability to take care of the apartment and to respect the rights of others\\nNOTE: there is an exemption for 2-family dwellings, when the owner lives there\"\n        }\n      ]\n    }\n  ],\n  \"scope_mappings\": [],\n  \"rules\": [\n    {\n      \"category\": \"screening_restrictions\",\n      \"citation\": \"Cambridge Fair Housing Ordinance, chapter 14.04\",\n      \"provision_ids\": [\n        \"P7\"\n      ],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Under the law, landlords, sellers and rental agents may use any reasonable standard to determine which applicants are selected, as long as that standard is applied equally and uniformly to all applicants. Tenant selection may be based on:\\nan applicant's ability to pay the rent\\nan applicant's ability to take care of the apartment and to respect the rights of others\"\n        }\n      ],\n      \"title\": \"Tenant Selection Standards\",\n      \"requirement\": \"Landlords, sellers, and rental agents may only select applicants using reasonable standards that are applied equally and uniformly to all applicants; selection may be based on an applicant's ability to pay rent and ability to care for the apartment and respect the rights of others.\",\n      \"key_value\": null,\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": null,\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": null,\n      \"effective_date_evidence_kind\": null,\n      \"effective_date\": null,\n      \"conflict_note\": null\n    }\n  ]\n}",
+    "mappings": [],
+    "candidate_indices": [
+      1
+    ],
+    "accepted_count": 0,
+    "rejected_count": 1,
+    "errors": []
+  },
+  "document_status": "review_required",
+  "review_reasons": [
+    "1 candidate record(s) held, not published, because the time of application is unresolved: ['temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force']",
+    "repair targets still unresolved: Tips and FAQs - Housing Discrimination - Tenant Selection (classified in_scope, but no candidate was produced)"
+  ],
+  "warnings": [
+    "candidate 0 held: status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+    "candidate 1 rejected: status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force; repair: candidate does not answer a repair target (cite it, or link its provision id)",
+    "review: provision links whose rule citation does not name the provision: 2"
+  ],
+  "errors": [],
+  "raw_response_text": "{\n  \"document\": {\n    \"posture\": \"official_explanatory_page\",\n    \"evidence\": \"The Cambridge Human Rights Commission (CHRC) was established in 1984 to protect the civil rights of residents and visitors to the city.\"\n  },\n  \"provisions\": [\n    {\n      \"id\": \"P1\",\n      \"ref\": \"Overview\",\n      \"anchor\": \"The Cambridge Human Rights Commission (CHRC) was established in 1984\",\n      \"summary\": \"Overview of CHRC's establishment, enforcement of Chapters 2.76 and 14.04, and community functions.\",\n      \"role\": \"enforcement\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"agency background and general administrative enforcement authority\"\n    },\n    {\n      \"id\": \"P2\",\n      \"ref\": \"Tips and FAQs - What is discrimination?\",\n      \"anchor\": \"Discrimination occurs when a policy or practice segregates, creates unequal\",\n      \"summary\": \"General definition of discrimination and enumeration of protected categories under city ordinances.\",\n      \"role\": \"definition\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"general civil rights definitions and protected classes spanning multiple non-housing contexts\"\n    },\n    {\n      \"id\": \"P3\",\n      \"ref\": \"Tips and FAQs - What is the CHRC complaint process?\",\n      \"anchor\": \"The Commission will provide a thorough, impartial investigation of the\",\n      \"summary\": \"Description of the CHRC complaint intake and investigation procedure.\",\n      \"role\": \"procedure\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"administrative agency investigation procedure\"\n    },\n    {\n      \"id\": \"P4\",\n      \"ref\": \"Tips and FAQs - What are the possible outcomes of an investigation?\",\n      \"anchor\": \"The investigation of your complaint may result in:\",\n      \"summary\": \"Possible outcomes of an investigation including settlement, dismissal, or hearing.\",\n      \"role\": \"procedure\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"administrative dispute resolution procedure\"\n    },\n    {\n      \"id\": \"P5\",\n      \"ref\": \"Tips and FAQs - What are some remedies if discrimination is found?\",\n      \"anchor\": \"If, during the Commission’s investigation, the evidence is sufficient\",\n      \"summary\": \"Administrative and court remedies including conciliation, civil fines up to $300, and court actions.\",\n      \"role\": \"remedy\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"general agency enforcement authority and remedies for discrimination across all domains\"\n    },\n    {\n      \"id\": \"P6\",\n      \"ref\": \"Tips and FAQs - Housing Discrimination - Prohibited Transactions\",\n      \"anchor\": \"The Fair Housing Ordinance prohibits discrimination in real estate transactions\",\n      \"summary\": \"List of real estate transactions subject to fair housing anti-discrimination requirements.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"general fair housing anti-discrimination coverage not specific to designated categories\"\n    },\n    {\n      \"id\": \"P7\",\n      \"ref\": \"Tips and FAQs - Housing Discrimination - Tenant Selection\",\n      \"anchor\": \"Under the law, landlords, sellers and rental agents may use\",\n      \"summary\": \"Tenant selection standard requirements, permitted criteria, and owner-occupied two-family dwelling exemption.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"screening_restrictions\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P8\",\n      \"ref\": \"Tips and FAQs - Housing Discrimination - Intake\",\n      \"anchor\": \"A person who believes he or she has been discriminated\",\n      \"summary\": \"Instructions for individuals to contact CHRC to schedule an intake interview.\",\n      \"role\": \"procedure\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"complaint intake procedure\"\n    },\n    {\n      \"id\": \"P9\",\n      \"ref\": \"Tips and FAQs - Do I need a lawyer to file a complaint?\",\n      \"anchor\": \"You are not required to have an attorney to file\",\n      \"summary\": \"Information about legal representation during CHRC proceedings.\",\n      \"role\": \"procedure\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"administrative hearing procedure\"\n    },\n    {\n      \"id\": \"P10\",\n      \"ref\": \"Tips and FAQs - What information should I provide for a complaint?\",\n      \"anchor\": \"At the intake meeting, you should be able to\",\n      \"summary\": \"Checklist of documentation and details needed to file a complaint.\",\n      \"role\": \"procedure\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"intake procedure\"\n    },\n    {\n      \"id\": \"P11\",\n      \"ref\": \"Tips and FAQs - What is employment discrimination?\",\n      \"anchor\": \"The Human Rights Ordinance prohibits employment discrimination in Cambridge.\",\n      \"summary\": \"Explanations of disparate treatment and disparate impact in employment.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"employment discrimination is outside rental housing law\"\n    },\n    {\n      \"id\": \"P12\",\n      \"ref\": \"Tips and FAQs - What is public accommodation discrimination?\",\n      \"anchor\": \"Discrimination in places of public accommodation in Cambridge is prohibited\",\n      \"summary\": \"Prohibitions against discrimination and barrier-removal duties in places of public accommodation.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"public accommodations discrimination is outside rental housing law\"\n    },\n    {\n      \"id\": \"P13\",\n      \"ref\": \"Tips and FAQs - Who are the members of the commission?\",\n      \"anchor\": \"As provided under the Cambridge Human Rights Ordinance, the City\",\n      \"summary\": \"Composition and appointment of the eleven Human Rights Commissioners.\",\n      \"role\": \"procedure\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"commission governance structure\"\n    }\n  ],\n  \"global_scope\": [\n    {\n      \"id\": \"S1\",\n      \"kind\": \"exemption\",\n      \"statement\": \"Two-family dwellings where the owner resides are exempt from the fair housing tenant selection provisions.\",\n      \"citation\": \"Cambridge Fair Housing Ordinance, chapter 14.04\",\n      \"scope_mode\": \"named_subject\",\n      \"scope_quote\": \"there is an exemption for\",\n      \"source_provision_id\": \"P7\",\n      \"governed_provision_ids\": [\"P7\"],\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"NOTE: there is an exemption for 2-family dwellings, when the owner lives there\"\n        }\n      ]\n    }\n  ],\n  \"rules\": [\n    {\n      \"category\": \"screening_restrictions\",\n      \"citation\": \"Cambridge Fair Housing Ordinance, chapter 14.04\",\n      \"provision_ids\": [\"P7\"],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Under the law, landlords, sellers and rental agents may use any reasonable standard to determine which applicants are selected, as long as that standard is applied equally and uniformly to all applicants. Tenant selection may be based on:\\nan applicant's ability to pay the rent\\nan applicant's ability to take care of the apartment and to respect the rights of others\"\n        }\n      ],\n      \"title\": \"Tenant Selection Standards\",\n      \"requirement\": \"Landlords, sellers, and rental agents may use any reasonable standard to select applicants, provided that standard is applied equally and uniformly to all applicants. Tenant selection may be based on an applicant's ability to pay the rent and ability to take care of the apartment and respect the rights of others.\",\n      \"key_value\": null,\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": \"The Commission enforces two ordinances: the\\nCambridge Human Rights Ordinance, chapter 2.76\\nand the\\nCambridge Fair Housing Ordinance, chapter 14.04\",\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": null,\n      \"effective_date_evidence_kind\": null,\n      \"effective_date\": null,\n      \"conflict_note\": null\n    }\n  ],\n  \"no_rules_justification\": null\n}"
+}

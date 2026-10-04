@@ -1,0 +1,954 @@
+{
+  "disclaimer": "Spend figures are estimates computed from API-reported token usage at the configured rates; they are not the account's billing balance.",
+  "estimated_total_usd": 5.449209,
+  "requests": [
+    {
+      "doc_id": "D001",
+      "pass": "primary",
+      "at": "2026-10-04T02:39:28+00:00",
+      "usage": {
+        "input_tokens": 5844,
+        "output_tokens": 4407,
+        "thinking_tokens": 26315,
+        "total_tokens": 36566
+      },
+      "estimated_cost_usd": 0.1195905
+    },
+    {
+      "doc_id": "D001",
+      "pass": "repair",
+      "at": "2026-10-04T02:39:38+00:00",
+      "usage": {
+        "input_tokens": 6696,
+        "output_tokens": 860,
+        "thinking_tokens": 2821,
+        "total_tokens": 10377
+      },
+      "estimated_cost_usd": 0.01882575
+    },
+    {
+      "doc_id": "D003",
+      "pass": "primary",
+      "at": "2026-10-04T02:40:42+00:00",
+      "usage": {
+        "input_tokens": 5108,
+        "output_tokens": 3889,
+        "thinking_tokens": 18638,
+        "total_tokens": 27635
+      },
+      "estimated_cost_usd": 0.08830725
+    },
+    {
+      "doc_id": "D003",
+      "pass": "repair",
+      "at": "2026-10-04T02:41:28+00:00",
+      "usage": {
+        "input_tokens": 7212,
+        "output_tokens": 3145,
+        "thinking_tokens": 12935,
+        "total_tokens": 23292
+      },
+      "estimated_cost_usd": 0.065709
+    },
+    {
+      "doc_id": "D004",
+      "pass": "primary",
+      "at": "2026-10-04T02:42:54+00:00",
+      "usage": {
+        "input_tokens": 4435,
+        "output_tokens": 1977,
+        "thinking_tokens": 27234,
+        "total_tokens": 33646
+      },
+      "estimated_cost_usd": 0.1128675
+    },
+    {
+      "doc_id": "D004",
+      "pass": "repair",
+      "at": "2026-10-04T02:43:10+00:00",
+      "usage": {
+        "input_tokens": 4511,
+        "output_tokens": 1522,
+        "thinking_tokens": 4057,
+        "total_tokens": 10090
+      },
+      "estimated_cost_usd": 0.0243045
+    },
+    {
+      "doc_id": "D005",
+      "pass": "primary",
+      "at": "2026-10-04T02:44:39+00:00",
+      "usage": {
+        "input_tokens": 4714,
+        "output_tokens": 5144,
+        "thinking_tokens": 26839,
+        "total_tokens": 36697
+      },
+      "estimated_cost_usd": 0.12347175
+    },
+    {
+      "doc_id": "D005",
+      "pass": "repair",
+      "at": "2026-10-04T02:44:58+00:00",
+      "usage": {
+        "input_tokens": 4631,
+        "output_tokens": 526,
+        "thinking_tokens": 6142,
+        "total_tokens": 11299
+      },
+      "estimated_cost_usd": 0.02847825
+    },
+    {
+      "doc_id": "D006",
+      "pass": "primary",
+      "at": "2026-10-04T02:46:12+00:00",
+      "usage": {
+        "input_tokens": 6864,
+        "output_tokens": 5693,
+        "thinking_tokens": 20673,
+        "total_tokens": 33230
+      },
+      "estimated_cost_usd": 0.1040205
+    },
+    {
+      "doc_id": "D006",
+      "pass": "repair",
+      "at": "2026-10-04T02:46:32+00:00",
+      "usage": {
+        "input_tokens": 7426,
+        "output_tokens": 930,
+        "thinking_tokens": 5526,
+        "total_tokens": 13882
+      },
+      "estimated_cost_usd": 0.0297795
+    },
+    {
+      "doc_id": "D007",
+      "pass": "primary",
+      "at": "2026-10-04T02:47:24+00:00",
+      "usage": {
+        "input_tokens": 4929,
+        "output_tokens": 5824,
+        "thinking_tokens": 14355,
+        "total_tokens": 25108
+      },
+      "estimated_cost_usd": 0.079368
+    },
+    {
+      "doc_id": "D007",
+      "pass": "repair",
+      "at": "2026-10-04T02:47:33+00:00",
+      "usage": {
+        "input_tokens": 4449,
+        "output_tokens": 448,
+        "thinking_tokens": 2123,
+        "total_tokens": 7020
+      },
+      "estimated_cost_usd": 0.012978
+    },
+    {
+      "doc_id": "D008",
+      "pass": "primary",
+      "at": "2026-10-04T02:47:54+00:00",
+      "usage": {
+        "input_tokens": 4489,
+        "output_tokens": 1145,
+        "thinking_tokens": 6334,
+        "total_tokens": 11968
+      },
+      "estimated_cost_usd": 0.031413
+    },
+    {
+      "doc_id": "D008",
+      "pass": "repair",
+      "at": "2026-10-04T02:47:58+00:00",
+      "usage": {
+        "input_tokens": 4193,
+        "output_tokens": 183,
+        "thinking_tokens": 1025,
+        "total_tokens": 5401
+      },
+      "estimated_cost_usd": 0.00767475
+    },
+    {
+      "doc_id": "D009",
+      "pass": "primary",
+      "at": "2026-10-04T02:48:22+00:00",
+      "usage": {
+        "input_tokens": 4584,
+        "output_tokens": 1719,
+        "thinking_tokens": 6370,
+        "total_tokens": 12673
+      },
+      "estimated_cost_usd": 0.03377175
+    },
+    {
+      "doc_id": "D010",
+      "pass": "primary",
+      "at": "2026-10-04T02:49:52+00:00",
+      "usage": {
+        "input_tokens": 5334,
+        "output_tokens": 4476,
+        "thinking_tokens": 27609,
+        "total_tokens": 37419
+      },
+      "estimated_cost_usd": 0.12431925
+    },
+    {
+      "doc_id": "D010",
+      "pass": "repair",
+      "at": "2026-10-04T02:50:43+00:00",
+      "usage": {
+        "input_tokens": 6672,
+        "output_tokens": 2023,
+        "thinking_tokens": 15923,
+        "total_tokens": 24618
+      },
+      "estimated_cost_usd": 0.0723015
+    },
+    {
+      "doc_id": "D011",
+      "pass": "primary",
+      "at": "2026-10-04T02:51:30+00:00",
+      "usage": {
+        "input_tokens": 4880,
+        "output_tokens": 975,
+        "thinking_tokens": 13884,
+        "total_tokens": 19739
+      },
+      "estimated_cost_usd": 0.05938125
+    },
+    {
+      "doc_id": "D012",
+      "pass": "primary",
+      "at": "2026-10-04T02:52:13+00:00",
+      "usage": {
+        "input_tokens": 4799,
+        "output_tokens": 1012,
+        "thinking_tokens": 12759,
+        "total_tokens": 18570
+      },
+      "estimated_cost_usd": 0.0552405
+    },
+    {
+      "doc_id": "D013",
+      "pass": "primary",
+      "at": "2026-10-04T02:52:50+00:00",
+      "usage": {
+        "input_tokens": 5576,
+        "output_tokens": 1589,
+        "thinking_tokens": 10861,
+        "total_tokens": 18026
+      },
+      "estimated_cost_usd": 0.0508695
+    },
+    {
+      "doc_id": "D013",
+      "pass": "repair",
+      "at": "2026-10-04T02:53:33+00:00",
+      "usage": {
+        "input_tokens": 5094,
+        "output_tokens": 378,
+        "thinking_tokens": 13284,
+        "total_tokens": 18756
+      },
+      "estimated_cost_usd": 0.055053
+    },
+    {
+      "doc_id": "D014",
+      "pass": "primary",
+      "at": "2026-10-04T02:54:36+00:00",
+      "usage": {
+        "input_tokens": 5237,
+        "output_tokens": 3438,
+        "thinking_tokens": 20271,
+        "total_tokens": 28946
+      },
+      "estimated_cost_usd": 0.0928365
+    },
+    {
+      "doc_id": "D014",
+      "pass": "repair",
+      "at": "2026-10-04T02:55:00+00:00",
+      "usage": {
+        "input_tokens": 6515,
+        "output_tokens": 2125,
+        "thinking_tokens": 6733,
+        "total_tokens": 15373
+      },
+      "estimated_cost_usd": 0.03810375
+    },
+    {
+      "doc_id": "D016",
+      "pass": "primary",
+      "at": "2026-10-04T02:56:17+00:00",
+      "usage": {
+        "input_tokens": 8966,
+        "output_tokens": 7010,
+        "thinking_tokens": 20619,
+        "total_tokens": 36595
+      },
+      "estimated_cost_usd": 0.11033325
+    },
+    {
+      "doc_id": "D016",
+      "pass": "repair",
+      "at": "2026-10-04T02:56:29+00:00",
+      "usage": {
+        "input_tokens": 9386,
+        "output_tokens": 583,
+        "thinking_tokens": 3161,
+        "total_tokens": 13130
+      },
+      "estimated_cost_usd": 0.0210795
+    },
+    {
+      "doc_id": "D022",
+      "pass": "primary",
+      "at": "2026-10-04T02:57:33+00:00",
+      "usage": {
+        "input_tokens": 5477,
+        "output_tokens": 1738,
+        "thinking_tokens": 18981,
+        "total_tokens": 26196
+      },
+      "estimated_cost_usd": 0.081804
+    },
+    {
+      "doc_id": "D023",
+      "pass": "primary",
+      "at": "2026-10-04T02:59:17+00:00",
+      "usage": {
+        "input_tokens": 9935,
+        "output_tokens": 20050,
+        "thinking_tokens": 19091,
+        "total_tokens": 49076
+      },
+      "estimated_cost_usd": 0.15423
+    },
+    {
+      "doc_id": "D024",
+      "pass": "primary",
+      "at": "2026-10-04T03:00:56+00:00",
+      "usage": {
+        "input_tokens": 7960,
+        "output_tokens": 11229,
+        "thinking_tokens": 24636,
+        "total_tokens": 43825
+      },
+      "estimated_cost_usd": 0.14046375
+    },
+    {
+      "doc_id": "D024",
+      "pass": "repair",
+      "at": "2026-10-04T03:01:01+00:00",
+      "usage": {
+        "input_tokens": 8475,
+        "output_tokens": 246,
+        "thinking_tokens": 1067,
+        "total_tokens": 9788
+      },
+      "estimated_cost_usd": 0.01128
+    },
+    {
+      "doc_id": "D025",
+      "pass": "primary",
+      "at": "2026-10-04T03:01:54+00:00",
+      "usage": {
+        "input_tokens": 10007,
+        "output_tokens": 19146,
+        "thinking_tokens": 1860,
+        "total_tokens": 31013
+      },
+      "estimated_cost_usd": 0.08627775
+    },
+    {
+      "doc_id": "D025",
+      "pass": "repair",
+      "at": "2026-10-04T03:02:52+00:00",
+      "usage": {
+        "input_tokens": 9952,
+        "output_tokens": 2397,
+        "thinking_tokens": 18174,
+        "total_tokens": 30523
+      },
+      "estimated_cost_usd": 0.08460525
+    },
+    {
+      "doc_id": "D026",
+      "pass": "primary",
+      "at": "2026-10-04T03:03:51+00:00",
+      "usage": {
+        "input_tokens": 5642,
+        "output_tokens": 5527,
+        "thinking_tokens": 15980,
+        "total_tokens": 27149
+      },
+      "estimated_cost_usd": 0.08488275
+    },
+    {
+      "doc_id": "D027",
+      "pass": "primary",
+      "at": "2026-10-04T03:06:05+00:00",
+      "usage": {
+        "input_tokens": 6394,
+        "output_tokens": 7214,
+        "thinking_tokens": 40010,
+        "total_tokens": 53618
+      },
+      "estimated_cost_usd": 0.1818855
+    },
+    {
+      "doc_id": "D029",
+      "pass": "primary",
+      "at": "2026-10-04T03:06:49+00:00",
+      "usage": {
+        "input_tokens": 6266,
+        "output_tokens": 2140,
+        "thinking_tokens": 13102,
+        "total_tokens": 21508
+      },
+      "estimated_cost_usd": 0.061857
+    },
+    {
+      "doc_id": "D029",
+      "pass": "repair",
+      "at": "2026-10-04T03:07:00+00:00",
+      "usage": {
+        "input_tokens": 5828,
+        "output_tokens": 574,
+        "thinking_tokens": 2905,
+        "total_tokens": 9307
+      },
+      "estimated_cost_usd": 0.01741725
+    },
+    {
+      "doc_id": "D031",
+      "pass": "primary",
+      "at": "2026-10-04T03:07:18+00:00",
+      "usage": {
+        "input_tokens": 5216,
+        "output_tokens": 1487,
+        "thinking_tokens": 4505,
+        "total_tokens": 11208
+      },
+      "estimated_cost_usd": 0.026382
+    },
+    {
+      "doc_id": "D036",
+      "pass": "primary",
+      "at": "2026-10-04T03:07:35+00:00",
+      "usage": {
+        "input_tokens": 5653,
+        "output_tokens": 873,
+        "thinking_tokens": 4357,
+        "total_tokens": 10883
+      },
+      "estimated_cost_usd": 0.02385225
+    },
+    {
+      "doc_id": "D039",
+      "pass": "primary",
+      "at": "2026-10-04T03:07:48+00:00",
+      "usage": {
+        "input_tokens": 4567,
+        "output_tokens": 443,
+        "thinking_tokens": 3474,
+        "total_tokens": 8484
+      },
+      "estimated_cost_usd": 0.018114
+    },
+    {
+      "doc_id": "D040",
+      "pass": "primary",
+      "at": "2026-10-04T03:09:03+00:00",
+      "usage": {
+        "input_tokens": 6219,
+        "output_tokens": 6707,
+        "thinking_tokens": 21863,
+        "total_tokens": 34789
+      },
+      "estimated_cost_usd": 0.11180175
+    },
+    {
+      "doc_id": "D040",
+      "pass": "repair",
+      "at": "2026-10-04T03:09:14+00:00",
+      "usage": {
+        "input_tokens": 7617,
+        "output_tokens": 1334,
+        "thinking_tokens": 2612,
+        "total_tokens": 11563
+      },
+      "estimated_cost_usd": 0.02051025
+    },
+    {
+      "doc_id": "D041",
+      "pass": "primary",
+      "at": "2026-10-04T03:10:33+00:00",
+      "usage": {
+        "input_tokens": 6378,
+        "output_tokens": 11083,
+        "thinking_tokens": 27657,
+        "total_tokens": 45118
+      },
+      "estimated_cost_usd": 0.1500585
+    },
+    {
+      "doc_id": "D041",
+      "pass": "repair",
+      "at": "2026-10-04T03:11:42+00:00",
+      "usage": {
+        "input_tokens": 16334,
+        "output_tokens": 11841,
+        "thinking_tokens": 14944,
+        "total_tokens": 43119
+      },
+      "estimated_cost_usd": 0.11269425
+    },
+    {
+      "doc_id": "D042",
+      "pass": "primary",
+      "at": "2026-10-04T03:12:29+00:00",
+      "usage": {
+        "input_tokens": 5149,
+        "output_tokens": 2044,
+        "thinking_tokens": 13652,
+        "total_tokens": 20845
+      },
+      "estimated_cost_usd": 0.06272175
+    },
+    {
+      "doc_id": "D042",
+      "pass": "repair",
+      "at": "2026-10-04T03:13:23+00:00",
+      "usage": {
+        "input_tokens": 4666,
+        "output_tokens": 388,
+        "thinking_tokens": 16134,
+        "total_tokens": 21188
+      },
+      "estimated_cost_usd": 0.065457
+    },
+    {
+      "doc_id": "D043",
+      "pass": "primary",
+      "at": "2026-10-04T03:14:43+00:00",
+      "usage": {
+        "input_tokens": 12585,
+        "output_tokens": 10655,
+        "thinking_tokens": 20886,
+        "total_tokens": 44126
+      },
+      "estimated_cost_usd": 0.1277175
+    },
+    {
+      "doc_id": "D043",
+      "pass": "repair",
+      "at": "2026-10-04T03:16:33+00:00",
+      "usage": {
+        "input_tokens": 14177,
+        "output_tokens": 5658,
+        "thinking_tokens": 44097,
+        "total_tokens": 63932
+      },
+      "estimated_cost_usd": 0.197214
+    },
+    {
+      "doc_id": "D045",
+      "pass": "primary",
+      "at": "2026-10-04T03:16:51+00:00",
+      "usage": {
+        "input_tokens": 4549,
+        "output_tokens": 495,
+        "thinking_tokens": 5043,
+        "total_tokens": 10087
+      },
+      "estimated_cost_usd": 0.02417925
+    },
+    {
+      "doc_id": "D046",
+      "pass": "primary",
+      "at": "2026-10-04T03:17:08+00:00",
+      "usage": {
+        "input_tokens": 4670,
+        "output_tokens": 579,
+        "thinking_tokens": 5710,
+        "total_tokens": 10959
+      },
+      "estimated_cost_usd": 0.02708625
+    },
+    {
+      "doc_id": "D047",
+      "pass": "primary",
+      "at": "2026-10-04T03:17:27+00:00",
+      "usage": {
+        "input_tokens": 4673,
+        "output_tokens": 474,
+        "thinking_tokens": 5609,
+        "total_tokens": 10756
+      },
+      "estimated_cost_usd": 0.026316
+    },
+    {
+      "doc_id": "D048",
+      "pass": "primary",
+      "at": "2026-10-04T03:18:13+00:00",
+      "usage": {
+        "input_tokens": 4479,
+        "output_tokens": 669,
+        "thinking_tokens": 14925,
+        "total_tokens": 20073
+      },
+      "estimated_cost_usd": 0.06183675
+    },
+    {
+      "doc_id": "D049",
+      "pass": "primary",
+      "at": "2026-10-04T03:19:01+00:00",
+      "usage": {
+        "input_tokens": 14547,
+        "output_tokens": 5044,
+        "thinking_tokens": 12266,
+        "total_tokens": 31857
+      },
+      "estimated_cost_usd": 0.07582275
+    },
+    {
+      "doc_id": "D049",
+      "pass": "repair",
+      "at": "2026-10-04T03:19:06+00:00",
+      "usage": {
+        "input_tokens": 14308,
+        "output_tokens": 228,
+        "thinking_tokens": 1341,
+        "total_tokens": 15877
+      },
+      "estimated_cost_usd": 0.01661475
+    },
+    {
+      "doc_id": "D050",
+      "pass": "primary",
+      "at": "2026-10-04T03:20:02+00:00",
+      "usage": {
+        "input_tokens": 4422,
+        "output_tokens": 1227,
+        "thinking_tokens": 17566,
+        "total_tokens": 23215
+      },
+      "estimated_cost_usd": 0.07379025
+    },
+    {
+      "doc_id": "D051",
+      "pass": "primary",
+      "at": "2026-10-04T03:20:40+00:00",
+      "usage": {
+        "input_tokens": 4738,
+        "output_tokens": 3972,
+        "thinking_tokens": 10811,
+        "total_tokens": 19521
+      },
+      "estimated_cost_usd": 0.05898975
+    },
+    {
+      "doc_id": "D053",
+      "pass": "primary",
+      "at": "2026-10-04T03:21:35+00:00",
+      "usage": {
+        "input_tokens": 4779,
+        "output_tokens": 655,
+        "thinking_tokens": 16519,
+        "total_tokens": 21953
+      },
+      "estimated_cost_usd": 0.06798675
+    },
+    {
+      "doc_id": "D057",
+      "pass": "primary",
+      "at": "2026-10-04T03:22:44+00:00",
+      "usage": {
+        "input_tokens": 4563,
+        "output_tokens": 1117,
+        "thinking_tokens": 21711,
+        "total_tokens": 27391
+      },
+      "estimated_cost_usd": 0.08902725
+    },
+    {
+      "doc_id": "D058",
+      "pass": "primary",
+      "at": "2026-10-04T03:23:09+00:00",
+      "usage": {
+        "input_tokens": 4539,
+        "output_tokens": 1443,
+        "thinking_tokens": 7244,
+        "total_tokens": 13226
+      },
+      "estimated_cost_usd": 0.0359805
+    },
+    {
+      "doc_id": "D065",
+      "pass": "primary",
+      "at": "2026-10-04T03:25:06+00:00",
+      "usage": {
+        "input_tokens": 8806,
+        "output_tokens": 13242,
+        "thinking_tokens": 32153,
+        "total_tokens": 54201
+      },
+      "estimated_cost_usd": 0.17683575
+    },
+    {
+      "doc_id": "D065",
+      "pass": "repair",
+      "at": "2026-10-04T03:25:33+00:00",
+      "usage": {
+        "input_tokens": 11430,
+        "output_tokens": 3357,
+        "thinking_tokens": 7620,
+        "total_tokens": 22407
+      },
+      "estimated_cost_usd": 0.04973625
+    },
+    {
+      "doc_id": "D066",
+      "pass": "primary",
+      "at": "2026-10-04T03:26:19+00:00",
+      "usage": {
+        "input_tokens": 4956,
+        "output_tokens": 3059,
+        "thinking_tokens": 14330,
+        "total_tokens": 22345
+      },
+      "estimated_cost_usd": 0.06892575
+    },
+    {
+      "doc_id": "D066",
+      "pass": "repair",
+      "at": "2026-10-04T03:26:24+00:00",
+      "usage": {
+        "input_tokens": 4831,
+        "output_tokens": 373,
+        "thinking_tokens": 1317,
+        "total_tokens": 6521
+      },
+      "estimated_cost_usd": 0.00996075
+    },
+    {
+      "doc_id": "D068",
+      "pass": "primary",
+      "at": "2026-10-04T03:27:38+00:00",
+      "usage": {
+        "input_tokens": 5531,
+        "output_tokens": 3604,
+        "thinking_tokens": 22605,
+        "total_tokens": 31740
+      },
+      "estimated_cost_usd": 0.102432
+    },
+    {
+      "doc_id": "D068",
+      "pass": "repair",
+      "at": "2026-10-04T03:27:53+00:00",
+      "usage": {
+        "input_tokens": 5946,
+        "output_tokens": 661,
+        "thinking_tokens": 4692,
+        "total_tokens": 11299
+      },
+      "estimated_cost_usd": 0.02453325
+    },
+    {
+      "doc_id": "D069",
+      "pass": "primary",
+      "at": "2026-10-04T03:29:06+00:00",
+      "usage": {
+        "input_tokens": 6443,
+        "output_tokens": 3516,
+        "thinking_tokens": 23438,
+        "total_tokens": 33397
+      },
+      "estimated_cost_usd": 0.10590975
+    },
+    {
+      "doc_id": "D073",
+      "pass": "primary",
+      "at": "2026-10-04T03:31:47+00:00",
+      "usage": {
+        "input_tokens": 13664,
+        "output_tokens": 23008,
+        "thinking_tokens": 35301,
+        "total_tokens": 71973
+      },
+      "estimated_cost_usd": 0.22890675
+    },
+    {
+      "doc_id": "D073",
+      "pass": "repair",
+      "at": "2026-10-04T03:33:25+00:00",
+      "usage": {
+        "input_tokens": 14423,
+        "output_tokens": 7980,
+        "thinking_tokens": 30151,
+        "total_tokens": 52554
+      },
+      "estimated_cost_usd": 0.1538085
+    },
+    {
+      "doc_id": "D076",
+      "pass": "primary",
+      "at": "2026-10-04T03:34:08+00:00",
+      "usage": {
+        "input_tokens": 9783,
+        "output_tokens": 2934,
+        "thinking_tokens": 13011,
+        "total_tokens": 25728
+      },
+      "estimated_cost_usd": 0.067131
+    },
+    {
+      "doc_id": "D076",
+      "pass": "repair",
+      "at": "2026-10-04T03:34:32+00:00",
+      "usage": {
+        "input_tokens": 10593,
+        "output_tokens": 1068,
+        "thinking_tokens": 5530,
+        "total_tokens": 17191
+      },
+      "estimated_cost_usd": 0.03268725
+    },
+    {
+      "doc_id": "D078",
+      "pass": "primary",
+      "at": "2026-10-04T03:35:00+00:00",
+      "usage": {
+        "input_tokens": 5513,
+        "output_tokens": 182,
+        "thinking_tokens": 7592,
+        "total_tokens": 13287
+      },
+      "estimated_cost_usd": 0.03328725
+    },
+    {
+      "doc_id": "D079",
+      "pass": "primary",
+      "at": "2026-10-04T03:36:14+00:00",
+      "usage": {
+        "input_tokens": 5009,
+        "output_tokens": 2888,
+        "thinking_tokens": 22233,
+        "total_tokens": 30130
+      },
+      "estimated_cost_usd": 0.0979605
+    },
+    {
+      "doc_id": "D079",
+      "pass": "repair",
+      "at": "2026-10-04T03:36:27+00:00",
+      "usage": {
+        "input_tokens": 5037,
+        "output_tokens": 336,
+        "thinking_tokens": 3819,
+        "total_tokens": 9192
+      },
+      "estimated_cost_usd": 0.019359
+    },
+    {
+      "doc_id": "D080",
+      "pass": "primary",
+      "at": "2026-10-04T03:36:47+00:00",
+      "usage": {
+        "input_tokens": 4242,
+        "output_tokens": 1248,
+        "thinking_tokens": 5595,
+        "total_tokens": 11085
+      },
+      "estimated_cost_usd": 0.02884275
+    },
+    {
+      "doc_id": "D080",
+      "pass": "repair",
+      "at": "2026-10-04T03:36:57+00:00",
+      "usage": {
+        "input_tokens": 3854,
+        "output_tokens": 906,
+        "thinking_tokens": 2762,
+        "total_tokens": 7522
+      },
+      "estimated_cost_usd": 0.0166455
+    },
+    {
+      "doc_id": "D081",
+      "pass": "primary",
+      "at": "2026-10-04T03:37:44+00:00",
+      "usage": {
+        "input_tokens": 4121,
+        "output_tokens": 919,
+        "thinking_tokens": 15325,
+        "total_tokens": 20365
+      },
+      "estimated_cost_usd": 0.06400575
+    },
+    {
+      "doc_id": "D082",
+      "pass": "primary",
+      "at": "2026-10-04T03:38:25+00:00",
+      "usage": {
+        "input_tokens": 6223,
+        "output_tokens": 2093,
+        "thinking_tokens": 12780,
+        "total_tokens": 21096
+      },
+      "estimated_cost_usd": 0.060441
+    },
+    {
+      "doc_id": "D083",
+      "pass": "primary",
+      "at": "2026-10-04T03:39:23+00:00",
+      "usage": {
+        "input_tokens": 5508,
+        "output_tokens": 4463,
+        "thinking_tokens": 16490,
+        "total_tokens": 26461
+      },
+      "estimated_cost_usd": 0.08270475
+    },
+    {
+      "doc_id": "D083",
+      "pass": "repair",
+      "at": "2026-10-04T03:39:47+00:00",
+      "usage": {
+        "input_tokens": 5168,
+        "output_tokens": 985,
+        "thinking_tokens": 7199,
+        "total_tokens": 13352
+      },
+      "estimated_cost_usd": 0.034566
+    },
+    {
+      "doc_id": "D084",
+      "pass": "primary",
+      "at": "2026-10-04T03:40:17+00:00",
+      "usage": {
+        "input_tokens": 4868,
+        "output_tokens": 2356,
+        "thinking_tokens": 7728,
+        "total_tokens": 14952
+      },
+      "estimated_cost_usd": 0.041466
+    },
+    {
+      "doc_id": "D084",
+      "pass": "repair",
+      "at": "2026-10-04T03:40:24+00:00",
+      "usage": {
+        "input_tokens": 4405,
+        "output_tokens": 163,
+        "thinking_tokens": 1657,
+        "total_tokens": 6225
+      },
+      "estimated_cost_usd": 0.01012875
+    }
+  ]
+}

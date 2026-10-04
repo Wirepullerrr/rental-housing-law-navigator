@@ -1,0 +1,1328 @@
+{
+  "disclaimer": "Not legal advice. Automated extraction for a research prototype; verify against the cited source.",
+  "run_at": "2026-10-04T03:20:40+00:00",
+  "source": {
+    "doc_id": "D051",
+    "jurisdiction": "MA",
+    "url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section12",
+    "source_type": "official",
+    "retrieved_at": "2026-10-01T22:37Z",
+    "text_file": "text/D051.txt",
+    "content_sha256": "29df64d171e2811d9b276a443abc66b82090971afbbb9e786575cf8b6033dbd1",
+    "body_chars": 3945
+  },
+  "provider": "gemini",
+  "model": "gemini-3.8-flash",
+  "prompt_version": "v7",
+  "prompt_sha256": "d2e0fef79ac528cf2f62193a345b61361cd6001547fd42c0a31f29abb840d756",
+  "response_schema_sha256": "c15306da6f21dc72f06e78405f94ed61dc9e59288138cc98b5b5bf9b62ac403c",
+  "generation_settings": {
+    "temperature": null,
+    "seed": 20261001,
+    "thinking_level": "medium"
+  },
+  "as_of": "2026-10-01",
+  "cache_key": "3e6f2d4dd9f212bff5326350075bba463f800b4c29f2dd02f3f48fe533c43545",
+  "cache_hit": false,
+  "cache_entry": "cache/extraction/3e6f2d4dd9f212bff5326350075bba463f800b4c29f2dd02f3f48fe533c43545.json",
+  "provider_metadata": {
+    "api": "interactions.create",
+    "interaction_id": "",
+    "model": "gemini-3.8-flash",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4738,
+      "output_tokens": 3972,
+      "thinking_tokens": 10811,
+      "total_tokens": 19521
+    }
+  },
+  "candidate_count": 7,
+  "accepted_count": 7,
+  "rules": [
+    {
+      "team_rule_id": "r-1956129b9e",
+      "jurisdiction": "MA",
+      "level": "state",
+      "category": "just_cause_eviction",
+      "status": "in_force",
+      "title": "Notice Required to Determine Estate at Will",
+      "requirement": "An estate at will may be determined by either party by three months' written notice, or, if rent is payable at periods of less than three months, by written notice equal to the interval between payment days or thirty days, whichever is longer.",
+      "key_value": "3 months, or interval between payment days or 30 days, whichever is longer",
+      "coverage_conditions": null,
+      "exemptions": null,
+      "overrides": [],
+      "interaction": null,
+      "effective_date": null,
+      "citation": "G.L. c. 186, § 12",
+      "source_doc_id": "D051",
+      "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section12",
+      "quoted_span": "Estates at will may be determined by either party by three months' notice in writing for that purpose given to the other party; and, if the rent reserved is payable at periods of less than three months, the time of such notice shall be sufficient if it is equal to the interval between the days of payment or thirty days, whichever is longer.",
+      "confidence": null,
+      "conflict_flag": false,
+      "conflict_note": null
+    },
+    {
+      "team_rule_id": "r-d0d8542824",
+      "jurisdiction": "MA",
+      "level": "state",
+      "category": "just_cause_eviction",
+      "status": "in_force",
+      "title": "Inclusion of Offer for New Tenancy in Termination Notice",
+      "requirement": "A written notice to determine an estate at will may include an offer to establish a new tenancy for the same premises on different terms, and the inclusion of such an offer does not affect the validity of the notice.",
+      "key_value": null,
+      "coverage_conditions": null,
+      "exemptions": null,
+      "overrides": [],
+      "interaction": null,
+      "effective_date": null,
+      "citation": "G.L. c. 186, § 12",
+      "source_doc_id": "D051",
+      "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section12",
+      "quoted_span": "Such written notice may include an offer to establish a new tenancy for the same premises on terms different from that of the tenancy being terminated and the validity of such written notice shall not be affected by the inclusion of such offer.",
+      "confidence": null,
+      "conflict_flag": false,
+      "conflict_note": null
+    },
+    {
+      "team_rule_id": "r-a739f690c0",
+      "jurisdiction": "MA",
+      "level": "state",
+      "category": "just_cause_eviction",
+      "status": "in_force",
+      "title": "Fourteen Days' Notice to Quit for Nonpayment",
+      "requirement": "A landlord may determine an estate at will for a tenant's neglect or refusal to pay rent due by giving the tenant fourteen days' written notice to quit.",
+      "key_value": "14 days",
+      "coverage_conditions": "Applies in case of neglect or refusal to pay rent due from a tenant at will.",
+      "exemptions": null,
+      "overrides": [],
+      "interaction": null,
+      "effective_date": null,
+      "citation": "G.L. c. 186, § 12",
+      "source_doc_id": "D051",
+      "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section12",
+      "quoted_span": "In case of neglect or refusal to pay the rent due from a tenant at will, fourteen days' notice to quit, given in writing by the landlord to the tenant, shall be sufficient to determine the tenancy;",
+      "confidence": null,
+      "conflict_flag": false,
+      "conflict_note": null
+    },
+    {
+      "team_rule_id": "r-a47b9105cc",
+      "jurisdiction": "MA",
+      "level": "state",
+      "category": "just_cause_eviction",
+      "status": "in_force",
+      "title": "Right to Cure Nonpayment Within Ten Days",
+      "requirement": "A tenancy at will is not determined if a tenant who has not received a similar notice within the preceding twelve months pays or tenders the full amount of rent due within ten days after receiving the notice to quit.",
+      "key_value": "10 days",
+      "coverage_conditions": "Applies to a tenant who has not received a similar notice from the landlord within the twelve months next preceding receipt of the notice.",
+      "exemptions": null,
+      "overrides": [],
+      "interaction": null,
+      "effective_date": null,
+      "citation": "G.L. c. 186, § 12",
+      "source_doc_id": "D051",
+      "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section12",
+      "quoted_span": "provided, that the tenancy of a tenant who has not received a similar notice from the landlord within the twelve months next preceding the receipt of such notice shall not be determined if the tenant, within ten days after the receipt thereof, pays or tenders to the landlord, the landlord's attorney, or the person to whom the tenant customarily pays rent, the full amount of any rent due.",
+      "confidence": null,
+      "conflict_flag": false,
+      "conflict_note": null
+    },
+    {
+      "team_rule_id": "r-e60b399b1f",
+      "jurisdiction": "MA",
+      "level": "state",
+      "category": "just_cause_eviction",
+      "status": "in_force",
+      "title": "Mandatory Notification Language in Nonpayment Notice",
+      "requirement": "Every notice determining an estate at will for nonpayment of rent must include verbatim statutory notification informing the tenant of the right to cure within ten days if no notice to quit for nonpayment was received within the prior twelve months.",
+      "key_value": null,
+      "coverage_conditions": "Applies to every notice to determine an estate at will for nonpayment of rent.",
+      "exemptions": null,
+      "overrides": [],
+      "interaction": null,
+      "effective_date": null,
+      "citation": "G.L. c. 186, § 12",
+      "source_doc_id": "D051",
+      "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section12",
+      "quoted_span": "Every notice to determine an estate at will for nonpayment of rent shall contain the following notification to the tenant: ''If you have not received a notice to quit for nonpayment of rent within the last twelve months, you have a right to prevent termination of your tenancy by paying or tendering to your landlord, your landlord's attorney or the person to whom you customarily pay your rent the full amount of rent due within ten days after your receipt of this notice.''",
+      "confidence": null,
+      "conflict_flag": false,
+      "conflict_note": null
+    },
+    {
+      "team_rule_id": "r-3ae3e3f1b3",
+      "jurisdiction": "MA",
+      "level": "state",
+      "category": "just_cause_eviction",
+      "status": "in_force",
+      "title": "Extension of Cure Period for Omission of Required Notification",
+      "requirement": "If a nonpayment notice fails to include the mandatory notification, the tenant's time to pay or tender rent is extended to the day the answer is due in an action to recover possession, though the failure to include the notification does not otherwise affect the validity of the notice.",
+      "key_value": "extended to the day the answer is due",
+      "coverage_conditions": "Applies when a notice to determine an estate at will for nonpayment of rent fails to contain the required notification.",
+      "exemptions": null,
+      "overrides": [],
+      "interaction": null,
+      "effective_date": null,
+      "citation": "G.L. c. 186, § 12",
+      "source_doc_id": "D051",
+      "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section12",
+      "quoted_span": "If any notice to determine an estate at will for nonpayment of rent shall fail to contain such notification, the time within which the tenant receiving the notice would be entitled to pay or tender rent pursuant to this section shall be extended to the day the answer is due in any action by the landlord to recover possession of the premises. Failure to include such notice shall not otherwise affect the validity of the said notice.",
+      "confidence": null,
+      "conflict_flag": false,
+      "conflict_note": null
+    },
+    {
+      "team_rule_id": "r-f78d3701d6",
+      "jurisdiction": "MA",
+      "level": "state",
+      "category": "just_cause_eviction",
+      "status": "in_force",
+      "title": "Continuance and Reinstatement for Government Subsidy Delay",
+      "requirement": "If nonpayment was caused by a government delay or failure in delivering a subsistence or rental payment, check, or voucher, the court in a possession action must continue the hearing for at least seven days to notify the agency and must treat the tenancy as not terminated if rent, interest, and court costs are tendered within that time.",
+      "key_value": "not less than 7 days",
+      "coverage_conditions": "Applies when neglect or refusal to pay rent was caused by government delay or failure in mailing or delivering a subsistence or rental payment, check, or voucher (other than salary) to the tenant or landlord.",
+      "exemptions": null,
+      "overrides": [],
+      "interaction": null,
+      "effective_date": null,
+      "citation": "G.L. c. 186, § 12",
+      "source_doc_id": "D051",
+      "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section12",
+      "quoted_span": "If the neglect or refusal to pay the rent due was caused by a failure or delay of the federal government, the commonwealth or any municipality, or any departments, agencies or authorities thereof, in the mailing or delivery of any subsistence or rental payment, check or voucher other than a salary payment to either the tenant or the landlord, the court in any action for possession shall continue the hearing not less than seven days in order to furnish notice of such action to the appropriate agency and shall, if all rent due with interest and costs of suit has been tendered to the landlord within such time, treat the tenancy as not having been terminated.",
+      "confidence": null,
+      "conflict_flag": false,
+      "conflict_note": null
+    }
+  ],
+  "candidates": [
+    {
+      "index": 0,
+      "origin": "primary",
+      "accepted": true,
+      "held": false,
+      "rejection_reasons": [],
+      "provision_ids": [
+        "P1"
+      ],
+      "source_basis": "operative_text",
+      "status_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 0,
+        "end": 55,
+        "occurrences": 1,
+        "model_span": "General Law - Part II, Title I, Chapter 186, Section 12",
+        "source_span": "General Law - Part II, Title I, Chapter 186, Section 12",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 313,
+        "end": 655,
+        "occurrences": 1,
+        "model_span": "Estates at will may be determined by either party by three months' notice in writing for that purpose given to the other party; and, if the rent reserved is payable at periods of less than three months, the time of such notice shall be sufficient if it is equal to the interval between the days of payment or thirty days, whichever is longer.",
+        "source_span": "Estates at will may be determined by either party by three months' notice in writing for that purpose given to the other party; and, if the rent reserved is payable at periods of less than three months, the time of such notice shall be sufficient if it is equal to the interval between the days of payment or thirty days, whichever is longer.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "Estates at will may be determined by either party by three months' notice in writing for that purpose given to the other party; and, if the rent reserved is payable at periods of less than three months, the time of such notice shall be sufficient if it is equal to the interval between the days of payment or thirty days, whichever is longer.",
+            "status": "exact_match",
+            "start": 313,
+            "end": 655
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": null,
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": null,
+        "applied_kind": null,
+        "effective_date": null,
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "codified_current_law",
+        "posture_consistent": true
+      },
+      "status_derivation": "enacted; codified current law that states no effective date",
+      "warnings": [],
+      "rule": {
+        "team_rule_id": "r-1956129b9e",
+        "jurisdiction": "MA",
+        "level": "state",
+        "category": "just_cause_eviction",
+        "status": "in_force",
+        "title": "Notice Required to Determine Estate at Will",
+        "requirement": "An estate at will may be determined by either party by three months' written notice, or, if rent is payable at periods of less than three months, by written notice equal to the interval between payment days or thirty days, whichever is longer.",
+        "key_value": "3 months, or interval between payment days or 30 days, whichever is longer",
+        "coverage_conditions": null,
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "G.L. c. 186, § 12",
+        "source_doc_id": "D051",
+        "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section12",
+        "quoted_span": "Estates at will may be determined by either party by three months' notice in writing for that purpose given to the other party; and, if the rent reserved is payable at periods of less than three months, the time of such notice shall be sufficient if it is equal to the interval between the days of payment or thirty days, whichever is longer.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "just_cause_eviction",
+        "citation": "G.L. c. 186, § 12",
+        "provision_ids": [
+          "P1"
+        ],
+        "source_basis": "operative_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "Estates at will may be determined by either party by three months' notice in writing for that purpose given to the other party; and, if the rent reserved is payable at periods of less than three months, the time of such notice shall be sufficient if it is equal to the interval between the days of payment or thirty days, whichever is longer."
+          }
+        ],
+        "title": "Notice Required to Determine Estate at Will",
+        "requirement": "An estate at will may be determined by either party by three months' written notice, or, if rent is payable at periods of less than three months, by written notice equal to the interval between payment days or thirty days, whichever is longer.",
+        "key_value": "3 months, or interval between payment days or 30 days, whichever is longer",
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": "General Law - Part II, Title I, Chapter 186, Section 12",
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": null,
+        "effective_date_evidence_kind": null,
+        "effective_date": null,
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 1,
+      "origin": "primary",
+      "accepted": true,
+      "held": false,
+      "rejection_reasons": [],
+      "provision_ids": [
+        "P2"
+      ],
+      "source_basis": "operative_text",
+      "status_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 0,
+        "end": 55,
+        "occurrences": 1,
+        "model_span": "General Law - Part II, Title I, Chapter 186, Section 12",
+        "source_span": "General Law - Part II, Title I, Chapter 186, Section 12",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 656,
+        "end": 900,
+        "occurrences": 1,
+        "model_span": "Such written notice may include an offer to establish a new tenancy for the same premises on terms different from that of the tenancy being terminated and the validity of such written notice shall not be affected by the inclusion of such offer.",
+        "source_span": "Such written notice may include an offer to establish a new tenancy for the same premises on terms different from that of the tenancy being terminated and the validity of such written notice shall not be affected by the inclusion of such offer.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "Such written notice may include an offer to establish a new tenancy for the same premises on terms different from that of the tenancy being terminated and the validity of such written notice shall not be affected by the inclusion of such offer.",
+            "status": "exact_match",
+            "start": 656,
+            "end": 900
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": null,
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": null,
+        "applied_kind": null,
+        "effective_date": null,
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "codified_current_law",
+        "posture_consistent": true
+      },
+      "status_derivation": "enacted; codified current law that states no effective date",
+      "warnings": [],
+      "rule": {
+        "team_rule_id": "r-d0d8542824",
+        "jurisdiction": "MA",
+        "level": "state",
+        "category": "just_cause_eviction",
+        "status": "in_force",
+        "title": "Inclusion of Offer for New Tenancy in Termination Notice",
+        "requirement": "A written notice to determine an estate at will may include an offer to establish a new tenancy for the same premises on different terms, and the inclusion of such an offer does not affect the validity of the notice.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "G.L. c. 186, § 12",
+        "source_doc_id": "D051",
+        "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section12",
+        "quoted_span": "Such written notice may include an offer to establish a new tenancy for the same premises on terms different from that of the tenancy being terminated and the validity of such written notice shall not be affected by the inclusion of such offer.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "just_cause_eviction",
+        "citation": "G.L. c. 186, § 12",
+        "provision_ids": [
+          "P2"
+        ],
+        "source_basis": "operative_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "Such written notice may include an offer to establish a new tenancy for the same premises on terms different from that of the tenancy being terminated and the validity of such written notice shall not be affected by the inclusion of such offer."
+          }
+        ],
+        "title": "Inclusion of Offer for New Tenancy in Termination Notice",
+        "requirement": "A written notice to determine an estate at will may include an offer to establish a new tenancy for the same premises on different terms, and the inclusion of such an offer does not affect the validity of the notice.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": "General Law - Part II, Title I, Chapter 186, Section 12",
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": null,
+        "effective_date_evidence_kind": null,
+        "effective_date": null,
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 2,
+      "origin": "primary",
+      "accepted": true,
+      "held": false,
+      "rejection_reasons": [],
+      "provision_ids": [
+        "P3"
+      ],
+      "source_basis": "operative_text",
+      "status_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 0,
+        "end": 55,
+        "occurrences": 1,
+        "model_span": "General Law - Part II, Title I, Chapter 186, Section 12",
+        "source_span": "General Law - Part II, Title I, Chapter 186, Section 12",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": "Applies in case of neglect or refusal to pay rent due from a tenant at will.",
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 901,
+        "end": 1098,
+        "occurrences": 1,
+        "model_span": "In case of neglect or refusal to pay the rent due from a tenant at will, fourteen days' notice to quit, given in writing by the landlord to the tenant, shall be sufficient to determine the tenancy;",
+        "source_span": "In case of neglect or refusal to pay the rent due from a tenant at will, fourteen days' notice to quit, given in writing by the landlord to the tenant, shall be sufficient to determine the tenancy;",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "In case of neglect or refusal to pay the rent due from a tenant at will, fourteen days' notice to quit, given in writing by the landlord to the tenant, shall be sufficient to determine the tenancy;",
+            "status": "exact_match",
+            "start": 901,
+            "end": 1098
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": null,
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": null,
+        "applied_kind": null,
+        "effective_date": null,
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "codified_current_law",
+        "posture_consistent": true
+      },
+      "status_derivation": "enacted; codified current law that states no effective date",
+      "warnings": [],
+      "rule": {
+        "team_rule_id": "r-a739f690c0",
+        "jurisdiction": "MA",
+        "level": "state",
+        "category": "just_cause_eviction",
+        "status": "in_force",
+        "title": "Fourteen Days' Notice to Quit for Nonpayment",
+        "requirement": "A landlord may determine an estate at will for a tenant's neglect or refusal to pay rent due by giving the tenant fourteen days' written notice to quit.",
+        "key_value": "14 days",
+        "coverage_conditions": "Applies in case of neglect or refusal to pay rent due from a tenant at will.",
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "G.L. c. 186, § 12",
+        "source_doc_id": "D051",
+        "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section12",
+        "quoted_span": "In case of neglect or refusal to pay the rent due from a tenant at will, fourteen days' notice to quit, given in writing by the landlord to the tenant, shall be sufficient to determine the tenancy;",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "just_cause_eviction",
+        "citation": "G.L. c. 186, § 12",
+        "provision_ids": [
+          "P3"
+        ],
+        "source_basis": "operative_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "In case of neglect or refusal to pay the rent due from a tenant at will, fourteen days' notice to quit, given in writing by the landlord to the tenant, shall be sufficient to determine the tenancy;"
+          }
+        ],
+        "title": "Fourteen Days' Notice to Quit for Nonpayment",
+        "requirement": "A landlord may determine an estate at will for a tenant's neglect or refusal to pay rent due by giving the tenant fourteen days' written notice to quit.",
+        "key_value": "14 days",
+        "coverage_conditions": "Applies in case of neglect or refusal to pay rent due from a tenant at will.",
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": "General Law - Part II, Title I, Chapter 186, Section 12",
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": null,
+        "effective_date_evidence_kind": null,
+        "effective_date": null,
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 3,
+      "origin": "primary",
+      "accepted": true,
+      "held": false,
+      "rejection_reasons": [],
+      "provision_ids": [
+        "P4"
+      ],
+      "source_basis": "operative_text",
+      "status_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 0,
+        "end": 55,
+        "occurrences": 1,
+        "model_span": "General Law - Part II, Title I, Chapter 186, Section 12",
+        "source_span": "General Law - Part II, Title I, Chapter 186, Section 12",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": "Applies to a tenant who has not received a similar notice from the landlord within the twelve months next preceding receipt of the notice.",
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 1099,
+        "end": 1489,
+        "occurrences": 1,
+        "model_span": "provided, that the tenancy of a tenant who has not received a similar notice from the landlord within the twelve months next preceding the receipt of such notice shall not be determined if the tenant, within ten days after the receipt thereof, pays or tenders to the landlord, the landlord's attorney, or the person to whom the tenant customarily pays rent, the full amount of any rent due.",
+        "source_span": "provided, that the tenancy of a tenant who has not received a similar notice from the landlord within the twelve months next preceding the receipt of such notice shall not be determined if the tenant, within ten days after the receipt thereof, pays or tenders to the landlord, the landlord's attorney, or the person to whom the tenant customarily pays rent, the full amount of any rent due.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "provided, that the tenancy of a tenant who has not received a similar notice from the landlord within the twelve months next preceding the receipt of such notice shall not be determined if the tenant, within ten days after the receipt thereof, pays or tenders to the landlord, the landlord's attorney, or the person to whom the tenant customarily pays rent, the full amount of any rent due.",
+            "status": "exact_match",
+            "start": 1099,
+            "end": 1489
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": null,
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": null,
+        "applied_kind": null,
+        "effective_date": null,
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "codified_current_law",
+        "posture_consistent": true
+      },
+      "status_derivation": "enacted; codified current law that states no effective date",
+      "warnings": [],
+      "rule": {
+        "team_rule_id": "r-a47b9105cc",
+        "jurisdiction": "MA",
+        "level": "state",
+        "category": "just_cause_eviction",
+        "status": "in_force",
+        "title": "Right to Cure Nonpayment Within Ten Days",
+        "requirement": "A tenancy at will is not determined if a tenant who has not received a similar notice within the preceding twelve months pays or tenders the full amount of rent due within ten days after receiving the notice to quit.",
+        "key_value": "10 days",
+        "coverage_conditions": "Applies to a tenant who has not received a similar notice from the landlord within the twelve months next preceding receipt of the notice.",
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "G.L. c. 186, § 12",
+        "source_doc_id": "D051",
+        "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section12",
+        "quoted_span": "provided, that the tenancy of a tenant who has not received a similar notice from the landlord within the twelve months next preceding the receipt of such notice shall not be determined if the tenant, within ten days after the receipt thereof, pays or tenders to the landlord, the landlord's attorney, or the person to whom the tenant customarily pays rent, the full amount of any rent due.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "just_cause_eviction",
+        "citation": "G.L. c. 186, § 12",
+        "provision_ids": [
+          "P4"
+        ],
+        "source_basis": "operative_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "provided, that the tenancy of a tenant who has not received a similar notice from the landlord within the twelve months next preceding the receipt of such notice shall not be determined if the tenant, within ten days after the receipt thereof, pays or tenders to the landlord, the landlord's attorney, or the person to whom the tenant customarily pays rent, the full amount of any rent due."
+          }
+        ],
+        "title": "Right to Cure Nonpayment Within Ten Days",
+        "requirement": "A tenancy at will is not determined if a tenant who has not received a similar notice within the preceding twelve months pays or tenders the full amount of rent due within ten days after receiving the notice to quit.",
+        "key_value": "10 days",
+        "coverage_conditions": "Applies to a tenant who has not received a similar notice from the landlord within the twelve months next preceding receipt of the notice.",
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": "General Law - Part II, Title I, Chapter 186, Section 12",
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": null,
+        "effective_date_evidence_kind": null,
+        "effective_date": null,
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 4,
+      "origin": "primary",
+      "accepted": true,
+      "held": false,
+      "rejection_reasons": [],
+      "provision_ids": [
+        "P5"
+      ],
+      "source_basis": "operative_text",
+      "status_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 0,
+        "end": 55,
+        "occurrences": 1,
+        "model_span": "General Law - Part II, Title I, Chapter 186, Section 12",
+        "source_span": "General Law - Part II, Title I, Chapter 186, Section 12",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": "Applies to every notice to determine an estate at will for nonpayment of rent.",
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 1490,
+        "end": 1965,
+        "occurrences": 1,
+        "model_span": "Every notice to determine an estate at will for nonpayment of rent shall contain the following notification to the tenant: ''If you have not received a notice to quit for nonpayment of rent within the last twelve months, you have a right to prevent termination of your tenancy by paying or tendering to your landlord, your landlord's attorney or the person to whom you customarily pay your rent the full amount of rent due within ten days after your receipt of this notice.''",
+        "source_span": "Every notice to determine an estate at will for nonpayment of rent shall contain the following notification to the tenant: ''If you have not received a notice to quit for nonpayment of rent within the last twelve months, you have a right to prevent termination of your tenancy by paying or tendering to your landlord, your landlord's attorney or the person to whom you customarily pay your rent the full amount of rent due within ten days after your receipt of this notice.''",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "Every notice to determine an estate at will for nonpayment of rent shall contain the following notification to the tenant: ''If you have not received a notice to quit for nonpayment of rent within the last twelve months, you have a right to prevent termination of your tenancy by paying or tendering to your landlord, your landlord's attorney or the person to whom you customarily pay your rent the full amount of rent due within ten days after your receipt of this notice.''",
+            "status": "exact_match",
+            "start": 1490,
+            "end": 1965
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": null,
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": null,
+        "applied_kind": null,
+        "effective_date": null,
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "codified_current_law",
+        "posture_consistent": true
+      },
+      "status_derivation": "enacted; codified current law that states no effective date",
+      "warnings": [],
+      "rule": {
+        "team_rule_id": "r-e60b399b1f",
+        "jurisdiction": "MA",
+        "level": "state",
+        "category": "just_cause_eviction",
+        "status": "in_force",
+        "title": "Mandatory Notification Language in Nonpayment Notice",
+        "requirement": "Every notice determining an estate at will for nonpayment of rent must include verbatim statutory notification informing the tenant of the right to cure within ten days if no notice to quit for nonpayment was received within the prior twelve months.",
+        "key_value": null,
+        "coverage_conditions": "Applies to every notice to determine an estate at will for nonpayment of rent.",
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "G.L. c. 186, § 12",
+        "source_doc_id": "D051",
+        "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section12",
+        "quoted_span": "Every notice to determine an estate at will for nonpayment of rent shall contain the following notification to the tenant: ''If you have not received a notice to quit for nonpayment of rent within the last twelve months, you have a right to prevent termination of your tenancy by paying or tendering to your landlord, your landlord's attorney or the person to whom you customarily pay your rent the full amount of rent due within ten days after your receipt of this notice.''",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "just_cause_eviction",
+        "citation": "G.L. c. 186, § 12",
+        "provision_ids": [
+          "P5"
+        ],
+        "source_basis": "operative_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "Every notice to determine an estate at will for nonpayment of rent shall contain the following notification to the tenant: ''If you have not received a notice to quit for nonpayment of rent within the last twelve months, you have a right to prevent termination of your tenancy by paying or tendering to your landlord, your landlord's attorney or the person to whom you customarily pay your rent the full amount of rent due within ten days after your receipt of this notice.''"
+          }
+        ],
+        "title": "Mandatory Notification Language in Nonpayment Notice",
+        "requirement": "Every notice determining an estate at will for nonpayment of rent must include verbatim statutory notification informing the tenant of the right to cure within ten days if no notice to quit for nonpayment was received within the prior twelve months.",
+        "key_value": null,
+        "coverage_conditions": "Applies to every notice to determine an estate at will for nonpayment of rent.",
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": "General Law - Part II, Title I, Chapter 186, Section 12",
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": null,
+        "effective_date_evidence_kind": null,
+        "effective_date": null,
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 5,
+      "origin": "primary",
+      "accepted": true,
+      "held": false,
+      "rejection_reasons": [],
+      "provision_ids": [
+        "P6"
+      ],
+      "source_basis": "operative_text",
+      "status_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 0,
+        "end": 55,
+        "occurrences": 1,
+        "model_span": "General Law - Part II, Title I, Chapter 186, Section 12",
+        "source_span": "General Law - Part II, Title I, Chapter 186, Section 12",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": "Applies when a notice to determine an estate at will for nonpayment of rent fails to contain the required notification.",
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 1966,
+        "end": 2400,
+        "occurrences": 1,
+        "model_span": "If any notice to determine an estate at will for nonpayment of rent shall fail to contain such notification, the time within which the tenant receiving the notice would be entitled to pay or tender rent pursuant to this section shall be extended to the day the answer is due in any action by the landlord to recover possession of the premises. Failure to include such notice shall not otherwise affect the validity of the said notice.",
+        "source_span": "If any notice to determine an estate at will for nonpayment of rent shall fail to contain such notification, the time within which the tenant receiving the notice would be entitled to pay or tender rent pursuant to this section shall be extended to the day the answer is due in any action by the landlord to recover possession of the premises. Failure to include such notice shall not otherwise affect the validity of the said notice.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "If any notice to determine an estate at will for nonpayment of rent shall fail to contain such notification, the time within which the tenant receiving the notice would be entitled to pay or tender rent pursuant to this section shall be extended to the day the answer is due in any action by the landlord to recover possession of the premises. Failure to include such notice shall not otherwise affect the validity of the said notice.",
+            "status": "exact_match",
+            "start": 1966,
+            "end": 2400
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": null,
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": null,
+        "applied_kind": null,
+        "effective_date": null,
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "codified_current_law",
+        "posture_consistent": true
+      },
+      "status_derivation": "enacted; codified current law that states no effective date",
+      "warnings": [],
+      "rule": {
+        "team_rule_id": "r-3ae3e3f1b3",
+        "jurisdiction": "MA",
+        "level": "state",
+        "category": "just_cause_eviction",
+        "status": "in_force",
+        "title": "Extension of Cure Period for Omission of Required Notification",
+        "requirement": "If a nonpayment notice fails to include the mandatory notification, the tenant's time to pay or tender rent is extended to the day the answer is due in an action to recover possession, though the failure to include the notification does not otherwise affect the validity of the notice.",
+        "key_value": "extended to the day the answer is due",
+        "coverage_conditions": "Applies when a notice to determine an estate at will for nonpayment of rent fails to contain the required notification.",
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "G.L. c. 186, § 12",
+        "source_doc_id": "D051",
+        "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section12",
+        "quoted_span": "If any notice to determine an estate at will for nonpayment of rent shall fail to contain such notification, the time within which the tenant receiving the notice would be entitled to pay or tender rent pursuant to this section shall be extended to the day the answer is due in any action by the landlord to recover possession of the premises. Failure to include such notice shall not otherwise affect the validity of the said notice.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "just_cause_eviction",
+        "citation": "G.L. c. 186, § 12",
+        "provision_ids": [
+          "P6"
+        ],
+        "source_basis": "operative_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "If any notice to determine an estate at will for nonpayment of rent shall fail to contain such notification, the time within which the tenant receiving the notice would be entitled to pay or tender rent pursuant to this section shall be extended to the day the answer is due in any action by the landlord to recover possession of the premises. Failure to include such notice shall not otherwise affect the validity of the said notice."
+          }
+        ],
+        "title": "Extension of Cure Period for Omission of Required Notification",
+        "requirement": "If a nonpayment notice fails to include the mandatory notification, the tenant's time to pay or tender rent is extended to the day the answer is due in an action to recover possession, though the failure to include the notification does not otherwise affect the validity of the notice.",
+        "key_value": "extended to the day the answer is due",
+        "coverage_conditions": "Applies when a notice to determine an estate at will for nonpayment of rent fails to contain the required notification.",
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": "General Law - Part II, Title I, Chapter 186, Section 12",
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": null,
+        "effective_date_evidence_kind": null,
+        "effective_date": null,
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 6,
+      "origin": "primary",
+      "accepted": true,
+      "held": false,
+      "rejection_reasons": [],
+      "provision_ids": [
+        "P7"
+      ],
+      "source_basis": "operative_text",
+      "status_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 0,
+        "end": 55,
+        "occurrences": 1,
+        "model_span": "General Law - Part II, Title I, Chapter 186, Section 12",
+        "source_span": "General Law - Part II, Title I, Chapter 186, Section 12",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": "Applies when neglect or refusal to pay rent was caused by government delay or failure in mailing or delivering a subsistence or rental payment, check, or voucher (other than salary) to the tenant or landlord.",
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 2401,
+        "end": 3064,
+        "occurrences": 1,
+        "model_span": "If the neglect or refusal to pay the rent due was caused by a failure or delay of the federal government, the commonwealth or any municipality, or any departments, agencies or authorities thereof, in the mailing or delivery of any subsistence or rental payment, check or voucher other than a salary payment to either the tenant or the landlord, the court in any action for possession shall continue the hearing not less than seven days in order to furnish notice of such action to the appropriate agency and shall, if all rent due with interest and costs of suit has been tendered to the landlord within such time, treat the tenancy as not having been terminated.",
+        "source_span": "If the neglect or refusal to pay the rent due was caused by a failure or delay of the federal government, the commonwealth or any municipality, or any departments, agencies or authorities thereof, in the mailing or delivery of any subsistence or rental payment, check or voucher other than a salary payment to either the tenant or the landlord, the court in any action for possession shall continue the hearing not less than seven days in order to furnish notice of such action to the appropriate agency and shall, if all rent due with interest and costs of suit has been tendered to the landlord within such time, treat the tenancy as not having been terminated.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "If the neglect or refusal to pay the rent due was caused by a failure or delay of the federal government, the commonwealth or any municipality, or any departments, agencies or authorities thereof, in the mailing or delivery of any subsistence or rental payment, check or voucher other than a salary payment to either the tenant or the landlord, the court in any action for possession shall continue the hearing not less than seven days in order to furnish notice of such action to the appropriate agency and shall, if all rent due with interest and costs of suit has been tendered to the landlord within such time, treat the tenancy as not having been terminated.",
+            "status": "exact_match",
+            "start": 2401,
+            "end": 3064
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": null,
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": null,
+        "applied_kind": null,
+        "effective_date": null,
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "codified_current_law",
+        "posture_consistent": true
+      },
+      "status_derivation": "enacted; codified current law that states no effective date",
+      "warnings": [],
+      "rule": {
+        "team_rule_id": "r-f78d3701d6",
+        "jurisdiction": "MA",
+        "level": "state",
+        "category": "just_cause_eviction",
+        "status": "in_force",
+        "title": "Continuance and Reinstatement for Government Subsidy Delay",
+        "requirement": "If nonpayment was caused by a government delay or failure in delivering a subsistence or rental payment, check, or voucher, the court in a possession action must continue the hearing for at least seven days to notify the agency and must treat the tenancy as not terminated if rent, interest, and court costs are tendered within that time.",
+        "key_value": "not less than 7 days",
+        "coverage_conditions": "Applies when neglect or refusal to pay rent was caused by government delay or failure in mailing or delivering a subsistence or rental payment, check, or voucher (other than salary) to the tenant or landlord.",
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "G.L. c. 186, § 12",
+        "source_doc_id": "D051",
+        "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section12",
+        "quoted_span": "If the neglect or refusal to pay the rent due was caused by a failure or delay of the federal government, the commonwealth or any municipality, or any departments, agencies or authorities thereof, in the mailing or delivery of any subsistence or rental payment, check or voucher other than a salary payment to either the tenant or the landlord, the court in any action for possession shall continue the hearing not less than seven days in order to furnish notice of such action to the appropriate agency and shall, if all rent due with interest and costs of suit has been tendered to the landlord within such time, treat the tenancy as not having been terminated.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "just_cause_eviction",
+        "citation": "G.L. c. 186, § 12",
+        "provision_ids": [
+          "P7"
+        ],
+        "source_basis": "operative_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "If the neglect or refusal to pay the rent due was caused by a failure or delay of the federal government, the commonwealth or any municipality, or any departments, agencies or authorities thereof, in the mailing or delivery of any subsistence or rental payment, check or voucher other than a salary payment to either the tenant or the landlord, the court in any action for possession shall continue the hearing not less than seven days in order to furnish notice of such action to the appropriate agency and shall, if all rent due with interest and costs of suit has been tendered to the landlord within such time, treat the tenancy as not having been terminated."
+          }
+        ],
+        "title": "Continuance and Reinstatement for Government Subsidy Delay",
+        "requirement": "If nonpayment was caused by a government delay or failure in delivering a subsistence or rental payment, check, or voucher, the court in a possession action must continue the hearing for at least seven days to notify the agency and must treat the tenancy as not terminated if rent, interest, and court costs are tendered within that time.",
+        "key_value": "not less than 7 days",
+        "coverage_conditions": "Applies when neglect or refusal to pay rent was caused by government delay or failure in mailing or delivering a subsistence or rental payment, check, or voucher (other than salary) to the tenant or landlord.",
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": "General Law - Part II, Title I, Chapter 186, Section 12",
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": null,
+        "effective_date_evidence_kind": null,
+        "effective_date": null,
+        "conflict_note": null
+      }
+    }
+  ],
+  "posture": {
+    "declared": "codified_current_law",
+    "evidence": "General Law - Part II, Title I, Chapter 186, Section 12",
+    "evidence_check": {
+      "status": "exact_match",
+      "normalization": null,
+      "start": 0,
+      "end": 55,
+      "occurrences": 1,
+      "model_span": "General Law - Part II, Title I, Chapter 186, Section 12",
+      "source_span": "General Law - Part II, Title I, Chapter 186, Section 12",
+      "reason": null,
+      "reconstructed": false,
+      "parts": [],
+      "crossed_artifacts": []
+    },
+    "established": "codified_current_law",
+    "basis": "declared posture with verified evidence"
+  },
+  "base_dates": [],
+  "provision_inventory": [
+    {
+      "id": "P1",
+      "ref": "G.L. c. 186, § 12 (sent. 1)",
+      "anchor": "Estates at will may be determined by either party by three months' notice",
+      "summary": "Establishes required notice periods to determine an estate at will (three months, or the payment interval or 30 days, whichever is longer).",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "just_cause_eviction",
+      "reason": null
+    },
+    {
+      "id": "P2",
+      "ref": "G.L. c. 186, § 12 (sent. 2)",
+      "anchor": "Such written notice may include an offer to establish a new tenancy",
+      "summary": "Permits written termination notice to include an offer of a new tenancy on different terms without affecting notice validity.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "just_cause_eviction",
+      "reason": null
+    },
+    {
+      "id": "P3",
+      "ref": "G.L. c. 186, § 12 (sent. 3, cl. 1)",
+      "anchor": "In case of neglect or refusal to pay the rent due from a tenant at will,",
+      "summary": "Permits determination of estate at will for nonpayment upon fourteen days' written notice to quit.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "just_cause_eviction",
+      "reason": null
+    },
+    {
+      "id": "P4",
+      "ref": "G.L. c. 186, § 12 (sent. 3, cl. 2)",
+      "anchor": "provided, that the tenancy of a tenant who has not received a similar notice",
+      "summary": "Grants tenant a ten-day cure right to avoid termination if tenant has not received a nonpayment notice in the prior twelve months.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "just_cause_eviction",
+      "reason": null
+    },
+    {
+      "id": "P5",
+      "ref": "G.L. c. 186, § 12 (sent. 4)",
+      "anchor": "Every notice to determine an estate at will for nonpayment of rent shall contain",
+      "summary": "Mandates statutory notification language in every notice to quit for nonpayment of rent.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "just_cause_eviction",
+      "reason": null
+    },
+    {
+      "id": "P6",
+      "ref": "G.L. c. 186, § 12 (sent. 5-6)",
+      "anchor": "If any notice to determine an estate at will for nonpayment of rent shall fail",
+      "summary": "Extends cure deadline to the answer date if required notification is omitted, without otherwise invalidating the notice.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "just_cause_eviction",
+      "reason": null
+    },
+    {
+      "id": "P7",
+      "ref": "G.L. c. 186, § 12 (sent. 7)",
+      "anchor": "If the neglect or refusal to pay the rent due was caused by a failure or delay",
+      "summary": "Requires court continuance of at least seven days and non-termination upon tender when nonpayment results from government benefit or rental payment delays.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "just_cause_eviction",
+      "reason": null
+    }
+  ],
+  "global_scope": [],
+  "source_view": {
+    "marker": "[[PAGE BREAK]]",
+    "segment_label": "[[SEGMENT {}]]",
+    "view_sha256": "429388bbe33065d6f6ce1086561cfa74d7f518f89273a99b42fa17c91f57cc14",
+    "segments": [
+      {
+        "id": 1,
+        "raw_start": 0,
+        "raw_end": 3945
+      }
+    ],
+    "artifacts_removed": 0,
+    "artifacts": []
+  },
+  "coverage": {
+    "inventory_valid": true,
+    "anchors_located": "7/7",
+    "after_primary": {
+      "uncovered": [],
+      "unaccepted": [],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "scope_mappings": {
+      "requested": 0,
+      "applies": 0,
+      "does_not_apply": 0,
+      "unresolved": 0
+    },
+    "inventory_items": 7,
+    "in_scope_items": 7,
+    "in_scope_refs": 7,
+    "uncertain": [],
+    "final": {
+      "uncovered": [],
+      "unaccepted": [],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "link_mismatches": [],
+    "provisions": [
+      {
+        "ref": "G.L. c. 186",
+        "inventory_item": 0,
+        "provision_id": "P1",
+        "summary": "Establishes required notice periods to determine an estate at will (three months, or the payment interval or 30 days, whichever is longer).",
+        "category": "just_cause_eviction",
+        "candidates": [
+          0
+        ],
+        "accepted": [
+          0
+        ],
+        "basis": {
+          "0": "provision link; citation names it"
+        }
+      },
+      {
+        "ref": "G.L. c. 186",
+        "inventory_item": 1,
+        "provision_id": "P2",
+        "summary": "Permits written termination notice to include an offer of a new tenancy on different terms without affecting notice validity.",
+        "category": "just_cause_eviction",
+        "candidates": [
+          1
+        ],
+        "accepted": [
+          1
+        ],
+        "basis": {
+          "1": "provision link; citation names it"
+        }
+      },
+      {
+        "ref": "G.L. c. 186",
+        "inventory_item": 2,
+        "provision_id": "P3",
+        "summary": "Permits determination of estate at will for nonpayment upon fourteen days' written notice to quit.",
+        "category": "just_cause_eviction",
+        "candidates": [
+          2
+        ],
+        "accepted": [
+          2
+        ],
+        "basis": {
+          "2": "provision link; citation names it"
+        }
+      },
+      {
+        "ref": "G.L. c. 186",
+        "inventory_item": 3,
+        "provision_id": "P4",
+        "summary": "Grants tenant a ten-day cure right to avoid termination if tenant has not received a nonpayment notice in the prior twelve months.",
+        "category": "just_cause_eviction",
+        "candidates": [
+          3
+        ],
+        "accepted": [
+          3
+        ],
+        "basis": {
+          "3": "provision link; citation names it"
+        }
+      },
+      {
+        "ref": "G.L. c. 186",
+        "inventory_item": 4,
+        "provision_id": "P5",
+        "summary": "Mandates statutory notification language in every notice to quit for nonpayment of rent.",
+        "category": "just_cause_eviction",
+        "candidates": [
+          4
+        ],
+        "accepted": [
+          4
+        ],
+        "basis": {
+          "4": "provision link; citation names it"
+        }
+      },
+      {
+        "ref": "G.L. c. 186",
+        "inventory_item": 5,
+        "provision_id": "P6",
+        "summary": "Extends cure deadline to the answer date if required notification is omitted, without otherwise invalidating the notice.",
+        "category": "just_cause_eviction",
+        "candidates": [
+          5
+        ],
+        "accepted": [
+          5
+        ],
+        "basis": {
+          "5": "provision link; citation names it"
+        }
+      },
+      {
+        "ref": "G.L. c. 186",
+        "inventory_item": 6,
+        "provision_id": "P7",
+        "summary": "Requires court continuance of at least seven days and non-termination upon tender when nonpayment results from government benefit or rental payment delays.",
+        "category": "just_cause_eviction",
+        "candidates": [
+          6
+        ],
+        "accepted": [
+          6
+        ],
+        "basis": {
+          "6": "provision link; citation names it"
+        }
+      }
+    ],
+    "unrecorded_subdivisions": []
+  },
+  "scope_challenges": [],
+  "scope_mappings": [],
+  "legislative_session": null,
+  "empty_result": null,
+  "legacy_replay": null,
+  "repair": null,
+  "document_status": "complete",
+  "review_reasons": [],
+  "warnings": [],
+  "errors": [],
+  "raw_response_text": "{\n  \"document\": {\n    \"posture\": \"codified_current_law\",\n    \"evidence\": \"General Law - Part II, Title I, Chapter 186, Section 12\"\n  },\n  \"provisions\": [\n    {\n      \"id\": \"P1\",\n      \"ref\": \"G.L. c. 186, § 12 (sent. 1)\",\n      \"anchor\": \"Estates at will may be determined by either party by three months' notice\",\n      \"summary\": \"Establishes required notice periods to determine an estate at will (three months, or the payment interval or 30 days, whichever is longer).\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"just_cause_eviction\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P2\",\n      \"ref\": \"G.L. c. 186, § 12 (sent. 2)\",\n      \"anchor\": \"Such written notice may include an offer to establish a new tenancy\",\n      \"summary\": \"Permits written termination notice to include an offer of a new tenancy on different terms without affecting notice validity.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"just_cause_eviction\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P3\",\n      \"ref\": \"G.L. c. 186, § 12 (sent. 3, cl. 1)\",\n      \"anchor\": \"In case of neglect or refusal to pay the rent due from a tenant at will,\",\n      \"summary\": \"Permits determination of estate at will for nonpayment upon fourteen days' written notice to quit.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"just_cause_eviction\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P4\",\n      \"ref\": \"G.L. c. 186, § 12 (sent. 3, cl. 2)\",\n      \"anchor\": \"provided, that the tenancy of a tenant who has not received a similar notice\",\n      \"summary\": \"Grants tenant a ten-day cure right to avoid termination if tenant has not received a nonpayment notice in the prior twelve months.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"just_cause_eviction\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P5\",\n      \"ref\": \"G.L. c. 186, § 12 (sent. 4)\",\n      \"anchor\": \"Every notice to determine an estate at will for nonpayment of rent shall contain\",\n      \"summary\": \"Mandates statutory notification language in every notice to quit for nonpayment of rent.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"just_cause_eviction\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P6\",\n      \"ref\": \"G.L. c. 186, § 12 (sent. 5-6)\",\n      \"anchor\": \"If any notice to determine an estate at will for nonpayment of rent shall fail\",\n      \"summary\": \"Extends cure deadline to the answer date if required notification is omitted, without otherwise invalidating the notice.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"just_cause_eviction\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P7\",\n      \"ref\": \"G.L. c. 186, § 12 (sent. 7)\",\n      \"anchor\": \"If the neglect or refusal to pay the rent due was caused by a failure or delay\",\n      \"summary\": \"Requires court continuance of at least seven days and non-termination upon tender when nonpayment results from government benefit or rental payment delays.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"just_cause_eviction\",\n      \"reason\": null\n    }\n  ],\n  \"global_scope\": [],\n  \"rules\": [\n    {\n      \"category\": \"just_cause_eviction\",\n      \"citation\": \"G.L. c. 186, § 12\",\n      \"provision_ids\": [\"P1\"],\n      \"source_basis\": \"operative_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Estates at will may be determined by either party by three months' notice in writing for that purpose given to the other party; and, if the rent reserved is payable at periods of less than three months, the time of such notice shall be sufficient if it is equal to the interval between the days of payment or thirty days, whichever is longer.\"\n        }\n      ],\n      \"title\": \"Notice Required to Determine Estate at Will\",\n      \"requirement\": \"An estate at will may be determined by either party by three months' written notice, or, if rent is payable at periods of less than three months, by written notice equal to the interval between payment days or thirty days, whichever is longer.\",\n      \"key_value\": \"3 months, or interval between payment days or 30 days, whichever is longer\",\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": \"General Law - Part II, Title I, Chapter 186, Section 12\",\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": null,\n      \"effective_date_evidence_kind\": null,\n      \"effective_date\": null,\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"just_cause_eviction\",\n      \"citation\": \"G.L. c. 186, § 12\",\n      \"provision_ids\": [\"P2\"],\n      \"source_basis\": \"operative_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Such written notice may include an offer to establish a new tenancy for the same premises on terms different from that of the tenancy being terminated and the validity of such written notice shall not be affected by the inclusion of such offer.\"\n        }\n      ],\n      \"title\": \"Inclusion of Offer for New Tenancy in Termination Notice\",\n      \"requirement\": \"A written notice to determine an estate at will may include an offer to establish a new tenancy for the same premises on different terms, and the inclusion of such an offer does not affect the validity of the notice.\",\n      \"key_value\": null,\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": \"General Law - Part II, Title I, Chapter 186, Section 12\",\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": null,\n      \"effective_date_evidence_kind\": null,\n      \"effective_date\": null,\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"just_cause_eviction\",\n      \"citation\": \"G.L. c. 186, § 12\",\n      \"provision_ids\": [\"P3\"],\n      \"source_basis\": \"operative_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"In case of neglect or refusal to pay the rent due from a tenant at will, fourteen days' notice to quit, given in writing by the landlord to the tenant, shall be sufficient to determine the tenancy;\"\n        }\n      ],\n      \"title\": \"Fourteen Days' Notice to Quit for Nonpayment\",\n      \"requirement\": \"A landlord may determine an estate at will for a tenant's neglect or refusal to pay rent due by giving the tenant fourteen days' written notice to quit.\",\n      \"key_value\": \"14 days\",\n      \"coverage_conditions\": \"Applies in case of neglect or refusal to pay rent due from a tenant at will.\",\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": \"General Law - Part II, Title I, Chapter 186, Section 12\",\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": null,\n      \"effective_date_evidence_kind\": null,\n      \"effective_date\": null,\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"just_cause_eviction\",\n      \"citation\": \"G.L. c. 186, § 12\",\n      \"provision_ids\": [\"P4\"],\n      \"source_basis\": \"operative_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"provided, that the tenancy of a tenant who has not received a similar notice from the landlord within the twelve months next preceding the receipt of such notice shall not be determined if the tenant, within ten days after the receipt thereof, pays or tenders to the landlord, the landlord's attorney, or the person to whom the tenant customarily pays rent, the full amount of any rent due.\"\n        }\n      ],\n      \"title\": \"Right to Cure Nonpayment Within Ten Days\",\n      \"requirement\": \"A tenancy at will is not determined if a tenant who has not received a similar notice within the preceding twelve months pays or tenders the full amount of rent due within ten days after receiving the notice to quit.\",\n      \"key_value\": \"10 days\",\n      \"coverage_conditions\": \"Applies to a tenant who has not received a similar notice from the landlord within the twelve months next preceding receipt of the notice.\",\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": \"General Law - Part II, Title I, Chapter 186, Section 12\",\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": null,\n      \"effective_date_evidence_kind\": null,\n      \"effective_date\": null,\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"just_cause_eviction\",\n      \"citation\": \"G.L. c. 186, § 12\",\n      \"provision_ids\": [\"P5\"],\n      \"source_basis\": \"operative_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Every notice to determine an estate at will for nonpayment of rent shall contain the following notification to the tenant: ''If you have not received a notice to quit for nonpayment of rent within the last twelve months, you have a right to prevent termination of your tenancy by paying or tendering to your landlord, your landlord's attorney or the person to whom you customarily pay your rent the full amount of rent due within ten days after your receipt of this notice.''\"\n        }\n      ],\n      \"title\": \"Mandatory Notification Language in Nonpayment Notice\",\n      \"requirement\": \"Every notice determining an estate at will for nonpayment of rent must include verbatim statutory notification informing the tenant of the right to cure within ten days if no notice to quit for nonpayment was received within the prior twelve months.\",\n      \"key_value\": null,\n      \"coverage_conditions\": \"Applies to every notice to determine an estate at will for nonpayment of rent.\",\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": \"General Law - Part II, Title I, Chapter 186, Section 12\",\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": null,\n      \"effective_date_evidence_kind\": null,\n      \"effective_date\": null,\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"just_cause_eviction\",\n      \"citation\": \"G.L. c. 186, § 12\",\n      \"provision_ids\": [\"P6\"],\n      \"source_basis\": \"operative_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"If any notice to determine an estate at will for nonpayment of rent shall fail to contain such notification, the time within which the tenant receiving the notice would be entitled to pay or tender rent pursuant to this section shall be extended to the day the answer is due in any action by the landlord to recover possession of the premises. Failure to include such notice shall not otherwise affect the validity of the said notice.\"\n        }\n      ],\n      \"title\": \"Extension of Cure Period for Omission of Required Notification\",\n      \"requirement\": \"If a nonpayment notice fails to include the mandatory notification, the tenant's time to pay or tender rent is extended to the day the answer is due in an action to recover possession, though the failure to include the notification does not otherwise affect the validity of the notice.\",\n      \"key_value\": \"extended to the day the answer is due\",\n      \"coverage_conditions\": \"Applies when a notice to determine an estate at will for nonpayment of rent fails to contain the required notification.\",\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": \"General Law - Part II, Title I, Chapter 186, Section 12\",\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": null,\n      \"effective_date_evidence_kind\": null,\n      \"effective_date\": null,\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"just_cause_eviction\",\n      \"citation\": \"G.L. c. 186, § 12\",\n      \"provision_ids\": [\"P7\"],\n      \"source_basis\": \"operative_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"If the neglect or refusal to pay the rent due was caused by a failure or delay of the federal government, the commonwealth or any municipality, or any departments, agencies or authorities thereof, in the mailing or delivery of any subsistence or rental payment, check or voucher other than a salary payment to either the tenant or the landlord, the court in any action for possession shall continue the hearing not less than seven days in order to furnish notice of such action to the appropriate agency and shall, if all rent due with interest and costs of suit has been tendered to the landlord within such time, treat the tenancy as not having been terminated.\"\n        }\n      ],\n      \"title\": \"Continuance and Reinstatement for Government Subsidy Delay\",\n      \"requirement\": \"If nonpayment was caused by a government delay or failure in delivering a subsistence or rental payment, check, or voucher, the court in a possession action must continue the hearing for at least seven days to notify the agency and must treat the tenancy as not terminated if rent, interest, and court costs are tendered within that time.\",\n      \"key_value\": \"not less than 7 days\",\n      \"coverage_conditions\": \"Applies when neglect or refusal to pay rent was caused by government delay or failure in mailing or delivering a subsistence or rental payment, check, or voucher (other than salary) to the tenant or landlord.\",\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": \"General Law - Part II, Title I, Chapter 186, Section 12\",\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": null,\n      \"effective_date_evidence_kind\": null,\n      \"effective_date\": null,\n      \"conflict_note\": null\n    }\n  ],\n  \"no_rules_justification\": null\n}"
+}

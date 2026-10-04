@@ -1,0 +1,2357 @@
+{
+  "disclaimer": "Not legal advice. Automated extraction for a research prototype; verify against the cited source.",
+  "run_at": "2026-10-04T02:54:36+00:00",
+  "source": {
+    "doc_id": "D014",
+    "jurisdiction": "Boston, MA",
+    "url": "https://www.boston.gov/sites/default/files/file/2020/11/Housing%20Stability%20Notification%20Act%20Tenant%20FAQs.pdf",
+    "source_type": "official",
+    "retrieved_at": "2026-10-01T22:35Z",
+    "text_file": "text/D014.txt",
+    "content_sha256": "665d405627ec3ba91fcc70766bc8efd646867bee3a04acff0135cb2ff2ccba72",
+    "body_chars": 5727
+  },
+  "provider": "gemini",
+  "model": "gemini-3.8-flash",
+  "prompt_version": "v7",
+  "prompt_sha256": "7cede96412b886e575bb88cec04105ccd769280697de83bd0c1837d28aa9c935",
+  "response_schema_sha256": "c15306da6f21dc72f06e78405f94ed61dc9e59288138cc98b5b5bf9b62ac403c",
+  "generation_settings": {
+    "temperature": null,
+    "seed": 20261001,
+    "thinking_level": "medium"
+  },
+  "as_of": "2026-10-01",
+  "cache_key": "6b7f79ec4a84ae5830522f927aa2a3cc2ac8111ffbdbf780cc6ea0c34a67e645",
+  "cache_hit": false,
+  "cache_entry": "cache/extraction/6b7f79ec4a84ae5830522f927aa2a3cc2ac8111ffbdbf780cc6ea0c34a67e645.json",
+  "provider_metadata": {
+    "api": "interactions.create",
+    "interaction_id": "",
+    "model": "gemini-3.8-flash",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 5237,
+      "output_tokens": 3438,
+      "thinking_tokens": 20271,
+      "total_tokens": 28946
+    }
+  },
+  "candidate_count": 4,
+  "accepted_count": 4,
+  "rules": [
+    {
+      "team_rule_id": "r-00c34181be",
+      "jurisdiction": "Boston, MA",
+      "level": "city",
+      "category": "just_cause_eviction",
+      "status": "in_force",
+      "title": "Notice of Tenants’ Rights and Resources Delivery Requirement",
+      "requirement": "[Basis: official explanatory text, not operative legal text] Landlords must provide tenants with a Notice of Tenants’ Rights and Resources at the same time as the Notice to Quit when commencing eviction or deciding not to offer a lease renewal. Anyone purchasing property out of foreclosure or from a lender must also deliver this notice to former owners or tenants asked to leave the property.",
+      "key_value": null,
+      "coverage_conditions": "The Ordinance applies to all landlords and foreclosing owners intending to end a tenancy or post-foreclosure occupancy of a unit in the City of Boston. [Question 5]",
+      "exemptions": "Residences in any hospital, skilled nursing facility, or health facility are exempt. [Question 5]; Residences in a non-profit facility whose primary purpose is providing short-term treatment, assistance, or therapy for alcohol, drug, or other substance abuse are exempt. [Question 5]",
+      "overrides": [],
+      "interaction": null,
+      "effective_date": "2020-11-06",
+      "citation": "Question 1",
+      "source_doc_id": "D014",
+      "source_url": "https://www.boston.gov/sites/default/files/file/2020/11/Housing%20Stability%20Notification%20Act%20Tenant%20FAQs.pdf",
+      "quoted_span": "The HSNA requires that landlords give this Notice of Tenants’ Rights and Resources\nto tenants when the landlord starts the eviction process, or when the landlord\ndecides to not offer the tenant a renewal of their lease agreement. The Notice of\nTenants’ Rights and Resources must be delivered at the same time as the Notice to\nQuit.\nThe Notice of Tenants’ Rights and Resources must also be delivered to any tenant\nthat is asked to leave a property. For example, if someone is purchasing a property\nout of foreclosure, or from a bank or a mortgage lender, they must provide this\nNotice to the former owners of the property, or any tenants that live in the\nproperty.",
+      "confidence": null,
+      "conflict_flag": false,
+      "conflict_note": null
+    },
+    {
+      "team_rule_id": "r-a63e924b6c",
+      "jurisdiction": "Boston, MA",
+      "level": "city",
+      "category": "just_cause_eviction",
+      "status": "in_force",
+      "title": "Notice Filing with Office of Housing Stability",
+      "requirement": "[Basis: official explanatory text, not operative legal text] Landlords and foreclosing owners must send a copy of the Notice to Quit or Notice of Non-renewal of Lease, along with a Certificate of Compliance/Service, to the City of Boston's Office of Housing Stability.",
+      "key_value": null,
+      "coverage_conditions": "The Ordinance applies to all landlords and foreclosing owners intending to end a tenancy or post-foreclosure occupancy of a unit in the City of Boston. [Question 5]",
+      "exemptions": "Residences in any hospital, skilled nursing facility, or health facility are exempt. [Question 5]; Residences in a non-profit facility whose primary purpose is providing short-term treatment, assistance, or therapy for alcohol, drug, or other substance abuse are exempt. [Question 5]",
+      "overrides": [],
+      "interaction": null,
+      "effective_date": "2020-11-06",
+      "citation": "Question 1",
+      "source_doc_id": "D014",
+      "source_url": "https://www.boston.gov/sites/default/files/file/2020/11/Housing%20Stability%20Notification%20Act%20Tenant%20FAQs.pdf",
+      "quoted_span": "The HSNA also requires landlords and foreclosing owners to send a copy of the\nNotice to Quit or Notice of Non-renewal of Lease, together with a Certificate of\nCompliance/Service, to the City of Boston’s Office of Housing Stability",
+      "confidence": null,
+      "conflict_flag": false,
+      "conflict_note": null
+    },
+    {
+      "team_rule_id": "r-8c050c904a",
+      "jurisdiction": "Boston, MA",
+      "level": "city",
+      "category": "just_cause_eviction",
+      "status": "in_force",
+      "title": "Non-Waiver of Rights",
+      "requirement": "[Basis: official explanatory text, not operative legal text] The requirements of the Ordinance cannot be waived, and any lease, contract, or agreement term purporting to waive or limit substantive or procedural rights under the Ordinance is contrary to public policy, unenforceable, and void.",
+      "key_value": null,
+      "coverage_conditions": "The Ordinance applies to all landlords and foreclosing owners intending to end a tenancy or post-foreclosure occupancy of a unit in the City of Boston. [Question 5]",
+      "exemptions": "Residences in any hospital, skilled nursing facility, or health facility are exempt. [Question 5]; Residences in a non-profit facility whose primary purpose is providing short-term treatment, assistance, or therapy for alcohol, drug, or other substance abuse are exempt. [Question 5]",
+      "overrides": [],
+      "interaction": null,
+      "effective_date": "2020-11-06",
+      "citation": "Question 6",
+      "source_doc_id": "D014",
+      "source_url": "https://www.boston.gov/sites/default/files/file/2020/11/Housing%20Stability%20Notification%20Act%20Tenant%20FAQs.pdf",
+      "quoted_span": "The requirements of this Ordinance may not be waived, and any term of any\nlease, contract, or other agreement that purports to waive or limit a tenant’s or\nformer homeowner’s substantive or procedural rights under this Ordinance are\ncontrary to public policy, unenforceable, and void.",
+      "confidence": null,
+      "conflict_flag": false,
+      "conflict_note": null
+    },
+    {
+      "team_rule_id": "r-d6d7620e65",
+      "jurisdiction": "Boston, MA",
+      "level": "city",
+      "category": "just_cause_eviction",
+      "status": "in_force",
+      "title": "Penalties for Violation",
+      "requirement": "[Basis: official explanatory text, not operative legal text] Violations of the Ordinance are punishable by a warning for a first offense and a fine of $300 per day for second and subsequent offenses. A violation does not halt the eviction process.",
+      "key_value": "$300 per day",
+      "coverage_conditions": "The Ordinance applies to all landlords and foreclosing owners intending to end a tenancy or post-foreclosure occupancy of a unit in the City of Boston. [Question 5]",
+      "exemptions": "Residences in any hospital, skilled nursing facility, or health facility are exempt. [Question 5]; Residences in a non-profit facility whose primary purpose is providing short-term treatment, assistance, or therapy for alcohol, drug, or other substance abuse are exempt. [Question 5]",
+      "overrides": [],
+      "interaction": "A violation of the HSNA does not halt the eviction process.",
+      "effective_date": "2020-11-06",
+      "citation": "Sec. 10-11.7",
+      "source_doc_id": "D014",
+      "source_url": "https://www.boston.gov/sites/default/files/file/2020/11/Housing%20Stability%20Notification%20Act%20Tenant%20FAQs.pdf",
+      "quoted_span": "Unless otherwise provided, a person or entity violating any provisions of this \nOrdinance shall be punishable by a warning or fine in accordance with the \nprovisions of City of Boston Ordinances and/or Boston City Charter, shown below. \nHousing Stability Notification Act (Sec. 10-11.7) \nEnforcement Entity: Inspectional Services Department \n1st Offense: Warning \n2nd and Subsequent Offenses: $300 per day \nIf a landlord violates the HSNA, it DOES NOT halt the eviction process.",
+      "confidence": null,
+      "conflict_flag": false,
+      "conflict_note": null
+    }
+  ],
+  "candidates": [
+    {
+      "index": 0,
+      "origin": "primary",
+      "accepted": true,
+      "held": false,
+      "rejection_reasons": [],
+      "provision_ids": [
+        "P1"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": {
+        "status": "normalized_match",
+        "normalization": "Unicode NFC; each whitespace run (incl. line breaks) compared as one space; span ends trimmed",
+        "start": 130,
+        "end": 236,
+        "occurrences": 1,
+        "model_span": "The Housing Stability Notification Act (HSNA) is an Ordinance passed by the City of Boston in October 2020",
+        "source_span": "The Housing Stability Notification Act (HSNA) is an Ordinance passed by the City of\nBoston in October 2020",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 370,
+        "end": 1033,
+        "occurrences": 1,
+        "model_span": "The HSNA requires that landlords give this Notice of Tenants’ Rights and Resources\nto tenants when the landlord starts the eviction process, or when the landlord\ndecides to not offer the tenant a renewal of their lease agreement. The Notice of\nTenants’ Rights and Resources must be delivered at the same time as the Notice to\nQuit.\nThe Notice of Tenants’ Rights and Resources must also be delivered to any tenant\nthat is asked to leave a property. For example, if someone is purchasing a property\nout of foreclosure, or from a bank or a mortgage lender, they must provide this\nNotice to the former owners of the property, or any tenants that live in the\nproperty.",
+        "source_span": "The HSNA requires that landlords give this Notice of Tenants’ Rights and Resources\nto tenants when the landlord starts the eviction process, or when the landlord\ndecides to not offer the tenant a renewal of their lease agreement. The Notice of\nTenants’ Rights and Resources must be delivered at the same time as the Notice to\nQuit.\nThe Notice of Tenants’ Rights and Resources must also be delivered to any tenant\nthat is asked to leave a property. For example, if someone is purchasing a property\nout of foreclosure, or from a bank or a mortgage lender, they must provide this\nNotice to the former owners of the property, or any tenants that live in the\nproperty.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "The HSNA requires that landlords give this Notice of Tenants’ Rights and Resources\nto tenants when the landlord starts the eviction process, or when the landlord\ndecides to not offer the tenant a renewal of their lease agreement. The Notice of\nTenants’ Rights and Resources must be delivered at the same time as the Notice to\nQuit.\nThe Notice of Tenants’ Rights and Resources must also be delivered to any tenant\nthat is asked to leave a property. For example, if someone is purchasing a property\nout of foreclosure, or from a bank or a mortgage lender, they must provide this\nNotice to the former owners of the property, or any tenants that live in the\nproperty.",
+            "status": "exact_match",
+            "start": 370,
+            "end": 1033
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 2010,
+        "end": 2057,
+        "occurrences": 1,
+        "model_span": "The HSNA becomes effective on November 6, 2020.",
+        "source_span": "The HSNA becomes effective on November 6, 2020.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [
+        {
+          "id": "S1",
+          "kind": "coverage_condition",
+          "mode": "named_subject",
+          "governed_provision_ids": [
+            "P1"
+          ],
+          "basis": "named-subject mapping to P1 verified by repair",
+          "applied": true
+        },
+        {
+          "id": "S2",
+          "kind": "exemption",
+          "mode": "named_subject",
+          "governed_provision_ids": [
+            "P1"
+          ],
+          "basis": "named-subject mapping to P1 verified by repair",
+          "applied": true
+        },
+        {
+          "id": "S3",
+          "kind": "exemption",
+          "mode": "named_subject",
+          "governed_provision_ids": [
+            "P1"
+          ],
+          "basis": "named-subject mapping to P1 verified by repair",
+          "applied": true
+        }
+      ],
+      "temporal": {
+        "model_effective_date": "2020-11-06",
+        "model_kind": "explicit_operative_date",
+        "applied_kind": "explicit_operative_date",
+        "effective_date": "2020-11-06",
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null
+      },
+      "status_derivation": "enacted; effective 2020-11-06 is on or before as_of 2026-10-01",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-00c34181be",
+        "jurisdiction": "Boston, MA",
+        "level": "city",
+        "category": "just_cause_eviction",
+        "status": "in_force",
+        "title": "Notice of Tenants’ Rights and Resources Delivery Requirement",
+        "requirement": "[Basis: official explanatory text, not operative legal text] Landlords must provide tenants with a Notice of Tenants’ Rights and Resources at the same time as the Notice to Quit when commencing eviction or deciding not to offer a lease renewal. Anyone purchasing property out of foreclosure or from a lender must also deliver this notice to former owners or tenants asked to leave the property.",
+        "key_value": null,
+        "coverage_conditions": "The Ordinance applies to all landlords and foreclosing owners intending to end a tenancy or post-foreclosure occupancy of a unit in the City of Boston. [Question 5]",
+        "exemptions": "Residences in any hospital, skilled nursing facility, or health facility are exempt. [Question 5]; Residences in a non-profit facility whose primary purpose is providing short-term treatment, assistance, or therapy for alcohol, drug, or other substance abuse are exempt. [Question 5]",
+        "overrides": [],
+        "interaction": null,
+        "effective_date": "2020-11-06",
+        "citation": "Question 1",
+        "source_doc_id": "D014",
+        "source_url": "https://www.boston.gov/sites/default/files/file/2020/11/Housing%20Stability%20Notification%20Act%20Tenant%20FAQs.pdf",
+        "quoted_span": "The HSNA requires that landlords give this Notice of Tenants’ Rights and Resources\nto tenants when the landlord starts the eviction process, or when the landlord\ndecides to not offer the tenant a renewal of their lease agreement. The Notice of\nTenants’ Rights and Resources must be delivered at the same time as the Notice to\nQuit.\nThe Notice of Tenants’ Rights and Resources must also be delivered to any tenant\nthat is asked to leave a property. For example, if someone is purchasing a property\nout of foreclosure, or from a bank or a mortgage lender, they must provide this\nNotice to the former owners of the property, or any tenants that live in the\nproperty.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "just_cause_eviction",
+        "citation": "Question 1",
+        "provision_ids": [
+          "P1"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "The HSNA requires that landlords give this Notice of Tenants’ Rights and Resources\nto tenants when the landlord starts the eviction process, or when the landlord\ndecides to not offer the tenant a renewal of their lease agreement. The Notice of\nTenants’ Rights and Resources must be delivered at the same time as the Notice to\nQuit.\nThe Notice of Tenants’ Rights and Resources must also be delivered to any tenant\nthat is asked to leave a property. For example, if someone is purchasing a property\nout of foreclosure, or from a bank or a mortgage lender, they must provide this\nNotice to the former owners of the property, or any tenants that live in the\nproperty."
+          }
+        ],
+        "title": "Notice of Tenants’ Rights and Resources Delivery Requirement",
+        "requirement": "Landlords must provide tenants with a Notice of Tenants’ Rights and Resources at the same time as the Notice to Quit when commencing eviction or deciding not to offer a lease renewal. Anyone purchasing property out of foreclosure or from a lender must also deliver this notice to former owners or tenants asked to leave the property.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": "The Housing Stability Notification Act (HSNA) is an Ordinance passed by the City of Boston in October 2020",
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": "The HSNA becomes effective on November 6, 2020.",
+        "effective_date_evidence_kind": "explicit_operative_date",
+        "effective_date": "2020-11-06",
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 1,
+      "origin": "primary",
+      "accepted": true,
+      "held": false,
+      "rejection_reasons": [],
+      "provision_ids": [
+        "P2"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": {
+        "status": "normalized_match",
+        "normalization": "Unicode NFC; each whitespace run (incl. line breaks) compared as one space; span ends trimmed",
+        "start": 130,
+        "end": 236,
+        "occurrences": 1,
+        "model_span": "The Housing Stability Notification Act (HSNA) is an Ordinance passed by the City of Boston in October 2020",
+        "source_span": "The Housing Stability Notification Act (HSNA) is an Ordinance passed by the City of\nBoston in October 2020",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 1034,
+        "end": 1264,
+        "occurrences": 1,
+        "model_span": "The HSNA also requires landlords and foreclosing owners to send a copy of the\nNotice to Quit or Notice of Non-renewal of Lease, together with a Certificate of\nCompliance/Service, to the City of Boston’s Office of Housing Stability",
+        "source_span": "The HSNA also requires landlords and foreclosing owners to send a copy of the\nNotice to Quit or Notice of Non-renewal of Lease, together with a Certificate of\nCompliance/Service, to the City of Boston’s Office of Housing Stability",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "The HSNA also requires landlords and foreclosing owners to send a copy of the\nNotice to Quit or Notice of Non-renewal of Lease, together with a Certificate of\nCompliance/Service, to the City of Boston’s Office of Housing Stability",
+            "status": "exact_match",
+            "start": 1034,
+            "end": 1264
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 2010,
+        "end": 2057,
+        "occurrences": 1,
+        "model_span": "The HSNA becomes effective on November 6, 2020.",
+        "source_span": "The HSNA becomes effective on November 6, 2020.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [
+        {
+          "id": "S1",
+          "kind": "coverage_condition",
+          "mode": "named_subject",
+          "governed_provision_ids": [
+            "P2"
+          ],
+          "basis": "named-subject mapping to P2 verified by repair",
+          "applied": true
+        },
+        {
+          "id": "S2",
+          "kind": "exemption",
+          "mode": "named_subject",
+          "governed_provision_ids": [
+            "P2"
+          ],
+          "basis": "named-subject mapping to P2 verified by repair",
+          "applied": true
+        },
+        {
+          "id": "S3",
+          "kind": "exemption",
+          "mode": "named_subject",
+          "governed_provision_ids": [
+            "P2"
+          ],
+          "basis": "named-subject mapping to P2 verified by repair",
+          "applied": true
+        }
+      ],
+      "temporal": {
+        "model_effective_date": "2020-11-06",
+        "model_kind": "explicit_operative_date",
+        "applied_kind": "explicit_operative_date",
+        "effective_date": "2020-11-06",
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null
+      },
+      "status_derivation": "enacted; effective 2020-11-06 is on or before as_of 2026-10-01",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-a63e924b6c",
+        "jurisdiction": "Boston, MA",
+        "level": "city",
+        "category": "just_cause_eviction",
+        "status": "in_force",
+        "title": "Notice Filing with Office of Housing Stability",
+        "requirement": "[Basis: official explanatory text, not operative legal text] Landlords and foreclosing owners must send a copy of the Notice to Quit or Notice of Non-renewal of Lease, along with a Certificate of Compliance/Service, to the City of Boston's Office of Housing Stability.",
+        "key_value": null,
+        "coverage_conditions": "The Ordinance applies to all landlords and foreclosing owners intending to end a tenancy or post-foreclosure occupancy of a unit in the City of Boston. [Question 5]",
+        "exemptions": "Residences in any hospital, skilled nursing facility, or health facility are exempt. [Question 5]; Residences in a non-profit facility whose primary purpose is providing short-term treatment, assistance, or therapy for alcohol, drug, or other substance abuse are exempt. [Question 5]",
+        "overrides": [],
+        "interaction": null,
+        "effective_date": "2020-11-06",
+        "citation": "Question 1",
+        "source_doc_id": "D014",
+        "source_url": "https://www.boston.gov/sites/default/files/file/2020/11/Housing%20Stability%20Notification%20Act%20Tenant%20FAQs.pdf",
+        "quoted_span": "The HSNA also requires landlords and foreclosing owners to send a copy of the\nNotice to Quit or Notice of Non-renewal of Lease, together with a Certificate of\nCompliance/Service, to the City of Boston’s Office of Housing Stability",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "just_cause_eviction",
+        "citation": "Question 1",
+        "provision_ids": [
+          "P2"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "The HSNA also requires landlords and foreclosing owners to send a copy of the\nNotice to Quit or Notice of Non-renewal of Lease, together with a Certificate of\nCompliance/Service, to the City of Boston’s Office of Housing Stability"
+          }
+        ],
+        "title": "Notice Filing with Office of Housing Stability",
+        "requirement": "Landlords and foreclosing owners must send a copy of the Notice to Quit or Notice of Non-renewal of Lease, along with a Certificate of Compliance/Service, to the City of Boston's Office of Housing Stability.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": "The Housing Stability Notification Act (HSNA) is an Ordinance passed by the City of Boston in October 2020",
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": "The HSNA becomes effective on November 6, 2020.",
+        "effective_date_evidence_kind": "explicit_operative_date",
+        "effective_date": "2020-11-06",
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 2,
+      "origin": "primary",
+      "accepted": true,
+      "held": false,
+      "rejection_reasons": [],
+      "provision_ids": [
+        "P7"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": {
+        "status": "normalized_match",
+        "normalization": "Unicode NFC; each whitespace run (incl. line breaks) compared as one space; span ends trimmed",
+        "start": 130,
+        "end": 236,
+        "occurrences": 1,
+        "model_span": "The Housing Stability Notification Act (HSNA) is an Ordinance passed by the City of Boston in October 2020",
+        "source_span": "The Housing Stability Notification Act (HSNA) is an Ordinance passed by the City of\nBoston in October 2020",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 3485,
+        "end": 3769,
+        "occurrences": 1,
+        "model_span": "The requirements of this Ordinance may not be waived, and any term of any\nlease, contract, or other agreement that purports to waive or limit a tenant’s or\nformer homeowner’s substantive or procedural rights under this Ordinance are\ncontrary to public policy, unenforceable, and void.",
+        "source_span": "The requirements of this Ordinance may not be waived, and any term of any\nlease, contract, or other agreement that purports to waive or limit a tenant’s or\nformer homeowner’s substantive or procedural rights under this Ordinance are\ncontrary to public policy, unenforceable, and void.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 2,
+            "model_text": "The requirements of this Ordinance may not be waived, and any term of any\nlease, contract, or other agreement that purports to waive or limit a tenant’s or\nformer homeowner’s substantive or procedural rights under this Ordinance are\ncontrary to public policy, unenforceable, and void.",
+            "status": "exact_match",
+            "start": 3485,
+            "end": 3769
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 2010,
+        "end": 2057,
+        "occurrences": 1,
+        "model_span": "The HSNA becomes effective on November 6, 2020.",
+        "source_span": "The HSNA becomes effective on November 6, 2020.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [
+        {
+          "id": "S1",
+          "kind": "coverage_condition",
+          "mode": "named_subject",
+          "governed_provision_ids": [
+            "P7"
+          ],
+          "basis": "named-subject mapping to P7 verified by repair",
+          "applied": true
+        },
+        {
+          "id": "S2",
+          "kind": "exemption",
+          "mode": "named_subject",
+          "governed_provision_ids": [
+            "P7"
+          ],
+          "basis": "named-subject mapping to P7 verified by repair",
+          "applied": true
+        },
+        {
+          "id": "S3",
+          "kind": "exemption",
+          "mode": "named_subject",
+          "governed_provision_ids": [
+            "P7"
+          ],
+          "basis": "named-subject mapping to P7 verified by repair",
+          "applied": true
+        }
+      ],
+      "temporal": {
+        "model_effective_date": "2020-11-06",
+        "model_kind": "explicit_operative_date",
+        "applied_kind": "explicit_operative_date",
+        "effective_date": "2020-11-06",
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null
+      },
+      "status_derivation": "enacted; effective 2020-11-06 is on or before as_of 2026-10-01",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-8c050c904a",
+        "jurisdiction": "Boston, MA",
+        "level": "city",
+        "category": "just_cause_eviction",
+        "status": "in_force",
+        "title": "Non-Waiver of Rights",
+        "requirement": "[Basis: official explanatory text, not operative legal text] The requirements of the Ordinance cannot be waived, and any lease, contract, or agreement term purporting to waive or limit substantive or procedural rights under the Ordinance is contrary to public policy, unenforceable, and void.",
+        "key_value": null,
+        "coverage_conditions": "The Ordinance applies to all landlords and foreclosing owners intending to end a tenancy or post-foreclosure occupancy of a unit in the City of Boston. [Question 5]",
+        "exemptions": "Residences in any hospital, skilled nursing facility, or health facility are exempt. [Question 5]; Residences in a non-profit facility whose primary purpose is providing short-term treatment, assistance, or therapy for alcohol, drug, or other substance abuse are exempt. [Question 5]",
+        "overrides": [],
+        "interaction": null,
+        "effective_date": "2020-11-06",
+        "citation": "Question 6",
+        "source_doc_id": "D014",
+        "source_url": "https://www.boston.gov/sites/default/files/file/2020/11/Housing%20Stability%20Notification%20Act%20Tenant%20FAQs.pdf",
+        "quoted_span": "The requirements of this Ordinance may not be waived, and any term of any\nlease, contract, or other agreement that purports to waive or limit a tenant’s or\nformer homeowner’s substantive or procedural rights under this Ordinance are\ncontrary to public policy, unenforceable, and void.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "just_cause_eviction",
+        "citation": "Question 6",
+        "provision_ids": [
+          "P7"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 2,
+            "quoted_text": "The requirements of this Ordinance may not be waived, and any term of any\nlease, contract, or other agreement that purports to waive or limit a tenant’s or\nformer homeowner’s substantive or procedural rights under this Ordinance are\ncontrary to public policy, unenforceable, and void."
+          }
+        ],
+        "title": "Non-Waiver of Rights",
+        "requirement": "The requirements of the Ordinance cannot be waived, and any lease, contract, or agreement term purporting to waive or limit substantive or procedural rights under the Ordinance is contrary to public policy, unenforceable, and void.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": "The Housing Stability Notification Act (HSNA) is an Ordinance passed by the City of Boston in October 2020",
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": "The HSNA becomes effective on November 6, 2020.",
+        "effective_date_evidence_kind": "explicit_operative_date",
+        "effective_date": "2020-11-06",
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 3,
+      "origin": "primary",
+      "accepted": true,
+      "held": false,
+      "rejection_reasons": [],
+      "provision_ids": [
+        "P9"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": {
+        "status": "normalized_match",
+        "normalization": "Unicode NFC; each whitespace run (incl. line breaks) compared as one space; span ends trimmed",
+        "start": 130,
+        "end": 236,
+        "occurrences": 1,
+        "model_span": "The Housing Stability Notification Act (HSNA) is an Ordinance passed by the City of Boston in October 2020",
+        "source_span": "The Housing Stability Notification Act (HSNA) is an Ordinance passed by the City of\nBoston in October 2020",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 5247,
+        "end": 5725,
+        "occurrences": 1,
+        "model_span": "Unless otherwise provided, a person or entity violating any provisions of this \nOrdinance shall be punishable by a warning or fine in accordance with the \nprovisions of City of Boston Ordinances and/or Boston City Charter, shown below. \nHousing Stability Notification Act (Sec. 10-11.7) \nEnforcement Entity: Inspectional Services Department \n1st Offense: Warning \n2nd and Subsequent Offenses: $300 per day \nIf a landlord violates the HSNA, it DOES NOT halt the eviction process.",
+        "source_span": "Unless otherwise provided, a person or entity violating any provisions of this \nOrdinance shall be punishable by a warning or fine in accordance with the \nprovisions of City of Boston Ordinances and/or Boston City Charter, shown below. \nHousing Stability Notification Act (Sec. 10-11.7) \nEnforcement Entity: Inspectional Services Department \n1st Offense: Warning \n2nd and Subsequent Offenses: $300 per day \nIf a landlord violates the HSNA, it DOES NOT halt the eviction process.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 3,
+            "model_text": "Unless otherwise provided, a person or entity violating any provisions of this \nOrdinance shall be punishable by a warning or fine in accordance with the \nprovisions of City of Boston Ordinances and/or Boston City Charter, shown below. \nHousing Stability Notification Act (Sec. 10-11.7) \nEnforcement Entity: Inspectional Services Department \n1st Offense: Warning \n2nd and Subsequent Offenses: $300 per day \nIf a landlord violates the HSNA, it DOES NOT halt the eviction process.",
+            "status": "exact_match",
+            "start": 5247,
+            "end": 5725
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 2010,
+        "end": 2057,
+        "occurrences": 1,
+        "model_span": "The HSNA becomes effective on November 6, 2020.",
+        "source_span": "The HSNA becomes effective on November 6, 2020.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [
+        {
+          "id": "S1",
+          "kind": "coverage_condition",
+          "mode": "named_subject",
+          "governed_provision_ids": [
+            "P9"
+          ],
+          "basis": "named-subject mapping to P9 verified by repair",
+          "applied": true
+        },
+        {
+          "id": "S2",
+          "kind": "exemption",
+          "mode": "named_subject",
+          "governed_provision_ids": [
+            "P9"
+          ],
+          "basis": "named-subject mapping to P9 verified by repair",
+          "applied": true
+        },
+        {
+          "id": "S3",
+          "kind": "exemption",
+          "mode": "named_subject",
+          "governed_provision_ids": [
+            "P9"
+          ],
+          "basis": "named-subject mapping to P9 verified by repair",
+          "applied": true
+        }
+      ],
+      "temporal": {
+        "model_effective_date": "2020-11-06",
+        "model_kind": "explicit_operative_date",
+        "applied_kind": "explicit_operative_date",
+        "effective_date": "2020-11-06",
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null
+      },
+      "status_derivation": "enacted; effective 2020-11-06 is on or before as_of 2026-10-01",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-d6d7620e65",
+        "jurisdiction": "Boston, MA",
+        "level": "city",
+        "category": "just_cause_eviction",
+        "status": "in_force",
+        "title": "Penalties for Violation",
+        "requirement": "[Basis: official explanatory text, not operative legal text] Violations of the Ordinance are punishable by a warning for a first offense and a fine of $300 per day for second and subsequent offenses. A violation does not halt the eviction process.",
+        "key_value": "$300 per day",
+        "coverage_conditions": "The Ordinance applies to all landlords and foreclosing owners intending to end a tenancy or post-foreclosure occupancy of a unit in the City of Boston. [Question 5]",
+        "exemptions": "Residences in any hospital, skilled nursing facility, or health facility are exempt. [Question 5]; Residences in a non-profit facility whose primary purpose is providing short-term treatment, assistance, or therapy for alcohol, drug, or other substance abuse are exempt. [Question 5]",
+        "overrides": [],
+        "interaction": "A violation of the HSNA does not halt the eviction process.",
+        "effective_date": "2020-11-06",
+        "citation": "Sec. 10-11.7",
+        "source_doc_id": "D014",
+        "source_url": "https://www.boston.gov/sites/default/files/file/2020/11/Housing%20Stability%20Notification%20Act%20Tenant%20FAQs.pdf",
+        "quoted_span": "Unless otherwise provided, a person or entity violating any provisions of this \nOrdinance shall be punishable by a warning or fine in accordance with the \nprovisions of City of Boston Ordinances and/or Boston City Charter, shown below. \nHousing Stability Notification Act (Sec. 10-11.7) \nEnforcement Entity: Inspectional Services Department \n1st Offense: Warning \n2nd and Subsequent Offenses: $300 per day \nIf a landlord violates the HSNA, it DOES NOT halt the eviction process.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "just_cause_eviction",
+        "citation": "Sec. 10-11.7",
+        "provision_ids": [
+          "P9"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 3,
+            "quoted_text": "Unless otherwise provided, a person or entity violating any provisions of this \nOrdinance shall be punishable by a warning or fine in accordance with the \nprovisions of City of Boston Ordinances and/or Boston City Charter, shown below. \nHousing Stability Notification Act (Sec. 10-11.7) \nEnforcement Entity: Inspectional Services Department \n1st Offense: Warning \n2nd and Subsequent Offenses: $300 per day \nIf a landlord violates the HSNA, it DOES NOT halt the eviction process."
+          }
+        ],
+        "title": "Penalties for Violation",
+        "requirement": "Violations of the Ordinance are punishable by a warning for a first offense and a fine of $300 per day for second and subsequent offenses. A violation does not halt the eviction process.",
+        "key_value": "$300 per day",
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": "A violation of the HSNA does not halt the eviction process.",
+        "enactment_status": "enacted",
+        "enactment_status_evidence": "The Housing Stability Notification Act (HSNA) is an Ordinance passed by the City of Boston in October 2020",
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": "The HSNA becomes effective on November 6, 2020.",
+        "effective_date_evidence_kind": "explicit_operative_date",
+        "effective_date": "2020-11-06",
+        "conflict_note": null
+      }
+    }
+  ],
+  "posture": {
+    "declared": "official_explanatory_page",
+    "evidence": "The Housing Stability Notification Act (HSNA) is an Ordinance passed by the City of Boston in October 2020 that requires any landlord planning to end a tenancy agreement to provide the tenant with a Notice of Tenants’ Rights and Resources.",
+    "evidence_check": {
+      "status": "normalized_match",
+      "normalization": "Unicode NFC; each whitespace run (incl. line breaks) compared as one space; span ends trimmed",
+      "start": 130,
+      "end": 369,
+      "occurrences": 1,
+      "model_span": "The Housing Stability Notification Act (HSNA) is an Ordinance passed by the City of Boston in October 2020 that requires any landlord planning to end a tenancy agreement to provide the tenant with a Notice of Tenants’ Rights and Resources.",
+      "source_span": "The Housing Stability Notification Act (HSNA) is an Ordinance passed by the City of\nBoston in October 2020 that requires any landlord planning to end a tenancy\nagreement to provide the tenant with a Notice of Tenants’ Rights and Resources.",
+      "reason": null,
+      "reconstructed": false,
+      "parts": [],
+      "crossed_artifacts": []
+    },
+    "established": "official_explanatory_page",
+    "basis": "declared posture with verified evidence"
+  },
+  "base_dates": [],
+  "provision_inventory": [
+    {
+      "id": "P1",
+      "ref": "Question 1",
+      "anchor": "The Housing Stability Notification Act (HSNA) is an Ordinance",
+      "summary": "Requires landlords and foreclosing owners to deliver a Notice of Tenants' Rights and Resources to tenants or occupants when terminating a tenancy, not offering a lease renewal, or asking them to leave.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "just_cause_eviction",
+      "reason": null
+    },
+    {
+      "id": "P2",
+      "ref": "Question 1",
+      "anchor": "The HSNA also requires landlords and foreclosing owners to",
+      "summary": "Requires landlords and foreclosing owners to send a copy of the Notice to Quit or Notice of Non-renewal together with a Certificate of Compliance/Service to the Office of Housing Stability.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "just_cause_eviction",
+      "reason": null
+    },
+    {
+      "id": "P3",
+      "ref": "Question 2",
+      "anchor": "The Ordinance was passed to ensure that tenants and",
+      "summary": "Describes the purpose and goals behind passing the Housing Stability Notification Act.",
+      "role": "boilerplate",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "purpose statement"
+    },
+    {
+      "id": "P4",
+      "ref": "Question 3",
+      "anchor": "The HSNA becomes effective on November 6, 2020.",
+      "summary": "States the calendar effective date of the Ordinance.",
+      "role": "procedure",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "effective date announcement"
+    },
+    {
+      "id": "P5",
+      "ref": "Question 4",
+      "anchor": "In the event that your landlord serves you with",
+      "summary": "Explanatory overview for tenants regarding notice rights, privacy, and contact information.",
+      "role": "boilerplate",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "explanatory informational guidance"
+    },
+    {
+      "id": "P6",
+      "ref": "Question 5",
+      "anchor": "The Ordinance applies to all landlords/foreclosing owners intending",
+      "summary": "Sets general coverage for landlords and foreclosing owners in Boston and lists property exemptions.",
+      "role": "scope_condition",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "scope condition and exemptions, see global_scope"
+    },
+    {
+      "id": "P7",
+      "ref": "Question 6",
+      "anchor": "The requirements of this Ordinance may not be waived,",
+      "summary": "Prohibits waiver of rights under the Ordinance and voids contrary lease or contract provisions.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "just_cause_eviction",
+      "reason": null
+    },
+    {
+      "id": "P8",
+      "ref": "Question 7",
+      "anchor": "Violations of the HSNA are investigated by the",
+      "summary": "Details administrative intake and reporting steps for tenants to report violations to FHE and ISD.",
+      "role": "procedure",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "administrative complaint and reporting procedure"
+    },
+    {
+      "id": "P9",
+      "ref": "Sec. 10-11.7",
+      "anchor": "Unless otherwise provided, a person or entity violating any",
+      "summary": "Establishes fines for violations ($300 per day after a first-offense warning) and provides that violations do not halt eviction proceedings.",
+      "role": "remedy",
+      "scope": "in_scope",
+      "category": "just_cause_eviction",
+      "reason": null
+    }
+  ],
+  "global_scope": [
+    {
+      "id": "S1",
+      "kind": "coverage_condition",
+      "statement": "The Ordinance applies to all landlords and foreclosing owners intending to end a tenancy or post-foreclosure occupancy of a unit in the City of Boston.",
+      "citation": "Question 5",
+      "scope_mode": "structural",
+      "scope_quote": "The Ordinance applies to",
+      "source_provision_id": "P6",
+      "governed_provision_ids": null,
+      "evidence_parts": [
+        {
+          "segment_id": 2,
+          "quoted_text": "The Ordinance applies to all landlords/foreclosing owners intending to end a\ntenancy or post-foreclosure occupancy of a unit in the City of Boston."
+        }
+      ],
+      "evidence_check": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 3028,
+        "end": 3175,
+        "occurrences": 1,
+        "model_span": "The Ordinance applies to all landlords/foreclosing owners intending to end a\ntenancy or post-foreclosure occupancy of a unit in the City of Boston.",
+        "source_span": "The Ordinance applies to all landlords/foreclosing owners intending to end a\ntenancy or post-foreclosure occupancy of a unit in the City of Boston.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 2,
+            "model_text": "The Ordinance applies to all landlords/foreclosing owners intending to end a\ntenancy or post-foreclosure occupancy of a unit in the City of Boston.",
+            "status": "exact_match",
+            "start": 3028,
+            "end": 3175
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "propagated": true,
+      "problem": null,
+      "scope": {
+        "resolver": "scope-modes/v1",
+        "declared_mode": "structural",
+        "mode": "named_subject",
+        "scope_words": {
+          "scope_quote": "The Ordinance applies to",
+          "scope_quote_check": "exact_match",
+          "text": "The Ordinance applies to",
+          "from": "scope_quote"
+        },
+        "detail": null,
+        "propagate_ids": [],
+        "mapping_targets": [
+          "P1",
+          "P2",
+          "P7",
+          "P9"
+        ],
+        "verification": null
+      }
+    },
+    {
+      "id": "S2",
+      "kind": "exemption",
+      "statement": "Residences in any hospital, skilled nursing facility, or health facility are exempt.",
+      "citation": "Question 5",
+      "scope_mode": "structural",
+      "scope_quote": "The only exempt properties are residences:",
+      "source_provision_id": "P6",
+      "governed_provision_ids": null,
+      "evidence_parts": [
+        {
+          "segment_id": 2,
+          "quoted_text": "The only exempt properties are residences:\n1. in any hospital, skilled nursing facility or health facility;  and"
+        }
+      ],
+      "evidence_check": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 3176,
+        "end": 3288,
+        "occurrences": 1,
+        "model_span": "The only exempt properties are residences:\n1. in any hospital, skilled nursing facility or health facility;  and",
+        "source_span": "The only exempt properties are residences:\n1. in any hospital, skilled nursing facility or health facility;  and",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 2,
+            "model_text": "The only exempt properties are residences:\n1. in any hospital, skilled nursing facility or health facility;  and",
+            "status": "exact_match",
+            "start": 3176,
+            "end": 3288
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "propagated": true,
+      "problem": null,
+      "scope": {
+        "resolver": "scope-modes/v1",
+        "declared_mode": "structural",
+        "mode": "named_subject",
+        "scope_words": {
+          "scope_quote": "The only exempt properties are residences:",
+          "scope_quote_check": "exact_match",
+          "text": "The only exempt properties are residences:",
+          "from": "scope_quote"
+        },
+        "detail": null,
+        "propagate_ids": [],
+        "mapping_targets": [
+          "P1",
+          "P2",
+          "P7",
+          "P9"
+        ],
+        "verification": null
+      }
+    },
+    {
+      "id": "S3",
+      "kind": "exemption",
+      "statement": "Residences in a non-profit facility whose primary purpose is providing short-term treatment, assistance, or therapy for alcohol, drug, or other substance abuse are exempt.",
+      "citation": "Question 5",
+      "scope_mode": "structural",
+      "scope_quote": "The only exempt properties are residences:",
+      "source_provision_id": "P6",
+      "governed_provision_ids": null,
+      "evidence_parts": [
+        {
+          "segment_id": 2,
+          "quoted_text": "2. in a non-profit facility whose primary purpose is providing short-term\ntreatment, assistance or therapy for alcohol, drug, or other substance\nabuse."
+        }
+      ],
+      "evidence_check": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 3289,
+        "end": 3440,
+        "occurrences": 1,
+        "model_span": "2. in a non-profit facility whose primary purpose is providing short-term\ntreatment, assistance or therapy for alcohol, drug, or other substance\nabuse.",
+        "source_span": "2. in a non-profit facility whose primary purpose is providing short-term\ntreatment, assistance or therapy for alcohol, drug, or other substance\nabuse.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 2,
+            "model_text": "2. in a non-profit facility whose primary purpose is providing short-term\ntreatment, assistance or therapy for alcohol, drug, or other substance\nabuse.",
+            "status": "exact_match",
+            "start": 3289,
+            "end": 3440
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "propagated": true,
+      "problem": null,
+      "scope": {
+        "resolver": "scope-modes/v1",
+        "declared_mode": "structural",
+        "mode": "named_subject",
+        "scope_words": {
+          "scope_quote": "The only exempt properties are residences:",
+          "scope_quote_check": "exact_match",
+          "text": "The only exempt properties are residences:",
+          "from": "scope_quote"
+        },
+        "detail": null,
+        "propagate_ids": [],
+        "mapping_targets": [
+          "P1",
+          "P2",
+          "P7",
+          "P9"
+        ],
+        "verification": null
+      }
+    }
+  ],
+  "source_view": {
+    "marker": "[[PAGE BREAK]]",
+    "segment_label": "[[SEGMENT {}]]",
+    "view_sha256": "287bc95feaba2e4cbd078ddc7b9e709018d788c7c9762a13996b025295723fdf",
+    "segments": [
+      {
+        "id": 1,
+        "raw_start": 79,
+        "raw_end": 2059
+      },
+      {
+        "id": 2,
+        "raw_start": 2138,
+        "raw_end": 4292
+      },
+      {
+        "id": 3,
+        "raw_start": 4371,
+        "raw_end": 5727
+      }
+    ],
+    "artifacts_removed": 3,
+    "artifacts": [
+      {
+        "raw_start": 0,
+        "raw_end": 79,
+        "text": "Housing Stability Notification Act \nFrequently Asked Questions for Tenants \n1 \n"
+      },
+      {
+        "raw_start": 2059,
+        "raw_end": 2138,
+        "text": "Housing Stability Notification Act \nFrequently Asked Questions for Tenants \n2 \n"
+      },
+      {
+        "raw_start": 4292,
+        "raw_end": 4371,
+        "text": "Housing Stability Notification Act \nFrequently Asked Questions for Tenants \n3 \n"
+      }
+    ]
+  },
+  "coverage": {
+    "inventory_valid": true,
+    "anchors_located": "9/9",
+    "after_primary": {
+      "uncovered": [],
+      "unaccepted": [],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": [
+        "Question 7"
+      ]
+    },
+    "scope_mappings": {
+      "requested": 12,
+      "applies": 12,
+      "does_not_apply": 0,
+      "unresolved": 0
+    },
+    "after_repair": {
+      "uncovered": [],
+      "unaccepted": [],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "repair_targets": {
+      "before_repair": 1,
+      "resolved_by_accepted_rule": 0,
+      "resolved_out_of_scope": 0,
+      "still_unresolved": 1
+    },
+    "inventory_items": 9,
+    "in_scope_items": 4,
+    "in_scope_refs": 4,
+    "uncertain": [],
+    "final": {
+      "uncovered": [],
+      "unaccepted": [],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "link_mismatches": [],
+    "provisions": [
+      {
+        "ref": "Question 1",
+        "inventory_item": 0,
+        "provision_id": "P1",
+        "summary": "Requires landlords and foreclosing owners to deliver a Notice of Tenants' Rights and Resources to tenants or occupants when terminating a tenancy, not offering a lease renewal, or asking them to leave.",
+        "category": "just_cause_eviction",
+        "candidates": [
+          0
+        ],
+        "accepted": [
+          0
+        ],
+        "basis": {
+          "0": "provision link; citation names it"
+        }
+      },
+      {
+        "ref": "Question 1",
+        "inventory_item": 1,
+        "provision_id": "P2",
+        "summary": "Requires landlords and foreclosing owners to send a copy of the Notice to Quit or Notice of Non-renewal together with a Certificate of Compliance/Service to the Office of Housing Stability.",
+        "category": "just_cause_eviction",
+        "candidates": [
+          1
+        ],
+        "accepted": [
+          1
+        ],
+        "basis": {
+          "1": "provision link; citation names it"
+        }
+      },
+      {
+        "ref": "Question 6",
+        "inventory_item": 6,
+        "provision_id": "P7",
+        "summary": "Prohibits waiver of rights under the Ordinance and voids contrary lease or contract provisions.",
+        "category": "just_cause_eviction",
+        "candidates": [
+          2
+        ],
+        "accepted": [
+          2
+        ],
+        "basis": {
+          "2": "provision link; citation names it"
+        }
+      },
+      {
+        "ref": "Sec. 10-11.7",
+        "inventory_item": 8,
+        "provision_id": "P9",
+        "summary": "Establishes fines for violations ($300 per day after a first-offense warning) and provides that violations do not halt eviction proceedings.",
+        "category": "just_cause_eviction",
+        "candidates": [
+          3
+        ],
+        "accepted": [
+          3
+        ],
+        "basis": {
+          "3": "provision link; citation names it"
+        }
+      }
+    ],
+    "unrecorded_subdivisions": []
+  },
+  "scope_challenges": [
+    {
+      "ref": "Question 2",
+      "provision_id": "P3",
+      "role": "boilerplate",
+      "reason": "purpose statement",
+      "summary": "Describes the purpose and goals behind passing the Housing Stability Notification Act.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role boilerplate is decided by other rules"
+    },
+    {
+      "ref": "Question 3",
+      "provision_id": "P4",
+      "role": "procedure",
+      "reason": "effective date announcement",
+      "summary": "States the calendar effective date of the Ordinance.",
+      "signals": {
+        "in_scope_neighbour": false,
+        "enumeration": false,
+        "normative_language": false,
+        "grounds_or_conditions": false
+      },
+      "challenged": false,
+      "why_not": "too few substantive signals",
+      "raw_start": 2010,
+      "raw_end": 2181
+    },
+    {
+      "ref": "Question 4",
+      "provision_id": "P5",
+      "role": "boilerplate",
+      "reason": "explanatory informational guidance",
+      "summary": "Explanatory overview for tenants regarding notice rights, privacy, and contact information.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role boilerplate is decided by other rules"
+    },
+    {
+      "ref": "Question 5",
+      "provision_id": "P6",
+      "role": "scope_condition",
+      "reason": "scope condition and exemptions, see global_scope",
+      "summary": "Sets general coverage for landlords and foreclosing owners in Boston and lists property exemptions.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role scope_condition is decided by other rules"
+    },
+    {
+      "ref": "Question 7",
+      "provision_id": "P8",
+      "role": "procedure",
+      "reason": "administrative complaint and reporting procedure",
+      "summary": "Details administrative intake and reporting steps for tenants to report violations to FHE and ISD.",
+      "signals": {
+        "in_scope_neighbour": true,
+        "enumeration": true,
+        "normative_language": true,
+        "grounds_or_conditions": false
+      },
+      "challenged": true,
+      "why_not": null,
+      "raw_start": 3941,
+      "raw_end": 5247
+    }
+  ],
+  "scope_mappings": [
+    {
+      "condition_id": "S1",
+      "provision_id": "P1",
+      "kind": "coverage_condition",
+      "statement": "The Ordinance applies to all landlords and foreclosing owners intending to end a tenancy or post-foreclosure occupancy of a unit in the City of Boston.",
+      "scope_words": "The Ordinance applies to",
+      "condition_evidence": "The Ordinance applies to all landlords/foreclosing owners intending to end a\ntenancy or post-foreclosure occupancy of a unit in the City of Boston.",
+      "target_ref": "Question 1",
+      "target_anchor": "The Housing Stability Notification Act (HSNA) is an Ordinance",
+      "target_quote": "The HSNA requires that landlords give this Notice of Tenants’ Rights and Resources\nto tenants when the landlord starts the eviction process, or when the landlord\ndecides to not offer the tenant a renewal of their lease agreement. The Notice of\nTenants’ Rights and Resources must be delivered at the same time as the Notice to\nQuit.\nThe Notice of Tenants’ Rights and Resources must also be delivered to any tenant\nthat is asked to leave a property. For example, if someone is purchasing a property\nout of foreclosure, or from a bank or a mortgage lender, they must provide this\nNotice to the former owners of the property, or any tenants that live in the\nproperty.",
+      "decision": {
+        "decision": "applies",
+        "reason": "Condition S1 establishes the scope of coverage for the Ordinance, which defines which landlords must deliver the Notice of Tenants' Rights and Resources under P1.",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 3028,
+          "end": 3175,
+          "occurrences": 1,
+          "model_span": "The Ordinance applies to all landlords/foreclosing owners intending to end a\ntenancy or post-foreclosure occupancy of a unit in the City of Boston.",
+          "source_span": "The Ordinance applies to all landlords/foreclosing owners intending to end a\ntenancy or post-foreclosure occupancy of a unit in the City of Boston.",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 2,
+              "model_text": "The Ordinance applies to all landlords/foreclosing owners intending to end a\ntenancy or post-foreclosure occupancy of a unit in the City of Boston.",
+              "status": "exact_match",
+              "start": 3028,
+              "end": 3175
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "applies",
+      "unresolved_reason": null
+    },
+    {
+      "condition_id": "S1",
+      "provision_id": "P2",
+      "kind": "coverage_condition",
+      "statement": "The Ordinance applies to all landlords and foreclosing owners intending to end a tenancy or post-foreclosure occupancy of a unit in the City of Boston.",
+      "scope_words": "The Ordinance applies to",
+      "condition_evidence": "The Ordinance applies to all landlords/foreclosing owners intending to end a\ntenancy or post-foreclosure occupancy of a unit in the City of Boston.",
+      "target_ref": "Question 1",
+      "target_anchor": "The HSNA also requires landlords and foreclosing owners to",
+      "target_quote": "The HSNA also requires landlords and foreclosing owners to send a copy of the\nNotice to Quit or Notice of Non-renewal of Lease, together with a Certificate of\nCompliance/Service, to the City of Boston’s Office of Housing Stability",
+      "decision": {
+        "decision": "applies",
+        "reason": "Condition S1 governs which landlords and foreclosing owners are subject to the duty to file notices and certificates with the Office of Housing Stability under P2.",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 3028,
+          "end": 3175,
+          "occurrences": 1,
+          "model_span": "The Ordinance applies to all landlords/foreclosing owners intending to end a\ntenancy or post-foreclosure occupancy of a unit in the City of Boston.",
+          "source_span": "The Ordinance applies to all landlords/foreclosing owners intending to end a\ntenancy or post-foreclosure occupancy of a unit in the City of Boston.",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 2,
+              "model_text": "The Ordinance applies to all landlords/foreclosing owners intending to end a\ntenancy or post-foreclosure occupancy of a unit in the City of Boston.",
+              "status": "exact_match",
+              "start": 3028,
+              "end": 3175
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "applies",
+      "unresolved_reason": null
+    },
+    {
+      "condition_id": "S1",
+      "provision_id": "P7",
+      "kind": "coverage_condition",
+      "statement": "The Ordinance applies to all landlords and foreclosing owners intending to end a tenancy or post-foreclosure occupancy of a unit in the City of Boston.",
+      "scope_words": "The Ordinance applies to",
+      "condition_evidence": "The Ordinance applies to all landlords/foreclosing owners intending to end a\ntenancy or post-foreclosure occupancy of a unit in the City of Boston.",
+      "target_ref": "Question 6",
+      "target_anchor": "The requirements of this Ordinance may not be waived,",
+      "target_quote": "The requirements of this Ordinance may not be waived, and any term of any\nlease, contract, or other agreement that purports to waive or limit a tenant’s or\nformer homeowner’s substantive or procedural rights under this Ordinance are\ncontrary to public policy, unenforceable, and void.",
+      "decision": {
+        "decision": "applies",
+        "reason": "Condition S1 specifies the covered landlords and tenancies whose statutory rights under the Ordinance cannot be waived under P7.",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 3028,
+          "end": 3175,
+          "occurrences": 1,
+          "model_span": "The Ordinance applies to all landlords/foreclosing owners intending to end a\ntenancy or post-foreclosure occupancy of a unit in the City of Boston.",
+          "source_span": "The Ordinance applies to all landlords/foreclosing owners intending to end a\ntenancy or post-foreclosure occupancy of a unit in the City of Boston.",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 2,
+              "model_text": "The Ordinance applies to all landlords/foreclosing owners intending to end a\ntenancy or post-foreclosure occupancy of a unit in the City of Boston.",
+              "status": "exact_match",
+              "start": 3028,
+              "end": 3175
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "applies",
+      "unresolved_reason": null
+    },
+    {
+      "condition_id": "S1",
+      "provision_id": "P9",
+      "kind": "coverage_condition",
+      "statement": "The Ordinance applies to all landlords and foreclosing owners intending to end a tenancy or post-foreclosure occupancy of a unit in the City of Boston.",
+      "scope_words": "The Ordinance applies to",
+      "condition_evidence": "The Ordinance applies to all landlords/foreclosing owners intending to end a\ntenancy or post-foreclosure occupancy of a unit in the City of Boston.",
+      "target_ref": "Sec. 10-11.7",
+      "target_anchor": "Unless otherwise provided, a person or entity violating any",
+      "target_quote": "Unless otherwise provided, a person or entity violating any provisions of this \nOrdinance shall be punishable by a warning or fine in accordance with the \nprovisions of City of Boston Ordinances and/or Boston City Charter, shown below. \nHousing Stability Notification Act (Sec. 10-11.7) \nEnforcement Entity: Inspectional Services Department \n1st Offense: Warning \n2nd and Subsequent Offenses: $300 per day \nIf a landlord violates the HSNA, it DOES NOT halt the eviction process.",
+      "decision": {
+        "decision": "applies",
+        "reason": "Condition S1 establishes the scope of entities and tenancies subject to enforcement penalties for violating the Ordinance under P9.",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 3028,
+          "end": 3175,
+          "occurrences": 1,
+          "model_span": "The Ordinance applies to all landlords/foreclosing owners intending to end a\ntenancy or post-foreclosure occupancy of a unit in the City of Boston.",
+          "source_span": "The Ordinance applies to all landlords/foreclosing owners intending to end a\ntenancy or post-foreclosure occupancy of a unit in the City of Boston.",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 2,
+              "model_text": "The Ordinance applies to all landlords/foreclosing owners intending to end a\ntenancy or post-foreclosure occupancy of a unit in the City of Boston.",
+              "status": "exact_match",
+              "start": 3028,
+              "end": 3175
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "applies",
+      "unresolved_reason": null
+    },
+    {
+      "condition_id": "S2",
+      "provision_id": "P1",
+      "kind": "exemption",
+      "statement": "Residences in any hospital, skilled nursing facility, or health facility are exempt.",
+      "scope_words": "The only exempt properties are residences:",
+      "condition_evidence": "The only exempt properties are residences:\n1. in any hospital, skilled nursing facility or health facility;  and",
+      "target_ref": "Question 1",
+      "target_anchor": "The Housing Stability Notification Act (HSNA) is an Ordinance",
+      "target_quote": "The HSNA requires that landlords give this Notice of Tenants’ Rights and Resources\nto tenants when the landlord starts the eviction process, or when the landlord\ndecides to not offer the tenant a renewal of their lease agreement. The Notice of\nTenants’ Rights and Resources must be delivered at the same time as the Notice to\nQuit.\nThe Notice of Tenants’ Rights and Resources must also be delivered to any tenant\nthat is asked to leave a property. For example, if someone is purchasing a property\nout of foreclosure, or from a bank or a mortgage lender, they must provide this\nNotice to the former owners of the property, or any tenants that live in the\nproperty.",
+      "decision": {
+        "decision": "applies",
+        "reason": "Condition S2 exempts hospital and healthcare facility residences from the Ordinance's notice delivery requirement in P1.",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 3176,
+          "end": 3288,
+          "occurrences": 1,
+          "model_span": "The only exempt properties are residences:\n1. in any hospital, skilled nursing facility or health facility;  and",
+          "source_span": "The only exempt properties are residences:\n1. in any hospital, skilled nursing facility or health facility;  and",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 2,
+              "model_text": "The only exempt properties are residences:\n1. in any hospital, skilled nursing facility or health facility;  and",
+              "status": "exact_match",
+              "start": 3176,
+              "end": 3288
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "applies",
+      "unresolved_reason": null
+    },
+    {
+      "condition_id": "S2",
+      "provision_id": "P2",
+      "kind": "exemption",
+      "statement": "Residences in any hospital, skilled nursing facility, or health facility are exempt.",
+      "scope_words": "The only exempt properties are residences:",
+      "condition_evidence": "The only exempt properties are residences:\n1. in any hospital, skilled nursing facility or health facility;  and",
+      "target_ref": "Question 1",
+      "target_anchor": "The HSNA also requires landlords and foreclosing owners to",
+      "target_quote": "The HSNA also requires landlords and foreclosing owners to send a copy of the\nNotice to Quit or Notice of Non-renewal of Lease, together with a Certificate of\nCompliance/Service, to the City of Boston’s Office of Housing Stability",
+      "decision": {
+        "decision": "applies",
+        "reason": "Condition S2 exempts healthcare facility residences from the requirement to submit notices and certificates to the Office of Housing Stability in P2.",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 3176,
+          "end": 3288,
+          "occurrences": 1,
+          "model_span": "The only exempt properties are residences:\n1. in any hospital, skilled nursing facility or health facility;  and",
+          "source_span": "The only exempt properties are residences:\n1. in any hospital, skilled nursing facility or health facility;  and",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 2,
+              "model_text": "The only exempt properties are residences:\n1. in any hospital, skilled nursing facility or health facility;  and",
+              "status": "exact_match",
+              "start": 3176,
+              "end": 3288
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "applies",
+      "unresolved_reason": null
+    },
+    {
+      "condition_id": "S2",
+      "provision_id": "P7",
+      "kind": "exemption",
+      "statement": "Residences in any hospital, skilled nursing facility, or health facility are exempt.",
+      "scope_words": "The only exempt properties are residences:",
+      "condition_evidence": "The only exempt properties are residences:\n1. in any hospital, skilled nursing facility or health facility;  and",
+      "target_ref": "Question 6",
+      "target_anchor": "The requirements of this Ordinance may not be waived,",
+      "target_quote": "The requirements of this Ordinance may not be waived, and any term of any\nlease, contract, or other agreement that purports to waive or limit a tenant’s or\nformer homeowner’s substantive or procedural rights under this Ordinance are\ncontrary to public policy, unenforceable, and void.",
+      "decision": {
+        "decision": "applies",
+        "reason": "Condition S2 exempts healthcare facility residences from the scope of the Ordinance's provisions governed by the anti-waiver rule in P7.",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 3176,
+          "end": 3288,
+          "occurrences": 1,
+          "model_span": "The only exempt properties are residences:\n1. in any hospital, skilled nursing facility or health facility;  and",
+          "source_span": "The only exempt properties are residences:\n1. in any hospital, skilled nursing facility or health facility;  and",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 2,
+              "model_text": "The only exempt properties are residences:\n1. in any hospital, skilled nursing facility or health facility;  and",
+              "status": "exact_match",
+              "start": 3176,
+              "end": 3288
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "applies",
+      "unresolved_reason": null
+    },
+    {
+      "condition_id": "S2",
+      "provision_id": "P9",
+      "kind": "exemption",
+      "statement": "Residences in any hospital, skilled nursing facility, or health facility are exempt.",
+      "scope_words": "The only exempt properties are residences:",
+      "condition_evidence": "The only exempt properties are residences:\n1. in any hospital, skilled nursing facility or health facility;  and",
+      "target_ref": "Sec. 10-11.7",
+      "target_anchor": "Unless otherwise provided, a person or entity violating any",
+      "target_quote": "Unless otherwise provided, a person or entity violating any provisions of this \nOrdinance shall be punishable by a warning or fine in accordance with the \nprovisions of City of Boston Ordinances and/or Boston City Charter, shown below. \nHousing Stability Notification Act (Sec. 10-11.7) \nEnforcement Entity: Inspectional Services Department \n1st Offense: Warning \n2nd and Subsequent Offenses: $300 per day \nIf a landlord violates the HSNA, it DOES NOT halt the eviction process.",
+      "decision": {
+        "decision": "applies",
+        "reason": "Condition S2 exempts healthcare facility residences from the obligations whose violations trigger penalties under P9.",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 3176,
+          "end": 3288,
+          "occurrences": 1,
+          "model_span": "The only exempt properties are residences:\n1. in any hospital, skilled nursing facility or health facility;  and",
+          "source_span": "The only exempt properties are residences:\n1. in any hospital, skilled nursing facility or health facility;  and",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 2,
+              "model_text": "The only exempt properties are residences:\n1. in any hospital, skilled nursing facility or health facility;  and",
+              "status": "exact_match",
+              "start": 3176,
+              "end": 3288
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "applies",
+      "unresolved_reason": null
+    },
+    {
+      "condition_id": "S3",
+      "provision_id": "P1",
+      "kind": "exemption",
+      "statement": "Residences in a non-profit facility whose primary purpose is providing short-term treatment, assistance, or therapy for alcohol, drug, or other substance abuse are exempt.",
+      "scope_words": "The only exempt properties are residences:",
+      "condition_evidence": "2. in a non-profit facility whose primary purpose is providing short-term\ntreatment, assistance or therapy for alcohol, drug, or other substance\nabuse.",
+      "target_ref": "Question 1",
+      "target_anchor": "The Housing Stability Notification Act (HSNA) is an Ordinance",
+      "target_quote": "The HSNA requires that landlords give this Notice of Tenants’ Rights and Resources\nto tenants when the landlord starts the eviction process, or when the landlord\ndecides to not offer the tenant a renewal of their lease agreement. The Notice of\nTenants’ Rights and Resources must be delivered at the same time as the Notice to\nQuit.\nThe Notice of Tenants’ Rights and Resources must also be delivered to any tenant\nthat is asked to leave a property. For example, if someone is purchasing a property\nout of foreclosure, or from a bank or a mortgage lender, they must provide this\nNotice to the former owners of the property, or any tenants that live in the\nproperty.",
+      "decision": {
+        "decision": "applies",
+        "reason": "Condition S3 exempts non-profit substance abuse treatment facility residences from the tenant notice requirement in P1.",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 3289,
+          "end": 3440,
+          "occurrences": 1,
+          "model_span": "2. in a non-profit facility whose primary purpose is providing short-term\ntreatment, assistance or therapy for alcohol, drug, or other substance\nabuse.",
+          "source_span": "2. in a non-profit facility whose primary purpose is providing short-term\ntreatment, assistance or therapy for alcohol, drug, or other substance\nabuse.",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 2,
+              "model_text": "2. in a non-profit facility whose primary purpose is providing short-term\ntreatment, assistance or therapy for alcohol, drug, or other substance\nabuse.",
+              "status": "exact_match",
+              "start": 3289,
+              "end": 3440
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "applies",
+      "unresolved_reason": null
+    },
+    {
+      "condition_id": "S3",
+      "provision_id": "P2",
+      "kind": "exemption",
+      "statement": "Residences in a non-profit facility whose primary purpose is providing short-term treatment, assistance, or therapy for alcohol, drug, or other substance abuse are exempt.",
+      "scope_words": "The only exempt properties are residences:",
+      "condition_evidence": "2. in a non-profit facility whose primary purpose is providing short-term\ntreatment, assistance or therapy for alcohol, drug, or other substance\nabuse.",
+      "target_ref": "Question 1",
+      "target_anchor": "The HSNA also requires landlords and foreclosing owners to",
+      "target_quote": "The HSNA also requires landlords and foreclosing owners to send a copy of the\nNotice to Quit or Notice of Non-renewal of Lease, together with a Certificate of\nCompliance/Service, to the City of Boston’s Office of Housing Stability",
+      "decision": {
+        "decision": "applies",
+        "reason": "Condition S3 exempts non-profit substance abuse treatment facility residences from the notice and certificate submission requirement in P2.",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 3289,
+          "end": 3440,
+          "occurrences": 1,
+          "model_span": "2. in a non-profit facility whose primary purpose is providing short-term\ntreatment, assistance or therapy for alcohol, drug, or other substance\nabuse.",
+          "source_span": "2. in a non-profit facility whose primary purpose is providing short-term\ntreatment, assistance or therapy for alcohol, drug, or other substance\nabuse.",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 2,
+              "model_text": "2. in a non-profit facility whose primary purpose is providing short-term\ntreatment, assistance or therapy for alcohol, drug, or other substance\nabuse.",
+              "status": "exact_match",
+              "start": 3289,
+              "end": 3440
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "applies",
+      "unresolved_reason": null
+    },
+    {
+      "condition_id": "S3",
+      "provision_id": "P7",
+      "kind": "exemption",
+      "statement": "Residences in a non-profit facility whose primary purpose is providing short-term treatment, assistance, or therapy for alcohol, drug, or other substance abuse are exempt.",
+      "scope_words": "The only exempt properties are residences:",
+      "condition_evidence": "2. in a non-profit facility whose primary purpose is providing short-term\ntreatment, assistance or therapy for alcohol, drug, or other substance\nabuse.",
+      "target_ref": "Question 6",
+      "target_anchor": "The requirements of this Ordinance may not be waived,",
+      "target_quote": "The requirements of this Ordinance may not be waived, and any term of any\nlease, contract, or other agreement that purports to waive or limit a tenant’s or\nformer homeowner’s substantive or procedural rights under this Ordinance are\ncontrary to public policy, unenforceable, and void.",
+      "decision": {
+        "decision": "applies",
+        "reason": "Condition S3 exempts non-profit substance abuse treatment facility residences from the Ordinance requirements covered by the anti-waiver clause in P7.",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 3289,
+          "end": 3440,
+          "occurrences": 1,
+          "model_span": "2. in a non-profit facility whose primary purpose is providing short-term\ntreatment, assistance or therapy for alcohol, drug, or other substance\nabuse.",
+          "source_span": "2. in a non-profit facility whose primary purpose is providing short-term\ntreatment, assistance or therapy for alcohol, drug, or other substance\nabuse.",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 2,
+              "model_text": "2. in a non-profit facility whose primary purpose is providing short-term\ntreatment, assistance or therapy for alcohol, drug, or other substance\nabuse.",
+              "status": "exact_match",
+              "start": 3289,
+              "end": 3440
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "applies",
+      "unresolved_reason": null
+    },
+    {
+      "condition_id": "S3",
+      "provision_id": "P9",
+      "kind": "exemption",
+      "statement": "Residences in a non-profit facility whose primary purpose is providing short-term treatment, assistance, or therapy for alcohol, drug, or other substance abuse are exempt.",
+      "scope_words": "The only exempt properties are residences:",
+      "condition_evidence": "2. in a non-profit facility whose primary purpose is providing short-term\ntreatment, assistance or therapy for alcohol, drug, or other substance\nabuse.",
+      "target_ref": "Sec. 10-11.7",
+      "target_anchor": "Unless otherwise provided, a person or entity violating any",
+      "target_quote": "Unless otherwise provided, a person or entity violating any provisions of this \nOrdinance shall be punishable by a warning or fine in accordance with the \nprovisions of City of Boston Ordinances and/or Boston City Charter, shown below. \nHousing Stability Notification Act (Sec. 10-11.7) \nEnforcement Entity: Inspectional Services Department \n1st Offense: Warning \n2nd and Subsequent Offenses: $300 per day \nIf a landlord violates the HSNA, it DOES NOT halt the eviction process.",
+      "decision": {
+        "decision": "applies",
+        "reason": "Condition S3 exempts non-profit substance abuse treatment facility residences from the Ordinance provisions enforceable through fines under P9.",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 3289,
+          "end": 3440,
+          "occurrences": 1,
+          "model_span": "2. in a non-profit facility whose primary purpose is providing short-term\ntreatment, assistance or therapy for alcohol, drug, or other substance\nabuse.",
+          "source_span": "2. in a non-profit facility whose primary purpose is providing short-term\ntreatment, assistance or therapy for alcohol, drug, or other substance\nabuse.",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 2,
+              "model_text": "2. in a non-profit facility whose primary purpose is providing short-term\ntreatment, assistance or therapy for alcohol, drug, or other substance\nabuse.",
+              "status": "exact_match",
+              "start": 3289,
+              "end": 3440
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "applies",
+      "unresolved_reason": null
+    }
+  ],
+  "legislative_session": null,
+  "empty_result": null,
+  "legacy_replay": null,
+  "repair": {
+    "invoked": true,
+    "reason": "1 repair target(s) from scope_challenge; 12 scope_mapping_challenge(s)",
+    "prompt_version": "v7-repair-1",
+    "targets": [
+      {
+        "ref": "Question 7",
+        "sources": [
+          "scope_challenge"
+        ],
+        "provision_id": "P8",
+        "summary": "Details administrative intake and reporting steps for tenants to report violations to FHE and ISD.",
+        "role": "procedure",
+        "declared_reason": "administrative complaint and reporting procedure",
+        "signals": [
+          "in_scope_neighbour",
+          "enumeration",
+          "normative_language"
+        ],
+        "raw_start": 3941,
+        "raw_end": 5247,
+        "pre_repair_state": "declared out_of_scope (procedure: administrative complaint and reporting procedure); its text has signals ['in_scope_neighbour', 'enumeration', 'normative_language']",
+        "resolution": {
+          "scope": "out_of_scope",
+          "reason": "The provision specifies administrative intake and reporting procedures for tenants submitting complaints to municipal agencies, which constitutes administrative machinery that creates no independent rental housing obligation or substantive remedy.",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": "raw text from the start of part 1 through the end of part 2, across exactly one page artifact",
+            "start": 3770,
+            "end": 5246,
+            "occurrences": 1,
+            "model_span": "7. What do I need to do as a tenant if I do not receive the Notice of Tenants’\nRights and Resources when I am served with a notice to quit or notice of\nlease non-renewal?\nViolations of the HSNA are investigated by the Office of Fair Housing and Equity\n(FHE) and enforced by the Inspectional Services Department (ISD). ISD will issue a\nticket to your landlord if the required information is not provided to you and you\nproperly report the violation.\nIn order for ISD to issue a ticket, you will need to do the following: \n[[PAGE BREAK]]\n1. Call FHE at 617-635-2500 and explain that you are calling to report a\nviolation of the new Housing Stability Notification Act. You can also call 311\nand ask for FHE.\n2. FHE may direct you to submit your information through an online intake\nform available on FHE’s website: boston.gov/departments/fair-housing-\nand-equity. If you are unable to use the online form, you may submit any\nrequired documentation through the mail to the following address:\nCity of Boston \nOffice of Fair Housing and Equity \n1 City Hall Square, Rm. 966 \nBoston, MA 02201 \n3. Provide FHE with written proof of your tenancy such as your lease, rent\nreceipts, or your name on a notice to quit or court complaint (other items\nproving your tenancy may be accepted).\n4. Provide FHE with a copy of the Notice to Quit or Court Complaint, as well as\nyour landlord or property manager’s contact information.",
+            "source_span": "7. What do I need to do as a tenant if I do not receive the Notice of Tenants’\nRights and Resources when I am served with a notice to quit or notice of\nlease non-renewal?\nViolations of the HSNA are investigated by the Office of Fair Housing and Equity\n(FHE) and enforced by the Inspectional Services Department (ISD). ISD will issue a\nticket to your landlord if the required information is not provided to you and you\nproperly report the violation.\nIn order for ISD to issue a ticket, you will need to do the following: \n\nHousing Stability Notification Act \nFrequently Asked Questions for Tenants \n3 \n1. Call FHE at 617-635-2500 and explain that you are calling to report a\nviolation of the new Housing Stability Notification Act. You can also call 311\nand ask for FHE.\n2. FHE may direct you to submit your information through an online intake\nform available on FHE’s website: boston.gov/departments/fair-housing-\nand-equity. If you are unable to use the online form, you may submit any\nrequired documentation through the mail to the following address:\nCity of Boston \nOffice of Fair Housing and Equity \n1 City Hall Square, Rm. 966 \nBoston, MA 02201 \n3. Provide FHE with written proof of your tenancy such as your lease, rent\nreceipts, or your name on a notice to quit or court complaint (other items\nproving your tenancy may be accepted).\n4. Provide FHE with a copy of the Notice to Quit or Court Complaint, as well as\nyour landlord or property manager’s contact information.",
+            "reason": null,
+            "reconstructed": true,
+            "parts": [
+              {
+                "segment_id": 2,
+                "model_text": "7. What do I need to do as a tenant if I do not receive the Notice of Tenants’\nRights and Resources when I am served with a notice to quit or notice of\nlease non-renewal?\nViolations of the HSNA are investigated by the Office of Fair Housing and Equity\n(FHE) and enforced by the Inspectional Services Department (ISD). ISD will issue a\nticket to your landlord if the required information is not provided to you and you\nproperly report the violation.\nIn order for ISD to issue a ticket, you will need to do the following: ",
+                "status": "exact_match",
+                "start": 3770,
+                "end": 4290
+              },
+              {
+                "segment_id": 3,
+                "model_text": "1. Call FHE at 617-635-2500 and explain that you are calling to report a\nviolation of the new Housing Stability Notification Act. You can also call 311\nand ask for FHE.\n2. FHE may direct you to submit your information through an online intake\nform available on FHE’s website: boston.gov/departments/fair-housing-\nand-equity. If you are unable to use the online form, you may submit any\nrequired documentation through the mail to the following address:\nCity of Boston \nOffice of Fair Housing and Equity \n1 City Hall Square, Rm. 966 \nBoston, MA 02201 \n3. Provide FHE with written proof of your tenancy such as your lease, rent\nreceipts, or your name on a notice to quit or court complaint (other items\nproving your tenancy may be accepted).\n4. Provide FHE with a copy of the Notice to Quit or Court Complaint, as well as\nyour landlord or property manager’s contact information.",
+                "status": "exact_match",
+                "start": 4371,
+                "end": 5246
+              }
+            ],
+            "crossed_artifacts": [
+              {
+                "raw_start": 4292,
+                "raw_end": 4371,
+                "text": "Housing Stability Notification Act \nFrequently Asked Questions for Tenants \n3 \n"
+              }
+            ]
+          },
+          "evidence_verified": false,
+          "evidence_problem": "evidence is not text of the target subdivision"
+        },
+        "repair_scope": "out_of_scope",
+        "reason": "The provision specifies administrative intake and reporting procedures for tenants submitting complaints to municipal agencies, which constitutes administrative machinery that creates no independent rental housing obligation or substantive remedy.",
+        "candidate_indices": [],
+        "accepted_indices": [],
+        "final_resolution": "unresolved",
+        "unresolved_reason": "classified out_of_scope without a reason and verified evidence (evidence is not text of the target subdivision)"
+      }
+    ],
+    "cache_key": "ace44e3c99a9e44fd5e47cf2672745718b896fabed4c3c5b5383268bcac8e70c",
+    "cache_hit": false,
+    "cache_entry": "cache/extraction/ace44e3c99a9e44fd5e47cf2672745718b896fabed4c3c5b5383268bcac8e70c.json",
+    "prompt_sha256": "542b752e7cef9731028575fe3b6e739d67984981584c1277788a72bbce0471cc",
+    "provider_metadata": {
+      "api": "interactions.create",
+      "interaction_id": "",
+      "model": "gemini-3.8-flash",
+      "status": "completed",
+      "usage": {
+        "input_tokens": 6515,
+        "output_tokens": 2125,
+        "thinking_tokens": 6733,
+        "total_tokens": 15373
+      }
+    },
+    "raw_response_text": "{\n  \"target_resolutions\": [\n    {\n      \"ref\": \"Question 7\",\n      \"scope\": \"out_of_scope\",\n      \"reason\": \"The provision specifies administrative intake and reporting procedures for tenants submitting complaints to municipal agencies, which constitutes administrative machinery that creates no independent rental housing obligation or substantive remedy.\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 2,\n          \"quoted_text\": \"7. What do I need to do as a tenant if I do not receive the Notice of Tenants’\\nRights and Resources when I am served with a notice to quit or notice of\\nlease non-renewal?\\nViolations of the HSNA are investigated by the Office of Fair Housing and Equity\\n(FHE) and enforced by the Inspectional Services Department (ISD). ISD will issue a\\nticket to your landlord if the required information is not provided to you and you\\nproperly report the violation.\\nIn order for ISD to issue a ticket, you will need to do the following: \"\n        },\n        {\n          \"segment_id\": 3,\n          \"quoted_text\": \"1. Call FHE at 617-635-2500 and explain that you are calling to report a\\nviolation of the new Housing Stability Notification Act. You can also call 311\\nand ask for FHE.\\n2. FHE may direct you to submit your information through an online intake\\nform available on FHE’s website: boston.gov/departments/fair-housing-\\nand-equity. If you are unable to use the online form, you may submit any\\nrequired documentation through the mail to the following address:\\nCity of Boston \\nOffice of Fair Housing and Equity \\n1 City Hall Square, Rm. 966 \\nBoston, MA 02201 \\n3. Provide FHE with written proof of your tenancy such as your lease, rent\\nreceipts, or your name on a notice to quit or court complaint (other items\\nproving your tenancy may be accepted).\\n4. Provide FHE with a copy of the Notice to Quit or Court Complaint, as well as\\nyour landlord or property manager’s contact information.\"\n        }\n      ]\n    }\n  ],\n  \"scope_mappings\": [\n    {\n      \"condition_id\": \"S1\",\n      \"provision_id\": \"P1\",\n      \"decision\": \"applies\",\n      \"reason\": \"Condition S1 establishes the scope of coverage for the Ordinance, which defines which landlords must deliver the Notice of Tenants' Rights and Resources under P1.\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 2,\n          \"quoted_text\": \"The Ordinance applies to all landlords/foreclosing owners intending to end a\\ntenancy or post-foreclosure occupancy of a unit in the City of Boston.\"\n        }\n      ]\n    },\n    {\n      \"condition_id\": \"S1\",\n      \"provision_id\": \"P2\",\n      \"decision\": \"applies\",\n      \"reason\": \"Condition S1 governs which landlords and foreclosing owners are subject to the duty to file notices and certificates with the Office of Housing Stability under P2.\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 2,\n          \"quoted_text\": \"The Ordinance applies to all landlords/foreclosing owners intending to end a\\ntenancy or post-foreclosure occupancy of a unit in the City of Boston.\"\n        }\n      ]\n    },\n    {\n      \"condition_id\": \"S1\",\n      \"provision_id\": \"P7\",\n      \"decision\": \"applies\",\n      \"reason\": \"Condition S1 specifies the covered landlords and tenancies whose statutory rights under the Ordinance cannot be waived under P7.\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 2,\n          \"quoted_text\": \"The Ordinance applies to all landlords/foreclosing owners intending to end a\\ntenancy or post-foreclosure occupancy of a unit in the City of Boston.\"\n        }\n      ]\n    },\n    {\n      \"condition_id\": \"S1\",\n      \"provision_id\": \"P9\",\n      \"decision\": \"applies\",\n      \"reason\": \"Condition S1 establishes the scope of entities and tenancies subject to enforcement penalties for violating the Ordinance under P9.\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 2,\n          \"quoted_text\": \"The Ordinance applies to all landlords/foreclosing owners intending to end a\\ntenancy or post-foreclosure occupancy of a unit in the City of Boston.\"\n        }\n      ]\n    },\n    {\n      \"condition_id\": \"S2\",\n      \"provision_id\": \"P1\",\n      \"decision\": \"applies\",\n      \"reason\": \"Condition S2 exempts hospital and healthcare facility residences from the Ordinance's notice delivery requirement in P1.\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 2,\n          \"quoted_text\": \"The only exempt properties are residences:\\n1. in any hospital, skilled nursing facility or health facility;  and\"\n        }\n      ]\n    },\n    {\n      \"condition_id\": \"S2\",\n      \"provision_id\": \"P2\",\n      \"decision\": \"applies\",\n      \"reason\": \"Condition S2 exempts healthcare facility residences from the requirement to submit notices and certificates to the Office of Housing Stability in P2.\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 2,\n          \"quoted_text\": \"The only exempt properties are residences:\\n1. in any hospital, skilled nursing facility or health facility;  and\"\n        }\n      ]\n    },\n    {\n      \"condition_id\": \"S2\",\n      \"provision_id\": \"P7\",\n      \"decision\": \"applies\",\n      \"reason\": \"Condition S2 exempts healthcare facility residences from the scope of the Ordinance's provisions governed by the anti-waiver rule in P7.\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 2,\n          \"quoted_text\": \"The only exempt properties are residences:\\n1. in any hospital, skilled nursing facility or health facility;  and\"\n        }\n      ]\n    },\n    {\n      \"condition_id\": \"S2\",\n      \"provision_id\": \"P9\",\n      \"decision\": \"applies\",\n      \"reason\": \"Condition S2 exempts healthcare facility residences from the obligations whose violations trigger penalties under P9.\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 2,\n          \"quoted_text\": \"The only exempt properties are residences:\\n1. in any hospital, skilled nursing facility or health facility;  and\"\n        }\n      ]\n    },\n    {\n      \"condition_id\": \"S3\",\n      \"provision_id\": \"P1\",\n      \"decision\": \"applies\",\n      \"reason\": \"Condition S3 exempts non-profit substance abuse treatment facility residences from the tenant notice requirement in P1.\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 2,\n          \"quoted_text\": \"2. in a non-profit facility whose primary purpose is providing short-term\\ntreatment, assistance or therapy for alcohol, drug, or other substance\\nabuse.\"\n        }\n      ]\n    },\n    {\n      \"condition_id\": \"S3\",\n      \"provision_id\": \"P2\",\n      \"decision\": \"applies\",\n      \"reason\": \"Condition S3 exempts non-profit substance abuse treatment facility residences from the notice and certificate submission requirement in P2.\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 2,\n          \"quoted_text\": \"2. in a non-profit facility whose primary purpose is providing short-term\\ntreatment, assistance or therapy for alcohol, drug, or other substance\\nabuse.\"\n        }\n      ]\n    },\n    {\n      \"condition_id\": \"S3\",\n      \"provision_id\": \"P7\",\n      \"decision\": \"applies\",\n      \"reason\": \"Condition S3 exempts non-profit substance abuse treatment facility residences from the Ordinance requirements covered by the anti-waiver clause in P7.\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 2,\n          \"quoted_text\": \"2. in a non-profit facility whose primary purpose is providing short-term\\ntreatment, assistance or therapy for alcohol, drug, or other substance\\nabuse.\"\n        }\n      ]\n    },\n    {\n      \"condition_id\": \"S3\",\n      \"provision_id\": \"P9\",\n      \"decision\": \"applies\",\n      \"reason\": \"Condition S3 exempts non-profit substance abuse treatment facility residences from the Ordinance provisions enforceable through fines under P9.\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 2,\n          \"quoted_text\": \"2. in a non-profit facility whose primary purpose is providing short-term\\ntreatment, assistance or therapy for alcohol, drug, or other substance\\nabuse.\"\n        }\n      ]\n    }\n  ],\n  \"rules\": []\n}",
+    "mappings": [
+      {
+        "condition_id": "S1",
+        "provision_id": "P1",
+        "kind": "coverage_condition",
+        "statement": "The Ordinance applies to all landlords and foreclosing owners intending to end a tenancy or post-foreclosure occupancy of a unit in the City of Boston.",
+        "scope_words": "The Ordinance applies to",
+        "condition_evidence": "The Ordinance applies to all landlords/foreclosing owners intending to end a\ntenancy or post-foreclosure occupancy of a unit in the City of Boston.",
+        "target_ref": "Question 1",
+        "target_anchor": "The Housing Stability Notification Act (HSNA) is an Ordinance",
+        "target_quote": "The HSNA requires that landlords give this Notice of Tenants’ Rights and Resources\nto tenants when the landlord starts the eviction process, or when the landlord\ndecides to not offer the tenant a renewal of their lease agreement. The Notice of\nTenants’ Rights and Resources must be delivered at the same time as the Notice to\nQuit.\nThe Notice of Tenants’ Rights and Resources must also be delivered to any tenant\nthat is asked to leave a property. For example, if someone is purchasing a property\nout of foreclosure, or from a bank or a mortgage lender, they must provide this\nNotice to the former owners of the property, or any tenants that live in the\nproperty.",
+        "decision": {
+          "decision": "applies",
+          "reason": "Condition S1 establishes the scope of coverage for the Ordinance, which defines which landlords must deliver the Notice of Tenants' Rights and Resources under P1.",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 3028,
+            "end": 3175,
+            "occurrences": 1,
+            "model_span": "The Ordinance applies to all landlords/foreclosing owners intending to end a\ntenancy or post-foreclosure occupancy of a unit in the City of Boston.",
+            "source_span": "The Ordinance applies to all landlords/foreclosing owners intending to end a\ntenancy or post-foreclosure occupancy of a unit in the City of Boston.",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 2,
+                "model_text": "The Ordinance applies to all landlords/foreclosing owners intending to end a\ntenancy or post-foreclosure occupancy of a unit in the City of Boston.",
+                "status": "exact_match",
+                "start": 3028,
+                "end": 3175
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "applies",
+        "unresolved_reason": null
+      },
+      {
+        "condition_id": "S1",
+        "provision_id": "P2",
+        "kind": "coverage_condition",
+        "statement": "The Ordinance applies to all landlords and foreclosing owners intending to end a tenancy or post-foreclosure occupancy of a unit in the City of Boston.",
+        "scope_words": "The Ordinance applies to",
+        "condition_evidence": "The Ordinance applies to all landlords/foreclosing owners intending to end a\ntenancy or post-foreclosure occupancy of a unit in the City of Boston.",
+        "target_ref": "Question 1",
+        "target_anchor": "The HSNA also requires landlords and foreclosing owners to",
+        "target_quote": "The HSNA also requires landlords and foreclosing owners to send a copy of the\nNotice to Quit or Notice of Non-renewal of Lease, together with a Certificate of\nCompliance/Service, to the City of Boston’s Office of Housing Stability",
+        "decision": {
+          "decision": "applies",
+          "reason": "Condition S1 governs which landlords and foreclosing owners are subject to the duty to file notices and certificates with the Office of Housing Stability under P2.",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 3028,
+            "end": 3175,
+            "occurrences": 1,
+            "model_span": "The Ordinance applies to all landlords/foreclosing owners intending to end a\ntenancy or post-foreclosure occupancy of a unit in the City of Boston.",
+            "source_span": "The Ordinance applies to all landlords/foreclosing owners intending to end a\ntenancy or post-foreclosure occupancy of a unit in the City of Boston.",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 2,
+                "model_text": "The Ordinance applies to all landlords/foreclosing owners intending to end a\ntenancy or post-foreclosure occupancy of a unit in the City of Boston.",
+                "status": "exact_match",
+                "start": 3028,
+                "end": 3175
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "applies",
+        "unresolved_reason": null
+      },
+      {
+        "condition_id": "S1",
+        "provision_id": "P7",
+        "kind": "coverage_condition",
+        "statement": "The Ordinance applies to all landlords and foreclosing owners intending to end a tenancy or post-foreclosure occupancy of a unit in the City of Boston.",
+        "scope_words": "The Ordinance applies to",
+        "condition_evidence": "The Ordinance applies to all landlords/foreclosing owners intending to end a\ntenancy or post-foreclosure occupancy of a unit in the City of Boston.",
+        "target_ref": "Question 6",
+        "target_anchor": "The requirements of this Ordinance may not be waived,",
+        "target_quote": "The requirements of this Ordinance may not be waived, and any term of any\nlease, contract, or other agreement that purports to waive or limit a tenant’s or\nformer homeowner’s substantive or procedural rights under this Ordinance are\ncontrary to public policy, unenforceable, and void.",
+        "decision": {
+          "decision": "applies",
+          "reason": "Condition S1 specifies the covered landlords and tenancies whose statutory rights under the Ordinance cannot be waived under P7.",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 3028,
+            "end": 3175,
+            "occurrences": 1,
+            "model_span": "The Ordinance applies to all landlords/foreclosing owners intending to end a\ntenancy or post-foreclosure occupancy of a unit in the City of Boston.",
+            "source_span": "The Ordinance applies to all landlords/foreclosing owners intending to end a\ntenancy or post-foreclosure occupancy of a unit in the City of Boston.",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 2,
+                "model_text": "The Ordinance applies to all landlords/foreclosing owners intending to end a\ntenancy or post-foreclosure occupancy of a unit in the City of Boston.",
+                "status": "exact_match",
+                "start": 3028,
+                "end": 3175
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "applies",
+        "unresolved_reason": null
+      },
+      {
+        "condition_id": "S1",
+        "provision_id": "P9",
+        "kind": "coverage_condition",
+        "statement": "The Ordinance applies to all landlords and foreclosing owners intending to end a tenancy or post-foreclosure occupancy of a unit in the City of Boston.",
+        "scope_words": "The Ordinance applies to",
+        "condition_evidence": "The Ordinance applies to all landlords/foreclosing owners intending to end a\ntenancy or post-foreclosure occupancy of a unit in the City of Boston.",
+        "target_ref": "Sec. 10-11.7",
+        "target_anchor": "Unless otherwise provided, a person or entity violating any",
+        "target_quote": "Unless otherwise provided, a person or entity violating any provisions of this \nOrdinance shall be punishable by a warning or fine in accordance with the \nprovisions of City of Boston Ordinances and/or Boston City Charter, shown below. \nHousing Stability Notification Act (Sec. 10-11.7) \nEnforcement Entity: Inspectional Services Department \n1st Offense: Warning \n2nd and Subsequent Offenses: $300 per day \nIf a landlord violates the HSNA, it DOES NOT halt the eviction process.",
+        "decision": {
+          "decision": "applies",
+          "reason": "Condition S1 establishes the scope of entities and tenancies subject to enforcement penalties for violating the Ordinance under P9.",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 3028,
+            "end": 3175,
+            "occurrences": 1,
+            "model_span": "The Ordinance applies to all landlords/foreclosing owners intending to end a\ntenancy or post-foreclosure occupancy of a unit in the City of Boston.",
+            "source_span": "The Ordinance applies to all landlords/foreclosing owners intending to end a\ntenancy or post-foreclosure occupancy of a unit in the City of Boston.",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 2,
+                "model_text": "The Ordinance applies to all landlords/foreclosing owners intending to end a\ntenancy or post-foreclosure occupancy of a unit in the City of Boston.",
+                "status": "exact_match",
+                "start": 3028,
+                "end": 3175
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "applies",
+        "unresolved_reason": null
+      },
+      {
+        "condition_id": "S2",
+        "provision_id": "P1",
+        "kind": "exemption",
+        "statement": "Residences in any hospital, skilled nursing facility, or health facility are exempt.",
+        "scope_words": "The only exempt properties are residences:",
+        "condition_evidence": "The only exempt properties are residences:\n1. in any hospital, skilled nursing facility or health facility;  and",
+        "target_ref": "Question 1",
+        "target_anchor": "The Housing Stability Notification Act (HSNA) is an Ordinance",
+        "target_quote": "The HSNA requires that landlords give this Notice of Tenants’ Rights and Resources\nto tenants when the landlord starts the eviction process, or when the landlord\ndecides to not offer the tenant a renewal of their lease agreement. The Notice of\nTenants’ Rights and Resources must be delivered at the same time as the Notice to\nQuit.\nThe Notice of Tenants’ Rights and Resources must also be delivered to any tenant\nthat is asked to leave a property. For example, if someone is purchasing a property\nout of foreclosure, or from a bank or a mortgage lender, they must provide this\nNotice to the former owners of the property, or any tenants that live in the\nproperty.",
+        "decision": {
+          "decision": "applies",
+          "reason": "Condition S2 exempts hospital and healthcare facility residences from the Ordinance's notice delivery requirement in P1.",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 3176,
+            "end": 3288,
+            "occurrences": 1,
+            "model_span": "The only exempt properties are residences:\n1. in any hospital, skilled nursing facility or health facility;  and",
+            "source_span": "The only exempt properties are residences:\n1. in any hospital, skilled nursing facility or health facility;  and",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 2,
+                "model_text": "The only exempt properties are residences:\n1. in any hospital, skilled nursing facility or health facility;  and",
+                "status": "exact_match",
+                "start": 3176,
+                "end": 3288
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "applies",
+        "unresolved_reason": null
+      },
+      {
+        "condition_id": "S2",
+        "provision_id": "P2",
+        "kind": "exemption",
+        "statement": "Residences in any hospital, skilled nursing facility, or health facility are exempt.",
+        "scope_words": "The only exempt properties are residences:",
+        "condition_evidence": "The only exempt properties are residences:\n1. in any hospital, skilled nursing facility or health facility;  and",
+        "target_ref": "Question 1",
+        "target_anchor": "The HSNA also requires landlords and foreclosing owners to",
+        "target_quote": "The HSNA also requires landlords and foreclosing owners to send a copy of the\nNotice to Quit or Notice of Non-renewal of Lease, together with a Certificate of\nCompliance/Service, to the City of Boston’s Office of Housing Stability",
+        "decision": {
+          "decision": "applies",
+          "reason": "Condition S2 exempts healthcare facility residences from the requirement to submit notices and certificates to the Office of Housing Stability in P2.",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 3176,
+            "end": 3288,
+            "occurrences": 1,
+            "model_span": "The only exempt properties are residences:\n1. in any hospital, skilled nursing facility or health facility;  and",
+            "source_span": "The only exempt properties are residences:\n1. in any hospital, skilled nursing facility or health facility;  and",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 2,
+                "model_text": "The only exempt properties are residences:\n1. in any hospital, skilled nursing facility or health facility;  and",
+                "status": "exact_match",
+                "start": 3176,
+                "end": 3288
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "applies",
+        "unresolved_reason": null
+      },
+      {
+        "condition_id": "S2",
+        "provision_id": "P7",
+        "kind": "exemption",
+        "statement": "Residences in any hospital, skilled nursing facility, or health facility are exempt.",
+        "scope_words": "The only exempt properties are residences:",
+        "condition_evidence": "The only exempt properties are residences:\n1. in any hospital, skilled nursing facility or health facility;  and",
+        "target_ref": "Question 6",
+        "target_anchor": "The requirements of this Ordinance may not be waived,",
+        "target_quote": "The requirements of this Ordinance may not be waived, and any term of any\nlease, contract, or other agreement that purports to waive or limit a tenant’s or\nformer homeowner’s substantive or procedural rights under this Ordinance are\ncontrary to public policy, unenforceable, and void.",
+        "decision": {
+          "decision": "applies",
+          "reason": "Condition S2 exempts healthcare facility residences from the scope of the Ordinance's provisions governed by the anti-waiver rule in P7.",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 3176,
+            "end": 3288,
+            "occurrences": 1,
+            "model_span": "The only exempt properties are residences:\n1. in any hospital, skilled nursing facility or health facility;  and",
+            "source_span": "The only exempt properties are residences:\n1. in any hospital, skilled nursing facility or health facility;  and",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 2,
+                "model_text": "The only exempt properties are residences:\n1. in any hospital, skilled nursing facility or health facility;  and",
+                "status": "exact_match",
+                "start": 3176,
+                "end": 3288
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "applies",
+        "unresolved_reason": null
+      },
+      {
+        "condition_id": "S2",
+        "provision_id": "P9",
+        "kind": "exemption",
+        "statement": "Residences in any hospital, skilled nursing facility, or health facility are exempt.",
+        "scope_words": "The only exempt properties are residences:",
+        "condition_evidence": "The only exempt properties are residences:\n1. in any hospital, skilled nursing facility or health facility;  and",
+        "target_ref": "Sec. 10-11.7",
+        "target_anchor": "Unless otherwise provided, a person or entity violating any",
+        "target_quote": "Unless otherwise provided, a person or entity violating any provisions of this \nOrdinance shall be punishable by a warning or fine in accordance with the \nprovisions of City of Boston Ordinances and/or Boston City Charter, shown below. \nHousing Stability Notification Act (Sec. 10-11.7) \nEnforcement Entity: Inspectional Services Department \n1st Offense: Warning \n2nd and Subsequent Offenses: $300 per day \nIf a landlord violates the HSNA, it DOES NOT halt the eviction process.",
+        "decision": {
+          "decision": "applies",
+          "reason": "Condition S2 exempts healthcare facility residences from the obligations whose violations trigger penalties under P9.",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 3176,
+            "end": 3288,
+            "occurrences": 1,
+            "model_span": "The only exempt properties are residences:\n1. in any hospital, skilled nursing facility or health facility;  and",
+            "source_span": "The only exempt properties are residences:\n1. in any hospital, skilled nursing facility or health facility;  and",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 2,
+                "model_text": "The only exempt properties are residences:\n1. in any hospital, skilled nursing facility or health facility;  and",
+                "status": "exact_match",
+                "start": 3176,
+                "end": 3288
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "applies",
+        "unresolved_reason": null
+      },
+      {
+        "condition_id": "S3",
+        "provision_id": "P1",
+        "kind": "exemption",
+        "statement": "Residences in a non-profit facility whose primary purpose is providing short-term treatment, assistance, or therapy for alcohol, drug, or other substance abuse are exempt.",
+        "scope_words": "The only exempt properties are residences:",
+        "condition_evidence": "2. in a non-profit facility whose primary purpose is providing short-term\ntreatment, assistance or therapy for alcohol, drug, or other substance\nabuse.",
+        "target_ref": "Question 1",
+        "target_anchor": "The Housing Stability Notification Act (HSNA) is an Ordinance",
+        "target_quote": "The HSNA requires that landlords give this Notice of Tenants’ Rights and Resources\nto tenants when the landlord starts the eviction process, or when the landlord\ndecides to not offer the tenant a renewal of their lease agreement. The Notice of\nTenants’ Rights and Resources must be delivered at the same time as the Notice to\nQuit.\nThe Notice of Tenants’ Rights and Resources must also be delivered to any tenant\nthat is asked to leave a property. For example, if someone is purchasing a property\nout of foreclosure, or from a bank or a mortgage lender, they must provide this\nNotice to the former owners of the property, or any tenants that live in the\nproperty.",
+        "decision": {
+          "decision": "applies",
+          "reason": "Condition S3 exempts non-profit substance abuse treatment facility residences from the tenant notice requirement in P1.",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 3289,
+            "end": 3440,
+            "occurrences": 1,
+            "model_span": "2. in a non-profit facility whose primary purpose is providing short-term\ntreatment, assistance or therapy for alcohol, drug, or other substance\nabuse.",
+            "source_span": "2. in a non-profit facility whose primary purpose is providing short-term\ntreatment, assistance or therapy for alcohol, drug, or other substance\nabuse.",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 2,
+                "model_text": "2. in a non-profit facility whose primary purpose is providing short-term\ntreatment, assistance or therapy for alcohol, drug, or other substance\nabuse.",
+                "status": "exact_match",
+                "start": 3289,
+                "end": 3440
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "applies",
+        "unresolved_reason": null
+      },
+      {
+        "condition_id": "S3",
+        "provision_id": "P2",
+        "kind": "exemption",
+        "statement": "Residences in a non-profit facility whose primary purpose is providing short-term treatment, assistance, or therapy for alcohol, drug, or other substance abuse are exempt.",
+        "scope_words": "The only exempt properties are residences:",
+        "condition_evidence": "2. in a non-profit facility whose primary purpose is providing short-term\ntreatment, assistance or therapy for alcohol, drug, or other substance\nabuse.",
+        "target_ref": "Question 1",
+        "target_anchor": "The HSNA also requires landlords and foreclosing owners to",
+        "target_quote": "The HSNA also requires landlords and foreclosing owners to send a copy of the\nNotice to Quit or Notice of Non-renewal of Lease, together with a Certificate of\nCompliance/Service, to the City of Boston’s Office of Housing Stability",
+        "decision": {
+          "decision": "applies",
+          "reason": "Condition S3 exempts non-profit substance abuse treatment facility residences from the notice and certificate submission requirement in P2.",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 3289,
+            "end": 3440,
+            "occurrences": 1,
+            "model_span": "2. in a non-profit facility whose primary purpose is providing short-term\ntreatment, assistance or therapy for alcohol, drug, or other substance\nabuse.",
+            "source_span": "2. in a non-profit facility whose primary purpose is providing short-term\ntreatment, assistance or therapy for alcohol, drug, or other substance\nabuse.",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 2,
+                "model_text": "2. in a non-profit facility whose primary purpose is providing short-term\ntreatment, assistance or therapy for alcohol, drug, or other substance\nabuse.",
+                "status": "exact_match",
+                "start": 3289,
+                "end": 3440
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "applies",
+        "unresolved_reason": null
+      },
+      {
+        "condition_id": "S3",
+        "provision_id": "P7",
+        "kind": "exemption",
+        "statement": "Residences in a non-profit facility whose primary purpose is providing short-term treatment, assistance, or therapy for alcohol, drug, or other substance abuse are exempt.",
+        "scope_words": "The only exempt properties are residences:",
+        "condition_evidence": "2. in a non-profit facility whose primary purpose is providing short-term\ntreatment, assistance or therapy for alcohol, drug, or other substance\nabuse.",
+        "target_ref": "Question 6",
+        "target_anchor": "The requirements of this Ordinance may not be waived,",
+        "target_quote": "The requirements of this Ordinance may not be waived, and any term of any\nlease, contract, or other agreement that purports to waive or limit a tenant’s or\nformer homeowner’s substantive or procedural rights under this Ordinance are\ncontrary to public policy, unenforceable, and void.",
+        "decision": {
+          "decision": "applies",
+          "reason": "Condition S3 exempts non-profit substance abuse treatment facility residences from the Ordinance requirements covered by the anti-waiver clause in P7.",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 3289,
+            "end": 3440,
+            "occurrences": 1,
+            "model_span": "2. in a non-profit facility whose primary purpose is providing short-term\ntreatment, assistance or therapy for alcohol, drug, or other substance\nabuse.",
+            "source_span": "2. in a non-profit facility whose primary purpose is providing short-term\ntreatment, assistance or therapy for alcohol, drug, or other substance\nabuse.",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 2,
+                "model_text": "2. in a non-profit facility whose primary purpose is providing short-term\ntreatment, assistance or therapy for alcohol, drug, or other substance\nabuse.",
+                "status": "exact_match",
+                "start": 3289,
+                "end": 3440
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "applies",
+        "unresolved_reason": null
+      },
+      {
+        "condition_id": "S3",
+        "provision_id": "P9",
+        "kind": "exemption",
+        "statement": "Residences in a non-profit facility whose primary purpose is providing short-term treatment, assistance, or therapy for alcohol, drug, or other substance abuse are exempt.",
+        "scope_words": "The only exempt properties are residences:",
+        "condition_evidence": "2. in a non-profit facility whose primary purpose is providing short-term\ntreatment, assistance or therapy for alcohol, drug, or other substance\nabuse.",
+        "target_ref": "Sec. 10-11.7",
+        "target_anchor": "Unless otherwise provided, a person or entity violating any",
+        "target_quote": "Unless otherwise provided, a person or entity violating any provisions of this \nOrdinance shall be punishable by a warning or fine in accordance with the \nprovisions of City of Boston Ordinances and/or Boston City Charter, shown below. \nHousing Stability Notification Act (Sec. 10-11.7) \nEnforcement Entity: Inspectional Services Department \n1st Offense: Warning \n2nd and Subsequent Offenses: $300 per day \nIf a landlord violates the HSNA, it DOES NOT halt the eviction process.",
+        "decision": {
+          "decision": "applies",
+          "reason": "Condition S3 exempts non-profit substance abuse treatment facility residences from the Ordinance provisions enforceable through fines under P9.",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 3289,
+            "end": 3440,
+            "occurrences": 1,
+            "model_span": "2. in a non-profit facility whose primary purpose is providing short-term\ntreatment, assistance or therapy for alcohol, drug, or other substance\nabuse.",
+            "source_span": "2. in a non-profit facility whose primary purpose is providing short-term\ntreatment, assistance or therapy for alcohol, drug, or other substance\nabuse.",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 2,
+                "model_text": "2. in a non-profit facility whose primary purpose is providing short-term\ntreatment, assistance or therapy for alcohol, drug, or other substance\nabuse.",
+                "status": "exact_match",
+                "start": 3289,
+                "end": 3440
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "applies",
+        "unresolved_reason": null
+      }
+    ],
+    "candidate_indices": [],
+    "accepted_count": 0,
+    "rejected_count": 0,
+    "errors": []
+  },
+  "document_status": "review_required",
+  "review_reasons": [
+    "repair targets still unresolved: Question 7 (classified out_of_scope without a reason and verified evidence (evidence is not text of the target subdivision))"
+  ],
+  "warnings": [],
+  "errors": [],
+  "raw_response_text": "{\n  \"document\": {\n    \"posture\": \"official_explanatory_page\",\n    \"evidence\": \"The Housing Stability Notification Act (HSNA) is an Ordinance passed by the City of Boston in October 2020 that requires any landlord planning to end a tenancy agreement to provide the tenant with a Notice of Tenants’ Rights and Resources.\"\n  },\n  \"provisions\": [\n    {\n      \"id\": \"P1\",\n      \"ref\": \"Question 1\",\n      \"anchor\": \"The Housing Stability Notification Act (HSNA) is an Ordinance\",\n      \"summary\": \"Requires landlords and foreclosing owners to deliver a Notice of Tenants' Rights and Resources to tenants or occupants when terminating a tenancy, not offering a lease renewal, or asking them to leave.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"just_cause_eviction\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P2\",\n      \"ref\": \"Question 1\",\n      \"anchor\": \"The HSNA also requires landlords and foreclosing owners to\",\n      \"summary\": \"Requires landlords and foreclosing owners to send a copy of the Notice to Quit or Notice of Non-renewal together with a Certificate of Compliance/Service to the Office of Housing Stability.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"just_cause_eviction\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P3\",\n      \"ref\": \"Question 2\",\n      \"anchor\": \"The Ordinance was passed to ensure that tenants and\",\n      \"summary\": \"Describes the purpose and goals behind passing the Housing Stability Notification Act.\",\n      \"role\": \"boilerplate\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"purpose statement\"\n    },\n    {\n      \"id\": \"P4\",\n      \"ref\": \"Question 3\",\n      \"anchor\": \"The HSNA becomes effective on November 6, 2020.\",\n      \"summary\": \"States the calendar effective date of the Ordinance.\",\n      \"role\": \"procedure\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"effective date announcement\"\n    },\n    {\n      \"id\": \"P5\",\n      \"ref\": \"Question 4\",\n      \"anchor\": \"In the event that your landlord serves you with\",\n      \"summary\": \"Explanatory overview for tenants regarding notice rights, privacy, and contact information.\",\n      \"role\": \"boilerplate\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"explanatory informational guidance\"\n    },\n    {\n      \"id\": \"P6\",\n      \"ref\": \"Question 5\",\n      \"anchor\": \"The Ordinance applies to all landlords/foreclosing owners intending\",\n      \"summary\": \"Sets general coverage for landlords and foreclosing owners in Boston and lists property exemptions.\",\n      \"role\": \"scope_condition\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"scope condition and exemptions, see global_scope\"\n    },\n    {\n      \"id\": \"P7\",\n      \"ref\": \"Question 6\",\n      \"anchor\": \"The requirements of this Ordinance may not be waived,\",\n      \"summary\": \"Prohibits waiver of rights under the Ordinance and voids contrary lease or contract provisions.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"just_cause_eviction\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P8\",\n      \"ref\": \"Question 7\",\n      \"anchor\": \"Violations of the HSNA are investigated by the\",\n      \"summary\": \"Details administrative intake and reporting steps for tenants to report violations to FHE and ISD.\",\n      \"role\": \"procedure\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"administrative complaint and reporting procedure\"\n    },\n    {\n      \"id\": \"P9\",\n      \"ref\": \"Sec. 10-11.7\",\n      \"anchor\": \"Unless otherwise provided, a person or entity violating any\",\n      \"summary\": \"Establishes fines for violations ($300 per day after a first-offense warning) and provides that violations do not halt eviction proceedings.\",\n      \"role\": \"remedy\",\n      \"scope\": \"in_scope\",\n      \"category\": \"just_cause_eviction\",\n      \"reason\": null\n    }\n  ],\n  \"global_scope\": [\n    {\n      \"id\": \"S1\",\n      \"kind\": \"coverage_condition\",\n      \"statement\": \"The Ordinance applies to all landlords and foreclosing owners intending to end a tenancy or post-foreclosure occupancy of a unit in the City of Boston.\",\n      \"citation\": \"Question 5\",\n      \"scope_mode\": \"structural\",\n      \"scope_quote\": \"The Ordinance applies to\",\n      \"source_provision_id\": \"P6\",\n      \"governed_provision_ids\": null,\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 2,\n          \"quoted_text\": \"The Ordinance applies to all landlords/foreclosing owners intending to end a\\ntenancy or post-foreclosure occupancy of a unit in the City of Boston.\"\n        }\n      ]\n    },\n    {\n      \"id\": \"S2\",\n      \"kind\": \"exemption\",\n      \"statement\": \"Residences in any hospital, skilled nursing facility, or health facility are exempt.\",\n      \"citation\": \"Question 5\",\n      \"scope_mode\": \"structural\",\n      \"scope_quote\": \"The only exempt properties are residences:\",\n      \"source_provision_id\": \"P6\",\n      \"governed_provision_ids\": null,\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 2,\n          \"quoted_text\": \"The only exempt properties are residences:\\n1. in any hospital, skilled nursing facility or health facility;  and\"\n        }\n      ]\n    },\n    {\n      \"id\": \"S3\",\n      \"kind\": \"exemption\",\n      \"statement\": \"Residences in a non-profit facility whose primary purpose is providing short-term treatment, assistance, or therapy for alcohol, drug, or other substance abuse are exempt.\",\n      \"citation\": \"Question 5\",\n      \"scope_mode\": \"structural\",\n      \"scope_quote\": \"The only exempt properties are residences:\",\n      \"source_provision_id\": \"P6\",\n      \"governed_provision_ids\": null,\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 2,\n          \"quoted_text\": \"2. in a non-profit facility whose primary purpose is providing short-term\\ntreatment, assistance or therapy for alcohol, drug, or other substance\\nabuse.\"\n        }\n      ]\n    }\n  ],\n  \"rules\": [\n    {\n      \"category\": \"just_cause_eviction\",\n      \"citation\": \"Question 1\",\n      \"provision_ids\": [\"P1\"],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"The HSNA requires that landlords give this Notice of Tenants’ Rights and Resources\\nto tenants when the landlord starts the eviction process, or when the landlord\\ndecides to not offer the tenant a renewal of their lease agreement. The Notice of\\nTenants’ Rights and Resources must be delivered at the same time as the Notice to\\nQuit.\\nThe Notice of Tenants’ Rights and Resources must also be delivered to any tenant\\nthat is asked to leave a property. For example, if someone is purchasing a property\\nout of foreclosure, or from a bank or a mortgage lender, they must provide this\\nNotice to the former owners of the property, or any tenants that live in the\\nproperty.\"\n        }\n      ],\n      \"title\": \"Notice of Tenants’ Rights and Resources Delivery Requirement\",\n      \"requirement\": \"Landlords must provide tenants with a Notice of Tenants’ Rights and Resources at the same time as the Notice to Quit when commencing eviction or deciding not to offer a lease renewal. Anyone purchasing property out of foreclosure or from a lender must also deliver this notice to former owners or tenants asked to leave the property.\",\n      \"key_value\": null,\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": \"The Housing Stability Notification Act (HSNA) is an Ordinance passed by the City of Boston in October 2020\",\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": \"The HSNA becomes effective on November 6, 2020.\",\n      \"effective_date_evidence_kind\": \"explicit_operative_date\",\n      \"effective_date\": \"2020-11-06\",\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"just_cause_eviction\",\n      \"citation\": \"Question 1\",\n      \"provision_ids\": [\"P2\"],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"The HSNA also requires landlords and foreclosing owners to send a copy of the\\nNotice to Quit or Notice of Non-renewal of Lease, together with a Certificate of\\nCompliance/Service, to the City of Boston’s Office of Housing Stability\"\n        }\n      ],\n      \"title\": \"Notice Filing with Office of Housing Stability\",\n      \"requirement\": \"Landlords and foreclosing owners must send a copy of the Notice to Quit or Notice of Non-renewal of Lease, along with a Certificate of Compliance/Service, to the City of Boston's Office of Housing Stability.\",\n      \"key_value\": null,\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": \"The Housing Stability Notification Act (HSNA) is an Ordinance passed by the City of Boston in October 2020\",\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": \"The HSNA becomes effective on November 6, 2020.\",\n      \"effective_date_evidence_kind\": \"explicit_operative_date\",\n      \"effective_date\": \"2020-11-06\",\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"just_cause_eviction\",\n      \"citation\": \"Question 6\",\n      \"provision_ids\": [\"P7\"],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 2,\n          \"quoted_text\": \"The requirements of this Ordinance may not be waived, and any term of any\\nlease, contract, or other agreement that purports to waive or limit a tenant’s or\\nformer homeowner’s substantive or procedural rights under this Ordinance are\\ncontrary to public policy, unenforceable, and void.\"\n        }\n      ],\n      \"title\": \"Non-Waiver of Rights\",\n      \"requirement\": \"The requirements of the Ordinance cannot be waived, and any lease, contract, or agreement term purporting to waive or limit substantive or procedural rights under the Ordinance is contrary to public policy, unenforceable, and void.\",\n      \"key_value\": null,\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": \"The Housing Stability Notification Act (HSNA) is an Ordinance passed by the City of Boston in October 2020\",\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": \"The HSNA becomes effective on November 6, 2020.\",\n      \"effective_date_evidence_kind\": \"explicit_operative_date\",\n      \"effective_date\": \"2020-11-06\",\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"just_cause_eviction\",\n      \"citation\": \"Sec. 10-11.7\",\n      \"provision_ids\": [\"P9\"],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 3,\n          \"quoted_text\": \"Unless otherwise provided, a person or entity violating any provisions of this \\nOrdinance shall be punishable by a warning or fine in accordance with the \\nprovisions of City of Boston Ordinances and/or Boston City Charter, shown below. \\nHousing Stability Notification Act (Sec. 10-11.7) \\nEnforcement Entity: Inspectional Services Department \\n1st Offense: Warning \\n2nd and Subsequent Offenses: $300 per day \\nIf a landlord violates the HSNA, it DOES NOT halt the eviction process.\"\n        }\n      ],\n      \"title\": \"Penalties for Violation\",\n      \"requirement\": \"Violations of the Ordinance are punishable by a warning for a first offense and a fine of $300 per day for second and subsequent offenses. A violation does not halt the eviction process.\",\n      \"key_value\": \"$300 per day\",\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": \"A violation of the HSNA does not halt the eviction process.\",\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": \"The Housing Stability Notification Act (HSNA) is an Ordinance passed by the City of Boston in October 2020\",\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": \"The HSNA becomes effective on November 6, 2020.\",\n      \"effective_date_evidence_kind\": \"explicit_operative_date\",\n      \"effective_date\": \"2020-11-06\",\n      \"conflict_note\": null\n    }\n  ],\n  \"no_rules_justification\": null\n}"
+}

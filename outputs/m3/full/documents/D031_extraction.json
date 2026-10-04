@@ -1,0 +1,360 @@
+{
+  "disclaimer": "Not legal advice. Automated extraction for a research prototype; verify against the cited source.",
+  "run_at": "2026-10-04T03:07:18+00:00",
+  "source": {
+    "doc_id": "D031",
+    "jurisdiction": "Cambridge, MA",
+    "url": "https://www.cambridgema.gov/tenantrights",
+    "source_type": "official",
+    "retrieved_at": "2026-10-01T22:36Z",
+    "text_file": "text/D031.txt",
+    "content_sha256": "689074b99010ea1cff9c0383bd82a163542e45d06f763a7837f84bb6aad68c49",
+    "body_chars": 5943
+  },
+  "provider": "gemini",
+  "model": "gemini-3.8-flash",
+  "prompt_version": "v7",
+  "prompt_sha256": "6d2485e93f5bfde7f6823cf538cc2c1b54141efa9b824290ebf29915b1e4ac43",
+  "response_schema_sha256": "c15306da6f21dc72f06e78405f94ed61dc9e59288138cc98b5b5bf9b62ac403c",
+  "generation_settings": {
+    "temperature": null,
+    "seed": 20261001,
+    "thinking_level": "medium"
+  },
+  "as_of": "2026-10-01",
+  "cache_key": "7f30099881d1d6a534cefae49f1bd36dd2e24981220de2ac73b8372a0995d704",
+  "cache_hit": false,
+  "cache_entry": "cache/extraction/7f30099881d1d6a534cefae49f1bd36dd2e24981220de2ac73b8372a0995d704.json",
+  "provider_metadata": {
+    "api": "interactions.create",
+    "interaction_id": "",
+    "model": "gemini-3.8-flash",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 5216,
+      "output_tokens": 1487,
+      "thinking_tokens": 4505,
+      "total_tokens": 11208
+    }
+  },
+  "candidate_count": 0,
+  "accepted_count": 0,
+  "rules": [],
+  "candidates": [],
+  "posture": {
+    "declared": "official_explanatory_page",
+    "evidence": "Tenants Rights and Resources Notification Ordinance Overview Information and FAQs - City of Cambridge, MA",
+    "evidence_check": {
+      "status": "exact_match",
+      "normalization": null,
+      "start": 0,
+      "end": 105,
+      "occurrences": 1,
+      "model_span": "Tenants Rights and Resources Notification Ordinance Overview Information and FAQs - City of Cambridge, MA",
+      "source_span": "Tenants Rights and Resources Notification Ordinance Overview Information and FAQs - City of Cambridge, MA",
+      "reason": null,
+      "reconstructed": false,
+      "parts": [],
+      "crossed_artifacts": []
+    },
+    "established": "official_explanatory_page",
+    "basis": "declared posture with verified evidence"
+  },
+  "base_dates": [],
+  "provision_inventory": [
+    {
+      "id": "P1",
+      "ref": "Overview / Purpose",
+      "anchor": "The City of Cambridge Tenants Rights and Resources Ordinance, Chapter 8.71",
+      "summary": "Establishes purpose of Chapter 8.71 to inform and educate residential tenants and landlords of rights and responsibilities.",
+      "role": "boilerplate",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "overview purpose statement, outside official categories"
+    },
+    {
+      "id": "P2",
+      "ref": "Overview / Notification Requirement",
+      "anchor": "The Ordinance requires owners, landlords, and management companies to provide",
+      "summary": "Requires owners, landlords, and management companies to provide informational materials at lease inception and termination.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "informational disclosure mandate, outside official categories"
+    },
+    {
+      "id": "P3",
+      "ref": "Overview / Purpose Statement",
+      "anchor": "The purpose of the Ordinance is to ensure that housing information",
+      "summary": "States purpose to ensure housing information and resources are available.",
+      "role": "boilerplate",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "purpose statement, outside official categories"
+    },
+    {
+      "id": "P4",
+      "ref": "FAQ / Timing",
+      "anchor": "It is required to provide this Guide at the inception",
+      "summary": "Specifies timing of guide delivery at inception (signing, entering agreement, or tendering first month's rent) and termination (notice to quit or summary process).",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "timing of informational guide distribution, outside official categories"
+    },
+    {
+      "id": "P5",
+      "ref": "FAQ / Renewals",
+      "anchor": "It is good practice to provide the this Guide during renewals",
+      "summary": "Clarifies that landlords are not required to provide materials at each renewal.",
+      "role": "exemption",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "exemption from informational guide distribution on renewal, outside official categories"
+    },
+    {
+      "id": "P6",
+      "ref": "FAQ / Tenants at Will",
+      "anchor": "Yes, all tenants and lawful occupants must be provided a copy",
+      "summary": "Requires providing materials to all tenants and lawful occupants including tenants at will.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "scope of informational disclosure, outside official categories"
+    },
+    {
+      "id": "P7",
+      "ref": "FAQ / Signed Receipt",
+      "anchor": "The Ordinance does not require this; however, it would be good",
+      "summary": "Clarifies that a signed receipt of the information is not required.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "procedure regarding informational disclosure, outside official categories"
+    },
+    {
+      "id": "P8",
+      "ref": "FAQ / Eviction Actions",
+      "anchor": "This Ordinance does not prevent a landlord from initiating an eviction",
+      "summary": "Explains that the ordinance does not prevent eviction actions allowed by law and explains rights and resources notice obligations.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "clarifies ordinance does not limit grounds for eviction, outside official categories"
+    },
+    {
+      "id": "P9",
+      "ref": "FAQ / Single Units",
+      "anchor": "Yes, the Ordinance applies to a residential rental agreements, including single",
+      "summary": "Confirms ordinance applies to residential rental agreements including owner-occupied single residential dwelling units.",
+      "role": "scope_condition",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "scope condition for informational disclosure, outside official categories"
+    },
+    {
+      "id": "P10",
+      "ref": "FAQ / Exemptions",
+      "anchor": "Yes, this Ordinance does NOT apply to: rental units in a hospital",
+      "summary": "Exempts hospital/nursing/health units, non-profit substance abuse treatment facilities, and short-term rentals under Zoning Ordinance Section 4.60.",
+      "role": "exemption",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "exemptions from informational guide disclosure, outside official categories"
+    },
+    {
+      "id": "P11",
+      "ref": "FAQ / Penalties (§ 8.71.070)",
+      "anchor": "We encourage you to read the full scope of Section 8.71.070",
+      "summary": "Notes that noncompliance with the notification ordinance may result in a fine of $300 for each day's violation.",
+      "role": "enforcement",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "penalty for violating informational disclosure ordinance, outside official categories"
+    }
+  ],
+  "global_scope": [],
+  "source_view": {
+    "marker": "[[PAGE BREAK]]",
+    "segment_label": "[[SEGMENT {}]]",
+    "view_sha256": "82e6ad1148f4303bb77bec1082da7b075c32cf08bc1784e342207ee35fd0e0b8",
+    "segments": [
+      {
+        "id": 1,
+        "raw_start": 0,
+        "raw_end": 5943
+      }
+    ],
+    "artifacts_removed": 0,
+    "artifacts": []
+  },
+  "coverage": {
+    "inventory_valid": true,
+    "anchors_located": "11/11",
+    "after_primary": {
+      "uncovered": [],
+      "unaccepted": [],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "scope_mappings": {
+      "requested": 0,
+      "applies": 0,
+      "does_not_apply": 0,
+      "unresolved": 0
+    },
+    "inventory_items": 11,
+    "in_scope_items": 0,
+    "in_scope_refs": 0,
+    "uncertain": [],
+    "final": {
+      "uncovered": [],
+      "unaccepted": [],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "link_mismatches": [],
+    "provisions": [],
+    "unrecorded_subdivisions": []
+  },
+  "scope_challenges": [
+    {
+      "ref": "Overview / Purpose",
+      "provision_id": "P1",
+      "role": "boilerplate",
+      "reason": "overview purpose statement, outside official categories",
+      "summary": "Establishes purpose of Chapter 8.71 to inform and educate residential tenants and landlords of rights and responsibilities.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role boilerplate is decided by other rules"
+    },
+    {
+      "ref": "Overview / Notification Requirement",
+      "provision_id": "P2",
+      "role": "operative_rule",
+      "reason": "informational disclosure mandate, outside official categories",
+      "summary": "Requires owners, landlords, and management companies to provide informational materials at lease inception and termination.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    },
+    {
+      "ref": "Overview / Purpose Statement",
+      "provision_id": "P3",
+      "role": "boilerplate",
+      "reason": "purpose statement, outside official categories",
+      "summary": "States purpose to ensure housing information and resources are available.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role boilerplate is decided by other rules"
+    },
+    {
+      "ref": "FAQ / Timing",
+      "provision_id": "P4",
+      "role": "operative_rule",
+      "reason": "timing of informational guide distribution, outside official categories",
+      "summary": "Specifies timing of guide delivery at inception (signing, entering agreement, or tendering first month's rent) and termination (notice to quit or summary process).",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    },
+    {
+      "ref": "FAQ / Renewals",
+      "provision_id": "P5",
+      "role": "exemption",
+      "reason": "exemption from informational guide distribution on renewal, outside official categories",
+      "summary": "Clarifies that landlords are not required to provide materials at each renewal.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role exemption is decided by other rules"
+    },
+    {
+      "ref": "FAQ / Tenants at Will",
+      "provision_id": "P6",
+      "role": "operative_rule",
+      "reason": "scope of informational disclosure, outside official categories",
+      "summary": "Requires providing materials to all tenants and lawful occupants including tenants at will.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    },
+    {
+      "ref": "FAQ / Signed Receipt",
+      "provision_id": "P7",
+      "role": "operative_rule",
+      "reason": "procedure regarding informational disclosure, outside official categories",
+      "summary": "Clarifies that a signed receipt of the information is not required.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    },
+    {
+      "ref": "FAQ / Eviction Actions",
+      "provision_id": "P8",
+      "role": "operative_rule",
+      "reason": "clarifies ordinance does not limit grounds for eviction, outside official categories",
+      "summary": "Explains that the ordinance does not prevent eviction actions allowed by law and explains rights and resources notice obligations.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    },
+    {
+      "ref": "FAQ / Single Units",
+      "provision_id": "P9",
+      "role": "scope_condition",
+      "reason": "scope condition for informational disclosure, outside official categories",
+      "summary": "Confirms ordinance applies to residential rental agreements including owner-occupied single residential dwelling units.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role scope_condition is decided by other rules"
+    },
+    {
+      "ref": "FAQ / Exemptions",
+      "provision_id": "P10",
+      "role": "exemption",
+      "reason": "exemptions from informational guide disclosure, outside official categories",
+      "summary": "Exempts hospital/nursing/health units, non-profit substance abuse treatment facilities, and short-term rentals under Zoning Ordinance Section 4.60.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role exemption is decided by other rules"
+    },
+    {
+      "ref": "FAQ / Penalties (§ 8.71.070)",
+      "provision_id": "P11",
+      "role": "enforcement",
+      "reason": "penalty for violating informational disclosure ordinance, outside official categories",
+      "summary": "Notes that noncompliance with the notification ordinance may result in a fine of $300 for each day's violation.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role enforcement is decided by other rules"
+    }
+  ],
+  "scope_mappings": [],
+  "legislative_session": null,
+  "empty_result": {
+    "reason": "The document solely covers requirements to distribute an informational tenant rights and resources guide under Cambridge Municipal Code Chapter 8.71, and contains no provisions within the official categories of rent increase limits, just cause eviction, security deposits, application screening fees, screening restrictions, or algorithmic rent setting.",
+    "evidence": "The Ordinance requires owners, landlords, and management companies to provide you with information at the start of your lease or tenancy as well as when your tenancy is being terminated.",
+    "evidence_check": {
+      "status": "exact_match",
+      "normalization": null,
+      "start": 721,
+      "end": 907,
+      "occurrences": 1,
+      "model_span": "The Ordinance requires owners, landlords, and management companies to provide you with information at the start of your lease or tenancy as well as when your tenancy is being terminated.",
+      "source_span": "The Ordinance requires owners, landlords, and management companies to provide you with information at the start of your lease or tenancy as well as when your tenancy is being terminated.",
+      "reason": null,
+      "reconstructed": false,
+      "parts": [],
+      "crossed_artifacts": []
+    },
+    "verified": true,
+    "problem": null
+  },
+  "legacy_replay": null,
+  "repair": null,
+  "document_status": "complete",
+  "review_reasons": [],
+  "warnings": [],
+  "errors": [],
+  "raw_response_text": "{\n  \"document\": {\n    \"posture\": \"official_explanatory_page\",\n    \"evidence\": \"Tenants Rights and Resources Notification Ordinance Overview Information and FAQs - City of Cambridge, MA\"\n  },\n  \"provisions\": [\n    {\n      \"id\": \"P1\",\n      \"ref\": \"Overview / Purpose\",\n      \"anchor\": \"The City of Cambridge Tenants Rights and Resources Ordinance, Chapter 8.71\",\n      \"summary\": \"Establishes purpose of Chapter 8.71 to inform and educate residential tenants and landlords of rights and responsibilities.\",\n      \"role\": \"boilerplate\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"overview purpose statement, outside official categories\"\n    },\n    {\n      \"id\": \"P2\",\n      \"ref\": \"Overview / Notification Requirement\",\n      \"anchor\": \"The Ordinance requires owners, landlords, and management companies to provide\",\n      \"summary\": \"Requires owners, landlords, and management companies to provide informational materials at lease inception and termination.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"informational disclosure mandate, outside official categories\"\n    },\n    {\n      \"id\": \"P3\",\n      \"ref\": \"Overview / Purpose Statement\",\n      \"anchor\": \"The purpose of the Ordinance is to ensure that housing information\",\n      \"summary\": \"States purpose to ensure housing information and resources are available.\",\n      \"role\": \"boilerplate\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"purpose statement, outside official categories\"\n    },\n    {\n      \"id\": \"P4\",\n      \"ref\": \"FAQ / Timing\",\n      \"anchor\": \"It is required to provide this Guide at the inception\",\n      \"summary\": \"Specifies timing of guide delivery at inception (signing, entering agreement, or tendering first month's rent) and termination (notice to quit or summary process).\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"timing of informational guide distribution, outside official categories\"\n    },\n    {\n      \"id\": \"P5\",\n      \"ref\": \"FAQ / Renewals\",\n      \"anchor\": \"It is good practice to provide the this Guide during renewals\",\n      \"summary\": \"Clarifies that landlords are not required to provide materials at each renewal.\",\n      \"role\": \"exemption\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"exemption from informational guide distribution on renewal, outside official categories\"\n    },\n    {\n      \"id\": \"P6\",\n      \"ref\": \"FAQ / Tenants at Will\",\n      \"anchor\": \"Yes, all tenants and lawful occupants must be provided a copy\",\n      \"summary\": \"Requires providing materials to all tenants and lawful occupants including tenants at will.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"scope of informational disclosure, outside official categories\"\n    },\n    {\n      \"id\": \"P7\",\n      \"ref\": \"FAQ / Signed Receipt\",\n      \"anchor\": \"The Ordinance does not require this; however, it would be good\",\n      \"summary\": \"Clarifies that a signed receipt of the information is not required.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"procedure regarding informational disclosure, outside official categories\"\n    },\n    {\n      \"id\": \"P8\",\n      \"ref\": \"FAQ / Eviction Actions\",\n      \"anchor\": \"This Ordinance does not prevent a landlord from initiating an eviction\",\n      \"summary\": \"Explains that the ordinance does not prevent eviction actions allowed by law and explains rights and resources notice obligations.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"clarifies ordinance does not limit grounds for eviction, outside official categories\"\n    },\n    {\n      \"id\": \"P9\",\n      \"ref\": \"FAQ / Single Units\",\n      \"anchor\": \"Yes, the Ordinance applies to a residential rental agreements, including single\",\n      \"summary\": \"Confirms ordinance applies to residential rental agreements including owner-occupied single residential dwelling units.\",\n      \"role\": \"scope_condition\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"scope condition for informational disclosure, outside official categories\"\n    },\n    {\n      \"id\": \"P10\",\n      \"ref\": \"FAQ / Exemptions\",\n      \"anchor\": \"Yes, this Ordinance does NOT apply to: rental units in a hospital\",\n      \"summary\": \"Exempts hospital/nursing/health units, non-profit substance abuse treatment facilities, and short-term rentals under Zoning Ordinance Section 4.60.\",\n      \"role\": \"exemption\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"exemptions from informational guide disclosure, outside official categories\"\n    },\n    {\n      \"id\": \"P11\",\n      \"ref\": \"FAQ / Penalties (§ 8.71.070)\",\n      \"anchor\": \"We encourage you to read the full scope of Section 8.71.070\",\n      \"summary\": \"Notes that noncompliance with the notification ordinance may result in a fine of $300 for each day's violation.\",\n      \"role\": \"enforcement\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"penalty for violating informational disclosure ordinance, outside official categories\"\n    }\n  ],\n  \"global_scope\": [],\n  \"rules\": [],\n  \"no_rules_justification\": {\n    \"reason\": \"The document solely covers requirements to distribute an informational tenant rights and resources guide under Cambridge Municipal Code Chapter 8.71, and contains no provisions within the official categories of rent increase limits, just cause eviction, security deposits, application screening fees, screening restrictions, or algorithmic rent setting.\",\n    \"evidence\": \"The Ordinance requires owners, landlords, and management companies to provide you with information at the start of your lease or tenancy as well as when your tenancy is being terminated.\"\n  }\n}"
+}

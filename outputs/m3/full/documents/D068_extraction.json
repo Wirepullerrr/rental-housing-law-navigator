@@ -1,0 +1,1301 @@
+{
+  "disclaimer": "Not legal advice. Automated extraction for a research prototype; verify against the cited source.",
+  "run_at": "2026-10-04T03:27:38+00:00",
+  "source": {
+    "doc_id": "D068",
+    "jurisdiction": "NJ",
+    "url": "https://www.nj.gov/oag/dcr/downloads/kyrhousing02.pdf",
+    "source_type": "official",
+    "retrieved_at": "2026-10-01T22:37Z",
+    "text_file": "text/D068.txt",
+    "content_sha256": "3600d1ab00214a32fa08ab1a0ac663403eb8027a4ece43c3f7b01026b7845ddb",
+    "body_chars": 6719
+  },
+  "provider": "gemini",
+  "model": "gemini-3.8-flash",
+  "prompt_version": "v7",
+  "prompt_sha256": "197c02b867708480415ce87944d08e54764d724238f26fab0bd4414497825095",
+  "response_schema_sha256": "c15306da6f21dc72f06e78405f94ed61dc9e59288138cc98b5b5bf9b62ac403c",
+  "generation_settings": {
+    "temperature": null,
+    "seed": 20261001,
+    "thinking_level": "medium"
+  },
+  "as_of": "2026-10-01",
+  "cache_key": "90e42ee868b708b9026d8cc723a9ab454b6ef2431fd6add619d2acfedaec4c28",
+  "cache_hit": false,
+  "cache_entry": "cache/extraction/90e42ee868b708b9026d8cc723a9ab454b6ef2431fd6add619d2acfedaec4c28.json",
+  "provider_metadata": {
+    "api": "interactions.create",
+    "interaction_id": "",
+    "model": "gemini-3.8-flash",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 5531,
+      "output_tokens": 3604,
+      "thinking_tokens": 22605,
+      "total_tokens": 31740
+    }
+  },
+  "candidate_count": 1,
+  "accepted_count": 0,
+  "rules": [],
+  "candidates": [
+    {
+      "index": 0,
+      "origin": "primary",
+      "accepted": false,
+      "held": true,
+      "rejection_reasons": [
+        "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      ],
+      "provision_ids": [
+        "P12"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 2707,
+        "end": 2787,
+        "occurrences": 1,
+        "model_span": "The Division on Civil Rights enforces the New Jersey\nLaw Against Discrimination.",
+        "source_span": "The Division on Civil Rights enforces the New Jersey\nLaw Against Discrimination.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 3414,
+        "end": 3748,
+        "occurrences": 1,
+        "model_span": "The LAD also prohibits housing discrimination  based\non the source of lawful income or source of lawful rent\nor mortgage payment a tenant or purchaser uses. This\nmeans, for example, that a landlord cannot deny the\nlawful recipient of a Section 8 HUD voucher the right to\nrent an apartment based solely on that source of lawful\nincome.",
+        "source_span": "The LAD also prohibits housing discrimination  based\non the source of lawful income or source of lawful rent\nor mortgage payment a tenant or purchaser uses. This\nmeans, for example, that a landlord cannot deny the\nlawful recipient of a Section 8 HUD voucher the right to\nrent an apartment based solely on that source of lawful\nincome.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "The LAD also prohibits housing discrimination  based\non the source of lawful income or source of lawful rent\nor mortgage payment a tenant or purchaser uses. This\nmeans, for example, that a landlord cannot deny the\nlawful recipient of a Section 8 HUD voucher the right to\nrent an apartment based solely on that source of lawful\nincome.",
+            "status": "exact_match",
+            "start": 3414,
+            "end": 3748
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": null,
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [
+        {
+          "id": "S1",
+          "kind": "coverage_condition",
+          "mode": "named_subject",
+          "governed_provision_ids": [
+            "P12"
+          ],
+          "basis": "named-subject mapping to P12 verified by repair",
+          "applied": true
+        },
+        {
+          "id": "S2",
+          "kind": "exemption",
+          "mode": "named_subject",
+          "governed_provision_ids": [
+            "P12"
+          ],
+          "basis": "named-subject mapping to P12 verified by repair",
+          "applied": true
+        },
+        {
+          "id": "S3",
+          "kind": "exemption",
+          "mode": "named_subject",
+          "governed_provision_ids": [
+            "P12"
+          ],
+          "basis": "named-subject mapping to P12 verified by repair",
+          "applied": true
+        }
+      ],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": null,
+        "applied_kind": null,
+        "effective_date": null,
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null,
+        "unresolved_reason": "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      },
+      "status_derivation": "temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-f0ce8e41b9",
+        "jurisdiction": "NJ",
+        "level": "state",
+        "category": "screening_restrictions",
+        "status": null,
+        "title": "Prohibition on Source of Lawful Income Discrimination",
+        "requirement": "[Basis: official explanatory text, not operative legal text] Landlords are prohibited from discriminating in housing based on a tenant's source of lawful income or rent payment. A landlord cannot deny a lawful recipient of a Section 8 HUD voucher the right to rent an apartment based solely on that source of lawful income.",
+        "key_value": null,
+        "coverage_conditions": "The provisions of the Law Against Discrimination apply to the sale or rental of all property including open land, whether for business or residential purposes. [Question 4]",
+        "exemptions": "The LAD does not apply to the rental of a single apartment or flat in a two-family dwelling where the other unit is occupied by the owner as their residence at the time of the rental. [Question 4]; The LAD does not apply to the rental of a room or rooms to another person by the owner or occupant of a one-family dwelling occupied by them as their residence at the time of the rental. [Question 4]",
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "Question 2",
+        "source_doc_id": "D068",
+        "source_url": "https://www.nj.gov/oag/dcr/downloads/kyrhousing02.pdf",
+        "quoted_span": "The LAD also prohibits housing discrimination  based\non the source of lawful income or source of lawful rent\nor mortgage payment a tenant or purchaser uses. This\nmeans, for example, that a landlord cannot deny the\nlawful recipient of a Section 8 HUD voucher the right to\nrent an apartment based solely on that source of lawful\nincome.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "screening_restrictions",
+        "citation": "Question 2",
+        "provision_ids": [
+          "P12"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "The LAD also prohibits housing discrimination  based\non the source of lawful income or source of lawful rent\nor mortgage payment a tenant or purchaser uses. This\nmeans, for example, that a landlord cannot deny the\nlawful recipient of a Section 8 HUD voucher the right to\nrent an apartment based solely on that source of lawful\nincome."
+          }
+        ],
+        "title": "Prohibition on Source of Lawful Income Discrimination",
+        "requirement": "Landlords are prohibited from discriminating in housing based on a tenant's source of lawful income or rent payment. A landlord cannot deny a lawful recipient of a Section 8 HUD voucher the right to rent an apartment based solely on that source of lawful income.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": "The Division on Civil Rights enforces the New Jersey\nLaw Against Discrimination.",
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": null,
+        "effective_date_evidence_kind": null,
+        "effective_date": null,
+        "conflict_note": null
+      }
+    }
+  ],
+  "posture": {
+    "declared": "official_explanatory_page",
+    "evidence": "1. What does the Division on Civil Rights enforce?\nThe Division on Civil Rights enforces the New Jersey\nLaw Against Discrimination.",
+    "evidence_check": {
+      "status": "exact_match",
+      "normalization": null,
+      "start": 2656,
+      "end": 2787,
+      "occurrences": 1,
+      "model_span": "1. What does the Division on Civil Rights enforce?\nThe Division on Civil Rights enforces the New Jersey\nLaw Against Discrimination.",
+      "source_span": "1. What does the Division on Civil Rights enforce?\nThe Division on Civil Rights enforces the New Jersey\nLaw Against Discrimination.",
+      "reason": null,
+      "reconstructed": false,
+      "parts": [],
+      "crossed_artifacts": []
+    },
+    "established": "official_explanatory_page",
+    "basis": "declared posture with verified evidence"
+  },
+  "base_dates": [],
+  "provision_inventory": [
+    {
+      "id": "P1",
+      "ref": "Question 3, bullet 5",
+      "anchor": "A landlord must permit a tenant with a disability",
+      "summary": "Mandates that landlords permit tenants with disabilities to make reasonable modifications at the tenant's own expense.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "Disability reasonable modifications are outside the official categories."
+    },
+    {
+      "id": "P2",
+      "ref": "Question 4 (lead-in)",
+      "anchor": "The provisions of the LAD apply to the sale or rental",
+      "summary": "General scope provision stating that the LAD applies to the sale or rental of all property, subject to specific exceptions.",
+      "role": "scope_condition",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "Scope condition; see global_scope."
+    },
+    {
+      "id": "P3",
+      "ref": "Question 4, bullet 1",
+      "anchor": "The rental of a single apartment or flat in a two-family",
+      "summary": "Exemption for the rental of an apartment or flat in an owner-occupied two-family dwelling.",
+      "role": "exemption",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "Exemption; see global_scope."
+    },
+    {
+      "id": "P4",
+      "ref": "Question 4, bullet 2",
+      "anchor": "The rental of a room or rooms to another person or",
+      "summary": "Exemption for room rentals in an owner- or occupant-occupied one-family dwelling.",
+      "role": "exemption",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "Exemption; see global_scope."
+    },
+    {
+      "id": "P5",
+      "ref": "Question 4, bullet 3",
+      "anchor": "In the sale, lease or rental of real property, preference",
+      "summary": "Exemption for religious organizations giving preference to persons of the same religion.",
+      "role": "exemption",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "Exemption; see global_scope."
+    },
+    {
+      "id": "P6",
+      "ref": "Question 4, bullet 4",
+      "anchor": "The prohibition against discrimination on the basis of",
+      "summary": "Exemption of housing for older persons from familial status discrimination prohibitions.",
+      "role": "exemption",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "Exemption; see global_scope."
+    },
+    {
+      "id": "P7",
+      "ref": "Question 5",
+      "anchor": "You may file a complaint with us for free within",
+      "summary": "Administrative and judicial complaint filing deadlines and venue options.",
+      "role": "procedure",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "Generic filing procedures and statutes of limitations without creating a concrete remedy in an official category."
+    },
+    {
+      "id": "P8",
+      "ref": "Question 6",
+      "anchor": "When you file a complaint with the Division, your complaint",
+      "summary": "Procedures for complaint investigation, answer deadlines, mediation, and probable cause findings.",
+      "role": "procedure",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "Administrative complaint processing and investigation procedures."
+    },
+    {
+      "id": "P9",
+      "ref": "Question 7",
+      "anchor": "If there is a finding of Probable Cause in a",
+      "summary": "Procedures following a finding of probable cause, including Superior Court election, conciliation, and OAL hearings.",
+      "role": "procedure",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "Administrative and judicial hearing and litigation procedures."
+    },
+    {
+      "id": "P10",
+      "ref": "Question 1",
+      "anchor": "The Division on Civil Rights enforces the New Jersey",
+      "summary": "States the Division on Civil Rights' authority to enforce the Law Against Discrimination.",
+      "role": "enforcement",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "Agency enforcement authority boilerplate."
+    },
+    {
+      "id": "P11",
+      "ref": "Question 2, paragraph 1",
+      "anchor": "The NJ Law Against Discrimination (LAD) prohibits discrimination on",
+      "summary": "General prohibition against discrimination on enumerated protected demographic bases and statutory definitions.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "General civil rights anti-discrimination prohibitions across demographic classes are outside the official categories."
+    },
+    {
+      "id": "P12",
+      "ref": "Question 2, paragraph 2",
+      "anchor": "The LAD also prohibits housing discrimination  based",
+      "summary": "Prohibits housing discrimination based on source of lawful income or rent payment, including Section 8 HUD vouchers.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "screening_restrictions",
+      "reason": null
+    },
+    {
+      "id": "P13",
+      "ref": "Question 3, bullet 1",
+      "anchor": "All persons, regardless of their membership in one",
+      "summary": "Mandates equal treatment in terms, conditions, or privileges of sale or rental, and bars falsely denying housing availability.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "General fair housing terms, conditions, and availability requirements are outside the official categories."
+    },
+    {
+      "id": "P14",
+      "ref": "Question 3, bullet 2",
+      "anchor": "No discriminatory advertising  of any kind relating",
+      "summary": "Prohibits discriminatory advertising in connection with the sale or rental of property.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "Advertising restrictions are outside the official categories."
+    },
+    {
+      "id": "P15",
+      "ref": "Question 3, bullet 3",
+      "anchor": "Any provision in any lease or rental agreement",
+      "summary": "Provides that pet bans do not apply to service or guide dogs owned by disabled, blind, or deaf tenants.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "Service animal exemptions from lease pet prohibitions are outside the official categories."
+    },
+    {
+      "id": "P16",
+      "ref": "Question 3, bullet 4",
+      "anchor": "A landlord may not charge a tenant with a disability",
+      "summary": "Bars landlords from charging extra fees to disabled tenants for keeping service or guide dogs.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "Prohibition of pet fees for service animals is outside the official categories."
+    }
+  ],
+  "global_scope": [
+    {
+      "id": "S1",
+      "kind": "coverage_condition",
+      "statement": "The provisions of the Law Against Discrimination apply to the sale or rental of all property including open land, whether for business or residential purposes.",
+      "citation": "Question 4",
+      "scope_mode": "structural",
+      "scope_quote": "The provisions of the LAD apply to the sale or rental of all\nproperty including open land, whether for business or\nresidential purposes, with the following exceptions:",
+      "source_provision_id": "P2",
+      "governed_provision_ids": [
+        "P1",
+        "P12",
+        "P13",
+        "P14",
+        "P15",
+        "P16"
+      ],
+      "evidence_parts": [
+        {
+          "segment_id": 1,
+          "quoted_text": "The provisions of the LAD apply to the sale or rental of all\nproperty including open land, whether for business or\nresidential purposes, with the following exceptions:"
+        }
+      ],
+      "evidence_check": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 1074,
+        "end": 1241,
+        "occurrences": 1,
+        "model_span": "The provisions of the LAD apply to the sale or rental of all\nproperty including open land, whether for business or\nresidential purposes, with the following exceptions:",
+        "source_span": "The provisions of the LAD apply to the sale or rental of all\nproperty including open land, whether for business or\nresidential purposes, with the following exceptions:",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "The provisions of the LAD apply to the sale or rental of all\nproperty including open land, whether for business or\nresidential purposes, with the following exceptions:",
+            "status": "exact_match",
+            "start": 1074,
+            "end": 1241
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "propagated": true,
+      "problem": null,
+      "scope": {
+        "resolver": "scope-modes/v1",
+        "declared_mode": "structural",
+        "mode": "named_subject",
+        "scope_words": {
+          "scope_quote": "The provisions of the LAD apply to the sale or rental of all\nproperty including open land, whether for business or\nresidential purposes, with the following exceptions:",
+          "scope_quote_check": "exact_match",
+          "text": "The provisions of the LAD apply to the sale or rental of all\nproperty including open land, whether for business or\nresidential purposes, with the following exceptions:",
+          "from": "scope_quote"
+        },
+        "detail": null,
+        "propagate_ids": [],
+        "mapping_targets": [
+          "P12"
+        ],
+        "verification": null
+      }
+    },
+    {
+      "id": "S2",
+      "kind": "exemption",
+      "statement": "The LAD does not apply to the rental of a single apartment or flat in a two-family dwelling where the other unit is occupied by the owner as their residence at the time of the rental.",
+      "citation": "Question 4",
+      "scope_mode": "structural",
+      "scope_quote": "The provisions of the LAD apply to the sale or rental of all\nproperty including open land, whether for business or\nresidential purposes, with the following exceptions:",
+      "source_provision_id": "P3",
+      "governed_provision_ids": [
+        "P1",
+        "P12",
+        "P13",
+        "P14",
+        "P15",
+        "P16"
+      ],
+      "evidence_parts": [
+        {
+          "segment_id": 1,
+          "quoted_text": "The rental of a single apartment or flat in a two-family\ndwelling, the other occupancy unit of which is occupied\nby the owner as his/her residence at the time of such\nrentals;"
+        }
+      ],
+      "evidence_check": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 1244,
+        "end": 1419,
+        "occurrences": 1,
+        "model_span": "The rental of a single apartment or flat in a two-family\ndwelling, the other occupancy unit of which is occupied\nby the owner as his/her residence at the time of such\nrentals;",
+        "source_span": "The rental of a single apartment or flat in a two-family\ndwelling, the other occupancy unit of which is occupied\nby the owner as his/her residence at the time of such\nrentals;",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "The rental of a single apartment or flat in a two-family\ndwelling, the other occupancy unit of which is occupied\nby the owner as his/her residence at the time of such\nrentals;",
+            "status": "exact_match",
+            "start": 1244,
+            "end": 1419
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "propagated": true,
+      "problem": null,
+      "scope": {
+        "resolver": "scope-modes/v1",
+        "declared_mode": "structural",
+        "mode": "named_subject",
+        "scope_words": {
+          "scope_quote": "The provisions of the LAD apply to the sale or rental of all\nproperty including open land, whether for business or\nresidential purposes, with the following exceptions:",
+          "scope_quote_check": "exact_match",
+          "text": "The provisions of the LAD apply to the sale or rental of all\nproperty including open land, whether for business or\nresidential purposes, with the following exceptions:",
+          "from": "scope_quote"
+        },
+        "detail": null,
+        "propagate_ids": [],
+        "mapping_targets": [
+          "P12"
+        ],
+        "verification": null
+      }
+    },
+    {
+      "id": "S3",
+      "kind": "exemption",
+      "statement": "The LAD does not apply to the rental of a room or rooms to another person by the owner or occupant of a one-family dwelling occupied by them as their residence at the time of the rental.",
+      "citation": "Question 4",
+      "scope_mode": "structural",
+      "scope_quote": "The provisions of the LAD apply to the sale or rental of all\nproperty including open land, whether for business or\nresidential purposes, with the following exceptions:",
+      "source_provision_id": "P4",
+      "governed_provision_ids": [
+        "P1",
+        "P12",
+        "P13",
+        "P14",
+        "P15",
+        "P16"
+      ],
+      "evidence_parts": [
+        {
+          "segment_id": 1,
+          "quoted_text": "The rental of a room or rooms to another person or\npersons by the owner or occupant of a one-family\ndwelling occupied by him/her as his/her residence at\nthe time of such rental;"
+        }
+      ],
+      "evidence_check": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 1422,
+        "end": 1599,
+        "occurrences": 1,
+        "model_span": "The rental of a room or rooms to another person or\npersons by the owner or occupant of a one-family\ndwelling occupied by him/her as his/her residence at\nthe time of such rental;",
+        "source_span": "The rental of a room or rooms to another person or\npersons by the owner or occupant of a one-family\ndwelling occupied by him/her as his/her residence at\nthe time of such rental;",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "The rental of a room or rooms to another person or\npersons by the owner or occupant of a one-family\ndwelling occupied by him/her as his/her residence at\nthe time of such rental;",
+            "status": "exact_match",
+            "start": 1422,
+            "end": 1599
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "propagated": true,
+      "problem": null,
+      "scope": {
+        "resolver": "scope-modes/v1",
+        "declared_mode": "structural",
+        "mode": "named_subject",
+        "scope_words": {
+          "scope_quote": "The provisions of the LAD apply to the sale or rental of all\nproperty including open land, whether for business or\nresidential purposes, with the following exceptions:",
+          "scope_quote_check": "exact_match",
+          "text": "The provisions of the LAD apply to the sale or rental of all\nproperty including open land, whether for business or\nresidential purposes, with the following exceptions:",
+          "from": "scope_quote"
+        },
+        "detail": null,
+        "propagate_ids": [],
+        "mapping_targets": [
+          "P12"
+        ],
+        "verification": null
+      }
+    },
+    {
+      "id": "S4",
+      "kind": "exemption",
+      "statement": "In the sale, lease, or rental of real property, preference given to persons of the same religion by a religious organization is exempt from the LAD.",
+      "citation": "Question 4",
+      "scope_mode": "structural",
+      "scope_quote": "The provisions of the LAD apply to the sale or rental of all\nproperty including open land, whether for business or\nresidential purposes, with the following exceptions:",
+      "source_provision_id": "P5",
+      "governed_provision_ids": [
+        "P1",
+        "P12",
+        "P13",
+        "P14",
+        "P15",
+        "P16"
+      ],
+      "evidence_parts": [
+        {
+          "segment_id": 1,
+          "quoted_text": "In the sale, lease or rental of real property, preference\ngiven to persons of the same religion by a religious\norganization; and"
+        }
+      ],
+      "evidence_check": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 1602,
+        "end": 1730,
+        "occurrences": 1,
+        "model_span": "In the sale, lease or rental of real property, preference\ngiven to persons of the same religion by a religious\norganization; and",
+        "source_span": "In the sale, lease or rental of real property, preference\ngiven to persons of the same religion by a religious\norganization; and",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "In the sale, lease or rental of real property, preference\ngiven to persons of the same religion by a religious\norganization; and",
+            "status": "exact_match",
+            "start": 1602,
+            "end": 1730
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "propagated": true,
+      "problem": null,
+      "scope": {
+        "resolver": "scope-modes/v1",
+        "declared_mode": "structural",
+        "mode": "named_subject",
+        "scope_words": {
+          "scope_quote": "The provisions of the LAD apply to the sale or rental of all\nproperty including open land, whether for business or\nresidential purposes, with the following exceptions:",
+          "scope_quote_check": "exact_match",
+          "text": "The provisions of the LAD apply to the sale or rental of all\nproperty including open land, whether for business or\nresidential purposes, with the following exceptions:",
+          "from": "scope_quote"
+        },
+        "detail": null,
+        "propagate_ids": [],
+        "mapping_targets": [
+          "P12"
+        ],
+        "verification": null
+      }
+    },
+    {
+      "id": "S5",
+      "kind": "exemption",
+      "statement": "The prohibition against discrimination on the basis of familial status does not apply to housing for older persons as defined in the LAD at N.J.S.A. 10:5-5mm.",
+      "citation": "Question 4",
+      "scope_mode": "named_subject",
+      "scope_quote": "The prohibition against discrimination on the basis of\nfamilial status does not apply to",
+      "source_provision_id": "P6",
+      "governed_provision_ids": [
+        "P11"
+      ],
+      "evidence_parts": [
+        {
+          "segment_id": 1,
+          "quoted_text": "The prohibition against discrimination on the basis of\nfamilial status does not apply to housing for older\npersons (as defined in the LAD at N.J.S.A. 10:5-5mm)."
+        }
+      ],
+      "evidence_check": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 1733,
+        "end": 1893,
+        "occurrences": 1,
+        "model_span": "The prohibition against discrimination on the basis of\nfamilial status does not apply to housing for older\npersons (as defined in the LAD at N.J.S.A. 10:5-5mm).",
+        "source_span": "The prohibition against discrimination on the basis of\nfamilial status does not apply to housing for older\npersons (as defined in the LAD at N.J.S.A. 10:5-5mm).",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "The prohibition against discrimination on the basis of\nfamilial status does not apply to housing for older\npersons (as defined in the LAD at N.J.S.A. 10:5-5mm).",
+            "status": "exact_match",
+            "start": 1733,
+            "end": 1893
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "propagated": true,
+      "problem": null,
+      "scope": {
+        "resolver": "scope-modes/v1",
+        "declared_mode": "named_subject",
+        "mode": "named_subject",
+        "scope_words": {
+          "scope_quote": "The prohibition against discrimination on the basis of\nfamilial status does not apply to",
+          "scope_quote_check": "exact_match",
+          "text": "The prohibition against discrimination on the basis of\nfamilial status does not apply to",
+          "from": "scope_quote"
+        },
+        "detail": null,
+        "propagate_ids": [],
+        "mapping_targets": [],
+        "verification": null
+      }
+    }
+  ],
+  "source_view": {
+    "marker": "[[PAGE BREAK]]",
+    "segment_label": "[[SEGMENT {}]]",
+    "view_sha256": "6cd66d91efe1d3812c084507fe79bb033da0051ba13d24516058cf3047177af1",
+    "segments": [
+      {
+        "id": 1,
+        "raw_start": 0,
+        "raw_end": 6719
+      }
+    ],
+    "artifacts_removed": 0,
+    "artifacts": []
+  },
+  "coverage": {
+    "inventory_valid": true,
+    "anchors_located": "16/16",
+    "after_primary": {
+      "uncovered": [],
+      "unaccepted": [
+        "Question 2"
+      ],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "scope_mappings": {
+      "requested": 4,
+      "applies": 3,
+      "does_not_apply": 1,
+      "unresolved": 0
+    },
+    "after_repair": {
+      "uncovered": [],
+      "unaccepted": [
+        "Question 2"
+      ],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "repair_targets": {
+      "before_repair": 0,
+      "resolved_by_accepted_rule": 0,
+      "resolved_out_of_scope": 0,
+      "still_unresolved": 0
+    },
+    "inventory_items": 16,
+    "in_scope_items": 1,
+    "in_scope_refs": 1,
+    "uncertain": [],
+    "final": {
+      "uncovered": [],
+      "unaccepted": [
+        "Question 2"
+      ],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "link_mismatches": [],
+    "provisions": [
+      {
+        "ref": "Question 2",
+        "inventory_item": 11,
+        "provision_id": "P12",
+        "summary": "Prohibits housing discrimination based on source of lawful income or rent payment, including Section 8 HUD vouchers.",
+        "category": "screening_restrictions",
+        "candidates": [
+          0
+        ],
+        "accepted": [],
+        "basis": {
+          "0": "provision link; citation names it"
+        }
+      }
+    ],
+    "unrecorded_subdivisions": []
+  },
+  "scope_challenges": [
+    {
+      "ref": "Question 3, bullet 5",
+      "provision_id": "P1",
+      "role": "operative_rule",
+      "reason": "Disability reasonable modifications are outside the official categories.",
+      "summary": "Mandates that landlords permit tenants with disabilities to make reasonable modifications at the tenant's own expense.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    },
+    {
+      "ref": "Question 4 (lead-in)",
+      "provision_id": "P2",
+      "role": "scope_condition",
+      "reason": "Scope condition; see global_scope.",
+      "summary": "General scope provision stating that the LAD applies to the sale or rental of all property, subject to specific exceptions.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role scope_condition is decided by other rules"
+    },
+    {
+      "ref": "Question 4, bullet 1",
+      "provision_id": "P3",
+      "role": "exemption",
+      "reason": "Exemption; see global_scope.",
+      "summary": "Exemption for the rental of an apartment or flat in an owner-occupied two-family dwelling.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role exemption is decided by other rules"
+    },
+    {
+      "ref": "Question 4, bullet 2",
+      "provision_id": "P4",
+      "role": "exemption",
+      "reason": "Exemption; see global_scope.",
+      "summary": "Exemption for room rentals in an owner- or occupant-occupied one-family dwelling.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role exemption is decided by other rules"
+    },
+    {
+      "ref": "Question 4, bullet 3",
+      "provision_id": "P5",
+      "role": "exemption",
+      "reason": "Exemption; see global_scope.",
+      "summary": "Exemption for religious organizations giving preference to persons of the same religion.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role exemption is decided by other rules"
+    },
+    {
+      "ref": "Question 4, bullet 4",
+      "provision_id": "P6",
+      "role": "exemption",
+      "reason": "Exemption; see global_scope.",
+      "summary": "Exemption of housing for older persons from familial status discrimination prohibitions.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role exemption is decided by other rules"
+    },
+    {
+      "ref": "Question 5",
+      "provision_id": "P7",
+      "role": "procedure",
+      "reason": "Generic filing procedures and statutes of limitations without creating a concrete remedy in an official category.",
+      "summary": "Administrative and judicial complaint filing deadlines and venue options.",
+      "signals": {
+        "in_scope_neighbour": false,
+        "enumeration": false,
+        "normative_language": true,
+        "grounds_or_conditions": false
+      },
+      "challenged": false,
+      "why_not": "too few substantive signals",
+      "raw_start": 1971,
+      "raw_end": 2426
+    },
+    {
+      "ref": "Question 6",
+      "provision_id": "P8",
+      "role": "procedure",
+      "reason": "Administrative complaint processing and investigation procedures.",
+      "summary": "Procedures for complaint investigation, answer deadlines, mediation, and probable cause findings.",
+      "signals": {
+        "in_scope_neighbour": false,
+        "enumeration": false,
+        "normative_language": false,
+        "grounds_or_conditions": false
+      },
+      "challenged": false,
+      "why_not": "too few substantive signals",
+      "raw_start": 2426,
+      "raw_end": 2707
+    },
+    {
+      "ref": "Question 7",
+      "provision_id": "P9",
+      "role": "procedure",
+      "reason": "Administrative and judicial hearing and litigation procedures.",
+      "summary": "Procedures following a finding of probable cause, including Superior Court election, conciliation, and OAL hearings.",
+      "signals": {
+        "in_scope_neighbour": false,
+        "enumeration": false,
+        "normative_language": false,
+        "grounds_or_conditions": true
+      },
+      "challenged": false,
+      "why_not": "too few substantive signals",
+      "raw_start": 5248,
+      "raw_end": 6719
+    },
+    {
+      "ref": "Question 1",
+      "provision_id": "P10",
+      "role": "enforcement",
+      "reason": "Agency enforcement authority boilerplate.",
+      "summary": "States the Division on Civil Rights' authority to enforce the Law Against Discrimination.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role enforcement is decided by other rules"
+    },
+    {
+      "ref": "Question 2, paragraph 1",
+      "provision_id": "P11",
+      "role": "operative_rule",
+      "reason": "General civil rights anti-discrimination prohibitions across demographic classes are outside the official categories.",
+      "summary": "General prohibition against discrimination on enumerated protected demographic bases and statutory definitions.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    },
+    {
+      "ref": "Question 3, bullet 1",
+      "provision_id": "P13",
+      "role": "operative_rule",
+      "reason": "General fair housing terms, conditions, and availability requirements are outside the official categories.",
+      "summary": "Mandates equal treatment in terms, conditions, or privileges of sale or rental, and bars falsely denying housing availability.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    },
+    {
+      "ref": "Question 3, bullet 2",
+      "provision_id": "P14",
+      "role": "operative_rule",
+      "reason": "Advertising restrictions are outside the official categories.",
+      "summary": "Prohibits discriminatory advertising in connection with the sale or rental of property.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    },
+    {
+      "ref": "Question 3, bullet 3",
+      "provision_id": "P15",
+      "role": "operative_rule",
+      "reason": "Service animal exemptions from lease pet prohibitions are outside the official categories.",
+      "summary": "Provides that pet bans do not apply to service or guide dogs owned by disabled, blind, or deaf tenants.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    },
+    {
+      "ref": "Question 3, bullet 4",
+      "provision_id": "P16",
+      "role": "operative_rule",
+      "reason": "Prohibition of pet fees for service animals is outside the official categories.",
+      "summary": "Bars landlords from charging extra fees to disabled tenants for keeping service or guide dogs.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    }
+  ],
+  "scope_mappings": [
+    {
+      "condition_id": "S1",
+      "provision_id": "P12",
+      "kind": "coverage_condition",
+      "statement": "The provisions of the Law Against Discrimination apply to the sale or rental of all property including open land, whether for business or residential purposes.",
+      "scope_words": "The provisions of the LAD apply to the sale or rental of all\nproperty including open land, whether for business or\nresidential purposes, with the following exceptions:",
+      "condition_evidence": "The provisions of the LAD apply to the sale or rental of all\nproperty including open land, whether for business or\nresidential purposes, with the following exceptions:",
+      "target_ref": "Question 2, paragraph 2",
+      "target_anchor": "The LAD also prohibits housing discrimination  based",
+      "target_quote": "The LAD also prohibits housing discrimination  based\non the source of lawful income or source of lawful rent\nor mortgage payment a tenant or purchaser uses. This\nmeans, for example, that a landlord cannot deny the\nlawful recipient of a Section 8 HUD voucher the right to\nrent an apartment based solely on that source of lawful\nincome.",
+      "decision": {
+        "decision": "applies",
+        "reason": "Question 4 establishes that the LAD provisions apply to the sale or rental of all property, governing the source-of-income protections in P12.",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 1028,
+          "end": 1241,
+          "occurrences": 1,
+          "model_span": "4. What types of property does this apply to?\nThe provisions of the LAD apply to the sale or rental of all\nproperty including open land, whether for business or\nresidential purposes, with the following exceptions:",
+          "source_span": "4. What types of property does this apply to?\nThe provisions of the LAD apply to the sale or rental of all\nproperty including open land, whether for business or\nresidential purposes, with the following exceptions:",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 1,
+              "model_text": "4. What types of property does this apply to?\nThe provisions of the LAD apply to the sale or rental of all\nproperty including open land, whether for business or\nresidential purposes, with the following exceptions:",
+              "status": "exact_match",
+              "start": 1028,
+              "end": 1241
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "applies",
+      "unresolved_reason": null
+    },
+    {
+      "condition_id": "S2",
+      "provision_id": "P12",
+      "kind": "exemption",
+      "statement": "The LAD does not apply to the rental of a single apartment or flat in a two-family dwelling where the other unit is occupied by the owner as their residence at the time of the rental.",
+      "scope_words": "The provisions of the LAD apply to the sale or rental of all\nproperty including open land, whether for business or\nresidential purposes, with the following exceptions:",
+      "condition_evidence": "The rental of a single apartment or flat in a two-family\ndwelling, the other occupancy unit of which is occupied\nby the owner as his/her residence at the time of such\nrentals;",
+      "target_ref": "Question 2, paragraph 2",
+      "target_anchor": "The LAD also prohibits housing discrimination  based",
+      "target_quote": "The LAD also prohibits housing discrimination  based\non the source of lawful income or source of lawful rent\nor mortgage payment a tenant or purchaser uses. This\nmeans, for example, that a landlord cannot deny the\nlawful recipient of a Section 8 HUD voucher the right to\nrent an apartment based solely on that source of lawful\nincome.",
+      "decision": {
+        "decision": "applies",
+        "reason": "The owner-occupied two-family dwelling exemption is an explicit exception to the property covered by the LAD provisions.",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 1242,
+          "end": 1419,
+          "occurrences": 1,
+          "model_span": "• The rental of a single apartment or flat in a two-family\ndwelling, the other occupancy unit of which is occupied\nby the owner as his/her residence at the time of such\nrentals;",
+          "source_span": "• The rental of a single apartment or flat in a two-family\ndwelling, the other occupancy unit of which is occupied\nby the owner as his/her residence at the time of such\nrentals;",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 1,
+              "model_text": "• The rental of a single apartment or flat in a two-family\ndwelling, the other occupancy unit of which is occupied\nby the owner as his/her residence at the time of such\nrentals;",
+              "status": "exact_match",
+              "start": 1242,
+              "end": 1419
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "applies",
+      "unresolved_reason": null
+    },
+    {
+      "condition_id": "S3",
+      "provision_id": "P12",
+      "kind": "exemption",
+      "statement": "The LAD does not apply to the rental of a room or rooms to another person by the owner or occupant of a one-family dwelling occupied by them as their residence at the time of the rental.",
+      "scope_words": "The provisions of the LAD apply to the sale or rental of all\nproperty including open land, whether for business or\nresidential purposes, with the following exceptions:",
+      "condition_evidence": "The rental of a room or rooms to another person or\npersons by the owner or occupant of a one-family\ndwelling occupied by him/her as his/her residence at\nthe time of such rental;",
+      "target_ref": "Question 2, paragraph 2",
+      "target_anchor": "The LAD also prohibits housing discrimination  based",
+      "target_quote": "The LAD also prohibits housing discrimination  based\non the source of lawful income or source of lawful rent\nor mortgage payment a tenant or purchaser uses. This\nmeans, for example, that a landlord cannot deny the\nlawful recipient of a Section 8 HUD voucher the right to\nrent an apartment based solely on that source of lawful\nincome.",
+      "decision": {
+        "decision": "applies",
+        "reason": "The owner-occupied one-family room rental exemption is an explicit exception to the property covered by the LAD provisions.",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 1420,
+          "end": 1599,
+          "occurrences": 1,
+          "model_span": "• The rental of a room or rooms to another person or\npersons by the owner or occupant of a one-family\ndwelling occupied by him/her as his/her residence at\nthe time of such rental;",
+          "source_span": "• The rental of a room or rooms to another person or\npersons by the owner or occupant of a one-family\ndwelling occupied by him/her as his/her residence at\nthe time of such rental;",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 1,
+              "model_text": "• The rental of a room or rooms to another person or\npersons by the owner or occupant of a one-family\ndwelling occupied by him/her as his/her residence at\nthe time of such rental;",
+              "status": "exact_match",
+              "start": 1420,
+              "end": 1599
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "applies",
+      "unresolved_reason": null
+    },
+    {
+      "condition_id": "S4",
+      "provision_id": "P12",
+      "kind": "exemption",
+      "statement": "In the sale, lease, or rental of real property, preference given to persons of the same religion by a religious organization is exempt from the LAD.",
+      "scope_words": "The provisions of the LAD apply to the sale or rental of all\nproperty including open land, whether for business or\nresidential purposes, with the following exceptions:",
+      "condition_evidence": "In the sale, lease or rental of real property, preference\ngiven to persons of the same religion by a religious\norganization; and",
+      "target_ref": "Question 2, paragraph 2",
+      "target_anchor": "The LAD also prohibits housing discrimination  based",
+      "target_quote": "The LAD also prohibits housing discrimination  based\non the source of lawful income or source of lawful rent\nor mortgage payment a tenant or purchaser uses. This\nmeans, for example, that a landlord cannot deny the\nlawful recipient of a Section 8 HUD voucher the right to\nrent an apartment based solely on that source of lawful\nincome.",
+      "decision": {
+        "decision": "does_not_apply",
+        "reason": "The religious organization preference exception applies only to religious preferences and does not reach the prohibition against source-of-income discrimination.",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 3414,
+          "end": 3748,
+          "occurrences": 1,
+          "model_span": "The LAD also prohibits housing discrimination  based\non the source of lawful income or source of lawful rent\nor mortgage payment a tenant or purchaser uses. This\nmeans, for example, that a landlord cannot deny the\nlawful recipient of a Section 8 HUD voucher the right to\nrent an apartment based solely on that source of lawful\nincome.",
+          "source_span": "The LAD also prohibits housing discrimination  based\non the source of lawful income or source of lawful rent\nor mortgage payment a tenant or purchaser uses. This\nmeans, for example, that a landlord cannot deny the\nlawful recipient of a Section 8 HUD voucher the right to\nrent an apartment based solely on that source of lawful\nincome.",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 1,
+              "model_text": "The LAD also prohibits housing discrimination  based\non the source of lawful income or source of lawful rent\nor mortgage payment a tenant or purchaser uses. This\nmeans, for example, that a landlord cannot deny the\nlawful recipient of a Section 8 HUD voucher the right to\nrent an apartment based solely on that source of lawful\nincome.",
+              "status": "exact_match",
+              "start": 3414,
+              "end": 3748
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "does_not_apply",
+      "unresolved_reason": null
+    }
+  ],
+  "legislative_session": null,
+  "empty_result": null,
+  "legacy_replay": null,
+  "repair": {
+    "invoked": true,
+    "reason": "0 repair target(s) from no check; 4 scope_mapping_challenge(s)",
+    "prompt_version": "v7-repair-1",
+    "targets": [],
+    "cache_key": "86e4e2b3cacb06ad192fc8c66ee8e921936d64c3da2212cfb795e4df76b36d33",
+    "cache_hit": false,
+    "cache_entry": "cache/extraction/86e4e2b3cacb06ad192fc8c66ee8e921936d64c3da2212cfb795e4df76b36d33.json",
+    "prompt_sha256": "f066a8e0a11012b897f205d6ac04664a15e4d1a5063f10ebd0649653a7160971",
+    "provider_metadata": {
+      "api": "interactions.create",
+      "interaction_id": "",
+      "model": "gemini-3.8-flash",
+      "status": "completed",
+      "usage": {
+        "input_tokens": 5946,
+        "output_tokens": 661,
+        "thinking_tokens": 4692,
+        "total_tokens": 11299
+      }
+    },
+    "raw_response_text": "{\n  \"target_resolutions\": [],\n  \"scope_mappings\": [\n    {\n      \"condition_id\": \"S1\",\n      \"provision_id\": \"P12\",\n      \"decision\": \"applies\",\n      \"reason\": \"Question 4 establishes that the LAD provisions apply to the sale or rental of all property, governing the source-of-income protections in P12.\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"4. What types of property does this apply to?\\nThe provisions of the LAD apply to the sale or rental of all\\nproperty including open land, whether for business or\\nresidential purposes, with the following exceptions:\"\n        }\n      ]\n    },\n    {\n      \"condition_id\": \"S2\",\n      \"provision_id\": \"P12\",\n      \"decision\": \"applies\",\n      \"reason\": \"The owner-occupied two-family dwelling exemption is an explicit exception to the property covered by the LAD provisions.\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"• The rental of a single apartment or flat in a two-family\\ndwelling, the other occupancy unit of which is occupied\\nby the owner as his/her residence at the time of such\\nrentals;\"\n        }\n      ]\n    },\n    {\n      \"condition_id\": \"S3\",\n      \"provision_id\": \"P12\",\n      \"decision\": \"applies\",\n      \"reason\": \"The owner-occupied one-family room rental exemption is an explicit exception to the property covered by the LAD provisions.\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"• The rental of a room or rooms to another person or\\npersons by the owner or occupant of a one-family\\ndwelling occupied by him/her as his/her residence at\\nthe time of such rental;\"\n        }\n      ]\n    },\n    {\n      \"condition_id\": \"S4\",\n      \"provision_id\": \"P12\",\n      \"decision\": \"does_not_apply\",\n      \"reason\": \"The religious organization preference exception applies only to religious preferences and does not reach the prohibition against source-of-income discrimination.\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"The LAD also prohibits housing discrimination  based\\non the source of lawful income or source of lawful rent\\nor mortgage payment a tenant or purchaser uses. This\\nmeans, for example, that a landlord cannot deny the\\nlawful recipient of a Section 8 HUD voucher the right to\\nrent an apartment based solely on that source of lawful\\nincome.\"\n        }\n      ]\n    }\n  ],\n  \"rules\": []\n}",
+    "mappings": [
+      {
+        "condition_id": "S1",
+        "provision_id": "P12",
+        "kind": "coverage_condition",
+        "statement": "The provisions of the Law Against Discrimination apply to the sale or rental of all property including open land, whether for business or residential purposes.",
+        "scope_words": "The provisions of the LAD apply to the sale or rental of all\nproperty including open land, whether for business or\nresidential purposes, with the following exceptions:",
+        "condition_evidence": "The provisions of the LAD apply to the sale or rental of all\nproperty including open land, whether for business or\nresidential purposes, with the following exceptions:",
+        "target_ref": "Question 2, paragraph 2",
+        "target_anchor": "The LAD also prohibits housing discrimination  based",
+        "target_quote": "The LAD also prohibits housing discrimination  based\non the source of lawful income or source of lawful rent\nor mortgage payment a tenant or purchaser uses. This\nmeans, for example, that a landlord cannot deny the\nlawful recipient of a Section 8 HUD voucher the right to\nrent an apartment based solely on that source of lawful\nincome.",
+        "decision": {
+          "decision": "applies",
+          "reason": "Question 4 establishes that the LAD provisions apply to the sale or rental of all property, governing the source-of-income protections in P12.",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 1028,
+            "end": 1241,
+            "occurrences": 1,
+            "model_span": "4. What types of property does this apply to?\nThe provisions of the LAD apply to the sale or rental of all\nproperty including open land, whether for business or\nresidential purposes, with the following exceptions:",
+            "source_span": "4. What types of property does this apply to?\nThe provisions of the LAD apply to the sale or rental of all\nproperty including open land, whether for business or\nresidential purposes, with the following exceptions:",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 1,
+                "model_text": "4. What types of property does this apply to?\nThe provisions of the LAD apply to the sale or rental of all\nproperty including open land, whether for business or\nresidential purposes, with the following exceptions:",
+                "status": "exact_match",
+                "start": 1028,
+                "end": 1241
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "applies",
+        "unresolved_reason": null
+      },
+      {
+        "condition_id": "S2",
+        "provision_id": "P12",
+        "kind": "exemption",
+        "statement": "The LAD does not apply to the rental of a single apartment or flat in a two-family dwelling where the other unit is occupied by the owner as their residence at the time of the rental.",
+        "scope_words": "The provisions of the LAD apply to the sale or rental of all\nproperty including open land, whether for business or\nresidential purposes, with the following exceptions:",
+        "condition_evidence": "The rental of a single apartment or flat in a two-family\ndwelling, the other occupancy unit of which is occupied\nby the owner as his/her residence at the time of such\nrentals;",
+        "target_ref": "Question 2, paragraph 2",
+        "target_anchor": "The LAD also prohibits housing discrimination  based",
+        "target_quote": "The LAD also prohibits housing discrimination  based\non the source of lawful income or source of lawful rent\nor mortgage payment a tenant or purchaser uses. This\nmeans, for example, that a landlord cannot deny the\nlawful recipient of a Section 8 HUD voucher the right to\nrent an apartment based solely on that source of lawful\nincome.",
+        "decision": {
+          "decision": "applies",
+          "reason": "The owner-occupied two-family dwelling exemption is an explicit exception to the property covered by the LAD provisions.",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 1242,
+            "end": 1419,
+            "occurrences": 1,
+            "model_span": "• The rental of a single apartment or flat in a two-family\ndwelling, the other occupancy unit of which is occupied\nby the owner as his/her residence at the time of such\nrentals;",
+            "source_span": "• The rental of a single apartment or flat in a two-family\ndwelling, the other occupancy unit of which is occupied\nby the owner as his/her residence at the time of such\nrentals;",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 1,
+                "model_text": "• The rental of a single apartment or flat in a two-family\ndwelling, the other occupancy unit of which is occupied\nby the owner as his/her residence at the time of such\nrentals;",
+                "status": "exact_match",
+                "start": 1242,
+                "end": 1419
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "applies",
+        "unresolved_reason": null
+      },
+      {
+        "condition_id": "S3",
+        "provision_id": "P12",
+        "kind": "exemption",
+        "statement": "The LAD does not apply to the rental of a room or rooms to another person by the owner or occupant of a one-family dwelling occupied by them as their residence at the time of the rental.",
+        "scope_words": "The provisions of the LAD apply to the sale or rental of all\nproperty including open land, whether for business or\nresidential purposes, with the following exceptions:",
+        "condition_evidence": "The rental of a room or rooms to another person or\npersons by the owner or occupant of a one-family\ndwelling occupied by him/her as his/her residence at\nthe time of such rental;",
+        "target_ref": "Question 2, paragraph 2",
+        "target_anchor": "The LAD also prohibits housing discrimination  based",
+        "target_quote": "The LAD also prohibits housing discrimination  based\non the source of lawful income or source of lawful rent\nor mortgage payment a tenant or purchaser uses. This\nmeans, for example, that a landlord cannot deny the\nlawful recipient of a Section 8 HUD voucher the right to\nrent an apartment based solely on that source of lawful\nincome.",
+        "decision": {
+          "decision": "applies",
+          "reason": "The owner-occupied one-family room rental exemption is an explicit exception to the property covered by the LAD provisions.",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 1420,
+            "end": 1599,
+            "occurrences": 1,
+            "model_span": "• The rental of a room or rooms to another person or\npersons by the owner or occupant of a one-family\ndwelling occupied by him/her as his/her residence at\nthe time of such rental;",
+            "source_span": "• The rental of a room or rooms to another person or\npersons by the owner or occupant of a one-family\ndwelling occupied by him/her as his/her residence at\nthe time of such rental;",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 1,
+                "model_text": "• The rental of a room or rooms to another person or\npersons by the owner or occupant of a one-family\ndwelling occupied by him/her as his/her residence at\nthe time of such rental;",
+                "status": "exact_match",
+                "start": 1420,
+                "end": 1599
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "applies",
+        "unresolved_reason": null
+      },
+      {
+        "condition_id": "S4",
+        "provision_id": "P12",
+        "kind": "exemption",
+        "statement": "In the sale, lease, or rental of real property, preference given to persons of the same religion by a religious organization is exempt from the LAD.",
+        "scope_words": "The provisions of the LAD apply to the sale or rental of all\nproperty including open land, whether for business or\nresidential purposes, with the following exceptions:",
+        "condition_evidence": "In the sale, lease or rental of real property, preference\ngiven to persons of the same religion by a religious\norganization; and",
+        "target_ref": "Question 2, paragraph 2",
+        "target_anchor": "The LAD also prohibits housing discrimination  based",
+        "target_quote": "The LAD also prohibits housing discrimination  based\non the source of lawful income or source of lawful rent\nor mortgage payment a tenant or purchaser uses. This\nmeans, for example, that a landlord cannot deny the\nlawful recipient of a Section 8 HUD voucher the right to\nrent an apartment based solely on that source of lawful\nincome.",
+        "decision": {
+          "decision": "does_not_apply",
+          "reason": "The religious organization preference exception applies only to religious preferences and does not reach the prohibition against source-of-income discrimination.",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 3414,
+            "end": 3748,
+            "occurrences": 1,
+            "model_span": "The LAD also prohibits housing discrimination  based\non the source of lawful income or source of lawful rent\nor mortgage payment a tenant or purchaser uses. This\nmeans, for example, that a landlord cannot deny the\nlawful recipient of a Section 8 HUD voucher the right to\nrent an apartment based solely on that source of lawful\nincome.",
+            "source_span": "The LAD also prohibits housing discrimination  based\non the source of lawful income or source of lawful rent\nor mortgage payment a tenant or purchaser uses. This\nmeans, for example, that a landlord cannot deny the\nlawful recipient of a Section 8 HUD voucher the right to\nrent an apartment based solely on that source of lawful\nincome.",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 1,
+                "model_text": "The LAD also prohibits housing discrimination  based\non the source of lawful income or source of lawful rent\nor mortgage payment a tenant or purchaser uses. This\nmeans, for example, that a landlord cannot deny the\nlawful recipient of a Section 8 HUD voucher the right to\nrent an apartment based solely on that source of lawful\nincome.",
+                "status": "exact_match",
+                "start": 3414,
+                "end": 3748
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "does_not_apply",
+        "unresolved_reason": null
+      }
+    ],
+    "candidate_indices": [],
+    "accepted_count": 0,
+    "rejected_count": 0,
+    "errors": []
+  },
+  "document_status": "review_required",
+  "review_reasons": [
+    "1 candidate record(s) held, not published, because the time of application is unresolved: ['temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force']"
+  ],
+  "warnings": [
+    "candidate 0 held: status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+  ],
+  "errors": [],
+  "raw_response_text": "{\n  \"document\": {\n    \"posture\": \"official_explanatory_page\",\n    \"evidence\": \"1. What does the Division on Civil Rights enforce?\\nThe Division on Civil Rights enforces the New Jersey\\nLaw Against Discrimination.\"\n  },\n  \"provisions\": [\n    {\n      \"id\": \"P1\",\n      \"ref\": \"Question 3, bullet 5\",\n      \"anchor\": \"A landlord must permit a tenant with a disability\",\n      \"summary\": \"Mandates that landlords permit tenants with disabilities to make reasonable modifications at the tenant's own expense.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"Disability reasonable modifications are outside the official categories.\"\n    },\n    {\n      \"id\": \"P2\",\n      \"ref\": \"Question 4 (lead-in)\",\n      \"anchor\": \"The provisions of the LAD apply to the sale or rental\",\n      \"summary\": \"General scope provision stating that the LAD applies to the sale or rental of all property, subject to specific exceptions.\",\n      \"role\": \"scope_condition\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"Scope condition; see global_scope.\"\n    },\n    {\n      \"id\": \"P3\",\n      \"ref\": \"Question 4, bullet 1\",\n      \"anchor\": \"The rental of a single apartment or flat in a two-family\",\n      \"summary\": \"Exemption for the rental of an apartment or flat in an owner-occupied two-family dwelling.\",\n      \"role\": \"exemption\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"Exemption; see global_scope.\"\n    },\n    {\n      \"id\": \"P4\",\n      \"ref\": \"Question 4, bullet 2\",\n      \"anchor\": \"The rental of a room or rooms to another person or\",\n      \"summary\": \"Exemption for room rentals in an owner- or occupant-occupied one-family dwelling.\",\n      \"role\": \"exemption\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"Exemption; see global_scope.\"\n    },\n    {\n      \"id\": \"P5\",\n      \"ref\": \"Question 4, bullet 3\",\n      \"anchor\": \"In the sale, lease or rental of real property, preference\",\n      \"summary\": \"Exemption for religious organizations giving preference to persons of the same religion.\",\n      \"role\": \"exemption\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"Exemption; see global_scope.\"\n    },\n    {\n      \"id\": \"P6\",\n      \"ref\": \"Question 4, bullet 4\",\n      \"anchor\": \"The prohibition against discrimination on the basis of\",\n      \"summary\": \"Exemption of housing for older persons from familial status discrimination prohibitions.\",\n      \"role\": \"exemption\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"Exemption; see global_scope.\"\n    },\n    {\n      \"id\": \"P7\",\n      \"ref\": \"Question 5\",\n      \"anchor\": \"You may file a complaint with us for free within\",\n      \"summary\": \"Administrative and judicial complaint filing deadlines and venue options.\",\n      \"role\": \"procedure\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"Generic filing procedures and statutes of limitations without creating a concrete remedy in an official category.\"\n    },\n    {\n      \"id\": \"P8\",\n      \"ref\": \"Question 6\",\n      \"anchor\": \"When you file a complaint with the Division, your complaint\",\n      \"summary\": \"Procedures for complaint investigation, answer deadlines, mediation, and probable cause findings.\",\n      \"role\": \"procedure\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"Administrative complaint processing and investigation procedures.\"\n    },\n    {\n      \"id\": \"P9\",\n      \"ref\": \"Question 7\",\n      \"anchor\": \"If there is a finding of Probable Cause in a\",\n      \"summary\": \"Procedures following a finding of probable cause, including Superior Court election, conciliation, and OAL hearings.\",\n      \"role\": \"procedure\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"Administrative and judicial hearing and litigation procedures.\"\n    },\n    {\n      \"id\": \"P10\",\n      \"ref\": \"Question 1\",\n      \"anchor\": \"The Division on Civil Rights enforces the New Jersey\",\n      \"summary\": \"States the Division on Civil Rights' authority to enforce the Law Against Discrimination.\",\n      \"role\": \"enforcement\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"Agency enforcement authority boilerplate.\"\n    },\n    {\n      \"id\": \"P11\",\n      \"ref\": \"Question 2, paragraph 1\",\n      \"anchor\": \"The NJ Law Against Discrimination (LAD) prohibits discrimination on\",\n      \"summary\": \"General prohibition against discrimination on enumerated protected demographic bases and statutory definitions.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"General civil rights anti-discrimination prohibitions across demographic classes are outside the official categories.\"\n    },\n    {\n      \"id\": \"P12\",\n      \"ref\": \"Question 2, paragraph 2\",\n      \"anchor\": \"The LAD also prohibits housing discrimination  based\",\n      \"summary\": \"Prohibits housing discrimination based on source of lawful income or rent payment, including Section 8 HUD vouchers.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"screening_restrictions\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P13\",\n      \"ref\": \"Question 3, bullet 1\",\n      \"anchor\": \"All persons, regardless of their membership in one\",\n      \"summary\": \"Mandates equal treatment in terms, conditions, or privileges of sale or rental, and bars falsely denying housing availability.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"General fair housing terms, conditions, and availability requirements are outside the official categories.\"\n    },\n    {\n      \"id\": \"P14\",\n      \"ref\": \"Question 3, bullet 2\",\n      \"anchor\": \"No discriminatory advertising  of any kind relating\",\n      \"summary\": \"Prohibits discriminatory advertising in connection with the sale or rental of property.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"Advertising restrictions are outside the official categories.\"\n    },\n    {\n      \"id\": \"P15\",\n      \"ref\": \"Question 3, bullet 3\",\n      \"anchor\": \"Any provision in any lease or rental agreement\",\n      \"summary\": \"Provides that pet bans do not apply to service or guide dogs owned by disabled, blind, or deaf tenants.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"Service animal exemptions from lease pet prohibitions are outside the official categories.\"\n    },\n    {\n      \"id\": \"P16\",\n      \"ref\": \"Question 3, bullet 4\",\n      \"anchor\": \"A landlord may not charge a tenant with a disability\",\n      \"summary\": \"Bars landlords from charging extra fees to disabled tenants for keeping service or guide dogs.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"Prohibition of pet fees for service animals is outside the official categories.\"\n    }\n  ],\n  \"global_scope\": [\n    {\n      \"id\": \"S1\",\n      \"kind\": \"coverage_condition\",\n      \"statement\": \"The provisions of the Law Against Discrimination apply to the sale or rental of all property including open land, whether for business or residential purposes.\",\n      \"citation\": \"Question 4\",\n      \"scope_mode\": \"structural\",\n      \"scope_quote\": \"The provisions of the LAD apply to the sale or rental of all\\nproperty including open land, whether for business or\\nresidential purposes, with the following exceptions:\",\n      \"source_provision_id\": \"P2\",\n      \"governed_provision_ids\": [\n        \"P1\",\n        \"P12\",\n        \"P13\",\n        \"P14\",\n        \"P15\",\n        \"P16\"\n      ],\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"The provisions of the LAD apply to the sale or rental of all\\nproperty including open land, whether for business or\\nresidential purposes, with the following exceptions:\"\n        }\n      ]\n    },\n    {\n      \"id\": \"S2\",\n      \"kind\": \"exemption\",\n      \"statement\": \"The LAD does not apply to the rental of a single apartment or flat in a two-family dwelling where the other unit is occupied by the owner as their residence at the time of the rental.\",\n      \"citation\": \"Question 4\",\n      \"scope_mode\": \"structural\",\n      \"scope_quote\": \"The provisions of the LAD apply to the sale or rental of all\\nproperty including open land, whether for business or\\nresidential purposes, with the following exceptions:\",\n      \"source_provision_id\": \"P3\",\n      \"governed_provision_ids\": [\n        \"P1\",\n        \"P12\",\n        \"P13\",\n        \"P14\",\n        \"P15\",\n        \"P16\"\n      ],\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"The rental of a single apartment or flat in a two-family\\ndwelling, the other occupancy unit of which is occupied\\nby the owner as his/her residence at the time of such\\nrentals;\"\n        }\n      ]\n    },\n    {\n      \"id\": \"S3\",\n      \"kind\": \"exemption\",\n      \"statement\": \"The LAD does not apply to the rental of a room or rooms to another person by the owner or occupant of a one-family dwelling occupied by them as their residence at the time of the rental.\",\n      \"citation\": \"Question 4\",\n      \"scope_mode\": \"structural\",\n      \"scope_quote\": \"The provisions of the LAD apply to the sale or rental of all\\nproperty including open land, whether for business or\\nresidential purposes, with the following exceptions:\",\n      \"source_provision_id\": \"P4\",\n      \"governed_provision_ids\": [\n        \"P1\",\n        \"P12\",\n        \"P13\",\n        \"P14\",\n        \"P15\",\n        \"P16\"\n      ],\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"The rental of a room or rooms to another person or\\npersons by the owner or occupant of a one-family\\ndwelling occupied by him/her as his/her residence at\\nthe time of such rental;\"\n        }\n      ]\n    },\n    {\n      \"id\": \"S4\",\n      \"kind\": \"exemption\",\n      \"statement\": \"In the sale, lease, or rental of real property, preference given to persons of the same religion by a religious organization is exempt from the LAD.\",\n      \"citation\": \"Question 4\",\n      \"scope_mode\": \"structural\",\n      \"scope_quote\": \"The provisions of the LAD apply to the sale or rental of all\\nproperty including open land, whether for business or\\nresidential purposes, with the following exceptions:\",\n      \"source_provision_id\": \"P5\",\n      \"governed_provision_ids\": [\n        \"P1\",\n        \"P12\",\n        \"P13\",\n        \"P14\",\n        \"P15\",\n        \"P16\"\n      ],\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"In the sale, lease or rental of real property, preference\\ngiven to persons of the same religion by a religious\\norganization; and\"\n        }\n      ]\n    },\n    {\n      \"id\": \"S5\",\n      \"kind\": \"exemption\",\n      \"statement\": \"The prohibition against discrimination on the basis of familial status does not apply to housing for older persons as defined in the LAD at N.J.S.A. 10:5-5mm.\",\n      \"citation\": \"Question 4\",\n      \"scope_mode\": \"named_subject\",\n      \"scope_quote\": \"The prohibition against discrimination on the basis of\\nfamilial status does not apply to\",\n      \"source_provision_id\": \"P6\",\n      \"governed_provision_ids\": [\n        \"P11\"\n      ],\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"The prohibition against discrimination on the basis of\\nfamilial status does not apply to housing for older\\npersons (as defined in the LAD at N.J.S.A. 10:5-5mm).\"\n        }\n      ]\n    }\n  ],\n  \"rules\": [\n    {\n      \"category\": \"screening_restrictions\",\n      \"citation\": \"Question 2\",\n      \"provision_ids\": [\n        \"P12\"\n      ],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"The LAD also prohibits housing discrimination  based\\non the source of lawful income or source of lawful rent\\nor mortgage payment a tenant or purchaser uses. This\\nmeans, for example, that a landlord cannot deny the\\nlawful recipient of a Section 8 HUD voucher the right to\\nrent an apartment based solely on that source of lawful\\nincome.\"\n        }\n      ],\n      \"title\": \"Prohibition on Source of Lawful Income Discrimination\",\n      \"requirement\": \"Landlords are prohibited from discriminating in housing based on a tenant's source of lawful income or rent payment. A landlord cannot deny a lawful recipient of a Section 8 HUD voucher the right to rent an apartment based solely on that source of lawful income.\",\n      \"key_value\": null,\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": \"The Division on Civil Rights enforces the New Jersey\\nLaw Against Discrimination.\",\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": null,\n      \"effective_date_evidence_kind\": null,\n      \"effective_date\": null,\n      \"conflict_note\": null\n    }\n  ],\n  \"no_rules_justification\": null\n}"
+}

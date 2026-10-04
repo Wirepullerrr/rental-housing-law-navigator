@@ -1,0 +1,539 @@
+{
+  "disclaimer": "Not legal advice. Automated extraction for a research prototype; verify against the cited source.",
+  "run_at": "2026-10-04T03:38:25+00:00",
+  "source": {
+    "doc_id": "D082",
+    "jurisdiction": "San Francisco, CA",
+    "url": "https://www.sf.gov/reports--archive-relocation-rates",
+    "source_type": "official",
+    "retrieved_at": "2026-10-01T22:37Z",
+    "text_file": "text/D082.txt",
+    "content_sha256": "b8abd1f1ebc89ee2403029858d7b5573eeb65dfe2dd1e64d3f6cbc7dc8071487",
+    "body_chars": 3466
+  },
+  "provider": "gemini",
+  "model": "gemini-3.8-flash",
+  "prompt_version": "v7",
+  "prompt_sha256": "233ac5f504713a7e15447c44831f8078310f411781737aea37a8f60755a6bb66",
+  "response_schema_sha256": "c15306da6f21dc72f06e78405f94ed61dc9e59288138cc98b5b5bf9b62ac403c",
+  "generation_settings": {
+    "temperature": null,
+    "seed": 20261001,
+    "thinking_level": "medium"
+  },
+  "as_of": "2026-10-01",
+  "cache_key": "eae5bb578d27e332de5f3f37ca2c1dc1a0ec563dfb01ee946b789452f317184c",
+  "cache_hit": false,
+  "cache_entry": "cache/extraction/eae5bb578d27e332de5f3f37ca2c1dc1a0ec563dfb01ee946b789452f317184c.json",
+  "provider_metadata": {
+    "api": "interactions.create",
+    "interaction_id": "",
+    "model": "gemini-3.8-flash",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 6223,
+      "output_tokens": 2093,
+      "thinking_tokens": 12780,
+      "total_tokens": 21096
+    }
+  },
+  "candidate_count": 2,
+  "accepted_count": 0,
+  "rules": [],
+  "candidates": [
+    {
+      "index": 0,
+      "origin": "primary",
+      "accepted": false,
+      "held": true,
+      "rejection_reasons": [
+        "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      ],
+      "provision_ids": [
+        "P1"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": null,
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": "Applies where the date of service of the notice of termination of tenancy is between 3/01/26 and 2/28/27 for evictions based on owner/relative move-in, demolition/permanent removal of unit from housing use, temporary capital improvement work, or substantial rehabilitation.",
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 296,
+        "end": 798,
+        "occurrences": 1,
+        "model_span": "Relocation Payments for Evictions based on Owner/Relative Move-in OR Demolition/Permanent Removal of Unit from Housing Use OR Temporary Capital Improvement Work* OR Substantial Rehabilitation\nDate of Service of Notice of Termination of Tenancy (\"Eviction Notice\")\nRelocation Amount Due Per Tenant\nMaximum Relocation Amount Due Per Unit\nPLUS Additional Amount Due for Each Elderly (60 years or older) or Disabled Tenant or Household with Minor Child(ren)\n3/01/26 – 2/28/27\n$8,245.00\n$24,733.00\n$5,497.00",
+        "source_span": "Relocation Payments for Evictions based on Owner/Relative Move-in OR Demolition/Permanent Removal of Unit from Housing Use OR Temporary Capital Improvement Work* OR Substantial Rehabilitation\nDate of Service of Notice of Termination of Tenancy (\"Eviction Notice\")\nRelocation Amount Due Per Tenant\nMaximum Relocation Amount Due Per Unit\nPLUS Additional Amount Due for Each Elderly (60 years or older) or Disabled Tenant or Household with Minor Child(ren)\n3/01/26 – 2/28/27\n$8,245.00\n$24,733.00\n$5,497.00",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "Relocation Payments for Evictions based on Owner/Relative Move-in OR Demolition/Permanent Removal of Unit from Housing Use OR Temporary Capital Improvement Work* OR Substantial Rehabilitation\nDate of Service of Notice of Termination of Tenancy (\"Eviction Notice\")\nRelocation Amount Due Per Tenant\nMaximum Relocation Amount Due Per Unit\nPLUS Additional Amount Due for Each Elderly (60 years or older) or Disabled Tenant or Household with Minor Child(ren)\n3/01/26 – 2/28/27\n$8,245.00\n$24,733.00\n$5,497.00",
+            "status": "exact_match",
+            "start": 296,
+            "end": 798
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": null,
+      "version_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 799,
+        "end": 847,
+        "occurrences": 1,
+        "model_span": "3/01/25 – 2/28/26\n$8,062.00\n$24,184.00\n$5,375.00",
+        "source_span": "3/01/25 – 2/28/26\n$8,062.00\n$24,184.00\n$5,375.00",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "operative_conditions": [],
+      "propagated_scope": [
+        {
+          "id": "S1",
+          "kind": "exemption",
+          "mode": "explicit_reference",
+          "governed_provision_ids": [
+            "P1",
+            "P2"
+          ],
+          "basis": "explicit_reference: rule links reached provision(s) ['P1']",
+          "applied": true
+        }
+      ],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": null,
+        "applied_kind": null,
+        "effective_date": null,
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null,
+        "unresolved_reason": "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      },
+      "status_derivation": "temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)",
+        "review: requirement states 'March 1, 2026', which its quoted_span does not contain",
+        "review: requirement states 'February 28, 2027', which its quoted_span does not contain"
+      ],
+      "rule": {
+        "team_rule_id": "r-e67b43e6fc",
+        "jurisdiction": "San Francisco, CA",
+        "level": "city",
+        "category": "just_cause_eviction",
+        "status": null,
+        "title": "Relocation Payments for No-Fault Evictions Under Section 37.9C",
+        "requirement": "[Basis: official explanatory text, not operative legal text] For notices of termination served between March 1, 2026 and February 28, 2027 based on owner/relative move-in, demolition or permanent removal of unit, temporary capital improvement work, or substantial rehabilitation, the landlord must pay $8,245.00 per tenant up to a maximum of $24,733.00 per unit, plus an additional $5,497.00 for each elderly tenant (60 years or older), disabled tenant, or household with minor child(ren).",
+        "key_value": "$8,245.00 per tenant; $24,733.00 max per unit; $5,497.00 additional per elderly/disabled/minor child household",
+        "coverage_conditions": "Applies where the date of service of the notice of termination of tenancy is between 3/01/26 and 2/28/27 for evictions based on owner/relative move-in, demolition/permanent removal of unit from housing use, temporary capital improvement work, or substantial rehabilitation.",
+        "exemptions": "The amount of relocation payments for temporary capital improvement evictions for less than 20 days is governed by California Civil Code Section 1947.9 and not by Rent Ordinance Section 37.9C. [Rent Ordinance Section 37.9C]",
+        "overrides": [],
+        "interaction": "The amount of relocation payments for temporary capital improvement evictions for less than 20 days is governed by California Civil Code Section 1947.9 and not by Rent Ordinance Section 37.9C.",
+        "effective_date": null,
+        "citation": "Rent Ordinance Section 37.9C",
+        "source_doc_id": "D082",
+        "source_url": "https://www.sf.gov/reports--archive-relocation-rates",
+        "quoted_span": "Relocation Payments for Evictions based on Owner/Relative Move-in OR Demolition/Permanent Removal of Unit from Housing Use OR Temporary Capital Improvement Work* OR Substantial Rehabilitation\nDate of Service of Notice of Termination of Tenancy (\"Eviction Notice\")\nRelocation Amount Due Per Tenant\nMaximum Relocation Amount Due Per Unit\nPLUS Additional Amount Due for Each Elderly (60 years or older) or Disabled Tenant or Household with Minor Child(ren)\n3/01/26 – 2/28/27\n$8,245.00\n$24,733.00\n$5,497.00",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "just_cause_eviction",
+        "citation": "Rent Ordinance Section 37.9C",
+        "provision_ids": [
+          "P1"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "Relocation Payments for Evictions based on Owner/Relative Move-in OR Demolition/Permanent Removal of Unit from Housing Use OR Temporary Capital Improvement Work* OR Substantial Rehabilitation\nDate of Service of Notice of Termination of Tenancy (\"Eviction Notice\")\nRelocation Amount Due Per Tenant\nMaximum Relocation Amount Due Per Unit\nPLUS Additional Amount Due for Each Elderly (60 years or older) or Disabled Tenant or Household with Minor Child(ren)\n3/01/26 – 2/28/27\n$8,245.00\n$24,733.00\n$5,497.00"
+          }
+        ],
+        "title": "Relocation Payments for No-Fault Evictions Under Section 37.9C",
+        "requirement": "For notices of termination served between March 1, 2026 and February 28, 2027 based on owner/relative move-in, demolition or permanent removal of unit, temporary capital improvement work, or substantial rehabilitation, the landlord must pay $8,245.00 per tenant up to a maximum of $24,733.00 per unit, plus an additional $5,497.00 for each elderly tenant (60 years or older), disabled tenant, or household with minor child(ren).",
+        "key_value": "$8,245.00 per tenant; $24,733.00 max per unit; $5,497.00 additional per elderly/disabled/minor child household",
+        "coverage_conditions": "Applies where the date of service of the notice of termination of tenancy is between 3/01/26 and 2/28/27 for evictions based on owner/relative move-in, demolition/permanent removal of unit from housing use, temporary capital improvement work, or substantial rehabilitation.",
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": "The amount of relocation payments for temporary capital improvement evictions for less than 20 days is governed by California Civil Code Section 1947.9 and not by Rent Ordinance Section 37.9C.",
+        "enactment_status": "enacted",
+        "enactment_status_evidence": null,
+        "version_note": "Earlier annual rate schedules dating back to 2006 are archived in the report.",
+        "version_evidence": "3/01/25 – 2/28/26\n$8,062.00\n$24,184.00\n$5,375.00",
+        "effective_date_evidence": null,
+        "effective_date_evidence_kind": null,
+        "effective_date": null,
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 1,
+      "origin": "primary",
+      "accepted": false,
+      "held": true,
+      "rejection_reasons": [
+        "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      ],
+      "provision_ids": [
+        "P3"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": null,
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": "Applies where the date of service of the notice of termination of tenancy is between 3/01/26 and 2/28/27 for tenants evicted under the Ellis Act.",
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 2039,
+        "end": 2375,
+        "occurrences": 1,
+        "model_span": "Relocation payments for tenants evicted under the Ellis Act\nDate of Service of Notice of Termination of Tenancy (\"Eviction Notice\")\nRelocation Amount Due Per Tenant\nMaximum Relocation Amount Due Per Unit\nPLUS Additional Amount Due for Each Elderly (62 years or older) or Disabled Tenant\n3/01/26 – 2/28/27\n$11,110.05\n$33,330.13\n$7,443.90",
+        "source_span": "Relocation payments for tenants evicted under the Ellis Act\nDate of Service of Notice of Termination of Tenancy (\"Eviction Notice\")\nRelocation Amount Due Per Tenant\nMaximum Relocation Amount Due Per Unit\nPLUS Additional Amount Due for Each Elderly (62 years or older) or Disabled Tenant\n3/01/26 – 2/28/27\n$11,110.05\n$33,330.13\n$7,443.90",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "Relocation payments for tenants evicted under the Ellis Act\nDate of Service of Notice of Termination of Tenancy (\"Eviction Notice\")\nRelocation Amount Due Per Tenant\nMaximum Relocation Amount Due Per Unit\nPLUS Additional Amount Due for Each Elderly (62 years or older) or Disabled Tenant\n3/01/26 – 2/28/27\n$11,110.05\n$33,330.13\n$7,443.90",
+            "status": "exact_match",
+            "start": 2039,
+            "end": 2375
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": null,
+      "version_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 2376,
+        "end": 2425,
+        "occurrences": 1,
+        "model_span": "3/01/25 – 2/28/26\n$10,863.45\n$32,590.33\n$7,278.67",
+        "source_span": "3/01/25 – 2/28/26\n$10,863.45\n$32,590.33\n$7,278.67",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "operative_conditions": [],
+      "propagated_scope": [],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": null,
+        "applied_kind": null,
+        "effective_date": null,
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null,
+        "unresolved_reason": "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      },
+      "status_derivation": "temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)",
+        "review: requirement states 'March 1, 2026', which its quoted_span does not contain",
+        "review: requirement states 'February 28, 2027', which its quoted_span does not contain"
+      ],
+      "rule": {
+        "team_rule_id": "r-12d363bbb0",
+        "jurisdiction": "San Francisco, CA",
+        "level": "city",
+        "category": "just_cause_eviction",
+        "status": null,
+        "title": "Relocation Payments for Ellis Act Evictions",
+        "requirement": "[Basis: official explanatory text, not operative legal text] For notices of termination served between March 1, 2026 and February 28, 2027 for tenants evicted under the Ellis Act, the landlord must pay relocation payments of $11,110.05 per tenant up to a maximum of $33,330.13 per unit, plus an additional $7,443.90 for each elderly tenant (62 years or older) or disabled tenant.",
+        "key_value": "$11,110.05 per tenant; $33,330.13 max per unit; $7,443.90 additional per elderly/disabled tenant",
+        "coverage_conditions": "Applies where the date of service of the notice of termination of tenancy is between 3/01/26 and 2/28/27 for tenants evicted under the Ellis Act.",
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "Ellis Act",
+        "source_doc_id": "D082",
+        "source_url": "https://www.sf.gov/reports--archive-relocation-rates",
+        "quoted_span": "Relocation payments for tenants evicted under the Ellis Act\nDate of Service of Notice of Termination of Tenancy (\"Eviction Notice\")\nRelocation Amount Due Per Tenant\nMaximum Relocation Amount Due Per Unit\nPLUS Additional Amount Due for Each Elderly (62 years or older) or Disabled Tenant\n3/01/26 – 2/28/27\n$11,110.05\n$33,330.13\n$7,443.90",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "just_cause_eviction",
+        "citation": "Ellis Act",
+        "provision_ids": [
+          "P3"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "Relocation payments for tenants evicted under the Ellis Act\nDate of Service of Notice of Termination of Tenancy (\"Eviction Notice\")\nRelocation Amount Due Per Tenant\nMaximum Relocation Amount Due Per Unit\nPLUS Additional Amount Due for Each Elderly (62 years or older) or Disabled Tenant\n3/01/26 – 2/28/27\n$11,110.05\n$33,330.13\n$7,443.90"
+          }
+        ],
+        "title": "Relocation Payments for Ellis Act Evictions",
+        "requirement": "For notices of termination served between March 1, 2026 and February 28, 2027 for tenants evicted under the Ellis Act, the landlord must pay relocation payments of $11,110.05 per tenant up to a maximum of $33,330.13 per unit, plus an additional $7,443.90 for each elderly tenant (62 years or older) or disabled tenant.",
+        "key_value": "$11,110.05 per tenant; $33,330.13 max per unit; $7,443.90 additional per elderly/disabled tenant",
+        "coverage_conditions": "Applies where the date of service of the notice of termination of tenancy is between 3/01/26 and 2/28/27 for tenants evicted under the Ellis Act.",
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": null,
+        "version_note": "Earlier annual rate schedules dating back to 2006 are archived in the report.",
+        "version_evidence": "3/01/25 – 2/28/26\n$10,863.45\n$32,590.33\n$7,278.67",
+        "effective_date_evidence": null,
+        "effective_date_evidence_kind": null,
+        "effective_date": null,
+        "conflict_note": null
+      }
+    }
+  ],
+  "posture": {
+    "declared": "official_explanatory_page",
+    "evidence": "Archive of Relocation Rates | SF.gov",
+    "evidence_check": {
+      "status": "exact_match",
+      "normalization": null,
+      "start": 0,
+      "end": 36,
+      "occurrences": 1,
+      "model_span": "Archive of Relocation Rates | SF.gov",
+      "source_span": "Archive of Relocation Rates | SF.gov",
+      "reason": null,
+      "reconstructed": false,
+      "parts": [],
+      "crossed_artifacts": []
+    },
+    "established": "official_explanatory_page",
+    "basis": "declared posture with verified evidence"
+  },
+  "base_dates": [],
+  "provision_inventory": [
+    {
+      "id": "P1",
+      "ref": "Rent Ordinance Section 37.9C",
+      "anchor": "Relocation Payments for Evictions based on Owner/Relative Move-in",
+      "summary": "Schedule of relocation payments due per tenant and maximum per unit, plus additional amounts for elderly or disabled tenants or households with minor children, for evictions based on owner/relative move-in, demolition/permanent removal, temporary capital improvement work, or substantial rehabilitation.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "just_cause_eviction",
+      "reason": null
+    },
+    {
+      "id": "P2",
+      "ref": "Rent Ordinance Section 37.9C / Civil Code Section 1947.9",
+      "anchor": "*The amount of relocation payments for temporary capital",
+      "summary": "Clarification that relocation payments for temporary capital improvement evictions for less than 20 days are governed by California Civil Code Section 1947.9 rather than Rent Ordinance Section 37.9C.",
+      "role": "exemption",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "scope condition, see global_scope"
+    },
+    {
+      "id": "P3",
+      "ref": "Ellis Act",
+      "anchor": "Relocation payments for tenants evicted under the Ellis Act",
+      "summary": "Schedule of relocation payments due per tenant and maximum per unit, plus additional amounts for elderly or disabled tenants, for tenants evicted under the Ellis Act.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "just_cause_eviction",
+      "reason": null
+    }
+  ],
+  "global_scope": [
+    {
+      "id": "S1",
+      "kind": "exemption",
+      "statement": "The amount of relocation payments for temporary capital improvement evictions for less than 20 days is governed by California Civil Code Section 1947.9 and not by Rent Ordinance Section 37.9C.",
+      "citation": "Rent Ordinance Section 37.9C",
+      "scope_mode": "explicit_reference",
+      "scope_quote": "Rent Ordinance Section 37.9C",
+      "source_provision_id": "P2",
+      "governed_provision_ids": [
+        "P1"
+      ],
+      "evidence_parts": [
+        {
+          "segment_id": 1,
+          "quoted_text": "*The amount of relocation payments for temporary capital improvement evictions for less than 20 days is governed by California Civil Code Section 1947.9 and not by Rent Ordinance Section 37.9C."
+        }
+      ],
+      "evidence_check": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 1785,
+        "end": 1978,
+        "occurrences": 1,
+        "model_span": "*The amount of relocation payments for temporary capital improvement evictions for less than 20 days is governed by California Civil Code Section 1947.9 and not by Rent Ordinance Section 37.9C.",
+        "source_span": "*The amount of relocation payments for temporary capital improvement evictions for less than 20 days is governed by California Civil Code Section 1947.9 and not by Rent Ordinance Section 37.9C.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "*The amount of relocation payments for temporary capital improvement evictions for less than 20 days is governed by California Civil Code Section 1947.9 and not by Rent Ordinance Section 37.9C.",
+            "status": "exact_match",
+            "start": 1785,
+            "end": 1978
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "propagated": true,
+      "problem": null,
+      "scope": {
+        "resolver": "scope-modes/v1",
+        "declared_mode": "explicit_reference",
+        "mode": "explicit_reference",
+        "scope_words": {
+          "scope_quote": "Rent Ordinance Section 37.9C",
+          "scope_quote_check": "exact_match",
+          "text": "Rent Ordinance Section 37.9C",
+          "from": "scope_quote"
+        },
+        "detail": [
+          "37.9C"
+        ],
+        "propagate_ids": [
+          "P1",
+          "P2"
+        ],
+        "mapping_targets": [],
+        "verification": "references ['37.9C'] reach ['P1', 'P2']"
+      }
+    }
+  ],
+  "source_view": {
+    "marker": "[[PAGE BREAK]]",
+    "segment_label": "[[SEGMENT {}]]",
+    "view_sha256": "a9101d2ab1e3de248d9d7933ac0f21cea1efdb4c52b123a74e602cfdfc676e7b",
+    "segments": [
+      {
+        "id": 1,
+        "raw_start": 0,
+        "raw_end": 3466
+      }
+    ],
+    "artifacts_removed": 0,
+    "artifacts": []
+  },
+  "coverage": {
+    "inventory_valid": true,
+    "anchors_located": "3/3",
+    "after_primary": {
+      "uncovered": [],
+      "unaccepted": [
+        "Rent Ordinance Section 37.9C",
+        "Ellis Act"
+      ],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "scope_mappings": {
+      "requested": 0,
+      "applies": 0,
+      "does_not_apply": 0,
+      "unresolved": 0
+    },
+    "inventory_items": 3,
+    "in_scope_items": 2,
+    "in_scope_refs": 2,
+    "uncertain": [],
+    "final": {
+      "uncovered": [],
+      "unaccepted": [
+        "Rent Ordinance Section 37.9C",
+        "Ellis Act"
+      ],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "link_mismatches": [],
+    "provisions": [
+      {
+        "ref": "Rent Ordinance Section 37.9C",
+        "inventory_item": 0,
+        "provision_id": "P1",
+        "summary": "Schedule of relocation payments due per tenant and maximum per unit, plus additional amounts for elderly or disabled tenants or households with minor children, for evictions based on owner/relative move-in, demolition/permanent removal, temporary capital improvement work, or substantial rehabilitation.",
+        "category": "just_cause_eviction",
+        "candidates": [
+          0
+        ],
+        "accepted": [],
+        "basis": {
+          "0": "provision link; citation names it"
+        }
+      },
+      {
+        "ref": "Ellis Act",
+        "inventory_item": 2,
+        "provision_id": "P3",
+        "summary": "Schedule of relocation payments due per tenant and maximum per unit, plus additional amounts for elderly or disabled tenants, for tenants evicted under the Ellis Act.",
+        "category": "just_cause_eviction",
+        "candidates": [
+          1
+        ],
+        "accepted": [],
+        "basis": {
+          "1": "provision link; citation names it"
+        }
+      }
+    ],
+    "unrecorded_subdivisions": []
+  },
+  "scope_challenges": [
+    {
+      "ref": "Rent Ordinance Section 37.9C / Civil Code Section 1947.9",
+      "provision_id": "P2",
+      "role": "exemption",
+      "reason": "scope condition, see global_scope",
+      "summary": "Clarification that relocation payments for temporary capital improvement evictions for less than 20 days are governed by California Civil Code Section 1947.9 rather than Rent Ordinance Section 37.9C.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role exemption is decided by other rules"
+    }
+  ],
+  "scope_mappings": [],
+  "legislative_session": null,
+  "empty_result": null,
+  "legacy_replay": null,
+  "repair": null,
+  "document_status": "review_required",
+  "review_reasons": [
+    "2 candidate record(s) held, not published, because the time of application is unresolved: ['temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force']"
+  ],
+  "warnings": [
+    "candidate 0 held: status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+    "candidate 1 held: status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+  ],
+  "errors": [],
+  "raw_response_text": "{\n  \"document\": {\n    \"posture\": \"official_explanatory_page\",\n    \"evidence\": \"Archive of Relocation Rates | SF.gov\"\n  },\n  \"provisions\": [\n    {\n      \"id\": \"P1\",\n      \"ref\": \"Rent Ordinance Section 37.9C\",\n      \"anchor\": \"Relocation Payments for Evictions based on Owner/Relative Move-in\",\n      \"summary\": \"Schedule of relocation payments due per tenant and maximum per unit, plus additional amounts for elderly or disabled tenants or households with minor children, for evictions based on owner/relative move-in, demolition/permanent removal, temporary capital improvement work, or substantial rehabilitation.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"just_cause_eviction\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P2\",\n      \"ref\": \"Rent Ordinance Section 37.9C / Civil Code Section 1947.9\",\n      \"anchor\": \"*The amount of relocation payments for temporary capital\",\n      \"summary\": \"Clarification that relocation payments for temporary capital improvement evictions for less than 20 days are governed by California Civil Code Section 1947.9 rather than Rent Ordinance Section 37.9C.\",\n      \"role\": \"exemption\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"scope condition, see global_scope\"\n    },\n    {\n      \"id\": \"P3\",\n      \"ref\": \"Ellis Act\",\n      \"anchor\": \"Relocation payments for tenants evicted under the Ellis Act\",\n      \"summary\": \"Schedule of relocation payments due per tenant and maximum per unit, plus additional amounts for elderly or disabled tenants, for tenants evicted under the Ellis Act.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"just_cause_eviction\",\n      \"reason\": null\n    }\n  ],\n  \"global_scope\": [\n    {\n      \"id\": \"S1\",\n      \"kind\": \"exemption\",\n      \"statement\": \"The amount of relocation payments for temporary capital improvement evictions for less than 20 days is governed by California Civil Code Section 1947.9 and not by Rent Ordinance Section 37.9C.\",\n      \"citation\": \"Rent Ordinance Section 37.9C\",\n      \"scope_mode\": \"explicit_reference\",\n      \"scope_quote\": \"Rent Ordinance Section 37.9C\",\n      \"source_provision_id\": \"P2\",\n      \"governed_provision_ids\": [\n        \"P1\"\n      ],\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"*The amount of relocation payments for temporary capital improvement evictions for less than 20 days is governed by California Civil Code Section 1947.9 and not by Rent Ordinance Section 37.9C.\"\n        }\n      ]\n    }\n  ],\n  \"rules\": [\n    {\n      \"category\": \"just_cause_eviction\",\n      \"citation\": \"Rent Ordinance Section 37.9C\",\n      \"provision_ids\": [\n        \"P1\"\n      ],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Relocation Payments for Evictions based on Owner/Relative Move-in OR Demolition/Permanent Removal of Unit from Housing Use OR Temporary Capital Improvement Work* OR Substantial Rehabilitation\\nDate of Service of Notice of Termination of Tenancy (\\\"Eviction Notice\\\")\\nRelocation Amount Due Per Tenant\\nMaximum Relocation Amount Due Per Unit\\nPLUS Additional Amount Due for Each Elderly (60 years or older) or Disabled Tenant or Household with Minor Child(ren)\\n3/01/26 – 2/28/27\\n$8,245.00\\n$24,733.00\\n$5,497.00\"\n        }\n      ],\n      \"title\": \"Relocation Payments for No-Fault Evictions Under Section 37.9C\",\n      \"requirement\": \"For notices of termination served between March 1, 2026 and February 28, 2027 based on owner/relative move-in, demolition or permanent removal of unit, temporary capital improvement work, or substantial rehabilitation, the landlord must pay $8,245.00 per tenant up to a maximum of $24,733.00 per unit, plus an additional $5,497.00 for each elderly tenant (60 years or older), disabled tenant, or household with minor child(ren).\",\n      \"key_value\": \"$8,245.00 per tenant; $24,733.00 max per unit; $5,497.00 additional per elderly/disabled/minor child household\",\n      \"coverage_conditions\": \"Applies where the date of service of the notice of termination of tenancy is between 3/01/26 and 2/28/27 for evictions based on owner/relative move-in, demolition/permanent removal of unit from housing use, temporary capital improvement work, or substantial rehabilitation.\",\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": \"The amount of relocation payments for temporary capital improvement evictions for less than 20 days is governed by California Civil Code Section 1947.9 and not by Rent Ordinance Section 37.9C.\",\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": null,\n      \"version_note\": \"Earlier annual rate schedules dating back to 2006 are archived in the report.\",\n      \"version_evidence\": \"3/01/25 – 2/28/26\\n$8,062.00\\n$24,184.00\\n$5,375.00\",\n      \"effective_date_evidence\": null,\n      \"effective_date_evidence_kind\": null,\n      \"effective_date\": null,\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"just_cause_eviction\",\n      \"citation\": \"Ellis Act\",\n      \"provision_ids\": [\n        \"P3\"\n      ],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Relocation payments for tenants evicted under the Ellis Act\\nDate of Service of Notice of Termination of Tenancy (\\\"Eviction Notice\\\")\\nRelocation Amount Due Per Tenant\\nMaximum Relocation Amount Due Per Unit\\nPLUS Additional Amount Due for Each Elderly (62 years or older) or Disabled Tenant\\n3/01/26 – 2/28/27\\n$11,110.05\\n$33,330.13\\n$7,443.90\"\n        }\n      ],\n      \"title\": \"Relocation Payments for Ellis Act Evictions\",\n      \"requirement\": \"For notices of termination served between March 1, 2026 and February 28, 2027 for tenants evicted under the Ellis Act, the landlord must pay relocation payments of $11,110.05 per tenant up to a maximum of $33,330.13 per unit, plus an additional $7,443.90 for each elderly tenant (62 years or older) or disabled tenant.\",\n      \"key_value\": \"$11,110.05 per tenant; $33,330.13 max per unit; $7,443.90 additional per elderly/disabled tenant\",\n      \"coverage_conditions\": \"Applies where the date of service of the notice of termination of tenancy is between 3/01/26 and 2/28/27 for tenants evicted under the Ellis Act.\",\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": null,\n      \"version_note\": \"Earlier annual rate schedules dating back to 2006 are archived in the report.\",\n      \"version_evidence\": \"3/01/25 – 2/28/26\\n$10,863.45\\n$32,590.33\\n$7,278.67\",\n      \"effective_date_evidence\": null,\n      \"effective_date_evidence_kind\": null,\n      \"effective_date\": null,\n      \"conflict_note\": null\n    }\n  ],\n  \"no_rules_justification\": null\n}"
+}

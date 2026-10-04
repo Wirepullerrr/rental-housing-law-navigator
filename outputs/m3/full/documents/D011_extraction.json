@@ -1,0 +1,534 @@
+{
+  "disclaimer": "Not legal advice. Automated extraction for a research prototype; verify against the cited source.",
+  "run_at": "2026-10-04T02:51:30+00:00",
+  "source": {
+    "doc_id": "D011",
+    "jurisdiction": "Boston, MA",
+    "url": "https://malegislature.gov/Bills/193/H3744",
+    "source_type": "official",
+    "retrieved_at": "2026-10-01T22:35Z",
+    "text_file": "text/D011.txt",
+    "content_sha256": "4d58b2a5d39ef77943d25b9e80340ac091466d305eddb3940eb32fcf88edd76c",
+    "body_chars": 3627
+  },
+  "provider": "gemini",
+  "model": "gemini-3.8-flash",
+  "prompt_version": "v7",
+  "prompt_sha256": "7289285796d926af2fb5833d699c82912a5ae03e2e524e6c203e7c547fe5eab5",
+  "response_schema_sha256": "c15306da6f21dc72f06e78405f94ed61dc9e59288138cc98b5b5bf9b62ac403c",
+  "generation_settings": {
+    "temperature": null,
+    "seed": 20261001,
+    "thinking_level": "medium"
+  },
+  "as_of": "2026-10-01",
+  "cache_key": "736469c3bf2769071eca697af80ff783eef9a20e948fc7c42d3e4a71ca919173",
+  "cache_hit": false,
+  "cache_entry": "cache/extraction/736469c3bf2769071eca697af80ff783eef9a20e948fc7c42d3e4a71ca919173.json",
+  "provider_metadata": {
+    "api": "interactions.create",
+    "interaction_id": "",
+    "model": "gemini-3.8-flash",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4880,
+      "output_tokens": 975,
+      "thinking_tokens": 13884,
+      "total_tokens": 19739
+    }
+  },
+  "candidate_count": 2,
+  "accepted_count": 2,
+  "rules": [
+    {
+      "team_rule_id": "r-b5a6f238b7",
+      "jurisdiction": "Boston, MA",
+      "level": "city",
+      "category": "rent_increase_limits",
+      "status": "failed",
+      "title": "Municipal Rent Stabilization Authorization",
+      "requirement": "[Basis: official bill summary, not operative legal text] The proposed bill would authorize the city of Boston to implement rent stabilization.",
+      "key_value": null,
+      "coverage_conditions": null,
+      "exemptions": null,
+      "overrides": [],
+      "interaction": null,
+      "effective_date": null,
+      "citation": "House, No. 3744",
+      "source_doc_id": "D011",
+      "source_url": "https://malegislature.gov/Bills/193/H3744",
+      "quoted_span": "An Act petition for a special law authorizing the city of Boston to implement rent stabilization and tenant eviction protections",
+      "confidence": null,
+      "conflict_flag": false,
+      "conflict_note": null
+    },
+    {
+      "team_rule_id": "r-d0367744ae",
+      "jurisdiction": "Boston, MA",
+      "level": "city",
+      "category": "just_cause_eviction",
+      "status": "failed",
+      "title": "Municipal Tenant Eviction Protections Authorization",
+      "requirement": "[Basis: official bill summary, not operative legal text] The proposed bill would authorize the city of Boston to implement tenant eviction protections.",
+      "key_value": null,
+      "coverage_conditions": null,
+      "exemptions": null,
+      "overrides": [],
+      "interaction": null,
+      "effective_date": null,
+      "citation": "House, No. 3744",
+      "source_doc_id": "D011",
+      "source_url": "https://malegislature.gov/Bills/193/H3744",
+      "quoted_span": "By Representative Montaño of Boston, a petition (accompanied by bill, House, No. 3744) of Samantha Montaño (with the approval of the mayor and city council) that the city of Boston be authorized to implement rent stabilization and tenant eviction protections.",
+      "confidence": null,
+      "conflict_flag": false,
+      "conflict_note": null
+    }
+  ],
+  "candidates": [
+    {
+      "index": 0,
+      "origin": "primary",
+      "accepted": true,
+      "held": false,
+      "rejection_reasons": [],
+      "provision_ids": [
+        "P1"
+      ],
+      "source_basis": "official_bill_summary",
+      "status_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 1598,
+        "end": 1649,
+        "occurrences": 1,
+        "model_span": "9/9/2024\nHouse\nAccompanied a study order, see\nH5035",
+        "source_span": "9/9/2024\nHouse\nAccompanied a study order, see\nH5035",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "legislative": {
+        "model_status": "pending",
+        "query_date": "2026-10-01",
+        "session": {
+          "resolver": "ma-general-court-session/v1",
+          "jurisdiction": "Boston, MA",
+          "general_court": 193,
+          "label": "193rd (2023 - 2024)",
+          "raw_start": 40,
+          "raw_end": 59,
+          "years": [
+            2023,
+            2024
+          ],
+          "ends_by": "2025-02-01",
+          "consistent": true,
+          "other_labels": []
+        },
+        "terminal_action": null,
+        "enactment_evidence": null,
+        "status": "failed",
+        "status_basis": "session_expired",
+        "conflict": "model said pending; decided failed (session_expired)"
+      },
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 113,
+        "end": 241,
+        "occurrences": 1,
+        "model_span": "An Act petition for a special law authorizing the city of Boston to implement rent stabilization and tenant eviction protections",
+        "source_span": "An Act petition for a special law authorizing the city of Boston to implement rent stabilization and tenant eviction protections",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "An Act petition for a special law authorizing the city of Boston to implement rent stabilization and tenant eviction protections",
+            "status": "exact_match",
+            "start": 113,
+            "end": 241
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": null,
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": null,
+        "applied_kind": null,
+        "effective_date": null,
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "bill_status_or_summary_page",
+        "posture_consistent": null
+      },
+      "status_derivation": "legislative: session_expired",
+      "warnings": [
+        "review: the record rests on official_bill_summary, not operative legal text (labelled in the published requirement)",
+        "review: legislative status: model said pending; decided failed (session_expired)"
+      ],
+      "rule": {
+        "team_rule_id": "r-b5a6f238b7",
+        "jurisdiction": "Boston, MA",
+        "level": "city",
+        "category": "rent_increase_limits",
+        "status": "failed",
+        "title": "Municipal Rent Stabilization Authorization",
+        "requirement": "[Basis: official bill summary, not operative legal text] The proposed bill would authorize the city of Boston to implement rent stabilization.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "House, No. 3744",
+        "source_doc_id": "D011",
+        "source_url": "https://malegislature.gov/Bills/193/H3744",
+        "quoted_span": "An Act petition for a special law authorizing the city of Boston to implement rent stabilization and tenant eviction protections",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "rent_increase_limits",
+        "citation": "House, No. 3744",
+        "provision_ids": [
+          "P1"
+        ],
+        "source_basis": "official_bill_summary",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "An Act petition for a special law authorizing the city of Boston to implement rent stabilization and tenant eviction protections"
+          }
+        ],
+        "title": "Municipal Rent Stabilization Authorization",
+        "requirement": "The proposed bill would authorize the city of Boston to implement rent stabilization.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "pending",
+        "enactment_status_evidence": "9/9/2024\nHouse\nAccompanied a study order, see\nH5035",
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": null,
+        "effective_date_evidence_kind": null,
+        "effective_date": null,
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 1,
+      "origin": "primary",
+      "accepted": true,
+      "held": false,
+      "rejection_reasons": [],
+      "provision_ids": [
+        "P2"
+      ],
+      "source_basis": "official_bill_summary",
+      "status_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 1598,
+        "end": 1649,
+        "occurrences": 1,
+        "model_span": "9/9/2024\nHouse\nAccompanied a study order, see\nH5035",
+        "source_span": "9/9/2024\nHouse\nAccompanied a study order, see\nH5035",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "legislative": {
+        "model_status": "pending",
+        "query_date": "2026-10-01",
+        "session": {
+          "resolver": "ma-general-court-session/v1",
+          "jurisdiction": "Boston, MA",
+          "general_court": 193,
+          "label": "193rd (2023 - 2024)",
+          "raw_start": 40,
+          "raw_end": 59,
+          "years": [
+            2023,
+            2024
+          ],
+          "ends_by": "2025-02-01",
+          "consistent": true,
+          "other_labels": []
+        },
+        "terminal_action": null,
+        "enactment_evidence": null,
+        "status": "failed",
+        "status_basis": "session_expired",
+        "conflict": "model said pending; decided failed (session_expired)"
+      },
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 242,
+        "end": 501,
+        "occurrences": 1,
+        "model_span": "By Representative Montaño of Boston, a petition (accompanied by bill, House, No. 3744) of Samantha Montaño (with the approval of the mayor and city council) that the city of Boston be authorized to implement rent stabilization and tenant eviction protections.",
+        "source_span": "By Representative Montaño of Boston, a petition (accompanied by bill, House, No. 3744) of Samantha Montaño (with the approval of the mayor and city council) that the city of Boston be authorized to implement rent stabilization and tenant eviction protections.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "By Representative Montaño of Boston, a petition (accompanied by bill, House, No. 3744) of Samantha Montaño (with the approval of the mayor and city council) that the city of Boston be authorized to implement rent stabilization and tenant eviction protections.",
+            "status": "exact_match",
+            "start": 242,
+            "end": 501
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": null,
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": null,
+        "applied_kind": null,
+        "effective_date": null,
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "bill_status_or_summary_page",
+        "posture_consistent": null
+      },
+      "status_derivation": "legislative: session_expired",
+      "warnings": [
+        "review: the record rests on official_bill_summary, not operative legal text (labelled in the published requirement)",
+        "review: legislative status: model said pending; decided failed (session_expired)"
+      ],
+      "rule": {
+        "team_rule_id": "r-d0367744ae",
+        "jurisdiction": "Boston, MA",
+        "level": "city",
+        "category": "just_cause_eviction",
+        "status": "failed",
+        "title": "Municipal Tenant Eviction Protections Authorization",
+        "requirement": "[Basis: official bill summary, not operative legal text] The proposed bill would authorize the city of Boston to implement tenant eviction protections.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "House, No. 3744",
+        "source_doc_id": "D011",
+        "source_url": "https://malegislature.gov/Bills/193/H3744",
+        "quoted_span": "By Representative Montaño of Boston, a petition (accompanied by bill, House, No. 3744) of Samantha Montaño (with the approval of the mayor and city council) that the city of Boston be authorized to implement rent stabilization and tenant eviction protections.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "just_cause_eviction",
+        "citation": "House, No. 3744",
+        "provision_ids": [
+          "P2"
+        ],
+        "source_basis": "official_bill_summary",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "By Representative Montaño of Boston, a petition (accompanied by bill, House, No. 3744) of Samantha Montaño (with the approval of the mayor and city council) that the city of Boston be authorized to implement rent stabilization and tenant eviction protections."
+          }
+        ],
+        "title": "Municipal Tenant Eviction Protections Authorization",
+        "requirement": "The proposed bill would authorize the city of Boston to implement tenant eviction protections.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "pending",
+        "enactment_status_evidence": "9/9/2024\nHouse\nAccompanied a study order, see\nH5035",
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": null,
+        "effective_date_evidence_kind": null,
+        "effective_date": null,
+        "conflict_note": null
+      }
+    }
+  ],
+  "posture": {
+    "declared": "bill_status_or_summary_page",
+    "evidence": "Bill H.3744\n193rd (2023 - 2024)",
+    "evidence_check": {
+      "status": "exact_match",
+      "normalization": null,
+      "start": 28,
+      "end": 59,
+      "occurrences": 1,
+      "model_span": "Bill H.3744\n193rd (2023 - 2024)",
+      "source_span": "Bill H.3744\n193rd (2023 - 2024)",
+      "reason": null,
+      "reconstructed": false,
+      "parts": [],
+      "crossed_artifacts": []
+    },
+    "established": "bill_status_or_summary_page",
+    "basis": "declared posture with verified evidence"
+  },
+  "base_dates": [],
+  "provision_inventory": [
+    {
+      "id": "P1",
+      "ref": "House, No. 3744",
+      "anchor": "An Act petition for a special law authorizing the city of Boston",
+      "summary": "Bill title proposing special law authorizing Boston to implement rent stabilization.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "rent_increase_limits",
+      "reason": null
+    },
+    {
+      "id": "P2",
+      "ref": "House, No. 3744",
+      "anchor": "By Representative Montaño of Boston, a petition (accompanied",
+      "summary": "Petition proposing special law authorizing Boston to implement tenant eviction protections.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "just_cause_eviction",
+      "reason": null
+    }
+  ],
+  "global_scope": [],
+  "source_view": {
+    "marker": "[[PAGE BREAK]]",
+    "segment_label": "[[SEGMENT {}]]",
+    "view_sha256": "f6bbdf7562ca5cc5c7d910c06d76daa9ee9847bfbf5452c569144a974f0391c2",
+    "segments": [
+      {
+        "id": 1,
+        "raw_start": 0,
+        "raw_end": 3627
+      }
+    ],
+    "artifacts_removed": 0,
+    "artifacts": []
+  },
+  "coverage": {
+    "inventory_valid": true,
+    "anchors_located": "2/2",
+    "after_primary": {
+      "uncovered": [],
+      "unaccepted": [],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "scope_mappings": {
+      "requested": 0,
+      "applies": 0,
+      "does_not_apply": 0,
+      "unresolved": 0
+    },
+    "inventory_items": 2,
+    "in_scope_items": 2,
+    "in_scope_refs": 2,
+    "uncertain": [],
+    "final": {
+      "uncovered": [],
+      "unaccepted": [],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "link_mismatches": [],
+    "provisions": [
+      {
+        "ref": "House",
+        "inventory_item": 0,
+        "provision_id": "P1",
+        "summary": "Bill title proposing special law authorizing Boston to implement rent stabilization.",
+        "category": "rent_increase_limits",
+        "candidates": [
+          0
+        ],
+        "accepted": [
+          0
+        ],
+        "basis": {
+          "0": "provision link; citation names it"
+        }
+      },
+      {
+        "ref": "House",
+        "inventory_item": 1,
+        "provision_id": "P2",
+        "summary": "Petition proposing special law authorizing Boston to implement tenant eviction protections.",
+        "category": "just_cause_eviction",
+        "candidates": [
+          1
+        ],
+        "accepted": [
+          1
+        ],
+        "basis": {
+          "1": "provision link; citation names it"
+        }
+      }
+    ],
+    "unrecorded_subdivisions": []
+  },
+  "scope_challenges": [],
+  "scope_mappings": [],
+  "legislative_session": {
+    "resolver": "ma-general-court-session/v1",
+    "jurisdiction": "Boston, MA",
+    "general_court": 193,
+    "label": "193rd (2023 - 2024)",
+    "raw_start": 40,
+    "raw_end": 59,
+    "years": [
+      2023,
+      2024
+    ],
+    "ends_by": "2025-02-01",
+    "consistent": true,
+    "other_labels": []
+  },
+  "empty_result": null,
+  "legacy_replay": null,
+  "repair": null,
+  "document_status": "complete",
+  "review_reasons": [],
+  "warnings": [],
+  "errors": [],
+  "raw_response_text": "{\n  \"document\": {\n    \"posture\": \"bill_status_or_summary_page\",\n    \"evidence\": \"Bill H.3744\\n193rd (2023 - 2024)\"\n  },\n  \"provisions\": [\n    {\n      \"id\": \"P1\",\n      \"ref\": \"House, No. 3744\",\n      \"anchor\": \"An Act petition for a special law authorizing the city of Boston\",\n      \"summary\": \"Bill title proposing special law authorizing Boston to implement rent stabilization.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"rent_increase_limits\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P2\",\n      \"ref\": \"House, No. 3744\",\n      \"anchor\": \"By Representative Montaño of Boston, a petition (accompanied\",\n      \"summary\": \"Petition proposing special law authorizing Boston to implement tenant eviction protections.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"just_cause_eviction\",\n      \"reason\": null\n    }\n  ],\n  \"global_scope\": [],\n  \"rules\": [\n    {\n      \"category\": \"rent_increase_limits\",\n      \"citation\": \"House, No. 3744\",\n      \"provision_ids\": [\n        \"P1\"\n      ],\n      \"source_basis\": \"official_bill_summary\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"An Act petition for a special law authorizing the city of Boston to implement rent stabilization and tenant eviction protections\"\n        }\n      ],\n      \"title\": \"Municipal Rent Stabilization Authorization\",\n      \"requirement\": \"The proposed bill would authorize the city of Boston to implement rent stabilization.\",\n      \"key_value\": null,\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"pending\",\n      \"enactment_status_evidence\": \"9/9/2024\\nHouse\\nAccompanied a study order, see\\nH5035\",\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": null,\n      \"effective_date_evidence_kind\": null,\n      \"effective_date\": null,\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"just_cause_eviction\",\n      \"citation\": \"House, No. 3744\",\n      \"provision_ids\": [\n        \"P2\"\n      ],\n      \"source_basis\": \"official_bill_summary\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"By Representative Montaño of Boston, a petition (accompanied by bill, House, No. 3744) of Samantha Montaño (with the approval of the mayor and city council) that the city of Boston be authorized to implement rent stabilization and tenant eviction protections.\"\n        }\n      ],\n      \"title\": \"Municipal Tenant Eviction Protections Authorization\",\n      \"requirement\": \"The proposed bill would authorize the city of Boston to implement tenant eviction protections.\",\n      \"key_value\": null,\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"pending\",\n      \"enactment_status_evidence\": \"9/9/2024\\nHouse\\nAccompanied a study order, see\\nH5035\",\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": null,\n      \"effective_date_evidence_kind\": null,\n      \"effective_date\": null,\n      \"conflict_note\": null\n    }\n  ],\n  \"no_rules_justification\": null\n}"
+}

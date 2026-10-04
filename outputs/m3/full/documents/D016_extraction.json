@@ -1,0 +1,2431 @@
+{
+  "disclaimer": "Not legal advice. Automated extraction for a research prototype; verify against the cited source.",
+  "run_at": "2026-10-04T02:56:17+00:00",
+  "source": {
+    "doc_id": "D016",
+    "jurisdiction": "CA",
+    "url": "https://calcivilrights.ca.gov/housing/",
+    "source_type": "official",
+    "retrieved_at": "2026-10-01T22:35Z",
+    "text_file": "text/D016.txt",
+    "content_sha256": "970d4bf7937f521aa964e72bedfa85873db32bcd6046dbebfacdbc38b1585061",
+    "body_chars": 26505
+  },
+  "provider": "gemini",
+  "model": "gemini-3.8-flash",
+  "prompt_version": "v7",
+  "prompt_sha256": "69d22fceec4ce28ea9d249049968afdcec6499591db5d2d86afadd3fe118200f",
+  "response_schema_sha256": "c15306da6f21dc72f06e78405f94ed61dc9e59288138cc98b5b5bf9b62ac403c",
+  "generation_settings": {
+    "temperature": null,
+    "seed": 20261001,
+    "thinking_level": "medium"
+  },
+  "as_of": "2026-10-01",
+  "cache_key": "a8d959c8e2848bf5fa45d3df0138e2b5f438a5213f3cfef69b95cc86ebfe7b19",
+  "cache_hit": false,
+  "cache_entry": "cache/extraction/a8d959c8e2848bf5fa45d3df0138e2b5f438a5213f3cfef69b95cc86ebfe7b19.json",
+  "provider_metadata": {
+    "api": "interactions.create",
+    "interaction_id": "",
+    "model": "gemini-3.8-flash",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 8966,
+      "output_tokens": 7010,
+      "thinking_tokens": 20619,
+      "total_tokens": 36595
+    }
+  },
+  "candidate_count": 8,
+  "accepted_count": 0,
+  "rules": [],
+  "candidates": [
+    {
+      "index": 0,
+      "origin": "primary",
+      "accepted": false,
+      "held": true,
+      "rejection_reasons": [
+        "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      ],
+      "provision_ids": [
+        "P19"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": null,
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 15787,
+        "end": 15980,
+        "occurrences": 1,
+        "model_span": "Service animals and emotional-support animals are not subject to breed, size, or weight restrictions ordinarily applied to pets, and tenants cannot be charged pet deposits or pet rent for them.",
+        "source_span": "Service animals and emotional-support animals are not subject to breed, size, or weight restrictions ordinarily applied to pets, and tenants cannot be charged pet deposits or pet rent for them.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "Service animals and emotional-support animals are not subject to breed, size, or weight restrictions ordinarily applied to pets, and tenants cannot be charged pet deposits or pet rent for them.",
+            "status": "exact_match",
+            "start": 15787,
+            "end": 15980
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": null,
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [
+        {
+          "id": "S1",
+          "kind": "coverage_condition",
+          "mode": "named_subject",
+          "governed_provision_ids": [
+            "P19"
+          ],
+          "basis": "named-subject mapping to P19 verified by repair",
+          "applied": true
+        }
+      ],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": null,
+        "applied_kind": null,
+        "effective_date": null,
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null,
+        "unresolved_reason": "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      },
+      "status_derivation": "temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-98e0703ccc",
+        "jurisdiction": "CA",
+        "level": "state",
+        "category": "security_deposits",
+        "status": null,
+        "title": "Prohibition on Pet Deposits and Pet Rent for Assistance Animals",
+        "requirement": "[Basis: official explanatory text, not operative legal text] Housing providers are prohibited from charging pet deposits or pet rent for service animals or emotional-support animals, and these animals cannot be subjected to breed, size, or weight restrictions applied to pets.",
+        "key_value": null,
+        "coverage_conditions": "FEHA covers the sale, rental, or occupancy of most housing accommodations in California, including single-family homes, multi-family homes, condominiums, apartments, short-term rentals, mobile homes, subsidized housing, dormitories, sober living facilities, group homes, residential motels, emergency shelters, homeless shelters, shelters for domestic violence survivors, RVs used as homes, farmworker housing, and boats used as homes. [FAQ - Covered Housing]",
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "FAQ - No Pets Rule and Service/Support Animals",
+        "source_doc_id": "D016",
+        "source_url": "https://calcivilrights.ca.gov/housing/",
+        "quoted_span": "Service animals and emotional-support animals are not subject to breed, size, or weight restrictions ordinarily applied to pets, and tenants cannot be charged pet deposits or pet rent for them.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "security_deposits",
+        "citation": "FAQ - No Pets Rule and Service/Support Animals",
+        "provision_ids": [
+          "P19"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "Service animals and emotional-support animals are not subject to breed, size, or weight restrictions ordinarily applied to pets, and tenants cannot be charged pet deposits or pet rent for them."
+          }
+        ],
+        "title": "Prohibition on Pet Deposits and Pet Rent for Assistance Animals",
+        "requirement": "Housing providers are prohibited from charging pet deposits or pet rent for service animals or emotional-support animals, and these animals cannot be subjected to breed, size, or weight restrictions applied to pets.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": null,
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": null,
+        "effective_date_evidence_kind": null,
+        "effective_date": null,
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 1,
+      "origin": "primary",
+      "accepted": false,
+      "held": true,
+      "rejection_reasons": [
+        "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      ],
+      "provision_ids": [
+        "P24"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": null,
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 20495,
+        "end": 20788,
+        "occurrences": 1,
+        "model_span": "California law protects tenants from discrimination based on how a tenant will be paying rent (“source of income”). This includes the State of California’s COVID-19 Rent Relief Program, Housing Choice (Section 8) vouchers, (SSI) social security disability benefits, or wages earned from a job.",
+        "source_span": "California law protects tenants from discrimination based on how a tenant will be paying rent (“source of income”). This includes the State of California’s COVID-19 Rent Relief Program, Housing Choice (Section 8) vouchers, (SSI) social security disability benefits, or wages earned from a job.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "California law protects tenants from discrimination based on how a tenant will be paying rent (“source of income”). This includes the State of California’s COVID-19 Rent Relief Program, Housing Choice (Section 8) vouchers, (SSI) social security disability benefits, or wages earned from a job.",
+            "status": "exact_match",
+            "start": 20495,
+            "end": 20788
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": null,
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [
+        {
+          "id": "S1",
+          "kind": "coverage_condition",
+          "mode": "named_subject",
+          "governed_provision_ids": [
+            "P24"
+          ],
+          "basis": "named-subject mapping to P24 verified by repair",
+          "applied": true
+        },
+        {
+          "id": "S2",
+          "kind": "exemption",
+          "mode": "named_subject",
+          "governed_provision_ids": [
+            "P24"
+          ],
+          "basis": "named-subject mapping to P24 verified by repair",
+          "applied": true
+        }
+      ],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": null,
+        "applied_kind": null,
+        "effective_date": null,
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null,
+        "unresolved_reason": "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      },
+      "status_derivation": "temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-34025922d5",
+        "jurisdiction": "CA",
+        "level": "state",
+        "category": "screening_restrictions",
+        "status": null,
+        "title": "Prohibition on Source of Income Discrimination",
+        "requirement": "[Basis: official explanatory text, not operative legal text] Housing providers cannot discriminate against tenants or applicants based on their source of income or method of rent payment, including COVID-19 Rent Relief, Section 8 vouchers, SSI disability benefits, or earned wages.",
+        "key_value": null,
+        "coverage_conditions": "FEHA covers the sale, rental, or occupancy of most housing accommodations in California, including single-family homes, multi-family homes, condominiums, apartments, short-term rentals, mobile homes, subsidized housing, dormitories, sober living facilities, group homes, residential motels, emergency shelters, homeless shelters, shelters for domestic violence survivors, RVs used as homes, farmworker housing, and boats used as homes. [FAQ - Covered Housing]",
+        "exemptions": "When an owner occupies a home and rents to one additional person, the owner may exclude applicants based on protected characteristics, but cannot make, print, or publish discriminatory statements, notices, or advertisements. [FAQ - Covered Entities and Exemptions]",
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "FAQ - Source of Income Discrimination",
+        "source_doc_id": "D016",
+        "source_url": "https://calcivilrights.ca.gov/housing/",
+        "quoted_span": "California law protects tenants from discrimination based on how a tenant will be paying rent (“source of income”). This includes the State of California’s COVID-19 Rent Relief Program, Housing Choice (Section 8) vouchers, (SSI) social security disability benefits, or wages earned from a job.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "screening_restrictions",
+        "citation": "FAQ - Source of Income Discrimination",
+        "provision_ids": [
+          "P24"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "California law protects tenants from discrimination based on how a tenant will be paying rent (“source of income”). This includes the State of California’s COVID-19 Rent Relief Program, Housing Choice (Section 8) vouchers, (SSI) social security disability benefits, or wages earned from a job."
+          }
+        ],
+        "title": "Prohibition on Source of Income Discrimination",
+        "requirement": "Housing providers cannot discriminate against tenants or applicants based on their source of income or method of rent payment, including COVID-19 Rent Relief, Section 8 vouchers, SSI disability benefits, or earned wages.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": null,
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": null,
+        "effective_date_evidence_kind": null,
+        "effective_date": null,
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 2,
+      "origin": "primary",
+      "accepted": false,
+      "held": true,
+      "rejection_reasons": [
+        "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      ],
+      "provision_ids": [
+        "P24"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": null,
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 20847,
+        "end": 21057,
+        "occurrences": 1,
+        "model_span": "Refusal to comply with the requirements of any public assistance, rental assistance, or housing subsidy program, such as refusing to fill out necessary paperwork or to provide necessary information or documents",
+        "source_span": "Refusal to comply with the requirements of any public assistance, rental assistance, or housing subsidy program, such as refusing to fill out necessary paperwork or to provide necessary information or documents",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "Refusal to comply with the requirements of any public assistance, rental assistance, or housing subsidy program, such as refusing to fill out necessary paperwork or to provide necessary information or documents",
+            "status": "exact_match",
+            "start": 20847,
+            "end": 21057
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": null,
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [
+        {
+          "id": "S1",
+          "kind": "coverage_condition",
+          "mode": "named_subject",
+          "governed_provision_ids": [
+            "P24"
+          ],
+          "basis": "named-subject mapping to P24 verified by repair",
+          "applied": true
+        },
+        {
+          "id": "S2",
+          "kind": "exemption",
+          "mode": "named_subject",
+          "governed_provision_ids": [
+            "P24"
+          ],
+          "basis": "named-subject mapping to P24 verified by repair",
+          "applied": true
+        }
+      ],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": null,
+        "applied_kind": null,
+        "effective_date": null,
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null,
+        "unresolved_reason": "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      },
+      "status_derivation": "temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-c01f2a7661",
+        "jurisdiction": "CA",
+        "level": "state",
+        "category": "screening_restrictions",
+        "status": null,
+        "title": "Duty to Comply with Subsidy and Rental Assistance Program Requirements",
+        "requirement": "[Basis: official explanatory text, not operative legal text] Housing providers are prohibited from refusing to comply with the requirements of public assistance, rental assistance, or housing subsidy programs, such as by refusing to complete required paperwork or provide necessary information or documents.",
+        "key_value": null,
+        "coverage_conditions": "FEHA covers the sale, rental, or occupancy of most housing accommodations in California, including single-family homes, multi-family homes, condominiums, apartments, short-term rentals, mobile homes, subsidized housing, dormitories, sober living facilities, group homes, residential motels, emergency shelters, homeless shelters, shelters for domestic violence survivors, RVs used as homes, farmworker housing, and boats used as homes. [FAQ - Covered Housing]",
+        "exemptions": "When an owner occupies a home and rents to one additional person, the owner may exclude applicants based on protected characteristics, but cannot make, print, or publish discriminatory statements, notices, or advertisements. [FAQ - Covered Entities and Exemptions]",
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "FAQ - Source of Income Discrimination",
+        "source_doc_id": "D016",
+        "source_url": "https://calcivilrights.ca.gov/housing/",
+        "quoted_span": "Refusal to comply with the requirements of any public assistance, rental assistance, or housing subsidy program, such as refusing to fill out necessary paperwork or to provide necessary information or documents",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "screening_restrictions",
+        "citation": "FAQ - Source of Income Discrimination",
+        "provision_ids": [
+          "P24"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "Refusal to comply with the requirements of any public assistance, rental assistance, or housing subsidy program, such as refusing to fill out necessary paperwork or to provide necessary information or documents"
+          }
+        ],
+        "title": "Duty to Comply with Subsidy and Rental Assistance Program Requirements",
+        "requirement": "Housing providers are prohibited from refusing to comply with the requirements of public assistance, rental assistance, or housing subsidy programs, such as by refusing to complete required paperwork or provide necessary information or documents.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": null,
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": null,
+        "effective_date_evidence_kind": null,
+        "effective_date": null,
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 3,
+      "origin": "primary",
+      "accepted": false,
+      "held": true,
+      "rejection_reasons": [
+        "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      ],
+      "provision_ids": [
+        "P24"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": null,
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 21058,
+        "end": 21342,
+        "occurrences": 1,
+        "model_span": "Applying different terms, conditions, and privileges to a tenancy based on the applicant or renter’s source of income, such as charging a higher security deposit for Section 8 applicants or refusing to allow tenants who are using rental assistance from using a pool or other amenities",
+        "source_span": "Applying different terms, conditions, and privileges to a tenancy based on the applicant or renter’s source of income, such as charging a higher security deposit for Section 8 applicants or refusing to allow tenants who are using rental assistance from using a pool or other amenities",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "Applying different terms, conditions, and privileges to a tenancy based on the applicant or renter’s source of income, such as charging a higher security deposit for Section 8 applicants or refusing to allow tenants who are using rental assistance from using a pool or other amenities",
+            "status": "exact_match",
+            "start": 21058,
+            "end": 21342
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": null,
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [
+        {
+          "id": "S1",
+          "kind": "coverage_condition",
+          "mode": "named_subject",
+          "governed_provision_ids": [
+            "P24"
+          ],
+          "basis": "named-subject mapping to P24 verified by repair",
+          "applied": true
+        },
+        {
+          "id": "S2",
+          "kind": "exemption",
+          "mode": "named_subject",
+          "governed_provision_ids": [
+            "P24"
+          ],
+          "basis": "named-subject mapping to P24 verified by repair",
+          "applied": true
+        }
+      ],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": null,
+        "applied_kind": null,
+        "effective_date": null,
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null,
+        "unresolved_reason": "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      },
+      "status_derivation": "temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-ae0115d059",
+        "jurisdiction": "CA",
+        "level": "state",
+        "category": "screening_restrictions",
+        "status": null,
+        "title": "Prohibition on Unequal Tenancy Terms or Security Deposits Based on Source of Income",
+        "requirement": "[Basis: official explanatory text, not operative legal text] Housing providers are prohibited from applying different terms, conditions, or privileges to a tenancy based on source of income, including charging higher security deposits for Section 8 applicants or barring rental assistance recipients from pools or amenities.",
+        "key_value": null,
+        "coverage_conditions": "FEHA covers the sale, rental, or occupancy of most housing accommodations in California, including single-family homes, multi-family homes, condominiums, apartments, short-term rentals, mobile homes, subsidized housing, dormitories, sober living facilities, group homes, residential motels, emergency shelters, homeless shelters, shelters for domestic violence survivors, RVs used as homes, farmworker housing, and boats used as homes. [FAQ - Covered Housing]",
+        "exemptions": "When an owner occupies a home and rents to one additional person, the owner may exclude applicants based on protected characteristics, but cannot make, print, or publish discriminatory statements, notices, or advertisements. [FAQ - Covered Entities and Exemptions]",
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "FAQ - Source of Income Discrimination",
+        "source_doc_id": "D016",
+        "source_url": "https://calcivilrights.ca.gov/housing/",
+        "quoted_span": "Applying different terms, conditions, and privileges to a tenancy based on the applicant or renter’s source of income, such as charging a higher security deposit for Section 8 applicants or refusing to allow tenants who are using rental assistance from using a pool or other amenities",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "screening_restrictions",
+        "citation": "FAQ - Source of Income Discrimination",
+        "provision_ids": [
+          "P24"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "Applying different terms, conditions, and privileges to a tenancy based on the applicant or renter’s source of income, such as charging a higher security deposit for Section 8 applicants or refusing to allow tenants who are using rental assistance from using a pool or other amenities"
+          }
+        ],
+        "title": "Prohibition on Unequal Tenancy Terms or Security Deposits Based on Source of Income",
+        "requirement": "Housing providers are prohibited from applying different terms, conditions, or privileges to a tenancy based on source of income, including charging higher security deposits for Section 8 applicants or barring rental assistance recipients from pools or amenities.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": null,
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": null,
+        "effective_date_evidence_kind": null,
+        "effective_date": null,
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 4,
+      "origin": "primary",
+      "accepted": false,
+      "held": true,
+      "rejection_reasons": [
+        "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      ],
+      "provision_ids": [
+        "P24"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": null,
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 21343,
+        "end": 21462,
+        "occurrences": 1,
+        "model_span": "Advertising a preference or limitation based on a tenant’s source of income, such as including in an a  “No Section 8.”",
+        "source_span": "Advertising a preference or limitation based on a tenant’s source of income, such as including in an a  “No Section 8.”",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "Advertising a preference or limitation based on a tenant’s source of income, such as including in an a  “No Section 8.”",
+            "status": "exact_match",
+            "start": 21343,
+            "end": 21462
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": null,
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [
+        {
+          "id": "S1",
+          "kind": "coverage_condition",
+          "mode": "named_subject",
+          "governed_provision_ids": [
+            "P24"
+          ],
+          "basis": "named-subject mapping to P24 verified by repair",
+          "applied": true
+        },
+        {
+          "id": "S2",
+          "kind": "exemption",
+          "mode": "named_subject",
+          "governed_provision_ids": [
+            "P24"
+          ],
+          "basis": "named-subject mapping to P24 verified by repair",
+          "applied": true
+        }
+      ],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": null,
+        "applied_kind": null,
+        "effective_date": null,
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null,
+        "unresolved_reason": "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      },
+      "status_derivation": "temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-956c957887",
+        "jurisdiction": "CA",
+        "level": "state",
+        "category": "screening_restrictions",
+        "status": null,
+        "title": "Prohibition on Discriminatory Source of Income Advertising",
+        "requirement": "[Basis: official explanatory text, not operative legal text] Housing providers are prohibited from advertising preferences or limitations based on an applicant's or tenant's source of income, such as including 'No Section 8' in an advertisement.",
+        "key_value": null,
+        "coverage_conditions": "FEHA covers the sale, rental, or occupancy of most housing accommodations in California, including single-family homes, multi-family homes, condominiums, apartments, short-term rentals, mobile homes, subsidized housing, dormitories, sober living facilities, group homes, residential motels, emergency shelters, homeless shelters, shelters for domestic violence survivors, RVs used as homes, farmworker housing, and boats used as homes. [FAQ - Covered Housing]",
+        "exemptions": "When an owner occupies a home and rents to one additional person, the owner may exclude applicants based on protected characteristics, but cannot make, print, or publish discriminatory statements, notices, or advertisements. [FAQ - Covered Entities and Exemptions]",
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "FAQ - Source of Income Discrimination",
+        "source_doc_id": "D016",
+        "source_url": "https://calcivilrights.ca.gov/housing/",
+        "quoted_span": "Advertising a preference or limitation based on a tenant’s source of income, such as including in an a  “No Section 8.”",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "screening_restrictions",
+        "citation": "FAQ - Source of Income Discrimination",
+        "provision_ids": [
+          "P24"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "Advertising a preference or limitation based on a tenant’s source of income, such as including in an a  “No Section 8.”"
+          }
+        ],
+        "title": "Prohibition on Discriminatory Source of Income Advertising",
+        "requirement": "Housing providers are prohibited from advertising preferences or limitations based on an applicant's or tenant's source of income, such as including 'No Section 8' in an advertisement.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": null,
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": null,
+        "effective_date_evidence_kind": null,
+        "effective_date": null,
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 5,
+      "origin": "primary",
+      "accepted": false,
+      "held": true,
+      "rejection_reasons": [
+        "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      ],
+      "provision_ids": [
+        "P25"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": null,
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 21786,
+        "end": 22005,
+        "occurrences": 1,
+        "model_span": "Housing  providers cannot consider some types of criminal history including arrests that did not lead to a conviction, records that are sealed or expunged, or records or matters processed in the juvenile justice system.",
+        "source_span": "Housing  providers cannot consider some types of criminal history including arrests that did not lead to a conviction, records that are sealed or expunged, or records or matters processed in the juvenile justice system.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "Housing  providers cannot consider some types of criminal history including arrests that did not lead to a conviction, records that are sealed or expunged, or records or matters processed in the juvenile justice system.",
+            "status": "exact_match",
+            "start": 21786,
+            "end": 22005
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": null,
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [
+        {
+          "id": "S1",
+          "kind": "coverage_condition",
+          "mode": "named_subject",
+          "governed_provision_ids": [
+            "P25"
+          ],
+          "basis": "named-subject mapping to P25 verified by repair",
+          "applied": true
+        }
+      ],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": null,
+        "applied_kind": null,
+        "effective_date": null,
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null,
+        "unresolved_reason": "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      },
+      "status_derivation": "temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-e425368d5d",
+        "jurisdiction": "CA",
+        "level": "state",
+        "category": "screening_restrictions",
+        "status": null,
+        "title": "Prohibited Criminal History Records in Applicant Screening",
+        "requirement": "[Basis: official explanatory text, not operative legal text] Housing providers cannot consider certain types of criminal history when evaluating applicants, including arrests not leading to conviction, sealed or expunged records, and juvenile justice matters.",
+        "key_value": null,
+        "coverage_conditions": "FEHA covers the sale, rental, or occupancy of most housing accommodations in California, including single-family homes, multi-family homes, condominiums, apartments, short-term rentals, mobile homes, subsidized housing, dormitories, sober living facilities, group homes, residential motels, emergency shelters, homeless shelters, shelters for domestic violence survivors, RVs used as homes, farmworker housing, and boats used as homes. [FAQ - Covered Housing]",
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "FAQ - Criminal History Screening",
+        "source_doc_id": "D016",
+        "source_url": "https://calcivilrights.ca.gov/housing/",
+        "quoted_span": "Housing  providers cannot consider some types of criminal history including arrests that did not lead to a conviction, records that are sealed or expunged, or records or matters processed in the juvenile justice system.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "screening_restrictions",
+        "citation": "FAQ - Criminal History Screening",
+        "provision_ids": [
+          "P25"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "Housing  providers cannot consider some types of criminal history including arrests that did not lead to a conviction, records that are sealed or expunged, or records or matters processed in the juvenile justice system."
+          }
+        ],
+        "title": "Prohibited Criminal History Records in Applicant Screening",
+        "requirement": "Housing providers cannot consider certain types of criminal history when evaluating applicants, including arrests not leading to conviction, sealed or expunged records, and juvenile justice matters.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": null,
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": null,
+        "effective_date_evidence_kind": null,
+        "effective_date": null,
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 6,
+      "origin": "primary",
+      "accepted": false,
+      "held": true,
+      "rejection_reasons": [
+        "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      ],
+      "provision_ids": [
+        "P25"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": null,
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 22006,
+        "end": 22109,
+        "occurrences": 1,
+        "model_span": "Housing providers are also prohibited from having “blanket bans” of all people with a criminal history.",
+        "source_span": "Housing providers are also prohibited from having “blanket bans” of all people with a criminal history.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "Housing providers are also prohibited from having “blanket bans” of all people with a criminal history.",
+            "status": "exact_match",
+            "start": 22006,
+            "end": 22109
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": null,
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [
+        {
+          "id": "S1",
+          "kind": "coverage_condition",
+          "mode": "named_subject",
+          "governed_provision_ids": [
+            "P25"
+          ],
+          "basis": "named-subject mapping to P25 verified by repair",
+          "applied": true
+        }
+      ],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": null,
+        "applied_kind": null,
+        "effective_date": null,
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null,
+        "unresolved_reason": "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      },
+      "status_derivation": "temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-200a025c46",
+        "jurisdiction": "CA",
+        "level": "state",
+        "category": "screening_restrictions",
+        "status": null,
+        "title": "Prohibition on Blanket Bans of Applicants with Criminal Records",
+        "requirement": "[Basis: official explanatory text, not operative legal text] Housing providers are prohibited from imposing blanket bans disqualifying all individuals who have a criminal history.",
+        "key_value": null,
+        "coverage_conditions": "FEHA covers the sale, rental, or occupancy of most housing accommodations in California, including single-family homes, multi-family homes, condominiums, apartments, short-term rentals, mobile homes, subsidized housing, dormitories, sober living facilities, group homes, residential motels, emergency shelters, homeless shelters, shelters for domestic violence survivors, RVs used as homes, farmworker housing, and boats used as homes. [FAQ - Covered Housing]",
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "FAQ - Criminal History Screening",
+        "source_doc_id": "D016",
+        "source_url": "https://calcivilrights.ca.gov/housing/",
+        "quoted_span": "Housing providers are also prohibited from having “blanket bans” of all people with a criminal history.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "screening_restrictions",
+        "citation": "FAQ - Criminal History Screening",
+        "provision_ids": [
+          "P25"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "Housing providers are also prohibited from having “blanket bans” of all people with a criminal history."
+          }
+        ],
+        "title": "Prohibition on Blanket Bans of Applicants with Criminal Records",
+        "requirement": "Housing providers are prohibited from imposing blanket bans disqualifying all individuals who have a criminal history.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": null,
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": null,
+        "effective_date_evidence_kind": null,
+        "effective_date": null,
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 7,
+      "origin": "primary",
+      "accepted": false,
+      "held": true,
+      "rejection_reasons": [
+        "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      ],
+      "provision_ids": [
+        "P25"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": null,
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 22110,
+        "end": 22560,
+        "occurrences": 1,
+        "model_span": "If a housing provider intends to deny someone’s application based on a criminal conviction, it must be directly-related to someone’s ability to be a good tenant and to not be a threat to the health and safety of others and the property. In determining whether a criminal conviction is directly-related, a housing provider should consider the nature and severity of the crime and the amount of time that has passed since the criminal conduct occurred.",
+        "source_span": "If a housing provider intends to deny someone’s application based on a criminal conviction, it must be directly-related to someone’s ability to be a good tenant and to not be a threat to the health and safety of others and the property. In determining whether a criminal conviction is directly-related, a housing provider should consider the nature and severity of the crime and the amount of time that has passed since the criminal conduct occurred.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "If a housing provider intends to deny someone’s application based on a criminal conviction, it must be directly-related to someone’s ability to be a good tenant and to not be a threat to the health and safety of others and the property. In determining whether a criminal conviction is directly-related, a housing provider should consider the nature and severity of the crime and the amount of time that has passed since the criminal conduct occurred.",
+            "status": "exact_match",
+            "start": 22110,
+            "end": 22560
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": null,
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [
+        {
+          "id": "S1",
+          "kind": "coverage_condition",
+          "mode": "named_subject",
+          "governed_provision_ids": [
+            "P25"
+          ],
+          "basis": "named-subject mapping to P25 verified by repair",
+          "applied": true
+        }
+      ],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": null,
+        "applied_kind": null,
+        "effective_date": null,
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null,
+        "unresolved_reason": "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      },
+      "status_derivation": "temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-44531eb62b",
+        "jurisdiction": "CA",
+        "level": "state",
+        "category": "screening_restrictions",
+        "status": null,
+        "title": "Direct-Relationship Requirement for Criminal Conviction Denials",
+        "requirement": "[Basis: official explanatory text, not operative legal text] A housing provider denying an application based on a criminal conviction must demonstrate that the conviction is directly related to tenancy fitness and non-threat to health, safety, and property, taking into account the crime's nature and severity and the time elapsed.",
+        "key_value": null,
+        "coverage_conditions": "FEHA covers the sale, rental, or occupancy of most housing accommodations in California, including single-family homes, multi-family homes, condominiums, apartments, short-term rentals, mobile homes, subsidized housing, dormitories, sober living facilities, group homes, residential motels, emergency shelters, homeless shelters, shelters for domestic violence survivors, RVs used as homes, farmworker housing, and boats used as homes. [FAQ - Covered Housing]",
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "FAQ - Criminal History Screening",
+        "source_doc_id": "D016",
+        "source_url": "https://calcivilrights.ca.gov/housing/",
+        "quoted_span": "If a housing provider intends to deny someone’s application based on a criminal conviction, it must be directly-related to someone’s ability to be a good tenant and to not be a threat to the health and safety of others and the property. In determining whether a criminal conviction is directly-related, a housing provider should consider the nature and severity of the crime and the amount of time that has passed since the criminal conduct occurred.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "screening_restrictions",
+        "citation": "FAQ - Criminal History Screening",
+        "provision_ids": [
+          "P25"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "If a housing provider intends to deny someone’s application based on a criminal conviction, it must be directly-related to someone’s ability to be a good tenant and to not be a threat to the health and safety of others and the property. In determining whether a criminal conviction is directly-related, a housing provider should consider the nature and severity of the crime and the amount of time that has passed since the criminal conduct occurred."
+          }
+        ],
+        "title": "Direct-Relationship Requirement for Criminal Conviction Denials",
+        "requirement": "A housing provider denying an application based on a criminal conviction must demonstrate that the conviction is directly related to tenancy fitness and non-threat to health, safety, and property, taking into account the crime's nature and severity and the time elapsed.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": null,
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": null,
+        "effective_date_evidence_kind": null,
+        "effective_date": null,
+        "conflict_note": null
+      }
+    }
+  ],
+  "posture": {
+    "declared": "official_explanatory_page",
+    "evidence": "The California Civil Rights Department (CRD) is responsible for enforcing state fair housing laws that make it illegal to discriminate against or harass someone because of a protected characteristic",
+    "evidence_check": {
+      "status": "exact_match",
+      "normalization": null,
+      "start": 37,
+      "end": 235,
+      "occurrences": 1,
+      "model_span": "The California Civil Rights Department (CRD) is responsible for enforcing state fair housing laws that make it illegal to discriminate against or harass someone because of a protected characteristic",
+      "source_span": "The California Civil Rights Department (CRD) is responsible for enforcing state fair housing laws that make it illegal to discriminate against or harass someone because of a protected characteristic",
+      "reason": null,
+      "reconstructed": false,
+      "parts": [],
+      "crossed_artifacts": []
+    },
+    "established": "official_explanatory_page",
+    "basis": "declared posture with verified evidence"
+  },
+  "base_dates": [],
+  "provision_inventory": [
+    {
+      "id": "P1",
+      "ref": "Housing Discrimination Overview",
+      "anchor": "The California Civil Rights Department (CRD) is responsible for enforcing",
+      "summary": "Overview of CRD enforcement authority and general fair housing non-discrimination protections under California law.",
+      "role": "enforcement",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "general fair housing enforcement authority outside the six official categories"
+    },
+    {
+      "id": "P2",
+      "ref": "FEHA Scope and Applicability",
+      "anchor": "California’s Fair Employment and Housing Act (also known as FEHA)",
+      "summary": "Application of FEHA to housing providers and general prohibition against discrimination and harassment.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "general fair housing prohibition outside the six official categories"
+    },
+    {
+      "id": "P3",
+      "ref": "Discriminatory Actions Examples",
+      "anchor": "Examples of actions that could be discriminatory if based on",
+      "summary": "Illustrative list of discriminatory housing actions based on protected characteristics.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "illustrative examples of general housing discrimination; substantive screening and deposit rules are extracted from specific FAQ provisions below"
+    },
+    {
+      "id": "P4",
+      "ref": "Protected Characteristics Scope",
+      "anchor": "California law protects individuals from illegal discrimination and harassment",
+      "summary": "Scope of protection covering actual, perceived, intersecting, and associational protected characteristics.",
+      "role": "scope_condition",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "general scope condition defining protected characteristics under fair housing law"
+    },
+    {
+      "id": "P5",
+      "ref": "Protected Characteristics List",
+      "anchor": "Protected characteristics include::\nRace\nColor\nAncestry",
+      "summary": "Enumerated list of protected characteristics under FEHA.",
+      "role": "definition",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "definitions of protected characteristics under civil rights law"
+    },
+    {
+      "id": "P6",
+      "ref": "Related Protections",
+      "anchor": "FEHA also provides protections for people and circumstances related",
+      "summary": "Summary of protections for licensed family childcare and people with criminal histories.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "general summary statement; substantive criminal history screening rules extracted below"
+    },
+    {
+      "id": "P7",
+      "ref": "Available Remedies",
+      "anchor": "State law provides for a variety of remedies for",
+      "summary": "General statutory remedies available for victims of housing discrimination.",
+      "role": "remedy",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "generic statutory remedies for general housing discrimination not tied to a specific standalone housing rule record"
+    },
+    {
+      "id": "P8",
+      "ref": "FAQ - Covered Housing",
+      "anchor": "The Fair Employment and Housing Act (FEHA) covers the sale,",
+      "summary": "Types of housing accommodations covered by FEHA.",
+      "role": "scope_condition",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "scope condition for FEHA housing coverage; see global_scope"
+    },
+    {
+      "id": "P9",
+      "ref": "FAQ - Covered Entities and Exemptions",
+      "anchor": "Most people and entities that are housing providers or who",
+      "summary": "Entities covered by FEHA and specific exemptions for single-lodger rentals, shared living spaces, senior housing, and homeless youth housing.",
+      "role": "scope_condition",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "scope conditions and exemptions; see global_scope"
+    },
+    {
+      "id": "P10",
+      "ref": "FAQ - Familial Status Discrimination",
+      "anchor": "Generally, housing providers cannot discriminate against families with children.",
+      "summary": "Protections against discrimination based on familial status and exception for senior housing.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "general fair housing familial status protections outside the six official categories"
+    },
+    {
+      "id": "P11",
+      "ref": "FAQ - Senior Housing Criteria",
+      "anchor": "Yes, but only when the facility or community is:",
+      "summary": "Criteria and conditions required for qualifying senior housing facilities and mobile home parks.",
+      "role": "exemption",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "statutory criteria for senior housing exemptions outside the six official categories"
+    },
+    {
+      "id": "P12",
+      "ref": "FAQ - Disability Definition",
+      "anchor": "The Fair Employment and Housing Act defines a disability as",
+      "summary": "Definition of mental and physical disability, perceived disability, and associational disability under FEHA.",
+      "role": "definition",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "statutory definitions of disability outside the six official categories"
+    },
+    {
+      "id": "P13",
+      "ref": "FAQ - Disability Accommodations Entitlement",
+      "anchor": "Yes. Tenants, residents, and applicants with disabilities are entitled",
+      "summary": "Entitlement of tenants, residents, and applicants with disabilities to reasonable accommodations and modifications.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "disability reasonable accommodation rights outside the six official categories"
+    },
+    {
+      "id": "P14",
+      "ref": "FAQ - Reasonable Accommodation Definition",
+      "anchor": "A reasonable accommodation is an exception, change, or adjustment",
+      "summary": "Definition and non-exhaustive examples of reasonable accommodations and non-accommodations.",
+      "role": "definition",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "definitions and examples of reasonable accommodations outside the six official categories"
+    },
+    {
+      "id": "P15",
+      "ref": "FAQ - Accommodation Request Format",
+      "anchor": "No. A request for reasonable accommodation does not need",
+      "summary": "Rules providing that accommodation requests need not be in writing or use specific wording.",
+      "role": "procedure",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "accommodation request procedures outside the six official categories"
+    },
+    {
+      "id": "P16",
+      "ref": "FAQ - Accommodation Response and Interactive Process",
+      "anchor": "Requests for accommodations must be considered promptly by the housing",
+      "summary": "Requirement that housing providers promptly respond and engage in a timely, good-faith interactive process.",
+      "role": "procedure",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "interactive process procedures outside the six official categories"
+    },
+    {
+      "id": "P17",
+      "ref": "FAQ - Accommodation Verification Inquiries",
+      "anchor": "Yes. However, if the need for a reasonable accommodation",
+      "summary": "Permissible and prohibited inquiries regarding disability verification documentation.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "disability accommodation documentation rules outside the six official categories"
+    },
+    {
+      "id": "P18",
+      "ref": "FAQ - Accommodation Documentation Sources",
+      "anchor": "No. Documentation can come from any reliable third party",
+      "summary": "Permitted third-party and self-verification documentation sources for disability accommodations.",
+      "role": "procedure",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "accommodation documentation procedures outside the six official categories"
+    },
+    {
+      "id": "P19",
+      "ref": "FAQ - No Pets Rule and Service/Support Animals",
+      "anchor": "Yes, but the housing provider must make exceptions to",
+      "summary": "Requirement to grant exceptions to no-pets policies for assistance animals, and prohibition on pet deposits or pet rent.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "security_deposits",
+      "reason": null
+    },
+    {
+      "id": "P20",
+      "ref": "FAQ - Service Animals vs ESAs",
+      "anchor": "An emotional support animal (ESA) is an animal that",
+      "summary": "Definitions and distinctions between emotional support animals and trained service animals.",
+      "role": "definition",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "definitions of assistance animals outside the six official categories"
+    },
+    {
+      "id": "P21",
+      "ref": "FAQ - AB 468 and ESAs",
+      "anchor": "No. In 2021, California enacted Assembly Bill 468,",
+      "summary": "Explanation of AB 468 requirements and non-abrogation of fair housing reasonable accommodation rights.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "statutory interpretation regarding emotional support animal retail rules outside the six official categories"
+    },
+    {
+      "id": "P22",
+      "ref": "FAQ - Reasonable Modification Definition",
+      "anchor": "A reasonable modification is different from a reasonable accommodation because",
+      "summary": "Definition and examples of reasonable physical modifications to housing units and common areas.",
+      "role": "definition",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "definitions of physical modifications outside the six official categories"
+    },
+    {
+      "id": "P23",
+      "ref": "FAQ - Modification Payment Responsibility",
+      "anchor": "In most instances, the tenant is responsible for all",
+      "summary": "Allocation of modification costs to tenants and exceptions where housing providers must pay.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "rules allocating physical modification costs outside the six official categories"
+    },
+    {
+      "id": "P24",
+      "ref": "FAQ - Source of Income Discrimination",
+      "anchor": "No. California law protects tenants from discrimination based on",
+      "summary": "Prohibitions against source of income discrimination, refusal to comply with subsidy program requirements, differentiated terms or deposits, and discriminatory advertising.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "screening_restrictions",
+      "reason": null
+    },
+    {
+      "id": "P25",
+      "ref": "FAQ - Criminal History Screening",
+      "anchor": "Yes.  Generally, a housing provider may check the",
+      "summary": "Restrictions on criminal history screening, prohibited criminal records, blanket ban prohibition, and direct-relationship requirements for conviction denials.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "screening_restrictions",
+      "reason": null
+    },
+    {
+      "id": "P26",
+      "ref": "FAQ - Harassment Protection",
+      "anchor": "Yes. California’s fair housing laws prohibit housing providers (including",
+      "summary": "Protections against housing harassment and provider duty to correct third-party harassment.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "fair housing harassment protections outside the six official categories"
+    },
+    {
+      "id": "P27",
+      "ref": "FAQ - Citizenship/Immigration Status",
+      "anchor": "No. California’s fair housing laws protect Californians regardless of",
+      "summary": "Protections regardless of citizenship or immigration status and CRD policy not to inquire.",
+      "role": "procedure",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "administrative enforcement policy outside the six official categories"
+    },
+    {
+      "id": "P28",
+      "ref": "FAQ - Complaint Filing Deadline",
+      "anchor": "In general, a complaint of housing discrimination must be",
+      "summary": "One-year limitation period for filing an administrative housing discrimination complaint with CRD.",
+      "role": "procedure",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "administrative statute of limitations outside the six official categories"
+    },
+    {
+      "id": "P29",
+      "ref": "FAQ - HUD and CRD Dual Filing",
+      "anchor": "If a complaint has been filed with HUD, it",
+      "summary": "Procedures for dual-filing and referral between HUD and CRD.",
+      "role": "procedure",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "inter-agency dual-filing procedures outside the six official categories"
+    },
+    {
+      "id": "P30",
+      "ref": "FAQ - Court vs CRD Filing",
+      "anchor": "No. A person may file directly in court without",
+      "summary": "Right to file directly in court without administrative exhaustion and two-year judicial limitation period.",
+      "role": "procedure",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "judicial complaint filing rules and statutes of limitations outside the six official categories"
+    },
+    {
+      "id": "P31",
+      "ref": "FAQ - CRD Subject Matter Jurisdiction",
+      "anchor": "CRD does not help people find housing. CRD cannot",
+      "summary": "Non-discrimination tenancy disputes outside CRD's statutory jurisdiction.",
+      "role": "scope_condition",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "administrative agency jurisdiction limits outside the six official categories"
+    },
+    {
+      "id": "P32",
+      "ref": "FAQ - Subprime Mortgage Lending Jurisdiction",
+      "anchor": "Predatory lending is primarily a consumer law issue affecting",
+      "summary": "Jurisdictional boundaries between UCL consumer finance enforcement and FEHA discrimination in mortgage lending.",
+      "role": "scope_condition",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "mortgage lending consumer law jurisdiction outside the six official categories"
+    }
+  ],
+  "global_scope": [
+    {
+      "id": "S1",
+      "kind": "coverage_condition",
+      "statement": "FEHA covers the sale, rental, or occupancy of most housing accommodations in California, including single-family homes, multi-family homes, condominiums, apartments, short-term rentals, mobile homes, subsidized housing, dormitories, sober living facilities, group homes, residential motels, emergency shelters, homeless shelters, shelters for domestic violence survivors, RVs used as homes, farmworker housing, and boats used as homes.",
+      "citation": "FAQ - Covered Housing",
+      "scope_mode": "structural",
+      "scope_quote": "The Fair Employment and Housing Act (FEHA) covers the sale, rental, or occupancy of most housing accommodations in California",
+      "source_provision_id": "P8",
+      "governed_provision_ids": [
+        "P19",
+        "P24",
+        "P25"
+      ],
+      "evidence_parts": [
+        {
+          "segment_id": 1,
+          "quoted_text": "The Fair Employment and Housing Act (FEHA) covers the sale, rental, or occupancy of most housing accommodations in California, including single-family homes, multi-family homes, condominiums, apartments, short-term rentals, mobile homes, subsidized housing, dormitories, sober living facilities,  group homes, residential motels,\nemergency shelters, homeless shelters, shelters for survivors of domestic violence\n, recreational vehicles (RVs) used as a home, farmworker housing, and boats used as homes."
+        }
+      ],
+      "evidence_check": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 5324,
+        "end": 5827,
+        "occurrences": 1,
+        "model_span": "The Fair Employment and Housing Act (FEHA) covers the sale, rental, or occupancy of most housing accommodations in California, including single-family homes, multi-family homes, condominiums, apartments, short-term rentals, mobile homes, subsidized housing, dormitories, sober living facilities,  group homes, residential motels,\nemergency shelters, homeless shelters, shelters for survivors of domestic violence\n, recreational vehicles (RVs) used as a home, farmworker housing, and boats used as homes.",
+        "source_span": "The Fair Employment and Housing Act (FEHA) covers the sale, rental, or occupancy of most housing accommodations in California, including single-family homes, multi-family homes, condominiums, apartments, short-term rentals, mobile homes, subsidized housing, dormitories, sober living facilities,  group homes, residential motels,\nemergency shelters, homeless shelters, shelters for survivors of domestic violence\n, recreational vehicles (RVs) used as a home, farmworker housing, and boats used as homes.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "The Fair Employment and Housing Act (FEHA) covers the sale, rental, or occupancy of most housing accommodations in California, including single-family homes, multi-family homes, condominiums, apartments, short-term rentals, mobile homes, subsidized housing, dormitories, sober living facilities,  group homes, residential motels,\nemergency shelters, homeless shelters, shelters for survivors of domestic violence\n, recreational vehicles (RVs) used as a home, farmworker housing, and boats used as homes.",
+            "status": "exact_match",
+            "start": 5324,
+            "end": 5827
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "propagated": true,
+      "problem": null,
+      "scope": {
+        "resolver": "scope-modes/v1",
+        "declared_mode": "structural",
+        "mode": "named_subject",
+        "scope_words": {
+          "scope_quote": "The Fair Employment and Housing Act (FEHA) covers the sale, rental, or occupancy of most housing accommodations in California",
+          "scope_quote_check": "exact_match",
+          "text": "The Fair Employment and Housing Act (FEHA) covers the sale, rental, or occupancy of most housing accommodations in California",
+          "from": "scope_quote"
+        },
+        "detail": null,
+        "propagate_ids": [],
+        "mapping_targets": [
+          "P19",
+          "P24",
+          "P25"
+        ],
+        "verification": null
+      }
+    },
+    {
+      "id": "S2",
+      "kind": "exemption",
+      "statement": "When an owner occupies a home and rents to one additional person, the owner may exclude applicants based on protected characteristics, but cannot make, print, or publish discriminatory statements, notices, or advertisements.",
+      "citation": "FAQ - Covered Entities and Exemptions",
+      "scope_mode": "named_subject",
+      "scope_quote": "When an owner is occupying a home and is renting to one additional person, the owner may exclude applicants based on protected characteristics.",
+      "source_provision_id": "P9",
+      "governed_provision_ids": [
+        "P24"
+      ],
+      "evidence_parts": [
+        {
+          "segment_id": 1,
+          "quoted_text": "When an owner is occupying a home and is renting to one additional person, the owner may exclude applicants based on protected characteristics. However, the owner still cannot make, print, or publish discriminatory statements, notices, or advertisements."
+        }
+      ],
+      "evidence_check": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 6303,
+        "end": 6557,
+        "occurrences": 1,
+        "model_span": "When an owner is occupying a home and is renting to one additional person, the owner may exclude applicants based on protected characteristics. However, the owner still cannot make, print, or publish discriminatory statements, notices, or advertisements.",
+        "source_span": "When an owner is occupying a home and is renting to one additional person, the owner may exclude applicants based on protected characteristics. However, the owner still cannot make, print, or publish discriminatory statements, notices, or advertisements.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "When an owner is occupying a home and is renting to one additional person, the owner may exclude applicants based on protected characteristics. However, the owner still cannot make, print, or publish discriminatory statements, notices, or advertisements.",
+            "status": "exact_match",
+            "start": 6303,
+            "end": 6557
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "propagated": true,
+      "problem": null,
+      "scope": {
+        "resolver": "scope-modes/v1",
+        "declared_mode": "named_subject",
+        "mode": "named_subject",
+        "scope_words": {
+          "scope_quote": "When an owner is occupying a home and is renting to one additional person, the owner may exclude applicants based on protected characteristics.",
+          "scope_quote_check": "exact_match",
+          "text": "When an owner is occupying a home and is renting to one additional person, the owner may exclude applicants based on protected characteristics.",
+          "from": "scope_quote"
+        },
+        "detail": null,
+        "propagate_ids": [],
+        "mapping_targets": [
+          "P24"
+        ],
+        "verification": null
+      }
+    }
+  ],
+  "source_view": {
+    "marker": "[[PAGE BREAK]]",
+    "segment_label": "[[SEGMENT {}]]",
+    "view_sha256": "d1917039a3485f069b4c8eb75880b33bdd54b54649f8a267d2ea35bd1e739c58",
+    "segments": [
+      {
+        "id": 1,
+        "raw_start": 0,
+        "raw_end": 26505
+      }
+    ],
+    "artifacts_removed": 0,
+    "artifacts": []
+  },
+  "coverage": {
+    "inventory_valid": true,
+    "anchors_located": "32/32",
+    "after_primary": {
+      "uncovered": [],
+      "unaccepted": [
+        "FAQ - No Pets Rule and Service/Support Animals",
+        "FAQ - Source of Income Discrimination",
+        "FAQ - Criminal History Screening"
+      ],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "scope_mappings": {
+      "requested": 4,
+      "applies": 4,
+      "does_not_apply": 0,
+      "unresolved": 0
+    },
+    "after_repair": {
+      "uncovered": [],
+      "unaccepted": [
+        "FAQ - No Pets Rule and Service/Support Animals",
+        "FAQ - Source of Income Discrimination",
+        "FAQ - Criminal History Screening"
+      ],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "repair_targets": {
+      "before_repair": 0,
+      "resolved_by_accepted_rule": 0,
+      "resolved_out_of_scope": 0,
+      "still_unresolved": 0
+    },
+    "inventory_items": 32,
+    "in_scope_items": 3,
+    "in_scope_refs": 3,
+    "uncertain": [],
+    "final": {
+      "uncovered": [],
+      "unaccepted": [
+        "FAQ - No Pets Rule and Service/Support Animals",
+        "FAQ - Source of Income Discrimination",
+        "FAQ - Criminal History Screening"
+      ],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "link_mismatches": [],
+    "provisions": [
+      {
+        "ref": "FAQ - No Pets Rule and Service/Support Animals",
+        "inventory_item": 18,
+        "provision_id": "P19",
+        "summary": "Requirement to grant exceptions to no-pets policies for assistance animals, and prohibition on pet deposits or pet rent.",
+        "category": "security_deposits",
+        "candidates": [
+          0
+        ],
+        "accepted": [],
+        "basis": {
+          "0": "provision link; citation names it"
+        }
+      },
+      {
+        "ref": "FAQ - Source of Income Discrimination",
+        "inventory_item": 23,
+        "provision_id": "P24",
+        "summary": "Prohibitions against source of income discrimination, refusal to comply with subsidy program requirements, differentiated terms or deposits, and discriminatory advertising.",
+        "category": "screening_restrictions",
+        "candidates": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "accepted": [],
+        "basis": {
+          "1": "provision link; citation names it",
+          "2": "provision link; citation names it",
+          "3": "provision link; citation names it",
+          "4": "provision link; citation names it"
+        }
+      },
+      {
+        "ref": "FAQ - Criminal History Screening",
+        "inventory_item": 24,
+        "provision_id": "P25",
+        "summary": "Restrictions on criminal history screening, prohibited criminal records, blanket ban prohibition, and direct-relationship requirements for conviction denials.",
+        "category": "screening_restrictions",
+        "candidates": [
+          5,
+          6,
+          7
+        ],
+        "accepted": [],
+        "basis": {
+          "5": "provision link; citation names it",
+          "6": "provision link; citation names it",
+          "7": "provision link; citation names it"
+        }
+      }
+    ],
+    "unrecorded_subdivisions": []
+  },
+  "scope_challenges": [
+    {
+      "ref": "Housing Discrimination Overview",
+      "provision_id": "P1",
+      "role": "enforcement",
+      "reason": "general fair housing enforcement authority outside the six official categories",
+      "summary": "Overview of CRD enforcement authority and general fair housing non-discrimination protections under California law.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role enforcement is decided by other rules"
+    },
+    {
+      "ref": "FEHA Scope and Applicability",
+      "provision_id": "P2",
+      "role": "operative_rule",
+      "reason": "general fair housing prohibition outside the six official categories",
+      "summary": "Application of FEHA to housing providers and general prohibition against discrimination and harassment.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    },
+    {
+      "ref": "Discriminatory Actions Examples",
+      "provision_id": "P3",
+      "role": "operative_rule",
+      "reason": "illustrative examples of general housing discrimination; substantive screening and deposit rules are extracted from specific FAQ provisions below",
+      "summary": "Illustrative list of discriminatory housing actions based on protected characteristics.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    },
+    {
+      "ref": "Protected Characteristics Scope",
+      "provision_id": "P4",
+      "role": "scope_condition",
+      "reason": "general scope condition defining protected characteristics under fair housing law",
+      "summary": "Scope of protection covering actual, perceived, intersecting, and associational protected characteristics.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role scope_condition is decided by other rules"
+    },
+    {
+      "ref": "Protected Characteristics List",
+      "provision_id": "P5",
+      "role": "definition",
+      "reason": "definitions of protected characteristics under civil rights law",
+      "summary": "Enumerated list of protected characteristics under FEHA.",
+      "signals": {
+        "in_scope_neighbour": false,
+        "enumeration": false,
+        "normative_language": false,
+        "grounds_or_conditions": false
+      },
+      "challenged": false,
+      "why_not": "too few substantive signals",
+      "raw_start": 4085,
+      "raw_end": 4569
+    },
+    {
+      "ref": "Related Protections",
+      "provision_id": "P6",
+      "role": "operative_rule",
+      "reason": "general summary statement; substantive criminal history screening rules extracted below",
+      "summary": "Summary of protections for licensed family childcare and people with criminal histories.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    },
+    {
+      "ref": "Available Remedies",
+      "provision_id": "P7",
+      "role": "remedy",
+      "reason": "generic statutory remedies for general housing discrimination not tied to a specific standalone housing rule record",
+      "summary": "General statutory remedies available for victims of housing discrimination.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role remedy is decided by other rules"
+    },
+    {
+      "ref": "FAQ - Covered Housing",
+      "provision_id": "P8",
+      "role": "scope_condition",
+      "reason": "scope condition for FEHA housing coverage; see global_scope",
+      "summary": "Types of housing accommodations covered by FEHA.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role scope_condition is decided by other rules"
+    },
+    {
+      "ref": "FAQ - Covered Entities and Exemptions",
+      "provision_id": "P9",
+      "role": "scope_condition",
+      "reason": "scope conditions and exemptions; see global_scope",
+      "summary": "Entities covered by FEHA and specific exemptions for single-lodger rentals, shared living spaces, senior housing, and homeless youth housing.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role scope_condition is decided by other rules"
+    },
+    {
+      "ref": "FAQ - Familial Status Discrimination",
+      "provision_id": "P10",
+      "role": "operative_rule",
+      "reason": "general fair housing familial status protections outside the six official categories",
+      "summary": "Protections against discrimination based on familial status and exception for senior housing.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    },
+    {
+      "ref": "FAQ - Senior Housing Criteria",
+      "provision_id": "P11",
+      "role": "exemption",
+      "reason": "statutory criteria for senior housing exemptions outside the six official categories",
+      "summary": "Criteria and conditions required for qualifying senior housing facilities and mobile home parks.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role exemption is decided by other rules"
+    },
+    {
+      "ref": "FAQ - Disability Definition",
+      "provision_id": "P12",
+      "role": "definition",
+      "reason": "statutory definitions of disability outside the six official categories",
+      "summary": "Definition of mental and physical disability, perceived disability, and associational disability under FEHA.",
+      "signals": {
+        "in_scope_neighbour": false,
+        "enumeration": true,
+        "normative_language": true,
+        "grounds_or_conditions": true
+      },
+      "challenged": false,
+      "why_not": "too few substantive signals",
+      "raw_start": 9118,
+      "raw_end": 10322
+    },
+    {
+      "ref": "FAQ - Disability Accommodations Entitlement",
+      "provision_id": "P13",
+      "role": "operative_rule",
+      "reason": "disability reasonable accommodation rights outside the six official categories",
+      "summary": "Entitlement of tenants, residents, and applicants with disabilities to reasonable accommodations and modifications.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    },
+    {
+      "ref": "FAQ - Reasonable Accommodation Definition",
+      "provision_id": "P14",
+      "role": "definition",
+      "reason": "definitions and examples of reasonable accommodations outside the six official categories",
+      "summary": "Definition and non-exhaustive examples of reasonable accommodations and non-accommodations.",
+      "signals": {
+        "in_scope_neighbour": false,
+        "enumeration": false,
+        "normative_language": false,
+        "grounds_or_conditions": true
+      },
+      "challenged": false,
+      "why_not": "too few substantive signals",
+      "raw_start": 10864,
+      "raw_end": 12134
+    },
+    {
+      "ref": "FAQ - Accommodation Request Format",
+      "provision_id": "P15",
+      "role": "procedure",
+      "reason": "accommodation request procedures outside the six official categories",
+      "summary": "Rules providing that accommodation requests need not be in writing or use specific wording.",
+      "signals": {
+        "in_scope_neighbour": false,
+        "enumeration": true,
+        "normative_language": false,
+        "grounds_or_conditions": false
+      },
+      "challenged": false,
+      "why_not": "too few substantive signals",
+      "raw_start": 12134,
+      "raw_end": 12548
+    },
+    {
+      "ref": "FAQ - Accommodation Response and Interactive Process",
+      "provision_id": "P16",
+      "role": "procedure",
+      "reason": "interactive process procedures outside the six official categories",
+      "summary": "Requirement that housing providers promptly respond and engage in a timely, good-faith interactive process.",
+      "signals": {
+        "in_scope_neighbour": false,
+        "enumeration": false,
+        "normative_language": true,
+        "grounds_or_conditions": false
+      },
+      "challenged": false,
+      "why_not": "too few substantive signals",
+      "raw_start": 12548,
+      "raw_end": 13714
+    },
+    {
+      "ref": "FAQ - Accommodation Verification Inquiries",
+      "provision_id": "P17",
+      "role": "operative_rule",
+      "reason": "disability accommodation documentation rules outside the six official categories",
+      "summary": "Permissible and prohibited inquiries regarding disability verification documentation.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    },
+    {
+      "ref": "FAQ - Accommodation Documentation Sources",
+      "provision_id": "P18",
+      "role": "procedure",
+      "reason": "accommodation documentation procedures outside the six official categories",
+      "summary": "Permitted third-party and self-verification documentation sources for disability accommodations.",
+      "signals": {
+        "in_scope_neighbour": true,
+        "enumeration": true,
+        "normative_language": false,
+        "grounds_or_conditions": false
+      },
+      "challenged": false,
+      "why_not": "too few substantive signals",
+      "raw_start": 14578,
+      "raw_end": 15492
+    },
+    {
+      "ref": "FAQ - Service Animals vs ESAs",
+      "provision_id": "P20",
+      "role": "definition",
+      "reason": "definitions of assistance animals outside the six official categories",
+      "summary": "Definitions and distinctions between emotional support animals and trained service animals.",
+      "signals": {
+        "in_scope_neighbour": true,
+        "enumeration": true,
+        "normative_language": false,
+        "grounds_or_conditions": false
+      },
+      "challenged": false,
+      "why_not": "too few substantive signals",
+      "raw_start": 16062,
+      "raw_end": 17023
+    },
+    {
+      "ref": "FAQ - AB 468 and ESAs",
+      "provision_id": "P21",
+      "role": "operative_rule",
+      "reason": "statutory interpretation regarding emotional support animal retail rules outside the six official categories",
+      "summary": "Explanation of AB 468 requirements and non-abrogation of fair housing reasonable accommodation rights.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    },
+    {
+      "ref": "FAQ - Reasonable Modification Definition",
+      "provision_id": "P22",
+      "role": "definition",
+      "reason": "definitions of physical modifications outside the six official categories",
+      "summary": "Definition and examples of reasonable physical modifications to housing units and common areas.",
+      "signals": {
+        "in_scope_neighbour": false,
+        "enumeration": false,
+        "normative_language": true,
+        "grounds_or_conditions": true
+      },
+      "challenged": false,
+      "why_not": "too few substantive signals",
+      "raw_start": 18287,
+      "raw_end": 19540
+    },
+    {
+      "ref": "FAQ - Modification Payment Responsibility",
+      "provision_id": "P23",
+      "role": "operative_rule",
+      "reason": "rules allocating physical modification costs outside the six official categories",
+      "summary": "Allocation of modification costs to tenants and exceptions where housing providers must pay.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    },
+    {
+      "ref": "FAQ - Harassment Protection",
+      "provision_id": "P26",
+      "role": "operative_rule",
+      "reason": "fair housing harassment protections outside the six official categories",
+      "summary": "Protections against housing harassment and provider duty to correct third-party harassment.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    },
+    {
+      "ref": "FAQ - Citizenship/Immigration Status",
+      "provision_id": "P27",
+      "role": "procedure",
+      "reason": "administrative enforcement policy outside the six official categories",
+      "summary": "Protections regardless of citizenship or immigration status and CRD policy not to inquire.",
+      "signals": {
+        "in_scope_neighbour": false,
+        "enumeration": false,
+        "normative_language": false,
+        "grounds_or_conditions": false
+      },
+      "challenged": false,
+      "why_not": "too few substantive signals",
+      "raw_start": 23592,
+      "raw_end": 23949
+    },
+    {
+      "ref": "FAQ - Complaint Filing Deadline",
+      "provision_id": "P28",
+      "role": "procedure",
+      "reason": "administrative statute of limitations outside the six official categories",
+      "summary": "One-year limitation period for filing an administrative housing discrimination complaint with CRD.",
+      "signals": {
+        "in_scope_neighbour": false,
+        "enumeration": false,
+        "normative_language": true,
+        "grounds_or_conditions": false
+      },
+      "challenged": false,
+      "why_not": "too few substantive signals",
+      "raw_start": 23949,
+      "raw_end": 24208
+    },
+    {
+      "ref": "FAQ - HUD and CRD Dual Filing",
+      "provision_id": "P29",
+      "role": "procedure",
+      "reason": "inter-agency dual-filing procedures outside the six official categories",
+      "summary": "Procedures for dual-filing and referral between HUD and CRD.",
+      "signals": {
+        "in_scope_neighbour": false,
+        "enumeration": false,
+        "normative_language": false,
+        "grounds_or_conditions": false
+      },
+      "challenged": false,
+      "why_not": "too few substantive signals",
+      "raw_start": 24208,
+      "raw_end": 24636
+    },
+    {
+      "ref": "FAQ - Court vs CRD Filing",
+      "provision_id": "P30",
+      "role": "procedure",
+      "reason": "judicial complaint filing rules and statutes of limitations outside the six official categories",
+      "summary": "Right to file directly in court without administrative exhaustion and two-year judicial limitation period.",
+      "signals": {
+        "in_scope_neighbour": false,
+        "enumeration": false,
+        "normative_language": true,
+        "grounds_or_conditions": false
+      },
+      "challenged": false,
+      "why_not": "too few substantive signals",
+      "raw_start": 24636,
+      "raw_end": 25174
+    },
+    {
+      "ref": "FAQ - CRD Subject Matter Jurisdiction",
+      "provision_id": "P31",
+      "role": "scope_condition",
+      "reason": "administrative agency jurisdiction limits outside the six official categories",
+      "summary": "Non-discrimination tenancy disputes outside CRD's statutory jurisdiction.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role scope_condition is decided by other rules"
+    },
+    {
+      "ref": "FAQ - Subprime Mortgage Lending Jurisdiction",
+      "provision_id": "P32",
+      "role": "scope_condition",
+      "reason": "mortgage lending consumer law jurisdiction outside the six official categories",
+      "summary": "Jurisdictional boundaries between UCL consumer finance enforcement and FEHA discrimination in mortgage lending.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role scope_condition is decided by other rules"
+    }
+  ],
+  "scope_mappings": [
+    {
+      "condition_id": "S1",
+      "provision_id": "P19",
+      "kind": "coverage_condition",
+      "statement": "FEHA covers the sale, rental, or occupancy of most housing accommodations in California, including single-family homes, multi-family homes, condominiums, apartments, short-term rentals, mobile homes, subsidized housing, dormitories, sober living facilities, group homes, residential motels, emergency shelters, homeless shelters, shelters for domestic violence survivors, RVs used as homes, farmworker housing, and boats used as homes.",
+      "scope_words": "The Fair Employment and Housing Act (FEHA) covers the sale, rental, or occupancy of most housing accommodations in California",
+      "condition_evidence": "The Fair Employment and Housing Act (FEHA) covers the sale, rental, or occupancy of most housing accommodations in California, including single-family homes, multi-family homes, condominiums, apartments, short-term rentals, mobile homes, subsidized housing, dormitories, sober living facilities,  group homes, residential motels,\nemergency shelters, homeless shelters, shelters for survivors of domestic violence\n, recreational vehicles (RVs) used as a home, farmworker housing, and boats used as homes.",
+      "target_ref": "FAQ - No Pets Rule and Service/Support Animals",
+      "target_anchor": "Yes, but the housing provider must make exceptions to",
+      "target_quote": "Service animals and emotional-support animals are not subject to breed, size, or weight restrictions ordinarily applied to pets, and tenants cannot be charged pet deposits or pet rent for them.",
+      "decision": {
+        "decision": "applies",
+        "reason": "FEHA's statutory coverage of housing accommodations governs the scope of required reasonable accommodations and pet deposit restrictions for assistance animals.",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 17689,
+          "end": 17885,
+          "occurrences": 1,
+          "model_span": "the Fair Employment and Housing Act invalidates any state law to the extent it purports to require or permit any unlawful housing discrimination, including the denial of reasonable accommodations.",
+          "source_span": "the Fair Employment and Housing Act invalidates any state law to the extent it purports to require or permit any unlawful housing discrimination, including the denial of reasonable accommodations.",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 1,
+              "model_text": "the Fair Employment and Housing Act invalidates any state law to the extent it purports to require or permit any unlawful housing discrimination, including the denial of reasonable accommodations.",
+              "status": "exact_match",
+              "start": 17689,
+              "end": 17885
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "applies",
+      "unresolved_reason": null
+    },
+    {
+      "condition_id": "S1",
+      "provision_id": "P24",
+      "kind": "coverage_condition",
+      "statement": "FEHA covers the sale, rental, or occupancy of most housing accommodations in California, including single-family homes, multi-family homes, condominiums, apartments, short-term rentals, mobile homes, subsidized housing, dormitories, sober living facilities, group homes, residential motels, emergency shelters, homeless shelters, shelters for domestic violence survivors, RVs used as homes, farmworker housing, and boats used as homes.",
+      "scope_words": "The Fair Employment and Housing Act (FEHA) covers the sale, rental, or occupancy of most housing accommodations in California",
+      "condition_evidence": "The Fair Employment and Housing Act (FEHA) covers the sale, rental, or occupancy of most housing accommodations in California, including single-family homes, multi-family homes, condominiums, apartments, short-term rentals, mobile homes, subsidized housing, dormitories, sober living facilities,  group homes, residential motels,\nemergency shelters, homeless shelters, shelters for survivors of domestic violence\n, recreational vehicles (RVs) used as a home, farmworker housing, and boats used as homes.",
+      "target_ref": "FAQ - Source of Income Discrimination",
+      "target_anchor": "No. California law protects tenants from discrimination based on",
+      "target_quote": "California law protects tenants from discrimination based on how a tenant will be paying rent (“source of income”). This includes the State of California’s COVID-19 Rent Relief Program, Housing Choice (Section 8) vouchers, (SSI) social security disability benefits, or wages earned from a job.",
+      "decision": {
+        "decision": "applies",
+        "reason": "FEHA covers the rental of most housing accommodations in California, establishing the scope of protection against source of income discrimination.",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 4426,
+          "end": 4537,
+          "occurrences": 1,
+          "model_span": "Source of income\n(including the use of government rental assistance such as a Section 8 Housing Choice voucher)",
+          "source_span": "Source of income\n(including the use of government rental assistance such as a Section 8 Housing Choice voucher)",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 1,
+              "model_text": "Source of income\n(including the use of government rental assistance such as a Section 8 Housing Choice voucher)",
+              "status": "exact_match",
+              "start": 4426,
+              "end": 4537
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "applies",
+      "unresolved_reason": null
+    },
+    {
+      "condition_id": "S1",
+      "provision_id": "P25",
+      "kind": "coverage_condition",
+      "statement": "FEHA covers the sale, rental, or occupancy of most housing accommodations in California, including single-family homes, multi-family homes, condominiums, apartments, short-term rentals, mobile homes, subsidized housing, dormitories, sober living facilities, group homes, residential motels, emergency shelters, homeless shelters, shelters for domestic violence survivors, RVs used as homes, farmworker housing, and boats used as homes.",
+      "scope_words": "The Fair Employment and Housing Act (FEHA) covers the sale, rental, or occupancy of most housing accommodations in California",
+      "condition_evidence": "The Fair Employment and Housing Act (FEHA) covers the sale, rental, or occupancy of most housing accommodations in California, including single-family homes, multi-family homes, condominiums, apartments, short-term rentals, mobile homes, subsidized housing, dormitories, sober living facilities,  group homes, residential motels,\nemergency shelters, homeless shelters, shelters for survivors of domestic violence\n, recreational vehicles (RVs) used as a home, farmworker housing, and boats used as homes.",
+      "target_ref": "FAQ - Criminal History Screening",
+      "target_anchor": "Yes.  Generally, a housing provider may check the",
+      "target_quote": "Housing  providers cannot consider some types of criminal history including arrests that did not lead to a conviction, records that are sealed or expunged, or records or matters processed in the juvenile justice system.",
+      "decision": {
+        "decision": "applies",
+        "reason": "FEHA protections governing applicant criminal history screening apply to housing accommodations covered under the Act.",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 4569,
+          "end": 4833,
+          "occurrences": 1,
+          "model_span": "FEHA also provides protections for people and circumstances related to protected characteristics, including:\nthe right to operate a licensed family childcare in a provider’s home\nspecific protections for people with criminal histories who are searching for housing",
+          "source_span": "FEHA also provides protections for people and circumstances related to protected characteristics, including:\nthe right to operate a licensed family childcare in a provider’s home\nspecific protections for people with criminal histories who are searching for housing",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 1,
+              "model_text": "FEHA also provides protections for people and circumstances related to protected characteristics, including:\nthe right to operate a licensed family childcare in a provider’s home\nspecific protections for people with criminal histories who are searching for housing",
+              "status": "exact_match",
+              "start": 4569,
+              "end": 4833
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "applies",
+      "unresolved_reason": null
+    },
+    {
+      "condition_id": "S2",
+      "provision_id": "P24",
+      "kind": "exemption",
+      "statement": "When an owner occupies a home and rents to one additional person, the owner may exclude applicants based on protected characteristics, but cannot make, print, or publish discriminatory statements, notices, or advertisements.",
+      "scope_words": "When an owner is occupying a home and is renting to one additional person, the owner may exclude applicants based on protected characteristics.",
+      "condition_evidence": "When an owner is occupying a home and is renting to one additional person, the owner may exclude applicants based on protected characteristics. However, the owner still cannot make, print, or publish discriminatory statements, notices, or advertisements.",
+      "target_ref": "FAQ - Source of Income Discrimination",
+      "target_anchor": "No. California law protects tenants from discrimination based on",
+      "target_quote": "California law protects tenants from discrimination based on how a tenant will be paying rent (“source of income”). This includes the State of California’s COVID-19 Rent Relief Program, Housing Choice (Section 8) vouchers, (SSI) social security disability benefits, or wages earned from a job.",
+      "decision": {
+        "decision": "applies",
+        "reason": "The owner-occupant single-boarder exemption allows excluding applicants based on protected characteristics, which includes source of income under FEHA.",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 6303,
+          "end": 6557,
+          "occurrences": 1,
+          "model_span": "When an owner is occupying a home and is renting to one additional person, the owner may exclude applicants based on protected characteristics. However, the owner still cannot make, print, or publish discriminatory statements, notices, or advertisements.",
+          "source_span": "When an owner is occupying a home and is renting to one additional person, the owner may exclude applicants based on protected characteristics. However, the owner still cannot make, print, or publish discriminatory statements, notices, or advertisements.",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 1,
+              "model_text": "When an owner is occupying a home and is renting to one additional person, the owner may exclude applicants based on protected characteristics. However, the owner still cannot make, print, or publish discriminatory statements, notices, or advertisements.",
+              "status": "exact_match",
+              "start": 6303,
+              "end": 6557
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "applies",
+      "unresolved_reason": null
+    }
+  ],
+  "legislative_session": null,
+  "empty_result": null,
+  "legacy_replay": null,
+  "repair": {
+    "invoked": true,
+    "reason": "0 repair target(s) from no check; 4 scope_mapping_challenge(s)",
+    "prompt_version": "v7-repair-1",
+    "targets": [],
+    "cache_key": "35345974cce8ad86bec5a09c069d69d9419c17451a614c91c8ffb7e4dfde681f",
+    "cache_hit": false,
+    "cache_entry": "cache/extraction/35345974cce8ad86bec5a09c069d69d9419c17451a614c91c8ffb7e4dfde681f.json",
+    "prompt_sha256": "d5c5a47a26a097fcae9967e1ed090b8e82523951763fc10a6797195a0858b3be",
+    "provider_metadata": {
+      "api": "interactions.create",
+      "interaction_id": "",
+      "model": "gemini-3.8-flash",
+      "status": "completed",
+      "usage": {
+        "input_tokens": 9386,
+        "output_tokens": 583,
+        "thinking_tokens": 3161,
+        "total_tokens": 13130
+      }
+    },
+    "raw_response_text": "{\n  \"target_resolutions\": [],\n  \"scope_mappings\": [\n    {\n      \"condition_id\": \"S1\",\n      \"provision_id\": \"P19\",\n      \"decision\": \"applies\",\n      \"reason\": \"FEHA's statutory coverage of housing accommodations governs the scope of required reasonable accommodations and pet deposit restrictions for assistance animals.\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"the Fair Employment and Housing Act invalidates any state law to the extent it purports to require or permit any unlawful housing discrimination, including the denial of reasonable accommodations.\"\n        }\n      ]\n    },\n    {\n      \"condition_id\": \"S1\",\n      \"provision_id\": \"P24\",\n      \"decision\": \"applies\",\n      \"reason\": \"FEHA covers the rental of most housing accommodations in California, establishing the scope of protection against source of income discrimination.\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Source of income\\n(including the use of government rental assistance such as a Section 8 Housing Choice voucher)\"\n        }\n      ]\n    },\n    {\n      \"condition_id\": \"S1\",\n      \"provision_id\": \"P25\",\n      \"decision\": \"applies\",\n      \"reason\": \"FEHA protections governing applicant criminal history screening apply to housing accommodations covered under the Act.\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"FEHA also provides protections for people and circumstances related to protected characteristics, including:\\nthe right to operate a licensed family childcare in a provider’s home\\nspecific protections for people with criminal histories who are searching for housing\"\n        }\n      ]\n    },\n    {\n      \"condition_id\": \"S2\",\n      \"provision_id\": \"P24\",\n      \"decision\": \"applies\",\n      \"reason\": \"The owner-occupant single-boarder exemption allows excluding applicants based on protected characteristics, which includes source of income under FEHA.\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"When an owner is occupying a home and is renting to one additional person, the owner may exclude applicants based on protected characteristics. However, the owner still cannot make, print, or publish discriminatory statements, notices, or advertisements.\"\n        }\n      ]\n    }\n  ],\n  \"rules\": []\n}",
+    "mappings": [
+      {
+        "condition_id": "S1",
+        "provision_id": "P19",
+        "kind": "coverage_condition",
+        "statement": "FEHA covers the sale, rental, or occupancy of most housing accommodations in California, including single-family homes, multi-family homes, condominiums, apartments, short-term rentals, mobile homes, subsidized housing, dormitories, sober living facilities, group homes, residential motels, emergency shelters, homeless shelters, shelters for domestic violence survivors, RVs used as homes, farmworker housing, and boats used as homes.",
+        "scope_words": "The Fair Employment and Housing Act (FEHA) covers the sale, rental, or occupancy of most housing accommodations in California",
+        "condition_evidence": "The Fair Employment and Housing Act (FEHA) covers the sale, rental, or occupancy of most housing accommodations in California, including single-family homes, multi-family homes, condominiums, apartments, short-term rentals, mobile homes, subsidized housing, dormitories, sober living facilities,  group homes, residential motels,\nemergency shelters, homeless shelters, shelters for survivors of domestic violence\n, recreational vehicles (RVs) used as a home, farmworker housing, and boats used as homes.",
+        "target_ref": "FAQ - No Pets Rule and Service/Support Animals",
+        "target_anchor": "Yes, but the housing provider must make exceptions to",
+        "target_quote": "Service animals and emotional-support animals are not subject to breed, size, or weight restrictions ordinarily applied to pets, and tenants cannot be charged pet deposits or pet rent for them.",
+        "decision": {
+          "decision": "applies",
+          "reason": "FEHA's statutory coverage of housing accommodations governs the scope of required reasonable accommodations and pet deposit restrictions for assistance animals.",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 17689,
+            "end": 17885,
+            "occurrences": 1,
+            "model_span": "the Fair Employment and Housing Act invalidates any state law to the extent it purports to require or permit any unlawful housing discrimination, including the denial of reasonable accommodations.",
+            "source_span": "the Fair Employment and Housing Act invalidates any state law to the extent it purports to require or permit any unlawful housing discrimination, including the denial of reasonable accommodations.",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 1,
+                "model_text": "the Fair Employment and Housing Act invalidates any state law to the extent it purports to require or permit any unlawful housing discrimination, including the denial of reasonable accommodations.",
+                "status": "exact_match",
+                "start": 17689,
+                "end": 17885
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "applies",
+        "unresolved_reason": null
+      },
+      {
+        "condition_id": "S1",
+        "provision_id": "P24",
+        "kind": "coverage_condition",
+        "statement": "FEHA covers the sale, rental, or occupancy of most housing accommodations in California, including single-family homes, multi-family homes, condominiums, apartments, short-term rentals, mobile homes, subsidized housing, dormitories, sober living facilities, group homes, residential motels, emergency shelters, homeless shelters, shelters for domestic violence survivors, RVs used as homes, farmworker housing, and boats used as homes.",
+        "scope_words": "The Fair Employment and Housing Act (FEHA) covers the sale, rental, or occupancy of most housing accommodations in California",
+        "condition_evidence": "The Fair Employment and Housing Act (FEHA) covers the sale, rental, or occupancy of most housing accommodations in California, including single-family homes, multi-family homes, condominiums, apartments, short-term rentals, mobile homes, subsidized housing, dormitories, sober living facilities,  group homes, residential motels,\nemergency shelters, homeless shelters, shelters for survivors of domestic violence\n, recreational vehicles (RVs) used as a home, farmworker housing, and boats used as homes.",
+        "target_ref": "FAQ - Source of Income Discrimination",
+        "target_anchor": "No. California law protects tenants from discrimination based on",
+        "target_quote": "California law protects tenants from discrimination based on how a tenant will be paying rent (“source of income”). This includes the State of California’s COVID-19 Rent Relief Program, Housing Choice (Section 8) vouchers, (SSI) social security disability benefits, or wages earned from a job.",
+        "decision": {
+          "decision": "applies",
+          "reason": "FEHA covers the rental of most housing accommodations in California, establishing the scope of protection against source of income discrimination.",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 4426,
+            "end": 4537,
+            "occurrences": 1,
+            "model_span": "Source of income\n(including the use of government rental assistance such as a Section 8 Housing Choice voucher)",
+            "source_span": "Source of income\n(including the use of government rental assistance such as a Section 8 Housing Choice voucher)",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 1,
+                "model_text": "Source of income\n(including the use of government rental assistance such as a Section 8 Housing Choice voucher)",
+                "status": "exact_match",
+                "start": 4426,
+                "end": 4537
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "applies",
+        "unresolved_reason": null
+      },
+      {
+        "condition_id": "S1",
+        "provision_id": "P25",
+        "kind": "coverage_condition",
+        "statement": "FEHA covers the sale, rental, or occupancy of most housing accommodations in California, including single-family homes, multi-family homes, condominiums, apartments, short-term rentals, mobile homes, subsidized housing, dormitories, sober living facilities, group homes, residential motels, emergency shelters, homeless shelters, shelters for domestic violence survivors, RVs used as homes, farmworker housing, and boats used as homes.",
+        "scope_words": "The Fair Employment and Housing Act (FEHA) covers the sale, rental, or occupancy of most housing accommodations in California",
+        "condition_evidence": "The Fair Employment and Housing Act (FEHA) covers the sale, rental, or occupancy of most housing accommodations in California, including single-family homes, multi-family homes, condominiums, apartments, short-term rentals, mobile homes, subsidized housing, dormitories, sober living facilities,  group homes, residential motels,\nemergency shelters, homeless shelters, shelters for survivors of domestic violence\n, recreational vehicles (RVs) used as a home, farmworker housing, and boats used as homes.",
+        "target_ref": "FAQ - Criminal History Screening",
+        "target_anchor": "Yes.  Generally, a housing provider may check the",
+        "target_quote": "Housing  providers cannot consider some types of criminal history including arrests that did not lead to a conviction, records that are sealed or expunged, or records or matters processed in the juvenile justice system.",
+        "decision": {
+          "decision": "applies",
+          "reason": "FEHA protections governing applicant criminal history screening apply to housing accommodations covered under the Act.",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 4569,
+            "end": 4833,
+            "occurrences": 1,
+            "model_span": "FEHA also provides protections for people and circumstances related to protected characteristics, including:\nthe right to operate a licensed family childcare in a provider’s home\nspecific protections for people with criminal histories who are searching for housing",
+            "source_span": "FEHA also provides protections for people and circumstances related to protected characteristics, including:\nthe right to operate a licensed family childcare in a provider’s home\nspecific protections for people with criminal histories who are searching for housing",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 1,
+                "model_text": "FEHA also provides protections for people and circumstances related to protected characteristics, including:\nthe right to operate a licensed family childcare in a provider’s home\nspecific protections for people with criminal histories who are searching for housing",
+                "status": "exact_match",
+                "start": 4569,
+                "end": 4833
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "applies",
+        "unresolved_reason": null
+      },
+      {
+        "condition_id": "S2",
+        "provision_id": "P24",
+        "kind": "exemption",
+        "statement": "When an owner occupies a home and rents to one additional person, the owner may exclude applicants based on protected characteristics, but cannot make, print, or publish discriminatory statements, notices, or advertisements.",
+        "scope_words": "When an owner is occupying a home and is renting to one additional person, the owner may exclude applicants based on protected characteristics.",
+        "condition_evidence": "When an owner is occupying a home and is renting to one additional person, the owner may exclude applicants based on protected characteristics. However, the owner still cannot make, print, or publish discriminatory statements, notices, or advertisements.",
+        "target_ref": "FAQ - Source of Income Discrimination",
+        "target_anchor": "No. California law protects tenants from discrimination based on",
+        "target_quote": "California law protects tenants from discrimination based on how a tenant will be paying rent (“source of income”). This includes the State of California’s COVID-19 Rent Relief Program, Housing Choice (Section 8) vouchers, (SSI) social security disability benefits, or wages earned from a job.",
+        "decision": {
+          "decision": "applies",
+          "reason": "The owner-occupant single-boarder exemption allows excluding applicants based on protected characteristics, which includes source of income under FEHA.",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 6303,
+            "end": 6557,
+            "occurrences": 1,
+            "model_span": "When an owner is occupying a home and is renting to one additional person, the owner may exclude applicants based on protected characteristics. However, the owner still cannot make, print, or publish discriminatory statements, notices, or advertisements.",
+            "source_span": "When an owner is occupying a home and is renting to one additional person, the owner may exclude applicants based on protected characteristics. However, the owner still cannot make, print, or publish discriminatory statements, notices, or advertisements.",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 1,
+                "model_text": "When an owner is occupying a home and is renting to one additional person, the owner may exclude applicants based on protected characteristics. However, the owner still cannot make, print, or publish discriminatory statements, notices, or advertisements.",
+                "status": "exact_match",
+                "start": 6303,
+                "end": 6557
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "applies",
+        "unresolved_reason": null
+      }
+    ],
+    "candidate_indices": [],
+    "accepted_count": 0,
+    "rejected_count": 0,
+    "errors": []
+  },
+  "document_status": "review_required",
+  "review_reasons": [
+    "8 candidate record(s) held, not published, because the time of application is unresolved: ['temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force']"
+  ],
+  "warnings": [
+    "candidate 0 held: status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+    "candidate 1 held: status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+    "candidate 2 held: status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+    "candidate 3 held: status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+    "candidate 4 held: status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+    "candidate 5 held: status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+    "candidate 6 held: status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+    "candidate 7 held: status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+  ],
+  "errors": [],
+  "raw_response_text": "{\n  \"document\": {\n    \"posture\": \"official_explanatory_page\",\n    \"evidence\": \"The California Civil Rights Department (CRD) is responsible for enforcing state fair housing laws that make it illegal to discriminate against or harass someone because of a protected characteristic\"\n  },\n  \"provisions\": [\n    {\n      \"id\": \"P1\",\n      \"ref\": \"Housing Discrimination Overview\",\n      \"anchor\": \"The California Civil Rights Department (CRD) is responsible for enforcing\",\n      \"summary\": \"Overview of CRD enforcement authority and general fair housing non-discrimination protections under California law.\",\n      \"role\": \"enforcement\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"general fair housing enforcement authority outside the six official categories\"\n    },\n    {\n      \"id\": \"P2\",\n      \"ref\": \"FEHA Scope and Applicability\",\n      \"anchor\": \"California’s Fair Employment and Housing Act (also known as FEHA)\",\n      \"summary\": \"Application of FEHA to housing providers and general prohibition against discrimination and harassment.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"general fair housing prohibition outside the six official categories\"\n    },\n    {\n      \"id\": \"P3\",\n      \"ref\": \"Discriminatory Actions Examples\",\n      \"anchor\": \"Examples of actions that could be discriminatory if based on\",\n      \"summary\": \"Illustrative list of discriminatory housing actions based on protected characteristics.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"illustrative examples of general housing discrimination; substantive screening and deposit rules are extracted from specific FAQ provisions below\"\n    },\n    {\n      \"id\": \"P4\",\n      \"ref\": \"Protected Characteristics Scope\",\n      \"anchor\": \"California law protects individuals from illegal discrimination and harassment\",\n      \"summary\": \"Scope of protection covering actual, perceived, intersecting, and associational protected characteristics.\",\n      \"role\": \"scope_condition\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"general scope condition defining protected characteristics under fair housing law\"\n    },\n    {\n      \"id\": \"P5\",\n      \"ref\": \"Protected Characteristics List\",\n      \"anchor\": \"Protected characteristics include::\\nRace\\nColor\\nAncestry\",\n      \"summary\": \"Enumerated list of protected characteristics under FEHA.\",\n      \"role\": \"definition\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"definitions of protected characteristics under civil rights law\"\n    },\n    {\n      \"id\": \"P6\",\n      \"ref\": \"Related Protections\",\n      \"anchor\": \"FEHA also provides protections for people and circumstances related\",\n      \"summary\": \"Summary of protections for licensed family childcare and people with criminal histories.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"general summary statement; substantive criminal history screening rules extracted below\"\n    },\n    {\n      \"id\": \"P7\",\n      \"ref\": \"Available Remedies\",\n      \"anchor\": \"State law provides for a variety of remedies for\",\n      \"summary\": \"General statutory remedies available for victims of housing discrimination.\",\n      \"role\": \"remedy\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"generic statutory remedies for general housing discrimination not tied to a specific standalone housing rule record\"\n    },\n    {\n      \"id\": \"P8\",\n      \"ref\": \"FAQ - Covered Housing\",\n      \"anchor\": \"The Fair Employment and Housing Act (FEHA) covers the sale,\",\n      \"summary\": \"Types of housing accommodations covered by FEHA.\",\n      \"role\": \"scope_condition\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"scope condition for FEHA housing coverage; see global_scope\"\n    },\n    {\n      \"id\": \"P9\",\n      \"ref\": \"FAQ - Covered Entities and Exemptions\",\n      \"anchor\": \"Most people and entities that are housing providers or who\",\n      \"summary\": \"Entities covered by FEHA and specific exemptions for single-lodger rentals, shared living spaces, senior housing, and homeless youth housing.\",\n      \"role\": \"scope_condition\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"scope conditions and exemptions; see global_scope\"\n    },\n    {\n      \"id\": \"P10\",\n      \"ref\": \"FAQ - Familial Status Discrimination\",\n      \"anchor\": \"Generally, housing providers cannot discriminate against families with children.\",\n      \"summary\": \"Protections against discrimination based on familial status and exception for senior housing.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"general fair housing familial status protections outside the six official categories\"\n    },\n    {\n      \"id\": \"P11\",\n      \"ref\": \"FAQ - Senior Housing Criteria\",\n      \"anchor\": \"Yes, but only when the facility or community is:\",\n      \"summary\": \"Criteria and conditions required for qualifying senior housing facilities and mobile home parks.\",\n      \"role\": \"exemption\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"statutory criteria for senior housing exemptions outside the six official categories\"\n    },\n    {\n      \"id\": \"P12\",\n      \"ref\": \"FAQ - Disability Definition\",\n      \"anchor\": \"The Fair Employment and Housing Act defines a disability as\",\n      \"summary\": \"Definition of mental and physical disability, perceived disability, and associational disability under FEHA.\",\n      \"role\": \"definition\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"statutory definitions of disability outside the six official categories\"\n    },\n    {\n      \"id\": \"P13\",\n      \"ref\": \"FAQ - Disability Accommodations Entitlement\",\n      \"anchor\": \"Yes. Tenants, residents, and applicants with disabilities are entitled\",\n      \"summary\": \"Entitlement of tenants, residents, and applicants with disabilities to reasonable accommodations and modifications.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"disability reasonable accommodation rights outside the six official categories\"\n    },\n    {\n      \"id\": \"P14\",\n      \"ref\": \"FAQ - Reasonable Accommodation Definition\",\n      \"anchor\": \"A reasonable accommodation is an exception, change, or adjustment\",\n      \"summary\": \"Definition and non-exhaustive examples of reasonable accommodations and non-accommodations.\",\n      \"role\": \"definition\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"definitions and examples of reasonable accommodations outside the six official categories\"\n    },\n    {\n      \"id\": \"P15\",\n      \"ref\": \"FAQ - Accommodation Request Format\",\n      \"anchor\": \"No. A request for reasonable accommodation does not need\",\n      \"summary\": \"Rules providing that accommodation requests need not be in writing or use specific wording.\",\n      \"role\": \"procedure\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"accommodation request procedures outside the six official categories\"\n    },\n    {\n      \"id\": \"P16\",\n      \"ref\": \"FAQ - Accommodation Response and Interactive Process\",\n      \"anchor\": \"Requests for accommodations must be considered promptly by the housing\",\n      \"summary\": \"Requirement that housing providers promptly respond and engage in a timely, good-faith interactive process.\",\n      \"role\": \"procedure\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"interactive process procedures outside the six official categories\"\n    },\n    {\n      \"id\": \"P17\",\n      \"ref\": \"FAQ - Accommodation Verification Inquiries\",\n      \"anchor\": \"Yes. However, if the need for a reasonable accommodation\",\n      \"summary\": \"Permissible and prohibited inquiries regarding disability verification documentation.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"disability accommodation documentation rules outside the six official categories\"\n    },\n    {\n      \"id\": \"P18\",\n      \"ref\": \"FAQ - Accommodation Documentation Sources\",\n      \"anchor\": \"No. Documentation can come from any reliable third party\",\n      \"summary\": \"Permitted third-party and self-verification documentation sources for disability accommodations.\",\n      \"role\": \"procedure\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"accommodation documentation procedures outside the six official categories\"\n    },\n    {\n      \"id\": \"P19\",\n      \"ref\": \"FAQ - No Pets Rule and Service/Support Animals\",\n      \"anchor\": \"Yes, but the housing provider must make exceptions to\",\n      \"summary\": \"Requirement to grant exceptions to no-pets policies for assistance animals, and prohibition on pet deposits or pet rent.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"security_deposits\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P20\",\n      \"ref\": \"FAQ - Service Animals vs ESAs\",\n      \"anchor\": \"An emotional support animal (ESA) is an animal that\",\n      \"summary\": \"Definitions and distinctions between emotional support animals and trained service animals.\",\n      \"role\": \"definition\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"definitions of assistance animals outside the six official categories\"\n    },\n    {\n      \"id\": \"P21\",\n      \"ref\": \"FAQ - AB 468 and ESAs\",\n      \"anchor\": \"No. In 2021, California enacted Assembly Bill 468,\",\n      \"summary\": \"Explanation of AB 468 requirements and non-abrogation of fair housing reasonable accommodation rights.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"statutory interpretation regarding emotional support animal retail rules outside the six official categories\"\n    },\n    {\n      \"id\": \"P22\",\n      \"ref\": \"FAQ - Reasonable Modification Definition\",\n      \"anchor\": \"A reasonable modification is different from a reasonable accommodation because\",\n      \"summary\": \"Definition and examples of reasonable physical modifications to housing units and common areas.\",\n      \"role\": \"definition\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"definitions of physical modifications outside the six official categories\"\n    },\n    {\n      \"id\": \"P23\",\n      \"ref\": \"FAQ - Modification Payment Responsibility\",\n      \"anchor\": \"In most instances, the tenant is responsible for all\",\n      \"summary\": \"Allocation of modification costs to tenants and exceptions where housing providers must pay.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"rules allocating physical modification costs outside the six official categories\"\n    },\n    {\n      \"id\": \"P24\",\n      \"ref\": \"FAQ - Source of Income Discrimination\",\n      \"anchor\": \"No. California law protects tenants from discrimination based on\",\n      \"summary\": \"Prohibitions against source of income discrimination, refusal to comply with subsidy program requirements, differentiated terms or deposits, and discriminatory advertising.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"screening_restrictions\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P25\",\n      \"ref\": \"FAQ - Criminal History Screening\",\n      \"anchor\": \"Yes.  Generally, a housing provider may check the\",\n      \"summary\": \"Restrictions on criminal history screening, prohibited criminal records, blanket ban prohibition, and direct-relationship requirements for conviction denials.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"screening_restrictions\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P26\",\n      \"ref\": \"FAQ - Harassment Protection\",\n      \"anchor\": \"Yes. California’s fair housing laws prohibit housing providers (including\",\n      \"summary\": \"Protections against housing harassment and provider duty to correct third-party harassment.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"fair housing harassment protections outside the six official categories\"\n    },\n    {\n      \"id\": \"P27\",\n      \"ref\": \"FAQ - Citizenship/Immigration Status\",\n      \"anchor\": \"No. California’s fair housing laws protect Californians regardless of\",\n      \"summary\": \"Protections regardless of citizenship or immigration status and CRD policy not to inquire.\",\n      \"role\": \"procedure\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"administrative enforcement policy outside the six official categories\"\n    },\n    {\n      \"id\": \"P28\",\n      \"ref\": \"FAQ - Complaint Filing Deadline\",\n      \"anchor\": \"In general, a complaint of housing discrimination must be\",\n      \"summary\": \"One-year limitation period for filing an administrative housing discrimination complaint with CRD.\",\n      \"role\": \"procedure\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"administrative statute of limitations outside the six official categories\"\n    },\n    {\n      \"id\": \"P29\",\n      \"ref\": \"FAQ - HUD and CRD Dual Filing\",\n      \"anchor\": \"If a complaint has been filed with HUD, it\",\n      \"summary\": \"Procedures for dual-filing and referral between HUD and CRD.\",\n      \"role\": \"procedure\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"inter-agency dual-filing procedures outside the six official categories\"\n    },\n    {\n      \"id\": \"P30\",\n      \"ref\": \"FAQ - Court vs CRD Filing\",\n      \"anchor\": \"No. A person may file directly in court without\",\n      \"summary\": \"Right to file directly in court without administrative exhaustion and two-year judicial limitation period.\",\n      \"role\": \"procedure\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"judicial complaint filing rules and statutes of limitations outside the six official categories\"\n    },\n    {\n      \"id\": \"P31\",\n      \"ref\": \"FAQ - CRD Subject Matter Jurisdiction\",\n      \"anchor\": \"CRD does not help people find housing. CRD cannot\",\n      \"summary\": \"Non-discrimination tenancy disputes outside CRD's statutory jurisdiction.\",\n      \"role\": \"scope_condition\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"administrative agency jurisdiction limits outside the six official categories\"\n    },\n    {\n      \"id\": \"P32\",\n      \"ref\": \"FAQ - Subprime Mortgage Lending Jurisdiction\",\n      \"anchor\": \"Predatory lending is primarily a consumer law issue affecting\",\n      \"summary\": \"Jurisdictional boundaries between UCL consumer finance enforcement and FEHA discrimination in mortgage lending.\",\n      \"role\": \"scope_condition\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"mortgage lending consumer law jurisdiction outside the six official categories\"\n    }\n  ],\n  \"global_scope\": [\n    {\n      \"id\": \"S1\",\n      \"kind\": \"coverage_condition\",\n      \"statement\": \"FEHA covers the sale, rental, or occupancy of most housing accommodations in California, including single-family homes, multi-family homes, condominiums, apartments, short-term rentals, mobile homes, subsidized housing, dormitories, sober living facilities, group homes, residential motels, emergency shelters, homeless shelters, shelters for domestic violence survivors, RVs used as homes, farmworker housing, and boats used as homes.\",\n      \"citation\": \"FAQ - Covered Housing\",\n      \"scope_mode\": \"structural\",\n      \"scope_quote\": \"The Fair Employment and Housing Act (FEHA) covers the sale, rental, or occupancy of most housing accommodations in California\",\n      \"source_provision_id\": \"P8\",\n      \"governed_provision_ids\": [\n        \"P19\",\n        \"P24\",\n        \"P25\"\n      ],\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"The Fair Employment and Housing Act (FEHA) covers the sale, rental, or occupancy of most housing accommodations in California, including single-family homes, multi-family homes, condominiums, apartments, short-term rentals, mobile homes, subsidized housing, dormitories, sober living facilities,  group homes, residential motels,\\nemergency shelters, homeless shelters, shelters for survivors of domestic violence\\n, recreational vehicles (RVs) used as a home, farmworker housing, and boats used as homes.\"\n        }\n      ]\n    },\n    {\n      \"id\": \"S2\",\n      \"kind\": \"exemption\",\n      \"statement\": \"When an owner occupies a home and rents to one additional person, the owner may exclude applicants based on protected characteristics, but cannot make, print, or publish discriminatory statements, notices, or advertisements.\",\n      \"citation\": \"FAQ - Covered Entities and Exemptions\",\n      \"scope_mode\": \"named_subject\",\n      \"scope_quote\": \"When an owner is occupying a home and is renting to one additional person, the owner may exclude applicants based on protected characteristics.\",\n      \"source_provision_id\": \"P9\",\n      \"governed_provision_ids\": [\n        \"P24\"\n      ],\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"When an owner is occupying a home and is renting to one additional person, the owner may exclude applicants based on protected characteristics. However, the owner still cannot make, print, or publish discriminatory statements, notices, or advertisements.\"\n        }\n      ]\n    }\n  ],\n  \"rules\": [\n    {\n      \"category\": \"security_deposits\",\n      \"citation\": \"FAQ - No Pets Rule and Service/Support Animals\",\n      \"provision_ids\": [\n        \"P19\"\n      ],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Service animals and emotional-support animals are not subject to breed, size, or weight restrictions ordinarily applied to pets, and tenants cannot be charged pet deposits or pet rent for them.\"\n        }\n      ],\n      \"title\": \"Prohibition on Pet Deposits and Pet Rent for Assistance Animals\",\n      \"requirement\": \"Housing providers are prohibited from charging pet deposits or pet rent for service animals or emotional-support animals, and these animals cannot be subjected to breed, size, or weight restrictions applied to pets.\",\n      \"key_value\": null,\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": null,\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": null,\n      \"effective_date_evidence_kind\": null,\n      \"effective_date\": null,\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"screening_restrictions\",\n      \"citation\": \"FAQ - Source of Income Discrimination\",\n      \"provision_ids\": [\n        \"P24\"\n      ],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"California law protects tenants from discrimination based on how a tenant will be paying rent (“source of income”). This includes the State of California’s COVID-19 Rent Relief Program, Housing Choice (Section 8) vouchers, (SSI) social security disability benefits, or wages earned from a job.\"\n        }\n      ],\n      \"title\": \"Prohibition on Source of Income Discrimination\",\n      \"requirement\": \"Housing providers cannot discriminate against tenants or applicants based on their source of income or method of rent payment, including COVID-19 Rent Relief, Section 8 vouchers, SSI disability benefits, or earned wages.\",\n      \"key_value\": null,\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": null,\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": null,\n      \"effective_date_evidence_kind\": null,\n      \"effective_date\": null,\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"screening_restrictions\",\n      \"citation\": \"FAQ - Source of Income Discrimination\",\n      \"provision_ids\": [\n        \"P24\"\n      ],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Refusal to comply with the requirements of any public assistance, rental assistance, or housing subsidy program, such as refusing to fill out necessary paperwork or to provide necessary information or documents\"\n        }\n      ],\n      \"title\": \"Duty to Comply with Subsidy and Rental Assistance Program Requirements\",\n      \"requirement\": \"Housing providers are prohibited from refusing to comply with the requirements of public assistance, rental assistance, or housing subsidy programs, such as by refusing to complete required paperwork or provide necessary information or documents.\",\n      \"key_value\": null,\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": null,\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": null,\n      \"effective_date_evidence_kind\": null,\n      \"effective_date\": null,\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"screening_restrictions\",\n      \"citation\": \"FAQ - Source of Income Discrimination\",\n      \"provision_ids\": [\n        \"P24\"\n      ],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Applying different terms, conditions, and privileges to a tenancy based on the applicant or renter’s source of income, such as charging a higher security deposit for Section 8 applicants or refusing to allow tenants who are using rental assistance from using a pool or other amenities\"\n        }\n      ],\n      \"title\": \"Prohibition on Unequal Tenancy Terms or Security Deposits Based on Source of Income\",\n      \"requirement\": \"Housing providers are prohibited from applying different terms, conditions, or privileges to a tenancy based on source of income, including charging higher security deposits for Section 8 applicants or barring rental assistance recipients from pools or amenities.\",\n      \"key_value\": null,\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": null,\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": null,\n      \"effective_date_evidence_kind\": null,\n      \"effective_date\": null,\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"screening_restrictions\",\n      \"citation\": \"FAQ - Source of Income Discrimination\",\n      \"provision_ids\": [\n        \"P24\"\n      ],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Advertising a preference or limitation based on a tenant’s source of income, such as including in an a  “No Section 8.”\"\n        }\n      ],\n      \"title\": \"Prohibition on Discriminatory Source of Income Advertising\",\n      \"requirement\": \"Housing providers are prohibited from advertising preferences or limitations based on an applicant's or tenant's source of income, such as including 'No Section 8' in an advertisement.\",\n      \"key_value\": null,\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": null,\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": null,\n      \"effective_date_evidence_kind\": null,\n      \"effective_date\": null,\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"screening_restrictions\",\n      \"citation\": \"FAQ - Criminal History Screening\",\n      \"provision_ids\": [\n        \"P25\"\n      ],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Housing  providers cannot consider some types of criminal history including arrests that did not lead to a conviction, records that are sealed or expunged, or records or matters processed in the juvenile justice system.\"\n        }\n      ],\n      \"title\": \"Prohibited Criminal History Records in Applicant Screening\",\n      \"requirement\": \"Housing providers cannot consider certain types of criminal history when evaluating applicants, including arrests not leading to conviction, sealed or expunged records, and juvenile justice matters.\",\n      \"key_value\": null,\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": null,\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": null,\n      \"effective_date_evidence_kind\": null,\n      \"effective_date\": null,\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"screening_restrictions\",\n      \"citation\": \"FAQ - Criminal History Screening\",\n      \"provision_ids\": [\n        \"P25\"\n      ],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Housing providers are also prohibited from having “blanket bans” of all people with a criminal history.\"\n        }\n      ],\n      \"title\": \"Prohibition on Blanket Bans of Applicants with Criminal Records\",\n      \"requirement\": \"Housing providers are prohibited from imposing blanket bans disqualifying all individuals who have a criminal history.\",\n      \"key_value\": null,\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": null,\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": null,\n      \"effective_date_evidence_kind\": null,\n      \"effective_date\": null,\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"screening_restrictions\",\n      \"citation\": \"FAQ - Criminal History Screening\",\n      \"provision_ids\": [\n        \"P25\"\n      ],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"If a housing provider intends to deny someone’s application based on a criminal conviction, it must be directly-related to someone’s ability to be a good tenant and to not be a threat to the health and safety of others and the property. In determining whether a criminal conviction is directly-related, a housing provider should consider the nature and severity of the crime and the amount of time that has passed since the criminal conduct occurred.\"\n        }\n      ],\n      \"title\": \"Direct-Relationship Requirement for Criminal Conviction Denials\",\n      \"requirement\": \"A housing provider denying an application based on a criminal conviction must demonstrate that the conviction is directly related to tenancy fitness and non-threat to health, safety, and property, taking into account the crime's nature and severity and the time elapsed.\",\n      \"key_value\": null,\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": null,\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": null,\n      \"effective_date_evidence_kind\": null,\n      \"effective_date\": null,\n      \"conflict_note\": null\n    }\n  ],\n  \"no_rules_justification\": null\n}"
+}

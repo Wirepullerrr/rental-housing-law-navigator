@@ -1,0 +1,1205 @@
+{
+  "disclaimer": "Not legal advice. Automated extraction for a research prototype; verify against the cited source.",
+  "run_at": "2026-10-04T03:26:19+00:00",
+  "source": {
+    "doc_id": "D066",
+    "jurisdiction": "NJ",
+    "url": "https://pub.njleg.gov/bills/2024/PL25/405_.HTM",
+    "source_type": "official",
+    "retrieved_at": "2026-10-01T22:37Z",
+    "text_file": "text/D066.txt",
+    "content_sha256": "9dc19b37e66ba0faef9b281ff4c433934b74106caef126172df95859576ded47",
+    "body_chars": 4064
+  },
+  "provider": "gemini",
+  "model": "gemini-3.8-flash",
+  "prompt_version": "v7",
+  "prompt_sha256": "2564e90abaf7fdd46c2e7ddadb0ec23ebcf58d7e551a400bac1772021b9b7384",
+  "response_schema_sha256": "c15306da6f21dc72f06e78405f94ed61dc9e59288138cc98b5b5bf9b62ac403c",
+  "generation_settings": {
+    "temperature": null,
+    "seed": 20261001,
+    "thinking_level": "medium"
+  },
+  "as_of": "2026-10-01",
+  "cache_key": "d210268384923e2235800f910209c9d5ce4f0ad2a8c510daea88e0531af8a068",
+  "cache_hit": false,
+  "cache_entry": "cache/extraction/d210268384923e2235800f910209c9d5ce4f0ad2a8c510daea88e0531af8a068.json",
+  "provider_metadata": {
+    "api": "interactions.create",
+    "interaction_id": "",
+    "model": "gemini-3.8-flash",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4956,
+      "output_tokens": 3059,
+      "thinking_tokens": 14330,
+      "total_tokens": 22345
+    }
+  },
+  "candidate_count": 3,
+  "accepted_count": 3,
+  "rules": [
+    {
+      "team_rule_id": "r-5a557a8d3f",
+      "jurisdiction": "NJ",
+      "level": "state",
+      "category": "application_screening_fees",
+      "status": "in_force",
+      "title": "Residential rental application fee limit",
+      "requirement": "A landlord or landlord's agent shall not require an application or similar fee exceeding $50 to apply to lease or sublease a residential rental property for dwelling purposes.",
+      "key_value": "$50",
+      "coverage_conditions": null,
+      "exemptions": "The application fee limits do not apply to a dwelling unit located in a one-family or two-family dwelling offered for rent. [C.46:8-18.1(c)(1)]; The application fee limits do not apply to a licensee of the New Jersey Real Estate Commission, unless the licensee is the landlord of the residential rental property. [C.46:8-18.1(c)(2)]",
+      "overrides": [],
+      "interaction": null,
+      "effective_date": "2026-05-01",
+      "citation": "C.46:8-18.1(a)",
+      "source_doc_id": "D066",
+      "source_url": "https://pub.njleg.gov/bills/2024/PL25/405_.HTM",
+      "quoted_span": "A landlord, or\nagent thereof, shall not require an application or other similar fee to apply\nto lease or sublease a residential rental property for dwelling purposes, which\nexceeds $50.",
+      "confidence": null,
+      "conflict_flag": false,
+      "conflict_note": null
+    },
+    {
+      "team_rule_id": "r-b6b715261f",
+      "jurisdiction": "NJ",
+      "level": "state",
+      "category": "application_screening_fees",
+      "status": "in_force",
+      "title": "Penalties and remittance for application fee violations",
+      "requirement": "A landlord or agent who violates the application fee cap is liable for penalties up to $500 for a first offense, up to $750 for a second offense, and up to $1,000 for each subsequent offense, with the wrongfully charged fee taken from the collected penalty and remitted to the applicant or prospective tenant.",
+      "key_value": "up to $500 for a first offense, up to $750 for a second offense, and up to $1,000 for each subsequent offense",
+      "coverage_conditions": null,
+      "exemptions": null,
+      "overrides": [],
+      "interaction": null,
+      "effective_date": "2026-05-01",
+      "citation": "C.46:8-18.1(b)",
+      "source_doc_id": "D066",
+      "source_url": "https://pub.njleg.gov/bills/2024/PL25/405_.HTM",
+      "quoted_span": "A landlord, or agent thereof, who violates\nsubsection a. of this section shall be liable for a penalty of up to $500 for a\nfirst offense, up to $750 for a second offense, and up to $1,000 for each\nsubsequent offense, which shall be collected and enforced by summary\nproceedings pursuant to the \"Penalty Enforcement Law of 1999,\"\nP.L.1999, c.274 (C.2A:58-10 et seq.).  The Superior Court, Law Division,\nSpecial Civil Part in the county in which the residential rental property is\nlocated shall have jurisdiction over the proceedings.  Process shall be in the\nnature of a summons or warrant and shall issue upon the complaint of the\nDirector of the Division of Consumer Affairs in the Department of Law and\nPublic Safety or the Attorney General.  Following the proceedings, the amount\nwrongfully charged shall be taken from the collected penalty and shall be\nremitted to the applicant or prospective tenant.",
+      "confidence": null,
+      "conflict_flag": false,
+      "conflict_note": null
+    },
+    {
+      "team_rule_id": "r-fef1749298",
+      "jurisdiction": "NJ",
+      "level": "state",
+      "category": "application_screening_fees",
+      "status": "in_force",
+      "title": "Annual CPI adjustment of application fee limitation",
+      "requirement": "The residential rental application fee limitation shall be adjusted annually by the Director of the Division of Consumer Affairs in direct proportion to the positive percent change in the Consumer Price Index over the 12-month period ending October 31, effective January 1, and published on the division's website.",
+      "key_value": null,
+      "coverage_conditions": "Operative condition (unresolved; applicability may be unknown): An adjustment in the fee limitation is made only if the percent change in the Consumer Price Index for the specified 12-month period ending October 31 is greater than zero.",
+      "exemptions": null,
+      "overrides": [],
+      "interaction": null,
+      "effective_date": "2026-05-01",
+      "citation": "C.46:8-18.1(d)",
+      "source_doc_id": "D066",
+      "source_url": "https://pub.njleg.gov/bills/2024/PL25/405_.HTM",
+      "quoted_span": "Beginning on\nJanuary 1 of the year next following enactment of P.L.2025, c.405 (C.46:8-18.1\net seq.) and each year thereafter, the amount of the fee limitation established\npursuant to subsection a. of this section shall be adjusted by the Director of\nthe Division of Consumer Affairs in the Department of Law and Public Safety in\ndirect proportion to the percent change in the Consumer Price Index over a\n12-month period ending October 31 of the previous year.  For the purpose of\nthis section, \"Consumer Price Index\" means the Consumer Price Index\nfor All Urban Consumers, New York-Northern New Jersey-Long Island Metropolitan\nArea, All Items (1982-84=100), as published by the Bureau of Labor Statistics\nin the United States Department of Labor.  The State Treasurer shall determine\nthe amount of the adjustment by December 1 of each year, and the adjustment to\nthe limitation shall become effective for fees charged during the calendar year\nfollowing the December 1 determination, beginning with fees made on or after\nJanuary 1 of each calendar year.  An adjustment in the fee limitation shall be\nmade only if the percent change in the Consumer Price Index for the period\nspecified is greater than zero.  The Director of the Division of Consumer\nAffairs shall annually publish the fee limitation applicable pursuant to this\nsection on the division’s Internet website.",
+      "confidence": null,
+      "conflict_flag": false,
+      "conflict_note": null
+    }
+  ],
+  "candidates": [
+    {
+      "index": 0,
+      "origin": "primary",
+      "accepted": true,
+      "held": false,
+      "rejection_reasons": [],
+      "provision_ids": [
+        "P1"
+      ],
+      "source_basis": "operative_text",
+      "status_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 4038,
+        "end": 4064,
+        "occurrences": 1,
+        "model_span": "Approved January 20, 2026.",
+        "source_span": "Approved January 20, 2026.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 339,
+        "end": 524,
+        "occurrences": 1,
+        "model_span": "A landlord, or\nagent thereof, shall not require an application or other similar fee to apply\nto lease or sublease a residential rental property for dwelling purposes, which\nexceeds $50.",
+        "source_span": "A landlord, or\nagent thereof, shall not require an application or other similar fee to apply\nto lease or sublease a residential rental property for dwelling purposes, which\nexceeds $50.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "A landlord, or\nagent thereof, shall not require an application or other similar fee to apply\nto lease or sublease a residential rental property for dwelling purposes, which\nexceeds $50.",
+            "status": "exact_match",
+            "start": 339,
+            "end": 524
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 3733,
+        "end": 3833,
+        "occurrences": 1,
+        "model_span": "This act shall take effect on the first day of the\nfourth month next following the date of enactment",
+        "source_span": "This act shall take effect on the first day of the\nfourth month next following the date of enactment",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [
+        {
+          "id": "S1",
+          "kind": "exemption",
+          "mode": "named_subject",
+          "governed_provision_ids": [
+            "P1"
+          ],
+          "basis": "named-subject mapping to P1 verified by repair",
+          "applied": true
+        },
+        {
+          "id": "S2",
+          "kind": "exemption",
+          "mode": "named_subject",
+          "governed_provision_ids": [
+            "P1"
+          ],
+          "basis": "named-subject mapping to P1 verified by repair",
+          "applied": true
+        }
+      ],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": "relative_date_formula",
+        "applied_kind": "relative_date_formula",
+        "effective_date": "2026-05-01",
+        "history_evidence": null,
+        "relative_resolution": {
+          "resolver": "first-day-of-nth-month-next-following/v1",
+          "outcome": "resolved",
+          "reason": null,
+          "formula": "take effect on the first day of the fourth month next following the date of enactment",
+          "formula_evidence": {
+            "text": "This act shall take effect on the first day of the\nfourth month next following the date of enactment",
+            "start": 3733,
+            "end": 3833
+          },
+          "base_date": "2026-01-20",
+          "base_date_evidence": {
+            "event": "approved",
+            "date": "2026-01-20",
+            "start": 4038,
+            "end": 4063,
+            "text": "Approved January 20, 2026"
+          },
+          "base_date_candidates": [
+            {
+              "event": "approved",
+              "date": "2026-01-20",
+              "start": 4038,
+              "end": 4063,
+              "text": "Approved January 20, 2026"
+            }
+          ],
+          "resolved_date": "2026-05-01",
+          "ordinal": 4,
+          "anchor": "enactment"
+        },
+        "posture": "enacted_session_law",
+        "posture_consistent": true
+      },
+      "status_derivation": "enacted; effective 2026-05-01 is on or before as_of 2026-10-01",
+      "warnings": [],
+      "rule": {
+        "team_rule_id": "r-5a557a8d3f",
+        "jurisdiction": "NJ",
+        "level": "state",
+        "category": "application_screening_fees",
+        "status": "in_force",
+        "title": "Residential rental application fee limit",
+        "requirement": "A landlord or landlord's agent shall not require an application or similar fee exceeding $50 to apply to lease or sublease a residential rental property for dwelling purposes.",
+        "key_value": "$50",
+        "coverage_conditions": null,
+        "exemptions": "The application fee limits do not apply to a dwelling unit located in a one-family or two-family dwelling offered for rent. [C.46:8-18.1(c)(1)]; The application fee limits do not apply to a licensee of the New Jersey Real Estate Commission, unless the licensee is the landlord of the residential rental property. [C.46:8-18.1(c)(2)]",
+        "overrides": [],
+        "interaction": null,
+        "effective_date": "2026-05-01",
+        "citation": "C.46:8-18.1(a)",
+        "source_doc_id": "D066",
+        "source_url": "https://pub.njleg.gov/bills/2024/PL25/405_.HTM",
+        "quoted_span": "A landlord, or\nagent thereof, shall not require an application or other similar fee to apply\nto lease or sublease a residential rental property for dwelling purposes, which\nexceeds $50.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "application_screening_fees",
+        "citation": "C.46:8-18.1(a)",
+        "provision_ids": [
+          "P1"
+        ],
+        "source_basis": "operative_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "A landlord, or\nagent thereof, shall not require an application or other similar fee to apply\nto lease or sublease a residential rental property for dwelling purposes, which\nexceeds $50."
+          }
+        ],
+        "title": "Residential rental application fee limit",
+        "requirement": "A landlord or landlord's agent shall not require an application or similar fee exceeding $50 to apply to lease or sublease a residential rental property for dwelling purposes.",
+        "key_value": "$50",
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": "Approved January 20, 2026.",
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": "This act shall take effect on the first day of the\nfourth month next following the date of enactment",
+        "effective_date_evidence_kind": "relative_date_formula",
+        "effective_date": null,
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 1,
+      "origin": "primary",
+      "accepted": true,
+      "held": false,
+      "rejection_reasons": [],
+      "provision_ids": [
+        "P2"
+      ],
+      "source_basis": "operative_text",
+      "status_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 4038,
+        "end": 4064,
+        "occurrences": 1,
+        "model_span": "Approved January 20, 2026.",
+        "source_span": "Approved January 20, 2026.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 529,
+        "end": 1434,
+        "occurrences": 1,
+        "model_span": "A landlord, or agent thereof, who violates\nsubsection a. of this section shall be liable for a penalty of up to $500 for a\nfirst offense, up to $750 for a second offense, and up to $1,000 for each\nsubsequent offense, which shall be collected and enforced by summary\nproceedings pursuant to the \"Penalty Enforcement Law of 1999,\"\nP.L.1999, c.274 (C.2A:58-10 et seq.).  The Superior Court, Law Division,\nSpecial Civil Part in the county in which the residential rental property is\nlocated shall have jurisdiction over the proceedings.  Process shall be in the\nnature of a summons or warrant and shall issue upon the complaint of the\nDirector of the Division of Consumer Affairs in the Department of Law and\nPublic Safety or the Attorney General.  Following the proceedings, the amount\nwrongfully charged shall be taken from the collected penalty and shall be\nremitted to the applicant or prospective tenant.",
+        "source_span": "A landlord, or agent thereof, who violates\nsubsection a. of this section shall be liable for a penalty of up to $500 for a\nfirst offense, up to $750 for a second offense, and up to $1,000 for each\nsubsequent offense, which shall be collected and enforced by summary\nproceedings pursuant to the \"Penalty Enforcement Law of 1999,\"\nP.L.1999, c.274 (C.2A:58-10 et seq.).  The Superior Court, Law Division,\nSpecial Civil Part in the county in which the residential rental property is\nlocated shall have jurisdiction over the proceedings.  Process shall be in the\nnature of a summons or warrant and shall issue upon the complaint of the\nDirector of the Division of Consumer Affairs in the Department of Law and\nPublic Safety or the Attorney General.  Following the proceedings, the amount\nwrongfully charged shall be taken from the collected penalty and shall be\nremitted to the applicant or prospective tenant.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "A landlord, or agent thereof, who violates\nsubsection a. of this section shall be liable for a penalty of up to $500 for a\nfirst offense, up to $750 for a second offense, and up to $1,000 for each\nsubsequent offense, which shall be collected and enforced by summary\nproceedings pursuant to the \"Penalty Enforcement Law of 1999,\"\nP.L.1999, c.274 (C.2A:58-10 et seq.).  The Superior Court, Law Division,\nSpecial Civil Part in the county in which the residential rental property is\nlocated shall have jurisdiction over the proceedings.  Process shall be in the\nnature of a summons or warrant and shall issue upon the complaint of the\nDirector of the Division of Consumer Affairs in the Department of Law and\nPublic Safety or the Attorney General.  Following the proceedings, the amount\nwrongfully charged shall be taken from the collected penalty and shall be\nremitted to the applicant or prospective tenant.",
+            "status": "exact_match",
+            "start": 529,
+            "end": 1434
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 3733,
+        "end": 3833,
+        "occurrences": 1,
+        "model_span": "This act shall take effect on the first day of the\nfourth month next following the date of enactment",
+        "source_span": "This act shall take effect on the first day of the\nfourth month next following the date of enactment",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": "relative_date_formula",
+        "applied_kind": "relative_date_formula",
+        "effective_date": "2026-05-01",
+        "history_evidence": null,
+        "relative_resolution": {
+          "resolver": "first-day-of-nth-month-next-following/v1",
+          "outcome": "resolved",
+          "reason": null,
+          "formula": "take effect on the first day of the fourth month next following the date of enactment",
+          "formula_evidence": {
+            "text": "This act shall take effect on the first day of the\nfourth month next following the date of enactment",
+            "start": 3733,
+            "end": 3833
+          },
+          "base_date": "2026-01-20",
+          "base_date_evidence": {
+            "event": "approved",
+            "date": "2026-01-20",
+            "start": 4038,
+            "end": 4063,
+            "text": "Approved January 20, 2026"
+          },
+          "base_date_candidates": [
+            {
+              "event": "approved",
+              "date": "2026-01-20",
+              "start": 4038,
+              "end": 4063,
+              "text": "Approved January 20, 2026"
+            }
+          ],
+          "resolved_date": "2026-05-01",
+          "ordinal": 4,
+          "anchor": "enactment"
+        },
+        "posture": "enacted_session_law",
+        "posture_consistent": true
+      },
+      "status_derivation": "enacted; effective 2026-05-01 is on or before as_of 2026-10-01",
+      "warnings": [],
+      "rule": {
+        "team_rule_id": "r-b6b715261f",
+        "jurisdiction": "NJ",
+        "level": "state",
+        "category": "application_screening_fees",
+        "status": "in_force",
+        "title": "Penalties and remittance for application fee violations",
+        "requirement": "A landlord or agent who violates the application fee cap is liable for penalties up to $500 for a first offense, up to $750 for a second offense, and up to $1,000 for each subsequent offense, with the wrongfully charged fee taken from the collected penalty and remitted to the applicant or prospective tenant.",
+        "key_value": "up to $500 for a first offense, up to $750 for a second offense, and up to $1,000 for each subsequent offense",
+        "coverage_conditions": null,
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": "2026-05-01",
+        "citation": "C.46:8-18.1(b)",
+        "source_doc_id": "D066",
+        "source_url": "https://pub.njleg.gov/bills/2024/PL25/405_.HTM",
+        "quoted_span": "A landlord, or agent thereof, who violates\nsubsection a. of this section shall be liable for a penalty of up to $500 for a\nfirst offense, up to $750 for a second offense, and up to $1,000 for each\nsubsequent offense, which shall be collected and enforced by summary\nproceedings pursuant to the \"Penalty Enforcement Law of 1999,\"\nP.L.1999, c.274 (C.2A:58-10 et seq.).  The Superior Court, Law Division,\nSpecial Civil Part in the county in which the residential rental property is\nlocated shall have jurisdiction over the proceedings.  Process shall be in the\nnature of a summons or warrant and shall issue upon the complaint of the\nDirector of the Division of Consumer Affairs in the Department of Law and\nPublic Safety or the Attorney General.  Following the proceedings, the amount\nwrongfully charged shall be taken from the collected penalty and shall be\nremitted to the applicant or prospective tenant.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "application_screening_fees",
+        "citation": "C.46:8-18.1(b)",
+        "provision_ids": [
+          "P2"
+        ],
+        "source_basis": "operative_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "A landlord, or agent thereof, who violates\nsubsection a. of this section shall be liable for a penalty of up to $500 for a\nfirst offense, up to $750 for a second offense, and up to $1,000 for each\nsubsequent offense, which shall be collected and enforced by summary\nproceedings pursuant to the \"Penalty Enforcement Law of 1999,\"\nP.L.1999, c.274 (C.2A:58-10 et seq.).  The Superior Court, Law Division,\nSpecial Civil Part in the county in which the residential rental property is\nlocated shall have jurisdiction over the proceedings.  Process shall be in the\nnature of a summons or warrant and shall issue upon the complaint of the\nDirector of the Division of Consumer Affairs in the Department of Law and\nPublic Safety or the Attorney General.  Following the proceedings, the amount\nwrongfully charged shall be taken from the collected penalty and shall be\nremitted to the applicant or prospective tenant."
+          }
+        ],
+        "title": "Penalties and remittance for application fee violations",
+        "requirement": "A landlord or agent who violates the application fee cap is liable for penalties up to $500 for a first offense, up to $750 for a second offense, and up to $1,000 for each subsequent offense, with the wrongfully charged fee taken from the collected penalty and remitted to the applicant or prospective tenant.",
+        "key_value": "up to $500 for a first offense, up to $750 for a second offense, and up to $1,000 for each subsequent offense",
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": "Approved January 20, 2026.",
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": "This act shall take effect on the first day of the\nfourth month next following the date of enactment",
+        "effective_date_evidence_kind": "relative_date_formula",
+        "effective_date": null,
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 2,
+      "origin": "primary",
+      "accepted": true,
+      "held": false,
+      "rejection_reasons": [],
+      "provision_ids": [
+        "P4"
+      ],
+      "source_basis": "operative_text",
+      "status_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 4038,
+        "end": 4064,
+        "occurrences": 1,
+        "model_span": "Approved January 20, 2026.",
+        "source_span": "Approved January 20, 2026.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [
+          "An adjustment in the fee limitation is made only if the percent change in the Consumer Price Index for the specified 12-month period ending October 31 is greater than zero."
+        ],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 1741,
+        "end": 3111,
+        "occurrences": 1,
+        "model_span": "Beginning on\nJanuary 1 of the year next following enactment of P.L.2025, c.405 (C.46:8-18.1\net seq.) and each year thereafter, the amount of the fee limitation established\npursuant to subsection a. of this section shall be adjusted by the Director of\nthe Division of Consumer Affairs in the Department of Law and Public Safety in\ndirect proportion to the percent change in the Consumer Price Index over a\n12-month period ending October 31 of the previous year.  For the purpose of\nthis section, \"Consumer Price Index\" means the Consumer Price Index\nfor All Urban Consumers, New York-Northern New Jersey-Long Island Metropolitan\nArea, All Items (1982-84=100), as published by the Bureau of Labor Statistics\nin the United States Department of Labor.  The State Treasurer shall determine\nthe amount of the adjustment by December 1 of each year, and the adjustment to\nthe limitation shall become effective for fees charged during the calendar year\nfollowing the December 1 determination, beginning with fees made on or after\nJanuary 1 of each calendar year.  An adjustment in the fee limitation shall be\nmade only if the percent change in the Consumer Price Index for the period\nspecified is greater than zero.  The Director of the Division of Consumer\nAffairs shall annually publish the fee limitation applicable pursuant to this\nsection on the division’s Internet website.",
+        "source_span": "Beginning on\nJanuary 1 of the year next following enactment of P.L.2025, c.405 (C.46:8-18.1\net seq.) and each year thereafter, the amount of the fee limitation established\npursuant to subsection a. of this section shall be adjusted by the Director of\nthe Division of Consumer Affairs in the Department of Law and Public Safety in\ndirect proportion to the percent change in the Consumer Price Index over a\n12-month period ending October 31 of the previous year.  For the purpose of\nthis section, \"Consumer Price Index\" means the Consumer Price Index\nfor All Urban Consumers, New York-Northern New Jersey-Long Island Metropolitan\nArea, All Items (1982-84=100), as published by the Bureau of Labor Statistics\nin the United States Department of Labor.  The State Treasurer shall determine\nthe amount of the adjustment by December 1 of each year, and the adjustment to\nthe limitation shall become effective for fees charged during the calendar year\nfollowing the December 1 determination, beginning with fees made on or after\nJanuary 1 of each calendar year.  An adjustment in the fee limitation shall be\nmade only if the percent change in the Consumer Price Index for the period\nspecified is greater than zero.  The Director of the Division of Consumer\nAffairs shall annually publish the fee limitation applicable pursuant to this\nsection on the division’s Internet website.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "Beginning on\nJanuary 1 of the year next following enactment of P.L.2025, c.405 (C.46:8-18.1\net seq.) and each year thereafter, the amount of the fee limitation established\npursuant to subsection a. of this section shall be adjusted by the Director of\nthe Division of Consumer Affairs in the Department of Law and Public Safety in\ndirect proportion to the percent change in the Consumer Price Index over a\n12-month period ending October 31 of the previous year.  For the purpose of\nthis section, \"Consumer Price Index\" means the Consumer Price Index\nfor All Urban Consumers, New York-Northern New Jersey-Long Island Metropolitan\nArea, All Items (1982-84=100), as published by the Bureau of Labor Statistics\nin the United States Department of Labor.  The State Treasurer shall determine\nthe amount of the adjustment by December 1 of each year, and the adjustment to\nthe limitation shall become effective for fees charged during the calendar year\nfollowing the December 1 determination, beginning with fees made on or after\nJanuary 1 of each calendar year.  An adjustment in the fee limitation shall be\nmade only if the percent change in the Consumer Price Index for the period\nspecified is greater than zero.  The Director of the Division of Consumer\nAffairs shall annually publish the fee limitation applicable pursuant to this\nsection on the division’s Internet website.",
+            "status": "exact_match",
+            "start": 1741,
+            "end": 3111
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 3733,
+        "end": 3833,
+        "occurrences": 1,
+        "model_span": "This act shall take effect on the first day of the\nfourth month next following the date of enactment",
+        "source_span": "This act shall take effect on the first day of the\nfourth month next following the date of enactment",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "version_evidence": null,
+      "operative_conditions": [
+        {
+          "statement": "An adjustment in the fee limitation is made only if the percent change in the Consumer Price Index for the specified 12-month period ending October 31 is greater than zero.",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 2796,
+            "end": 2947,
+            "occurrences": 1,
+            "model_span": "An adjustment in the fee limitation shall be\nmade only if the percent change in the Consumer Price Index for the period\nspecified is greater than zero.",
+            "source_span": "An adjustment in the fee limitation shall be\nmade only if the percent change in the Consumer Price Index for the period\nspecified is greater than zero.",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [],
+            "crossed_artifacts": []
+          }
+        }
+      ],
+      "propagated_scope": [],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": "relative_date_formula",
+        "applied_kind": "relative_date_formula",
+        "effective_date": "2026-05-01",
+        "history_evidence": null,
+        "relative_resolution": {
+          "resolver": "first-day-of-nth-month-next-following/v1",
+          "outcome": "resolved",
+          "reason": null,
+          "formula": "take effect on the first day of the fourth month next following the date of enactment",
+          "formula_evidence": {
+            "text": "This act shall take effect on the first day of the\nfourth month next following the date of enactment",
+            "start": 3733,
+            "end": 3833
+          },
+          "base_date": "2026-01-20",
+          "base_date_evidence": {
+            "event": "approved",
+            "date": "2026-01-20",
+            "start": 4038,
+            "end": 4063,
+            "text": "Approved January 20, 2026"
+          },
+          "base_date_candidates": [
+            {
+              "event": "approved",
+              "date": "2026-01-20",
+              "start": 4038,
+              "end": 4063,
+              "text": "Approved January 20, 2026"
+            }
+          ],
+          "resolved_date": "2026-05-01",
+          "ordinal": 4,
+          "anchor": "enactment"
+        },
+        "posture": "enacted_session_law",
+        "posture_consistent": true
+      },
+      "status_derivation": "enacted; effective 2026-05-01 is on or before as_of 2026-10-01",
+      "warnings": [
+        "review: applicability depends on an unresolved operative condition"
+      ],
+      "rule": {
+        "team_rule_id": "r-fef1749298",
+        "jurisdiction": "NJ",
+        "level": "state",
+        "category": "application_screening_fees",
+        "status": "in_force",
+        "title": "Annual CPI adjustment of application fee limitation",
+        "requirement": "The residential rental application fee limitation shall be adjusted annually by the Director of the Division of Consumer Affairs in direct proportion to the positive percent change in the Consumer Price Index over the 12-month period ending October 31, effective January 1, and published on the division's website.",
+        "key_value": null,
+        "coverage_conditions": "Operative condition (unresolved; applicability may be unknown): An adjustment in the fee limitation is made only if the percent change in the Consumer Price Index for the specified 12-month period ending October 31 is greater than zero.",
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": "2026-05-01",
+        "citation": "C.46:8-18.1(d)",
+        "source_doc_id": "D066",
+        "source_url": "https://pub.njleg.gov/bills/2024/PL25/405_.HTM",
+        "quoted_span": "Beginning on\nJanuary 1 of the year next following enactment of P.L.2025, c.405 (C.46:8-18.1\net seq.) and each year thereafter, the amount of the fee limitation established\npursuant to subsection a. of this section shall be adjusted by the Director of\nthe Division of Consumer Affairs in the Department of Law and Public Safety in\ndirect proportion to the percent change in the Consumer Price Index over a\n12-month period ending October 31 of the previous year.  For the purpose of\nthis section, \"Consumer Price Index\" means the Consumer Price Index\nfor All Urban Consumers, New York-Northern New Jersey-Long Island Metropolitan\nArea, All Items (1982-84=100), as published by the Bureau of Labor Statistics\nin the United States Department of Labor.  The State Treasurer shall determine\nthe amount of the adjustment by December 1 of each year, and the adjustment to\nthe limitation shall become effective for fees charged during the calendar year\nfollowing the December 1 determination, beginning with fees made on or after\nJanuary 1 of each calendar year.  An adjustment in the fee limitation shall be\nmade only if the percent change in the Consumer Price Index for the period\nspecified is greater than zero.  The Director of the Division of Consumer\nAffairs shall annually publish the fee limitation applicable pursuant to this\nsection on the division’s Internet website.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "application_screening_fees",
+        "citation": "C.46:8-18.1(d)",
+        "provision_ids": [
+          "P4"
+        ],
+        "source_basis": "operative_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "Beginning on\nJanuary 1 of the year next following enactment of P.L.2025, c.405 (C.46:8-18.1\net seq.) and each year thereafter, the amount of the fee limitation established\npursuant to subsection a. of this section shall be adjusted by the Director of\nthe Division of Consumer Affairs in the Department of Law and Public Safety in\ndirect proportion to the percent change in the Consumer Price Index over a\n12-month period ending October 31 of the previous year.  For the purpose of\nthis section, \"Consumer Price Index\" means the Consumer Price Index\nfor All Urban Consumers, New York-Northern New Jersey-Long Island Metropolitan\nArea, All Items (1982-84=100), as published by the Bureau of Labor Statistics\nin the United States Department of Labor.  The State Treasurer shall determine\nthe amount of the adjustment by December 1 of each year, and the adjustment to\nthe limitation shall become effective for fees charged during the calendar year\nfollowing the December 1 determination, beginning with fees made on or after\nJanuary 1 of each calendar year.  An adjustment in the fee limitation shall be\nmade only if the percent change in the Consumer Price Index for the period\nspecified is greater than zero.  The Director of the Division of Consumer\nAffairs shall annually publish the fee limitation applicable pursuant to this\nsection on the division’s Internet website."
+          }
+        ],
+        "title": "Annual CPI adjustment of application fee limitation",
+        "requirement": "The residential rental application fee limitation shall be adjusted annually by the Director of the Division of Consumer Affairs in direct proportion to the positive percent change in the Consumer Price Index over the 12-month period ending October 31, effective January 1, and published on the division's website.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [
+          {
+            "statement": "An adjustment in the fee limitation is made only if the percent change in the Consumer Price Index for the specified 12-month period ending October 31 is greater than zero.",
+            "evidence": "An adjustment in the fee limitation shall be\nmade only if the percent change in the Consumer Price Index for the period\nspecified is greater than zero."
+          }
+        ],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": "Approved January 20, 2026.",
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": "This act shall take effect on the first day of the\nfourth month next following the date of enactment",
+        "effective_date_evidence_kind": "relative_date_formula",
+        "effective_date": null,
+        "conflict_note": null
+      }
+    }
+  ],
+  "posture": {
+    "declared": "enacted_session_law",
+    "evidence": "Approved January 20, 2026.",
+    "evidence_check": {
+      "status": "exact_match",
+      "normalization": null,
+      "start": 4038,
+      "end": 4064,
+      "occurrences": 1,
+      "model_span": "Approved January 20, 2026.",
+      "source_span": "Approved January 20, 2026.",
+      "reason": null,
+      "reconstructed": false,
+      "parts": [],
+      "crossed_artifacts": []
+    },
+    "established": "enacted_session_law",
+    "basis": "declared posture with verified evidence"
+  },
+  "base_dates": [
+    {
+      "event": "approved",
+      "date": "2026-01-20",
+      "start": 4038,
+      "end": 4063,
+      "text": "Approved January 20, 2026"
+    }
+  ],
+  "provision_inventory": [
+    {
+      "id": "P1",
+      "ref": "C.46:8-18.1(a)",
+      "anchor": "1. a. A landlord, or\nagent thereof, shall not require",
+      "summary": "Prohibits application or similar fees exceeding $50 to apply to lease or sublease residential rental property for dwelling purposes.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "application_screening_fees",
+      "reason": null
+    },
+    {
+      "id": "P2",
+      "ref": "C.46:8-18.1(b)",
+      "anchor": "b.  A landlord, or agent thereof, who violates",
+      "summary": "Establishes civil penalties for violating application fee limits and requires wrongfully charged amounts to be remitted to applicants.",
+      "role": "remedy",
+      "scope": "in_scope",
+      "category": "application_screening_fees",
+      "reason": null
+    },
+    {
+      "id": "P3",
+      "ref": "C.46:8-18.1(c)",
+      "anchor": "c.  The requirements of subsection a. of this section",
+      "summary": "Exempts one- and two-family rental dwelling units and certain real estate licensees from application fee requirements.",
+      "role": "exemption",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "exemption, see global_scope"
+    },
+    {
+      "id": "P4",
+      "ref": "C.46:8-18.1(d)",
+      "anchor": "d.    Beginning on\nJanuary 1 of the year next following",
+      "summary": "Requires annual Consumer Price Index adjustments to the application fee limitation.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "application_screening_fees",
+      "reason": null
+    },
+    {
+      "id": "P5",
+      "ref": "C.46:8-18.2",
+      "anchor": "2.  The Director of the Division of Consumer Affairs",
+      "summary": "Authorizes administrative rules and requires a violation reporting mechanism for applicants.",
+      "role": "enforcement",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "administrative rulemaking and violation reporting mechanism"
+    },
+    {
+      "id": "P6",
+      "ref": "§ 3",
+      "anchor": "3.  This act shall take effect on the first day",
+      "summary": "States the act's effective date and authorizes anticipatory action.",
+      "role": "procedure",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "effective date provision"
+    }
+  ],
+  "global_scope": [
+    {
+      "id": "S1",
+      "kind": "exemption",
+      "statement": "The application fee limits do not apply to a dwelling unit located in a one-family or two-family dwelling offered for rent.",
+      "citation": "C.46:8-18.1(c)(1)",
+      "scope_mode": "explicit_reference",
+      "scope_quote": "The requirements of subsection a. of this section\nshall not apply to:",
+      "source_provision_id": "P3",
+      "governed_provision_ids": [
+        "P1"
+      ],
+      "evidence_parts": [
+        {
+          "segment_id": 1,
+          "quoted_text": "The requirements of subsection a. of this section\nshall not apply to:\n(1) a dwelling unit\nlocated in a one-family or two-family dwelling that is offered for rent; or"
+        }
+      ],
+      "evidence_check": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 1439,
+        "end": 1604,
+        "occurrences": 1,
+        "model_span": "The requirements of subsection a. of this section\nshall not apply to:\n(1) a dwelling unit\nlocated in a one-family or two-family dwelling that is offered for rent; or",
+        "source_span": "The requirements of subsection a. of this section\nshall not apply to:\n(1) a dwelling unit\nlocated in a one-family or two-family dwelling that is offered for rent; or",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "The requirements of subsection a. of this section\nshall not apply to:\n(1) a dwelling unit\nlocated in a one-family or two-family dwelling that is offered for rent; or",
+            "status": "exact_match",
+            "start": 1439,
+            "end": 1604
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "propagated": true,
+      "problem": null,
+      "scope": {
+        "resolver": "scope-modes/v1",
+        "declared_mode": "explicit_reference",
+        "mode": "named_subject",
+        "scope_words": {
+          "scope_quote": "The requirements of subsection a. of this section\nshall not apply to:",
+          "scope_quote_check": "exact_match",
+          "text": "The requirements of subsection a. of this section\nshall not apply to:",
+          "from": "scope_quote"
+        },
+        "detail": "this section\nshall",
+        "propagate_ids": [],
+        "mapping_targets": [
+          "P1"
+        ],
+        "verification": "the proposed provisions are not a structural container of the stating provision",
+        "fallback_from": "structural"
+      }
+    },
+    {
+      "id": "S2",
+      "kind": "exemption",
+      "statement": "The application fee limits do not apply to a licensee of the New Jersey Real Estate Commission, unless the licensee is the landlord of the residential rental property.",
+      "citation": "C.46:8-18.1(c)(2)",
+      "scope_mode": "explicit_reference",
+      "scope_quote": "The requirements of subsection a. of this section\nshall not apply to:",
+      "source_provision_id": "P3",
+      "governed_provision_ids": [
+        "P1"
+      ],
+      "evidence_parts": [
+        {
+          "segment_id": 1,
+          "quoted_text": "The requirements of subsection a. of this section\nshall not apply to:\n(1) a dwelling unit\nlocated in a one-family or two-family dwelling that is offered for rent; or\n(2)  a licensee of the New Jersey Real Estate\nCommission, unless the licensee is the landlord of the residential rental\nproperty."
+        }
+      ],
+      "evidence_check": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 1439,
+        "end": 1734,
+        "occurrences": 1,
+        "model_span": "The requirements of subsection a. of this section\nshall not apply to:\n(1) a dwelling unit\nlocated in a one-family or two-family dwelling that is offered for rent; or\n(2)  a licensee of the New Jersey Real Estate\nCommission, unless the licensee is the landlord of the residential rental\nproperty.",
+        "source_span": "The requirements of subsection a. of this section\nshall not apply to:\n(1) a dwelling unit\nlocated in a one-family or two-family dwelling that is offered for rent; or\n(2)  a licensee of the New Jersey Real Estate\nCommission, unless the licensee is the landlord of the residential rental\nproperty.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "The requirements of subsection a. of this section\nshall not apply to:\n(1) a dwelling unit\nlocated in a one-family or two-family dwelling that is offered for rent; or\n(2)  a licensee of the New Jersey Real Estate\nCommission, unless the licensee is the landlord of the residential rental\nproperty.",
+            "status": "exact_match",
+            "start": 1439,
+            "end": 1734
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "propagated": true,
+      "problem": null,
+      "scope": {
+        "resolver": "scope-modes/v1",
+        "declared_mode": "explicit_reference",
+        "mode": "named_subject",
+        "scope_words": {
+          "scope_quote": "The requirements of subsection a. of this section\nshall not apply to:",
+          "scope_quote_check": "exact_match",
+          "text": "The requirements of subsection a. of this section\nshall not apply to:",
+          "from": "scope_quote"
+        },
+        "detail": "this section\nshall",
+        "propagate_ids": [],
+        "mapping_targets": [
+          "P1"
+        ],
+        "verification": "the proposed provisions are not a structural container of the stating provision",
+        "fallback_from": "structural"
+      }
+    }
+  ],
+  "source_view": {
+    "marker": "[[PAGE BREAK]]",
+    "segment_label": "[[SEGMENT {}]]",
+    "view_sha256": "aabbb52db6cfbc465bf6d06c18350241e864f433d73331041787b74fcaa61e95",
+    "segments": [
+      {
+        "id": 1,
+        "raw_start": 0,
+        "raw_end": 4064
+      }
+    ],
+    "artifacts_removed": 0,
+    "artifacts": []
+  },
+  "coverage": {
+    "inventory_valid": true,
+    "anchors_located": "6/6",
+    "after_primary": {
+      "uncovered": [],
+      "unaccepted": [],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "scope_mappings": {
+      "requested": 2,
+      "applies": 2,
+      "does_not_apply": 0,
+      "unresolved": 0
+    },
+    "after_repair": {
+      "uncovered": [],
+      "unaccepted": [],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "repair_targets": {
+      "before_repair": 0,
+      "resolved_by_accepted_rule": 0,
+      "resolved_out_of_scope": 0,
+      "still_unresolved": 0
+    },
+    "inventory_items": 6,
+    "in_scope_items": 3,
+    "in_scope_refs": 3,
+    "uncertain": [],
+    "final": {
+      "uncovered": [],
+      "unaccepted": [],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "link_mismatches": [],
+    "provisions": [
+      {
+        "ref": "C.46:8-18.1(a)",
+        "inventory_item": 0,
+        "provision_id": "P1",
+        "summary": "Prohibits application or similar fees exceeding $50 to apply to lease or sublease residential rental property for dwelling purposes.",
+        "category": "application_screening_fees",
+        "candidates": [
+          0
+        ],
+        "accepted": [
+          0
+        ],
+        "basis": {
+          "0": "provision link; citation names it"
+        }
+      },
+      {
+        "ref": "C.46:8-18.1(b)",
+        "inventory_item": 1,
+        "provision_id": "P2",
+        "summary": "Establishes civil penalties for violating application fee limits and requires wrongfully charged amounts to be remitted to applicants.",
+        "category": "application_screening_fees",
+        "candidates": [
+          1
+        ],
+        "accepted": [
+          1
+        ],
+        "basis": {
+          "1": "provision link; citation names it"
+        }
+      },
+      {
+        "ref": "C.46:8-18.1(d)",
+        "inventory_item": 3,
+        "provision_id": "P4",
+        "summary": "Requires annual Consumer Price Index adjustments to the application fee limitation.",
+        "category": "application_screening_fees",
+        "candidates": [
+          2
+        ],
+        "accepted": [
+          2
+        ],
+        "basis": {
+          "2": "provision link; citation names it"
+        }
+      }
+    ],
+    "unrecorded_subdivisions": []
+  },
+  "scope_challenges": [
+    {
+      "ref": "C.46:8-18.1(c)",
+      "provision_id": "P3",
+      "role": "exemption",
+      "reason": "exemption, see global_scope",
+      "summary": "Exempts one- and two-family rental dwelling units and certain real estate licensees from application fee requirements.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role exemption is decided by other rules"
+    },
+    {
+      "ref": "C.46:8-18.2",
+      "provision_id": "P5",
+      "role": "enforcement",
+      "reason": "administrative rulemaking and violation reporting mechanism",
+      "summary": "Authorizes administrative rules and requires a violation reporting mechanism for applicants.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role enforcement is decided by other rules"
+    },
+    {
+      "ref": "§ 3",
+      "provision_id": "P6",
+      "role": "procedure",
+      "reason": "effective date provision",
+      "summary": "States the act's effective date and authorizes anticipatory action.",
+      "signals": {
+        "in_scope_neighbour": false,
+        "enumeration": false,
+        "normative_language": true,
+        "grounds_or_conditions": false
+      },
+      "challenged": false,
+      "why_not": "too few substantive signals",
+      "raw_start": 3729,
+      "raw_end": 4064
+    }
+  ],
+  "scope_mappings": [
+    {
+      "condition_id": "S1",
+      "provision_id": "P1",
+      "kind": "exemption",
+      "statement": "The application fee limits do not apply to a dwelling unit located in a one-family or two-family dwelling offered for rent.",
+      "scope_words": "The requirements of subsection a. of this section\nshall not apply to:",
+      "condition_evidence": "The requirements of subsection a. of this section\nshall not apply to:\n(1) a dwelling unit\nlocated in a one-family or two-family dwelling that is offered for rent; or",
+      "target_ref": "C.46:8-18.1(a)",
+      "target_anchor": "1. a. A landlord, or\nagent thereof, shall not require",
+      "target_quote": "A landlord, or\nagent thereof, shall not require an application or other similar fee to apply\nto lease or sublease a residential rental property for dwelling purposes, which\nexceeds $50.",
+      "decision": {
+        "decision": "applies",
+        "reason": "Subsection c. explicitly provides that the fee limit requirements of subsection a. do not apply to a dwelling unit located in a one-family or two-family dwelling offered for rent.",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 1439,
+          "end": 1601,
+          "occurrences": 1,
+          "model_span": "The requirements of subsection a. of this section\nshall not apply to:\n(1) a dwelling unit\nlocated in a one-family or two-family dwelling that is offered for rent;",
+          "source_span": "The requirements of subsection a. of this section\nshall not apply to:\n(1) a dwelling unit\nlocated in a one-family or two-family dwelling that is offered for rent;",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 1,
+              "model_text": "The requirements of subsection a. of this section\nshall not apply to:\n(1) a dwelling unit\nlocated in a one-family or two-family dwelling that is offered for rent;",
+              "status": "exact_match",
+              "start": 1439,
+              "end": 1601
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "applies",
+      "unresolved_reason": null
+    },
+    {
+      "condition_id": "S2",
+      "provision_id": "P1",
+      "kind": "exemption",
+      "statement": "The application fee limits do not apply to a licensee of the New Jersey Real Estate Commission, unless the licensee is the landlord of the residential rental property.",
+      "scope_words": "The requirements of subsection a. of this section\nshall not apply to:",
+      "condition_evidence": "The requirements of subsection a. of this section\nshall not apply to:\n(1) a dwelling unit\nlocated in a one-family or two-family dwelling that is offered for rent; or\n(2)  a licensee of the New Jersey Real Estate\nCommission, unless the licensee is the landlord of the residential rental\nproperty.",
+      "target_ref": "C.46:8-18.1(a)",
+      "target_anchor": "1. a. A landlord, or\nagent thereof, shall not require",
+      "target_quote": "A landlord, or\nagent thereof, shall not require an application or other similar fee to apply\nto lease or sublease a residential rental property for dwelling purposes, which\nexceeds $50.",
+      "decision": {
+        "decision": "applies",
+        "reason": "Subsection c. explicitly provides that the fee limit requirements of subsection a. do not apply to a licensee of the New Jersey Real Estate Commission unless the licensee is the landlord.",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 1439,
+          "end": 1734,
+          "occurrences": 1,
+          "model_span": "The requirements of subsection a. of this section\nshall not apply to:\n(1) a dwelling unit\nlocated in a one-family or two-family dwelling that is offered for rent; or\n(2)  a licensee of the New Jersey Real Estate\nCommission, unless the licensee is the landlord of the residential rental\nproperty.",
+          "source_span": "The requirements of subsection a. of this section\nshall not apply to:\n(1) a dwelling unit\nlocated in a one-family or two-family dwelling that is offered for rent; or\n(2)  a licensee of the New Jersey Real Estate\nCommission, unless the licensee is the landlord of the residential rental\nproperty.",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 1,
+              "model_text": "The requirements of subsection a. of this section\nshall not apply to:\n(1) a dwelling unit\nlocated in a one-family or two-family dwelling that is offered for rent; or\n(2)  a licensee of the New Jersey Real Estate\nCommission, unless the licensee is the landlord of the residential rental\nproperty.",
+              "status": "exact_match",
+              "start": 1439,
+              "end": 1734
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "applies",
+      "unresolved_reason": null
+    }
+  ],
+  "legislative_session": null,
+  "empty_result": null,
+  "legacy_replay": null,
+  "repair": {
+    "invoked": true,
+    "reason": "0 repair target(s) from no check; 2 scope_mapping_challenge(s)",
+    "prompt_version": "v7-repair-1",
+    "targets": [],
+    "cache_key": "c21e4a14f749f147a02d2f66b970028a2870cc76f523b8a4925a1d3feacafc62",
+    "cache_hit": false,
+    "cache_entry": "cache/extraction/c21e4a14f749f147a02d2f66b970028a2870cc76f523b8a4925a1d3feacafc62.json",
+    "prompt_sha256": "f83d18f778f51168646c45f1e8e32b99224ddb30ef4c3db7fb0e7235721621df",
+    "provider_metadata": {
+      "api": "interactions.create",
+      "interaction_id": "",
+      "model": "gemini-3.8-flash",
+      "status": "completed",
+      "usage": {
+        "input_tokens": 4831,
+        "output_tokens": 373,
+        "thinking_tokens": 1317,
+        "total_tokens": 6521
+      }
+    },
+    "raw_response_text": "{\n  \"target_resolutions\": [],\n  \"scope_mappings\": [\n    {\n      \"condition_id\": \"S1\",\n      \"provision_id\": \"P1\",\n      \"decision\": \"applies\",\n      \"reason\": \"Subsection c. explicitly provides that the fee limit requirements of subsection a. do not apply to a dwelling unit located in a one-family or two-family dwelling offered for rent.\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"The requirements of subsection a. of this section\\nshall not apply to:\\n(1) a dwelling unit\\nlocated in a one-family or two-family dwelling that is offered for rent;\"\n        }\n      ]\n    },\n    {\n      \"condition_id\": \"S2\",\n      \"provision_id\": \"P1\",\n      \"decision\": \"applies\",\n      \"reason\": \"Subsection c. explicitly provides that the fee limit requirements of subsection a. do not apply to a licensee of the New Jersey Real Estate Commission unless the licensee is the landlord.\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"The requirements of subsection a. of this section\\nshall not apply to:\\n(1) a dwelling unit\\nlocated in a one-family or two-family dwelling that is offered for rent; or\\n(2)  a licensee of the New Jersey Real Estate\\nCommission, unless the licensee is the landlord of the residential rental\\nproperty.\"\n        }\n      ]\n    }\n  ],\n  \"rules\": []\n}",
+    "mappings": [
+      {
+        "condition_id": "S1",
+        "provision_id": "P1",
+        "kind": "exemption",
+        "statement": "The application fee limits do not apply to a dwelling unit located in a one-family or two-family dwelling offered for rent.",
+        "scope_words": "The requirements of subsection a. of this section\nshall not apply to:",
+        "condition_evidence": "The requirements of subsection a. of this section\nshall not apply to:\n(1) a dwelling unit\nlocated in a one-family or two-family dwelling that is offered for rent; or",
+        "target_ref": "C.46:8-18.1(a)",
+        "target_anchor": "1. a. A landlord, or\nagent thereof, shall not require",
+        "target_quote": "A landlord, or\nagent thereof, shall not require an application or other similar fee to apply\nto lease or sublease a residential rental property for dwelling purposes, which\nexceeds $50.",
+        "decision": {
+          "decision": "applies",
+          "reason": "Subsection c. explicitly provides that the fee limit requirements of subsection a. do not apply to a dwelling unit located in a one-family or two-family dwelling offered for rent.",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 1439,
+            "end": 1601,
+            "occurrences": 1,
+            "model_span": "The requirements of subsection a. of this section\nshall not apply to:\n(1) a dwelling unit\nlocated in a one-family or two-family dwelling that is offered for rent;",
+            "source_span": "The requirements of subsection a. of this section\nshall not apply to:\n(1) a dwelling unit\nlocated in a one-family or two-family dwelling that is offered for rent;",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 1,
+                "model_text": "The requirements of subsection a. of this section\nshall not apply to:\n(1) a dwelling unit\nlocated in a one-family or two-family dwelling that is offered for rent;",
+                "status": "exact_match",
+                "start": 1439,
+                "end": 1601
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "applies",
+        "unresolved_reason": null
+      },
+      {
+        "condition_id": "S2",
+        "provision_id": "P1",
+        "kind": "exemption",
+        "statement": "The application fee limits do not apply to a licensee of the New Jersey Real Estate Commission, unless the licensee is the landlord of the residential rental property.",
+        "scope_words": "The requirements of subsection a. of this section\nshall not apply to:",
+        "condition_evidence": "The requirements of subsection a. of this section\nshall not apply to:\n(1) a dwelling unit\nlocated in a one-family or two-family dwelling that is offered for rent; or\n(2)  a licensee of the New Jersey Real Estate\nCommission, unless the licensee is the landlord of the residential rental\nproperty.",
+        "target_ref": "C.46:8-18.1(a)",
+        "target_anchor": "1. a. A landlord, or\nagent thereof, shall not require",
+        "target_quote": "A landlord, or\nagent thereof, shall not require an application or other similar fee to apply\nto lease or sublease a residential rental property for dwelling purposes, which\nexceeds $50.",
+        "decision": {
+          "decision": "applies",
+          "reason": "Subsection c. explicitly provides that the fee limit requirements of subsection a. do not apply to a licensee of the New Jersey Real Estate Commission unless the licensee is the landlord.",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 1439,
+            "end": 1734,
+            "occurrences": 1,
+            "model_span": "The requirements of subsection a. of this section\nshall not apply to:\n(1) a dwelling unit\nlocated in a one-family or two-family dwelling that is offered for rent; or\n(2)  a licensee of the New Jersey Real Estate\nCommission, unless the licensee is the landlord of the residential rental\nproperty.",
+            "source_span": "The requirements of subsection a. of this section\nshall not apply to:\n(1) a dwelling unit\nlocated in a one-family or two-family dwelling that is offered for rent; or\n(2)  a licensee of the New Jersey Real Estate\nCommission, unless the licensee is the landlord of the residential rental\nproperty.",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 1,
+                "model_text": "The requirements of subsection a. of this section\nshall not apply to:\n(1) a dwelling unit\nlocated in a one-family or two-family dwelling that is offered for rent; or\n(2)  a licensee of the New Jersey Real Estate\nCommission, unless the licensee is the landlord of the residential rental\nproperty.",
+                "status": "exact_match",
+                "start": 1439,
+                "end": 1734
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "applies",
+        "unresolved_reason": null
+      }
+    ],
+    "candidate_indices": [],
+    "accepted_count": 0,
+    "rejected_count": 0,
+    "errors": []
+  },
+  "document_status": "complete",
+  "review_reasons": [],
+  "warnings": [],
+  "errors": [],
+  "raw_response_text": "{\n  \"document\": {\n    \"posture\": \"enacted_session_law\",\n    \"evidence\": \"Approved January 20, 2026.\"\n  },\n  \"provisions\": [\n    {\n      \"id\": \"P1\",\n      \"ref\": \"C.46:8-18.1(a)\",\n      \"anchor\": \"1. a. A landlord, or\\nagent thereof, shall not require\",\n      \"summary\": \"Prohibits application or similar fees exceeding $50 to apply to lease or sublease residential rental property for dwelling purposes.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"application_screening_fees\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P2\",\n      \"ref\": \"C.46:8-18.1(b)\",\n      \"anchor\": \"b.  A landlord, or agent thereof, who violates\",\n      \"summary\": \"Establishes civil penalties for violating application fee limits and requires wrongfully charged amounts to be remitted to applicants.\",\n      \"role\": \"remedy\",\n      \"scope\": \"in_scope\",\n      \"category\": \"application_screening_fees\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P3\",\n      \"ref\": \"C.46:8-18.1(c)\",\n      \"anchor\": \"c.  The requirements of subsection a. of this section\",\n      \"summary\": \"Exempts one- and two-family rental dwelling units and certain real estate licensees from application fee requirements.\",\n      \"role\": \"exemption\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"exemption, see global_scope\"\n    },\n    {\n      \"id\": \"P4\",\n      \"ref\": \"C.46:8-18.1(d)\",\n      \"anchor\": \"d.    Beginning on\\nJanuary 1 of the year next following\",\n      \"summary\": \"Requires annual Consumer Price Index adjustments to the application fee limitation.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"application_screening_fees\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P5\",\n      \"ref\": \"C.46:8-18.2\",\n      \"anchor\": \"2.  The Director of the Division of Consumer Affairs\",\n      \"summary\": \"Authorizes administrative rules and requires a violation reporting mechanism for applicants.\",\n      \"role\": \"enforcement\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"administrative rulemaking and violation reporting mechanism\"\n    },\n    {\n      \"id\": \"P6\",\n      \"ref\": \"§ 3\",\n      \"anchor\": \"3.  This act shall take effect on the first day\",\n      \"summary\": \"States the act's effective date and authorizes anticipatory action.\",\n      \"role\": \"procedure\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"effective date provision\"\n    }\n  ],\n  \"global_scope\": [\n    {\n      \"id\": \"S1\",\n      \"kind\": \"exemption\",\n      \"statement\": \"The application fee limits do not apply to a dwelling unit located in a one-family or two-family dwelling offered for rent.\",\n      \"citation\": \"C.46:8-18.1(c)(1)\",\n      \"scope_mode\": \"explicit_reference\",\n      \"scope_quote\": \"The requirements of subsection a. of this section\\nshall not apply to:\",\n      \"source_provision_id\": \"P3\",\n      \"governed_provision_ids\": [\n        \"P1\"\n      ],\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"The requirements of subsection a. of this section\\nshall not apply to:\\n(1) a dwelling unit\\nlocated in a one-family or two-family dwelling that is offered for rent; or\"\n        }\n      ]\n    },\n    {\n      \"id\": \"S2\",\n      \"kind\": \"exemption\",\n      \"statement\": \"The application fee limits do not apply to a licensee of the New Jersey Real Estate Commission, unless the licensee is the landlord of the residential rental property.\",\n      \"citation\": \"C.46:8-18.1(c)(2)\",\n      \"scope_mode\": \"explicit_reference\",\n      \"scope_quote\": \"The requirements of subsection a. of this section\\nshall not apply to:\",\n      \"source_provision_id\": \"P3\",\n      \"governed_provision_ids\": [\n        \"P1\"\n      ],\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"The requirements of subsection a. of this section\\nshall not apply to:\\n(1) a dwelling unit\\nlocated in a one-family or two-family dwelling that is offered for rent; or\\n(2)  a licensee of the New Jersey Real Estate\\nCommission, unless the licensee is the landlord of the residential rental\\nproperty.\"\n        }\n      ]\n    }\n  ],\n  \"rules\": [\n    {\n      \"category\": \"application_screening_fees\",\n      \"citation\": \"C.46:8-18.1(a)\",\n      \"provision_ids\": [\n        \"P1\"\n      ],\n      \"source_basis\": \"operative_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"A landlord, or\\nagent thereof, shall not require an application or other similar fee to apply\\nto lease or sublease a residential rental property for dwelling purposes, which\\nexceeds $50.\"\n        }\n      ],\n      \"title\": \"Residential rental application fee limit\",\n      \"requirement\": \"A landlord or landlord's agent shall not require an application or similar fee exceeding $50 to apply to lease or sublease a residential rental property for dwelling purposes.\",\n      \"key_value\": \"$50\",\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": \"Approved January 20, 2026.\",\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": \"This act shall take effect on the first day of the\\nfourth month next following the date of enactment\",\n      \"effective_date_evidence_kind\": \"relative_date_formula\",\n      \"effective_date\": null,\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"application_screening_fees\",\n      \"citation\": \"C.46:8-18.1(b)\",\n      \"provision_ids\": [\n        \"P2\"\n      ],\n      \"source_basis\": \"operative_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"A landlord, or agent thereof, who violates\\nsubsection a. of this section shall be liable for a penalty of up to $500 for a\\nfirst offense, up to $750 for a second offense, and up to $1,000 for each\\nsubsequent offense, which shall be collected and enforced by summary\\nproceedings pursuant to the \\\"Penalty Enforcement Law of 1999,\\\"\\nP.L.1999, c.274 (C.2A:58-10 et seq.).  The Superior Court, Law Division,\\nSpecial Civil Part in the county in which the residential rental property is\\nlocated shall have jurisdiction over the proceedings.  Process shall be in the\\nnature of a summons or warrant and shall issue upon the complaint of the\\nDirector of the Division of Consumer Affairs in the Department of Law and\\nPublic Safety or the Attorney General.  Following the proceedings, the amount\\nwrongfully charged shall be taken from the collected penalty and shall be\\nremitted to the applicant or prospective tenant.\"\n        }\n      ],\n      \"title\": \"Penalties and remittance for application fee violations\",\n      \"requirement\": \"A landlord or agent who violates the application fee cap is liable for penalties up to $500 for a first offense, up to $750 for a second offense, and up to $1,000 for each subsequent offense, with the wrongfully charged fee taken from the collected penalty and remitted to the applicant or prospective tenant.\",\n      \"key_value\": \"up to $500 for a first offense, up to $750 for a second offense, and up to $1,000 for each subsequent offense\",\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": \"Approved January 20, 2026.\",\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": \"This act shall take effect on the first day of the\\nfourth month next following the date of enactment\",\n      \"effective_date_evidence_kind\": \"relative_date_formula\",\n      \"effective_date\": null,\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"application_screening_fees\",\n      \"citation\": \"C.46:8-18.1(d)\",\n      \"provision_ids\": [\n        \"P4\"\n      ],\n      \"source_basis\": \"operative_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Beginning on\\nJanuary 1 of the year next following enactment of P.L.2025, c.405 (C.46:8-18.1\\net seq.) and each year thereafter, the amount of the fee limitation established\\npursuant to subsection a. of this section shall be adjusted by the Director of\\nthe Division of Consumer Affairs in the Department of Law and Public Safety in\\ndirect proportion to the percent change in the Consumer Price Index over a\\n12-month period ending October 31 of the previous year.  For the purpose of\\nthis section, \\\"Consumer Price Index\\\" means the Consumer Price Index\\nfor All Urban Consumers, New York-Northern New Jersey-Long Island Metropolitan\\nArea, All Items (1982-84=100), as published by the Bureau of Labor Statistics\\nin the United States Department of Labor.  The State Treasurer shall determine\\nthe amount of the adjustment by December 1 of each year, and the adjustment to\\nthe limitation shall become effective for fees charged during the calendar year\\nfollowing the December 1 determination, beginning with fees made on or after\\nJanuary 1 of each calendar year.  An adjustment in the fee limitation shall be\\nmade only if the percent change in the Consumer Price Index for the period\\nspecified is greater than zero.  The Director of the Division of Consumer\\nAffairs shall annually publish the fee limitation applicable pursuant to this\\nsection on the division’s Internet website.\"\n        }\n      ],\n      \"title\": \"Annual CPI adjustment of application fee limitation\",\n      \"requirement\": \"The residential rental application fee limitation shall be adjusted annually by the Director of the Division of Consumer Affairs in direct proportion to the positive percent change in the Consumer Price Index over the 12-month period ending October 31, effective January 1, and published on the division's website.\",\n      \"key_value\": null,\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [\n        {\n          \"statement\": \"An adjustment in the fee limitation is made only if the percent change in the Consumer Price Index for the specified 12-month period ending October 31 is greater than zero.\",\n          \"evidence\": \"An adjustment in the fee limitation shall be\\nmade only if the percent change in the Consumer Price Index for the period\\nspecified is greater than zero.\"\n        }\n      ],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": \"Approved January 20, 2026.\",\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": \"This act shall take effect on the first day of the\\nfourth month next following the date of enactment\",\n      \"effective_date_evidence_kind\": \"relative_date_formula\",\n      \"effective_date\": null,\n      \"conflict_note\": null\n    }\n  ],\n  \"no_rules_justification\": null\n}"
+}

@@ -1,0 +1,1201 @@
+{
+  "disclaimer": "Not legal advice. Automated extraction for a research prototype; verify against the cited source.",
+  "run_at": "2026-10-04T03:19:01+00:00",
+  "source": {
+    "doc_id": "D049",
+    "jurisdiction": "MA",
+    "url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXXI/Chapter151B/Section4",
+    "source_type": "official",
+    "retrieved_at": "2026-10-01T22:37Z",
+    "text_file": "text/D049.txt",
+    "content_sha256": "93cf618da8fcf14b49ce3aea88cdd1cfce27b2f6ac964fbf9f7f4f014d2834b0",
+    "body_chars": 55862
+  },
+  "provider": "gemini",
+  "model": "gemini-3.8-flash",
+  "prompt_version": "v7",
+  "prompt_sha256": "33c6d52a83d3b3707af4e28daf029f1386fcd6433584020d34b33fd105d46fc7",
+  "response_schema_sha256": "c15306da6f21dc72f06e78405f94ed61dc9e59288138cc98b5b5bf9b62ac403c",
+  "generation_settings": {
+    "temperature": null,
+    "seed": 20261001,
+    "thinking_level": "medium"
+  },
+  "as_of": "2026-10-01",
+  "cache_key": "7c06397aafcf9d1fce29660cf7bfdf2d46b38d52e94a61caa5f2f4faed22b4a8",
+  "cache_hit": false,
+  "cache_entry": "cache/extraction/7c06397aafcf9d1fce29660cf7bfdf2d46b38d52e94a61caa5f2f4faed22b4a8.json",
+  "provider_metadata": {
+    "api": "interactions.create",
+    "interaction_id": "",
+    "model": "gemini-3.8-flash",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 14547,
+      "output_tokens": 5044,
+      "thinking_tokens": 12266,
+      "total_tokens": 31857
+    }
+  },
+  "candidate_count": 1,
+  "accepted_count": 1,
+  "rules": [
+    {
+      "team_rule_id": "r-8bc5453d63",
+      "jurisdiction": "MA",
+      "level": "state",
+      "category": "screening_restrictions",
+      "status": "in_force",
+      "title": "Prohibition on discrimination based on public assistance or housing subsidies",
+      "requirement": "A person furnishing rental accommodations, credit, or services cannot discriminate against any individual because they receive federal, state, or local public assistance or housing subsidies (including rental assistance or rental supplements), or because of any requirement of the public assistance or housing subsidy program.",
+      "key_value": null,
+      "coverage_conditions": "Applies to any person furnishing credit, services, or rental accommodations.",
+      "exemptions": null,
+      "overrides": [],
+      "interaction": null,
+      "effective_date": null,
+      "citation": "M.G.L. c. 151B, § 4(10)",
+      "source_doc_id": "D049",
+      "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXXI/Chapter151B/Section4",
+      "quoted_span": "10. For any person furnishing credit, services or rental accommodations to discriminate against any individual who is a recipient of federal, state, or local public assistance, including medical assistance, or who is a tenant receiving federal, state, or local housing subsidies, including rental assistance or rental supplements, because the individual is such a recipient, or because of any requirement of such public assistance, rental assistance, or housing subsidy program.",
+      "confidence": null,
+      "conflict_flag": false,
+      "conflict_note": null
+    }
+  ],
+  "candidates": [
+    {
+      "index": 0,
+      "origin": "primary",
+      "accepted": true,
+      "held": false,
+      "rejection_reasons": [],
+      "provision_ids": [
+        "P23"
+      ],
+      "source_basis": "operative_text",
+      "status_evidence": null,
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": "Applies to any person furnishing credit, services, or rental accommodations.",
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 37265,
+        "end": 37743,
+        "occurrences": 1,
+        "model_span": "10. For any person furnishing credit, services or rental accommodations to discriminate against any individual who is a recipient of federal, state, or local public assistance, including medical assistance, or who is a tenant receiving federal, state, or local housing subsidies, including rental assistance or rental supplements, because the individual is such a recipient, or because of any requirement of such public assistance, rental assistance, or housing subsidy program.",
+        "source_span": "10. For any person furnishing credit, services or rental accommodations to discriminate against any individual who is a recipient of federal, state, or local public assistance, including medical assistance, or who is a tenant receiving federal, state, or local housing subsidies, including rental assistance or rental supplements, because the individual is such a recipient, or because of any requirement of such public assistance, rental assistance, or housing subsidy program.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "10. For any person furnishing credit, services or rental accommodations to discriminate against any individual who is a recipient of federal, state, or local public assistance, including medical assistance, or who is a tenant receiving federal, state, or local housing subsidies, including rental assistance or rental supplements, because the individual is such a recipient, or because of any requirement of such public assistance, rental assistance, or housing subsidy program.",
+            "status": "exact_match",
+            "start": 37265,
+            "end": 37743
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": null,
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": null,
+        "applied_kind": null,
+        "effective_date": null,
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "codified_current_law",
+        "posture_consistent": true
+      },
+      "status_derivation": "enacted; codified current law that states no effective date",
+      "warnings": [],
+      "rule": {
+        "team_rule_id": "r-8bc5453d63",
+        "jurisdiction": "MA",
+        "level": "state",
+        "category": "screening_restrictions",
+        "status": "in_force",
+        "title": "Prohibition on discrimination based on public assistance or housing subsidies",
+        "requirement": "A person furnishing rental accommodations, credit, or services cannot discriminate against any individual because they receive federal, state, or local public assistance or housing subsidies (including rental assistance or rental supplements), or because of any requirement of the public assistance or housing subsidy program.",
+        "key_value": null,
+        "coverage_conditions": "Applies to any person furnishing credit, services, or rental accommodations.",
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "M.G.L. c. 151B, § 4(10)",
+        "source_doc_id": "D049",
+        "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXXI/Chapter151B/Section4",
+        "quoted_span": "10. For any person furnishing credit, services or rental accommodations to discriminate against any individual who is a recipient of federal, state, or local public assistance, including medical assistance, or who is a tenant receiving federal, state, or local housing subsidies, including rental assistance or rental supplements, because the individual is such a recipient, or because of any requirement of such public assistance, rental assistance, or housing subsidy program.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "screening_restrictions",
+        "citation": "M.G.L. c. 151B, § 4(10)",
+        "provision_ids": [
+          "P23"
+        ],
+        "source_basis": "operative_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "10. For any person furnishing credit, services or rental accommodations to discriminate against any individual who is a recipient of federal, state, or local public assistance, including medical assistance, or who is a tenant receiving federal, state, or local housing subsidies, including rental assistance or rental supplements, because the individual is such a recipient, or because of any requirement of such public assistance, rental assistance, or housing subsidy program."
+          }
+        ],
+        "title": "Prohibition on discrimination based on public assistance or housing subsidies",
+        "requirement": "A person furnishing rental accommodations, credit, or services cannot discriminate against any individual because they receive federal, state, or local public assistance or housing subsidies (including rental assistance or rental supplements), or because of any requirement of the public assistance or housing subsidy program.",
+        "key_value": null,
+        "coverage_conditions": "Applies to any person furnishing credit, services, or rental accommodations.",
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": null,
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": null,
+        "effective_date_evidence_kind": null,
+        "effective_date": null,
+        "conflict_note": null
+      }
+    }
+  ],
+  "posture": {
+    "declared": "codified_current_law",
+    "evidence": "General Law - Part I, Title XXI, Chapter 151B, Section 4",
+    "evidence_check": {
+      "status": "exact_match",
+      "normalization": null,
+      "start": 0,
+      "end": 56,
+      "occurrences": 1,
+      "model_span": "General Law - Part I, Title XXI, Chapter 151B, Section 4",
+      "source_span": "General Law - Part I, Title XXI, Chapter 151B, Section 4",
+      "reason": null,
+      "reconstructed": false,
+      "parts": [],
+      "crossed_artifacts": []
+    },
+    "established": "codified_current_law",
+    "basis": "declared posture with verified evidence"
+  },
+  "base_dates": [],
+  "provision_inventory": [
+    {
+      "id": "P1",
+      "ref": "§ 4(1)",
+      "anchor": "1. For an employer, by himself or his agent, because of the race",
+      "summary": "Prohibits employment discrimination based on protected classes.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "employment discrimination outside official categories"
+    },
+    {
+      "id": "P2",
+      "ref": "§ 4(1A)",
+      "anchor": "1A. It shall be unlawful discriminatory practice for an employer",
+      "summary": "Requires reasonable accommodation of religious observance in employment.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "employment discrimination outside official categories"
+    },
+    {
+      "id": "P3",
+      "ref": "§ 4(1B)",
+      "anchor": "1B. For an employer in the private sector, by himself",
+      "summary": "Prohibits age discrimination in private sector employment.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "employment discrimination outside official categories"
+    },
+    {
+      "id": "P4",
+      "ref": "§ 4(1C)",
+      "anchor": "1C. For the commonwealth or any of its political subdivisions",
+      "summary": "Prohibits age discrimination in public sector employment.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "employment discrimination outside official categories"
+    },
+    {
+      "id": "P5",
+      "ref": "§ 4(1D)",
+      "anchor": "1D. For an employer, an employment agency, the commonwealth",
+      "summary": "Prohibits discrimination based on uniformed military service in employment.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "employment discrimination outside official categories"
+    },
+    {
+      "id": "P6",
+      "ref": "§ 4(1E)",
+      "anchor": "1E. (a) For an employer to deny a reasonable accommodation",
+      "summary": "Requires reasonable accommodation for pregnancy and related conditions in employment.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "employment discrimination outside official categories"
+    },
+    {
+      "id": "P7",
+      "ref": "§ 4(2)",
+      "anchor": "2. For a labor organization, because of the race, color",
+      "summary": "Prohibits labor organizations from discriminating based on protected classes.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "labor organization regulation outside official categories"
+    },
+    {
+      "id": "P8",
+      "ref": "§ 4(3)",
+      "anchor": "3. For any employer or employment agency to print or circulate",
+      "summary": "Prohibits discriminatory advertisements, applications, or inquiries in employment.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "employment inquiries and advertisements outside official categories"
+    },
+    {
+      "id": "P9",
+      "ref": "§ 4(3A)",
+      "anchor": "3A. For any person engaged in the insurance or bonding",
+      "summary": "Prohibits inquiries regarding protected classes in surety bonding.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "bonding and insurance inquiries outside official categories"
+    },
+    {
+      "id": "P10",
+      "ref": "§ 4(3B)",
+      "anchor": "3B. For any person whose business includes granting mortgage loans",
+      "summary": "Prohibits discrimination in mortgage lending and residential real estate transactions.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "mortgage lending and real estate transactions outside official categories"
+    },
+    {
+      "id": "P11",
+      "ref": "§ 4(3C)",
+      "anchor": "3C. For any person to deny another person access to",
+      "summary": "Prohibits discrimination in access to multiple listing services and real estate broker organizations.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "broker organization access outside official categories"
+    },
+    {
+      "id": "P12",
+      "ref": "§ 4(4)",
+      "anchor": "4. For any person, employer, labor organization or employment agency",
+      "summary": "Prohibits retaliation for opposing unlawful practices or participating in proceedings.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "general retaliation protection outside official categories"
+    },
+    {
+      "id": "P13",
+      "ref": "§ 4(4A)",
+      "anchor": "4A. For any person to coerce, intimidate, threaten, or interfere",
+      "summary": "Prohibits coercion, intimidation, threats, or interference with statutory rights.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "general civil rights interference outside official categories"
+    },
+    {
+      "id": "P14",
+      "ref": "§ 4(5)",
+      "anchor": "5. For any person, whether an employer or an employee",
+      "summary": "Prohibits aiding, abetting, inciting, or coercing unlawful acts.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "general aiding and abetting outside official categories"
+    },
+    {
+      "id": "P15",
+      "ref": "§ 4(6)",
+      "anchor": "6. For the owner, lessee, sublessee, licensed real estate broker",
+      "summary": "Prohibits discrimination in publicly assisted, multiple dwelling, or contiguous housing based on protected classes.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "general fair housing anti-discrimination protections outside official categories"
+    },
+    {
+      "id": "P16",
+      "ref": "§ 4(7)",
+      "anchor": "7. For the owner, lessee, sublessee, real estate broker, assignee",
+      "summary": "Prohibits discrimination in other covered housing accommodations or land based on protected classes.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "general fair housing anti-discrimination protections outside official categories"
+    },
+    {
+      "id": "P17",
+      "ref": "§ 4(7A)",
+      "anchor": "7A. For purposes of subsections 6 and 7 discrimination on",
+      "summary": "Requires reasonable accommodations and modifications for handicap in housing.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "disability reasonable accommodations and accessibility modifications outside official categories"
+    },
+    {
+      "id": "P18",
+      "ref": "§ 4(7B)",
+      "anchor": "7B. For any person to make print, or publish, or cause",
+      "summary": "Prohibits discriminatory advertisements and notices regarding housing accommodations.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "discriminatory advertising prohibitions outside official categories"
+    },
+    {
+      "id": "P19",
+      "ref": "§ 4(8)",
+      "anchor": "8. For the owner, lessee, sublessee, or managing agent",
+      "summary": "Prohibits discrimination in commercial space.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "commercial space discrimination outside official categories"
+    },
+    {
+      "id": "P20",
+      "ref": "§ 4(9)",
+      "anchor": "9. For an employer, himself or through his agent, in connection",
+      "summary": "Restricts employer inquiries and records regarding certain criminal histories.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "employment criminal history inquiries outside rental housing"
+    },
+    {
+      "id": "P21",
+      "ref": "§ 4(9 1/2)",
+      "anchor": "91/2. For an employer to request on its initial written application",
+      "summary": "Restricts employer inquiries regarding criminal offender record information on initial applications.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "employment criminal record application restrictions outside rental housing"
+    },
+    {
+      "id": "P22",
+      "ref": "§ 4(9A)",
+      "anchor": "9A. For an employer himself or through his agent to refuse",
+      "summary": "Restricts employer inquiries and adverse actions regarding mental health facility admissions.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "employment inquiries outside official categories"
+    },
+    {
+      "id": "P23",
+      "ref": "§ 4(10)",
+      "anchor": "10. For any person furnishing credit, services or rental accommodations",
+      "summary": "Prohibits discrimination in credit, services, or rental accommodations against recipients of public assistance or housing subsidies.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "screening_restrictions",
+      "reason": null
+    },
+    {
+      "id": "P24",
+      "ref": "§ 4(11)",
+      "anchor": "11. For the owner, sublessees, real estate broker, assignee",
+      "summary": "Prohibits discrimination in rental or sale of housing against persons with children.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "familial status discrimination outside official categories"
+    },
+    {
+      "id": "P25",
+      "ref": "§ 4(11A)",
+      "anchor": "11A. For an employer, or an employer's agent, to refuse",
+      "summary": "Prohibits adverse employment actions and penalties for taking parental leave.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "employment parental leave protections outside official categories"
+    },
+    {
+      "id": "P26",
+      "ref": "§ 4(12)",
+      "anchor": "12. For any retail store which provides credit or charge account",
+      "summary": "Prohibits age discrimination in retail credit.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "retail credit discrimination outside official categories"
+    },
+    {
+      "id": "P27",
+      "ref": "§ 4(13)",
+      "anchor": "13. For any person to directly or indirectly induce, attempt to",
+      "summary": "Prohibits blockbusting and steering based on neighborhood demographic representations.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "blockbusting and steering outside official categories"
+    },
+    {
+      "id": "P28",
+      "ref": "§ 4(14)",
+      "anchor": "14. For any person furnishing credit or services to deny or",
+      "summary": "Prohibits credit and services discrimination based on sex, gender identity, marital status, age, or sexual orientation.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "credit discrimination outside official categories"
+    },
+    {
+      "id": "P29",
+      "ref": "§ 4(15)",
+      "anchor": "15. For any person responsible for recording the name of or",
+      "summary": "Prohibits requiring an individual to use a different surname based on sex or marital status.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "personal identification rules outside official categories"
+    },
+    {
+      "id": "P30",
+      "ref": "§ 4(16)",
+      "anchor": "16. For any employer, personally or through an agent, to dismiss",
+      "summary": "Prohibits employment discrimination based on handicap and requires reasonable accommodation.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "employment handicap discrimination outside official categories"
+    },
+    {
+      "id": "P31",
+      "ref": "§ 4(16A)",
+      "anchor": "16A. For an employer, personally or through its agents, to",
+      "summary": "Prohibits sexual harassment in employment.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "workplace sexual harassment outside official categories"
+    },
+    {
+      "id": "P32",
+      "ref": "§ 4(17)",
+      "anchor": "17. Notwithstanding any provision of this chapter, it shall not be",
+      "summary": "Permits bona fide seniority, benefit plans, and certain compulsory retirement practices.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "employment seniority and retirement practices outside official categories"
+    },
+    {
+      "id": "P33",
+      "ref": "§ 4(18)",
+      "anchor": "18. For the owner, lessee, sublessee, licensed real estate broker",
+      "summary": "Prohibits sexual harassment of tenants, prospective tenants, or purchasers.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "sexual harassment in housing outside official categories"
+    },
+    {
+      "id": "P34",
+      "ref": "§ 4, unnumbered para 1",
+      "anchor": "Notwithstanding the foregoing provisions of this section, it shall not be an unlawful employment practice",
+      "summary": "Permits employer inquiries regarding veteran or citizenship status.",
+      "role": "exemption",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "employment inquiry exemption outside official categories"
+    },
+    {
+      "id": "P35",
+      "ref": "§ 4, unnumbered para 2",
+      "anchor": "Notwithstanding the provisions of any general or special law nothing herein",
+      "summary": "Exempts religious organizations giving preference to members of their denomination.",
+      "role": "exemption",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "scope condition and exemption, see global_scope"
+    },
+    {
+      "id": "P36",
+      "ref": "§ 4, unnumbered para 3",
+      "anchor": "Notwithstanding the foregoing provisions of this section, (a) every employer",
+      "summary": "Requires certain employers and labor organizations to keep records on race, color, or national origin.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "employer and labor record-keeping duties outside official categories"
+    },
+    {
+      "id": "P37",
+      "ref": "§ 4, unnumbered para 4",
+      "anchor": "Nothing contained in this chapter or in any rule or regulation",
+      "summary": "Clarifies that preferential treatment or quotas are not required to address workforce imbalances.",
+      "role": "boilerplate",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "statutory interpretation clause outside official categories"
+    },
+    {
+      "id": "P38",
+      "ref": "§ 4(19)",
+      "anchor": "19. (a) It shall be unlawful discrimination for any employer",
+      "summary": "Prohibits discrimination and inquiries based on genetic information in employment and licensing.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "employment and licensing genetic information discrimination outside official categories"
+    }
+  ],
+  "global_scope": [
+    {
+      "id": "S1",
+      "kind": "exemption",
+      "statement": "Religious, denominational, charitable, or educational organizations operated in connection with a religious organization are not barred from limiting admission or giving preference to persons of the same religion or denomination.",
+      "citation": "M.G.L. c. 151B, § 4",
+      "scope_mode": "structural",
+      "scope_quote": "nothing herein shall be construed to bar",
+      "source_provision_id": "P35",
+      "governed_provision_ids": null,
+      "evidence_parts": [
+        {
+          "segment_id": 1,
+          "quoted_text": "Notwithstanding the provisions of any general or special law nothing herein shall be construed to bar any religious or denominational institution or organization, or any organization operated for charitable or educational purposes, which is operated, supervised or controlled by or in connection with a religious organization, from limiting admission to or giving preference to persons of the same religion or denomination or from taking any action with respect to matters of employment, discipline, faith, internal organization, or ecclesiastical rule, custom, or law which are calculated by such organization to promote the religious principles for which it is established or maintained."
+        }
+      ],
+      "evidence_check": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 49813,
+        "end": 50502,
+        "occurrences": 1,
+        "model_span": "Notwithstanding the provisions of any general or special law nothing herein shall be construed to bar any religious or denominational institution or organization, or any organization operated for charitable or educational purposes, which is operated, supervised or controlled by or in connection with a religious organization, from limiting admission to or giving preference to persons of the same religion or denomination or from taking any action with respect to matters of employment, discipline, faith, internal organization, or ecclesiastical rule, custom, or law which are calculated by such organization to promote the religious principles for which it is established or maintained.",
+        "source_span": "Notwithstanding the provisions of any general or special law nothing herein shall be construed to bar any religious or denominational institution or organization, or any organization operated for charitable or educational purposes, which is operated, supervised or controlled by or in connection with a religious organization, from limiting admission to or giving preference to persons of the same religion or denomination or from taking any action with respect to matters of employment, discipline, faith, internal organization, or ecclesiastical rule, custom, or law which are calculated by such organization to promote the religious principles for which it is established or maintained.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "Notwithstanding the provisions of any general or special law nothing herein shall be construed to bar any religious or denominational institution or organization, or any organization operated for charitable or educational purposes, which is operated, supervised or controlled by or in connection with a religious organization, from limiting admission to or giving preference to persons of the same religion or denomination or from taking any action with respect to matters of employment, discipline, faith, internal organization, or ecclesiastical rule, custom, or law which are calculated by such organization to promote the religious principles for which it is established or maintained.",
+            "status": "exact_match",
+            "start": 49813,
+            "end": 50502
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "propagated": true,
+      "problem": null,
+      "scope": {
+        "resolver": "scope-modes/v1",
+        "declared_mode": "structural",
+        "mode": "named_subject",
+        "scope_words": {
+          "scope_quote": "nothing herein shall be construed to bar",
+          "scope_quote_check": "exact_match",
+          "text": "nothing herein shall be construed to bar",
+          "from": "scope_quote"
+        },
+        "detail": null,
+        "propagate_ids": [],
+        "mapping_targets": [
+          "P23"
+        ],
+        "verification": null
+      }
+    }
+  ],
+  "source_view": {
+    "marker": "[[PAGE BREAK]]",
+    "segment_label": "[[SEGMENT {}]]",
+    "view_sha256": "9a010b2b3b5a81fb98898550f6a79156351502c0e471f227cdd9e635d3330d01",
+    "segments": [
+      {
+        "id": 1,
+        "raw_start": 0,
+        "raw_end": 55862
+      }
+    ],
+    "artifacts_removed": 0,
+    "artifacts": []
+  },
+  "coverage": {
+    "inventory_valid": true,
+    "anchors_located": "38/38",
+    "after_primary": {
+      "uncovered": [],
+      "unaccepted": [],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "scope_mappings": {
+      "requested": 1,
+      "applies": 0,
+      "does_not_apply": 1,
+      "unresolved": 0
+    },
+    "after_repair": {
+      "uncovered": [],
+      "unaccepted": [],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "repair_targets": {
+      "before_repair": 0,
+      "resolved_by_accepted_rule": 0,
+      "resolved_out_of_scope": 0,
+      "still_unresolved": 0
+    },
+    "inventory_items": 38,
+    "in_scope_items": 1,
+    "in_scope_refs": 1,
+    "uncertain": [],
+    "final": {
+      "uncovered": [],
+      "unaccepted": [],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "link_mismatches": [],
+    "provisions": [
+      {
+        "ref": "§ 4(10)",
+        "inventory_item": 22,
+        "provision_id": "P23",
+        "summary": "Prohibits discrimination in credit, services, or rental accommodations against recipients of public assistance or housing subsidies.",
+        "category": "screening_restrictions",
+        "candidates": [
+          0
+        ],
+        "accepted": [
+          0
+        ],
+        "basis": {
+          "0": "provision link; citation names it"
+        }
+      }
+    ],
+    "unrecorded_subdivisions": []
+  },
+  "scope_challenges": [
+    {
+      "ref": "§ 4(1)",
+      "provision_id": "P1",
+      "role": "operative_rule",
+      "reason": "employment discrimination outside official categories",
+      "summary": "Prohibits employment discrimination based on protected classes.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    },
+    {
+      "ref": "§ 4(1A)",
+      "provision_id": "P2",
+      "role": "operative_rule",
+      "reason": "employment discrimination outside official categories",
+      "summary": "Requires reasonable accommodation of religious observance in employment.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    },
+    {
+      "ref": "§ 4(1B)",
+      "provision_id": "P3",
+      "role": "operative_rule",
+      "reason": "employment discrimination outside official categories",
+      "summary": "Prohibits age discrimination in private sector employment.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    },
+    {
+      "ref": "§ 4(1C)",
+      "provision_id": "P4",
+      "role": "operative_rule",
+      "reason": "employment discrimination outside official categories",
+      "summary": "Prohibits age discrimination in public sector employment.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    },
+    {
+      "ref": "§ 4(1D)",
+      "provision_id": "P5",
+      "role": "operative_rule",
+      "reason": "employment discrimination outside official categories",
+      "summary": "Prohibits discrimination based on uniformed military service in employment.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    },
+    {
+      "ref": "§ 4(1E)",
+      "provision_id": "P6",
+      "role": "operative_rule",
+      "reason": "employment discrimination outside official categories",
+      "summary": "Requires reasonable accommodation for pregnancy and related conditions in employment.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    },
+    {
+      "ref": "§ 4(2)",
+      "provision_id": "P7",
+      "role": "operative_rule",
+      "reason": "labor organization regulation outside official categories",
+      "summary": "Prohibits labor organizations from discriminating based on protected classes.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    },
+    {
+      "ref": "§ 4(3)",
+      "provision_id": "P8",
+      "role": "operative_rule",
+      "reason": "employment inquiries and advertisements outside official categories",
+      "summary": "Prohibits discriminatory advertisements, applications, or inquiries in employment.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    },
+    {
+      "ref": "§ 4(3A)",
+      "provision_id": "P9",
+      "role": "operative_rule",
+      "reason": "bonding and insurance inquiries outside official categories",
+      "summary": "Prohibits inquiries regarding protected classes in surety bonding.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    },
+    {
+      "ref": "§ 4(3B)",
+      "provision_id": "P10",
+      "role": "operative_rule",
+      "reason": "mortgage lending and real estate transactions outside official categories",
+      "summary": "Prohibits discrimination in mortgage lending and residential real estate transactions.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    },
+    {
+      "ref": "§ 4(3C)",
+      "provision_id": "P11",
+      "role": "operative_rule",
+      "reason": "broker organization access outside official categories",
+      "summary": "Prohibits discrimination in access to multiple listing services and real estate broker organizations.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    },
+    {
+      "ref": "§ 4(4)",
+      "provision_id": "P12",
+      "role": "operative_rule",
+      "reason": "general retaliation protection outside official categories",
+      "summary": "Prohibits retaliation for opposing unlawful practices or participating in proceedings.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    },
+    {
+      "ref": "§ 4(4A)",
+      "provision_id": "P13",
+      "role": "operative_rule",
+      "reason": "general civil rights interference outside official categories",
+      "summary": "Prohibits coercion, intimidation, threats, or interference with statutory rights.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    },
+    {
+      "ref": "§ 4(5)",
+      "provision_id": "P14",
+      "role": "operative_rule",
+      "reason": "general aiding and abetting outside official categories",
+      "summary": "Prohibits aiding, abetting, inciting, or coercing unlawful acts.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    },
+    {
+      "ref": "§ 4(6)",
+      "provision_id": "P15",
+      "role": "operative_rule",
+      "reason": "general fair housing anti-discrimination protections outside official categories",
+      "summary": "Prohibits discrimination in publicly assisted, multiple dwelling, or contiguous housing based on protected classes.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    },
+    {
+      "ref": "§ 4(7)",
+      "provision_id": "P16",
+      "role": "operative_rule",
+      "reason": "general fair housing anti-discrimination protections outside official categories",
+      "summary": "Prohibits discrimination in other covered housing accommodations or land based on protected classes.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    },
+    {
+      "ref": "§ 4(7A)",
+      "provision_id": "P17",
+      "role": "operative_rule",
+      "reason": "disability reasonable accommodations and accessibility modifications outside official categories",
+      "summary": "Requires reasonable accommodations and modifications for handicap in housing.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    },
+    {
+      "ref": "§ 4(7B)",
+      "provision_id": "P18",
+      "role": "operative_rule",
+      "reason": "discriminatory advertising prohibitions outside official categories",
+      "summary": "Prohibits discriminatory advertisements and notices regarding housing accommodations.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    },
+    {
+      "ref": "§ 4(8)",
+      "provision_id": "P19",
+      "role": "operative_rule",
+      "reason": "commercial space discrimination outside official categories",
+      "summary": "Prohibits discrimination in commercial space.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    },
+    {
+      "ref": "§ 4(9)",
+      "provision_id": "P20",
+      "role": "operative_rule",
+      "reason": "employment criminal history inquiries outside rental housing",
+      "summary": "Restricts employer inquiries and records regarding certain criminal histories.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    },
+    {
+      "ref": "§ 4(9 1/2)",
+      "provision_id": "P21",
+      "role": "operative_rule",
+      "reason": "employment criminal record application restrictions outside rental housing",
+      "summary": "Restricts employer inquiries regarding criminal offender record information on initial applications.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    },
+    {
+      "ref": "§ 4(9A)",
+      "provision_id": "P22",
+      "role": "operative_rule",
+      "reason": "employment inquiries outside official categories",
+      "summary": "Restricts employer inquiries and adverse actions regarding mental health facility admissions.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    },
+    {
+      "ref": "§ 4(11)",
+      "provision_id": "P24",
+      "role": "operative_rule",
+      "reason": "familial status discrimination outside official categories",
+      "summary": "Prohibits discrimination in rental or sale of housing against persons with children.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    },
+    {
+      "ref": "§ 4(11A)",
+      "provision_id": "P25",
+      "role": "operative_rule",
+      "reason": "employment parental leave protections outside official categories",
+      "summary": "Prohibits adverse employment actions and penalties for taking parental leave.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    },
+    {
+      "ref": "§ 4(12)",
+      "provision_id": "P26",
+      "role": "operative_rule",
+      "reason": "retail credit discrimination outside official categories",
+      "summary": "Prohibits age discrimination in retail credit.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    },
+    {
+      "ref": "§ 4(13)",
+      "provision_id": "P27",
+      "role": "operative_rule",
+      "reason": "blockbusting and steering outside official categories",
+      "summary": "Prohibits blockbusting and steering based on neighborhood demographic representations.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    },
+    {
+      "ref": "§ 4(14)",
+      "provision_id": "P28",
+      "role": "operative_rule",
+      "reason": "credit discrimination outside official categories",
+      "summary": "Prohibits credit and services discrimination based on sex, gender identity, marital status, age, or sexual orientation.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    },
+    {
+      "ref": "§ 4(15)",
+      "provision_id": "P29",
+      "role": "operative_rule",
+      "reason": "personal identification rules outside official categories",
+      "summary": "Prohibits requiring an individual to use a different surname based on sex or marital status.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    },
+    {
+      "ref": "§ 4(16)",
+      "provision_id": "P30",
+      "role": "operative_rule",
+      "reason": "employment handicap discrimination outside official categories",
+      "summary": "Prohibits employment discrimination based on handicap and requires reasonable accommodation.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    },
+    {
+      "ref": "§ 4(16A)",
+      "provision_id": "P31",
+      "role": "operative_rule",
+      "reason": "workplace sexual harassment outside official categories",
+      "summary": "Prohibits sexual harassment in employment.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    },
+    {
+      "ref": "§ 4(17)",
+      "provision_id": "P32",
+      "role": "operative_rule",
+      "reason": "employment seniority and retirement practices outside official categories",
+      "summary": "Permits bona fide seniority, benefit plans, and certain compulsory retirement practices.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    },
+    {
+      "ref": "§ 4(18)",
+      "provision_id": "P33",
+      "role": "operative_rule",
+      "reason": "sexual harassment in housing outside official categories",
+      "summary": "Prohibits sexual harassment of tenants, prospective tenants, or purchasers.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    },
+    {
+      "ref": "§ 4, unnumbered para 1",
+      "provision_id": "P34",
+      "role": "exemption",
+      "reason": "employment inquiry exemption outside official categories",
+      "summary": "Permits employer inquiries regarding veteran or citizenship status.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role exemption is decided by other rules"
+    },
+    {
+      "ref": "§ 4, unnumbered para 2",
+      "provision_id": "P35",
+      "role": "exemption",
+      "reason": "scope condition and exemption, see global_scope",
+      "summary": "Exempts religious organizations giving preference to members of their denomination.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role exemption is decided by other rules"
+    },
+    {
+      "ref": "§ 4, unnumbered para 3",
+      "provision_id": "P36",
+      "role": "operative_rule",
+      "reason": "employer and labor record-keeping duties outside official categories",
+      "summary": "Requires certain employers and labor organizations to keep records on race, color, or national origin.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    },
+    {
+      "ref": "§ 4, unnumbered para 4",
+      "provision_id": "P37",
+      "role": "boilerplate",
+      "reason": "statutory interpretation clause outside official categories",
+      "summary": "Clarifies that preferential treatment or quotas are not required to address workforce imbalances.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role boilerplate is decided by other rules"
+    },
+    {
+      "ref": "§ 4(19)",
+      "provision_id": "P38",
+      "role": "operative_rule",
+      "reason": "employment and licensing genetic information discrimination outside official categories",
+      "summary": "Prohibits discrimination and inquiries based on genetic information in employment and licensing.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    }
+  ],
+  "scope_mappings": [
+    {
+      "condition_id": "S1",
+      "provision_id": "P23",
+      "kind": "exemption",
+      "statement": "Religious, denominational, charitable, or educational organizations operated in connection with a religious organization are not barred from limiting admission or giving preference to persons of the same religion or denomination.",
+      "scope_words": "nothing herein shall be construed to bar",
+      "condition_evidence": "Notwithstanding the provisions of any general or special law nothing herein shall be construed to bar any religious or denominational institution or organization, or any organization operated for charitable or educational purposes, which is operated, supervised or controlled by or in connection with a religious organization, from limiting admission to or giving preference to persons of the same religion or denomination or from taking any action with respect to matters of employment, discipline, faith, internal organization, or ecclesiastical rule, custom, or law which are calculated by such organization to promote the religious principles for which it is established or maintained.",
+      "target_ref": "§ 4(10)",
+      "target_anchor": "10. For any person furnishing credit, services or rental accommodations",
+      "target_quote": "10. For any person furnishing credit, services or rental accommodations to discriminate against any individual who is a recipient of federal, state, or local public assistance, including medical assistance, or who is a tenant receiving federal, state, or local housing subsidies, including rental assistance or rental supplements, because the individual is such a recipient, or because of any requirement of such public assistance, rental assistance, or housing subsidy program.",
+      "decision": {
+        "decision": "does_not_apply",
+        "reason": "The exemption permits preferences or admission limits based on religion or denomination, which does not reach or limit the duty not to discriminate based on public assistance or housing subsidy status.",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 37265,
+          "end": 37743,
+          "occurrences": 1,
+          "model_span": "10. For any person furnishing credit, services or rental accommodations to discriminate against any individual who is a recipient of federal, state, or local public assistance, including medical assistance, or who is a tenant receiving federal, state, or local housing subsidies, including rental assistance or rental supplements, because the individual is such a recipient, or because of any requirement of such public assistance, rental assistance, or housing subsidy program.",
+          "source_span": "10. For any person furnishing credit, services or rental accommodations to discriminate against any individual who is a recipient of federal, state, or local public assistance, including medical assistance, or who is a tenant receiving federal, state, or local housing subsidies, including rental assistance or rental supplements, because the individual is such a recipient, or because of any requirement of such public assistance, rental assistance, or housing subsidy program.",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 1,
+              "model_text": "10. For any person furnishing credit, services or rental accommodations to discriminate against any individual who is a recipient of federal, state, or local public assistance, including medical assistance, or who is a tenant receiving federal, state, or local housing subsidies, including rental assistance or rental supplements, because the individual is such a recipient, or because of any requirement of such public assistance, rental assistance, or housing subsidy program.",
+              "status": "exact_match",
+              "start": 37265,
+              "end": 37743
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "does_not_apply",
+      "unresolved_reason": null
+    }
+  ],
+  "legislative_session": null,
+  "empty_result": null,
+  "legacy_replay": null,
+  "repair": {
+    "invoked": true,
+    "reason": "0 repair target(s) from no check; 1 scope_mapping_challenge(s)",
+    "prompt_version": "v7-repair-1",
+    "targets": [],
+    "cache_key": "1e381404c4f9965d9b6174cc9d8f3405b828d332b5dc0fef993fdf020180a733",
+    "cache_hit": false,
+    "cache_entry": "cache/extraction/1e381404c4f9965d9b6174cc9d8f3405b828d332b5dc0fef993fdf020180a733.json",
+    "prompt_sha256": "a531c4b95078e6e14c3b2bfa8ea0edde32e1fb5593c30a3709763cf11f31a4b6",
+    "provider_metadata": {
+      "api": "interactions.create",
+      "interaction_id": "",
+      "model": "gemini-3.8-flash",
+      "status": "completed",
+      "usage": {
+        "input_tokens": 14308,
+        "output_tokens": 228,
+        "thinking_tokens": 1341,
+        "total_tokens": 15877
+      }
+    },
+    "raw_response_text": "{\n  \"target_resolutions\": [],\n  \"scope_mappings\": [\n    {\n      \"condition_id\": \"S1\",\n      \"provision_id\": \"P23\",\n      \"decision\": \"does_not_apply\",\n      \"reason\": \"The exemption permits preferences or admission limits based on religion or denomination, which does not reach or limit the duty not to discriminate based on public assistance or housing subsidy status.\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"10. For any person furnishing credit, services or rental accommodations to discriminate against any individual who is a recipient of federal, state, or local public assistance, including medical assistance, or who is a tenant receiving federal, state, or local housing subsidies, including rental assistance or rental supplements, because the individual is such a recipient, or because of any requirement of such public assistance, rental assistance, or housing subsidy program.\"\n        }\n      ]\n    }\n  ],\n  \"rules\": []\n}",
+    "mappings": [
+      {
+        "condition_id": "S1",
+        "provision_id": "P23",
+        "kind": "exemption",
+        "statement": "Religious, denominational, charitable, or educational organizations operated in connection with a religious organization are not barred from limiting admission or giving preference to persons of the same religion or denomination.",
+        "scope_words": "nothing herein shall be construed to bar",
+        "condition_evidence": "Notwithstanding the provisions of any general or special law nothing herein shall be construed to bar any religious or denominational institution or organization, or any organization operated for charitable or educational purposes, which is operated, supervised or controlled by or in connection with a religious organization, from limiting admission to or giving preference to persons of the same religion or denomination or from taking any action with respect to matters of employment, discipline, faith, internal organization, or ecclesiastical rule, custom, or law which are calculated by such organization to promote the religious principles for which it is established or maintained.",
+        "target_ref": "§ 4(10)",
+        "target_anchor": "10. For any person furnishing credit, services or rental accommodations",
+        "target_quote": "10. For any person furnishing credit, services or rental accommodations to discriminate against any individual who is a recipient of federal, state, or local public assistance, including medical assistance, or who is a tenant receiving federal, state, or local housing subsidies, including rental assistance or rental supplements, because the individual is such a recipient, or because of any requirement of such public assistance, rental assistance, or housing subsidy program.",
+        "decision": {
+          "decision": "does_not_apply",
+          "reason": "The exemption permits preferences or admission limits based on religion or denomination, which does not reach or limit the duty not to discriminate based on public assistance or housing subsidy status.",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 37265,
+            "end": 37743,
+            "occurrences": 1,
+            "model_span": "10. For any person furnishing credit, services or rental accommodations to discriminate against any individual who is a recipient of federal, state, or local public assistance, including medical assistance, or who is a tenant receiving federal, state, or local housing subsidies, including rental assistance or rental supplements, because the individual is such a recipient, or because of any requirement of such public assistance, rental assistance, or housing subsidy program.",
+            "source_span": "10. For any person furnishing credit, services or rental accommodations to discriminate against any individual who is a recipient of federal, state, or local public assistance, including medical assistance, or who is a tenant receiving federal, state, or local housing subsidies, including rental assistance or rental supplements, because the individual is such a recipient, or because of any requirement of such public assistance, rental assistance, or housing subsidy program.",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 1,
+                "model_text": "10. For any person furnishing credit, services or rental accommodations to discriminate against any individual who is a recipient of federal, state, or local public assistance, including medical assistance, or who is a tenant receiving federal, state, or local housing subsidies, including rental assistance or rental supplements, because the individual is such a recipient, or because of any requirement of such public assistance, rental assistance, or housing subsidy program.",
+                "status": "exact_match",
+                "start": 37265,
+                "end": 37743
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "does_not_apply",
+        "unresolved_reason": null
+      }
+    ],
+    "candidate_indices": [],
+    "accepted_count": 0,
+    "rejected_count": 0,
+    "errors": []
+  },
+  "document_status": "complete",
+  "review_reasons": [],
+  "warnings": [],
+  "errors": [],
+  "raw_response_text": "{\n  \"document\": {\n    \"posture\": \"codified_current_law\",\n    \"evidence\": \"General Law - Part I, Title XXI, Chapter 151B, Section 4\"\n  },\n  \"provisions\": [\n    {\n      \"id\": \"P1\",\n      \"ref\": \"§ 4(1)\",\n      \"anchor\": \"1. For an employer, by himself or his agent, because of the race\",\n      \"summary\": \"Prohibits employment discrimination based on protected classes.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"employment discrimination outside official categories\"\n    },\n    {\n      \"id\": \"P2\",\n      \"ref\": \"§ 4(1A)\",\n      \"anchor\": \"1A. It shall be unlawful discriminatory practice for an employer\",\n      \"summary\": \"Requires reasonable accommodation of religious observance in employment.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"employment discrimination outside official categories\"\n    },\n    {\n      \"id\": \"P3\",\n      \"ref\": \"§ 4(1B)\",\n      \"anchor\": \"1B. For an employer in the private sector, by himself\",\n      \"summary\": \"Prohibits age discrimination in private sector employment.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"employment discrimination outside official categories\"\n    },\n    {\n      \"id\": \"P4\",\n      \"ref\": \"§ 4(1C)\",\n      \"anchor\": \"1C. For the commonwealth or any of its political subdivisions\",\n      \"summary\": \"Prohibits age discrimination in public sector employment.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"employment discrimination outside official categories\"\n    },\n    {\n      \"id\": \"P5\",\n      \"ref\": \"§ 4(1D)\",\n      \"anchor\": \"1D. For an employer, an employment agency, the commonwealth\",\n      \"summary\": \"Prohibits discrimination based on uniformed military service in employment.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"employment discrimination outside official categories\"\n    },\n    {\n      \"id\": \"P6\",\n      \"ref\": \"§ 4(1E)\",\n      \"anchor\": \"1E. (a) For an employer to deny a reasonable accommodation\",\n      \"summary\": \"Requires reasonable accommodation for pregnancy and related conditions in employment.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"employment discrimination outside official categories\"\n    },\n    {\n      \"id\": \"P7\",\n      \"ref\": \"§ 4(2)\",\n      \"anchor\": \"2. For a labor organization, because of the race, color\",\n      \"summary\": \"Prohibits labor organizations from discriminating based on protected classes.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"labor organization regulation outside official categories\"\n    },\n    {\n      \"id\": \"P8\",\n      \"ref\": \"§ 4(3)\",\n      \"anchor\": \"3. For any employer or employment agency to print or circulate\",\n      \"summary\": \"Prohibits discriminatory advertisements, applications, or inquiries in employment.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"employment inquiries and advertisements outside official categories\"\n    },\n    {\n      \"id\": \"P9\",\n      \"ref\": \"§ 4(3A)\",\n      \"anchor\": \"3A. For any person engaged in the insurance or bonding\",\n      \"summary\": \"Prohibits inquiries regarding protected classes in surety bonding.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"bonding and insurance inquiries outside official categories\"\n    },\n    {\n      \"id\": \"P10\",\n      \"ref\": \"§ 4(3B)\",\n      \"anchor\": \"3B. For any person whose business includes granting mortgage loans\",\n      \"summary\": \"Prohibits discrimination in mortgage lending and residential real estate transactions.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"mortgage lending and real estate transactions outside official categories\"\n    },\n    {\n      \"id\": \"P11\",\n      \"ref\": \"§ 4(3C)\",\n      \"anchor\": \"3C. For any person to deny another person access to\",\n      \"summary\": \"Prohibits discrimination in access to multiple listing services and real estate broker organizations.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"broker organization access outside official categories\"\n    },\n    {\n      \"id\": \"P12\",\n      \"ref\": \"§ 4(4)\",\n      \"anchor\": \"4. For any person, employer, labor organization or employment agency\",\n      \"summary\": \"Prohibits retaliation for opposing unlawful practices or participating in proceedings.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"general retaliation protection outside official categories\"\n    },\n    {\n      \"id\": \"P13\",\n      \"ref\": \"§ 4(4A)\",\n      \"anchor\": \"4A. For any person to coerce, intimidate, threaten, or interfere\",\n      \"summary\": \"Prohibits coercion, intimidation, threats, or interference with statutory rights.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"general civil rights interference outside official categories\"\n    },\n    {\n      \"id\": \"P14\",\n      \"ref\": \"§ 4(5)\",\n      \"anchor\": \"5. For any person, whether an employer or an employee\",\n      \"summary\": \"Prohibits aiding, abetting, inciting, or coercing unlawful acts.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"general aiding and abetting outside official categories\"\n    },\n    {\n      \"id\": \"P15\",\n      \"ref\": \"§ 4(6)\",\n      \"anchor\": \"6. For the owner, lessee, sublessee, licensed real estate broker\",\n      \"summary\": \"Prohibits discrimination in publicly assisted, multiple dwelling, or contiguous housing based on protected classes.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"general fair housing anti-discrimination protections outside official categories\"\n    },\n    {\n      \"id\": \"P16\",\n      \"ref\": \"§ 4(7)\",\n      \"anchor\": \"7. For the owner, lessee, sublessee, real estate broker, assignee\",\n      \"summary\": \"Prohibits discrimination in other covered housing accommodations or land based on protected classes.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"general fair housing anti-discrimination protections outside official categories\"\n    },\n    {\n      \"id\": \"P17\",\n      \"ref\": \"§ 4(7A)\",\n      \"anchor\": \"7A. For purposes of subsections 6 and 7 discrimination on\",\n      \"summary\": \"Requires reasonable accommodations and modifications for handicap in housing.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"disability reasonable accommodations and accessibility modifications outside official categories\"\n    },\n    {\n      \"id\": \"P18\",\n      \"ref\": \"§ 4(7B)\",\n      \"anchor\": \"7B. For any person to make print, or publish, or cause\",\n      \"summary\": \"Prohibits discriminatory advertisements and notices regarding housing accommodations.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"discriminatory advertising prohibitions outside official categories\"\n    },\n    {\n      \"id\": \"P19\",\n      \"ref\": \"§ 4(8)\",\n      \"anchor\": \"8. For the owner, lessee, sublessee, or managing agent\",\n      \"summary\": \"Prohibits discrimination in commercial space.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"commercial space discrimination outside official categories\"\n    },\n    {\n      \"id\": \"P20\",\n      \"ref\": \"§ 4(9)\",\n      \"anchor\": \"9. For an employer, himself or through his agent, in connection\",\n      \"summary\": \"Restricts employer inquiries and records regarding certain criminal histories.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"employment criminal history inquiries outside rental housing\"\n    },\n    {\n      \"id\": \"P21\",\n      \"ref\": \"§ 4(9 1/2)\",\n      \"anchor\": \"91/2. For an employer to request on its initial written application\",\n      \"summary\": \"Restricts employer inquiries regarding criminal offender record information on initial applications.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"employment criminal record application restrictions outside rental housing\"\n    },\n    {\n      \"id\": \"P22\",\n      \"ref\": \"§ 4(9A)\",\n      \"anchor\": \"9A. For an employer himself or through his agent to refuse\",\n      \"summary\": \"Restricts employer inquiries and adverse actions regarding mental health facility admissions.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"employment inquiries outside official categories\"\n    },\n    {\n      \"id\": \"P23\",\n      \"ref\": \"§ 4(10)\",\n      \"anchor\": \"10. For any person furnishing credit, services or rental accommodations\",\n      \"summary\": \"Prohibits discrimination in credit, services, or rental accommodations against recipients of public assistance or housing subsidies.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"screening_restrictions\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P24\",\n      \"ref\": \"§ 4(11)\",\n      \"anchor\": \"11. For the owner, sublessees, real estate broker, assignee\",\n      \"summary\": \"Prohibits discrimination in rental or sale of housing against persons with children.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"familial status discrimination outside official categories\"\n    },\n    {\n      \"id\": \"P25\",\n      \"ref\": \"§ 4(11A)\",\n      \"anchor\": \"11A. For an employer, or an employer's agent, to refuse\",\n      \"summary\": \"Prohibits adverse employment actions and penalties for taking parental leave.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"employment parental leave protections outside official categories\"\n    },\n    {\n      \"id\": \"P26\",\n      \"ref\": \"§ 4(12)\",\n      \"anchor\": \"12. For any retail store which provides credit or charge account\",\n      \"summary\": \"Prohibits age discrimination in retail credit.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"retail credit discrimination outside official categories\"\n    },\n    {\n      \"id\": \"P27\",\n      \"ref\": \"§ 4(13)\",\n      \"anchor\": \"13. For any person to directly or indirectly induce, attempt to\",\n      \"summary\": \"Prohibits blockbusting and steering based on neighborhood demographic representations.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"blockbusting and steering outside official categories\"\n    },\n    {\n      \"id\": \"P28\",\n      \"ref\": \"§ 4(14)\",\n      \"anchor\": \"14. For any person furnishing credit or services to deny or\",\n      \"summary\": \"Prohibits credit and services discrimination based on sex, gender identity, marital status, age, or sexual orientation.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"credit discrimination outside official categories\"\n    },\n    {\n      \"id\": \"P29\",\n      \"ref\": \"§ 4(15)\",\n      \"anchor\": \"15. For any person responsible for recording the name of or\",\n      \"summary\": \"Prohibits requiring an individual to use a different surname based on sex or marital status.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"personal identification rules outside official categories\"\n    },\n    {\n      \"id\": \"P30\",\n      \"ref\": \"§ 4(16)\",\n      \"anchor\": \"16. For any employer, personally or through an agent, to dismiss\",\n      \"summary\": \"Prohibits employment discrimination based on handicap and requires reasonable accommodation.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"employment handicap discrimination outside official categories\"\n    },\n    {\n      \"id\": \"P31\",\n      \"ref\": \"§ 4(16A)\",\n      \"anchor\": \"16A. For an employer, personally or through its agents, to\",\n      \"summary\": \"Prohibits sexual harassment in employment.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"workplace sexual harassment outside official categories\"\n    },\n    {\n      \"id\": \"P32\",\n      \"ref\": \"§ 4(17)\",\n      \"anchor\": \"17. Notwithstanding any provision of this chapter, it shall not be\",\n      \"summary\": \"Permits bona fide seniority, benefit plans, and certain compulsory retirement practices.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"employment seniority and retirement practices outside official categories\"\n    },\n    {\n      \"id\": \"P33\",\n      \"ref\": \"§ 4(18)\",\n      \"anchor\": \"18. For the owner, lessee, sublessee, licensed real estate broker\",\n      \"summary\": \"Prohibits sexual harassment of tenants, prospective tenants, or purchasers.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"sexual harassment in housing outside official categories\"\n    },\n    {\n      \"id\": \"P34\",\n      \"ref\": \"§ 4, unnumbered para 1\",\n      \"anchor\": \"Notwithstanding the foregoing provisions of this section, it shall not be an unlawful employment practice\",\n      \"summary\": \"Permits employer inquiries regarding veteran or citizenship status.\",\n      \"role\": \"exemption\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"employment inquiry exemption outside official categories\"\n    },\n    {\n      \"id\": \"P35\",\n      \"ref\": \"§ 4, unnumbered para 2\",\n      \"anchor\": \"Notwithstanding the provisions of any general or special law nothing herein\",\n      \"summary\": \"Exempts religious organizations giving preference to members of their denomination.\",\n      \"role\": \"exemption\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"scope condition and exemption, see global_scope\"\n    },\n    {\n      \"id\": \"P36\",\n      \"ref\": \"§ 4, unnumbered para 3\",\n      \"anchor\": \"Notwithstanding the foregoing provisions of this section, (a) every employer\",\n      \"summary\": \"Requires certain employers and labor organizations to keep records on race, color, or national origin.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"employer and labor record-keeping duties outside official categories\"\n    },\n    {\n      \"id\": \"P37\",\n      \"ref\": \"§ 4, unnumbered para 4\",\n      \"anchor\": \"Nothing contained in this chapter or in any rule or regulation\",\n      \"summary\": \"Clarifies that preferential treatment or quotas are not required to address workforce imbalances.\",\n      \"role\": \"boilerplate\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"statutory interpretation clause outside official categories\"\n    },\n    {\n      \"id\": \"P38\",\n      \"ref\": \"§ 4(19)\",\n      \"anchor\": \"19. (a) It shall be unlawful discrimination for any employer\",\n      \"summary\": \"Prohibits discrimination and inquiries based on genetic information in employment and licensing.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"employment and licensing genetic information discrimination outside official categories\"\n    }\n  ],\n  \"global_scope\": [\n    {\n      \"id\": \"S1\",\n      \"kind\": \"exemption\",\n      \"statement\": \"Religious, denominational, charitable, or educational organizations operated in connection with a religious organization are not barred from limiting admission or giving preference to persons of the same religion or denomination.\",\n      \"citation\": \"M.G.L. c. 151B, § 4\",\n      \"scope_mode\": \"structural\",\n      \"scope_quote\": \"nothing herein shall be construed to bar\",\n      \"source_provision_id\": \"P35\",\n      \"governed_provision_ids\": null,\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Notwithstanding the provisions of any general or special law nothing herein shall be construed to bar any religious or denominational institution or organization, or any organization operated for charitable or educational purposes, which is operated, supervised or controlled by or in connection with a religious organization, from limiting admission to or giving preference to persons of the same religion or denomination or from taking any action with respect to matters of employment, discipline, faith, internal organization, or ecclesiastical rule, custom, or law which are calculated by such organization to promote the religious principles for which it is established or maintained.\"\n        }\n      ]\n    }\n  ],\n  \"rules\": [\n    {\n      \"category\": \"screening_restrictions\",\n      \"citation\": \"M.G.L. c. 151B, § 4(10)\",\n      \"provision_ids\": [\n        \"P23\"\n      ],\n      \"source_basis\": \"operative_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"10. For any person furnishing credit, services or rental accommodations to discriminate against any individual who is a recipient of federal, state, or local public assistance, including medical assistance, or who is a tenant receiving federal, state, or local housing subsidies, including rental assistance or rental supplements, because the individual is such a recipient, or because of any requirement of such public assistance, rental assistance, or housing subsidy program.\"\n        }\n      ],\n      \"title\": \"Prohibition on discrimination based on public assistance or housing subsidies\",\n      \"requirement\": \"A person furnishing rental accommodations, credit, or services cannot discriminate against any individual because they receive federal, state, or local public assistance or housing subsidies (including rental assistance or rental supplements), or because of any requirement of the public assistance or housing subsidy program.\",\n      \"key_value\": null,\n      \"coverage_conditions\": \"Applies to any person furnishing credit, services, or rental accommodations.\",\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": null,\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": null,\n      \"effective_date_evidence_kind\": null,\n      \"effective_date\": null,\n      \"conflict_note\": null\n    }\n  ],\n  \"no_rules_justification\": null\n}"
+}

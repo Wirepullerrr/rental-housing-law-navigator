@@ -1,0 +1,2694 @@
+{
+  "disclaimer": "Not legal advice. Automated extraction for a research prototype; verify against the cited source.",
+  "run_at": "2026-10-04T03:09:03+00:00",
+  "source": {
+    "doc_id": "D040",
+    "jurisdiction": "Los Angeles, CA",
+    "url": "https://housing.lacity.gov/residents/just-cause-for-eviction-ordinance-jco",
+    "source_type": "official",
+    "retrieved_at": "2026-10-01T22:36Z",
+    "text_file": "text/D040.txt",
+    "content_sha256": "bad226702b0949f0cba39f48f2c546f510512724ad66096ec222ee4d5d78d441",
+    "body_chars": 9631
+  },
+  "provider": "gemini",
+  "model": "gemini-3.8-flash",
+  "prompt_version": "v7",
+  "prompt_sha256": "f84e2318d5cff6ab43076c95d8f97944b6d71317f11bf9380eac0f6700c4da56",
+  "response_schema_sha256": "c15306da6f21dc72f06e78405f94ed61dc9e59288138cc98b5b5bf9b62ac403c",
+  "generation_settings": {
+    "temperature": null,
+    "seed": 20261001,
+    "thinking_level": "medium"
+  },
+  "as_of": "2026-10-01",
+  "cache_key": "3761e458a14356ec30cb4755171a9dfd142c0f716e1746f6b850d3c40819d9de",
+  "cache_hit": false,
+  "cache_entry": "cache/extraction/3761e458a14356ec30cb4755171a9dfd142c0f716e1746f6b850d3c40819d9de.json",
+  "provider_metadata": {
+    "api": "interactions.create",
+    "interaction_id": "",
+    "model": "gemini-3.8-flash",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 6219,
+      "output_tokens": 6707,
+      "thinking_tokens": 21863,
+      "total_tokens": 34789
+    }
+  },
+  "candidate_count": 7,
+  "accepted_count": 2,
+  "rules": [
+    {
+      "team_rule_id": "r-b859ff4be5",
+      "jurisdiction": "Los Angeles, CA",
+      "level": "city",
+      "category": "just_cause_eviction",
+      "status": "in_force",
+      "title": "Notice of Right to Counsel Requirement",
+      "requirement": "[Basis: official explanatory text, not operative legal text] Landlords must post a Notice of Right to Counsel in a conspicuous common area of the residential building, provide it to the tenant at the start of tenancy, and provide it anytime an eviction notice is served.",
+      "key_value": null,
+      "coverage_conditions": null,
+      "exemptions": null,
+      "overrides": [],
+      "interaction": null,
+      "effective_date": "2025-08-20",
+      "citation": "Required Registration and Posted Notification - Notice of Right to Counsel",
+      "source_doc_id": "D040",
+      "source_url": "https://housing.lacity.gov/residents/just-cause-for-eviction-ordinance-jco",
+      "quoted_span": "Beginning August 20, 2025, landlords must post a\nNotice of Right to Counsel\nin a conspicuous common area of the residential building where the tenant resides. This notice is also to be provided to the tenant at the beginning of the tenancy and anytime an eviction notice is served.",
+      "confidence": null,
+      "conflict_flag": false,
+      "conflict_note": null
+    },
+    {
+      "team_rule_id": "r-e73d66b70f",
+      "jurisdiction": "Los Angeles, CA",
+      "level": "city",
+      "category": "just_cause_eviction",
+      "status": "in_force",
+      "title": "Non-Payment Eviction Threshold",
+      "requirement": "[Basis: official explanatory text, not operative legal text] Landlords cannot evict a tenant who falls behind in rent unless the amount owed is higher than the Fair Market Rent (FMR) corresponding to the bedroom size of the rental unit.",
+      "key_value": "higher than Fair Market Rent (FMR)",
+      "coverage_conditions": "Applies to all RSO and JCO rental units.",
+      "exemptions": null,
+      "overrides": [],
+      "interaction": null,
+      "effective_date": "2023-03-27",
+      "citation": "Evictions for Non-Payment of Rent",
+      "source_doc_id": "D040",
+      "source_url": "https://housing.lacity.gov/residents/just-cause-for-eviction-ordinance-jco",
+      "quoted_span": "Applies to all RSO & JCO rental units. Effective March 27, 2023, landlords may not evict a tenant who falls behind in rent unless the tenant owes an amount higher than the Fair Market Rent (FMR). The FMR depends on the bedroom size of the rental unit.",
+      "confidence": null,
+      "conflict_flag": false,
+      "conflict_note": null
+    }
+  ],
+  "candidates": [
+    {
+      "index": 0,
+      "origin": "primary",
+      "accepted": false,
+      "held": true,
+      "rejection_reasons": [
+        "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      ],
+      "provision_ids": [
+        "P1"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": null,
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 454,
+        "end": 570,
+        "occurrences": 1,
+        "model_span": "It prohibits terminations of tenancies without just cause and requires relocation assistance for no-fault evictions.",
+        "source_span": "It prohibits terminations of tenancies without just cause and requires relocation assistance for no-fault evictions.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "It prohibits terminations of tenancies without just cause and requires relocation assistance for no-fault evictions.",
+            "status": "exact_match",
+            "start": 454,
+            "end": 570
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": null,
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [
+        {
+          "id": "S1",
+          "kind": "coverage_condition",
+          "mode": "named_subject",
+          "governed_provision_ids": [
+            "P1"
+          ],
+          "basis": "named-subject mapping to P1 verified by repair",
+          "applied": true
+        },
+        {
+          "id": "S2",
+          "kind": "coverage_condition",
+          "mode": "named_subject",
+          "governed_provision_ids": [
+            "P1"
+          ],
+          "basis": "named-subject mapping to P1 verified by repair",
+          "applied": true
+        },
+        {
+          "id": "S3",
+          "kind": "exemption",
+          "mode": "named_subject",
+          "governed_provision_ids": [
+            "P1"
+          ],
+          "basis": "named-subject mapping to P1 verified by repair",
+          "applied": true
+        }
+      ],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": null,
+        "applied_kind": null,
+        "effective_date": null,
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null,
+        "unresolved_reason": "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      },
+      "status_derivation": "temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-bc979b95b4",
+        "jurisdiction": "Los Angeles, CA",
+        "level": "city",
+        "category": "just_cause_eviction",
+        "status": null,
+        "title": "Just Cause for Eviction and Relocation Assistance Requirement",
+        "requirement": "[Basis: official explanatory text, not operative legal text] Landlords are prohibited from terminating tenancies without just cause, and relocation assistance must be provided to tenants for no-fault evictions.",
+        "key_value": null,
+        "coverage_conditions": "The JCO applies to most residential rental properties in the City of Los Angeles that are not regulated by the Rent Stabilization Ordinance (RSO). [Rental Units Covered Under JCO]; The JCO applies to a tenancy only if the tenant has resided in the unit for at least six months or the original lease has expired, whichever occurs first. [Rental Units Covered Under JCO]",
+        "exemptions": "Exempts transient hotels, licensed care facilities, fraternity or sorority houses, owner's roommate arrangements, certain cooperatives, certain non-profit homeless facilities or substance abuse centers, and certain HACLA- or government-owned properties from the JCO. [Rental Units Covered Under JCO]",
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "Just Cause Ordinance (JCO)",
+        "source_doc_id": "D040",
+        "source_url": "https://housing.lacity.gov/residents/just-cause-for-eviction-ordinance-jco",
+        "quoted_span": "It prohibits terminations of tenancies without just cause and requires relocation assistance for no-fault evictions.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "just_cause_eviction",
+        "citation": "Just Cause Ordinance (JCO)",
+        "provision_ids": [
+          "P1"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "It prohibits terminations of tenancies without just cause and requires relocation assistance for no-fault evictions."
+          }
+        ],
+        "title": "Just Cause for Eviction and Relocation Assistance Requirement",
+        "requirement": "Landlords are prohibited from terminating tenancies without just cause, and relocation assistance must be provided to tenants for no-fault evictions.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": null,
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": null,
+        "effective_date_evidence_kind": null,
+        "effective_date": null,
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 1,
+      "origin": "primary",
+      "accepted": false,
+      "held": true,
+      "rejection_reasons": [
+        "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      ],
+      "provision_ids": [
+        "P3"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": null,
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 1485,
+        "end": 2154,
+        "occurrences": 1,
+        "model_span": "Under the JCO, the landlord may recover possession of a rental unit\nin specific situations. Below is a list of reasons for which a tenant could be evicted and\nwould be considered at fault\n. If the tenant is at fault\nfor the eviction, then the tenant will not be entitled to relocation assistance.\nFailure to pay rent\nFailure to cure a violation of the rental agreement\nCreating a nuisance or causing damage to the property\nUsing the rental unit for an illegal purpose\nFailure to renew a similar rental agreement\nFailure to provide the landlord with reasonable access to the rental unit\nThe person at the end of the lease term is a subtenant not approved by the landlord",
+        "source_span": "Under the JCO, the landlord may recover possession of a rental unit\nin specific situations. Below is a list of reasons for which a tenant could be evicted and\nwould be considered at fault\n. If the tenant is at fault\nfor the eviction, then the tenant will not be entitled to relocation assistance.\nFailure to pay rent\nFailure to cure a violation of the rental agreement\nCreating a nuisance or causing damage to the property\nUsing the rental unit for an illegal purpose\nFailure to renew a similar rental agreement\nFailure to provide the landlord with reasonable access to the rental unit\nThe person at the end of the lease term is a subtenant not approved by the landlord",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "Under the JCO, the landlord may recover possession of a rental unit\nin specific situations. Below is a list of reasons for which a tenant could be evicted and\nwould be considered at fault\n. If the tenant is at fault\nfor the eviction, then the tenant will not be entitled to relocation assistance.\nFailure to pay rent\nFailure to cure a violation of the rental agreement\nCreating a nuisance or causing damage to the property\nUsing the rental unit for an illegal purpose\nFailure to renew a similar rental agreement\nFailure to provide the landlord with reasonable access to the rental unit\nThe person at the end of the lease term is a subtenant not approved by the landlord",
+            "status": "exact_match",
+            "start": 1485,
+            "end": 2154
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": null,
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [
+        {
+          "id": "S1",
+          "kind": "coverage_condition",
+          "mode": "named_subject",
+          "governed_provision_ids": [
+            "P3"
+          ],
+          "basis": "named-subject mapping to P3 verified by repair",
+          "applied": true
+        },
+        {
+          "id": "S2",
+          "kind": "coverage_condition",
+          "mode": "named_subject",
+          "governed_provision_ids": [
+            "P3"
+          ],
+          "basis": "named-subject mapping to P3 verified by repair",
+          "applied": true
+        },
+        {
+          "id": "S3",
+          "kind": "exemption",
+          "mode": "named_subject",
+          "governed_provision_ids": [
+            "P3"
+          ],
+          "basis": "named-subject mapping to P3 verified by repair",
+          "applied": true
+        }
+      ],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": null,
+        "applied_kind": null,
+        "effective_date": null,
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null,
+        "unresolved_reason": "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      },
+      "status_derivation": "temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-be0f500797",
+        "jurisdiction": "Los Angeles, CA",
+        "level": "city",
+        "category": "just_cause_eviction",
+        "status": null,
+        "title": "Permitted Grounds for At-Fault Evictions",
+        "requirement": "[Basis: official explanatory text, not operative legal text] A landlord may recover possession of a rental unit only for specified at-fault reasons—including failure to pay rent, failure to cure a lease violation, nuisance or property damage, illegal use, failure to renew a similar lease, refusal of reasonable access, or an unapproved subtenant remaining at lease expiration—and tenants evicted for fault are not entitled to relocation assistance.",
+        "key_value": null,
+        "coverage_conditions": "The JCO applies to most residential rental properties in the City of Los Angeles that are not regulated by the Rent Stabilization Ordinance (RSO). [Rental Units Covered Under JCO]; The JCO applies to a tenancy only if the tenant has resided in the unit for at least six months or the original lease has expired, whichever occurs first. [Rental Units Covered Under JCO]",
+        "exemptions": "Exempts transient hotels, licensed care facilities, fraternity or sorority houses, owner's roommate arrangements, certain cooperatives, certain non-profit homeless facilities or substance abuse centers, and certain HACLA- or government-owned properties from the JCO. [Rental Units Covered Under JCO]",
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "Legal Reasons for Eviction - Tenant is at-fault",
+        "source_doc_id": "D040",
+        "source_url": "https://housing.lacity.gov/residents/just-cause-for-eviction-ordinance-jco",
+        "quoted_span": "Under the JCO, the landlord may recover possession of a rental unit\nin specific situations. Below is a list of reasons for which a tenant could be evicted and\nwould be considered at fault\n. If the tenant is at fault\nfor the eviction, then the tenant will not be entitled to relocation assistance.\nFailure to pay rent\nFailure to cure a violation of the rental agreement\nCreating a nuisance or causing damage to the property\nUsing the rental unit for an illegal purpose\nFailure to renew a similar rental agreement\nFailure to provide the landlord with reasonable access to the rental unit\nThe person at the end of the lease term is a subtenant not approved by the landlord",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "just_cause_eviction",
+        "citation": "Legal Reasons for Eviction - Tenant is at-fault",
+        "provision_ids": [
+          "P3"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "Under the JCO, the landlord may recover possession of a rental unit\nin specific situations. Below is a list of reasons for which a tenant could be evicted and\nwould be considered at fault\n. If the tenant is at fault\nfor the eviction, then the tenant will not be entitled to relocation assistance.\nFailure to pay rent\nFailure to cure a violation of the rental agreement\nCreating a nuisance or causing damage to the property\nUsing the rental unit for an illegal purpose\nFailure to renew a similar rental agreement\nFailure to provide the landlord with reasonable access to the rental unit\nThe person at the end of the lease term is a subtenant not approved by the landlord"
+          }
+        ],
+        "title": "Permitted Grounds for At-Fault Evictions",
+        "requirement": "A landlord may recover possession of a rental unit only for specified at-fault reasons—including failure to pay rent, failure to cure a lease violation, nuisance or property damage, illegal use, failure to renew a similar lease, refusal of reasonable access, or an unapproved subtenant remaining at lease expiration—and tenants evicted for fault are not entitled to relocation assistance.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": null,
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": null,
+        "effective_date_evidence_kind": null,
+        "effective_date": null,
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 2,
+      "origin": "primary",
+      "accepted": false,
+      "held": true,
+      "rejection_reasons": [
+        "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      ],
+      "provision_ids": [
+        "P4"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": null,
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 2178,
+        "end": 2895,
+        "occurrences": 1,
+        "model_span": "Situations in which the property owner wishes to regain the use of the rental unit, as the result of a personal or business decision, and\nnot the\ntenant’s fault, may be cause for eviction, but the property owner may have to pay the tenant\nrelocation assistance\n. These reasons include\nThe\nowner or an immediate family member\nwill move into the rental unit\nResident manager will move into the rental unit when required by law or by an affordable housing covenant or regulatory agreement\nDemolition, permanent removal from the rental market, or conversion to\nnon-residential\nGovernment order to vacate\nHUD owns and is selling the property\nResidential Hotel being converted or demolished\nConversion to affordable housing",
+        "source_span": "Situations in which the property owner wishes to regain the use of the rental unit, as the result of a personal or business decision, and\nnot the\ntenant’s fault, may be cause for eviction, but the property owner may have to pay the tenant\nrelocation assistance\n. These reasons include\nThe\nowner or an immediate family member\nwill move into the rental unit\nResident manager will move into the rental unit when required by law or by an affordable housing covenant or regulatory agreement\nDemolition, permanent removal from the rental market, or conversion to\nnon-residential\nGovernment order to vacate\nHUD owns and is selling the property\nResidential Hotel being converted or demolished\nConversion to affordable housing",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "Situations in which the property owner wishes to regain the use of the rental unit, as the result of a personal or business decision, and\nnot the\ntenant’s fault, may be cause for eviction, but the property owner may have to pay the tenant\nrelocation assistance\n. These reasons include\nThe\nowner or an immediate family member\nwill move into the rental unit\nResident manager will move into the rental unit when required by law or by an affordable housing covenant or regulatory agreement\nDemolition, permanent removal from the rental market, or conversion to\nnon-residential\nGovernment order to vacate\nHUD owns and is selling the property\nResidential Hotel being converted or demolished\nConversion to affordable housing",
+            "status": "exact_match",
+            "start": 2178,
+            "end": 2895
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": null,
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [
+        {
+          "id": "S1",
+          "kind": "coverage_condition",
+          "mode": "named_subject",
+          "governed_provision_ids": [
+            "P4"
+          ],
+          "basis": "named-subject mapping to P4 verified by repair",
+          "applied": true
+        },
+        {
+          "id": "S2",
+          "kind": "coverage_condition",
+          "mode": "named_subject",
+          "governed_provision_ids": [
+            "P4"
+          ],
+          "basis": "named-subject mapping to P4 verified by repair",
+          "applied": true
+        },
+        {
+          "id": "S3",
+          "kind": "exemption",
+          "mode": "named_subject",
+          "governed_provision_ids": [
+            "P4"
+          ],
+          "basis": "named-subject mapping to P4 verified by repair",
+          "applied": true
+        }
+      ],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": null,
+        "applied_kind": null,
+        "effective_date": null,
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null,
+        "unresolved_reason": "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      },
+      "status_derivation": "temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-7739531d4c",
+        "jurisdiction": "Los Angeles, CA",
+        "level": "city",
+        "category": "just_cause_eviction",
+        "status": null,
+        "title": "Permitted Grounds for No-Fault Evictions and Relocation Assistance",
+        "requirement": "[Basis: official explanatory text, not operative legal text] A landlord may recover possession for enumerated no-fault grounds—including owner or immediate family move-in, required resident manager move-in, demolition or removal from the rental market, government vacate orders, HUD sale, residential hotel demolition or conversion, or affordable housing conversion—and may be required to pay relocation assistance to the tenant.",
+        "key_value": null,
+        "coverage_conditions": "The JCO applies to most residential rental properties in the City of Los Angeles that are not regulated by the Rent Stabilization Ordinance (RSO). [Rental Units Covered Under JCO]; The JCO applies to a tenancy only if the tenant has resided in the unit for at least six months or the original lease has expired, whichever occurs first. [Rental Units Covered Under JCO]",
+        "exemptions": "Exempts transient hotels, licensed care facilities, fraternity or sorority houses, owner's roommate arrangements, certain cooperatives, certain non-profit homeless facilities or substance abuse centers, and certain HACLA- or government-owned properties from the JCO. [Rental Units Covered Under JCO]",
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "Legal Reasons for Eviction - Tenant is not at-fault",
+        "source_doc_id": "D040",
+        "source_url": "https://housing.lacity.gov/residents/just-cause-for-eviction-ordinance-jco",
+        "quoted_span": "Situations in which the property owner wishes to regain the use of the rental unit, as the result of a personal or business decision, and\nnot the\ntenant’s fault, may be cause for eviction, but the property owner may have to pay the tenant\nrelocation assistance\n. These reasons include\nThe\nowner or an immediate family member\nwill move into the rental unit\nResident manager will move into the rental unit when required by law or by an affordable housing covenant or regulatory agreement\nDemolition, permanent removal from the rental market, or conversion to\nnon-residential\nGovernment order to vacate\nHUD owns and is selling the property\nResidential Hotel being converted or demolished\nConversion to affordable housing",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "just_cause_eviction",
+        "citation": "Legal Reasons for Eviction - Tenant is not at-fault",
+        "provision_ids": [
+          "P4"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "Situations in which the property owner wishes to regain the use of the rental unit, as the result of a personal or business decision, and\nnot the\ntenant’s fault, may be cause for eviction, but the property owner may have to pay the tenant\nrelocation assistance\n. These reasons include\nThe\nowner or an immediate family member\nwill move into the rental unit\nResident manager will move into the rental unit when required by law or by an affordable housing covenant or regulatory agreement\nDemolition, permanent removal from the rental market, or conversion to\nnon-residential\nGovernment order to vacate\nHUD owns and is selling the property\nResidential Hotel being converted or demolished\nConversion to affordable housing"
+          }
+        ],
+        "title": "Permitted Grounds for No-Fault Evictions and Relocation Assistance",
+        "requirement": "A landlord may recover possession for enumerated no-fault grounds—including owner or immediate family move-in, required resident manager move-in, demolition or removal from the rental market, government vacate orders, HUD sale, residential hotel demolition or conversion, or affordable housing conversion—and may be required to pay relocation assistance to the tenant.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": null,
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": null,
+        "effective_date_evidence_kind": null,
+        "effective_date": null,
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 3,
+      "origin": "primary",
+      "accepted": true,
+      "held": false,
+      "rejection_reasons": [],
+      "provision_ids": [
+        "P6"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": null,
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 3308,
+        "end": 3589,
+        "occurrences": 1,
+        "model_span": "Beginning August 20, 2025, landlords must post a\nNotice of Right to Counsel\nin a conspicuous common area of the residential building where the tenant resides. This notice is also to be provided to the tenant at the beginning of the tenancy and anytime an eviction notice is served.",
+        "source_span": "Beginning August 20, 2025, landlords must post a\nNotice of Right to Counsel\nin a conspicuous common area of the residential building where the tenant resides. This notice is also to be provided to the tenant at the beginning of the tenancy and anytime an eviction notice is served.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "Beginning August 20, 2025, landlords must post a\nNotice of Right to Counsel\nin a conspicuous common area of the residential building where the tenant resides. This notice is also to be provided to the tenant at the beginning of the tenancy and anytime an eviction notice is served.",
+            "status": "exact_match",
+            "start": 3308,
+            "end": 3589
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 3308,
+        "end": 3333,
+        "occurrences": 1,
+        "model_span": "Beginning August 20, 2025",
+        "source_span": "Beginning August 20, 2025",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [],
+      "temporal": {
+        "model_effective_date": "2025-08-20",
+        "model_kind": "explicit_operative_date",
+        "applied_kind": "explicit_operative_date",
+        "effective_date": "2025-08-20",
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null
+      },
+      "status_derivation": "enacted; effective 2025-08-20 is on or before as_of 2026-10-01",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-b859ff4be5",
+        "jurisdiction": "Los Angeles, CA",
+        "level": "city",
+        "category": "just_cause_eviction",
+        "status": "in_force",
+        "title": "Notice of Right to Counsel Requirement",
+        "requirement": "[Basis: official explanatory text, not operative legal text] Landlords must post a Notice of Right to Counsel in a conspicuous common area of the residential building, provide it to the tenant at the start of tenancy, and provide it anytime an eviction notice is served.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": "2025-08-20",
+        "citation": "Required Registration and Posted Notification - Notice of Right to Counsel",
+        "source_doc_id": "D040",
+        "source_url": "https://housing.lacity.gov/residents/just-cause-for-eviction-ordinance-jco",
+        "quoted_span": "Beginning August 20, 2025, landlords must post a\nNotice of Right to Counsel\nin a conspicuous common area of the residential building where the tenant resides. This notice is also to be provided to the tenant at the beginning of the tenancy and anytime an eviction notice is served.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "just_cause_eviction",
+        "citation": "Required Registration and Posted Notification - Notice of Right to Counsel",
+        "provision_ids": [
+          "P6"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "Beginning August 20, 2025, landlords must post a\nNotice of Right to Counsel\nin a conspicuous common area of the residential building where the tenant resides. This notice is also to be provided to the tenant at the beginning of the tenancy and anytime an eviction notice is served."
+          }
+        ],
+        "title": "Notice of Right to Counsel Requirement",
+        "requirement": "Landlords must post a Notice of Right to Counsel in a conspicuous common area of the residential building, provide it to the tenant at the start of tenancy, and provide it anytime an eviction notice is served.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": null,
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": "Beginning August 20, 2025",
+        "effective_date_evidence_kind": "explicit_operative_date",
+        "effective_date": "2025-08-20",
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 4,
+      "origin": "primary",
+      "accepted": true,
+      "held": false,
+      "rejection_reasons": [],
+      "provision_ids": [
+        "P8"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": null,
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": "Applies to all RSO and JCO rental units.",
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 3951,
+        "end": 4202,
+        "occurrences": 1,
+        "model_span": "Applies to all RSO & JCO rental units. Effective March 27, 2023, landlords may not evict a tenant who falls behind in rent unless the tenant owes an amount higher than the Fair Market Rent (FMR). The FMR depends on the bedroom size of the rental unit.",
+        "source_span": "Applies to all RSO & JCO rental units. Effective March 27, 2023, landlords may not evict a tenant who falls behind in rent unless the tenant owes an amount higher than the Fair Market Rent (FMR). The FMR depends on the bedroom size of the rental unit.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "Applies to all RSO & JCO rental units. Effective March 27, 2023, landlords may not evict a tenant who falls behind in rent unless the tenant owes an amount higher than the Fair Market Rent (FMR). The FMR depends on the bedroom size of the rental unit.",
+            "status": "exact_match",
+            "start": 3951,
+            "end": 4202
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 3990,
+        "end": 4014,
+        "occurrences": 1,
+        "model_span": "Effective March 27, 2023",
+        "source_span": "Effective March 27, 2023",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [],
+      "temporal": {
+        "model_effective_date": "2023-03-27",
+        "model_kind": "explicit_operative_date",
+        "applied_kind": "explicit_operative_date",
+        "effective_date": "2023-03-27",
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null
+      },
+      "status_derivation": "enacted; effective 2023-03-27 is on or before as_of 2026-10-01",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-e73d66b70f",
+        "jurisdiction": "Los Angeles, CA",
+        "level": "city",
+        "category": "just_cause_eviction",
+        "status": "in_force",
+        "title": "Non-Payment Eviction Threshold",
+        "requirement": "[Basis: official explanatory text, not operative legal text] Landlords cannot evict a tenant who falls behind in rent unless the amount owed is higher than the Fair Market Rent (FMR) corresponding to the bedroom size of the rental unit.",
+        "key_value": "higher than Fair Market Rent (FMR)",
+        "coverage_conditions": "Applies to all RSO and JCO rental units.",
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": "2023-03-27",
+        "citation": "Evictions for Non-Payment of Rent",
+        "source_doc_id": "D040",
+        "source_url": "https://housing.lacity.gov/residents/just-cause-for-eviction-ordinance-jco",
+        "quoted_span": "Applies to all RSO & JCO rental units. Effective March 27, 2023, landlords may not evict a tenant who falls behind in rent unless the tenant owes an amount higher than the Fair Market Rent (FMR). The FMR depends on the bedroom size of the rental unit.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "just_cause_eviction",
+        "citation": "Evictions for Non-Payment of Rent",
+        "provision_ids": [
+          "P8"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "Applies to all RSO & JCO rental units. Effective March 27, 2023, landlords may not evict a tenant who falls behind in rent unless the tenant owes an amount higher than the Fair Market Rent (FMR). The FMR depends on the bedroom size of the rental unit."
+          }
+        ],
+        "title": "Non-Payment Eviction Threshold",
+        "requirement": "Landlords cannot evict a tenant who falls behind in rent unless the amount owed is higher than the Fair Market Rent (FMR) corresponding to the bedroom size of the rental unit.",
+        "key_value": "higher than Fair Market Rent (FMR)",
+        "coverage_conditions": "Applies to all RSO and JCO rental units.",
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": null,
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": "Effective March 27, 2023",
+        "effective_date_evidence_kind": "explicit_operative_date",
+        "effective_date": "2023-03-27",
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 5,
+      "origin": "primary",
+      "accepted": false,
+      "held": true,
+      "rejection_reasons": [
+        "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      ],
+      "provision_ids": [
+        "P9"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": null,
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": "Applies to all JCO & RSO rental properties in the City of Los Angeles.",
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 4408,
+        "end": 4599,
+        "occurrences": 1,
+        "model_span": "Applies to all JCO & RSO rental properties – All eviction notices issued to tenants in the City of Los Angeles must be filed with LAHD within three (3) business days of service on the tenant.",
+        "source_span": "Applies to all JCO & RSO rental properties – All eviction notices issued to tenants in the City of Los Angeles must be filed with LAHD within three (3) business days of service on the tenant.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "Applies to all JCO & RSO rental properties – All eviction notices issued to tenants in the City of Los Angeles must be filed with LAHD within three (3) business days of service on the tenant.",
+            "status": "exact_match",
+            "start": 4408,
+            "end": 4599
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": null,
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": null,
+        "applied_kind": null,
+        "effective_date": null,
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null,
+        "unresolved_reason": "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      },
+      "status_derivation": "temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-b96cc7828e",
+        "jurisdiction": "Los Angeles, CA",
+        "level": "city",
+        "category": "just_cause_eviction",
+        "status": null,
+        "title": "Eviction Notice Filing with LAHD",
+        "requirement": "[Basis: official explanatory text, not operative legal text] All eviction notices issued to tenants in the City of Los Angeles for JCO and RSO rental properties must be filed with the Los Angeles Housing Department (LAHD) within three business days after service on the tenant.",
+        "key_value": "3 business days",
+        "coverage_conditions": "Applies to all JCO & RSO rental properties in the City of Los Angeles.",
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "Eviction Notices Filed with LAHD",
+        "source_doc_id": "D040",
+        "source_url": "https://housing.lacity.gov/residents/just-cause-for-eviction-ordinance-jco",
+        "quoted_span": "Applies to all JCO & RSO rental properties – All eviction notices issued to tenants in the City of Los Angeles must be filed with LAHD within three (3) business days of service on the tenant.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "just_cause_eviction",
+        "citation": "Eviction Notices Filed with LAHD",
+        "provision_ids": [
+          "P9"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "Applies to all JCO & RSO rental properties – All eviction notices issued to tenants in the City of Los Angeles must be filed with LAHD within three (3) business days of service on the tenant."
+          }
+        ],
+        "title": "Eviction Notice Filing with LAHD",
+        "requirement": "All eviction notices issued to tenants in the City of Los Angeles for JCO and RSO rental properties must be filed with the Los Angeles Housing Department (LAHD) within three business days after service on the tenant.",
+        "key_value": "3 business days",
+        "coverage_conditions": "Applies to all JCO & RSO rental properties in the City of Los Angeles.",
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": null,
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": null,
+        "effective_date_evidence_kind": null,
+        "effective_date": null,
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 6,
+      "origin": "primary",
+      "accepted": false,
+      "held": false,
+      "rejection_reasons": [
+        "citation: quote not found in source text (not found in source text, even after safe normalization)"
+      ],
+      "provision_ids": [
+        "P10"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": null,
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "failed",
+        "normalization": null,
+        "start": null,
+        "end": null,
+        "occurrences": 0,
+        "model_span": "Effective August 1, 2024 to July 31, 2025, the maximum allowable increase is\n8.9%\n.\nPreviously, from August 1, 2023 to July 31, 2024 the maximum annual increase for units subject to AB 1482 was 8.8%\n.\n(\nA\nnual rent increases are limited to no more than 5% plus the percentage change in the cost of living for the region in which the property is located, or 10% whichever is lower).",
+        "source_span": null,
+        "reason": "not found in source text, even after safe normalization",
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "Effective August 1, 2024 to July 31, 2025, the maximum allowable increase is\n8.9%\n.\nPreviously, from August 1, 2023 to July 31, 2024 the maximum annual increase for units subject to AB 1482 was 8.8%\n.\n(\nA\nnual rent increases are limited to no more than 5% plus the percentage change in the cost of living for the region in which the property is located, or 10% whichever is lower).",
+            "status": "failed",
+            "start": null,
+            "end": null
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 4884,
+        "end": 4925,
+        "occurrences": 1,
+        "model_span": "Effective August 1, 2024 to July 31, 2025",
+        "source_span": "Effective August 1, 2024 to July 31, 2025",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "version_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 4968,
+        "end": 5082,
+        "occurrences": 1,
+        "model_span": "Previously, from August 1, 2023 to July 31, 2024 the maximum annual increase for units subject to AB 1482 was 8.8%",
+        "source_span": "Previously, from August 1, 2023 to July 31, 2024 the maximum annual increase for units subject to AB 1482 was 8.8%",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "operative_conditions": [],
+      "propagated_scope": [],
+      "temporal": {
+        "model_effective_date": "2024-08-01",
+        "model_kind": "explicit_operative_date",
+        "applied_kind": "explicit_operative_date",
+        "effective_date": "2024-08-01",
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null
+      },
+      "status_derivation": "enacted; effective 2024-08-01 is on or before as_of 2026-10-01",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-39d9619823",
+        "jurisdiction": "Los Angeles, CA",
+        "level": "city",
+        "category": "rent_increase_limits",
+        "status": "in_force",
+        "title": "AB 1482 Annual Rent Increase Limit",
+        "requirement": "[Basis: official explanatory text, not operative legal text] Annual rent increases under AB 1482 are capped at 5% plus the regional cost of living change or 10%, whichever is lower; the maximum allowable increase is 8.9% effective August 1, 2024 through July 31, 2025.",
+        "key_value": "8.9%",
+        "coverage_conditions": null,
+        "exemptions": null,
+        "overrides": [],
+        "interaction": "The JCO does not regulate rent increases; rent increases are governed by state law AB 1482 for buildings older than 15 years.",
+        "effective_date": "2024-08-01",
+        "citation": "When Can Rent Be Increased Under State Law AB1482",
+        "source_doc_id": "D040",
+        "source_url": "https://housing.lacity.gov/residents/just-cause-for-eviction-ordinance-jco",
+        "quoted_span": "Effective August 1, 2024 to July 31, 2025, the maximum allowable increase is\n8.9%\n.\nPreviously, from August 1, 2023 to July 31, 2024 the maximum annual increase for units subject to AB 1482 was 8.8%\n.\n(\nA\nnual rent increases are limited to no more than 5% plus the percentage change in the cost of living for the region in which the property is located, or 10% whichever is lower).",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "rent_increase_limits",
+        "citation": "When Can Rent Be Increased Under State Law AB1482",
+        "provision_ids": [
+          "P10"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "Effective August 1, 2024 to July 31, 2025, the maximum allowable increase is\n8.9%\n.\nPreviously, from August 1, 2023 to July 31, 2024 the maximum annual increase for units subject to AB 1482 was 8.8%\n.\n(\nA\nnual rent increases are limited to no more than 5% plus the percentage change in the cost of living for the region in which the property is located, or 10% whichever is lower)."
+          }
+        ],
+        "title": "AB 1482 Annual Rent Increase Limit",
+        "requirement": "Annual rent increases under AB 1482 are capped at 5% plus the regional cost of living change or 10%, whichever is lower; the maximum allowable increase is 8.9% effective August 1, 2024 through July 31, 2025.",
+        "key_value": "8.9%",
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": "The JCO does not regulate rent increases; rent increases are governed by state law AB 1482 for buildings older than 15 years.",
+        "enactment_status": "enacted",
+        "enactment_status_evidence": null,
+        "version_note": "From August 1, 2023 to July 31, 2024, the maximum annual increase for units subject to AB 1482 was 8.8%.",
+        "version_evidence": "Previously, from August 1, 2023 to July 31, 2024 the maximum annual increase for units subject to AB 1482 was 8.8%",
+        "effective_date_evidence": "Effective August 1, 2024 to July 31, 2025",
+        "effective_date_evidence_kind": "explicit_operative_date",
+        "effective_date": "2024-08-01",
+        "conflict_note": null
+      }
+    }
+  ],
+  "posture": {
+    "declared": "official_explanatory_page",
+    "evidence": "Just Cause For Eviction Ordinance (JCO) – LAHD",
+    "evidence_check": {
+      "status": "exact_match",
+      "normalization": null,
+      "start": 0,
+      "end": 46,
+      "occurrences": 1,
+      "model_span": "Just Cause For Eviction Ordinance (JCO) – LAHD",
+      "source_span": "Just Cause For Eviction Ordinance (JCO) – LAHD",
+      "reason": null,
+      "reconstructed": false,
+      "parts": [],
+      "crossed_artifacts": []
+    },
+    "established": "official_explanatory_page",
+    "basis": "declared posture with verified evidence"
+  },
+  "base_dates": [],
+  "provision_inventory": [
+    {
+      "id": "P1",
+      "ref": "Just Cause Ordinance (JCO)",
+      "anchor": "If you own rental property in the City of Los Angeles,",
+      "summary": "General overview stating the JCO prohibits terminations of tenancies without just cause and requires relocation assistance for no-fault evictions.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "just_cause_eviction",
+      "reason": null
+    },
+    {
+      "id": "P2",
+      "ref": "Rental Units Covered Under JCO",
+      "anchor": "The JCO covers most residential properties in the City",
+      "summary": "Defines residential coverage, tenancy duration conditions, and property exceptions under the JCO.",
+      "role": "scope_condition",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "scope condition and exemptions for JCO, see global_scope"
+    },
+    {
+      "id": "P3",
+      "ref": "Legal Reasons for Eviction - Tenant is at-fault",
+      "anchor": "Under the JCO, the landlord may recover possession of",
+      "summary": "Lists enumerated grounds for at-fault eviction under the JCO for which no relocation assistance is required.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "just_cause_eviction",
+      "reason": null
+    },
+    {
+      "id": "P4",
+      "ref": "Legal Reasons for Eviction - Tenant is not at-fault",
+      "anchor": "Situations in which the property owner wishes to regain",
+      "summary": "Lists permissible grounds for no-fault eviction under the JCO and specifies that relocation assistance may be required.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "just_cause_eviction",
+      "reason": null
+    },
+    {
+      "id": "P5",
+      "ref": "Required Registration and Posted Notification - Registration",
+      "anchor": "All properties rented or offered for rent must be",
+      "summary": "Requires annual property registration, payment of registration fees, and posting or service of the Registration Certificate.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "annual rental property registration is outside official categories"
+    },
+    {
+      "id": "P6",
+      "ref": "Required Registration and Posted Notification - Notice of Right to Counsel",
+      "anchor": "Beginning August 20, 2025, landlords must post a",
+      "summary": "Requires posting and service of Notice of Right to Counsel at start of tenancy and with any eviction notice.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "just_cause_eviction",
+      "reason": null
+    },
+    {
+      "id": "P7",
+      "ref": "Required Registration and Posted Notification - Notice of Renters' Protections",
+      "anchor": "All landlords of residential properties must provide a Notice",
+      "summary": "Requires providing a Notice of Renters' Protections at tenancy start or renewal and posting it in a common area.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "general tenant disclosure notice at tenancy inception or renewal is outside official categories"
+    },
+    {
+      "id": "P8",
+      "ref": "Evictions for Non-Payment of Rent",
+      "anchor": "Applies to all RSO & JCO rental units.",
+      "summary": "Prohibits evicting a tenant for non-payment of rent unless the rent owed exceeds the Fair Market Rent for the unit size.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "just_cause_eviction",
+      "reason": null
+    },
+    {
+      "id": "P9",
+      "ref": "Eviction Notices Filed with LAHD",
+      "anchor": "Applies to all JCO & RSO rental properties",
+      "summary": "Requires filing all eviction notices issued in Los Angeles with LAHD within three business days of service.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "just_cause_eviction",
+      "reason": null
+    },
+    {
+      "id": "P10",
+      "ref": "When Can Rent Be Increased Under State Law AB1482",
+      "anchor": "The JCO does not regulate rent increases, however,",
+      "summary": "States rent increase limits under California AB 1482, including the annual cap formula and allowable percentage.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "rent_increase_limits",
+      "reason": null
+    },
+    {
+      "id": "P11",
+      "ref": "Properties not covered under AB 1482",
+      "anchor": "Properties not covered under AB 1482: -Units",
+      "summary": "Enumerates property and tenancy exemptions from AB 1482 rent increase limits.",
+      "role": "exemption",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "exemptions from AB 1482 rent increase limits, see global_scope"
+    },
+    {
+      "id": "P12",
+      "ref": "Landlord Services",
+      "anchor": "Landlord Services Register RSO & JCO units and",
+      "summary": "Informational website navigation, billing portals, and hotline links for landlords.",
+      "role": "procedure",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "informational website navigation and landlord services links"
+    }
+  ],
+  "global_scope": [
+    {
+      "id": "S1",
+      "kind": "coverage_condition",
+      "statement": "The JCO applies to most residential rental properties in the City of Los Angeles that are not regulated by the Rent Stabilization Ordinance (RSO).",
+      "citation": "Rental Units Covered Under JCO",
+      "scope_mode": "named_subject",
+      "scope_quote": "The JCO covers",
+      "source_provision_id": "P2",
+      "governed_provision_ids": [
+        "P1",
+        "P3",
+        "P4"
+      ],
+      "evidence_parts": [
+        {
+          "segment_id": 1,
+          "quoted_text": "The JCO covers most residential properties in the City of Los Angeles that are not regulated by the City’s Rent Stabilization Ordinance (RSO)."
+        }
+      ],
+      "evidence_check": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 602,
+        "end": 744,
+        "occurrences": 1,
+        "model_span": "The JCO covers most residential properties in the City of Los Angeles that are not regulated by the City’s Rent Stabilization Ordinance (RSO).",
+        "source_span": "The JCO covers most residential properties in the City of Los Angeles that are not regulated by the City’s Rent Stabilization Ordinance (RSO).",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "The JCO covers most residential properties in the City of Los Angeles that are not regulated by the City’s Rent Stabilization Ordinance (RSO).",
+            "status": "exact_match",
+            "start": 602,
+            "end": 744
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "propagated": true,
+      "problem": null,
+      "scope": {
+        "resolver": "scope-modes/v1",
+        "declared_mode": "named_subject",
+        "mode": "named_subject",
+        "scope_words": {
+          "scope_quote": "The JCO covers",
+          "scope_quote_check": "exact_match",
+          "text": "The JCO covers",
+          "from": "scope_quote"
+        },
+        "detail": null,
+        "propagate_ids": [],
+        "mapping_targets": [
+          "P1",
+          "P3",
+          "P4"
+        ],
+        "verification": null
+      }
+    },
+    {
+      "id": "S2",
+      "kind": "coverage_condition",
+      "statement": "The JCO applies to a tenancy only if the tenant has resided in the unit for at least six months or the original lease has expired, whichever occurs first.",
+      "citation": "Rental Units Covered Under JCO",
+      "scope_mode": "named_subject",
+      "scope_quote": "In order to apply to a tenancy, it requires",
+      "source_provision_id": "P2",
+      "governed_provision_ids": [
+        "P1",
+        "P3",
+        "P4"
+      ],
+      "evidence_parts": [
+        {
+          "segment_id": 1,
+          "quoted_text": "In order to apply to a tenancy, it requires that the tenant either has lived in the same unit for at least six months or that their original lease expired, whichever comes first."
+        }
+      ],
+      "evidence_check": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 745,
+        "end": 923,
+        "occurrences": 1,
+        "model_span": "In order to apply to a tenancy, it requires that the tenant either has lived in the same unit for at least six months or that their original lease expired, whichever comes first.",
+        "source_span": "In order to apply to a tenancy, it requires that the tenant either has lived in the same unit for at least six months or that their original lease expired, whichever comes first.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "In order to apply to a tenancy, it requires that the tenant either has lived in the same unit for at least six months or that their original lease expired, whichever comes first.",
+            "status": "exact_match",
+            "start": 745,
+            "end": 923
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "propagated": true,
+      "problem": null,
+      "scope": {
+        "resolver": "scope-modes/v1",
+        "declared_mode": "named_subject",
+        "mode": "named_subject",
+        "scope_words": {
+          "scope_quote": "In order to apply to a tenancy, it requires",
+          "scope_quote_check": "exact_match",
+          "text": "In order to apply to a tenancy, it requires",
+          "from": "scope_quote"
+        },
+        "detail": null,
+        "propagate_ids": [],
+        "mapping_targets": [
+          "P1",
+          "P3",
+          "P4"
+        ],
+        "verification": null
+      }
+    },
+    {
+      "id": "S3",
+      "kind": "exemption",
+      "statement": "Exempts transient hotels, licensed care facilities, fraternity or sorority houses, owner's roommate arrangements, certain cooperatives, certain non-profit homeless facilities or substance abuse centers, and certain HACLA- or government-owned properties from the JCO.",
+      "citation": "Rental Units Covered Under JCO",
+      "scope_mode": "named_subject",
+      "scope_quote": "exceptions to the JCO including",
+      "source_provision_id": "P2",
+      "governed_provision_ids": [
+        "P1",
+        "P3",
+        "P4"
+      ],
+      "evidence_parts": [
+        {
+          "segment_id": 1,
+          "quoted_text": "There are other specific exceptions to the JCO including, but not limited to, transient hotels, licensed care facilities, fraternity or sorority houses, owner’s roommate, cooperatives under certain circumstances, some non-profit facilities for the homeless or short-term treatment centers for substance abuse, and some properties owned by HACLA or the government."
+        }
+      ],
+      "evidence_check": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 925,
+        "end": 1288,
+        "occurrences": 1,
+        "model_span": "There are other specific exceptions to the JCO including, but not limited to, transient hotels, licensed care facilities, fraternity or sorority houses, owner’s roommate, cooperatives under certain circumstances, some non-profit facilities for the homeless or short-term treatment centers for substance abuse, and some properties owned by HACLA or the government.",
+        "source_span": "There are other specific exceptions to the JCO including, but not limited to, transient hotels, licensed care facilities, fraternity or sorority houses, owner’s roommate, cooperatives under certain circumstances, some non-profit facilities for the homeless or short-term treatment centers for substance abuse, and some properties owned by HACLA or the government.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "There are other specific exceptions to the JCO including, but not limited to, transient hotels, licensed care facilities, fraternity or sorority houses, owner’s roommate, cooperatives under certain circumstances, some non-profit facilities for the homeless or short-term treatment centers for substance abuse, and some properties owned by HACLA or the government.",
+            "status": "exact_match",
+            "start": 925,
+            "end": 1288
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "propagated": true,
+      "problem": null,
+      "scope": {
+        "resolver": "scope-modes/v1",
+        "declared_mode": "named_subject",
+        "mode": "named_subject",
+        "scope_words": {
+          "scope_quote": "exceptions to the JCO including",
+          "scope_quote_check": "exact_match",
+          "text": "exceptions to the JCO including",
+          "from": "scope_quote"
+        },
+        "detail": null,
+        "propagate_ids": [],
+        "mapping_targets": [
+          "P1",
+          "P3",
+          "P4"
+        ],
+        "verification": null
+      }
+    },
+    {
+      "id": "S4",
+      "kind": "exemption",
+      "statement": "Exempts units constructed within the preceding 15 years on a rolling basis from AB 1482 rent increase limits.",
+      "citation": "Properties not covered under AB 1482",
+      "scope_mode": "named_subject",
+      "scope_quote": "Properties\nnot\ncovered under AB 1482:",
+      "source_provision_id": "P11",
+      "governed_provision_ids": [
+        "P10"
+      ],
+      "evidence_parts": [
+        {
+          "segment_id": 1,
+          "quoted_text": "-Units that were constructed within the last 15 years (this applies on a rolling basis – i.e.. a unit constructed on January 1, 2006 is not covered as of January, 1 2020, but is covered on and after January 1, 2021)."
+        }
+      ],
+      "evidence_check": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 5305,
+        "end": 5521,
+        "occurrences": 1,
+        "model_span": "-Units that were constructed within the last 15 years (this applies on a rolling basis – i.e.. a unit constructed on January 1, 2006 is not covered as of January, 1 2020, but is covered on and after January 1, 2021).",
+        "source_span": "-Units that were constructed within the last 15 years (this applies on a rolling basis – i.e.. a unit constructed on January 1, 2006 is not covered as of January, 1 2020, but is covered on and after January 1, 2021).",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "-Units that were constructed within the last 15 years (this applies on a rolling basis – i.e.. a unit constructed on January 1, 2006 is not covered as of January, 1 2020, but is covered on and after January 1, 2021).",
+            "status": "exact_match",
+            "start": 5305,
+            "end": 5521
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "propagated": true,
+      "problem": null,
+      "scope": {
+        "resolver": "scope-modes/v1",
+        "declared_mode": "named_subject",
+        "mode": "named_subject",
+        "scope_words": {
+          "scope_quote": "Properties\nnot\ncovered under AB 1482:",
+          "scope_quote_check": "exact_match",
+          "text": "Properties\nnot\ncovered under AB 1482:",
+          "from": "scope_quote"
+        },
+        "detail": null,
+        "propagate_ids": [],
+        "mapping_targets": [],
+        "verification": null
+      }
+    },
+    {
+      "id": "S5",
+      "kind": "exemption",
+      "statement": "Exempts units restricted by deed, regulatory restrictions, or recorded document limiting affordability to low- or moderate-income households from AB 1482.",
+      "citation": "Properties not covered under AB 1482",
+      "scope_mode": "named_subject",
+      "scope_quote": "Properties\nnot\ncovered under AB 1482:",
+      "source_provision_id": "P11",
+      "governed_provision_ids": [
+        "P10"
+      ],
+      "evidence_parts": [
+        {
+          "segment_id": 1,
+          "quoted_text": "-Units restricted by a deed, regulatory restrictions, or other recorded document limiting the affordability to low or moderate-income households."
+        }
+      ],
+      "evidence_check": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 5522,
+        "end": 5667,
+        "occurrences": 1,
+        "model_span": "-Units restricted by a deed, regulatory restrictions, or other recorded document limiting the affordability to low or moderate-income households.",
+        "source_span": "-Units restricted by a deed, regulatory restrictions, or other recorded document limiting the affordability to low or moderate-income households.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "-Units restricted by a deed, regulatory restrictions, or other recorded document limiting the affordability to low or moderate-income households.",
+            "status": "exact_match",
+            "start": 5522,
+            "end": 5667
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "propagated": true,
+      "problem": null,
+      "scope": {
+        "resolver": "scope-modes/v1",
+        "declared_mode": "named_subject",
+        "mode": "named_subject",
+        "scope_words": {
+          "scope_quote": "Properties\nnot\ncovered under AB 1482:",
+          "scope_quote_check": "exact_match",
+          "text": "Properties\nnot\ncovered under AB 1482:",
+          "from": "scope_quote"
+        },
+        "detail": null,
+        "propagate_ids": [],
+        "mapping_targets": [],
+        "verification": null
+      }
+    },
+    {
+      "id": "S6",
+      "kind": "exemption",
+      "statement": "Exempts certain dormitories from AB 1482.",
+      "citation": "Properties not covered under AB 1482",
+      "scope_mode": "named_subject",
+      "scope_quote": "Properties\nnot\ncovered under AB 1482:",
+      "source_provision_id": "P11",
+      "governed_provision_ids": [
+        "P10"
+      ],
+      "evidence_parts": [
+        {
+          "segment_id": 1,
+          "quoted_text": "-Certain dormitories."
+        }
+      ],
+      "evidence_check": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 5668,
+        "end": 5689,
+        "occurrences": 1,
+        "model_span": "-Certain dormitories.",
+        "source_span": "-Certain dormitories.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "-Certain dormitories.",
+            "status": "exact_match",
+            "start": 5668,
+            "end": 5689
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "propagated": true,
+      "problem": null,
+      "scope": {
+        "resolver": "scope-modes/v1",
+        "declared_mode": "named_subject",
+        "mode": "named_subject",
+        "scope_words": {
+          "scope_quote": "Properties\nnot\ncovered under AB 1482:",
+          "scope_quote_check": "exact_match",
+          "text": "Properties\nnot\ncovered under AB 1482:",
+          "from": "scope_quote"
+        },
+        "detail": null,
+        "propagate_ids": [],
+        "mapping_targets": [],
+        "verification": null
+      }
+    },
+    {
+      "id": "S7",
+      "kind": "exemption",
+      "statement": "Exempts two-unit properties where one unit was occupied by an owner of the property for the entire period of the tenancy from AB 1482.",
+      "citation": "Properties not covered under AB 1482",
+      "scope_mode": "named_subject",
+      "scope_quote": "Properties\nnot\ncovered under AB 1482:",
+      "source_provision_id": "P11",
+      "governed_provision_ids": [
+        "P10"
+      ],
+      "evidence_parts": [
+        {
+          "segment_id": 1,
+          "quoted_text": "-A two-unit property, provided the second unit was occupied by an owner of the property for the entire period of the tenancy."
+        }
+      ],
+      "evidence_check": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 5690,
+        "end": 5815,
+        "occurrences": 1,
+        "model_span": "-A two-unit property, provided the second unit was occupied by an owner of the property for the entire period of the tenancy.",
+        "source_span": "-A two-unit property, provided the second unit was occupied by an owner of the property for the entire period of the tenancy.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "-A two-unit property, provided the second unit was occupied by an owner of the property for the entire period of the tenancy.",
+            "status": "exact_match",
+            "start": 5690,
+            "end": 5815
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "propagated": true,
+      "problem": null,
+      "scope": {
+        "resolver": "scope-modes/v1",
+        "declared_mode": "named_subject",
+        "mode": "named_subject",
+        "scope_words": {
+          "scope_quote": "Properties\nnot\ncovered under AB 1482:",
+          "scope_quote_check": "exact_match",
+          "text": "Properties\nnot\ncovered under AB 1482:",
+          "from": "scope_quote"
+        },
+        "detail": null,
+        "propagate_ids": [],
+        "mapping_targets": [],
+        "verification": null
+      }
+    },
+    {
+      "id": "S8",
+      "kind": "exemption",
+      "statement": "Exempts single-family homes and condominiums from AB 1482 only if not owned by a real estate trust, corporation, or LLC with a corporate member, and the landlord provided written notice of exemption under Civil Code sections 1946.2 and 1947.12; exemption does not apply if more than one dwelling unit exists on the lot or includes an inseparable second unit.",
+      "citation": "Properties not covered under AB 1482",
+      "scope_mode": "named_subject",
+      "scope_quote": "Properties\nnot\ncovered under AB 1482:",
+      "source_provision_id": "P11",
+      "governed_provision_ids": [
+        "P10"
+      ],
+      "evidence_parts": [
+        {
+          "segment_id": 1,
+          "quoted_text": "-Single-family homes and condominiums are only exempt from state law but not the JCO if both\n(A)\nand\n(B)\napply:\n(A)\nthe property is\nnot\nowned by one of the following:\n(i) a real estate trust, or\n(ii) a corporation, or\n(iii) an LLC with at least one corporate member.\n—–AND—-\n(B)\nThe landlord notified the tenant\nin writing\nthat the tenancy is not subject to the “just cause” and rent increase limitations as specifically described in Civil Code Sections 1946.2(e)(8)(B)(i) and 1947.12(d)(5)(B)(i).\n-The limited exemption for single-family homes does not apply where there is more than one dwelling unit on the same lot, or any second residential unit in the building that cannot be sold separately from the subject unit (such as an in-law unit)."
+        }
+      ],
+      "evidence_check": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 5816,
+        "end": 6561,
+        "occurrences": 1,
+        "model_span": "-Single-family homes and condominiums are only exempt from state law but not the JCO if both\n(A)\nand\n(B)\napply:\n(A)\nthe property is\nnot\nowned by one of the following:\n(i) a real estate trust, or\n(ii) a corporation, or\n(iii) an LLC with at least one corporate member.\n—–AND—-\n(B)\nThe landlord notified the tenant\nin writing\nthat the tenancy is not subject to the “just cause” and rent increase limitations as specifically described in Civil Code Sections 1946.2(e)(8)(B)(i) and 1947.12(d)(5)(B)(i).\n-The limited exemption for single-family homes does not apply where there is more than one dwelling unit on the same lot, or any second residential unit in the building that cannot be sold separately from the subject unit (such as an in-law unit).",
+        "source_span": "-Single-family homes and condominiums are only exempt from state law but not the JCO if both\n(A)\nand\n(B)\napply:\n(A)\nthe property is\nnot\nowned by one of the following:\n(i) a real estate trust, or\n(ii) a corporation, or\n(iii) an LLC with at least one corporate member.\n—–AND—-\n(B)\nThe landlord notified the tenant\nin writing\nthat the tenancy is not subject to the “just cause” and rent increase limitations as specifically described in Civil Code Sections 1946.2(e)(8)(B)(i) and 1947.12(d)(5)(B)(i).\n-The limited exemption for single-family homes does not apply where there is more than one dwelling unit on the same lot, or any second residential unit in the building that cannot be sold separately from the subject unit (such as an in-law unit).",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "-Single-family homes and condominiums are only exempt from state law but not the JCO if both\n(A)\nand\n(B)\napply:\n(A)\nthe property is\nnot\nowned by one of the following:\n(i) a real estate trust, or\n(ii) a corporation, or\n(iii) an LLC with at least one corporate member.\n—–AND—-\n(B)\nThe landlord notified the tenant\nin writing\nthat the tenancy is not subject to the “just cause” and rent increase limitations as specifically described in Civil Code Sections 1946.2(e)(8)(B)(i) and 1947.12(d)(5)(B)(i).\n-The limited exemption for single-family homes does not apply where there is more than one dwelling unit on the same lot, or any second residential unit in the building that cannot be sold separately from the subject unit (such as an in-law unit).",
+            "status": "exact_match",
+            "start": 5816,
+            "end": 6561
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "propagated": true,
+      "problem": null,
+      "scope": {
+        "resolver": "scope-modes/v1",
+        "declared_mode": "named_subject",
+        "mode": "named_subject",
+        "scope_words": {
+          "scope_quote": "Properties\nnot\ncovered under AB 1482:",
+          "scope_quote_check": "exact_match",
+          "text": "Properties\nnot\ncovered under AB 1482:",
+          "from": "scope_quote"
+        },
+        "detail": null,
+        "propagate_ids": [],
+        "mapping_targets": [],
+        "verification": null
+      }
+    },
+    {
+      "id": "S9",
+      "kind": "exemption",
+      "statement": "Exempts units that are already subject to the City of Los Angeles Rent Stabilization Ordinance (RSO) from AB 1482.",
+      "citation": "Properties not covered under AB 1482",
+      "scope_mode": "named_subject",
+      "scope_quote": "Properties\nnot\ncovered under AB 1482:",
+      "source_provision_id": "P11",
+      "governed_provision_ids": [
+        "P10"
+      ],
+      "evidence_parts": [
+        {
+          "segment_id": 1,
+          "quoted_text": "-Units that are already subject to the City’s RSO."
+        }
+      ],
+      "evidence_check": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 6562,
+        "end": 6612,
+        "occurrences": 1,
+        "model_span": "-Units that are already subject to the City’s RSO.",
+        "source_span": "-Units that are already subject to the City’s RSO.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "-Units that are already subject to the City’s RSO.",
+            "status": "exact_match",
+            "start": 6562,
+            "end": 6612
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "propagated": true,
+      "problem": null,
+      "scope": {
+        "resolver": "scope-modes/v1",
+        "declared_mode": "named_subject",
+        "mode": "named_subject",
+        "scope_words": {
+          "scope_quote": "Properties\nnot\ncovered under AB 1482:",
+          "scope_quote_check": "exact_match",
+          "text": "Properties\nnot\ncovered under AB 1482:",
+          "from": "scope_quote"
+        },
+        "detail": null,
+        "propagate_ids": [],
+        "mapping_targets": [],
+        "verification": null
+      }
+    }
+  ],
+  "source_view": {
+    "marker": "[[PAGE BREAK]]",
+    "segment_label": "[[SEGMENT {}]]",
+    "view_sha256": "0e43533010504b6ce752e3344a1dbb7b15848cb74d664e0a66c1e173b77c368c",
+    "segments": [
+      {
+        "id": 1,
+        "raw_start": 0,
+        "raw_end": 9631
+      }
+    ],
+    "artifacts_removed": 0,
+    "artifacts": []
+  },
+  "coverage": {
+    "inventory_valid": true,
+    "anchors_located": "12/12",
+    "after_primary": {
+      "uncovered": [],
+      "unaccepted": [
+        "Just Cause Ordinance (JCO)",
+        "Legal Reasons for Eviction - Tenant is at-fault",
+        "Legal Reasons for Eviction - Tenant is not at-fault",
+        "Eviction Notices Filed with LAHD",
+        "When Can Rent Be Increased Under State Law AB1482"
+      ],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "scope_mappings": {
+      "requested": 9,
+      "applies": 9,
+      "does_not_apply": 0,
+      "unresolved": 0
+    },
+    "after_repair": {
+      "uncovered": [],
+      "unaccepted": [
+        "Just Cause Ordinance (JCO)",
+        "Legal Reasons for Eviction - Tenant is at-fault",
+        "Legal Reasons for Eviction - Tenant is not at-fault",
+        "Eviction Notices Filed with LAHD",
+        "When Can Rent Be Increased Under State Law AB1482"
+      ],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "repair_targets": {
+      "before_repair": 0,
+      "resolved_by_accepted_rule": 0,
+      "resolved_out_of_scope": 0,
+      "still_unresolved": 0
+    },
+    "inventory_items": 12,
+    "in_scope_items": 7,
+    "in_scope_refs": 7,
+    "uncertain": [],
+    "final": {
+      "uncovered": [],
+      "unaccepted": [
+        "Just Cause Ordinance (JCO)",
+        "Legal Reasons for Eviction - Tenant is at-fault",
+        "Legal Reasons for Eviction - Tenant is not at-fault",
+        "Eviction Notices Filed with LAHD",
+        "When Can Rent Be Increased Under State Law AB1482"
+      ],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "link_mismatches": [],
+    "provisions": [
+      {
+        "ref": "Just Cause Ordinance (JCO)",
+        "inventory_item": 0,
+        "provision_id": "P1",
+        "summary": "General overview stating the JCO prohibits terminations of tenancies without just cause and requires relocation assistance for no-fault evictions.",
+        "category": "just_cause_eviction",
+        "candidates": [
+          0
+        ],
+        "accepted": [],
+        "basis": {
+          "0": "provision link; citation names it"
+        }
+      },
+      {
+        "ref": "Legal Reasons for Eviction - Tenant is at-fault",
+        "inventory_item": 2,
+        "provision_id": "P3",
+        "summary": "Lists enumerated grounds for at-fault eviction under the JCO for which no relocation assistance is required.",
+        "category": "just_cause_eviction",
+        "candidates": [
+          1
+        ],
+        "accepted": [],
+        "basis": {
+          "1": "provision link; citation names it"
+        }
+      },
+      {
+        "ref": "Legal Reasons for Eviction - Tenant is not at-fault",
+        "inventory_item": 3,
+        "provision_id": "P4",
+        "summary": "Lists permissible grounds for no-fault eviction under the JCO and specifies that relocation assistance may be required.",
+        "category": "just_cause_eviction",
+        "candidates": [
+          2
+        ],
+        "accepted": [],
+        "basis": {
+          "2": "provision link; citation names it"
+        }
+      },
+      {
+        "ref": "Required Registration and Posted Notification - Notice of Right to Counsel",
+        "inventory_item": 5,
+        "provision_id": "P6",
+        "summary": "Requires posting and service of Notice of Right to Counsel at start of tenancy and with any eviction notice.",
+        "category": "just_cause_eviction",
+        "candidates": [
+          3
+        ],
+        "accepted": [
+          3
+        ],
+        "basis": {
+          "3": "provision link; citation names it"
+        }
+      },
+      {
+        "ref": "Evictions for Non-Payment of Rent",
+        "inventory_item": 7,
+        "provision_id": "P8",
+        "summary": "Prohibits evicting a tenant for non-payment of rent unless the rent owed exceeds the Fair Market Rent for the unit size.",
+        "category": "just_cause_eviction",
+        "candidates": [
+          4
+        ],
+        "accepted": [
+          4
+        ],
+        "basis": {
+          "4": "provision link; citation names it"
+        }
+      },
+      {
+        "ref": "Eviction Notices Filed with LAHD",
+        "inventory_item": 8,
+        "provision_id": "P9",
+        "summary": "Requires filing all eviction notices issued in Los Angeles with LAHD within three business days of service.",
+        "category": "just_cause_eviction",
+        "candidates": [
+          5
+        ],
+        "accepted": [],
+        "basis": {
+          "5": "provision link; citation names it"
+        }
+      },
+      {
+        "ref": "When Can Rent Be Increased Under State Law AB1482",
+        "inventory_item": 9,
+        "provision_id": "P10",
+        "summary": "States rent increase limits under California AB 1482, including the annual cap formula and allowable percentage.",
+        "category": "rent_increase_limits",
+        "candidates": [
+          6
+        ],
+        "accepted": [],
+        "basis": {
+          "6": "provision link; citation names it"
+        }
+      }
+    ],
+    "unrecorded_subdivisions": []
+  },
+  "scope_challenges": [
+    {
+      "ref": "Rental Units Covered Under JCO",
+      "provision_id": "P2",
+      "role": "scope_condition",
+      "reason": "scope condition and exemptions for JCO, see global_scope",
+      "summary": "Defines residential coverage, tenancy duration conditions, and property exceptions under the JCO.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role scope_condition is decided by other rules"
+    },
+    {
+      "ref": "Required Registration and Posted Notification - Registration",
+      "provision_id": "P5",
+      "role": "operative_rule",
+      "reason": "annual rental property registration is outside official categories",
+      "summary": "Requires annual property registration, payment of registration fees, and posting or service of the Registration Certificate.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    },
+    {
+      "ref": "Required Registration and Posted Notification - Notice of Renters' Protections",
+      "provision_id": "P7",
+      "role": "operative_rule",
+      "reason": "general tenant disclosure notice at tenancy inception or renewal is outside official categories",
+      "summary": "Requires providing a Notice of Renters' Protections at tenancy start or renewal and posting it in a common area.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    },
+    {
+      "ref": "Properties not covered under AB 1482",
+      "provision_id": "P11",
+      "role": "exemption",
+      "reason": "exemptions from AB 1482 rent increase limits, see global_scope",
+      "summary": "Enumerates property and tenancy exemptions from AB 1482 rent increase limits.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role exemption is decided by other rules"
+    },
+    {
+      "ref": "Landlord Services",
+      "provision_id": "P12",
+      "role": "procedure",
+      "reason": "informational website navigation and landlord services links",
+      "summary": "Informational website navigation, billing portals, and hotline links for landlords.",
+      "signals": {
+        "in_scope_neighbour": false,
+        "enumeration": false,
+        "normative_language": false,
+        "grounds_or_conditions": false
+      },
+      "challenged": false,
+      "why_not": "too few substantive signals",
+      "raw_start": 6613,
+      "raw_end": 8613
+    }
+  ],
+  "scope_mappings": [
+    {
+      "condition_id": "S1",
+      "provision_id": "P1",
+      "kind": "coverage_condition",
+      "statement": "The JCO applies to most residential rental properties in the City of Los Angeles that are not regulated by the Rent Stabilization Ordinance (RSO).",
+      "scope_words": "The JCO covers",
+      "condition_evidence": "The JCO covers most residential properties in the City of Los Angeles that are not regulated by the City’s Rent Stabilization Ordinance (RSO).",
+      "target_ref": "Just Cause Ordinance (JCO)",
+      "target_anchor": "If you own rental property in the City of Los Angeles,",
+      "target_quote": "It prohibits terminations of tenancies without just cause and requires relocation assistance for no-fault evictions.",
+      "decision": {
+        "decision": "applies",
+        "reason": "The JCO property coverage scope condition directly governs when the JCO's prohibition on evictions without just cause applies.",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 602,
+          "end": 744,
+          "occurrences": 1,
+          "model_span": "The JCO covers most residential properties in the City of Los Angeles that are not regulated by the City’s Rent Stabilization Ordinance (RSO).",
+          "source_span": "The JCO covers most residential properties in the City of Los Angeles that are not regulated by the City’s Rent Stabilization Ordinance (RSO).",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 1,
+              "model_text": "The JCO covers most residential properties in the City of Los Angeles that are not regulated by the City’s Rent Stabilization Ordinance (RSO).",
+              "status": "exact_match",
+              "start": 602,
+              "end": 744
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "applies",
+      "unresolved_reason": null
+    },
+    {
+      "condition_id": "S1",
+      "provision_id": "P3",
+      "kind": "coverage_condition",
+      "statement": "The JCO applies to most residential rental properties in the City of Los Angeles that are not regulated by the Rent Stabilization Ordinance (RSO).",
+      "scope_words": "The JCO covers",
+      "condition_evidence": "The JCO covers most residential properties in the City of Los Angeles that are not regulated by the City’s Rent Stabilization Ordinance (RSO).",
+      "target_ref": "Legal Reasons for Eviction - Tenant is at-fault",
+      "target_anchor": "Under the JCO, the landlord may recover possession of",
+      "target_quote": "Under the JCO, the landlord may recover possession of a rental unit\nin specific situations. Below is a list of reasons for which a tenant could be evicted and\nwould be considered at fault\n. If the tenant is at fault\nfor the eviction, then the tenant will not be entitled to relocation assistance.\nFailure to pay rent\nFailure to cure a violation of the rental agreement\nCreating a nuisance or causing damage to the property\nUsing the rental unit for an illegal purpose\nFailure to renew a similar rental agreement\nFailure to provide the landlord with reasonable access to the rental unit\nThe person at the end of the lease term is a subtenant not approved by the landlord",
+      "decision": {
+        "decision": "applies",
+        "reason": "The JCO property coverage condition limits the rental properties governed by the JCO at-fault eviction provisions.",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 602,
+          "end": 744,
+          "occurrences": 1,
+          "model_span": "The JCO covers most residential properties in the City of Los Angeles that are not regulated by the City’s Rent Stabilization Ordinance (RSO).",
+          "source_span": "The JCO covers most residential properties in the City of Los Angeles that are not regulated by the City’s Rent Stabilization Ordinance (RSO).",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 1,
+              "model_text": "The JCO covers most residential properties in the City of Los Angeles that are not regulated by the City’s Rent Stabilization Ordinance (RSO).",
+              "status": "exact_match",
+              "start": 602,
+              "end": 744
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "applies",
+      "unresolved_reason": null
+    },
+    {
+      "condition_id": "S1",
+      "provision_id": "P4",
+      "kind": "coverage_condition",
+      "statement": "The JCO applies to most residential rental properties in the City of Los Angeles that are not regulated by the Rent Stabilization Ordinance (RSO).",
+      "scope_words": "The JCO covers",
+      "condition_evidence": "The JCO covers most residential properties in the City of Los Angeles that are not regulated by the City’s Rent Stabilization Ordinance (RSO).",
+      "target_ref": "Legal Reasons for Eviction - Tenant is not at-fault",
+      "target_anchor": "Situations in which the property owner wishes to regain",
+      "target_quote": "Situations in which the property owner wishes to regain the use of the rental unit, as the result of a personal or business decision, and\nnot the\ntenant’s fault, may be cause for eviction, but the property owner may have to pay the tenant\nrelocation assistance\n. These reasons include\nThe\nowner or an immediate family member\nwill move into the rental unit\nResident manager will move into the rental unit when required by law or by an affordable housing covenant or regulatory agreement\nDemolition, permanent removal from the rental market, or conversion to\nnon-residential\nGovernment order to vacate\nHUD owns and is selling the property\nResidential Hotel being converted or demolished\nConversion to affordable housing",
+      "decision": {
+        "decision": "applies",
+        "reason": "The JCO property coverage condition limits the rental properties governed by the JCO no-fault eviction and relocation rules.",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 602,
+          "end": 744,
+          "occurrences": 1,
+          "model_span": "The JCO covers most residential properties in the City of Los Angeles that are not regulated by the City’s Rent Stabilization Ordinance (RSO).",
+          "source_span": "The JCO covers most residential properties in the City of Los Angeles that are not regulated by the City’s Rent Stabilization Ordinance (RSO).",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 1,
+              "model_text": "The JCO covers most residential properties in the City of Los Angeles that are not regulated by the City’s Rent Stabilization Ordinance (RSO).",
+              "status": "exact_match",
+              "start": 602,
+              "end": 744
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "applies",
+      "unresolved_reason": null
+    },
+    {
+      "condition_id": "S2",
+      "provision_id": "P1",
+      "kind": "coverage_condition",
+      "statement": "The JCO applies to a tenancy only if the tenant has resided in the unit for at least six months or the original lease has expired, whichever occurs first.",
+      "scope_words": "In order to apply to a tenancy, it requires",
+      "condition_evidence": "In order to apply to a tenancy, it requires that the tenant either has lived in the same unit for at least six months or that their original lease expired, whichever comes first.",
+      "target_ref": "Just Cause Ordinance (JCO)",
+      "target_anchor": "If you own rental property in the City of Los Angeles,",
+      "target_quote": "It prohibits terminations of tenancies without just cause and requires relocation assistance for no-fault evictions.",
+      "decision": {
+        "decision": "applies",
+        "reason": "The tenancy duration requirement determines when a tenancy is covered by the JCO's general prohibition on termination without just cause.",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 745,
+          "end": 923,
+          "occurrences": 1,
+          "model_span": "In order to apply to a tenancy, it requires that the tenant either has lived in the same unit for at least six months or that their original lease expired, whichever comes first.",
+          "source_span": "In order to apply to a tenancy, it requires that the tenant either has lived in the same unit for at least six months or that their original lease expired, whichever comes first.",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 1,
+              "model_text": "In order to apply to a tenancy, it requires that the tenant either has lived in the same unit for at least six months or that their original lease expired, whichever comes first.",
+              "status": "exact_match",
+              "start": 745,
+              "end": 923
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "applies",
+      "unresolved_reason": null
+    },
+    {
+      "condition_id": "S2",
+      "provision_id": "P3",
+      "kind": "coverage_condition",
+      "statement": "The JCO applies to a tenancy only if the tenant has resided in the unit for at least six months or the original lease has expired, whichever occurs first.",
+      "scope_words": "In order to apply to a tenancy, it requires",
+      "condition_evidence": "In order to apply to a tenancy, it requires that the tenant either has lived in the same unit for at least six months or that their original lease expired, whichever comes first.",
+      "target_ref": "Legal Reasons for Eviction - Tenant is at-fault",
+      "target_anchor": "Under the JCO, the landlord may recover possession of",
+      "target_quote": "Under the JCO, the landlord may recover possession of a rental unit\nin specific situations. Below is a list of reasons for which a tenant could be evicted and\nwould be considered at fault\n. If the tenant is at fault\nfor the eviction, then the tenant will not be entitled to relocation assistance.\nFailure to pay rent\nFailure to cure a violation of the rental agreement\nCreating a nuisance or causing damage to the property\nUsing the rental unit for an illegal purpose\nFailure to renew a similar rental agreement\nFailure to provide the landlord with reasonable access to the rental unit\nThe person at the end of the lease term is a subtenant not approved by the landlord",
+      "decision": {
+        "decision": "applies",
+        "reason": "The tenancy duration requirement determines when a tenancy is subject to the JCO's at-fault eviction restrictions.",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 745,
+          "end": 923,
+          "occurrences": 1,
+          "model_span": "In order to apply to a tenancy, it requires that the tenant either has lived in the same unit for at least six months or that their original lease expired, whichever comes first.",
+          "source_span": "In order to apply to a tenancy, it requires that the tenant either has lived in the same unit for at least six months or that their original lease expired, whichever comes first.",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 1,
+              "model_text": "In order to apply to a tenancy, it requires that the tenant either has lived in the same unit for at least six months or that their original lease expired, whichever comes first.",
+              "status": "exact_match",
+              "start": 745,
+              "end": 923
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "applies",
+      "unresolved_reason": null
+    },
+    {
+      "condition_id": "S2",
+      "provision_id": "P4",
+      "kind": "coverage_condition",
+      "statement": "The JCO applies to a tenancy only if the tenant has resided in the unit for at least six months or the original lease has expired, whichever occurs first.",
+      "scope_words": "In order to apply to a tenancy, it requires",
+      "condition_evidence": "In order to apply to a tenancy, it requires that the tenant either has lived in the same unit for at least six months or that their original lease expired, whichever comes first.",
+      "target_ref": "Legal Reasons for Eviction - Tenant is not at-fault",
+      "target_anchor": "Situations in which the property owner wishes to regain",
+      "target_quote": "Situations in which the property owner wishes to regain the use of the rental unit, as the result of a personal or business decision, and\nnot the\ntenant’s fault, may be cause for eviction, but the property owner may have to pay the tenant\nrelocation assistance\n. These reasons include\nThe\nowner or an immediate family member\nwill move into the rental unit\nResident manager will move into the rental unit when required by law or by an affordable housing covenant or regulatory agreement\nDemolition, permanent removal from the rental market, or conversion to\nnon-residential\nGovernment order to vacate\nHUD owns and is selling the property\nResidential Hotel being converted or demolished\nConversion to affordable housing",
+      "decision": {
+        "decision": "applies",
+        "reason": "The tenancy duration requirement determines when a tenancy is subject to the JCO's no-fault eviction and relocation assistance rules.",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 745,
+          "end": 923,
+          "occurrences": 1,
+          "model_span": "In order to apply to a tenancy, it requires that the tenant either has lived in the same unit for at least six months or that their original lease expired, whichever comes first.",
+          "source_span": "In order to apply to a tenancy, it requires that the tenant either has lived in the same unit for at least six months or that their original lease expired, whichever comes first.",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 1,
+              "model_text": "In order to apply to a tenancy, it requires that the tenant either has lived in the same unit for at least six months or that their original lease expired, whichever comes first.",
+              "status": "exact_match",
+              "start": 745,
+              "end": 923
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "applies",
+      "unresolved_reason": null
+    },
+    {
+      "condition_id": "S3",
+      "provision_id": "P1",
+      "kind": "exemption",
+      "statement": "Exempts transient hotels, licensed care facilities, fraternity or sorority houses, owner's roommate arrangements, certain cooperatives, certain non-profit homeless facilities or substance abuse centers, and certain HACLA- or government-owned properties from the JCO.",
+      "scope_words": "exceptions to the JCO including",
+      "condition_evidence": "There are other specific exceptions to the JCO including, but not limited to, transient hotels, licensed care facilities, fraternity or sorority houses, owner’s roommate, cooperatives under certain circumstances, some non-profit facilities for the homeless or short-term treatment centers for substance abuse, and some properties owned by HACLA or the government.",
+      "target_ref": "Just Cause Ordinance (JCO)",
+      "target_anchor": "If you own rental property in the City of Los Angeles,",
+      "target_quote": "It prohibits terminations of tenancies without just cause and requires relocation assistance for no-fault evictions.",
+      "decision": {
+        "decision": "applies",
+        "reason": "The enumerated exceptions to the JCO exempt designated housing types from the prohibition on evictions without just cause.",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 925,
+          "end": 1288,
+          "occurrences": 1,
+          "model_span": "There are other specific exceptions to the JCO including, but not limited to, transient hotels, licensed care facilities, fraternity or sorority houses, owner’s roommate, cooperatives under certain circumstances, some non-profit facilities for the homeless or short-term treatment centers for substance abuse, and some properties owned by HACLA or the government.",
+          "source_span": "There are other specific exceptions to the JCO including, but not limited to, transient hotels, licensed care facilities, fraternity or sorority houses, owner’s roommate, cooperatives under certain circumstances, some non-profit facilities for the homeless or short-term treatment centers for substance abuse, and some properties owned by HACLA or the government.",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 1,
+              "model_text": "There are other specific exceptions to the JCO including, but not limited to, transient hotels, licensed care facilities, fraternity or sorority houses, owner’s roommate, cooperatives under certain circumstances, some non-profit facilities for the homeless or short-term treatment centers for substance abuse, and some properties owned by HACLA or the government.",
+              "status": "exact_match",
+              "start": 925,
+              "end": 1288
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "applies",
+      "unresolved_reason": null
+    },
+    {
+      "condition_id": "S3",
+      "provision_id": "P3",
+      "kind": "exemption",
+      "statement": "Exempts transient hotels, licensed care facilities, fraternity or sorority houses, owner's roommate arrangements, certain cooperatives, certain non-profit homeless facilities or substance abuse centers, and certain HACLA- or government-owned properties from the JCO.",
+      "scope_words": "exceptions to the JCO including",
+      "condition_evidence": "There are other specific exceptions to the JCO including, but not limited to, transient hotels, licensed care facilities, fraternity or sorority houses, owner’s roommate, cooperatives under certain circumstances, some non-profit facilities for the homeless or short-term treatment centers for substance abuse, and some properties owned by HACLA or the government.",
+      "target_ref": "Legal Reasons for Eviction - Tenant is at-fault",
+      "target_anchor": "Under the JCO, the landlord may recover possession of",
+      "target_quote": "Under the JCO, the landlord may recover possession of a rental unit\nin specific situations. Below is a list of reasons for which a tenant could be evicted and\nwould be considered at fault\n. If the tenant is at fault\nfor the eviction, then the tenant will not be entitled to relocation assistance.\nFailure to pay rent\nFailure to cure a violation of the rental agreement\nCreating a nuisance or causing damage to the property\nUsing the rental unit for an illegal purpose\nFailure to renew a similar rental agreement\nFailure to provide the landlord with reasonable access to the rental unit\nThe person at the end of the lease term is a subtenant not approved by the landlord",
+      "decision": {
+        "decision": "applies",
+        "reason": "The enumerated exceptions to the JCO exempt designated housing types from the JCO at-fault eviction rules.",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 925,
+          "end": 1288,
+          "occurrences": 1,
+          "model_span": "There are other specific exceptions to the JCO including, but not limited to, transient hotels, licensed care facilities, fraternity or sorority houses, owner’s roommate, cooperatives under certain circumstances, some non-profit facilities for the homeless or short-term treatment centers for substance abuse, and some properties owned by HACLA or the government.",
+          "source_span": "There are other specific exceptions to the JCO including, but not limited to, transient hotels, licensed care facilities, fraternity or sorority houses, owner’s roommate, cooperatives under certain circumstances, some non-profit facilities for the homeless or short-term treatment centers for substance abuse, and some properties owned by HACLA or the government.",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 1,
+              "model_text": "There are other specific exceptions to the JCO including, but not limited to, transient hotels, licensed care facilities, fraternity or sorority houses, owner’s roommate, cooperatives under certain circumstances, some non-profit facilities for the homeless or short-term treatment centers for substance abuse, and some properties owned by HACLA or the government.",
+              "status": "exact_match",
+              "start": 925,
+              "end": 1288
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "applies",
+      "unresolved_reason": null
+    },
+    {
+      "condition_id": "S3",
+      "provision_id": "P4",
+      "kind": "exemption",
+      "statement": "Exempts transient hotels, licensed care facilities, fraternity or sorority houses, owner's roommate arrangements, certain cooperatives, certain non-profit homeless facilities or substance abuse centers, and certain HACLA- or government-owned properties from the JCO.",
+      "scope_words": "exceptions to the JCO including",
+      "condition_evidence": "There are other specific exceptions to the JCO including, but not limited to, transient hotels, licensed care facilities, fraternity or sorority houses, owner’s roommate, cooperatives under certain circumstances, some non-profit facilities for the homeless or short-term treatment centers for substance abuse, and some properties owned by HACLA or the government.",
+      "target_ref": "Legal Reasons for Eviction - Tenant is not at-fault",
+      "target_anchor": "Situations in which the property owner wishes to regain",
+      "target_quote": "Situations in which the property owner wishes to regain the use of the rental unit, as the result of a personal or business decision, and\nnot the\ntenant’s fault, may be cause for eviction, but the property owner may have to pay the tenant\nrelocation assistance\n. These reasons include\nThe\nowner or an immediate family member\nwill move into the rental unit\nResident manager will move into the rental unit when required by law or by an affordable housing covenant or regulatory agreement\nDemolition, permanent removal from the rental market, or conversion to\nnon-residential\nGovernment order to vacate\nHUD owns and is selling the property\nResidential Hotel being converted or demolished\nConversion to affordable housing",
+      "decision": {
+        "decision": "applies",
+        "reason": "The enumerated exceptions to the JCO exempt designated housing types from the JCO no-fault eviction and relocation rules.",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 925,
+          "end": 1288,
+          "occurrences": 1,
+          "model_span": "There are other specific exceptions to the JCO including, but not limited to, transient hotels, licensed care facilities, fraternity or sorority houses, owner’s roommate, cooperatives under certain circumstances, some non-profit facilities for the homeless or short-term treatment centers for substance abuse, and some properties owned by HACLA or the government.",
+          "source_span": "There are other specific exceptions to the JCO including, but not limited to, transient hotels, licensed care facilities, fraternity or sorority houses, owner’s roommate, cooperatives under certain circumstances, some non-profit facilities for the homeless or short-term treatment centers for substance abuse, and some properties owned by HACLA or the government.",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 1,
+              "model_text": "There are other specific exceptions to the JCO including, but not limited to, transient hotels, licensed care facilities, fraternity or sorority houses, owner’s roommate, cooperatives under certain circumstances, some non-profit facilities for the homeless or short-term treatment centers for substance abuse, and some properties owned by HACLA or the government.",
+              "status": "exact_match",
+              "start": 925,
+              "end": 1288
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "applies",
+      "unresolved_reason": null
+    }
+  ],
+  "legislative_session": null,
+  "empty_result": null,
+  "legacy_replay": null,
+  "repair": {
+    "invoked": true,
+    "reason": "0 repair target(s) from no check; 9 scope_mapping_challenge(s)",
+    "prompt_version": "v7-repair-1",
+    "targets": [],
+    "cache_key": "80134f23f593d628bb904097de95f0a013dd3fac29571018faec8a7fec886efa",
+    "cache_hit": false,
+    "cache_entry": "cache/extraction/80134f23f593d628bb904097de95f0a013dd3fac29571018faec8a7fec886efa.json",
+    "prompt_sha256": "a8ea8f1480e7dd9e0bbd4187ffe62056f12eb773f4dd92302e61ab6ceae75368",
+    "provider_metadata": {
+      "api": "interactions.create",
+      "interaction_id": "",
+      "model": "gemini-3.8-flash",
+      "status": "completed",
+      "usage": {
+        "input_tokens": 7617,
+        "output_tokens": 1334,
+        "thinking_tokens": 2612,
+        "total_tokens": 11563
+      }
+    },
+    "raw_response_text": "{\n  \"target_resolutions\": [],\n  \"scope_mappings\": [\n    {\n      \"condition_id\": \"S1\",\n      \"provision_id\": \"P1\",\n      \"decision\": \"applies\",\n      \"reason\": \"The JCO property coverage scope condition directly governs when the JCO's prohibition on evictions without just cause applies.\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"The JCO covers most residential properties in the City of Los Angeles that are not regulated by the City’s Rent Stabilization Ordinance (RSO).\"\n        }\n      ]\n    },\n    {\n      \"condition_id\": \"S1\",\n      \"provision_id\": \"P3\",\n      \"decision\": \"applies\",\n      \"reason\": \"The JCO property coverage condition limits the rental properties governed by the JCO at-fault eviction provisions.\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"The JCO covers most residential properties in the City of Los Angeles that are not regulated by the City’s Rent Stabilization Ordinance (RSO).\"\n        }\n      ]\n    },\n    {\n      \"condition_id\": \"S1\",\n      \"provision_id\": \"P4\",\n      \"decision\": \"applies\",\n      \"reason\": \"The JCO property coverage condition limits the rental properties governed by the JCO no-fault eviction and relocation rules.\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"The JCO covers most residential properties in the City of Los Angeles that are not regulated by the City’s Rent Stabilization Ordinance (RSO).\"\n        }\n      ]\n    },\n    {\n      \"condition_id\": \"S2\",\n      \"provision_id\": \"P1\",\n      \"decision\": \"applies\",\n      \"reason\": \"The tenancy duration requirement determines when a tenancy is covered by the JCO's general prohibition on termination without just cause.\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"In order to apply to a tenancy, it requires that the tenant either has lived in the same unit for at least six months or that their original lease expired, whichever comes first.\"\n        }\n      ]\n    },\n    {\n      \"condition_id\": \"S2\",\n      \"provision_id\": \"P3\",\n      \"decision\": \"applies\",\n      \"reason\": \"The tenancy duration requirement determines when a tenancy is subject to the JCO's at-fault eviction restrictions.\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"In order to apply to a tenancy, it requires that the tenant either has lived in the same unit for at least six months or that their original lease expired, whichever comes first.\"\n        }\n      ]\n    },\n    {\n      \"condition_id\": \"S2\",\n      \"provision_id\": \"P4\",\n      \"decision\": \"applies\",\n      \"reason\": \"The tenancy duration requirement determines when a tenancy is subject to the JCO's no-fault eviction and relocation assistance rules.\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"In order to apply to a tenancy, it requires that the tenant either has lived in the same unit for at least six months or that their original lease expired, whichever comes first.\"\n        }\n      ]\n    },\n    {\n      \"condition_id\": \"S3\",\n      \"provision_id\": \"P1\",\n      \"decision\": \"applies\",\n      \"reason\": \"The enumerated exceptions to the JCO exempt designated housing types from the prohibition on evictions without just cause.\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"There are other specific exceptions to the JCO including, but not limited to, transient hotels, licensed care facilities, fraternity or sorority houses, owner’s roommate, cooperatives under certain circumstances, some non-profit facilities for the homeless or short-term treatment centers for substance abuse, and some properties owned by HACLA or the government.\"\n        }\n      ]\n    },\n    {\n      \"condition_id\": \"S3\",\n      \"provision_id\": \"P3\",\n      \"decision\": \"applies\",\n      \"reason\": \"The enumerated exceptions to the JCO exempt designated housing types from the JCO at-fault eviction rules.\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"There are other specific exceptions to the JCO including, but not limited to, transient hotels, licensed care facilities, fraternity or sorority houses, owner’s roommate, cooperatives under certain circumstances, some non-profit facilities for the homeless or short-term treatment centers for substance abuse, and some properties owned by HACLA or the government.\"\n        }\n      ]\n    },\n    {\n      \"condition_id\": \"S3\",\n      \"provision_id\": \"P4\",\n      \"decision\": \"applies\",\n      \"reason\": \"The enumerated exceptions to the JCO exempt designated housing types from the JCO no-fault eviction and relocation rules.\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"There are other specific exceptions to the JCO including, but not limited to, transient hotels, licensed care facilities, fraternity or sorority houses, owner’s roommate, cooperatives under certain circumstances, some non-profit facilities for the homeless or short-term treatment centers for substance abuse, and some properties owned by HACLA or the government.\"\n        }\n      ]\n    }\n  ],\n  \"rules\": []\n}",
+    "mappings": [
+      {
+        "condition_id": "S1",
+        "provision_id": "P1",
+        "kind": "coverage_condition",
+        "statement": "The JCO applies to most residential rental properties in the City of Los Angeles that are not regulated by the Rent Stabilization Ordinance (RSO).",
+        "scope_words": "The JCO covers",
+        "condition_evidence": "The JCO covers most residential properties in the City of Los Angeles that are not regulated by the City’s Rent Stabilization Ordinance (RSO).",
+        "target_ref": "Just Cause Ordinance (JCO)",
+        "target_anchor": "If you own rental property in the City of Los Angeles,",
+        "target_quote": "It prohibits terminations of tenancies without just cause and requires relocation assistance for no-fault evictions.",
+        "decision": {
+          "decision": "applies",
+          "reason": "The JCO property coverage scope condition directly governs when the JCO's prohibition on evictions without just cause applies.",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 602,
+            "end": 744,
+            "occurrences": 1,
+            "model_span": "The JCO covers most residential properties in the City of Los Angeles that are not regulated by the City’s Rent Stabilization Ordinance (RSO).",
+            "source_span": "The JCO covers most residential properties in the City of Los Angeles that are not regulated by the City’s Rent Stabilization Ordinance (RSO).",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 1,
+                "model_text": "The JCO covers most residential properties in the City of Los Angeles that are not regulated by the City’s Rent Stabilization Ordinance (RSO).",
+                "status": "exact_match",
+                "start": 602,
+                "end": 744
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "applies",
+        "unresolved_reason": null
+      },
+      {
+        "condition_id": "S1",
+        "provision_id": "P3",
+        "kind": "coverage_condition",
+        "statement": "The JCO applies to most residential rental properties in the City of Los Angeles that are not regulated by the Rent Stabilization Ordinance (RSO).",
+        "scope_words": "The JCO covers",
+        "condition_evidence": "The JCO covers most residential properties in the City of Los Angeles that are not regulated by the City’s Rent Stabilization Ordinance (RSO).",
+        "target_ref": "Legal Reasons for Eviction - Tenant is at-fault",
+        "target_anchor": "Under the JCO, the landlord may recover possession of",
+        "target_quote": "Under the JCO, the landlord may recover possession of a rental unit\nin specific situations. Below is a list of reasons for which a tenant could be evicted and\nwould be considered at fault\n. If the tenant is at fault\nfor the eviction, then the tenant will not be entitled to relocation assistance.\nFailure to pay rent\nFailure to cure a violation of the rental agreement\nCreating a nuisance or causing damage to the property\nUsing the rental unit for an illegal purpose\nFailure to renew a similar rental agreement\nFailure to provide the landlord with reasonable access to the rental unit\nThe person at the end of the lease term is a subtenant not approved by the landlord",
+        "decision": {
+          "decision": "applies",
+          "reason": "The JCO property coverage condition limits the rental properties governed by the JCO at-fault eviction provisions.",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 602,
+            "end": 744,
+            "occurrences": 1,
+            "model_span": "The JCO covers most residential properties in the City of Los Angeles that are not regulated by the City’s Rent Stabilization Ordinance (RSO).",
+            "source_span": "The JCO covers most residential properties in the City of Los Angeles that are not regulated by the City’s Rent Stabilization Ordinance (RSO).",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 1,
+                "model_text": "The JCO covers most residential properties in the City of Los Angeles that are not regulated by the City’s Rent Stabilization Ordinance (RSO).",
+                "status": "exact_match",
+                "start": 602,
+                "end": 744
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "applies",
+        "unresolved_reason": null
+      },
+      {
+        "condition_id": "S1",
+        "provision_id": "P4",
+        "kind": "coverage_condition",
+        "statement": "The JCO applies to most residential rental properties in the City of Los Angeles that are not regulated by the Rent Stabilization Ordinance (RSO).",
+        "scope_words": "The JCO covers",
+        "condition_evidence": "The JCO covers most residential properties in the City of Los Angeles that are not regulated by the City’s Rent Stabilization Ordinance (RSO).",
+        "target_ref": "Legal Reasons for Eviction - Tenant is not at-fault",
+        "target_anchor": "Situations in which the property owner wishes to regain",
+        "target_quote": "Situations in which the property owner wishes to regain the use of the rental unit, as the result of a personal or business decision, and\nnot the\ntenant’s fault, may be cause for eviction, but the property owner may have to pay the tenant\nrelocation assistance\n. These reasons include\nThe\nowner or an immediate family member\nwill move into the rental unit\nResident manager will move into the rental unit when required by law or by an affordable housing covenant or regulatory agreement\nDemolition, permanent removal from the rental market, or conversion to\nnon-residential\nGovernment order to vacate\nHUD owns and is selling the property\nResidential Hotel being converted or demolished\nConversion to affordable housing",
+        "decision": {
+          "decision": "applies",
+          "reason": "The JCO property coverage condition limits the rental properties governed by the JCO no-fault eviction and relocation rules.",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 602,
+            "end": 744,
+            "occurrences": 1,
+            "model_span": "The JCO covers most residential properties in the City of Los Angeles that are not regulated by the City’s Rent Stabilization Ordinance (RSO).",
+            "source_span": "The JCO covers most residential properties in the City of Los Angeles that are not regulated by the City’s Rent Stabilization Ordinance (RSO).",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 1,
+                "model_text": "The JCO covers most residential properties in the City of Los Angeles that are not regulated by the City’s Rent Stabilization Ordinance (RSO).",
+                "status": "exact_match",
+                "start": 602,
+                "end": 744
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "applies",
+        "unresolved_reason": null
+      },
+      {
+        "condition_id": "S2",
+        "provision_id": "P1",
+        "kind": "coverage_condition",
+        "statement": "The JCO applies to a tenancy only if the tenant has resided in the unit for at least six months or the original lease has expired, whichever occurs first.",
+        "scope_words": "In order to apply to a tenancy, it requires",
+        "condition_evidence": "In order to apply to a tenancy, it requires that the tenant either has lived in the same unit for at least six months or that their original lease expired, whichever comes first.",
+        "target_ref": "Just Cause Ordinance (JCO)",
+        "target_anchor": "If you own rental property in the City of Los Angeles,",
+        "target_quote": "It prohibits terminations of tenancies without just cause and requires relocation assistance for no-fault evictions.",
+        "decision": {
+          "decision": "applies",
+          "reason": "The tenancy duration requirement determines when a tenancy is covered by the JCO's general prohibition on termination without just cause.",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 745,
+            "end": 923,
+            "occurrences": 1,
+            "model_span": "In order to apply to a tenancy, it requires that the tenant either has lived in the same unit for at least six months or that their original lease expired, whichever comes first.",
+            "source_span": "In order to apply to a tenancy, it requires that the tenant either has lived in the same unit for at least six months or that their original lease expired, whichever comes first.",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 1,
+                "model_text": "In order to apply to a tenancy, it requires that the tenant either has lived in the same unit for at least six months or that their original lease expired, whichever comes first.",
+                "status": "exact_match",
+                "start": 745,
+                "end": 923
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "applies",
+        "unresolved_reason": null
+      },
+      {
+        "condition_id": "S2",
+        "provision_id": "P3",
+        "kind": "coverage_condition",
+        "statement": "The JCO applies to a tenancy only if the tenant has resided in the unit for at least six months or the original lease has expired, whichever occurs first.",
+        "scope_words": "In order to apply to a tenancy, it requires",
+        "condition_evidence": "In order to apply to a tenancy, it requires that the tenant either has lived in the same unit for at least six months or that their original lease expired, whichever comes first.",
+        "target_ref": "Legal Reasons for Eviction - Tenant is at-fault",
+        "target_anchor": "Under the JCO, the landlord may recover possession of",
+        "target_quote": "Under the JCO, the landlord may recover possession of a rental unit\nin specific situations. Below is a list of reasons for which a tenant could be evicted and\nwould be considered at fault\n. If the tenant is at fault\nfor the eviction, then the tenant will not be entitled to relocation assistance.\nFailure to pay rent\nFailure to cure a violation of the rental agreement\nCreating a nuisance or causing damage to the property\nUsing the rental unit for an illegal purpose\nFailure to renew a similar rental agreement\nFailure to provide the landlord with reasonable access to the rental unit\nThe person at the end of the lease term is a subtenant not approved by the landlord",
+        "decision": {
+          "decision": "applies",
+          "reason": "The tenancy duration requirement determines when a tenancy is subject to the JCO's at-fault eviction restrictions.",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 745,
+            "end": 923,
+            "occurrences": 1,
+            "model_span": "In order to apply to a tenancy, it requires that the tenant either has lived in the same unit for at least six months or that their original lease expired, whichever comes first.",
+            "source_span": "In order to apply to a tenancy, it requires that the tenant either has lived in the same unit for at least six months or that their original lease expired, whichever comes first.",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 1,
+                "model_text": "In order to apply to a tenancy, it requires that the tenant either has lived in the same unit for at least six months or that their original lease expired, whichever comes first.",
+                "status": "exact_match",
+                "start": 745,
+                "end": 923
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "applies",
+        "unresolved_reason": null
+      },
+      {
+        "condition_id": "S2",
+        "provision_id": "P4",
+        "kind": "coverage_condition",
+        "statement": "The JCO applies to a tenancy only if the tenant has resided in the unit for at least six months or the original lease has expired, whichever occurs first.",
+        "scope_words": "In order to apply to a tenancy, it requires",
+        "condition_evidence": "In order to apply to a tenancy, it requires that the tenant either has lived in the same unit for at least six months or that their original lease expired, whichever comes first.",
+        "target_ref": "Legal Reasons for Eviction - Tenant is not at-fault",
+        "target_anchor": "Situations in which the property owner wishes to regain",
+        "target_quote": "Situations in which the property owner wishes to regain the use of the rental unit, as the result of a personal or business decision, and\nnot the\ntenant’s fault, may be cause for eviction, but the property owner may have to pay the tenant\nrelocation assistance\n. These reasons include\nThe\nowner or an immediate family member\nwill move into the rental unit\nResident manager will move into the rental unit when required by law or by an affordable housing covenant or regulatory agreement\nDemolition, permanent removal from the rental market, or conversion to\nnon-residential\nGovernment order to vacate\nHUD owns and is selling the property\nResidential Hotel being converted or demolished\nConversion to affordable housing",
+        "decision": {
+          "decision": "applies",
+          "reason": "The tenancy duration requirement determines when a tenancy is subject to the JCO's no-fault eviction and relocation assistance rules.",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 745,
+            "end": 923,
+            "occurrences": 1,
+            "model_span": "In order to apply to a tenancy, it requires that the tenant either has lived in the same unit for at least six months or that their original lease expired, whichever comes first.",
+            "source_span": "In order to apply to a tenancy, it requires that the tenant either has lived in the same unit for at least six months or that their original lease expired, whichever comes first.",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 1,
+                "model_text": "In order to apply to a tenancy, it requires that the tenant either has lived in the same unit for at least six months or that their original lease expired, whichever comes first.",
+                "status": "exact_match",
+                "start": 745,
+                "end": 923
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "applies",
+        "unresolved_reason": null
+      },
+      {
+        "condition_id": "S3",
+        "provision_id": "P1",
+        "kind": "exemption",
+        "statement": "Exempts transient hotels, licensed care facilities, fraternity or sorority houses, owner's roommate arrangements, certain cooperatives, certain non-profit homeless facilities or substance abuse centers, and certain HACLA- or government-owned properties from the JCO.",
+        "scope_words": "exceptions to the JCO including",
+        "condition_evidence": "There are other specific exceptions to the JCO including, but not limited to, transient hotels, licensed care facilities, fraternity or sorority houses, owner’s roommate, cooperatives under certain circumstances, some non-profit facilities for the homeless or short-term treatment centers for substance abuse, and some properties owned by HACLA or the government.",
+        "target_ref": "Just Cause Ordinance (JCO)",
+        "target_anchor": "If you own rental property in the City of Los Angeles,",
+        "target_quote": "It prohibits terminations of tenancies without just cause and requires relocation assistance for no-fault evictions.",
+        "decision": {
+          "decision": "applies",
+          "reason": "The enumerated exceptions to the JCO exempt designated housing types from the prohibition on evictions without just cause.",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 925,
+            "end": 1288,
+            "occurrences": 1,
+            "model_span": "There are other specific exceptions to the JCO including, but not limited to, transient hotels, licensed care facilities, fraternity or sorority houses, owner’s roommate, cooperatives under certain circumstances, some non-profit facilities for the homeless or short-term treatment centers for substance abuse, and some properties owned by HACLA or the government.",
+            "source_span": "There are other specific exceptions to the JCO including, but not limited to, transient hotels, licensed care facilities, fraternity or sorority houses, owner’s roommate, cooperatives under certain circumstances, some non-profit facilities for the homeless or short-term treatment centers for substance abuse, and some properties owned by HACLA or the government.",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 1,
+                "model_text": "There are other specific exceptions to the JCO including, but not limited to, transient hotels, licensed care facilities, fraternity or sorority houses, owner’s roommate, cooperatives under certain circumstances, some non-profit facilities for the homeless or short-term treatment centers for substance abuse, and some properties owned by HACLA or the government.",
+                "status": "exact_match",
+                "start": 925,
+                "end": 1288
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "applies",
+        "unresolved_reason": null
+      },
+      {
+        "condition_id": "S3",
+        "provision_id": "P3",
+        "kind": "exemption",
+        "statement": "Exempts transient hotels, licensed care facilities, fraternity or sorority houses, owner's roommate arrangements, certain cooperatives, certain non-profit homeless facilities or substance abuse centers, and certain HACLA- or government-owned properties from the JCO.",
+        "scope_words": "exceptions to the JCO including",
+        "condition_evidence": "There are other specific exceptions to the JCO including, but not limited to, transient hotels, licensed care facilities, fraternity or sorority houses, owner’s roommate, cooperatives under certain circumstances, some non-profit facilities for the homeless or short-term treatment centers for substance abuse, and some properties owned by HACLA or the government.",
+        "target_ref": "Legal Reasons for Eviction - Tenant is at-fault",
+        "target_anchor": "Under the JCO, the landlord may recover possession of",
+        "target_quote": "Under the JCO, the landlord may recover possession of a rental unit\nin specific situations. Below is a list of reasons for which a tenant could be evicted and\nwould be considered at fault\n. If the tenant is at fault\nfor the eviction, then the tenant will not be entitled to relocation assistance.\nFailure to pay rent\nFailure to cure a violation of the rental agreement\nCreating a nuisance or causing damage to the property\nUsing the rental unit for an illegal purpose\nFailure to renew a similar rental agreement\nFailure to provide the landlord with reasonable access to the rental unit\nThe person at the end of the lease term is a subtenant not approved by the landlord",
+        "decision": {
+          "decision": "applies",
+          "reason": "The enumerated exceptions to the JCO exempt designated housing types from the JCO at-fault eviction rules.",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 925,
+            "end": 1288,
+            "occurrences": 1,
+            "model_span": "There are other specific exceptions to the JCO including, but not limited to, transient hotels, licensed care facilities, fraternity or sorority houses, owner’s roommate, cooperatives under certain circumstances, some non-profit facilities for the homeless or short-term treatment centers for substance abuse, and some properties owned by HACLA or the government.",
+            "source_span": "There are other specific exceptions to the JCO including, but not limited to, transient hotels, licensed care facilities, fraternity or sorority houses, owner’s roommate, cooperatives under certain circumstances, some non-profit facilities for the homeless or short-term treatment centers for substance abuse, and some properties owned by HACLA or the government.",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 1,
+                "model_text": "There are other specific exceptions to the JCO including, but not limited to, transient hotels, licensed care facilities, fraternity or sorority houses, owner’s roommate, cooperatives under certain circumstances, some non-profit facilities for the homeless or short-term treatment centers for substance abuse, and some properties owned by HACLA or the government.",
+                "status": "exact_match",
+                "start": 925,
+                "end": 1288
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "applies",
+        "unresolved_reason": null
+      },
+      {
+        "condition_id": "S3",
+        "provision_id": "P4",
+        "kind": "exemption",
+        "statement": "Exempts transient hotels, licensed care facilities, fraternity or sorority houses, owner's roommate arrangements, certain cooperatives, certain non-profit homeless facilities or substance abuse centers, and certain HACLA- or government-owned properties from the JCO.",
+        "scope_words": "exceptions to the JCO including",
+        "condition_evidence": "There are other specific exceptions to the JCO including, but not limited to, transient hotels, licensed care facilities, fraternity or sorority houses, owner’s roommate, cooperatives under certain circumstances, some non-profit facilities for the homeless or short-term treatment centers for substance abuse, and some properties owned by HACLA or the government.",
+        "target_ref": "Legal Reasons for Eviction - Tenant is not at-fault",
+        "target_anchor": "Situations in which the property owner wishes to regain",
+        "target_quote": "Situations in which the property owner wishes to regain the use of the rental unit, as the result of a personal or business decision, and\nnot the\ntenant’s fault, may be cause for eviction, but the property owner may have to pay the tenant\nrelocation assistance\n. These reasons include\nThe\nowner or an immediate family member\nwill move into the rental unit\nResident manager will move into the rental unit when required by law or by an affordable housing covenant or regulatory agreement\nDemolition, permanent removal from the rental market, or conversion to\nnon-residential\nGovernment order to vacate\nHUD owns and is selling the property\nResidential Hotel being converted or demolished\nConversion to affordable housing",
+        "decision": {
+          "decision": "applies",
+          "reason": "The enumerated exceptions to the JCO exempt designated housing types from the JCO no-fault eviction and relocation rules.",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 925,
+            "end": 1288,
+            "occurrences": 1,
+            "model_span": "There are other specific exceptions to the JCO including, but not limited to, transient hotels, licensed care facilities, fraternity or sorority houses, owner’s roommate, cooperatives under certain circumstances, some non-profit facilities for the homeless or short-term treatment centers for substance abuse, and some properties owned by HACLA or the government.",
+            "source_span": "There are other specific exceptions to the JCO including, but not limited to, transient hotels, licensed care facilities, fraternity or sorority houses, owner’s roommate, cooperatives under certain circumstances, some non-profit facilities for the homeless or short-term treatment centers for substance abuse, and some properties owned by HACLA or the government.",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 1,
+                "model_text": "There are other specific exceptions to the JCO including, but not limited to, transient hotels, licensed care facilities, fraternity or sorority houses, owner’s roommate, cooperatives under certain circumstances, some non-profit facilities for the homeless or short-term treatment centers for substance abuse, and some properties owned by HACLA or the government.",
+                "status": "exact_match",
+                "start": 925,
+                "end": 1288
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "applies",
+        "unresolved_reason": null
+      }
+    ],
+    "candidate_indices": [],
+    "accepted_count": 0,
+    "rejected_count": 0,
+    "errors": []
+  },
+  "document_status": "review_required",
+  "review_reasons": [
+    "4 candidate record(s) held, not published, because the time of application is unresolved: ['temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force']",
+    "in-scope provisions whose candidate records were all rejected: ['When Can Rent Be Increased Under State Law AB1482']"
+  ],
+  "warnings": [
+    "candidate 0 held: status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+    "candidate 1 held: status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+    "candidate 2 held: status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+    "candidate 5 held: status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+    "candidate 6 rejected: citation: quote not found in source text (not found in source text, even after safe normalization)"
+  ],
+  "errors": [],
+  "raw_response_text": "{\n  \"document\": {\n    \"posture\": \"official_explanatory_page\",\n    \"evidence\": \"Just Cause For Eviction Ordinance (JCO) – LAHD\"\n  },\n  \"provisions\": [\n    {\n      \"id\": \"P1\",\n      \"ref\": \"Just Cause Ordinance (JCO)\",\n      \"anchor\": \"If you own rental property in the City of Los Angeles,\",\n      \"summary\": \"General overview stating the JCO prohibits terminations of tenancies without just cause and requires relocation assistance for no-fault evictions.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"just_cause_eviction\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P2\",\n      \"ref\": \"Rental Units Covered Under JCO\",\n      \"anchor\": \"The JCO covers most residential properties in the City\",\n      \"summary\": \"Defines residential coverage, tenancy duration conditions, and property exceptions under the JCO.\",\n      \"role\": \"scope_condition\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"scope condition and exemptions for JCO, see global_scope\"\n    },\n    {\n      \"id\": \"P3\",\n      \"ref\": \"Legal Reasons for Eviction - Tenant is at-fault\",\n      \"anchor\": \"Under the JCO, the landlord may recover possession of\",\n      \"summary\": \"Lists enumerated grounds for at-fault eviction under the JCO for which no relocation assistance is required.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"just_cause_eviction\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P4\",\n      \"ref\": \"Legal Reasons for Eviction - Tenant is not at-fault\",\n      \"anchor\": \"Situations in which the property owner wishes to regain\",\n      \"summary\": \"Lists permissible grounds for no-fault eviction under the JCO and specifies that relocation assistance may be required.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"just_cause_eviction\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P5\",\n      \"ref\": \"Required Registration and Posted Notification - Registration\",\n      \"anchor\": \"All properties rented or offered for rent must be\",\n      \"summary\": \"Requires annual property registration, payment of registration fees, and posting or service of the Registration Certificate.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"annual rental property registration is outside official categories\"\n    },\n    {\n      \"id\": \"P6\",\n      \"ref\": \"Required Registration and Posted Notification - Notice of Right to Counsel\",\n      \"anchor\": \"Beginning August 20, 2025, landlords must post a\",\n      \"summary\": \"Requires posting and service of Notice of Right to Counsel at start of tenancy and with any eviction notice.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"just_cause_eviction\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P7\",\n      \"ref\": \"Required Registration and Posted Notification - Notice of Renters' Protections\",\n      \"anchor\": \"All landlords of residential properties must provide a Notice\",\n      \"summary\": \"Requires providing a Notice of Renters' Protections at tenancy start or renewal and posting it in a common area.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"general tenant disclosure notice at tenancy inception or renewal is outside official categories\"\n    },\n    {\n      \"id\": \"P8\",\n      \"ref\": \"Evictions for Non-Payment of Rent\",\n      \"anchor\": \"Applies to all RSO & JCO rental units.\",\n      \"summary\": \"Prohibits evicting a tenant for non-payment of rent unless the rent owed exceeds the Fair Market Rent for the unit size.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"just_cause_eviction\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P9\",\n      \"ref\": \"Eviction Notices Filed with LAHD\",\n      \"anchor\": \"Applies to all JCO & RSO rental properties\",\n      \"summary\": \"Requires filing all eviction notices issued in Los Angeles with LAHD within three business days of service.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"just_cause_eviction\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P10\",\n      \"ref\": \"When Can Rent Be Increased Under State Law AB1482\",\n      \"anchor\": \"The JCO does not regulate rent increases, however,\",\n      \"summary\": \"States rent increase limits under California AB 1482, including the annual cap formula and allowable percentage.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"rent_increase_limits\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P11\",\n      \"ref\": \"Properties not covered under AB 1482\",\n      \"anchor\": \"Properties not covered under AB 1482: -Units\",\n      \"summary\": \"Enumerates property and tenancy exemptions from AB 1482 rent increase limits.\",\n      \"role\": \"exemption\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"exemptions from AB 1482 rent increase limits, see global_scope\"\n    },\n    {\n      \"id\": \"P12\",\n      \"ref\": \"Landlord Services\",\n      \"anchor\": \"Landlord Services Register RSO & JCO units and\",\n      \"summary\": \"Informational website navigation, billing portals, and hotline links for landlords.\",\n      \"role\": \"procedure\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"informational website navigation and landlord services links\"\n    }\n  ],\n  \"global_scope\": [\n    {\n      \"id\": \"S1\",\n      \"kind\": \"coverage_condition\",\n      \"statement\": \"The JCO applies to most residential rental properties in the City of Los Angeles that are not regulated by the Rent Stabilization Ordinance (RSO).\",\n      \"citation\": \"Rental Units Covered Under JCO\",\n      \"scope_mode\": \"named_subject\",\n      \"scope_quote\": \"The JCO covers\",\n      \"source_provision_id\": \"P2\",\n      \"governed_provision_ids\": [\n        \"P1\",\n        \"P3\",\n        \"P4\"\n      ],\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"The JCO covers most residential properties in the City of Los Angeles that are not regulated by the City’s Rent Stabilization Ordinance (RSO).\"\n        }\n      ]\n    },\n    {\n      \"id\": \"S2\",\n      \"kind\": \"coverage_condition\",\n      \"statement\": \"The JCO applies to a tenancy only if the tenant has resided in the unit for at least six months or the original lease has expired, whichever occurs first.\",\n      \"citation\": \"Rental Units Covered Under JCO\",\n      \"scope_mode\": \"named_subject\",\n      \"scope_quote\": \"In order to apply to a tenancy, it requires\",\n      \"source_provision_id\": \"P2\",\n      \"governed_provision_ids\": [\n        \"P1\",\n        \"P3\",\n        \"P4\"\n      ],\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"In order to apply to a tenancy, it requires that the tenant either has lived in the same unit for at least six months or that their original lease expired, whichever comes first.\"\n        }\n      ]\n    },\n    {\n      \"id\": \"S3\",\n      \"kind\": \"exemption\",\n      \"statement\": \"Exempts transient hotels, licensed care facilities, fraternity or sorority houses, owner's roommate arrangements, certain cooperatives, certain non-profit homeless facilities or substance abuse centers, and certain HACLA- or government-owned properties from the JCO.\",\n      \"citation\": \"Rental Units Covered Under JCO\",\n      \"scope_mode\": \"named_subject\",\n      \"scope_quote\": \"exceptions to the JCO including\",\n      \"source_provision_id\": \"P2\",\n      \"governed_provision_ids\": [\n        \"P1\",\n        \"P3\",\n        \"P4\"\n      ],\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"There are other specific exceptions to the JCO including, but not limited to, transient hotels, licensed care facilities, fraternity or sorority houses, owner’s roommate, cooperatives under certain circumstances, some non-profit facilities for the homeless or short-term treatment centers for substance abuse, and some properties owned by HACLA or the government.\"\n        }\n      ]\n    },\n    {\n      \"id\": \"S4\",\n      \"kind\": \"exemption\",\n      \"statement\": \"Exempts units constructed within the preceding 15 years on a rolling basis from AB 1482 rent increase limits.\",\n      \"citation\": \"Properties not covered under AB 1482\",\n      \"scope_mode\": \"named_subject\",\n      \"scope_quote\": \"Properties\\nnot\\ncovered under AB 1482:\",\n      \"source_provision_id\": \"P11\",\n      \"governed_provision_ids\": [\n        \"P10\"\n      ],\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"-Units that were constructed within the last 15 years (this applies on a rolling basis – i.e.. a unit constructed on January 1, 2006 is not covered as of January, 1 2020, but is covered on and after January 1, 2021).\"\n        }\n      ]\n    },\n    {\n      \"id\": \"S5\",\n      \"kind\": \"exemption\",\n      \"statement\": \"Exempts units restricted by deed, regulatory restrictions, or recorded document limiting affordability to low- or moderate-income households from AB 1482.\",\n      \"citation\": \"Properties not covered under AB 1482\",\n      \"scope_mode\": \"named_subject\",\n      \"scope_quote\": \"Properties\\nnot\\ncovered under AB 1482:\",\n      \"source_provision_id\": \"P11\",\n      \"governed_provision_ids\": [\n        \"P10\"\n      ],\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"-Units restricted by a deed, regulatory restrictions, or other recorded document limiting the affordability to low or moderate-income households.\"\n        }\n      ]\n    },\n    {\n      \"id\": \"S6\",\n      \"kind\": \"exemption\",\n      \"statement\": \"Exempts certain dormitories from AB 1482.\",\n      \"citation\": \"Properties not covered under AB 1482\",\n      \"scope_mode\": \"named_subject\",\n      \"scope_quote\": \"Properties\\nnot\\ncovered under AB 1482:\",\n      \"source_provision_id\": \"P11\",\n      \"governed_provision_ids\": [\n        \"P10\"\n      ],\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"-Certain dormitories.\"\n        }\n      ]\n    },\n    {\n      \"id\": \"S7\",\n      \"kind\": \"exemption\",\n      \"statement\": \"Exempts two-unit properties where one unit was occupied by an owner of the property for the entire period of the tenancy from AB 1482.\",\n      \"citation\": \"Properties not covered under AB 1482\",\n      \"scope_mode\": \"named_subject\",\n      \"scope_quote\": \"Properties\\nnot\\ncovered under AB 1482:\",\n      \"source_provision_id\": \"P11\",\n      \"governed_provision_ids\": [\n        \"P10\"\n      ],\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"-A two-unit property, provided the second unit was occupied by an owner of the property for the entire period of the tenancy.\"\n        }\n      ]\n    },\n    {\n      \"id\": \"S8\",\n      \"kind\": \"exemption\",\n      \"statement\": \"Exempts single-family homes and condominiums from AB 1482 only if not owned by a real estate trust, corporation, or LLC with a corporate member, and the landlord provided written notice of exemption under Civil Code sections 1946.2 and 1947.12; exemption does not apply if more than one dwelling unit exists on the lot or includes an inseparable second unit.\",\n      \"citation\": \"Properties not covered under AB 1482\",\n      \"scope_mode\": \"named_subject\",\n      \"scope_quote\": \"Properties\\nnot\\ncovered under AB 1482:\",\n      \"source_provision_id\": \"P11\",\n      \"governed_provision_ids\": [\n        \"P10\"\n      ],\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"-Single-family homes and condominiums are only exempt from state law but not the JCO if both\\n(A)\\nand\\n(B)\\napply:\\n(A)\\nthe property is\\nnot\\nowned by one of the following:\\n(i) a real estate trust, or\\n(ii) a corporation, or\\n(iii) an LLC with at least one corporate member.\\n—–AND—-\\n(B)\\nThe landlord notified the tenant\\nin writing\\nthat the tenancy is not subject to the “just cause” and rent increase limitations as specifically described in Civil Code Sections 1946.2(e)(8)(B)(i) and 1947.12(d)(5)(B)(i).\\n-The limited exemption for single-family homes does not apply where there is more than one dwelling unit on the same lot, or any second residential unit in the building that cannot be sold separately from the subject unit (such as an in-law unit).\"\n        }\n      ]\n    },\n    {\n      \"id\": \"S9\",\n      \"kind\": \"exemption\",\n      \"statement\": \"Exempts units that are already subject to the City of Los Angeles Rent Stabilization Ordinance (RSO) from AB 1482.\",\n      \"citation\": \"Properties not covered under AB 1482\",\n      \"scope_mode\": \"named_subject\",\n      \"scope_quote\": \"Properties\\nnot\\ncovered under AB 1482:\",\n      \"source_provision_id\": \"P11\",\n      \"governed_provision_ids\": [\n        \"P10\"\n      ],\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"-Units that are already subject to the City’s RSO.\"\n        }\n      ]\n    }\n  ],\n  \"rules\": [\n    {\n      \"category\": \"just_cause_eviction\",\n      \"citation\": \"Just Cause Ordinance (JCO)\",\n      \"provision_ids\": [\n        \"P1\"\n      ],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"It prohibits terminations of tenancies without just cause and requires relocation assistance for no-fault evictions.\"\n        }\n      ],\n      \"title\": \"Just Cause for Eviction and Relocation Assistance Requirement\",\n      \"requirement\": \"Landlords are prohibited from terminating tenancies without just cause, and relocation assistance must be provided to tenants for no-fault evictions.\",\n      \"key_value\": null,\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": null,\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": null,\n      \"effective_date_evidence_kind\": null,\n      \"effective_date\": null,\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"just_cause_eviction\",\n      \"citation\": \"Legal Reasons for Eviction - Tenant is at-fault\",\n      \"provision_ids\": [\n        \"P3\"\n      ],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Under the JCO, the landlord may recover possession of a rental unit\\nin specific situations. Below is a list of reasons for which a tenant could be evicted and\\nwould be considered at fault\\n. If the tenant is at fault\\nfor the eviction, then the tenant will not be entitled to relocation assistance.\\nFailure to pay rent\\nFailure to cure a violation of the rental agreement\\nCreating a nuisance or causing damage to the property\\nUsing the rental unit for an illegal purpose\\nFailure to renew a similar rental agreement\\nFailure to provide the landlord with reasonable access to the rental unit\\nThe person at the end of the lease term is a subtenant not approved by the landlord\"\n        }\n      ],\n      \"title\": \"Permitted Grounds for At-Fault Evictions\",\n      \"requirement\": \"A landlord may recover possession of a rental unit only for specified at-fault reasons—including failure to pay rent, failure to cure a lease violation, nuisance or property damage, illegal use, failure to renew a similar lease, refusal of reasonable access, or an unapproved subtenant remaining at lease expiration—and tenants evicted for fault are not entitled to relocation assistance.\",\n      \"key_value\": null,\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": null,\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": null,\n      \"effective_date_evidence_kind\": null,\n      \"effective_date\": null,\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"just_cause_eviction\",\n      \"citation\": \"Legal Reasons for Eviction - Tenant is not at-fault\",\n      \"provision_ids\": [\n        \"P4\"\n      ],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Situations in which the property owner wishes to regain the use of the rental unit, as the result of a personal or business decision, and\\nnot the\\ntenant’s fault, may be cause for eviction, but the property owner may have to pay the tenant\\nrelocation assistance\\n. These reasons include\\nThe\\nowner or an immediate family member\\nwill move into the rental unit\\nResident manager will move into the rental unit when required by law or by an affordable housing covenant or regulatory agreement\\nDemolition, permanent removal from the rental market, or conversion to\\nnon-residential\\nGovernment order to vacate\\nHUD owns and is selling the property\\nResidential Hotel being converted or demolished\\nConversion to affordable housing\"\n        }\n      ],\n      \"title\": \"Permitted Grounds for No-Fault Evictions and Relocation Assistance\",\n      \"requirement\": \"A landlord may recover possession for enumerated no-fault grounds—including owner or immediate family move-in, required resident manager move-in, demolition or removal from the rental market, government vacate orders, HUD sale, residential hotel demolition or conversion, or affordable housing conversion—and may be required to pay relocation assistance to the tenant.\",\n      \"key_value\": null,\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": null,\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": null,\n      \"effective_date_evidence_kind\": null,\n      \"effective_date\": null,\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"just_cause_eviction\",\n      \"citation\": \"Required Registration and Posted Notification - Notice of Right to Counsel\",\n      \"provision_ids\": [\n        \"P6\"\n      ],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Beginning August 20, 2025, landlords must post a\\nNotice of Right to Counsel\\nin a conspicuous common area of the residential building where the tenant resides. This notice is also to be provided to the tenant at the beginning of the tenancy and anytime an eviction notice is served.\"\n        }\n      ],\n      \"title\": \"Notice of Right to Counsel Requirement\",\n      \"requirement\": \"Landlords must post a Notice of Right to Counsel in a conspicuous common area of the residential building, provide it to the tenant at the start of tenancy, and provide it anytime an eviction notice is served.\",\n      \"key_value\": null,\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": null,\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": \"Beginning August 20, 2025\",\n      \"effective_date_evidence_kind\": \"explicit_operative_date\",\n      \"effective_date\": \"2025-08-20\",\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"just_cause_eviction\",\n      \"citation\": \"Evictions for Non-Payment of Rent\",\n      \"provision_ids\": [\n        \"P8\"\n      ],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Applies to all RSO & JCO rental units. Effective March 27, 2023, landlords may not evict a tenant who falls behind in rent unless the tenant owes an amount higher than the Fair Market Rent (FMR). The FMR depends on the bedroom size of the rental unit.\"\n        }\n      ],\n      \"title\": \"Non-Payment Eviction Threshold\",\n      \"requirement\": \"Landlords cannot evict a tenant who falls behind in rent unless the amount owed is higher than the Fair Market Rent (FMR) corresponding to the bedroom size of the rental unit.\",\n      \"key_value\": \"higher than Fair Market Rent (FMR)\",\n      \"coverage_conditions\": \"Applies to all RSO and JCO rental units.\",\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": null,\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": \"Effective March 27, 2023\",\n      \"effective_date_evidence_kind\": \"explicit_operative_date\",\n      \"effective_date\": \"2023-03-27\",\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"just_cause_eviction\",\n      \"citation\": \"Eviction Notices Filed with LAHD\",\n      \"provision_ids\": [\n        \"P9\"\n      ],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Applies to all JCO & RSO rental properties – All eviction notices issued to tenants in the City of Los Angeles must be filed with LAHD within three (3) business days of service on the tenant.\"\n        }\n      ],\n      \"title\": \"Eviction Notice Filing with LAHD\",\n      \"requirement\": \"All eviction notices issued to tenants in the City of Los Angeles for JCO and RSO rental properties must be filed with the Los Angeles Housing Department (LAHD) within three business days after service on the tenant.\",\n      \"key_value\": \"3 business days\",\n      \"coverage_conditions\": \"Applies to all JCO & RSO rental properties in the City of Los Angeles.\",\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": null,\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": null,\n      \"effective_date_evidence_kind\": null,\n      \"effective_date\": null,\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"rent_increase_limits\",\n      \"citation\": \"When Can Rent Be Increased Under State Law AB1482\",\n      \"provision_ids\": [\n        \"P10\"\n      ],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Effective August 1, 2024 to July 31, 2025, the maximum allowable increase is\\n8.9%\\n.\\nPreviously, from August 1, 2023 to July 31, 2024 the maximum annual increase for units subject to AB 1482 was 8.8%\\n.\\n(\\nA\\nnual rent increases are limited to no more than 5% plus the percentage change in the cost of living for the region in which the property is located, or 10% whichever is lower).\"\n        }\n      ],\n      \"title\": \"AB 1482 Annual Rent Increase Limit\",\n      \"requirement\": \"Annual rent increases under AB 1482 are capped at 5% plus the regional cost of living change or 10%, whichever is lower; the maximum allowable increase is 8.9% effective August 1, 2024 through July 31, 2025.\",\n      \"key_value\": \"8.9%\",\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": \"The JCO does not regulate rent increases; rent increases are governed by state law AB 1482 for buildings older than 15 years.\",\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": null,\n      \"version_note\": \"From August 1, 2023 to July 31, 2024, the maximum annual increase for units subject to AB 1482 was 8.8%.\",\n      \"version_evidence\": \"Previously, from August 1, 2023 to July 31, 2024 the maximum annual increase for units subject to AB 1482 was 8.8%\",\n      \"effective_date_evidence\": \"Effective August 1, 2024 to July 31, 2025\",\n      \"effective_date_evidence_kind\": \"explicit_operative_date\",\n      \"effective_date\": \"2024-08-01\",\n      \"conflict_note\": null\n    }\n  ],\n  \"no_rules_justification\": null\n}"
+}

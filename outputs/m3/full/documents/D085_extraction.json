@@ -1,0 +1,2824 @@
+{
+  "disclaimer": "Not legal advice. Automated extraction for a research prototype; verify against the cited source.",
+  "run_at": "2026-10-04T03:40:24+00:00",
+  "source": {
+    "doc_id": "D085",
+    "jurisdiction": "Santa Ana, CA",
+    "url": "https://santa-ana.gov/santa-ana-city-council-adopts-rent-stabilization-and-just-cause-eviction-ordinances-effective-nov-19",
+    "source_type": "official",
+    "retrieved_at": "2026-10-01T22:37Z",
+    "text_file": "text/D085.txt",
+    "content_sha256": "35e583e8aa13ca6d90716faf7a05e38b6d90dfc9c9feb06337db7fcbdf12da3c",
+    "body_chars": 5095
+  },
+  "provider": "gemini",
+  "model": "gemini-3.8-flash",
+  "prompt_version": "v7",
+  "prompt_sha256": "45121c394a762d5c2ffde819d3cfef79ed89bb79f11450f51dc73b570f1ebfa9",
+  "response_schema_sha256": "c15306da6f21dc72f06e78405f94ed61dc9e59288138cc98b5b5bf9b62ac403c",
+  "generation_settings": {
+    "temperature": null,
+    "seed": 20261001,
+    "thinking_level": "medium"
+  },
+  "as_of": "2026-10-01",
+  "cache_key": "827f93c3ae963d5f657f615f9130b0ef0affd2d7cbbd4a8269995fc31d4f5bc9",
+  "cache_hit": true,
+  "cache_entry": "cache/extraction/827f93c3ae963d5f657f615f9130b0ef0affd2d7cbbd4a8269995fc31d4f5bc9.json",
+  "provider_metadata": {
+    "api": "interactions.create",
+    "interaction_id": "",
+    "model": "gemini-3.8-flash",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 5078,
+      "output_tokens": 5924,
+      "thinking_tokens": 12358,
+      "total_tokens": 23360
+    }
+  },
+  "candidate_count": 9,
+  "accepted_count": 9,
+  "rules": [
+    {
+      "team_rule_id": "r-8b3350a892",
+      "jurisdiction": "Santa Ana, CA",
+      "level": "city",
+      "category": "rent_increase_limits",
+      "status": "in_force",
+      "title": "Annual Residential Rent Increase Cap",
+      "requirement": "[Basis: official explanatory text, not operative legal text] Residential rent increases are limited to the lower of 3% per year or 80% of the percentage change in the Consumer Price Index over the most recent 12-month period. No rent increase is permitted if the CPI change is negative.",
+      "key_value": "lower of 3% per year, or 80% of the percent change in the Consumer Price Index",
+      "coverage_conditions": null,
+      "exemptions": "The rent cap does not apply to residential buildings constructed after February 1, 1995. [Rent Stabilization Ordinance]; The rent cap does not apply to mobile home spaces offered for rent after January 1, 1990. [Rent Stabilization Ordinance]",
+      "overrides": [],
+      "interaction": null,
+      "effective_date": "2021-11-19",
+      "citation": "Rent Stabilization Ordinance",
+      "source_doc_id": "D085",
+      "source_url": "https://santa-ana.gov/santa-ana-city-council-adopts-rent-stabilization-and-just-cause-eviction-ordinances-effective-nov-19",
+      "quoted_span": "Increase in residential rents are limited to the lower of 3% per year, or 80% of the percent change in the Consumer Price Index over the most recent 12-month period. If the CPI is negative, no rent increase is permitted.",
+      "confidence": null,
+      "conflict_flag": false,
+      "conflict_note": null
+    },
+    {
+      "team_rule_id": "r-cfb16bf635",
+      "jurisdiction": "Santa Ana, CA",
+      "level": "city",
+      "category": "rent_increase_limits",
+      "status": "in_force",
+      "title": "Fair Return Petition for Relief from Rent Cap",
+      "requirement": "[Basis: official explanatory text, not operative legal text] An owner of residential rental property or a mobile home park may petition for relief from the rent cap by providing evidence that an increase above the annual allowance is necessary for a fair and reasonable return. The City Manager or designee will decide on the petition within 60 days of receiving a complete application.",
+      "key_value": "60 days",
+      "coverage_conditions": null,
+      "exemptions": null,
+      "overrides": [],
+      "interaction": null,
+      "effective_date": "2021-11-19",
+      "citation": "Rent Stabilization Ordinance",
+      "source_doc_id": "D085",
+      "source_url": "https://santa-ana.gov/santa-ana-city-council-adopts-rent-stabilization-and-just-cause-eviction-ordinances-effective-nov-19",
+      "quoted_span": "Any owner of residential rental property or a mobile home park may petition for relief from the cap, but will need to provide evidence that a rate increase in excess of the annual allowance is necessary to provide a fair and reasonable return for their property. The City Manager, or designee, may consider a variety of relevant factors and will decide on the petition within 60 days of receiving a complete application.",
+      "confidence": null,
+      "conflict_flag": false,
+      "conflict_note": null
+    },
+    {
+      "team_rule_id": "r-a92c75e54c",
+      "jurisdiction": "Santa Ana, CA",
+      "level": "city",
+      "category": "rent_increase_limits",
+      "status": "in_force",
+      "title": "Notice of Rent Stabilization Ordinance and Tenant Rights",
+      "requirement": "[Basis: official explanatory text, not operative legal text] Property owners must provide written notice of the Rent Stabilization Ordinance and tenant rights at the start of a lease or as part of any notice to increase rent.",
+      "key_value": null,
+      "coverage_conditions": null,
+      "exemptions": null,
+      "overrides": [],
+      "interaction": null,
+      "effective_date": "2021-11-19",
+      "citation": "Rent Stabilization Ordinance",
+      "source_doc_id": "D085",
+      "source_url": "https://santa-ana.gov/santa-ana-city-council-adopts-rent-stabilization-and-just-cause-eviction-ordinances-effective-nov-19",
+      "quoted_span": "Property owners are required to provide written notice of the Ordinance and tenant’s rights at commencement of a lease or as part of any notice to increase rent.",
+      "confidence": null,
+      "conflict_flag": false,
+      "conflict_note": null
+    },
+    {
+      "team_rule_id": "r-aef3f4dd00",
+      "jurisdiction": "Santa Ana, CA",
+      "level": "city",
+      "category": "just_cause_eviction",
+      "status": "in_force",
+      "title": "Just Cause Requirement for Tenancy Termination",
+      "requirement": "[Basis: official explanatory text, not operative legal text] An owner cannot terminate a tenancy after 30 days without just cause, which must be stated in a written notice.",
+      "key_value": "30 days",
+      "coverage_conditions": "Applies after 30 days of tenancy.",
+      "exemptions": "The Just Cause Eviction Ordinance does not apply to certain property types, including housing produced in the last 15 years, deed-restricted affordable housing, hotel and transient occupancy, hospital and care facilities, dormitories, and other shared living quarters. [Just Cause Eviction Ordinance]",
+      "overrides": [],
+      "interaction": null,
+      "effective_date": "2021-11-19",
+      "citation": "Just Cause Eviction Ordinance",
+      "source_doc_id": "D085",
+      "source_url": "https://santa-ana.gov/santa-ana-city-council-adopts-rent-stabilization-and-just-cause-eviction-ordinances-effective-nov-19",
+      "quoted_span": "After 30 days, an owner shall not terminate a tenancy without just cause, which shall be stated in a written notice.",
+      "confidence": null,
+      "conflict_flag": false,
+      "conflict_note": null
+    },
+    {
+      "team_rule_id": "r-af87dcad45",
+      "jurisdiction": "Santa Ana, CA",
+      "level": "city",
+      "category": "just_cause_eviction",
+      "status": "in_force",
+      "title": "At-Fault Just Cause Grounds",
+      "requirement": "[Basis: official explanatory text, not operative legal text] At-fault grounds for eviction include default in rent payment, breach of a material lease term, committing a nuisance, criminal activity, and other specified actions.",
+      "key_value": null,
+      "coverage_conditions": null,
+      "exemptions": "The Just Cause Eviction Ordinance does not apply to certain property types, including housing produced in the last 15 years, deed-restricted affordable housing, hotel and transient occupancy, hospital and care facilities, dormitories, and other shared living quarters. [Just Cause Eviction Ordinance]",
+      "overrides": [],
+      "interaction": null,
+      "effective_date": "2021-11-19",
+      "citation": "Just Cause Eviction Ordinance",
+      "source_doc_id": "D085",
+      "source_url": "https://santa-ana.gov/santa-ana-city-council-adopts-rent-stabilization-and-just-cause-eviction-ordinances-effective-nov-19",
+      "quoted_span": "“Just cause” includes certain at-fault causes such as default in payment of rent, breach of a material term of the lease, committing a nuisance, criminal activity, and other actions.",
+      "confidence": null,
+      "conflict_flag": false,
+      "conflict_note": null
+    },
+    {
+      "team_rule_id": "r-cb6dd7a71a",
+      "jurisdiction": "Santa Ana, CA",
+      "level": "city",
+      "category": "just_cause_eviction",
+      "status": "in_force",
+      "title": "No-Fault Just Cause Grounds",
+      "requirement": "[Basis: official explanatory text, not operative legal text] No-fault grounds for eviction include owner occupancy, removal of the property from the rental market, and demolition or substantial remodel.",
+      "key_value": null,
+      "coverage_conditions": null,
+      "exemptions": "The Just Cause Eviction Ordinance does not apply to certain property types, including housing produced in the last 15 years, deed-restricted affordable housing, hotel and transient occupancy, hospital and care facilities, dormitories, and other shared living quarters. [Just Cause Eviction Ordinance]",
+      "overrides": [],
+      "interaction": null,
+      "effective_date": "2021-11-19",
+      "citation": "Just Cause Eviction Ordinance",
+      "source_doc_id": "D085",
+      "source_url": "https://santa-ana.gov/santa-ana-city-council-adopts-rent-stabilization-and-just-cause-eviction-ordinances-effective-nov-19",
+      "quoted_span": "“Just cause” also includes certain no-fault causes such as the intent of the owner to occupy the property, removal of the property from the rental market, and demolition or substantial remodel.",
+      "confidence": null,
+      "conflict_flag": false,
+      "conflict_note": null
+    },
+    {
+      "team_rule_id": "r-03efb18584",
+      "jurisdiction": "Santa Ana, CA",
+      "level": "city",
+      "category": "just_cause_eviction",
+      "status": "in_force",
+      "title": "Notice of Violation and Opportunity to Cure",
+      "requirement": "[Basis: official explanatory text, not operative legal text] Before issuing a notice to terminate for just cause, an owner must first provide notice of the violation and give the tenant a time period to fix the violation.",
+      "key_value": null,
+      "coverage_conditions": null,
+      "exemptions": "The Just Cause Eviction Ordinance does not apply to certain property types, including housing produced in the last 15 years, deed-restricted affordable housing, hotel and transient occupancy, hospital and care facilities, dormitories, and other shared living quarters. [Just Cause Eviction Ordinance]",
+      "overrides": [],
+      "interaction": null,
+      "effective_date": "2021-11-19",
+      "citation": "Just Cause Eviction Ordinance",
+      "source_doc_id": "D085",
+      "source_url": "https://santa-ana.gov/santa-ana-city-council-adopts-rent-stabilization-and-just-cause-eviction-ordinances-effective-nov-19",
+      "quoted_span": "Before issuing a notice to terminate for just cause, the owner shall first give notice of the violation with a time period for the tenant to fix the violation(s).",
+      "confidence": null,
+      "conflict_flag": false,
+      "conflict_note": null
+    },
+    {
+      "team_rule_id": "r-5c91c2b7f3",
+      "jurisdiction": "Santa Ana, CA",
+      "level": "city",
+      "category": "just_cause_eviction",
+      "status": "in_force",
+      "title": "Relocation Assistance or Rent Waiver for No-Fault Termination",
+      "requirement": "[Basis: official explanatory text, not operative legal text] Under a no-fault just cause termination, the owner must either provide 3 months of relocation assistance or waive payment of rent for the final 3 months of the tenancy.",
+      "key_value": "3 months",
+      "coverage_conditions": "Applies to no-fault just cause terminations.",
+      "exemptions": "The Just Cause Eviction Ordinance does not apply to certain property types, including housing produced in the last 15 years, deed-restricted affordable housing, hotel and transient occupancy, hospital and care facilities, dormitories, and other shared living quarters. [Just Cause Eviction Ordinance]",
+      "overrides": [],
+      "interaction": null,
+      "effective_date": "2021-11-19",
+      "citation": "Just Cause Eviction Ordinance",
+      "source_doc_id": "D085",
+      "source_url": "https://santa-ana.gov/santa-ana-city-council-adopts-rent-stabilization-and-just-cause-eviction-ordinances-effective-nov-19",
+      "quoted_span": "Under a no-fault just cause termination, the owner shall either provide 3 months of relocation assistance or waive payment of rent for the final 3 months of the tenancy.",
+      "confidence": null,
+      "conflict_flag": false,
+      "conflict_note": null
+    },
+    {
+      "team_rule_id": "r-f000a37973",
+      "jurisdiction": "Santa Ana, CA",
+      "level": "city",
+      "category": "just_cause_eviction",
+      "status": "in_force",
+      "title": "Notice of Just Cause Eviction Protections",
+      "requirement": "[Basis: official explanatory text, not operative legal text] Property owners must provide notice of Just Cause Eviction Ordinance protections to existing tenants before December 19, 2021, or at the commencement or renewal of their lease.",
+      "key_value": null,
+      "coverage_conditions": null,
+      "exemptions": "The Just Cause Eviction Ordinance does not apply to certain property types, including housing produced in the last 15 years, deed-restricted affordable housing, hotel and transient occupancy, hospital and care facilities, dormitories, and other shared living quarters. [Just Cause Eviction Ordinance]",
+      "overrides": [],
+      "interaction": null,
+      "effective_date": "2021-11-19",
+      "citation": "Just Cause Eviction Ordinance",
+      "source_doc_id": "D085",
+      "source_url": "https://santa-ana.gov/santa-ana-city-council-adopts-rent-stabilization-and-just-cause-eviction-ordinances-effective-nov-19",
+      "quoted_span": "Property owners must provide notice to existing tenants before December 19, 2021, or at commencement or renewal of their lease of the Just Cause Eviction Ordinance protections.",
+      "confidence": null,
+      "conflict_flag": false,
+      "conflict_note": null
+    }
+  ],
+  "candidates": [
+    {
+      "index": 0,
+      "origin": "primary",
+      "accepted": true,
+      "held": false,
+      "rejection_reasons": [],
+      "provision_ids": [
+        "P2"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 123,
+        "end": 424,
+        "occurrences": 1,
+        "model_span": "The Santa Ana City Council on Tuesday night adopted two new ordinances to help protect renters: a Rent Stabilization Ordinance, which limits residential rent increases to no more than 3% per year, and a Just Cause Eviction Ordinance, which limits the allowed reasons for which a renter can be evicted.",
+        "source_span": "The Santa Ana City Council on Tuesday night adopted two new ordinances to help protect renters: a Rent Stabilization Ordinance, which limits residential rent increases to no more than 3% per year, and a Just Cause Eviction Ordinance, which limits the allowed reasons for which a renter can be evicted.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 1044,
+        "end": 1264,
+        "occurrences": 1,
+        "model_span": "Increase in residential rents are limited to the lower of 3% per year, or 80% of the percent change in the Consumer Price Index over the most recent 12-month period. If the CPI is negative, no rent increase is permitted.",
+        "source_span": "Increase in residential rents are limited to the lower of 3% per year, or 80% of the percent change in the Consumer Price Index over the most recent 12-month period. If the CPI is negative, no rent increase is permitted.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "Increase in residential rents are limited to the lower of 3% per year, or 80% of the percent change in the Consumer Price Index over the most recent 12-month period. If the CPI is negative, no rent increase is permitted.",
+            "status": "exact_match",
+            "start": 1044,
+            "end": 1264
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 425,
+        "end": 486,
+        "occurrences": 1,
+        "model_span": "The new ordinances are not effective until November 19, 2021.",
+        "source_span": "The new ordinances are not effective until November 19, 2021.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [
+        {
+          "id": "S1",
+          "kind": "exemption",
+          "mode": "named_subject",
+          "governed_provision_ids": [
+            "P2"
+          ],
+          "basis": "named-subject mapping to P2 verified by repair",
+          "applied": true
+        },
+        {
+          "id": "S2",
+          "kind": "exemption",
+          "mode": "named_subject",
+          "governed_provision_ids": [
+            "P2"
+          ],
+          "basis": "named-subject mapping to P2 verified by repair",
+          "applied": true
+        }
+      ],
+      "temporal": {
+        "model_effective_date": "2021-11-19",
+        "model_kind": "explicit_operative_date",
+        "applied_kind": "explicit_operative_date",
+        "effective_date": "2021-11-19",
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null
+      },
+      "status_derivation": "enacted; effective 2021-11-19 is on or before as_of 2026-10-01",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-8b3350a892",
+        "jurisdiction": "Santa Ana, CA",
+        "level": "city",
+        "category": "rent_increase_limits",
+        "status": "in_force",
+        "title": "Annual Residential Rent Increase Cap",
+        "requirement": "[Basis: official explanatory text, not operative legal text] Residential rent increases are limited to the lower of 3% per year or 80% of the percentage change in the Consumer Price Index over the most recent 12-month period. No rent increase is permitted if the CPI change is negative.",
+        "key_value": "lower of 3% per year, or 80% of the percent change in the Consumer Price Index",
+        "coverage_conditions": null,
+        "exemptions": "The rent cap does not apply to residential buildings constructed after February 1, 1995. [Rent Stabilization Ordinance]; The rent cap does not apply to mobile home spaces offered for rent after January 1, 1990. [Rent Stabilization Ordinance]",
+        "overrides": [],
+        "interaction": null,
+        "effective_date": "2021-11-19",
+        "citation": "Rent Stabilization Ordinance",
+        "source_doc_id": "D085",
+        "source_url": "https://santa-ana.gov/santa-ana-city-council-adopts-rent-stabilization-and-just-cause-eviction-ordinances-effective-nov-19",
+        "quoted_span": "Increase in residential rents are limited to the lower of 3% per year, or 80% of the percent change in the Consumer Price Index over the most recent 12-month period. If the CPI is negative, no rent increase is permitted.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "rent_increase_limits",
+        "citation": "Rent Stabilization Ordinance",
+        "provision_ids": [
+          "P2"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "Increase in residential rents are limited to the lower of 3% per year, or 80% of the percent change in the Consumer Price Index over the most recent 12-month period. If the CPI is negative, no rent increase is permitted."
+          }
+        ],
+        "title": "Annual Residential Rent Increase Cap",
+        "requirement": "Residential rent increases are limited to the lower of 3% per year or 80% of the percentage change in the Consumer Price Index over the most recent 12-month period. No rent increase is permitted if the CPI change is negative.",
+        "key_value": "lower of 3% per year, or 80% of the percent change in the Consumer Price Index",
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": "The Santa Ana City Council on Tuesday night adopted two new ordinances to help protect renters: a Rent Stabilization Ordinance, which limits residential rent increases to no more than 3% per year, and a Just Cause Eviction Ordinance, which limits the allowed reasons for which a renter can be evicted.",
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": "The new ordinances are not effective until November 19, 2021.",
+        "effective_date_evidence_kind": "explicit_operative_date",
+        "effective_date": "2021-11-19",
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 1,
+      "origin": "primary",
+      "accepted": true,
+      "held": false,
+      "rejection_reasons": [],
+      "provision_ids": [
+        "P5"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 123,
+        "end": 424,
+        "occurrences": 1,
+        "model_span": "The Santa Ana City Council on Tuesday night adopted two new ordinances to help protect renters: a Rent Stabilization Ordinance, which limits residential rent increases to no more than 3% per year, and a Just Cause Eviction Ordinance, which limits the allowed reasons for which a renter can be evicted.",
+        "source_span": "The Santa Ana City Council on Tuesday night adopted two new ordinances to help protect renters: a Rent Stabilization Ordinance, which limits residential rent increases to no more than 3% per year, and a Just Cause Eviction Ordinance, which limits the allowed reasons for which a renter can be evicted.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 1717,
+        "end": 2137,
+        "occurrences": 1,
+        "model_span": "Any owner of residential rental property or a mobile home park may petition for relief from the cap, but will need to provide evidence that a rate increase in excess of the annual allowance is necessary to provide a fair and reasonable return for their property. The City Manager, or designee, may consider a variety of relevant factors and will decide on the petition within 60 days of receiving a complete application.",
+        "source_span": "Any owner of residential rental property or a mobile home park may petition for relief from the cap, but will need to provide evidence that a rate increase in excess of the annual allowance is necessary to provide a fair and reasonable return for their property. The City Manager, or designee, may consider a variety of relevant factors and will decide on the petition within 60 days of receiving a complete application.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "Any owner of residential rental property or a mobile home park may petition for relief from the cap, but will need to provide evidence that a rate increase in excess of the annual allowance is necessary to provide a fair and reasonable return for their property. The City Manager, or designee, may consider a variety of relevant factors and will decide on the petition within 60 days of receiving a complete application.",
+            "status": "exact_match",
+            "start": 1717,
+            "end": 2137
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 425,
+        "end": 486,
+        "occurrences": 1,
+        "model_span": "The new ordinances are not effective until November 19, 2021.",
+        "source_span": "The new ordinances are not effective until November 19, 2021.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [],
+      "temporal": {
+        "model_effective_date": "2021-11-19",
+        "model_kind": "explicit_operative_date",
+        "applied_kind": "explicit_operative_date",
+        "effective_date": "2021-11-19",
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null
+      },
+      "status_derivation": "enacted; effective 2021-11-19 is on or before as_of 2026-10-01",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-cfb16bf635",
+        "jurisdiction": "Santa Ana, CA",
+        "level": "city",
+        "category": "rent_increase_limits",
+        "status": "in_force",
+        "title": "Fair Return Petition for Relief from Rent Cap",
+        "requirement": "[Basis: official explanatory text, not operative legal text] An owner of residential rental property or a mobile home park may petition for relief from the rent cap by providing evidence that an increase above the annual allowance is necessary for a fair and reasonable return. The City Manager or designee will decide on the petition within 60 days of receiving a complete application.",
+        "key_value": "60 days",
+        "coverage_conditions": null,
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": "2021-11-19",
+        "citation": "Rent Stabilization Ordinance",
+        "source_doc_id": "D085",
+        "source_url": "https://santa-ana.gov/santa-ana-city-council-adopts-rent-stabilization-and-just-cause-eviction-ordinances-effective-nov-19",
+        "quoted_span": "Any owner of residential rental property or a mobile home park may petition for relief from the cap, but will need to provide evidence that a rate increase in excess of the annual allowance is necessary to provide a fair and reasonable return for their property. The City Manager, or designee, may consider a variety of relevant factors and will decide on the petition within 60 days of receiving a complete application.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "rent_increase_limits",
+        "citation": "Rent Stabilization Ordinance",
+        "provision_ids": [
+          "P5"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "Any owner of residential rental property or a mobile home park may petition for relief from the cap, but will need to provide evidence that a rate increase in excess of the annual allowance is necessary to provide a fair and reasonable return for their property. The City Manager, or designee, may consider a variety of relevant factors and will decide on the petition within 60 days of receiving a complete application."
+          }
+        ],
+        "title": "Fair Return Petition for Relief from Rent Cap",
+        "requirement": "An owner of residential rental property or a mobile home park may petition for relief from the rent cap by providing evidence that an increase above the annual allowance is necessary for a fair and reasonable return. The City Manager or designee will decide on the petition within 60 days of receiving a complete application.",
+        "key_value": "60 days",
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": "The Santa Ana City Council on Tuesday night adopted two new ordinances to help protect renters: a Rent Stabilization Ordinance, which limits residential rent increases to no more than 3% per year, and a Just Cause Eviction Ordinance, which limits the allowed reasons for which a renter can be evicted.",
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": "The new ordinances are not effective until November 19, 2021.",
+        "effective_date_evidence_kind": "explicit_operative_date",
+        "effective_date": "2021-11-19",
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 2,
+      "origin": "primary",
+      "accepted": true,
+      "held": false,
+      "rejection_reasons": [],
+      "provision_ids": [
+        "P6"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 123,
+        "end": 424,
+        "occurrences": 1,
+        "model_span": "The Santa Ana City Council on Tuesday night adopted two new ordinances to help protect renters: a Rent Stabilization Ordinance, which limits residential rent increases to no more than 3% per year, and a Just Cause Eviction Ordinance, which limits the allowed reasons for which a renter can be evicted.",
+        "source_span": "The Santa Ana City Council on Tuesday night adopted two new ordinances to help protect renters: a Rent Stabilization Ordinance, which limits residential rent increases to no more than 3% per year, and a Just Cause Eviction Ordinance, which limits the allowed reasons for which a renter can be evicted.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 2224,
+        "end": 2385,
+        "occurrences": 1,
+        "model_span": "Property owners are required to provide written notice of the Ordinance and tenant’s rights at commencement of a lease or as part of any notice to increase rent.",
+        "source_span": "Property owners are required to provide written notice of the Ordinance and tenant’s rights at commencement of a lease or as part of any notice to increase rent.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "Property owners are required to provide written notice of the Ordinance and tenant’s rights at commencement of a lease or as part of any notice to increase rent.",
+            "status": "exact_match",
+            "start": 2224,
+            "end": 2385
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 425,
+        "end": 486,
+        "occurrences": 1,
+        "model_span": "The new ordinances are not effective until November 19, 2021.",
+        "source_span": "The new ordinances are not effective until November 19, 2021.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [],
+      "temporal": {
+        "model_effective_date": "2021-11-19",
+        "model_kind": "explicit_operative_date",
+        "applied_kind": "explicit_operative_date",
+        "effective_date": "2021-11-19",
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null
+      },
+      "status_derivation": "enacted; effective 2021-11-19 is on or before as_of 2026-10-01",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-a92c75e54c",
+        "jurisdiction": "Santa Ana, CA",
+        "level": "city",
+        "category": "rent_increase_limits",
+        "status": "in_force",
+        "title": "Notice of Rent Stabilization Ordinance and Tenant Rights",
+        "requirement": "[Basis: official explanatory text, not operative legal text] Property owners must provide written notice of the Rent Stabilization Ordinance and tenant rights at the start of a lease or as part of any notice to increase rent.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": "2021-11-19",
+        "citation": "Rent Stabilization Ordinance",
+        "source_doc_id": "D085",
+        "source_url": "https://santa-ana.gov/santa-ana-city-council-adopts-rent-stabilization-and-just-cause-eviction-ordinances-effective-nov-19",
+        "quoted_span": "Property owners are required to provide written notice of the Ordinance and tenant’s rights at commencement of a lease or as part of any notice to increase rent.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "rent_increase_limits",
+        "citation": "Rent Stabilization Ordinance",
+        "provision_ids": [
+          "P6"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "Property owners are required to provide written notice of the Ordinance and tenant’s rights at commencement of a lease or as part of any notice to increase rent."
+          }
+        ],
+        "title": "Notice of Rent Stabilization Ordinance and Tenant Rights",
+        "requirement": "Property owners must provide written notice of the Rent Stabilization Ordinance and tenant rights at the start of a lease or as part of any notice to increase rent.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": "The Santa Ana City Council on Tuesday night adopted two new ordinances to help protect renters: a Rent Stabilization Ordinance, which limits residential rent increases to no more than 3% per year, and a Just Cause Eviction Ordinance, which limits the allowed reasons for which a renter can be evicted.",
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": "The new ordinances are not effective until November 19, 2021.",
+        "effective_date_evidence_kind": "explicit_operative_date",
+        "effective_date": "2021-11-19",
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 3,
+      "origin": "primary",
+      "accepted": true,
+      "held": false,
+      "rejection_reasons": [],
+      "provision_ids": [
+        "P7"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 123,
+        "end": 424,
+        "occurrences": 1,
+        "model_span": "The Santa Ana City Council on Tuesday night adopted two new ordinances to help protect renters: a Rent Stabilization Ordinance, which limits residential rent increases to no more than 3% per year, and a Just Cause Eviction Ordinance, which limits the allowed reasons for which a renter can be evicted.",
+        "source_span": "The Santa Ana City Council on Tuesday night adopted two new ordinances to help protect renters: a Rent Stabilization Ordinance, which limits residential rent increases to no more than 3% per year, and a Just Cause Eviction Ordinance, which limits the allowed reasons for which a renter can be evicted.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": "Applies after 30 days of tenancy.",
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 2537,
+        "end": 2653,
+        "occurrences": 1,
+        "model_span": "After 30 days, an owner shall not terminate a tenancy without just cause, which shall be stated in a written notice.",
+        "source_span": "After 30 days, an owner shall not terminate a tenancy without just cause, which shall be stated in a written notice.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "After 30 days, an owner shall not terminate a tenancy without just cause, which shall be stated in a written notice.",
+            "status": "exact_match",
+            "start": 2537,
+            "end": 2653
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 425,
+        "end": 486,
+        "occurrences": 1,
+        "model_span": "The new ordinances are not effective until November 19, 2021.",
+        "source_span": "The new ordinances are not effective until November 19, 2021.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [
+        {
+          "id": "S3",
+          "kind": "exemption",
+          "mode": "named_subject",
+          "governed_provision_ids": [
+            "P7"
+          ],
+          "basis": "named-subject mapping to P7 verified by repair",
+          "applied": true
+        }
+      ],
+      "temporal": {
+        "model_effective_date": "2021-11-19",
+        "model_kind": "explicit_operative_date",
+        "applied_kind": "explicit_operative_date",
+        "effective_date": "2021-11-19",
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null
+      },
+      "status_derivation": "enacted; effective 2021-11-19 is on or before as_of 2026-10-01",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-aef3f4dd00",
+        "jurisdiction": "Santa Ana, CA",
+        "level": "city",
+        "category": "just_cause_eviction",
+        "status": "in_force",
+        "title": "Just Cause Requirement for Tenancy Termination",
+        "requirement": "[Basis: official explanatory text, not operative legal text] An owner cannot terminate a tenancy after 30 days without just cause, which must be stated in a written notice.",
+        "key_value": "30 days",
+        "coverage_conditions": "Applies after 30 days of tenancy.",
+        "exemptions": "The Just Cause Eviction Ordinance does not apply to certain property types, including housing produced in the last 15 years, deed-restricted affordable housing, hotel and transient occupancy, hospital and care facilities, dormitories, and other shared living quarters. [Just Cause Eviction Ordinance]",
+        "overrides": [],
+        "interaction": null,
+        "effective_date": "2021-11-19",
+        "citation": "Just Cause Eviction Ordinance",
+        "source_doc_id": "D085",
+        "source_url": "https://santa-ana.gov/santa-ana-city-council-adopts-rent-stabilization-and-just-cause-eviction-ordinances-effective-nov-19",
+        "quoted_span": "After 30 days, an owner shall not terminate a tenancy without just cause, which shall be stated in a written notice.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "just_cause_eviction",
+        "citation": "Just Cause Eviction Ordinance",
+        "provision_ids": [
+          "P7"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "After 30 days, an owner shall not terminate a tenancy without just cause, which shall be stated in a written notice."
+          }
+        ],
+        "title": "Just Cause Requirement for Tenancy Termination",
+        "requirement": "An owner cannot terminate a tenancy after 30 days without just cause, which must be stated in a written notice.",
+        "key_value": "30 days",
+        "coverage_conditions": "Applies after 30 days of tenancy.",
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": "The Santa Ana City Council on Tuesday night adopted two new ordinances to help protect renters: a Rent Stabilization Ordinance, which limits residential rent increases to no more than 3% per year, and a Just Cause Eviction Ordinance, which limits the allowed reasons for which a renter can be evicted.",
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": "The new ordinances are not effective until November 19, 2021.",
+        "effective_date_evidence_kind": "explicit_operative_date",
+        "effective_date": "2021-11-19",
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 4,
+      "origin": "primary",
+      "accepted": true,
+      "held": false,
+      "rejection_reasons": [],
+      "provision_ids": [
+        "P8"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 123,
+        "end": 424,
+        "occurrences": 1,
+        "model_span": "The Santa Ana City Council on Tuesday night adopted two new ordinances to help protect renters: a Rent Stabilization Ordinance, which limits residential rent increases to no more than 3% per year, and a Just Cause Eviction Ordinance, which limits the allowed reasons for which a renter can be evicted.",
+        "source_span": "The Santa Ana City Council on Tuesday night adopted two new ordinances to help protect renters: a Rent Stabilization Ordinance, which limits residential rent increases to no more than 3% per year, and a Just Cause Eviction Ordinance, which limits the allowed reasons for which a renter can be evicted.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 2654,
+        "end": 2836,
+        "occurrences": 1,
+        "model_span": "“Just cause” includes certain at-fault causes such as default in payment of rent, breach of a material term of the lease, committing a nuisance, criminal activity, and other actions.",
+        "source_span": "“Just cause” includes certain at-fault causes such as default in payment of rent, breach of a material term of the lease, committing a nuisance, criminal activity, and other actions.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "“Just cause” includes certain at-fault causes such as default in payment of rent, breach of a material term of the lease, committing a nuisance, criminal activity, and other actions.",
+            "status": "exact_match",
+            "start": 2654,
+            "end": 2836
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 425,
+        "end": 486,
+        "occurrences": 1,
+        "model_span": "The new ordinances are not effective until November 19, 2021.",
+        "source_span": "The new ordinances are not effective until November 19, 2021.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [
+        {
+          "id": "S3",
+          "kind": "exemption",
+          "mode": "named_subject",
+          "governed_provision_ids": [
+            "P8"
+          ],
+          "basis": "named-subject mapping to P8 verified by repair",
+          "applied": true
+        }
+      ],
+      "temporal": {
+        "model_effective_date": "2021-11-19",
+        "model_kind": "explicit_operative_date",
+        "applied_kind": "explicit_operative_date",
+        "effective_date": "2021-11-19",
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null
+      },
+      "status_derivation": "enacted; effective 2021-11-19 is on or before as_of 2026-10-01",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-af87dcad45",
+        "jurisdiction": "Santa Ana, CA",
+        "level": "city",
+        "category": "just_cause_eviction",
+        "status": "in_force",
+        "title": "At-Fault Just Cause Grounds",
+        "requirement": "[Basis: official explanatory text, not operative legal text] At-fault grounds for eviction include default in rent payment, breach of a material lease term, committing a nuisance, criminal activity, and other specified actions.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": "The Just Cause Eviction Ordinance does not apply to certain property types, including housing produced in the last 15 years, deed-restricted affordable housing, hotel and transient occupancy, hospital and care facilities, dormitories, and other shared living quarters. [Just Cause Eviction Ordinance]",
+        "overrides": [],
+        "interaction": null,
+        "effective_date": "2021-11-19",
+        "citation": "Just Cause Eviction Ordinance",
+        "source_doc_id": "D085",
+        "source_url": "https://santa-ana.gov/santa-ana-city-council-adopts-rent-stabilization-and-just-cause-eviction-ordinances-effective-nov-19",
+        "quoted_span": "“Just cause” includes certain at-fault causes such as default in payment of rent, breach of a material term of the lease, committing a nuisance, criminal activity, and other actions.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "just_cause_eviction",
+        "citation": "Just Cause Eviction Ordinance",
+        "provision_ids": [
+          "P8"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "“Just cause” includes certain at-fault causes such as default in payment of rent, breach of a material term of the lease, committing a nuisance, criminal activity, and other actions."
+          }
+        ],
+        "title": "At-Fault Just Cause Grounds",
+        "requirement": "At-fault grounds for eviction include default in rent payment, breach of a material lease term, committing a nuisance, criminal activity, and other specified actions.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": "The Santa Ana City Council on Tuesday night adopted two new ordinances to help protect renters: a Rent Stabilization Ordinance, which limits residential rent increases to no more than 3% per year, and a Just Cause Eviction Ordinance, which limits the allowed reasons for which a renter can be evicted.",
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": "The new ordinances are not effective until November 19, 2021.",
+        "effective_date_evidence_kind": "explicit_operative_date",
+        "effective_date": "2021-11-19",
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 5,
+      "origin": "primary",
+      "accepted": true,
+      "held": false,
+      "rejection_reasons": [],
+      "provision_ids": [
+        "P9"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 123,
+        "end": 424,
+        "occurrences": 1,
+        "model_span": "The Santa Ana City Council on Tuesday night adopted two new ordinances to help protect renters: a Rent Stabilization Ordinance, which limits residential rent increases to no more than 3% per year, and a Just Cause Eviction Ordinance, which limits the allowed reasons for which a renter can be evicted.",
+        "source_span": "The Santa Ana City Council on Tuesday night adopted two new ordinances to help protect renters: a Rent Stabilization Ordinance, which limits residential rent increases to no more than 3% per year, and a Just Cause Eviction Ordinance, which limits the allowed reasons for which a renter can be evicted.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 2837,
+        "end": 3030,
+        "occurrences": 1,
+        "model_span": "“Just cause” also includes certain no-fault causes such as the intent of the owner to occupy the property, removal of the property from the rental market, and demolition or substantial remodel.",
+        "source_span": "“Just cause” also includes certain no-fault causes such as the intent of the owner to occupy the property, removal of the property from the rental market, and demolition or substantial remodel.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "“Just cause” also includes certain no-fault causes such as the intent of the owner to occupy the property, removal of the property from the rental market, and demolition or substantial remodel.",
+            "status": "exact_match",
+            "start": 2837,
+            "end": 3030
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 425,
+        "end": 486,
+        "occurrences": 1,
+        "model_span": "The new ordinances are not effective until November 19, 2021.",
+        "source_span": "The new ordinances are not effective until November 19, 2021.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [
+        {
+          "id": "S3",
+          "kind": "exemption",
+          "mode": "named_subject",
+          "governed_provision_ids": [
+            "P9"
+          ],
+          "basis": "named-subject mapping to P9 verified by repair",
+          "applied": true
+        }
+      ],
+      "temporal": {
+        "model_effective_date": "2021-11-19",
+        "model_kind": "explicit_operative_date",
+        "applied_kind": "explicit_operative_date",
+        "effective_date": "2021-11-19",
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null
+      },
+      "status_derivation": "enacted; effective 2021-11-19 is on or before as_of 2026-10-01",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-cb6dd7a71a",
+        "jurisdiction": "Santa Ana, CA",
+        "level": "city",
+        "category": "just_cause_eviction",
+        "status": "in_force",
+        "title": "No-Fault Just Cause Grounds",
+        "requirement": "[Basis: official explanatory text, not operative legal text] No-fault grounds for eviction include owner occupancy, removal of the property from the rental market, and demolition or substantial remodel.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": "The Just Cause Eviction Ordinance does not apply to certain property types, including housing produced in the last 15 years, deed-restricted affordable housing, hotel and transient occupancy, hospital and care facilities, dormitories, and other shared living quarters. [Just Cause Eviction Ordinance]",
+        "overrides": [],
+        "interaction": null,
+        "effective_date": "2021-11-19",
+        "citation": "Just Cause Eviction Ordinance",
+        "source_doc_id": "D085",
+        "source_url": "https://santa-ana.gov/santa-ana-city-council-adopts-rent-stabilization-and-just-cause-eviction-ordinances-effective-nov-19",
+        "quoted_span": "“Just cause” also includes certain no-fault causes such as the intent of the owner to occupy the property, removal of the property from the rental market, and demolition or substantial remodel.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "just_cause_eviction",
+        "citation": "Just Cause Eviction Ordinance",
+        "provision_ids": [
+          "P9"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "“Just cause” also includes certain no-fault causes such as the intent of the owner to occupy the property, removal of the property from the rental market, and demolition or substantial remodel."
+          }
+        ],
+        "title": "No-Fault Just Cause Grounds",
+        "requirement": "No-fault grounds for eviction include owner occupancy, removal of the property from the rental market, and demolition or substantial remodel.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": "The Santa Ana City Council on Tuesday night adopted two new ordinances to help protect renters: a Rent Stabilization Ordinance, which limits residential rent increases to no more than 3% per year, and a Just Cause Eviction Ordinance, which limits the allowed reasons for which a renter can be evicted.",
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": "The new ordinances are not effective until November 19, 2021.",
+        "effective_date_evidence_kind": "explicit_operative_date",
+        "effective_date": "2021-11-19",
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 6,
+      "origin": "primary",
+      "accepted": true,
+      "held": false,
+      "rejection_reasons": [],
+      "provision_ids": [
+        "P10"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 123,
+        "end": 424,
+        "occurrences": 1,
+        "model_span": "The Santa Ana City Council on Tuesday night adopted two new ordinances to help protect renters: a Rent Stabilization Ordinance, which limits residential rent increases to no more than 3% per year, and a Just Cause Eviction Ordinance, which limits the allowed reasons for which a renter can be evicted.",
+        "source_span": "The Santa Ana City Council on Tuesday night adopted two new ordinances to help protect renters: a Rent Stabilization Ordinance, which limits residential rent increases to no more than 3% per year, and a Just Cause Eviction Ordinance, which limits the allowed reasons for which a renter can be evicted.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 3031,
+        "end": 3193,
+        "occurrences": 1,
+        "model_span": "Before issuing a notice to terminate for just cause, the owner shall first give notice of the violation with a time period for the tenant to fix the violation(s).",
+        "source_span": "Before issuing a notice to terminate for just cause, the owner shall first give notice of the violation with a time period for the tenant to fix the violation(s).",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "Before issuing a notice to terminate for just cause, the owner shall first give notice of the violation with a time period for the tenant to fix the violation(s).",
+            "status": "exact_match",
+            "start": 3031,
+            "end": 3193
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 425,
+        "end": 486,
+        "occurrences": 1,
+        "model_span": "The new ordinances are not effective until November 19, 2021.",
+        "source_span": "The new ordinances are not effective until November 19, 2021.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [
+        {
+          "id": "S3",
+          "kind": "exemption",
+          "mode": "named_subject",
+          "governed_provision_ids": [
+            "P10"
+          ],
+          "basis": "named-subject mapping to P10 verified by repair",
+          "applied": true
+        }
+      ],
+      "temporal": {
+        "model_effective_date": "2021-11-19",
+        "model_kind": "explicit_operative_date",
+        "applied_kind": "explicit_operative_date",
+        "effective_date": "2021-11-19",
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null
+      },
+      "status_derivation": "enacted; effective 2021-11-19 is on or before as_of 2026-10-01",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-03efb18584",
+        "jurisdiction": "Santa Ana, CA",
+        "level": "city",
+        "category": "just_cause_eviction",
+        "status": "in_force",
+        "title": "Notice of Violation and Opportunity to Cure",
+        "requirement": "[Basis: official explanatory text, not operative legal text] Before issuing a notice to terminate for just cause, an owner must first provide notice of the violation and give the tenant a time period to fix the violation.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": "The Just Cause Eviction Ordinance does not apply to certain property types, including housing produced in the last 15 years, deed-restricted affordable housing, hotel and transient occupancy, hospital and care facilities, dormitories, and other shared living quarters. [Just Cause Eviction Ordinance]",
+        "overrides": [],
+        "interaction": null,
+        "effective_date": "2021-11-19",
+        "citation": "Just Cause Eviction Ordinance",
+        "source_doc_id": "D085",
+        "source_url": "https://santa-ana.gov/santa-ana-city-council-adopts-rent-stabilization-and-just-cause-eviction-ordinances-effective-nov-19",
+        "quoted_span": "Before issuing a notice to terminate for just cause, the owner shall first give notice of the violation with a time period for the tenant to fix the violation(s).",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "just_cause_eviction",
+        "citation": "Just Cause Eviction Ordinance",
+        "provision_ids": [
+          "P10"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "Before issuing a notice to terminate for just cause, the owner shall first give notice of the violation with a time period for the tenant to fix the violation(s)."
+          }
+        ],
+        "title": "Notice of Violation and Opportunity to Cure",
+        "requirement": "Before issuing a notice to terminate for just cause, an owner must first provide notice of the violation and give the tenant a time period to fix the violation.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": "The Santa Ana City Council on Tuesday night adopted two new ordinances to help protect renters: a Rent Stabilization Ordinance, which limits residential rent increases to no more than 3% per year, and a Just Cause Eviction Ordinance, which limits the allowed reasons for which a renter can be evicted.",
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": "The new ordinances are not effective until November 19, 2021.",
+        "effective_date_evidence_kind": "explicit_operative_date",
+        "effective_date": "2021-11-19",
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 7,
+      "origin": "primary",
+      "accepted": true,
+      "held": false,
+      "rejection_reasons": [],
+      "provision_ids": [
+        "P11"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 123,
+        "end": 424,
+        "occurrences": 1,
+        "model_span": "The Santa Ana City Council on Tuesday night adopted two new ordinances to help protect renters: a Rent Stabilization Ordinance, which limits residential rent increases to no more than 3% per year, and a Just Cause Eviction Ordinance, which limits the allowed reasons for which a renter can be evicted.",
+        "source_span": "The Santa Ana City Council on Tuesday night adopted two new ordinances to help protect renters: a Rent Stabilization Ordinance, which limits residential rent increases to no more than 3% per year, and a Just Cause Eviction Ordinance, which limits the allowed reasons for which a renter can be evicted.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": "Applies to no-fault just cause terminations.",
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 3194,
+        "end": 3363,
+        "occurrences": 1,
+        "model_span": "Under a no-fault just cause termination, the owner shall either provide 3 months of relocation assistance or waive payment of rent for the final 3 months of the tenancy.",
+        "source_span": "Under a no-fault just cause termination, the owner shall either provide 3 months of relocation assistance or waive payment of rent for the final 3 months of the tenancy.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "Under a no-fault just cause termination, the owner shall either provide 3 months of relocation assistance or waive payment of rent for the final 3 months of the tenancy.",
+            "status": "exact_match",
+            "start": 3194,
+            "end": 3363
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 425,
+        "end": 486,
+        "occurrences": 1,
+        "model_span": "The new ordinances are not effective until November 19, 2021.",
+        "source_span": "The new ordinances are not effective until November 19, 2021.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [
+        {
+          "id": "S3",
+          "kind": "exemption",
+          "mode": "named_subject",
+          "governed_provision_ids": [
+            "P11"
+          ],
+          "basis": "named-subject mapping to P11 verified by repair",
+          "applied": true
+        }
+      ],
+      "temporal": {
+        "model_effective_date": "2021-11-19",
+        "model_kind": "explicit_operative_date",
+        "applied_kind": "explicit_operative_date",
+        "effective_date": "2021-11-19",
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null
+      },
+      "status_derivation": "enacted; effective 2021-11-19 is on or before as_of 2026-10-01",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-5c91c2b7f3",
+        "jurisdiction": "Santa Ana, CA",
+        "level": "city",
+        "category": "just_cause_eviction",
+        "status": "in_force",
+        "title": "Relocation Assistance or Rent Waiver for No-Fault Termination",
+        "requirement": "[Basis: official explanatory text, not operative legal text] Under a no-fault just cause termination, the owner must either provide 3 months of relocation assistance or waive payment of rent for the final 3 months of the tenancy.",
+        "key_value": "3 months",
+        "coverage_conditions": "Applies to no-fault just cause terminations.",
+        "exemptions": "The Just Cause Eviction Ordinance does not apply to certain property types, including housing produced in the last 15 years, deed-restricted affordable housing, hotel and transient occupancy, hospital and care facilities, dormitories, and other shared living quarters. [Just Cause Eviction Ordinance]",
+        "overrides": [],
+        "interaction": null,
+        "effective_date": "2021-11-19",
+        "citation": "Just Cause Eviction Ordinance",
+        "source_doc_id": "D085",
+        "source_url": "https://santa-ana.gov/santa-ana-city-council-adopts-rent-stabilization-and-just-cause-eviction-ordinances-effective-nov-19",
+        "quoted_span": "Under a no-fault just cause termination, the owner shall either provide 3 months of relocation assistance or waive payment of rent for the final 3 months of the tenancy.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "just_cause_eviction",
+        "citation": "Just Cause Eviction Ordinance",
+        "provision_ids": [
+          "P11"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "Under a no-fault just cause termination, the owner shall either provide 3 months of relocation assistance or waive payment of rent for the final 3 months of the tenancy."
+          }
+        ],
+        "title": "Relocation Assistance or Rent Waiver for No-Fault Termination",
+        "requirement": "Under a no-fault just cause termination, the owner must either provide 3 months of relocation assistance or waive payment of rent for the final 3 months of the tenancy.",
+        "key_value": "3 months",
+        "coverage_conditions": "Applies to no-fault just cause terminations.",
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": "The Santa Ana City Council on Tuesday night adopted two new ordinances to help protect renters: a Rent Stabilization Ordinance, which limits residential rent increases to no more than 3% per year, and a Just Cause Eviction Ordinance, which limits the allowed reasons for which a renter can be evicted.",
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": "The new ordinances are not effective until November 19, 2021.",
+        "effective_date_evidence_kind": "explicit_operative_date",
+        "effective_date": "2021-11-19",
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 8,
+      "origin": "primary",
+      "accepted": true,
+      "held": false,
+      "rejection_reasons": [],
+      "provision_ids": [
+        "P13"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 123,
+        "end": 424,
+        "occurrences": 1,
+        "model_span": "The Santa Ana City Council on Tuesday night adopted two new ordinances to help protect renters: a Rent Stabilization Ordinance, which limits residential rent increases to no more than 3% per year, and a Just Cause Eviction Ordinance, which limits the allowed reasons for which a renter can be evicted.",
+        "source_span": "The Santa Ana City Council on Tuesday night adopted two new ordinances to help protect renters: a Rent Stabilization Ordinance, which limits residential rent increases to no more than 3% per year, and a Just Cause Eviction Ordinance, which limits the allowed reasons for which a renter can be evicted.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 3640,
+        "end": 3816,
+        "occurrences": 1,
+        "model_span": "Property owners must provide notice to existing tenants before December 19, 2021, or at commencement or renewal of their lease of the Just Cause Eviction Ordinance protections.",
+        "source_span": "Property owners must provide notice to existing tenants before December 19, 2021, or at commencement or renewal of their lease of the Just Cause Eviction Ordinance protections.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "Property owners must provide notice to existing tenants before December 19, 2021, or at commencement or renewal of their lease of the Just Cause Eviction Ordinance protections.",
+            "status": "exact_match",
+            "start": 3640,
+            "end": 3816
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 425,
+        "end": 486,
+        "occurrences": 1,
+        "model_span": "The new ordinances are not effective until November 19, 2021.",
+        "source_span": "The new ordinances are not effective until November 19, 2021.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [
+        {
+          "id": "S3",
+          "kind": "exemption",
+          "mode": "named_subject",
+          "governed_provision_ids": [
+            "P13"
+          ],
+          "basis": "named-subject mapping to P13 verified by repair",
+          "applied": true
+        }
+      ],
+      "temporal": {
+        "model_effective_date": "2021-11-19",
+        "model_kind": "explicit_operative_date",
+        "applied_kind": "explicit_operative_date",
+        "effective_date": "2021-11-19",
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null
+      },
+      "status_derivation": "enacted; effective 2021-11-19 is on or before as_of 2026-10-01",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-f000a37973",
+        "jurisdiction": "Santa Ana, CA",
+        "level": "city",
+        "category": "just_cause_eviction",
+        "status": "in_force",
+        "title": "Notice of Just Cause Eviction Protections",
+        "requirement": "[Basis: official explanatory text, not operative legal text] Property owners must provide notice of Just Cause Eviction Ordinance protections to existing tenants before December 19, 2021, or at the commencement or renewal of their lease.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": "The Just Cause Eviction Ordinance does not apply to certain property types, including housing produced in the last 15 years, deed-restricted affordable housing, hotel and transient occupancy, hospital and care facilities, dormitories, and other shared living quarters. [Just Cause Eviction Ordinance]",
+        "overrides": [],
+        "interaction": null,
+        "effective_date": "2021-11-19",
+        "citation": "Just Cause Eviction Ordinance",
+        "source_doc_id": "D085",
+        "source_url": "https://santa-ana.gov/santa-ana-city-council-adopts-rent-stabilization-and-just-cause-eviction-ordinances-effective-nov-19",
+        "quoted_span": "Property owners must provide notice to existing tenants before December 19, 2021, or at commencement or renewal of their lease of the Just Cause Eviction Ordinance protections.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "just_cause_eviction",
+        "citation": "Just Cause Eviction Ordinance",
+        "provision_ids": [
+          "P13"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "Property owners must provide notice to existing tenants before December 19, 2021, or at commencement or renewal of their lease of the Just Cause Eviction Ordinance protections."
+          }
+        ],
+        "title": "Notice of Just Cause Eviction Protections",
+        "requirement": "Property owners must provide notice of Just Cause Eviction Ordinance protections to existing tenants before December 19, 2021, or at the commencement or renewal of their lease.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": "The Santa Ana City Council on Tuesday night adopted two new ordinances to help protect renters: a Rent Stabilization Ordinance, which limits residential rent increases to no more than 3% per year, and a Just Cause Eviction Ordinance, which limits the allowed reasons for which a renter can be evicted.",
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": "The new ordinances are not effective until November 19, 2021.",
+        "effective_date_evidence_kind": "explicit_operative_date",
+        "effective_date": "2021-11-19",
+        "conflict_note": null
+      }
+    }
+  ],
+  "posture": {
+    "declared": "official_explanatory_page",
+    "evidence": "Santa Ana City Council adopts rent stabilization and just cause eviction ordinances, effective Nov. 19 - City of Santa Ana",
+    "evidence_check": {
+      "status": "exact_match",
+      "normalization": null,
+      "start": 0,
+      "end": 122,
+      "occurrences": 1,
+      "model_span": "Santa Ana City Council adopts rent stabilization and just cause eviction ordinances, effective Nov. 19 - City of Santa Ana",
+      "source_span": "Santa Ana City Council adopts rent stabilization and just cause eviction ordinances, effective Nov. 19 - City of Santa Ana",
+      "reason": null,
+      "reconstructed": false,
+      "parts": [],
+      "crossed_artifacts": []
+    },
+    "established": "official_explanatory_page",
+    "basis": "declared posture with verified evidence"
+  },
+  "base_dates": [],
+  "provision_inventory": [
+    {
+      "id": "P1",
+      "ref": "Announcement",
+      "anchor": "The Santa Ana City Council on Tuesday night adopted",
+      "summary": "Official announcement of adoption of the Rent Stabilization Ordinance and Just Cause Eviction Ordinance.",
+      "role": "history",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "Announcement and legislative history without operative requirements."
+    },
+    {
+      "id": "P2",
+      "ref": "Rent Stabilization Ordinance",
+      "anchor": "Increase in residential rents are limited to the lower",
+      "summary": "Limits residential rent increases to the lower of 3% per year or 80% of CPI; prohibits increases if CPI is negative.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "rent_increase_limits",
+      "reason": null
+    },
+    {
+      "id": "P3",
+      "ref": "Rent Stabilization Ordinance",
+      "anchor": "The City will publish the allowable rent increase effective",
+      "summary": "Administrative schedule for the City to publish annual allowable rent increases.",
+      "role": "procedure",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "Administrative machinery for city publication; creates no direct tenant or landlord obligation or consequence."
+    },
+    {
+      "id": "P4",
+      "ref": "Rent Stabilization Ordinance",
+      "anchor": "The rent cap does not apply to residential buildings",
+      "summary": "Exempts residential buildings constructed after February 1, 1995, and mobile home spaces rented after January 1, 1990, from the rent cap.",
+      "role": "exemption",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "Exemption from the rent cap, see global_scope."
+    },
+    {
+      "id": "P5",
+      "ref": "Rent Stabilization Ordinance",
+      "anchor": "Any owner of residential rental property or a mobile",
+      "summary": "Allows owners to petition for relief from the rent cap to ensure a fair and reasonable return.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "rent_increase_limits",
+      "reason": null
+    },
+    {
+      "id": "P6",
+      "ref": "Rent Stabilization Ordinance",
+      "anchor": "Property owners are required to provide written notice of",
+      "summary": "Requires owners to provide written notice of the ordinance and tenant rights at lease start or with rent increase notices.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "rent_increase_limits",
+      "reason": null
+    },
+    {
+      "id": "P7",
+      "ref": "Just Cause Eviction Ordinance",
+      "anchor": "After 30 days, an owner shall not terminate",
+      "summary": "Prohibits terminating a tenancy after 30 days without just cause stated in a written notice.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "just_cause_eviction",
+      "reason": null
+    },
+    {
+      "id": "P8",
+      "ref": "Just Cause Eviction Ordinance",
+      "anchor": "“Just cause” includes certain at-fault causes such as",
+      "summary": "Defines allowable at-fault grounds for terminating a tenancy.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "just_cause_eviction",
+      "reason": null
+    },
+    {
+      "id": "P9",
+      "ref": "Just Cause Eviction Ordinance",
+      "anchor": "“Just cause” also includes certain no-fault causes such",
+      "summary": "Defines allowable no-fault grounds for terminating a tenancy.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "just_cause_eviction",
+      "reason": null
+    },
+    {
+      "id": "P10",
+      "ref": "Just Cause Eviction Ordinance",
+      "anchor": "Before issuing a notice to terminate for just cause,",
+      "summary": "Requires notice of violation and opportunity to cure before issuing a notice to terminate for just cause.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "just_cause_eviction",
+      "reason": null
+    },
+    {
+      "id": "P11",
+      "ref": "Just Cause Eviction Ordinance",
+      "anchor": "Under a no-fault just cause termination, the owner",
+      "summary": "Requires 3 months relocation assistance or waiver of last 3 months rent for no-fault terminations.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "just_cause_eviction",
+      "reason": null
+    },
+    {
+      "id": "P12",
+      "ref": "Just Cause Eviction Ordinance",
+      "anchor": "The Just Cause Ordinance shall not apply to certain",
+      "summary": "Property-type exemptions from the Just Cause Eviction Ordinance.",
+      "role": "exemption",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "Exemptions from the Just Cause Eviction Ordinance, see global_scope."
+    },
+    {
+      "id": "P13",
+      "ref": "Just Cause Eviction Ordinance",
+      "anchor": "Property owners must provide notice to existing tenants before",
+      "summary": "Requires owners to provide notice of just cause eviction protections to tenants.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "just_cause_eviction",
+      "reason": null
+    }
+  ],
+  "global_scope": [
+    {
+      "id": "S1",
+      "kind": "exemption",
+      "statement": "The rent cap does not apply to residential buildings constructed after February 1, 1995.",
+      "citation": "Rent Stabilization Ordinance",
+      "scope_mode": "named_subject",
+      "scope_quote": "The rent cap does not apply to",
+      "source_provision_id": "P4",
+      "governed_provision_ids": [
+        "P2"
+      ],
+      "evidence_parts": [
+        {
+          "segment_id": 1,
+          "quoted_text": "The rent cap does not apply to residential buildings constructed after February 1, 1995, or to mobile home spaces offered for rent after January 1, 1990."
+        }
+      ],
+      "evidence_check": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 1563,
+        "end": 1716,
+        "occurrences": 1,
+        "model_span": "The rent cap does not apply to residential buildings constructed after February 1, 1995, or to mobile home spaces offered for rent after January 1, 1990.",
+        "source_span": "The rent cap does not apply to residential buildings constructed after February 1, 1995, or to mobile home spaces offered for rent after January 1, 1990.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "The rent cap does not apply to residential buildings constructed after February 1, 1995, or to mobile home spaces offered for rent after January 1, 1990.",
+            "status": "exact_match",
+            "start": 1563,
+            "end": 1716
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "propagated": true,
+      "problem": null,
+      "scope": {
+        "resolver": "scope-modes/v1",
+        "declared_mode": "named_subject",
+        "mode": "named_subject",
+        "scope_words": {
+          "scope_quote": "The rent cap does not apply to",
+          "scope_quote_check": "exact_match",
+          "text": "The rent cap does not apply to",
+          "from": "scope_quote"
+        },
+        "detail": null,
+        "propagate_ids": [],
+        "mapping_targets": [
+          "P2"
+        ],
+        "verification": null
+      }
+    },
+    {
+      "id": "S2",
+      "kind": "exemption",
+      "statement": "The rent cap does not apply to mobile home spaces offered for rent after January 1, 1990.",
+      "citation": "Rent Stabilization Ordinance",
+      "scope_mode": "named_subject",
+      "scope_quote": "The rent cap does not apply to",
+      "source_provision_id": "P4",
+      "governed_provision_ids": [
+        "P2"
+      ],
+      "evidence_parts": [
+        {
+          "segment_id": 1,
+          "quoted_text": "The rent cap does not apply to residential buildings constructed after February 1, 1995, or to mobile home spaces offered for rent after January 1, 1990."
+        }
+      ],
+      "evidence_check": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 1563,
+        "end": 1716,
+        "occurrences": 1,
+        "model_span": "The rent cap does not apply to residential buildings constructed after February 1, 1995, or to mobile home spaces offered for rent after January 1, 1990.",
+        "source_span": "The rent cap does not apply to residential buildings constructed after February 1, 1995, or to mobile home spaces offered for rent after January 1, 1990.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "The rent cap does not apply to residential buildings constructed after February 1, 1995, or to mobile home spaces offered for rent after January 1, 1990.",
+            "status": "exact_match",
+            "start": 1563,
+            "end": 1716
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "propagated": true,
+      "problem": null,
+      "scope": {
+        "resolver": "scope-modes/v1",
+        "declared_mode": "named_subject",
+        "mode": "named_subject",
+        "scope_words": {
+          "scope_quote": "The rent cap does not apply to",
+          "scope_quote_check": "exact_match",
+          "text": "The rent cap does not apply to",
+          "from": "scope_quote"
+        },
+        "detail": null,
+        "propagate_ids": [],
+        "mapping_targets": [
+          "P2"
+        ],
+        "verification": null
+      }
+    },
+    {
+      "id": "S3",
+      "kind": "exemption",
+      "statement": "The Just Cause Eviction Ordinance does not apply to certain property types, including housing produced in the last 15 years, deed-restricted affordable housing, hotel and transient occupancy, hospital and care facilities, dormitories, and other shared living quarters.",
+      "citation": "Just Cause Eviction Ordinance",
+      "scope_mode": "structural",
+      "scope_quote": "The Just Cause Ordinance shall not apply to",
+      "source_provision_id": "P12",
+      "governed_provision_ids": [
+        "P7",
+        "P8",
+        "P9",
+        "P10",
+        "P11",
+        "P12",
+        "P13"
+      ],
+      "evidence_parts": [
+        {
+          "segment_id": 1,
+          "quoted_text": "The Just Cause Ordinance shall not apply to certain types of residential property, including housing produced in the last 15 years; deed-restricted affordable housing; hotel and transient occupancy; hospital and care facilities; dormitories; and other shared living quarters."
+        }
+      ],
+      "evidence_check": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 3364,
+        "end": 3639,
+        "occurrences": 1,
+        "model_span": "The Just Cause Ordinance shall not apply to certain types of residential property, including housing produced in the last 15 years; deed-restricted affordable housing; hotel and transient occupancy; hospital and care facilities; dormitories; and other shared living quarters.",
+        "source_span": "The Just Cause Ordinance shall not apply to certain types of residential property, including housing produced in the last 15 years; deed-restricted affordable housing; hotel and transient occupancy; hospital and care facilities; dormitories; and other shared living quarters.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "The Just Cause Ordinance shall not apply to certain types of residential property, including housing produced in the last 15 years; deed-restricted affordable housing; hotel and transient occupancy; hospital and care facilities; dormitories; and other shared living quarters.",
+            "status": "exact_match",
+            "start": 3364,
+            "end": 3639
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "propagated": true,
+      "problem": null,
+      "scope": {
+        "resolver": "scope-modes/v1",
+        "declared_mode": "structural",
+        "mode": "named_subject",
+        "scope_words": {
+          "scope_quote": "The Just Cause Ordinance shall not apply to",
+          "scope_quote_check": "exact_match",
+          "text": "The Just Cause Ordinance shall not apply to",
+          "from": "scope_quote"
+        },
+        "detail": null,
+        "propagate_ids": [],
+        "mapping_targets": [
+          "P7",
+          "P8",
+          "P9",
+          "P10",
+          "P11",
+          "P13"
+        ],
+        "verification": null
+      }
+    }
+  ],
+  "source_view": {
+    "marker": "[[PAGE BREAK]]",
+    "segment_label": "[[SEGMENT {}]]",
+    "view_sha256": "39f1545348c778e1c41b1e8212ea382801a518dc172ac7258198add3e02c758b",
+    "segments": [
+      {
+        "id": 1,
+        "raw_start": 0,
+        "raw_end": 5095
+      }
+    ],
+    "artifacts_removed": 0,
+    "artifacts": []
+  },
+  "coverage": {
+    "inventory_valid": true,
+    "anchors_located": "13/13",
+    "after_primary": {
+      "uncovered": [],
+      "unaccepted": [],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "scope_mappings": {
+      "requested": 8,
+      "applies": 8,
+      "does_not_apply": 0,
+      "unresolved": 0
+    },
+    "after_repair": {
+      "uncovered": [],
+      "unaccepted": [],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "repair_targets": {
+      "before_repair": 0,
+      "resolved_by_accepted_rule": 0,
+      "resolved_out_of_scope": 0,
+      "still_unresolved": 0
+    },
+    "inventory_items": 13,
+    "in_scope_items": 9,
+    "in_scope_refs": 9,
+    "uncertain": [],
+    "final": {
+      "uncovered": [],
+      "unaccepted": [],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "link_mismatches": [],
+    "provisions": [
+      {
+        "ref": "Rent Stabilization Ordinance",
+        "inventory_item": 1,
+        "provision_id": "P2",
+        "summary": "Limits residential rent increases to the lower of 3% per year or 80% of CPI; prohibits increases if CPI is negative.",
+        "category": "rent_increase_limits",
+        "candidates": [
+          0
+        ],
+        "accepted": [
+          0
+        ],
+        "basis": {
+          "0": "provision link; citation names it"
+        }
+      },
+      {
+        "ref": "Rent Stabilization Ordinance",
+        "inventory_item": 4,
+        "provision_id": "P5",
+        "summary": "Allows owners to petition for relief from the rent cap to ensure a fair and reasonable return.",
+        "category": "rent_increase_limits",
+        "candidates": [
+          1
+        ],
+        "accepted": [
+          1
+        ],
+        "basis": {
+          "1": "provision link; citation names it"
+        }
+      },
+      {
+        "ref": "Rent Stabilization Ordinance",
+        "inventory_item": 5,
+        "provision_id": "P6",
+        "summary": "Requires owners to provide written notice of the ordinance and tenant rights at lease start or with rent increase notices.",
+        "category": "rent_increase_limits",
+        "candidates": [
+          2
+        ],
+        "accepted": [
+          2
+        ],
+        "basis": {
+          "2": "provision link; citation names it"
+        }
+      },
+      {
+        "ref": "Just Cause Eviction Ordinance",
+        "inventory_item": 6,
+        "provision_id": "P7",
+        "summary": "Prohibits terminating a tenancy after 30 days without just cause stated in a written notice.",
+        "category": "just_cause_eviction",
+        "candidates": [
+          3
+        ],
+        "accepted": [
+          3
+        ],
+        "basis": {
+          "3": "provision link; citation names it"
+        }
+      },
+      {
+        "ref": "Just Cause Eviction Ordinance",
+        "inventory_item": 7,
+        "provision_id": "P8",
+        "summary": "Defines allowable at-fault grounds for terminating a tenancy.",
+        "category": "just_cause_eviction",
+        "candidates": [
+          4
+        ],
+        "accepted": [
+          4
+        ],
+        "basis": {
+          "4": "provision link; citation names it"
+        }
+      },
+      {
+        "ref": "Just Cause Eviction Ordinance",
+        "inventory_item": 8,
+        "provision_id": "P9",
+        "summary": "Defines allowable no-fault grounds for terminating a tenancy.",
+        "category": "just_cause_eviction",
+        "candidates": [
+          5
+        ],
+        "accepted": [
+          5
+        ],
+        "basis": {
+          "5": "provision link; citation names it"
+        }
+      },
+      {
+        "ref": "Just Cause Eviction Ordinance",
+        "inventory_item": 9,
+        "provision_id": "P10",
+        "summary": "Requires notice of violation and opportunity to cure before issuing a notice to terminate for just cause.",
+        "category": "just_cause_eviction",
+        "candidates": [
+          6
+        ],
+        "accepted": [
+          6
+        ],
+        "basis": {
+          "6": "provision link; citation names it"
+        }
+      },
+      {
+        "ref": "Just Cause Eviction Ordinance",
+        "inventory_item": 10,
+        "provision_id": "P11",
+        "summary": "Requires 3 months relocation assistance or waiver of last 3 months rent for no-fault terminations.",
+        "category": "just_cause_eviction",
+        "candidates": [
+          7
+        ],
+        "accepted": [
+          7
+        ],
+        "basis": {
+          "7": "provision link; citation names it"
+        }
+      },
+      {
+        "ref": "Just Cause Eviction Ordinance",
+        "inventory_item": 12,
+        "provision_id": "P13",
+        "summary": "Requires owners to provide notice of just cause eviction protections to tenants.",
+        "category": "just_cause_eviction",
+        "candidates": [
+          8
+        ],
+        "accepted": [
+          8
+        ],
+        "basis": {
+          "8": "provision link; citation names it"
+        }
+      }
+    ],
+    "unrecorded_subdivisions": []
+  },
+  "scope_challenges": [
+    {
+      "ref": "Announcement",
+      "provision_id": "P1",
+      "role": "history",
+      "reason": "Announcement and legislative history without operative requirements.",
+      "summary": "Official announcement of adoption of the Rent Stabilization Ordinance and Just Cause Eviction Ordinance.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role history is decided by other rules"
+    },
+    {
+      "ref": "Rent Stabilization Ordinance",
+      "provision_id": "P3",
+      "role": "procedure",
+      "reason": "Administrative machinery for city publication; creates no direct tenant or landlord obligation or consequence.",
+      "summary": "Administrative schedule for the City to publish annual allowable rent increases.",
+      "signals": {
+        "in_scope_neighbour": true,
+        "enumeration": false,
+        "normative_language": true,
+        "grounds_or_conditions": false
+      },
+      "challenged": false,
+      "why_not": "too few substantive signals",
+      "raw_start": 1265,
+      "raw_end": 1563
+    },
+    {
+      "ref": "Rent Stabilization Ordinance",
+      "provision_id": "P4",
+      "role": "exemption",
+      "reason": "Exemption from the rent cap, see global_scope.",
+      "summary": "Exempts residential buildings constructed after February 1, 1995, and mobile home spaces rented after January 1, 1990, from the rent cap.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role exemption is decided by other rules"
+    },
+    {
+      "ref": "Just Cause Eviction Ordinance",
+      "provision_id": "P12",
+      "role": "exemption",
+      "reason": "Exemptions from the Just Cause Eviction Ordinance, see global_scope.",
+      "summary": "Property-type exemptions from the Just Cause Eviction Ordinance.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role exemption is decided by other rules"
+    }
+  ],
+  "scope_mappings": [
+    {
+      "condition_id": "S1",
+      "provision_id": "P2",
+      "kind": "exemption",
+      "statement": "The rent cap does not apply to residential buildings constructed after February 1, 1995.",
+      "scope_words": "The rent cap does not apply to",
+      "condition_evidence": "The rent cap does not apply to residential buildings constructed after February 1, 1995, or to mobile home spaces offered for rent after January 1, 1990.",
+      "target_ref": "Rent Stabilization Ordinance",
+      "target_anchor": "Increase in residential rents are limited to the lower",
+      "target_quote": "Increase in residential rents are limited to the lower of 3% per year, or 80% of the percent change in the Consumer Price Index over the most recent 12-month period. If the CPI is negative, no rent increase is permitted.",
+      "decision": {
+        "decision": "applies",
+        "reason": "The condition exempts qualifying residential buildings from the rent cap established in provision P2.",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 1563,
+          "end": 1716,
+          "occurrences": 1,
+          "model_span": "The rent cap does not apply to residential buildings constructed after February 1, 1995, or to mobile home spaces offered for rent after January 1, 1990.",
+          "source_span": "The rent cap does not apply to residential buildings constructed after February 1, 1995, or to mobile home spaces offered for rent after January 1, 1990.",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 1,
+              "model_text": "The rent cap does not apply to residential buildings constructed after February 1, 1995, or to mobile home spaces offered for rent after January 1, 1990.",
+              "status": "exact_match",
+              "start": 1563,
+              "end": 1716
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "applies",
+      "unresolved_reason": null
+    },
+    {
+      "condition_id": "S2",
+      "provision_id": "P2",
+      "kind": "exemption",
+      "statement": "The rent cap does not apply to mobile home spaces offered for rent after January 1, 1990.",
+      "scope_words": "The rent cap does not apply to",
+      "condition_evidence": "The rent cap does not apply to residential buildings constructed after February 1, 1995, or to mobile home spaces offered for rent after January 1, 1990.",
+      "target_ref": "Rent Stabilization Ordinance",
+      "target_anchor": "Increase in residential rents are limited to the lower",
+      "target_quote": "Increase in residential rents are limited to the lower of 3% per year, or 80% of the percent change in the Consumer Price Index over the most recent 12-month period. If the CPI is negative, no rent increase is permitted.",
+      "decision": {
+        "decision": "applies",
+        "reason": "The condition exempts qualifying mobile home spaces from the rent cap established in provision P2.",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 1563,
+          "end": 1716,
+          "occurrences": 1,
+          "model_span": "The rent cap does not apply to residential buildings constructed after February 1, 1995, or to mobile home spaces offered for rent after January 1, 1990.",
+          "source_span": "The rent cap does not apply to residential buildings constructed after February 1, 1995, or to mobile home spaces offered for rent after January 1, 1990.",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 1,
+              "model_text": "The rent cap does not apply to residential buildings constructed after February 1, 1995, or to mobile home spaces offered for rent after January 1, 1990.",
+              "status": "exact_match",
+              "start": 1563,
+              "end": 1716
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "applies",
+      "unresolved_reason": null
+    },
+    {
+      "condition_id": "S3",
+      "provision_id": "P7",
+      "kind": "exemption",
+      "statement": "The Just Cause Eviction Ordinance does not apply to certain property types, including housing produced in the last 15 years, deed-restricted affordable housing, hotel and transient occupancy, hospital and care facilities, dormitories, and other shared living quarters.",
+      "scope_words": "The Just Cause Ordinance shall not apply to",
+      "condition_evidence": "The Just Cause Ordinance shall not apply to certain types of residential property, including housing produced in the last 15 years; deed-restricted affordable housing; hotel and transient occupancy; hospital and care facilities; dormitories; and other shared living quarters.",
+      "target_ref": "Just Cause Eviction Ordinance",
+      "target_anchor": "After 30 days, an owner shall not terminate",
+      "target_quote": "After 30 days, an owner shall not terminate a tenancy without just cause, which shall be stated in a written notice.",
+      "decision": {
+        "decision": "applies",
+        "reason": "The condition exempts certain property types from the Just Cause Eviction Ordinance requirement prohibiting tenancy termination without just cause.",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 3364,
+          "end": 3639,
+          "occurrences": 1,
+          "model_span": "The Just Cause Ordinance shall not apply to certain types of residential property, including housing produced in the last 15 years; deed-restricted affordable housing; hotel and transient occupancy; hospital and care facilities; dormitories; and other shared living quarters.",
+          "source_span": "The Just Cause Ordinance shall not apply to certain types of residential property, including housing produced in the last 15 years; deed-restricted affordable housing; hotel and transient occupancy; hospital and care facilities; dormitories; and other shared living quarters.",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 1,
+              "model_text": "The Just Cause Ordinance shall not apply to certain types of residential property, including housing produced in the last 15 years; deed-restricted affordable housing; hotel and transient occupancy; hospital and care facilities; dormitories; and other shared living quarters.",
+              "status": "exact_match",
+              "start": 3364,
+              "end": 3639
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "applies",
+      "unresolved_reason": null
+    },
+    {
+      "condition_id": "S3",
+      "provision_id": "P8",
+      "kind": "exemption",
+      "statement": "The Just Cause Eviction Ordinance does not apply to certain property types, including housing produced in the last 15 years, deed-restricted affordable housing, hotel and transient occupancy, hospital and care facilities, dormitories, and other shared living quarters.",
+      "scope_words": "The Just Cause Ordinance shall not apply to",
+      "condition_evidence": "The Just Cause Ordinance shall not apply to certain types of residential property, including housing produced in the last 15 years; deed-restricted affordable housing; hotel and transient occupancy; hospital and care facilities; dormitories; and other shared living quarters.",
+      "target_ref": "Just Cause Eviction Ordinance",
+      "target_anchor": "“Just cause” includes certain at-fault causes such as",
+      "target_quote": "“Just cause” includes certain at-fault causes such as default in payment of rent, breach of a material term of the lease, committing a nuisance, criminal activity, and other actions.",
+      "decision": {
+        "decision": "applies",
+        "reason": "The condition exempts certain property types from the Just Cause Eviction Ordinance, which specifies at-fault just causes for eviction.",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 3364,
+          "end": 3639,
+          "occurrences": 1,
+          "model_span": "The Just Cause Ordinance shall not apply to certain types of residential property, including housing produced in the last 15 years; deed-restricted affordable housing; hotel and transient occupancy; hospital and care facilities; dormitories; and other shared living quarters.",
+          "source_span": "The Just Cause Ordinance shall not apply to certain types of residential property, including housing produced in the last 15 years; deed-restricted affordable housing; hotel and transient occupancy; hospital and care facilities; dormitories; and other shared living quarters.",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 1,
+              "model_text": "The Just Cause Ordinance shall not apply to certain types of residential property, including housing produced in the last 15 years; deed-restricted affordable housing; hotel and transient occupancy; hospital and care facilities; dormitories; and other shared living quarters.",
+              "status": "exact_match",
+              "start": 3364,
+              "end": 3639
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "applies",
+      "unresolved_reason": null
+    },
+    {
+      "condition_id": "S3",
+      "provision_id": "P9",
+      "kind": "exemption",
+      "statement": "The Just Cause Eviction Ordinance does not apply to certain property types, including housing produced in the last 15 years, deed-restricted affordable housing, hotel and transient occupancy, hospital and care facilities, dormitories, and other shared living quarters.",
+      "scope_words": "The Just Cause Ordinance shall not apply to",
+      "condition_evidence": "The Just Cause Ordinance shall not apply to certain types of residential property, including housing produced in the last 15 years; deed-restricted affordable housing; hotel and transient occupancy; hospital and care facilities; dormitories; and other shared living quarters.",
+      "target_ref": "Just Cause Eviction Ordinance",
+      "target_anchor": "“Just cause” also includes certain no-fault causes such",
+      "target_quote": "“Just cause” also includes certain no-fault causes such as the intent of the owner to occupy the property, removal of the property from the rental market, and demolition or substantial remodel.",
+      "decision": {
+        "decision": "applies",
+        "reason": "The condition exempts certain property types from the Just Cause Eviction Ordinance, which specifies no-fault just causes for eviction.",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 3364,
+          "end": 3639,
+          "occurrences": 1,
+          "model_span": "The Just Cause Ordinance shall not apply to certain types of residential property, including housing produced in the last 15 years; deed-restricted affordable housing; hotel and transient occupancy; hospital and care facilities; dormitories; and other shared living quarters.",
+          "source_span": "The Just Cause Ordinance shall not apply to certain types of residential property, including housing produced in the last 15 years; deed-restricted affordable housing; hotel and transient occupancy; hospital and care facilities; dormitories; and other shared living quarters.",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 1,
+              "model_text": "The Just Cause Ordinance shall not apply to certain types of residential property, including housing produced in the last 15 years; deed-restricted affordable housing; hotel and transient occupancy; hospital and care facilities; dormitories; and other shared living quarters.",
+              "status": "exact_match",
+              "start": 3364,
+              "end": 3639
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "applies",
+      "unresolved_reason": null
+    },
+    {
+      "condition_id": "S3",
+      "provision_id": "P10",
+      "kind": "exemption",
+      "statement": "The Just Cause Eviction Ordinance does not apply to certain property types, including housing produced in the last 15 years, deed-restricted affordable housing, hotel and transient occupancy, hospital and care facilities, dormitories, and other shared living quarters.",
+      "scope_words": "The Just Cause Ordinance shall not apply to",
+      "condition_evidence": "The Just Cause Ordinance shall not apply to certain types of residential property, including housing produced in the last 15 years; deed-restricted affordable housing; hotel and transient occupancy; hospital and care facilities; dormitories; and other shared living quarters.",
+      "target_ref": "Just Cause Eviction Ordinance",
+      "target_anchor": "Before issuing a notice to terminate for just cause,",
+      "target_quote": "Before issuing a notice to terminate for just cause, the owner shall first give notice of the violation with a time period for the tenant to fix the violation(s).",
+      "decision": {
+        "decision": "applies",
+        "reason": "The condition exempts certain property types from the Just Cause Eviction Ordinance, including its pre-termination notice requirement.",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 3364,
+          "end": 3639,
+          "occurrences": 1,
+          "model_span": "The Just Cause Ordinance shall not apply to certain types of residential property, including housing produced in the last 15 years; deed-restricted affordable housing; hotel and transient occupancy; hospital and care facilities; dormitories; and other shared living quarters.",
+          "source_span": "The Just Cause Ordinance shall not apply to certain types of residential property, including housing produced in the last 15 years; deed-restricted affordable housing; hotel and transient occupancy; hospital and care facilities; dormitories; and other shared living quarters.",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 1,
+              "model_text": "The Just Cause Ordinance shall not apply to certain types of residential property, including housing produced in the last 15 years; deed-restricted affordable housing; hotel and transient occupancy; hospital and care facilities; dormitories; and other shared living quarters.",
+              "status": "exact_match",
+              "start": 3364,
+              "end": 3639
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "applies",
+      "unresolved_reason": null
+    },
+    {
+      "condition_id": "S3",
+      "provision_id": "P11",
+      "kind": "exemption",
+      "statement": "The Just Cause Eviction Ordinance does not apply to certain property types, including housing produced in the last 15 years, deed-restricted affordable housing, hotel and transient occupancy, hospital and care facilities, dormitories, and other shared living quarters.",
+      "scope_words": "The Just Cause Ordinance shall not apply to",
+      "condition_evidence": "The Just Cause Ordinance shall not apply to certain types of residential property, including housing produced in the last 15 years; deed-restricted affordable housing; hotel and transient occupancy; hospital and care facilities; dormitories; and other shared living quarters.",
+      "target_ref": "Just Cause Eviction Ordinance",
+      "target_anchor": "Under a no-fault just cause termination, the owner",
+      "target_quote": "Under a no-fault just cause termination, the owner shall either provide 3 months of relocation assistance or waive payment of rent for the final 3 months of the tenancy.",
+      "decision": {
+        "decision": "applies",
+        "reason": "The condition exempts certain property types from the Just Cause Eviction Ordinance, including its relocation assistance requirement.",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 3364,
+          "end": 3639,
+          "occurrences": 1,
+          "model_span": "The Just Cause Ordinance shall not apply to certain types of residential property, including housing produced in the last 15 years; deed-restricted affordable housing; hotel and transient occupancy; hospital and care facilities; dormitories; and other shared living quarters.",
+          "source_span": "The Just Cause Ordinance shall not apply to certain types of residential property, including housing produced in the last 15 years; deed-restricted affordable housing; hotel and transient occupancy; hospital and care facilities; dormitories; and other shared living quarters.",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 1,
+              "model_text": "The Just Cause Ordinance shall not apply to certain types of residential property, including housing produced in the last 15 years; deed-restricted affordable housing; hotel and transient occupancy; hospital and care facilities; dormitories; and other shared living quarters.",
+              "status": "exact_match",
+              "start": 3364,
+              "end": 3639
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "applies",
+      "unresolved_reason": null
+    },
+    {
+      "condition_id": "S3",
+      "provision_id": "P13",
+      "kind": "exemption",
+      "statement": "The Just Cause Eviction Ordinance does not apply to certain property types, including housing produced in the last 15 years, deed-restricted affordable housing, hotel and transient occupancy, hospital and care facilities, dormitories, and other shared living quarters.",
+      "scope_words": "The Just Cause Ordinance shall not apply to",
+      "condition_evidence": "The Just Cause Ordinance shall not apply to certain types of residential property, including housing produced in the last 15 years; deed-restricted affordable housing; hotel and transient occupancy; hospital and care facilities; dormitories; and other shared living quarters.",
+      "target_ref": "Just Cause Eviction Ordinance",
+      "target_anchor": "Property owners must provide notice to existing tenants before",
+      "target_quote": "Property owners must provide notice to existing tenants before December 19, 2021, or at commencement or renewal of their lease of the Just Cause Eviction Ordinance protections.",
+      "decision": {
+        "decision": "applies",
+        "reason": "The condition exempts certain property types from the Just Cause Eviction Ordinance, including its tenant notice requirement.",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 3364,
+          "end": 3639,
+          "occurrences": 1,
+          "model_span": "The Just Cause Ordinance shall not apply to certain types of residential property, including housing produced in the last 15 years; deed-restricted affordable housing; hotel and transient occupancy; hospital and care facilities; dormitories; and other shared living quarters.",
+          "source_span": "The Just Cause Ordinance shall not apply to certain types of residential property, including housing produced in the last 15 years; deed-restricted affordable housing; hotel and transient occupancy; hospital and care facilities; dormitories; and other shared living quarters.",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 1,
+              "model_text": "The Just Cause Ordinance shall not apply to certain types of residential property, including housing produced in the last 15 years; deed-restricted affordable housing; hotel and transient occupancy; hospital and care facilities; dormitories; and other shared living quarters.",
+              "status": "exact_match",
+              "start": 3364,
+              "end": 3639
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "applies",
+      "unresolved_reason": null
+    }
+  ],
+  "legislative_session": null,
+  "empty_result": null,
+  "legacy_replay": null,
+  "repair": {
+    "invoked": true,
+    "reason": "0 repair target(s) from no check; 8 scope_mapping_challenge(s)",
+    "prompt_version": "v7-repair-1",
+    "targets": [],
+    "cache_key": "f9a45dc7aa380d9ca4de22cd7c9c67b709e1dba3856790aa9ad52d302c8b7157",
+    "cache_hit": true,
+    "cache_entry": "cache/extraction/f9a45dc7aa380d9ca4de22cd7c9c67b709e1dba3856790aa9ad52d302c8b7157.json",
+    "prompt_sha256": "7c09c1cbafec49f5bd69b424bd23ce9674c64843250e7845dc518252d66daade",
+    "provider_metadata": {
+      "api": "interactions.create",
+      "interaction_id": "",
+      "model": "gemini-3.8-flash",
+      "status": "completed",
+      "usage": {
+        "input_tokens": 5732,
+        "output_tokens": 1208,
+        "thinking_tokens": 1961,
+        "total_tokens": 8901
+      }
+    },
+    "raw_response_text": "{\n  \"target_resolutions\": [],\n  \"scope_mappings\": [\n    {\n      \"condition_id\": \"S1\",\n      \"provision_id\": \"P2\",\n      \"decision\": \"applies\",\n      \"reason\": \"The condition exempts qualifying residential buildings from the rent cap established in provision P2.\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"The rent cap does not apply to residential buildings constructed after February 1, 1995, or to mobile home spaces offered for rent after January 1, 1990.\"\n        }\n      ]\n    },\n    {\n      \"condition_id\": \"S2\",\n      \"provision_id\": \"P2\",\n      \"decision\": \"applies\",\n      \"reason\": \"The condition exempts qualifying mobile home spaces from the rent cap established in provision P2.\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"The rent cap does not apply to residential buildings constructed after February 1, 1995, or to mobile home spaces offered for rent after January 1, 1990.\"\n        }\n      ]\n    },\n    {\n      \"condition_id\": \"S3\",\n      \"provision_id\": \"P10\",\n      \"decision\": \"applies\",\n      \"reason\": \"The condition exempts certain property types from the Just Cause Eviction Ordinance, including its pre-termination notice requirement.\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"The Just Cause Ordinance shall not apply to certain types of residential property, including housing produced in the last 15 years; deed-restricted affordable housing; hotel and transient occupancy; hospital and care facilities; dormitories; and other shared living quarters.\"\n        }\n      ]\n    },\n    {\n      \"condition_id\": \"S3\",\n      \"provision_id\": \"P11\",\n      \"decision\": \"applies\",\n      \"reason\": \"The condition exempts certain property types from the Just Cause Eviction Ordinance, including its relocation assistance requirement.\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"The Just Cause Ordinance shall not apply to certain types of residential property, including housing produced in the last 15 years; deed-restricted affordable housing; hotel and transient occupancy; hospital and care facilities; dormitories; and other shared living quarters.\"\n        }\n      ]\n    },\n    {\n      \"condition_id\": \"S3\",\n      \"provision_id\": \"P13\",\n      \"decision\": \"applies\",\n      \"reason\": \"The condition exempts certain property types from the Just Cause Eviction Ordinance, including its tenant notice requirement.\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"The Just Cause Ordinance shall not apply to certain types of residential property, including housing produced in the last 15 years; deed-restricted affordable housing; hotel and transient occupancy; hospital and care facilities; dormitories; and other shared living quarters.\"\n        }\n      ]\n    },\n    {\n      \"condition_id\": \"S3\",\n      \"provision_id\": \"P7\",\n      \"decision\": \"applies\",\n      \"reason\": \"The condition exempts certain property types from the Just Cause Eviction Ordinance requirement prohibiting tenancy termination without just cause.\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"The Just Cause Ordinance shall not apply to certain types of residential property, including housing produced in the last 15 years; deed-restricted affordable housing; hotel and transient occupancy; hospital and care facilities; dormitories; and other shared living quarters.\"\n        }\n      ]\n    },\n    {\n      \"condition_id\": \"S3\",\n      \"provision_id\": \"P8\",\n      \"decision\": \"applies\",\n      \"reason\": \"The condition exempts certain property types from the Just Cause Eviction Ordinance, which specifies at-fault just causes for eviction.\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"The Just Cause Ordinance shall not apply to certain types of residential property, including housing produced in the last 15 years; deed-restricted affordable housing; hotel and transient occupancy; hospital and care facilities; dormitories; and other shared living quarters.\"\n        }\n      ]\n    },\n    {\n      \"condition_id\": \"S3\",\n      \"provision_id\": \"P9\",\n      \"decision\": \"applies\",\n      \"reason\": \"The condition exempts certain property types from the Just Cause Eviction Ordinance, which specifies no-fault just causes for eviction.\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"The Just Cause Ordinance shall not apply to certain types of residential property, including housing produced in the last 15 years; deed-restricted affordable housing; hotel and transient occupancy; hospital and care facilities; dormitories; and other shared living quarters.\"\n        }\n      ]\n    }\n  ],\n  \"rules\": []\n}",
+    "mappings": [
+      {
+        "condition_id": "S1",
+        "provision_id": "P2",
+        "kind": "exemption",
+        "statement": "The rent cap does not apply to residential buildings constructed after February 1, 1995.",
+        "scope_words": "The rent cap does not apply to",
+        "condition_evidence": "The rent cap does not apply to residential buildings constructed after February 1, 1995, or to mobile home spaces offered for rent after January 1, 1990.",
+        "target_ref": "Rent Stabilization Ordinance",
+        "target_anchor": "Increase in residential rents are limited to the lower",
+        "target_quote": "Increase in residential rents are limited to the lower of 3% per year, or 80% of the percent change in the Consumer Price Index over the most recent 12-month period. If the CPI is negative, no rent increase is permitted.",
+        "decision": {
+          "decision": "applies",
+          "reason": "The condition exempts qualifying residential buildings from the rent cap established in provision P2.",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 1563,
+            "end": 1716,
+            "occurrences": 1,
+            "model_span": "The rent cap does not apply to residential buildings constructed after February 1, 1995, or to mobile home spaces offered for rent after January 1, 1990.",
+            "source_span": "The rent cap does not apply to residential buildings constructed after February 1, 1995, or to mobile home spaces offered for rent after January 1, 1990.",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 1,
+                "model_text": "The rent cap does not apply to residential buildings constructed after February 1, 1995, or to mobile home spaces offered for rent after January 1, 1990.",
+                "status": "exact_match",
+                "start": 1563,
+                "end": 1716
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "applies",
+        "unresolved_reason": null
+      },
+      {
+        "condition_id": "S2",
+        "provision_id": "P2",
+        "kind": "exemption",
+        "statement": "The rent cap does not apply to mobile home spaces offered for rent after January 1, 1990.",
+        "scope_words": "The rent cap does not apply to",
+        "condition_evidence": "The rent cap does not apply to residential buildings constructed after February 1, 1995, or to mobile home spaces offered for rent after January 1, 1990.",
+        "target_ref": "Rent Stabilization Ordinance",
+        "target_anchor": "Increase in residential rents are limited to the lower",
+        "target_quote": "Increase in residential rents are limited to the lower of 3% per year, or 80% of the percent change in the Consumer Price Index over the most recent 12-month period. If the CPI is negative, no rent increase is permitted.",
+        "decision": {
+          "decision": "applies",
+          "reason": "The condition exempts qualifying mobile home spaces from the rent cap established in provision P2.",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 1563,
+            "end": 1716,
+            "occurrences": 1,
+            "model_span": "The rent cap does not apply to residential buildings constructed after February 1, 1995, or to mobile home spaces offered for rent after January 1, 1990.",
+            "source_span": "The rent cap does not apply to residential buildings constructed after February 1, 1995, or to mobile home spaces offered for rent after January 1, 1990.",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 1,
+                "model_text": "The rent cap does not apply to residential buildings constructed after February 1, 1995, or to mobile home spaces offered for rent after January 1, 1990.",
+                "status": "exact_match",
+                "start": 1563,
+                "end": 1716
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "applies",
+        "unresolved_reason": null
+      },
+      {
+        "condition_id": "S3",
+        "provision_id": "P7",
+        "kind": "exemption",
+        "statement": "The Just Cause Eviction Ordinance does not apply to certain property types, including housing produced in the last 15 years, deed-restricted affordable housing, hotel and transient occupancy, hospital and care facilities, dormitories, and other shared living quarters.",
+        "scope_words": "The Just Cause Ordinance shall not apply to",
+        "condition_evidence": "The Just Cause Ordinance shall not apply to certain types of residential property, including housing produced in the last 15 years; deed-restricted affordable housing; hotel and transient occupancy; hospital and care facilities; dormitories; and other shared living quarters.",
+        "target_ref": "Just Cause Eviction Ordinance",
+        "target_anchor": "After 30 days, an owner shall not terminate",
+        "target_quote": "After 30 days, an owner shall not terminate a tenancy without just cause, which shall be stated in a written notice.",
+        "decision": {
+          "decision": "applies",
+          "reason": "The condition exempts certain property types from the Just Cause Eviction Ordinance requirement prohibiting tenancy termination without just cause.",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 3364,
+            "end": 3639,
+            "occurrences": 1,
+            "model_span": "The Just Cause Ordinance shall not apply to certain types of residential property, including housing produced in the last 15 years; deed-restricted affordable housing; hotel and transient occupancy; hospital and care facilities; dormitories; and other shared living quarters.",
+            "source_span": "The Just Cause Ordinance shall not apply to certain types of residential property, including housing produced in the last 15 years; deed-restricted affordable housing; hotel and transient occupancy; hospital and care facilities; dormitories; and other shared living quarters.",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 1,
+                "model_text": "The Just Cause Ordinance shall not apply to certain types of residential property, including housing produced in the last 15 years; deed-restricted affordable housing; hotel and transient occupancy; hospital and care facilities; dormitories; and other shared living quarters.",
+                "status": "exact_match",
+                "start": 3364,
+                "end": 3639
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "applies",
+        "unresolved_reason": null
+      },
+      {
+        "condition_id": "S3",
+        "provision_id": "P8",
+        "kind": "exemption",
+        "statement": "The Just Cause Eviction Ordinance does not apply to certain property types, including housing produced in the last 15 years, deed-restricted affordable housing, hotel and transient occupancy, hospital and care facilities, dormitories, and other shared living quarters.",
+        "scope_words": "The Just Cause Ordinance shall not apply to",
+        "condition_evidence": "The Just Cause Ordinance shall not apply to certain types of residential property, including housing produced in the last 15 years; deed-restricted affordable housing; hotel and transient occupancy; hospital and care facilities; dormitories; and other shared living quarters.",
+        "target_ref": "Just Cause Eviction Ordinance",
+        "target_anchor": "“Just cause” includes certain at-fault causes such as",
+        "target_quote": "“Just cause” includes certain at-fault causes such as default in payment of rent, breach of a material term of the lease, committing a nuisance, criminal activity, and other actions.",
+        "decision": {
+          "decision": "applies",
+          "reason": "The condition exempts certain property types from the Just Cause Eviction Ordinance, which specifies at-fault just causes for eviction.",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 3364,
+            "end": 3639,
+            "occurrences": 1,
+            "model_span": "The Just Cause Ordinance shall not apply to certain types of residential property, including housing produced in the last 15 years; deed-restricted affordable housing; hotel and transient occupancy; hospital and care facilities; dormitories; and other shared living quarters.",
+            "source_span": "The Just Cause Ordinance shall not apply to certain types of residential property, including housing produced in the last 15 years; deed-restricted affordable housing; hotel and transient occupancy; hospital and care facilities; dormitories; and other shared living quarters.",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 1,
+                "model_text": "The Just Cause Ordinance shall not apply to certain types of residential property, including housing produced in the last 15 years; deed-restricted affordable housing; hotel and transient occupancy; hospital and care facilities; dormitories; and other shared living quarters.",
+                "status": "exact_match",
+                "start": 3364,
+                "end": 3639
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "applies",
+        "unresolved_reason": null
+      },
+      {
+        "condition_id": "S3",
+        "provision_id": "P9",
+        "kind": "exemption",
+        "statement": "The Just Cause Eviction Ordinance does not apply to certain property types, including housing produced in the last 15 years, deed-restricted affordable housing, hotel and transient occupancy, hospital and care facilities, dormitories, and other shared living quarters.",
+        "scope_words": "The Just Cause Ordinance shall not apply to",
+        "condition_evidence": "The Just Cause Ordinance shall not apply to certain types of residential property, including housing produced in the last 15 years; deed-restricted affordable housing; hotel and transient occupancy; hospital and care facilities; dormitories; and other shared living quarters.",
+        "target_ref": "Just Cause Eviction Ordinance",
+        "target_anchor": "“Just cause” also includes certain no-fault causes such",
+        "target_quote": "“Just cause” also includes certain no-fault causes such as the intent of the owner to occupy the property, removal of the property from the rental market, and demolition or substantial remodel.",
+        "decision": {
+          "decision": "applies",
+          "reason": "The condition exempts certain property types from the Just Cause Eviction Ordinance, which specifies no-fault just causes for eviction.",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 3364,
+            "end": 3639,
+            "occurrences": 1,
+            "model_span": "The Just Cause Ordinance shall not apply to certain types of residential property, including housing produced in the last 15 years; deed-restricted affordable housing; hotel and transient occupancy; hospital and care facilities; dormitories; and other shared living quarters.",
+            "source_span": "The Just Cause Ordinance shall not apply to certain types of residential property, including housing produced in the last 15 years; deed-restricted affordable housing; hotel and transient occupancy; hospital and care facilities; dormitories; and other shared living quarters.",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 1,
+                "model_text": "The Just Cause Ordinance shall not apply to certain types of residential property, including housing produced in the last 15 years; deed-restricted affordable housing; hotel and transient occupancy; hospital and care facilities; dormitories; and other shared living quarters.",
+                "status": "exact_match",
+                "start": 3364,
+                "end": 3639
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "applies",
+        "unresolved_reason": null
+      },
+      {
+        "condition_id": "S3",
+        "provision_id": "P10",
+        "kind": "exemption",
+        "statement": "The Just Cause Eviction Ordinance does not apply to certain property types, including housing produced in the last 15 years, deed-restricted affordable housing, hotel and transient occupancy, hospital and care facilities, dormitories, and other shared living quarters.",
+        "scope_words": "The Just Cause Ordinance shall not apply to",
+        "condition_evidence": "The Just Cause Ordinance shall not apply to certain types of residential property, including housing produced in the last 15 years; deed-restricted affordable housing; hotel and transient occupancy; hospital and care facilities; dormitories; and other shared living quarters.",
+        "target_ref": "Just Cause Eviction Ordinance",
+        "target_anchor": "Before issuing a notice to terminate for just cause,",
+        "target_quote": "Before issuing a notice to terminate for just cause, the owner shall first give notice of the violation with a time period for the tenant to fix the violation(s).",
+        "decision": {
+          "decision": "applies",
+          "reason": "The condition exempts certain property types from the Just Cause Eviction Ordinance, including its pre-termination notice requirement.",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 3364,
+            "end": 3639,
+            "occurrences": 1,
+            "model_span": "The Just Cause Ordinance shall not apply to certain types of residential property, including housing produced in the last 15 years; deed-restricted affordable housing; hotel and transient occupancy; hospital and care facilities; dormitories; and other shared living quarters.",
+            "source_span": "The Just Cause Ordinance shall not apply to certain types of residential property, including housing produced in the last 15 years; deed-restricted affordable housing; hotel and transient occupancy; hospital and care facilities; dormitories; and other shared living quarters.",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 1,
+                "model_text": "The Just Cause Ordinance shall not apply to certain types of residential property, including housing produced in the last 15 years; deed-restricted affordable housing; hotel and transient occupancy; hospital and care facilities; dormitories; and other shared living quarters.",
+                "status": "exact_match",
+                "start": 3364,
+                "end": 3639
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "applies",
+        "unresolved_reason": null
+      },
+      {
+        "condition_id": "S3",
+        "provision_id": "P11",
+        "kind": "exemption",
+        "statement": "The Just Cause Eviction Ordinance does not apply to certain property types, including housing produced in the last 15 years, deed-restricted affordable housing, hotel and transient occupancy, hospital and care facilities, dormitories, and other shared living quarters.",
+        "scope_words": "The Just Cause Ordinance shall not apply to",
+        "condition_evidence": "The Just Cause Ordinance shall not apply to certain types of residential property, including housing produced in the last 15 years; deed-restricted affordable housing; hotel and transient occupancy; hospital and care facilities; dormitories; and other shared living quarters.",
+        "target_ref": "Just Cause Eviction Ordinance",
+        "target_anchor": "Under a no-fault just cause termination, the owner",
+        "target_quote": "Under a no-fault just cause termination, the owner shall either provide 3 months of relocation assistance or waive payment of rent for the final 3 months of the tenancy.",
+        "decision": {
+          "decision": "applies",
+          "reason": "The condition exempts certain property types from the Just Cause Eviction Ordinance, including its relocation assistance requirement.",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 3364,
+            "end": 3639,
+            "occurrences": 1,
+            "model_span": "The Just Cause Ordinance shall not apply to certain types of residential property, including housing produced in the last 15 years; deed-restricted affordable housing; hotel and transient occupancy; hospital and care facilities; dormitories; and other shared living quarters.",
+            "source_span": "The Just Cause Ordinance shall not apply to certain types of residential property, including housing produced in the last 15 years; deed-restricted affordable housing; hotel and transient occupancy; hospital and care facilities; dormitories; and other shared living quarters.",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 1,
+                "model_text": "The Just Cause Ordinance shall not apply to certain types of residential property, including housing produced in the last 15 years; deed-restricted affordable housing; hotel and transient occupancy; hospital and care facilities; dormitories; and other shared living quarters.",
+                "status": "exact_match",
+                "start": 3364,
+                "end": 3639
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "applies",
+        "unresolved_reason": null
+      },
+      {
+        "condition_id": "S3",
+        "provision_id": "P13",
+        "kind": "exemption",
+        "statement": "The Just Cause Eviction Ordinance does not apply to certain property types, including housing produced in the last 15 years, deed-restricted affordable housing, hotel and transient occupancy, hospital and care facilities, dormitories, and other shared living quarters.",
+        "scope_words": "The Just Cause Ordinance shall not apply to",
+        "condition_evidence": "The Just Cause Ordinance shall not apply to certain types of residential property, including housing produced in the last 15 years; deed-restricted affordable housing; hotel and transient occupancy; hospital and care facilities; dormitories; and other shared living quarters.",
+        "target_ref": "Just Cause Eviction Ordinance",
+        "target_anchor": "Property owners must provide notice to existing tenants before",
+        "target_quote": "Property owners must provide notice to existing tenants before December 19, 2021, or at commencement or renewal of their lease of the Just Cause Eviction Ordinance protections.",
+        "decision": {
+          "decision": "applies",
+          "reason": "The condition exempts certain property types from the Just Cause Eviction Ordinance, including its tenant notice requirement.",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 3364,
+            "end": 3639,
+            "occurrences": 1,
+            "model_span": "The Just Cause Ordinance shall not apply to certain types of residential property, including housing produced in the last 15 years; deed-restricted affordable housing; hotel and transient occupancy; hospital and care facilities; dormitories; and other shared living quarters.",
+            "source_span": "The Just Cause Ordinance shall not apply to certain types of residential property, including housing produced in the last 15 years; deed-restricted affordable housing; hotel and transient occupancy; hospital and care facilities; dormitories; and other shared living quarters.",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 1,
+                "model_text": "The Just Cause Ordinance shall not apply to certain types of residential property, including housing produced in the last 15 years; deed-restricted affordable housing; hotel and transient occupancy; hospital and care facilities; dormitories; and other shared living quarters.",
+                "status": "exact_match",
+                "start": 3364,
+                "end": 3639
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "applies",
+        "unresolved_reason": null
+      }
+    ],
+    "candidate_indices": [],
+    "accepted_count": 0,
+    "rejected_count": 0,
+    "errors": []
+  },
+  "document_status": "complete",
+  "review_reasons": [],
+  "warnings": [],
+  "errors": [],
+  "raw_response_text": "{\n  \"document\": {\n    \"posture\": \"official_explanatory_page\",\n    \"evidence\": \"Santa Ana City Council adopts rent stabilization and just cause eviction ordinances, effective Nov. 19 - City of Santa Ana\"\n  },\n  \"provisions\": [\n    {\n      \"id\": \"P1\",\n      \"ref\": \"Announcement\",\n      \"anchor\": \"The Santa Ana City Council on Tuesday night adopted\",\n      \"summary\": \"Official announcement of adoption of the Rent Stabilization Ordinance and Just Cause Eviction Ordinance.\",\n      \"role\": \"history\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"Announcement and legislative history without operative requirements.\"\n    },\n    {\n      \"id\": \"P2\",\n      \"ref\": \"Rent Stabilization Ordinance\",\n      \"anchor\": \"Increase in residential rents are limited to the lower\",\n      \"summary\": \"Limits residential rent increases to the lower of 3% per year or 80% of CPI; prohibits increases if CPI is negative.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"rent_increase_limits\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P3\",\n      \"ref\": \"Rent Stabilization Ordinance\",\n      \"anchor\": \"The City will publish the allowable rent increase effective\",\n      \"summary\": \"Administrative schedule for the City to publish annual allowable rent increases.\",\n      \"role\": \"procedure\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"Administrative machinery for city publication; creates no direct tenant or landlord obligation or consequence.\"\n    },\n    {\n      \"id\": \"P4\",\n      \"ref\": \"Rent Stabilization Ordinance\",\n      \"anchor\": \"The rent cap does not apply to residential buildings\",\n      \"summary\": \"Exempts residential buildings constructed after February 1, 1995, and mobile home spaces rented after January 1, 1990, from the rent cap.\",\n      \"role\": \"exemption\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"Exemption from the rent cap, see global_scope.\"\n    },\n    {\n      \"id\": \"P5\",\n      \"ref\": \"Rent Stabilization Ordinance\",\n      \"anchor\": \"Any owner of residential rental property or a mobile\",\n      \"summary\": \"Allows owners to petition for relief from the rent cap to ensure a fair and reasonable return.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"rent_increase_limits\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P6\",\n      \"ref\": \"Rent Stabilization Ordinance\",\n      \"anchor\": \"Property owners are required to provide written notice of\",\n      \"summary\": \"Requires owners to provide written notice of the ordinance and tenant rights at lease start or with rent increase notices.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"rent_increase_limits\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P7\",\n      \"ref\": \"Just Cause Eviction Ordinance\",\n      \"anchor\": \"After 30 days, an owner shall not terminate\",\n      \"summary\": \"Prohibits terminating a tenancy after 30 days without just cause stated in a written notice.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"just_cause_eviction\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P8\",\n      \"ref\": \"Just Cause Eviction Ordinance\",\n      \"anchor\": \"“Just cause” includes certain at-fault causes such as\",\n      \"summary\": \"Defines allowable at-fault grounds for terminating a tenancy.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"just_cause_eviction\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P9\",\n      \"ref\": \"Just Cause Eviction Ordinance\",\n      \"anchor\": \"“Just cause” also includes certain no-fault causes such\",\n      \"summary\": \"Defines allowable no-fault grounds for terminating a tenancy.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"just_cause_eviction\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P10\",\n      \"ref\": \"Just Cause Eviction Ordinance\",\n      \"anchor\": \"Before issuing a notice to terminate for just cause,\",\n      \"summary\": \"Requires notice of violation and opportunity to cure before issuing a notice to terminate for just cause.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"just_cause_eviction\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P11\",\n      \"ref\": \"Just Cause Eviction Ordinance\",\n      \"anchor\": \"Under a no-fault just cause termination, the owner\",\n      \"summary\": \"Requires 3 months relocation assistance or waiver of last 3 months rent for no-fault terminations.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"just_cause_eviction\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P12\",\n      \"ref\": \"Just Cause Eviction Ordinance\",\n      \"anchor\": \"The Just Cause Ordinance shall not apply to certain\",\n      \"summary\": \"Property-type exemptions from the Just Cause Eviction Ordinance.\",\n      \"role\": \"exemption\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"Exemptions from the Just Cause Eviction Ordinance, see global_scope.\"\n    },\n    {\n      \"id\": \"P13\",\n      \"ref\": \"Just Cause Eviction Ordinance\",\n      \"anchor\": \"Property owners must provide notice to existing tenants before\",\n      \"summary\": \"Requires owners to provide notice of just cause eviction protections to tenants.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"just_cause_eviction\",\n      \"reason\": null\n    }\n  ],\n  \"global_scope\": [\n    {\n      \"id\": \"S1\",\n      \"kind\": \"exemption\",\n      \"statement\": \"The rent cap does not apply to residential buildings constructed after February 1, 1995.\",\n      \"citation\": \"Rent Stabilization Ordinance\",\n      \"scope_mode\": \"named_subject\",\n      \"scope_quote\": \"The rent cap does not apply to\",\n      \"source_provision_id\": \"P4\",\n      \"governed_provision_ids\": [\"P2\"],\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"The rent cap does not apply to residential buildings constructed after February 1, 1995, or to mobile home spaces offered for rent after January 1, 1990.\"\n        }\n      ]\n    },\n    {\n      \"id\": \"S2\",\n      \"kind\": \"exemption\",\n      \"statement\": \"The rent cap does not apply to mobile home spaces offered for rent after January 1, 1990.\",\n      \"citation\": \"Rent Stabilization Ordinance\",\n      \"scope_mode\": \"named_subject\",\n      \"scope_quote\": \"The rent cap does not apply to\",\n      \"source_provision_id\": \"P4\",\n      \"governed_provision_ids\": [\"P2\"],\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"The rent cap does not apply to residential buildings constructed after February 1, 1995, or to mobile home spaces offered for rent after January 1, 1990.\"\n        }\n      ]\n    },\n    {\n      \"id\": \"S3\",\n      \"kind\": \"exemption\",\n      \"statement\": \"The Just Cause Eviction Ordinance does not apply to certain property types, including housing produced in the last 15 years, deed-restricted affordable housing, hotel and transient occupancy, hospital and care facilities, dormitories, and other shared living quarters.\",\n      \"citation\": \"Just Cause Eviction Ordinance\",\n      \"scope_mode\": \"structural\",\n      \"scope_quote\": \"The Just Cause Ordinance shall not apply to\",\n      \"source_provision_id\": \"P12\",\n      \"governed_provision_ids\": [\n        \"P7\",\n        \"P8\",\n        \"P9\",\n        \"P10\",\n        \"P11\",\n        \"P12\",\n        \"P13\"\n      ],\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"The Just Cause Ordinance shall not apply to certain types of residential property, including housing produced in the last 15 years; deed-restricted affordable housing; hotel and transient occupancy; hospital and care facilities; dormitories; and other shared living quarters.\"\n        }\n      ]\n    }\n  ],\n  \"rules\": [\n    {\n      \"category\": \"rent_increase_limits\",\n      \"citation\": \"Rent Stabilization Ordinance\",\n      \"provision_ids\": [\"P2\"],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Increase in residential rents are limited to the lower of 3% per year, or 80% of the percent change in the Consumer Price Index over the most recent 12-month period. If the CPI is negative, no rent increase is permitted.\"\n        }\n      ],\n      \"title\": \"Annual Residential Rent Increase Cap\",\n      \"requirement\": \"Residential rent increases are limited to the lower of 3% per year or 80% of the percentage change in the Consumer Price Index over the most recent 12-month period. No rent increase is permitted if the CPI change is negative.\",\n      \"key_value\": \"lower of 3% per year, or 80% of the percent change in the Consumer Price Index\",\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": \"The Santa Ana City Council on Tuesday night adopted two new ordinances to help protect renters: a Rent Stabilization Ordinance, which limits residential rent increases to no more than 3% per year, and a Just Cause Eviction Ordinance, which limits the allowed reasons for which a renter can be evicted.\",\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": \"The new ordinances are not effective until November 19, 2021.\",\n      \"effective_date_evidence_kind\": \"explicit_operative_date\",\n      \"effective_date\": \"2021-11-19\",\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"rent_increase_limits\",\n      \"citation\": \"Rent Stabilization Ordinance\",\n      \"provision_ids\": [\"P5\"],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Any owner of residential rental property or a mobile home park may petition for relief from the cap, but will need to provide evidence that a rate increase in excess of the annual allowance is necessary to provide a fair and reasonable return for their property. The City Manager, or designee, may consider a variety of relevant factors and will decide on the petition within 60 days of receiving a complete application.\"\n        }\n      ],\n      \"title\": \"Fair Return Petition for Relief from Rent Cap\",\n      \"requirement\": \"An owner of residential rental property or a mobile home park may petition for relief from the rent cap by providing evidence that an increase above the annual allowance is necessary for a fair and reasonable return. The City Manager or designee will decide on the petition within 60 days of receiving a complete application.\",\n      \"key_value\": \"60 days\",\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": \"The Santa Ana City Council on Tuesday night adopted two new ordinances to help protect renters: a Rent Stabilization Ordinance, which limits residential rent increases to no more than 3% per year, and a Just Cause Eviction Ordinance, which limits the allowed reasons for which a renter can be evicted.\",\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": \"The new ordinances are not effective until November 19, 2021.\",\n      \"effective_date_evidence_kind\": \"explicit_operative_date\",\n      \"effective_date\": \"2021-11-19\",\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"rent_increase_limits\",\n      \"citation\": \"Rent Stabilization Ordinance\",\n      \"provision_ids\": [\"P6\"],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Property owners are required to provide written notice of the Ordinance and tenant’s rights at commencement of a lease or as part of any notice to increase rent.\"\n        }\n      ],\n      \"title\": \"Notice of Rent Stabilization Ordinance and Tenant Rights\",\n      \"requirement\": \"Property owners must provide written notice of the Rent Stabilization Ordinance and tenant rights at the start of a lease or as part of any notice to increase rent.\",\n      \"key_value\": null,\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": \"The Santa Ana City Council on Tuesday night adopted two new ordinances to help protect renters: a Rent Stabilization Ordinance, which limits residential rent increases to no more than 3% per year, and a Just Cause Eviction Ordinance, which limits the allowed reasons for which a renter can be evicted.\",\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": \"The new ordinances are not effective until November 19, 2021.\",\n      \"effective_date_evidence_kind\": \"explicit_operative_date\",\n      \"effective_date\": \"2021-11-19\",\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"just_cause_eviction\",\n      \"citation\": \"Just Cause Eviction Ordinance\",\n      \"provision_ids\": [\"P7\"],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"After 30 days, an owner shall not terminate a tenancy without just cause, which shall be stated in a written notice.\"\n        }\n      ],\n      \"title\": \"Just Cause Requirement for Tenancy Termination\",\n      \"requirement\": \"An owner cannot terminate a tenancy after 30 days without just cause, which must be stated in a written notice.\",\n      \"key_value\": \"30 days\",\n      \"coverage_conditions\": \"Applies after 30 days of tenancy.\",\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": \"The Santa Ana City Council on Tuesday night adopted two new ordinances to help protect renters: a Rent Stabilization Ordinance, which limits residential rent increases to no more than 3% per year, and a Just Cause Eviction Ordinance, which limits the allowed reasons for which a renter can be evicted.\",\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": \"The new ordinances are not effective until November 19, 2021.\",\n      \"effective_date_evidence_kind\": \"explicit_operative_date\",\n      \"effective_date\": \"2021-11-19\",\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"just_cause_eviction\",\n      \"citation\": \"Just Cause Eviction Ordinance\",\n      \"provision_ids\": [\"P8\"],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"“Just cause” includes certain at-fault causes such as default in payment of rent, breach of a material term of the lease, committing a nuisance, criminal activity, and other actions.\"\n        }\n      ],\n      \"title\": \"At-Fault Just Cause Grounds\",\n      \"requirement\": \"At-fault grounds for eviction include default in rent payment, breach of a material lease term, committing a nuisance, criminal activity, and other specified actions.\",\n      \"key_value\": null,\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": \"The Santa Ana City Council on Tuesday night adopted two new ordinances to help protect renters: a Rent Stabilization Ordinance, which limits residential rent increases to no more than 3% per year, and a Just Cause Eviction Ordinance, which limits the allowed reasons for which a renter can be evicted.\",\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": \"The new ordinances are not effective until November 19, 2021.\",\n      \"effective_date_evidence_kind\": \"explicit_operative_date\",\n      \"effective_date\": \"2021-11-19\",\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"just_cause_eviction\",\n      \"citation\": \"Just Cause Eviction Ordinance\",\n      \"provision_ids\": [\"P9\"],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"“Just cause” also includes certain no-fault causes such as the intent of the owner to occupy the property, removal of the property from the rental market, and demolition or substantial remodel.\"\n        }\n      ],\n      \"title\": \"No-Fault Just Cause Grounds\",\n      \"requirement\": \"No-fault grounds for eviction include owner occupancy, removal of the property from the rental market, and demolition or substantial remodel.\",\n      \"key_value\": null,\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": \"The Santa Ana City Council on Tuesday night adopted two new ordinances to help protect renters: a Rent Stabilization Ordinance, which limits residential rent increases to no more than 3% per year, and a Just Cause Eviction Ordinance, which limits the allowed reasons for which a renter can be evicted.\",\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": \"The new ordinances are not effective until November 19, 2021.\",\n      \"effective_date_evidence_kind\": \"explicit_operative_date\",\n      \"effective_date\": \"2021-11-19\",\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"just_cause_eviction\",\n      \"citation\": \"Just Cause Eviction Ordinance\",\n      \"provision_ids\": [\"P10\"],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Before issuing a notice to terminate for just cause, the owner shall first give notice of the violation with a time period for the tenant to fix the violation(s).\"\n        }\n      ],\n      \"title\": \"Notice of Violation and Opportunity to Cure\",\n      \"requirement\": \"Before issuing a notice to terminate for just cause, an owner must first provide notice of the violation and give the tenant a time period to fix the violation.\",\n      \"key_value\": null,\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": \"The Santa Ana City Council on Tuesday night adopted two new ordinances to help protect renters: a Rent Stabilization Ordinance, which limits residential rent increases to no more than 3% per year, and a Just Cause Eviction Ordinance, which limits the allowed reasons for which a renter can be evicted.\",\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": \"The new ordinances are not effective until November 19, 2021.\",\n      \"effective_date_evidence_kind\": \"explicit_operative_date\",\n      \"effective_date\": \"2021-11-19\",\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"just_cause_eviction\",\n      \"citation\": \"Just Cause Eviction Ordinance\",\n      \"provision_ids\": [\"P11\"],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Under a no-fault just cause termination, the owner shall either provide 3 months of relocation assistance or waive payment of rent for the final 3 months of the tenancy.\"\n        }\n      ],\n      \"title\": \"Relocation Assistance or Rent Waiver for No-Fault Termination\",\n      \"requirement\": \"Under a no-fault just cause termination, the owner must either provide 3 months of relocation assistance or waive payment of rent for the final 3 months of the tenancy.\",\n      \"key_value\": \"3 months\",\n      \"coverage_conditions\": \"Applies to no-fault just cause terminations.\",\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": \"The Santa Ana City Council on Tuesday night adopted two new ordinances to help protect renters: a Rent Stabilization Ordinance, which limits residential rent increases to no more than 3% per year, and a Just Cause Eviction Ordinance, which limits the allowed reasons for which a renter can be evicted.\",\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": \"The new ordinances are not effective until November 19, 2021.\",\n      \"effective_date_evidence_kind\": \"explicit_operative_date\",\n      \"effective_date\": \"2021-11-19\",\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"just_cause_eviction\",\n      \"citation\": \"Just Cause Eviction Ordinance\",\n      \"provision_ids\": [\"P13\"],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Property owners must provide notice to existing tenants before December 19, 2021, or at commencement or renewal of their lease of the Just Cause Eviction Ordinance protections.\"\n        }\n      ],\n      \"title\": \"Notice of Just Cause Eviction Protections\",\n      \"requirement\": \"Property owners must provide notice of Just Cause Eviction Ordinance protections to existing tenants before December 19, 2021, or at the commencement or renewal of their lease.\",\n      \"key_value\": null,\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": \"The Santa Ana City Council on Tuesday night adopted two new ordinances to help protect renters: a Rent Stabilization Ordinance, which limits residential rent increases to no more than 3% per year, and a Just Cause Eviction Ordinance, which limits the allowed reasons for which a renter can be evicted.\",\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": \"The new ordinances are not effective until November 19, 2021.\",\n      \"effective_date_evidence_kind\": \"explicit_operative_date\",\n      \"effective_date\": \"2021-11-19\",\n      \"conflict_note\": null\n    }\n  ],\n  \"no_rules_justification\": null\n}"
+}

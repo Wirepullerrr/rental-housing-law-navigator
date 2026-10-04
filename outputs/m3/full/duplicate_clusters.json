@@ -1,0 +1,1455 @@
+{
+  "note": "Audit only: likely duplicates and overlaps found by deterministic text and citation matching, over published records and held (unpublished) records. Nothing was merged or removed; any later deduplication must keep provenance and temporal distinctions (status, effective_date). 'similar_text_within_document' also lists distinct sibling provisions with parallel wording. Not legal advice.",
+  "counts": {
+    "overlapping_source_documents": 3,
+    "identical_quote_across_documents": 1,
+    "same_statute_multiple_documents": 2,
+    "same_text_within_document": 16,
+    "similar_text_within_document": 12,
+    "lexically_overlapping_quotes": 5
+  },
+  "counts_with_two_or_more_published": {
+    "overlapping_source_documents": 3,
+    "identical_quote_across_documents": 1,
+    "same_statute_multiple_documents": 2,
+    "same_text_within_document": 6,
+    "similar_text_within_document": 12,
+    "lexically_overlapping_quotes": 4
+  },
+  "clusters": [
+    {
+      "type": "overlapping_source_documents",
+      "documents": [
+        "D045",
+        "D046"
+      ],
+      "text_jaccard_8gram": 0.614,
+      "rules": [
+        {
+          "team_rule_id": "r-443a0939a1",
+          "source_doc_id": "D045",
+          "jurisdiction": "MA",
+          "category": "algorithmic_rent_setting",
+          "citation": "Bill H.5222",
+          "status": "pending",
+          "effective_date": null,
+          "published": true,
+          "quoted_span": "An Act relative to preventing algorithmic rent fixing in the rental housing market"
+        },
+        {
+          "team_rule_id": "r-655b2201a6",
+          "source_doc_id": "D046",
+          "jurisdiction": "MA",
+          "category": "algorithmic_rent_setting",
+          "citation": "Bill S.2983",
+          "status": "pending",
+          "effective_date": null,
+          "published": true,
+          "quoted_span": "An Act prohibiting algorithmic rent setting"
+        }
+      ]
+    },
+    {
+      "type": "overlapping_source_documents",
+      "documents": [
+        "D045",
+        "D047"
+      ],
+      "text_jaccard_8gram": 0.614,
+      "rules": [
+        {
+          "team_rule_id": "r-443a0939a1",
+          "source_doc_id": "D045",
+          "jurisdiction": "MA",
+          "category": "algorithmic_rent_setting",
+          "citation": "Bill H.5222",
+          "status": "pending",
+          "effective_date": null,
+          "published": true,
+          "quoted_span": "An Act relative to preventing algorithmic rent fixing in the rental housing market"
+        },
+        {
+          "team_rule_id": "r-8e76ddfce9",
+          "source_doc_id": "D047",
+          "jurisdiction": "MA",
+          "category": "algorithmic_rent_setting",
+          "citation": "Bill S.2983",
+          "status": "pending",
+          "effective_date": null,
+          "published": true,
+          "quoted_span": "An Act prohibiting algorithmic rent setting"
+        }
+      ]
+    },
+    {
+      "type": "overlapping_source_documents",
+      "documents": [
+        "D046",
+        "D047"
+      ],
+      "text_jaccard_8gram": 1.0,
+      "rules": [
+        {
+          "team_rule_id": "r-655b2201a6",
+          "source_doc_id": "D046",
+          "jurisdiction": "MA",
+          "category": "algorithmic_rent_setting",
+          "citation": "Bill S.2983",
+          "status": "pending",
+          "effective_date": null,
+          "published": true,
+          "quoted_span": "An Act prohibiting algorithmic rent setting"
+        },
+        {
+          "team_rule_id": "r-8e76ddfce9",
+          "source_doc_id": "D047",
+          "jurisdiction": "MA",
+          "category": "algorithmic_rent_setting",
+          "citation": "Bill S.2983",
+          "status": "pending",
+          "effective_date": null,
+          "published": true,
+          "quoted_span": "An Act prohibiting algorithmic rent setting"
+        }
+      ]
+    },
+    {
+      "type": "identical_quote_across_documents",
+      "rules": [
+        {
+          "team_rule_id": "r-655b2201a6",
+          "source_doc_id": "D046",
+          "jurisdiction": "MA",
+          "category": "algorithmic_rent_setting",
+          "citation": "Bill S.2983",
+          "status": "pending",
+          "effective_date": null,
+          "published": true,
+          "quoted_span": "An Act prohibiting algorithmic rent setting"
+        },
+        {
+          "team_rule_id": "r-8e76ddfce9",
+          "source_doc_id": "D047",
+          "jurisdiction": "MA",
+          "category": "algorithmic_rent_setting",
+          "citation": "Bill S.2983",
+          "status": "pending",
+          "effective_date": null,
+          "published": true,
+          "quoted_span": "An Act prohibiting algorithmic rent setting"
+        }
+      ]
+    },
+    {
+      "type": "same_statute_multiple_documents",
+      "citation_key": "CA Civ Code 1950.6",
+      "documents": [
+        "D005",
+        "D026"
+      ],
+      "temporal_variants": false,
+      "rules": [
+        {
+          "team_rule_id": "r-f7135fa392",
+          "source_doc_id": "D026",
+          "jurisdiction": "CA",
+          "category": "application_screening_fees",
+          "citation": "CIV § 1950.6(a)",
+          "status": "in_force",
+          "effective_date": null,
+          "published": true,
+          "quoted_span": "(a) Notwithstanding Section 1950.5, when a landlord or their agent receives a request to rent a residential property from an applicant, the landlord or their ag"
+        },
+        {
+          "team_rule_id": "r-bea9a82f4e",
+          "source_doc_id": "D026",
+          "jurisdiction": "CA",
+          "category": "application_screening_fees",
+          "citation": "CIV § 1950.6(b)",
+          "status": "in_force",
+          "effective_date": null,
+          "published": true,
+          "quoted_span": "(b) The amount of the application screening fee shall not be greater than the actual\nout-of-pocket costs of gathering information concerning the applicant, incl"
+        },
+        {
+          "team_rule_id": "r-79e94844fc",
+          "source_doc_id": "D026",
+          "jurisdiction": "CA",
+          "category": "application_screening_fees",
+          "citation": "CIV § 1950.6(c)(1)",
+          "status": "in_force",
+          "effective_date": null,
+          "published": true,
+          "quoted_span": "(c) (1) A landlord or their agent shall not charge an applicant an application screening fee when they know or should have known that no rental unit is availabl"
+        },
+        {
+          "team_rule_id": "r-e0e272c728",
+          "source_doc_id": "D026",
+          "jurisdiction": "CA",
+          "category": "application_screening_fees",
+          "citation": "CIV § 1950.6(c)(2)",
+          "status": "in_force",
+          "effective_date": null,
+          "published": true,
+          "quoted_span": "(2) A landlord or their agent may charge an applicant an application screening fee only if the landlord or their agent, at the time the application screening fe"
+        },
+        {
+          "team_rule_id": "r-250c5f9ad5",
+          "source_doc_id": "D026",
+          "jurisdiction": "CA",
+          "category": "application_screening_fees",
+          "citation": "CIV § 1950.6(d)",
+          "status": "in_force",
+          "effective_date": null,
+          "published": true,
+          "quoted_span": "(d) The landlord or their agent shall provide, personally, or by mail, the applicant with a receipt for the fee paid by the applicant, which receipt shall itemi"
+        },
+        {
+          "team_rule_id": "r-5250dab16a",
+          "source_doc_id": "D026",
+          "jurisdiction": "CA",
+          "category": "application_screening_fees",
+          "citation": "CIV § 1950.6(e)",
+          "status": "in_force",
+          "effective_date": null,
+          "published": true,
+          "quoted_span": "(e) If the landlord or their agent does\nnot perform a personal reference check or does not obtain a consumer credit report, the landlord or their agent shall re"
+        },
+        {
+          "team_rule_id": "r-3b846fd3bc",
+          "source_doc_id": "D026",
+          "jurisdiction": "CA",
+          "category": "application_screening_fees",
+          "citation": "CIV § 1950.6(f)",
+          "status": "in_force",
+          "effective_date": null,
+          "published": true,
+          "quoted_span": "(f) If an application screening fee has been paid by the applicant, the landlord or their agent shall provide a copy of the consumer credit report to the applic"
+        },
+        {
+          "team_rule_id": "r-1a257fd6ec",
+          "source_doc_id": "D005",
+          "jurisdiction": "Berkeley, CA",
+          "category": "application_screening_fees",
+          "citation": "Cal. Civ. Code § 1950.6",
+          "status": null,
+          "effective_date": null,
+          "published": false,
+          "quoted_span": "The maximum tenant screening fee for 2026 is\n$68.96"
+        },
+        {
+          "team_rule_id": "r-2961b3c915",
+          "source_doc_id": "D005",
+          "jurisdiction": "Berkeley, CA",
+          "category": "application_screening_fees",
+          "citation": "Cal. Civ. Code § 1950.6",
+          "status": null,
+          "effective_date": null,
+          "published": false,
+          "quoted_span": "Landlords may use screening fees to obtain information about a prospective tenant like a consumer credit report."
+        },
+        {
+          "team_rule_id": "r-8dc992a921",
+          "source_doc_id": "D005",
+          "jurisdiction": "Berkeley, CA",
+          "category": "application_screening_fees",
+          "citation": "Cal. Civ. Code § 1950.6",
+          "status": null,
+          "effective_date": null,
+          "published": false,
+          "quoted_span": "Prospective tenants should expect to receive a copy of their credit report within 7 days of receipt by the landlord, a receipt for the fee paid and an itemized "
+        },
+        {
+          "team_rule_id": "r-9be185fcc6",
+          "source_doc_id": "D005",
+          "jurisdiction": "Berkeley, CA",
+          "category": "application_screening_fees",
+          "citation": "Cal. Civ. Code § 1950.6",
+          "status": null,
+          "effective_date": null,
+          "published": false,
+          "quoted_span": "If the tenant provides a reusable screening report, the landlord must use it."
+        },
+        {
+          "team_rule_id": "r-44fc7ea23a",
+          "source_doc_id": "D005",
+          "jurisdiction": "Berkeley, CA",
+          "category": "application_screening_fees",
+          "citation": "Cal. Civ. Code § 1950.6",
+          "status": null,
+          "effective_date": null,
+          "published": false,
+          "quoted_span": "The landlord cannot charge a prospective tenant a screening fee if no rental unit is actually available."
+        },
+        {
+          "team_rule_id": "r-8fb1f27c51",
+          "source_doc_id": "D005",
+          "jurisdiction": "Berkeley, CA",
+          "category": "application_screening_fees",
+          "citation": "Cal. Civ. Code § 1950.6",
+          "status": null,
+          "effective_date": null,
+          "published": false,
+          "quoted_span": "The landlord must also return a screening fee to any applicant not selected, or have a policy under which they: (1) review applications in the order received an"
+        }
+      ]
+    },
+    {
+      "type": "same_statute_multiple_documents",
+      "citation_key": "Los Angeles, CA LAMC 151.09",
+      "documents": [
+        "D041",
+        "D043"
+      ],
+      "temporal_variants": false,
+      "rules": [
+        {
+          "team_rule_id": "r-d6fbb5bc32",
+          "source_doc_id": "D043",
+          "jurisdiction": "Los Angeles, CA",
+          "category": "just_cause_eviction",
+          "citation": "LAMC 151.09.G, 165.06",
+          "status": "in_force",
+          "effective_date": "2026-07-01",
+          "published": true,
+          "quoted_span": "Chart A: Relocation Assistance Amounts \nEffective July 1, 2026 through June 30, 2027 \nTenant \nHousehold \nTenants with \nLess Than 3 \nYears \nTenants with Length \n"
+        },
+        {
+          "team_rule_id": "r-65b9a2fde7",
+          "source_doc_id": "D043",
+          "jurisdiction": "Los Angeles, CA",
+          "category": "just_cause_eviction",
+          "citation": "LAMC 151.09.G, LAMC 165.06 (Bulletin A - Chart A)",
+          "status": "in_force",
+          "effective_date": "2026-07-01",
+          "published": true,
+          "quoted_span": "Chart A: Relocation Assistance Amounts \nEffective July 1, 2026 through June 30, 2027 \nTenant \nHousehold \nTenants with \nLess Than 3 \nYears \nTenants with Length \n"
+        },
+        {
+          "team_rule_id": "r-ec09be7887",
+          "source_doc_id": "D041",
+          "jurisdiction": "Los Angeles, CA",
+          "category": "just_cause_eviction",
+          "citation": "LAMC 151.09.C.9 & 165.05.B.5",
+          "status": null,
+          "effective_date": null,
+          "published": false,
+          "quoted_span": "All notices to terminate a tenancy for all rental units subject to\nCity’s Rent Stabilization Ordinance (RSO\n) must be filed with the Los Angeles Housing Departm"
+        },
+        {
+          "team_rule_id": "r-f2f8339cef",
+          "source_doc_id": "D043",
+          "jurisdiction": "Los Angeles, CA",
+          "category": "just_cause_eviction",
+          "citation": "LAMC 151.09 / LAMC 165.03",
+          "status": null,
+          "effective_date": null,
+          "published": false,
+          "quoted_span": "All tenant not- at-fault evictions require payment of relocation assistance and the filing of a \nDeclaration of Intent to Evict form with the Los Angeles Housin"
+        },
+        {
+          "team_rule_id": "r-ff902485f8",
+          "source_doc_id": "D043",
+          "jurisdiction": "Los Angeles, CA",
+          "category": "just_cause_eviction",
+          "citation": "LAMC 151.09.A, 165.03, 47.06, 47.07",
+          "status": null,
+          "effective_date": null,
+          "published": false,
+          "quoted_span": "Not-At-Fault Reasons for Eviction\n1. The landlord evicts for the occupancy of her/himself, spouse, grandchildren, children,  \nparents or grandparents, or a resi"
+        },
+        {
+          "team_rule_id": "r-059f39d96c",
+          "source_doc_id": "D043",
+          "jurisdiction": "Los Angeles, CA",
+          "category": "just_cause_eviction",
+          "citation": "LAMC 151.09.G.5, 165.06.J",
+          "status": null,
+          "effective_date": null,
+          "published": false,
+          "quoted_span": "Relocation Offset: A landlord may offset the tenant's accumulated rent against any\nrelocation assistance, unless the relocation assistance is owed because a ter"
+        },
+        {
+          "team_rule_id": "r-09e032be8e",
+          "source_doc_id": "D043",
+          "jurisdiction": "Los Angeles, CA",
+          "category": "just_cause_eviction",
+          "citation": "LAMC 151.09 / LAMC 165.06",
+          "status": null,
+          "effective_date": null,
+          "published": false,
+          "quoted_span": "Non-payment Dispute - In an action by the landlord to recover possession of a rental unit, the \ntenant may raise as an affirmative defense the failure of the la"
+        }
+      ]
+    },
+    {
+      "type": "same_text_within_document",
+      "documents": [
+        "D041"
+      ],
+      "rules": [
+        {
+          "team_rule_id": "r-28e835fac1",
+          "source_doc_id": "D041",
+          "jurisdiction": "Los Angeles, CA",
+          "category": "rent_increase_limits",
+          "citation": "Rent Stabilization Ordinance",
+          "status": "in_force",
+          "effective_date": "2026-02-02",
+          "published": true,
+          "quoted_span": "Effective February 2, 2026, the landlord can no longer include an additional percentage increase for utilities."
+        },
+        {
+          "team_rule_id": "r-32b945322d",
+          "source_doc_id": "D041",
+          "jurisdiction": "Los Angeles, CA",
+          "category": "rent_increase_limits",
+          "citation": "Rent Stabilization Ordinance (RSO) - Annual Rent Increase & Utilities",
+          "status": "in_force",
+          "effective_date": "2026-02-02",
+          "published": true,
+          "quoted_span": "Rent may be increased once every 12 months by the allowable rent increase percentage (click here to\nview the allowable rent increase PDF\n). Effective February 2"
+        },
+        {
+          "team_rule_id": "r-51292d0b02",
+          "source_doc_id": "D041",
+          "jurisdiction": "Los Angeles, CA",
+          "category": "rent_increase_limits",
+          "citation": "Rent Stabilization Ordinance",
+          "status": null,
+          "effective_date": null,
+          "published": false,
+          "quoted_span": "Rent may be increased once every 12 months by the allowable rent increase percentage (click here to\nview the allowable rent increase PDF\n)."
+        }
+      ]
+    },
+    {
+      "type": "same_text_within_document",
+      "documents": [
+        "D041"
+      ],
+      "rules": [
+        {
+          "team_rule_id": "r-233a0e58a8",
+          "source_doc_id": "D041",
+          "jurisdiction": "Los Angeles, CA",
+          "category": "rent_increase_limits",
+          "citation": "Rent Stabilization Ordinance",
+          "status": "in_force",
+          "effective_date": "2020-03-30",
+          "published": true,
+          "quoted_span": "Effective March 30, 2020, through January 31, 2024, rent increases are prohibited for rental units subject to the Rent Stabilization Ordinance (RSO)."
+        },
+        {
+          "team_rule_id": "r-9d1a9baefe",
+          "source_doc_id": "D041",
+          "jurisdiction": "Los Angeles, CA",
+          "category": "rent_increase_limits",
+          "citation": "Rent Stabilization Ordinance (RSO) - Temporary Rent Freeze",
+          "status": "in_force",
+          "effective_date": "2020-03-30",
+          "published": true,
+          "quoted_span": "Effective March 30, 2020, through January 31, 2024, rent increases are prohibited for rental units subject to the Rent Stabilization Ordinance (RSO)."
+        }
+      ]
+    },
+    {
+      "type": "same_text_within_document",
+      "documents": [
+        "D041"
+      ],
+      "rules": [
+        {
+          "team_rule_id": "r-bda7d8578e",
+          "source_doc_id": "D041",
+          "jurisdiction": "Los Angeles, CA",
+          "category": "rent_increase_limits",
+          "citation": "Rent Stabilization Ordinance",
+          "status": "in_force",
+          "effective_date": "2026-02-02",
+          "published": true,
+          "quoted_span": "Effective February 2, 2026, an additonal 10% increase for an additional dependent added to the tenancy is no longer permitted."
+        },
+        {
+          "team_rule_id": "r-2772618a7a",
+          "source_doc_id": "D041",
+          "jurisdiction": "Los Angeles, CA",
+          "category": "rent_increase_limits",
+          "citation": "Rent Stabilization Ordinance (RSO) - Additional Tenant/Dependent Rent Increase",
+          "status": "in_force",
+          "effective_date": "2026-02-02",
+          "published": true,
+          "quoted_span": "Effective February 2, 2026, an additonal 10% increase for an additional dependent added to the tenancy is no longer permitted. However, a 10% for an additional "
+        },
+        {
+          "team_rule_id": "r-511bdd0c99",
+          "source_doc_id": "D041",
+          "jurisdiction": "Los Angeles, CA",
+          "category": "rent_increase_limits",
+          "citation": "Rent Stabilization Ordinance",
+          "status": null,
+          "effective_date": null,
+          "published": false,
+          "quoted_span": "However, a 10% for an additional tenant is allowed (not a dependent) if moves into a rental unit: Landlords can increase the rent within 60 days of learning abo"
+        },
+        {
+          "team_rule_id": "r-0041a8e514",
+          "source_doc_id": "D041",
+          "jurisdiction": "Los Angeles, CA",
+          "category": "rent_increase_limits",
+          "citation": "Rent Stabilization Ordinance",
+          "status": null,
+          "effective_date": null,
+          "published": false,
+          "quoted_span": "Rent increases for unauthorized additional tenants who moved between March 2020 and December 2023 must be provided an advance written notice of rental increase "
+        }
+      ]
+    },
+    {
+      "type": "same_text_within_document",
+      "documents": [
+        "D041"
+      ],
+      "rules": [
+        {
+          "team_rule_id": "r-5c6afa69b2",
+          "source_doc_id": "D041",
+          "jurisdiction": "Los Angeles, CA",
+          "category": "rent_increase_limits",
+          "citation": "Rent Stabilization Ordinance",
+          "status": "in_force",
+          "effective_date": "2020-01-01",
+          "published": true,
+          "quoted_span": "A $1.61 monthly surcharge may be collected by the landlord as the tenant’s portion of the\nRegistration\nfee. Effective January 1, 2020, the surcharge is $38.75. "
+        },
+        {
+          "team_rule_id": "r-942b66935a",
+          "source_doc_id": "D041",
+          "jurisdiction": "Los Angeles, CA",
+          "category": "rent_increase_limits",
+          "citation": "Rent Stabilization Ordinance (RSO) - Registration Fee Surcharge",
+          "status": "in_force",
+          "effective_date": "2020-01-01",
+          "published": true,
+          "quoted_span": "A $1.61 monthly surcharge may be collected by the landlord as the tenant’s portion of the\nRegistration\nfee. Effective January 1, 2020, the surcharge is $38.75. "
+        }
+      ]
+    },
+    {
+      "type": "same_text_within_document",
+      "documents": [
+        "D043"
+      ],
+      "rules": [
+        {
+          "team_rule_id": "r-d6fbb5bc32",
+          "source_doc_id": "D043",
+          "jurisdiction": "Los Angeles, CA",
+          "category": "just_cause_eviction",
+          "citation": "LAMC 151.09.G, 165.06",
+          "status": "in_force",
+          "effective_date": "2026-07-01",
+          "published": true,
+          "quoted_span": "Chart A: Relocation Assistance Amounts \nEffective July 1, 2026 through June 30, 2027 \nTenant \nHousehold \nTenants with \nLess Than 3 \nYears \nTenants with Length \n"
+        },
+        {
+          "team_rule_id": "r-65b9a2fde7",
+          "source_doc_id": "D043",
+          "jurisdiction": "Los Angeles, CA",
+          "category": "just_cause_eviction",
+          "citation": "LAMC 151.09.G, LAMC 165.06 (Bulletin A - Chart A)",
+          "status": "in_force",
+          "effective_date": "2026-07-01",
+          "published": true,
+          "quoted_span": "Chart A: Relocation Assistance Amounts \nEffective July 1, 2026 through June 30, 2027 \nTenant \nHousehold \nTenants with \nLess Than 3 \nYears \nTenants with Length \n"
+        }
+      ]
+    },
+    {
+      "type": "same_text_within_document",
+      "documents": [
+        "D043"
+      ],
+      "rules": [
+        {
+          "team_rule_id": "r-668b8dade7",
+          "source_doc_id": "D043",
+          "jurisdiction": "Los Angeles, CA",
+          "category": "just_cause_eviction",
+          "citation": "LAMC 165.03.I(1), 151.22-151.28; Gov Code 66300 et seq.",
+          "status": "in_force",
+          "effective_date": "2025-02-11",
+          "published": true,
+          "quoted_span": "To terminate tenancy for the purpose of demolition of a Protected Unit1, a landlord must: \n1. File with LAHD a Declaration of Intent to Evict for units regulate"
+        },
+        {
+          "team_rule_id": "r-bb3e19b67c",
+          "source_doc_id": "D043",
+          "jurisdiction": "Los Angeles, CA",
+          "category": "just_cause_eviction",
+          "citation": "LAMC 165.03.I(1), LAMC 151.22-151.28 (Bulletin B - Landlord Requirements)",
+          "status": null,
+          "effective_date": null,
+          "published": false,
+          "quoted_span": "Requirements for Landlords \nTo terminate tenancy for the purpose of demolition of a Protected Unit1, a landlord must: \n1. File with LAHD a Declaration of Intent"
+        }
+      ]
+    },
+    {
+      "type": "same_text_within_document",
+      "documents": [
+        "D043"
+      ],
+      "rules": [
+        {
+          "team_rule_id": "r-114d7070b8",
+          "source_doc_id": "D043",
+          "jurisdiction": "Los Angeles, CA",
+          "category": "just_cause_eviction",
+          "citation": "Resident Protections Ordinance (Ordinances 188481 & 188482)",
+          "status": "in_force",
+          "effective_date": "2026-07-01",
+          "published": true,
+          "quoted_span": "CHART B: Resident Protections Ordinance Standardized Payments \n(Only for Low, Very Low and Extremely Low Income Households) \nEffective July 1, 2026 through June"
+        },
+        {
+          "team_rule_id": "r-3fdac674f2",
+          "source_doc_id": "D043",
+          "jurisdiction": "Los Angeles, CA",
+          "category": "just_cause_eviction",
+          "citation": "Resident Protections Ordinance - Option 1 & Chart B (Bulletin B)",
+          "status": "in_force",
+          "effective_date": "2026-07-01",
+          "published": true,
+          "quoted_span": "CHART B: Resident Protections Ordinance Standardized Payments \n(Only for Low, Very Low and Extremely Low Income Households) \nEffective July 1, 2026 through June"
+        }
+      ]
+    },
+    {
+      "type": "same_text_within_document",
+      "documents": [
+        "D007"
+      ],
+      "rules": [
+        {
+          "team_rule_id": "r-01d27e67cb",
+          "source_doc_id": "D007",
+          "jurisdiction": "Berkeley, CA",
+          "category": "security_deposits",
+          "citation": "Return of Security Deposit - Deadline",
+          "status": null,
+          "effective_date": null,
+          "published": false,
+          "quoted_span": "All or any remaining portion of a security deposit must be returned\nwithin 21 days\nafter the tenant/s leave the unit vacant."
+        },
+        {
+          "team_rule_id": "r-a4adafdca4",
+          "source_doc_id": "D007",
+          "jurisdiction": "Berkeley, CA",
+          "category": "security_deposits",
+          "citation": "Return of Security Deposit",
+          "status": null,
+          "effective_date": null,
+          "published": false,
+          "quoted_span": "All or any remaining portion of a security deposit must be returned\nwithin 21 days\nafter the tenant/s leave the unit vacant."
+        }
+      ]
+    },
+    {
+      "type": "same_text_within_document",
+      "documents": [
+        "D041"
+      ],
+      "rules": [
+        {
+          "team_rule_id": "r-a5fd5403dd",
+          "source_doc_id": "D041",
+          "jurisdiction": "Los Angeles, CA",
+          "category": "rent_increase_limits",
+          "citation": "Rent Stabilization Ordinance",
+          "status": null,
+          "effective_date": null,
+          "published": false,
+          "quoted_span": "Rent may be increased to the market rate if the tenant:\nvoluntarily moves out;\ndoes not pay rent and is evicted;\nviolated the lease agreement and is evicted;\nis"
+        },
+        {
+          "team_rule_id": "r-1754d8ed9b",
+          "source_doc_id": "D041",
+          "jurisdiction": "Los Angeles, CA",
+          "category": "rent_increase_limits",
+          "citation": "Rent Stabilization Ordinance (RSO) - Market Rate Rent Increases",
+          "status": null,
+          "effective_date": null,
+          "published": false,
+          "quoted_span": "Rent may be increased to the market rate if the tenant:\nvoluntarily moves out;\ndoes not pay rent and is evicted;\nviolated the lease agreement and is evicted;\nis"
+        }
+      ]
+    },
+    {
+      "type": "same_text_within_document",
+      "documents": [
+        "D041"
+      ],
+      "rules": [
+        {
+          "team_rule_id": "r-b6702b65f2",
+          "source_doc_id": "D041",
+          "jurisdiction": "Los Angeles, CA",
+          "category": "rent_increase_limits",
+          "citation": "Rent Stabilization Ordinance",
+          "status": null,
+          "effective_date": null,
+          "published": false,
+          "quoted_span": "A $3.00 surcharge may be added to the rent for the installation and cost of a hard-wired\nsmoke detector\nor a combination smoke/\ncarbon monoxide detector\n."
+        },
+        {
+          "team_rule_id": "r-b71411e038",
+          "source_doc_id": "D041",
+          "jurisdiction": "Los Angeles, CA",
+          "category": "rent_increase_limits",
+          "citation": "Rent Stabilization Ordinance (RSO) - Smoke Detector Surcharge",
+          "status": null,
+          "effective_date": null,
+          "published": false,
+          "quoted_span": "A $3.00 surcharge may be added to the rent for the installation and cost of a hard-wired\nsmoke detector\nor a combination smoke/\ncarbon monoxide detector\n."
+        }
+      ]
+    },
+    {
+      "type": "same_text_within_document",
+      "documents": [
+        "D041"
+      ],
+      "rules": [
+        {
+          "team_rule_id": "r-d52f0a405e",
+          "source_doc_id": "D041",
+          "jurisdiction": "Los Angeles, CA",
+          "category": "just_cause_eviction",
+          "citation": "Rent Stabilization Ordinance",
+          "status": null,
+          "effective_date": null,
+          "published": false,
+          "quoted_span": "Tenant is at-fault\nFailure to pay rent\nFailure to fix or address a violation of the rental agreement\nCreating a nuisance or causing damage to the rental unit\nUs"
+        },
+        {
+          "team_rule_id": "r-8307ba4361",
+          "source_doc_id": "D041",
+          "jurisdiction": "Los Angeles, CA",
+          "category": "just_cause_eviction",
+          "citation": "Rent Stabilization Ordinance (RSO) - At-Fault Eviction Grounds",
+          "status": null,
+          "effective_date": null,
+          "published": false,
+          "quoted_span": "Tenant is at-fault\nFailure to pay rent\nFailure to fix or address a violation of the rental agreement\nCreating a nuisance or causing damage to the rental unit\nUs"
+        }
+      ]
+    },
+    {
+      "type": "same_text_within_document",
+      "documents": [
+        "D041"
+      ],
+      "rules": [
+        {
+          "team_rule_id": "r-07b17e94a7",
+          "source_doc_id": "D041",
+          "jurisdiction": "Los Angeles, CA",
+          "category": "just_cause_eviction",
+          "citation": "Rent Stabilization Ordinance",
+          "status": null,
+          "effective_date": null,
+          "published": false,
+          "quoted_span": "Tenant is not at-fault\nThe owner or immediate family member will move into the rental unit\nA resident manager will move into the rental unit\nDemolition and perm"
+        },
+        {
+          "team_rule_id": "r-49b3049d06",
+          "source_doc_id": "D041",
+          "jurisdiction": "Los Angeles, CA",
+          "category": "just_cause_eviction",
+          "citation": "Rent Stabilization Ordinance (RSO) - No-Fault Eviction Grounds",
+          "status": null,
+          "effective_date": null,
+          "published": false,
+          "quoted_span": "Tenant is not at-fault\nThe owner or immediate family member will move into the rental unit\nA resident manager will move into the rental unit\nDemolition and perm"
+        }
+      ]
+    },
+    {
+      "type": "same_text_within_document",
+      "documents": [
+        "D041"
+      ],
+      "rules": [
+        {
+          "team_rule_id": "r-cac9ef6f79",
+          "source_doc_id": "D041",
+          "jurisdiction": "Los Angeles, CA",
+          "category": "just_cause_eviction",
+          "citation": "Rent Stabilization Ordinance",
+          "status": null,
+          "effective_date": null,
+          "published": false,
+          "quoted_span": "No-fault evictions require the payment of\nrelocation assistance\n.\nChecklist for No-Fault Evictions\nFile a\nLandlord Declaration of Intent to Evict\nfiled with the"
+        },
+        {
+          "team_rule_id": "r-9cbad21648",
+          "source_doc_id": "D041",
+          "jurisdiction": "Los Angeles, CA",
+          "category": "just_cause_eviction",
+          "citation": "Rent Stabilization Ordinance (RSO) - No-Fault Eviction Checklist & Relocation",
+          "status": null,
+          "effective_date": null,
+          "published": false,
+          "quoted_span": "No-fault evictions require the payment of\nrelocation assistance\n.\nChecklist for No-Fault Evictions\nFile a\nLandlord Declaration of Intent to Evict\nfiled with the"
+        }
+      ]
+    },
+    {
+      "type": "same_text_within_document",
+      "documents": [
+        "D042"
+      ],
+      "rules": [
+        {
+          "team_rule_id": "r-440ddb41b0",
+          "source_doc_id": "D042",
+          "jurisdiction": "Los Angeles, CA",
+          "category": "rent_increase_limits",
+          "citation": "RSO Rent Increase Calculator",
+          "status": null,
+          "effective_date": null,
+          "published": false,
+          "quoted_span": "State law requires landlords to provide 30 days' written advance notice of rent increases of less than 10%."
+        },
+        {
+          "team_rule_id": "r-01bec098b6",
+          "source_doc_id": "D042",
+          "jurisdiction": "Los Angeles, CA",
+          "category": "rent_increase_limits",
+          "citation": "State Law Notice Requirement",
+          "status": null,
+          "effective_date": null,
+          "published": false,
+          "quoted_span": "State law requires landlords to provide 30 days' written advance notice of rent increases of less than 10%."
+        }
+      ]
+    },
+    {
+      "type": "same_text_within_document",
+      "documents": [
+        "D043"
+      ],
+      "rules": [
+        {
+          "team_rule_id": "r-09e032be8e",
+          "source_doc_id": "D043",
+          "jurisdiction": "Los Angeles, CA",
+          "category": "just_cause_eviction",
+          "citation": "LAMC 151.09 / LAMC 165.06",
+          "status": null,
+          "effective_date": null,
+          "published": false,
+          "quoted_span": "Non-payment Dispute - In an action by the landlord to recover possession of a rental unit, the \ntenant may raise as an affirmative defense the failure of the la"
+        },
+        {
+          "team_rule_id": "r-c5a3638345",
+          "source_doc_id": "D043",
+          "jurisdiction": "Los Angeles, CA",
+          "category": "just_cause_eviction",
+          "citation": "Bulletin A - Remedies",
+          "status": null,
+          "effective_date": null,
+          "published": false,
+          "quoted_span": "Non-payment Dispute - In an action by the landlord to recover possession of a rental unit, the \ntenant may raise as an affirmative defense the failure of the la"
+        }
+      ]
+    },
+    {
+      "type": "same_text_within_document",
+      "documents": [
+        "D079"
+      ],
+      "rules": [
+        {
+          "team_rule_id": "r-d006dfb886",
+          "source_doc_id": "D079",
+          "jurisdiction": "San Francisco, CA",
+          "category": "just_cause_eviction",
+          "citation": "Ordinance Section 37.9(a)",
+          "status": null,
+          "effective_date": null,
+          "published": false,
+          "quoted_span": "In order to evict a tenant from a rental unit covered by the Rent Ordinance, a landlord must have a \"just cause\" reason that is the dominant motive for pursuing"
+        },
+        {
+          "team_rule_id": "r-09612eee78",
+          "source_doc_id": "D079",
+          "jurisdiction": "San Francisco, CA",
+          "category": "just_cause_eviction",
+          "citation": "Ordinance Section 37.9(a)",
+          "status": null,
+          "effective_date": null,
+          "published": false,
+          "quoted_span": "To perform capital improvements or rehabilitation work\nthat will make the unit temporarily uninhabitable while the work is performed – the tenant must be allowe"
+        }
+      ]
+    },
+    {
+      "type": "similar_text_within_document",
+      "threshold": "word-set Jaccard >= 0.5",
+      "documents": [
+        "D001"
+      ],
+      "rules": [
+        {
+          "team_rule_id": "r-69fa3d774c",
+          "source_doc_id": "D001",
+          "jurisdiction": "Berkeley, CA",
+          "category": "algorithmic_rent_setting",
+          "citation": "§ 13.63.040(A)",
+          "status": "pending",
+          "effective_date": null,
+          "published": true,
+          "quoted_span": "A. The City Attorney may file a civil action for violations of section 13.63.030, \nsubsections A and/or B, for damages, injunctive relief, restitution/return of"
+        },
+        {
+          "team_rule_id": "r-70adeb54a5",
+          "source_doc_id": "D001",
+          "jurisdiction": "Berkeley, CA",
+          "category": "algorithmic_rent_setting",
+          "citation": "§ 13.63.040(B)",
+          "status": "pending",
+          "effective_date": null,
+          "published": true,
+          "quoted_span": "B. An aggrieved tenant may file a civil action for violations of section 13.63.030, \nsubsection B, for injunctive relief, money damages, and/or civil penalties "
+        }
+      ]
+    },
+    {
+      "type": "similar_text_within_document",
+      "threshold": "word-set Jaccard >= 0.5",
+      "documents": [
+        "D052"
+      ],
+      "rules": [
+        {
+          "team_rule_id": "r-1771577a7b",
+          "source_doc_id": "D052",
+          "jurisdiction": "MA",
+          "category": "security_deposits",
+          "citation": "M.G.L. c. 186, § 15B(2)(a)",
+          "status": "in_force",
+          "effective_date": null,
+          "published": true,
+          "quoted_span": "Any lessor or his agent who receives said rent in advance for the last month of tenancy shall, beginning with the first day of tenancy, pay interest at the rate"
+        },
+        {
+          "team_rule_id": "r-90babd568a",
+          "source_doc_id": "D052",
+          "jurisdiction": "MA",
+          "category": "security_deposits",
+          "citation": "M.G.L. c. 186, § 15B(3)(b)",
+          "status": "in_force",
+          "effective_date": null,
+          "published": true,
+          "quoted_span": "(b) A lessor of residential real property who holds a security deposit pursuant to this section for a period of one year or longer from the commencement of the "
+        }
+      ]
+    },
+    {
+      "type": "similar_text_within_document",
+      "threshold": "word-set Jaccard >= 0.5",
+      "documents": [
+        "D052"
+      ],
+      "rules": [
+        {
+          "team_rule_id": "r-8dc8145a0a",
+          "source_doc_id": "D052",
+          "jurisdiction": "MA",
+          "category": "security_deposits",
+          "citation": "M.G.L. c. 186, § 15B(5)",
+          "status": "in_force",
+          "effective_date": null,
+          "published": true,
+          "quoted_span": "(5) Whenever a lessor who receives a security deposit transfers his interest in the dwelling unit for which the security deposit is held, whether by sale, assig"
+        },
+        {
+          "team_rule_id": "r-9bbfd67725",
+          "source_doc_id": "D052",
+          "jurisdiction": "MA",
+          "category": "security_deposits",
+          "citation": "M.G.L. c. 186, § 15B(7A)",
+          "status": "in_force",
+          "effective_date": null,
+          "published": true,
+          "quoted_span": "(7A) Whenever a lessor who receives rent in advance for the last month of tenancy transfers his interest in the dwelling unit for which the rental advance was r"
+        }
+      ]
+    },
+    {
+      "type": "similar_text_within_document",
+      "threshold": "word-set Jaccard >= 0.5",
+      "documents": [
+        "D065"
+      ],
+      "rules": [
+        {
+          "team_rule_id": "r-4470965f2c",
+          "source_doc_id": "D065",
+          "jurisdiction": "NJ",
+          "category": "screening_restrictions",
+          "citation": "P.L. 2021, c.110, § 4(a)(1) (C.46:8-55(a)(1))",
+          "status": "in_force",
+          "effective_date": "2022-01-01",
+          "published": true,
+          "quoted_span": "A\nhousing provider\nshall not require an applicant to\ncomplete any housing application that includes any inquiries regarding an\napplicant’s criminal record prior"
+        },
+        {
+          "team_rule_id": "r-bae0d10762",
+          "source_doc_id": "D065",
+          "jurisdiction": "NJ",
+          "category": "screening_restrictions",
+          "citation": "P.L. 2021, c.110, § 7(a) (C.46:8-58(a))",
+          "status": "in_force",
+          "effective_date": "2022-01-01",
+          "published": true,
+          "quoted_span": "A housing provider shall not knowingly or\npurposefully publish, or cause to be published, any housing advertisement that\nexplicitly provides that the housing pr"
+        }
+      ]
+    },
+    {
+      "type": "similar_text_within_document",
+      "threshold": "word-set Jaccard >= 0.5",
+      "documents": [
+        "D073"
+      ],
+      "rules": [
+        {
+          "team_rule_id": "r-58888eee26",
+          "source_doc_id": "D073",
+          "jurisdiction": "San Diego, CA",
+          "category": "just_cause_eviction",
+          "citation": "§ 98.0704(b)(2)",
+          "status": "in_force",
+          "effective_date": null,
+          "published": true,
+          "quoted_span": "(2) The landlord seeks to recover possession to withdraw the residential \nrental property from the rental market."
+        },
+        {
+          "team_rule_id": "r-3148c8b77e",
+          "source_doc_id": "D073",
+          "jurisdiction": "San Diego, CA",
+          "category": "just_cause_eviction",
+          "citation": "§ 98.0704(b)(4)",
+          "status": "in_force",
+          "effective_date": null,
+          "published": true,
+          "quoted_span": "(4) The landlord seeks to recover possession to demolish or to \nsubstantially remodel the residential rental property."
+        }
+      ]
+    },
+    {
+      "type": "similar_text_within_document",
+      "threshold": "word-set Jaccard >= 0.5",
+      "documents": [
+        "D073"
+      ],
+      "rules": [
+        {
+          "team_rule_id": "r-edf96f464d",
+          "source_doc_id": "D073",
+          "jurisdiction": "San Diego, CA",
+          "category": "just_cause_eviction",
+          "citation": "§ 98.0705(d)",
+          "status": "in_force",
+          "effective_date": "2023-06-24",
+          "published": true,
+          "quoted_span": "(d) For a tenancy in a residential rental property subject to this Division \ncommencing or renewed on or after June 24, 2023, the notice required by \nsection 98"
+        },
+        {
+          "team_rule_id": "r-27cdd705d7",
+          "source_doc_id": "D073",
+          "jurisdiction": "San Diego, CA",
+          "category": "just_cause_eviction",
+          "citation": "San Diego Municipal Code § 98.0705(c)",
+          "status": "in_force",
+          "effective_date": null,
+          "published": true,
+          "quoted_span": "(c) For a tenancy in a residential rental property subject to this Division existing \nbefore June 24, 2023, the notice required by section 98.0705(a) and the \nT"
+        }
+      ]
+    },
+    {
+      "type": "similar_text_within_document",
+      "threshold": "word-set Jaccard >= 0.5",
+      "documents": [
+        "D073"
+      ],
+      "rules": [
+        {
+          "team_rule_id": "r-0cbfd3c8bf",
+          "source_doc_id": "D073",
+          "jurisdiction": "San Diego, CA",
+          "category": "just_cause_eviction",
+          "citation": "§ 98.0706(a)(2)",
+          "status": "in_force",
+          "effective_date": null,
+          "published": true,
+          "quoted_span": "(2) Notice to Commission. The landlord shall provide written notice to the \nCommission of the at-fault just cause termination of tenancy under \nsection 98.0704("
+        },
+        {
+          "team_rule_id": "r-ea1778b142",
+          "source_doc_id": "D073",
+          "jurisdiction": "San Diego, CA",
+          "category": "just_cause_eviction",
+          "citation": "§ 98.0706(b)(2)",
+          "status": "in_force",
+          "effective_date": null,
+          "published": true,
+          "quoted_span": "(2) Notice to Commission. The landlord shall provide written notice to the \nCommission of the no-fault just cause termination of tenancy under \nsection 98.0704("
+        }
+      ]
+    },
+    {
+      "type": "similar_text_within_document",
+      "threshold": "word-set Jaccard >= 0.5",
+      "documents": [
+        "D073"
+      ],
+      "rules": [
+        {
+          "team_rule_id": "r-0efe492238",
+          "source_doc_id": "D073",
+          "jurisdiction": "San Diego, CA",
+          "category": "just_cause_eviction",
+          "citation": "§ 98.0706(e)",
+          "status": "in_force",
+          "effective_date": null,
+          "published": true,
+          "quoted_span": "(e) In addition to other remedies applicable to landlord’s failure to comply with \nthis Division, a landlord's failure to strictly comply with section 98.0706 s"
+        },
+        {
+          "team_rule_id": "r-e08e4f529d",
+          "source_doc_id": "D073",
+          "jurisdiction": "San Diego, CA",
+          "category": "just_cause_eviction",
+          "citation": "§ 98.0710",
+          "status": "in_force",
+          "effective_date": null,
+          "published": true,
+          "quoted_span": "In addition to other remedies applicable to landlord’s failure to comply with this \nDivision, a landlord’s failure to comply with any provision of this Division"
+        }
+      ]
+    },
+    {
+      "type": "similar_text_within_document",
+      "threshold": "word-set Jaccard >= 0.5",
+      "documents": [
+        "D073"
+      ],
+      "rules": [
+        {
+          "team_rule_id": "r-57c5dbf598",
+          "source_doc_id": "D073",
+          "jurisdiction": "San Diego, CA",
+          "category": "just_cause_eviction",
+          "citation": "San Diego Municipal Code § 98.0704(a)(3)",
+          "status": "in_force",
+          "effective_date": null,
+          "published": true,
+          "quoted_span": "(3) the maintaining, committing, or permitting the maintenance or \ncommission of a nuisance as described in California Code of Civil \nProcedure section 1161(4),"
+        },
+        {
+          "team_rule_id": "r-7b2ebb45b8",
+          "source_doc_id": "D073",
+          "jurisdiction": "San Diego, CA",
+          "category": "just_cause_eviction",
+          "citation": "San Diego Municipal Code § 98.0704(a)(4)",
+          "status": "in_force",
+          "effective_date": null,
+          "published": true,
+          "quoted_span": "(4) the committing of waste as described in California Code of Civil \nProcedure section 1161(4), as may be amended;"
+        },
+        {
+          "team_rule_id": "r-182248a776",
+          "source_doc_id": "D073",
+          "jurisdiction": "San Diego, CA",
+          "category": "just_cause_eviction",
+          "citation": "San Diego Municipal Code § 98.0704(a)(8)",
+          "status": "in_force",
+          "effective_date": null,
+          "published": true,
+          "quoted_span": "(8) the tenant’s assignment or sublet of the residential rental property in \nviolation of the tenant’s lease, as described in California Code of Civil \nProcedur"
+        },
+        {
+          "team_rule_id": "r-40b6abc003",
+          "source_doc_id": "D073",
+          "jurisdiction": "San Diego, CA",
+          "category": "just_cause_eviction",
+          "citation": "San Diego Municipal Code § 98.0704(a)(10)",
+          "status": "in_force",
+          "effective_date": null,
+          "published": true,
+          "quoted_span": "(10) the tenant’s use of the residential rental property for an unlawful \npurpose as described in California Code of Civil Procedure \nsection 1161(4), as may be"
+        }
+      ]
+    },
+    {
+      "type": "similar_text_within_document",
+      "threshold": "word-set Jaccard >= 0.5",
+      "documents": [
+        "D080"
+      ],
+      "rules": [
+        {
+          "team_rule_id": "r-dd4441a314",
+          "source_doc_id": "D080",
+          "jurisdiction": "San Francisco, CA",
+          "category": "rent_increase_limits",
+          "citation": "Annual Rent Increase for 3/1/26 - 2/28/27 Announced",
+          "status": "in_force",
+          "effective_date": "2026-03-01",
+          "published": true,
+          "quoted_span": "For rent-controlled units, the annual allowable increase amount effective March 1, 2026 through February 28, 2027 is 1.6%."
+        },
+        {
+          "team_rule_id": "r-b6a7f5745b",
+          "source_doc_id": "D080",
+          "jurisdiction": "San Francisco, CA",
+          "category": "rent_increase_limits",
+          "citation": "Annual Rent Increase for 3/1/26 - 2/28/27 Announced",
+          "status": "in_force",
+          "effective_date": "2025-03-01",
+          "published": true,
+          "quoted_span": "The annual allowable increase amount effective March 1, 2025 through February 28, 2026 is 1.4%."
+        }
+      ]
+    },
+    {
+      "type": "similar_text_within_document",
+      "threshold": "word-set Jaccard >= 0.5",
+      "documents": [
+        "D083"
+      ],
+      "rules": [
+        {
+          "team_rule_id": "r-44de785e11",
+          "source_doc_id": "D083",
+          "jurisdiction": "San Francisco, CA",
+          "category": "rent_increase_limits",
+          "citation": "571 Allowable Annual Increases",
+          "status": "in_force",
+          "effective_date": "2026-03-01",
+          "published": true,
+          "quoted_span": "Allowable rent increase\nAllowable rent increase\nEffective Period\nAmount of Increase\nMarch 1, 2026 – February 28, 2027\n1.6%"
+        },
+        {
+          "team_rule_id": "r-48b1bdcc7f",
+          "source_doc_id": "D083",
+          "jurisdiction": "San Francisco, CA",
+          "category": "rent_increase_limits",
+          "citation": "Topic 571",
+          "status": "in_force",
+          "effective_date": "2026-03-01",
+          "published": true,
+          "quoted_span": "Allowable Rent Increase:\n1.6% for March 1, 2026 – February 28, 2027"
+        }
+      ]
+    },
+    {
+      "type": "similar_text_within_document",
+      "threshold": "word-set Jaccard >= 0.5",
+      "documents": [
+        "D083"
+      ],
+      "rules": [
+        {
+          "team_rule_id": "r-2bd3cbc740",
+          "source_doc_id": "D083",
+          "jurisdiction": "San Francisco, CA",
+          "category": "security_deposits",
+          "citation": "572 Security Deposit Interest Rates",
+          "status": "in_force",
+          "effective_date": "2026-03-01",
+          "published": true,
+          "quoted_span": "Security deposit interest\nSecurity deposit interest\nEffective Period\nAmount of Increase\nMarch 1, 2026 – February 28, 2027\n4.2%"
+        },
+        {
+          "team_rule_id": "r-ad83f622b4",
+          "source_doc_id": "D083",
+          "jurisdiction": "San Francisco, CA",
+          "category": "security_deposits",
+          "citation": "Topic 572",
+          "status": "in_force",
+          "effective_date": "2026-03-01",
+          "published": true,
+          "quoted_span": "Security Deposit Interest:\n4.2% for March 1, 2026 – February 28, 2027"
+        }
+      ]
+    },
+    {
+      "type": "lexically_overlapping_quotes",
+      "threshold": "word-set Jaccard >= 0.5",
+      "rules": [
+        {
+          "team_rule_id": "r-28e835fac1",
+          "source_doc_id": "D041",
+          "jurisdiction": "Los Angeles, CA",
+          "category": "rent_increase_limits",
+          "citation": "Rent Stabilization Ordinance",
+          "status": "in_force",
+          "effective_date": "2026-02-02",
+          "published": true,
+          "quoted_span": "Effective February 2, 2026, the landlord can no longer include an additional percentage increase for utilities."
+        },
+        {
+          "team_rule_id": "r-009e9ceee5",
+          "source_doc_id": "D042",
+          "jurisdiction": "Los Angeles, CA",
+          "category": "rent_increase_limits",
+          "citation": "RSO Rent Increase Calculator",
+          "status": "in_force",
+          "effective_date": "2026-02-02",
+          "published": true,
+          "quoted_span": "Beginning February 2, 2026, a landlord can no longer include any additional percentage increase for utilities."
+        }
+      ]
+    },
+    {
+      "type": "lexically_overlapping_quotes",
+      "threshold": "word-set Jaccard >= 0.5",
+      "rules": [
+        {
+          "team_rule_id": "r-655b2201a6",
+          "source_doc_id": "D046",
+          "jurisdiction": "MA",
+          "category": "algorithmic_rent_setting",
+          "citation": "Bill S.2983",
+          "status": "pending",
+          "effective_date": null,
+          "published": true,
+          "quoted_span": "An Act prohibiting algorithmic rent setting"
+        },
+        {
+          "team_rule_id": "r-8e76ddfce9",
+          "source_doc_id": "D047",
+          "jurisdiction": "MA",
+          "category": "algorithmic_rent_setting",
+          "citation": "Bill S.2983",
+          "status": "pending",
+          "effective_date": null,
+          "published": true,
+          "quoted_span": "An Act prohibiting algorithmic rent setting"
+        }
+      ]
+    },
+    {
+      "type": "lexically_overlapping_quotes",
+      "threshold": "word-set Jaccard >= 0.5",
+      "rules": [
+        {
+          "team_rule_id": "r-2d39d82919",
+          "source_doc_id": "D050",
+          "jurisdiction": "MA",
+          "category": "just_cause_eviction",
+          "citation": "Chapter 186, Section 11",
+          "status": "in_force",
+          "effective_date": null,
+          "published": true,
+          "quoted_span": "If the neglect or refusal to pay the rent due was caused by a failure or delay of the federal government, the commonwealth or any municipality, or any departmen"
+        },
+        {
+          "team_rule_id": "r-f78d3701d6",
+          "source_doc_id": "D051",
+          "jurisdiction": "MA",
+          "category": "just_cause_eviction",
+          "citation": "G.L. c. 186, § 12",
+          "status": "in_force",
+          "effective_date": null,
+          "published": true,
+          "quoted_span": "If the neglect or refusal to pay the rent due was caused by a failure or delay of the federal government, the commonwealth or any municipality, or any departmen"
+        }
+      ]
+    },
+    {
+      "type": "lexically_overlapping_quotes",
+      "threshold": "word-set Jaccard >= 0.5",
+      "rules": [
+        {
+          "team_rule_id": "r-dd4441a314",
+          "source_doc_id": "D080",
+          "jurisdiction": "San Francisco, CA",
+          "category": "rent_increase_limits",
+          "citation": "Annual Rent Increase for 3/1/26 - 2/28/27 Announced",
+          "status": "in_force",
+          "effective_date": "2026-03-01",
+          "published": true,
+          "quoted_span": "For rent-controlled units, the annual allowable increase amount effective March 1, 2026 through February 28, 2027 is 1.6%."
+        },
+        {
+          "team_rule_id": "r-44de785e11",
+          "source_doc_id": "D083",
+          "jurisdiction": "San Francisco, CA",
+          "category": "rent_increase_limits",
+          "citation": "571 Allowable Annual Increases",
+          "status": "in_force",
+          "effective_date": "2026-03-01",
+          "published": true,
+          "quoted_span": "Allowable rent increase\nAllowable rent increase\nEffective Period\nAmount of Increase\nMarch 1, 2026 – February 28, 2027\n1.6%"
+        },
+        {
+          "team_rule_id": "r-48b1bdcc7f",
+          "source_doc_id": "D083",
+          "jurisdiction": "San Francisco, CA",
+          "category": "rent_increase_limits",
+          "citation": "Topic 571",
+          "status": "in_force",
+          "effective_date": "2026-03-01",
+          "published": true,
+          "quoted_span": "Allowable Rent Increase:\n1.6% for March 1, 2026 – February 28, 2027"
+        }
+      ]
+    },
+    {
+      "type": "lexically_overlapping_quotes",
+      "threshold": "word-set Jaccard >= 0.5",
+      "rules": [
+        {
+          "team_rule_id": "r-be0f500797",
+          "source_doc_id": "D040",
+          "jurisdiction": "Los Angeles, CA",
+          "category": "just_cause_eviction",
+          "citation": "Legal Reasons for Eviction - Tenant is at-fault",
+          "status": null,
+          "effective_date": null,
+          "published": false,
+          "quoted_span": "Under the JCO, the landlord may recover possession of a rental unit\nin specific situations. Below is a list of reasons for which a tenant could be evicted and\nw"
+        },
+        {
+          "team_rule_id": "r-d52f0a405e",
+          "source_doc_id": "D041",
+          "jurisdiction": "Los Angeles, CA",
+          "category": "just_cause_eviction",
+          "citation": "Rent Stabilization Ordinance",
+          "status": null,
+          "effective_date": null,
+          "published": false,
+          "quoted_span": "Tenant is at-fault\nFailure to pay rent\nFailure to fix or address a violation of the rental agreement\nCreating a nuisance or causing damage to the rental unit\nUs"
+        },
+        {
+          "team_rule_id": "r-8307ba4361",
+          "source_doc_id": "D041",
+          "jurisdiction": "Los Angeles, CA",
+          "category": "just_cause_eviction",
+          "citation": "Rent Stabilization Ordinance (RSO) - At-Fault Eviction Grounds",
+          "status": null,
+          "effective_date": null,
+          "published": false,
+          "quoted_span": "Tenant is at-fault\nFailure to pay rent\nFailure to fix or address a violation of the rental agreement\nCreating a nuisance or causing damage to the rental unit\nUs"
+        }
+      ]
+    }
+  ]
+}

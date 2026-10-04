@@ -1,0 +1,427 @@
+{
+  "disclaimer": "Not legal advice. Automated extraction for a research prototype; verify against the cited source.",
+  "run_at": "2026-10-04T02:48:22+00:00",
+  "source": {
+    "doc_id": "D009",
+    "jurisdiction": "Berkeley, CA",
+    "url": "https://rentboard.berkeleyca.gov/sites/default/files/documents/Rent%20Ordinance%20Coverage%20by%20Unit%20Type.pdf",
+    "source_type": "official",
+    "retrieved_at": "2026-10-01T22:35Z",
+    "text_file": "text/D009.txt",
+    "content_sha256": "14a340ac6c60b8f95f789993307f60ed7611d0f34837e1e3ccb1f42af05ea006",
+    "body_chars": 2522
+  },
+  "provider": "gemini",
+  "model": "gemini-3.8-flash",
+  "prompt_version": "v7",
+  "prompt_sha256": "72c70f93b0bfeddb6bf5ba8c638318a98ae8b7da4cf91ea4753570bae0d3ef0f",
+  "response_schema_sha256": "c15306da6f21dc72f06e78405f94ed61dc9e59288138cc98b5b5bf9b62ac403c",
+  "generation_settings": {
+    "temperature": null,
+    "seed": 20261001,
+    "thinking_level": "medium"
+  },
+  "as_of": "2026-10-01",
+  "cache_key": "6d1226b9efe90d3472cc95562e2c63f1d3747de49f1732681e8d39d9bf73c311",
+  "cache_hit": false,
+  "cache_entry": "cache/extraction/6d1226b9efe90d3472cc95562e2c63f1d3747de49f1732681e8d39d9bf73c311.json",
+  "provider_metadata": {
+    "api": "interactions.create",
+    "interaction_id": "",
+    "model": "gemini-3.8-flash",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4584,
+      "output_tokens": 1719,
+      "thinking_tokens": 6370,
+      "total_tokens": 12673
+    }
+  },
+  "candidate_count": 0,
+  "accepted_count": 0,
+  "rules": [],
+  "candidates": [],
+  "posture": {
+    "declared": "official_explanatory_page",
+    "evidence": "Guide to Coverage under Berkeley’s Rent Stabilization and Eviction for Just Cause Ordinance",
+    "evidence_check": {
+      "status": "exact_match",
+      "normalization": null,
+      "start": 171,
+      "end": 262,
+      "occurrences": 1,
+      "model_span": "Guide to Coverage under Berkeley’s Rent Stabilization and Eviction for Just Cause Ordinance",
+      "source_span": "Guide to Coverage under Berkeley’s Rent Stabilization and Eviction for Just Cause Ordinance",
+      "reason": null,
+      "reconstructed": false,
+      "parts": [],
+      "crossed_artifacts": []
+    },
+    "established": "official_explanatory_page",
+    "basis": "declared posture with verified evidence"
+  },
+  "base_dates": [],
+  "provision_inventory": [
+    {
+      "id": "P1",
+      "ref": "Table Row 1",
+      "anchor": "Most units in multifamily properties built before 1980**",
+      "summary": "Coverage status for multifamily properties built before 1980 under the Rent Ordinance.",
+      "role": "scope_condition",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "provision only states scope and coverage conditions of an external ordinance"
+    },
+    {
+      "id": "P2",
+      "ref": "Table Row 2",
+      "anchor": "Single family homes with current tenancies that began before 1996**",
+      "summary": "Coverage status for single-family homes with tenancies commencing before 1996.",
+      "role": "scope_condition",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "provision only states scope and coverage conditions of an external ordinance"
+    },
+    {
+      "id": "P3",
+      "ref": "Table Row 3",
+      "anchor": "Rooming house: single-family homes with five or more rooms rented",
+      "summary": "Coverage status for rooming houses with five or more rooms rented out individually.",
+      "role": "scope_condition",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "provision only states scope and coverage conditions of an external ordinance"
+    },
+    {
+      "id": "P4",
+      "ref": "Table Row 4",
+      "anchor": "New construction: units that were built and received a Certificate",
+      "summary": "Coverage status for new construction built and certified after June 1980.",
+      "role": "scope_condition",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "provision only states scope and coverage conditions of an external ordinance"
+    },
+    {
+      "id": "P5",
+      "ref": "Table Row 5",
+      "anchor": "Single-family home with a tenancy that began on or after",
+      "summary": "Coverage status for single-family homes with tenancies beginning on or after January 1, 1996.",
+      "role": "scope_condition",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "provision only states scope and coverage conditions of an external ordinance"
+    },
+    {
+      "id": "P6",
+      "ref": "Table Row 6",
+      "anchor": "Most condominiums** Partially Covered Yes No Yes Yes",
+      "summary": "Coverage status for most condominiums.",
+      "role": "scope_condition",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "provision only states scope and coverage conditions of an external ordinance"
+    },
+    {
+      "id": "P7",
+      "ref": "Table Row 7",
+      "anchor": "Units with the following government subsidies regardless of unit type:",
+      "summary": "Coverage status for units receiving Section 202 or Section 811 subsidies.",
+      "role": "scope_condition",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "provision only states scope and coverage conditions of an external ordinance"
+    },
+    {
+      "id": "P8",
+      "ref": "Table Row 8",
+      "anchor": "Regardless of unit type, units with Rental Supplement Program,",
+      "summary": "Coverage status for units with specified subsidies and a mortgage insured or held by HUD.",
+      "role": "scope_condition",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "provision only states scope and coverage conditions of an external ordinance"
+    },
+    {
+      "id": "P9",
+      "ref": "Table Row 9",
+      "anchor": "“Golden Duplex”: duplex that was owner-occupied on December 31,",
+      "summary": "Exemption for owner-occupied Golden Duplex properties.",
+      "role": "exemption",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "provision only states exemptions from an external ordinance"
+    },
+    {
+      "id": "P10",
+      "ref": "Table Row 10",
+      "anchor": "Unit where the owner shares a kitchen or bath with",
+      "summary": "Exemption for units where the owner shares a kitchen or bathroom with the tenant.",
+      "role": "exemption",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "provision only states exemptions from an external ordinance"
+    },
+    {
+      "id": "P11",
+      "ref": "Table Row 11",
+      "anchor": "Tenancies started after Nov 7, 2018, on properties where",
+      "summary": "Exemption for ADU-related tenancies started after November 7, 2018 with owner occupancy.",
+      "role": "exemption",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "provision only states exemptions from an external ordinance"
+    },
+    {
+      "id": "P12",
+      "ref": "Table Row 12",
+      "anchor": "University rental units such as dormitories. Exempt No No",
+      "summary": "Exemption for university rental units such as dormitories.",
+      "role": "exemption",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "provision only states exemptions from an external ordinance"
+    },
+    {
+      "id": "P13",
+      "ref": "Table Row 13",
+      "anchor": "Nonprofit Cooperative Exempt No No No No",
+      "summary": "Exemption for nonprofit cooperatives.",
+      "role": "exemption",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "provision only states exemptions from an external ordinance"
+    },
+    {
+      "id": "P14",
+      "ref": "Footnote (**)",
+      "anchor": "**Includes units with the following government subsidies: Housing Choice",
+      "summary": "Clarifies government subsidy programs referenced in table coverage entries.",
+      "role": "definition",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "definition/clarification of scope condition"
+    }
+  ],
+  "global_scope": [],
+  "source_view": {
+    "marker": "[[PAGE BREAK]]",
+    "segment_label": "[[SEGMENT {}]]",
+    "view_sha256": "ebbeff0f55b775236ede3b29ae08128d6caa90e1048530adc209c26f29726595",
+    "segments": [
+      {
+        "id": 1,
+        "raw_start": 0,
+        "raw_end": 2522
+      }
+    ],
+    "artifacts_removed": 0,
+    "artifacts": []
+  },
+  "coverage": {
+    "inventory_valid": true,
+    "anchors_located": "14/14",
+    "after_primary": {
+      "uncovered": [],
+      "unaccepted": [],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "scope_mappings": {
+      "requested": 0,
+      "applies": 0,
+      "does_not_apply": 0,
+      "unresolved": 0
+    },
+    "inventory_items": 14,
+    "in_scope_items": 0,
+    "in_scope_refs": 0,
+    "uncertain": [],
+    "final": {
+      "uncovered": [],
+      "unaccepted": [],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "link_mismatches": [],
+    "provisions": [],
+    "unrecorded_subdivisions": []
+  },
+  "scope_challenges": [
+    {
+      "ref": "Table Row 1",
+      "provision_id": "P1",
+      "role": "scope_condition",
+      "reason": "provision only states scope and coverage conditions of an external ordinance",
+      "summary": "Coverage status for multifamily properties built before 1980 under the Rent Ordinance.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role scope_condition is decided by other rules"
+    },
+    {
+      "ref": "Table Row 2",
+      "provision_id": "P2",
+      "role": "scope_condition",
+      "reason": "provision only states scope and coverage conditions of an external ordinance",
+      "summary": "Coverage status for single-family homes with tenancies commencing before 1996.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role scope_condition is decided by other rules"
+    },
+    {
+      "ref": "Table Row 3",
+      "provision_id": "P3",
+      "role": "scope_condition",
+      "reason": "provision only states scope and coverage conditions of an external ordinance",
+      "summary": "Coverage status for rooming houses with five or more rooms rented out individually.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role scope_condition is decided by other rules"
+    },
+    {
+      "ref": "Table Row 4",
+      "provision_id": "P4",
+      "role": "scope_condition",
+      "reason": "provision only states scope and coverage conditions of an external ordinance",
+      "summary": "Coverage status for new construction built and certified after June 1980.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role scope_condition is decided by other rules"
+    },
+    {
+      "ref": "Table Row 5",
+      "provision_id": "P5",
+      "role": "scope_condition",
+      "reason": "provision only states scope and coverage conditions of an external ordinance",
+      "summary": "Coverage status for single-family homes with tenancies beginning on or after January 1, 1996.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role scope_condition is decided by other rules"
+    },
+    {
+      "ref": "Table Row 6",
+      "provision_id": "P6",
+      "role": "scope_condition",
+      "reason": "provision only states scope and coverage conditions of an external ordinance",
+      "summary": "Coverage status for most condominiums.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role scope_condition is decided by other rules"
+    },
+    {
+      "ref": "Table Row 7",
+      "provision_id": "P7",
+      "role": "scope_condition",
+      "reason": "provision only states scope and coverage conditions of an external ordinance",
+      "summary": "Coverage status for units receiving Section 202 or Section 811 subsidies.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role scope_condition is decided by other rules"
+    },
+    {
+      "ref": "Table Row 8",
+      "provision_id": "P8",
+      "role": "scope_condition",
+      "reason": "provision only states scope and coverage conditions of an external ordinance",
+      "summary": "Coverage status for units with specified subsidies and a mortgage insured or held by HUD.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role scope_condition is decided by other rules"
+    },
+    {
+      "ref": "Table Row 9",
+      "provision_id": "P9",
+      "role": "exemption",
+      "reason": "provision only states exemptions from an external ordinance",
+      "summary": "Exemption for owner-occupied Golden Duplex properties.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role exemption is decided by other rules"
+    },
+    {
+      "ref": "Table Row 10",
+      "provision_id": "P10",
+      "role": "exemption",
+      "reason": "provision only states exemptions from an external ordinance",
+      "summary": "Exemption for units where the owner shares a kitchen or bathroom with the tenant.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role exemption is decided by other rules"
+    },
+    {
+      "ref": "Table Row 11",
+      "provision_id": "P11",
+      "role": "exemption",
+      "reason": "provision only states exemptions from an external ordinance",
+      "summary": "Exemption for ADU-related tenancies started after November 7, 2018 with owner occupancy.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role exemption is decided by other rules"
+    },
+    {
+      "ref": "Table Row 12",
+      "provision_id": "P12",
+      "role": "exemption",
+      "reason": "provision only states exemptions from an external ordinance",
+      "summary": "Exemption for university rental units such as dormitories.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role exemption is decided by other rules"
+    },
+    {
+      "ref": "Table Row 13",
+      "provision_id": "P13",
+      "role": "exemption",
+      "reason": "provision only states exemptions from an external ordinance",
+      "summary": "Exemption for nonprofit cooperatives.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role exemption is decided by other rules"
+    },
+    {
+      "ref": "Footnote (**)",
+      "provision_id": "P14",
+      "role": "definition",
+      "reason": "definition/clarification of scope condition",
+      "summary": "Clarifies government subsidy programs referenced in table coverage entries.",
+      "signals": {
+        "in_scope_neighbour": false,
+        "enumeration": true,
+        "normative_language": false,
+        "grounds_or_conditions": false
+      },
+      "challenged": false,
+      "why_not": "too few substantive signals",
+      "raw_start": 2114,
+      "raw_end": 2522
+    }
+  ],
+  "scope_mappings": [],
+  "legislative_session": null,
+  "empty_result": {
+    "reason": "The document is an informational guide table detailing whether various unit types are covered by or exempt from Berkeley's rent stabilization and eviction ordinance, and it sets forth no substantive legal duties, limitations, or tenant rights.",
+    "evidence": "Guide to Coverage under Berkeley’s Rent Stabilization and Eviction for Just Cause Ordinance",
+    "evidence_check": {
+      "status": "exact_match",
+      "normalization": null,
+      "start": 171,
+      "end": 262,
+      "occurrences": 1,
+      "model_span": "Guide to Coverage under Berkeley’s Rent Stabilization and Eviction for Just Cause Ordinance",
+      "source_span": "Guide to Coverage under Berkeley’s Rent Stabilization and Eviction for Just Cause Ordinance",
+      "reason": null,
+      "reconstructed": false,
+      "parts": [],
+      "crossed_artifacts": []
+    },
+    "verified": true,
+    "problem": null
+  },
+  "legacy_replay": null,
+  "repair": null,
+  "document_status": "complete",
+  "review_reasons": [],
+  "warnings": [],
+  "errors": [],
+  "raw_response_text": "{\n  \"document\": {\n    \"posture\": \"official_explanatory_page\",\n    \"evidence\": \"Guide to Coverage under Berkeley’s Rent Stabilization and Eviction for Just Cause Ordinance\"\n  },\n  \"provisions\": [\n    {\n      \"id\": \"P1\",\n      \"ref\": \"Table Row 1\",\n      \"anchor\": \"Most units in multifamily properties built before 1980**\",\n      \"summary\": \"Coverage status for multifamily properties built before 1980 under the Rent Ordinance.\",\n      \"role\": \"scope_condition\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"provision only states scope and coverage conditions of an external ordinance\"\n    },\n    {\n      \"id\": \"P2\",\n      \"ref\": \"Table Row 2\",\n      \"anchor\": \"Single family homes with current tenancies that began before 1996**\",\n      \"summary\": \"Coverage status for single-family homes with tenancies commencing before 1996.\",\n      \"role\": \"scope_condition\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"provision only states scope and coverage conditions of an external ordinance\"\n    },\n    {\n      \"id\": \"P3\",\n      \"ref\": \"Table Row 3\",\n      \"anchor\": \"Rooming house: single-family homes with five or more rooms rented\",\n      \"summary\": \"Coverage status for rooming houses with five or more rooms rented out individually.\",\n      \"role\": \"scope_condition\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"provision only states scope and coverage conditions of an external ordinance\"\n    },\n    {\n      \"id\": \"P4\",\n      \"ref\": \"Table Row 4\",\n      \"anchor\": \"New construction: units that were built and received a Certificate\",\n      \"summary\": \"Coverage status for new construction built and certified after June 1980.\",\n      \"role\": \"scope_condition\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"provision only states scope and coverage conditions of an external ordinance\"\n    },\n    {\n      \"id\": \"P5\",\n      \"ref\": \"Table Row 5\",\n      \"anchor\": \"Single-family home with a tenancy that began on or after\",\n      \"summary\": \"Coverage status for single-family homes with tenancies beginning on or after January 1, 1996.\",\n      \"role\": \"scope_condition\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"provision only states scope and coverage conditions of an external ordinance\"\n    },\n    {\n      \"id\": \"P6\",\n      \"ref\": \"Table Row 6\",\n      \"anchor\": \"Most condominiums** Partially Covered Yes No Yes Yes\",\n      \"summary\": \"Coverage status for most condominiums.\",\n      \"role\": \"scope_condition\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"provision only states scope and coverage conditions of an external ordinance\"\n    },\n    {\n      \"id\": \"P7\",\n      \"ref\": \"Table Row 7\",\n      \"anchor\": \"Units with the following government subsidies regardless of unit type:\",\n      \"summary\": \"Coverage status for units receiving Section 202 or Section 811 subsidies.\",\n      \"role\": \"scope_condition\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"provision only states scope and coverage conditions of an external ordinance\"\n    },\n    {\n      \"id\": \"P8\",\n      \"ref\": \"Table Row 8\",\n      \"anchor\": \"Regardless of unit type, units with Rental Supplement Program,\",\n      \"summary\": \"Coverage status for units with specified subsidies and a mortgage insured or held by HUD.\",\n      \"role\": \"scope_condition\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"provision only states scope and coverage conditions of an external ordinance\"\n    },\n    {\n      \"id\": \"P9\",\n      \"ref\": \"Table Row 9\",\n      \"anchor\": \"“Golden Duplex”: duplex that was owner-occupied on December 31,\",\n      \"summary\": \"Exemption for owner-occupied Golden Duplex properties.\",\n      \"role\": \"exemption\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"provision only states exemptions from an external ordinance\"\n    },\n    {\n      \"id\": \"P10\",\n      \"ref\": \"Table Row 10\",\n      \"anchor\": \"Unit where the owner shares a kitchen or bath with\",\n      \"summary\": \"Exemption for units where the owner shares a kitchen or bathroom with the tenant.\",\n      \"role\": \"exemption\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"provision only states exemptions from an external ordinance\"\n    },\n    {\n      \"id\": \"P11\",\n      \"ref\": \"Table Row 11\",\n      \"anchor\": \"Tenancies started after Nov 7, 2018, on properties where\",\n      \"summary\": \"Exemption for ADU-related tenancies started after November 7, 2018 with owner occupancy.\",\n      \"role\": \"exemption\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"provision only states exemptions from an external ordinance\"\n    },\n    {\n      \"id\": \"P12\",\n      \"ref\": \"Table Row 12\",\n      \"anchor\": \"University rental units such as dormitories. Exempt No No\",\n      \"summary\": \"Exemption for university rental units such as dormitories.\",\n      \"role\": \"exemption\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"provision only states exemptions from an external ordinance\"\n    },\n    {\n      \"id\": \"P13\",\n      \"ref\": \"Table Row 13\",\n      \"anchor\": \"Nonprofit Cooperative Exempt No No No No\",\n      \"summary\": \"Exemption for nonprofit cooperatives.\",\n      \"role\": \"exemption\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"provision only states exemptions from an external ordinance\"\n    },\n    {\n      \"id\": \"P14\",\n      \"ref\": \"Footnote (**)\",\n      \"anchor\": \"**Includes units with the following government subsidies: Housing Choice\",\n      \"summary\": \"Clarifies government subsidy programs referenced in table coverage entries.\",\n      \"role\": \"definition\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"definition/clarification of scope condition\"\n    }\n  ],\n  \"global_scope\": [],\n  \"rules\": [],\n  \"no_rules_justification\": {\n    \"reason\": \"The document is an informational guide table detailing whether various unit types are covered by or exempt from Berkeley's rent stabilization and eviction ordinance, and it sets forth no substantive legal duties, limitations, or tenant rights.\",\n    \"evidence\": \"Guide to Coverage under Berkeley’s Rent Stabilization and Eviction for Just Cause Ordinance\"\n  }\n}"
+}
