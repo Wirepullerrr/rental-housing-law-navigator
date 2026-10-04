@@ -1,0 +1,2580 @@
+{
+  "disclaimer": "Not legal advice. Automated extraction for a research prototype; verify against the cited source.",
+  "run_at": "2026-10-04T06:34:25+00:00",
+  "source": {
+    "doc_id": "D007",
+    "jurisdiction": "Berkeley, CA",
+    "url": "https://rentboard.berkeleyca.gov/rights-responsibilities/security-deposits",
+    "source_type": "official",
+    "retrieved_at": "2026-10-01T22:35Z",
+    "text_file": "text/D007.txt",
+    "content_sha256": "7d7dbbe214ecbfdb24682b00ea03adec1042fcdc31515d59f9528331716010ee",
+    "body_chars": 4734
+  },
+  "provider": "gemini",
+  "model": "gemini-3.8-flash",
+  "prompt_version": "v7",
+  "prompt_sha256": "be4f944893521a83af59c2aa6c4541dd59bf802a0759f406aa9a1b6349c27355",
+  "response_schema_sha256": "c15306da6f21dc72f06e78405f94ed61dc9e59288138cc98b5b5bf9b62ac403c",
+  "generation_settings": {
+    "temperature": null,
+    "seed": 20261001,
+    "thinking_level": "medium"
+  },
+  "as_of": "2026-10-01",
+  "cache_key": "a6132beeb54758b9c39596357c63f7c315c7acade1dd3c5ef1591d5d2452dc12",
+  "cache_hit": true,
+  "cache_entry": "cache/extraction/a6132beeb54758b9c39596357c63f7c315c7acade1dd3c5ef1591d5d2452dc12.json",
+  "provider_metadata": {
+    "api": "interactions.create",
+    "interaction_id": "",
+    "model": "gemini-3.8-flash",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4929,
+      "output_tokens": 5824,
+      "thinking_tokens": 14355,
+      "total_tokens": 25108
+    }
+  },
+  "candidate_count": 13,
+  "accepted_count": 5,
+  "rules": [
+    {
+      "team_rule_id": "r-498814afa8",
+      "jurisdiction": "Berkeley, CA",
+      "level": "city",
+      "category": "security_deposits",
+      "status": "in_force",
+      "title": "Security deposit cap of one month's rent",
+      "requirement": "[Basis: official explanatory text, not operative legal text] Landlords may only charge up to one month's rent as a security deposit for unfurnished and furnished units.",
+      "key_value": "one month's rent",
+      "coverage_conditions": null,
+      "exemptions": null,
+      "overrides": [],
+      "interaction": null,
+      "effective_date": "2024-07-01",
+      "citation": "Security deposit payments - 1 month limit",
+      "source_doc_id": "D007",
+      "source_url": "https://rentboard.berkeleyca.gov/rights-responsibilities/security-deposits",
+      "quoted_span": "Starting July 1, 2024, many landlords may only charge one month's rent for unfurnished and furnished units",
+      "confidence": null,
+      "conflict_flag": false,
+      "conflict_note": null
+    },
+    {
+      "team_rule_id": "r-09afc65725",
+      "jurisdiction": "Berkeley, CA",
+      "level": "city",
+      "category": "security_deposits",
+      "status": "in_force",
+      "title": "Two-month security deposit exception for qualifying small landlords",
+      "requirement": "[Basis: official explanatory text, not operative legal text] Landlords who own only two rental properties with no more than four residential units total may charge up to two months' rent for furnished and unfurnished units if ownership is held by a natural person, family trust, or LLC where all members are natural persons.",
+      "key_value": "up to two months' rent",
+      "coverage_conditions": "Landlords who own only two rental properties with no more than four residential units total if ownership is held by a natural person, family trust, or LLC where all members are natural persons.",
+      "exemptions": null,
+      "overrides": [],
+      "interaction": null,
+      "effective_date": "2024-07-01",
+      "citation": "Security deposit payments - Small landlord exception",
+      "source_doc_id": "D007",
+      "source_url": "https://rentboard.berkeleyca.gov/rights-responsibilities/security-deposits",
+      "quoted_span": "Starting July 1, 2024, landlords who own only two rental properties with no more than four residential units total can charge up to two months' rent for furnished and unfurnished units if ownership is held by a natural person, family trust, or limited liability company (LLC) where all members are natural persons",
+      "confidence": null,
+      "conflict_flag": false,
+      "conflict_note": null
+    },
+    {
+      "team_rule_id": "r-7c9645d3ec",
+      "jurisdiction": "Berkeley, CA",
+      "level": "city",
+      "category": "security_deposits",
+      "status": "in_force",
+      "title": "Pre-tenancy photography requirement",
+      "requirement": "[Basis: official explanatory text, not operative legal text] A landlord must photograph the rental unit immediately before or at the start of a new tenancy to document its condition.",
+      "key_value": null,
+      "coverage_conditions": "Tenancies that begin on or after July 1, 2025.",
+      "exemptions": null,
+      "overrides": [],
+      "interaction": null,
+      "effective_date": "2025-07-01",
+      "citation": "Landlord requirement to photograph unit before or at the start of a new tenancy",
+      "source_doc_id": "D007",
+      "source_url": "https://rentboard.berkeleyca.gov/rights-responsibilities/security-deposits",
+      "quoted_span": "For tenancies that begin on or after July 1, 2025, a landlord must photograph the unit immediately before or at the start of a new tenancy to document the condition of the unit.",
+      "confidence": null,
+      "conflict_flag": false,
+      "conflict_note": null
+    },
+    {
+      "team_rule_id": "r-ea13dc6990",
+      "jurisdiction": "Berkeley, CA",
+      "level": "city",
+      "category": "security_deposits",
+      "status": "in_force",
+      "title": "Requirement to provide proof of completed repairs",
+      "requirement": "[Basis: official explanatory text, not operative legal text] Landlords must provide proof that necessary repairs were completed when making deductions.",
+      "key_value": null,
+      "coverage_conditions": null,
+      "exemptions": null,
+      "overrides": [],
+      "interaction": null,
+      "effective_date": "2025-01-01",
+      "citation": "Return of Security Deposit - Proof of repairs",
+      "source_doc_id": "D007",
+      "source_url": "https://rentboard.berkeleyca.gov/rights-responsibilities/security-deposits",
+      "quoted_span": "Starting January 1, 2025, landlords must provide proof that necessary repairs were completed.",
+      "confidence": null,
+      "conflict_flag": false,
+      "conflict_note": null
+    },
+    {
+      "team_rule_id": "r-2c517685d1",
+      "jurisdiction": "Berkeley, CA",
+      "level": "city",
+      "category": "security_deposits",
+      "status": "in_force",
+      "title": "Photographs and cost explanations for repair or cleaning deductions",
+      "requirement": "[Basis: official explanatory text, not operative legal text] Landlords must take photographs of the unit after regaining possession but before any repairs or cleaning for which a deposit deduction is intended, and must provide these photos and a written explanation of repair/cleaning costs to the tenant with the itemized statement.",
+      "key_value": null,
+      "coverage_conditions": null,
+      "exemptions": null,
+      "overrides": [],
+      "interaction": null,
+      "effective_date": "2025-04-01",
+      "citation": "Return of Security Deposit - Post-tenancy photographs",
+      "source_doc_id": "D007",
+      "source_url": "https://rentboard.berkeleyca.gov/rights-responsibilities/security-deposits",
+      "quoted_span": "Starting April 1, 2025, landlords must take photographs of a unit after regaining possession, but before any repairs or cleaning for which the landlord intends to make a deduction from the security deposit. These photos and a written explanation of the cost of the repairs/cleaning must be given to the tenant along with the itemized statement.",
+      "confidence": null,
+      "conflict_flag": false,
+      "conflict_note": null
+    }
+  ],
+  "candidates": [
+    {
+      "index": 0,
+      "origin": "primary",
+      "accepted": true,
+      "held": false,
+      "historical": false,
+      "temporal_state": "in_force",
+      "validity": {
+        "resolver": "validity-window/v1",
+        "boundaries": [
+          {
+            "kind": "unknown_temporal_note",
+            "role": "unknown",
+            "date": "2024-07-01",
+            "origin": "quoted_span",
+            "history": false,
+            "evidence": null,
+            "raw_start": null,
+            "raw_end": null
+          },
+          {
+            "kind": "unknown_temporal_note",
+            "role": "unknown",
+            "date": "2024-07-01",
+            "origin": "effective_date_evidence",
+            "history": false,
+            "evidence": null,
+            "raw_start": null,
+            "raw_end": null
+          }
+        ],
+        "end_exclusive": null,
+        "end_conflict": null,
+        "decision": {
+          "outcome": null,
+          "state": null,
+          "reason": null,
+          "start": null
+        }
+      },
+      "duplicate_of": null,
+      "rejection_reasons": [],
+      "provision_ids": [
+        "P1"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": null,
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 290,
+        "end": 396,
+        "occurrences": 1,
+        "model_span": "Starting July 1, 2024, many landlords may only charge one month's rent for unfurnished and furnished units",
+        "source_span": "Starting July 1, 2024, many landlords may only charge one month's rent for unfurnished and furnished units",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "Starting July 1, 2024, many landlords may only charge one month's rent for unfurnished and furnished units",
+            "status": "exact_match",
+            "start": 290,
+            "end": 396
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 290,
+        "end": 311,
+        "occurrences": 2,
+        "model_span": "Starting July 1, 2024",
+        "source_span": "Starting July 1, 2024",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [],
+      "temporal": {
+        "model_effective_date": "2024-07-01",
+        "model_kind": "explicit_operative_date",
+        "applied_kind": "explicit_operative_date",
+        "effective_date": "2024-07-01",
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null
+      },
+      "status_derivation": "enacted; effective 2024-07-01 is on or before as_of 2026-10-01",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-498814afa8",
+        "jurisdiction": "Berkeley, CA",
+        "level": "city",
+        "category": "security_deposits",
+        "status": "in_force",
+        "title": "Security deposit cap of one month's rent",
+        "requirement": "[Basis: official explanatory text, not operative legal text] Landlords may only charge up to one month's rent as a security deposit for unfurnished and furnished units.",
+        "key_value": "one month's rent",
+        "coverage_conditions": null,
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": "2024-07-01",
+        "citation": "Security deposit payments - 1 month limit",
+        "source_doc_id": "D007",
+        "source_url": "https://rentboard.berkeleyca.gov/rights-responsibilities/security-deposits",
+        "quoted_span": "Starting July 1, 2024, many landlords may only charge one month's rent for unfurnished and furnished units",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "security_deposits",
+        "citation": "Security deposit payments - 1 month limit",
+        "provision_ids": [
+          "P1"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "Starting July 1, 2024, many landlords may only charge one month's rent for unfurnished and furnished units"
+          }
+        ],
+        "title": "Security deposit cap of one month's rent",
+        "requirement": "Landlords may only charge up to one month's rent as a security deposit for unfurnished and furnished units.",
+        "key_value": "one month's rent",
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": null,
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": "Starting July 1, 2024",
+        "effective_date_evidence_kind": "explicit_operative_date",
+        "effective_date": "2024-07-01",
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 1,
+      "origin": "primary",
+      "accepted": true,
+      "held": false,
+      "historical": false,
+      "temporal_state": "in_force",
+      "validity": {
+        "resolver": "validity-window/v1",
+        "boundaries": [
+          {
+            "kind": "unknown_temporal_note",
+            "role": "unknown",
+            "date": "2024-07-01",
+            "origin": "quoted_span",
+            "history": false,
+            "evidence": null,
+            "raw_start": null,
+            "raw_end": null
+          },
+          {
+            "kind": "unknown_temporal_note",
+            "role": "unknown",
+            "date": "2024-07-01",
+            "origin": "effective_date_evidence",
+            "history": false,
+            "evidence": null,
+            "raw_start": null,
+            "raw_end": null
+          }
+        ],
+        "end_exclusive": null,
+        "end_conflict": null,
+        "decision": {
+          "outcome": null,
+          "state": null,
+          "reason": null,
+          "start": null
+        }
+      },
+      "duplicate_of": null,
+      "rejection_reasons": [],
+      "provision_ids": [
+        "P2"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": null,
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": "Landlords who own only two rental properties with no more than four residential units total if ownership is held by a natural person, family trust, or LLC where all members are natural persons.",
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 397,
+        "end": 710,
+        "occurrences": 1,
+        "model_span": "Starting July 1, 2024, landlords who own only two rental properties with no more than four residential units total can charge up to two months' rent for furnished and unfurnished units if ownership is held by a natural person, family trust, or limited liability company (LLC) where all members are natural persons",
+        "source_span": "Starting July 1, 2024, landlords who own only two rental properties with no more than four residential units total can charge up to two months' rent for furnished and unfurnished units if ownership is held by a natural person, family trust, or limited liability company (LLC) where all members are natural persons",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "Starting July 1, 2024, landlords who own only two rental properties with no more than four residential units total can charge up to two months' rent for furnished and unfurnished units if ownership is held by a natural person, family trust, or limited liability company (LLC) where all members are natural persons",
+            "status": "exact_match",
+            "start": 397,
+            "end": 710
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 290,
+        "end": 311,
+        "occurrences": 2,
+        "model_span": "Starting July 1, 2024",
+        "source_span": "Starting July 1, 2024",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [],
+      "temporal": {
+        "model_effective_date": "2024-07-01",
+        "model_kind": "explicit_operative_date",
+        "applied_kind": "explicit_operative_date",
+        "effective_date": "2024-07-01",
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null
+      },
+      "status_derivation": "enacted; effective 2024-07-01 is on or before as_of 2026-10-01",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-09afc65725",
+        "jurisdiction": "Berkeley, CA",
+        "level": "city",
+        "category": "security_deposits",
+        "status": "in_force",
+        "title": "Two-month security deposit exception for qualifying small landlords",
+        "requirement": "[Basis: official explanatory text, not operative legal text] Landlords who own only two rental properties with no more than four residential units total may charge up to two months' rent for furnished and unfurnished units if ownership is held by a natural person, family trust, or LLC where all members are natural persons.",
+        "key_value": "up to two months' rent",
+        "coverage_conditions": "Landlords who own only two rental properties with no more than four residential units total if ownership is held by a natural person, family trust, or LLC where all members are natural persons.",
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": "2024-07-01",
+        "citation": "Security deposit payments - Small landlord exception",
+        "source_doc_id": "D007",
+        "source_url": "https://rentboard.berkeleyca.gov/rights-responsibilities/security-deposits",
+        "quoted_span": "Starting July 1, 2024, landlords who own only two rental properties with no more than four residential units total can charge up to two months' rent for furnished and unfurnished units if ownership is held by a natural person, family trust, or limited liability company (LLC) where all members are natural persons",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "security_deposits",
+        "citation": "Security deposit payments - Small landlord exception",
+        "provision_ids": [
+          "P2"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "Starting July 1, 2024, landlords who own only two rental properties with no more than four residential units total can charge up to two months' rent for furnished and unfurnished units if ownership is held by a natural person, family trust, or limited liability company (LLC) where all members are natural persons"
+          }
+        ],
+        "title": "Two-month security deposit exception for qualifying small landlords",
+        "requirement": "Landlords who own only two rental properties with no more than four residential units total may charge up to two months' rent for furnished and unfurnished units if ownership is held by a natural person, family trust, or LLC where all members are natural persons.",
+        "key_value": "up to two months' rent",
+        "coverage_conditions": "Landlords who own only two rental properties with no more than four residential units total if ownership is held by a natural person, family trust, or LLC where all members are natural persons.",
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": null,
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": "Starting July 1, 2024",
+        "effective_date_evidence_kind": "explicit_operative_date",
+        "effective_date": "2024-07-01",
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 2,
+      "origin": "primary",
+      "accepted": false,
+      "held": true,
+      "historical": false,
+      "temporal_state": "held",
+      "validity": {
+        "resolver": "validity-window/v1",
+        "boundaries": [],
+        "end_exclusive": null,
+        "end_conflict": null,
+        "decision": {
+          "outcome": null,
+          "state": null,
+          "reason": null,
+          "start": null
+        }
+      },
+      "duplicate_of": null,
+      "rejection_reasons": [
+        "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      ],
+      "provision_ids": [
+        "P3"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": null,
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 711,
+        "end": 771,
+        "occurrences": 1,
+        "model_span": "Last month’s rent IS considered part of the security deposit",
+        "source_span": "Last month’s rent IS considered part of the security deposit",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "Last month’s rent IS considered part of the security deposit",
+            "status": "exact_match",
+            "start": 711,
+            "end": 771
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": null,
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": null,
+        "applied_kind": null,
+        "effective_date": null,
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null,
+        "unresolved_reason": "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      },
+      "status_derivation": "temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-122588fdda",
+        "jurisdiction": "Berkeley, CA",
+        "level": "city",
+        "category": "security_deposits",
+        "status": null,
+        "title": "Last month's rent included in security deposit",
+        "requirement": "[Basis: official explanatory text, not operative legal text] Last month's rent is considered part of the security deposit.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "Security deposit payments - Last month's rent",
+        "source_doc_id": "D007",
+        "source_url": "https://rentboard.berkeleyca.gov/rights-responsibilities/security-deposits",
+        "quoted_span": "Last month’s rent IS considered part of the security deposit",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "security_deposits",
+        "citation": "Security deposit payments - Last month's rent",
+        "provision_ids": [
+          "P3"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "Last month’s rent IS considered part of the security deposit"
+          }
+        ],
+        "title": "Last month's rent included in security deposit",
+        "requirement": "Last month's rent is considered part of the security deposit.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": null,
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": null,
+        "effective_date_evidence_kind": null,
+        "effective_date": null,
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 3,
+      "origin": "primary",
+      "accepted": true,
+      "held": false,
+      "historical": false,
+      "temporal_state": "in_force",
+      "validity": {
+        "resolver": "validity-window/v1",
+        "boundaries": [
+          {
+            "kind": "unknown_temporal_note",
+            "role": "unknown",
+            "date": "2025-07-01",
+            "origin": "quoted_span",
+            "history": false,
+            "evidence": null,
+            "raw_start": null,
+            "raw_end": null
+          },
+          {
+            "kind": "unknown_temporal_note",
+            "role": "unknown",
+            "date": "2025-07-01",
+            "origin": "effective_date_evidence",
+            "history": false,
+            "evidence": null,
+            "raw_start": null,
+            "raw_end": null
+          }
+        ],
+        "end_exclusive": null,
+        "end_conflict": null,
+        "decision": {
+          "outcome": null,
+          "state": null,
+          "reason": null,
+          "start": null
+        }
+      },
+      "duplicate_of": null,
+      "rejection_reasons": [],
+      "provision_ids": [
+        "P6"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": null,
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": "Tenancies that begin on or after July 1, 2025.",
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 1316,
+        "end": 1493,
+        "occurrences": 1,
+        "model_span": "For tenancies that begin on or after July 1, 2025, a landlord must photograph the unit immediately before or at the start of a new tenancy to document the condition of the unit.",
+        "source_span": "For tenancies that begin on or after July 1, 2025, a landlord must photograph the unit immediately before or at the start of a new tenancy to document the condition of the unit.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "For tenancies that begin on or after July 1, 2025, a landlord must photograph the unit immediately before or at the start of a new tenancy to document the condition of the unit.",
+            "status": "exact_match",
+            "start": 1316,
+            "end": 1493
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 1316,
+        "end": 1365,
+        "occurrences": 1,
+        "model_span": "For tenancies that begin on or after July 1, 2025",
+        "source_span": "For tenancies that begin on or after July 1, 2025",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [],
+      "temporal": {
+        "model_effective_date": "2025-07-01",
+        "model_kind": "explicit_operative_date",
+        "applied_kind": "explicit_operative_date",
+        "effective_date": "2025-07-01",
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null
+      },
+      "status_derivation": "enacted; effective 2025-07-01 is on or before as_of 2026-10-01",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-7c9645d3ec",
+        "jurisdiction": "Berkeley, CA",
+        "level": "city",
+        "category": "security_deposits",
+        "status": "in_force",
+        "title": "Pre-tenancy photography requirement",
+        "requirement": "[Basis: official explanatory text, not operative legal text] A landlord must photograph the rental unit immediately before or at the start of a new tenancy to document its condition.",
+        "key_value": null,
+        "coverage_conditions": "Tenancies that begin on or after July 1, 2025.",
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": "2025-07-01",
+        "citation": "Landlord requirement to photograph unit before or at the start of a new tenancy",
+        "source_doc_id": "D007",
+        "source_url": "https://rentboard.berkeleyca.gov/rights-responsibilities/security-deposits",
+        "quoted_span": "For tenancies that begin on or after July 1, 2025, a landlord must photograph the unit immediately before or at the start of a new tenancy to document the condition of the unit.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "security_deposits",
+        "citation": "Landlord requirement to photograph unit before or at the start of a new tenancy",
+        "provision_ids": [
+          "P6"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "For tenancies that begin on or after July 1, 2025, a landlord must photograph the unit immediately before or at the start of a new tenancy to document the condition of the unit."
+          }
+        ],
+        "title": "Pre-tenancy photography requirement",
+        "requirement": "A landlord must photograph the rental unit immediately before or at the start of a new tenancy to document its condition.",
+        "key_value": null,
+        "coverage_conditions": "Tenancies that begin on or after July 1, 2025.",
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": null,
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": "For tenancies that begin on or after July 1, 2025",
+        "effective_date_evidence_kind": "explicit_operative_date",
+        "effective_date": "2025-07-01",
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 4,
+      "origin": "primary",
+      "accepted": false,
+      "held": true,
+      "historical": false,
+      "temporal_state": "held",
+      "validity": {
+        "resolver": "validity-window/v1",
+        "boundaries": [],
+        "end_exclusive": null,
+        "end_conflict": null,
+        "decision": {
+          "outcome": null,
+          "state": null,
+          "reason": null,
+          "start": null
+        }
+      },
+      "duplicate_of": null,
+      "rejection_reasons": [
+        "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      ],
+      "provision_ids": [
+        "P7"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": null,
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 1539,
+        "end": 1690,
+        "occurrences": 1,
+        "model_span": "Under state law, landlords must offer a walk-through inspection during the last two weeks of a tenancy to identify any items that need repair/cleaning.",
+        "source_span": "Under state law, landlords must offer a walk-through inspection during the last two weeks of a tenancy to identify any items that need repair/cleaning.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "Under state law, landlords must offer a walk-through inspection during the last two weeks of a tenancy to identify any items that need repair/cleaning.",
+            "status": "exact_match",
+            "start": 1539,
+            "end": 1690
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": null,
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": null,
+        "applied_kind": null,
+        "effective_date": null,
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null,
+        "unresolved_reason": "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      },
+      "status_derivation": "temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-58640dda9f",
+        "jurisdiction": "Berkeley, CA",
+        "level": "city",
+        "category": "security_deposits",
+        "status": null,
+        "title": "Move-out walk-through inspection offer",
+        "requirement": "[Basis: official explanatory text, not operative legal text] Landlords must offer tenants a walk-through inspection during the last two weeks of a tenancy to identify any items requiring repair or cleaning.",
+        "key_value": "last two weeks of a tenancy",
+        "coverage_conditions": null,
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "Move-out walk-through inspection requirement",
+        "source_doc_id": "D007",
+        "source_url": "https://rentboard.berkeleyca.gov/rights-responsibilities/security-deposits",
+        "quoted_span": "Under state law, landlords must offer a walk-through inspection during the last two weeks of a tenancy to identify any items that need repair/cleaning.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "security_deposits",
+        "citation": "Move-out walk-through inspection requirement",
+        "provision_ids": [
+          "P7"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "Under state law, landlords must offer a walk-through inspection during the last two weeks of a tenancy to identify any items that need repair/cleaning."
+          }
+        ],
+        "title": "Move-out walk-through inspection offer",
+        "requirement": "Landlords must offer tenants a walk-through inspection during the last two weeks of a tenancy to identify any items requiring repair or cleaning.",
+        "key_value": "last two weeks of a tenancy",
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": null,
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": null,
+        "effective_date_evidence_kind": null,
+        "effective_date": null,
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 5,
+      "origin": "primary",
+      "accepted": false,
+      "held": true,
+      "historical": false,
+      "temporal_state": "held",
+      "validity": {
+        "resolver": "validity-window/v1",
+        "boundaries": [
+          {
+            "kind": "unknown_temporal_note",
+            "role": "unknown",
+            "date": "2003-01-01",
+            "origin": "quoted_span",
+            "history": false,
+            "evidence": null,
+            "raw_start": null,
+            "raw_end": null
+          }
+        ],
+        "end_exclusive": null,
+        "end_conflict": null,
+        "decision": {
+          "outcome": null,
+          "state": null,
+          "reason": null,
+          "start": null
+        }
+      },
+      "duplicate_of": null,
+      "rejection_reasons": [
+        "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      ],
+      "provision_ids": [
+        "P8"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": null,
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 1980,
+        "end": 2443,
+        "occurrences": 1,
+        "model_span": "A landlord may deduct only the amount that is reasonably necessary to:\nCover rent default\nRepair damages caused by a tenant or a tenant's guest other than normal wear and tear\nClean the unit to return it to the same level of cleanliness as at the start of the tenancy (for tenancies beginning after January 1, 2003)\nIf allowed by the lease, cover the cost of restoring or replacing personal property (including keys) or furniture, excluding ordinary wear and tear",
+        "source_span": "A landlord may deduct only the amount that is reasonably necessary to:\nCover rent default\nRepair damages caused by a tenant or a tenant's guest other than normal wear and tear\nClean the unit to return it to the same level of cleanliness as at the start of the tenancy (for tenancies beginning after January 1, 2003)\nIf allowed by the lease, cover the cost of restoring or replacing personal property (including keys) or furniture, excluding ordinary wear and tear",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "A landlord may deduct only the amount that is reasonably necessary to:\nCover rent default\nRepair damages caused by a tenant or a tenant's guest other than normal wear and tear\nClean the unit to return it to the same level of cleanliness as at the start of the tenancy (for tenancies beginning after January 1, 2003)\nIf allowed by the lease, cover the cost of restoring or replacing personal property (including keys) or furniture, excluding ordinary wear and tear",
+            "status": "exact_match",
+            "start": 1980,
+            "end": 2443
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": null,
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": null,
+        "applied_kind": null,
+        "effective_date": null,
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null,
+        "unresolved_reason": "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      },
+      "status_derivation": "temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-a182b13d07",
+        "jurisdiction": "Berkeley, CA",
+        "level": "city",
+        "category": "security_deposits",
+        "status": null,
+        "title": "Permitted security deposit deductions",
+        "requirement": "[Basis: official explanatory text, not operative legal text] A landlord may deduct from a security deposit only amounts reasonably necessary to cover rent default, repair tenant-caused damage beyond normal wear and tear, clean the unit back to move-in cleanliness (for tenancies beginning after January 1, 2003), or restore/replace personal property or furniture if permitted by the lease.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "Security deposit deductions",
+        "source_doc_id": "D007",
+        "source_url": "https://rentboard.berkeleyca.gov/rights-responsibilities/security-deposits",
+        "quoted_span": "A landlord may deduct only the amount that is reasonably necessary to:\nCover rent default\nRepair damages caused by a tenant or a tenant's guest other than normal wear and tear\nClean the unit to return it to the same level of cleanliness as at the start of the tenancy (for tenancies beginning after January 1, 2003)\nIf allowed by the lease, cover the cost of restoring or replacing personal property (including keys) or furniture, excluding ordinary wear and tear",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "security_deposits",
+        "citation": "Security deposit deductions",
+        "provision_ids": [
+          "P8"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "A landlord may deduct only the amount that is reasonably necessary to:\nCover rent default\nRepair damages caused by a tenant or a tenant's guest other than normal wear and tear\nClean the unit to return it to the same level of cleanliness as at the start of the tenancy (for tenancies beginning after January 1, 2003)\nIf allowed by the lease, cover the cost of restoring or replacing personal property (including keys) or furniture, excluding ordinary wear and tear"
+          }
+        ],
+        "title": "Permitted security deposit deductions",
+        "requirement": "A landlord may deduct from a security deposit only amounts reasonably necessary to cover rent default, repair tenant-caused damage beyond normal wear and tear, clean the unit back to move-in cleanliness (for tenancies beginning after January 1, 2003), or restore/replace personal property or furniture if permitted by the lease.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": null,
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": null,
+        "effective_date_evidence_kind": null,
+        "effective_date": null,
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 6,
+      "origin": "primary",
+      "accepted": false,
+      "held": true,
+      "historical": false,
+      "temporal_state": "held",
+      "validity": {
+        "resolver": "validity-window/v1",
+        "boundaries": [],
+        "end_exclusive": null,
+        "end_conflict": null,
+        "decision": {
+          "outcome": null,
+          "state": null,
+          "reason": null,
+          "start": null
+        }
+      },
+      "duplicate_of": null,
+      "rejection_reasons": [
+        "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      ],
+      "provision_ids": [
+        "P9"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": null,
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 2444,
+        "end": 2764,
+        "occurrences": 1,
+        "model_span": "The landlord cannot require a tenant to pay for, or assert a claim against the tenant or the security deposit for professional carpet cleaning or other professional cleaning services, unless reasonably necessary to return the premises to the condition it was in at the start of the tenancy, minus ordinary wear and tear.",
+        "source_span": "The landlord cannot require a tenant to pay for, or assert a claim against the tenant or the security deposit for professional carpet cleaning or other professional cleaning services, unless reasonably necessary to return the premises to the condition it was in at the start of the tenancy, minus ordinary wear and tear.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "The landlord cannot require a tenant to pay for, or assert a claim against the tenant or the security deposit for professional carpet cleaning or other professional cleaning services, unless reasonably necessary to return the premises to the condition it was in at the start of the tenancy, minus ordinary wear and tear.",
+            "status": "exact_match",
+            "start": 2444,
+            "end": 2764
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": null,
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": null,
+        "applied_kind": null,
+        "effective_date": null,
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null,
+        "unresolved_reason": "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      },
+      "status_derivation": "temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-a53b2b3dfd",
+        "jurisdiction": "Berkeley, CA",
+        "level": "city",
+        "category": "security_deposits",
+        "status": null,
+        "title": "Restriction on professional cleaning charges and deductions",
+        "requirement": "[Basis: official explanatory text, not operative legal text] A landlord cannot require a tenant to pay for, or assert a claim against the tenant or the security deposit for, professional carpet cleaning or other professional cleaning services unless reasonably necessary to return the premises to its initial condition, minus ordinary wear and tear.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "Security deposit deductions - Professional cleaning",
+        "source_doc_id": "D007",
+        "source_url": "https://rentboard.berkeleyca.gov/rights-responsibilities/security-deposits",
+        "quoted_span": "The landlord cannot require a tenant to pay for, or assert a claim against the tenant or the security deposit for professional carpet cleaning or other professional cleaning services, unless reasonably necessary to return the premises to the condition it was in at the start of the tenancy, minus ordinary wear and tear.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "security_deposits",
+        "citation": "Security deposit deductions - Professional cleaning",
+        "provision_ids": [
+          "P9"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "The landlord cannot require a tenant to pay for, or assert a claim against the tenant or the security deposit for professional carpet cleaning or other professional cleaning services, unless reasonably necessary to return the premises to the condition it was in at the start of the tenancy, minus ordinary wear and tear."
+          }
+        ],
+        "title": "Restriction on professional cleaning charges and deductions",
+        "requirement": "A landlord cannot require a tenant to pay for, or assert a claim against the tenant or the security deposit for, professional carpet cleaning or other professional cleaning services unless reasonably necessary to return the premises to its initial condition, minus ordinary wear and tear.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": null,
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": null,
+        "effective_date_evidence_kind": null,
+        "effective_date": null,
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 7,
+      "origin": "primary",
+      "accepted": false,
+      "held": true,
+      "historical": false,
+      "temporal_state": "held",
+      "validity": {
+        "resolver": "validity-window/v1",
+        "boundaries": [],
+        "end_exclusive": null,
+        "end_conflict": null,
+        "decision": {
+          "outcome": null,
+          "state": null,
+          "reason": null,
+          "start": null
+        }
+      },
+      "duplicate_of": null,
+      "rejection_reasons": [
+        "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      ],
+      "provision_ids": [
+        "P10"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": null,
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 2792,
+        "end": 2916,
+        "occurrences": 1,
+        "model_span": "All or any remaining portion of a security deposit must be returned\nwithin 21 days\nafter the tenant/s leave the unit vacant.",
+        "source_span": "All or any remaining portion of a security deposit must be returned\nwithin 21 days\nafter the tenant/s leave the unit vacant.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "All or any remaining portion of a security deposit must be returned\nwithin 21 days\nafter the tenant/s leave the unit vacant.",
+            "status": "exact_match",
+            "start": 2792,
+            "end": 2916
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": null,
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": null,
+        "applied_kind": null,
+        "effective_date": null,
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null,
+        "unresolved_reason": "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      },
+      "status_derivation": "temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-01d27e67cb",
+        "jurisdiction": "Berkeley, CA",
+        "level": "city",
+        "category": "security_deposits",
+        "status": null,
+        "title": "21-day timeline to return security deposit",
+        "requirement": "[Basis: official explanatory text, not operative legal text] All or any remaining portion of a security deposit must be returned within 21 days after the tenant or tenants vacate the unit.",
+        "key_value": "21 days",
+        "coverage_conditions": null,
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "Return of Security Deposit - Deadline",
+        "source_doc_id": "D007",
+        "source_url": "https://rentboard.berkeleyca.gov/rights-responsibilities/security-deposits",
+        "quoted_span": "All or any remaining portion of a security deposit must be returned\nwithin 21 days\nafter the tenant/s leave the unit vacant.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "security_deposits",
+        "citation": "Return of Security Deposit - Deadline",
+        "provision_ids": [
+          "P10"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "All or any remaining portion of a security deposit must be returned\nwithin 21 days\nafter the tenant/s leave the unit vacant."
+          }
+        ],
+        "title": "21-day timeline to return security deposit",
+        "requirement": "All or any remaining portion of a security deposit must be returned within 21 days after the tenant or tenants vacate the unit.",
+        "key_value": "21 days",
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": null,
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": null,
+        "effective_date_evidence_kind": null,
+        "effective_date": null,
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 8,
+      "origin": "primary",
+      "accepted": false,
+      "held": true,
+      "historical": false,
+      "temporal_state": "held",
+      "validity": {
+        "resolver": "validity-window/v1",
+        "boundaries": [],
+        "end_exclusive": null,
+        "end_conflict": null,
+        "decision": {
+          "outcome": null,
+          "state": null,
+          "reason": null,
+          "start": null
+        }
+      },
+      "duplicate_of": null,
+      "rejection_reasons": [
+        "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      ],
+      "provision_ids": [
+        "P11"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": null,
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 2917,
+        "end": 3282,
+        "occurrences": 1,
+        "model_span": "If deductions were made, the landlord must give the tenant a written statement itemizing the amount of and and purpose for any security deposit deductions, accompanied by copies of documents showing charges incurred and deducted by the landlord to repair or clean the premises, including a copy of any bill, invoice, or receipt for materials or supplies deductions.",
+        "source_span": "If deductions were made, the landlord must give the tenant a written statement itemizing the amount of and and purpose for any security deposit deductions, accompanied by copies of documents showing charges incurred and deducted by the landlord to repair or clean the premises, including a copy of any bill, invoice, or receipt for materials or supplies deductions.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "If deductions were made, the landlord must give the tenant a written statement itemizing the amount of and and purpose for any security deposit deductions, accompanied by copies of documents showing charges incurred and deducted by the landlord to repair or clean the premises, including a copy of any bill, invoice, or receipt for materials or supplies deductions.",
+            "status": "exact_match",
+            "start": 2917,
+            "end": 3282
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": null,
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": null,
+        "applied_kind": null,
+        "effective_date": null,
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null,
+        "unresolved_reason": "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      },
+      "status_derivation": "temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-624037c8ed",
+        "jurisdiction": "Berkeley, CA",
+        "level": "city",
+        "category": "security_deposits",
+        "status": null,
+        "title": "Itemized deduction statement and documentation",
+        "requirement": "[Basis: official explanatory text, not operative legal text] If deductions are made, the landlord must provide the tenant with a written statement itemizing the amount and purpose of any deductions, accompanied by copies of documents showing charges incurred, including bills, invoices, or receipts for materials or supplies.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "Return of Security Deposit - Itemized statement",
+        "source_doc_id": "D007",
+        "source_url": "https://rentboard.berkeleyca.gov/rights-responsibilities/security-deposits",
+        "quoted_span": "If deductions were made, the landlord must give the tenant a written statement itemizing the amount of and and purpose for any security deposit deductions, accompanied by copies of documents showing charges incurred and deducted by the landlord to repair or clean the premises, including a copy of any bill, invoice, or receipt for materials or supplies deductions.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "security_deposits",
+        "citation": "Return of Security Deposit - Itemized statement",
+        "provision_ids": [
+          "P11"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "If deductions were made, the landlord must give the tenant a written statement itemizing the amount of and and purpose for any security deposit deductions, accompanied by copies of documents showing charges incurred and deducted by the landlord to repair or clean the premises, including a copy of any bill, invoice, or receipt for materials or supplies deductions."
+          }
+        ],
+        "title": "Itemized deduction statement and documentation",
+        "requirement": "If deductions are made, the landlord must provide the tenant with a written statement itemizing the amount and purpose of any deductions, accompanied by copies of documents showing charges incurred, including bills, invoices, or receipts for materials or supplies.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": null,
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": null,
+        "effective_date_evidence_kind": null,
+        "effective_date": null,
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 9,
+      "origin": "primary",
+      "accepted": true,
+      "held": false,
+      "historical": false,
+      "temporal_state": "in_force",
+      "validity": {
+        "resolver": "validity-window/v1",
+        "boundaries": [
+          {
+            "kind": "unknown_temporal_note",
+            "role": "unknown",
+            "date": "2025-01-01",
+            "origin": "quoted_span",
+            "history": false,
+            "evidence": null,
+            "raw_start": null,
+            "raw_end": null
+          },
+          {
+            "kind": "unknown_temporal_note",
+            "role": "unknown",
+            "date": "2025-01-01",
+            "origin": "effective_date_evidence",
+            "history": false,
+            "evidence": null,
+            "raw_start": null,
+            "raw_end": null
+          }
+        ],
+        "end_exclusive": null,
+        "end_conflict": null,
+        "decision": {
+          "outcome": null,
+          "state": null,
+          "reason": null,
+          "start": null
+        }
+      },
+      "duplicate_of": null,
+      "rejection_reasons": [],
+      "provision_ids": [
+        "P12"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": null,
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 3360,
+        "end": 3453,
+        "occurrences": 1,
+        "model_span": "Starting January 1, 2025, landlords must provide proof that necessary repairs were completed.",
+        "source_span": "Starting January 1, 2025, landlords must provide proof that necessary repairs were completed.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "Starting January 1, 2025, landlords must provide proof that necessary repairs were completed.",
+            "status": "exact_match",
+            "start": 3360,
+            "end": 3453
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 3360,
+        "end": 3384,
+        "occurrences": 1,
+        "model_span": "Starting January 1, 2025",
+        "source_span": "Starting January 1, 2025",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [],
+      "temporal": {
+        "model_effective_date": "2025-01-01",
+        "model_kind": "explicit_operative_date",
+        "applied_kind": "explicit_operative_date",
+        "effective_date": "2025-01-01",
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null
+      },
+      "status_derivation": "enacted; effective 2025-01-01 is on or before as_of 2026-10-01",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-ea13dc6990",
+        "jurisdiction": "Berkeley, CA",
+        "level": "city",
+        "category": "security_deposits",
+        "status": "in_force",
+        "title": "Requirement to provide proof of completed repairs",
+        "requirement": "[Basis: official explanatory text, not operative legal text] Landlords must provide proof that necessary repairs were completed when making deductions.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": "2025-01-01",
+        "citation": "Return of Security Deposit - Proof of repairs",
+        "source_doc_id": "D007",
+        "source_url": "https://rentboard.berkeleyca.gov/rights-responsibilities/security-deposits",
+        "quoted_span": "Starting January 1, 2025, landlords must provide proof that necessary repairs were completed.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "security_deposits",
+        "citation": "Return of Security Deposit - Proof of repairs",
+        "provision_ids": [
+          "P12"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "Starting January 1, 2025, landlords must provide proof that necessary repairs were completed."
+          }
+        ],
+        "title": "Requirement to provide proof of completed repairs",
+        "requirement": "Landlords must provide proof that necessary repairs were completed when making deductions.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": null,
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": "Starting January 1, 2025",
+        "effective_date_evidence_kind": "explicit_operative_date",
+        "effective_date": "2025-01-01",
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 10,
+      "origin": "primary",
+      "accepted": true,
+      "held": false,
+      "historical": false,
+      "temporal_state": "in_force",
+      "validity": {
+        "resolver": "validity-window/v1",
+        "boundaries": [
+          {
+            "kind": "unknown_temporal_note",
+            "role": "unknown",
+            "date": "2025-04-01",
+            "origin": "quoted_span",
+            "history": false,
+            "evidence": null,
+            "raw_start": null,
+            "raw_end": null
+          },
+          {
+            "kind": "unknown_temporal_note",
+            "role": "unknown",
+            "date": "2025-04-01",
+            "origin": "effective_date_evidence",
+            "history": false,
+            "evidence": null,
+            "raw_start": null,
+            "raw_end": null
+          }
+        ],
+        "end_exclusive": null,
+        "end_conflict": null,
+        "decision": {
+          "outcome": null,
+          "state": null,
+          "reason": null,
+          "start": null
+        }
+      },
+      "duplicate_of": null,
+      "rejection_reasons": [],
+      "provision_ids": [
+        "P13"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": null,
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 3454,
+        "end": 3798,
+        "occurrences": 1,
+        "model_span": "Starting April 1, 2025, landlords must take photographs of a unit after regaining possession, but before any repairs or cleaning for which the landlord intends to make a deduction from the security deposit. These photos and a written explanation of the cost of the repairs/cleaning must be given to the tenant along with the itemized statement.",
+        "source_span": "Starting April 1, 2025, landlords must take photographs of a unit after regaining possession, but before any repairs or cleaning for which the landlord intends to make a deduction from the security deposit. These photos and a written explanation of the cost of the repairs/cleaning must be given to the tenant along with the itemized statement.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "Starting April 1, 2025, landlords must take photographs of a unit after regaining possession, but before any repairs or cleaning for which the landlord intends to make a deduction from the security deposit. These photos and a written explanation of the cost of the repairs/cleaning must be given to the tenant along with the itemized statement.",
+            "status": "exact_match",
+            "start": 3454,
+            "end": 3798
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 3454,
+        "end": 3476,
+        "occurrences": 1,
+        "model_span": "Starting April 1, 2025",
+        "source_span": "Starting April 1, 2025",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [],
+      "temporal": {
+        "model_effective_date": "2025-04-01",
+        "model_kind": "explicit_operative_date",
+        "applied_kind": "explicit_operative_date",
+        "effective_date": "2025-04-01",
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null
+      },
+      "status_derivation": "enacted; effective 2025-04-01 is on or before as_of 2026-10-01",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-2c517685d1",
+        "jurisdiction": "Berkeley, CA",
+        "level": "city",
+        "category": "security_deposits",
+        "status": "in_force",
+        "title": "Photographs and cost explanations for repair or cleaning deductions",
+        "requirement": "[Basis: official explanatory text, not operative legal text] Landlords must take photographs of the unit after regaining possession but before any repairs or cleaning for which a deposit deduction is intended, and must provide these photos and a written explanation of repair/cleaning costs to the tenant with the itemized statement.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": "2025-04-01",
+        "citation": "Return of Security Deposit - Post-tenancy photographs",
+        "source_doc_id": "D007",
+        "source_url": "https://rentboard.berkeleyca.gov/rights-responsibilities/security-deposits",
+        "quoted_span": "Starting April 1, 2025, landlords must take photographs of a unit after regaining possession, but before any repairs or cleaning for which the landlord intends to make a deduction from the security deposit. These photos and a written explanation of the cost of the repairs/cleaning must be given to the tenant along with the itemized statement.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "security_deposits",
+        "citation": "Return of Security Deposit - Post-tenancy photographs",
+        "provision_ids": [
+          "P13"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "Starting April 1, 2025, landlords must take photographs of a unit after regaining possession, but before any repairs or cleaning for which the landlord intends to make a deduction from the security deposit. These photos and a written explanation of the cost of the repairs/cleaning must be given to the tenant along with the itemized statement."
+          }
+        ],
+        "title": "Photographs and cost explanations for repair or cleaning deductions",
+        "requirement": "Landlords must take photographs of the unit after regaining possession but before any repairs or cleaning for which a deposit deduction is intended, and must provide these photos and a written explanation of repair/cleaning costs to the tenant with the itemized statement.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": null,
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": "Starting April 1, 2025",
+        "effective_date_evidence_kind": "explicit_operative_date",
+        "effective_date": "2025-04-01",
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 11,
+      "origin": "primary",
+      "accepted": false,
+      "held": true,
+      "historical": false,
+      "temporal_state": "held",
+      "validity": {
+        "resolver": "validity-window/v1",
+        "boundaries": [],
+        "end_exclusive": null,
+        "end_conflict": null,
+        "decision": {
+          "outcome": null,
+          "state": null,
+          "reason": null,
+          "start": null
+        }
+      },
+      "duplicate_of": null,
+      "rejection_reasons": [
+        "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      ],
+      "provision_ids": [
+        "P14"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": null,
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": "Tenancies in units fully or partially covered by Berkeley's Rent Ordinance.",
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 3825,
+        "end": 4064,
+        "occurrences": 1,
+        "model_span": "For tenancies in units fully or partially covered by Berkeley's Rent Ordinance, landlords must pay tenants interest on their security deposit at the end of each year and a prorated amount if the tenant moves out before the end of the year.",
+        "source_span": "For tenancies in units fully or partially covered by Berkeley's Rent Ordinance, landlords must pay tenants interest on their security deposit at the end of each year and a prorated amount if the tenant moves out before the end of the year.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "For tenancies in units fully or partially covered by Berkeley's Rent Ordinance, landlords must pay tenants interest on their security deposit at the end of each year and a prorated amount if the tenant moves out before the end of the year.",
+            "status": "exact_match",
+            "start": 3825,
+            "end": 4064
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": null,
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": null,
+        "applied_kind": null,
+        "effective_date": null,
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null,
+        "unresolved_reason": "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      },
+      "status_derivation": "temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-ef5889850d",
+        "jurisdiction": "Berkeley, CA",
+        "level": "city",
+        "category": "security_deposits",
+        "status": null,
+        "title": "Annual and prorated security deposit interest payments",
+        "requirement": "[Basis: official explanatory text, not operative legal text] Landlords must pay tenants interest on their security deposit at the end of each year and a prorated amount upon move-out before year-end.",
+        "key_value": null,
+        "coverage_conditions": "Tenancies in units fully or partially covered by Berkeley's Rent Ordinance.",
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "Security deposit interest",
+        "source_doc_id": "D007",
+        "source_url": "https://rentboard.berkeleyca.gov/rights-responsibilities/security-deposits",
+        "quoted_span": "For tenancies in units fully or partially covered by Berkeley's Rent Ordinance, landlords must pay tenants interest on their security deposit at the end of each year and a prorated amount if the tenant moves out before the end of the year.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "security_deposits",
+        "citation": "Security deposit interest",
+        "provision_ids": [
+          "P14"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "For tenancies in units fully or partially covered by Berkeley's Rent Ordinance, landlords must pay tenants interest on their security deposit at the end of each year and a prorated amount if the tenant moves out before the end of the year."
+          }
+        ],
+        "title": "Annual and prorated security deposit interest payments",
+        "requirement": "Landlords must pay tenants interest on their security deposit at the end of each year and a prorated amount upon move-out before year-end.",
+        "key_value": null,
+        "coverage_conditions": "Tenancies in units fully or partially covered by Berkeley's Rent Ordinance.",
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": null,
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": null,
+        "effective_date_evidence_kind": null,
+        "effective_date": null,
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 12,
+      "origin": "repair",
+      "accepted": false,
+      "held": true,
+      "historical": false,
+      "temporal_state": "held",
+      "validity": {
+        "resolver": "validity-window/v1",
+        "boundaries": [],
+        "end_exclusive": null,
+        "end_conflict": null,
+        "decision": {
+          "outcome": null,
+          "state": null,
+          "reason": null,
+          "start": null
+        }
+      },
+      "duplicate_of": null,
+      "rejection_reasons": [
+        "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      ],
+      "provision_ids": [
+        "P10"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": null,
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 2792,
+        "end": 2916,
+        "occurrences": 1,
+        "model_span": "All or any remaining portion of a security deposit must be returned\nwithin 21 days\nafter the tenant/s leave the unit vacant.",
+        "source_span": "All or any remaining portion of a security deposit must be returned\nwithin 21 days\nafter the tenant/s leave the unit vacant.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "All or any remaining portion of a security deposit must be returned\nwithin 21 days\nafter the tenant/s leave the unit vacant.",
+            "status": "exact_match",
+            "start": 2792,
+            "end": 2916
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": null,
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": null,
+        "applied_kind": null,
+        "effective_date": null,
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null,
+        "unresolved_reason": "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      },
+      "status_derivation": "temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-a4adafdca4",
+        "jurisdiction": "Berkeley, CA",
+        "level": "city",
+        "category": "security_deposits",
+        "status": null,
+        "title": "Return of Security Deposit Timeline",
+        "requirement": "[Basis: official explanatory text, not operative legal text] All or any remaining portion of a security deposit must be returned within 21 days after the tenant leaves the unit vacant.",
+        "key_value": "21 days",
+        "coverage_conditions": null,
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "Return of Security Deposit",
+        "source_doc_id": "D007",
+        "source_url": "https://rentboard.berkeleyca.gov/rights-responsibilities/security-deposits",
+        "quoted_span": "All or any remaining portion of a security deposit must be returned\nwithin 21 days\nafter the tenant/s leave the unit vacant.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "security_deposits",
+        "citation": "Return of Security Deposit",
+        "provision_ids": [
+          "P10"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "All or any remaining portion of a security deposit must be returned\nwithin 21 days\nafter the tenant/s leave the unit vacant."
+          }
+        ],
+        "title": "Return of Security Deposit Timeline",
+        "requirement": "All or any remaining portion of a security deposit must be returned within 21 days after the tenant leaves the unit vacant.",
+        "key_value": "21 days",
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": null,
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": null,
+        "effective_date_evidence_kind": null,
+        "effective_date": null,
+        "conflict_note": null
+      }
+    }
+  ],
+  "posture": {
+    "declared": "official_explanatory_page",
+    "evidence": "Learn the basics about security deposits under state law, and security deposit interest requirements under the Berkeley Rent Ordinance.",
+    "evidence_check": {
+      "status": "exact_match",
+      "normalization": null,
+      "start": 128,
+      "end": 263,
+      "occurrences": 1,
+      "model_span": "Learn the basics about security deposits under state law, and security deposit interest requirements under the Berkeley Rent Ordinance.",
+      "source_span": "Learn the basics about security deposits under state law, and security deposit interest requirements under the Berkeley Rent Ordinance.",
+      "reason": null,
+      "reconstructed": false,
+      "parts": [],
+      "crossed_artifacts": []
+    },
+    "established": "official_explanatory_page",
+    "basis": "declared posture with verified evidence"
+  },
+  "base_dates": [],
+  "provision_inventory": [
+    {
+      "id": "P1",
+      "ref": "Security deposit payments - 1 month limit",
+      "anchor": "Starting July 1, 2024, many landlords may only",
+      "summary": "Limits security deposits to one month's rent for unfurnished and furnished units.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "security_deposits",
+      "reason": null
+    },
+    {
+      "id": "P2",
+      "ref": "Security deposit payments - Small landlord exception",
+      "anchor": "Starting July 1, 2024, landlords who own only two",
+      "summary": "Permits qualifying small landlords owning up to two properties with no more than four total units to charge up to two months' rent.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "security_deposits",
+      "reason": null
+    },
+    {
+      "id": "P3",
+      "ref": "Security deposit payments - Last month's rent",
+      "anchor": "Last month’s rent IS considered part of the security",
+      "summary": "Establishes that last month's rent is considered part of the security deposit.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "security_deposits",
+      "reason": null
+    },
+    {
+      "id": "P4",
+      "ref": "Security deposit payments - First month's rent",
+      "anchor": "First month’s rent is NOT considered part of the",
+      "summary": "Clarifies that first month's rent is not considered part of the security deposit.",
+      "role": "scope_condition",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "scope clarification regarding first month's rent"
+    },
+    {
+      "id": "P5",
+      "ref": "Assembly Bill 12 overview",
+      "anchor": "A California law, Assembly Bill 12, changed the",
+      "summary": "Provides legislative background regarding AB 12 and previous deposit limits.",
+      "role": "history",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "legislative history and administrative explanation"
+    },
+    {
+      "id": "P6",
+      "ref": "Landlord requirement to photograph unit before or at the start of a new tenancy",
+      "anchor": "For tenancies that begin on or after July 1,",
+      "summary": "Requires landlords to photograph units immediately before or at tenancy commencement to document condition.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "security_deposits",
+      "reason": null
+    },
+    {
+      "id": "P7",
+      "ref": "Move-out walk-through inspection requirement",
+      "anchor": "Under state law, landlords must offer a walk-through",
+      "summary": "Requires landlords to offer a walk-through inspection during the last two weeks of tenancy.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "security_deposits",
+      "reason": null
+    },
+    {
+      "id": "P8",
+      "ref": "Security deposit deductions",
+      "anchor": "A landlord may deduct only the amount that is",
+      "summary": "Specifies the permissible purposes for which a landlord may make deductions from a security deposit.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "security_deposits",
+      "reason": null
+    },
+    {
+      "id": "P9",
+      "ref": "Professional cleaning deduction restrictions",
+      "anchor": "The landlord cannot require a tenant to pay for,",
+      "summary": "Restricts landlords from requiring payment or deducting from deposits for professional cleaning services.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "security_deposits",
+      "reason": null
+    },
+    {
+      "id": "P10",
+      "ref": "Return of Security Deposit - 21 days",
+      "anchor": "All or any remaining portion of a security deposit",
+      "summary": "Requires return of all or remaining deposit funds within 21 days after the tenant leaves the unit vacant.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "security_deposits",
+      "reason": null
+    },
+    {
+      "id": "P11",
+      "ref": "Return of Security Deposit - Itemized statement",
+      "anchor": "If deductions were made, the landlord must give the",
+      "summary": "Requires an itemized written statement and copies of receipts or invoices when deductions are made.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "security_deposits",
+      "reason": null
+    },
+    {
+      "id": "P12",
+      "ref": "Return of Security Deposit - Proof of repairs",
+      "anchor": "Starting January 1, 2025, landlords must provide proof that",
+      "summary": "Requires landlords to provide proof that necessary repairs were completed.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "security_deposits",
+      "reason": null
+    },
+    {
+      "id": "P13",
+      "ref": "Return of Security Deposit - Post-tenancy photographs",
+      "anchor": "Starting April 1, 2025, landlords must take photographs of",
+      "summary": "Requires landlords to photograph unit condition before repairs or cleaning deductions and provide photos and cost explanations.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "security_deposits",
+      "reason": null
+    },
+    {
+      "id": "P14",
+      "ref": "Security deposit interest",
+      "anchor": "For tenancies in units fully or partially covered by",
+      "summary": "Requires annual and prorated move-out payment of security deposit interest for units covered by Berkeley's Rent Ordinance.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "security_deposits",
+      "reason": null
+    }
+  ],
+  "global_scope": [],
+  "source_view": {
+    "marker": "[[PAGE BREAK]]",
+    "segment_label": "[[SEGMENT {}]]",
+    "view_sha256": "5e5e661840273307b9643d94802117970ef5c2bd49a63ed7a0bee11e906e58da",
+    "segments": [
+      {
+        "id": 1,
+        "raw_start": 0,
+        "raw_end": 4734
+      }
+    ],
+    "artifacts_removed": 0,
+    "artifacts": []
+  },
+  "coverage": {
+    "inventory_valid": true,
+    "anchors_located": "13/14",
+    "after_primary": {
+      "uncovered": [
+        "Return of Security Deposit - 21 days"
+      ],
+      "unaccepted": [
+        "Security deposit payments - Last month's rent",
+        "Move-out walk-through inspection requirement",
+        "Security deposit deductions",
+        "Professional cleaning deduction restrictions",
+        "Return of Security Deposit - Itemized statement",
+        "Security deposit interest"
+      ],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "scope_mappings": {
+      "requested": 0,
+      "applies": 0,
+      "does_not_apply": 0,
+      "unresolved": 0
+    },
+    "after_repair": {
+      "uncovered": [],
+      "unaccepted": [
+        "Security deposit payments - Last month's rent",
+        "Move-out walk-through inspection requirement",
+        "Security deposit deductions",
+        "Professional cleaning deduction restrictions",
+        "Return of Security Deposit - 21 days",
+        "Return of Security Deposit - Itemized statement",
+        "Security deposit interest"
+      ],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "repair_targets": {
+      "before_repair": 1,
+      "resolved_by_accepted_rule": 0,
+      "resolved_out_of_scope": 0,
+      "still_unresolved": 1
+    },
+    "inventory_items": 14,
+    "in_scope_items": 12,
+    "in_scope_refs": 12,
+    "uncertain": [],
+    "final": {
+      "uncovered": [],
+      "unaccepted": [
+        "Security deposit payments - Last month's rent",
+        "Move-out walk-through inspection requirement",
+        "Security deposit deductions",
+        "Professional cleaning deduction restrictions",
+        "Return of Security Deposit - 21 days",
+        "Return of Security Deposit - Itemized statement",
+        "Security deposit interest"
+      ],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "link_mismatches": [
+      "rule 7 links P10 ('Return of Security Deposit - 21 days') but cites 'Return of Security Deposit - Deadline'"
+    ],
+    "provisions": [
+      {
+        "ref": "Security deposit payments - 1 month limit",
+        "inventory_item": 0,
+        "provision_id": "P1",
+        "summary": "Limits security deposits to one month's rent for unfurnished and furnished units.",
+        "category": "security_deposits",
+        "candidates": [
+          0
+        ],
+        "accepted": [
+          0
+        ],
+        "basis": {
+          "0": "provision link; citation names it"
+        }
+      },
+      {
+        "ref": "Security deposit payments - Small landlord exception",
+        "inventory_item": 1,
+        "provision_id": "P2",
+        "summary": "Permits qualifying small landlords owning up to two properties with no more than four total units to charge up to two months' rent.",
+        "category": "security_deposits",
+        "candidates": [
+          1
+        ],
+        "accepted": [
+          1
+        ],
+        "basis": {
+          "1": "provision link; citation names it"
+        }
+      },
+      {
+        "ref": "Security deposit payments - Last month's rent",
+        "inventory_item": 2,
+        "provision_id": "P3",
+        "summary": "Establishes that last month's rent is considered part of the security deposit.",
+        "category": "security_deposits",
+        "candidates": [
+          2
+        ],
+        "accepted": [],
+        "basis": {
+          "2": "provision link; citation names it"
+        }
+      },
+      {
+        "ref": "Landlord requirement to photograph unit before or at the start of a new tenancy",
+        "inventory_item": 5,
+        "provision_id": "P6",
+        "summary": "Requires landlords to photograph units immediately before or at tenancy commencement to document condition.",
+        "category": "security_deposits",
+        "candidates": [
+          3
+        ],
+        "accepted": [
+          3
+        ],
+        "basis": {
+          "3": "provision link; citation names it"
+        }
+      },
+      {
+        "ref": "Move-out walk-through inspection requirement",
+        "inventory_item": 6,
+        "provision_id": "P7",
+        "summary": "Requires landlords to offer a walk-through inspection during the last two weeks of tenancy.",
+        "category": "security_deposits",
+        "candidates": [
+          4
+        ],
+        "accepted": [],
+        "basis": {
+          "4": "provision link; citation names it"
+        }
+      },
+      {
+        "ref": "Security deposit deductions",
+        "inventory_item": 7,
+        "provision_id": "P8",
+        "summary": "Specifies the permissible purposes for which a landlord may make deductions from a security deposit.",
+        "category": "security_deposits",
+        "candidates": [
+          5
+        ],
+        "accepted": [],
+        "basis": {
+          "5": "provision link; citation names it"
+        }
+      },
+      {
+        "ref": "Professional cleaning deduction restrictions",
+        "inventory_item": 8,
+        "provision_id": "P9",
+        "summary": "Restricts landlords from requiring payment or deducting from deposits for professional cleaning services.",
+        "category": "security_deposits",
+        "candidates": [
+          6
+        ],
+        "accepted": [],
+        "basis": {
+          "6": "provision link; citation names an ancestor"
+        }
+      },
+      {
+        "ref": "Return of Security Deposit - 21 days",
+        "inventory_item": 9,
+        "provision_id": "P10",
+        "summary": "Requires return of all or remaining deposit funds within 21 days after the tenant leaves the unit vacant.",
+        "category": "security_deposits",
+        "candidates": [
+          12
+        ],
+        "accepted": [],
+        "basis": {
+          "12": "provision link; citation names an ancestor"
+        }
+      },
+      {
+        "ref": "Return of Security Deposit - Itemized statement",
+        "inventory_item": 10,
+        "provision_id": "P11",
+        "summary": "Requires an itemized written statement and copies of receipts or invoices when deductions are made.",
+        "category": "security_deposits",
+        "candidates": [
+          8
+        ],
+        "accepted": [],
+        "basis": {
+          "8": "provision link; citation names it"
+        }
+      },
+      {
+        "ref": "Return of Security Deposit - Proof of repairs",
+        "inventory_item": 11,
+        "provision_id": "P12",
+        "summary": "Requires landlords to provide proof that necessary repairs were completed.",
+        "category": "security_deposits",
+        "candidates": [
+          9
+        ],
+        "accepted": [
+          9
+        ],
+        "basis": {
+          "9": "provision link; citation names it"
+        }
+      },
+      {
+        "ref": "Return of Security Deposit - Post-tenancy photographs",
+        "inventory_item": 12,
+        "provision_id": "P13",
+        "summary": "Requires landlords to photograph unit condition before repairs or cleaning deductions and provide photos and cost explanations.",
+        "category": "security_deposits",
+        "candidates": [
+          10
+        ],
+        "accepted": [
+          10
+        ],
+        "basis": {
+          "10": "provision link; citation names it"
+        }
+      },
+      {
+        "ref": "Security deposit interest",
+        "inventory_item": 13,
+        "provision_id": "P14",
+        "summary": "Requires annual and prorated move-out payment of security deposit interest for units covered by Berkeley's Rent Ordinance.",
+        "category": "security_deposits",
+        "candidates": [
+          11
+        ],
+        "accepted": [],
+        "basis": {
+          "11": "provision link; citation names it"
+        }
+      }
+    ],
+    "unrecorded_subdivisions": []
+  },
+  "scope_challenges": [
+    {
+      "ref": "Security deposit payments - First month's rent",
+      "provision_id": "P4",
+      "role": "scope_condition",
+      "reason": "scope clarification regarding first month's rent",
+      "summary": "Clarifies that first month's rent is not considered part of the security deposit.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role scope_condition is decided by other rules"
+    },
+    {
+      "ref": "Assembly Bill 12 overview",
+      "provision_id": "P5",
+      "role": "history",
+      "reason": "legislative history and administrative explanation",
+      "summary": "Provides legislative background regarding AB 12 and previous deposit limits.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role history is decided by other rules"
+    }
+  ],
+  "scope_mappings": [],
+  "legislative_session": null,
+  "empty_result": null,
+  "legacy_replay": null,
+  "dedupe": [],
+  "chunking": null,
+  "repair": {
+    "invoked": true,
+    "reason": "1 repair target(s) from inventory_uncovered",
+    "prompt_version": "v7-repair-1",
+    "targets": [
+      {
+        "ref": "Return of Security Deposit - 21 days",
+        "sources": [
+          "inventory_uncovered"
+        ],
+        "provision_id": "P10",
+        "summary": "Requires return of all or remaining deposit funds within 21 days after the tenant leaves the unit vacant.",
+        "category": "security_deposits",
+        "pre_repair_state": "in-scope inventory provision with no candidate",
+        "resolution": {
+          "scope": "in_scope",
+          "reason": null,
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 2792,
+            "end": 2916,
+            "occurrences": 1,
+            "model_span": "All or any remaining portion of a security deposit must be returned\nwithin 21 days\nafter the tenant/s leave the unit vacant.",
+            "source_span": "All or any remaining portion of a security deposit must be returned\nwithin 21 days\nafter the tenant/s leave the unit vacant.",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 1,
+                "model_text": "All or any remaining portion of a security deposit must be returned\nwithin 21 days\nafter the tenant/s leave the unit vacant.",
+                "status": "exact_match",
+                "start": 2792,
+                "end": 2916
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true,
+          "evidence_problem": null
+        },
+        "repair_scope": "in_scope",
+        "reason": null,
+        "candidate_indices": [
+          12
+        ],
+        "accepted_indices": [],
+        "final_resolution": "unresolved",
+        "unresolved_reason": "classified in_scope, but every candidate was rejected"
+      }
+    ],
+    "cache_key": "1ef14c2fde6eb65907916f9bfa25d529dc615d47f0f4daaa7cc8236cf4342865",
+    "cache_hit": true,
+    "cache_entry": "cache/extraction/1ef14c2fde6eb65907916f9bfa25d529dc615d47f0f4daaa7cc8236cf4342865.json",
+    "prompt_sha256": "e9a29c58330d31022c3ca783fd2e1b01d84fd3424f6e21c570373f8b9a83e25e",
+    "provider_metadata": {
+      "api": "interactions.create",
+      "interaction_id": "",
+      "model": "gemini-3.8-flash",
+      "status": "completed",
+      "usage": {
+        "input_tokens": 4449,
+        "output_tokens": 448,
+        "thinking_tokens": 2123,
+        "total_tokens": 7020
+      }
+    },
+    "raw_response_text": "{\n  \"target_resolutions\": [\n    {\n      \"ref\": \"Return of Security Deposit - 21 days\",\n      \"scope\": \"in_scope\",\n      \"reason\": null,\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"All or any remaining portion of a security deposit must be returned\\nwithin 21 days\\nafter the tenant/s leave the unit vacant.\"\n        }\n      ]\n    }\n  ],\n  \"scope_mappings\": [],\n  \"rules\": [\n    {\n      \"category\": \"security_deposits\",\n      \"citation\": \"Return of Security Deposit\",\n      \"provision_ids\": [\n        \"P10\"\n      ],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"All or any remaining portion of a security deposit must be returned\\nwithin 21 days\\nafter the tenant/s leave the unit vacant.\"\n        }\n      ],\n      \"title\": \"Return of Security Deposit Timeline\",\n      \"requirement\": \"All or any remaining portion of a security deposit must be returned within 21 days after the tenant leaves the unit vacant.\",\n      \"key_value\": \"21 days\",\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": null,\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": null,\n      \"effective_date_evidence_kind\": null,\n      \"effective_date\": null,\n      \"conflict_note\": null\n    }\n  ]\n}",
+    "mappings": [],
+    "candidate_indices": [
+      12
+    ],
+    "accepted_count": 0,
+    "rejected_count": 1,
+    "errors": []
+  },
+  "document_status": "review_required",
+  "review_reasons": [
+    "8 candidate record(s) held, not published, because the time of application is unresolved: ['temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force']",
+    "repair targets still unresolved: Return of Security Deposit - 21 days (classified in_scope, but every candidate was rejected)"
+  ],
+  "warnings": [
+    "review: 1 inventory anchor(s) are not source text; those provisions cannot be scope-challenged",
+    "candidate 2 held: status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+    "candidate 4 held: status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+    "candidate 5 held: status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+    "candidate 6 held: status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+    "candidate 7 held: status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+    "candidate 8 held: status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+    "candidate 11 held: status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+    "candidate 12 held: status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+    "review: provision links whose rule citation does not name the provision: 1"
+  ],
+  "errors": [],
+  "raw_response_text": "{\n  \"document\": {\n    \"posture\": \"official_explanatory_page\",\n    \"evidence\": \"Learn the basics about security deposits under state law, and security deposit interest requirements under the Berkeley Rent Ordinance.\"\n  },\n  \"provisions\": [\n    {\n      \"id\": \"P1\",\n      \"ref\": \"Security deposit payments - 1 month limit\",\n      \"anchor\": \"Starting July 1, 2024, many landlords may only\",\n      \"summary\": \"Limits security deposits to one month's rent for unfurnished and furnished units.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"security_deposits\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P2\",\n      \"ref\": \"Security deposit payments - Small landlord exception\",\n      \"anchor\": \"Starting July 1, 2024, landlords who own only two\",\n      \"summary\": \"Permits qualifying small landlords owning up to two properties with no more than four total units to charge up to two months' rent.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"security_deposits\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P3\",\n      \"ref\": \"Security deposit payments - Last month's rent\",\n      \"anchor\": \"Last month’s rent IS considered part of the security\",\n      \"summary\": \"Establishes that last month's rent is considered part of the security deposit.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"security_deposits\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P4\",\n      \"ref\": \"Security deposit payments - First month's rent\",\n      \"anchor\": \"First month’s rent is NOT considered part of the\",\n      \"summary\": \"Clarifies that first month's rent is not considered part of the security deposit.\",\n      \"role\": \"scope_condition\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"scope clarification regarding first month's rent\"\n    },\n    {\n      \"id\": \"P5\",\n      \"ref\": \"Assembly Bill 12 overview\",\n      \"anchor\": \"A California law, Assembly Bill 12, changed the\",\n      \"summary\": \"Provides legislative background regarding AB 12 and previous deposit limits.\",\n      \"role\": \"history\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"legislative history and administrative explanation\"\n    },\n    {\n      \"id\": \"P6\",\n      \"ref\": \"Landlord requirement to photograph unit before or at the start of a new tenancy\",\n      \"anchor\": \"For tenancies that begin on or after July 1,\",\n      \"summary\": \"Requires landlords to photograph units immediately before or at tenancy commencement to document condition.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"security_deposits\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P7\",\n      \"ref\": \"Move-out walk-through inspection requirement\",\n      \"anchor\": \"Under state law, landlords must offer a walk-through\",\n      \"summary\": \"Requires landlords to offer a walk-through inspection during the last two weeks of tenancy.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"security_deposits\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P8\",\n      \"ref\": \"Security deposit deductions\",\n      \"anchor\": \"A landlord may deduct only the amount that is\",\n      \"summary\": \"Specifies the permissible purposes for which a landlord may make deductions from a security deposit.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"security_deposits\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P9\",\n      \"ref\": \"Professional cleaning deduction restrictions\",\n      \"anchor\": \"The landlord cannot require a tenant to pay for,\",\n      \"summary\": \"Restricts landlords from requiring payment or deducting from deposits for professional cleaning services.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"security_deposits\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P10\",\n      \"ref\": \"Return of Security Deposit - 21 days\",\n      \"anchor\": \"All or any remaining portion of a security deposit\",\n      \"summary\": \"Requires return of all or remaining deposit funds within 21 days after the tenant leaves the unit vacant.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"security_deposits\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P11\",\n      \"ref\": \"Return of Security Deposit - Itemized statement\",\n      \"anchor\": \"If deductions were made, the landlord must give the\",\n      \"summary\": \"Requires an itemized written statement and copies of receipts or invoices when deductions are made.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"security_deposits\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P12\",\n      \"ref\": \"Return of Security Deposit - Proof of repairs\",\n      \"anchor\": \"Starting January 1, 2025, landlords must provide proof that\",\n      \"summary\": \"Requires landlords to provide proof that necessary repairs were completed.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"security_deposits\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P13\",\n      \"ref\": \"Return of Security Deposit - Post-tenancy photographs\",\n      \"anchor\": \"Starting April 1, 2025, landlords must take photographs of\",\n      \"summary\": \"Requires landlords to photograph unit condition before repairs or cleaning deductions and provide photos and cost explanations.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"security_deposits\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P14\",\n      \"ref\": \"Security deposit interest\",\n      \"anchor\": \"For tenancies in units fully or partially covered by\",\n      \"summary\": \"Requires annual and prorated move-out payment of security deposit interest for units covered by Berkeley's Rent Ordinance.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"security_deposits\",\n      \"reason\": null\n    }\n  ],\n  \"global_scope\": [],\n  \"rules\": [\n    {\n      \"category\": \"security_deposits\",\n      \"citation\": \"Security deposit payments - 1 month limit\",\n      \"provision_ids\": [\"P1\"],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Starting July 1, 2024, many landlords may only charge one month's rent for unfurnished and furnished units\"\n        }\n      ],\n      \"title\": \"Security deposit cap of one month's rent\",\n      \"requirement\": \"Landlords may only charge up to one month's rent as a security deposit for unfurnished and furnished units.\",\n      \"key_value\": \"one month's rent\",\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": null,\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": \"Starting July 1, 2024\",\n      \"effective_date_evidence_kind\": \"explicit_operative_date\",\n      \"effective_date\": \"2024-07-01\",\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"security_deposits\",\n      \"citation\": \"Security deposit payments - Small landlord exception\",\n      \"provision_ids\": [\"P2\"],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Starting July 1, 2024, landlords who own only two rental properties with no more than four residential units total can charge up to two months' rent for furnished and unfurnished units if ownership is held by a natural person, family trust, or limited liability company (LLC) where all members are natural persons\"\n        }\n      ],\n      \"title\": \"Two-month security deposit exception for qualifying small landlords\",\n      \"requirement\": \"Landlords who own only two rental properties with no more than four residential units total may charge up to two months' rent for furnished and unfurnished units if ownership is held by a natural person, family trust, or LLC where all members are natural persons.\",\n      \"key_value\": \"up to two months' rent\",\n      \"coverage_conditions\": \"Landlords who own only two rental properties with no more than four residential units total if ownership is held by a natural person, family trust, or LLC where all members are natural persons.\",\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": null,\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": \"Starting July 1, 2024\",\n      \"effective_date_evidence_kind\": \"explicit_operative_date\",\n      \"effective_date\": \"2024-07-01\",\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"security_deposits\",\n      \"citation\": \"Security deposit payments - Last month's rent\",\n      \"provision_ids\": [\"P3\"],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Last month’s rent IS considered part of the security deposit\"\n        }\n      ],\n      \"title\": \"Last month's rent included in security deposit\",\n      \"requirement\": \"Last month's rent is considered part of the security deposit.\",\n      \"key_value\": null,\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": null,\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": null,\n      \"effective_date_evidence_kind\": null,\n      \"effective_date\": null,\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"security_deposits\",\n      \"citation\": \"Landlord requirement to photograph unit before or at the start of a new tenancy\",\n      \"provision_ids\": [\"P6\"],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"For tenancies that begin on or after July 1, 2025, a landlord must photograph the unit immediately before or at the start of a new tenancy to document the condition of the unit.\"\n        }\n      ],\n      \"title\": \"Pre-tenancy photography requirement\",\n      \"requirement\": \"A landlord must photograph the rental unit immediately before or at the start of a new tenancy to document its condition.\",\n      \"key_value\": null,\n      \"coverage_conditions\": \"Tenancies that begin on or after July 1, 2025.\",\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": null,\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": \"For tenancies that begin on or after July 1, 2025\",\n      \"effective_date_evidence_kind\": \"explicit_operative_date\",\n      \"effective_date\": \"2025-07-01\",\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"security_deposits\",\n      \"citation\": \"Move-out walk-through inspection requirement\",\n      \"provision_ids\": [\"P7\"],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Under state law, landlords must offer a walk-through inspection during the last two weeks of a tenancy to identify any items that need repair/cleaning.\"\n        }\n      ],\n      \"title\": \"Move-out walk-through inspection offer\",\n      \"requirement\": \"Landlords must offer tenants a walk-through inspection during the last two weeks of a tenancy to identify any items requiring repair or cleaning.\",\n      \"key_value\": \"last two weeks of a tenancy\",\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": null,\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": null,\n      \"effective_date_evidence_kind\": null,\n      \"effective_date\": null,\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"security_deposits\",\n      \"citation\": \"Security deposit deductions\",\n      \"provision_ids\": [\"P8\"],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"A landlord may deduct only the amount that is reasonably necessary to:\\nCover rent default\\nRepair damages caused by a tenant or a tenant's guest other than normal wear and tear\\nClean the unit to return it to the same level of cleanliness as at the start of the tenancy (for tenancies beginning after January 1, 2003)\\nIf allowed by the lease, cover the cost of restoring or replacing personal property (including keys) or furniture, excluding ordinary wear and tear\"\n        }\n      ],\n      \"title\": \"Permitted security deposit deductions\",\n      \"requirement\": \"A landlord may deduct from a security deposit only amounts reasonably necessary to cover rent default, repair tenant-caused damage beyond normal wear and tear, clean the unit back to move-in cleanliness (for tenancies beginning after January 1, 2003), or restore/replace personal property or furniture if permitted by the lease.\",\n      \"key_value\": null,\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": null,\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": null,\n      \"effective_date_evidence_kind\": null,\n      \"effective_date\": null,\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"security_deposits\",\n      \"citation\": \"Security deposit deductions - Professional cleaning\",\n      \"provision_ids\": [\"P9\"],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"The landlord cannot require a tenant to pay for, or assert a claim against the tenant or the security deposit for professional carpet cleaning or other professional cleaning services, unless reasonably necessary to return the premises to the condition it was in at the start of the tenancy, minus ordinary wear and tear.\"\n        }\n      ],\n      \"title\": \"Restriction on professional cleaning charges and deductions\",\n      \"requirement\": \"A landlord cannot require a tenant to pay for, or assert a claim against the tenant or the security deposit for, professional carpet cleaning or other professional cleaning services unless reasonably necessary to return the premises to its initial condition, minus ordinary wear and tear.\",\n      \"key_value\": null,\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": null,\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": null,\n      \"effective_date_evidence_kind\": null,\n      \"effective_date\": null,\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"security_deposits\",\n      \"citation\": \"Return of Security Deposit - Deadline\",\n      \"provision_ids\": [\"P10\"],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"All or any remaining portion of a security deposit must be returned\\nwithin 21 days\\nafter the tenant/s leave the unit vacant.\"\n        }\n      ],\n      \"title\": \"21-day timeline to return security deposit\",\n      \"requirement\": \"All or any remaining portion of a security deposit must be returned within 21 days after the tenant or tenants vacate the unit.\",\n      \"key_value\": \"21 days\",\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": null,\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": null,\n      \"effective_date_evidence_kind\": null,\n      \"effective_date\": null,\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"security_deposits\",\n      \"citation\": \"Return of Security Deposit - Itemized statement\",\n      \"provision_ids\": [\"P11\"],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"If deductions were made, the landlord must give the tenant a written statement itemizing the amount of and and purpose for any security deposit deductions, accompanied by copies of documents showing charges incurred and deducted by the landlord to repair or clean the premises, including a copy of any bill, invoice, or receipt for materials or supplies deductions.\"\n        }\n      ],\n      \"title\": \"Itemized deduction statement and documentation\",\n      \"requirement\": \"If deductions are made, the landlord must provide the tenant with a written statement itemizing the amount and purpose of any deductions, accompanied by copies of documents showing charges incurred, including bills, invoices, or receipts for materials or supplies.\",\n      \"key_value\": null,\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": null,\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": null,\n      \"effective_date_evidence_kind\": null,\n      \"effective_date\": null,\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"security_deposits\",\n      \"citation\": \"Return of Security Deposit - Proof of repairs\",\n      \"provision_ids\": [\"P12\"],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Starting January 1, 2025, landlords must provide proof that necessary repairs were completed.\"\n        }\n      ],\n      \"title\": \"Requirement to provide proof of completed repairs\",\n      \"requirement\": \"Landlords must provide proof that necessary repairs were completed when making deductions.\",\n      \"key_value\": null,\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": null,\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": \"Starting January 1, 2025\",\n      \"effective_date_evidence_kind\": \"explicit_operative_date\",\n      \"effective_date\": \"2025-01-01\",\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"security_deposits\",\n      \"citation\": \"Return of Security Deposit - Post-tenancy photographs\",\n      \"provision_ids\": [\"P13\"],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Starting April 1, 2025, landlords must take photographs of a unit after regaining possession, but before any repairs or cleaning for which the landlord intends to make a deduction from the security deposit. These photos and a written explanation of the cost of the repairs/cleaning must be given to the tenant along with the itemized statement.\"\n        }\n      ],\n      \"title\": \"Photographs and cost explanations for repair or cleaning deductions\",\n      \"requirement\": \"Landlords must take photographs of the unit after regaining possession but before any repairs or cleaning for which a deposit deduction is intended, and must provide these photos and a written explanation of repair/cleaning costs to the tenant with the itemized statement.\",\n      \"key_value\": null,\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": null,\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": \"Starting April 1, 2025\",\n      \"effective_date_evidence_kind\": \"explicit_operative_date\",\n      \"effective_date\": \"2025-04-01\",\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"security_deposits\",\n      \"citation\": \"Security deposit interest\",\n      \"provision_ids\": [\"P14\"],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"For tenancies in units fully or partially covered by Berkeley's Rent Ordinance, landlords must pay tenants interest on their security deposit at the end of each year and a prorated amount if the tenant moves out before the end of the year.\"\n        }\n      ],\n      \"title\": \"Annual and prorated security deposit interest payments\",\n      \"requirement\": \"Landlords must pay tenants interest on their security deposit at the end of each year and a prorated amount upon move-out before year-end.\",\n      \"key_value\": null,\n      \"coverage_conditions\": \"Tenancies in units fully or partially covered by Berkeley's Rent Ordinance.\",\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": null,\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": null,\n      \"effective_date_evidence_kind\": null,\n      \"effective_date\": null,\n      \"conflict_note\": null\n    }\n  ],\n  \"no_rules_justification\": null\n}"
+}

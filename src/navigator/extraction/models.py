@@ -24,7 +24,8 @@ Category = Literal[
 Level = Literal["state", "city"]
 Status = Literal["in_force", "not_yet_effective", "pending", "failed"]
 EnactmentStatus = Literal["enacted", "pending", "failed"]
-CitationStatus = Literal["exact_match", "normalized_match", "failed"]
+# layout_normalized_match (M3.3): equal only after also removing whitespace next to ( ) [ ] (citation.py).
+CitationStatus = Literal["exact_match", "normalized_match", "layout_normalized_match", "failed"]
 ScopeDecision = Literal["in_scope", "out_of_scope", "uncertain"]
 # What a piece of effective-date evidence is. Only an explicit operative date, or a
 # relative formula resolved deterministically (temporal.py), may populate effective_date.
@@ -330,6 +331,13 @@ class CandidateResult(BaseModel):
     accepted: bool = False
     # Passed every check except temporal resolution: preserved with its evidence, never published.
     held: bool = False
+    # Passed every check, but its verified validity window ended on or before as_of (validity.py):
+    # kept in the audit as a historical rule (temporal_state expired / repealed), never published.
+    historical: bool = False
+    temporal_state: str | None = None   # in_force | not_yet_effective | pending | failed | expired | repealed | held
+    validity: dict[str, Any] = Field(default_factory=dict)       # validity.py window audit
+    # Suppressed as an exact same-source duplicate of this validated candidate (finalize).
+    duplicate_of: int | None = None
     rejection_reasons: list[str] = Field(default_factory=list)
     provision_ids: list[str] = Field(default_factory=list)       # links to inventory ids, as given
     source_basis: str | None = None
@@ -350,6 +358,13 @@ class CandidateResult(BaseModel):
     warnings: list[str] = Field(default_factory=list)
     rule: dict[str, Any] | None = None  # normalized record (kept for review even if rejected)
     raw: Any = None                     # candidate exactly as returned
+
+    @property
+    def validated(self) -> bool:
+        """Passed every check: published (accepted), historical (expired as of the query
+        date), or suppressed as an exact same-source duplicate of such a record. Coverage,
+        repair-target and scope-mapping logic treat all three alike."""
+        return self.accepted or self.historical or self.duplicate_of is not None
 
 
 class RepairPass(BaseModel):
@@ -406,6 +421,8 @@ class ExtractionRun(BaseModel):
     legislative_session: dict[str, Any] | None = None                     # legislative.find_session
     empty_result: dict[str, Any] | None = None                        # no-rules justification and its check
     legacy_replay: dict[str, Any] | None = None                       # set only when replaying a pre-v6 response
+    dedupe: list[dict[str, Any]] = Field(default_factory=list)        # same-source duplicates suppressed (finalize)
+    chunking: dict[str, Any] | None = None                            # large-document mode audit (chunked.py)
     repair: RepairPass | None = None
     document_status: Literal["complete", "review_required"] = "review_required"
     review_reasons: list[str] = Field(default_factory=list)

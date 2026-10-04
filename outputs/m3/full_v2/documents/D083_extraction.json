@@ -1,0 +1,1947 @@
+{
+  "disclaimer": "Not legal advice. Automated extraction for a research prototype; verify against the cited source.",
+  "run_at": "2026-10-04T06:34:27+00:00",
+  "source": {
+    "doc_id": "D083",
+    "jurisdiction": "San Francisco, CA",
+    "url": "https://www.sf.gov/reports--current-rates-including-rent-increase-relocation-sec-deposit",
+    "source_type": "official",
+    "retrieved_at": "2026-10-01T22:37Z",
+    "text_file": "text/D083.txt",
+    "content_sha256": "aaf1216a55be226fc3752dfd2388f4d17488a9be7e20aaa15d4685b921c63487",
+    "body_chars": 4526
+  },
+  "provider": "gemini",
+  "model": "gemini-3.8-flash",
+  "prompt_version": "v7",
+  "prompt_sha256": "1c412dc54778e40352db3df2fd05696ebc3fe6de9fbd47357ad253ebcc350bd2",
+  "response_schema_sha256": "c15306da6f21dc72f06e78405f94ed61dc9e59288138cc98b5b5bf9b62ac403c",
+  "generation_settings": {
+    "temperature": null,
+    "seed": 20261001,
+    "thinking_level": "medium"
+  },
+  "as_of": "2026-10-01",
+  "cache_key": "94985aa1f36cc1015c5103d5de6f05693cbee538f01b5b2d753a947b3ad8841a",
+  "cache_hit": true,
+  "cache_entry": "cache/extraction/94985aa1f36cc1015c5103d5de6f05693cbee538f01b5b2d753a947b3ad8841a.json",
+  "provider_metadata": {
+    "api": "interactions.create",
+    "interaction_id": "",
+    "model": "gemini-3.8-flash",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 5508,
+      "output_tokens": 4463,
+      "thinking_tokens": 16490,
+      "total_tokens": 26461
+    }
+  },
+  "candidate_count": 7,
+  "accepted_count": 4,
+  "rules": [
+    {
+      "team_rule_id": "r-44de785e11",
+      "jurisdiction": "San Francisco, CA",
+      "level": "city",
+      "category": "rent_increase_limits",
+      "status": "in_force",
+      "title": "Allowable Annual Rent Increase Rate",
+      "requirement": "[Basis: official explanatory text, not operative legal text] For the effective period from March 1, 2026 through February 28, 2027, the allowable annual rent increase is 1.6%.",
+      "key_value": "1.6%",
+      "coverage_conditions": null,
+      "exemptions": null,
+      "overrides": [],
+      "interaction": null,
+      "effective_date": "2026-03-01",
+      "citation": "571 Allowable Annual Increases",
+      "source_doc_id": "D083",
+      "source_url": "https://www.sf.gov/reports--current-rates-including-rent-increase-relocation-sec-deposit",
+      "quoted_span": "Allowable rent increase\nAllowable rent increase\nEffective Period\nAmount of Increase\nMarch 1, 2026 – February 28, 2027\n1.6%",
+      "confidence": null,
+      "conflict_flag": false,
+      "conflict_note": null
+    },
+    {
+      "team_rule_id": "r-2bd3cbc740",
+      "jurisdiction": "San Francisco, CA",
+      "level": "city",
+      "category": "security_deposits",
+      "status": "in_force",
+      "title": "Annual Security Deposit Interest Rate",
+      "requirement": "[Basis: official explanatory text, not operative legal text] For the effective period from March 1, 2026 through February 28, 2027, the required security deposit interest rate is 4.2%.",
+      "key_value": "4.2%",
+      "coverage_conditions": null,
+      "exemptions": null,
+      "overrides": [],
+      "interaction": null,
+      "effective_date": "2026-03-01",
+      "citation": "572 Security Deposit Interest Rates",
+      "source_doc_id": "D083",
+      "source_url": "https://www.sf.gov/reports--current-rates-including-rent-increase-relocation-sec-deposit",
+      "quoted_span": "Security deposit interest\nSecurity deposit interest\nEffective Period\nAmount of Increase\nMarch 1, 2026 – February 28, 2027\n4.2%",
+      "confidence": null,
+      "conflict_flag": false,
+      "conflict_note": null
+    },
+    {
+      "team_rule_id": "r-48b1bdcc7f",
+      "jurisdiction": "San Francisco, CA",
+      "level": "city",
+      "category": "rent_increase_limits",
+      "status": "in_force",
+      "title": "Allowable Rent Increase (March 1, 2026 – February 28, 2027)",
+      "requirement": "[Basis: official explanatory text, not operative legal text] The allowable annual rent increase is 1.6% for the effective period from March 1, 2026 through February 28, 2027.",
+      "key_value": "1.6%",
+      "coverage_conditions": null,
+      "exemptions": null,
+      "overrides": [],
+      "interaction": null,
+      "effective_date": "2026-03-01",
+      "citation": "Topic 571",
+      "source_doc_id": "D083",
+      "source_url": "https://www.sf.gov/reports--current-rates-including-rent-increase-relocation-sec-deposit",
+      "quoted_span": "Allowable Rent Increase:\n1.6% for March 1, 2026 – February 28, 2027",
+      "confidence": null,
+      "conflict_flag": false,
+      "conflict_note": null
+    },
+    {
+      "team_rule_id": "r-ad83f622b4",
+      "jurisdiction": "San Francisco, CA",
+      "level": "city",
+      "category": "security_deposits",
+      "status": "in_force",
+      "title": "Security Deposit Interest Rate (March 1, 2026 – February 28, 2027)",
+      "requirement": "[Basis: official explanatory text, not operative legal text] The annual security deposit interest rate is 4.2% for the period from March 1, 2026 through February 28, 2027.",
+      "key_value": "4.2%",
+      "coverage_conditions": null,
+      "exemptions": null,
+      "overrides": [],
+      "interaction": null,
+      "effective_date": "2026-03-01",
+      "citation": "Topic 572",
+      "source_doc_id": "D083",
+      "source_url": "https://www.sf.gov/reports--current-rates-including-rent-increase-relocation-sec-deposit",
+      "quoted_span": "Security Deposit Interest:\n4.2% for March 1, 2026 – February 28, 2027",
+      "confidence": null,
+      "conflict_flag": false,
+      "conflict_note": null
+    }
+  ],
+  "candidates": [
+    {
+      "index": 0,
+      "origin": "primary",
+      "accepted": true,
+      "held": false,
+      "historical": false,
+      "temporal_state": "in_force",
+      "validity": {
+        "resolver": "validity-window/v1",
+        "boundaries": [
+          {
+            "kind": "unknown_temporal_note",
+            "role": "unknown",
+            "date": "2026-03-01",
+            "origin": "quoted_span",
+            "history": false,
+            "evidence": null,
+            "raw_start": null,
+            "raw_end": null
+          },
+          {
+            "kind": "unknown_temporal_note",
+            "role": "unknown",
+            "date": "2027-02-28",
+            "origin": "quoted_span",
+            "history": false,
+            "evidence": null,
+            "raw_start": null,
+            "raw_end": null
+          },
+          {
+            "kind": "unknown_temporal_note",
+            "role": "unknown",
+            "date": "2025-03-01",
+            "origin": "version_evidence",
+            "history": true,
+            "evidence": null,
+            "raw_start": null,
+            "raw_end": null
+          },
+          {
+            "kind": "unknown_temporal_note",
+            "role": "unknown",
+            "date": "2026-02-28",
+            "origin": "version_evidence",
+            "history": true,
+            "evidence": null,
+            "raw_start": null,
+            "raw_end": null
+          },
+          {
+            "kind": "unknown_temporal_note",
+            "role": "unknown",
+            "date": "2024-03-01",
+            "origin": "version_evidence",
+            "history": true,
+            "evidence": null,
+            "raw_start": null,
+            "raw_end": null
+          },
+          {
+            "kind": "unknown_temporal_note",
+            "role": "unknown",
+            "date": "2025-02-28",
+            "origin": "version_evidence",
+            "history": true,
+            "evidence": null,
+            "raw_start": null,
+            "raw_end": null
+          },
+          {
+            "kind": "unknown_temporal_note",
+            "role": "unknown",
+            "date": "2026-03-01",
+            "origin": "effective_date_evidence",
+            "history": false,
+            "evidence": null,
+            "raw_start": null,
+            "raw_end": null
+          },
+          {
+            "kind": "unknown_temporal_note",
+            "role": "unknown",
+            "date": "2027-02-28",
+            "origin": "effective_date_evidence",
+            "history": false,
+            "evidence": null,
+            "raw_start": null,
+            "raw_end": null
+          }
+        ],
+        "end_exclusive": null,
+        "end_conflict": null,
+        "decision": {
+          "outcome": null,
+          "state": null,
+          "reason": null,
+          "start": null
+        }
+      },
+      "duplicate_of": null,
+      "rejection_reasons": [],
+      "provision_ids": [
+        "P1"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": null,
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 354,
+        "end": 476,
+        "occurrences": 1,
+        "model_span": "Allowable rent increase\nAllowable rent increase\nEffective Period\nAmount of Increase\nMarch 1, 2026 – February 28, 2027\n1.6%",
+        "source_span": "Allowable rent increase\nAllowable rent increase\nEffective Period\nAmount of Increase\nMarch 1, 2026 – February 28, 2027\n1.6%",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "Allowable rent increase\nAllowable rent increase\nEffective Period\nAmount of Increase\nMarch 1, 2026 – February 28, 2027\n1.6%",
+            "status": "exact_match",
+            "start": 354,
+            "end": 476
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 250,
+        "end": 283,
+        "occurrences": 4,
+        "model_span": "March 1, 2026 – February 28, 2027",
+        "source_span": "March 1, 2026 – February 28, 2027",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "version_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 477,
+        "end": 554,
+        "occurrences": 1,
+        "model_span": "March 1, 2025 – February 28, 2026\n1.4%\nMarch 1, 2024 – February 28, 2025\n1.7%",
+        "source_span": "March 1, 2025 – February 28, 2026\n1.4%\nMarch 1, 2024 – February 28, 2025\n1.7%",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "operative_conditions": [],
+      "propagated_scope": [],
+      "temporal": {
+        "model_effective_date": "2026-03-01",
+        "model_kind": "explicit_operative_date",
+        "applied_kind": "explicit_operative_date",
+        "effective_date": "2026-03-01",
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null
+      },
+      "status_derivation": "enacted; effective 2026-03-01 is on or before as_of 2026-10-01",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-44de785e11",
+        "jurisdiction": "San Francisco, CA",
+        "level": "city",
+        "category": "rent_increase_limits",
+        "status": "in_force",
+        "title": "Allowable Annual Rent Increase Rate",
+        "requirement": "[Basis: official explanatory text, not operative legal text] For the effective period from March 1, 2026 through February 28, 2027, the allowable annual rent increase is 1.6%.",
+        "key_value": "1.6%",
+        "coverage_conditions": null,
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": "2026-03-01",
+        "citation": "571 Allowable Annual Increases",
+        "source_doc_id": "D083",
+        "source_url": "https://www.sf.gov/reports--current-rates-including-rent-increase-relocation-sec-deposit",
+        "quoted_span": "Allowable rent increase\nAllowable rent increase\nEffective Period\nAmount of Increase\nMarch 1, 2026 – February 28, 2027\n1.6%",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "rent_increase_limits",
+        "citation": "571 Allowable Annual Increases",
+        "provision_ids": [
+          "P1"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "Allowable rent increase\nAllowable rent increase\nEffective Period\nAmount of Increase\nMarch 1, 2026 – February 28, 2027\n1.6%"
+          }
+        ],
+        "title": "Allowable Annual Rent Increase Rate",
+        "requirement": "For the effective period from March 1, 2026 through February 28, 2027, the allowable annual rent increase is 1.6%.",
+        "key_value": "1.6%",
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": null,
+        "version_note": "Prior allowable rent increases listed: 1.4% for March 1, 2025 – February 28, 2026; 1.7% for March 1, 2024 – February 28, 2025.",
+        "version_evidence": "March 1, 2025 – February 28, 2026\n1.4%\nMarch 1, 2024 – February 28, 2025\n1.7%",
+        "effective_date_evidence": "March 1, 2026 – February 28, 2027",
+        "effective_date_evidence_kind": "explicit_operative_date",
+        "effective_date": "2026-03-01",
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 1,
+      "origin": "primary",
+      "accepted": true,
+      "held": false,
+      "historical": false,
+      "temporal_state": "in_force",
+      "validity": {
+        "resolver": "validity-window/v1",
+        "boundaries": [
+          {
+            "kind": "unknown_temporal_note",
+            "role": "unknown",
+            "date": "2026-03-01",
+            "origin": "quoted_span",
+            "history": false,
+            "evidence": null,
+            "raw_start": null,
+            "raw_end": null
+          },
+          {
+            "kind": "unknown_temporal_note",
+            "role": "unknown",
+            "date": "2027-02-28",
+            "origin": "quoted_span",
+            "history": false,
+            "evidence": null,
+            "raw_start": null,
+            "raw_end": null
+          },
+          {
+            "kind": "unknown_temporal_note",
+            "role": "unknown",
+            "date": "2025-03-01",
+            "origin": "version_evidence",
+            "history": true,
+            "evidence": null,
+            "raw_start": null,
+            "raw_end": null
+          },
+          {
+            "kind": "unknown_temporal_note",
+            "role": "unknown",
+            "date": "2026-02-28",
+            "origin": "version_evidence",
+            "history": true,
+            "evidence": null,
+            "raw_start": null,
+            "raw_end": null
+          },
+          {
+            "kind": "unknown_temporal_note",
+            "role": "unknown",
+            "date": "2024-03-01",
+            "origin": "version_evidence",
+            "history": true,
+            "evidence": null,
+            "raw_start": null,
+            "raw_end": null
+          },
+          {
+            "kind": "unknown_temporal_note",
+            "role": "unknown",
+            "date": "2025-02-28",
+            "origin": "version_evidence",
+            "history": true,
+            "evidence": null,
+            "raw_start": null,
+            "raw_end": null
+          },
+          {
+            "kind": "unknown_temporal_note",
+            "role": "unknown",
+            "date": "2026-03-01",
+            "origin": "effective_date_evidence",
+            "history": false,
+            "evidence": null,
+            "raw_start": null,
+            "raw_end": null
+          },
+          {
+            "kind": "unknown_temporal_note",
+            "role": "unknown",
+            "date": "2027-02-28",
+            "origin": "effective_date_evidence",
+            "history": false,
+            "evidence": null,
+            "raw_start": null,
+            "raw_end": null
+          }
+        ],
+        "end_exclusive": null,
+        "end_conflict": null,
+        "decision": {
+          "outcome": null,
+          "state": null,
+          "reason": null,
+          "start": null
+        }
+      },
+      "duplicate_of": null,
+      "rejection_reasons": [],
+      "provision_ids": [
+        "P2"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": null,
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 814,
+        "end": 940,
+        "occurrences": 1,
+        "model_span": "Security deposit interest\nSecurity deposit interest\nEffective Period\nAmount of Increase\nMarch 1, 2026 – February 28, 2027\n4.2%",
+        "source_span": "Security deposit interest\nSecurity deposit interest\nEffective Period\nAmount of Increase\nMarch 1, 2026 – February 28, 2027\n4.2%",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "Security deposit interest\nSecurity deposit interest\nEffective Period\nAmount of Increase\nMarch 1, 2026 – February 28, 2027\n4.2%",
+            "status": "exact_match",
+            "start": 814,
+            "end": 940
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 250,
+        "end": 283,
+        "occurrences": 4,
+        "model_span": "March 1, 2026 – February 28, 2027",
+        "source_span": "March 1, 2026 – February 28, 2027",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "version_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 941,
+        "end": 1018,
+        "occurrences": 1,
+        "model_span": "March 1, 2025 – February 28, 2026\n5.0%\nMarch 1, 2024 – February 28, 2025\n5.2%",
+        "source_span": "March 1, 2025 – February 28, 2026\n5.0%\nMarch 1, 2024 – February 28, 2025\n5.2%",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "operative_conditions": [],
+      "propagated_scope": [],
+      "temporal": {
+        "model_effective_date": "2026-03-01",
+        "model_kind": "explicit_operative_date",
+        "applied_kind": "explicit_operative_date",
+        "effective_date": "2026-03-01",
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null
+      },
+      "status_derivation": "enacted; effective 2026-03-01 is on or before as_of 2026-10-01",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-2bd3cbc740",
+        "jurisdiction": "San Francisco, CA",
+        "level": "city",
+        "category": "security_deposits",
+        "status": "in_force",
+        "title": "Annual Security Deposit Interest Rate",
+        "requirement": "[Basis: official explanatory text, not operative legal text] For the effective period from March 1, 2026 through February 28, 2027, the required security deposit interest rate is 4.2%.",
+        "key_value": "4.2%",
+        "coverage_conditions": null,
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": "2026-03-01",
+        "citation": "572 Security Deposit Interest Rates",
+        "source_doc_id": "D083",
+        "source_url": "https://www.sf.gov/reports--current-rates-including-rent-increase-relocation-sec-deposit",
+        "quoted_span": "Security deposit interest\nSecurity deposit interest\nEffective Period\nAmount of Increase\nMarch 1, 2026 – February 28, 2027\n4.2%",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "security_deposits",
+        "citation": "572 Security Deposit Interest Rates",
+        "provision_ids": [
+          "P2"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "Security deposit interest\nSecurity deposit interest\nEffective Period\nAmount of Increase\nMarch 1, 2026 – February 28, 2027\n4.2%"
+          }
+        ],
+        "title": "Annual Security Deposit Interest Rate",
+        "requirement": "For the effective period from March 1, 2026 through February 28, 2027, the required security deposit interest rate is 4.2%.",
+        "key_value": "4.2%",
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": null,
+        "version_note": "Prior security deposit interest rates listed: 5.0% for March 1, 2025 – February 28, 2026; 5.2% for March 1, 2024 – February 28, 2025.",
+        "version_evidence": "March 1, 2025 – February 28, 2026\n5.0%\nMarch 1, 2024 – February 28, 2025\n5.2%",
+        "effective_date_evidence": "March 1, 2026 – February 28, 2027",
+        "effective_date_evidence_kind": "explicit_operative_date",
+        "effective_date": "2026-03-01",
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 2,
+      "origin": "primary",
+      "accepted": false,
+      "held": false,
+      "historical": false,
+      "temporal_state": null,
+      "validity": {
+        "resolver": "validity-window/v1",
+        "boundaries": [],
+        "end_exclusive": null,
+        "end_conflict": null,
+        "decision": {
+          "outcome": null,
+          "state": null,
+          "reason": null,
+          "start": null
+        }
+      },
+      "duplicate_of": null,
+      "rejection_reasons": [
+        "effective_date: 2026-03-01 is not written in its verified evidence",
+        "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      ],
+      "provision_ids": [
+        "P6"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": null,
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": "Applies to evictions based on owner/relative move-in, demolition/permanent removal of unit from housing use, temporary capital improvement work, or substantial rehabilitation, where the notice of termination is served between 3/01/26 and 2/28/27.",
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 2658,
+        "end": 3180,
+        "occurrences": 1,
+        "model_span": "Relocation Payments for Evictions based on Owner/Relative Move-in OR Demolition/Permanent Removal of Unit from Housing Use OR Temporary Capital Improvement Work* OR Substantial Rehabilitation\nRelocation payments\nDate of Service of Notice of Termination of Tenancy (\"Eviction Notice\")\nRelocation Amount Due Per Tenant\nMaximum Relocation Amount Due Per Unit\nPLUS Additional Amount Due for Each Elderly (60 years or older) or Disabled Tenant or Household with Minor Child(ren)\n3/01/26 – 2/28/27\n$8,245.00\n$24,733.00\n$5,497.00",
+        "source_span": "Relocation Payments for Evictions based on Owner/Relative Move-in OR Demolition/Permanent Removal of Unit from Housing Use OR Temporary Capital Improvement Work* OR Substantial Rehabilitation\nRelocation payments\nDate of Service of Notice of Termination of Tenancy (\"Eviction Notice\")\nRelocation Amount Due Per Tenant\nMaximum Relocation Amount Due Per Unit\nPLUS Additional Amount Due for Each Elderly (60 years or older) or Disabled Tenant or Household with Minor Child(ren)\n3/01/26 – 2/28/27\n$8,245.00\n$24,733.00\n$5,497.00",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "Relocation Payments for Evictions based on Owner/Relative Move-in OR Demolition/Permanent Removal of Unit from Housing Use OR Temporary Capital Improvement Work* OR Substantial Rehabilitation\nRelocation payments\nDate of Service of Notice of Termination of Tenancy (\"Eviction Notice\")\nRelocation Amount Due Per Tenant\nMaximum Relocation Amount Due Per Unit\nPLUS Additional Amount Due for Each Elderly (60 years or older) or Disabled Tenant or Household with Minor Child(ren)\n3/01/26 – 2/28/27\n$8,245.00\n$24,733.00\n$5,497.00",
+            "status": "exact_match",
+            "start": 2658,
+            "end": 3180
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 3132,
+        "end": 3149,
+        "occurrences": 3,
+        "model_span": "3/01/26 – 2/28/27",
+        "source_span": "3/01/26 – 2/28/27",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "version_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 3181,
+        "end": 3229,
+        "occurrences": 1,
+        "model_span": "3/01/25 – 2/28/26\n$8,062.00\n$24,184.00\n$5,375.00",
+        "source_span": "3/01/25 – 2/28/26\n$8,062.00\n$24,184.00\n$5,375.00",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "operative_conditions": [],
+      "propagated_scope": [],
+      "temporal": {
+        "model_effective_date": "2026-03-01",
+        "model_kind": "explicit_operative_date",
+        "applied_kind": "explicit_operative_date",
+        "effective_date": null,
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null,
+        "unresolved_reason": "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      },
+      "status_derivation": "temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)",
+        "review: requirement states 'March 1, 2026', which its quoted_span does not contain",
+        "review: requirement states 'February 28, 2027', which its quoted_span does not contain"
+      ],
+      "rule": {
+        "team_rule_id": "r-3387d20e90",
+        "jurisdiction": "San Francisco, CA",
+        "level": "city",
+        "category": "just_cause_eviction",
+        "status": null,
+        "title": "Relocation Payments for No-Fault Evictions under Section 37.9C",
+        "requirement": "[Basis: official explanatory text, not operative legal text] For notices of termination served between March 1, 2026 and February 28, 2027 based on owner/relative move-in, demolition/permanent removal, temporary capital improvement work, or substantial rehabilitation, relocation payments are $8,245.00 per tenant up to a $24,733.00 per-unit maximum, plus an additional $5,497.00 for each elderly (60 or older) or disabled tenant or household with minor children.",
+        "key_value": "$8,245.00 per tenant, max $24,733.00 per unit, plus $5,497.00 for elderly/disabled/minor child household",
+        "coverage_conditions": "Applies to evictions based on owner/relative move-in, demolition/permanent removal of unit from housing use, temporary capital improvement work, or substantial rehabilitation, where the notice of termination is served between 3/01/26 and 2/28/27.",
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "Rent Ordinance § 37.9C",
+        "source_doc_id": "D083",
+        "source_url": "https://www.sf.gov/reports--current-rates-including-rent-increase-relocation-sec-deposit",
+        "quoted_span": "Relocation Payments for Evictions based on Owner/Relative Move-in OR Demolition/Permanent Removal of Unit from Housing Use OR Temporary Capital Improvement Work* OR Substantial Rehabilitation\nRelocation payments\nDate of Service of Notice of Termination of Tenancy (\"Eviction Notice\")\nRelocation Amount Due Per Tenant\nMaximum Relocation Amount Due Per Unit\nPLUS Additional Amount Due for Each Elderly (60 years or older) or Disabled Tenant or Household with Minor Child(ren)\n3/01/26 – 2/28/27\n$8,245.00\n$24,733.00\n$5,497.00",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "just_cause_eviction",
+        "citation": "Rent Ordinance § 37.9C",
+        "provision_ids": [
+          "P6"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "Relocation Payments for Evictions based on Owner/Relative Move-in OR Demolition/Permanent Removal of Unit from Housing Use OR Temporary Capital Improvement Work* OR Substantial Rehabilitation\nRelocation payments\nDate of Service of Notice of Termination of Tenancy (\"Eviction Notice\")\nRelocation Amount Due Per Tenant\nMaximum Relocation Amount Due Per Unit\nPLUS Additional Amount Due for Each Elderly (60 years or older) or Disabled Tenant or Household with Minor Child(ren)\n3/01/26 – 2/28/27\n$8,245.00\n$24,733.00\n$5,497.00"
+          }
+        ],
+        "title": "Relocation Payments for No-Fault Evictions under Section 37.9C",
+        "requirement": "For notices of termination served between March 1, 2026 and February 28, 2027 based on owner/relative move-in, demolition/permanent removal, temporary capital improvement work, or substantial rehabilitation, relocation payments are $8,245.00 per tenant up to a $24,733.00 per-unit maximum, plus an additional $5,497.00 for each elderly (60 or older) or disabled tenant or household with minor children.",
+        "key_value": "$8,245.00 per tenant, max $24,733.00 per unit, plus $5,497.00 for elderly/disabled/minor child household",
+        "coverage_conditions": "Applies to evictions based on owner/relative move-in, demolition/permanent removal of unit from housing use, temporary capital improvement work, or substantial rehabilitation, where the notice of termination is served between 3/01/26 and 2/28/27.",
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": null,
+        "version_note": "Prior relocation rates for 3/01/25 – 2/28/26: $8,062.00 per tenant, $24,184.00 maximum per unit, and $5,375.00 additional amount for elderly, disabled, or household with minor child(ren).",
+        "version_evidence": "3/01/25 – 2/28/26\n$8,062.00\n$24,184.00\n$5,375.00",
+        "effective_date_evidence": "3/01/26 – 2/28/27",
+        "effective_date_evidence_kind": "explicit_operative_date",
+        "effective_date": "2026-03-01",
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 3,
+      "origin": "primary",
+      "accepted": false,
+      "held": false,
+      "historical": false,
+      "temporal_state": null,
+      "validity": {
+        "resolver": "validity-window/v1",
+        "boundaries": [],
+        "end_exclusive": null,
+        "end_conflict": null,
+        "decision": {
+          "outcome": null,
+          "state": null,
+          "reason": null,
+          "start": null
+        }
+      },
+      "duplicate_of": null,
+      "rejection_reasons": [
+        "effective_date: 2026-03-01 is not written in its verified evidence",
+        "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      ],
+      "provision_ids": [
+        "P8"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": null,
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": "Applies to tenants evicted under the Ellis Act where the notice of termination is served between 3/01/26 and 2/28/27.",
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 3551,
+        "end": 3947,
+        "occurrences": 1,
+        "model_span": "Relocation payments for tenants evicted under the Ellis Act\nRelocation payments for tenants evicted under the Ellis Act\nDate of Service of Notice of Termination of Tenancy (\"Eviction Notice\")\nRelocation Amount Due Per Tenant\nMaximum Relocation Amount Due Per Unit\nPLUS Additional Amount Due for Each Elderly (62 years or older) or Disabled Tenant\n3/01/26 – 2/28/27\n$11,110.05\n$33,330.13\n$7,443.90",
+        "source_span": "Relocation payments for tenants evicted under the Ellis Act\nRelocation payments for tenants evicted under the Ellis Act\nDate of Service of Notice of Termination of Tenancy (\"Eviction Notice\")\nRelocation Amount Due Per Tenant\nMaximum Relocation Amount Due Per Unit\nPLUS Additional Amount Due for Each Elderly (62 years or older) or Disabled Tenant\n3/01/26 – 2/28/27\n$11,110.05\n$33,330.13\n$7,443.90",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "Relocation payments for tenants evicted under the Ellis Act\nRelocation payments for tenants evicted under the Ellis Act\nDate of Service of Notice of Termination of Tenancy (\"Eviction Notice\")\nRelocation Amount Due Per Tenant\nMaximum Relocation Amount Due Per Unit\nPLUS Additional Amount Due for Each Elderly (62 years or older) or Disabled Tenant\n3/01/26 – 2/28/27\n$11,110.05\n$33,330.13\n$7,443.90",
+            "status": "exact_match",
+            "start": 3551,
+            "end": 3947
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 3132,
+        "end": 3149,
+        "occurrences": 3,
+        "model_span": "3/01/26 – 2/28/27",
+        "source_span": "3/01/26 – 2/28/27",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "version_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 3948,
+        "end": 3997,
+        "occurrences": 1,
+        "model_span": "3/01/25 – 2/28/26\n$10,863.45\n$32,590.33\n$7,278.67",
+        "source_span": "3/01/25 – 2/28/26\n$10,863.45\n$32,590.33\n$7,278.67",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "operative_conditions": [],
+      "propagated_scope": [],
+      "temporal": {
+        "model_effective_date": "2026-03-01",
+        "model_kind": "explicit_operative_date",
+        "applied_kind": "explicit_operative_date",
+        "effective_date": null,
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null,
+        "unresolved_reason": "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      },
+      "status_derivation": "temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)",
+        "review: requirement states 'March 1, 2026', which its quoted_span does not contain",
+        "review: requirement states 'February 28, 2027', which its quoted_span does not contain"
+      ],
+      "rule": {
+        "team_rule_id": "r-f5e2e5f8f3",
+        "jurisdiction": "San Francisco, CA",
+        "level": "city",
+        "category": "just_cause_eviction",
+        "status": null,
+        "title": "Relocation Payments for Ellis Act Evictions",
+        "requirement": "[Basis: official explanatory text, not operative legal text] For Ellis Act eviction notices served between March 1, 2026 and February 28, 2027, the relocation payment is $11,110.05 per tenant up to a per-unit maximum of $33,330.13, plus an additional $7,443.90 for each elderly (62 or older) or disabled tenant.",
+        "key_value": "$11,110.05 per tenant, max $33,330.13 per unit, plus $7,443.90 for elderly/disabled",
+        "coverage_conditions": "Applies to tenants evicted under the Ellis Act where the notice of termination is served between 3/01/26 and 2/28/27.",
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "Rent Ordinance § 37.9A",
+        "source_doc_id": "D083",
+        "source_url": "https://www.sf.gov/reports--current-rates-including-rent-increase-relocation-sec-deposit",
+        "quoted_span": "Relocation payments for tenants evicted under the Ellis Act\nRelocation payments for tenants evicted under the Ellis Act\nDate of Service of Notice of Termination of Tenancy (\"Eviction Notice\")\nRelocation Amount Due Per Tenant\nMaximum Relocation Amount Due Per Unit\nPLUS Additional Amount Due for Each Elderly (62 years or older) or Disabled Tenant\n3/01/26 – 2/28/27\n$11,110.05\n$33,330.13\n$7,443.90",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "just_cause_eviction",
+        "citation": "Rent Ordinance § 37.9A",
+        "provision_ids": [
+          "P8"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "Relocation payments for tenants evicted under the Ellis Act\nRelocation payments for tenants evicted under the Ellis Act\nDate of Service of Notice of Termination of Tenancy (\"Eviction Notice\")\nRelocation Amount Due Per Tenant\nMaximum Relocation Amount Due Per Unit\nPLUS Additional Amount Due for Each Elderly (62 years or older) or Disabled Tenant\n3/01/26 – 2/28/27\n$11,110.05\n$33,330.13\n$7,443.90"
+          }
+        ],
+        "title": "Relocation Payments for Ellis Act Evictions",
+        "requirement": "For Ellis Act eviction notices served between March 1, 2026 and February 28, 2027, the relocation payment is $11,110.05 per tenant up to a per-unit maximum of $33,330.13, plus an additional $7,443.90 for each elderly (62 or older) or disabled tenant.",
+        "key_value": "$11,110.05 per tenant, max $33,330.13 per unit, plus $7,443.90 for elderly/disabled",
+        "coverage_conditions": "Applies to tenants evicted under the Ellis Act where the notice of termination is served between 3/01/26 and 2/28/27.",
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": null,
+        "version_note": "Prior relocation rates for 3/01/25 – 2/28/26: $10,863.45 per tenant, $32,590.33 maximum per unit, and $7,278.67 additional amount for each elderly or disabled tenant.",
+        "version_evidence": "3/01/25 – 2/28/26\n$10,863.45\n$32,590.33\n$7,278.67",
+        "effective_date_evidence": "3/01/26 – 2/28/27",
+        "effective_date_evidence_kind": "explicit_operative_date",
+        "effective_date": "2026-03-01",
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 4,
+      "origin": "primary",
+      "accepted": false,
+      "held": false,
+      "historical": false,
+      "temporal_state": null,
+      "validity": {
+        "resolver": "validity-window/v1",
+        "boundaries": [],
+        "end_exclusive": null,
+        "end_conflict": null,
+        "decision": {
+          "outcome": null,
+          "state": null,
+          "reason": null,
+          "start": null
+        }
+      },
+      "duplicate_of": null,
+      "rejection_reasons": [
+        "effective_date: 2026-03-01 is not written in its verified evidence",
+        "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      ],
+      "provision_ids": [
+        "P9"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": null,
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": "Applies to temporary displacement for less than 20 days where the notice of termination is served between 3/01/26 and 2/28/27.",
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 4041,
+        "end": 4353,
+        "occurrences": 1,
+        "model_span": "Relocation payments for temporary displacement for less than 20 days\nRelocation payments for temporary displacement for less than 20 days\nDate of Service of Notice of Termination of Tenancy (\"Eviction Notice\")\nRelocation Amount Due Per Tenant Household\n3/01/26 – 2/28/27\n$446.00/day (plus actual moving expenses)",
+        "source_span": "Relocation payments for temporary displacement for less than 20 days\nRelocation payments for temporary displacement for less than 20 days\nDate of Service of Notice of Termination of Tenancy (\"Eviction Notice\")\nRelocation Amount Due Per Tenant Household\n3/01/26 – 2/28/27\n$446.00/day (plus actual moving expenses)",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "Relocation payments for temporary displacement for less than 20 days\nRelocation payments for temporary displacement for less than 20 days\nDate of Service of Notice of Termination of Tenancy (\"Eviction Notice\")\nRelocation Amount Due Per Tenant Household\n3/01/26 – 2/28/27\n$446.00/day (plus actual moving expenses)",
+            "status": "exact_match",
+            "start": 4041,
+            "end": 4353
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 3132,
+        "end": 3149,
+        "occurrences": 3,
+        "model_span": "3/01/26 – 2/28/27",
+        "source_span": "3/01/26 – 2/28/27",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "version_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 4354,
+        "end": 4413,
+        "occurrences": 1,
+        "model_span": "3/01/25 – 2/28/26\n$436.00/day (plus actual moving expenses)",
+        "source_span": "3/01/25 – 2/28/26\n$436.00/day (plus actual moving expenses)",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "operative_conditions": [],
+      "propagated_scope": [],
+      "temporal": {
+        "model_effective_date": "2026-03-01",
+        "model_kind": "explicit_operative_date",
+        "applied_kind": "explicit_operative_date",
+        "effective_date": null,
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null,
+        "unresolved_reason": "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      },
+      "status_derivation": "temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)",
+        "review: requirement states 'March 1, 2026', which its quoted_span does not contain",
+        "review: requirement states 'February 28, 2027', which its quoted_span does not contain"
+      ],
+      "rule": {
+        "team_rule_id": "r-db200a1034",
+        "jurisdiction": "San Francisco, CA",
+        "level": "city",
+        "category": "just_cause_eviction",
+        "status": null,
+        "title": "Relocation Payments for Temporary Displacement Under 20 Days",
+        "requirement": "[Basis: official explanatory text, not operative legal text] For notices served between March 1, 2026 and February 28, 2027 involving temporary displacement for less than 20 days, the relocation payment is $446.00 per day per tenant household, plus actual moving expenses.",
+        "key_value": "$446.00/day plus actual moving expenses",
+        "coverage_conditions": "Applies to temporary displacement for less than 20 days where the notice of termination is served between 3/01/26 and 2/28/27.",
+        "exemptions": null,
+        "overrides": [],
+        "interaction": "Governed by California Civil Code Section 1947.9 rather than San Francisco Rent Ordinance Section 37.9C for temporary capital improvement evictions for less than 20 days.",
+        "effective_date": null,
+        "citation": "California Civil Code § 1947.9",
+        "source_doc_id": "D083",
+        "source_url": "https://www.sf.gov/reports--current-rates-including-rent-increase-relocation-sec-deposit",
+        "quoted_span": "Relocation payments for temporary displacement for less than 20 days\nRelocation payments for temporary displacement for less than 20 days\nDate of Service of Notice of Termination of Tenancy (\"Eviction Notice\")\nRelocation Amount Due Per Tenant Household\n3/01/26 – 2/28/27\n$446.00/day (plus actual moving expenses)",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "just_cause_eviction",
+        "citation": "California Civil Code § 1947.9",
+        "provision_ids": [
+          "P9"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "Relocation payments for temporary displacement for less than 20 days\nRelocation payments for temporary displacement for less than 20 days\nDate of Service of Notice of Termination of Tenancy (\"Eviction Notice\")\nRelocation Amount Due Per Tenant Household\n3/01/26 – 2/28/27\n$446.00/day (plus actual moving expenses)"
+          }
+        ],
+        "title": "Relocation Payments for Temporary Displacement Under 20 Days",
+        "requirement": "For notices served between March 1, 2026 and February 28, 2027 involving temporary displacement for less than 20 days, the relocation payment is $446.00 per day per tenant household, plus actual moving expenses.",
+        "key_value": "$446.00/day plus actual moving expenses",
+        "coverage_conditions": "Applies to temporary displacement for less than 20 days where the notice of termination is served between 3/01/26 and 2/28/27.",
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": "Governed by California Civil Code Section 1947.9 rather than San Francisco Rent Ordinance Section 37.9C for temporary capital improvement evictions for less than 20 days.",
+        "enactment_status": "enacted",
+        "enactment_status_evidence": null,
+        "version_note": "Prior relocation rate for 3/01/25 – 2/28/26: $436.00/day (plus actual moving expenses).",
+        "version_evidence": "3/01/25 – 2/28/26\n$436.00/day (plus actual moving expenses)",
+        "effective_date_evidence": "3/01/26 – 2/28/27",
+        "effective_date_evidence_kind": "explicit_operative_date",
+        "effective_date": "2026-03-01",
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 5,
+      "origin": "repair",
+      "accepted": true,
+      "held": false,
+      "historical": false,
+      "temporal_state": "in_force",
+      "validity": {
+        "resolver": "validity-window/v1",
+        "boundaries": [
+          {
+            "kind": "unknown_temporal_note",
+            "role": "unknown",
+            "date": "2026-03-01",
+            "origin": "quoted_span",
+            "history": false,
+            "evidence": null,
+            "raw_start": null,
+            "raw_end": null
+          },
+          {
+            "kind": "unknown_temporal_note",
+            "role": "unknown",
+            "date": "2027-02-28",
+            "origin": "quoted_span",
+            "history": false,
+            "evidence": null,
+            "raw_start": null,
+            "raw_end": null
+          },
+          {
+            "kind": "unknown_temporal_note",
+            "role": "unknown",
+            "date": "2026-03-01",
+            "origin": "effective_date_evidence",
+            "history": false,
+            "evidence": null,
+            "raw_start": null,
+            "raw_end": null
+          },
+          {
+            "kind": "unknown_temporal_note",
+            "role": "unknown",
+            "date": "2027-02-28",
+            "origin": "effective_date_evidence",
+            "history": false,
+            "evidence": null,
+            "raw_start": null,
+            "raw_end": null
+          }
+        ],
+        "end_exclusive": null,
+        "end_conflict": null,
+        "decision": {
+          "outcome": null,
+          "state": null,
+          "reason": null,
+          "start": null
+        }
+      },
+      "duplicate_of": null,
+      "rejection_reasons": [],
+      "provision_ids": [
+        "P1"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": null,
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 216,
+        "end": 283,
+        "occurrences": 1,
+        "model_span": "Allowable Rent Increase:\n1.6% for March 1, 2026 – February 28, 2027",
+        "source_span": "Allowable Rent Increase:\n1.6% for March 1, 2026 – February 28, 2027",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "Allowable Rent Increase:\n1.6% for March 1, 2026 – February 28, 2027",
+            "status": "exact_match",
+            "start": 216,
+            "end": 283
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 250,
+        "end": 283,
+        "occurrences": 4,
+        "model_span": "March 1, 2026 – February 28, 2027",
+        "source_span": "March 1, 2026 – February 28, 2027",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [],
+      "temporal": {
+        "model_effective_date": "2026-03-01",
+        "model_kind": "explicit_operative_date",
+        "applied_kind": "explicit_operative_date",
+        "effective_date": "2026-03-01",
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null
+      },
+      "status_derivation": "enacted; effective 2026-03-01 is on or before as_of 2026-10-01",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-48b1bdcc7f",
+        "jurisdiction": "San Francisco, CA",
+        "level": "city",
+        "category": "rent_increase_limits",
+        "status": "in_force",
+        "title": "Allowable Rent Increase (March 1, 2026 – February 28, 2027)",
+        "requirement": "[Basis: official explanatory text, not operative legal text] The allowable annual rent increase is 1.6% for the effective period from March 1, 2026 through February 28, 2027.",
+        "key_value": "1.6%",
+        "coverage_conditions": null,
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": "2026-03-01",
+        "citation": "Topic 571",
+        "source_doc_id": "D083",
+        "source_url": "https://www.sf.gov/reports--current-rates-including-rent-increase-relocation-sec-deposit",
+        "quoted_span": "Allowable Rent Increase:\n1.6% for March 1, 2026 – February 28, 2027",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "rent_increase_limits",
+        "citation": "Topic 571",
+        "provision_ids": [
+          "P1"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "Allowable Rent Increase:\n1.6% for March 1, 2026 – February 28, 2027"
+          }
+        ],
+        "title": "Allowable Rent Increase (March 1, 2026 – February 28, 2027)",
+        "requirement": "The allowable annual rent increase is 1.6% for the effective period from March 1, 2026 through February 28, 2027.",
+        "key_value": "1.6%",
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": null,
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": "March 1, 2026 – February 28, 2027",
+        "effective_date_evidence_kind": "explicit_operative_date",
+        "effective_date": "2026-03-01",
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 6,
+      "origin": "repair",
+      "accepted": true,
+      "held": false,
+      "historical": false,
+      "temporal_state": "in_force",
+      "validity": {
+        "resolver": "validity-window/v1",
+        "boundaries": [
+          {
+            "kind": "unknown_temporal_note",
+            "role": "unknown",
+            "date": "2026-03-01",
+            "origin": "quoted_span",
+            "history": false,
+            "evidence": null,
+            "raw_start": null,
+            "raw_end": null
+          },
+          {
+            "kind": "unknown_temporal_note",
+            "role": "unknown",
+            "date": "2027-02-28",
+            "origin": "quoted_span",
+            "history": false,
+            "evidence": null,
+            "raw_start": null,
+            "raw_end": null
+          },
+          {
+            "kind": "unknown_temporal_note",
+            "role": "unknown",
+            "date": "2026-03-01",
+            "origin": "effective_date_evidence",
+            "history": false,
+            "evidence": null,
+            "raw_start": null,
+            "raw_end": null
+          },
+          {
+            "kind": "unknown_temporal_note",
+            "role": "unknown",
+            "date": "2027-02-28",
+            "origin": "effective_date_evidence",
+            "history": false,
+            "evidence": null,
+            "raw_start": null,
+            "raw_end": null
+          }
+        ],
+        "end_exclusive": null,
+        "end_conflict": null,
+        "decision": {
+          "outcome": null,
+          "state": null,
+          "reason": null,
+          "start": null
+        }
+      },
+      "duplicate_of": null,
+      "rejection_reasons": [],
+      "provision_ids": [
+        "P2"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": null,
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 284,
+        "end": 353,
+        "occurrences": 1,
+        "model_span": "Security Deposit Interest:\n4.2% for March 1, 2026 – February 28, 2027",
+        "source_span": "Security Deposit Interest:\n4.2% for March 1, 2026 – February 28, 2027",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "Security Deposit Interest:\n4.2% for March 1, 2026 – February 28, 2027",
+            "status": "exact_match",
+            "start": 284,
+            "end": 353
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 250,
+        "end": 283,
+        "occurrences": 4,
+        "model_span": "March 1, 2026 – February 28, 2027",
+        "source_span": "March 1, 2026 – February 28, 2027",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [],
+      "temporal": {
+        "model_effective_date": "2026-03-01",
+        "model_kind": "explicit_operative_date",
+        "applied_kind": "explicit_operative_date",
+        "effective_date": "2026-03-01",
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null
+      },
+      "status_derivation": "enacted; effective 2026-03-01 is on or before as_of 2026-10-01",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-ad83f622b4",
+        "jurisdiction": "San Francisco, CA",
+        "level": "city",
+        "category": "security_deposits",
+        "status": "in_force",
+        "title": "Security Deposit Interest Rate (March 1, 2026 – February 28, 2027)",
+        "requirement": "[Basis: official explanatory text, not operative legal text] The annual security deposit interest rate is 4.2% for the period from March 1, 2026 through February 28, 2027.",
+        "key_value": "4.2%",
+        "coverage_conditions": null,
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": "2026-03-01",
+        "citation": "Topic 572",
+        "source_doc_id": "D083",
+        "source_url": "https://www.sf.gov/reports--current-rates-including-rent-increase-relocation-sec-deposit",
+        "quoted_span": "Security Deposit Interest:\n4.2% for March 1, 2026 – February 28, 2027",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "security_deposits",
+        "citation": "Topic 572",
+        "provision_ids": [
+          "P2"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "Security Deposit Interest:\n4.2% for March 1, 2026 – February 28, 2027"
+          }
+        ],
+        "title": "Security Deposit Interest Rate (March 1, 2026 – February 28, 2027)",
+        "requirement": "The annual security deposit interest rate is 4.2% for the period from March 1, 2026 through February 28, 2027.",
+        "key_value": "4.2%",
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": null,
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": "March 1, 2026 – February 28, 2027",
+        "effective_date_evidence_kind": "explicit_operative_date",
+        "effective_date": "2026-03-01",
+        "conflict_note": null
+      }
+    }
+  ],
+  "posture": {
+    "declared": "official_explanatory_page",
+    "evidence": "Current Rates, including Rent Increase, Relocation, Sec. Deposit | SF.gov",
+    "evidence_check": {
+      "status": "exact_match",
+      "normalization": null,
+      "start": 0,
+      "end": 73,
+      "occurrences": 1,
+      "model_span": "Current Rates, including Rent Increase, Relocation, Sec. Deposit | SF.gov",
+      "source_span": "Current Rates, including Rent Increase, Relocation, Sec. Deposit | SF.gov",
+      "reason": null,
+      "reconstructed": false,
+      "parts": [],
+      "crossed_artifacts": []
+    },
+    "established": "official_explanatory_page",
+    "basis": "declared posture with verified evidence"
+  },
+  "base_dates": [],
+  "provision_inventory": [
+    {
+      "id": "P1",
+      "ref": "Topic 571",
+      "anchor": "Allowable rent increase\nAllowable rent increase\nEffective Period",
+      "summary": "Annual allowable rent increase schedule setting 1.6% for March 1, 2026 – February 28, 2027.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "rent_increase_limits",
+      "reason": null
+    },
+    {
+      "id": "P2",
+      "ref": "Topic 572",
+      "anchor": "Security deposit interest\nSecurity deposit interest\nEffective Period",
+      "summary": "Annual security deposit interest schedule setting 4.2% for March 1, 2026 – February 28, 2027.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "security_deposits",
+      "reason": null
+    },
+    {
+      "id": "P3",
+      "ref": "Topic 573",
+      "anchor": "Rent Board Fees that can be banked",
+      "summary": "Annual schedule of Rent Board fees that can be banked by landlords and tenants.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "Rent Board administrative fees and fee banking are outside the official housing categories"
+    },
+    {
+      "id": "P4",
+      "ref": "Topic 574",
+      "anchor": "Capital Improvement Imputed Interest Rates\nUse the rate",
+      "summary": "Imputed interest rates and amortization periods for capital improvement petitions.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "Capital improvement imputed interest rates and amortization schedules are outside the official housing categories"
+    },
+    {
+      "id": "P5",
+      "ref": "Topic 575",
+      "anchor": "Uncompensated labor rates\nUse the rate in effect",
+      "summary": "Hourly uncompensated labor rates for capital improvement work.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "Uncompensated labor rates for capital improvements are outside the official housing categories"
+    },
+    {
+      "id": "P6",
+      "ref": "Rent Ordinance § 37.9C",
+      "anchor": "Relocation Payments for Evictions based on Owner/Relative Move-in",
+      "summary": "Relocation payment amounts for evictions based on owner/relative move-in, demolition/permanent removal, capital improvements, or substantial rehabilitation.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "just_cause_eviction",
+      "reason": null
+    },
+    {
+      "id": "P7",
+      "ref": "Rent Ordinance § 37.9C footnote",
+      "anchor": "*The amount of relocation payments for temporary capital",
+      "summary": "Footnote clarifying that relocation payments for temporary capital improvement evictions under 20 days are governed by CC § 1947.9 and not Rent Ordinance § 37.9C.",
+      "role": "scope_condition",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "Scope condition / carve-out, see global_scope"
+    },
+    {
+      "id": "P8",
+      "ref": "Rent Ordinance § 37.9A",
+      "anchor": "Relocation payments for tenants evicted under the Ellis Act",
+      "summary": "Relocation payment amounts for tenants evicted under the Ellis Act.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "just_cause_eviction",
+      "reason": null
+    },
+    {
+      "id": "P9",
+      "ref": "California Civil Code § 1947.9",
+      "anchor": "Relocation payments for temporary displacement for less than 20",
+      "summary": "Per diem relocation payment amounts for temporary displacement lasting less than 20 days.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "just_cause_eviction",
+      "reason": null
+    }
+  ],
+  "global_scope": [
+    {
+      "id": "S1",
+      "kind": "exemption",
+      "statement": "The amount of relocation payments for temporary capital improvement evictions for less than 20 days is governed by California Civil Code Section 1947.9 and not by Rent Ordinance Section 37.9C.",
+      "citation": "Rent Ordinance § 37.9C",
+      "scope_mode": "named_subject",
+      "scope_quote": "The amount of relocation payments for temporary capital improvement evictions for less than 20 days",
+      "source_provision_id": "P7",
+      "governed_provision_ids": [
+        "P6"
+      ],
+      "evidence_parts": [
+        {
+          "segment_id": 1,
+          "quoted_text": "*The amount of relocation payments for temporary capital improvement evictions for less than 20 days is governed by California Civil Code Section 1947.9 and not by Rent Ordinance Section 37.9C. See below for relocation payments for temporary displacement for less than 20 days."
+        }
+      ],
+      "evidence_check": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 3273,
+        "end": 3550,
+        "occurrences": 1,
+        "model_span": "*The amount of relocation payments for temporary capital improvement evictions for less than 20 days is governed by California Civil Code Section 1947.9 and not by Rent Ordinance Section 37.9C. See below for relocation payments for temporary displacement for less than 20 days.",
+        "source_span": "*The amount of relocation payments for temporary capital improvement evictions for less than 20 days is governed by California Civil Code Section 1947.9 and not by Rent Ordinance Section 37.9C. See below for relocation payments for temporary displacement for less than 20 days.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "*The amount of relocation payments for temporary capital improvement evictions for less than 20 days is governed by California Civil Code Section 1947.9 and not by Rent Ordinance Section 37.9C. See below for relocation payments for temporary displacement for less than 20 days.",
+            "status": "exact_match",
+            "start": 3273,
+            "end": 3550
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "propagated": true,
+      "problem": null,
+      "scope": {
+        "resolver": "scope-modes/v1",
+        "declared_mode": "named_subject",
+        "mode": "named_subject",
+        "scope_words": {
+          "scope_quote": "The amount of relocation payments for temporary capital improvement evictions for less than 20 days",
+          "scope_quote_check": "exact_match",
+          "text": "The amount of relocation payments for temporary capital improvement evictions for less than 20 days",
+          "from": "scope_quote"
+        },
+        "detail": null,
+        "propagate_ids": [],
+        "mapping_targets": [],
+        "verification": null
+      }
+    }
+  ],
+  "source_view": {
+    "marker": "[[PAGE BREAK]]",
+    "segment_label": "[[SEGMENT {}]]",
+    "view_sha256": "b769b0012246be39b0c36e1db03216eb19904d47a271cd1dcfd991e604b1fdf7",
+    "segments": [
+      {
+        "id": 1,
+        "raw_start": 0,
+        "raw_end": 4526
+      }
+    ],
+    "artifacts_removed": 0,
+    "artifacts": []
+  },
+  "coverage": {
+    "inventory_valid": true,
+    "anchors_located": "9/9",
+    "after_primary": {
+      "uncovered": [
+        "Topic 571",
+        "Topic 572"
+      ],
+      "unaccepted": [
+        "Rent Ordinance § 37.9C",
+        "Rent Ordinance § 37.9A",
+        "California Civil Code § 1947.9"
+      ],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "scope_mappings": {
+      "requested": 0,
+      "applies": 0,
+      "does_not_apply": 0,
+      "unresolved": 0
+    },
+    "after_repair": {
+      "uncovered": [],
+      "unaccepted": [
+        "Rent Ordinance § 37.9C",
+        "Rent Ordinance § 37.9A",
+        "California Civil Code § 1947.9"
+      ],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "repair_targets": {
+      "before_repair": 2,
+      "resolved_by_accepted_rule": 2,
+      "resolved_out_of_scope": 0,
+      "still_unresolved": 0
+    },
+    "inventory_items": 9,
+    "in_scope_items": 5,
+    "in_scope_refs": 5,
+    "uncertain": [],
+    "final": {
+      "uncovered": [],
+      "unaccepted": [
+        "Rent Ordinance § 37.9C",
+        "Rent Ordinance § 37.9A",
+        "California Civil Code § 1947.9"
+      ],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "link_mismatches": [
+      "rule 0 links P1 ('Topic 571') but cites '571 Allowable Annual Increases'",
+      "rule 1 links P2 ('Topic 572') but cites '572 Security Deposit Interest Rates'"
+    ],
+    "provisions": [
+      {
+        "ref": "Topic 571",
+        "inventory_item": 0,
+        "provision_id": "P1",
+        "summary": "Annual allowable rent increase schedule setting 1.6% for March 1, 2026 – February 28, 2027.",
+        "category": "rent_increase_limits",
+        "candidates": [
+          5
+        ],
+        "accepted": [
+          5
+        ],
+        "basis": {
+          "5": "provision link; citation names it"
+        }
+      },
+      {
+        "ref": "Topic 572",
+        "inventory_item": 1,
+        "provision_id": "P2",
+        "summary": "Annual security deposit interest schedule setting 4.2% for March 1, 2026 – February 28, 2027.",
+        "category": "security_deposits",
+        "candidates": [
+          6
+        ],
+        "accepted": [
+          6
+        ],
+        "basis": {
+          "6": "provision link; citation names it"
+        }
+      },
+      {
+        "ref": "Rent Ordinance § 37.9C",
+        "inventory_item": 5,
+        "provision_id": "P6",
+        "summary": "Relocation payment amounts for evictions based on owner/relative move-in, demolition/permanent removal, capital improvements, or substantial rehabilitation.",
+        "category": "just_cause_eviction",
+        "candidates": [
+          2
+        ],
+        "accepted": [],
+        "basis": {
+          "2": "provision link; citation names it"
+        }
+      },
+      {
+        "ref": "Rent Ordinance § 37.9A",
+        "inventory_item": 7,
+        "provision_id": "P8",
+        "summary": "Relocation payment amounts for tenants evicted under the Ellis Act.",
+        "category": "just_cause_eviction",
+        "candidates": [
+          3
+        ],
+        "accepted": [],
+        "basis": {
+          "3": "provision link; citation names it"
+        }
+      },
+      {
+        "ref": "California Civil Code § 1947.9",
+        "inventory_item": 8,
+        "provision_id": "P9",
+        "summary": "Per diem relocation payment amounts for temporary displacement lasting less than 20 days.",
+        "category": "just_cause_eviction",
+        "candidates": [
+          4
+        ],
+        "accepted": [],
+        "basis": {
+          "4": "provision link; citation names it"
+        }
+      }
+    ],
+    "unrecorded_subdivisions": []
+  },
+  "scope_challenges": [
+    {
+      "ref": "Topic 573",
+      "provision_id": "P3",
+      "role": "operative_rule",
+      "reason": "Rent Board administrative fees and fee banking are outside the official housing categories",
+      "summary": "Annual schedule of Rent Board fees that can be banked by landlords and tenants.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    },
+    {
+      "ref": "Topic 574",
+      "provision_id": "P4",
+      "role": "operative_rule",
+      "reason": "Capital improvement imputed interest rates and amortization schedules are outside the official housing categories",
+      "summary": "Imputed interest rates and amortization periods for capital improvement petitions.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    },
+    {
+      "ref": "Topic 575",
+      "provision_id": "P5",
+      "role": "operative_rule",
+      "reason": "Uncompensated labor rates for capital improvements are outside the official housing categories",
+      "summary": "Hourly uncompensated labor rates for capital improvement work.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    },
+    {
+      "ref": "Rent Ordinance § 37.9C footnote",
+      "provision_id": "P7",
+      "role": "scope_condition",
+      "reason": "Scope condition / carve-out, see global_scope",
+      "summary": "Footnote clarifying that relocation payments for temporary capital improvement evictions under 20 days are governed by CC § 1947.9 and not Rent Ordinance § 37.9C.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role scope_condition is decided by other rules"
+    }
+  ],
+  "scope_mappings": [],
+  "legislative_session": null,
+  "empty_result": null,
+  "legacy_replay": null,
+  "dedupe": [],
+  "chunking": null,
+  "repair": {
+    "invoked": true,
+    "reason": "2 repair target(s) from inventory_uncovered",
+    "prompt_version": "v7-repair-1",
+    "targets": [
+      {
+        "ref": "Topic 571",
+        "sources": [
+          "inventory_uncovered"
+        ],
+        "provision_id": "P1",
+        "summary": "Annual allowable rent increase schedule setting 1.6% for March 1, 2026 – February 28, 2027.",
+        "category": "rent_increase_limits",
+        "pre_repair_state": "in-scope inventory provision with no candidate",
+        "resolution": {
+          "scope": "in_scope",
+          "reason": null,
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 216,
+            "end": 283,
+            "occurrences": 1,
+            "model_span": "Allowable Rent Increase:\n1.6% for March 1, 2026 – February 28, 2027",
+            "source_span": "Allowable Rent Increase:\n1.6% for March 1, 2026 – February 28, 2027",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 1,
+                "model_text": "Allowable Rent Increase:\n1.6% for March 1, 2026 – February 28, 2027",
+                "status": "exact_match",
+                "start": 216,
+                "end": 283
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true,
+          "evidence_problem": null
+        },
+        "repair_scope": "in_scope",
+        "reason": null,
+        "candidate_indices": [
+          5
+        ],
+        "accepted_indices": [
+          5
+        ],
+        "final_resolution": "resolved_by_accepted_rule",
+        "unresolved_reason": null
+      },
+      {
+        "ref": "Topic 572",
+        "sources": [
+          "inventory_uncovered"
+        ],
+        "provision_id": "P2",
+        "summary": "Annual security deposit interest schedule setting 4.2% for March 1, 2026 – February 28, 2027.",
+        "category": "security_deposits",
+        "pre_repair_state": "in-scope inventory provision with no candidate",
+        "resolution": {
+          "scope": "in_scope",
+          "reason": null,
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 284,
+            "end": 353,
+            "occurrences": 1,
+            "model_span": "Security Deposit Interest:\n4.2% for March 1, 2026 – February 28, 2027",
+            "source_span": "Security Deposit Interest:\n4.2% for March 1, 2026 – February 28, 2027",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 1,
+                "model_text": "Security Deposit Interest:\n4.2% for March 1, 2026 – February 28, 2027",
+                "status": "exact_match",
+                "start": 284,
+                "end": 353
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true,
+          "evidence_problem": null
+        },
+        "repair_scope": "in_scope",
+        "reason": null,
+        "candidate_indices": [
+          6
+        ],
+        "accepted_indices": [
+          6
+        ],
+        "final_resolution": "resolved_by_accepted_rule",
+        "unresolved_reason": null
+      }
+    ],
+    "cache_key": "ad5c896f4ce4aaa32433e061ae4125578d5d42571dc91bd05877f4968a0de7df",
+    "cache_hit": true,
+    "cache_entry": "cache/extraction/ad5c896f4ce4aaa32433e061ae4125578d5d42571dc91bd05877f4968a0de7df.json",
+    "prompt_sha256": "38cafa7a3ac7b7cc086e70597ca1805eaa63d6eae88c7218ea01eb7f149b9ea2",
+    "provider_metadata": {
+      "api": "interactions.create",
+      "interaction_id": "",
+      "model": "gemini-3.8-flash",
+      "status": "completed",
+      "usage": {
+        "input_tokens": 5168,
+        "output_tokens": 985,
+        "thinking_tokens": 7199,
+        "total_tokens": 13352
+      }
+    },
+    "raw_response_text": "{\n  \"target_resolutions\": [\n    {\n      \"ref\": \"Topic 571\",\n      \"scope\": \"in_scope\",\n      \"reason\": null,\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Allowable Rent Increase:\\n1.6% for March 1, 2026 – February 28, 2027\"\n        }\n      ]\n    },\n    {\n      \"ref\": \"Topic 572\",\n      \"scope\": \"in_scope\",\n      \"reason\": null,\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Security Deposit Interest:\\n4.2% for March 1, 2026 – February 28, 2027\"\n        }\n      ]\n    }\n  ],\n  \"scope_mappings\": [],\n  \"rules\": [\n    {\n      \"category\": \"rent_increase_limits\",\n      \"citation\": \"Topic 571\",\n      \"provision_ids\": [\n        \"P1\"\n      ],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Allowable Rent Increase:\\n1.6% for March 1, 2026 – February 28, 2027\"\n        }\n      ],\n      \"title\": \"Allowable Rent Increase (March 1, 2026 – February 28, 2027)\",\n      \"requirement\": \"The allowable annual rent increase is 1.6% for the effective period from March 1, 2026 through February 28, 2027.\",\n      \"key_value\": \"1.6%\",\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": null,\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": \"March 1, 2026 – February 28, 2027\",\n      \"effective_date_evidence_kind\": \"explicit_operative_date\",\n      \"effective_date\": \"2026-03-01\",\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"security_deposits\",\n      \"citation\": \"Topic 572\",\n      \"provision_ids\": [\n        \"P2\"\n      ],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Security Deposit Interest:\\n4.2% for March 1, 2026 – February 28, 2027\"\n        }\n      ],\n      \"title\": \"Security Deposit Interest Rate (March 1, 2026 – February 28, 2027)\",\n      \"requirement\": \"The annual security deposit interest rate is 4.2% for the period from March 1, 2026 through February 28, 2027.\",\n      \"key_value\": \"4.2%\",\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": null,\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": \"March 1, 2026 – February 28, 2027\",\n      \"effective_date_evidence_kind\": \"explicit_operative_date\",\n      \"effective_date\": \"2026-03-01\",\n      \"conflict_note\": null\n    }\n  ]\n}",
+    "mappings": [],
+    "candidate_indices": [
+      5,
+      6
+    ],
+    "accepted_count": 2,
+    "rejected_count": 0,
+    "errors": []
+  },
+  "document_status": "review_required",
+  "review_reasons": [
+    "in-scope provisions whose candidate records were all rejected: ['Rent Ordinance § 37.9C', 'Rent Ordinance § 37.9A', 'California Civil Code § 1947.9']"
+  ],
+  "warnings": [
+    "candidate 2 rejected: effective_date: 2026-03-01 is not written in its verified evidence; status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+    "candidate 3 rejected: effective_date: 2026-03-01 is not written in its verified evidence; status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+    "candidate 4 rejected: effective_date: 2026-03-01 is not written in its verified evidence; status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+    "review: provision links whose rule citation does not name the provision: 2"
+  ],
+  "errors": [],
+  "raw_response_text": "{\n  \"document\": {\n    \"posture\": \"official_explanatory_page\",\n    \"evidence\": \"Current Rates, including Rent Increase, Relocation, Sec. Deposit | SF.gov\"\n  },\n  \"provisions\": [\n    {\n      \"id\": \"P1\",\n      \"ref\": \"Topic 571\",\n      \"anchor\": \"Allowable rent increase\\nAllowable rent increase\\nEffective Period\",\n      \"summary\": \"Annual allowable rent increase schedule setting 1.6% for March 1, 2026 – February 28, 2027.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"rent_increase_limits\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P2\",\n      \"ref\": \"Topic 572\",\n      \"anchor\": \"Security deposit interest\\nSecurity deposit interest\\nEffective Period\",\n      \"summary\": \"Annual security deposit interest schedule setting 4.2% for March 1, 2026 – February 28, 2027.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"security_deposits\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P3\",\n      \"ref\": \"Topic 573\",\n      \"anchor\": \"Rent Board Fees that can be banked\",\n      \"summary\": \"Annual schedule of Rent Board fees that can be banked by landlords and tenants.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"Rent Board administrative fees and fee banking are outside the official housing categories\"\n    },\n    {\n      \"id\": \"P4\",\n      \"ref\": \"Topic 574\",\n      \"anchor\": \"Capital Improvement Imputed Interest Rates\\nUse the rate\",\n      \"summary\": \"Imputed interest rates and amortization periods for capital improvement petitions.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"Capital improvement imputed interest rates and amortization schedules are outside the official housing categories\"\n    },\n    {\n      \"id\": \"P5\",\n      \"ref\": \"Topic 575\",\n      \"anchor\": \"Uncompensated labor rates\\nUse the rate in effect\",\n      \"summary\": \"Hourly uncompensated labor rates for capital improvement work.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"Uncompensated labor rates for capital improvements are outside the official housing categories\"\n    },\n    {\n      \"id\": \"P6\",\n      \"ref\": \"Rent Ordinance § 37.9C\",\n      \"anchor\": \"Relocation Payments for Evictions based on Owner/Relative Move-in\",\n      \"summary\": \"Relocation payment amounts for evictions based on owner/relative move-in, demolition/permanent removal, capital improvements, or substantial rehabilitation.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"just_cause_eviction\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P7\",\n      \"ref\": \"Rent Ordinance § 37.9C footnote\",\n      \"anchor\": \"*The amount of relocation payments for temporary capital\",\n      \"summary\": \"Footnote clarifying that relocation payments for temporary capital improvement evictions under 20 days are governed by CC § 1947.9 and not Rent Ordinance § 37.9C.\",\n      \"role\": \"scope_condition\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"Scope condition / carve-out, see global_scope\"\n    },\n    {\n      \"id\": \"P8\",\n      \"ref\": \"Rent Ordinance § 37.9A\",\n      \"anchor\": \"Relocation payments for tenants evicted under the Ellis Act\",\n      \"summary\": \"Relocation payment amounts for tenants evicted under the Ellis Act.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"just_cause_eviction\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P9\",\n      \"ref\": \"California Civil Code § 1947.9\",\n      \"anchor\": \"Relocation payments for temporary displacement for less than 20\",\n      \"summary\": \"Per diem relocation payment amounts for temporary displacement lasting less than 20 days.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"just_cause_eviction\",\n      \"reason\": null\n    }\n  ],\n  \"global_scope\": [\n    {\n      \"id\": \"S1\",\n      \"kind\": \"exemption\",\n      \"statement\": \"The amount of relocation payments for temporary capital improvement evictions for less than 20 days is governed by California Civil Code Section 1947.9 and not by Rent Ordinance Section 37.9C.\",\n      \"citation\": \"Rent Ordinance § 37.9C\",\n      \"scope_mode\": \"named_subject\",\n      \"scope_quote\": \"The amount of relocation payments for temporary capital improvement evictions for less than 20 days\",\n      \"source_provision_id\": \"P7\",\n      \"governed_provision_ids\": [\n        \"P6\"\n      ],\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"*The amount of relocation payments for temporary capital improvement evictions for less than 20 days is governed by California Civil Code Section 1947.9 and not by Rent Ordinance Section 37.9C. See below for relocation payments for temporary displacement for less than 20 days.\"\n        }\n      ]\n    }\n  ],\n  \"rules\": [\n    {\n      \"category\": \"rent_increase_limits\",\n      \"citation\": \"571 Allowable Annual Increases\",\n      \"provision_ids\": [\n        \"P1\"\n      ],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Allowable rent increase\\nAllowable rent increase\\nEffective Period\\nAmount of Increase\\nMarch 1, 2026 – February 28, 2027\\n1.6%\"\n        }\n      ],\n      \"title\": \"Allowable Annual Rent Increase Rate\",\n      \"requirement\": \"For the effective period from March 1, 2026 through February 28, 2027, the allowable annual rent increase is 1.6%.\",\n      \"key_value\": \"1.6%\",\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": null,\n      \"version_note\": \"Prior allowable rent increases listed: 1.4% for March 1, 2025 – February 28, 2026; 1.7% for March 1, 2024 – February 28, 2025.\",\n      \"version_evidence\": \"March 1, 2025 – February 28, 2026\\n1.4%\\nMarch 1, 2024 – February 28, 2025\\n1.7%\",\n      \"effective_date_evidence\": \"March 1, 2026 – February 28, 2027\",\n      \"effective_date_evidence_kind\": \"explicit_operative_date\",\n      \"effective_date\": \"2026-03-01\",\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"security_deposits\",\n      \"citation\": \"572 Security Deposit Interest Rates\",\n      \"provision_ids\": [\n        \"P2\"\n      ],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Security deposit interest\\nSecurity deposit interest\\nEffective Period\\nAmount of Increase\\nMarch 1, 2026 – February 28, 2027\\n4.2%\"\n        }\n      ],\n      \"title\": \"Annual Security Deposit Interest Rate\",\n      \"requirement\": \"For the effective period from March 1, 2026 through February 28, 2027, the required security deposit interest rate is 4.2%.\",\n      \"key_value\": \"4.2%\",\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": null,\n      \"version_note\": \"Prior security deposit interest rates listed: 5.0% for March 1, 2025 – February 28, 2026; 5.2% for March 1, 2024 – February 28, 2025.\",\n      \"version_evidence\": \"March 1, 2025 – February 28, 2026\\n5.0%\\nMarch 1, 2024 – February 28, 2025\\n5.2%\",\n      \"effective_date_evidence\": \"March 1, 2026 – February 28, 2027\",\n      \"effective_date_evidence_kind\": \"explicit_operative_date\",\n      \"effective_date\": \"2026-03-01\",\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"just_cause_eviction\",\n      \"citation\": \"Rent Ordinance § 37.9C\",\n      \"provision_ids\": [\n        \"P6\"\n      ],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Relocation Payments for Evictions based on Owner/Relative Move-in OR Demolition/Permanent Removal of Unit from Housing Use OR Temporary Capital Improvement Work* OR Substantial Rehabilitation\\nRelocation payments\\nDate of Service of Notice of Termination of Tenancy (\\\"Eviction Notice\\\")\\nRelocation Amount Due Per Tenant\\nMaximum Relocation Amount Due Per Unit\\nPLUS Additional Amount Due for Each Elderly (60 years or older) or Disabled Tenant or Household with Minor Child(ren)\\n3/01/26 – 2/28/27\\n$8,245.00\\n$24,733.00\\n$5,497.00\"\n        }\n      ],\n      \"title\": \"Relocation Payments for No-Fault Evictions under Section 37.9C\",\n      \"requirement\": \"For notices of termination served between March 1, 2026 and February 28, 2027 based on owner/relative move-in, demolition/permanent removal, temporary capital improvement work, or substantial rehabilitation, relocation payments are $8,245.00 per tenant up to a $24,733.00 per-unit maximum, plus an additional $5,497.00 for each elderly (60 or older) or disabled tenant or household with minor children.\",\n      \"key_value\": \"$8,245.00 per tenant, max $24,733.00 per unit, plus $5,497.00 for elderly/disabled/minor child household\",\n      \"coverage_conditions\": \"Applies to evictions based on owner/relative move-in, demolition/permanent removal of unit from housing use, temporary capital improvement work, or substantial rehabilitation, where the notice of termination is served between 3/01/26 and 2/28/27.\",\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": null,\n      \"version_note\": \"Prior relocation rates for 3/01/25 – 2/28/26: $8,062.00 per tenant, $24,184.00 maximum per unit, and $5,375.00 additional amount for elderly, disabled, or household with minor child(ren).\",\n      \"version_evidence\": \"3/01/25 – 2/28/26\\n$8,062.00\\n$24,184.00\\n$5,375.00\",\n      \"effective_date_evidence\": \"3/01/26 – 2/28/27\",\n      \"effective_date_evidence_kind\": \"explicit_operative_date\",\n      \"effective_date\": \"2026-03-01\",\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"just_cause_eviction\",\n      \"citation\": \"Rent Ordinance § 37.9A\",\n      \"provision_ids\": [\n        \"P8\"\n      ],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Relocation payments for tenants evicted under the Ellis Act\\nRelocation payments for tenants evicted under the Ellis Act\\nDate of Service of Notice of Termination of Tenancy (\\\"Eviction Notice\\\")\\nRelocation Amount Due Per Tenant\\nMaximum Relocation Amount Due Per Unit\\nPLUS Additional Amount Due for Each Elderly (62 years or older) or Disabled Tenant\\n3/01/26 – 2/28/27\\n$11,110.05\\n$33,330.13\\n$7,443.90\"\n        }\n      ],\n      \"title\": \"Relocation Payments for Ellis Act Evictions\",\n      \"requirement\": \"For Ellis Act eviction notices served between March 1, 2026 and February 28, 2027, the relocation payment is $11,110.05 per tenant up to a per-unit maximum of $33,330.13, plus an additional $7,443.90 for each elderly (62 or older) or disabled tenant.\",\n      \"key_value\": \"$11,110.05 per tenant, max $33,330.13 per unit, plus $7,443.90 for elderly/disabled\",\n      \"coverage_conditions\": \"Applies to tenants evicted under the Ellis Act where the notice of termination is served between 3/01/26 and 2/28/27.\",\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": null,\n      \"version_note\": \"Prior relocation rates for 3/01/25 – 2/28/26: $10,863.45 per tenant, $32,590.33 maximum per unit, and $7,278.67 additional amount for each elderly or disabled tenant.\",\n      \"version_evidence\": \"3/01/25 – 2/28/26\\n$10,863.45\\n$32,590.33\\n$7,278.67\",\n      \"effective_date_evidence\": \"3/01/26 – 2/28/27\",\n      \"effective_date_evidence_kind\": \"explicit_operative_date\",\n      \"effective_date\": \"2026-03-01\",\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"just_cause_eviction\",\n      \"citation\": \"California Civil Code § 1947.9\",\n      \"provision_ids\": [\n        \"P9\"\n      ],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Relocation payments for temporary displacement for less than 20 days\\nRelocation payments for temporary displacement for less than 20 days\\nDate of Service of Notice of Termination of Tenancy (\\\"Eviction Notice\\\")\\nRelocation Amount Due Per Tenant Household\\n3/01/26 – 2/28/27\\n$446.00/day (plus actual moving expenses)\"\n        }\n      ],\n      \"title\": \"Relocation Payments for Temporary Displacement Under 20 Days\",\n      \"requirement\": \"For notices served between March 1, 2026 and February 28, 2027 involving temporary displacement for less than 20 days, the relocation payment is $446.00 per day per tenant household, plus actual moving expenses.\",\n      \"key_value\": \"$446.00/day plus actual moving expenses\",\n      \"coverage_conditions\": \"Applies to temporary displacement for less than 20 days where the notice of termination is served between 3/01/26 and 2/28/27.\",\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": \"Governed by California Civil Code Section 1947.9 rather than San Francisco Rent Ordinance Section 37.9C for temporary capital improvement evictions for less than 20 days.\",\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": null,\n      \"version_note\": \"Prior relocation rate for 3/01/25 – 2/28/26: $436.00/day (plus actual moving expenses).\",\n      \"version_evidence\": \"3/01/25 – 2/28/26\\n$436.00/day (plus actual moving expenses)\",\n      \"effective_date_evidence\": \"3/01/26 – 2/28/27\",\n      \"effective_date_evidence_kind\": \"explicit_operative_date\",\n      \"effective_date\": \"2026-03-01\",\n      \"conflict_note\": null\n    }\n  ],\n  \"no_rules_justification\": null\n}"
+}

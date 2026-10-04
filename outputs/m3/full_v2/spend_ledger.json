@@ -1,0 +1,136 @@
+{
+  "disclaimer": "Spend figures are estimates computed from API-reported token usage at the configured rates; they are not the account's billing balance.",
+  "estimated_total_usd": 0.962897,
+  "requests": [
+    {
+      "doc_id": "D067",
+      "pass": "primary",
+      "chunk": 1,
+      "at": "2026-10-04T06:47:44+00:00",
+      "usage": {
+        "input_tokens": 9051,
+        "output_tokens": 2986,
+        "thinking_tokens": 23845,
+        "total_tokens": 35882
+      },
+      "estimated_cost_usd": 0.1074045
+    },
+    {
+      "doc_id": "D067",
+      "pass": "primary",
+      "chunk": 2,
+      "at": "2026-10-04T06:48:55+00:00",
+      "usage": {
+        "input_tokens": 8835,
+        "output_tokens": 6880,
+        "thinking_tokens": 17892,
+        "total_tokens": 33607
+      },
+      "estimated_cost_usd": 0.09952125
+    },
+    {
+      "doc_id": "D067",
+      "pass": "primary",
+      "chunk": 3,
+      "at": "2026-10-04T06:50:28+00:00",
+      "usage": {
+        "input_tokens": 8125,
+        "output_tokens": 12074,
+        "thinking_tokens": 21613,
+        "total_tokens": 41812
+      },
+      "estimated_cost_usd": 0.13242
+    },
+    {
+      "doc_id": "D067",
+      "pass": "primary",
+      "chunk": 4,
+      "at": "2026-10-04T06:51:37+00:00",
+      "usage": {
+        "input_tokens": 8800,
+        "output_tokens": 5588,
+        "thinking_tokens": 18965,
+        "total_tokens": 33353
+      },
+      "estimated_cost_usd": 0.09867375
+    },
+    {
+      "doc_id": "D067",
+      "pass": "primary",
+      "chunk": 5,
+      "at": "2026-10-04T06:52:10+00:00",
+      "usage": {
+        "input_tokens": 8554,
+        "output_tokens": 2412,
+        "thinking_tokens": 8284,
+        "total_tokens": 19250
+      },
+      "estimated_cost_usd": 0.0465255
+    },
+    {
+      "doc_id": "D067",
+      "pass": "primary",
+      "chunk": 6,
+      "at": "2026-10-04T06:53:08+00:00",
+      "usage": {
+        "input_tokens": 8896,
+        "output_tokens": 3194,
+        "thinking_tokens": 17225,
+        "total_tokens": 29315
+      },
+      "estimated_cost_usd": 0.08324325
+    },
+    {
+      "doc_id": "D067",
+      "pass": "primary",
+      "chunk": 7,
+      "at": "2026-10-04T06:53:52+00:00",
+      "usage": {
+        "input_tokens": 8733,
+        "output_tokens": 12660,
+        "thinking_tokens": 3190,
+        "total_tokens": 24583
+      },
+      "estimated_cost_usd": 0.06598725
+    },
+    {
+      "doc_id": "D067",
+      "pass": "primary",
+      "chunk": 8,
+      "at": "2026-10-04T06:55:04+00:00",
+      "usage": {
+        "input_tokens": 9047,
+        "output_tokens": 12503,
+        "thinking_tokens": 15901,
+        "total_tokens": 37451
+      },
+      "estimated_cost_usd": 0.11330025
+    },
+    {
+      "doc_id": "D067",
+      "pass": "primary",
+      "chunk": 9,
+      "at": "2026-10-04T06:55:17+00:00",
+      "usage": {
+        "input_tokens": 8017,
+        "output_tokens": 564,
+        "thinking_tokens": 3585,
+        "total_tokens": 12166
+      },
+      "estimated_cost_usd": 0.0215715
+    },
+    {
+      "doc_id": "D067",
+      "pass": "repair",
+      "chunk": null,
+      "at": "2026-10-04T06:57:23+00:00",
+      "usage": {
+        "input_tokens": 31865,
+        "output_tokens": 9179,
+        "thinking_tokens": 36248,
+        "total_tokens": 77292
+      },
+      "estimated_cost_usd": 0.19425
+    }
+  ]
+}

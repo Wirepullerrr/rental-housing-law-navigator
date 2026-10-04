@@ -1,0 +1,387 @@
+{
+  "disclaimer": "Not legal advice. Automated extraction for a research prototype; verify against the cited source.",
+  "run_at": "2026-10-04T06:34:27+00:00",
+  "source": {
+    "doc_id": "D081",
+    "jurisdiction": "San Francisco, CA",
+    "url": "https://www.sf.gov/news/new-law-prohibits-algorithmic-devices-used-set-rents-san-francisco",
+    "source_type": "official",
+    "retrieved_at": "2026-10-01T22:37Z",
+    "text_file": "text/D081.txt",
+    "content_sha256": "5070e03c8ebbccd14dc96c1b7aade6b575689d0ba64d1c5b1ec8b246aad99704",
+    "body_chars": 993
+  },
+  "provider": "gemini",
+  "model": "gemini-3.8-flash",
+  "prompt_version": "v7",
+  "prompt_sha256": "bcc2cfb1ea1dbdee242226530d4f09866556abe9b003f1b2aac7db03bf9e7874",
+  "response_schema_sha256": "c15306da6f21dc72f06e78405f94ed61dc9e59288138cc98b5b5bf9b62ac403c",
+  "generation_settings": {
+    "temperature": null,
+    "seed": 20261001,
+    "thinking_level": "medium"
+  },
+  "as_of": "2026-10-01",
+  "cache_key": "6fe5050cb059048413c750776bdab6ea10ef0d637e4a5b92f7e4ede7d64e7955",
+  "cache_hit": true,
+  "cache_entry": "cache/extraction/6fe5050cb059048413c750776bdab6ea10ef0d637e4a5b92f7e4ede7d64e7955.json",
+  "provider_metadata": {
+    "api": "interactions.create",
+    "interaction_id": "",
+    "model": "gemini-3.8-flash",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4121,
+      "output_tokens": 919,
+      "thinking_tokens": 15325,
+      "total_tokens": 20365
+    }
+  },
+  "candidate_count": 1,
+  "accepted_count": 1,
+  "rules": [
+    {
+      "team_rule_id": "r-2be3ee439a",
+      "jurisdiction": "San Francisco, CA",
+      "level": "city",
+      "category": "algorithmic_rent_setting",
+      "status": "in_force",
+      "title": "Prohibition on algorithmic devices to set rents or manage occupancy levels",
+      "requirement": "[Basis: official explanatory text, not operative legal text] The sale or use of algorithmic devices to set rents or manage occupancy levels for residential units in San Francisco is prohibited. An algorithmic device is defined as a device such as a software program that uses algorithms to analyze nonpublic competitor rental data to provide a landlord recommendations on what rent to charge for a vacant unit.",
+      "key_value": null,
+      "coverage_conditions": "residential units in San Francisco",
+      "exemptions": null,
+      "overrides": [],
+      "interaction": null,
+      "effective_date": "2024-10-14",
+      "citation": "Section 37.10C",
+      "source_doc_id": "D081",
+      "source_url": "https://www.sf.gov/news/new-law-prohibits-algorithmic-devices-used-set-rents-san-francisco",
+      "quoted_span": "The law prohibits the sale or use of algorithmic devices to set rents or manage occupancy levels for residential units in San Francisco.\nThe term “algorithmic device” means a device such as a software program that uses algorithms to analyze nonpublic competitor rental data for the purposes of providing a landlord recommendations on what rent to charge for a vacant unit.",
+      "confidence": null,
+      "conflict_flag": false,
+      "conflict_note": null
+    }
+  ],
+  "candidates": [
+    {
+      "index": 0,
+      "origin": "primary",
+      "accepted": true,
+      "held": false,
+      "historical": false,
+      "temporal_state": "in_force",
+      "validity": {
+        "resolver": "validity-window/v1",
+        "boundaries": [
+          {
+            "kind": "unknown_temporal_note",
+            "role": "unknown",
+            "date": "2024-10-14",
+            "origin": "effective_date_evidence",
+            "history": false,
+            "evidence": null,
+            "raw_start": null,
+            "raw_end": null
+          }
+        ],
+        "end_exclusive": null,
+        "end_conflict": null,
+        "decision": {
+          "outcome": null,
+          "state": null,
+          "reason": null,
+          "start": null
+        }
+      },
+      "duplicate_of": null,
+      "rejection_reasons": [],
+      "provision_ids": [
+        "P1",
+        "P2"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": {
+        "status": "normalized_match",
+        "normalization": "Unicode NFC; each whitespace run (incl. line breaks) compared as one space; span ends trimmed",
+        "start": 346,
+        "end": 439,
+        "occurrences": 1,
+        "model_span": "Legislation adding Section 37.10C to the Rent Ordinance went into effect on October 14, 2024.",
+        "source_span": "Legislation\nadding Section 37.10C to the Rent Ordinance went into effect on October 14, 2024.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": "residential units in San Francisco",
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 440,
+        "end": 812,
+        "occurrences": 1,
+        "model_span": "The law prohibits the sale or use of algorithmic devices to set rents or manage occupancy levels for residential units in San Francisco.\nThe term “algorithmic device” means a device such as a software program that uses algorithms to analyze nonpublic competitor rental data for the purposes of providing a landlord recommendations on what rent to charge for a vacant unit.",
+        "source_span": "The law prohibits the sale or use of algorithmic devices to set rents or manage occupancy levels for residential units in San Francisco.\nThe term “algorithmic device” means a device such as a software program that uses algorithms to analyze nonpublic competitor rental data for the purposes of providing a landlord recommendations on what rent to charge for a vacant unit.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "The law prohibits the sale or use of algorithmic devices to set rents or manage occupancy levels for residential units in San Francisco.\nThe term “algorithmic device” means a device such as a software program that uses algorithms to analyze nonpublic competitor rental data for the purposes of providing a landlord recommendations on what rent to charge for a vacant unit.",
+            "status": "exact_match",
+            "start": 440,
+            "end": 812
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": {
+        "status": "normalized_match",
+        "normalization": "Unicode NFC; each whitespace run (incl. line breaks) compared as one space; span ends trimmed",
+        "start": 346,
+        "end": 439,
+        "occurrences": 1,
+        "model_span": "Legislation adding Section 37.10C to the Rent Ordinance went into effect on October 14, 2024.",
+        "source_span": "Legislation\nadding Section 37.10C to the Rent Ordinance went into effect on October 14, 2024.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [],
+      "temporal": {
+        "model_effective_date": "2024-10-14",
+        "model_kind": "explicit_operative_date",
+        "applied_kind": "explicit_operative_date",
+        "effective_date": "2024-10-14",
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null
+      },
+      "status_derivation": "enacted; effective 2024-10-14 is on or before as_of 2026-10-01",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-2be3ee439a",
+        "jurisdiction": "San Francisco, CA",
+        "level": "city",
+        "category": "algorithmic_rent_setting",
+        "status": "in_force",
+        "title": "Prohibition on algorithmic devices to set rents or manage occupancy levels",
+        "requirement": "[Basis: official explanatory text, not operative legal text] The sale or use of algorithmic devices to set rents or manage occupancy levels for residential units in San Francisco is prohibited. An algorithmic device is defined as a device such as a software program that uses algorithms to analyze nonpublic competitor rental data to provide a landlord recommendations on what rent to charge for a vacant unit.",
+        "key_value": null,
+        "coverage_conditions": "residential units in San Francisco",
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": "2024-10-14",
+        "citation": "Section 37.10C",
+        "source_doc_id": "D081",
+        "source_url": "https://www.sf.gov/news/new-law-prohibits-algorithmic-devices-used-set-rents-san-francisco",
+        "quoted_span": "The law prohibits the sale or use of algorithmic devices to set rents or manage occupancy levels for residential units in San Francisco.\nThe term “algorithmic device” means a device such as a software program that uses algorithms to analyze nonpublic competitor rental data for the purposes of providing a landlord recommendations on what rent to charge for a vacant unit.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "algorithmic_rent_setting",
+        "citation": "Section 37.10C",
+        "provision_ids": [
+          "P1",
+          "P2"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "The law prohibits the sale or use of algorithmic devices to set rents or manage occupancy levels for residential units in San Francisco.\nThe term “algorithmic device” means a device such as a software program that uses algorithms to analyze nonpublic competitor rental data for the purposes of providing a landlord recommendations on what rent to charge for a vacant unit."
+          }
+        ],
+        "title": "Prohibition on algorithmic devices to set rents or manage occupancy levels",
+        "requirement": "The sale or use of algorithmic devices to set rents or manage occupancy levels for residential units in San Francisco is prohibited. An algorithmic device is defined as a device such as a software program that uses algorithms to analyze nonpublic competitor rental data to provide a landlord recommendations on what rent to charge for a vacant unit.",
+        "key_value": null,
+        "coverage_conditions": "residential units in San Francisco",
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": "Legislation adding Section 37.10C to the Rent Ordinance went into effect on October 14, 2024.",
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": "Legislation adding Section 37.10C to the Rent Ordinance went into effect on October 14, 2024.",
+        "effective_date_evidence_kind": "explicit_operative_date",
+        "effective_date": "2024-10-14",
+        "conflict_note": null
+      }
+    }
+  ],
+  "posture": {
+    "declared": "official_explanatory_page",
+    "evidence": "New law prohibits algorithmic devices used to set rents in San Francisco | SF.gov",
+    "evidence_check": {
+      "status": "exact_match",
+      "normalization": null,
+      "start": 0,
+      "end": 81,
+      "occurrences": 1,
+      "model_span": "New law prohibits algorithmic devices used to set rents in San Francisco | SF.gov",
+      "source_span": "New law prohibits algorithmic devices used to set rents in San Francisco | SF.gov",
+      "reason": null,
+      "reconstructed": false,
+      "parts": [],
+      "crossed_artifacts": []
+    },
+    "established": "official_explanatory_page",
+    "basis": "declared posture with verified evidence"
+  },
+  "base_dates": [],
+  "provision_inventory": [
+    {
+      "id": "P1",
+      "ref": "Section 37.10C",
+      "anchor": "The law prohibits the sale or use of algorithmic devices to set rents",
+      "summary": "Prohibits the sale or use of algorithmic devices to set rents or manage occupancy levels for residential units in San Francisco.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "algorithmic_rent_setting",
+      "reason": null
+    },
+    {
+      "id": "P2",
+      "ref": "Section 37.10C",
+      "anchor": "The term “algorithmic device” means a device such as",
+      "summary": "Defines algorithmic device as a device such as a software program analyzing nonpublic competitor rental data to recommend what rent to charge for a vacant unit.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "algorithmic_rent_setting",
+      "reason": null
+    },
+    {
+      "id": "P3",
+      "ref": "Section 37.10C",
+      "anchor": "The law prohibits the sale or use of such algorithmic devices and allows",
+      "summary": "Authorizes a tenant or the City Attorney to bring a civil action for violations of the law.",
+      "role": "enforcement",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "authorization to file a lawsuit or government enforcement authority without concrete remedy or damages"
+    }
+  ],
+  "global_scope": [],
+  "source_view": {
+    "marker": "[[PAGE BREAK]]",
+    "segment_label": "[[SEGMENT {}]]",
+    "view_sha256": "0dd8858b18c1909df20b8447ae5d8ccafdd84d77acf5743ff54432ec81bbc141",
+    "segments": [
+      {
+        "id": 1,
+        "raw_start": 0,
+        "raw_end": 993
+      }
+    ],
+    "artifacts_removed": 0,
+    "artifacts": []
+  },
+  "coverage": {
+    "inventory_valid": true,
+    "anchors_located": "3/3",
+    "after_primary": {
+      "uncovered": [],
+      "unaccepted": [],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "scope_mappings": {
+      "requested": 0,
+      "applies": 0,
+      "does_not_apply": 0,
+      "unresolved": 0
+    },
+    "inventory_items": 3,
+    "in_scope_items": 2,
+    "in_scope_refs": 2,
+    "uncertain": [],
+    "final": {
+      "uncovered": [],
+      "unaccepted": [],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "link_mismatches": [],
+    "provisions": [
+      {
+        "ref": "Section 37.10C",
+        "inventory_item": 0,
+        "provision_id": "P1",
+        "summary": "Prohibits the sale or use of algorithmic devices to set rents or manage occupancy levels for residential units in San Francisco.",
+        "category": "algorithmic_rent_setting",
+        "candidates": [
+          0
+        ],
+        "accepted": [
+          0
+        ],
+        "basis": {
+          "0": "provision link; citation names it"
+        }
+      },
+      {
+        "ref": "Section 37.10C",
+        "inventory_item": 1,
+        "provision_id": "P2",
+        "summary": "Defines algorithmic device as a device such as a software program analyzing nonpublic competitor rental data to recommend what rent to charge for a vacant unit.",
+        "category": "algorithmic_rent_setting",
+        "candidates": [
+          0
+        ],
+        "accepted": [
+          0
+        ],
+        "basis": {
+          "0": "provision link; citation names it"
+        }
+      }
+    ],
+    "unrecorded_subdivisions": []
+  },
+  "scope_challenges": [
+    {
+      "ref": "Section 37.10C",
+      "provision_id": "P3",
+      "role": "enforcement",
+      "reason": "authorization to file a lawsuit or government enforcement authority without concrete remedy or damages",
+      "summary": "Authorizes a tenant or the City Attorney to bring a civil action for violations of the law.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role enforcement is decided by other rules"
+    }
+  ],
+  "scope_mappings": [],
+  "legislative_session": null,
+  "empty_result": null,
+  "legacy_replay": null,
+  "dedupe": [],
+  "chunking": null,
+  "repair": null,
+  "document_status": "complete",
+  "review_reasons": [],
+  "warnings": [],
+  "errors": [],
+  "raw_response_text": "{\n  \"document\": {\n    \"posture\": \"official_explanatory_page\",\n    \"evidence\": \"New law prohibits algorithmic devices used to set rents in San Francisco | SF.gov\"\n  },\n  \"provisions\": [\n    {\n      \"id\": \"P1\",\n      \"ref\": \"Section 37.10C\",\n      \"anchor\": \"The law prohibits the sale or use of algorithmic devices to set rents\",\n      \"summary\": \"Prohibits the sale or use of algorithmic devices to set rents or manage occupancy levels for residential units in San Francisco.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"algorithmic_rent_setting\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P2\",\n      \"ref\": \"Section 37.10C\",\n      \"anchor\": \"The term “algorithmic device” means a device such as\",\n      \"summary\": \"Defines algorithmic device as a device such as a software program analyzing nonpublic competitor rental data to recommend what rent to charge for a vacant unit.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"algorithmic_rent_setting\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P3\",\n      \"ref\": \"Section 37.10C\",\n      \"anchor\": \"The law prohibits the sale or use of such algorithmic devices and allows\",\n      \"summary\": \"Authorizes a tenant or the City Attorney to bring a civil action for violations of the law.\",\n      \"role\": \"enforcement\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"authorization to file a lawsuit or government enforcement authority without concrete remedy or damages\"\n    }\n  ],\n  \"global_scope\": [],\n  \"rules\": [\n    {\n      \"category\": \"algorithmic_rent_setting\",\n      \"citation\": \"Section 37.10C\",\n      \"provision_ids\": [\n        \"P1\",\n        \"P2\"\n      ],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"The law prohibits the sale or use of algorithmic devices to set rents or manage occupancy levels for residential units in San Francisco.\\nThe term “algorithmic device” means a device such as a software program that uses algorithms to analyze nonpublic competitor rental data for the purposes of providing a landlord recommendations on what rent to charge for a vacant unit.\"\n        }\n      ],\n      \"title\": \"Prohibition on algorithmic devices to set rents or manage occupancy levels\",\n      \"requirement\": \"The sale or use of algorithmic devices to set rents or manage occupancy levels for residential units in San Francisco is prohibited. An algorithmic device is defined as a device such as a software program that uses algorithms to analyze nonpublic competitor rental data to provide a landlord recommendations on what rent to charge for a vacant unit.\",\n      \"key_value\": null,\n      \"coverage_conditions\": \"residential units in San Francisco\",\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": \"Legislation adding Section 37.10C to the Rent Ordinance went into effect on October 14, 2024.\",\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": \"Legislation adding Section 37.10C to the Rent Ordinance went into effect on October 14, 2024.\",\n      \"effective_date_evidence_kind\": \"explicit_operative_date\",\n      \"effective_date\": \"2024-10-14\",\n      \"conflict_note\": null\n    }\n  ],\n  \"no_rules_justification\": null\n}"
+}

@@ -29,6 +29,7 @@ from __future__ import annotations
 
 import json
 import os
+import re
 from collections import Counter, defaultdict
 from datetime import date, datetime, timezone
 from pathlib import Path
@@ -37,9 +38,10 @@ from typing import Any
 
 from navigator import starter_pack as sp
 from navigator.extraction.cache import ResponseCache, sha256_hex
+from navigator.extraction.chunked import _sum_usage, expected_cache_key, extract_large_document, is_large
 from navigator.extraction.config import PRICE_PER_MTOK
 from navigator.extraction.extractor import (CacheMiss, SourceDocument, SourceNotAvailable, _official_validator,
-                                            extract_document, load_source, prepare_request, write_artifact)
+                                            extract_document, load_source, write_artifact)
 from navigator.extraction.models import ExtractionRun
 from navigator.extraction.normalize import level_for
 from navigator.extraction.prompt import REPAIR_SYSTEM_INSTRUCTION
@@ -102,9 +104,13 @@ class SpendLedger:
                                 "requests": self.entries})
 
 
+_CHUNK_PROMPT = re.compile(r"this request covers EXCERPT (\d+) of (\d+) of the document")
+
+
 class MeteredProvider:
-    """Wraps a provider. Before every request: refuses a second primary/repair request for
-    the current document, and refuses to start any request once the ledger total has
+    """Wraps a provider. Before every request: refuses a second primary request for the
+    current document (in large-document mode: a second request for the same excerpt) and a
+    second repair request, and refuses to start any request once the ledger total has
     reached the budget. After every request: records its API-reported usage and cost."""
 
     def __init__(self, inner: StructuredLLMProvider, ledger: SpendLedger, budget_usd: float) -> None:
@@ -116,17 +122,21 @@ class MeteredProvider:
     def generate(self, *, system_instruction: str, prompt: str, response_json_schema: dict[str, Any],
                  settings: dict[str, Any]) -> ProviderResult:
         kind = "repair" if system_instruction == REPAIR_SYSTEM_INSTRUCTION else "primary"
-        if self.requests[self.doc_id][kind]:
-            raise IntegrityViolation(f"a second {kind} provider request was attempted for {self.doc_id}")
+        chunk = _CHUNK_PROMPT.search(prompt) if kind == "primary" else None
+        slot = f"primary:excerpt-{chunk.group(1)}" if chunk else kind
+        if self.requests[self.doc_id][slot]:
+            raise IntegrityViolation(f"a second {slot} provider request was attempted for {self.doc_id}")
         if self.ledger.total >= self.budget_usd:
             raise BudgetExhausted(f"budget gate: estimated new spend ${self.ledger.total:.4f} has reached "
-                                  f"${self.budget_usd:.2f}; no new {kind} request started for {self.doc_id}")
-        self.requests[self.doc_id][kind] += 1
+                                  f"${self.budget_usd:.2f}; no new {slot} request started for {self.doc_id}")
+        self.requests[self.doc_id][slot] += 1
+        if slot != kind:
+            self.requests[self.doc_id][kind] += 1      # total primary requests of the document
         result = self.inner.generate(system_instruction=system_instruction, prompt=prompt,
                                      response_json_schema=response_json_schema, settings=settings)
         usage = (result.metadata or {}).get("usage") or {}
-        self.ledger.record({"doc_id": self.doc_id, "pass": kind, "at": _now(), "usage": usage,
-                            "estimated_cost_usd": estimate_cost(usage)})
+        self.ledger.record({"doc_id": self.doc_id, "pass": kind, "chunk": int(chunk.group(1)) if chunk else None,
+                            "at": _now(), "usage": usage, "estimated_cost_usd": estimate_cost(usage)})
         return result
 
 
@@ -166,8 +176,20 @@ def integrity_violations(run: ExtractionRun, source: SourceDocument, cache: Resp
             v.append(f"candidate {c.index}: named-subject condition applied without a verified mapping: {bad}")
     if any(c.held and c.accepted for c in run.candidates):
         v.append("a held candidate was published")
-    if run.cache_key != prepare_request(source, provider_name, model, settings).key:
+    if any(c.historical and c.accepted for c in run.candidates):
+        v.append("a historical (expired) candidate was published")
+    as_of = run.as_of
+    if bad := [c.index for c in accepted if (c.validity.get("end_exclusive") or "9999") <= as_of]:
+        v.append(f"candidates {bad}: published although their verified validity ended on or before {as_of}")
+    if bad := [c.index for c in accepted if c.duplicate_of is not None]:
+        v.append(f"candidates {bad}: published although suppressed as same-source duplicates")
+    spans = [(c.rule["category"], c.rule["quoted_span"]) for c in accepted]
+    if len(spans) != len(set(spans)):
+        v.append("the same source passage is published twice under one category")
+    if run.cache_key != expected_cache_key(source, provider_name, model, settings):
         v.append("cache identity: the primary response does not match the current inputs")
+    if run.chunking is not None and run.chunking.get("tiling") != "exact":
+        v.append("large-document mode: the chunks do not tile the raw text exactly")
     rp = run.repair
     if rp is not None and rp.invoked and not rp.errors:
         entry = cache.get(rp.cache_key)
@@ -189,6 +211,8 @@ def document_record(run: ExtractionRun, source: SourceDocument, mode: str, calls
     usage = {"primary": run.provider_metadata.get("usage") or {},
              "repair": (rp.provider_metadata.get("usage") or {}) if rp is not None else {}}
     new_usage = {k: (usage[k] if calls.get(k) else {}) for k in usage}
+    if run.chunking is not None and calls.get("primary"):    # only the excerpts requested by this run
+        new_usage["primary"] = _sum_usage(run.chunking["chunks"], new_only=True)
     cost = {k: round(estimate_cost(new_usage[k]), 6) for k in usage}
     return {
         "doc_id": run.source.doc_id, "jurisdiction": run.source.jurisdiction,
@@ -200,7 +224,10 @@ def document_record(run: ExtractionRun, source: SourceDocument, mode: str, calls
         "repair_cache_hit": rp.cache_hit if rp is not None else None,
         "primary_provider_calls": calls.get("primary", 0), "repair_provider_calls": calls.get("repair", 0),
         "candidates": run.candidate_count, "accepted": run.accepted_count,
-        "rejected": run.candidate_count - run.accepted_count,
+        "rejected": sum(not (c.accepted or c.held or c.historical or c.duplicate_of is not None)
+                        for c in run.candidates),
+        "historical": sum(c.historical for c in run.candidates),
+        "suppressed_duplicates": sum(c.duplicate_of is not None for c in run.candidates),
         "primary_candidates": sum(c.origin == "primary" for c in run.candidates),
         "repair_candidates": sum(c.origin == "repair" for c in run.candidates),
         "repair_targets": len(targets),
@@ -222,6 +249,8 @@ def document_record(run: ExtractionRun, source: SourceDocument, mode: str, calls
         "citations": {"accepted": len(accepted),
                       "exact_match": sum(c.citation.status == "exact_match" for c in accepted),
                       "normalized_match": sum(c.citation.status == "normalized_match" for c in accepted),
+                      "layout_normalized_match": sum(c.citation.status == "layout_normalized_match"
+                                                     for c in accepted),
                       "raw_substring": sum(r["quoted_span"] in source.body for r in run.rules),
                       "reconstructed_cross_page": sum(c.citation.reconstructed for c in accepted)},
         "global_scope": {"proposed": len(run.global_scope),
@@ -295,16 +324,17 @@ def _process(doc_id: str, docs_dir: Path, cache: ResponseCache, provider_name: s
     if path.exists():
         existing = ExtractionRun.model_validate_json(path.read_text(encoding="utf-8"))
         if doc_id not in replace:
-            if existing.cache_key == prepare_request(source, provider_name, model, settings).key:
+            if existing.cache_key == expected_cache_key(source, provider_name, model, settings):
                 return document_record(existing, source, "resumed", Counter(), path), None
             return _failure(doc_id, "error", "an existing artifact has a different cache identity; it was not "
                                              "overwritten (request replacement explicitly)", source), None
         path.rename(path.with_name(f"{path.stem}.superseded-{datetime.now():%Y%m%dT%H%M%S}.json"))
     if metered is not None:
         metered.doc_id = doc_id
+    extract = extract_large_document if is_large(source) else extract_document
     try:
-        run = extract_document(source, provider_name=provider_name, model=model, cache=cache, provider=metered,
-                               settings=settings, schema_path=schema_path, **kwargs)
+        run = extract(source, provider_name=provider_name, model=model, cache=cache, provider=metered,
+                      settings=settings, schema_path=schema_path, **kwargs)
     except BudgetExhausted as exc:
         return _failure(doc_id, "not_run", str(exc), source), "budget gate reached"
     except IntegrityViolation as exc:
@@ -322,6 +352,8 @@ def _process(doc_id: str, docs_dir: Path, cache: ResponseCache, provider_name: s
     if violations:
         record["integrity_violations"] = violations
         return record, f"integrity violation on {doc_id}"
+    if run.chunking is not None and run.chunking.get("stopped"):
+        return record, run.chunking["stopped"]
     repair_failure = [e for e in (run.repair.errors if run.repair else []) if e.startswith("repair request failed")]
     if repair_failure:
         return record, ("budget gate reached" if "budget gate" in repair_failure[0]
@@ -356,7 +388,9 @@ def stage_summary(records: list[dict[str, Any]], *, doc_ids: list[str], out_dir:
             "complete": sum(r["document_status"] == "complete" for r in done),
             "review_required": sum(r["document_status"] == "review_required" for r in done),
             "candidates": sum(r["candidates"] for r in done), "accepted_rules": accepted,
-            "rejected_candidates": sum(r["rejected"] - r.get("held", 0) for r in done),
+            "rejected_candidates": sum(r["rejected"] for r in done),
+            "historical_candidates": sum(r.get("historical", 0) for r in done),
+            "suppressed_duplicates": sum(r.get("suppressed_duplicates", 0) for r in done),
             "held_candidates": sum(r.get("held", 0) for r in done),
             "accepted_quotes_raw_substring": sum(r["citations"]["raw_substring"] for r in done),
             "exact_citation_rate": (sum(r["citations"]["raw_substring"] for r in done) / accepted) if accepted else None,

@@ -1,0 +1,923 @@
+{
+  "disclaimer": "Not legal advice. Automated extraction for a research prototype; verify against the cited source.",
+  "run_at": "2026-10-04T06:34:26+00:00",
+  "source": {
+    "doc_id": "D069",
+    "jurisdiction": "NJ",
+    "url": "https://pub.njleg.state.nj.us/Bills/2026/AL26/43_.HTM",
+    "source_type": "official",
+    "retrieved_at": "2026-10-01T22:56Z",
+    "text_file": "text/D069.txt",
+    "content_sha256": "15389a12d31abf65107fee4d68fe7e718aeff6f6abe49f50b151e97966c6f6cd",
+    "body_chars": 10259
+  },
+  "provider": "gemini",
+  "model": "gemini-3.8-flash",
+  "prompt_version": "v7",
+  "prompt_sha256": "e1a8fdf3763f715b6922bb6f136490d769238cf470f1ce48240117574a05fdfb",
+  "response_schema_sha256": "c15306da6f21dc72f06e78405f94ed61dc9e59288138cc98b5b5bf9b62ac403c",
+  "generation_settings": {
+    "temperature": null,
+    "seed": 20261001,
+    "thinking_level": "medium"
+  },
+  "as_of": "2026-10-01",
+  "cache_key": "b375cb6ce2a939d18e220883592221888280a88b969e70f2b790b228d048dcdf",
+  "cache_hit": true,
+  "cache_entry": "cache/extraction/b375cb6ce2a939d18e220883592221888280a88b969e70f2b790b228d048dcdf.json",
+  "provider_metadata": {
+    "api": "interactions.create",
+    "interaction_id": "",
+    "model": "gemini-3.8-flash",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 6443,
+      "output_tokens": 3516,
+      "thinking_tokens": 23438,
+      "total_tokens": 33397
+    }
+  },
+  "candidate_count": 1,
+  "accepted_count": 0,
+  "rules": [],
+  "candidates": [
+    {
+      "index": 0,
+      "origin": "primary",
+      "accepted": false,
+      "held": false,
+      "historical": false,
+      "temporal_state": null,
+      "validity": {
+        "resolver": "validity-window/v1",
+        "boundaries": [],
+        "end_exclusive": null,
+        "end_conflict": null,
+        "decision": {
+          "outcome": null,
+          "state": null,
+          "reason": null,
+          "start": null
+        }
+      },
+      "duplicate_of": null,
+      "rejection_reasons": [
+        "citation: quote not found in source text (not found in source text, even after safe normalization)"
+      ],
+      "provision_ids": [
+        "P4"
+      ],
+      "source_basis": "operative_text",
+      "status_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 136,
+        "end": 158,
+        "occurrences": 1,
+        "model_span": "approved July 20, 2026",
+        "source_span": "approved July 20, 2026",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "failed",
+        "normalization": null,
+        "start": null,
+        "end": null,
+        "occurrences": 0,
+        "model_span": "4.    It\nshall be unlawful and a violation of the “New Jersey Antitrust Act,” P.L.1970,\nc.73 (C.56:9-1 et seq.) for:\na.     a rental property owner, or any agent,\nrepresentative, or subcontractor thereof, to receive, subscribe to, contract\nfor, or otherwise exchange any form of consideration in return for the use of,\nthe services of a coordinator;\nb.    a coordinator to facilitate a tacit or express\nagreement among rental property owners that restricts competition with respect\nto residential dwelling units, including by performing a coordinating\nfunction;\nc.     two or more persons to engage in\n1\n[\nor\notherwise facilitate\n]\n1\nparallel pricing coordination;\nd.    any agent or representative of a coordinator or\nsubcontractor thereof to engage in parallel pricing coordination; or\ne.     any person to perform a coordinating function.",
+        "source_span": null,
+        "reason": "not found in source text, even after safe normalization",
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "4.    It\nshall be unlawful and a violation of the “New Jersey Antitrust Act,” P.L.1970,\nc.73 (C.56:9-1 et seq.) for:\na.     a rental property owner, or any agent,\nrepresentative, or subcontractor thereof, to receive, subscribe to, contract\nfor, or otherwise exchange any form of consideration in return for the use of,\nthe services of a coordinator;\nb.    a coordinator to facilitate a tacit or express\nagreement among rental property owners that restricts competition with respect\nto residential dwelling units, including by performing a coordinating\nfunction;\nc.     two or more persons to engage in\n1\n[\nor\notherwise facilitate\n]\n1\nparallel pricing coordination;\nd.    any agent or representative of a coordinator or\nsubcontractor thereof to engage in parallel pricing coordination; or\ne.     any person to perform a coordinating function.",
+            "status": "failed",
+            "start": null,
+            "end": null
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 10086,
+        "end": 10188,
+        "occurrences": 1,
+        "model_span": "This act shall take effect on the first day of\nthe twelfth month next following the date of enactment.",
+        "source_span": "This act shall take effect on the first day of\nthe twelfth month next following the date of enactment.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": "relative_date_formula",
+        "applied_kind": "relative_date_formula",
+        "effective_date": "2027-07-01",
+        "history_evidence": null,
+        "relative_resolution": {
+          "resolver": "first-day-of-nth-month-next-following/v1",
+          "outcome": "resolved",
+          "reason": null,
+          "formula": "take effect on the first day of the twelfth month next following the date of enactment",
+          "formula_evidence": {
+            "text": "This act shall take effect on the first day of\nthe twelfth month next following the date of enactment.",
+            "start": 10086,
+            "end": 10188
+          },
+          "base_date": "2026-07-20",
+          "base_date_evidence": {
+            "event": "approved",
+            "date": "2026-07-20",
+            "start": 136,
+            "end": 158,
+            "text": "approved July 20, 2026"
+          },
+          "base_date_candidates": [
+            {
+              "event": "approved",
+              "date": "2026-07-20",
+              "start": 136,
+              "end": 158,
+              "text": "approved July 20, 2026"
+            }
+          ],
+          "resolved_date": "2027-07-01",
+          "ordinal": 12,
+          "anchor": "enactment"
+        },
+        "posture": "enacted_session_law",
+        "posture_consistent": true
+      },
+      "status_derivation": "enacted; effective 2027-07-01 is after as_of 2026-10-01",
+      "warnings": [],
+      "rule": {
+        "team_rule_id": "r-55d95e7274",
+        "jurisdiction": "NJ",
+        "level": "state",
+        "category": "algorithmic_rent_setting",
+        "status": "not_yet_effective",
+        "title": "FAIR Act - Prohibited Algorithmic Pricing Practices",
+        "requirement": "It is unlawful and a violation of the New Jersey Antitrust Act for: (a) a rental property owner, agent, representative, or subcontractor to receive, subscribe to, contract for, or exchange consideration for the services of a coordinator; (b) a coordinator to facilitate an express or tacit agreement among rental property owners restricting competition regarding residential dwelling units, including by performing a coordinating function; (c) two or more persons to engage in or facilitate parallel pricing coordination; (d) any agent, representative, or subcontractor of a coordinator to engage in parallel pricing coordination; or (e) any person to perform a coordinating function.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "overrides": [],
+        "interaction": "A violation constitutes a violation of the New Jersey Antitrust Act, P.L.1970, c.73 (C.56:9-1 et seq.). Section 5 provides that the act does not limit the application of sections 6 through 17 of P.L.1970, c.73 (C.56:9-6 through 9-17) to a violation of section 4. Section 6 provides that the act is in addition to the New Jersey Antitrust Act and prohibits municipalities from enacting conflicting ordinances.",
+        "effective_date": "2027-07-01",
+        "citation": "P.L. 2026, c. 43, § 4",
+        "source_doc_id": "D069",
+        "source_url": "https://pub.njleg.state.nj.us/Bills/2026/AL26/43_.HTM",
+        "quoted_span": "4.    It\nshall be unlawful and a violation of the “New Jersey Antitrust Act,” P.L.1970,\nc.73 (C.56:9-1 et seq.) for:\na.     a rental property owner, or any agent,\nrepresentative, or subcontractor thereof, to receive, subscribe to, contract\nfor, or otherwise exchange any form of consideration in return for the use of,\nthe services of a coordinator;\nb.    a coordinator to facilitate a tacit or express\nagreement among rental property owners that restricts competition with respect\nto residential dwelling units, including by performing a coordinating\nfunction;\nc.     two or more persons to engage in\n1\n[\nor\notherwise facilitate\n]\n1\nparallel pricing coordination;\nd.    any agent or representative of a coordinator or\nsubcontractor thereof to engage in parallel pricing coordination; or\ne.     any person to perform a coordinating function.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "algorithmic_rent_setting",
+        "citation": "P.L. 2026, c. 43, § 4",
+        "provision_ids": [
+          "P4"
+        ],
+        "source_basis": "operative_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "4.    It\nshall be unlawful and a violation of the “New Jersey Antitrust Act,” P.L.1970,\nc.73 (C.56:9-1 et seq.) for:\na.     a rental property owner, or any agent,\nrepresentative, or subcontractor thereof, to receive, subscribe to, contract\nfor, or otherwise exchange any form of consideration in return for the use of,\nthe services of a coordinator;\nb.    a coordinator to facilitate a tacit or express\nagreement among rental property owners that restricts competition with respect\nto residential dwelling units, including by performing a coordinating\nfunction;\nc.     two or more persons to engage in\n1\n[\nor\notherwise facilitate\n]\n1\nparallel pricing coordination;\nd.    any agent or representative of a coordinator or\nsubcontractor thereof to engage in parallel pricing coordination; or\ne.     any person to perform a coordinating function."
+          }
+        ],
+        "title": "FAIR Act - Prohibited Algorithmic Pricing Practices",
+        "requirement": "It is unlawful and a violation of the New Jersey Antitrust Act for: (a) a rental property owner, agent, representative, or subcontractor to receive, subscribe to, contract for, or exchange consideration for the services of a coordinator; (b) a coordinator to facilitate an express or tacit agreement among rental property owners restricting competition regarding residential dwelling units, including by performing a coordinating function; (c) two or more persons to engage in or facilitate parallel pricing coordination; (d) any agent, representative, or subcontractor of a coordinator to engage in parallel pricing coordination; or (e) any person to perform a coordinating function.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": "A violation constitutes a violation of the New Jersey Antitrust Act, P.L.1970, c.73 (C.56:9-1 et seq.). Section 5 provides that the act does not limit the application of sections 6 through 17 of P.L.1970, c.73 (C.56:9-6 through 9-17) to a violation of section 4. Section 6 provides that the act is in addition to the New Jersey Antitrust Act and prohibits municipalities from enacting conflicting ordinances.",
+        "enactment_status": "enacted",
+        "enactment_status_evidence": "approved July 20, 2026",
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": "This act shall take effect on the first day of\nthe twelfth month next following the date of enactment.",
+        "effective_date_evidence_kind": "relative_date_formula",
+        "effective_date": null,
+        "conflict_note": null
+      }
+    }
+  ],
+  "posture": {
+    "declared": "enacted_session_law",
+    "evidence": "P.L.\n2026, CHAPTER 43,\napproved July 20, 2026",
+    "evidence_check": {
+      "status": "exact_match",
+      "normalization": null,
+      "start": 113,
+      "end": 158,
+      "occurrences": 1,
+      "model_span": "P.L.\n2026, CHAPTER 43,\napproved July 20, 2026",
+      "source_span": "P.L.\n2026, CHAPTER 43,\napproved July 20, 2026",
+      "reason": null,
+      "reconstructed": false,
+      "parts": [],
+      "crossed_artifacts": []
+    },
+    "established": "enacted_session_law",
+    "basis": "declared posture with verified evidence"
+  },
+  "base_dates": [
+    {
+      "event": "approved",
+      "date": "2026-07-20",
+      "start": 136,
+      "end": 158,
+      "text": "approved July 20, 2026"
+    }
+  ],
+  "provision_inventory": [
+    {
+      "id": "P1",
+      "ref": "§ 1",
+      "anchor": "1.    This act shall be known and may be cited",
+      "summary": "Short title: Forbidding the Algorithmic Inflation of Rent (FAIR) Act.",
+      "role": "boilerplate",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "title / short citation"
+    },
+    {
+      "id": "P2",
+      "ref": "§ 2",
+      "anchor": "2.    The Legislature finds and declares that:",
+      "summary": "Legislative findings regarding rental housing costs and property management software coordination.",
+      "role": "history",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "legislative findings"
+    },
+    {
+      "id": "P3",
+      "ref": "§ 3",
+      "anchor": "3.    As used in this act:",
+      "summary": "Definitions of statutory terms and scope exclusions under the FAIR Act.",
+      "role": "definition",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "definitions and statutory exclusions (see global_scope)"
+    },
+    {
+      "id": "P4",
+      "ref": "§ 4",
+      "anchor": "4.    It\nshall be unlawful and a violation of the",
+      "summary": "Prohibits rental property owners from using coordinator services, coordinators from facilitating anticompetitive agreements, parallel pricing coordination, and performing coordinating functions.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "algorithmic_rent_setting",
+      "reason": null
+    },
+    {
+      "id": "P5",
+      "ref": "§ 5",
+      "anchor": "5.    The provisions of this act shall not be construed",
+      "summary": "Clarifies that the act does not limit the application of New Jersey Antitrust Act enforcement and remedy provisions to violations of section 4.",
+      "role": "boilerplate",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "cumulative remedies / construction boilerplate"
+    },
+    {
+      "id": "P6",
+      "ref": "§ 6",
+      "anchor": "6.    a.  This act shall not authorize or permit any",
+      "summary": "Provides that the act is in addition to the New Jersey Antitrust Act and prohibits conflicting municipal ordinances.",
+      "role": "boilerplate",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "cumulative law construction and municipal preemption"
+    },
+    {
+      "id": "P7",
+      "ref": "§ 7",
+      "anchor": "7.    The Attorney General shall establish, on the",
+      "summary": "Requires the Attorney General to establish an online complaint intake portal.",
+      "role": "procedure",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "administrative complaint intake mechanism"
+    },
+    {
+      "id": "P8",
+      "ref": "§ 8",
+      "anchor": "8.    The Attorney General may, pursuant to the",
+      "summary": "Authorizes the Attorney General to adopt implementing rules and regulations.",
+      "role": "procedure",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "administrative rulemaking authorization"
+    },
+    {
+      "id": "P9",
+      "ref": "§ 9",
+      "anchor": "9.    This act shall take effect on the first day of",
+      "summary": "Establishes the effective date of the act.",
+      "role": "procedure",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "effective date formula"
+    }
+  ],
+  "global_scope": [
+    {
+      "id": "S1",
+      "kind": "exemption",
+      "statement": "Inpatient medical care, licensed long-term care, and detention or correctional facilities are excluded from the definition of residential dwelling unit.",
+      "citation": "P.L. 2026, c. 43, § 3",
+      "scope_mode": "named_subject",
+      "scope_quote": "“Residential dwelling unit” shall not include",
+      "source_provision_id": "P3",
+      "governed_provision_ids": [
+        "P4"
+      ],
+      "evidence_parts": [
+        {
+          "segment_id": 1,
+          "quoted_text": "“Residential dwelling unit” shall not include inpatient medical care, licensed long-term care, or detention or correctional facilities."
+        }
+      ],
+      "evidence_check": {
+        "status": "normalized_match",
+        "normalization": "Unicode NFC; each whitespace run (incl. line breaks) compared as one space; span ends trimmed",
+        "start": 7671,
+        "end": 7806,
+        "occurrences": 1,
+        "model_span": "“Residential dwelling unit” shall not include inpatient medical care, licensed long-term care, or detention or correctional facilities.",
+        "source_span": "“Residential dwelling unit” shall not include inpatient medical care,\nlicensed long-term care, or detention or correctional facilities.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "“Residential dwelling unit” shall not include inpatient medical care, licensed long-term care, or detention or correctional facilities.",
+            "status": "normalized_match",
+            "start": 7671,
+            "end": 7806
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "propagated": true,
+      "problem": null,
+      "scope": {
+        "resolver": "scope-modes/v1",
+        "declared_mode": "named_subject",
+        "mode": "named_subject",
+        "scope_words": {
+          "scope_quote": "“Residential dwelling unit” shall not include",
+          "scope_quote_check": "exact_match",
+          "text": "“Residential dwelling unit” shall not include",
+          "from": "scope_quote"
+        },
+        "detail": null,
+        "propagate_ids": [],
+        "mapping_targets": [],
+        "verification": null
+      }
+    },
+    {
+      "id": "S2",
+      "kind": "exemption",
+      "statement": "A government entity setting or limiting rents or sale prices through affordability controls in accordance with law is excluded from the definition of coordinator.",
+      "citation": "P.L. 2026, c. 43, § 3",
+      "scope_mode": "named_subject",
+      "scope_quote": "“Coordinator” shall not include",
+      "source_provision_id": "P3",
+      "governed_provision_ids": [
+        "P4"
+      ],
+      "evidence_parts": [
+        {
+          "segment_id": 1,
+          "quoted_text": "“Coordinator” shall not include a government entity that sets or limits rents or sale prices of residential property through affordability controls in accordance with law."
+        }
+      ],
+      "evidence_check": {
+        "status": "normalized_match",
+        "normalization": "Unicode NFC; each whitespace run (incl. line breaks) compared as one space; span ends trimmed",
+        "start": 6280,
+        "end": 6451,
+        "occurrences": 1,
+        "model_span": "“Coordinator” shall not include a government entity that sets or limits rents or sale prices of residential property through affordability controls in accordance with law.",
+        "source_span": "“Coordinator” shall not include a government entity that sets or limits rents\nor sale prices of residential property through affordability controls in\naccordance with law.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "“Coordinator” shall not include a government entity that sets or limits rents or sale prices of residential property through affordability controls in accordance with law.",
+            "status": "normalized_match",
+            "start": 6280,
+            "end": 6451
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "propagated": true,
+      "problem": null,
+      "scope": {
+        "resolver": "scope-modes/v1",
+        "declared_mode": "named_subject",
+        "mode": "named_subject",
+        "scope_words": {
+          "scope_quote": "“Coordinator” shall not include",
+          "scope_quote_check": "exact_match",
+          "text": "“Coordinator” shall not include",
+          "from": "scope_quote"
+        },
+        "detail": null,
+        "propagate_ids": [],
+        "mapping_targets": [],
+        "verification": null
+      }
+    },
+    {
+      "id": "S3",
+      "kind": "exemption",
+      "statement": "Providing, using, or collecting competitively sensitive information solely for research, statistical analysis, or testing where not used in setting or recommending prices, terms, fees, or occupancy levels is excluded from a coordinating function.",
+      "citation": "P.L. 2026, c. 43, § 3",
+      "scope_mode": "named_subject",
+      "scope_quote": "“Coordinating function” shall not include the following:",
+      "source_provision_id": "P3",
+      "governed_provision_ids": [
+        "P4"
+      ],
+      "evidence_parts": [
+        {
+          "segment_id": 1,
+          "quoted_text": "providing, using, or collecting competitively sensitive\ninformation solely for the purpose of conducting\nresearch, statistical analysis, or testing, where the competitively\nsensitive information is not used in setting or recommending rental prices,\nmaterial lease terms, fees, occupancy rates or levels, or other contract terms\nfor current or future leases;"
+        }
+      ],
+      "evidence_check": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 4987,
+        "end": 5344,
+        "occurrences": 1,
+        "model_span": "providing, using, or collecting competitively sensitive\ninformation solely for the purpose of conducting\nresearch, statistical analysis, or testing, where the competitively\nsensitive information is not used in setting or recommending rental prices,\nmaterial lease terms, fees, occupancy rates or levels, or other contract terms\nfor current or future leases;",
+        "source_span": "providing, using, or collecting competitively sensitive\ninformation solely for the purpose of conducting\nresearch, statistical analysis, or testing, where the competitively\nsensitive information is not used in setting or recommending rental prices,\nmaterial lease terms, fees, occupancy rates or levels, or other contract terms\nfor current or future leases;",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "providing, using, or collecting competitively sensitive\ninformation solely for the purpose of conducting\nresearch, statistical analysis, or testing, where the competitively\nsensitive information is not used in setting or recommending rental prices,\nmaterial lease terms, fees, occupancy rates or levels, or other contract terms\nfor current or future leases;",
+            "status": "exact_match",
+            "start": 4987,
+            "end": 5344
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "propagated": true,
+      "problem": null,
+      "scope": {
+        "resolver": "scope-modes/v1",
+        "declared_mode": "named_subject",
+        "mode": "named_subject",
+        "scope_words": {
+          "scope_quote": "“Coordinating function” shall not include the following:",
+          "scope_quote_check": "exact_match",
+          "text": "“Coordinating function” shall not include the following:",
+          "from": "scope_quote"
+        },
+        "detail": null,
+        "propagate_ids": [],
+        "mapping_targets": [],
+        "verification": null
+      }
+    },
+    {
+      "id": "S4",
+      "kind": "exemption",
+      "statement": "Developing an estimated amount of rent that is made available to the public at no cost is excluded from a coordinating function.",
+      "citation": "P.L. 2026, c. 43, § 3",
+      "scope_mode": "named_subject",
+      "scope_quote": "“Coordinating function” shall not include the following:",
+      "source_provision_id": "P3",
+      "governed_provision_ids": [
+        "P4"
+      ],
+      "evidence_parts": [
+        {
+          "segment_id": 1,
+          "quoted_text": "developing an estimated amount of rent that is\nmade available to the public at no cost;"
+        }
+      ],
+      "evidence_check": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 5349,
+        "end": 5436,
+        "occurrences": 1,
+        "model_span": "developing an estimated amount of rent that is\nmade available to the public at no cost;",
+        "source_span": "developing an estimated amount of rent that is\nmade available to the public at no cost;",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "developing an estimated amount of rent that is\nmade available to the public at no cost;",
+            "status": "exact_match",
+            "start": 5349,
+            "end": 5436
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "propagated": true,
+      "problem": null,
+      "scope": {
+        "resolver": "scope-modes/v1",
+        "declared_mode": "named_subject",
+        "mode": "named_subject",
+        "scope_words": {
+          "scope_quote": "“Coordinating function” shall not include the following:",
+          "scope_quote_check": "exact_match",
+          "text": "“Coordinating function” shall not include the following:",
+          "from": "scope_quote"
+        },
+        "detail": null,
+        "propagate_ids": [],
+        "mapping_targets": [],
+        "verification": null
+      }
+    },
+    {
+      "id": "S5",
+      "kind": "exemption",
+      "statement": "The use of an equal-terms real estate brokerage database listing properties for rent or sale that does not set, recommend, or collect competitively sensitive information to set or recommend rental prices, lease terms, or occupancy levels is excluded from a coordinating function.",
+      "citation": "P.L. 2026, c. 43, § 3",
+      "scope_mode": "named_subject",
+      "scope_quote": "“Coordinating function” shall not include the following:",
+      "source_provision_id": "P3",
+      "governed_provision_ids": [
+        "P4"
+      ],
+      "evidence_parts": [
+        {
+          "segment_id": 1,
+          "quoted_text": "the use of a real estate brokerage database that is available on\nequal terms to subscribers that lists properties for rent or sale but does not:\n(a) set or recommend rental prices, material lease\nterms, or occupancy rates or levels; or\n(b) collect competitively sensitive information to set or\nrecommend rental prices, material lease terms, or occupancy rates or levels; or"
+        }
+      ],
+      "evidence_check": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 5441,
+        "end": 5814,
+        "occurrences": 1,
+        "model_span": "the use of a real estate brokerage database that is available on\nequal terms to subscribers that lists properties for rent or sale but does not:\n(a) set or recommend rental prices, material lease\nterms, or occupancy rates or levels; or\n(b) collect competitively sensitive information to set or\nrecommend rental prices, material lease terms, or occupancy rates or levels; or",
+        "source_span": "the use of a real estate brokerage database that is available on\nequal terms to subscribers that lists properties for rent or sale but does not:\n(a) set or recommend rental prices, material lease\nterms, or occupancy rates or levels; or\n(b) collect competitively sensitive information to set or\nrecommend rental prices, material lease terms, or occupancy rates or levels; or",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "the use of a real estate brokerage database that is available on\nequal terms to subscribers that lists properties for rent or sale but does not:\n(a) set or recommend rental prices, material lease\nterms, or occupancy rates or levels; or\n(b) collect competitively sensitive information to set or\nrecommend rental prices, material lease terms, or occupancy rates or levels; or",
+            "status": "exact_match",
+            "start": 5441,
+            "end": 5814
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "propagated": true,
+      "problem": null,
+      "scope": {
+        "resolver": "scope-modes/v1",
+        "declared_mode": "named_subject",
+        "mode": "named_subject",
+        "scope_words": {
+          "scope_quote": "“Coordinating function” shall not include the following:",
+          "scope_quote_check": "exact_match",
+          "text": "“Coordinating function” shall not include the following:",
+          "from": "scope_quote"
+        },
+        "detail": null,
+        "propagate_ids": [],
+        "mapping_targets": [],
+        "verification": null
+      }
+    },
+    {
+      "id": "S6",
+      "kind": "exemption",
+      "statement": "A government entity setting or limiting rents or sale prices of residential property through affordability controls in accordance with law is excluded from a coordinating function.",
+      "citation": "P.L. 2026, c. 43, § 3",
+      "scope_mode": "named_subject",
+      "scope_quote": "“Coordinating function” shall not include the following:",
+      "source_provision_id": "P3",
+      "governed_provision_ids": [
+        "P4"
+      ],
+      "evidence_parts": [
+        {
+          "segment_id": 1,
+          "quoted_text": "a government entity setting or limiting rents or\nsale prices of residential property through affordability controls in\naccordance with the law."
+        }
+      ],
+      "evidence_check": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 5821,
+        "end": 5964,
+        "occurrences": 1,
+        "model_span": "a government entity setting or limiting rents or\nsale prices of residential property through affordability controls in\naccordance with the law.",
+        "source_span": "a government entity setting or limiting rents or\nsale prices of residential property through affordability controls in\naccordance with the law.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "a government entity setting or limiting rents or\nsale prices of residential property through affordability controls in\naccordance with the law.",
+            "status": "exact_match",
+            "start": 5821,
+            "end": 5964
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "propagated": true,
+      "problem": null,
+      "scope": {
+        "resolver": "scope-modes/v1",
+        "declared_mode": "named_subject",
+        "mode": "named_subject",
+        "scope_words": {
+          "scope_quote": "“Coordinating function” shall not include the following:",
+          "scope_quote_check": "exact_match",
+          "text": "“Coordinating function” shall not include the following:",
+          "from": "scope_quote"
+        },
+        "detail": null,
+        "propagate_ids": [],
+        "mapping_targets": [],
+        "verification": null
+      }
+    },
+    {
+      "id": "S7",
+      "kind": "exemption",
+      "statement": "A spreadsheet that operates without artificial intelligence and requires human analysis, or a database that only queries unprocessed stored data, is excluded from the definition of algorithmic device.",
+      "citation": "P.L. 2026, c. 43, § 3",
+      "scope_mode": "named_subject",
+      "scope_quote": "An algorithmic\ndevice does not include:",
+      "source_provision_id": "P3",
+      "governed_provision_ids": [
+        "P4"
+      ],
+      "evidence_parts": [
+        {
+          "segment_id": 1,
+          "quoted_text": "An algorithmic\ndevice does not include: (1) a spreadsheet that (a) operates without artificial\nintelligence and (b) requires human analysis to process or otherwise perform\ncalculations of data; or (2) a database that only uses an algorithm to query\nunprocessed data stored on or within that database"
+        }
+      ],
+      "evidence_check": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 3325,
+        "end": 3624,
+        "occurrences": 1,
+        "model_span": "An algorithmic\ndevice does not include: (1) a spreadsheet that (a) operates without artificial\nintelligence and (b) requires human analysis to process or otherwise perform\ncalculations of data; or (2) a database that only uses an algorithm to query\nunprocessed data stored on or within that database",
+        "source_span": "An algorithmic\ndevice does not include: (1) a spreadsheet that (a) operates without artificial\nintelligence and (b) requires human analysis to process or otherwise perform\ncalculations of data; or (2) a database that only uses an algorithm to query\nunprocessed data stored on or within that database",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "An algorithmic\ndevice does not include: (1) a spreadsheet that (a) operates without artificial\nintelligence and (b) requires human analysis to process or otherwise perform\ncalculations of data; or (2) a database that only uses an algorithm to query\nunprocessed data stored on or within that database",
+            "status": "exact_match",
+            "start": 3325,
+            "end": 3624
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "propagated": true,
+      "problem": null,
+      "scope": {
+        "resolver": "scope-modes/v1",
+        "declared_mode": "named_subject",
+        "mode": "named_subject",
+        "scope_words": {
+          "scope_quote": "An algorithmic\ndevice does not include:",
+          "scope_quote_check": "exact_match",
+          "text": "An algorithmic\ndevice does not include:",
+          "from": "scope_quote"
+        },
+        "detail": null,
+        "propagate_ids": [],
+        "mapping_targets": [],
+        "verification": null
+      }
+    }
+  ],
+  "source_view": {
+    "marker": "[[PAGE BREAK]]",
+    "segment_label": "[[SEGMENT {}]]",
+    "view_sha256": "aee9c8328867c86b1ad74b6d6bce77c51c05c7bb20d9a3f0b8676829db7d0f1a",
+    "segments": [
+      {
+        "id": 1,
+        "raw_start": 0,
+        "raw_end": 10259
+      }
+    ],
+    "artifacts_removed": 0,
+    "artifacts": []
+  },
+  "coverage": {
+    "inventory_valid": true,
+    "anchors_located": "9/9",
+    "after_primary": {
+      "uncovered": [],
+      "unaccepted": [
+        "§ 4"
+      ],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "scope_mappings": {
+      "requested": 0,
+      "applies": 0,
+      "does_not_apply": 0,
+      "unresolved": 0
+    },
+    "inventory_items": 9,
+    "in_scope_items": 1,
+    "in_scope_refs": 1,
+    "uncertain": [],
+    "final": {
+      "uncovered": [],
+      "unaccepted": [
+        "§ 4"
+      ],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "link_mismatches": [],
+    "provisions": [
+      {
+        "ref": "§ 4",
+        "inventory_item": 3,
+        "provision_id": "P4",
+        "summary": "Prohibits rental property owners from using coordinator services, coordinators from facilitating anticompetitive agreements, parallel pricing coordination, and performing coordinating functions.",
+        "category": "algorithmic_rent_setting",
+        "candidates": [
+          0
+        ],
+        "accepted": [],
+        "basis": {
+          "0": "provision link; citation names it"
+        }
+      }
+    ],
+    "unrecorded_subdivisions": []
+  },
+  "scope_challenges": [
+    {
+      "ref": "§ 1",
+      "provision_id": "P1",
+      "role": "boilerplate",
+      "reason": "title / short citation",
+      "summary": "Short title: Forbidding the Algorithmic Inflation of Rent (FAIR) Act.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role boilerplate is decided by other rules"
+    },
+    {
+      "ref": "§ 2",
+      "provision_id": "P2",
+      "role": "history",
+      "reason": "legislative findings",
+      "summary": "Legislative findings regarding rental housing costs and property management software coordination.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role history is decided by other rules"
+    },
+    {
+      "ref": "§ 3",
+      "provision_id": "P3",
+      "role": "definition",
+      "reason": "definitions and statutory exclusions (see global_scope)",
+      "summary": "Definitions of statutory terms and scope exclusions under the FAIR Act.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "its content is a verified document-level scope condition"
+    },
+    {
+      "ref": "§ 5",
+      "provision_id": "P5",
+      "role": "boilerplate",
+      "reason": "cumulative remedies / construction boilerplate",
+      "summary": "Clarifies that the act does not limit the application of New Jersey Antitrust Act enforcement and remedy provisions to violations of section 4.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role boilerplate is decided by other rules"
+    },
+    {
+      "ref": "§ 6",
+      "provision_id": "P6",
+      "role": "boilerplate",
+      "reason": "cumulative law construction and municipal preemption",
+      "summary": "Provides that the act is in addition to the New Jersey Antitrust Act and prohibits conflicting municipal ordinances.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role boilerplate is decided by other rules"
+    },
+    {
+      "ref": "§ 7",
+      "provision_id": "P7",
+      "role": "procedure",
+      "reason": "administrative complaint intake mechanism",
+      "summary": "Requires the Attorney General to establish an online complaint intake portal.",
+      "signals": {
+        "in_scope_neighbour": false,
+        "enumeration": false,
+        "normative_language": true,
+        "grounds_or_conditions": false
+      },
+      "challenged": false,
+      "why_not": "too few substantive signals",
+      "raw_start": 9476,
+      "raw_end": 9890
+    },
+    {
+      "ref": "§ 8",
+      "provision_id": "P8",
+      "role": "procedure",
+      "reason": "administrative rulemaking authorization",
+      "summary": "Authorizes the Attorney General to adopt implementing rules and regulations.",
+      "signals": {
+        "in_scope_neighbour": false,
+        "enumeration": false,
+        "normative_language": false,
+        "grounds_or_conditions": false
+      },
+      "challenged": false,
+      "why_not": "too few substantive signals",
+      "raw_start": 9890,
+      "raw_end": 10080
+    },
+    {
+      "ref": "§ 9",
+      "provision_id": "P9",
+      "role": "procedure",
+      "reason": "effective date formula",
+      "summary": "Establishes the effective date of the act.",
+      "signals": {
+        "in_scope_neighbour": false,
+        "enumeration": false,
+        "normative_language": true,
+        "grounds_or_conditions": false
+      },
+      "challenged": false,
+      "why_not": "too few substantive signals",
+      "raw_start": 10080,
+      "raw_end": 10259
+    }
+  ],
+  "scope_mappings": [],
+  "legislative_session": null,
+  "empty_result": null,
+  "legacy_replay": null,
+  "dedupe": [],
+  "chunking": null,
+  "repair": null,
+  "document_status": "review_required",
+  "review_reasons": [
+    "in-scope provisions whose candidate records were all rejected: ['§ 4']"
+  ],
+  "warnings": [
+    "candidate 0 rejected: citation: quote not found in source text (not found in source text, even after safe normalization)"
+  ],
+  "errors": [],
+  "raw_response_text": "{\n  \"document\": {\n    \"posture\": \"enacted_session_law\",\n    \"evidence\": \"P.L.\\n2026, CHAPTER 43,\\napproved July 20, 2026\"\n  },\n  \"provisions\": [\n    {\n      \"id\": \"P1\",\n      \"ref\": \"§ 1\",\n      \"anchor\": \"1.    This act shall be known and may be cited\",\n      \"summary\": \"Short title: Forbidding the Algorithmic Inflation of Rent (FAIR) Act.\",\n      \"role\": \"boilerplate\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"title / short citation\"\n    },\n    {\n      \"id\": \"P2\",\n      \"ref\": \"§ 2\",\n      \"anchor\": \"2.    The Legislature finds and declares that:\",\n      \"summary\": \"Legislative findings regarding rental housing costs and property management software coordination.\",\n      \"role\": \"history\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"legislative findings\"\n    },\n    {\n      \"id\": \"P3\",\n      \"ref\": \"§ 3\",\n      \"anchor\": \"3.    As used in this act:\",\n      \"summary\": \"Definitions of statutory terms and scope exclusions under the FAIR Act.\",\n      \"role\": \"definition\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"definitions and statutory exclusions (see global_scope)\"\n    },\n    {\n      \"id\": \"P4\",\n      \"ref\": \"§ 4\",\n      \"anchor\": \"4.    It\\nshall be unlawful and a violation of the\",\n      \"summary\": \"Prohibits rental property owners from using coordinator services, coordinators from facilitating anticompetitive agreements, parallel pricing coordination, and performing coordinating functions.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"algorithmic_rent_setting\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P5\",\n      \"ref\": \"§ 5\",\n      \"anchor\": \"5.    The provisions of this act shall not be construed\",\n      \"summary\": \"Clarifies that the act does not limit the application of New Jersey Antitrust Act enforcement and remedy provisions to violations of section 4.\",\n      \"role\": \"boilerplate\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"cumulative remedies / construction boilerplate\"\n    },\n    {\n      \"id\": \"P6\",\n      \"ref\": \"§ 6\",\n      \"anchor\": \"6.    a.  This act shall not authorize or permit any\",\n      \"summary\": \"Provides that the act is in addition to the New Jersey Antitrust Act and prohibits conflicting municipal ordinances.\",\n      \"role\": \"boilerplate\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"cumulative law construction and municipal preemption\"\n    },\n    {\n      \"id\": \"P7\",\n      \"ref\": \"§ 7\",\n      \"anchor\": \"7.    The Attorney General shall establish, on the\",\n      \"summary\": \"Requires the Attorney General to establish an online complaint intake portal.\",\n      \"role\": \"procedure\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"administrative complaint intake mechanism\"\n    },\n    {\n      \"id\": \"P8\",\n      \"ref\": \"§ 8\",\n      \"anchor\": \"8.    The Attorney General may, pursuant to the\",\n      \"summary\": \"Authorizes the Attorney General to adopt implementing rules and regulations.\",\n      \"role\": \"procedure\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"administrative rulemaking authorization\"\n    },\n    {\n      \"id\": \"P9\",\n      \"ref\": \"§ 9\",\n      \"anchor\": \"9.    This act shall take effect on the first day of\",\n      \"summary\": \"Establishes the effective date of the act.\",\n      \"role\": \"procedure\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"effective date formula\"\n    }\n  ],\n  \"global_scope\": [\n    {\n      \"id\": \"S1\",\n      \"kind\": \"exemption\",\n      \"statement\": \"Inpatient medical care, licensed long-term care, and detention or correctional facilities are excluded from the definition of residential dwelling unit.\",\n      \"citation\": \"P.L. 2026, c. 43, § 3\",\n      \"scope_mode\": \"named_subject\",\n      \"scope_quote\": \"“Residential dwelling unit” shall not include\",\n      \"source_provision_id\": \"P3\",\n      \"governed_provision_ids\": [\n        \"P4\"\n      ],\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"“Residential dwelling unit” shall not include inpatient medical care, licensed long-term care, or detention or correctional facilities.\"\n        }\n      ]\n    },\n    {\n      \"id\": \"S2\",\n      \"kind\": \"exemption\",\n      \"statement\": \"A government entity setting or limiting rents or sale prices through affordability controls in accordance with law is excluded from the definition of coordinator.\",\n      \"citation\": \"P.L. 2026, c. 43, § 3\",\n      \"scope_mode\": \"named_subject\",\n      \"scope_quote\": \"“Coordinator” shall not include\",\n      \"source_provision_id\": \"P3\",\n      \"governed_provision_ids\": [\n        \"P4\"\n      ],\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"“Coordinator” shall not include a government entity that sets or limits rents or sale prices of residential property through affordability controls in accordance with law.\"\n        }\n      ]\n    },\n    {\n      \"id\": \"S3\",\n      \"kind\": \"exemption\",\n      \"statement\": \"Providing, using, or collecting competitively sensitive information solely for research, statistical analysis, or testing where not used in setting or recommending prices, terms, fees, or occupancy levels is excluded from a coordinating function.\",\n      \"citation\": \"P.L. 2026, c. 43, § 3\",\n      \"scope_mode\": \"named_subject\",\n      \"scope_quote\": \"“Coordinating function” shall not include the following:\",\n      \"source_provision_id\": \"P3\",\n      \"governed_provision_ids\": [\n        \"P4\"\n      ],\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"providing, using, or collecting competitively sensitive\\ninformation solely for the purpose of conducting\\nresearch, statistical analysis, or testing, where the competitively\\nsensitive information is not used in setting or recommending rental prices,\\nmaterial lease terms, fees, occupancy rates or levels, or other contract terms\\nfor current or future leases;\"\n        }\n      ]\n    },\n    {\n      \"id\": \"S4\",\n      \"kind\": \"exemption\",\n      \"statement\": \"Developing an estimated amount of rent that is made available to the public at no cost is excluded from a coordinating function.\",\n      \"citation\": \"P.L. 2026, c. 43, § 3\",\n      \"scope_mode\": \"named_subject\",\n      \"scope_quote\": \"“Coordinating function” shall not include the following:\",\n      \"source_provision_id\": \"P3\",\n      \"governed_provision_ids\": [\n        \"P4\"\n      ],\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"developing an estimated amount of rent that is\\nmade available to the public at no cost;\"\n        }\n      ]\n    },\n    {\n      \"id\": \"S5\",\n      \"kind\": \"exemption\",\n      \"statement\": \"The use of an equal-terms real estate brokerage database listing properties for rent or sale that does not set, recommend, or collect competitively sensitive information to set or recommend rental prices, lease terms, or occupancy levels is excluded from a coordinating function.\",\n      \"citation\": \"P.L. 2026, c. 43, § 3\",\n      \"scope_mode\": \"named_subject\",\n      \"scope_quote\": \"“Coordinating function” shall not include the following:\",\n      \"source_provision_id\": \"P3\",\n      \"governed_provision_ids\": [\n        \"P4\"\n      ],\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"the use of a real estate brokerage database that is available on\\nequal terms to subscribers that lists properties for rent or sale but does not:\\n(a) set or recommend rental prices, material lease\\nterms, or occupancy rates or levels; or\\n(b) collect competitively sensitive information to set or\\nrecommend rental prices, material lease terms, or occupancy rates or levels; or\"\n        }\n      ]\n    },\n    {\n      \"id\": \"S6\",\n      \"kind\": \"exemption\",\n      \"statement\": \"A government entity setting or limiting rents or sale prices of residential property through affordability controls in accordance with law is excluded from a coordinating function.\",\n      \"citation\": \"P.L. 2026, c. 43, § 3\",\n      \"scope_mode\": \"named_subject\",\n      \"scope_quote\": \"“Coordinating function” shall not include the following:\",\n      \"source_provision_id\": \"P3\",\n      \"governed_provision_ids\": [\n        \"P4\"\n      ],\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"a government entity setting or limiting rents or\\nsale prices of residential property through affordability controls in\\naccordance with the law.\"\n        }\n      ]\n    },\n    {\n      \"id\": \"S7\",\n      \"kind\": \"exemption\",\n      \"statement\": \"A spreadsheet that operates without artificial intelligence and requires human analysis, or a database that only queries unprocessed stored data, is excluded from the definition of algorithmic device.\",\n      \"citation\": \"P.L. 2026, c. 43, § 3\",\n      \"scope_mode\": \"named_subject\",\n      \"scope_quote\": \"An algorithmic\\ndevice does not include:\",\n      \"source_provision_id\": \"P3\",\n      \"governed_provision_ids\": [\n        \"P4\"\n      ],\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"An algorithmic\\ndevice does not include: (1) a spreadsheet that (a) operates without artificial\\nintelligence and (b) requires human analysis to process or otherwise perform\\ncalculations of data; or (2) a database that only uses an algorithm to query\\nunprocessed data stored on or within that database\"\n        }\n      ]\n    }\n  ],\n  \"rules\": [\n    {\n      \"category\": \"algorithmic_rent_setting\",\n      \"citation\": \"P.L. 2026, c. 43, § 4\",\n      \"provision_ids\": [\n        \"P4\"\n      ],\n      \"source_basis\": \"operative_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"4.    It\\nshall be unlawful and a violation of the “New Jersey Antitrust Act,” P.L.1970,\\nc.73 (C.56:9-1 et seq.) for:\\na.     a rental property owner, or any agent,\\nrepresentative, or subcontractor thereof, to receive, subscribe to, contract\\nfor, or otherwise exchange any form of consideration in return for the use of,\\nthe services of a coordinator;\\nb.    a coordinator to facilitate a tacit or express\\nagreement among rental property owners that restricts competition with respect\\nto residential dwelling units, including by performing a coordinating\\nfunction;\\nc.     two or more persons to engage in\\n1\\n[\\nor\\notherwise facilitate\\n]\\n1\\nparallel pricing coordination;\\nd.    any agent or representative of a coordinator or\\nsubcontractor thereof to engage in parallel pricing coordination; or\\ne.     any person to perform a coordinating function.\"\n        }\n      ],\n      \"title\": \"FAIR Act - Prohibited Algorithmic Pricing Practices\",\n      \"requirement\": \"It is unlawful and a violation of the New Jersey Antitrust Act for: (a) a rental property owner, agent, representative, or subcontractor to receive, subscribe to, contract for, or exchange consideration for the services of a coordinator; (b) a coordinator to facilitate an express or tacit agreement among rental property owners restricting competition regarding residential dwelling units, including by performing a coordinating function; (c) two or more persons to engage in or facilitate parallel pricing coordination; (d) any agent, representative, or subcontractor of a coordinator to engage in parallel pricing coordination; or (e) any person to perform a coordinating function.\",\n      \"key_value\": null,\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": \"A violation constitutes a violation of the New Jersey Antitrust Act, P.L.1970, c.73 (C.56:9-1 et seq.). Section 5 provides that the act does not limit the application of sections 6 through 17 of P.L.1970, c.73 (C.56:9-6 through 9-17) to a violation of section 4. Section 6 provides that the act is in addition to the New Jersey Antitrust Act and prohibits municipalities from enacting conflicting ordinances.\",\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": \"approved July 20, 2026\",\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": \"This act shall take effect on the first day of\\nthe twelfth month next following the date of enactment.\",\n      \"effective_date_evidence_kind\": \"relative_date_formula\",\n      \"effective_date\": null,\n      \"conflict_note\": null\n    }\n  ],\n  \"no_rules_justification\": null\n}"
+}

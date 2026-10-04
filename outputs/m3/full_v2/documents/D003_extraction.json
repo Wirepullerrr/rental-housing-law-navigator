@@ -1,0 +1,2952 @@
+{
+  "disclaimer": "Not legal advice. Automated extraction for a research prototype; verify against the cited source.",
+  "run_at": "2026-10-04T06:34:25+00:00",
+  "source": {
+    "doc_id": "D003",
+    "jurisdiction": "Berkeley, CA",
+    "url": "https://rentboard.berkeleyca.gov/Fair_Chance",
+    "source_type": "official",
+    "retrieved_at": "2026-10-01T22:35Z",
+    "text_file": "text/D003.txt",
+    "content_sha256": "6fa297f511219e72e83ead29bdaff436be29c2f30b714b2a674b477e09013a60",
+    "body_chars": 5841
+  },
+  "provider": "gemini",
+  "model": "gemini-3.8-flash",
+  "prompt_version": "v7",
+  "prompt_sha256": "fb0c6cbc7d465de28769ab345c86d9074960ce59860ffbe66b7562790e5532de",
+  "response_schema_sha256": "c15306da6f21dc72f06e78405f94ed61dc9e59288138cc98b5b5bf9b62ac403c",
+  "generation_settings": {
+    "temperature": null,
+    "seed": 20261001,
+    "thinking_level": "medium"
+  },
+  "as_of": "2026-10-01",
+  "cache_key": "d33933ca99976fb82ced4a126af5af51bd24522d7f5a5d4a41a58359ecb5a6ae",
+  "cache_hit": true,
+  "cache_entry": "cache/extraction/d33933ca99976fb82ced4a126af5af51bd24522d7f5a5d4a41a58359ecb5a6ae.json",
+  "provider_metadata": {
+    "api": "interactions.create",
+    "interaction_id": "",
+    "model": "gemini-3.8-flash",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 5108,
+      "output_tokens": 3889,
+      "thinking_tokens": 18638,
+      "total_tokens": 27635
+    }
+  },
+  "candidate_count": 4,
+  "accepted_count": 0,
+  "rules": [],
+  "candidates": [
+    {
+      "index": 0,
+      "origin": "primary",
+      "accepted": false,
+      "held": true,
+      "historical": false,
+      "temporal_state": "held",
+      "validity": {
+        "resolver": "validity-window/v1",
+        "boundaries": [],
+        "end_exclusive": null,
+        "end_conflict": null,
+        "decision": {
+          "outcome": null,
+          "state": null,
+          "reason": null,
+          "start": null
+        }
+      },
+      "duplicate_of": null,
+      "rejection_reasons": [
+        "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      ],
+      "provision_ids": [
+        "P3"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 475,
+        "end": 580,
+        "occurrences": 1,
+        "model_span": "On April 14, 2020, Berkeley City Council passed the Fair Chance Access to Housing Ordinance (BMC 13.106).",
+        "source_span": "On April 14, 2020, Berkeley City Council passed the Fair Chance Access to Housing Ordinance (BMC 13.106).",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 721,
+        "end": 1522,
+        "occurrences": 1,
+        "model_span": "It is unlawful to do any of the following with regard to current or prospective tenants\nInquire about criminal history\nIndicate that persons with criminal backgrounds will not be considered for housing, including in rental advertisements, application materials, or verbally\nRefuse to rent or terminate a tenancy based on criminal history\nRequire disclosure or authorization for release of criminal history\nDemand a higher security deposit or rental amount based on criminal history\nRefuse to allow the addition of an immediate family member based on the family member’s criminal history\nDisqualify tenants from rental assistance programs such as Section 8 based on criminal history (subject to certain exceptions below)\nTreating rental applicants or tenants differently based on their criminal history",
+        "source_span": "It is unlawful to do any of the following with regard to current or prospective tenants\nInquire about criminal history\nIndicate that persons with criminal backgrounds will not be considered for housing, including in rental advertisements, application materials, or verbally\nRefuse to rent or terminate a tenancy based on criminal history\nRequire disclosure or authorization for release of criminal history\nDemand a higher security deposit or rental amount based on criminal history\nRefuse to allow the addition of an immediate family member based on the family member’s criminal history\nDisqualify tenants from rental assistance programs such as Section 8 based on criminal history (subject to certain exceptions below)\nTreating rental applicants or tenants differently based on their criminal history",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "It is unlawful to do any of the following with regard to current or prospective tenants\nInquire about criminal history\nIndicate that persons with criminal backgrounds will not be considered for housing, including in rental advertisements, application materials, or verbally\nRefuse to rent or terminate a tenancy based on criminal history\nRequire disclosure or authorization for release of criminal history\nDemand a higher security deposit or rental amount based on criminal history\nRefuse to allow the addition of an immediate family member based on the family member’s criminal history\nDisqualify tenants from rental assistance programs such as Section 8 based on criminal history (subject to certain exceptions below)\nTreating rental applicants or tenants differently based on their criminal history",
+            "status": "exact_match",
+            "start": 721,
+            "end": 1522
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": null,
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [
+        {
+          "id": "S1",
+          "kind": "exemption",
+          "mode": "named_subject",
+          "governed_provision_ids": [
+            "P3"
+          ],
+          "basis": "named-subject mapping to P3 verified by repair",
+          "applied": true
+        },
+        {
+          "id": "S2",
+          "kind": "exemption",
+          "mode": "named_subject",
+          "governed_provision_ids": [
+            "P3"
+          ],
+          "basis": "named-subject mapping to P3 verified by repair",
+          "applied": true
+        },
+        {
+          "id": "S3",
+          "kind": "exemption",
+          "mode": "named_subject",
+          "governed_provision_ids": [
+            "P3"
+          ],
+          "basis": "named-subject mapping to P3 verified by repair",
+          "applied": true
+        },
+        {
+          "id": "S4",
+          "kind": "exemption",
+          "mode": "named_subject",
+          "governed_provision_ids": [
+            "P3"
+          ],
+          "basis": "named-subject mapping to P3 verified by repair",
+          "applied": true
+        },
+        {
+          "id": "S5",
+          "kind": "exemption",
+          "mode": "named_subject",
+          "governed_provision_ids": [
+            "P3"
+          ],
+          "basis": "named-subject mapping to P3 verified by repair",
+          "applied": true
+        }
+      ],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": null,
+        "applied_kind": null,
+        "effective_date": null,
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null,
+        "unresolved_reason": "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      },
+      "status_derivation": "temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-38e9bdd963",
+        "jurisdiction": "Berkeley, CA",
+        "level": "city",
+        "category": "screening_restrictions",
+        "status": null,
+        "title": "Prohibited Actions Regarding Criminal History",
+        "requirement": "[Basis: official explanatory text, not operative legal text] With regard to current or prospective tenants, it is unlawful to inquire about criminal history, indicate that persons with criminal backgrounds will not be considered for housing, refuse to rent or terminate a tenancy based on criminal history, require disclosure or authorization for release of criminal history, demand a higher security deposit or rental amount based on criminal history, refuse to allow the addition of an immediate family member based on criminal history, disqualify tenants from rental assistance programs based on criminal history, or treat applicants or tenants differently based on criminal history.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": "Lifetime sex offenders are exempt as specified in the Ordinance. [BMC 13.106]; Public housing and Section 8 properties have limited exemptions as specified in the Ordinance. [BMC 13.106]; Owner-occupied properties of between 1 and 3 units in which an owner of record resides in one unit as their primary residence are exempt. [BMC 13.106]; Units under a rental agreement allowing owners to move back into their home pursuant to BMC 13.76.130 A.9 are exempt. [BMC 13.106]; Units occupied by existing tenants seeking to sublet or add or replace roommates are exempt. [BMC 13.106]",
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "BMC 13.106",
+        "source_doc_id": "D003",
+        "source_url": "https://rentboard.berkeleyca.gov/Fair_Chance",
+        "quoted_span": "It is unlawful to do any of the following with regard to current or prospective tenants\nInquire about criminal history\nIndicate that persons with criminal backgrounds will not be considered for housing, including in rental advertisements, application materials, or verbally\nRefuse to rent or terminate a tenancy based on criminal history\nRequire disclosure or authorization for release of criminal history\nDemand a higher security deposit or rental amount based on criminal history\nRefuse to allow the addition of an immediate family member based on the family member’s criminal history\nDisqualify tenants from rental assistance programs such as Section 8 based on criminal history (subject to certain exceptions below)\nTreating rental applicants or tenants differently based on their criminal history",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "screening_restrictions",
+        "citation": "BMC 13.106",
+        "provision_ids": [
+          "P3"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "It is unlawful to do any of the following with regard to current or prospective tenants\nInquire about criminal history\nIndicate that persons with criminal backgrounds will not be considered for housing, including in rental advertisements, application materials, or verbally\nRefuse to rent or terminate a tenancy based on criminal history\nRequire disclosure or authorization for release of criminal history\nDemand a higher security deposit or rental amount based on criminal history\nRefuse to allow the addition of an immediate family member based on the family member’s criminal history\nDisqualify tenants from rental assistance programs such as Section 8 based on criminal history (subject to certain exceptions below)\nTreating rental applicants or tenants differently based on their criminal history"
+          }
+        ],
+        "title": "Prohibited Actions Regarding Criminal History",
+        "requirement": "With regard to current or prospective tenants, it is unlawful to inquire about criminal history, indicate that persons with criminal backgrounds will not be considered for housing, refuse to rent or terminate a tenancy based on criminal history, require disclosure or authorization for release of criminal history, demand a higher security deposit or rental amount based on criminal history, refuse to allow the addition of an immediate family member based on criminal history, disqualify tenants from rental assistance programs based on criminal history, or treat applicants or tenants differently based on criminal history.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": "On April 14, 2020, Berkeley City Council passed the Fair Chance Access to Housing Ordinance (BMC 13.106).",
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": null,
+        "effective_date_evidence_kind": null,
+        "effective_date": null,
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 1,
+      "origin": "primary",
+      "accepted": false,
+      "held": true,
+      "historical": false,
+      "temporal_state": "held",
+      "validity": {
+        "resolver": "validity-window/v1",
+        "boundaries": [],
+        "end_exclusive": null,
+        "end_conflict": null,
+        "decision": {
+          "outcome": null,
+          "state": null,
+          "reason": null,
+          "start": null
+        }
+      },
+      "duplicate_of": null,
+      "rejection_reasons": [
+        "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      ],
+      "provision_ids": [
+        "P5"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 475,
+        "end": 580,
+        "occurrences": 1,
+        "model_span": "On April 14, 2020, Berkeley City Council passed the Fair Chance Access to Housing Ordinance (BMC 13.106).",
+        "source_span": "On April 14, 2020, Berkeley City Council passed the Fair Chance Access to Housing Ordinance (BMC 13.106).",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 2054,
+        "end": 2325,
+        "occurrences": 1,
+        "model_span": "If a landlord takes any action against an applicant or tenant based on criminal history (such as refusing to offer a lease, refusing to add a family member, etc.), the landlord is required to provide the applicant/tenant with written notice and an opportunity to respond.",
+        "source_span": "If a landlord takes any action against an applicant or tenant based on criminal history (such as refusing to offer a lease, refusing to add a family member, etc.), the landlord is required to provide the applicant/tenant with written notice and an opportunity to respond.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "If a landlord takes any action against an applicant or tenant based on criminal history (such as refusing to offer a lease, refusing to add a family member, etc.), the landlord is required to provide the applicant/tenant with written notice and an opportunity to respond.",
+            "status": "exact_match",
+            "start": 2054,
+            "end": 2325
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": null,
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": null,
+        "applied_kind": null,
+        "effective_date": null,
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null,
+        "unresolved_reason": "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      },
+      "status_derivation": "temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-cdab4bb3f1",
+        "jurisdiction": "Berkeley, CA",
+        "level": "city",
+        "category": "screening_restrictions",
+        "status": null,
+        "title": "Written Notice and Opportunity to Respond to Criminal History Adverse Action",
+        "requirement": "[Basis: official explanatory text, not operative legal text] If a landlord takes any action against an applicant or tenant based on criminal history (such as refusing to offer a lease or refusing to add a family member), the landlord must provide the applicant or tenant with written notice and an opportunity to respond.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "BMC 13.106",
+        "source_doc_id": "D003",
+        "source_url": "https://rentboard.berkeleyca.gov/Fair_Chance",
+        "quoted_span": "If a landlord takes any action against an applicant or tenant based on criminal history (such as refusing to offer a lease, refusing to add a family member, etc.), the landlord is required to provide the applicant/tenant with written notice and an opportunity to respond.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "screening_restrictions",
+        "citation": "BMC 13.106",
+        "provision_ids": [
+          "P5"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "If a landlord takes any action against an applicant or tenant based on criminal history (such as refusing to offer a lease, refusing to add a family member, etc.), the landlord is required to provide the applicant/tenant with written notice and an opportunity to respond."
+          }
+        ],
+        "title": "Written Notice and Opportunity to Respond to Criminal History Adverse Action",
+        "requirement": "If a landlord takes any action against an applicant or tenant based on criminal history (such as refusing to offer a lease or refusing to add a family member), the landlord must provide the applicant or tenant with written notice and an opportunity to respond.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": "On April 14, 2020, Berkeley City Council passed the Fair Chance Access to Housing Ordinance (BMC 13.106).",
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": null,
+        "effective_date_evidence_kind": null,
+        "effective_date": null,
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 2,
+      "origin": "primary",
+      "accepted": false,
+      "held": true,
+      "historical": false,
+      "temporal_state": "held",
+      "validity": {
+        "resolver": "validity-window/v1",
+        "boundaries": [],
+        "end_exclusive": null,
+        "end_conflict": null,
+        "decision": {
+          "outcome": null,
+          "state": null,
+          "reason": null,
+          "start": null
+        }
+      },
+      "duplicate_of": null,
+      "rejection_reasons": [
+        "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      ],
+      "provision_ids": [
+        "P6"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 475,
+        "end": 580,
+        "occurrences": 1,
+        "model_span": "On April 14, 2020, Berkeley City Council passed the Fair Chance Access to Housing Ordinance (BMC 13.106).",
+        "source_span": "On April 14, 2020, Berkeley City Council passed the Fair Chance Access to Housing Ordinance (BMC 13.106).",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 2478,
+        "end": 2779,
+        "occurrences": 1,
+        "model_span": "Any landlord found to be in violation of the Ordinance shall be subject to administrative fines of at least $1,000 and up to $10,000 per violation, civil damages including actual damages or three times the amount of one month's rent, punitive damages, attorneys' fees and costs, and injunctive relief.",
+        "source_span": "Any landlord found to be in violation of the Ordinance shall be subject to administrative fines of at least $1,000 and up to $10,000 per violation, civil damages including actual damages or three times the amount of one month's rent, punitive damages, attorneys' fees and costs, and injunctive relief.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "Any landlord found to be in violation of the Ordinance shall be subject to administrative fines of at least $1,000 and up to $10,000 per violation, civil damages including actual damages or three times the amount of one month's rent, punitive damages, attorneys' fees and costs, and injunctive relief.",
+            "status": "exact_match",
+            "start": 2478,
+            "end": 2779
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": null,
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": null,
+        "applied_kind": null,
+        "effective_date": null,
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null,
+        "unresolved_reason": "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      },
+      "status_derivation": "temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-ac32532541",
+        "jurisdiction": "Berkeley, CA",
+        "level": "city",
+        "category": "screening_restrictions",
+        "status": null,
+        "title": "Civil Penalties and Remedies for Ordinance Violations",
+        "requirement": "[Basis: official explanatory text, not operative legal text] A landlord found in violation of the Ordinance is subject to administrative fines between $1,000 and $10,000 per violation, civil damages including actual damages or three times the amount of one month's rent, punitive damages, attorneys' fees and costs, and injunctive relief.",
+        "key_value": "administrative fines of $1,000 to $10,000 per violation; civil damages up to 3x one month's rent",
+        "coverage_conditions": null,
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "BMC 13.106",
+        "source_doc_id": "D003",
+        "source_url": "https://rentboard.berkeleyca.gov/Fair_Chance",
+        "quoted_span": "Any landlord found to be in violation of the Ordinance shall be subject to administrative fines of at least $1,000 and up to $10,000 per violation, civil damages including actual damages or three times the amount of one month's rent, punitive damages, attorneys' fees and costs, and injunctive relief.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "screening_restrictions",
+        "citation": "BMC 13.106",
+        "provision_ids": [
+          "P6"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "Any landlord found to be in violation of the Ordinance shall be subject to administrative fines of at least $1,000 and up to $10,000 per violation, civil damages including actual damages or three times the amount of one month's rent, punitive damages, attorneys' fees and costs, and injunctive relief."
+          }
+        ],
+        "title": "Civil Penalties and Remedies for Ordinance Violations",
+        "requirement": "A landlord found in violation of the Ordinance is subject to administrative fines between $1,000 and $10,000 per violation, civil damages including actual damages or three times the amount of one month's rent, punitive damages, attorneys' fees and costs, and injunctive relief.",
+        "key_value": "administrative fines of $1,000 to $10,000 per violation; civil damages up to 3x one month's rent",
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": "On April 14, 2020, Berkeley City Council passed the Fair Chance Access to Housing Ordinance (BMC 13.106).",
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": null,
+        "effective_date_evidence_kind": null,
+        "effective_date": null,
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 3,
+      "origin": "primary",
+      "accepted": false,
+      "held": true,
+      "historical": false,
+      "temporal_state": "held",
+      "validity": {
+        "resolver": "validity-window/v1",
+        "boundaries": [],
+        "end_exclusive": null,
+        "end_conflict": null,
+        "decision": {
+          "outcome": null,
+          "state": null,
+          "reason": null,
+          "start": null
+        }
+      },
+      "duplicate_of": null,
+      "rejection_reasons": [
+        "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      ],
+      "provision_ids": [
+        "P9"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 475,
+        "end": 580,
+        "occurrences": 1,
+        "model_span": "On April 14, 2020, Berkeley City Council passed the Fair Chance Access to Housing Ordinance (BMC 13.106).",
+        "source_span": "On April 14, 2020, Berkeley City Council passed the Fair Chance Access to Housing Ordinance (BMC 13.106).",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 3952,
+        "end": 4174,
+        "occurrences": 1,
+        "model_span": "Housing providers must include the following Notice to Rental Applicants and Tenants prominently on their application materials, websites, and at any locations under their control that are frequently visited by Applicants:",
+        "source_span": "Housing providers must include the following Notice to Rental Applicants and Tenants prominently on their application materials, websites, and at any locations under their control that are frequently visited by Applicants:",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "Housing providers must include the following Notice to Rental Applicants and Tenants prominently on their application materials, websites, and at any locations under their control that are frequently visited by Applicants:",
+            "status": "exact_match",
+            "start": 3952,
+            "end": 4174
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": null,
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": null,
+        "applied_kind": null,
+        "effective_date": null,
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null,
+        "unresolved_reason": "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      },
+      "status_derivation": "temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-7343973b8d",
+        "jurisdiction": "Berkeley, CA",
+        "level": "city",
+        "category": "screening_restrictions",
+        "status": null,
+        "title": "Mandatory Notice to Rental Applicants and Tenants Distribution",
+        "requirement": "[Basis: official explanatory text, not operative legal text] Housing providers must prominently include the Notice to Rental Applicants and Tenants on their application materials, websites, and at any locations under their control that are frequently visited by applicants.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "BMC 13.106",
+        "source_doc_id": "D003",
+        "source_url": "https://rentboard.berkeleyca.gov/Fair_Chance",
+        "quoted_span": "Housing providers must include the following Notice to Rental Applicants and Tenants prominently on their application materials, websites, and at any locations under their control that are frequently visited by Applicants:",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "screening_restrictions",
+        "citation": "BMC 13.106",
+        "provision_ids": [
+          "P9"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "Housing providers must include the following Notice to Rental Applicants and Tenants prominently on their application materials, websites, and at any locations under their control that are frequently visited by Applicants:"
+          }
+        ],
+        "title": "Mandatory Notice to Rental Applicants and Tenants Distribution",
+        "requirement": "Housing providers must prominently include the Notice to Rental Applicants and Tenants on their application materials, websites, and at any locations under their control that are frequently visited by applicants.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": "On April 14, 2020, Berkeley City Council passed the Fair Chance Access to Housing Ordinance (BMC 13.106).",
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": null,
+        "effective_date_evidence_kind": null,
+        "effective_date": null,
+        "conflict_note": null
+      }
+    }
+  ],
+  "posture": {
+    "declared": "official_explanatory_page",
+    "evidence": "Ronald V. Dellums Fair Chance Access to Housing Ordinance | Berkeley Rent Board",
+    "evidence_check": {
+      "status": "exact_match",
+      "normalization": null,
+      "start": 0,
+      "end": 79,
+      "occurrences": 1,
+      "model_span": "Ronald V. Dellums Fair Chance Access to Housing Ordinance | Berkeley Rent Board",
+      "source_span": "Ronald V. Dellums Fair Chance Access to Housing Ordinance | Berkeley Rent Board",
+      "reason": null,
+      "reconstructed": false,
+      "parts": [],
+      "crossed_artifacts": []
+    },
+    "established": "official_explanatory_page",
+    "basis": "declared posture with verified evidence"
+  },
+  "base_dates": [],
+  "provision_inventory": [
+    {
+      "id": "P1",
+      "ref": "BMC 13.106",
+      "anchor": "The Fair Chance Access to Housing Ordinance prohibits rental",
+      "summary": "Introductory summary of the Fair Chance Access to Housing Ordinance screening prohibitions",
+      "role": "boilerplate",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "introductory overview and purpose summary; operative prohibitions are detailed in subsequent provisions"
+    },
+    {
+      "id": "P2",
+      "ref": "BMC 13.106",
+      "anchor": "On April 14, 2020, Berkeley City Council passed",
+      "summary": "Enactment date and ordinance citation line",
+      "role": "history",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "legislative enactment history"
+    },
+    {
+      "id": "P3",
+      "ref": "BMC 13.106",
+      "anchor": "It is unlawful to do any of the following",
+      "summary": "List of unlawful acts regarding the criminal history of current or prospective tenants",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "screening_restrictions",
+      "reason": null
+    },
+    {
+      "id": "P4",
+      "ref": "BMC 13.106",
+      "anchor": "Exemptions Please view the Ordinance on specific requirements",
+      "summary": "Enumerated exemptions from the ordinance",
+      "role": "exemption",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "scope condition, see global_scope (S1-S5)"
+    },
+    {
+      "id": "P5",
+      "ref": "BMC 13.106",
+      "anchor": "If a landlord takes any action against an applicant",
+      "summary": "Written notice and opportunity to respond required when taking adverse action based on criminal history",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "screening_restrictions",
+      "reason": null
+    },
+    {
+      "id": "P6",
+      "ref": "BMC 13.106",
+      "anchor": "Any landlord found to be in violation of the",
+      "summary": "Administrative fines, civil damages, punitive damages, attorney fees, and injunctive relief for violations",
+      "role": "remedy",
+      "scope": "in_scope",
+      "category": "screening_restrictions",
+      "reason": null
+    },
+    {
+      "id": "P7",
+      "ref": "BMC 13.106",
+      "anchor": "The City of Berkeley Rent Stabilization Board will be",
+      "summary": "Rent Stabilization Board administration of complaints and complaint filing instructions",
+      "role": "procedure",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "administrative complaint procedures and enforcement authority"
+    },
+    {
+      "id": "P8",
+      "ref": "BMC 13.106",
+      "anchor": "Housing providers may respond to a complaint and participate",
+      "summary": "Housing provider response form and hearing process instructions",
+      "role": "procedure",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "administrative hearing procedures"
+    },
+    {
+      "id": "P9",
+      "ref": "BMC 13.106",
+      "anchor": "Housing providers must include the following Notice to Rental",
+      "summary": "Requirement to prominently include the Notice to Rental Applicants and Tenants on materials, websites, and locations",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "screening_restrictions",
+      "reason": null
+    },
+    {
+      "id": "P10",
+      "ref": "BMC 13.106",
+      "anchor": "Resources Fair Chance Notice to Rental Property Owners",
+      "summary": "Links to forms, resources, FAQs, community legal services, news, and contact information",
+      "role": "boilerplate",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "informational links, news, and agency contact details"
+    }
+  ],
+  "global_scope": [
+    {
+      "id": "S1",
+      "kind": "exemption",
+      "statement": "Lifetime sex offenders are exempt as specified in the Ordinance.",
+      "citation": "BMC 13.106",
+      "scope_mode": "structural",
+      "scope_quote": "Please view the Ordinance on specific requirements for each exemption.",
+      "source_provision_id": "P4",
+      "governed_provision_ids": [
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "P5",
+        "P6",
+        "P7",
+        "P8",
+        "P9"
+      ],
+      "evidence_parts": [
+        {
+          "segment_id": 1,
+          "quoted_text": "Lifetime sex offenders"
+        }
+      ],
+      "evidence_check": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 1605,
+        "end": 1627,
+        "occurrences": 1,
+        "model_span": "Lifetime sex offenders",
+        "source_span": "Lifetime sex offenders",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "Lifetime sex offenders",
+            "status": "exact_match",
+            "start": 1605,
+            "end": 1627
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "propagated": true,
+      "problem": null,
+      "scope": {
+        "resolver": "scope-modes/v1",
+        "declared_mode": "structural",
+        "mode": "named_subject",
+        "scope_words": {
+          "scope_quote": "Please view the Ordinance on specific requirements for each exemption.",
+          "scope_quote_check": "exact_match",
+          "text": "Please view the Ordinance on specific requirements for each exemption.",
+          "from": "scope_quote"
+        },
+        "detail": null,
+        "propagate_ids": [],
+        "mapping_targets": [
+          "P3",
+          "P5",
+          "P6",
+          "P9"
+        ],
+        "verification": null
+      }
+    },
+    {
+      "id": "S2",
+      "kind": "exemption",
+      "statement": "Public housing and Section 8 properties have limited exemptions as specified in the Ordinance.",
+      "citation": "BMC 13.106",
+      "scope_mode": "structural",
+      "scope_quote": "Please view the Ordinance on specific requirements for each exemption.",
+      "source_provision_id": "P4",
+      "governed_provision_ids": [
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "P5",
+        "P6",
+        "P7",
+        "P8",
+        "P9"
+      ],
+      "evidence_parts": [
+        {
+          "segment_id": 1,
+          "quoted_text": "Public housing/Section 8 properties limited exemptions"
+        }
+      ],
+      "evidence_check": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 1628,
+        "end": 1682,
+        "occurrences": 1,
+        "model_span": "Public housing/Section 8 properties limited exemptions",
+        "source_span": "Public housing/Section 8 properties limited exemptions",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "Public housing/Section 8 properties limited exemptions",
+            "status": "exact_match",
+            "start": 1628,
+            "end": 1682
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "propagated": true,
+      "problem": null,
+      "scope": {
+        "resolver": "scope-modes/v1",
+        "declared_mode": "structural",
+        "mode": "named_subject",
+        "scope_words": {
+          "scope_quote": "Please view the Ordinance on specific requirements for each exemption.",
+          "scope_quote_check": "exact_match",
+          "text": "Please view the Ordinance on specific requirements for each exemption.",
+          "from": "scope_quote"
+        },
+        "detail": null,
+        "propagate_ids": [],
+        "mapping_targets": [
+          "P3",
+          "P5",
+          "P6",
+          "P9"
+        ],
+        "verification": null
+      }
+    },
+    {
+      "id": "S3",
+      "kind": "exemption",
+      "statement": "Owner-occupied properties of between 1 and 3 units in which an owner of record resides in one unit as their primary residence are exempt.",
+      "citation": "BMC 13.106",
+      "scope_mode": "structural",
+      "scope_quote": "Please view the Ordinance on specific requirements for each exemption.",
+      "source_provision_id": "P4",
+      "governed_provision_ids": [
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "P5",
+        "P6",
+        "P7",
+        "P8",
+        "P9"
+      ],
+      "evidence_parts": [
+        {
+          "segment_id": 1,
+          "quoted_text": "Owner-occupied properties (between 1-3 units) in which an owner of record resides in one of the units as their primary residence"
+        }
+      ],
+      "evidence_check": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 1683,
+        "end": 1811,
+        "occurrences": 1,
+        "model_span": "Owner-occupied properties (between 1-3 units) in which an owner of record resides in one of the units as their primary residence",
+        "source_span": "Owner-occupied properties (between 1-3 units) in which an owner of record resides in one of the units as their primary residence",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "Owner-occupied properties (between 1-3 units) in which an owner of record resides in one of the units as their primary residence",
+            "status": "exact_match",
+            "start": 1683,
+            "end": 1811
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "propagated": true,
+      "problem": null,
+      "scope": {
+        "resolver": "scope-modes/v1",
+        "declared_mode": "structural",
+        "mode": "named_subject",
+        "scope_words": {
+          "scope_quote": "Please view the Ordinance on specific requirements for each exemption.",
+          "scope_quote_check": "exact_match",
+          "text": "Please view the Ordinance on specific requirements for each exemption.",
+          "from": "scope_quote"
+        },
+        "detail": null,
+        "propagate_ids": [],
+        "mapping_targets": [
+          "P3",
+          "P5",
+          "P6",
+          "P9"
+        ],
+        "verification": null
+      }
+    },
+    {
+      "id": "S4",
+      "kind": "exemption",
+      "statement": "Units under a rental agreement allowing owners to move back into their home pursuant to BMC 13.76.130 A.9 are exempt.",
+      "citation": "BMC 13.106",
+      "scope_mode": "structural",
+      "scope_quote": "Please view the Ordinance on specific requirements for each exemption.",
+      "source_provision_id": "P4",
+      "governed_provision_ids": [
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "P5",
+        "P6",
+        "P7",
+        "P8",
+        "P9"
+      ],
+      "evidence_parts": [
+        {
+          "segment_id": 1,
+          "quoted_text": "Units under a rental agreement allowing owners to move back to their home in accordance with BMC 13.76.130 A.9"
+        }
+      ],
+      "evidence_check": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 1812,
+        "end": 1922,
+        "occurrences": 1,
+        "model_span": "Units under a rental agreement allowing owners to move back to their home in accordance with BMC 13.76.130 A.9",
+        "source_span": "Units under a rental agreement allowing owners to move back to their home in accordance with BMC 13.76.130 A.9",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "Units under a rental agreement allowing owners to move back to their home in accordance with BMC 13.76.130 A.9",
+            "status": "exact_match",
+            "start": 1812,
+            "end": 1922
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "propagated": true,
+      "problem": null,
+      "scope": {
+        "resolver": "scope-modes/v1",
+        "declared_mode": "structural",
+        "mode": "named_subject",
+        "scope_words": {
+          "scope_quote": "Please view the Ordinance on specific requirements for each exemption.",
+          "scope_quote_check": "exact_match",
+          "text": "Please view the Ordinance on specific requirements for each exemption.",
+          "from": "scope_quote"
+        },
+        "detail": null,
+        "propagate_ids": [],
+        "mapping_targets": [
+          "P3",
+          "P5",
+          "P6",
+          "P9"
+        ],
+        "verification": null
+      }
+    },
+    {
+      "id": "S5",
+      "kind": "exemption",
+      "statement": "Units occupied by existing tenants seeking to sublet or add or replace roommates are exempt.",
+      "citation": "BMC 13.106",
+      "scope_mode": "structural",
+      "scope_quote": "Please view the Ordinance on specific requirements for each exemption.",
+      "source_provision_id": "P4",
+      "governed_provision_ids": [
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "P5",
+        "P6",
+        "P7",
+        "P8",
+        "P9"
+      ],
+      "evidence_parts": [
+        {
+          "segment_id": 1,
+          "quoted_text": "Units occupied by existing tenant(s) seeking to sublet or add/replace roommates"
+        }
+      ],
+      "evidence_check": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 1923,
+        "end": 2002,
+        "occurrences": 1,
+        "model_span": "Units occupied by existing tenant(s) seeking to sublet or add/replace roommates",
+        "source_span": "Units occupied by existing tenant(s) seeking to sublet or add/replace roommates",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "Units occupied by existing tenant(s) seeking to sublet or add/replace roommates",
+            "status": "exact_match",
+            "start": 1923,
+            "end": 2002
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "propagated": true,
+      "problem": null,
+      "scope": {
+        "resolver": "scope-modes/v1",
+        "declared_mode": "structural",
+        "mode": "named_subject",
+        "scope_words": {
+          "scope_quote": "Please view the Ordinance on specific requirements for each exemption.",
+          "scope_quote_check": "exact_match",
+          "text": "Please view the Ordinance on specific requirements for each exemption.",
+          "from": "scope_quote"
+        },
+        "detail": null,
+        "propagate_ids": [],
+        "mapping_targets": [
+          "P3",
+          "P5",
+          "P6",
+          "P9"
+        ],
+        "verification": null
+      }
+    }
+  ],
+  "source_view": {
+    "marker": "[[PAGE BREAK]]",
+    "segment_label": "[[SEGMENT {}]]",
+    "view_sha256": "4c4d8ad6962d73ad9b1d40185a5183317ff2e0690edabc47c0078b0584da69df",
+    "segments": [
+      {
+        "id": 1,
+        "raw_start": 0,
+        "raw_end": 5841
+      }
+    ],
+    "artifacts_removed": 0,
+    "artifacts": []
+  },
+  "coverage": {
+    "inventory_valid": true,
+    "anchors_located": "10/10",
+    "after_primary": {
+      "uncovered": [],
+      "unaccepted": [
+        "BMC 13.106",
+        "BMC 13.106",
+        "BMC 13.106",
+        "BMC 13.106"
+      ],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "scope_mappings": {
+      "requested": 20,
+      "applies": 5,
+      "does_not_apply": 15,
+      "unresolved": 0
+    },
+    "after_repair": {
+      "uncovered": [],
+      "unaccepted": [
+        "BMC 13.106",
+        "BMC 13.106",
+        "BMC 13.106",
+        "BMC 13.106"
+      ],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "repair_targets": {
+      "before_repair": 0,
+      "resolved_by_accepted_rule": 0,
+      "resolved_out_of_scope": 0,
+      "still_unresolved": 0
+    },
+    "inventory_items": 10,
+    "in_scope_items": 4,
+    "in_scope_refs": 4,
+    "uncertain": [],
+    "final": {
+      "uncovered": [],
+      "unaccepted": [
+        "BMC 13.106",
+        "BMC 13.106",
+        "BMC 13.106",
+        "BMC 13.106"
+      ],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "link_mismatches": [],
+    "provisions": [
+      {
+        "ref": "BMC 13.106",
+        "inventory_item": 2,
+        "provision_id": "P3",
+        "summary": "List of unlawful acts regarding the criminal history of current or prospective tenants",
+        "category": "screening_restrictions",
+        "candidates": [
+          0
+        ],
+        "accepted": [],
+        "basis": {
+          "0": "provision link; citation names it"
+        }
+      },
+      {
+        "ref": "BMC 13.106",
+        "inventory_item": 4,
+        "provision_id": "P5",
+        "summary": "Written notice and opportunity to respond required when taking adverse action based on criminal history",
+        "category": "screening_restrictions",
+        "candidates": [
+          1
+        ],
+        "accepted": [],
+        "basis": {
+          "1": "provision link; citation names it"
+        }
+      },
+      {
+        "ref": "BMC 13.106",
+        "inventory_item": 5,
+        "provision_id": "P6",
+        "summary": "Administrative fines, civil damages, punitive damages, attorney fees, and injunctive relief for violations",
+        "category": "screening_restrictions",
+        "candidates": [
+          2
+        ],
+        "accepted": [],
+        "basis": {
+          "2": "provision link; citation names it"
+        }
+      },
+      {
+        "ref": "BMC 13.106",
+        "inventory_item": 8,
+        "provision_id": "P9",
+        "summary": "Requirement to prominently include the Notice to Rental Applicants and Tenants on materials, websites, and locations",
+        "category": "screening_restrictions",
+        "candidates": [
+          3
+        ],
+        "accepted": [],
+        "basis": {
+          "3": "provision link; citation names it"
+        }
+      }
+    ],
+    "unrecorded_subdivisions": []
+  },
+  "scope_challenges": [
+    {
+      "ref": "BMC 13.106",
+      "provision_id": "P1",
+      "role": "boilerplate",
+      "reason": "introductory overview and purpose summary; operative prohibitions are detailed in subsequent provisions",
+      "summary": "Introductory summary of the Fair Chance Access to Housing Ordinance screening prohibitions",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role boilerplate is decided by other rules"
+    },
+    {
+      "ref": "BMC 13.106",
+      "provision_id": "P2",
+      "role": "history",
+      "reason": "legislative enactment history",
+      "summary": "Enactment date and ordinance citation line",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role history is decided by other rules"
+    },
+    {
+      "ref": "BMC 13.106",
+      "provision_id": "P4",
+      "role": "exemption",
+      "reason": "scope condition, see global_scope (S1-S5)",
+      "summary": "Enumerated exemptions from the ordinance",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role exemption is decided by other rules"
+    },
+    {
+      "ref": "BMC 13.106",
+      "provision_id": "P7",
+      "role": "procedure",
+      "reason": "administrative complaint procedures and enforcement authority",
+      "summary": "Rent Stabilization Board administration of complaints and complaint filing instructions",
+      "signals": {
+        "in_scope_neighbour": true,
+        "enumeration": false,
+        "normative_language": false,
+        "grounds_or_conditions": false
+      },
+      "challenged": false,
+      "why_not": "too few substantive signals",
+      "raw_start": 2813,
+      "raw_end": 3666
+    },
+    {
+      "ref": "BMC 13.106",
+      "provision_id": "P8",
+      "role": "procedure",
+      "reason": "administrative hearing procedures",
+      "summary": "Housing provider response form and hearing process instructions",
+      "signals": {
+        "in_scope_neighbour": true,
+        "enumeration": false,
+        "normative_language": false,
+        "grounds_or_conditions": false
+      },
+      "challenged": false,
+      "why_not": "too few substantive signals",
+      "raw_start": 3666,
+      "raw_end": 3952
+    },
+    {
+      "ref": "BMC 13.106",
+      "provision_id": "P10",
+      "role": "boilerplate",
+      "reason": "informational links, news, and agency contact details",
+      "summary": "Links to forms, resources, FAQs, community legal services, news, and contact information",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role boilerplate is decided by other rules"
+    }
+  ],
+  "scope_mappings": [
+    {
+      "condition_id": "S1",
+      "provision_id": "P3",
+      "kind": "exemption",
+      "statement": "Lifetime sex offenders are exempt as specified in the Ordinance.",
+      "scope_words": "Please view the Ordinance on specific requirements for each exemption.",
+      "condition_evidence": "Lifetime sex offenders",
+      "target_ref": "BMC 13.106",
+      "target_anchor": "It is unlawful to do any of the following",
+      "target_quote": "It is unlawful to do any of the following with regard to current or prospective tenants\nInquire about criminal history\nIndicate that persons with criminal backgrounds will not be considered for housing, including in rental advertisements, application materials, or verbally\nRefuse to rent or terminate a tenancy based on criminal history\nRequire disclosure or authorization for release of criminal history\nDemand a higher security deposit or rental amount based on criminal history\nRefuse to allow the addition of an immediate family member based on the family member’s criminal history\nDisqualify tenants from rental assistance programs such as Section 8 based on criminal history (subject to certain exceptions below)\nTreating rental applicants or tenants differently based on their criminal history",
+      "decision": {
+        "decision": "applies",
+        "reason": "The document lists lifetime sex offenders under exemptions to the unlawful screening practices.",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 1441,
+          "end": 1627,
+          "occurrences": 1,
+          "model_span": "Treating rental applicants or tenants differently based on their criminal history\nExemptions\nPlease view the Ordinance on specific requirements for each exemption.\nLifetime sex offenders",
+          "source_span": "Treating rental applicants or tenants differently based on their criminal history\nExemptions\nPlease view the Ordinance on specific requirements for each exemption.\nLifetime sex offenders",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 1,
+              "model_text": "Treating rental applicants or tenants differently based on their criminal history\nExemptions\nPlease view the Ordinance on specific requirements for each exemption.\nLifetime sex offenders",
+              "status": "exact_match",
+              "start": 1441,
+              "end": 1627
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "applies",
+      "unresolved_reason": null
+    },
+    {
+      "condition_id": "S1",
+      "provision_id": "P5",
+      "kind": "exemption",
+      "statement": "Lifetime sex offenders are exempt as specified in the Ordinance.",
+      "scope_words": "Please view the Ordinance on specific requirements for each exemption.",
+      "condition_evidence": "Lifetime sex offenders",
+      "target_ref": "BMC 13.106",
+      "target_anchor": "If a landlord takes any action against an applicant",
+      "target_quote": "If a landlord takes any action against an applicant or tenant based on criminal history (such as refusing to offer a lease, refusing to add a family member, etc.), the landlord is required to provide the applicant/tenant with written notice and an opportunity to respond.",
+      "decision": {
+        "decision": "does_not_apply",
+        "reason": "This provision imposes a separate procedural duty to provide written notice and an opportunity to respond when taking adverse action.",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 2054,
+          "end": 2325,
+          "occurrences": 1,
+          "model_span": "If a landlord takes any action against an applicant or tenant based on criminal history (such as refusing to offer a lease, refusing to add a family member, etc.), the landlord is required to provide the applicant/tenant with written notice and an opportunity to respond.",
+          "source_span": "If a landlord takes any action against an applicant or tenant based on criminal history (such as refusing to offer a lease, refusing to add a family member, etc.), the landlord is required to provide the applicant/tenant with written notice and an opportunity to respond.",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 1,
+              "model_text": "If a landlord takes any action against an applicant or tenant based on criminal history (such as refusing to offer a lease, refusing to add a family member, etc.), the landlord is required to provide the applicant/tenant with written notice and an opportunity to respond.",
+              "status": "exact_match",
+              "start": 2054,
+              "end": 2325
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "does_not_apply",
+      "unresolved_reason": null
+    },
+    {
+      "condition_id": "S1",
+      "provision_id": "P6",
+      "kind": "exemption",
+      "statement": "Lifetime sex offenders are exempt as specified in the Ordinance.",
+      "scope_words": "Please view the Ordinance on specific requirements for each exemption.",
+      "condition_evidence": "Lifetime sex offenders",
+      "target_ref": "BMC 13.106",
+      "target_anchor": "Any landlord found to be in violation of the",
+      "target_quote": "Any landlord found to be in violation of the Ordinance shall be subject to administrative fines of at least $1,000 and up to $10,000 per violation, civil damages including actual damages or three times the amount of one month's rent, punitive damages, attorneys' fees and costs, and injunctive relief.",
+      "decision": {
+        "decision": "does_not_apply",
+        "reason": "This provision establishes remedies and civil penalties for violations rather than applicant screening rules.",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 2478,
+          "end": 2779,
+          "occurrences": 1,
+          "model_span": "Any landlord found to be in violation of the Ordinance shall be subject to administrative fines of at least $1,000 and up to $10,000 per violation, civil damages including actual damages or three times the amount of one month's rent, punitive damages, attorneys' fees and costs, and injunctive relief.",
+          "source_span": "Any landlord found to be in violation of the Ordinance shall be subject to administrative fines of at least $1,000 and up to $10,000 per violation, civil damages including actual damages or three times the amount of one month's rent, punitive damages, attorneys' fees and costs, and injunctive relief.",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 1,
+              "model_text": "Any landlord found to be in violation of the Ordinance shall be subject to administrative fines of at least $1,000 and up to $10,000 per violation, civil damages including actual damages or three times the amount of one month's rent, punitive damages, attorneys' fees and costs, and injunctive relief.",
+              "status": "exact_match",
+              "start": 2478,
+              "end": 2779
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "does_not_apply",
+      "unresolved_reason": null
+    },
+    {
+      "condition_id": "S1",
+      "provision_id": "P9",
+      "kind": "exemption",
+      "statement": "Lifetime sex offenders are exempt as specified in the Ordinance.",
+      "scope_words": "Please view the Ordinance on specific requirements for each exemption.",
+      "condition_evidence": "Lifetime sex offenders",
+      "target_ref": "BMC 13.106",
+      "target_anchor": "Housing providers must include the following Notice to Rental",
+      "target_quote": "Housing providers must include the following Notice to Rental Applicants and Tenants prominently on their application materials, websites, and at any locations under their control that are frequently visited by Applicants:",
+      "decision": {
+        "decision": "does_not_apply",
+        "reason": "This provision imposes a separate requirement to include and display the official notice to rental applicants.",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 3952,
+          "end": 4174,
+          "occurrences": 1,
+          "model_span": "Housing providers must include the following Notice to Rental Applicants and Tenants prominently on their application materials, websites, and at any locations under their control that are frequently visited by Applicants:",
+          "source_span": "Housing providers must include the following Notice to Rental Applicants and Tenants prominently on their application materials, websites, and at any locations under their control that are frequently visited by Applicants:",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 1,
+              "model_text": "Housing providers must include the following Notice to Rental Applicants and Tenants prominently on their application materials, websites, and at any locations under their control that are frequently visited by Applicants:",
+              "status": "exact_match",
+              "start": 3952,
+              "end": 4174
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "does_not_apply",
+      "unresolved_reason": null
+    },
+    {
+      "condition_id": "S2",
+      "provision_id": "P3",
+      "kind": "exemption",
+      "statement": "Public housing and Section 8 properties have limited exemptions as specified in the Ordinance.",
+      "scope_words": "Please view the Ordinance on specific requirements for each exemption.",
+      "condition_evidence": "Public housing/Section 8 properties limited exemptions",
+      "target_ref": "BMC 13.106",
+      "target_anchor": "It is unlawful to do any of the following",
+      "target_quote": "It is unlawful to do any of the following with regard to current or prospective tenants\nInquire about criminal history\nIndicate that persons with criminal backgrounds will not be considered for housing, including in rental advertisements, application materials, or verbally\nRefuse to rent or terminate a tenancy based on criminal history\nRequire disclosure or authorization for release of criminal history\nDemand a higher security deposit or rental amount based on criminal history\nRefuse to allow the addition of an immediate family member based on the family member’s criminal history\nDisqualify tenants from rental assistance programs such as Section 8 based on criminal history (subject to certain exceptions below)\nTreating rental applicants or tenants differently based on their criminal history",
+      "decision": {
+        "decision": "applies",
+        "reason": "The document explicitly states that disqualifications involving programs such as Section 8 are subject to exceptions and lists public housing and Section 8 properties under exemptions.",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 1308,
+          "end": 1682,
+          "occurrences": 1,
+          "model_span": "Disqualify tenants from rental assistance programs such as Section 8 based on criminal history (subject to certain exceptions below)\nTreating rental applicants or tenants differently based on their criminal history\nExemptions\nPlease view the Ordinance on specific requirements for each exemption.\nLifetime sex offenders\nPublic housing/Section 8 properties limited exemptions",
+          "source_span": "Disqualify tenants from rental assistance programs such as Section 8 based on criminal history (subject to certain exceptions below)\nTreating rental applicants or tenants differently based on their criminal history\nExemptions\nPlease view the Ordinance on specific requirements for each exemption.\nLifetime sex offenders\nPublic housing/Section 8 properties limited exemptions",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 1,
+              "model_text": "Disqualify tenants from rental assistance programs such as Section 8 based on criminal history (subject to certain exceptions below)\nTreating rental applicants or tenants differently based on their criminal history\nExemptions\nPlease view the Ordinance on specific requirements for each exemption.\nLifetime sex offenders\nPublic housing/Section 8 properties limited exemptions",
+              "status": "exact_match",
+              "start": 1308,
+              "end": 1682
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "applies",
+      "unresolved_reason": null
+    },
+    {
+      "condition_id": "S2",
+      "provision_id": "P5",
+      "kind": "exemption",
+      "statement": "Public housing and Section 8 properties have limited exemptions as specified in the Ordinance.",
+      "scope_words": "Please view the Ordinance on specific requirements for each exemption.",
+      "condition_evidence": "Public housing/Section 8 properties limited exemptions",
+      "target_ref": "BMC 13.106",
+      "target_anchor": "If a landlord takes any action against an applicant",
+      "target_quote": "If a landlord takes any action against an applicant or tenant based on criminal history (such as refusing to offer a lease, refusing to add a family member, etc.), the landlord is required to provide the applicant/tenant with written notice and an opportunity to respond.",
+      "decision": {
+        "decision": "does_not_apply",
+        "reason": "This provision imposes a separate procedural requirement to provide written notice and an opportunity to respond when adverse action is taken.",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 2054,
+          "end": 2325,
+          "occurrences": 1,
+          "model_span": "If a landlord takes any action against an applicant or tenant based on criminal history (such as refusing to offer a lease, refusing to add a family member, etc.), the landlord is required to provide the applicant/tenant with written notice and an opportunity to respond.",
+          "source_span": "If a landlord takes any action against an applicant or tenant based on criminal history (such as refusing to offer a lease, refusing to add a family member, etc.), the landlord is required to provide the applicant/tenant with written notice and an opportunity to respond.",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 1,
+              "model_text": "If a landlord takes any action against an applicant or tenant based on criminal history (such as refusing to offer a lease, refusing to add a family member, etc.), the landlord is required to provide the applicant/tenant with written notice and an opportunity to respond.",
+              "status": "exact_match",
+              "start": 2054,
+              "end": 2325
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "does_not_apply",
+      "unresolved_reason": null
+    },
+    {
+      "condition_id": "S2",
+      "provision_id": "P6",
+      "kind": "exemption",
+      "statement": "Public housing and Section 8 properties have limited exemptions as specified in the Ordinance.",
+      "scope_words": "Please view the Ordinance on specific requirements for each exemption.",
+      "condition_evidence": "Public housing/Section 8 properties limited exemptions",
+      "target_ref": "BMC 13.106",
+      "target_anchor": "Any landlord found to be in violation of the",
+      "target_quote": "Any landlord found to be in violation of the Ordinance shall be subject to administrative fines of at least $1,000 and up to $10,000 per violation, civil damages including actual damages or three times the amount of one month's rent, punitive damages, attorneys' fees and costs, and injunctive relief.",
+      "decision": {
+        "decision": "does_not_apply",
+        "reason": "This provision governs civil penalties and enforcement remedies for violations of the Ordinance.",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 2478,
+          "end": 2779,
+          "occurrences": 1,
+          "model_span": "Any landlord found to be in violation of the Ordinance shall be subject to administrative fines of at least $1,000 and up to $10,000 per violation, civil damages including actual damages or three times the amount of one month's rent, punitive damages, attorneys' fees and costs, and injunctive relief.",
+          "source_span": "Any landlord found to be in violation of the Ordinance shall be subject to administrative fines of at least $1,000 and up to $10,000 per violation, civil damages including actual damages or three times the amount of one month's rent, punitive damages, attorneys' fees and costs, and injunctive relief.",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 1,
+              "model_text": "Any landlord found to be in violation of the Ordinance shall be subject to administrative fines of at least $1,000 and up to $10,000 per violation, civil damages including actual damages or three times the amount of one month's rent, punitive damages, attorneys' fees and costs, and injunctive relief.",
+              "status": "exact_match",
+              "start": 2478,
+              "end": 2779
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "does_not_apply",
+      "unresolved_reason": null
+    },
+    {
+      "condition_id": "S2",
+      "provision_id": "P9",
+      "kind": "exemption",
+      "statement": "Public housing and Section 8 properties have limited exemptions as specified in the Ordinance.",
+      "scope_words": "Please view the Ordinance on specific requirements for each exemption.",
+      "condition_evidence": "Public housing/Section 8 properties limited exemptions",
+      "target_ref": "BMC 13.106",
+      "target_anchor": "Housing providers must include the following Notice to Rental",
+      "target_quote": "Housing providers must include the following Notice to Rental Applicants and Tenants prominently on their application materials, websites, and at any locations under their control that are frequently visited by Applicants:",
+      "decision": {
+        "decision": "does_not_apply",
+        "reason": "This provision imposes a distinct duty to distribute and display the official notice to rental applicants and tenants.",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 3952,
+          "end": 4174,
+          "occurrences": 1,
+          "model_span": "Housing providers must include the following Notice to Rental Applicants and Tenants prominently on their application materials, websites, and at any locations under their control that are frequently visited by Applicants:",
+          "source_span": "Housing providers must include the following Notice to Rental Applicants and Tenants prominently on their application materials, websites, and at any locations under their control that are frequently visited by Applicants:",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 1,
+              "model_text": "Housing providers must include the following Notice to Rental Applicants and Tenants prominently on their application materials, websites, and at any locations under their control that are frequently visited by Applicants:",
+              "status": "exact_match",
+              "start": 3952,
+              "end": 4174
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "does_not_apply",
+      "unresolved_reason": null
+    },
+    {
+      "condition_id": "S3",
+      "provision_id": "P3",
+      "kind": "exemption",
+      "statement": "Owner-occupied properties of between 1 and 3 units in which an owner of record resides in one unit as their primary residence are exempt.",
+      "scope_words": "Please view the Ordinance on specific requirements for each exemption.",
+      "condition_evidence": "Owner-occupied properties (between 1-3 units) in which an owner of record resides in one of the units as their primary residence",
+      "target_ref": "BMC 13.106",
+      "target_anchor": "It is unlawful to do any of the following",
+      "target_quote": "It is unlawful to do any of the following with regard to current or prospective tenants\nInquire about criminal history\nIndicate that persons with criminal backgrounds will not be considered for housing, including in rental advertisements, application materials, or verbally\nRefuse to rent or terminate a tenancy based on criminal history\nRequire disclosure or authorization for release of criminal history\nDemand a higher security deposit or rental amount based on criminal history\nRefuse to allow the addition of an immediate family member based on the family member’s criminal history\nDisqualify tenants from rental assistance programs such as Section 8 based on criminal history (subject to certain exceptions below)\nTreating rental applicants or tenants differently based on their criminal history",
+      "decision": {
+        "decision": "applies",
+        "reason": "The document lists owner-occupied properties of between 1 and 3 units as an exemption to the unlawful screening practices.",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 1523,
+          "end": 1811,
+          "occurrences": 1,
+          "model_span": "Exemptions\nPlease view the Ordinance on specific requirements for each exemption.\nLifetime sex offenders\nPublic housing/Section 8 properties limited exemptions\nOwner-occupied properties (between 1-3 units) in which an owner of record resides in one of the units as their primary residence",
+          "source_span": "Exemptions\nPlease view the Ordinance on specific requirements for each exemption.\nLifetime sex offenders\nPublic housing/Section 8 properties limited exemptions\nOwner-occupied properties (between 1-3 units) in which an owner of record resides in one of the units as their primary residence",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 1,
+              "model_text": "Exemptions\nPlease view the Ordinance on specific requirements for each exemption.\nLifetime sex offenders\nPublic housing/Section 8 properties limited exemptions\nOwner-occupied properties (between 1-3 units) in which an owner of record resides in one of the units as their primary residence",
+              "status": "exact_match",
+              "start": 1523,
+              "end": 1811
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "applies",
+      "unresolved_reason": null
+    },
+    {
+      "condition_id": "S3",
+      "provision_id": "P5",
+      "kind": "exemption",
+      "statement": "Owner-occupied properties of between 1 and 3 units in which an owner of record resides in one unit as their primary residence are exempt.",
+      "scope_words": "Please view the Ordinance on specific requirements for each exemption.",
+      "condition_evidence": "Owner-occupied properties (between 1-3 units) in which an owner of record resides in one of the units as their primary residence",
+      "target_ref": "BMC 13.106",
+      "target_anchor": "If a landlord takes any action against an applicant",
+      "target_quote": "If a landlord takes any action against an applicant or tenant based on criminal history (such as refusing to offer a lease, refusing to add a family member, etc.), the landlord is required to provide the applicant/tenant with written notice and an opportunity to respond.",
+      "decision": {
+        "decision": "does_not_apply",
+        "reason": "This provision imposes an independent procedural duty to provide written notice and an opportunity to respond.",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 2054,
+          "end": 2325,
+          "occurrences": 1,
+          "model_span": "If a landlord takes any action against an applicant or tenant based on criminal history (such as refusing to offer a lease, refusing to add a family member, etc.), the landlord is required to provide the applicant/tenant with written notice and an opportunity to respond.",
+          "source_span": "If a landlord takes any action against an applicant or tenant based on criminal history (such as refusing to offer a lease, refusing to add a family member, etc.), the landlord is required to provide the applicant/tenant with written notice and an opportunity to respond.",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 1,
+              "model_text": "If a landlord takes any action against an applicant or tenant based on criminal history (such as refusing to offer a lease, refusing to add a family member, etc.), the landlord is required to provide the applicant/tenant with written notice and an opportunity to respond.",
+              "status": "exact_match",
+              "start": 2054,
+              "end": 2325
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "does_not_apply",
+      "unresolved_reason": null
+    },
+    {
+      "condition_id": "S3",
+      "provision_id": "P6",
+      "kind": "exemption",
+      "statement": "Owner-occupied properties of between 1 and 3 units in which an owner of record resides in one unit as their primary residence are exempt.",
+      "scope_words": "Please view the Ordinance on specific requirements for each exemption.",
+      "condition_evidence": "Owner-occupied properties (between 1-3 units) in which an owner of record resides in one of the units as their primary residence",
+      "target_ref": "BMC 13.106",
+      "target_anchor": "Any landlord found to be in violation of the",
+      "target_quote": "Any landlord found to be in violation of the Ordinance shall be subject to administrative fines of at least $1,000 and up to $10,000 per violation, civil damages including actual damages or three times the amount of one month's rent, punitive damages, attorneys' fees and costs, and injunctive relief.",
+      "decision": {
+        "decision": "does_not_apply",
+        "reason": "This provision governs penalties and remedies for landlords found in violation of the Ordinance.",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 2478,
+          "end": 2779,
+          "occurrences": 1,
+          "model_span": "Any landlord found to be in violation of the Ordinance shall be subject to administrative fines of at least $1,000 and up to $10,000 per violation, civil damages including actual damages or three times the amount of one month's rent, punitive damages, attorneys' fees and costs, and injunctive relief.",
+          "source_span": "Any landlord found to be in violation of the Ordinance shall be subject to administrative fines of at least $1,000 and up to $10,000 per violation, civil damages including actual damages or three times the amount of one month's rent, punitive damages, attorneys' fees and costs, and injunctive relief.",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 1,
+              "model_text": "Any landlord found to be in violation of the Ordinance shall be subject to administrative fines of at least $1,000 and up to $10,000 per violation, civil damages including actual damages or three times the amount of one month's rent, punitive damages, attorneys' fees and costs, and injunctive relief.",
+              "status": "exact_match",
+              "start": 2478,
+              "end": 2779
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "does_not_apply",
+      "unresolved_reason": null
+    },
+    {
+      "condition_id": "S3",
+      "provision_id": "P9",
+      "kind": "exemption",
+      "statement": "Owner-occupied properties of between 1 and 3 units in which an owner of record resides in one unit as their primary residence are exempt.",
+      "scope_words": "Please view the Ordinance on specific requirements for each exemption.",
+      "condition_evidence": "Owner-occupied properties (between 1-3 units) in which an owner of record resides in one of the units as their primary residence",
+      "target_ref": "BMC 13.106",
+      "target_anchor": "Housing providers must include the following Notice to Rental",
+      "target_quote": "Housing providers must include the following Notice to Rental Applicants and Tenants prominently on their application materials, websites, and at any locations under their control that are frequently visited by Applicants:",
+      "decision": {
+        "decision": "does_not_apply",
+        "reason": "This provision imposes a separate obligation regarding the distribution and display of the required applicant notice.",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 3952,
+          "end": 4174,
+          "occurrences": 1,
+          "model_span": "Housing providers must include the following Notice to Rental Applicants and Tenants prominently on their application materials, websites, and at any locations under their control that are frequently visited by Applicants:",
+          "source_span": "Housing providers must include the following Notice to Rental Applicants and Tenants prominently on their application materials, websites, and at any locations under their control that are frequently visited by Applicants:",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 1,
+              "model_text": "Housing providers must include the following Notice to Rental Applicants and Tenants prominently on their application materials, websites, and at any locations under their control that are frequently visited by Applicants:",
+              "status": "exact_match",
+              "start": 3952,
+              "end": 4174
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "does_not_apply",
+      "unresolved_reason": null
+    },
+    {
+      "condition_id": "S4",
+      "provision_id": "P3",
+      "kind": "exemption",
+      "statement": "Units under a rental agreement allowing owners to move back into their home pursuant to BMC 13.76.130 A.9 are exempt.",
+      "scope_words": "Please view the Ordinance on specific requirements for each exemption.",
+      "condition_evidence": "Units under a rental agreement allowing owners to move back to their home in accordance with BMC 13.76.130 A.9",
+      "target_ref": "BMC 13.106",
+      "target_anchor": "It is unlawful to do any of the following",
+      "target_quote": "It is unlawful to do any of the following with regard to current or prospective tenants\nInquire about criminal history\nIndicate that persons with criminal backgrounds will not be considered for housing, including in rental advertisements, application materials, or verbally\nRefuse to rent or terminate a tenancy based on criminal history\nRequire disclosure or authorization for release of criminal history\nDemand a higher security deposit or rental amount based on criminal history\nRefuse to allow the addition of an immediate family member based on the family member’s criminal history\nDisqualify tenants from rental assistance programs such as Section 8 based on criminal history (subject to certain exceptions below)\nTreating rental applicants or tenants differently based on their criminal history",
+      "decision": {
+        "decision": "applies",
+        "reason": "The document lists units under move-back rental agreements under exemptions to the unlawful screening practices.",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 1523,
+          "end": 1922,
+          "occurrences": 1,
+          "model_span": "Exemptions\nPlease view the Ordinance on specific requirements for each exemption.\nLifetime sex offenders\nPublic housing/Section 8 properties limited exemptions\nOwner-occupied properties (between 1-3 units) in which an owner of record resides in one of the units as their primary residence\nUnits under a rental agreement allowing owners to move back to their home in accordance with BMC 13.76.130 A.9",
+          "source_span": "Exemptions\nPlease view the Ordinance on specific requirements for each exemption.\nLifetime sex offenders\nPublic housing/Section 8 properties limited exemptions\nOwner-occupied properties (between 1-3 units) in which an owner of record resides in one of the units as their primary residence\nUnits under a rental agreement allowing owners to move back to their home in accordance with BMC 13.76.130 A.9",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 1,
+              "model_text": "Exemptions\nPlease view the Ordinance on specific requirements for each exemption.\nLifetime sex offenders\nPublic housing/Section 8 properties limited exemptions\nOwner-occupied properties (between 1-3 units) in which an owner of record resides in one of the units as their primary residence\nUnits under a rental agreement allowing owners to move back to their home in accordance with BMC 13.76.130 A.9",
+              "status": "exact_match",
+              "start": 1523,
+              "end": 1922
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "applies",
+      "unresolved_reason": null
+    },
+    {
+      "condition_id": "S4",
+      "provision_id": "P5",
+      "kind": "exemption",
+      "statement": "Units under a rental agreement allowing owners to move back into their home pursuant to BMC 13.76.130 A.9 are exempt.",
+      "scope_words": "Please view the Ordinance on specific requirements for each exemption.",
+      "condition_evidence": "Units under a rental agreement allowing owners to move back to their home in accordance with BMC 13.76.130 A.9",
+      "target_ref": "BMC 13.106",
+      "target_anchor": "If a landlord takes any action against an applicant",
+      "target_quote": "If a landlord takes any action against an applicant or tenant based on criminal history (such as refusing to offer a lease, refusing to add a family member, etc.), the landlord is required to provide the applicant/tenant with written notice and an opportunity to respond.",
+      "decision": {
+        "decision": "does_not_apply",
+        "reason": "This provision concerns written notice and an opportunity to respond when adverse action is taken based on criminal history.",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 2054,
+          "end": 2325,
+          "occurrences": 1,
+          "model_span": "If a landlord takes any action against an applicant or tenant based on criminal history (such as refusing to offer a lease, refusing to add a family member, etc.), the landlord is required to provide the applicant/tenant with written notice and an opportunity to respond.",
+          "source_span": "If a landlord takes any action against an applicant or tenant based on criminal history (such as refusing to offer a lease, refusing to add a family member, etc.), the landlord is required to provide the applicant/tenant with written notice and an opportunity to respond.",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 1,
+              "model_text": "If a landlord takes any action against an applicant or tenant based on criminal history (such as refusing to offer a lease, refusing to add a family member, etc.), the landlord is required to provide the applicant/tenant with written notice and an opportunity to respond.",
+              "status": "exact_match",
+              "start": 2054,
+              "end": 2325
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "does_not_apply",
+      "unresolved_reason": null
+    },
+    {
+      "condition_id": "S4",
+      "provision_id": "P6",
+      "kind": "exemption",
+      "statement": "Units under a rental agreement allowing owners to move back into their home pursuant to BMC 13.76.130 A.9 are exempt.",
+      "scope_words": "Please view the Ordinance on specific requirements for each exemption.",
+      "condition_evidence": "Units under a rental agreement allowing owners to move back to their home in accordance with BMC 13.76.130 A.9",
+      "target_ref": "BMC 13.106",
+      "target_anchor": "Any landlord found to be in violation of the",
+      "target_quote": "Any landlord found to be in violation of the Ordinance shall be subject to administrative fines of at least $1,000 and up to $10,000 per violation, civil damages including actual damages or three times the amount of one month's rent, punitive damages, attorneys' fees and costs, and injunctive relief.",
+      "decision": {
+        "decision": "does_not_apply",
+        "reason": "This provision establishes administrative fines and civil damages for violations of the Ordinance.",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 2478,
+          "end": 2779,
+          "occurrences": 1,
+          "model_span": "Any landlord found to be in violation of the Ordinance shall be subject to administrative fines of at least $1,000 and up to $10,000 per violation, civil damages including actual damages or three times the amount of one month's rent, punitive damages, attorneys' fees and costs, and injunctive relief.",
+          "source_span": "Any landlord found to be in violation of the Ordinance shall be subject to administrative fines of at least $1,000 and up to $10,000 per violation, civil damages including actual damages or three times the amount of one month's rent, punitive damages, attorneys' fees and costs, and injunctive relief.",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 1,
+              "model_text": "Any landlord found to be in violation of the Ordinance shall be subject to administrative fines of at least $1,000 and up to $10,000 per violation, civil damages including actual damages or three times the amount of one month's rent, punitive damages, attorneys' fees and costs, and injunctive relief.",
+              "status": "exact_match",
+              "start": 2478,
+              "end": 2779
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "does_not_apply",
+      "unresolved_reason": null
+    },
+    {
+      "condition_id": "S4",
+      "provision_id": "P9",
+      "kind": "exemption",
+      "statement": "Units under a rental agreement allowing owners to move back into their home pursuant to BMC 13.76.130 A.9 are exempt.",
+      "scope_words": "Please view the Ordinance on specific requirements for each exemption.",
+      "condition_evidence": "Units under a rental agreement allowing owners to move back to their home in accordance with BMC 13.76.130 A.9",
+      "target_ref": "BMC 13.106",
+      "target_anchor": "Housing providers must include the following Notice to Rental",
+      "target_quote": "Housing providers must include the following Notice to Rental Applicants and Tenants prominently on their application materials, websites, and at any locations under their control that are frequently visited by Applicants:",
+      "decision": {
+        "decision": "does_not_apply",
+        "reason": "This provision governs the requirement to publish and distribute the formal notice on application materials and websites.",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 3952,
+          "end": 4174,
+          "occurrences": 1,
+          "model_span": "Housing providers must include the following Notice to Rental Applicants and Tenants prominently on their application materials, websites, and at any locations under their control that are frequently visited by Applicants:",
+          "source_span": "Housing providers must include the following Notice to Rental Applicants and Tenants prominently on their application materials, websites, and at any locations under their control that are frequently visited by Applicants:",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 1,
+              "model_text": "Housing providers must include the following Notice to Rental Applicants and Tenants prominently on their application materials, websites, and at any locations under their control that are frequently visited by Applicants:",
+              "status": "exact_match",
+              "start": 3952,
+              "end": 4174
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "does_not_apply",
+      "unresolved_reason": null
+    },
+    {
+      "condition_id": "S5",
+      "provision_id": "P3",
+      "kind": "exemption",
+      "statement": "Units occupied by existing tenants seeking to sublet or add or replace roommates are exempt.",
+      "scope_words": "Please view the Ordinance on specific requirements for each exemption.",
+      "condition_evidence": "Units occupied by existing tenant(s) seeking to sublet or add/replace roommates",
+      "target_ref": "BMC 13.106",
+      "target_anchor": "It is unlawful to do any of the following",
+      "target_quote": "It is unlawful to do any of the following with regard to current or prospective tenants\nInquire about criminal history\nIndicate that persons with criminal backgrounds will not be considered for housing, including in rental advertisements, application materials, or verbally\nRefuse to rent or terminate a tenancy based on criminal history\nRequire disclosure or authorization for release of criminal history\nDemand a higher security deposit or rental amount based on criminal history\nRefuse to allow the addition of an immediate family member based on the family member’s criminal history\nDisqualify tenants from rental assistance programs such as Section 8 based on criminal history (subject to certain exceptions below)\nTreating rental applicants or tenants differently based on their criminal history",
+      "decision": {
+        "decision": "applies",
+        "reason": "The document lists units occupied by existing tenants seeking to sublet or replace roommates under exemptions to the unlawful screening practices.",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 1523,
+          "end": 2002,
+          "occurrences": 1,
+          "model_span": "Exemptions\nPlease view the Ordinance on specific requirements for each exemption.\nLifetime sex offenders\nPublic housing/Section 8 properties limited exemptions\nOwner-occupied properties (between 1-3 units) in which an owner of record resides in one of the units as their primary residence\nUnits under a rental agreement allowing owners to move back to their home in accordance with BMC 13.76.130 A.9\nUnits occupied by existing tenant(s) seeking to sublet or add/replace roommates",
+          "source_span": "Exemptions\nPlease view the Ordinance on specific requirements for each exemption.\nLifetime sex offenders\nPublic housing/Section 8 properties limited exemptions\nOwner-occupied properties (between 1-3 units) in which an owner of record resides in one of the units as their primary residence\nUnits under a rental agreement allowing owners to move back to their home in accordance with BMC 13.76.130 A.9\nUnits occupied by existing tenant(s) seeking to sublet or add/replace roommates",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 1,
+              "model_text": "Exemptions\nPlease view the Ordinance on specific requirements for each exemption.\nLifetime sex offenders\nPublic housing/Section 8 properties limited exemptions\nOwner-occupied properties (between 1-3 units) in which an owner of record resides in one of the units as their primary residence\nUnits under a rental agreement allowing owners to move back to their home in accordance with BMC 13.76.130 A.9\nUnits occupied by existing tenant(s) seeking to sublet or add/replace roommates",
+              "status": "exact_match",
+              "start": 1523,
+              "end": 2002
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "applies",
+      "unresolved_reason": null
+    },
+    {
+      "condition_id": "S5",
+      "provision_id": "P5",
+      "kind": "exemption",
+      "statement": "Units occupied by existing tenants seeking to sublet or add or replace roommates are exempt.",
+      "scope_words": "Please view the Ordinance on specific requirements for each exemption.",
+      "condition_evidence": "Units occupied by existing tenant(s) seeking to sublet or add/replace roommates",
+      "target_ref": "BMC 13.106",
+      "target_anchor": "If a landlord takes any action against an applicant",
+      "target_quote": "If a landlord takes any action against an applicant or tenant based on criminal history (such as refusing to offer a lease, refusing to add a family member, etc.), the landlord is required to provide the applicant/tenant with written notice and an opportunity to respond.",
+      "decision": {
+        "decision": "does_not_apply",
+        "reason": "This provision sets forth a distinct requirement to give written notice and an opportunity to respond if adverse action is taken.",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 2054,
+          "end": 2325,
+          "occurrences": 1,
+          "model_span": "If a landlord takes any action against an applicant or tenant based on criminal history (such as refusing to offer a lease, refusing to add a family member, etc.), the landlord is required to provide the applicant/tenant with written notice and an opportunity to respond.",
+          "source_span": "If a landlord takes any action against an applicant or tenant based on criminal history (such as refusing to offer a lease, refusing to add a family member, etc.), the landlord is required to provide the applicant/tenant with written notice and an opportunity to respond.",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 1,
+              "model_text": "If a landlord takes any action against an applicant or tenant based on criminal history (such as refusing to offer a lease, refusing to add a family member, etc.), the landlord is required to provide the applicant/tenant with written notice and an opportunity to respond.",
+              "status": "exact_match",
+              "start": 2054,
+              "end": 2325
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "does_not_apply",
+      "unresolved_reason": null
+    },
+    {
+      "condition_id": "S5",
+      "provision_id": "P6",
+      "kind": "exemption",
+      "statement": "Units occupied by existing tenants seeking to sublet or add or replace roommates are exempt.",
+      "scope_words": "Please view the Ordinance on specific requirements for each exemption.",
+      "condition_evidence": "Units occupied by existing tenant(s) seeking to sublet or add/replace roommates",
+      "target_ref": "BMC 13.106",
+      "target_anchor": "Any landlord found to be in violation of the",
+      "target_quote": "Any landlord found to be in violation of the Ordinance shall be subject to administrative fines of at least $1,000 and up to $10,000 per violation, civil damages including actual damages or three times the amount of one month's rent, punitive damages, attorneys' fees and costs, and injunctive relief.",
+      "decision": {
+        "decision": "does_not_apply",
+        "reason": "This provision establishes civil remedies and administrative fines rather than screening rules.",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 2478,
+          "end": 2779,
+          "occurrences": 1,
+          "model_span": "Any landlord found to be in violation of the Ordinance shall be subject to administrative fines of at least $1,000 and up to $10,000 per violation, civil damages including actual damages or three times the amount of one month's rent, punitive damages, attorneys' fees and costs, and injunctive relief.",
+          "source_span": "Any landlord found to be in violation of the Ordinance shall be subject to administrative fines of at least $1,000 and up to $10,000 per violation, civil damages including actual damages or three times the amount of one month's rent, punitive damages, attorneys' fees and costs, and injunctive relief.",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 1,
+              "model_text": "Any landlord found to be in violation of the Ordinance shall be subject to administrative fines of at least $1,000 and up to $10,000 per violation, civil damages including actual damages or three times the amount of one month's rent, punitive damages, attorneys' fees and costs, and injunctive relief.",
+              "status": "exact_match",
+              "start": 2478,
+              "end": 2779
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "does_not_apply",
+      "unresolved_reason": null
+    },
+    {
+      "condition_id": "S5",
+      "provision_id": "P9",
+      "kind": "exemption",
+      "statement": "Units occupied by existing tenants seeking to sublet or add or replace roommates are exempt.",
+      "scope_words": "Please view the Ordinance on specific requirements for each exemption.",
+      "condition_evidence": "Units occupied by existing tenant(s) seeking to sublet or add/replace roommates",
+      "target_ref": "BMC 13.106",
+      "target_anchor": "Housing providers must include the following Notice to Rental",
+      "target_quote": "Housing providers must include the following Notice to Rental Applicants and Tenants prominently on their application materials, websites, and at any locations under their control that are frequently visited by Applicants:",
+      "decision": {
+        "decision": "does_not_apply",
+        "reason": "This provision imposes a separate affirmative requirement to include the formal notice on application materials and websites.",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 3952,
+          "end": 4174,
+          "occurrences": 1,
+          "model_span": "Housing providers must include the following Notice to Rental Applicants and Tenants prominently on their application materials, websites, and at any locations under their control that are frequently visited by Applicants:",
+          "source_span": "Housing providers must include the following Notice to Rental Applicants and Tenants prominently on their application materials, websites, and at any locations under their control that are frequently visited by Applicants:",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 1,
+              "model_text": "Housing providers must include the following Notice to Rental Applicants and Tenants prominently on their application materials, websites, and at any locations under their control that are frequently visited by Applicants:",
+              "status": "exact_match",
+              "start": 3952,
+              "end": 4174
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "does_not_apply",
+      "unresolved_reason": null
+    }
+  ],
+  "legislative_session": null,
+  "empty_result": null,
+  "legacy_replay": null,
+  "dedupe": [],
+  "chunking": null,
+  "repair": {
+    "invoked": true,
+    "reason": "0 repair target(s) from no check; 20 scope_mapping_challenge(s)",
+    "prompt_version": "v7-repair-1",
+    "targets": [],
+    "cache_key": "5176e7fd40ef6bb20a62a122649d698e4a9060027645d217c1defe0340710ecc",
+    "cache_hit": true,
+    "cache_entry": "cache/extraction/5176e7fd40ef6bb20a62a122649d698e4a9060027645d217c1defe0340710ecc.json",
+    "prompt_sha256": "840392d4fd20e566d4ed6c520f6632c9dcc26e20c34f59136242b567a389e195",
+    "provider_metadata": {
+      "api": "interactions.create",
+      "interaction_id": "",
+      "model": "gemini-3.8-flash",
+      "status": "completed",
+      "usage": {
+        "input_tokens": 7212,
+        "output_tokens": 3145,
+        "thinking_tokens": 12935,
+        "total_tokens": 23292
+      }
+    },
+    "raw_response_text": "{\n  \"target_resolutions\": [],\n  \"scope_mappings\": [\n    {\n      \"condition_id\": \"S1\",\n      \"provision_id\": \"P3\",\n      \"decision\": \"applies\",\n      \"reason\": \"The document lists lifetime sex offenders under exemptions to the unlawful screening practices.\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Treating rental applicants or tenants differently based on their criminal history\\nExemptions\\nPlease view the Ordinance on specific requirements for each exemption.\\nLifetime sex offenders\"\n        }\n      ]\n    },\n    {\n      \"condition_id\": \"S1\",\n      \"provision_id\": \"P5\",\n      \"decision\": \"does_not_apply\",\n      \"reason\": \"This provision imposes a separate procedural duty to provide written notice and an opportunity to respond when taking adverse action.\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"If a landlord takes any action against an applicant or tenant based on criminal history (such as refusing to offer a lease, refusing to add a family member, etc.), the landlord is required to provide the applicant/tenant with written notice and an opportunity to respond.\"\n        }\n      ]\n    },\n    {\n      \"condition_id\": \"S1\",\n      \"provision_id\": \"P6\",\n      \"decision\": \"does_not_apply\",\n      \"reason\": \"This provision establishes remedies and civil penalties for violations rather than applicant screening rules.\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Any landlord found to be in violation of the Ordinance shall be subject to administrative fines of at least $1,000 and up to $10,000 per violation, civil damages including actual damages or three times the amount of one month's rent, punitive damages, attorneys' fees and costs, and injunctive relief.\"\n        }\n      ]\n    },\n    {\n      \"condition_id\": \"S1\",\n      \"provision_id\": \"P9\",\n      \"decision\": \"does_not_apply\",\n      \"reason\": \"This provision imposes a separate requirement to include and display the official notice to rental applicants.\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Housing providers must include the following Notice to Rental Applicants and Tenants prominently on their application materials, websites, and at any locations under their control that are frequently visited by Applicants:\"\n        }\n      ]\n    },\n    {\n      \"condition_id\": \"S2\",\n      \"provision_id\": \"P3\",\n      \"decision\": \"applies\",\n      \"reason\": \"The document explicitly states that disqualifications involving programs such as Section 8 are subject to exceptions and lists public housing and Section 8 properties under exemptions.\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Disqualify tenants from rental assistance programs such as Section 8 based on criminal history (subject to certain exceptions below)\\nTreating rental applicants or tenants differently based on their criminal history\\nExemptions\\nPlease view the Ordinance on specific requirements for each exemption.\\nLifetime sex offenders\\nPublic housing/Section 8 properties limited exemptions\"\n        }\n      ]\n    },\n    {\n      \"condition_id\": \"S2\",\n      \"provision_id\": \"P5\",\n      \"decision\": \"does_not_apply\",\n      \"reason\": \"This provision imposes a separate procedural requirement to provide written notice and an opportunity to respond when adverse action is taken.\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"If a landlord takes any action against an applicant or tenant based on criminal history (such as refusing to offer a lease, refusing to add a family member, etc.), the landlord is required to provide the applicant/tenant with written notice and an opportunity to respond.\"\n        }\n      ]\n    },\n    {\n      \"condition_id\": \"S2\",\n      \"provision_id\": \"P6\",\n      \"decision\": \"does_not_apply\",\n      \"reason\": \"This provision governs civil penalties and enforcement remedies for violations of the Ordinance.\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Any landlord found to be in violation of the Ordinance shall be subject to administrative fines of at least $1,000 and up to $10,000 per violation, civil damages including actual damages or three times the amount of one month's rent, punitive damages, attorneys' fees and costs, and injunctive relief.\"\n        }\n      ]\n    },\n    {\n      \"condition_id\": \"S2\",\n      \"provision_id\": \"P9\",\n      \"decision\": \"does_not_apply\",\n      \"reason\": \"This provision imposes a distinct duty to distribute and display the official notice to rental applicants and tenants.\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Housing providers must include the following Notice to Rental Applicants and Tenants prominently on their application materials, websites, and at any locations under their control that are frequently visited by Applicants:\"\n        }\n      ]\n    },\n    {\n      \"condition_id\": \"S3\",\n      \"provision_id\": \"P3\",\n      \"decision\": \"applies\",\n      \"reason\": \"The document lists owner-occupied properties of between 1 and 3 units as an exemption to the unlawful screening practices.\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Exemptions\\nPlease view the Ordinance on specific requirements for each exemption.\\nLifetime sex offenders\\nPublic housing/Section 8 properties limited exemptions\\nOwner-occupied properties (between 1-3 units) in which an owner of record resides in one of the units as their primary residence\"\n        }\n      ]\n    },\n    {\n      \"condition_id\": \"S3\",\n      \"provision_id\": \"P5\",\n      \"decision\": \"does_not_apply\",\n      \"reason\": \"This provision imposes an independent procedural duty to provide written notice and an opportunity to respond.\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"If a landlord takes any action against an applicant or tenant based on criminal history (such as refusing to offer a lease, refusing to add a family member, etc.), the landlord is required to provide the applicant/tenant with written notice and an opportunity to respond.\"\n        }\n      ]\n    },\n    {\n      \"condition_id\": \"S3\",\n      \"provision_id\": \"P6\",\n      \"decision\": \"does_not_apply\",\n      \"reason\": \"This provision governs penalties and remedies for landlords found in violation of the Ordinance.\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Any landlord found to be in violation of the Ordinance shall be subject to administrative fines of at least $1,000 and up to $10,000 per violation, civil damages including actual damages or three times the amount of one month's rent, punitive damages, attorneys' fees and costs, and injunctive relief.\"\n        }\n      ]\n    },\n    {\n      \"condition_id\": \"S3\",\n      \"provision_id\": \"P9\",\n      \"decision\": \"does_not_apply\",\n      \"reason\": \"This provision imposes a separate obligation regarding the distribution and display of the required applicant notice.\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Housing providers must include the following Notice to Rental Applicants and Tenants prominently on their application materials, websites, and at any locations under their control that are frequently visited by Applicants:\"\n        }\n      ]\n    },\n    {\n      \"condition_id\": \"S4\",\n      \"provision_id\": \"P3\",\n      \"decision\": \"applies\",\n      \"reason\": \"The document lists units under move-back rental agreements under exemptions to the unlawful screening practices.\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Exemptions\\nPlease view the Ordinance on specific requirements for each exemption.\\nLifetime sex offenders\\nPublic housing/Section 8 properties limited exemptions\\nOwner-occupied properties (between 1-3 units) in which an owner of record resides in one of the units as their primary residence\\nUnits under a rental agreement allowing owners to move back to their home in accordance with BMC 13.76.130 A.9\"\n        }\n      ]\n    },\n    {\n      \"condition_id\": \"S4\",\n      \"provision_id\": \"P5\",\n      \"decision\": \"does_not_apply\",\n      \"reason\": \"This provision concerns written notice and an opportunity to respond when adverse action is taken based on criminal history.\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"If a landlord takes any action against an applicant or tenant based on criminal history (such as refusing to offer a lease, refusing to add a family member, etc.), the landlord is required to provide the applicant/tenant with written notice and an opportunity to respond.\"\n        }\n      ]\n    },\n    {\n      \"condition_id\": \"S4\",\n      \"provision_id\": \"P6\",\n      \"decision\": \"does_not_apply\",\n      \"reason\": \"This provision establishes administrative fines and civil damages for violations of the Ordinance.\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Any landlord found to be in violation of the Ordinance shall be subject to administrative fines of at least $1,000 and up to $10,000 per violation, civil damages including actual damages or three times the amount of one month's rent, punitive damages, attorneys' fees and costs, and injunctive relief.\"\n        }\n      ]\n    },\n    {\n      \"condition_id\": \"S4\",\n      \"provision_id\": \"P9\",\n      \"decision\": \"does_not_apply\",\n      \"reason\": \"This provision governs the requirement to publish and distribute the formal notice on application materials and websites.\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Housing providers must include the following Notice to Rental Applicants and Tenants prominently on their application materials, websites, and at any locations under their control that are frequently visited by Applicants:\"\n        }\n      ]\n    },\n    {\n      \"condition_id\": \"S5\",\n      \"provision_id\": \"P3\",\n      \"decision\": \"applies\",\n      \"reason\": \"The document lists units occupied by existing tenants seeking to sublet or replace roommates under exemptions to the unlawful screening practices.\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Exemptions\\nPlease view the Ordinance on specific requirements for each exemption.\\nLifetime sex offenders\\nPublic housing/Section 8 properties limited exemptions\\nOwner-occupied properties (between 1-3 units) in which an owner of record resides in one of the units as their primary residence\\nUnits under a rental agreement allowing owners to move back to their home in accordance with BMC 13.76.130 A.9\\nUnits occupied by existing tenant(s) seeking to sublet or add/replace roommates\"\n        }\n      ]\n    },\n    {\n      \"condition_id\": \"S5\",\n      \"provision_id\": \"P5\",\n      \"decision\": \"does_not_apply\",\n      \"reason\": \"This provision sets forth a distinct requirement to give written notice and an opportunity to respond if adverse action is taken.\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"If a landlord takes any action against an applicant or tenant based on criminal history (such as refusing to offer a lease, refusing to add a family member, etc.), the landlord is required to provide the applicant/tenant with written notice and an opportunity to respond.\"\n        }\n      ]\n    },\n    {\n      \"condition_id\": \"S5\",\n      \"provision_id\": \"P6\",\n      \"decision\": \"does_not_apply\",\n      \"reason\": \"This provision establishes civil remedies and administrative fines rather than screening rules.\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Any landlord found to be in violation of the Ordinance shall be subject to administrative fines of at least $1,000 and up to $10,000 per violation, civil damages including actual damages or three times the amount of one month's rent, punitive damages, attorneys' fees and costs, and injunctive relief.\"\n        }\n      ]\n    },\n    {\n      \"condition_id\": \"S5\",\n      \"provision_id\": \"P9\",\n      \"decision\": \"does_not_apply\",\n      \"reason\": \"This provision imposes a separate affirmative requirement to include the formal notice on application materials and websites.\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Housing providers must include the following Notice to Rental Applicants and Tenants prominently on their application materials, websites, and at any locations under their control that are frequently visited by Applicants:\"\n        }\n      ]\n    }\n  ],\n  \"rules\": []\n}",
+    "mappings": [
+      {
+        "condition_id": "S1",
+        "provision_id": "P3",
+        "kind": "exemption",
+        "statement": "Lifetime sex offenders are exempt as specified in the Ordinance.",
+        "scope_words": "Please view the Ordinance on specific requirements for each exemption.",
+        "condition_evidence": "Lifetime sex offenders",
+        "target_ref": "BMC 13.106",
+        "target_anchor": "It is unlawful to do any of the following",
+        "target_quote": "It is unlawful to do any of the following with regard to current or prospective tenants\nInquire about criminal history\nIndicate that persons with criminal backgrounds will not be considered for housing, including in rental advertisements, application materials, or verbally\nRefuse to rent or terminate a tenancy based on criminal history\nRequire disclosure or authorization for release of criminal history\nDemand a higher security deposit or rental amount based on criminal history\nRefuse to allow the addition of an immediate family member based on the family member’s criminal history\nDisqualify tenants from rental assistance programs such as Section 8 based on criminal history (subject to certain exceptions below)\nTreating rental applicants or tenants differently based on their criminal history",
+        "decision": {
+          "decision": "applies",
+          "reason": "The document lists lifetime sex offenders under exemptions to the unlawful screening practices.",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 1441,
+            "end": 1627,
+            "occurrences": 1,
+            "model_span": "Treating rental applicants or tenants differently based on their criminal history\nExemptions\nPlease view the Ordinance on specific requirements for each exemption.\nLifetime sex offenders",
+            "source_span": "Treating rental applicants or tenants differently based on their criminal history\nExemptions\nPlease view the Ordinance on specific requirements for each exemption.\nLifetime sex offenders",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 1,
+                "model_text": "Treating rental applicants or tenants differently based on their criminal history\nExemptions\nPlease view the Ordinance on specific requirements for each exemption.\nLifetime sex offenders",
+                "status": "exact_match",
+                "start": 1441,
+                "end": 1627
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "applies",
+        "unresolved_reason": null
+      },
+      {
+        "condition_id": "S1",
+        "provision_id": "P5",
+        "kind": "exemption",
+        "statement": "Lifetime sex offenders are exempt as specified in the Ordinance.",
+        "scope_words": "Please view the Ordinance on specific requirements for each exemption.",
+        "condition_evidence": "Lifetime sex offenders",
+        "target_ref": "BMC 13.106",
+        "target_anchor": "If a landlord takes any action against an applicant",
+        "target_quote": "If a landlord takes any action against an applicant or tenant based on criminal history (such as refusing to offer a lease, refusing to add a family member, etc.), the landlord is required to provide the applicant/tenant with written notice and an opportunity to respond.",
+        "decision": {
+          "decision": "does_not_apply",
+          "reason": "This provision imposes a separate procedural duty to provide written notice and an opportunity to respond when taking adverse action.",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 2054,
+            "end": 2325,
+            "occurrences": 1,
+            "model_span": "If a landlord takes any action against an applicant or tenant based on criminal history (such as refusing to offer a lease, refusing to add a family member, etc.), the landlord is required to provide the applicant/tenant with written notice and an opportunity to respond.",
+            "source_span": "If a landlord takes any action against an applicant or tenant based on criminal history (such as refusing to offer a lease, refusing to add a family member, etc.), the landlord is required to provide the applicant/tenant with written notice and an opportunity to respond.",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 1,
+                "model_text": "If a landlord takes any action against an applicant or tenant based on criminal history (such as refusing to offer a lease, refusing to add a family member, etc.), the landlord is required to provide the applicant/tenant with written notice and an opportunity to respond.",
+                "status": "exact_match",
+                "start": 2054,
+                "end": 2325
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "does_not_apply",
+        "unresolved_reason": null
+      },
+      {
+        "condition_id": "S1",
+        "provision_id": "P6",
+        "kind": "exemption",
+        "statement": "Lifetime sex offenders are exempt as specified in the Ordinance.",
+        "scope_words": "Please view the Ordinance on specific requirements for each exemption.",
+        "condition_evidence": "Lifetime sex offenders",
+        "target_ref": "BMC 13.106",
+        "target_anchor": "Any landlord found to be in violation of the",
+        "target_quote": "Any landlord found to be in violation of the Ordinance shall be subject to administrative fines of at least $1,000 and up to $10,000 per violation, civil damages including actual damages or three times the amount of one month's rent, punitive damages, attorneys' fees and costs, and injunctive relief.",
+        "decision": {
+          "decision": "does_not_apply",
+          "reason": "This provision establishes remedies and civil penalties for violations rather than applicant screening rules.",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 2478,
+            "end": 2779,
+            "occurrences": 1,
+            "model_span": "Any landlord found to be in violation of the Ordinance shall be subject to administrative fines of at least $1,000 and up to $10,000 per violation, civil damages including actual damages or three times the amount of one month's rent, punitive damages, attorneys' fees and costs, and injunctive relief.",
+            "source_span": "Any landlord found to be in violation of the Ordinance shall be subject to administrative fines of at least $1,000 and up to $10,000 per violation, civil damages including actual damages or three times the amount of one month's rent, punitive damages, attorneys' fees and costs, and injunctive relief.",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 1,
+                "model_text": "Any landlord found to be in violation of the Ordinance shall be subject to administrative fines of at least $1,000 and up to $10,000 per violation, civil damages including actual damages or three times the amount of one month's rent, punitive damages, attorneys' fees and costs, and injunctive relief.",
+                "status": "exact_match",
+                "start": 2478,
+                "end": 2779
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "does_not_apply",
+        "unresolved_reason": null
+      },
+      {
+        "condition_id": "S1",
+        "provision_id": "P9",
+        "kind": "exemption",
+        "statement": "Lifetime sex offenders are exempt as specified in the Ordinance.",
+        "scope_words": "Please view the Ordinance on specific requirements for each exemption.",
+        "condition_evidence": "Lifetime sex offenders",
+        "target_ref": "BMC 13.106",
+        "target_anchor": "Housing providers must include the following Notice to Rental",
+        "target_quote": "Housing providers must include the following Notice to Rental Applicants and Tenants prominently on their application materials, websites, and at any locations under their control that are frequently visited by Applicants:",
+        "decision": {
+          "decision": "does_not_apply",
+          "reason": "This provision imposes a separate requirement to include and display the official notice to rental applicants.",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 3952,
+            "end": 4174,
+            "occurrences": 1,
+            "model_span": "Housing providers must include the following Notice to Rental Applicants and Tenants prominently on their application materials, websites, and at any locations under their control that are frequently visited by Applicants:",
+            "source_span": "Housing providers must include the following Notice to Rental Applicants and Tenants prominently on their application materials, websites, and at any locations under their control that are frequently visited by Applicants:",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 1,
+                "model_text": "Housing providers must include the following Notice to Rental Applicants and Tenants prominently on their application materials, websites, and at any locations under their control that are frequently visited by Applicants:",
+                "status": "exact_match",
+                "start": 3952,
+                "end": 4174
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "does_not_apply",
+        "unresolved_reason": null
+      },
+      {
+        "condition_id": "S2",
+        "provision_id": "P3",
+        "kind": "exemption",
+        "statement": "Public housing and Section 8 properties have limited exemptions as specified in the Ordinance.",
+        "scope_words": "Please view the Ordinance on specific requirements for each exemption.",
+        "condition_evidence": "Public housing/Section 8 properties limited exemptions",
+        "target_ref": "BMC 13.106",
+        "target_anchor": "It is unlawful to do any of the following",
+        "target_quote": "It is unlawful to do any of the following with regard to current or prospective tenants\nInquire about criminal history\nIndicate that persons with criminal backgrounds will not be considered for housing, including in rental advertisements, application materials, or verbally\nRefuse to rent or terminate a tenancy based on criminal history\nRequire disclosure or authorization for release of criminal history\nDemand a higher security deposit or rental amount based on criminal history\nRefuse to allow the addition of an immediate family member based on the family member’s criminal history\nDisqualify tenants from rental assistance programs such as Section 8 based on criminal history (subject to certain exceptions below)\nTreating rental applicants or tenants differently based on their criminal history",
+        "decision": {
+          "decision": "applies",
+          "reason": "The document explicitly states that disqualifications involving programs such as Section 8 are subject to exceptions and lists public housing and Section 8 properties under exemptions.",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 1308,
+            "end": 1682,
+            "occurrences": 1,
+            "model_span": "Disqualify tenants from rental assistance programs such as Section 8 based on criminal history (subject to certain exceptions below)\nTreating rental applicants or tenants differently based on their criminal history\nExemptions\nPlease view the Ordinance on specific requirements for each exemption.\nLifetime sex offenders\nPublic housing/Section 8 properties limited exemptions",
+            "source_span": "Disqualify tenants from rental assistance programs such as Section 8 based on criminal history (subject to certain exceptions below)\nTreating rental applicants or tenants differently based on their criminal history\nExemptions\nPlease view the Ordinance on specific requirements for each exemption.\nLifetime sex offenders\nPublic housing/Section 8 properties limited exemptions",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 1,
+                "model_text": "Disqualify tenants from rental assistance programs such as Section 8 based on criminal history (subject to certain exceptions below)\nTreating rental applicants or tenants differently based on their criminal history\nExemptions\nPlease view the Ordinance on specific requirements for each exemption.\nLifetime sex offenders\nPublic housing/Section 8 properties limited exemptions",
+                "status": "exact_match",
+                "start": 1308,
+                "end": 1682
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "applies",
+        "unresolved_reason": null
+      },
+      {
+        "condition_id": "S2",
+        "provision_id": "P5",
+        "kind": "exemption",
+        "statement": "Public housing and Section 8 properties have limited exemptions as specified in the Ordinance.",
+        "scope_words": "Please view the Ordinance on specific requirements for each exemption.",
+        "condition_evidence": "Public housing/Section 8 properties limited exemptions",
+        "target_ref": "BMC 13.106",
+        "target_anchor": "If a landlord takes any action against an applicant",
+        "target_quote": "If a landlord takes any action against an applicant or tenant based on criminal history (such as refusing to offer a lease, refusing to add a family member, etc.), the landlord is required to provide the applicant/tenant with written notice and an opportunity to respond.",
+        "decision": {
+          "decision": "does_not_apply",
+          "reason": "This provision imposes a separate procedural requirement to provide written notice and an opportunity to respond when adverse action is taken.",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 2054,
+            "end": 2325,
+            "occurrences": 1,
+            "model_span": "If a landlord takes any action against an applicant or tenant based on criminal history (such as refusing to offer a lease, refusing to add a family member, etc.), the landlord is required to provide the applicant/tenant with written notice and an opportunity to respond.",
+            "source_span": "If a landlord takes any action against an applicant or tenant based on criminal history (such as refusing to offer a lease, refusing to add a family member, etc.), the landlord is required to provide the applicant/tenant with written notice and an opportunity to respond.",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 1,
+                "model_text": "If a landlord takes any action against an applicant or tenant based on criminal history (such as refusing to offer a lease, refusing to add a family member, etc.), the landlord is required to provide the applicant/tenant with written notice and an opportunity to respond.",
+                "status": "exact_match",
+                "start": 2054,
+                "end": 2325
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "does_not_apply",
+        "unresolved_reason": null
+      },
+      {
+        "condition_id": "S2",
+        "provision_id": "P6",
+        "kind": "exemption",
+        "statement": "Public housing and Section 8 properties have limited exemptions as specified in the Ordinance.",
+        "scope_words": "Please view the Ordinance on specific requirements for each exemption.",
+        "condition_evidence": "Public housing/Section 8 properties limited exemptions",
+        "target_ref": "BMC 13.106",
+        "target_anchor": "Any landlord found to be in violation of the",
+        "target_quote": "Any landlord found to be in violation of the Ordinance shall be subject to administrative fines of at least $1,000 and up to $10,000 per violation, civil damages including actual damages or three times the amount of one month's rent, punitive damages, attorneys' fees and costs, and injunctive relief.",
+        "decision": {
+          "decision": "does_not_apply",
+          "reason": "This provision governs civil penalties and enforcement remedies for violations of the Ordinance.",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 2478,
+            "end": 2779,
+            "occurrences": 1,
+            "model_span": "Any landlord found to be in violation of the Ordinance shall be subject to administrative fines of at least $1,000 and up to $10,000 per violation, civil damages including actual damages or three times the amount of one month's rent, punitive damages, attorneys' fees and costs, and injunctive relief.",
+            "source_span": "Any landlord found to be in violation of the Ordinance shall be subject to administrative fines of at least $1,000 and up to $10,000 per violation, civil damages including actual damages or three times the amount of one month's rent, punitive damages, attorneys' fees and costs, and injunctive relief.",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 1,
+                "model_text": "Any landlord found to be in violation of the Ordinance shall be subject to administrative fines of at least $1,000 and up to $10,000 per violation, civil damages including actual damages or three times the amount of one month's rent, punitive damages, attorneys' fees and costs, and injunctive relief.",
+                "status": "exact_match",
+                "start": 2478,
+                "end": 2779
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "does_not_apply",
+        "unresolved_reason": null
+      },
+      {
+        "condition_id": "S2",
+        "provision_id": "P9",
+        "kind": "exemption",
+        "statement": "Public housing and Section 8 properties have limited exemptions as specified in the Ordinance.",
+        "scope_words": "Please view the Ordinance on specific requirements for each exemption.",
+        "condition_evidence": "Public housing/Section 8 properties limited exemptions",
+        "target_ref": "BMC 13.106",
+        "target_anchor": "Housing providers must include the following Notice to Rental",
+        "target_quote": "Housing providers must include the following Notice to Rental Applicants and Tenants prominently on their application materials, websites, and at any locations under their control that are frequently visited by Applicants:",
+        "decision": {
+          "decision": "does_not_apply",
+          "reason": "This provision imposes a distinct duty to distribute and display the official notice to rental applicants and tenants.",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 3952,
+            "end": 4174,
+            "occurrences": 1,
+            "model_span": "Housing providers must include the following Notice to Rental Applicants and Tenants prominently on their application materials, websites, and at any locations under their control that are frequently visited by Applicants:",
+            "source_span": "Housing providers must include the following Notice to Rental Applicants and Tenants prominently on their application materials, websites, and at any locations under their control that are frequently visited by Applicants:",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 1,
+                "model_text": "Housing providers must include the following Notice to Rental Applicants and Tenants prominently on their application materials, websites, and at any locations under their control that are frequently visited by Applicants:",
+                "status": "exact_match",
+                "start": 3952,
+                "end": 4174
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "does_not_apply",
+        "unresolved_reason": null
+      },
+      {
+        "condition_id": "S3",
+        "provision_id": "P3",
+        "kind": "exemption",
+        "statement": "Owner-occupied properties of between 1 and 3 units in which an owner of record resides in one unit as their primary residence are exempt.",
+        "scope_words": "Please view the Ordinance on specific requirements for each exemption.",
+        "condition_evidence": "Owner-occupied properties (between 1-3 units) in which an owner of record resides in one of the units as their primary residence",
+        "target_ref": "BMC 13.106",
+        "target_anchor": "It is unlawful to do any of the following",
+        "target_quote": "It is unlawful to do any of the following with regard to current or prospective tenants\nInquire about criminal history\nIndicate that persons with criminal backgrounds will not be considered for housing, including in rental advertisements, application materials, or verbally\nRefuse to rent or terminate a tenancy based on criminal history\nRequire disclosure or authorization for release of criminal history\nDemand a higher security deposit or rental amount based on criminal history\nRefuse to allow the addition of an immediate family member based on the family member’s criminal history\nDisqualify tenants from rental assistance programs such as Section 8 based on criminal history (subject to certain exceptions below)\nTreating rental applicants or tenants differently based on their criminal history",
+        "decision": {
+          "decision": "applies",
+          "reason": "The document lists owner-occupied properties of between 1 and 3 units as an exemption to the unlawful screening practices.",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 1523,
+            "end": 1811,
+            "occurrences": 1,
+            "model_span": "Exemptions\nPlease view the Ordinance on specific requirements for each exemption.\nLifetime sex offenders\nPublic housing/Section 8 properties limited exemptions\nOwner-occupied properties (between 1-3 units) in which an owner of record resides in one of the units as their primary residence",
+            "source_span": "Exemptions\nPlease view the Ordinance on specific requirements for each exemption.\nLifetime sex offenders\nPublic housing/Section 8 properties limited exemptions\nOwner-occupied properties (between 1-3 units) in which an owner of record resides in one of the units as their primary residence",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 1,
+                "model_text": "Exemptions\nPlease view the Ordinance on specific requirements for each exemption.\nLifetime sex offenders\nPublic housing/Section 8 properties limited exemptions\nOwner-occupied properties (between 1-3 units) in which an owner of record resides in one of the units as their primary residence",
+                "status": "exact_match",
+                "start": 1523,
+                "end": 1811
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "applies",
+        "unresolved_reason": null
+      },
+      {
+        "condition_id": "S3",
+        "provision_id": "P5",
+        "kind": "exemption",
+        "statement": "Owner-occupied properties of between 1 and 3 units in which an owner of record resides in one unit as their primary residence are exempt.",
+        "scope_words": "Please view the Ordinance on specific requirements for each exemption.",
+        "condition_evidence": "Owner-occupied properties (between 1-3 units) in which an owner of record resides in one of the units as their primary residence",
+        "target_ref": "BMC 13.106",
+        "target_anchor": "If a landlord takes any action against an applicant",
+        "target_quote": "If a landlord takes any action against an applicant or tenant based on criminal history (such as refusing to offer a lease, refusing to add a family member, etc.), the landlord is required to provide the applicant/tenant with written notice and an opportunity to respond.",
+        "decision": {
+          "decision": "does_not_apply",
+          "reason": "This provision imposes an independent procedural duty to provide written notice and an opportunity to respond.",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 2054,
+            "end": 2325,
+            "occurrences": 1,
+            "model_span": "If a landlord takes any action against an applicant or tenant based on criminal history (such as refusing to offer a lease, refusing to add a family member, etc.), the landlord is required to provide the applicant/tenant with written notice and an opportunity to respond.",
+            "source_span": "If a landlord takes any action against an applicant or tenant based on criminal history (such as refusing to offer a lease, refusing to add a family member, etc.), the landlord is required to provide the applicant/tenant with written notice and an opportunity to respond.",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 1,
+                "model_text": "If a landlord takes any action against an applicant or tenant based on criminal history (such as refusing to offer a lease, refusing to add a family member, etc.), the landlord is required to provide the applicant/tenant with written notice and an opportunity to respond.",
+                "status": "exact_match",
+                "start": 2054,
+                "end": 2325
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "does_not_apply",
+        "unresolved_reason": null
+      },
+      {
+        "condition_id": "S3",
+        "provision_id": "P6",
+        "kind": "exemption",
+        "statement": "Owner-occupied properties of between 1 and 3 units in which an owner of record resides in one unit as their primary residence are exempt.",
+        "scope_words": "Please view the Ordinance on specific requirements for each exemption.",
+        "condition_evidence": "Owner-occupied properties (between 1-3 units) in which an owner of record resides in one of the units as their primary residence",
+        "target_ref": "BMC 13.106",
+        "target_anchor": "Any landlord found to be in violation of the",
+        "target_quote": "Any landlord found to be in violation of the Ordinance shall be subject to administrative fines of at least $1,000 and up to $10,000 per violation, civil damages including actual damages or three times the amount of one month's rent, punitive damages, attorneys' fees and costs, and injunctive relief.",
+        "decision": {
+          "decision": "does_not_apply",
+          "reason": "This provision governs penalties and remedies for landlords found in violation of the Ordinance.",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 2478,
+            "end": 2779,
+            "occurrences": 1,
+            "model_span": "Any landlord found to be in violation of the Ordinance shall be subject to administrative fines of at least $1,000 and up to $10,000 per violation, civil damages including actual damages or three times the amount of one month's rent, punitive damages, attorneys' fees and costs, and injunctive relief.",
+            "source_span": "Any landlord found to be in violation of the Ordinance shall be subject to administrative fines of at least $1,000 and up to $10,000 per violation, civil damages including actual damages or three times the amount of one month's rent, punitive damages, attorneys' fees and costs, and injunctive relief.",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 1,
+                "model_text": "Any landlord found to be in violation of the Ordinance shall be subject to administrative fines of at least $1,000 and up to $10,000 per violation, civil damages including actual damages or three times the amount of one month's rent, punitive damages, attorneys' fees and costs, and injunctive relief.",
+                "status": "exact_match",
+                "start": 2478,
+                "end": 2779
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "does_not_apply",
+        "unresolved_reason": null
+      },
+      {
+        "condition_id": "S3",
+        "provision_id": "P9",
+        "kind": "exemption",
+        "statement": "Owner-occupied properties of between 1 and 3 units in which an owner of record resides in one unit as their primary residence are exempt.",
+        "scope_words": "Please view the Ordinance on specific requirements for each exemption.",
+        "condition_evidence": "Owner-occupied properties (between 1-3 units) in which an owner of record resides in one of the units as their primary residence",
+        "target_ref": "BMC 13.106",
+        "target_anchor": "Housing providers must include the following Notice to Rental",
+        "target_quote": "Housing providers must include the following Notice to Rental Applicants and Tenants prominently on their application materials, websites, and at any locations under their control that are frequently visited by Applicants:",
+        "decision": {
+          "decision": "does_not_apply",
+          "reason": "This provision imposes a separate obligation regarding the distribution and display of the required applicant notice.",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 3952,
+            "end": 4174,
+            "occurrences": 1,
+            "model_span": "Housing providers must include the following Notice to Rental Applicants and Tenants prominently on their application materials, websites, and at any locations under their control that are frequently visited by Applicants:",
+            "source_span": "Housing providers must include the following Notice to Rental Applicants and Tenants prominently on their application materials, websites, and at any locations under their control that are frequently visited by Applicants:",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 1,
+                "model_text": "Housing providers must include the following Notice to Rental Applicants and Tenants prominently on their application materials, websites, and at any locations under their control that are frequently visited by Applicants:",
+                "status": "exact_match",
+                "start": 3952,
+                "end": 4174
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "does_not_apply",
+        "unresolved_reason": null
+      },
+      {
+        "condition_id": "S4",
+        "provision_id": "P3",
+        "kind": "exemption",
+        "statement": "Units under a rental agreement allowing owners to move back into their home pursuant to BMC 13.76.130 A.9 are exempt.",
+        "scope_words": "Please view the Ordinance on specific requirements for each exemption.",
+        "condition_evidence": "Units under a rental agreement allowing owners to move back to their home in accordance with BMC 13.76.130 A.9",
+        "target_ref": "BMC 13.106",
+        "target_anchor": "It is unlawful to do any of the following",
+        "target_quote": "It is unlawful to do any of the following with regard to current or prospective tenants\nInquire about criminal history\nIndicate that persons with criminal backgrounds will not be considered for housing, including in rental advertisements, application materials, or verbally\nRefuse to rent or terminate a tenancy based on criminal history\nRequire disclosure or authorization for release of criminal history\nDemand a higher security deposit or rental amount based on criminal history\nRefuse to allow the addition of an immediate family member based on the family member’s criminal history\nDisqualify tenants from rental assistance programs such as Section 8 based on criminal history (subject to certain exceptions below)\nTreating rental applicants or tenants differently based on their criminal history",
+        "decision": {
+          "decision": "applies",
+          "reason": "The document lists units under move-back rental agreements under exemptions to the unlawful screening practices.",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 1523,
+            "end": 1922,
+            "occurrences": 1,
+            "model_span": "Exemptions\nPlease view the Ordinance on specific requirements for each exemption.\nLifetime sex offenders\nPublic housing/Section 8 properties limited exemptions\nOwner-occupied properties (between 1-3 units) in which an owner of record resides in one of the units as their primary residence\nUnits under a rental agreement allowing owners to move back to their home in accordance with BMC 13.76.130 A.9",
+            "source_span": "Exemptions\nPlease view the Ordinance on specific requirements for each exemption.\nLifetime sex offenders\nPublic housing/Section 8 properties limited exemptions\nOwner-occupied properties (between 1-3 units) in which an owner of record resides in one of the units as their primary residence\nUnits under a rental agreement allowing owners to move back to their home in accordance with BMC 13.76.130 A.9",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 1,
+                "model_text": "Exemptions\nPlease view the Ordinance on specific requirements for each exemption.\nLifetime sex offenders\nPublic housing/Section 8 properties limited exemptions\nOwner-occupied properties (between 1-3 units) in which an owner of record resides in one of the units as their primary residence\nUnits under a rental agreement allowing owners to move back to their home in accordance with BMC 13.76.130 A.9",
+                "status": "exact_match",
+                "start": 1523,
+                "end": 1922
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "applies",
+        "unresolved_reason": null
+      },
+      {
+        "condition_id": "S4",
+        "provision_id": "P5",
+        "kind": "exemption",
+        "statement": "Units under a rental agreement allowing owners to move back into their home pursuant to BMC 13.76.130 A.9 are exempt.",
+        "scope_words": "Please view the Ordinance on specific requirements for each exemption.",
+        "condition_evidence": "Units under a rental agreement allowing owners to move back to their home in accordance with BMC 13.76.130 A.9",
+        "target_ref": "BMC 13.106",
+        "target_anchor": "If a landlord takes any action against an applicant",
+        "target_quote": "If a landlord takes any action against an applicant or tenant based on criminal history (such as refusing to offer a lease, refusing to add a family member, etc.), the landlord is required to provide the applicant/tenant with written notice and an opportunity to respond.",
+        "decision": {
+          "decision": "does_not_apply",
+          "reason": "This provision concerns written notice and an opportunity to respond when adverse action is taken based on criminal history.",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 2054,
+            "end": 2325,
+            "occurrences": 1,
+            "model_span": "If a landlord takes any action against an applicant or tenant based on criminal history (such as refusing to offer a lease, refusing to add a family member, etc.), the landlord is required to provide the applicant/tenant with written notice and an opportunity to respond.",
+            "source_span": "If a landlord takes any action against an applicant or tenant based on criminal history (such as refusing to offer a lease, refusing to add a family member, etc.), the landlord is required to provide the applicant/tenant with written notice and an opportunity to respond.",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 1,
+                "model_text": "If a landlord takes any action against an applicant or tenant based on criminal history (such as refusing to offer a lease, refusing to add a family member, etc.), the landlord is required to provide the applicant/tenant with written notice and an opportunity to respond.",
+                "status": "exact_match",
+                "start": 2054,
+                "end": 2325
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "does_not_apply",
+        "unresolved_reason": null
+      },
+      {
+        "condition_id": "S4",
+        "provision_id": "P6",
+        "kind": "exemption",
+        "statement": "Units under a rental agreement allowing owners to move back into their home pursuant to BMC 13.76.130 A.9 are exempt.",
+        "scope_words": "Please view the Ordinance on specific requirements for each exemption.",
+        "condition_evidence": "Units under a rental agreement allowing owners to move back to their home in accordance with BMC 13.76.130 A.9",
+        "target_ref": "BMC 13.106",
+        "target_anchor": "Any landlord found to be in violation of the",
+        "target_quote": "Any landlord found to be in violation of the Ordinance shall be subject to administrative fines of at least $1,000 and up to $10,000 per violation, civil damages including actual damages or three times the amount of one month's rent, punitive damages, attorneys' fees and costs, and injunctive relief.",
+        "decision": {
+          "decision": "does_not_apply",
+          "reason": "This provision establishes administrative fines and civil damages for violations of the Ordinance.",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 2478,
+            "end": 2779,
+            "occurrences": 1,
+            "model_span": "Any landlord found to be in violation of the Ordinance shall be subject to administrative fines of at least $1,000 and up to $10,000 per violation, civil damages including actual damages or three times the amount of one month's rent, punitive damages, attorneys' fees and costs, and injunctive relief.",
+            "source_span": "Any landlord found to be in violation of the Ordinance shall be subject to administrative fines of at least $1,000 and up to $10,000 per violation, civil damages including actual damages or three times the amount of one month's rent, punitive damages, attorneys' fees and costs, and injunctive relief.",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 1,
+                "model_text": "Any landlord found to be in violation of the Ordinance shall be subject to administrative fines of at least $1,000 and up to $10,000 per violation, civil damages including actual damages or three times the amount of one month's rent, punitive damages, attorneys' fees and costs, and injunctive relief.",
+                "status": "exact_match",
+                "start": 2478,
+                "end": 2779
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "does_not_apply",
+        "unresolved_reason": null
+      },
+      {
+        "condition_id": "S4",
+        "provision_id": "P9",
+        "kind": "exemption",
+        "statement": "Units under a rental agreement allowing owners to move back into their home pursuant to BMC 13.76.130 A.9 are exempt.",
+        "scope_words": "Please view the Ordinance on specific requirements for each exemption.",
+        "condition_evidence": "Units under a rental agreement allowing owners to move back to their home in accordance with BMC 13.76.130 A.9",
+        "target_ref": "BMC 13.106",
+        "target_anchor": "Housing providers must include the following Notice to Rental",
+        "target_quote": "Housing providers must include the following Notice to Rental Applicants and Tenants prominently on their application materials, websites, and at any locations under their control that are frequently visited by Applicants:",
+        "decision": {
+          "decision": "does_not_apply",
+          "reason": "This provision governs the requirement to publish and distribute the formal notice on application materials and websites.",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 3952,
+            "end": 4174,
+            "occurrences": 1,
+            "model_span": "Housing providers must include the following Notice to Rental Applicants and Tenants prominently on their application materials, websites, and at any locations under their control that are frequently visited by Applicants:",
+            "source_span": "Housing providers must include the following Notice to Rental Applicants and Tenants prominently on their application materials, websites, and at any locations under their control that are frequently visited by Applicants:",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 1,
+                "model_text": "Housing providers must include the following Notice to Rental Applicants and Tenants prominently on their application materials, websites, and at any locations under their control that are frequently visited by Applicants:",
+                "status": "exact_match",
+                "start": 3952,
+                "end": 4174
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "does_not_apply",
+        "unresolved_reason": null
+      },
+      {
+        "condition_id": "S5",
+        "provision_id": "P3",
+        "kind": "exemption",
+        "statement": "Units occupied by existing tenants seeking to sublet or add or replace roommates are exempt.",
+        "scope_words": "Please view the Ordinance on specific requirements for each exemption.",
+        "condition_evidence": "Units occupied by existing tenant(s) seeking to sublet or add/replace roommates",
+        "target_ref": "BMC 13.106",
+        "target_anchor": "It is unlawful to do any of the following",
+        "target_quote": "It is unlawful to do any of the following with regard to current or prospective tenants\nInquire about criminal history\nIndicate that persons with criminal backgrounds will not be considered for housing, including in rental advertisements, application materials, or verbally\nRefuse to rent or terminate a tenancy based on criminal history\nRequire disclosure or authorization for release of criminal history\nDemand a higher security deposit or rental amount based on criminal history\nRefuse to allow the addition of an immediate family member based on the family member’s criminal history\nDisqualify tenants from rental assistance programs such as Section 8 based on criminal history (subject to certain exceptions below)\nTreating rental applicants or tenants differently based on their criminal history",
+        "decision": {
+          "decision": "applies",
+          "reason": "The document lists units occupied by existing tenants seeking to sublet or replace roommates under exemptions to the unlawful screening practices.",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 1523,
+            "end": 2002,
+            "occurrences": 1,
+            "model_span": "Exemptions\nPlease view the Ordinance on specific requirements for each exemption.\nLifetime sex offenders\nPublic housing/Section 8 properties limited exemptions\nOwner-occupied properties (between 1-3 units) in which an owner of record resides in one of the units as their primary residence\nUnits under a rental agreement allowing owners to move back to their home in accordance with BMC 13.76.130 A.9\nUnits occupied by existing tenant(s) seeking to sublet or add/replace roommates",
+            "source_span": "Exemptions\nPlease view the Ordinance on specific requirements for each exemption.\nLifetime sex offenders\nPublic housing/Section 8 properties limited exemptions\nOwner-occupied properties (between 1-3 units) in which an owner of record resides in one of the units as their primary residence\nUnits under a rental agreement allowing owners to move back to their home in accordance with BMC 13.76.130 A.9\nUnits occupied by existing tenant(s) seeking to sublet or add/replace roommates",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 1,
+                "model_text": "Exemptions\nPlease view the Ordinance on specific requirements for each exemption.\nLifetime sex offenders\nPublic housing/Section 8 properties limited exemptions\nOwner-occupied properties (between 1-3 units) in which an owner of record resides in one of the units as their primary residence\nUnits under a rental agreement allowing owners to move back to their home in accordance with BMC 13.76.130 A.9\nUnits occupied by existing tenant(s) seeking to sublet or add/replace roommates",
+                "status": "exact_match",
+                "start": 1523,
+                "end": 2002
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "applies",
+        "unresolved_reason": null
+      },
+      {
+        "condition_id": "S5",
+        "provision_id": "P5",
+        "kind": "exemption",
+        "statement": "Units occupied by existing tenants seeking to sublet or add or replace roommates are exempt.",
+        "scope_words": "Please view the Ordinance on specific requirements for each exemption.",
+        "condition_evidence": "Units occupied by existing tenant(s) seeking to sublet or add/replace roommates",
+        "target_ref": "BMC 13.106",
+        "target_anchor": "If a landlord takes any action against an applicant",
+        "target_quote": "If a landlord takes any action against an applicant or tenant based on criminal history (such as refusing to offer a lease, refusing to add a family member, etc.), the landlord is required to provide the applicant/tenant with written notice and an opportunity to respond.",
+        "decision": {
+          "decision": "does_not_apply",
+          "reason": "This provision sets forth a distinct requirement to give written notice and an opportunity to respond if adverse action is taken.",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 2054,
+            "end": 2325,
+            "occurrences": 1,
+            "model_span": "If a landlord takes any action against an applicant or tenant based on criminal history (such as refusing to offer a lease, refusing to add a family member, etc.), the landlord is required to provide the applicant/tenant with written notice and an opportunity to respond.",
+            "source_span": "If a landlord takes any action against an applicant or tenant based on criminal history (such as refusing to offer a lease, refusing to add a family member, etc.), the landlord is required to provide the applicant/tenant with written notice and an opportunity to respond.",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 1,
+                "model_text": "If a landlord takes any action against an applicant or tenant based on criminal history (such as refusing to offer a lease, refusing to add a family member, etc.), the landlord is required to provide the applicant/tenant with written notice and an opportunity to respond.",
+                "status": "exact_match",
+                "start": 2054,
+                "end": 2325
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "does_not_apply",
+        "unresolved_reason": null
+      },
+      {
+        "condition_id": "S5",
+        "provision_id": "P6",
+        "kind": "exemption",
+        "statement": "Units occupied by existing tenants seeking to sublet or add or replace roommates are exempt.",
+        "scope_words": "Please view the Ordinance on specific requirements for each exemption.",
+        "condition_evidence": "Units occupied by existing tenant(s) seeking to sublet or add/replace roommates",
+        "target_ref": "BMC 13.106",
+        "target_anchor": "Any landlord found to be in violation of the",
+        "target_quote": "Any landlord found to be in violation of the Ordinance shall be subject to administrative fines of at least $1,000 and up to $10,000 per violation, civil damages including actual damages or three times the amount of one month's rent, punitive damages, attorneys' fees and costs, and injunctive relief.",
+        "decision": {
+          "decision": "does_not_apply",
+          "reason": "This provision establishes civil remedies and administrative fines rather than screening rules.",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 2478,
+            "end": 2779,
+            "occurrences": 1,
+            "model_span": "Any landlord found to be in violation of the Ordinance shall be subject to administrative fines of at least $1,000 and up to $10,000 per violation, civil damages including actual damages or three times the amount of one month's rent, punitive damages, attorneys' fees and costs, and injunctive relief.",
+            "source_span": "Any landlord found to be in violation of the Ordinance shall be subject to administrative fines of at least $1,000 and up to $10,000 per violation, civil damages including actual damages or three times the amount of one month's rent, punitive damages, attorneys' fees and costs, and injunctive relief.",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 1,
+                "model_text": "Any landlord found to be in violation of the Ordinance shall be subject to administrative fines of at least $1,000 and up to $10,000 per violation, civil damages including actual damages or three times the amount of one month's rent, punitive damages, attorneys' fees and costs, and injunctive relief.",
+                "status": "exact_match",
+                "start": 2478,
+                "end": 2779
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "does_not_apply",
+        "unresolved_reason": null
+      },
+      {
+        "condition_id": "S5",
+        "provision_id": "P9",
+        "kind": "exemption",
+        "statement": "Units occupied by existing tenants seeking to sublet or add or replace roommates are exempt.",
+        "scope_words": "Please view the Ordinance on specific requirements for each exemption.",
+        "condition_evidence": "Units occupied by existing tenant(s) seeking to sublet or add/replace roommates",
+        "target_ref": "BMC 13.106",
+        "target_anchor": "Housing providers must include the following Notice to Rental",
+        "target_quote": "Housing providers must include the following Notice to Rental Applicants and Tenants prominently on their application materials, websites, and at any locations under their control that are frequently visited by Applicants:",
+        "decision": {
+          "decision": "does_not_apply",
+          "reason": "This provision imposes a separate affirmative requirement to include the formal notice on application materials and websites.",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 3952,
+            "end": 4174,
+            "occurrences": 1,
+            "model_span": "Housing providers must include the following Notice to Rental Applicants and Tenants prominently on their application materials, websites, and at any locations under their control that are frequently visited by Applicants:",
+            "source_span": "Housing providers must include the following Notice to Rental Applicants and Tenants prominently on their application materials, websites, and at any locations under their control that are frequently visited by Applicants:",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 1,
+                "model_text": "Housing providers must include the following Notice to Rental Applicants and Tenants prominently on their application materials, websites, and at any locations under their control that are frequently visited by Applicants:",
+                "status": "exact_match",
+                "start": 3952,
+                "end": 4174
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "does_not_apply",
+        "unresolved_reason": null
+      }
+    ],
+    "candidate_indices": [],
+    "accepted_count": 0,
+    "rejected_count": 0,
+    "errors": []
+  },
+  "document_status": "review_required",
+  "review_reasons": [
+    "4 candidate record(s) held, not published, because the time of application is unresolved: ['temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force']"
+  ],
+  "warnings": [
+    "candidate 0 held: status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+    "candidate 1 held: status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+    "candidate 2 held: status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+    "candidate 3 held: status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+  ],
+  "errors": [],
+  "raw_response_text": "{\n  \"document\": {\n    \"posture\": \"official_explanatory_page\",\n    \"evidence\": \"Ronald V. Dellums Fair Chance Access to Housing Ordinance | Berkeley Rent Board\"\n  },\n  \"provisions\": [\n    {\n      \"id\": \"P1\",\n      \"ref\": \"BMC 13.106\",\n      \"anchor\": \"The Fair Chance Access to Housing Ordinance prohibits rental\",\n      \"summary\": \"Introductory summary of the Fair Chance Access to Housing Ordinance screening prohibitions\",\n      \"role\": \"boilerplate\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"introductory overview and purpose summary; operative prohibitions are detailed in subsequent provisions\"\n    },\n    {\n      \"id\": \"P2\",\n      \"ref\": \"BMC 13.106\",\n      \"anchor\": \"On April 14, 2020, Berkeley City Council passed\",\n      \"summary\": \"Enactment date and ordinance citation line\",\n      \"role\": \"history\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"legislative enactment history\"\n    },\n    {\n      \"id\": \"P3\",\n      \"ref\": \"BMC 13.106\",\n      \"anchor\": \"It is unlawful to do any of the following\",\n      \"summary\": \"List of unlawful acts regarding the criminal history of current or prospective tenants\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"screening_restrictions\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P4\",\n      \"ref\": \"BMC 13.106\",\n      \"anchor\": \"Exemptions Please view the Ordinance on specific requirements\",\n      \"summary\": \"Enumerated exemptions from the ordinance\",\n      \"role\": \"exemption\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"scope condition, see global_scope (S1-S5)\"\n    },\n    {\n      \"id\": \"P5\",\n      \"ref\": \"BMC 13.106\",\n      \"anchor\": \"If a landlord takes any action against an applicant\",\n      \"summary\": \"Written notice and opportunity to respond required when taking adverse action based on criminal history\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"screening_restrictions\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P6\",\n      \"ref\": \"BMC 13.106\",\n      \"anchor\": \"Any landlord found to be in violation of the\",\n      \"summary\": \"Administrative fines, civil damages, punitive damages, attorney fees, and injunctive relief for violations\",\n      \"role\": \"remedy\",\n      \"scope\": \"in_scope\",\n      \"category\": \"screening_restrictions\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P7\",\n      \"ref\": \"BMC 13.106\",\n      \"anchor\": \"The City of Berkeley Rent Stabilization Board will be\",\n      \"summary\": \"Rent Stabilization Board administration of complaints and complaint filing instructions\",\n      \"role\": \"procedure\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"administrative complaint procedures and enforcement authority\"\n    },\n    {\n      \"id\": \"P8\",\n      \"ref\": \"BMC 13.106\",\n      \"anchor\": \"Housing providers may respond to a complaint and participate\",\n      \"summary\": \"Housing provider response form and hearing process instructions\",\n      \"role\": \"procedure\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"administrative hearing procedures\"\n    },\n    {\n      \"id\": \"P9\",\n      \"ref\": \"BMC 13.106\",\n      \"anchor\": \"Housing providers must include the following Notice to Rental\",\n      \"summary\": \"Requirement to prominently include the Notice to Rental Applicants and Tenants on materials, websites, and locations\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"screening_restrictions\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P10\",\n      \"ref\": \"BMC 13.106\",\n      \"anchor\": \"Resources Fair Chance Notice to Rental Property Owners\",\n      \"summary\": \"Links to forms, resources, FAQs, community legal services, news, and contact information\",\n      \"role\": \"boilerplate\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"informational links, news, and agency contact details\"\n    }\n  ],\n  \"global_scope\": [\n    {\n      \"id\": \"S1\",\n      \"kind\": \"exemption\",\n      \"statement\": \"Lifetime sex offenders are exempt as specified in the Ordinance.\",\n      \"citation\": \"BMC 13.106\",\n      \"scope_mode\": \"structural\",\n      \"scope_quote\": \"Please view the Ordinance on specific requirements for each exemption.\",\n      \"source_provision_id\": \"P4\",\n      \"governed_provision_ids\": [\"P1\", \"P2\", \"P3\", \"P4\", \"P5\", \"P6\", \"P7\", \"P8\", \"P9\"],\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Lifetime sex offenders\"\n        }\n      ]\n    },\n    {\n      \"id\": \"S2\",\n      \"kind\": \"exemption\",\n      \"statement\": \"Public housing and Section 8 properties have limited exemptions as specified in the Ordinance.\",\n      \"citation\": \"BMC 13.106\",\n      \"scope_mode\": \"structural\",\n      \"scope_quote\": \"Please view the Ordinance on specific requirements for each exemption.\",\n      \"source_provision_id\": \"P4\",\n      \"governed_provision_ids\": [\"P1\", \"P2\", \"P3\", \"P4\", \"P5\", \"P6\", \"P7\", \"P8\", \"P9\"],\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Public housing/Section 8 properties limited exemptions\"\n        }\n      ]\n    },\n    {\n      \"id\": \"S3\",\n      \"kind\": \"exemption\",\n      \"statement\": \"Owner-occupied properties of between 1 and 3 units in which an owner of record resides in one unit as their primary residence are exempt.\",\n      \"citation\": \"BMC 13.106\",\n      \"scope_mode\": \"structural\",\n      \"scope_quote\": \"Please view the Ordinance on specific requirements for each exemption.\",\n      \"source_provision_id\": \"P4\",\n      \"governed_provision_ids\": [\"P1\", \"P2\", \"P3\", \"P4\", \"P5\", \"P6\", \"P7\", \"P8\", \"P9\"],\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Owner-occupied properties (between 1-3 units) in which an owner of record resides in one of the units as their primary residence\"\n        }\n      ]\n    },\n    {\n      \"id\": \"S4\",\n      \"kind\": \"exemption\",\n      \"statement\": \"Units under a rental agreement allowing owners to move back into their home pursuant to BMC 13.76.130 A.9 are exempt.\",\n      \"citation\": \"BMC 13.106\",\n      \"scope_mode\": \"structural\",\n      \"scope_quote\": \"Please view the Ordinance on specific requirements for each exemption.\",\n      \"source_provision_id\": \"P4\",\n      \"governed_provision_ids\": [\"P1\", \"P2\", \"P3\", \"P4\", \"P5\", \"P6\", \"P7\", \"P8\", \"P9\"],\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Units under a rental agreement allowing owners to move back to their home in accordance with BMC 13.76.130 A.9\"\n        }\n      ]\n    },\n    {\n      \"id\": \"S5\",\n      \"kind\": \"exemption\",\n      \"statement\": \"Units occupied by existing tenants seeking to sublet or add or replace roommates are exempt.\",\n      \"citation\": \"BMC 13.106\",\n      \"scope_mode\": \"structural\",\n      \"scope_quote\": \"Please view the Ordinance on specific requirements for each exemption.\",\n      \"source_provision_id\": \"P4\",\n      \"governed_provision_ids\": [\"P1\", \"P2\", \"P3\", \"P4\", \"P5\", \"P6\", \"P7\", \"P8\", \"P9\"],\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Units occupied by existing tenant(s) seeking to sublet or add/replace roommates\"\n        }\n      ]\n    }\n  ],\n  \"rules\": [\n    {\n      \"category\": \"screening_restrictions\",\n      \"citation\": \"BMC 13.106\",\n      \"provision_ids\": [\"P3\"],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"It is unlawful to do any of the following with regard to current or prospective tenants\\nInquire about criminal history\\nIndicate that persons with criminal backgrounds will not be considered for housing, including in rental advertisements, application materials, or verbally\\nRefuse to rent or terminate a tenancy based on criminal history\\nRequire disclosure or authorization for release of criminal history\\nDemand a higher security deposit or rental amount based on criminal history\\nRefuse to allow the addition of an immediate family member based on the family member’s criminal history\\nDisqualify tenants from rental assistance programs such as Section 8 based on criminal history (subject to certain exceptions below)\\nTreating rental applicants or tenants differently based on their criminal history\"\n        }\n      ],\n      \"title\": \"Prohibited Actions Regarding Criminal History\",\n      \"requirement\": \"With regard to current or prospective tenants, it is unlawful to inquire about criminal history, indicate that persons with criminal backgrounds will not be considered for housing, refuse to rent or terminate a tenancy based on criminal history, require disclosure or authorization for release of criminal history, demand a higher security deposit or rental amount based on criminal history, refuse to allow the addition of an immediate family member based on criminal history, disqualify tenants from rental assistance programs based on criminal history, or treat applicants or tenants differently based on criminal history.\",\n      \"key_value\": null,\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": \"On April 14, 2020, Berkeley City Council passed the Fair Chance Access to Housing Ordinance (BMC 13.106).\",\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": null,\n      \"effective_date_evidence_kind\": null,\n      \"effective_date\": null,\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"screening_restrictions\",\n      \"citation\": \"BMC 13.106\",\n      \"provision_ids\": [\"P5\"],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"If a landlord takes any action against an applicant or tenant based on criminal history (such as refusing to offer a lease, refusing to add a family member, etc.), the landlord is required to provide the applicant/tenant with written notice and an opportunity to respond.\"\n        }\n      ],\n      \"title\": \"Written Notice and Opportunity to Respond to Criminal History Adverse Action\",\n      \"requirement\": \"If a landlord takes any action against an applicant or tenant based on criminal history (such as refusing to offer a lease or refusing to add a family member), the landlord must provide the applicant or tenant with written notice and an opportunity to respond.\",\n      \"key_value\": null,\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": \"On April 14, 2020, Berkeley City Council passed the Fair Chance Access to Housing Ordinance (BMC 13.106).\",\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": null,\n      \"effective_date_evidence_kind\": null,\n      \"effective_date\": null,\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"screening_restrictions\",\n      \"citation\": \"BMC 13.106\",\n      \"provision_ids\": [\"P6\"],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Any landlord found to be in violation of the Ordinance shall be subject to administrative fines of at least $1,000 and up to $10,000 per violation, civil damages including actual damages or three times the amount of one month's rent, punitive damages, attorneys' fees and costs, and injunctive relief.\"\n        }\n      ],\n      \"title\": \"Civil Penalties and Remedies for Ordinance Violations\",\n      \"requirement\": \"A landlord found in violation of the Ordinance is subject to administrative fines between $1,000 and $10,000 per violation, civil damages including actual damages or three times the amount of one month's rent, punitive damages, attorneys' fees and costs, and injunctive relief.\",\n      \"key_value\": \"administrative fines of $1,000 to $10,000 per violation; civil damages up to 3x one month's rent\",\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": \"On April 14, 2020, Berkeley City Council passed the Fair Chance Access to Housing Ordinance (BMC 13.106).\",\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": null,\n      \"effective_date_evidence_kind\": null,\n      \"effective_date\": null,\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"screening_restrictions\",\n      \"citation\": \"BMC 13.106\",\n      \"provision_ids\": [\"P9\"],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Housing providers must include the following Notice to Rental Applicants and Tenants prominently on their application materials, websites, and at any locations under their control that are frequently visited by Applicants:\"\n        }\n      ],\n      \"title\": \"Mandatory Notice to Rental Applicants and Tenants Distribution\",\n      \"requirement\": \"Housing providers must prominently include the Notice to Rental Applicants and Tenants on their application materials, websites, and at any locations under their control that are frequently visited by applicants.\",\n      \"key_value\": null,\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": \"On April 14, 2020, Berkeley City Council passed the Fair Chance Access to Housing Ordinance (BMC 13.106).\",\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": null,\n      \"effective_date_evidence_kind\": null,\n      \"effective_date\": null,\n      \"conflict_note\": null\n    }\n  ],\n  \"no_rules_justification\": null\n}"
+}

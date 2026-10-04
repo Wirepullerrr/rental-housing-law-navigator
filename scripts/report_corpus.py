@@ -10,8 +10,10 @@ Writes into --run-dir:
   review_queue.json          every review_required document, with machine-readable reason codes
   rules.json                 candidate Module-A output: publishable accepted records only,
                              in the submission-template wrapper {"rules": [...]}
-  duplicate_clusters.json    likely duplicate / overlapping records across documents (audit only;
-                             nothing is merged or removed)
+  duplicate_clusters.json    exact same-source duplicates the pipeline suppressed, and likely duplicate /
+                             overlapping records within and across documents (audit only; nothing
+                             further is merged or removed)
+  delta_vs_baseline.json     (with --baseline-dir) every candidate whose publishability changed
 
 Spend figures are estimates from API-reported token usage, never a billing balance.
 Not legal advice.
@@ -33,7 +35,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
 from navigator import starter_pack as sp  # noqa: E402
 from navigator.extraction.config import PRICE_PER_MTOK  # noqa: E402
-from navigator.extraction.corpus import DISCLAIMER, estimate_cost, summary_path, supplied_documents  # noqa: E402
+from navigator.extraction.corpus import (DISCLAIMER, _display, estimate_cost, summary_path,  # noqa: E402
+                                         supplied_documents)
 from navigator.extraction.extractor import load_source  # noqa: E402
 from navigator.extraction.models import ExtractionRun  # noqa: E402
 from navigator.extraction.normalize import level_for  # noqa: E402
@@ -58,6 +61,9 @@ def _held_codes(run: ExtractionRun) -> list[dict[str, Any]]:
         rel = c.temporal.get("relative_resolution") or {}
         if "legislative status undetermined" in sd:
             code, sub = "other", "legislative_status_conflict"
+        elif "end boundar" in sd or "version/history evidence has a date" in sd or "stated end day" in sd \
+                or "start after as_of but an end" in sd:
+            code, sub = "unresolved_effective_date", f"validity window: {sd}"
         elif "relative or conditional" in sd:
             reason = rel.get("reason") or ""
             code = ("unsupported_date_formula" if "supported grammar" in reason or "unsupported" in reason
@@ -136,7 +142,9 @@ def document_audit(run: ExtractionRun, ledger: list[dict[str, Any]], body: str) 
     targets = rp.targets if rp is not None else []
     accepted = [c for c in run.candidates if c.accepted]
     held = [c for c in run.candidates if c.held]
-    rejected = [c for c in run.candidates if not c.accepted and not c.held]
+    historical = [c for c in run.candidates if c.historical]
+    suppressed = [c for c in run.candidates if c.duplicate_of is not None]
+    rejected = [c for c in run.candidates if not (c.accepted or c.held or c.historical or c.duplicate_of is not None)]
     mine = [e for e in ledger if e["doc_id"] == run.source.doc_id]
     usage = {k: _usage(mine, k) for k in ("primary", "repair")}
     cost = {k: round(sum(e["estimated_cost_usd"] for e in mine if e["pass"] == k), 6) for k in usage}
@@ -180,6 +188,14 @@ def document_audit(run: ExtractionRun, ledger: list[dict[str, Any]], body: str) 
         "repair_invoked": bool(rp is not None and rp.invoked),
         "inventory_count": len(run.provision_inventory),
         "candidates": run.candidate_count, "accepted": len(accepted), "rejected": len(rejected), "held": len(held),
+        "historical": len(historical), "suppressed_duplicates": len(suppressed),
+        "historical_records": [{"candidate": c.index, "team_rule_id": c.rule["team_rule_id"],
+                                "temporal_state": c.temporal_state, "effective_date": c.rule["effective_date"],
+                                "end_exclusive": c.validity.get("end_exclusive"),
+                                "evidence": [b for b in c.validity.get("boundaries", []) if b["role"] == "end"],
+                                "derivation": c.status_derivation} for c in historical],
+        "dedupe": run.dedupe,
+        "temporal_states": dict(Counter(str(c.temporal_state) for c in run.candidates)),
         "repair_targets_by_type": {**{k: by_type.get(k, 0) for k in TARGET_TYPES},
                                    "scope_mapping_challenge": len(run.scope_mappings)},
         "target_outcomes": {**{k: outcomes.get(k, 0) for k in ("accepted_rule", "verified_out_of_scope",
@@ -189,8 +205,11 @@ def document_audit(run: ExtractionRun, ledger: list[dict[str, Any]], body: str) 
         "citations": {"accepted": len(accepted),
                       "exact_match": sum(c.citation.status == "exact_match" for c in accepted),
                       "normalized_match": sum(c.citation.status == "normalized_match" for c in accepted),
+                      "layout_normalized_match": sum(c.citation.status == "layout_normalized_match"
+                                                     for c in accepted),
                       "reconstructed_cross_page": sum(c.citation.reconstructed for c in accepted),
                       "raw_substring": sum(r["quoted_span"] in body for r in run.rules),
+                      "all_candidates": dict(Counter(c.citation.status for c in run.candidates if c.citation)),
                       "rejected_for_citation": sum(any(x.startswith("citation: quote not found") for x in
                                                        c.rejection_reasons) for c in rejected)},
         "global_scope": [{"id": g["id"], "kind": g["kind"], "declared_mode": g.get("scope_mode"),
@@ -238,9 +257,12 @@ def build_rules(runs: dict[str, ExtractionRun], bodies: dict[str, str], manifest
                 problems["provenance_failures"].append(f"{where}: jurisdiction differs from the manifest")
             if c.citation is None or c.citation.status == "failed" or rule["quoted_span"] not in bodies[doc_id]:
                 problems["citation_failures"].append(f"{where}: quoted_span is not verified raw source text")
+            if (c.historical or c.duplicate_of is not None or rule["status"] is None
+                    or (c.validity.get("end_exclusive") or "9999") <= run.as_of):
+                problems["temporal_failures"].append(f"{where}: held, historical, suppressed or expired record")
             rules.append(rule)
     return rules, {k: problems.get(k, []) for k in ("schema_failures", "duplicate_ids", "citation_failures",
-                                                     "provenance_failures")}
+                                                     "provenance_failures", "temporal_failures")}
 
 
 # ---------------------------------------------------------------- duplicate / overlap audit
@@ -310,10 +332,15 @@ def _components(pairs: list[tuple[int, int]], n: int) -> list[list[int]]:
     return [sorted(g) for g in groups.values() if len(g) > 1]
 
 
-def duplicate_audit(rules: list[dict[str, Any]], bodies: dict[str, str]) -> dict[str, Any]:
+def duplicate_audit(rules: list[dict[str, Any]], bodies: dict[str, str],
+                    runs: dict[str, ExtractionRun] | None = None) -> dict[str, Any]:
     """`rules`: the published records plus held records (marked "_published": False), so that a
     statute restated by a secondary page whose records are held is still found."""
     clusters: list[dict[str, Any]] = []
+    # 0. exact same-source duplicates already suppressed by the pipeline (one record published)
+    for doc_id, run in sorted((runs or {}).items()):
+        for entry in run.dedupe:
+            clusters.append({"type": "suppressed_exact_duplicate", "documents": [doc_id], **entry, "rules": []})
     # 1. source documents whose supplied texts overlap heavily (the same article captured twice)
     docs = sorted(bodies)
     sh = {d: _shingles(bodies[d]) for d in docs}
@@ -355,7 +382,8 @@ def duplicate_audit(rules: list[dict[str, Any]], bodies: dict[str, str]) -> dict
     inner = [(i, j) for idx in by_doc.values() for a, i in enumerate(idx) for j in idx[a + 1:]
              if norms[i] in norms[j] or norms[j] in norms[i]]
     for comp in _components(inner, len(rules)):
-        clusters.append({"type": "same_text_within_document", "documents": [rules[comp[0]]["source_doc_id"]],
+        clusters.append({"type": "possible_semantic_duplicate", "basis": "one quote contains the other (different "
+                         "passages: not merged automatically)", "documents": [rules[comp[0]]["source_doc_id"]],
                          "rules": [_member(rules[i]["source_doc_id"], rules[i]) for i in comp]})
     toks = [set(_norm(r["quoted_span"]).split()) for r in rules]
     contained = {frozenset(p) for p in inner}
@@ -363,8 +391,8 @@ def duplicate_audit(rules: list[dict[str, Any]], bodies: dict[str, str]) -> dict
                if frozenset((i, j)) not in contained and rules[i]["category"] == rules[j]["category"]
                and _jaccard(toks[i], toks[j]) >= 0.5]
     for comp in _components(similar, len(rules)):
-        clusters.append({"type": "similar_text_within_document", "threshold": "word-set Jaccard >= 0.5",
-                         "documents": [rules[comp[0]]["source_doc_id"]],
+        clusters.append({"type": "possible_semantic_duplicate", "basis": "similar wording, word-set Jaccard >= 0.5 "
+                         "(may also be distinct sibling provisions)", "documents": [rules[comp[0]]["source_doc_id"]],
                          "rules": [_member(rules[i]["source_doc_id"], rules[i]) for i in comp]})
     # 5. lexically overlapping quotes, same jurisdiction and category, different documents
     pairs = [(i, j) for i in range(len(rules)) for j in range(i + 1, len(rules))
@@ -376,9 +404,11 @@ def duplicate_audit(rules: list[dict[str, Any]], bodies: dict[str, str]) -> dict
                          "rules": [_member(rules[i]["source_doc_id"], rules[i]) for i in comp]})
     return {"note": ("Audit only: likely duplicates and overlaps found by deterministic text and citation "
                      "matching, over published records and held (unpublished) records. Nothing was merged or "
-                     "removed; any later deduplication must keep provenance and temporal distinctions (status, "
-                     "effective_date). 'similar_text_within_document' also lists distinct sibling provisions "
-                     "with parallel wording. Not legal advice."),
+                     "removed beyond the pipeline's exact same-source suppression ('suppressed_exact_duplicate'); "
+                     "any later deduplication must keep provenance and temporal distinctions (status, "
+                     "effective_date). 'possible_semantic_duplicate' clusters quote DIFFERENT passages and are "
+                     "never merged automatically; some are distinct sibling provisions with parallel wording. "
+                     "Not legal advice."),
             "counts": dict(Counter(c["type"] for c in clusters)),
             "counts_with_two_or_more_published": dict(Counter(
                 c["type"] for c in clusters if sum(m["published"] for m in c["rules"]) >= 2)),
@@ -393,6 +423,10 @@ def corpus_summary(audits: list[dict[str, Any]], unprocessed: list[dict[str, Any
     cands = [c for run in runs.values() for c in run.candidates]
     accepted = [c for c in cands if c.accepted]
     held = [c for c in cands if c.held]
+    historical = [c for c in cands if c.historical]
+    suppressed = [c for c in cands if c.duplicate_of is not None]
+    evidence = Counter(chk.status for c in cands
+                       for chk in (c.status_evidence, c.version_evidence, c.effective_date_evidence) if chk)
     targets = [t for run in runs.values() if run.repair is not None for t in run.repair.targets]
     mappings = [m for run in runs.values() for m in run.scope_mappings]
     conds = [g for run in runs.values() for g in run.global_scope]
@@ -415,10 +449,15 @@ def corpus_summary(audits: list[dict[str, Any]], unprocessed: list[dict[str, Any
             "provider_failures": [r["doc_id"] for r in failures],
             "unprocessed": unprocessed},
         "rules": {"total_candidates": len(cands), "accepted": len(accepted),
-                  "rejected": len(cands) - len(accepted) - len(held), "held": len(held),
+                  "rejected": len(cands) - len(accepted) - len(held) - len(historical) - len(suppressed),
+                  "held": len(held), "historical": len(historical), "suppressed_exact_duplicates": len(suppressed),
                   "final_publishable_records": len(rules)},
         "citations": {"exact_match": sum(c.citation.status == "exact_match" for c in accepted),
                       "normalized_match": sum(c.citation.status == "normalized_match" for c in accepted),
+                      "layout_normalized_match": sum(c.citation.status == "layout_normalized_match"
+                                                     for c in accepted),
+                      "verifier_all_candidate_quotes": dict(Counter(c.citation.status for c in cands if c.citation)),
+                      "verifier_all_status_version_date_evidence": dict(evidence),
                       "reconstructed_cross_page": sum(c.citation.reconstructed for c in accepted),
                       "failures_among_candidates": sum(c.citation is not None and c.citation.status == "failed"
                                                        for c in cands),
@@ -450,7 +489,15 @@ def corpus_summary(audits: list[dict[str, Any]], unprocessed: list[dict[str, Any
             "pending_records": sum(c.rule["status"] == "pending" for c in accepted),
             "failed_records": sum(c.rule["status"] == "failed" for c in accepted),
             "not_yet_effective_records": sum(c.rule["status"] == "not_yet_effective" for c in accepted),
-            "held_temporal_records": len(held)},
+            "held_temporal_records": len(held),
+            "historical_records": dict(Counter(c.temporal_state for c in historical)),
+            "published_with_future_end_boundary": sum(bool(c.validity.get("end_exclusive")) for c in accepted),
+            "held_by_validity_window": sum((c.status_derivation or "").startswith("temporal resolution required")
+                                           and "validity" not in (c.status_derivation or "")
+                                           and ("end boundar" in (c.status_derivation or "")
+                                                or "version/history evidence has a date" in (c.status_derivation or ""))
+                                           for c in held),
+            "validity_resolver": "validity-window/v1"},
         "scope": {
             "conditions_by_mode": dict(Counter(str((g.get("scope") or {}).get("mode")) for g in conds)),
             "structural_mappings": sum((g.get("scope") or {}).get("mode") == "structural" and g["propagated"]
@@ -478,11 +525,52 @@ def corpus_summary(audits: list[dict[str, Any]], unprocessed: list[dict[str, Any
     }
 
 
+def _state(c: dict[str, Any]) -> str:
+    if c.get("accepted"):
+        return "published"
+    if c.get("historical"):
+        return f"historical:{c.get('temporal_state')}"
+    if c.get("duplicate_of") is not None:
+        return "suppressed_exact_duplicate"
+    return "held" if c.get("held") else "rejected"
+
+
+def baseline_delta(baseline_dir: Path, runs: dict[str, ExtractionRun]) -> dict[str, Any]:
+    """Every candidate whose publishability differs from the baseline artifact of its document."""
+    changes, counts = [], Counter()
+    for doc_id, run in sorted(runs.items()):
+        path = baseline_dir / "documents" / f"{doc_id}_extraction.json"
+        if not path.is_file():
+            continue
+        old = json.loads(path.read_text(encoding="utf-8"))["candidates"]
+        new = [c.model_dump() for c in run.candidates]
+        for a, b in zip(old, new):
+            before, after = _state(a), _state(b)
+            if before == after:
+                continue
+            reason = ("recovered: temporal (validity window)" if before == "rejected" and any(
+                          "version annotation is dated" in x for x in a["rejection_reasons"]) else
+                      "recovered: citation (layout-only whitespace)" if before in ("rejected", "held") and any(
+                          x.startswith("citation:") for x in a["rejection_reasons"]) else
+                      "removed: expired (historical)" if after.startswith("historical") else
+                      "removed: exact same-source duplicate" if after == "suppressed_exact_duplicate" else "other")
+            counts[(before, after, reason)] += 1
+            rule = b.get("rule") or {}
+            changes.append({"doc_id": doc_id, "candidate": b["index"], "before": before, "after": after,
+                            "reason": reason, "team_rule_id": rule.get("team_rule_id"),
+                            "citation": rule.get("citation"), "status": rule.get("status"),
+                            "effective_date": rule.get("effective_date"),
+                            "duplicate_of": b.get("duplicate_of"), "temporal_state": b.get("temporal_state")})
+    return {"baseline": _display(baseline_dir) if baseline_dir.is_absolute() else baseline_dir.as_posix(),
+            "counts": {" | ".join(k): v for k, v in sorted(counts.items())}, "changes": changes}
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description="Offline post-run report for a corpus extraction stage.")
     parser.add_argument("--run-dir", type=Path, required=True)
     parser.add_argument("--unprocessed", action="append", default=[],
                         help="DOC=reason for a supplied-text document deliberately not sent")
+    parser.add_argument("--baseline-dir", type=Path, help="an earlier stage directory to compare publishability with")
     args = parser.parse_args(argv)
     if hasattr(sys.stdout, "reconfigure"):
         sys.stdout.reconfigure(errors="replace")
@@ -534,9 +622,13 @@ def main(argv: list[str] | None = None) -> int:
             "queue": queue})
 
     held = [{**c.rule, "_published": False} for d in sorted(runs) for c in runs[d].candidates if c.held]
-    dup = duplicate_audit(rules + held, {d: bodies[d] for d in runs})
+    dup = duplicate_audit(rules + held, {d: bodies[d] for d in runs}, runs)
     _write(args.run_dir / "duplicate_clusters.json", dup)
 
+    if args.baseline_dir is not None:
+        delta = baseline_delta(args.baseline_dir, runs)
+        _write(args.run_dir / "delta_vs_baseline.json", delta)
+        print(f"delta vs {args.baseline_dir}: {delta['counts']}")
     d, r = summary["documents"], summary["rules"]
     print(f"documents: discovered {d['supplied_text_discovered']}  with artifact {d['processed_with_artifact']}  "
           f"live {d['processed_live']}  cache-hit {d['resumed_or_cache_hit']}  complete {d['complete']}  "

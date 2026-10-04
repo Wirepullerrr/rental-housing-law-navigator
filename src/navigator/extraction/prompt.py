@@ -333,6 +333,26 @@ DOCUMENT>>>
 
 USER_TEMPLATE = _METADATA + "\n" + _DOCUMENT
 
+# Large-document mode (M3.3, chunked.py). The system instruction, the response schema and every
+# legal instruction are the unchanged v7 ones; only the framing of the text says it is an excerpt.
+CHUNK_MODE_VERSION = "v7-chunk-1"
+_CHUNK_NOTICE = """\
+Large-document mode: this request covers EXCERPT {k} of {n} of the document (raw characters \
+{start}-{end} of {total}). The other excerpts are sent in separate requests and the system merges \
+the results. Apply every instruction to THIS excerpt only: list in `provisions` only provisions whose \
+text is shown in this excerpt, extract only rules whose text is shown here, and quote only text shown \
+here (the segment numbers are the document's own). Give a no_rules_justification only if THIS excerpt \
+has no in-scope legal content. Nearest heading before this excerpt: {heading}
+"""
+_EXCERPTS = """\
+Only {what} of the document are between the markers (the segment numbers are the document's own). \
+They may include website navigation or login text; ignore anything that is not legal content.
+
+<<<DOCUMENT
+{body}
+DOCUMENT>>>
+"""
+
 
 def _metadata(meta: SourceMeta) -> dict[str, str]:
     return {"doc_id": meta.doc_id, "jurisdiction": meta.jurisdiction, "url": meta.url,
@@ -344,11 +364,23 @@ def render_prompt(meta: SourceMeta, body: str) -> tuple[str, str]:
     return SYSTEM_INSTRUCTION, USER_TEMPLATE.format(**_metadata(meta), body=body)
 
 
+def render_chunk_prompt(meta: SourceMeta, body: str, k: int, n: int, start: int, end: int, total: int,
+                        heading: str | None) -> tuple[str, str]:
+    """(system_instruction, user_prompt) for excerpt k of n in large-document mode (chunked.py):
+    the v7 instruction unchanged, the excerpt framed as such."""
+    notice = _CHUNK_NOTICE.format(k=k, n=n, start=start, end=end, total=total,
+                                  heading=f'"{heading}"' if heading else "(none; the excerpt starts the document)")
+    return SYSTEM_INSTRUCTION, (_METADATA.format(**_metadata(meta)) + "\n" + notice + "\n"
+                                + _EXCERPTS.format(what=f"excerpt {k} of {n}", body=body))
+
+
 def render_repair_prompt(meta: SourceMeta, body: str, scope: list[dict[str, Any]],
-                         targets: list[dict[str, Any]], mappings: list[dict[str, Any]] = ()) -> tuple[str, str]:
+                         targets: list[dict[str, Any]], mappings: list[dict[str, Any]] = (),
+                         excerpts: str | None = None) -> tuple[str, str]:
     """Return (system_instruction, user_prompt) for the targeted repair pass. `scope` holds
     verified document-level conditions; `targets` the deterministic repair targets (repair.py);
-    `mappings` the named-subject (condition, provision) pairs to verify (scope.py)."""
+    `mappings` the named-subject (condition, provision) pairs to verify (scope.py).
+    `excerpts` (large-document mode only) names the excerpts `body` consists of."""
 
     def reach(s: dict[str, Any]) -> str:
         if s["scope"]["mode"] == "named_subject":
@@ -385,5 +417,7 @@ def render_repair_prompt(meta: SourceMeta, body: str, scope: list[dict[str, Any]
             + ("\n".join(target_lines) or "- (none)")
             + "\n\nScope mappings to verify (one decision for every pair; never a rule):\n"
             + ("\n".join(mapping_lines) or "- (none)")
-            + "\n\n" + _DOCUMENT.format(body=body))
+            + "\n\n" + (_DOCUMENT.format(body=body) if excerpts is None
+                          else _EXCERPTS.format(what=f"the excerpts that contain these targets ({excerpts})",
+                                                body=body)))
     return REPAIR_SYSTEM_INSTRUCTION, user

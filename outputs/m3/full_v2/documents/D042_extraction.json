@@ -1,0 +1,998 @@
+{
+  "disclaimer": "Not legal advice. Automated extraction for a research prototype; verify against the cited source.",
+  "run_at": "2026-10-04T06:34:26+00:00",
+  "source": {
+    "doc_id": "D042",
+    "jurisdiction": "Los Angeles, CA",
+    "url": "https://housing.lacity.gov/rso-rent-increase-calculator",
+    "source_type": "official",
+    "retrieved_at": "2026-10-01T22:36Z",
+    "text_file": "text/D042.txt",
+    "content_sha256": "95c03e7481305754e61087139fb3d913a09bf48f1da78d4daedff0f0dcbf44f5",
+    "body_chars": 5003
+  },
+  "provider": "gemini",
+  "model": "gemini-3.8-flash",
+  "prompt_version": "v7",
+  "prompt_sha256": "0e18ecd822004e32fd98560a4501309ca082ab249fb3fca44ffefea9693556fc",
+  "response_schema_sha256": "c15306da6f21dc72f06e78405f94ed61dc9e59288138cc98b5b5bf9b62ac403c",
+  "generation_settings": {
+    "temperature": null,
+    "seed": 20261001,
+    "thinking_level": "medium"
+  },
+  "as_of": "2026-10-01",
+  "cache_key": "0264ac9b7270b410444021ace047c968dcd306e470932d57e56aa400495327eb",
+  "cache_hit": true,
+  "cache_entry": "cache/extraction/0264ac9b7270b410444021ace047c968dcd306e470932d57e56aa400495327eb.json",
+  "provider_metadata": {
+    "api": "interactions.create",
+    "interaction_id": "",
+    "model": "gemini-3.8-flash",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 5149,
+      "output_tokens": 2044,
+      "thinking_tokens": 13652,
+      "total_tokens": 20845
+    }
+  },
+  "candidate_count": 4,
+  "accepted_count": 1,
+  "rules": [
+    {
+      "team_rule_id": "r-009e9ceee5",
+      "jurisdiction": "Los Angeles, CA",
+      "level": "city",
+      "category": "rent_increase_limits",
+      "status": "in_force",
+      "title": "Prohibition on Additional Percentage Increase for Utilities",
+      "requirement": "[Basis: official explanatory text, not operative legal text] Beginning February 2, 2026, a landlord can no longer include any additional percentage increase for utilities in rent increases.",
+      "key_value": null,
+      "coverage_conditions": null,
+      "exemptions": null,
+      "overrides": [],
+      "interaction": null,
+      "effective_date": "2026-02-02",
+      "citation": "RSO Rent Increase Calculator",
+      "source_doc_id": "D042",
+      "source_url": "https://housing.lacity.gov/rso-rent-increase-calculator",
+      "quoted_span": "Beginning February 2, 2026, a landlord can no longer include any additional percentage increase for utilities.",
+      "confidence": null,
+      "conflict_flag": false,
+      "conflict_note": null
+    }
+  ],
+  "candidates": [
+    {
+      "index": 0,
+      "origin": "primary",
+      "accepted": false,
+      "held": false,
+      "historical": true,
+      "temporal_state": "expired",
+      "validity": {
+        "resolver": "validity-window/v1",
+        "boundaries": [
+          {
+            "kind": "effective_from",
+            "role": "start",
+            "date": "2025-07-01",
+            "origin": "quoted_span",
+            "history": false,
+            "evidence": "effective July 1, 2025, through June 30, 2026",
+            "raw_start": 270,
+            "raw_end": 315
+          },
+          {
+            "kind": "valid_through",
+            "role": "end",
+            "date": "2026-06-30",
+            "origin": "quoted_span",
+            "history": false,
+            "evidence": "effective July 1, 2025, through June 30, 2026",
+            "raw_start": 270,
+            "raw_end": 315,
+            "end_exclusive": "2026-07-01",
+            "ambiguous_day": null
+          },
+          {
+            "kind": "unknown_temporal_note",
+            "role": "unknown",
+            "date": "2025-07-01",
+            "origin": "effective_date_evidence",
+            "history": false,
+            "evidence": null,
+            "raw_start": null,
+            "raw_end": null
+          },
+          {
+            "kind": "unknown_temporal_note",
+            "role": "unknown",
+            "date": "2026-06-30",
+            "origin": "effective_date_evidence",
+            "history": false,
+            "evidence": null,
+            "raw_start": null,
+            "raw_end": null
+          }
+        ],
+        "end_exclusive": "2026-07-01",
+        "end_conflict": null,
+        "decision": {
+          "outcome": "historical",
+          "state": "expired",
+          "reason": "its verified validity ended before 2026-07-01 (first day not in force), on or before as_of 2026-10-01: 'effective July 1, 2025, through June 30, 2026'",
+          "start": null
+        }
+      },
+      "duplicate_of": null,
+      "rejection_reasons": [],
+      "provision_ids": [
+        "P1"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": null,
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": "Rental units subject to the City of Los Angeles Rent Stabilization Ordinance (RSO).",
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 160,
+        "end": 323,
+        "occurrences": 1,
+        "model_span": "Annual rent increases for rental units subject to the City of Los Angeles Rent Stabilization Ordinance (RSO), effective\nJuly 1, 2025, through June 30, 2026\nis\n3%\n.",
+        "source_span": "Annual rent increases for rental units subject to the City of Los Angeles Rent Stabilization Ordinance (RSO), effective\nJuly 1, 2025, through June 30, 2026\nis\n3%\n.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "Annual rent increases for rental units subject to the City of Los Angeles Rent Stabilization Ordinance (RSO), effective\nJuly 1, 2025, through June 30, 2026\nis\n3%\n.",
+            "status": "exact_match",
+            "start": 160,
+            "end": 323
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 280,
+        "end": 315,
+        "occurrences": 1,
+        "model_span": "July 1, 2025, through June 30, 2026",
+        "source_span": "July 1, 2025, through June 30, 2026",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [],
+      "temporal": {
+        "model_effective_date": "2025-07-01",
+        "model_kind": "explicit_operative_date",
+        "applied_kind": "explicit_operative_date",
+        "effective_date": "2025-07-01",
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null
+      },
+      "status_derivation": "historical (expired): its verified validity ended before 2026-07-01 (first day not in force), on or before as_of 2026-10-01: 'effective July 1, 2025, through June 30, 2026'",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-52b71a07e4",
+        "jurisdiction": "Los Angeles, CA",
+        "level": "city",
+        "category": "rent_increase_limits",
+        "status": null,
+        "title": "Annual Allowable Rent Increase (July 1, 2025 – June 30, 2026)",
+        "requirement": "[Basis: official explanatory text, not operative legal text] Annual rent increases for rental units subject to the City of Los Angeles Rent Stabilization Ordinance (RSO) are limited to 3% effective July 1, 2025, through June 30, 2026.",
+        "key_value": "3%",
+        "coverage_conditions": "Rental units subject to the City of Los Angeles Rent Stabilization Ordinance (RSO).",
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": "2025-07-01",
+        "citation": "RSO Rent Increase Calculator",
+        "source_doc_id": "D042",
+        "source_url": "https://housing.lacity.gov/rso-rent-increase-calculator",
+        "quoted_span": "Annual rent increases for rental units subject to the City of Los Angeles Rent Stabilization Ordinance (RSO), effective\nJuly 1, 2025, through June 30, 2026\nis\n3%\n.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "rent_increase_limits",
+        "citation": "RSO Rent Increase Calculator",
+        "provision_ids": [
+          "P1"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "Annual rent increases for rental units subject to the City of Los Angeles Rent Stabilization Ordinance (RSO), effective\nJuly 1, 2025, through June 30, 2026\nis\n3%\n."
+          }
+        ],
+        "title": "Annual Allowable Rent Increase (July 1, 2025 – June 30, 2026)",
+        "requirement": "Annual rent increases for rental units subject to the City of Los Angeles Rent Stabilization Ordinance (RSO) are limited to 3% effective July 1, 2025, through June 30, 2026.",
+        "key_value": "3%",
+        "coverage_conditions": "Rental units subject to the City of Los Angeles Rent Stabilization Ordinance (RSO).",
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": null,
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": "July 1, 2025, through June 30, 2026",
+        "effective_date_evidence_kind": "explicit_operative_date",
+        "effective_date": "2025-07-01",
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 1,
+      "origin": "primary",
+      "accepted": true,
+      "held": false,
+      "historical": false,
+      "temporal_state": "in_force",
+      "validity": {
+        "resolver": "validity-window/v1",
+        "boundaries": [
+          {
+            "kind": "unknown_temporal_note",
+            "role": "unknown",
+            "date": "2026-02-02",
+            "origin": "quoted_span",
+            "history": false,
+            "evidence": null,
+            "raw_start": null,
+            "raw_end": null
+          },
+          {
+            "kind": "unknown_temporal_note",
+            "role": "unknown",
+            "date": "2026-02-02",
+            "origin": "effective_date_evidence",
+            "history": false,
+            "evidence": null,
+            "raw_start": null,
+            "raw_end": null
+          }
+        ],
+        "end_exclusive": null,
+        "end_conflict": null,
+        "decision": {
+          "outcome": null,
+          "state": null,
+          "reason": null,
+          "start": null
+        }
+      },
+      "duplicate_of": null,
+      "rejection_reasons": [],
+      "provision_ids": [
+        "P2"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": null,
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 324,
+        "end": 434,
+        "occurrences": 1,
+        "model_span": "Beginning February 2, 2026, a landlord can no longer include any additional percentage increase for utilities.",
+        "source_span": "Beginning February 2, 2026, a landlord can no longer include any additional percentage increase for utilities.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "Beginning February 2, 2026, a landlord can no longer include any additional percentage increase for utilities.",
+            "status": "exact_match",
+            "start": 324,
+            "end": 434
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 324,
+        "end": 350,
+        "occurrences": 1,
+        "model_span": "Beginning February 2, 2026",
+        "source_span": "Beginning February 2, 2026",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [],
+      "temporal": {
+        "model_effective_date": "2026-02-02",
+        "model_kind": "explicit_operative_date",
+        "applied_kind": "explicit_operative_date",
+        "effective_date": "2026-02-02",
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null
+      },
+      "status_derivation": "enacted; effective 2026-02-02 is on or before as_of 2026-10-01",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-009e9ceee5",
+        "jurisdiction": "Los Angeles, CA",
+        "level": "city",
+        "category": "rent_increase_limits",
+        "status": "in_force",
+        "title": "Prohibition on Additional Percentage Increase for Utilities",
+        "requirement": "[Basis: official explanatory text, not operative legal text] Beginning February 2, 2026, a landlord can no longer include any additional percentage increase for utilities in rent increases.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": "2026-02-02",
+        "citation": "RSO Rent Increase Calculator",
+        "source_doc_id": "D042",
+        "source_url": "https://housing.lacity.gov/rso-rent-increase-calculator",
+        "quoted_span": "Beginning February 2, 2026, a landlord can no longer include any additional percentage increase for utilities.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "rent_increase_limits",
+        "citation": "RSO Rent Increase Calculator",
+        "provision_ids": [
+          "P2"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "Beginning February 2, 2026, a landlord can no longer include any additional percentage increase for utilities."
+          }
+        ],
+        "title": "Prohibition on Additional Percentage Increase for Utilities",
+        "requirement": "Beginning February 2, 2026, a landlord can no longer include any additional percentage increase for utilities in rent increases.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": null,
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": "Beginning February 2, 2026",
+        "effective_date_evidence_kind": "explicit_operative_date",
+        "effective_date": "2026-02-02",
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 2,
+      "origin": "primary",
+      "accepted": false,
+      "held": true,
+      "historical": false,
+      "temporal_state": "held",
+      "validity": {
+        "resolver": "validity-window/v1",
+        "boundaries": [],
+        "end_exclusive": null,
+        "end_conflict": null,
+        "decision": {
+          "outcome": null,
+          "state": null,
+          "reason": null,
+          "start": null
+        }
+      },
+      "duplicate_of": null,
+      "rejection_reasons": [
+        "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      ],
+      "provision_ids": [
+        "P3"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": null,
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": "Rent increases of less than 10%.",
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 435,
+        "end": 542,
+        "occurrences": 1,
+        "model_span": "State law requires landlords to provide 30 days' written advance notice of rent increases of less than 10%.",
+        "source_span": "State law requires landlords to provide 30 days' written advance notice of rent increases of less than 10%.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "State law requires landlords to provide 30 days' written advance notice of rent increases of less than 10%.",
+            "status": "exact_match",
+            "start": 435,
+            "end": 542
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": null,
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": null,
+        "applied_kind": null,
+        "effective_date": null,
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null,
+        "unresolved_reason": "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      },
+      "status_derivation": "temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-440ddb41b0",
+        "jurisdiction": "Los Angeles, CA",
+        "level": "city",
+        "category": "rent_increase_limits",
+        "status": null,
+        "title": "Advance Written Notice for Rent Increases Under 10%",
+        "requirement": "[Basis: official explanatory text, not operative legal text] Landlords are required to provide 30 days' written advance notice to tenants for rent increases of less than 10%.",
+        "key_value": "30 days",
+        "coverage_conditions": "Rent increases of less than 10%.",
+        "exemptions": null,
+        "overrides": [],
+        "interaction": "Cites California state law governing advance written notice periods for rent increases.",
+        "effective_date": null,
+        "citation": "RSO Rent Increase Calculator",
+        "source_doc_id": "D042",
+        "source_url": "https://housing.lacity.gov/rso-rent-increase-calculator",
+        "quoted_span": "State law requires landlords to provide 30 days' written advance notice of rent increases of less than 10%.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "rent_increase_limits",
+        "citation": "RSO Rent Increase Calculator",
+        "provision_ids": [
+          "P3"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "State law requires landlords to provide 30 days' written advance notice of rent increases of less than 10%."
+          }
+        ],
+        "title": "Advance Written Notice for Rent Increases Under 10%",
+        "requirement": "Landlords are required to provide 30 days' written advance notice to tenants for rent increases of less than 10%.",
+        "key_value": "30 days",
+        "coverage_conditions": "Rent increases of less than 10%.",
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": "Cites California state law governing advance written notice periods for rent increases.",
+        "enactment_status": "enacted",
+        "enactment_status_evidence": null,
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": null,
+        "effective_date_evidence_kind": null,
+        "effective_date": null,
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 3,
+      "origin": "repair",
+      "accepted": false,
+      "held": true,
+      "historical": false,
+      "temporal_state": "held",
+      "validity": {
+        "resolver": "validity-window/v1",
+        "boundaries": [],
+        "end_exclusive": null,
+        "end_conflict": null,
+        "decision": {
+          "outcome": null,
+          "state": null,
+          "reason": null,
+          "start": null
+        }
+      },
+      "duplicate_of": null,
+      "rejection_reasons": [
+        "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      ],
+      "provision_ids": [
+        "P3"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": null,
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": "Rent increases of less than 10%.",
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 435,
+        "end": 542,
+        "occurrences": 1,
+        "model_span": "State law requires landlords to provide 30 days' written advance notice of rent increases of less than 10%.",
+        "source_span": "State law requires landlords to provide 30 days' written advance notice of rent increases of less than 10%.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "State law requires landlords to provide 30 days' written advance notice of rent increases of less than 10%.",
+            "status": "exact_match",
+            "start": 435,
+            "end": 542
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": null,
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": null,
+        "applied_kind": null,
+        "effective_date": null,
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null,
+        "unresolved_reason": "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      },
+      "status_derivation": "temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-01bec098b6",
+        "jurisdiction": "Los Angeles, CA",
+        "level": "city",
+        "category": "rent_increase_limits",
+        "status": null,
+        "title": "Advance Notice of Rent Increases Under 10%",
+        "requirement": "[Basis: official explanatory text, not operative legal text] Landlords must provide at least 30 days' written advance notice for rent increases of less than 10%.",
+        "key_value": "30 days",
+        "coverage_conditions": "Rent increases of less than 10%.",
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "State Law Notice Requirement",
+        "source_doc_id": "D042",
+        "source_url": "https://housing.lacity.gov/rso-rent-increase-calculator",
+        "quoted_span": "State law requires landlords to provide 30 days' written advance notice of rent increases of less than 10%.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "rent_increase_limits",
+        "citation": "State Law Notice Requirement",
+        "provision_ids": [
+          "P3"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "State law requires landlords to provide 30 days' written advance notice of rent increases of less than 10%."
+          }
+        ],
+        "title": "Advance Notice of Rent Increases Under 10%",
+        "requirement": "Landlords must provide at least 30 days' written advance notice for rent increases of less than 10%.",
+        "key_value": "30 days",
+        "coverage_conditions": "Rent increases of less than 10%.",
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": null,
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": null,
+        "effective_date_evidence_kind": null,
+        "effective_date": null,
+        "conflict_note": null
+      }
+    }
+  ],
+  "posture": {
+    "declared": "official_explanatory_page",
+    "evidence": "RSO Rent Increase Calculator – LAHD\nSkip to main content\nLos Angeles Housing Department",
+    "evidence_check": {
+      "status": "exact_match",
+      "normalization": null,
+      "start": 2,
+      "end": 89,
+      "occurrences": 1,
+      "model_span": "RSO Rent Increase Calculator – LAHD\nSkip to main content\nLos Angeles Housing Department",
+      "source_span": "RSO Rent Increase Calculator – LAHD\nSkip to main content\nLos Angeles Housing Department",
+      "reason": null,
+      "reconstructed": false,
+      "parts": [],
+      "crossed_artifacts": []
+    },
+    "established": "official_explanatory_page",
+    "basis": "declared posture with verified evidence"
+  },
+  "base_dates": [],
+  "provision_inventory": [
+    {
+      "id": "P1",
+      "ref": "RSO Rent Increase Calculator (Annual Increase)",
+      "anchor": "Annual rent increases for rental units subject to",
+      "summary": "Sets allowable annual rent increase for RSO rental units at 3% effective July 1, 2025, through June 30, 2026.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "rent_increase_limits",
+      "reason": null
+    },
+    {
+      "id": "P2",
+      "ref": "RSO Rent Increase Calculator (Utility Increase Prohibition)",
+      "anchor": "Beginning February 2, 2026, a landlord can",
+      "summary": "Prohibits landlords from including any additional percentage increase for utilities beginning February 2, 2026.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "rent_increase_limits",
+      "reason": null
+    },
+    {
+      "id": "P3",
+      "ref": "State Law Notice Requirement",
+      "anchor": "State law requires landlords to provide 30 days'",
+      "summary": "Requires landlords to provide 30 days' advance written notice for rent increases of less than 10%.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "rent_increase_limits",
+      "reason": null
+    },
+    {
+      "id": "P4",
+      "ref": "SCEP Pass Through Amount",
+      "anchor": "SCEP Pass Through Amount:\nEffective January 1, 2022,",
+      "summary": "Authorizes pass-through of $67.94 annual SCEP fee collected at $2.83 per month for 12 months with written notice.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "Municipal code enforcement fee pass-through surcharges are explicitly designated as separate from rent and do not limit rent increases."
+    },
+    {
+      "id": "P5",
+      "ref": "RSO Pass Through Amount",
+      "anchor": "RSO Pass Through Amount:\nEffective January 1, 2020,",
+      "summary": "Authorizes pass-through of $38.75 annual RSO fee collected at $1.61 per month for 12 months with written notice.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "Municipal RSO program fee pass-through surcharges are explicitly designated as separate from rent and do not limit rent increases."
+    },
+    {
+      "id": "P6",
+      "ref": "Surcharges Conditions and Registration Requirement",
+      "anchor": "The SCEP and RSO surcharges are separate and",
+      "summary": "Provides that SCEP and RSO surcharges are separate from rent and can only be collected after registration and written notice.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "Conditions collection of municipal fee surcharges separate from rent; not within any official scope category."
+    },
+    {
+      "id": "P7",
+      "ref": "Calculator Disclaimer",
+      "anchor": "This calculator is designed to be an informational",
+      "summary": "Disclaims City accuracy guarantee and liability for use of the calculator tool.",
+      "role": "boilerplate",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "Informational website tool disclaimer; contains no substantive housing rules."
+    }
+  ],
+  "global_scope": [],
+  "source_view": {
+    "marker": "[[PAGE BREAK]]",
+    "segment_label": "[[SEGMENT {}]]",
+    "view_sha256": "19b9801a243de5533e2184aa7309923ed92cf62f9e83b99697ab3693d174d934",
+    "segments": [
+      {
+        "id": 1,
+        "raw_start": 0,
+        "raw_end": 5003
+      }
+    ],
+    "artifacts_removed": 0,
+    "artifacts": []
+  },
+  "coverage": {
+    "inventory_valid": true,
+    "anchors_located": "7/7",
+    "after_primary": {
+      "uncovered": [
+        "State Law Notice Requirement"
+      ],
+      "unaccepted": [],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "scope_mappings": {
+      "requested": 0,
+      "applies": 0,
+      "does_not_apply": 0,
+      "unresolved": 0
+    },
+    "after_repair": {
+      "uncovered": [],
+      "unaccepted": [
+        "State Law Notice Requirement"
+      ],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "repair_targets": {
+      "before_repair": 1,
+      "resolved_by_accepted_rule": 0,
+      "resolved_out_of_scope": 0,
+      "still_unresolved": 1
+    },
+    "inventory_items": 7,
+    "in_scope_items": 3,
+    "in_scope_refs": 3,
+    "uncertain": [],
+    "final": {
+      "uncovered": [],
+      "unaccepted": [
+        "State Law Notice Requirement"
+      ],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "link_mismatches": [
+      "rule 2 links P3 ('State Law Notice Requirement') but cites 'RSO Rent Increase Calculator'"
+    ],
+    "provisions": [
+      {
+        "ref": "RSO Rent Increase Calculator (Annual Increase)",
+        "inventory_item": 0,
+        "provision_id": "P1",
+        "summary": "Sets allowable annual rent increase for RSO rental units at 3% effective July 1, 2025, through June 30, 2026.",
+        "category": "rent_increase_limits",
+        "candidates": [
+          0
+        ],
+        "accepted": [
+          0
+        ],
+        "basis": {
+          "0": "provision link; citation names an ancestor"
+        }
+      },
+      {
+        "ref": "RSO Rent Increase Calculator (Utility Increase Prohibition)",
+        "inventory_item": 1,
+        "provision_id": "P2",
+        "summary": "Prohibits landlords from including any additional percentage increase for utilities beginning February 2, 2026.",
+        "category": "rent_increase_limits",
+        "candidates": [
+          1
+        ],
+        "accepted": [
+          1
+        ],
+        "basis": {
+          "1": "provision link; citation names an ancestor"
+        }
+      },
+      {
+        "ref": "State Law Notice Requirement",
+        "inventory_item": 2,
+        "provision_id": "P3",
+        "summary": "Requires landlords to provide 30 days' advance written notice for rent increases of less than 10%.",
+        "category": "rent_increase_limits",
+        "candidates": [
+          3
+        ],
+        "accepted": [],
+        "basis": {
+          "3": "provision link; citation names it"
+        }
+      }
+    ],
+    "unrecorded_subdivisions": []
+  },
+  "scope_challenges": [
+    {
+      "ref": "SCEP Pass Through Amount",
+      "provision_id": "P4",
+      "role": "operative_rule",
+      "reason": "Municipal code enforcement fee pass-through surcharges are explicitly designated as separate from rent and do not limit rent increases.",
+      "summary": "Authorizes pass-through of $67.94 annual SCEP fee collected at $2.83 per month for 12 months with written notice.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    },
+    {
+      "ref": "RSO Pass Through Amount",
+      "provision_id": "P5",
+      "role": "operative_rule",
+      "reason": "Municipal RSO program fee pass-through surcharges are explicitly designated as separate from rent and do not limit rent increases.",
+      "summary": "Authorizes pass-through of $38.75 annual RSO fee collected at $1.61 per month for 12 months with written notice.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    },
+    {
+      "ref": "Surcharges Conditions and Registration Requirement",
+      "provision_id": "P6",
+      "role": "operative_rule",
+      "reason": "Conditions collection of municipal fee surcharges separate from rent; not within any official scope category.",
+      "summary": "Provides that SCEP and RSO surcharges are separate from rent and can only be collected after registration and written notice.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    },
+    {
+      "ref": "Calculator Disclaimer",
+      "provision_id": "P7",
+      "role": "boilerplate",
+      "reason": "Informational website tool disclaimer; contains no substantive housing rules.",
+      "summary": "Disclaims City accuracy guarantee and liability for use of the calculator tool.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role boilerplate is decided by other rules"
+    }
+  ],
+  "scope_mappings": [],
+  "legislative_session": null,
+  "empty_result": null,
+  "legacy_replay": null,
+  "dedupe": [],
+  "chunking": null,
+  "repair": {
+    "invoked": true,
+    "reason": "1 repair target(s) from inventory_uncovered",
+    "prompt_version": "v7-repair-1",
+    "targets": [
+      {
+        "ref": "State Law Notice Requirement",
+        "sources": [
+          "inventory_uncovered"
+        ],
+        "provision_id": "P3",
+        "summary": "Requires landlords to provide 30 days' advance written notice for rent increases of less than 10%.",
+        "category": "rent_increase_limits",
+        "pre_repair_state": "in-scope inventory provision with no candidate",
+        "resolution": {
+          "scope": "in_scope",
+          "reason": null,
+          "evidence_check": null,
+          "evidence_verified": false,
+          "evidence_problem": null
+        },
+        "repair_scope": "in_scope",
+        "reason": null,
+        "candidate_indices": [
+          3
+        ],
+        "accepted_indices": [],
+        "final_resolution": "unresolved",
+        "unresolved_reason": "classified in_scope, but every candidate was rejected"
+      }
+    ],
+    "cache_key": "61661586ca65299782c3a91d58070e2b213c533fabf3dcc8a1354dc31f87d391",
+    "cache_hit": true,
+    "cache_entry": "cache/extraction/61661586ca65299782c3a91d58070e2b213c533fabf3dcc8a1354dc31f87d391.json",
+    "prompt_sha256": "0cdf1be013d17c482559ffa449d81963b32e62e491b7d164c4b9e06db10bc5af",
+    "provider_metadata": {
+      "api": "interactions.create",
+      "interaction_id": "",
+      "model": "gemini-3.8-flash",
+      "status": "completed",
+      "usage": {
+        "input_tokens": 4666,
+        "output_tokens": 388,
+        "thinking_tokens": 16134,
+        "total_tokens": 21188
+      }
+    },
+    "raw_response_text": "{\n  \"target_resolutions\": [\n    {\n      \"ref\": \"State Law Notice Requirement\",\n      \"scope\": \"in_scope\",\n      \"reason\": null,\n      \"evidence_parts\": []\n    }\n  ],\n  \"scope_mappings\": [],\n  \"rules\": [\n    {\n      \"category\": \"rent_increase_limits\",\n      \"citation\": \"State Law Notice Requirement\",\n      \"provision_ids\": [\n        \"P3\"\n      ],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"State law requires landlords to provide 30 days' written advance notice of rent increases of less than 10%.\"\n        }\n      ],\n      \"title\": \"Advance Notice of Rent Increases Under 10%\",\n      \"requirement\": \"Landlords must provide at least 30 days' written advance notice for rent increases of less than 10%.\",\n      \"key_value\": \"30 days\",\n      \"coverage_conditions\": \"Rent increases of less than 10%.\",\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": null,\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": null,\n      \"effective_date_evidence_kind\": null,\n      \"effective_date\": null,\n      \"conflict_note\": null\n    }\n  ]\n}",
+    "mappings": [],
+    "candidate_indices": [
+      3
+    ],
+    "accepted_count": 0,
+    "rejected_count": 1,
+    "errors": []
+  },
+  "document_status": "review_required",
+  "review_reasons": [
+    "2 candidate record(s) held, not published, because the time of application is unresolved: ['temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force']",
+    "repair targets still unresolved: State Law Notice Requirement (classified in_scope, but every candidate was rejected)"
+  ],
+  "warnings": [
+    "candidate 0 historical (expired): historical (expired): its verified validity ended before 2026-07-01 (first day not in force), on or before as_of 2026-10-01: 'effective July 1, 2025, through June 30, 2026'",
+    "candidate 2 held: status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+    "candidate 3 held: status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+    "review: provision links whose rule citation does not name the provision: 1"
+  ],
+  "errors": [],
+  "raw_response_text": "{\n  \"document\": {\n    \"posture\": \"official_explanatory_page\",\n    \"evidence\": \"RSO Rent Increase Calculator – LAHD\\nSkip to main content\\nLos Angeles Housing Department\"\n  },\n  \"provisions\": [\n    {\n      \"id\": \"P1\",\n      \"ref\": \"RSO Rent Increase Calculator (Annual Increase)\",\n      \"anchor\": \"Annual rent increases for rental units subject to\",\n      \"summary\": \"Sets allowable annual rent increase for RSO rental units at 3% effective July 1, 2025, through June 30, 2026.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"rent_increase_limits\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P2\",\n      \"ref\": \"RSO Rent Increase Calculator (Utility Increase Prohibition)\",\n      \"anchor\": \"Beginning February 2, 2026, a landlord can\",\n      \"summary\": \"Prohibits landlords from including any additional percentage increase for utilities beginning February 2, 2026.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"rent_increase_limits\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P3\",\n      \"ref\": \"State Law Notice Requirement\",\n      \"anchor\": \"State law requires landlords to provide 30 days'\",\n      \"summary\": \"Requires landlords to provide 30 days' advance written notice for rent increases of less than 10%.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"rent_increase_limits\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P4\",\n      \"ref\": \"SCEP Pass Through Amount\",\n      \"anchor\": \"SCEP Pass Through Amount:\\nEffective January 1, 2022,\",\n      \"summary\": \"Authorizes pass-through of $67.94 annual SCEP fee collected at $2.83 per month for 12 months with written notice.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"Municipal code enforcement fee pass-through surcharges are explicitly designated as separate from rent and do not limit rent increases.\"\n    },\n    {\n      \"id\": \"P5\",\n      \"ref\": \"RSO Pass Through Amount\",\n      \"anchor\": \"RSO Pass Through Amount:\\nEffective January 1, 2020,\",\n      \"summary\": \"Authorizes pass-through of $38.75 annual RSO fee collected at $1.61 per month for 12 months with written notice.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"Municipal RSO program fee pass-through surcharges are explicitly designated as separate from rent and do not limit rent increases.\"\n    },\n    {\n      \"id\": \"P6\",\n      \"ref\": \"Surcharges Conditions and Registration Requirement\",\n      \"anchor\": \"The SCEP and RSO surcharges are separate and\",\n      \"summary\": \"Provides that SCEP and RSO surcharges are separate from rent and can only be collected after registration and written notice.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"Conditions collection of municipal fee surcharges separate from rent; not within any official scope category.\"\n    },\n    {\n      \"id\": \"P7\",\n      \"ref\": \"Calculator Disclaimer\",\n      \"anchor\": \"This calculator is designed to be an informational\",\n      \"summary\": \"Disclaims City accuracy guarantee and liability for use of the calculator tool.\",\n      \"role\": \"boilerplate\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"Informational website tool disclaimer; contains no substantive housing rules.\"\n    }\n  ],\n  \"global_scope\": [],\n  \"rules\": [\n    {\n      \"category\": \"rent_increase_limits\",\n      \"citation\": \"RSO Rent Increase Calculator\",\n      \"provision_ids\": [\"P1\"],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Annual rent increases for rental units subject to the City of Los Angeles Rent Stabilization Ordinance (RSO), effective\\nJuly 1, 2025, through June 30, 2026\\nis\\n3%\\n.\"\n        }\n      ],\n      \"title\": \"Annual Allowable Rent Increase (July 1, 2025 – June 30, 2026)\",\n      \"requirement\": \"Annual rent increases for rental units subject to the City of Los Angeles Rent Stabilization Ordinance (RSO) are limited to 3% effective July 1, 2025, through June 30, 2026.\",\n      \"key_value\": \"3%\",\n      \"coverage_conditions\": \"Rental units subject to the City of Los Angeles Rent Stabilization Ordinance (RSO).\",\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": null,\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": \"July 1, 2025, through June 30, 2026\",\n      \"effective_date_evidence_kind\": \"explicit_operative_date\",\n      \"effective_date\": \"2025-07-01\",\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"rent_increase_limits\",\n      \"citation\": \"RSO Rent Increase Calculator\",\n      \"provision_ids\": [\"P2\"],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Beginning February 2, 2026, a landlord can no longer include any additional percentage increase for utilities.\"\n        }\n      ],\n      \"title\": \"Prohibition on Additional Percentage Increase for Utilities\",\n      \"requirement\": \"Beginning February 2, 2026, a landlord can no longer include any additional percentage increase for utilities in rent increases.\",\n      \"key_value\": null,\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": null,\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": \"Beginning February 2, 2026\",\n      \"effective_date_evidence_kind\": \"explicit_operative_date\",\n      \"effective_date\": \"2026-02-02\",\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"rent_increase_limits\",\n      \"citation\": \"RSO Rent Increase Calculator\",\n      \"provision_ids\": [\"P3\"],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"State law requires landlords to provide 30 days' written advance notice of rent increases of less than 10%.\"\n        }\n      ],\n      \"title\": \"Advance Written Notice for Rent Increases Under 10%\",\n      \"requirement\": \"Landlords are required to provide 30 days' written advance notice to tenants for rent increases of less than 10%.\",\n      \"key_value\": \"30 days\",\n      \"coverage_conditions\": \"Rent increases of less than 10%.\",\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": \"Cites California state law governing advance written notice periods for rent increases.\",\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": null,\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": null,\n      \"effective_date_evidence_kind\": null,\n      \"effective_date\": null,\n      \"conflict_note\": null\n    }\n  ],\n  \"no_rules_justification\": null\n}"
+}

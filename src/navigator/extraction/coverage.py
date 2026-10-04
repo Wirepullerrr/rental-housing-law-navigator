@@ -12,7 +12,8 @@ something unrelated is NOT counted; it is reported as a link mismatch.
 A ref is
   uncovered   no candidate at all (accepted or rejected) maps to it; only these
               are sent to the targeted repair pass;
-  unaccepted  candidates map to it but none was accepted.
+  unaccepted  candidates map to it but none was validated (accepted; historical, i.e.
+              validated but expired as of the query date; or an exact duplicate of either).
 
 Subdivision guard (unrecorded_subdivisions): the closure can only be as fine as
 the inventory. When an in-scope ref is covered by accepted records ONLY through
@@ -85,7 +86,7 @@ def linked(item: dict[str, Any], c: CandidateResult) -> bool:
 
 def closure(inventory: list[dict[str, Any]], candidates: list[CandidateResult]) -> dict[str, Any]:
     cites = {c.index: candidate_citation(c) for c in candidates}
-    accepted = {c.index for c in candidates if c.accepted}
+    accepted = {c.index for c in candidates if c.validated}   # accepted, historical or suppressed twin
     provisions, mismatches = [], []
     for item_no, item in enumerate(inventory):
         if item.get("scope") != "in_scope":
@@ -139,7 +140,7 @@ def unrecorded_subdivisions(inventory: list[dict[str, Any]], candidates: list[Ca
     starts = [0]
     for line in lines:
         starts.append(starts[-1] + len(line))
-    located = [c for c in candidates if c.accepted and c.citation.start is not None and candidate_citation(c)]
+    located = [c for c in candidates if c.validated and c.citation.start is not None and candidate_citation(c)]
     decided = [r for p in inventory if p.get("scope") in ("out_of_scope", "uncertain") for r in expand_ref(p["ref"])]
     found: list[dict[str, Any]] = []
     for item in inventory:

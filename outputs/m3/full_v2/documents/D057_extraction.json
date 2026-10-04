@@ -1,0 +1,385 @@
+{
+  "disclaimer": "Not legal advice. Automated extraction for a research prototype; verify against the cited source.",
+  "run_at": "2026-10-04T06:34:26+00:00",
+  "source": {
+    "doc_id": "D057",
+    "jurisdiction": "MA",
+    "url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXVI/Chapter112/Section87DDD%201~2",
+    "source_type": "official",
+    "retrieved_at": "2026-10-01T22:56Z",
+    "text_file": "text/D057.txt",
+    "content_sha256": "f704f9707c7f52e649c8a8f281021cf1f02e38b1998f525ccb1bed15ba7c11d2",
+    "body_chars": 2627
+  },
+  "provider": "gemini",
+  "model": "gemini-3.8-flash",
+  "prompt_version": "v7",
+  "prompt_sha256": "fbccb2600ba8256994e548ab72ba9a2080f67719c26dce4fda9e4d207029f0ad",
+  "response_schema_sha256": "c15306da6f21dc72f06e78405f94ed61dc9e59288138cc98b5b5bf9b62ac403c",
+  "generation_settings": {
+    "temperature": null,
+    "seed": 20261001,
+    "thinking_level": "medium"
+  },
+  "as_of": "2026-10-01",
+  "cache_key": "e73d3dc945a95b5f9ba432d06aa68badd3bb34bb3ee9d994ddcb7d2d5de46b50",
+  "cache_hit": true,
+  "cache_entry": "cache/extraction/e73d3dc945a95b5f9ba432d06aa68badd3bb34bb3ee9d994ddcb7d2d5de46b50.json",
+  "provider_metadata": {
+    "api": "interactions.create",
+    "interaction_id": "",
+    "model": "gemini-3.8-flash",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4563,
+      "output_tokens": 1117,
+      "thinking_tokens": 21711,
+      "total_tokens": 27391
+    }
+  },
+  "candidate_count": 1,
+  "accepted_count": 1,
+  "rules": [
+    {
+      "team_rule_id": "r-2f9673f4d6",
+      "jurisdiction": "MA",
+      "level": "state",
+      "category": "application_screening_fees",
+      "status": "in_force",
+      "title": "Broker fee payment restriction",
+      "requirement": "Any broker fee must only be paid by the party, lessor or tenant, who originally engaged and entered into a contract with the licensed broker or salesperson.",
+      "key_value": null,
+      "coverage_conditions": null,
+      "exemptions": null,
+      "overrides": [],
+      "interaction": null,
+      "effective_date": null,
+      "citation": "M.G.L. c. 112, § 87DDD 1/2",
+      "source_doc_id": "D057",
+      "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXVI/Chapter112/Section87DDD%201~2",
+      "quoted_span": "Any fee shall only be paid by the party, lessor or tenant who originally engaged and entered into a contract with the licensed broker or salesperson.",
+      "confidence": null,
+      "conflict_flag": false,
+      "conflict_note": null
+    }
+  ],
+  "candidates": [
+    {
+      "index": 0,
+      "origin": "primary",
+      "accepted": true,
+      "held": false,
+      "historical": false,
+      "temporal_state": "in_force",
+      "validity": {
+        "resolver": "validity-window/v1",
+        "boundaries": [
+          {
+            "kind": "amendment_history",
+            "role": "start",
+            "date": "2025-08-01",
+            "origin": "version_evidence",
+            "history": true,
+            "evidence": "effective August 1, 2025",
+            "raw_start": 911,
+            "raw_end": 935
+          }
+        ],
+        "end_exclusive": null,
+        "end_conflict": null,
+        "decision": {
+          "outcome": null,
+          "state": null,
+          "reason": null,
+          "start": null
+        }
+      },
+      "duplicate_of": null,
+      "rejection_reasons": [],
+      "provision_ids": [
+        "P4"
+      ],
+      "source_basis": "operative_text",
+      "status_evidence": null,
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 1597,
+        "end": 1746,
+        "occurrences": 1,
+        "model_span": "Any fee shall only be paid by the party, lessor or tenant who originally engaged and entered into a contract with the licensed broker or salesperson.",
+        "source_span": "Any fee shall only be paid by the party, lessor or tenant who originally engaged and entered into a contract with the licensed broker or salesperson.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "Any fee shall only be paid by the party, lessor or tenant who originally engaged and entered into a contract with the licensed broker or salesperson.",
+            "status": "exact_match",
+            "start": 1597,
+            "end": 1746
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": null,
+      "version_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 862,
+        "end": 1014,
+        "occurrences": 1,
+        "model_span": "[ Text of section as amended by 2025, 9, Sec. 43 effective August 1, 2025.  See 2025, 9, Sec. 136.  For text effective until August 1, 2025, see above.]",
+        "source_span": "[ Text of section as amended by 2025, 9, Sec. 43 effective August 1, 2025.  See 2025, 9, Sec. 136.  For text effective until August 1, 2025, see above.]",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "operative_conditions": [],
+      "propagated_scope": [],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": null,
+        "applied_kind": null,
+        "effective_date": null,
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "codified_current_law",
+        "posture_consistent": true
+      },
+      "status_derivation": "enacted; codified current law that states no effective date",
+      "warnings": [],
+      "rule": {
+        "team_rule_id": "r-2f9673f4d6",
+        "jurisdiction": "MA",
+        "level": "state",
+        "category": "application_screening_fees",
+        "status": "in_force",
+        "title": "Broker fee payment restriction",
+        "requirement": "Any broker fee must only be paid by the party, lessor or tenant, who originally engaged and entered into a contract with the licensed broker or salesperson.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "M.G.L. c. 112, § 87DDD 1/2",
+        "source_doc_id": "D057",
+        "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXVI/Chapter112/Section87DDD%201~2",
+        "quoted_span": "Any fee shall only be paid by the party, lessor or tenant who originally engaged and entered into a contract with the licensed broker or salesperson.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "application_screening_fees",
+        "citation": "M.G.L. c. 112, § 87DDD 1/2",
+        "provision_ids": [
+          "P4"
+        ],
+        "source_basis": "operative_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "Any fee shall only be paid by the party, lessor or tenant who originally engaged and entered into a contract with the licensed broker or salesperson."
+          }
+        ],
+        "title": "Broker fee payment restriction",
+        "requirement": "Any broker fee must only be paid by the party, lessor or tenant, who originally engaged and entered into a contract with the licensed broker or salesperson.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": null,
+        "version_note": "Text of section as amended by 2025, 9, Sec. 43 effective August 1, 2025.",
+        "version_evidence": "[ Text of section as amended by 2025, 9, Sec. 43 effective August 1, 2025.  See 2025, 9, Sec. 136.  For text effective until August 1, 2025, see above.]",
+        "effective_date_evidence": null,
+        "effective_date_evidence_kind": null,
+        "effective_date": null,
+        "conflict_note": null
+      }
+    }
+  ],
+  "posture": {
+    "declared": "codified_current_law",
+    "evidence": "General Law - Part I, Title XVI, Chapter 112, Section 87DDD 1/2",
+    "evidence_check": {
+      "status": "exact_match",
+      "normalization": null,
+      "start": 0,
+      "end": 63,
+      "occurrences": 1,
+      "model_span": "General Law - Part I, Title XVI, Chapter 112, Section 87DDD 1/2",
+      "source_span": "General Law - Part I, Title XVI, Chapter 112, Section 87DDD 1/2",
+      "reason": null,
+      "reconstructed": false,
+      "parts": [],
+      "crossed_artifacts": []
+    },
+    "established": "codified_current_law",
+    "basis": "declared posture with verified evidence"
+  },
+  "base_dates": [],
+  "provision_inventory": [
+    {
+      "id": "P1",
+      "ref": "M.G.L. c. 112, § 87DDD 1/2 (effective until August 1, 2025)",
+      "anchor": "Section 87DDD1/2. No person shall engage in",
+      "summary": "Prohibits engaging in the business of finding dwelling accommodations for prospective tenants for a fee without being a licensed broker or salesman.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "professional licensing requirement for real estate brokers and salesmen"
+    },
+    {
+      "id": "P2",
+      "ref": "M.G.L. c. 112, § 87DDD 1/2, sentence 1 (effective August 1, 2025)",
+      "anchor": "Section 87DDD1/2. No person shall engage in",
+      "summary": "Prohibits engaging in the business of finding dwelling accommodations for prospective tenants for a fee without being a licensed broker or salesman.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "professional licensing requirement for real estate brokers and salesmen"
+    },
+    {
+      "id": "P3",
+      "ref": "M.G.L. c. 112, § 87DDD 1/2, sentence 2 (effective August 1, 2025)",
+      "anchor": "A licensed broker or salesperson may solely contract",
+      "summary": "Limits broker contracts to exclusively representing either a prospective tenant or a landlord/landlord's agent.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "regulation of real estate broker representation contracts"
+    },
+    {
+      "id": "P4",
+      "ref": "M.G.L. c. 112, § 87DDD 1/2, sentence 3 (effective August 1, 2025)",
+      "anchor": "Any fee shall only be paid by the party,",
+      "summary": "Mandates that any broker fee shall only be paid by the party (lessor or tenant) who originally engaged and entered into a contract with the broker or salesperson.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "application_screening_fees",
+      "reason": null
+    }
+  ],
+  "global_scope": [],
+  "source_view": {
+    "marker": "[[PAGE BREAK]]",
+    "segment_label": "[[SEGMENT {}]]",
+    "view_sha256": "7f4cb81123239f2476d0000e28178e08f3d0ca36803df0dc6751ac251a4d18a0",
+    "segments": [
+      {
+        "id": 1,
+        "raw_start": 0,
+        "raw_end": 2627
+      }
+    ],
+    "artifacts_removed": 0,
+    "artifacts": []
+  },
+  "coverage": {
+    "inventory_valid": true,
+    "anchors_located": "4/4",
+    "after_primary": {
+      "uncovered": [],
+      "unaccepted": [],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "scope_mappings": {
+      "requested": 0,
+      "applies": 0,
+      "does_not_apply": 0,
+      "unresolved": 0
+    },
+    "inventory_items": 4,
+    "in_scope_items": 1,
+    "in_scope_refs": 1,
+    "uncertain": [],
+    "final": {
+      "uncovered": [],
+      "unaccepted": [],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "link_mismatches": [],
+    "provisions": [
+      {
+        "ref": "M.G.L. c. 112",
+        "inventory_item": 3,
+        "provision_id": "P4",
+        "summary": "Mandates that any broker fee shall only be paid by the party (lessor or tenant) who originally engaged and entered into a contract with the broker or salesperson.",
+        "category": "application_screening_fees",
+        "candidates": [
+          0
+        ],
+        "accepted": [
+          0
+        ],
+        "basis": {
+          "0": "provision link; citation names it"
+        }
+      }
+    ],
+    "unrecorded_subdivisions": []
+  },
+  "scope_challenges": [
+    {
+      "ref": "M.G.L. c. 112, § 87DDD 1/2 (effective until August 1, 2025)",
+      "provision_id": "P1",
+      "role": "operative_rule",
+      "reason": "professional licensing requirement for real estate brokers and salesmen",
+      "summary": "Prohibits engaging in the business of finding dwelling accommodations for prospective tenants for a fee without being a licensed broker or salesman.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    },
+    {
+      "ref": "M.G.L. c. 112, § 87DDD 1/2, sentence 1 (effective August 1, 2025)",
+      "provision_id": "P2",
+      "role": "operative_rule",
+      "reason": "professional licensing requirement for real estate brokers and salesmen",
+      "summary": "Prohibits engaging in the business of finding dwelling accommodations for prospective tenants for a fee without being a licensed broker or salesman.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    },
+    {
+      "ref": "M.G.L. c. 112, § 87DDD 1/2, sentence 2 (effective August 1, 2025)",
+      "provision_id": "P3",
+      "role": "operative_rule",
+      "reason": "regulation of real estate broker representation contracts",
+      "summary": "Limits broker contracts to exclusively representing either a prospective tenant or a landlord/landlord's agent.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    }
+  ],
+  "scope_mappings": [],
+  "legislative_session": null,
+  "empty_result": null,
+  "legacy_replay": null,
+  "dedupe": [],
+  "chunking": null,
+  "repair": null,
+  "document_status": "complete",
+  "review_reasons": [],
+  "warnings": [],
+  "errors": [],
+  "raw_response_text": "{\n  \"document\": {\n    \"posture\": \"codified_current_law\",\n    \"evidence\": \"General Law - Part I, Title XVI, Chapter 112, Section 87DDD 1/2\"\n  },\n  \"provisions\": [\n    {\n      \"id\": \"P1\",\n      \"ref\": \"M.G.L. c. 112, § 87DDD 1/2 (effective until August 1, 2025)\",\n      \"anchor\": \"Section 87DDD1/2. No person shall engage in\",\n      \"summary\": \"Prohibits engaging in the business of finding dwelling accommodations for prospective tenants for a fee without being a licensed broker or salesman.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"professional licensing requirement for real estate brokers and salesmen\"\n    },\n    {\n      \"id\": \"P2\",\n      \"ref\": \"M.G.L. c. 112, § 87DDD 1/2, sentence 1 (effective August 1, 2025)\",\n      \"anchor\": \"Section 87DDD1/2. No person shall engage in\",\n      \"summary\": \"Prohibits engaging in the business of finding dwelling accommodations for prospective tenants for a fee without being a licensed broker or salesman.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"professional licensing requirement for real estate brokers and salesmen\"\n    },\n    {\n      \"id\": \"P3\",\n      \"ref\": \"M.G.L. c. 112, § 87DDD 1/2, sentence 2 (effective August 1, 2025)\",\n      \"anchor\": \"A licensed broker or salesperson may solely contract\",\n      \"summary\": \"Limits broker contracts to exclusively representing either a prospective tenant or a landlord/landlord's agent.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"regulation of real estate broker representation contracts\"\n    },\n    {\n      \"id\": \"P4\",\n      \"ref\": \"M.G.L. c. 112, § 87DDD 1/2, sentence 3 (effective August 1, 2025)\",\n      \"anchor\": \"Any fee shall only be paid by the party,\",\n      \"summary\": \"Mandates that any broker fee shall only be paid by the party (lessor or tenant) who originally engaged and entered into a contract with the broker or salesperson.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"application_screening_fees\",\n      \"reason\": null\n    }\n  ],\n  \"global_scope\": [],\n  \"rules\": [\n    {\n      \"category\": \"application_screening_fees\",\n      \"citation\": \"M.G.L. c. 112, § 87DDD 1/2\",\n      \"provision_ids\": [\n        \"P4\"\n      ],\n      \"source_basis\": \"operative_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Any fee shall only be paid by the party, lessor or tenant who originally engaged and entered into a contract with the licensed broker or salesperson.\"\n        }\n      ],\n      \"title\": \"Broker fee payment restriction\",\n      \"requirement\": \"Any broker fee must only be paid by the party, lessor or tenant, who originally engaged and entered into a contract with the licensed broker or salesperson.\",\n      \"key_value\": null,\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": null,\n      \"version_note\": \"Text of section as amended by 2025, 9, Sec. 43 effective August 1, 2025.\",\n      \"version_evidence\": \"[ Text of section as amended by 2025, 9, Sec. 43 effective August 1, 2025.  See 2025, 9, Sec. 136.  For text effective until August 1, 2025, see above.]\",\n      \"effective_date_evidence\": null,\n      \"effective_date_evidence_kind\": null,\n      \"effective_date\": null,\n      \"conflict_note\": null\n    }\n  ],\n  \"no_rules_justification\": null\n}"
+}

@@ -1,0 +1,595 @@
+{
+  "disclaimer": "Not legal advice. Automated extraction for a research prototype; verify against the cited source.",
+  "run_at": "2026-10-04T06:34:25+00:00",
+  "source": {
+    "doc_id": "D008",
+    "jurisdiction": "Berkeley, CA",
+    "url": "https://rentboard.berkeleyca.gov/sites/default/files/documents/AGA%20Public%20Notice.pdf",
+    "source_type": "official",
+    "retrieved_at": "2026-10-01T22:35Z",
+    "text_file": "text/D008.txt",
+    "content_sha256": "3f2aa252406e19da1d06c4ebc24fba5fcff9bc1e8ccf1d9c9fa344e33e0df7af",
+    "body_chars": 1716
+  },
+  "provider": "gemini",
+  "model": "gemini-3.8-flash",
+  "prompt_version": "v7",
+  "prompt_sha256": "b1422ff1741dafeac7cc974aae28fb90f7b09e5bcd2c01f3e1ea46c0a066198b",
+  "response_schema_sha256": "c15306da6f21dc72f06e78405f94ed61dc9e59288138cc98b5b5bf9b62ac403c",
+  "generation_settings": {
+    "temperature": null,
+    "seed": 20261001,
+    "thinking_level": "medium"
+  },
+  "as_of": "2026-10-01",
+  "cache_key": "9322d44669699f03c42d5c0c1e86e695da6e31adc8eadc57a3235fafb5794078",
+  "cache_hit": true,
+  "cache_entry": "cache/extraction/9322d44669699f03c42d5c0c1e86e695da6e31adc8eadc57a3235fafb5794078.json",
+  "provider_metadata": {
+    "api": "interactions.create",
+    "interaction_id": "",
+    "model": "gemini-3.8-flash",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4489,
+      "output_tokens": 1145,
+      "thinking_tokens": 6334,
+      "total_tokens": 11968
+    }
+  },
+  "candidate_count": 1,
+  "accepted_count": 1,
+  "rules": [
+    {
+      "team_rule_id": "r-b10f79714c",
+      "jurisdiction": "Berkeley, CA",
+      "level": "city",
+      "category": "rent_increase_limits",
+      "status": "in_force",
+      "title": "2026 Annual General Adjustment",
+      "requirement": "[Basis: official explanatory text, not operative legal text] Eligible landlords may increase 2025 permanent rent ceilings by up to 1.0% no earlier than January 1, 2026.",
+      "key_value": "1.0%",
+      "coverage_conditions": null,
+      "exemptions": "The 2026 AGA may not adjust rent for tenants whose tenancy began on or after January 1, 2025, and whose rent was set pursuant to the Costa-Hawkins Rental Housing Act. [Rent Board Regulation 1148]",
+      "overrides": [],
+      "interaction": null,
+      "effective_date": "2026-01-01",
+      "citation": "Rent Board Regulation 1148",
+      "source_doc_id": "D008",
+      "source_url": "https://rentboard.berkeleyca.gov/sites/default/files/documents/AGA%20Public%20Notice.pdf",
+      "quoted_span": "At its regular meeting on October 16, 2025, the Berkeley Rent Stabilization Board \nadopted the Annual General Adjustment (AGA) Order for Year 2026 which will allow \neligible landlords to increase the 2025 permanent rent ceilings by 1.0% no earlier than \nJanuary 1, 2026.",
+      "confidence": null,
+      "conflict_flag": false,
+      "conflict_note": null
+    }
+  ],
+  "candidates": [
+    {
+      "index": 0,
+      "origin": "primary",
+      "accepted": true,
+      "held": false,
+      "historical": false,
+      "temporal_state": "in_force",
+      "validity": {
+        "resolver": "validity-window/v1",
+        "boundaries": [
+          {
+            "kind": "unknown_temporal_note",
+            "role": "unknown",
+            "date": "2025-10-16",
+            "origin": "quoted_span",
+            "history": false,
+            "evidence": null,
+            "raw_start": null,
+            "raw_end": null
+          },
+          {
+            "kind": "unknown_temporal_note",
+            "role": "unknown",
+            "date": "2026-01-01",
+            "origin": "quoted_span",
+            "history": false,
+            "evidence": null,
+            "raw_start": null,
+            "raw_end": null
+          },
+          {
+            "kind": "unknown_temporal_note",
+            "role": "unknown",
+            "date": "2026-01-01",
+            "origin": "effective_date_evidence",
+            "history": false,
+            "evidence": null,
+            "raw_start": null,
+            "raw_end": null
+          }
+        ],
+        "end_exclusive": null,
+        "end_conflict": null,
+        "decision": {
+          "outcome": null,
+          "state": null,
+          "reason": null,
+          "start": null
+        }
+      },
+      "duplicate_of": null,
+      "rejection_reasons": [],
+      "provision_ids": [
+        "P1"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 301,
+        "end": 403,
+        "occurrences": 1,
+        "model_span": "the Berkeley Rent Stabilization Board \nadopted the Annual General Adjustment (AGA) Order for Year 2026",
+        "source_span": "the Berkeley Rent Stabilization Board \nadopted the Annual General Adjustment (AGA) Order for Year 2026",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 257,
+        "end": 527,
+        "occurrences": 1,
+        "model_span": "At its regular meeting on October 16, 2025, the Berkeley Rent Stabilization Board \nadopted the Annual General Adjustment (AGA) Order for Year 2026 which will allow \neligible landlords to increase the 2025 permanent rent ceilings by 1.0% no earlier than \nJanuary 1, 2026.",
+        "source_span": "At its regular meeting on October 16, 2025, the Berkeley Rent Stabilization Board \nadopted the Annual General Adjustment (AGA) Order for Year 2026 which will allow \neligible landlords to increase the 2025 permanent rent ceilings by 1.0% no earlier than \nJanuary 1, 2026.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "At its regular meeting on October 16, 2025, the Berkeley Rent Stabilization Board \nadopted the Annual General Adjustment (AGA) Order for Year 2026 which will allow \neligible landlords to increase the 2025 permanent rent ceilings by 1.0% no earlier than \nJanuary 1, 2026.",
+            "status": "exact_match",
+            "start": 257,
+            "end": 527
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 494,
+        "end": 526,
+        "occurrences": 1,
+        "model_span": "no earlier than \nJanuary 1, 2026",
+        "source_span": "no earlier than \nJanuary 1, 2026",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [
+        {
+          "id": "S1",
+          "kind": "exemption",
+          "mode": "named_subject",
+          "governed_provision_ids": [
+            "P1"
+          ],
+          "basis": "named-subject mapping to P1 verified by repair",
+          "applied": true
+        }
+      ],
+      "temporal": {
+        "model_effective_date": "2026-01-01",
+        "model_kind": "explicit_operative_date",
+        "applied_kind": "explicit_operative_date",
+        "effective_date": "2026-01-01",
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null
+      },
+      "status_derivation": "enacted; effective 2026-01-01 is on or before as_of 2026-10-01",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-b10f79714c",
+        "jurisdiction": "Berkeley, CA",
+        "level": "city",
+        "category": "rent_increase_limits",
+        "status": "in_force",
+        "title": "2026 Annual General Adjustment",
+        "requirement": "[Basis: official explanatory text, not operative legal text] Eligible landlords may increase 2025 permanent rent ceilings by up to 1.0% no earlier than January 1, 2026.",
+        "key_value": "1.0%",
+        "coverage_conditions": null,
+        "exemptions": "The 2026 AGA may not adjust rent for tenants whose tenancy began on or after January 1, 2025, and whose rent was set pursuant to the Costa-Hawkins Rental Housing Act. [Rent Board Regulation 1148]",
+        "overrides": [],
+        "interaction": null,
+        "effective_date": "2026-01-01",
+        "citation": "Rent Board Regulation 1148",
+        "source_doc_id": "D008",
+        "source_url": "https://rentboard.berkeleyca.gov/sites/default/files/documents/AGA%20Public%20Notice.pdf",
+        "quoted_span": "At its regular meeting on October 16, 2025, the Berkeley Rent Stabilization Board \nadopted the Annual General Adjustment (AGA) Order for Year 2026 which will allow \neligible landlords to increase the 2025 permanent rent ceilings by 1.0% no earlier than \nJanuary 1, 2026.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "rent_increase_limits",
+        "citation": "Rent Board Regulation 1148",
+        "provision_ids": [
+          "P1"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "At its regular meeting on October 16, 2025, the Berkeley Rent Stabilization Board \nadopted the Annual General Adjustment (AGA) Order for Year 2026 which will allow \neligible landlords to increase the 2025 permanent rent ceilings by 1.0% no earlier than \nJanuary 1, 2026."
+          }
+        ],
+        "title": "2026 Annual General Adjustment",
+        "requirement": "Eligible landlords may increase 2025 permanent rent ceilings by up to 1.0% no earlier than January 1, 2026.",
+        "key_value": "1.0%",
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": "the Berkeley Rent Stabilization Board \nadopted the Annual General Adjustment (AGA) Order for Year 2026",
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": "no earlier than \nJanuary 1, 2026",
+        "effective_date_evidence_kind": "explicit_operative_date",
+        "effective_date": "2026-01-01",
+        "conflict_note": null
+      }
+    }
+  ],
+  "posture": {
+    "declared": "official_explanatory_page",
+    "evidence": "BERKELEY RENT STABILIZATION BOARD \nPUBLIC NOTICE",
+    "evidence_check": {
+      "status": "exact_match",
+      "normalization": null,
+      "start": 203,
+      "end": 251,
+      "occurrences": 1,
+      "model_span": "BERKELEY RENT STABILIZATION BOARD \nPUBLIC NOTICE",
+      "source_span": "BERKELEY RENT STABILIZATION BOARD \nPUBLIC NOTICE",
+      "reason": null,
+      "reconstructed": false,
+      "parts": [],
+      "crossed_artifacts": []
+    },
+    "established": "official_explanatory_page",
+    "basis": "declared posture with verified evidence"
+  },
+  "base_dates": [],
+  "provision_inventory": [
+    {
+      "id": "P1",
+      "ref": "Rent Board Regulation 1148",
+      "anchor": "At its regular meeting on October 16, 2025, the Berkeley Rent Stabilization Board",
+      "summary": "Adopts the 2026 Annual General Adjustment allowing eligible landlords to increase 2025 permanent rent ceilings by 1.0% no earlier than January 1, 2026.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "rent_increase_limits",
+      "reason": null
+    },
+    {
+      "id": "P2",
+      "ref": "Rent Board Regulation 1148",
+      "anchor": "The 2026 AGA may not adjust tenants’ rents when",
+      "summary": "Excludes tenancies starting on or after January 1, 2025 with rent set under Costa-Hawkins from the 2026 AGA increase.",
+      "role": "exemption",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "exemption, see global_scope"
+    },
+    {
+      "id": "P3",
+      "ref": "Rent Board Regulation 1148",
+      "anchor": "The Order – Rent Board Regulation 1148 – also sets",
+      "summary": "References qualification conditions, tenant notice requirements, and where to inspect the full regulation.",
+      "role": "procedure",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "informational reference without substantive terms"
+    }
+  ],
+  "global_scope": [
+    {
+      "id": "S1",
+      "kind": "exemption",
+      "statement": "The 2026 AGA may not adjust rent for tenants whose tenancy began on or after January 1, 2025, and whose rent was set pursuant to the Costa-Hawkins Rental Housing Act.",
+      "citation": "Rent Board Regulation 1148",
+      "scope_mode": "named_subject",
+      "scope_quote": "The 2026 AGA may not adjust tenants’ rents",
+      "source_provision_id": "P2",
+      "governed_provision_ids": [
+        "P1"
+      ],
+      "evidence_parts": [
+        {
+          "segment_id": 1,
+          "quoted_text": "The 2026 AGA may not adjust tenants’ rents when their tenancy began on or after \nJanuary 1, 2025, and who had their rents set pursuant to the Costa-Hawkins Rental \nHousing Act."
+        }
+      ],
+      "evidence_check": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 970,
+        "end": 1146,
+        "occurrences": 1,
+        "model_span": "The 2026 AGA may not adjust tenants’ rents when their tenancy began on or after \nJanuary 1, 2025, and who had their rents set pursuant to the Costa-Hawkins Rental \nHousing Act.",
+        "source_span": "The 2026 AGA may not adjust tenants’ rents when their tenancy began on or after \nJanuary 1, 2025, and who had their rents set pursuant to the Costa-Hawkins Rental \nHousing Act.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "The 2026 AGA may not adjust tenants’ rents when their tenancy began on or after \nJanuary 1, 2025, and who had their rents set pursuant to the Costa-Hawkins Rental \nHousing Act.",
+            "status": "exact_match",
+            "start": 970,
+            "end": 1146
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "propagated": true,
+      "problem": null,
+      "scope": {
+        "resolver": "scope-modes/v1",
+        "declared_mode": "named_subject",
+        "mode": "named_subject",
+        "scope_words": {
+          "scope_quote": "The 2026 AGA may not adjust tenants’ rents",
+          "scope_quote_check": "exact_match",
+          "text": "The 2026 AGA may not adjust tenants’ rents",
+          "from": "scope_quote"
+        },
+        "detail": null,
+        "propagate_ids": [],
+        "mapping_targets": [
+          "P1"
+        ],
+        "verification": null
+      }
+    }
+  ],
+  "source_view": {
+    "marker": "[[PAGE BREAK]]",
+    "segment_label": "[[SEGMENT {}]]",
+    "view_sha256": "df64aeec65d98a088bbe89fe34bb6de7b958267a63b086d42a9e1cd4126f94b7",
+    "segments": [
+      {
+        "id": 1,
+        "raw_start": 0,
+        "raw_end": 1716
+      }
+    ],
+    "artifacts_removed": 0,
+    "artifacts": []
+  },
+  "coverage": {
+    "inventory_valid": true,
+    "anchors_located": "3/3",
+    "after_primary": {
+      "uncovered": [],
+      "unaccepted": [],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "scope_mappings": {
+      "requested": 1,
+      "applies": 1,
+      "does_not_apply": 0,
+      "unresolved": 0
+    },
+    "after_repair": {
+      "uncovered": [],
+      "unaccepted": [],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "repair_targets": {
+      "before_repair": 0,
+      "resolved_by_accepted_rule": 0,
+      "resolved_out_of_scope": 0,
+      "still_unresolved": 0
+    },
+    "inventory_items": 3,
+    "in_scope_items": 1,
+    "in_scope_refs": 1,
+    "uncertain": [],
+    "final": {
+      "uncovered": [],
+      "unaccepted": [],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "link_mismatches": [],
+    "provisions": [
+      {
+        "ref": "Rent Board Regulation 1148",
+        "inventory_item": 0,
+        "provision_id": "P1",
+        "summary": "Adopts the 2026 Annual General Adjustment allowing eligible landlords to increase 2025 permanent rent ceilings by 1.0% no earlier than January 1, 2026.",
+        "category": "rent_increase_limits",
+        "candidates": [
+          0
+        ],
+        "accepted": [
+          0
+        ],
+        "basis": {
+          "0": "provision link; citation names it"
+        }
+      }
+    ],
+    "unrecorded_subdivisions": []
+  },
+  "scope_challenges": [
+    {
+      "ref": "Rent Board Regulation 1148",
+      "provision_id": "P2",
+      "role": "exemption",
+      "reason": "exemption, see global_scope",
+      "summary": "Excludes tenancies starting on or after January 1, 2025 with rent set under Costa-Hawkins from the 2026 AGA increase.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role exemption is decided by other rules"
+    },
+    {
+      "ref": "Rent Board Regulation 1148",
+      "provision_id": "P3",
+      "role": "procedure",
+      "reason": "informational reference without substantive terms",
+      "summary": "References qualification conditions, tenant notice requirements, and where to inspect the full regulation.",
+      "signals": {
+        "in_scope_neighbour": false,
+        "enumeration": false,
+        "normative_language": true,
+        "grounds_or_conditions": true
+      },
+      "challenged": false,
+      "why_not": "too few substantive signals",
+      "raw_start": 1134,
+      "raw_end": 1716
+    }
+  ],
+  "scope_mappings": [
+    {
+      "condition_id": "S1",
+      "provision_id": "P1",
+      "kind": "exemption",
+      "statement": "The 2026 AGA may not adjust rent for tenants whose tenancy began on or after January 1, 2025, and whose rent was set pursuant to the Costa-Hawkins Rental Housing Act.",
+      "scope_words": "The 2026 AGA may not adjust tenants’ rents",
+      "condition_evidence": "The 2026 AGA may not adjust tenants’ rents when their tenancy began on or after \nJanuary 1, 2025, and who had their rents set pursuant to the Costa-Hawkins Rental \nHousing Act.",
+      "target_ref": "Rent Board Regulation 1148",
+      "target_anchor": "At its regular meeting on October 16, 2025, the Berkeley Rent Stabilization Board",
+      "target_quote": "At its regular meeting on October 16, 2025, the Berkeley Rent Stabilization Board \nadopted the Annual General Adjustment (AGA) Order for Year 2026 which will allow \neligible landlords to increase the 2025 permanent rent ceilings by 1.0% no earlier than \nJanuary 1, 2026.",
+      "decision": {
+        "decision": "applies",
+        "reason": "The exemption directly restricts the 2026 AGA rent adjustment authorized in P1 from applying to certain qualifying tenancies.",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 970,
+          "end": 1146,
+          "occurrences": 1,
+          "model_span": "The 2026 AGA may not adjust tenants’ rents when their tenancy began on or after \nJanuary 1, 2025, and who had their rents set pursuant to the Costa-Hawkins Rental \nHousing Act.",
+          "source_span": "The 2026 AGA may not adjust tenants’ rents when their tenancy began on or after \nJanuary 1, 2025, and who had their rents set pursuant to the Costa-Hawkins Rental \nHousing Act.",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 1,
+              "model_text": "The 2026 AGA may not adjust tenants’ rents when their tenancy began on or after \nJanuary 1, 2025, and who had their rents set pursuant to the Costa-Hawkins Rental \nHousing Act.",
+              "status": "exact_match",
+              "start": 970,
+              "end": 1146
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "applies",
+      "unresolved_reason": null
+    }
+  ],
+  "legislative_session": null,
+  "empty_result": null,
+  "legacy_replay": null,
+  "dedupe": [],
+  "chunking": null,
+  "repair": {
+    "invoked": true,
+    "reason": "0 repair target(s) from no check; 1 scope_mapping_challenge(s)",
+    "prompt_version": "v7-repair-1",
+    "targets": [],
+    "cache_key": "d0e7edf241a78a7c012fd98887cd25b3264612b3aa05c5923479657fd6e8bf72",
+    "cache_hit": true,
+    "cache_entry": "cache/extraction/d0e7edf241a78a7c012fd98887cd25b3264612b3aa05c5923479657fd6e8bf72.json",
+    "prompt_sha256": "478f3992a68cda77c047599dc5a1e53dee6b216dbaf6dfb1cf7ef0d5fce24cf7",
+    "provider_metadata": {
+      "api": "interactions.create",
+      "interaction_id": "",
+      "model": "gemini-3.8-flash",
+      "status": "completed",
+      "usage": {
+        "input_tokens": 4193,
+        "output_tokens": 183,
+        "thinking_tokens": 1025,
+        "total_tokens": 5401
+      }
+    },
+    "raw_response_text": "{\n  \"target_resolutions\": [],\n  \"scope_mappings\": [\n    {\n      \"condition_id\": \"S1\",\n      \"provision_id\": \"P1\",\n      \"decision\": \"applies\",\n      \"reason\": \"The exemption directly restricts the 2026 AGA rent adjustment authorized in P1 from applying to certain qualifying tenancies.\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"The 2026 AGA may not adjust tenants’ rents when their tenancy began on or after \\nJanuary 1, 2025, and who had their rents set pursuant to the Costa-Hawkins Rental \\nHousing Act.\"\n        }\n      ]\n    }\n  ],\n  \"rules\": []\n}",
+    "mappings": [
+      {
+        "condition_id": "S1",
+        "provision_id": "P1",
+        "kind": "exemption",
+        "statement": "The 2026 AGA may not adjust rent for tenants whose tenancy began on or after January 1, 2025, and whose rent was set pursuant to the Costa-Hawkins Rental Housing Act.",
+        "scope_words": "The 2026 AGA may not adjust tenants’ rents",
+        "condition_evidence": "The 2026 AGA may not adjust tenants’ rents when their tenancy began on or after \nJanuary 1, 2025, and who had their rents set pursuant to the Costa-Hawkins Rental \nHousing Act.",
+        "target_ref": "Rent Board Regulation 1148",
+        "target_anchor": "At its regular meeting on October 16, 2025, the Berkeley Rent Stabilization Board",
+        "target_quote": "At its regular meeting on October 16, 2025, the Berkeley Rent Stabilization Board \nadopted the Annual General Adjustment (AGA) Order for Year 2026 which will allow \neligible landlords to increase the 2025 permanent rent ceilings by 1.0% no earlier than \nJanuary 1, 2026.",
+        "decision": {
+          "decision": "applies",
+          "reason": "The exemption directly restricts the 2026 AGA rent adjustment authorized in P1 from applying to certain qualifying tenancies.",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 970,
+            "end": 1146,
+            "occurrences": 1,
+            "model_span": "The 2026 AGA may not adjust tenants’ rents when their tenancy began on or after \nJanuary 1, 2025, and who had their rents set pursuant to the Costa-Hawkins Rental \nHousing Act.",
+            "source_span": "The 2026 AGA may not adjust tenants’ rents when their tenancy began on or after \nJanuary 1, 2025, and who had their rents set pursuant to the Costa-Hawkins Rental \nHousing Act.",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 1,
+                "model_text": "The 2026 AGA may not adjust tenants’ rents when their tenancy began on or after \nJanuary 1, 2025, and who had their rents set pursuant to the Costa-Hawkins Rental \nHousing Act.",
+                "status": "exact_match",
+                "start": 970,
+                "end": 1146
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "applies",
+        "unresolved_reason": null
+      }
+    ],
+    "candidate_indices": [],
+    "accepted_count": 0,
+    "rejected_count": 0,
+    "errors": []
+  },
+  "document_status": "complete",
+  "review_reasons": [],
+  "warnings": [],
+  "errors": [],
+  "raw_response_text": "{\n  \"document\": {\n    \"posture\": \"official_explanatory_page\",\n    \"evidence\": \"BERKELEY RENT STABILIZATION BOARD \\nPUBLIC NOTICE\"\n  },\n  \"provisions\": [\n    {\n      \"id\": \"P1\",\n      \"ref\": \"Rent Board Regulation 1148\",\n      \"anchor\": \"At its regular meeting on October 16, 2025, the Berkeley Rent Stabilization Board\",\n      \"summary\": \"Adopts the 2026 Annual General Adjustment allowing eligible landlords to increase 2025 permanent rent ceilings by 1.0% no earlier than January 1, 2026.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"rent_increase_limits\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P2\",\n      \"ref\": \"Rent Board Regulation 1148\",\n      \"anchor\": \"The 2026 AGA may not adjust tenants’ rents when\",\n      \"summary\": \"Excludes tenancies starting on or after January 1, 2025 with rent set under Costa-Hawkins from the 2026 AGA increase.\",\n      \"role\": \"exemption\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"exemption, see global_scope\"\n    },\n    {\n      \"id\": \"P3\",\n      \"ref\": \"Rent Board Regulation 1148\",\n      \"anchor\": \"The Order – Rent Board Regulation 1148 – also sets\",\n      \"summary\": \"References qualification conditions, tenant notice requirements, and where to inspect the full regulation.\",\n      \"role\": \"procedure\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"informational reference without substantive terms\"\n    }\n  ],\n  \"global_scope\": [\n    {\n      \"id\": \"S1\",\n      \"kind\": \"exemption\",\n      \"statement\": \"The 2026 AGA may not adjust rent for tenants whose tenancy began on or after January 1, 2025, and whose rent was set pursuant to the Costa-Hawkins Rental Housing Act.\",\n      \"citation\": \"Rent Board Regulation 1148\",\n      \"scope_mode\": \"named_subject\",\n      \"scope_quote\": \"The 2026 AGA may not adjust tenants’ rents\",\n      \"source_provision_id\": \"P2\",\n      \"governed_provision_ids\": [\n        \"P1\"\n      ],\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"The 2026 AGA may not adjust tenants’ rents when their tenancy began on or after \\nJanuary 1, 2025, and who had their rents set pursuant to the Costa-Hawkins Rental \\nHousing Act.\"\n        }\n      ]\n    }\n  ],\n  \"rules\": [\n    {\n      \"category\": \"rent_increase_limits\",\n      \"citation\": \"Rent Board Regulation 1148\",\n      \"provision_ids\": [\n        \"P1\"\n      ],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"At its regular meeting on October 16, 2025, the Berkeley Rent Stabilization Board \\nadopted the Annual General Adjustment (AGA) Order for Year 2026 which will allow \\neligible landlords to increase the 2025 permanent rent ceilings by 1.0% no earlier than \\nJanuary 1, 2026.\"\n        }\n      ],\n      \"title\": \"2026 Annual General Adjustment\",\n      \"requirement\": \"Eligible landlords may increase 2025 permanent rent ceilings by up to 1.0% no earlier than January 1, 2026.\",\n      \"key_value\": \"1.0%\",\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": \"the Berkeley Rent Stabilization Board \\nadopted the Annual General Adjustment (AGA) Order for Year 2026\",\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": \"no earlier than \\nJanuary 1, 2026\",\n      \"effective_date_evidence_kind\": \"explicit_operative_date\",\n      \"effective_date\": \"2026-01-01\",\n      \"conflict_note\": null\n    }\n  ],\n  \"no_rules_justification\": null\n}"
+}

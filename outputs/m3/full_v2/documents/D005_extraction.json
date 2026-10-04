@@ -1,0 +1,1939 @@
+{
+  "disclaimer": "Not legal advice. Automated extraction for a research prototype; verify against the cited source.",
+  "run_at": "2026-10-04T06:34:25+00:00",
+  "source": {
+    "doc_id": "D005",
+    "jurisdiction": "Berkeley, CA",
+    "url": "https://rentboard.berkeleyca.gov/laws-regulations/city-berkeley-ordinances-affecting-rental-properties/tenant-screening-and",
+    "source_type": "official",
+    "retrieved_at": "2026-10-01T22:35Z",
+    "text_file": "text/D005.txt",
+    "content_sha256": "1ec0e4ecfc15c086f7162e0c1062e614cfc866e53b3f11a7c9cb64e8f53345dc",
+    "body_chars": 3571
+  },
+  "provider": "gemini",
+  "model": "gemini-3.8-flash",
+  "prompt_version": "v7",
+  "prompt_sha256": "38ecb81278bb4c50ec26d5bdc62920b2041f9f26f4398937b804fdf9b682c9d3",
+  "response_schema_sha256": "c15306da6f21dc72f06e78405f94ed61dc9e59288138cc98b5b5bf9b62ac403c",
+  "generation_settings": {
+    "temperature": null,
+    "seed": 20261001,
+    "thinking_level": "medium"
+  },
+  "as_of": "2026-10-01",
+  "cache_key": "b40922eb2a498b997dd0a5f46bca44c69f5da8d8d014b8424888e49f0912afa7",
+  "cache_hit": true,
+  "cache_entry": "cache/extraction/b40922eb2a498b997dd0a5f46bca44c69f5da8d8d014b8424888e49f0912afa7.json",
+  "provider_metadata": {
+    "api": "interactions.create",
+    "interaction_id": "",
+    "model": "gemini-3.8-flash",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4714,
+      "output_tokens": 5144,
+      "thinking_tokens": 26839,
+      "total_tokens": 36697
+    }
+  },
+  "candidate_count": 10,
+  "accepted_count": 0,
+  "rules": [],
+  "candidates": [
+    {
+      "index": 0,
+      "origin": "primary",
+      "accepted": false,
+      "held": true,
+      "historical": false,
+      "temporal_state": "held",
+      "validity": {
+        "resolver": "validity-window/v1",
+        "boundaries": [],
+        "end_exclusive": null,
+        "end_conflict": null,
+        "decision": {
+          "outcome": null,
+          "state": null,
+          "reason": null,
+          "start": null
+        }
+      },
+      "duplicate_of": null,
+      "rejection_reasons": [
+        "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      ],
+      "provision_ids": [
+        "P1"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": null,
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 294,
+        "end": 345,
+        "occurrences": 1,
+        "model_span": "The maximum tenant screening fee for 2026 is\n$68.96",
+        "source_span": "The maximum tenant screening fee for 2026 is\n$68.96",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "The maximum tenant screening fee for 2026 is\n$68.96",
+            "status": "exact_match",
+            "start": 294,
+            "end": 345
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": null,
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": null,
+        "applied_kind": null,
+        "effective_date": null,
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null,
+        "unresolved_reason": "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      },
+      "status_derivation": "temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-1a257fd6ec",
+        "jurisdiction": "Berkeley, CA",
+        "level": "city",
+        "category": "application_screening_fees",
+        "status": null,
+        "title": "Maximum Tenant Screening Fee (2026)",
+        "requirement": "[Basis: official explanatory text, not operative legal text] The maximum tenant screening fee that may be charged to a prospective tenant for 2026 is $68.96.",
+        "key_value": "$68.96",
+        "coverage_conditions": null,
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "Cal. Civ. Code § 1950.6",
+        "source_doc_id": "D005",
+        "source_url": "https://rentboard.berkeleyca.gov/laws-regulations/city-berkeley-ordinances-affecting-rental-properties/tenant-screening-and",
+        "quoted_span": "The maximum tenant screening fee for 2026 is\n$68.96",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "application_screening_fees",
+        "citation": "Cal. Civ. Code § 1950.6",
+        "provision_ids": [
+          "P1"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "The maximum tenant screening fee for 2026 is\n$68.96"
+          }
+        ],
+        "title": "Maximum Tenant Screening Fee (2026)",
+        "requirement": "The maximum tenant screening fee that may be charged to a prospective tenant for 2026 is $68.96.",
+        "key_value": "$68.96",
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": null,
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": null,
+        "effective_date_evidence_kind": null,
+        "effective_date": null,
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 1,
+      "origin": "primary",
+      "accepted": false,
+      "held": true,
+      "historical": false,
+      "temporal_state": "held",
+      "validity": {
+        "resolver": "validity-window/v1",
+        "boundaries": [],
+        "end_exclusive": null,
+        "end_conflict": null,
+        "decision": {
+          "outcome": null,
+          "state": null,
+          "reason": null,
+          "start": null
+        }
+      },
+      "duplicate_of": null,
+      "rejection_reasons": [
+        "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      ],
+      "provision_ids": [
+        "P2"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": null,
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 346,
+        "end": 458,
+        "occurrences": 1,
+        "model_span": "Landlords may use screening fees to obtain information about a prospective tenant like a consumer credit report.",
+        "source_span": "Landlords may use screening fees to obtain information about a prospective tenant like a consumer credit report.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "Landlords may use screening fees to obtain information about a prospective tenant like a consumer credit report.",
+            "status": "exact_match",
+            "start": 346,
+            "end": 458
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": null,
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": null,
+        "applied_kind": null,
+        "effective_date": null,
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null,
+        "unresolved_reason": "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      },
+      "status_derivation": "temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-2961b3c915",
+        "jurisdiction": "Berkeley, CA",
+        "level": "city",
+        "category": "application_screening_fees",
+        "status": null,
+        "title": "Permitted Use of Screening Fees",
+        "requirement": "[Basis: official explanatory text, not operative legal text] Landlords may use screening fees to obtain information regarding a prospective tenant, such as a consumer credit report.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "Cal. Civ. Code § 1950.6",
+        "source_doc_id": "D005",
+        "source_url": "https://rentboard.berkeleyca.gov/laws-regulations/city-berkeley-ordinances-affecting-rental-properties/tenant-screening-and",
+        "quoted_span": "Landlords may use screening fees to obtain information about a prospective tenant like a consumer credit report.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "application_screening_fees",
+        "citation": "Cal. Civ. Code § 1950.6",
+        "provision_ids": [
+          "P2"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "Landlords may use screening fees to obtain information about a prospective tenant like a consumer credit report."
+          }
+        ],
+        "title": "Permitted Use of Screening Fees",
+        "requirement": "Landlords may use screening fees to obtain information regarding a prospective tenant, such as a consumer credit report.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": null,
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": null,
+        "effective_date_evidence_kind": null,
+        "effective_date": null,
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 2,
+      "origin": "primary",
+      "accepted": false,
+      "held": true,
+      "historical": false,
+      "temporal_state": "held",
+      "validity": {
+        "resolver": "validity-window/v1",
+        "boundaries": [],
+        "end_exclusive": null,
+        "end_conflict": null,
+        "decision": {
+          "outcome": null,
+          "state": null,
+          "reason": null,
+          "start": null
+        }
+      },
+      "duplicate_of": null,
+      "rejection_reasons": [
+        "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      ],
+      "provision_ids": [
+        "P3"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": null,
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 459,
+        "end": 749,
+        "occurrences": 1,
+        "model_span": "Prospective tenants should expect to receive a copy of their credit report within 7 days of receipt by the landlord, a receipt for the fee paid and an itemized list of any out-of-pocket expenses and time spent by the landlord on the screening, and a refund of any unused portion of the fee.",
+        "source_span": "Prospective tenants should expect to receive a copy of their credit report within 7 days of receipt by the landlord, a receipt for the fee paid and an itemized list of any out-of-pocket expenses and time spent by the landlord on the screening, and a refund of any unused portion of the fee.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "Prospective tenants should expect to receive a copy of their credit report within 7 days of receipt by the landlord, a receipt for the fee paid and an itemized list of any out-of-pocket expenses and time spent by the landlord on the screening, and a refund of any unused portion of the fee.",
+            "status": "exact_match",
+            "start": 459,
+            "end": 749
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": null,
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": null,
+        "applied_kind": null,
+        "effective_date": null,
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null,
+        "unresolved_reason": "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      },
+      "status_derivation": "temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-8dc992a921",
+        "jurisdiction": "Berkeley, CA",
+        "level": "city",
+        "category": "application_screening_fees",
+        "status": null,
+        "title": "Screening Fee Receipt, Credit Report Delivery, and Unused Fee Refund",
+        "requirement": "[Basis: official explanatory text, not operative legal text] A landlord must provide a prospective tenant with a copy of their credit report within 7 days of receipt, a receipt for the screening fee paid, an itemized list of out-of-pocket expenses and time spent on screening, and a refund of any unused portion of the fee.",
+        "key_value": "7 days",
+        "coverage_conditions": null,
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "Cal. Civ. Code § 1950.6",
+        "source_doc_id": "D005",
+        "source_url": "https://rentboard.berkeleyca.gov/laws-regulations/city-berkeley-ordinances-affecting-rental-properties/tenant-screening-and",
+        "quoted_span": "Prospective tenants should expect to receive a copy of their credit report within 7 days of receipt by the landlord, a receipt for the fee paid and an itemized list of any out-of-pocket expenses and time spent by the landlord on the screening, and a refund of any unused portion of the fee.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "application_screening_fees",
+        "citation": "Cal. Civ. Code § 1950.6",
+        "provision_ids": [
+          "P3"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "Prospective tenants should expect to receive a copy of their credit report within 7 days of receipt by the landlord, a receipt for the fee paid and an itemized list of any out-of-pocket expenses and time spent by the landlord on the screening, and a refund of any unused portion of the fee."
+          }
+        ],
+        "title": "Screening Fee Receipt, Credit Report Delivery, and Unused Fee Refund",
+        "requirement": "A landlord must provide a prospective tenant with a copy of their credit report within 7 days of receipt, a receipt for the screening fee paid, an itemized list of out-of-pocket expenses and time spent on screening, and a refund of any unused portion of the fee.",
+        "key_value": "7 days",
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": null,
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": null,
+        "effective_date_evidence_kind": null,
+        "effective_date": null,
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 3,
+      "origin": "primary",
+      "accepted": false,
+      "held": true,
+      "historical": false,
+      "temporal_state": "held",
+      "validity": {
+        "resolver": "validity-window/v1",
+        "boundaries": [],
+        "end_exclusive": null,
+        "end_conflict": null,
+        "decision": {
+          "outcome": null,
+          "state": null,
+          "reason": null,
+          "start": null
+        }
+      },
+      "duplicate_of": null,
+      "rejection_reasons": [
+        "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      ],
+      "provision_ids": [
+        "P4"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": null,
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": "Applies when the prospective tenant provides a reusable screening report.",
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 750,
+        "end": 827,
+        "occurrences": 1,
+        "model_span": "If the tenant provides a reusable screening report, the landlord must use it.",
+        "source_span": "If the tenant provides a reusable screening report, the landlord must use it.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "If the tenant provides a reusable screening report, the landlord must use it.",
+            "status": "exact_match",
+            "start": 750,
+            "end": 827
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": null,
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": null,
+        "applied_kind": null,
+        "effective_date": null,
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null,
+        "unresolved_reason": "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      },
+      "status_derivation": "temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-9be185fcc6",
+        "jurisdiction": "Berkeley, CA",
+        "level": "city",
+        "category": "application_screening_fees",
+        "status": null,
+        "title": "Mandatory Use of Reusable Screening Report",
+        "requirement": "[Basis: official explanatory text, not operative legal text] A landlord must use a reusable screening report if one is provided by the prospective tenant.",
+        "key_value": null,
+        "coverage_conditions": "Applies when the prospective tenant provides a reusable screening report.",
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "Cal. Civ. Code § 1950.6",
+        "source_doc_id": "D005",
+        "source_url": "https://rentboard.berkeleyca.gov/laws-regulations/city-berkeley-ordinances-affecting-rental-properties/tenant-screening-and",
+        "quoted_span": "If the tenant provides a reusable screening report, the landlord must use it.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "application_screening_fees",
+        "citation": "Cal. Civ. Code § 1950.6",
+        "provision_ids": [
+          "P4"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "If the tenant provides a reusable screening report, the landlord must use it."
+          }
+        ],
+        "title": "Mandatory Use of Reusable Screening Report",
+        "requirement": "A landlord must use a reusable screening report if one is provided by the prospective tenant.",
+        "key_value": null,
+        "coverage_conditions": "Applies when the prospective tenant provides a reusable screening report.",
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": null,
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": null,
+        "effective_date_evidence_kind": null,
+        "effective_date": null,
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 4,
+      "origin": "primary",
+      "accepted": false,
+      "held": true,
+      "historical": false,
+      "temporal_state": "held",
+      "validity": {
+        "resolver": "validity-window/v1",
+        "boundaries": [],
+        "end_exclusive": null,
+        "end_conflict": null,
+        "decision": {
+          "outcome": null,
+          "state": null,
+          "reason": null,
+          "start": null
+        }
+      },
+      "duplicate_of": null,
+      "rejection_reasons": [
+        "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      ],
+      "provision_ids": [
+        "P5"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": null,
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 828,
+        "end": 932,
+        "occurrences": 1,
+        "model_span": "The landlord cannot charge a prospective tenant a screening fee if no rental unit is actually available.",
+        "source_span": "The landlord cannot charge a prospective tenant a screening fee if no rental unit is actually available.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "The landlord cannot charge a prospective tenant a screening fee if no rental unit is actually available.",
+            "status": "exact_match",
+            "start": 828,
+            "end": 932
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": null,
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": null,
+        "applied_kind": null,
+        "effective_date": null,
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null,
+        "unresolved_reason": "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      },
+      "status_derivation": "temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-44fc7ea23a",
+        "jurisdiction": "Berkeley, CA",
+        "level": "city",
+        "category": "application_screening_fees",
+        "status": null,
+        "title": "Prohibition of Screening Fee When No Unit Available",
+        "requirement": "[Basis: official explanatory text, not operative legal text] A landlord is prohibited from charging a screening fee to a prospective tenant if no rental unit is actually available.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "Cal. Civ. Code § 1950.6",
+        "source_doc_id": "D005",
+        "source_url": "https://rentboard.berkeleyca.gov/laws-regulations/city-berkeley-ordinances-affecting-rental-properties/tenant-screening-and",
+        "quoted_span": "The landlord cannot charge a prospective tenant a screening fee if no rental unit is actually available.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "application_screening_fees",
+        "citation": "Cal. Civ. Code § 1950.6",
+        "provision_ids": [
+          "P5"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "The landlord cannot charge a prospective tenant a screening fee if no rental unit is actually available."
+          }
+        ],
+        "title": "Prohibition of Screening Fee When No Unit Available",
+        "requirement": "A landlord is prohibited from charging a screening fee to a prospective tenant if no rental unit is actually available.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": null,
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": null,
+        "effective_date_evidence_kind": null,
+        "effective_date": null,
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 5,
+      "origin": "primary",
+      "accepted": false,
+      "held": true,
+      "historical": false,
+      "temporal_state": "held",
+      "validity": {
+        "resolver": "validity-window/v1",
+        "boundaries": [],
+        "end_exclusive": null,
+        "end_conflict": null,
+        "decision": {
+          "outcome": null,
+          "state": null,
+          "reason": null,
+          "start": null
+        }
+      },
+      "duplicate_of": null,
+      "rejection_reasons": [
+        "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      ],
+      "provision_ids": [
+        "P6"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": null,
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": "Landlords who review applications in the order received, give the unit to the first qualified applicant, and do not charge a screening fee to applicants not considered are exempt from returning the fee to unselected applicants.",
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 933,
+        "end": 1210,
+        "occurrences": 1,
+        "model_span": "The landlord must also return a screening fee to any applicant not selected, or have a policy under which they: (1) review applications in the order received and the first qualified applicant gets the unit, and (2) do not charge a screening fee to any applicant not considered.",
+        "source_span": "The landlord must also return a screening fee to any applicant not selected, or have a policy under which they: (1) review applications in the order received and the first qualified applicant gets the unit, and (2) do not charge a screening fee to any applicant not considered.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "The landlord must also return a screening fee to any applicant not selected, or have a policy under which they: (1) review applications in the order received and the first qualified applicant gets the unit, and (2) do not charge a screening fee to any applicant not considered.",
+            "status": "exact_match",
+            "start": 933,
+            "end": 1210
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": null,
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": null,
+        "applied_kind": null,
+        "effective_date": null,
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null,
+        "unresolved_reason": "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      },
+      "status_derivation": "temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-8fb1f27c51",
+        "jurisdiction": "Berkeley, CA",
+        "level": "city",
+        "category": "application_screening_fees",
+        "status": null,
+        "title": "Return of Screening Fee to Unselected Applicants",
+        "requirement": "[Basis: official explanatory text, not operative legal text] A landlord must return a screening fee to any applicant not selected, unless the landlord maintains a policy to review applications in the order received, award the unit to the first qualified applicant, and not charge a screening fee to any applicant not considered.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": "Landlords who review applications in the order received, give the unit to the first qualified applicant, and do not charge a screening fee to applicants not considered are exempt from returning the fee to unselected applicants.",
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "Cal. Civ. Code § 1950.6",
+        "source_doc_id": "D005",
+        "source_url": "https://rentboard.berkeleyca.gov/laws-regulations/city-berkeley-ordinances-affecting-rental-properties/tenant-screening-and",
+        "quoted_span": "The landlord must also return a screening fee to any applicant not selected, or have a policy under which they: (1) review applications in the order received and the first qualified applicant gets the unit, and (2) do not charge a screening fee to any applicant not considered.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "application_screening_fees",
+        "citation": "Cal. Civ. Code § 1950.6",
+        "provision_ids": [
+          "P6"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "The landlord must also return a screening fee to any applicant not selected, or have a policy under which they: (1) review applications in the order received and the first qualified applicant gets the unit, and (2) do not charge a screening fee to any applicant not considered."
+          }
+        ],
+        "title": "Return of Screening Fee to Unselected Applicants",
+        "requirement": "A landlord must return a screening fee to any applicant not selected, unless the landlord maintains a policy to review applications in the order received, award the unit to the first qualified applicant, and not charge a screening fee to any applicant not considered.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": "Landlords who review applications in the order received, give the unit to the first qualified applicant, and do not charge a screening fee to applicants not considered are exempt from returning the fee to unselected applicants.",
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": null,
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": null,
+        "effective_date_evidence_kind": null,
+        "effective_date": null,
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 6,
+      "origin": "primary",
+      "accepted": false,
+      "held": true,
+      "historical": false,
+      "temporal_state": "held",
+      "validity": {
+        "resolver": "validity-window/v1",
+        "boundaries": [],
+        "end_exclusive": null,
+        "end_conflict": null,
+        "decision": {
+          "outcome": null,
+          "state": null,
+          "reason": null,
+          "start": null
+        }
+      },
+      "duplicate_of": null,
+      "rejection_reasons": [
+        "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      ],
+      "provision_ids": [
+        "P7"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": null,
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": "Applies when an owner or agent receives a request to rent residential property in Berkeley from an applicant and charges a fee to purchase a credit report or process the application.",
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "layout_normalized_match",
+        "normalization": "Unicode NFC; each whitespace run (incl. line breaks) compared as one space; span ends trimmed; whitespace immediately adjacent to ( ) [ ] ignored (layout only)",
+        "start": 1354,
+        "end": 1859,
+        "occurrences": 1,
+        "model_span": "When an owner or the owner’s agent gets a request to rent residential property in Berkeley from an applicant and the owner charges a fee to purchase a consumer credit report and to validate, review, or otherwise process an application, the owner must provide, either in the rental application or in a separate disclosure before receiving the fee, a clear and conspicuous tenant screening fee rights statement and a statement of the maximum fee cap permitted under\nCalifornia Civil Code Section 1950.6(b).",
+        "source_span": "When an owner or the owner’s agent gets a request to rent residential property in Berkeley from an applicant and the owner charges a fee to purchase a consumer credit report and to validate, review, or otherwise process an application, the owner must provide, either in the rental application or in a separate disclosure before receiving the fee, a clear and conspicuous tenant screening fee rights statement and a statement of the maximum fee cap permitted under\nCalifornia Civil Code Section 1950.6(b)\n.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "When an owner or the owner’s agent gets a request to rent residential property in Berkeley from an applicant and the owner charges a fee to purchase a consumer credit report and to validate, review, or otherwise process an application, the owner must provide, either in the rental application or in a separate disclosure before receiving the fee, a clear and conspicuous tenant screening fee rights statement and a statement of the maximum fee cap permitted under\nCalifornia Civil Code Section 1950.6(b).",
+            "status": "layout_normalized_match",
+            "start": 1354,
+            "end": 1859
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": null,
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": null,
+        "applied_kind": null,
+        "effective_date": null,
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null,
+        "unresolved_reason": "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      },
+      "status_derivation": "temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)",
+        "quoted_span matched only after layout normalization (whitespace next to brackets); exact source text used in the record"
+      ],
+      "rule": {
+        "team_rule_id": "r-92f87f427c",
+        "jurisdiction": "Berkeley, CA",
+        "level": "city",
+        "category": "application_screening_fees",
+        "status": null,
+        "title": "Notification of State Law Limitation on Tenant Screening Fees",
+        "requirement": "[Basis: official explanatory text, not operative legal text] An owner or owner's agent charging a fee to purchase a credit report or process a residential rental application in Berkeley must provide, in the application or in a separate disclosure before receiving the fee, a clear and conspicuous tenant screening fee rights statement and a statement of the statutory maximum fee cap permitted under California Civil Code Section 1950.6(b).",
+        "key_value": null,
+        "coverage_conditions": "Applies when an owner or agent receives a request to rent residential property in Berkeley from an applicant and charges a fee to purchase a credit report or process the application.",
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "BMC 13.78.010",
+        "source_doc_id": "D005",
+        "source_url": "https://rentboard.berkeleyca.gov/laws-regulations/city-berkeley-ordinances-affecting-rental-properties/tenant-screening-and",
+        "quoted_span": "When an owner or the owner’s agent gets a request to rent residential property in Berkeley from an applicant and the owner charges a fee to purchase a consumer credit report and to validate, review, or otherwise process an application, the owner must provide, either in the rental application or in a separate disclosure before receiving the fee, a clear and conspicuous tenant screening fee rights statement and a statement of the maximum fee cap permitted under\nCalifornia Civil Code Section 1950.6(b)\n.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "application_screening_fees",
+        "citation": "BMC 13.78.010",
+        "provision_ids": [
+          "P7"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "When an owner or the owner’s agent gets a request to rent residential property in Berkeley from an applicant and the owner charges a fee to purchase a consumer credit report and to validate, review, or otherwise process an application, the owner must provide, either in the rental application or in a separate disclosure before receiving the fee, a clear and conspicuous tenant screening fee rights statement and a statement of the maximum fee cap permitted under\nCalifornia Civil Code Section 1950.6(b)."
+          }
+        ],
+        "title": "Notification of State Law Limitation on Tenant Screening Fees",
+        "requirement": "An owner or owner's agent charging a fee to purchase a credit report or process a residential rental application in Berkeley must provide, in the application or in a separate disclosure before receiving the fee, a clear and conspicuous tenant screening fee rights statement and a statement of the statutory maximum fee cap permitted under California Civil Code Section 1950.6(b).",
+        "key_value": null,
+        "coverage_conditions": "Applies when an owner or agent receives a request to rent residential property in Berkeley from an applicant and charges a fee to purchase a credit report or process the application.",
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": null,
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": null,
+        "effective_date_evidence_kind": null,
+        "effective_date": null,
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 7,
+      "origin": "primary",
+      "accepted": false,
+      "held": true,
+      "historical": false,
+      "temporal_state": "held",
+      "validity": {
+        "resolver": "validity-window/v1",
+        "boundaries": [],
+        "end_exclusive": null,
+        "end_conflict": null,
+        "decision": {
+          "outcome": null,
+          "state": null,
+          "reason": null,
+          "start": null
+        }
+      },
+      "duplicate_of": null,
+      "rejection_reasons": [
+        "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      ],
+      "provision_ids": [
+        "P8"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": null,
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 1860,
+        "end": 2318,
+        "occurrences": 1,
+        "model_span": "The “Tenant Screening Fee Rights Statement” shall mean the following statement or a substantially similar statement:\n\"Pursuant to California law you have tenant screening fee rights, including the right to a copy of your consumer credit report if one is obtained with your screening fee, a refund of any unused portion of the fee and a receipt of the costs of the screening. For more information about your rights, please visit [URL to be provided by City].\"",
+        "source_span": "The “Tenant Screening Fee Rights Statement” shall mean the following statement or a substantially similar statement:\n\"Pursuant to California law you have tenant screening fee rights, including the right to a copy of your consumer credit report if one is obtained with your screening fee, a refund of any unused portion of the fee and a receipt of the costs of the screening. For more information about your rights, please visit [URL to be provided by City].\"",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "The “Tenant Screening Fee Rights Statement” shall mean the following statement or a substantially similar statement:\n\"Pursuant to California law you have tenant screening fee rights, including the right to a copy of your consumer credit report if one is obtained with your screening fee, a refund of any unused portion of the fee and a receipt of the costs of the screening. For more information about your rights, please visit [URL to be provided by City].\"",
+            "status": "exact_match",
+            "start": 1860,
+            "end": 2318
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": null,
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": null,
+        "applied_kind": null,
+        "effective_date": null,
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null,
+        "unresolved_reason": "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      },
+      "status_derivation": "temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-ac67a04920",
+        "jurisdiction": "Berkeley, CA",
+        "level": "city",
+        "category": "application_screening_fees",
+        "status": null,
+        "title": "Tenant Screening Fee Rights Statement Required Content",
+        "requirement": "[Basis: official explanatory text, not operative legal text] The Tenant Screening Fee Rights Statement provided to applicants must consist of the specified statutory text or a substantially similar statement informing applicants of their rights to a credit report copy, a refund of unused fees, a receipt of costs, and the City URL.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "BMC 13.78.010",
+        "source_doc_id": "D005",
+        "source_url": "https://rentboard.berkeleyca.gov/laws-regulations/city-berkeley-ordinances-affecting-rental-properties/tenant-screening-and",
+        "quoted_span": "The “Tenant Screening Fee Rights Statement” shall mean the following statement or a substantially similar statement:\n\"Pursuant to California law you have tenant screening fee rights, including the right to a copy of your consumer credit report if one is obtained with your screening fee, a refund of any unused portion of the fee and a receipt of the costs of the screening. For more information about your rights, please visit [URL to be provided by City].\"",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "application_screening_fees",
+        "citation": "BMC 13.78.010",
+        "provision_ids": [
+          "P8"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "The “Tenant Screening Fee Rights Statement” shall mean the following statement or a substantially similar statement:\n\"Pursuant to California law you have tenant screening fee rights, including the right to a copy of your consumer credit report if one is obtained with your screening fee, a refund of any unused portion of the fee and a receipt of the costs of the screening. For more information about your rights, please visit [URL to be provided by City].\""
+          }
+        ],
+        "title": "Tenant Screening Fee Rights Statement Required Content",
+        "requirement": "The Tenant Screening Fee Rights Statement provided to applicants must consist of the specified statutory text or a substantially similar statement informing applicants of their rights to a credit report copy, a refund of unused fees, a receipt of costs, and the City URL.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": null,
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": null,
+        "effective_date_evidence_kind": null,
+        "effective_date": null,
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 8,
+      "origin": "primary",
+      "accepted": false,
+      "held": true,
+      "historical": false,
+      "temporal_state": "held",
+      "validity": {
+        "resolver": "validity-window/v1",
+        "boundaries": [],
+        "end_exclusive": null,
+        "end_conflict": null,
+        "decision": {
+          "outcome": null,
+          "state": null,
+          "reason": null,
+          "start": null
+        }
+      },
+      "duplicate_of": null,
+      "rejection_reasons": [
+        "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      ],
+      "provision_ids": [
+        "P9"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": null,
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": "Applies to fees charged to existing tenants in residential rental properties.",
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 2482,
+        "end": 2796,
+        "occurrences": 1,
+        "model_span": "An owner of residential rental property (or the owner’s agent) cannot charge a non-refundable fee to any existing tenant for the purpose of renewing a tenancy, in whole or in part, including any fee associated with the departure of a roommate or to request to add or replace a roommate in a pre-existing household.",
+        "source_span": "An owner of residential rental property (or the owner’s agent) cannot charge a non-refundable fee to any existing tenant for the purpose of renewing a tenancy, in whole or in part, including any fee associated with the departure of a roommate or to request to add or replace a roommate in a pre-existing household.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "An owner of residential rental property (or the owner’s agent) cannot charge a non-refundable fee to any existing tenant for the purpose of renewing a tenancy, in whole or in part, including any fee associated with the departure of a roommate or to request to add or replace a roommate in a pre-existing household.",
+            "status": "exact_match",
+            "start": 2482,
+            "end": 2796
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": null,
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": null,
+        "applied_kind": null,
+        "effective_date": null,
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null,
+        "unresolved_reason": "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      },
+      "status_derivation": "temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-60c31eef77",
+        "jurisdiction": "Berkeley, CA",
+        "level": "city",
+        "category": "application_screening_fees",
+        "status": null,
+        "title": "Prohibition of Non-Refundable Application Fees for Existing Tenancies",
+        "requirement": "[Basis: official explanatory text, not operative legal text] An owner of residential rental property or their agent cannot charge a non-refundable fee to an existing tenant for renewing a tenancy in whole or in part, including fees associated with roommate departure or requests to add or replace a roommate in a pre-existing household.",
+        "key_value": null,
+        "coverage_conditions": "Applies to fees charged to existing tenants in residential rental properties.",
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "BMC 13.78.016",
+        "source_doc_id": "D005",
+        "source_url": "https://rentboard.berkeleyca.gov/laws-regulations/city-berkeley-ordinances-affecting-rental-properties/tenant-screening-and",
+        "quoted_span": "An owner of residential rental property (or the owner’s agent) cannot charge a non-refundable fee to any existing tenant for the purpose of renewing a tenancy, in whole or in part, including any fee associated with the departure of a roommate or to request to add or replace a roommate in a pre-existing household.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "application_screening_fees",
+        "citation": "BMC 13.78.016",
+        "provision_ids": [
+          "P9"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "An owner of residential rental property (or the owner’s agent) cannot charge a non-refundable fee to any existing tenant for the purpose of renewing a tenancy, in whole or in part, including any fee associated with the departure of a roommate or to request to add or replace a roommate in a pre-existing household."
+          }
+        ],
+        "title": "Prohibition of Non-Refundable Application Fees for Existing Tenancies",
+        "requirement": "An owner of residential rental property or their agent cannot charge a non-refundable fee to an existing tenant for renewing a tenancy in whole or in part, including fees associated with roommate departure or requests to add or replace a roommate in a pre-existing household.",
+        "key_value": null,
+        "coverage_conditions": "Applies to fees charged to existing tenants in residential rental properties.",
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": null,
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": null,
+        "effective_date_evidence_kind": null,
+        "effective_date": null,
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 9,
+      "origin": "primary",
+      "accepted": false,
+      "held": true,
+      "historical": false,
+      "temporal_state": "held",
+      "validity": {
+        "resolver": "validity-window/v1",
+        "boundaries": [],
+        "end_exclusive": null,
+        "end_conflict": null,
+        "decision": {
+          "outcome": null,
+          "state": null,
+          "reason": null,
+          "start": null
+        }
+      },
+      "duplicate_of": null,
+      "rejection_reasons": [
+        "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      ],
+      "provision_ids": [
+        "P11"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": null,
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 3005,
+        "end": 3123,
+        "occurrences": 1,
+        "model_span": "Any provision of an existing rental agreement or lease that violates the provisions of this chapter are unenforceable.",
+        "source_span": "Any provision of an existing rental agreement or lease that violates the provisions of this chapter are unenforceable.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "Any provision of an existing rental agreement or lease that violates the provisions of this chapter are unenforceable.",
+            "status": "exact_match",
+            "start": 3005,
+            "end": 3123
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": null,
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": null,
+        "applied_kind": null,
+        "effective_date": null,
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null,
+        "unresolved_reason": "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      },
+      "status_derivation": "temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-749456a1b7",
+        "jurisdiction": "Berkeley, CA",
+        "level": "city",
+        "category": "application_screening_fees",
+        "status": null,
+        "title": "Unenforceability of Violating Lease Provisions",
+        "requirement": "[Basis: official explanatory text, not operative legal text] Any provision in an existing rental agreement or lease that violates the provisions of Chapter 13.78 is legally unenforceable.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "BMC 13.78.018",
+        "source_doc_id": "D005",
+        "source_url": "https://rentboard.berkeleyca.gov/laws-regulations/city-berkeley-ordinances-affecting-rental-properties/tenant-screening-and",
+        "quoted_span": "Any provision of an existing rental agreement or lease that violates the provisions of this chapter are unenforceable.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "application_screening_fees",
+        "citation": "BMC 13.78.018",
+        "provision_ids": [
+          "P11"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "Any provision of an existing rental agreement or lease that violates the provisions of this chapter are unenforceable."
+          }
+        ],
+        "title": "Unenforceability of Violating Lease Provisions",
+        "requirement": "Any provision in an existing rental agreement or lease that violates the provisions of Chapter 13.78 is legally unenforceable.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": null,
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": null,
+        "effective_date_evidence_kind": null,
+        "effective_date": null,
+        "conflict_note": null
+      }
+    }
+  ],
+  "posture": {
+    "declared": "official_explanatory_page",
+    "evidence": "Tenant Screening and Application Fees | Berkeley Rent Board",
+    "evidence_check": {
+      "status": "exact_match",
+      "normalization": null,
+      "start": 0,
+      "end": 59,
+      "occurrences": 1,
+      "model_span": "Tenant Screening and Application Fees | Berkeley Rent Board",
+      "source_span": "Tenant Screening and Application Fees | Berkeley Rent Board",
+      "reason": null,
+      "reconstructed": false,
+      "parts": [],
+      "crossed_artifacts": []
+    },
+    "established": "official_explanatory_page",
+    "basis": "declared posture with verified evidence"
+  },
+  "base_dates": [],
+  "provision_inventory": [
+    {
+      "id": "P1",
+      "ref": "Cal. Civ. Code § 1950.6",
+      "anchor": "The maximum tenant screening fee for 2026 is",
+      "summary": "Establishes the maximum tenant screening fee cap for 2026.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "application_screening_fees",
+      "reason": null
+    },
+    {
+      "id": "P2",
+      "ref": "Cal. Civ. Code § 1950.6",
+      "anchor": "Landlords may use screening fees to obtain information about",
+      "summary": "Specifies permitted uses of screening fees by landlords.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "application_screening_fees",
+      "reason": null
+    },
+    {
+      "id": "P3",
+      "ref": "Cal. Civ. Code § 1950.6",
+      "anchor": "Prospective tenants should expect to receive a copy of",
+      "summary": "Requires landlords to provide a credit report copy within 7 days, a fee receipt, an itemized list of expenses/time, and a refund of unused fee amounts.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "application_screening_fees",
+      "reason": null
+    },
+    {
+      "id": "P4",
+      "ref": "Cal. Civ. Code § 1950.6",
+      "anchor": "If the tenant provides a reusable screening report, the",
+      "summary": "Requires landlords to use a reusable screening report if provided by the prospective tenant.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "application_screening_fees",
+      "reason": null
+    },
+    {
+      "id": "P5",
+      "ref": "Cal. Civ. Code § 1950.6",
+      "anchor": "The landlord cannot charge a prospective tenant a screening",
+      "summary": "Prohibits charging a screening fee when no rental unit is actually available.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "application_screening_fees",
+      "reason": null
+    },
+    {
+      "id": "P6",
+      "ref": "Cal. Civ. Code § 1950.6",
+      "anchor": "The landlord must also return a screening fee to",
+      "summary": "Requires return of screening fees to unselected applicants unless the landlord follows an order-of-receipt application review policy.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "application_screening_fees",
+      "reason": null
+    },
+    {
+      "id": "P7",
+      "ref": "BMC 13.78.010",
+      "anchor": "When an owner or the owner’s agent gets a",
+      "summary": "Requires owners charging an application processing fee to provide a screening fee rights statement and fee cap disclosure.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "application_screening_fees",
+      "reason": null
+    },
+    {
+      "id": "P8",
+      "ref": "BMC 13.78.010",
+      "anchor": "The “Tenant Screening Fee Rights Statement” shall mean the",
+      "summary": "Defines the required language for the Tenant Screening Fee Rights Statement disclosure.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "application_screening_fees",
+      "reason": null
+    },
+    {
+      "id": "P9",
+      "ref": "BMC 13.78.016",
+      "anchor": "An owner of residential rental property (or the owner’s",
+      "summary": "Prohibits non-refundable fees charged to existing tenants for tenancy renewal or roommate departure/replacement.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "application_screening_fees",
+      "reason": null
+    },
+    {
+      "id": "P10",
+      "ref": "BMC 13.78.018",
+      "anchor": "Chapter 13.78 applies to all residential rental agreements",
+      "summary": "Establishes that Chapter 13.78 applies to all residential rental agreements regardless of contrary lease terms.",
+      "role": "scope_condition",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "scope condition, see global_scope"
+    },
+    {
+      "id": "P11",
+      "ref": "BMC 13.78.018",
+      "anchor": "Any provision of an existing rental agreement or lease",
+      "summary": "Renders unenforceable any provision of an existing rental agreement or lease that violates Chapter 13.78.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "application_screening_fees",
+      "reason": null
+    }
+  ],
+  "global_scope": [
+    {
+      "id": "S1",
+      "kind": "coverage_condition",
+      "statement": "Chapter 13.78 applies to all residential rental agreements regardless of any contractual language in any rental agreement or lease to the contrary.",
+      "citation": "BMC 13.78.018",
+      "scope_mode": "structural",
+      "scope_quote": "Chapter 13.78 applies to",
+      "source_provision_id": "P10",
+      "governed_provision_ids": [
+        "P7",
+        "P8",
+        "P9",
+        "P11"
+      ],
+      "evidence_parts": [
+        {
+          "segment_id": 1,
+          "quoted_text": "Chapter 13.78 applies to all residential rental agreements regardless of any contractual language in any rental agreement or lease to the contrary."
+        }
+      ],
+      "evidence_check": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 2857,
+        "end": 3004,
+        "occurrences": 1,
+        "model_span": "Chapter 13.78 applies to all residential rental agreements regardless of any contractual language in any rental agreement or lease to the contrary.",
+        "source_span": "Chapter 13.78 applies to all residential rental agreements regardless of any contractual language in any rental agreement or lease to the contrary.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "Chapter 13.78 applies to all residential rental agreements regardless of any contractual language in any rental agreement or lease to the contrary.",
+            "status": "exact_match",
+            "start": 2857,
+            "end": 3004
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "propagated": true,
+      "problem": null,
+      "scope": {
+        "resolver": "scope-modes/v1",
+        "declared_mode": "structural",
+        "mode": "named_subject",
+        "scope_words": {
+          "scope_quote": "Chapter 13.78 applies to",
+          "scope_quote_check": "exact_match",
+          "text": "Chapter 13.78 applies to",
+          "from": "scope_quote"
+        },
+        "detail": null,
+        "propagate_ids": [],
+        "mapping_targets": [
+          "P7",
+          "P8",
+          "P9",
+          "P11"
+        ],
+        "verification": null
+      }
+    }
+  ],
+  "source_view": {
+    "marker": "[[PAGE BREAK]]",
+    "segment_label": "[[SEGMENT {}]]",
+    "view_sha256": "14ecbb29f97a233dfc015b922917979e85aecb21bdbb3b4634b321714e8477d7",
+    "segments": [
+      {
+        "id": 1,
+        "raw_start": 0,
+        "raw_end": 3571
+      }
+    ],
+    "artifacts_removed": 0,
+    "artifacts": []
+  },
+  "coverage": {
+    "inventory_valid": true,
+    "anchors_located": "11/11",
+    "after_primary": {
+      "uncovered": [],
+      "unaccepted": [
+        "Cal. Civ. Code § 1950.6",
+        "Cal. Civ. Code § 1950.6",
+        "Cal. Civ. Code § 1950.6",
+        "Cal. Civ. Code § 1950.6",
+        "Cal. Civ. Code § 1950.6",
+        "Cal. Civ. Code § 1950.6",
+        "BMC 13.78.010",
+        "BMC 13.78.010",
+        "BMC 13.78.016",
+        "BMC 13.78.018"
+      ],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "scope_mappings": {
+      "requested": 4,
+      "applies": 0,
+      "does_not_apply": 0,
+      "unresolved": 4
+    },
+    "repair_targets": {
+      "before_repair": 0,
+      "resolved_by_accepted_rule": 0,
+      "resolved_out_of_scope": 0,
+      "still_unresolved": 0
+    },
+    "inventory_items": 11,
+    "in_scope_items": 10,
+    "in_scope_refs": 10,
+    "uncertain": [],
+    "final": {
+      "uncovered": [],
+      "unaccepted": [
+        "Cal. Civ. Code § 1950.6",
+        "Cal. Civ. Code § 1950.6",
+        "Cal. Civ. Code § 1950.6",
+        "Cal. Civ. Code § 1950.6",
+        "Cal. Civ. Code § 1950.6",
+        "Cal. Civ. Code § 1950.6",
+        "BMC 13.78.010",
+        "BMC 13.78.010",
+        "BMC 13.78.016",
+        "BMC 13.78.018"
+      ],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "link_mismatches": [],
+    "provisions": [
+      {
+        "ref": "Cal. Civ. Code § 1950.6",
+        "inventory_item": 0,
+        "provision_id": "P1",
+        "summary": "Establishes the maximum tenant screening fee cap for 2026.",
+        "category": "application_screening_fees",
+        "candidates": [
+          0
+        ],
+        "accepted": [],
+        "basis": {
+          "0": "provision link; citation names it"
+        }
+      },
+      {
+        "ref": "Cal. Civ. Code § 1950.6",
+        "inventory_item": 1,
+        "provision_id": "P2",
+        "summary": "Specifies permitted uses of screening fees by landlords.",
+        "category": "application_screening_fees",
+        "candidates": [
+          1
+        ],
+        "accepted": [],
+        "basis": {
+          "1": "provision link; citation names it"
+        }
+      },
+      {
+        "ref": "Cal. Civ. Code § 1950.6",
+        "inventory_item": 2,
+        "provision_id": "P3",
+        "summary": "Requires landlords to provide a credit report copy within 7 days, a fee receipt, an itemized list of expenses/time, and a refund of unused fee amounts.",
+        "category": "application_screening_fees",
+        "candidates": [
+          2
+        ],
+        "accepted": [],
+        "basis": {
+          "2": "provision link; citation names it"
+        }
+      },
+      {
+        "ref": "Cal. Civ. Code § 1950.6",
+        "inventory_item": 3,
+        "provision_id": "P4",
+        "summary": "Requires landlords to use a reusable screening report if provided by the prospective tenant.",
+        "category": "application_screening_fees",
+        "candidates": [
+          3
+        ],
+        "accepted": [],
+        "basis": {
+          "3": "provision link; citation names it"
+        }
+      },
+      {
+        "ref": "Cal. Civ. Code § 1950.6",
+        "inventory_item": 4,
+        "provision_id": "P5",
+        "summary": "Prohibits charging a screening fee when no rental unit is actually available.",
+        "category": "application_screening_fees",
+        "candidates": [
+          4
+        ],
+        "accepted": [],
+        "basis": {
+          "4": "provision link; citation names it"
+        }
+      },
+      {
+        "ref": "Cal. Civ. Code § 1950.6",
+        "inventory_item": 5,
+        "provision_id": "P6",
+        "summary": "Requires return of screening fees to unselected applicants unless the landlord follows an order-of-receipt application review policy.",
+        "category": "application_screening_fees",
+        "candidates": [
+          5
+        ],
+        "accepted": [],
+        "basis": {
+          "5": "provision link; citation names it"
+        }
+      },
+      {
+        "ref": "BMC 13.78.010",
+        "inventory_item": 6,
+        "provision_id": "P7",
+        "summary": "Requires owners charging an application processing fee to provide a screening fee rights statement and fee cap disclosure.",
+        "category": "application_screening_fees",
+        "candidates": [
+          6
+        ],
+        "accepted": [],
+        "basis": {
+          "6": "provision link; citation names it"
+        }
+      },
+      {
+        "ref": "BMC 13.78.010",
+        "inventory_item": 7,
+        "provision_id": "P8",
+        "summary": "Defines the required language for the Tenant Screening Fee Rights Statement disclosure.",
+        "category": "application_screening_fees",
+        "candidates": [
+          7
+        ],
+        "accepted": [],
+        "basis": {
+          "7": "provision link; citation names it"
+        }
+      },
+      {
+        "ref": "BMC 13.78.016",
+        "inventory_item": 8,
+        "provision_id": "P9",
+        "summary": "Prohibits non-refundable fees charged to existing tenants for tenancy renewal or roommate departure/replacement.",
+        "category": "application_screening_fees",
+        "candidates": [
+          8
+        ],
+        "accepted": [],
+        "basis": {
+          "8": "provision link; citation names it"
+        }
+      },
+      {
+        "ref": "BMC 13.78.018",
+        "inventory_item": 10,
+        "provision_id": "P11",
+        "summary": "Renders unenforceable any provision of an existing rental agreement or lease that violates Chapter 13.78.",
+        "category": "application_screening_fees",
+        "candidates": [
+          9
+        ],
+        "accepted": [],
+        "basis": {
+          "9": "provision link; citation names it"
+        }
+      }
+    ],
+    "unrecorded_subdivisions": []
+  },
+  "scope_challenges": [
+    {
+      "ref": "BMC 13.78.018",
+      "provision_id": "P10",
+      "role": "scope_condition",
+      "reason": "scope condition, see global_scope",
+      "summary": "Establishes that Chapter 13.78 applies to all residential rental agreements regardless of contrary lease terms.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role scope_condition is decided by other rules"
+    }
+  ],
+  "scope_mappings": [
+    {
+      "condition_id": "S1",
+      "provision_id": "P7",
+      "kind": "coverage_condition",
+      "statement": "Chapter 13.78 applies to all residential rental agreements regardless of any contractual language in any rental agreement or lease to the contrary.",
+      "scope_words": "Chapter 13.78 applies to",
+      "condition_evidence": "Chapter 13.78 applies to all residential rental agreements regardless of any contractual language in any rental agreement or lease to the contrary.",
+      "target_ref": "BMC 13.78.010",
+      "target_anchor": "When an owner or the owner’s agent gets a",
+      "target_quote": "When an owner or the owner’s agent gets a request to rent residential property in Berkeley from an applicant and the owner charges a fee to purchase a consumer credit report and to validate, review, or otherwise process an application, the owner must provide, either in the rental application or in a separate disclosure before receiving the fee, a clear and conspicuous tenant screening fee rights statement and a statement of the maximum fee cap permitted under\nCalifornia Civil Code Section 1950.6(b)\n.",
+      "final": "unresolved",
+      "unresolved_reason": "repair did not complete: repair needed, but there is no cached repair response and no live provider"
+    },
+    {
+      "condition_id": "S1",
+      "provision_id": "P8",
+      "kind": "coverage_condition",
+      "statement": "Chapter 13.78 applies to all residential rental agreements regardless of any contractual language in any rental agreement or lease to the contrary.",
+      "scope_words": "Chapter 13.78 applies to",
+      "condition_evidence": "Chapter 13.78 applies to all residential rental agreements regardless of any contractual language in any rental agreement or lease to the contrary.",
+      "target_ref": "BMC 13.78.010",
+      "target_anchor": "The “Tenant Screening Fee Rights Statement” shall mean the",
+      "target_quote": "The “Tenant Screening Fee Rights Statement” shall mean the following statement or a substantially similar statement:\n\"Pursuant to California law you have tenant screening fee rights, including the right to a copy of your consumer credit report if one is obtained with your screening fee, a refund of any unused portion of the fee and a receipt of the costs of the screening. For more information about your rights, please visit [URL to be provided by City].\"",
+      "final": "unresolved",
+      "unresolved_reason": "repair did not complete: repair needed, but there is no cached repair response and no live provider"
+    },
+    {
+      "condition_id": "S1",
+      "provision_id": "P9",
+      "kind": "coverage_condition",
+      "statement": "Chapter 13.78 applies to all residential rental agreements regardless of any contractual language in any rental agreement or lease to the contrary.",
+      "scope_words": "Chapter 13.78 applies to",
+      "condition_evidence": "Chapter 13.78 applies to all residential rental agreements regardless of any contractual language in any rental agreement or lease to the contrary.",
+      "target_ref": "BMC 13.78.016",
+      "target_anchor": "An owner of residential rental property (or the owner’s",
+      "target_quote": "An owner of residential rental property (or the owner’s agent) cannot charge a non-refundable fee to any existing tenant for the purpose of renewing a tenancy, in whole or in part, including any fee associated with the departure of a roommate or to request to add or replace a roommate in a pre-existing household.",
+      "final": "unresolved",
+      "unresolved_reason": "repair did not complete: repair needed, but there is no cached repair response and no live provider"
+    },
+    {
+      "condition_id": "S1",
+      "provision_id": "P11",
+      "kind": "coverage_condition",
+      "statement": "Chapter 13.78 applies to all residential rental agreements regardless of any contractual language in any rental agreement or lease to the contrary.",
+      "scope_words": "Chapter 13.78 applies to",
+      "condition_evidence": "Chapter 13.78 applies to all residential rental agreements regardless of any contractual language in any rental agreement or lease to the contrary.",
+      "target_ref": "BMC 13.78.018",
+      "target_anchor": "Any provision of an existing rental agreement or lease",
+      "target_quote": "Any provision of an existing rental agreement or lease that violates the provisions of this chapter are unenforceable.",
+      "final": "unresolved",
+      "unresolved_reason": "repair did not complete: repair needed, but there is no cached repair response and no live provider"
+    }
+  ],
+  "legislative_session": null,
+  "empty_result": null,
+  "legacy_replay": null,
+  "dedupe": [],
+  "chunking": null,
+  "repair": {
+    "invoked": false,
+    "reason": "0 repair target(s) from no check; 4 scope_mapping_challenge(s)",
+    "prompt_version": "v7-repair-1",
+    "targets": [],
+    "cache_key": "3522798d7caa87372855b8cd48749121a740500962b80f9f9d56d8ba5a45e038",
+    "cache_hit": false,
+    "cache_entry": "cache/extraction/3522798d7caa87372855b8cd48749121a740500962b80f9f9d56d8ba5a45e038.json",
+    "prompt_sha256": "c16d86a2fd14220b9430ec48d7207071c7023ee6ec3acb6ada5e6d0c7bce7ead",
+    "provider_metadata": {},
+    "raw_response_text": "",
+    "mappings": [
+      {
+        "condition_id": "S1",
+        "provision_id": "P7",
+        "kind": "coverage_condition",
+        "statement": "Chapter 13.78 applies to all residential rental agreements regardless of any contractual language in any rental agreement or lease to the contrary.",
+        "scope_words": "Chapter 13.78 applies to",
+        "condition_evidence": "Chapter 13.78 applies to all residential rental agreements regardless of any contractual language in any rental agreement or lease to the contrary.",
+        "target_ref": "BMC 13.78.010",
+        "target_anchor": "When an owner or the owner’s agent gets a",
+        "target_quote": "When an owner or the owner’s agent gets a request to rent residential property in Berkeley from an applicant and the owner charges a fee to purchase a consumer credit report and to validate, review, or otherwise process an application, the owner must provide, either in the rental application or in a separate disclosure before receiving the fee, a clear and conspicuous tenant screening fee rights statement and a statement of the maximum fee cap permitted under\nCalifornia Civil Code Section 1950.6(b)\n.",
+        "final": "unresolved",
+        "unresolved_reason": "repair did not complete: repair needed, but there is no cached repair response and no live provider"
+      },
+      {
+        "condition_id": "S1",
+        "provision_id": "P8",
+        "kind": "coverage_condition",
+        "statement": "Chapter 13.78 applies to all residential rental agreements regardless of any contractual language in any rental agreement or lease to the contrary.",
+        "scope_words": "Chapter 13.78 applies to",
+        "condition_evidence": "Chapter 13.78 applies to all residential rental agreements regardless of any contractual language in any rental agreement or lease to the contrary.",
+        "target_ref": "BMC 13.78.010",
+        "target_anchor": "The “Tenant Screening Fee Rights Statement” shall mean the",
+        "target_quote": "The “Tenant Screening Fee Rights Statement” shall mean the following statement or a substantially similar statement:\n\"Pursuant to California law you have tenant screening fee rights, including the right to a copy of your consumer credit report if one is obtained with your screening fee, a refund of any unused portion of the fee and a receipt of the costs of the screening. For more information about your rights, please visit [URL to be provided by City].\"",
+        "final": "unresolved",
+        "unresolved_reason": "repair did not complete: repair needed, but there is no cached repair response and no live provider"
+      },
+      {
+        "condition_id": "S1",
+        "provision_id": "P9",
+        "kind": "coverage_condition",
+        "statement": "Chapter 13.78 applies to all residential rental agreements regardless of any contractual language in any rental agreement or lease to the contrary.",
+        "scope_words": "Chapter 13.78 applies to",
+        "condition_evidence": "Chapter 13.78 applies to all residential rental agreements regardless of any contractual language in any rental agreement or lease to the contrary.",
+        "target_ref": "BMC 13.78.016",
+        "target_anchor": "An owner of residential rental property (or the owner’s",
+        "target_quote": "An owner of residential rental property (or the owner’s agent) cannot charge a non-refundable fee to any existing tenant for the purpose of renewing a tenancy, in whole or in part, including any fee associated with the departure of a roommate or to request to add or replace a roommate in a pre-existing household.",
+        "final": "unresolved",
+        "unresolved_reason": "repair did not complete: repair needed, but there is no cached repair response and no live provider"
+      },
+      {
+        "condition_id": "S1",
+        "provision_id": "P11",
+        "kind": "coverage_condition",
+        "statement": "Chapter 13.78 applies to all residential rental agreements regardless of any contractual language in any rental agreement or lease to the contrary.",
+        "scope_words": "Chapter 13.78 applies to",
+        "condition_evidence": "Chapter 13.78 applies to all residential rental agreements regardless of any contractual language in any rental agreement or lease to the contrary.",
+        "target_ref": "BMC 13.78.018",
+        "target_anchor": "Any provision of an existing rental agreement or lease",
+        "target_quote": "Any provision of an existing rental agreement or lease that violates the provisions of this chapter are unenforceable.",
+        "final": "unresolved",
+        "unresolved_reason": "repair did not complete: repair needed, but there is no cached repair response and no live provider"
+      }
+    ],
+    "candidate_indices": [],
+    "accepted_count": 0,
+    "rejected_count": 0,
+    "errors": [
+      "repair needed, but there is no cached repair response and no live provider"
+    ]
+  },
+  "document_status": "review_required",
+  "review_reasons": [
+    "10 candidate record(s) held, not published, because the time of application is unresolved: ['temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force']",
+    "named-subject scope mappings unresolved (not applied): ['S1->P7 (repair did not complete: repair needed, but there is no cached repair response and no live provider)', 'S1->P8 (repair did not complete: repair needed, but there is no cached repair response and no live provider)', 'S1->P9 (repair did not complete: repair needed, but there is no cached repair response and no live provider)', 'S1->P11 (repair did not complete: repair needed, but there is no cached repair response and no live provider)']",
+    "repair pass: repair needed, but there is no cached repair response and no live provider"
+  ],
+  "warnings": [
+    "candidate 0 held: status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+    "candidate 1 held: status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+    "candidate 2 held: status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+    "candidate 3 held: status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+    "candidate 4 held: status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+    "candidate 5 held: status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+    "candidate 6 held: status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+    "candidate 7 held: status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+    "candidate 8 held: status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+    "candidate 9 held: status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+  ],
+  "errors": [],
+  "raw_response_text": "{\n  \"document\": {\n    \"posture\": \"official_explanatory_page\",\n    \"evidence\": \"Tenant Screening and Application Fees | Berkeley Rent Board\"\n  },\n  \"provisions\": [\n    {\n      \"id\": \"P1\",\n      \"ref\": \"Cal. Civ. Code § 1950.6\",\n      \"anchor\": \"The maximum tenant screening fee for 2026 is\",\n      \"summary\": \"Establishes the maximum tenant screening fee cap for 2026.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"application_screening_fees\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P2\",\n      \"ref\": \"Cal. Civ. Code § 1950.6\",\n      \"anchor\": \"Landlords may use screening fees to obtain information about\",\n      \"summary\": \"Specifies permitted uses of screening fees by landlords.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"application_screening_fees\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P3\",\n      \"ref\": \"Cal. Civ. Code § 1950.6\",\n      \"anchor\": \"Prospective tenants should expect to receive a copy of\",\n      \"summary\": \"Requires landlords to provide a credit report copy within 7 days, a fee receipt, an itemized list of expenses/time, and a refund of unused fee amounts.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"application_screening_fees\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P4\",\n      \"ref\": \"Cal. Civ. Code § 1950.6\",\n      \"anchor\": \"If the tenant provides a reusable screening report, the\",\n      \"summary\": \"Requires landlords to use a reusable screening report if provided by the prospective tenant.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"application_screening_fees\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P5\",\n      \"ref\": \"Cal. Civ. Code § 1950.6\",\n      \"anchor\": \"The landlord cannot charge a prospective tenant a screening\",\n      \"summary\": \"Prohibits charging a screening fee when no rental unit is actually available.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"application_screening_fees\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P6\",\n      \"ref\": \"Cal. Civ. Code § 1950.6\",\n      \"anchor\": \"The landlord must also return a screening fee to\",\n      \"summary\": \"Requires return of screening fees to unselected applicants unless the landlord follows an order-of-receipt application review policy.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"application_screening_fees\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P7\",\n      \"ref\": \"BMC 13.78.010\",\n      \"anchor\": \"When an owner or the owner’s agent gets a\",\n      \"summary\": \"Requires owners charging an application processing fee to provide a screening fee rights statement and fee cap disclosure.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"application_screening_fees\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P8\",\n      \"ref\": \"BMC 13.78.010\",\n      \"anchor\": \"The “Tenant Screening Fee Rights Statement” shall mean the\",\n      \"summary\": \"Defines the required language for the Tenant Screening Fee Rights Statement disclosure.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"application_screening_fees\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P9\",\n      \"ref\": \"BMC 13.78.016\",\n      \"anchor\": \"An owner of residential rental property (or the owner’s\",\n      \"summary\": \"Prohibits non-refundable fees charged to existing tenants for tenancy renewal or roommate departure/replacement.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"application_screening_fees\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P10\",\n      \"ref\": \"BMC 13.78.018\",\n      \"anchor\": \"Chapter 13.78 applies to all residential rental agreements\",\n      \"summary\": \"Establishes that Chapter 13.78 applies to all residential rental agreements regardless of contrary lease terms.\",\n      \"role\": \"scope_condition\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"scope condition, see global_scope\"\n    },\n    {\n      \"id\": \"P11\",\n      \"ref\": \"BMC 13.78.018\",\n      \"anchor\": \"Any provision of an existing rental agreement or lease\",\n      \"summary\": \"Renders unenforceable any provision of an existing rental agreement or lease that violates Chapter 13.78.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"application_screening_fees\",\n      \"reason\": null\n    }\n  ],\n  \"global_scope\": [\n    {\n      \"id\": \"S1\",\n      \"kind\": \"coverage_condition\",\n      \"statement\": \"Chapter 13.78 applies to all residential rental agreements regardless of any contractual language in any rental agreement or lease to the contrary.\",\n      \"citation\": \"BMC 13.78.018\",\n      \"scope_mode\": \"structural\",\n      \"scope_quote\": \"Chapter 13.78 applies to\",\n      \"source_provision_id\": \"P10\",\n      \"governed_provision_ids\": [\n        \"P7\",\n        \"P8\",\n        \"P9\",\n        \"P11\"\n      ],\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Chapter 13.78 applies to all residential rental agreements regardless of any contractual language in any rental agreement or lease to the contrary.\"\n        }\n      ]\n    }\n  ],\n  \"rules\": [\n    {\n      \"category\": \"application_screening_fees\",\n      \"citation\": \"Cal. Civ. Code § 1950.6\",\n      \"provision_ids\": [\n        \"P1\"\n      ],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"The maximum tenant screening fee for 2026 is\\n$68.96\"\n        }\n      ],\n      \"title\": \"Maximum Tenant Screening Fee (2026)\",\n      \"requirement\": \"The maximum tenant screening fee that may be charged to a prospective tenant for 2026 is $68.96.\",\n      \"key_value\": \"$68.96\",\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": null,\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": null,\n      \"effective_date_evidence_kind\": null,\n      \"effective_date\": null,\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"application_screening_fees\",\n      \"citation\": \"Cal. Civ. Code § 1950.6\",\n      \"provision_ids\": [\n        \"P2\"\n      ],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Landlords may use screening fees to obtain information about a prospective tenant like a consumer credit report.\"\n        }\n      ],\n      \"title\": \"Permitted Use of Screening Fees\",\n      \"requirement\": \"Landlords may use screening fees to obtain information regarding a prospective tenant, such as a consumer credit report.\",\n      \"key_value\": null,\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": null,\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": null,\n      \"effective_date_evidence_kind\": null,\n      \"effective_date\": null,\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"application_screening_fees\",\n      \"citation\": \"Cal. Civ. Code § 1950.6\",\n      \"provision_ids\": [\n        \"P3\"\n      ],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Prospective tenants should expect to receive a copy of their credit report within 7 days of receipt by the landlord, a receipt for the fee paid and an itemized list of any out-of-pocket expenses and time spent by the landlord on the screening, and a refund of any unused portion of the fee.\"\n        }\n      ],\n      \"title\": \"Screening Fee Receipt, Credit Report Delivery, and Unused Fee Refund\",\n      \"requirement\": \"A landlord must provide a prospective tenant with a copy of their credit report within 7 days of receipt, a receipt for the screening fee paid, an itemized list of out-of-pocket expenses and time spent on screening, and a refund of any unused portion of the fee.\",\n      \"key_value\": \"7 days\",\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": null,\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": null,\n      \"effective_date_evidence_kind\": null,\n      \"effective_date\": null,\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"application_screening_fees\",\n      \"citation\": \"Cal. Civ. Code § 1950.6\",\n      \"provision_ids\": [\n        \"P4\"\n      ],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"If the tenant provides a reusable screening report, the landlord must use it.\"\n        }\n      ],\n      \"title\": \"Mandatory Use of Reusable Screening Report\",\n      \"requirement\": \"A landlord must use a reusable screening report if one is provided by the prospective tenant.\",\n      \"key_value\": null,\n      \"coverage_conditions\": \"Applies when the prospective tenant provides a reusable screening report.\",\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": null,\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": null,\n      \"effective_date_evidence_kind\": null,\n      \"effective_date\": null,\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"application_screening_fees\",\n      \"citation\": \"Cal. Civ. Code § 1950.6\",\n      \"provision_ids\": [\n        \"P5\"\n      ],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"The landlord cannot charge a prospective tenant a screening fee if no rental unit is actually available.\"\n        }\n      ],\n      \"title\": \"Prohibition of Screening Fee When No Unit Available\",\n      \"requirement\": \"A landlord is prohibited from charging a screening fee to a prospective tenant if no rental unit is actually available.\",\n      \"key_value\": null,\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": null,\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": null,\n      \"effective_date_evidence_kind\": null,\n      \"effective_date\": null,\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"application_screening_fees\",\n      \"citation\": \"Cal. Civ. Code § 1950.6\",\n      \"provision_ids\": [\n        \"P6\"\n      ],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"The landlord must also return a screening fee to any applicant not selected, or have a policy under which they: (1) review applications in the order received and the first qualified applicant gets the unit, and (2) do not charge a screening fee to any applicant not considered.\"\n        }\n      ],\n      \"title\": \"Return of Screening Fee to Unselected Applicants\",\n      \"requirement\": \"A landlord must return a screening fee to any applicant not selected, unless the landlord maintains a policy to review applications in the order received, award the unit to the first qualified applicant, and not charge a screening fee to any applicant not considered.\",\n      \"key_value\": null,\n      \"coverage_conditions\": null,\n      \"exemptions\": \"Landlords who review applications in the order received, give the unit to the first qualified applicant, and do not charge a screening fee to applicants not considered are exempt from returning the fee to unselected applicants.\",\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": null,\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": null,\n      \"effective_date_evidence_kind\": null,\n      \"effective_date\": null,\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"application_screening_fees\",\n      \"citation\": \"BMC 13.78.010\",\n      \"provision_ids\": [\n        \"P7\"\n      ],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"When an owner or the owner’s agent gets a request to rent residential property in Berkeley from an applicant and the owner charges a fee to purchase a consumer credit report and to validate, review, or otherwise process an application, the owner must provide, either in the rental application or in a separate disclosure before receiving the fee, a clear and conspicuous tenant screening fee rights statement and a statement of the maximum fee cap permitted under\\nCalifornia Civil Code Section 1950.6(b).\"\n        }\n      ],\n      \"title\": \"Notification of State Law Limitation on Tenant Screening Fees\",\n      \"requirement\": \"An owner or owner's agent charging a fee to purchase a credit report or process a residential rental application in Berkeley must provide, in the application or in a separate disclosure before receiving the fee, a clear and conspicuous tenant screening fee rights statement and a statement of the statutory maximum fee cap permitted under California Civil Code Section 1950.6(b).\",\n      \"key_value\": null,\n      \"coverage_conditions\": \"Applies when an owner or agent receives a request to rent residential property in Berkeley from an applicant and charges a fee to purchase a credit report or process the application.\",\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": null,\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": null,\n      \"effective_date_evidence_kind\": null,\n      \"effective_date\": null,\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"application_screening_fees\",\n      \"citation\": \"BMC 13.78.010\",\n      \"provision_ids\": [\n        \"P8\"\n      ],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"The “Tenant Screening Fee Rights Statement” shall mean the following statement or a substantially similar statement:\\n\\\"Pursuant to California law you have tenant screening fee rights, including the right to a copy of your consumer credit report if one is obtained with your screening fee, a refund of any unused portion of the fee and a receipt of the costs of the screening. For more information about your rights, please visit [URL to be provided by City].\\\"\"\n        }\n      ],\n      \"title\": \"Tenant Screening Fee Rights Statement Required Content\",\n      \"requirement\": \"The Tenant Screening Fee Rights Statement provided to applicants must consist of the specified statutory text or a substantially similar statement informing applicants of their rights to a credit report copy, a refund of unused fees, a receipt of costs, and the City URL.\",\n      \"key_value\": null,\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": null,\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": null,\n      \"effective_date_evidence_kind\": null,\n      \"effective_date\": null,\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"application_screening_fees\",\n      \"citation\": \"BMC 13.78.016\",\n      \"provision_ids\": [\n        \"P9\"\n      ],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"An owner of residential rental property (or the owner’s agent) cannot charge a non-refundable fee to any existing tenant for the purpose of renewing a tenancy, in whole or in part, including any fee associated with the departure of a roommate or to request to add or replace a roommate in a pre-existing household.\"\n        }\n      ],\n      \"title\": \"Prohibition of Non-Refundable Application Fees for Existing Tenancies\",\n      \"requirement\": \"An owner of residential rental property or their agent cannot charge a non-refundable fee to an existing tenant for renewing a tenancy in whole or in part, including fees associated with roommate departure or requests to add or replace a roommate in a pre-existing household.\",\n      \"key_value\": null,\n      \"coverage_conditions\": \"Applies to fees charged to existing tenants in residential rental properties.\",\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": null,\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": null,\n      \"effective_date_evidence_kind\": null,\n      \"effective_date\": null,\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"application_screening_fees\",\n      \"citation\": \"BMC 13.78.018\",\n      \"provision_ids\": [\n        \"P11\"\n      ],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Any provision of an existing rental agreement or lease that violates the provisions of this chapter are unenforceable.\"\n        }\n      ],\n      \"title\": \"Unenforceability of Violating Lease Provisions\",\n      \"requirement\": \"Any provision in an existing rental agreement or lease that violates the provisions of Chapter 13.78 is legally unenforceable.\",\n      \"key_value\": null,\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": null,\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": null,\n      \"effective_date_evidence_kind\": null,\n      \"effective_date\": null,\n      \"conflict_note\": null\n    }\n  ],\n  \"no_rules_justification\": null\n}"
+}

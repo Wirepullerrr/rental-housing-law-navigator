@@ -1,0 +1,2528 @@
+{
+  "disclaimer": "Not legal advice. Automated extraction for a research prototype; verify against the cited source.",
+  "run_at": "2026-10-04T06:34:25+00:00",
+  "source": {
+    "doc_id": "D006",
+    "jurisdiction": "Berkeley, CA",
+    "url": "https://rentboard.berkeleyca.gov/laws-regulations/measure-bb-changes-berkeleys-rent-ordinance",
+    "source_type": "official",
+    "retrieved_at": "2026-10-01T22:35Z",
+    "text_file": "text/D006.txt",
+    "content_sha256": "a60118bd85a49598d478ad48774621034b98730af7fa5e0e779ee94798ebe3e6",
+    "body_chars": 13750
+  },
+  "provider": "gemini",
+  "model": "gemini-3.8-flash",
+  "prompt_version": "v7",
+  "prompt_sha256": "eb182c579b3de398ffd578ce57da07e57c3867f4cc33c8cbc2104749c5d5e5b6",
+  "response_schema_sha256": "c15306da6f21dc72f06e78405f94ed61dc9e59288138cc98b5b5bf9b62ac403c",
+  "generation_settings": {
+    "temperature": null,
+    "seed": 20261001,
+    "thinking_level": "medium"
+  },
+  "as_of": "2026-10-01",
+  "cache_key": "0e9fd04ee45f86b05b62c795e46018a0590435f18ced60a43de968bb04fc451e",
+  "cache_hit": true,
+  "cache_entry": "cache/extraction/0e9fd04ee45f86b05b62c795e46018a0590435f18ced60a43de968bb04fc451e.json",
+  "provider_metadata": {
+    "api": "interactions.create",
+    "interaction_id": "",
+    "model": "gemini-3.8-flash",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 6864,
+      "output_tokens": 5693,
+      "thinking_tokens": 20673,
+      "total_tokens": 33230
+    }
+  },
+  "candidate_count": 9,
+  "accepted_count": 0,
+  "rules": [],
+  "candidates": [
+    {
+      "index": 0,
+      "origin": "primary",
+      "accepted": false,
+      "held": true,
+      "historical": false,
+      "temporal_state": "held",
+      "validity": {
+        "resolver": "validity-window/v1",
+        "boundaries": [],
+        "end_exclusive": null,
+        "end_conflict": null,
+        "decision": {
+          "outcome": null,
+          "state": null,
+          "reason": null,
+          "start": null
+        }
+      },
+      "duplicate_of": null,
+      "rejection_reasons": [
+        "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      ],
+      "provision_ids": [
+        "P4"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 268,
+        "end": 465,
+        "occurrences": 1,
+        "model_span": "Measure BB, a ballot measure passed by Berkeley voters in the November 2024 election, makes several changes to Berkeley’s Rent Ordinance that affect tenant and landlord rights and responsibilities.",
+        "source_span": "Measure BB, a ballot measure passed by Berkeley voters in the November 2024 election, makes several changes to Berkeley’s Rent Ordinance that affect tenant and landlord rights and responsibilities.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 6525,
+        "end": 6898,
+        "occurrences": 1,
+        "model_span": "For a landlord to evict a tenant for nonpayment of rent, the tenant must owe an amount of rental debt equal to or greater than one month of the Fair Market Rent (FMR) value for a unit of equivalent size in the metro area Oakland-Fremont, CA HUD Metro FMR as determined by the US Department of Housing and Urban Development for the fiscal year in which the rent is demanded.",
+        "source_span": "For a landlord to evict a tenant for nonpayment of rent, the tenant must owe an amount of rental debt equal to or greater than one month of the Fair Market Rent (FMR) value for a unit of equivalent size in the metro area Oakland-Fremont, CA HUD Metro FMR as determined by the US Department of Housing and Urban Development for the fiscal year in which the rent is demanded.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "For a landlord to evict a tenant for nonpayment of rent, the tenant must owe an amount of rental debt equal to or greater than one month of the Fair Market Rent (FMR) value for a unit of equivalent size in the metro area Oakland-Fremont, CA HUD Metro FMR as determined by the US Department of Housing and Urban Development for the fiscal year in which the rent is demanded.",
+            "status": "exact_match",
+            "start": 6525,
+            "end": 6898
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": null,
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [
+        {
+          "id": "S1",
+          "kind": "exemption",
+          "mode": "named_subject",
+          "governed_provision_ids": [
+            "P4"
+          ],
+          "basis": "named-subject mapping to P4 verified by repair",
+          "applied": true
+        }
+      ],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": null,
+        "applied_kind": null,
+        "effective_date": null,
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null,
+        "unresolved_reason": "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      },
+      "status_derivation": "temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-b0d839a387",
+        "jurisdiction": "Berkeley, CA",
+        "level": "city",
+        "category": "just_cause_eviction",
+        "status": null,
+        "title": "Minimum Rental Debt Threshold for Nonpayment Eviction",
+        "requirement": "[Basis: official explanatory text, not operative legal text] To evict a tenant for nonpayment of rent, the tenant must owe rental debt equal to or greater than one month of the Fair Market Rent (FMR) for a unit of equivalent size in the Oakland-Fremont, CA HUD Metro FMR as determined by HUD for the fiscal year in which the rent is demanded.",
+        "key_value": "1 month of Fair Market Rent (FMR)",
+        "coverage_conditions": null,
+        "exemptions": "Rental units where the tenant shares kitchen or bath facilities with the landlord are exempt from the Rent Ordinance only if the landlord lived in a unit on the same property at the start of the tenancy. [Measure BB, Units where the tenant shares a kitchen or bath facilities with the landlord]",
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "Measure BB, Eviction for nonpayment of rent is no longer allowed for rental debt less than one month of the Fair Market Rent for the unit",
+        "source_doc_id": "D006",
+        "source_url": "https://rentboard.berkeleyca.gov/laws-regulations/measure-bb-changes-berkeleys-rent-ordinance",
+        "quoted_span": "For a landlord to evict a tenant for nonpayment of rent, the tenant must owe an amount of rental debt equal to or greater than one month of the Fair Market Rent (FMR) value for a unit of equivalent size in the metro area Oakland-Fremont, CA HUD Metro FMR as determined by the US Department of Housing and Urban Development for the fiscal year in which the rent is demanded.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "just_cause_eviction",
+        "citation": "Measure BB, Eviction for nonpayment of rent is no longer allowed for rental debt less than one month of the Fair Market Rent for the unit",
+        "provision_ids": [
+          "P4"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "For a landlord to evict a tenant for nonpayment of rent, the tenant must owe an amount of rental debt equal to or greater than one month of the Fair Market Rent (FMR) value for a unit of equivalent size in the metro area Oakland-Fremont, CA HUD Metro FMR as determined by the US Department of Housing and Urban Development for the fiscal year in which the rent is demanded."
+          }
+        ],
+        "title": "Minimum Rental Debt Threshold for Nonpayment Eviction",
+        "requirement": "To evict a tenant for nonpayment of rent, the tenant must owe rental debt equal to or greater than one month of the Fair Market Rent (FMR) for a unit of equivalent size in the Oakland-Fremont, CA HUD Metro FMR as determined by HUD for the fiscal year in which the rent is demanded.",
+        "key_value": "1 month of Fair Market Rent (FMR)",
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": "Measure BB, a ballot measure passed by Berkeley voters in the November 2024 election, makes several changes to Berkeley’s Rent Ordinance that affect tenant and landlord rights and responsibilities.",
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": null,
+        "effective_date_evidence_kind": null,
+        "effective_date": null,
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 1,
+      "origin": "primary",
+      "accepted": false,
+      "held": true,
+      "historical": false,
+      "temporal_state": "held",
+      "validity": {
+        "resolver": "validity-window/v1",
+        "boundaries": [],
+        "end_exclusive": null,
+        "end_conflict": null,
+        "decision": {
+          "outcome": null,
+          "state": null,
+          "reason": null,
+          "start": null
+        }
+      },
+      "duplicate_of": null,
+      "rejection_reasons": [
+        "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      ],
+      "provision_ids": [
+        "P5"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 268,
+        "end": 465,
+        "occurrences": 1,
+        "model_span": "Measure BB, a ballot measure passed by Berkeley voters in the November 2024 election, makes several changes to Berkeley’s Rent Ordinance that affect tenant and landlord rights and responsibilities.",
+        "source_span": "Measure BB, a ballot measure passed by Berkeley voters in the November 2024 election, makes several changes to Berkeley’s Rent Ordinance that affect tenant and landlord rights and responsibilities.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 7095,
+        "end": 7216,
+        "occurrences": 1,
+        "model_span": "A landlord cannot evict a tenant for failing to sign a substantially similar lease upon expiration of a fixed-term lease.",
+        "source_span": "A landlord cannot evict a tenant for failing to sign a substantially similar lease upon expiration of a fixed-term lease.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "A landlord cannot evict a tenant for failing to sign a substantially similar lease upon expiration of a fixed-term lease.",
+            "status": "exact_match",
+            "start": 7095,
+            "end": 7216
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": null,
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [
+        {
+          "id": "S1",
+          "kind": "exemption",
+          "mode": "named_subject",
+          "governed_provision_ids": [
+            "P5"
+          ],
+          "basis": "named-subject mapping to P5 verified by repair",
+          "applied": true
+        }
+      ],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": null,
+        "applied_kind": null,
+        "effective_date": null,
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null,
+        "unresolved_reason": "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      },
+      "status_derivation": "temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-bce80ac440",
+        "jurisdiction": "Berkeley, CA",
+        "level": "city",
+        "category": "just_cause_eviction",
+        "status": null,
+        "title": "Prohibition on Eviction for Failure to Sign New Lease",
+        "requirement": "[Basis: official explanatory text, not operative legal text] A landlord is prohibited from evicting a tenant for failing to sign a substantially similar lease upon the expiration of a fixed-term lease.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": "Rental units where the tenant shares kitchen or bath facilities with the landlord are exempt from the Rent Ordinance only if the landlord lived in a unit on the same property at the start of the tenancy. [Measure BB, Units where the tenant shares a kitchen or bath facilities with the landlord]",
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "Measure BB, Tenants can no longer be evicted for failing to sign a substantially similar lease",
+        "source_doc_id": "D006",
+        "source_url": "https://rentboard.berkeleyca.gov/laws-regulations/measure-bb-changes-berkeleys-rent-ordinance",
+        "quoted_span": "A landlord cannot evict a tenant for failing to sign a substantially similar lease upon expiration of a fixed-term lease.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "just_cause_eviction",
+        "citation": "Measure BB, Tenants can no longer be evicted for failing to sign a substantially similar lease",
+        "provision_ids": [
+          "P5"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "A landlord cannot evict a tenant for failing to sign a substantially similar lease upon expiration of a fixed-term lease."
+          }
+        ],
+        "title": "Prohibition on Eviction for Failure to Sign New Lease",
+        "requirement": "A landlord is prohibited from evicting a tenant for failing to sign a substantially similar lease upon the expiration of a fixed-term lease.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": "Measure BB, a ballot measure passed by Berkeley voters in the November 2024 election, makes several changes to Berkeley’s Rent Ordinance that affect tenant and landlord rights and responsibilities.",
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": null,
+        "effective_date_evidence_kind": null,
+        "effective_date": null,
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 2,
+      "origin": "primary",
+      "accepted": false,
+      "held": true,
+      "historical": false,
+      "temporal_state": "held",
+      "validity": {
+        "resolver": "validity-window/v1",
+        "boundaries": [],
+        "end_exclusive": null,
+        "end_conflict": null,
+        "decision": {
+          "outcome": null,
+          "state": null,
+          "reason": null,
+          "start": null
+        }
+      },
+      "duplicate_of": null,
+      "rejection_reasons": [
+        "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      ],
+      "provision_ids": [
+        "P6"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 268,
+        "end": 465,
+        "occurrences": 1,
+        "model_span": "Measure BB, a ballot measure passed by Berkeley voters in the November 2024 election, makes several changes to Berkeley’s Rent Ordinance that affect tenant and landlord rights and responsibilities.",
+        "source_span": "Measure BB, a ballot measure passed by Berkeley voters in the November 2024 election, makes several changes to Berkeley’s Rent Ordinance that affect tenant and landlord rights and responsibilities.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 7303,
+        "end": 7522,
+        "occurrences": 1,
+        "model_span": "Material lease terms only include mutually agreed upon lease terms.\nThe alleged violation must cause substantial, actual damage to the landlord.\nThe landlord must demonstrate that the tenant’s behavior was unreasonable.",
+        "source_span": "Material lease terms only include mutually agreed upon lease terms.\nThe alleged violation must cause substantial, actual damage to the landlord.\nThe landlord must demonstrate that the tenant’s behavior was unreasonable.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "Material lease terms only include mutually agreed upon lease terms.\nThe alleged violation must cause substantial, actual damage to the landlord.\nThe landlord must demonstrate that the tenant’s behavior was unreasonable.",
+            "status": "exact_match",
+            "start": 7303,
+            "end": 7522
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": null,
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [
+        {
+          "id": "S1",
+          "kind": "exemption",
+          "mode": "named_subject",
+          "governed_provision_ids": [
+            "P6"
+          ],
+          "basis": "named-subject mapping to P6 verified by repair",
+          "applied": true
+        }
+      ],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": null,
+        "applied_kind": null,
+        "effective_date": null,
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null,
+        "unresolved_reason": "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      },
+      "status_derivation": "temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-de7687f605",
+        "jurisdiction": "Berkeley, CA",
+        "level": "city",
+        "category": "just_cause_eviction",
+        "status": null,
+        "title": "Substantive Requirements for Eviction Based on Lease Violation",
+        "requirement": "[Basis: official explanatory text, not operative legal text] To evict a tenant for violation of a material lease term, the term must be mutually agreed upon, the alleged violation must cause substantial, actual damage to the landlord, and the landlord must demonstrate that the tenant's behavior was unreasonable.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": "Rental units where the tenant shares kitchen or bath facilities with the landlord are exempt from the Rent Ordinance only if the landlord lived in a unit on the same property at the start of the tenancy. [Measure BB, Units where the tenant shares a kitchen or bath facilities with the landlord]",
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "Measure BB, New requirements to evict tenants for violations of a material term of the lease",
+        "source_doc_id": "D006",
+        "source_url": "https://rentboard.berkeleyca.gov/laws-regulations/measure-bb-changes-berkeleys-rent-ordinance",
+        "quoted_span": "Material lease terms only include mutually agreed upon lease terms.\nThe alleged violation must cause substantial, actual damage to the landlord.\nThe landlord must demonstrate that the tenant’s behavior was unreasonable.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "just_cause_eviction",
+        "citation": "Measure BB, New requirements to evict tenants for violations of a material term of the lease",
+        "provision_ids": [
+          "P6"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "Material lease terms only include mutually agreed upon lease terms.\nThe alleged violation must cause substantial, actual damage to the landlord.\nThe landlord must demonstrate that the tenant’s behavior was unreasonable."
+          }
+        ],
+        "title": "Substantive Requirements for Eviction Based on Lease Violation",
+        "requirement": "To evict a tenant for violation of a material lease term, the term must be mutually agreed upon, the alleged violation must cause substantial, actual damage to the landlord, and the landlord must demonstrate that the tenant's behavior was unreasonable.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": "Measure BB, a ballot measure passed by Berkeley voters in the November 2024 election, makes several changes to Berkeley’s Rent Ordinance that affect tenant and landlord rights and responsibilities.",
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": null,
+        "effective_date_evidence_kind": null,
+        "effective_date": null,
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 3,
+      "origin": "primary",
+      "accepted": false,
+      "held": true,
+      "historical": false,
+      "temporal_state": "held",
+      "validity": {
+        "resolver": "validity-window/v1",
+        "boundaries": [],
+        "end_exclusive": null,
+        "end_conflict": null,
+        "decision": {
+          "outcome": null,
+          "state": null,
+          "reason": null,
+          "start": null
+        }
+      },
+      "duplicate_of": null,
+      "rejection_reasons": [
+        "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      ],
+      "provision_ids": [
+        "P6"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 268,
+        "end": 465,
+        "occurrences": 1,
+        "model_span": "Measure BB, a ballot measure passed by Berkeley voters in the November 2024 election, makes several changes to Berkeley’s Rent Ordinance that affect tenant and landlord rights and responsibilities.",
+        "source_span": "Measure BB, a ballot measure passed by Berkeley voters in the November 2024 election, makes several changes to Berkeley’s Rent Ordinance that affect tenant and landlord rights and responsibilities.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 7523,
+        "end": 7780,
+        "occurrences": 1,
+        "model_span": "The landlord’s notice to the tenant to stop the violation (which is required before the landlord can serve an eviction notice) must specify the lease term, and describe the violation and resulting harm in enough detail for a reasonable person to understand.",
+        "source_span": "The landlord’s notice to the tenant to stop the violation (which is required before the landlord can serve an eviction notice) must specify the lease term, and describe the violation and resulting harm in enough detail for a reasonable person to understand.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "The landlord’s notice to the tenant to stop the violation (which is required before the landlord can serve an eviction notice) must specify the lease term, and describe the violation and resulting harm in enough detail for a reasonable person to understand.",
+            "status": "exact_match",
+            "start": 7523,
+            "end": 7780
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": null,
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [
+        {
+          "id": "S1",
+          "kind": "exemption",
+          "mode": "named_subject",
+          "governed_provision_ids": [
+            "P6"
+          ],
+          "basis": "named-subject mapping to P6 verified by repair",
+          "applied": true
+        }
+      ],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": null,
+        "applied_kind": null,
+        "effective_date": null,
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null,
+        "unresolved_reason": "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      },
+      "status_derivation": "temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-05eacc66a7",
+        "jurisdiction": "Berkeley, CA",
+        "level": "city",
+        "category": "just_cause_eviction",
+        "status": null,
+        "title": "Notice to Stop Alleged Lease Violation",
+        "requirement": "[Basis: official explanatory text, not operative legal text] Before serving an eviction notice for an alleged lease violation, a landlord must provide the tenant with a notice to stop the violation that specifies the lease term and describes the violation and resulting harm in enough detail for a reasonable person to understand.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": "Rental units where the tenant shares kitchen or bath facilities with the landlord are exempt from the Rent Ordinance only if the landlord lived in a unit on the same property at the start of the tenancy. [Measure BB, Units where the tenant shares a kitchen or bath facilities with the landlord]",
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "Measure BB, New requirements to evict tenants for violations of a material term of the lease",
+        "source_doc_id": "D006",
+        "source_url": "https://rentboard.berkeleyca.gov/laws-regulations/measure-bb-changes-berkeleys-rent-ordinance",
+        "quoted_span": "The landlord’s notice to the tenant to stop the violation (which is required before the landlord can serve an eviction notice) must specify the lease term, and describe the violation and resulting harm in enough detail for a reasonable person to understand.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "just_cause_eviction",
+        "citation": "Measure BB, New requirements to evict tenants for violations of a material term of the lease",
+        "provision_ids": [
+          "P6"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "The landlord’s notice to the tenant to stop the violation (which is required before the landlord can serve an eviction notice) must specify the lease term, and describe the violation and resulting harm in enough detail for a reasonable person to understand."
+          }
+        ],
+        "title": "Notice to Stop Alleged Lease Violation",
+        "requirement": "Before serving an eviction notice for an alleged lease violation, a landlord must provide the tenant with a notice to stop the violation that specifies the lease term and describes the violation and resulting harm in enough detail for a reasonable person to understand.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": "Measure BB, a ballot measure passed by Berkeley voters in the November 2024 election, makes several changes to Berkeley’s Rent Ordinance that affect tenant and landlord rights and responsibilities.",
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": null,
+        "effective_date_evidence_kind": null,
+        "effective_date": null,
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 4,
+      "origin": "primary",
+      "accepted": false,
+      "held": true,
+      "historical": false,
+      "temporal_state": "held",
+      "validity": {
+        "resolver": "validity-window/v1",
+        "boundaries": [],
+        "end_exclusive": null,
+        "end_conflict": null,
+        "decision": {
+          "outcome": null,
+          "state": null,
+          "reason": null,
+          "start": null
+        }
+      },
+      "duplicate_of": null,
+      "rejection_reasons": [
+        "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      ],
+      "provision_ids": [
+        "P7"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 268,
+        "end": 465,
+        "occurrences": 1,
+        "model_span": "Measure BB, a ballot measure passed by Berkeley voters in the November 2024 election, makes several changes to Berkeley’s Rent Ordinance that affect tenant and landlord rights and responsibilities.",
+        "source_span": "Measure BB, a ballot measure passed by Berkeley voters in the November 2024 election, makes several changes to Berkeley’s Rent Ordinance that affect tenant and landlord rights and responsibilities.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 8245,
+        "end": 8493,
+        "occurrences": 1,
+        "model_span": "Any notice terminating a tenancy must contain a statement that advice about the notice is available from the Rent Board, the current phone number for the Rent Board’s Housing counseling services, and the current address of the Rent Board’s website.",
+        "source_span": "Any notice terminating a tenancy must contain a statement that advice about the notice is available from the Rent Board, the current phone number for the Rent Board’s Housing counseling services, and the current address of the Rent Board’s website.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "Any notice terminating a tenancy must contain a statement that advice about the notice is available from the Rent Board, the current phone number for the Rent Board’s Housing counseling services, and the current address of the Rent Board’s website.",
+            "status": "exact_match",
+            "start": 8245,
+            "end": 8493
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": null,
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [
+        {
+          "id": "S1",
+          "kind": "exemption",
+          "mode": "named_subject",
+          "governed_provision_ids": [
+            "P7"
+          ],
+          "basis": "named-subject mapping to P7 verified by repair",
+          "applied": true
+        }
+      ],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": null,
+        "applied_kind": null,
+        "effective_date": null,
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null,
+        "unresolved_reason": "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      },
+      "status_derivation": "temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-eb7c3295c9",
+        "jurisdiction": "Berkeley, CA",
+        "level": "city",
+        "category": "just_cause_eviction",
+        "status": null,
+        "title": "Eviction Notice Required Information",
+        "requirement": "[Basis: official explanatory text, not operative legal text] Any notice terminating a tenancy must contain a statement that advice about the notice is available from the Rent Board, along with the Rent Board Housing counseling services' current telephone number and website address.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": "Rental units where the tenant shares kitchen or bath facilities with the landlord are exempt from the Rent Ordinance only if the landlord lived in a unit on the same property at the start of the tenancy. [Measure BB, Units where the tenant shares a kitchen or bath facilities with the landlord]",
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "Measure BB, New requirements related to eviction notices and lawsuits",
+        "source_doc_id": "D006",
+        "source_url": "https://rentboard.berkeleyca.gov/laws-regulations/measure-bb-changes-berkeleys-rent-ordinance",
+        "quoted_span": "Any notice terminating a tenancy must contain a statement that advice about the notice is available from the Rent Board, the current phone number for the Rent Board’s Housing counseling services, and the current address of the Rent Board’s website.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "just_cause_eviction",
+        "citation": "Measure BB, New requirements related to eviction notices and lawsuits",
+        "provision_ids": [
+          "P7"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "Any notice terminating a tenancy must contain a statement that advice about the notice is available from the Rent Board, the current phone number for the Rent Board’s Housing counseling services, and the current address of the Rent Board’s website."
+          }
+        ],
+        "title": "Eviction Notice Required Information",
+        "requirement": "Any notice terminating a tenancy must contain a statement that advice about the notice is available from the Rent Board, along with the Rent Board Housing counseling services' current telephone number and website address.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": "Measure BB, a ballot measure passed by Berkeley voters in the November 2024 election, makes several changes to Berkeley’s Rent Ordinance that affect tenant and landlord rights and responsibilities.",
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": null,
+        "effective_date_evidence_kind": null,
+        "effective_date": null,
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 5,
+      "origin": "primary",
+      "accepted": false,
+      "held": true,
+      "historical": false,
+      "temporal_state": "held",
+      "validity": {
+        "resolver": "validity-window/v1",
+        "boundaries": [],
+        "end_exclusive": null,
+        "end_conflict": null,
+        "decision": {
+          "outcome": null,
+          "state": null,
+          "reason": null,
+          "start": null
+        }
+      },
+      "duplicate_of": null,
+      "rejection_reasons": [
+        "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      ],
+      "provision_ids": [
+        "P7"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 268,
+        "end": 465,
+        "occurrences": 1,
+        "model_span": "Measure BB, a ballot measure passed by Berkeley voters in the November 2024 election, makes several changes to Berkeley’s Rent Ordinance that affect tenant and landlord rights and responsibilities.",
+        "source_span": "Measure BB, a ballot measure passed by Berkeley voters in the November 2024 election, makes several changes to Berkeley’s Rent Ordinance that affect tenant and landlord rights and responsibilities.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 8494,
+        "end": 8704,
+        "occurrences": 1,
+        "model_span": "The landlord must file with the Rent Board a copy of any notice to terminate a tenancy, notice to quit, and summons and complaint no later than three business days after the tenant was served with the document.",
+        "source_span": "The landlord must file with the Rent Board a copy of any notice to terminate a tenancy, notice to quit, and summons and complaint no later than three business days after the tenant was served with the document.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "The landlord must file with the Rent Board a copy of any notice to terminate a tenancy, notice to quit, and summons and complaint no later than three business days after the tenant was served with the document.",
+            "status": "exact_match",
+            "start": 8494,
+            "end": 8704
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": null,
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [
+        {
+          "id": "S1",
+          "kind": "exemption",
+          "mode": "named_subject",
+          "governed_provision_ids": [
+            "P7"
+          ],
+          "basis": "named-subject mapping to P7 verified by repair",
+          "applied": true
+        }
+      ],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": null,
+        "applied_kind": null,
+        "effective_date": null,
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null,
+        "unresolved_reason": "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      },
+      "status_derivation": "temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-071d7c6ae5",
+        "jurisdiction": "Berkeley, CA",
+        "level": "city",
+        "category": "just_cause_eviction",
+        "status": null,
+        "title": "Filing Eviction Notices and Pleadings with Rent Board",
+        "requirement": "[Basis: official explanatory text, not operative legal text] A landlord must file a copy of any notice to terminate a tenancy, notice to quit, and summons and complaint with the Rent Board within three business days of serving the tenant.",
+        "key_value": "3 business days",
+        "coverage_conditions": null,
+        "exemptions": "Rental units where the tenant shares kitchen or bath facilities with the landlord are exempt from the Rent Ordinance only if the landlord lived in a unit on the same property at the start of the tenancy. [Measure BB, Units where the tenant shares a kitchen or bath facilities with the landlord]",
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "Measure BB, New requirements related to eviction notices and lawsuits",
+        "source_doc_id": "D006",
+        "source_url": "https://rentboard.berkeleyca.gov/laws-regulations/measure-bb-changes-berkeleys-rent-ordinance",
+        "quoted_span": "The landlord must file with the Rent Board a copy of any notice to terminate a tenancy, notice to quit, and summons and complaint no later than three business days after the tenant was served with the document.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "just_cause_eviction",
+        "citation": "Measure BB, New requirements related to eviction notices and lawsuits",
+        "provision_ids": [
+          "P7"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "The landlord must file with the Rent Board a copy of any notice to terminate a tenancy, notice to quit, and summons and complaint no later than three business days after the tenant was served with the document."
+          }
+        ],
+        "title": "Filing Eviction Notices and Pleadings with Rent Board",
+        "requirement": "A landlord must file a copy of any notice to terminate a tenancy, notice to quit, and summons and complaint with the Rent Board within three business days of serving the tenant.",
+        "key_value": "3 business days",
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": "Measure BB, a ballot measure passed by Berkeley voters in the November 2024 election, makes several changes to Berkeley’s Rent Ordinance that affect tenant and landlord rights and responsibilities.",
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": null,
+        "effective_date_evidence_kind": null,
+        "effective_date": null,
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 6,
+      "origin": "primary",
+      "accepted": false,
+      "held": true,
+      "historical": false,
+      "temporal_state": "held",
+      "validity": {
+        "resolver": "validity-window/v1",
+        "boundaries": [],
+        "end_exclusive": null,
+        "end_conflict": null,
+        "decision": {
+          "outcome": null,
+          "state": null,
+          "reason": null,
+          "start": null
+        }
+      },
+      "duplicate_of": null,
+      "rejection_reasons": [
+        "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      ],
+      "provision_ids": [
+        "P11"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 268,
+        "end": 465,
+        "occurrences": 1,
+        "model_span": "Measure BB, a ballot measure passed by Berkeley voters in the November 2024 election, makes several changes to Berkeley’s Rent Ordinance that affect tenant and landlord rights and responsibilities.",
+        "source_span": "Measure BB, a ballot measure passed by Berkeley voters in the November 2024 election, makes several changes to Berkeley’s Rent Ordinance that affect tenant and landlord rights and responsibilities.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 10955,
+        "end": 11155,
+        "occurrences": 1,
+        "model_span": "Landlords can only file a petition for rent increases for completed capital improvements (they can no longer petition to have rent increases preliminarily authorized for planned capital improvements).",
+        "source_span": "Landlords can only file a petition for rent increases for completed capital improvements (they can no longer petition to have rent increases preliminarily authorized for planned capital improvements).",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "Landlords can only file a petition for rent increases for completed capital improvements (they can no longer petition to have rent increases preliminarily authorized for planned capital improvements).",
+            "status": "exact_match",
+            "start": 10955,
+            "end": 11155
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": null,
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [
+        {
+          "id": "S1",
+          "kind": "exemption",
+          "mode": "named_subject",
+          "governed_provision_ids": [
+            "P11"
+          ],
+          "basis": "named-subject mapping to P11 verified by repair",
+          "applied": true
+        }
+      ],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": null,
+        "applied_kind": null,
+        "effective_date": null,
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null,
+        "unresolved_reason": "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      },
+      "status_derivation": "temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-a9d28747e9",
+        "jurisdiction": "Berkeley, CA",
+        "level": "city",
+        "category": "rent_increase_limits",
+        "status": null,
+        "title": "Limitation on Capital Improvement Rent Increase Petitions",
+        "requirement": "[Basis: official explanatory text, not operative legal text] Landlords are permitted to file petitions for rent increases only for completed capital improvements, and may not petition for preliminary authorization of rent increases for planned capital improvements.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": "Rental units where the tenant shares kitchen or bath facilities with the landlord are exempt from the Rent Ordinance only if the landlord lived in a unit on the same property at the start of the tenancy. [Measure BB, Units where the tenant shares a kitchen or bath facilities with the landlord]",
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "Measure BB, LANDLORDS CAN NO LONGER FILE A PETITION FOR RENT INCREASES FOR PLANNED CAPITAL IMPROVEMENTS",
+        "source_doc_id": "D006",
+        "source_url": "https://rentboard.berkeleyca.gov/laws-regulations/measure-bb-changes-berkeleys-rent-ordinance",
+        "quoted_span": "Landlords can only file a petition for rent increases for completed capital improvements (they can no longer petition to have rent increases preliminarily authorized for planned capital improvements).",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "rent_increase_limits",
+        "citation": "Measure BB, LANDLORDS CAN NO LONGER FILE A PETITION FOR RENT INCREASES FOR PLANNED CAPITAL IMPROVEMENTS",
+        "provision_ids": [
+          "P11"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "Landlords can only file a petition for rent increases for completed capital improvements (they can no longer petition to have rent increases preliminarily authorized for planned capital improvements)."
+          }
+        ],
+        "title": "Limitation on Capital Improvement Rent Increase Petitions",
+        "requirement": "Landlords are permitted to file petitions for rent increases only for completed capital improvements, and may not petition for preliminary authorization of rent increases for planned capital improvements.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": "Measure BB, a ballot measure passed by Berkeley voters in the November 2024 election, makes several changes to Berkeley’s Rent Ordinance that affect tenant and landlord rights and responsibilities.",
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": null,
+        "effective_date_evidence_kind": null,
+        "effective_date": null,
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 7,
+      "origin": "primary",
+      "accepted": false,
+      "held": true,
+      "historical": false,
+      "temporal_state": "held",
+      "validity": {
+        "resolver": "validity-window/v1",
+        "boundaries": [],
+        "end_exclusive": null,
+        "end_conflict": null,
+        "decision": {
+          "outcome": null,
+          "state": null,
+          "reason": null,
+          "start": null
+        }
+      },
+      "duplicate_of": null,
+      "rejection_reasons": [
+        "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      ],
+      "provision_ids": [
+        "P13"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 268,
+        "end": 465,
+        "occurrences": 1,
+        "model_span": "Measure BB, a ballot measure passed by Berkeley voters in the November 2024 election, makes several changes to Berkeley’s Rent Ordinance that affect tenant and landlord rights and responsibilities.",
+        "source_span": "Measure BB, a ballot measure passed by Berkeley voters in the November 2024 election, makes several changes to Berkeley’s Rent Ordinance that affect tenant and landlord rights and responsibilities.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": "Applies to fully-covered rental units.",
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 11749,
+        "end": 12130,
+        "occurrences": 1,
+        "model_span": "The maximum AGA is 5%. This means that, if the formula in the Rent Ordinance results in an AGA that is greater than 5%, the AGA approved by the Board for that year can be no more than 5%. This cap does not prevent a landlord who has “banked” (unused) AGAs from previous years from implementing a rent increase that is greater than 5% in order to raise the rent to the rent ceiling.",
+        "source_span": "The maximum AGA is 5%. This means that, if the formula in the Rent Ordinance results in an AGA that is greater than 5%, the AGA approved by the Board for that year can be no more than 5%. This cap does not prevent a landlord who has “banked” (unused) AGAs from previous years from implementing a rent increase that is greater than 5% in order to raise the rent to the rent ceiling.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "The maximum AGA is 5%. This means that, if the formula in the Rent Ordinance results in an AGA that is greater than 5%, the AGA approved by the Board for that year can be no more than 5%. This cap does not prevent a landlord who has “banked” (unused) AGAs from previous years from implementing a rent increase that is greater than 5% in order to raise the rent to the rent ceiling.",
+            "status": "exact_match",
+            "start": 11749,
+            "end": 12130
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": null,
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [
+        {
+          "id": "S1",
+          "kind": "exemption",
+          "mode": "named_subject",
+          "governed_provision_ids": [
+            "P13"
+          ],
+          "basis": "named-subject mapping to P13 verified by repair",
+          "applied": true
+        }
+      ],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": null,
+        "applied_kind": null,
+        "effective_date": null,
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null,
+        "unresolved_reason": "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      },
+      "status_derivation": "temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-fd7dcf0028",
+        "jurisdiction": "Berkeley, CA",
+        "level": "city",
+        "category": "rent_increase_limits",
+        "status": null,
+        "title": "Annual General Adjustment Maximum Cap",
+        "requirement": "[Basis: official explanatory text, not operative legal text] The Annual General Adjustment (AGA) approved by the Rent Board for any year is capped at a maximum of 5%, though this cap does not prevent landlords with banked AGAs from implementing increases over 5% up to the rent ceiling.",
+        "key_value": "5%",
+        "coverage_conditions": "Applies to fully-covered rental units.",
+        "exemptions": "Rental units where the tenant shares kitchen or bath facilities with the landlord are exempt from the Rent Ordinance only if the landlord lived in a unit on the same property at the start of the tenancy. [Measure BB, Units where the tenant shares a kitchen or bath facilities with the landlord]",
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "Measure BB, CHANGES ANNUAL GENERAL ADJUSTMENT (AGA) CAP TO 5%",
+        "source_doc_id": "D006",
+        "source_url": "https://rentboard.berkeleyca.gov/laws-regulations/measure-bb-changes-berkeleys-rent-ordinance",
+        "quoted_span": "The maximum AGA is 5%. This means that, if the formula in the Rent Ordinance results in an AGA that is greater than 5%, the AGA approved by the Board for that year can be no more than 5%. This cap does not prevent a landlord who has “banked” (unused) AGAs from previous years from implementing a rent increase that is greater than 5% in order to raise the rent to the rent ceiling.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "rent_increase_limits",
+        "citation": "Measure BB, CHANGES ANNUAL GENERAL ADJUSTMENT (AGA) CAP TO 5%",
+        "provision_ids": [
+          "P13"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "The maximum AGA is 5%. This means that, if the formula in the Rent Ordinance results in an AGA that is greater than 5%, the AGA approved by the Board for that year can be no more than 5%. This cap does not prevent a landlord who has “banked” (unused) AGAs from previous years from implementing a rent increase that is greater than 5% in order to raise the rent to the rent ceiling."
+          }
+        ],
+        "title": "Annual General Adjustment Maximum Cap",
+        "requirement": "The Annual General Adjustment (AGA) approved by the Rent Board for any year is capped at a maximum of 5%, though this cap does not prevent landlords with banked AGAs from implementing increases over 5% up to the rent ceiling.",
+        "key_value": "5%",
+        "coverage_conditions": "Applies to fully-covered rental units.",
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": "Measure BB, a ballot measure passed by Berkeley voters in the November 2024 election, makes several changes to Berkeley’s Rent Ordinance that affect tenant and landlord rights and responsibilities.",
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": null,
+        "effective_date_evidence_kind": null,
+        "effective_date": null,
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 8,
+      "origin": "primary",
+      "accepted": false,
+      "held": true,
+      "historical": false,
+      "temporal_state": "held",
+      "validity": {
+        "resolver": "validity-window/v1",
+        "boundaries": [],
+        "end_exclusive": null,
+        "end_conflict": null,
+        "decision": {
+          "outcome": null,
+          "state": null,
+          "reason": null,
+          "start": null
+        }
+      },
+      "duplicate_of": null,
+      "rejection_reasons": [
+        "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      ],
+      "provision_ids": [
+        "P14"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 268,
+        "end": 465,
+        "occurrences": 1,
+        "model_span": "Measure BB, a ballot measure passed by Berkeley voters in the November 2024 election, makes several changes to Berkeley’s Rent Ordinance that affect tenant and landlord rights and responsibilities.",
+        "source_span": "Measure BB, a ballot measure passed by Berkeley voters in the November 2024 election, makes several changes to Berkeley’s Rent Ordinance that affect tenant and landlord rights and responsibilities.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 12313,
+        "end": 12429,
+        "occurrences": 1,
+        "model_span": "The Rent Board must make inflationary adjustments to owner move-in eviction relocation assistance amounts each year.",
+        "source_span": "The Rent Board must make inflationary adjustments to owner move-in eviction relocation assistance amounts each year.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "The Rent Board must make inflationary adjustments to owner move-in eviction relocation assistance amounts each year.",
+            "status": "exact_match",
+            "start": 12313,
+            "end": 12429
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": null,
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": null,
+        "applied_kind": null,
+        "effective_date": null,
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null,
+        "unresolved_reason": "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      },
+      "status_derivation": "temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-2b830005f4",
+        "jurisdiction": "Berkeley, CA",
+        "level": "city",
+        "category": "just_cause_eviction",
+        "status": null,
+        "title": "Annual Inflationary Adjustments to Owner Move-In Relocation Assistance",
+        "requirement": "[Basis: official explanatory text, not operative legal text] The Rent Board must make annual inflationary adjustments to the amounts required for owner move-in eviction relocation assistance payments.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "Measure BB, THE RENT BOARD IS NOW REQUIRED TO ANNUALLY ADJUST OWNER MOVE-IN EVICTION RELOCATION ASSISTANCE PAYMENTS",
+        "source_doc_id": "D006",
+        "source_url": "https://rentboard.berkeleyca.gov/laws-regulations/measure-bb-changes-berkeleys-rent-ordinance",
+        "quoted_span": "The Rent Board must make inflationary adjustments to owner move-in eviction relocation assistance amounts each year.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "just_cause_eviction",
+        "citation": "Measure BB, THE RENT BOARD IS NOW REQUIRED TO ANNUALLY ADJUST OWNER MOVE-IN EVICTION RELOCATION ASSISTANCE PAYMENTS",
+        "provision_ids": [
+          "P14"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "The Rent Board must make inflationary adjustments to owner move-in eviction relocation assistance amounts each year."
+          }
+        ],
+        "title": "Annual Inflationary Adjustments to Owner Move-In Relocation Assistance",
+        "requirement": "The Rent Board must make annual inflationary adjustments to the amounts required for owner move-in eviction relocation assistance payments.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": "Measure BB, a ballot measure passed by Berkeley voters in the November 2024 election, makes several changes to Berkeley’s Rent Ordinance that affect tenant and landlord rights and responsibilities.",
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": null,
+        "effective_date_evidence_kind": null,
+        "effective_date": null,
+        "conflict_note": null
+      }
+    }
+  ],
+  "posture": {
+    "declared": "official_explanatory_page",
+    "evidence": "Measure BB Changes to Berkeley's Rent Ordinance | Berkeley Rent Board",
+    "evidence_check": {
+      "status": "exact_match",
+      "normalization": null,
+      "start": 0,
+      "end": 69,
+      "occurrences": 1,
+      "model_span": "Measure BB Changes to Berkeley's Rent Ordinance | Berkeley Rent Board",
+      "source_span": "Measure BB Changes to Berkeley's Rent Ordinance | Berkeley Rent Board",
+      "reason": null,
+      "reconstructed": false,
+      "parts": [],
+      "crossed_artifacts": []
+    },
+    "established": "official_explanatory_page",
+    "basis": "declared posture with verified evidence"
+  },
+  "base_dates": [],
+  "provision_inventory": [
+    {
+      "id": "P1",
+      "ref": "Overview of Measure BB Changes",
+      "anchor": "Measure BB made several substantive changes to Berkeley’s Rent",
+      "summary": "Introductory summary list of changes made by Measure BB to Berkeley's Rent Ordinance.",
+      "role": "boilerplate",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "introductory summary list duplicate of detailed provisions below"
+    },
+    {
+      "id": "P2",
+      "ref": "Units where the tenant shares a kitchen or bath facilities with the landlord",
+      "anchor": "Where the tenant shares a kitchen or bath facilities with",
+      "summary": "Restricts the Rent Ordinance exemption for units where tenant shares kitchen or bath facilities with landlord to tenancies where landlord resided on property at the start.",
+      "role": "exemption",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "scope condition / exemption, see global_scope S1"
+    },
+    {
+      "id": "P3",
+      "ref": "Government-owned or -subsidized rental units like Section 8 and Shelter + Care units are Now Fully or Partially Covered by the Rent Ordinance",
+      "anchor": "Landlords of government-owned or -subsidized units must",
+      "summary": "Registration, fee, and coverage classification rules for government-owned and subsidized rental units.",
+      "role": "scope_condition",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "registration requirements, annual fees, and general subsidy coverage classifications"
+    },
+    {
+      "id": "P4",
+      "ref": "Eviction for nonpayment of rent is no longer allowed for rental debt less than one month of the Fair Market Rent for the unit",
+      "anchor": "For a landlord to evict a tenant for nonpayment",
+      "summary": "Sets minimum rental debt threshold of at least one month of Fair Market Rent to evict for nonpayment of rent.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "just_cause_eviction",
+      "reason": null
+    },
+    {
+      "id": "P5",
+      "ref": "Tenants can no longer be evicted for failing to sign a substantially similar lease",
+      "anchor": "A landlord cannot evict a tenant for failing to",
+      "summary": "Prohibits evicting a tenant for failing to sign a substantially similar lease upon expiration of a fixed-term lease.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "just_cause_eviction",
+      "reason": null
+    },
+    {
+      "id": "P6",
+      "ref": "New requirements to evict tenants for violations of a material term of the lease",
+      "anchor": "Material lease terms only include mutually agreed upon lease",
+      "summary": "Establishes criteria and pre-eviction notice requirements for evicting a tenant for breach of a material lease term.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "just_cause_eviction",
+      "reason": null
+    },
+    {
+      "id": "P7",
+      "ref": "New requirements related to eviction notices and lawsuits",
+      "anchor": "Any notice terminating a tenancy must contain a statement",
+      "summary": "Requires eviction notices to include Rent Board contact information and mandates filing eviction notices and lawsuits with the Rent Board within three business days.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "just_cause_eviction",
+      "reason": null
+    },
+    {
+      "id": "P8",
+      "ref": "NEW NOTICE OF TENANT RIGHTS REQUIREMENTS",
+      "anchor": "For tenancies started on or after December 20, 2024,",
+      "summary": "Requires landlords to provide written Notice of Tenant Rights to new tenants within 15 days and post it in common areas.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "general tenant rights disclosure notice requirement, not within official categories"
+    },
+    {
+      "id": "P9",
+      "ref": "NEW RULES ABOUT PAYING FOR UTILITIES",
+      "anchor": "For tenancies starting on or after February 6, 2024,",
+      "summary": "Regulates utility billing for fully covered units, requiring incorporation into base rent or separate metering.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "utility billing regulations, not within official categories"
+    },
+    {
+      "id": "P10",
+      "ref": "NEW TENANT RIGHT TO ORGANIZE",
+      "anchor": "Tenants who live on certain properties now have an",
+      "summary": "Grants tenants an enforceable right to organize and form tenant associations.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "tenant organizing rights, not within official categories"
+    },
+    {
+      "id": "P11",
+      "ref": "LANDLORDS CAN NO LONGER FILE A PETITION FOR RENT INCREASES FOR PLANNED CAPITAL IMPROVEMENTS",
+      "anchor": "Landlords can only file a petition for rent increases",
+      "summary": "Restricts rent increase petitions for capital improvements to completed improvements only.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "rent_increase_limits",
+      "reason": null
+    },
+    {
+      "id": "P12",
+      "ref": "CHANGE TO TENANCY REPORTING REQUIREMENTS FOR LANDLORDS OF PARTIALLY COVERED UNITS",
+      "anchor": "Owners of partially covered units must now report new",
+      "summary": "Requires owners of partially covered units to report new tenancies within 15 days and update annually.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "tenancy registration and reporting requirements, not within official categories"
+    },
+    {
+      "id": "P13",
+      "ref": "CHANGES ANNUAL GENERAL ADJUSTMENT (AGA) CAP TO 5%",
+      "anchor": "The AGA is the amount by which the landlord",
+      "summary": "Caps the Annual General Adjustment (AGA) for fully covered units at a maximum of 5%.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "rent_increase_limits",
+      "reason": null
+    },
+    {
+      "id": "P14",
+      "ref": "THE RENT BOARD IS NOW REQUIRED TO ANNUALLY ADJUST OWNER MOVE-IN EVICTION RELOCATION ASSISTANCE PAYMENTS",
+      "anchor": "The Rent Board must make inflationary adjustments to owner",
+      "summary": "Requires the Rent Board to make annual inflationary adjustments to owner move-in eviction relocation assistance payments.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "just_cause_eviction",
+      "reason": null
+    },
+    {
+      "id": "P15",
+      "ref": "RENT BOARD EMPOWERED TO IMPLEMENT FINES FOR THE FAILURE TO TIMELY REPORT NEW TENANCIES",
+      "anchor": "Measure BB gives the Rent Board the power to",
+      "summary": "Authorizes the Rent Board to adopt regulations implementing fines for failure to timely report new tenancies.",
+      "role": "enforcement",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "administrative agency authority to adopt fines, not within official categories"
+    }
+  ],
+  "global_scope": [
+    {
+      "id": "S1",
+      "kind": "exemption",
+      "statement": "Rental units where the tenant shares kitchen or bath facilities with the landlord are exempt from the Rent Ordinance only if the landlord lived in a unit on the same property at the start of the tenancy.",
+      "citation": "Measure BB, Units where the tenant shares a kitchen or bath facilities with the landlord",
+      "scope_mode": "structural",
+      "scope_quote": "the unit will be exempt from the Rent Ordinance only if",
+      "source_provision_id": "P2",
+      "governed_provision_ids": null,
+      "evidence_parts": [
+        {
+          "segment_id": 1,
+          "quoted_text": "Where the tenant shares a kitchen or bath facilities with the landlord, the unit will be exempt from the Rent Ordinance only if the landlord lived in a unit on the same property at the start of the tenancy."
+        }
+      ],
+      "evidence_check": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 3215,
+        "end": 3421,
+        "occurrences": 1,
+        "model_span": "Where the tenant shares a kitchen or bath facilities with the landlord, the unit will be exempt from the Rent Ordinance only if the landlord lived in a unit on the same property at the start of the tenancy.",
+        "source_span": "Where the tenant shares a kitchen or bath facilities with the landlord, the unit will be exempt from the Rent Ordinance only if the landlord lived in a unit on the same property at the start of the tenancy.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "Where the tenant shares a kitchen or bath facilities with the landlord, the unit will be exempt from the Rent Ordinance only if the landlord lived in a unit on the same property at the start of the tenancy.",
+            "status": "exact_match",
+            "start": 3215,
+            "end": 3421
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "propagated": true,
+      "problem": null,
+      "scope": {
+        "resolver": "scope-modes/v1",
+        "declared_mode": "structural",
+        "mode": "named_subject",
+        "scope_words": {
+          "scope_quote": "the unit will be exempt from the Rent Ordinance only if",
+          "scope_quote_check": "exact_match",
+          "text": "the unit will be exempt from the Rent Ordinance only if",
+          "from": "scope_quote"
+        },
+        "detail": null,
+        "propagate_ids": [],
+        "mapping_targets": [
+          "P4",
+          "P5",
+          "P6",
+          "P7",
+          "P11",
+          "P13",
+          "P14"
+        ],
+        "verification": null
+      }
+    }
+  ],
+  "source_view": {
+    "marker": "[[PAGE BREAK]]",
+    "segment_label": "[[SEGMENT {}]]",
+    "view_sha256": "a8e2767b62c82fcc8528a8881b469c1473b2ea7754d9f0fdf918c330537cba6d",
+    "segments": [
+      {
+        "id": 1,
+        "raw_start": 0,
+        "raw_end": 13750
+      }
+    ],
+    "artifacts_removed": 0,
+    "artifacts": []
+  },
+  "coverage": {
+    "inventory_valid": true,
+    "anchors_located": "15/15",
+    "after_primary": {
+      "uncovered": [],
+      "unaccepted": [
+        "Eviction for nonpayment of rent is no longer allowed for rental debt less than one month of the Fair Market Rent for the unit",
+        "Tenants can no longer be evicted for failing to sign a substantially similar lease",
+        "New requirements to evict tenants for violations of a material term of the lease",
+        "New requirements related to eviction notices and lawsuits",
+        "LANDLORDS CAN NO LONGER FILE A PETITION FOR RENT INCREASES FOR PLANNED CAPITAL IMPROVEMENTS",
+        "CHANGES ANNUAL GENERAL ADJUSTMENT (AGA) CAP TO 5%",
+        "THE RENT BOARD IS NOW REQUIRED TO ANNUALLY ADJUST OWNER MOVE-IN EVICTION RELOCATION ASSISTANCE PAYMENTS"
+      ],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "scope_mappings": {
+      "requested": 7,
+      "applies": 6,
+      "does_not_apply": 1,
+      "unresolved": 0
+    },
+    "after_repair": {
+      "uncovered": [],
+      "unaccepted": [
+        "Eviction for nonpayment of rent is no longer allowed for rental debt less than one month of the Fair Market Rent for the unit",
+        "Tenants can no longer be evicted for failing to sign a substantially similar lease",
+        "New requirements to evict tenants for violations of a material term of the lease",
+        "New requirements related to eviction notices and lawsuits",
+        "LANDLORDS CAN NO LONGER FILE A PETITION FOR RENT INCREASES FOR PLANNED CAPITAL IMPROVEMENTS",
+        "CHANGES ANNUAL GENERAL ADJUSTMENT (AGA) CAP TO 5%",
+        "THE RENT BOARD IS NOW REQUIRED TO ANNUALLY ADJUST OWNER MOVE-IN EVICTION RELOCATION ASSISTANCE PAYMENTS"
+      ],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "repair_targets": {
+      "before_repair": 0,
+      "resolved_by_accepted_rule": 0,
+      "resolved_out_of_scope": 0,
+      "still_unresolved": 0
+    },
+    "inventory_items": 15,
+    "in_scope_items": 7,
+    "in_scope_refs": 7,
+    "uncertain": [],
+    "final": {
+      "uncovered": [],
+      "unaccepted": [
+        "Eviction for nonpayment of rent is no longer allowed for rental debt less than one month of the Fair Market Rent for the unit",
+        "Tenants can no longer be evicted for failing to sign a substantially similar lease",
+        "New requirements to evict tenants for violations of a material term of the lease",
+        "New requirements related to eviction notices and lawsuits",
+        "LANDLORDS CAN NO LONGER FILE A PETITION FOR RENT INCREASES FOR PLANNED CAPITAL IMPROVEMENTS",
+        "CHANGES ANNUAL GENERAL ADJUSTMENT (AGA) CAP TO 5%",
+        "THE RENT BOARD IS NOW REQUIRED TO ANNUALLY ADJUST OWNER MOVE-IN EVICTION RELOCATION ASSISTANCE PAYMENTS"
+      ],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "link_mismatches": [],
+    "provisions": [
+      {
+        "ref": "Eviction for nonpayment of rent is no longer allowed for rental debt less than one month of the Fair Market Rent for the unit",
+        "inventory_item": 3,
+        "provision_id": "P4",
+        "summary": "Sets minimum rental debt threshold of at least one month of Fair Market Rent to evict for nonpayment of rent.",
+        "category": "just_cause_eviction",
+        "candidates": [
+          0
+        ],
+        "accepted": [],
+        "basis": {
+          "0": "provision link; citation names it"
+        }
+      },
+      {
+        "ref": "Tenants can no longer be evicted for failing to sign a substantially similar lease",
+        "inventory_item": 4,
+        "provision_id": "P5",
+        "summary": "Prohibits evicting a tenant for failing to sign a substantially similar lease upon expiration of a fixed-term lease.",
+        "category": "just_cause_eviction",
+        "candidates": [
+          1
+        ],
+        "accepted": [],
+        "basis": {
+          "1": "provision link; citation names it"
+        }
+      },
+      {
+        "ref": "New requirements to evict tenants for violations of a material term of the lease",
+        "inventory_item": 5,
+        "provision_id": "P6",
+        "summary": "Establishes criteria and pre-eviction notice requirements for evicting a tenant for breach of a material lease term.",
+        "category": "just_cause_eviction",
+        "candidates": [
+          2,
+          3
+        ],
+        "accepted": [],
+        "basis": {
+          "2": "provision link; citation names it",
+          "3": "provision link; citation names it"
+        }
+      },
+      {
+        "ref": "New requirements related to eviction notices and lawsuits",
+        "inventory_item": 6,
+        "provision_id": "P7",
+        "summary": "Requires eviction notices to include Rent Board contact information and mandates filing eviction notices and lawsuits with the Rent Board within three business days.",
+        "category": "just_cause_eviction",
+        "candidates": [
+          4,
+          5
+        ],
+        "accepted": [],
+        "basis": {
+          "4": "provision link; citation names it",
+          "5": "provision link; citation names it"
+        }
+      },
+      {
+        "ref": "LANDLORDS CAN NO LONGER FILE A PETITION FOR RENT INCREASES FOR PLANNED CAPITAL IMPROVEMENTS",
+        "inventory_item": 10,
+        "provision_id": "P11",
+        "summary": "Restricts rent increase petitions for capital improvements to completed improvements only.",
+        "category": "rent_increase_limits",
+        "candidates": [
+          6
+        ],
+        "accepted": [],
+        "basis": {
+          "6": "provision link; citation names it"
+        }
+      },
+      {
+        "ref": "CHANGES ANNUAL GENERAL ADJUSTMENT (AGA) CAP TO 5%",
+        "inventory_item": 12,
+        "provision_id": "P13",
+        "summary": "Caps the Annual General Adjustment (AGA) for fully covered units at a maximum of 5%.",
+        "category": "rent_increase_limits",
+        "candidates": [
+          7
+        ],
+        "accepted": [],
+        "basis": {
+          "7": "provision link; citation names it"
+        }
+      },
+      {
+        "ref": "THE RENT BOARD IS NOW REQUIRED TO ANNUALLY ADJUST OWNER MOVE-IN EVICTION RELOCATION ASSISTANCE PAYMENTS",
+        "inventory_item": 13,
+        "provision_id": "P14",
+        "summary": "Requires the Rent Board to make annual inflationary adjustments to owner move-in eviction relocation assistance payments.",
+        "category": "just_cause_eviction",
+        "candidates": [
+          8
+        ],
+        "accepted": [],
+        "basis": {
+          "8": "provision link; citation names it"
+        }
+      }
+    ],
+    "unrecorded_subdivisions": []
+  },
+  "scope_challenges": [
+    {
+      "ref": "Overview of Measure BB Changes",
+      "provision_id": "P1",
+      "role": "boilerplate",
+      "reason": "introductory summary list duplicate of detailed provisions below",
+      "summary": "Introductory summary list of changes made by Measure BB to Berkeley's Rent Ordinance.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role boilerplate is decided by other rules"
+    },
+    {
+      "ref": "Units where the tenant shares a kitchen or bath facilities with the landlord",
+      "provision_id": "P2",
+      "role": "exemption",
+      "reason": "scope condition / exemption, see global_scope S1",
+      "summary": "Restricts the Rent Ordinance exemption for units where tenant shares kitchen or bath facilities with landlord to tenancies where landlord resided on property at the start.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role exemption is decided by other rules"
+    },
+    {
+      "ref": "Government-owned or -subsidized rental units like Section 8 and Shelter + Care units are Now Fully or Partially Covered by the Rent Ordinance",
+      "provision_id": "P3",
+      "role": "scope_condition",
+      "reason": "registration requirements, annual fees, and general subsidy coverage classifications",
+      "summary": "Registration, fee, and coverage classification rules for government-owned and subsidized rental units.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role scope_condition is decided by other rules"
+    },
+    {
+      "ref": "NEW NOTICE OF TENANT RIGHTS REQUIREMENTS",
+      "provision_id": "P8",
+      "role": "operative_rule",
+      "reason": "general tenant rights disclosure notice requirement, not within official categories",
+      "summary": "Requires landlords to provide written Notice of Tenant Rights to new tenants within 15 days and post it in common areas.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    },
+    {
+      "ref": "NEW RULES ABOUT PAYING FOR UTILITIES",
+      "provision_id": "P9",
+      "role": "operative_rule",
+      "reason": "utility billing regulations, not within official categories",
+      "summary": "Regulates utility billing for fully covered units, requiring incorporation into base rent or separate metering.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    },
+    {
+      "ref": "NEW TENANT RIGHT TO ORGANIZE",
+      "provision_id": "P10",
+      "role": "operative_rule",
+      "reason": "tenant organizing rights, not within official categories",
+      "summary": "Grants tenants an enforceable right to organize and form tenant associations.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    },
+    {
+      "ref": "CHANGE TO TENANCY REPORTING REQUIREMENTS FOR LANDLORDS OF PARTIALLY COVERED UNITS",
+      "provision_id": "P12",
+      "role": "operative_rule",
+      "reason": "tenancy registration and reporting requirements, not within official categories",
+      "summary": "Requires owners of partially covered units to report new tenancies within 15 days and update annually.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    },
+    {
+      "ref": "RENT BOARD EMPOWERED TO IMPLEMENT FINES FOR THE FAILURE TO TIMELY REPORT NEW TENANCIES",
+      "provision_id": "P15",
+      "role": "enforcement",
+      "reason": "administrative agency authority to adopt fines, not within official categories",
+      "summary": "Authorizes the Rent Board to adopt regulations implementing fines for failure to timely report new tenancies.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role enforcement is decided by other rules"
+    }
+  ],
+  "scope_mappings": [
+    {
+      "condition_id": "S1",
+      "provision_id": "P4",
+      "kind": "exemption",
+      "statement": "Rental units where the tenant shares kitchen or bath facilities with the landlord are exempt from the Rent Ordinance only if the landlord lived in a unit on the same property at the start of the tenancy.",
+      "scope_words": "the unit will be exempt from the Rent Ordinance only if",
+      "condition_evidence": "Where the tenant shares a kitchen or bath facilities with the landlord, the unit will be exempt from the Rent Ordinance only if the landlord lived in a unit on the same property at the start of the tenancy.",
+      "target_ref": "Eviction for nonpayment of rent is no longer allowed for rental debt less than one month of the Fair Market Rent for the unit",
+      "target_anchor": "For a landlord to evict a tenant for nonpayment",
+      "target_quote": "For a landlord to evict a tenant for nonpayment of rent, the tenant must owe an amount of rental debt equal to or greater than one month of the Fair Market Rent (FMR) value for a unit of equivalent size in the metro area Oakland-Fremont, CA HUD Metro FMR as determined by the US Department of Housing and Urban Development for the fiscal year in which the rent is demanded.",
+      "decision": {
+        "decision": "applies",
+        "reason": "Just cause eviction requirements under the Rent Ordinance apply only to fully or partially covered units, excluding exempt units.",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 5996,
+          "end": 6164,
+          "occurrences": 1,
+          "model_span": "In Berkeley, tenants in units that are fully or partially covered by the Rent Ordinance cannot be evicted unless there is \"just cause” (previously called “good cause”).",
+          "source_span": "In Berkeley, tenants in units that are fully or partially covered by the Rent Ordinance cannot be evicted unless there is \"just cause” (previously called “good cause”).",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 1,
+              "model_text": "In Berkeley, tenants in units that are fully or partially covered by the Rent Ordinance cannot be evicted unless there is \"just cause” (previously called “good cause”).",
+              "status": "exact_match",
+              "start": 5996,
+              "end": 6164
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "applies",
+      "unresolved_reason": null
+    },
+    {
+      "condition_id": "S1",
+      "provision_id": "P5",
+      "kind": "exemption",
+      "statement": "Rental units where the tenant shares kitchen or bath facilities with the landlord are exempt from the Rent Ordinance only if the landlord lived in a unit on the same property at the start of the tenancy.",
+      "scope_words": "the unit will be exempt from the Rent Ordinance only if",
+      "condition_evidence": "Where the tenant shares a kitchen or bath facilities with the landlord, the unit will be exempt from the Rent Ordinance only if the landlord lived in a unit on the same property at the start of the tenancy.",
+      "target_ref": "Tenants can no longer be evicted for failing to sign a substantially similar lease",
+      "target_anchor": "A landlord cannot evict a tenant for failing to",
+      "target_quote": "A landlord cannot evict a tenant for failing to sign a substantially similar lease upon expiration of a fixed-term lease.",
+      "decision": {
+        "decision": "applies",
+        "reason": "Eviction protections apply only to units fully or partially covered by the Rent Ordinance, not to exempt units.",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 5996,
+          "end": 6164,
+          "occurrences": 1,
+          "model_span": "In Berkeley, tenants in units that are fully or partially covered by the Rent Ordinance cannot be evicted unless there is \"just cause” (previously called “good cause”).",
+          "source_span": "In Berkeley, tenants in units that are fully or partially covered by the Rent Ordinance cannot be evicted unless there is \"just cause” (previously called “good cause”).",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 1,
+              "model_text": "In Berkeley, tenants in units that are fully or partially covered by the Rent Ordinance cannot be evicted unless there is \"just cause” (previously called “good cause”).",
+              "status": "exact_match",
+              "start": 5996,
+              "end": 6164
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "applies",
+      "unresolved_reason": null
+    },
+    {
+      "condition_id": "S1",
+      "provision_id": "P6",
+      "kind": "exemption",
+      "statement": "Rental units where the tenant shares kitchen or bath facilities with the landlord are exempt from the Rent Ordinance only if the landlord lived in a unit on the same property at the start of the tenancy.",
+      "scope_words": "the unit will be exempt from the Rent Ordinance only if",
+      "condition_evidence": "Where the tenant shares a kitchen or bath facilities with the landlord, the unit will be exempt from the Rent Ordinance only if the landlord lived in a unit on the same property at the start of the tenancy.",
+      "target_ref": "New requirements to evict tenants for violations of a material term of the lease",
+      "target_anchor": "Material lease terms only include mutually agreed upon lease",
+      "target_quote": "Material lease terms only include mutually agreed upon lease terms.\nThe alleged violation must cause substantial, actual damage to the landlord.\nThe landlord must demonstrate that the tenant’s behavior was unreasonable.",
+      "decision": {
+        "decision": "applies",
+        "reason": "Eviction restrictions for lease violations apply only to tenancies fully or partially covered by the Rent Ordinance.",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 5996,
+          "end": 6164,
+          "occurrences": 1,
+          "model_span": "In Berkeley, tenants in units that are fully or partially covered by the Rent Ordinance cannot be evicted unless there is \"just cause” (previously called “good cause”).",
+          "source_span": "In Berkeley, tenants in units that are fully or partially covered by the Rent Ordinance cannot be evicted unless there is \"just cause” (previously called “good cause”).",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 1,
+              "model_text": "In Berkeley, tenants in units that are fully or partially covered by the Rent Ordinance cannot be evicted unless there is \"just cause” (previously called “good cause”).",
+              "status": "exact_match",
+              "start": 5996,
+              "end": 6164
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "applies",
+      "unresolved_reason": null
+    },
+    {
+      "condition_id": "S1",
+      "provision_id": "P7",
+      "kind": "exemption",
+      "statement": "Rental units where the tenant shares kitchen or bath facilities with the landlord are exempt from the Rent Ordinance only if the landlord lived in a unit on the same property at the start of the tenancy.",
+      "scope_words": "the unit will be exempt from the Rent Ordinance only if",
+      "condition_evidence": "Where the tenant shares a kitchen or bath facilities with the landlord, the unit will be exempt from the Rent Ordinance only if the landlord lived in a unit on the same property at the start of the tenancy.",
+      "target_ref": "New requirements related to eviction notices and lawsuits",
+      "target_anchor": "Any notice terminating a tenancy must contain a statement",
+      "target_quote": "Any notice terminating a tenancy must contain a statement that advice about the notice is available from the Rent Board, the current phone number for the Rent Board’s Housing counseling services, and the current address of the Rent Board’s website.",
+      "decision": {
+        "decision": "applies",
+        "reason": "Eviction notice requirements under the Rent Ordinance apply only to units fully or partially covered by the Ordinance.",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 5996,
+          "end": 6164,
+          "occurrences": 1,
+          "model_span": "In Berkeley, tenants in units that are fully or partially covered by the Rent Ordinance cannot be evicted unless there is \"just cause” (previously called “good cause”).",
+          "source_span": "In Berkeley, tenants in units that are fully or partially covered by the Rent Ordinance cannot be evicted unless there is \"just cause” (previously called “good cause”).",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 1,
+              "model_text": "In Berkeley, tenants in units that are fully or partially covered by the Rent Ordinance cannot be evicted unless there is \"just cause” (previously called “good cause”).",
+              "status": "exact_match",
+              "start": 5996,
+              "end": 6164
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "applies",
+      "unresolved_reason": null
+    },
+    {
+      "condition_id": "S1",
+      "provision_id": "P11",
+      "kind": "exemption",
+      "statement": "Rental units where the tenant shares kitchen or bath facilities with the landlord are exempt from the Rent Ordinance only if the landlord lived in a unit on the same property at the start of the tenancy.",
+      "scope_words": "the unit will be exempt from the Rent Ordinance only if",
+      "condition_evidence": "Where the tenant shares a kitchen or bath facilities with the landlord, the unit will be exempt from the Rent Ordinance only if the landlord lived in a unit on the same property at the start of the tenancy.",
+      "target_ref": "LANDLORDS CAN NO LONGER FILE A PETITION FOR RENT INCREASES FOR PLANNED CAPITAL IMPROVEMENTS",
+      "target_anchor": "Landlords can only file a petition for rent increases",
+      "target_quote": "Landlords can only file a petition for rent increases for completed capital improvements (they can no longer petition to have rent increases preliminarily authorized for planned capital improvements).",
+      "decision": {
+        "decision": "applies",
+        "reason": "Rent increase petition rules apply to units under the Rent Ordinance, from which exempt units are excluded.",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 2963,
+          "end": 3063,
+          "occurrences": 1,
+          "model_span": "Rental units in Berkeley can be\nfully covered, partially covered, or exempt\nfrom the Rent Ordinance.",
+          "source_span": "Rental units in Berkeley can be\nfully covered, partially covered, or exempt\nfrom the Rent Ordinance.",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 1,
+              "model_text": "Rental units in Berkeley can be\nfully covered, partially covered, or exempt\nfrom the Rent Ordinance.",
+              "status": "exact_match",
+              "start": 2963,
+              "end": 3063
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "applies",
+      "unresolved_reason": null
+    },
+    {
+      "condition_id": "S1",
+      "provision_id": "P13",
+      "kind": "exemption",
+      "statement": "Rental units where the tenant shares kitchen or bath facilities with the landlord are exempt from the Rent Ordinance only if the landlord lived in a unit on the same property at the start of the tenancy.",
+      "scope_words": "the unit will be exempt from the Rent Ordinance only if",
+      "condition_evidence": "Where the tenant shares a kitchen or bath facilities with the landlord, the unit will be exempt from the Rent Ordinance only if the landlord lived in a unit on the same property at the start of the tenancy.",
+      "target_ref": "CHANGES ANNUAL GENERAL ADJUSTMENT (AGA) CAP TO 5%",
+      "target_anchor": "The AGA is the amount by which the landlord",
+      "target_quote": "The maximum AGA is 5%. This means that, if the formula in the Rent Ordinance results in an AGA that is greater than 5%, the AGA approved by the Board for that year can be no more than 5%. This cap does not prevent a landlord who has “banked” (unused) AGAs from previous years from implementing a rent increase that is greater than 5% in order to raise the rent to the rent ceiling.",
+      "decision": {
+        "decision": "applies",
+        "reason": "The Annual General Adjustment cap applies only to fully-covered rental units and does not apply to exempt units.",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 11511,
+          "end": 11615,
+          "occurrences": 1,
+          "model_span": "The AGA is the amount by which the landlord of a fully-covered rental unit may raise the rent each year.",
+          "source_span": "The AGA is the amount by which the landlord of a fully-covered rental unit may raise the rent each year.",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 1,
+              "model_text": "The AGA is the amount by which the landlord of a fully-covered rental unit may raise the rent each year.",
+              "status": "exact_match",
+              "start": 11511,
+              "end": 11615
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "applies",
+      "unresolved_reason": null
+    },
+    {
+      "condition_id": "S1",
+      "provision_id": "P14",
+      "kind": "exemption",
+      "statement": "Rental units where the tenant shares kitchen or bath facilities with the landlord are exempt from the Rent Ordinance only if the landlord lived in a unit on the same property at the start of the tenancy.",
+      "scope_words": "the unit will be exempt from the Rent Ordinance only if",
+      "condition_evidence": "Where the tenant shares a kitchen or bath facilities with the landlord, the unit will be exempt from the Rent Ordinance only if the landlord lived in a unit on the same property at the start of the tenancy.",
+      "target_ref": "THE RENT BOARD IS NOW REQUIRED TO ANNUALLY ADJUST OWNER MOVE-IN EVICTION RELOCATION ASSISTANCE PAYMENTS",
+      "target_anchor": "The Rent Board must make inflationary adjustments to owner",
+      "target_quote": "The Rent Board must make inflationary adjustments to owner move-in eviction relocation assistance amounts each year.",
+      "decision": {
+        "decision": "does_not_apply",
+        "reason": "This provision governs the Rent Board's administrative duty to make yearly inflationary adjustments rather than an obligation that unit-level exemptions reach.",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 12313,
+          "end": 12429,
+          "occurrences": 1,
+          "model_span": "The Rent Board must make inflationary adjustments to owner move-in eviction relocation assistance amounts each year.",
+          "source_span": "The Rent Board must make inflationary adjustments to owner move-in eviction relocation assistance amounts each year.",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 1,
+              "model_text": "The Rent Board must make inflationary adjustments to owner move-in eviction relocation assistance amounts each year.",
+              "status": "exact_match",
+              "start": 12313,
+              "end": 12429
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "does_not_apply",
+      "unresolved_reason": null
+    }
+  ],
+  "legislative_session": null,
+  "empty_result": null,
+  "legacy_replay": null,
+  "dedupe": [],
+  "chunking": null,
+  "repair": {
+    "invoked": true,
+    "reason": "0 repair target(s) from no check; 7 scope_mapping_challenge(s)",
+    "prompt_version": "v7-repair-1",
+    "targets": [],
+    "cache_key": "64d5a341a314776c3a3325eca8e61ec4f09e8858afa4687575a2f4172bc2f7c1",
+    "cache_hit": true,
+    "cache_entry": "cache/extraction/64d5a341a314776c3a3325eca8e61ec4f09e8858afa4687575a2f4172bc2f7c1.json",
+    "prompt_sha256": "83df553cee8f46eb847f1c3bb5837fb11b49489126f1f2e205df2a42493660e8",
+    "provider_metadata": {
+      "api": "interactions.create",
+      "interaction_id": "",
+      "model": "gemini-3.8-flash",
+      "status": "completed",
+      "usage": {
+        "input_tokens": 7426,
+        "output_tokens": 930,
+        "thinking_tokens": 5526,
+        "total_tokens": 13882
+      }
+    },
+    "raw_response_text": "{\n  \"target_resolutions\": [],\n  \"scope_mappings\": [\n    {\n      \"condition_id\": \"S1\",\n      \"provision_id\": \"P11\",\n      \"decision\": \"applies\",\n      \"reason\": \"Rent increase petition rules apply to units under the Rent Ordinance, from which exempt units are excluded.\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Rental units in Berkeley can be\\nfully covered, partially covered, or exempt\\nfrom the Rent Ordinance.\"\n        }\n      ]\n    },\n    {\n      \"condition_id\": \"S1\",\n      \"provision_id\": \"P13\",\n      \"decision\": \"applies\",\n      \"reason\": \"The Annual General Adjustment cap applies only to fully-covered rental units and does not apply to exempt units.\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"The AGA is the amount by which the landlord of a fully-covered rental unit may raise the rent each year.\"\n        }\n      ]\n    },\n    {\n      \"condition_id\": \"S1\",\n      \"provision_id\": \"P14\",\n      \"decision\": \"does_not_apply\",\n      \"reason\": \"This provision governs the Rent Board's administrative duty to make yearly inflationary adjustments rather than an obligation that unit-level exemptions reach.\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"The Rent Board must make inflationary adjustments to owner move-in eviction relocation assistance amounts each year.\"\n        }\n      ]\n    },\n    {\n      \"condition_id\": \"S1\",\n      \"provision_id\": \"P4\",\n      \"decision\": \"applies\",\n      \"reason\": \"Just cause eviction requirements under the Rent Ordinance apply only to fully or partially covered units, excluding exempt units.\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"In Berkeley, tenants in units that are fully or partially covered by the Rent Ordinance cannot be evicted unless there is \\\"just cause” (previously called “good cause”).\"\n        }\n      ]\n    },\n    {\n      \"condition_id\": \"S1\",\n      \"provision_id\": \"P5\",\n      \"decision\": \"applies\",\n      \"reason\": \"Eviction protections apply only to units fully or partially covered by the Rent Ordinance, not to exempt units.\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"In Berkeley, tenants in units that are fully or partially covered by the Rent Ordinance cannot be evicted unless there is \\\"just cause” (previously called “good cause”).\"\n        }\n      ]\n    },\n    {\n      \"condition_id\": \"S1\",\n      \"provision_id\": \"P6\",\n      \"decision\": \"applies\",\n      \"reason\": \"Eviction restrictions for lease violations apply only to tenancies fully or partially covered by the Rent Ordinance.\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"In Berkeley, tenants in units that are fully or partially covered by the Rent Ordinance cannot be evicted unless there is \\\"just cause” (previously called “good cause”).\"\n        }\n      ]\n    },\n    {\n      \"condition_id\": \"S1\",\n      \"provision_id\": \"P7\",\n      \"decision\": \"applies\",\n      \"reason\": \"Eviction notice requirements under the Rent Ordinance apply only to units fully or partially covered by the Ordinance.\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"In Berkeley, tenants in units that are fully or partially covered by the Rent Ordinance cannot be evicted unless there is \\\"just cause” (previously called “good cause”).\"\n        }\n      ]\n    }\n  ],\n  \"rules\": []\n}",
+    "mappings": [
+      {
+        "condition_id": "S1",
+        "provision_id": "P4",
+        "kind": "exemption",
+        "statement": "Rental units where the tenant shares kitchen or bath facilities with the landlord are exempt from the Rent Ordinance only if the landlord lived in a unit on the same property at the start of the tenancy.",
+        "scope_words": "the unit will be exempt from the Rent Ordinance only if",
+        "condition_evidence": "Where the tenant shares a kitchen or bath facilities with the landlord, the unit will be exempt from the Rent Ordinance only if the landlord lived in a unit on the same property at the start of the tenancy.",
+        "target_ref": "Eviction for nonpayment of rent is no longer allowed for rental debt less than one month of the Fair Market Rent for the unit",
+        "target_anchor": "For a landlord to evict a tenant for nonpayment",
+        "target_quote": "For a landlord to evict a tenant for nonpayment of rent, the tenant must owe an amount of rental debt equal to or greater than one month of the Fair Market Rent (FMR) value for a unit of equivalent size in the metro area Oakland-Fremont, CA HUD Metro FMR as determined by the US Department of Housing and Urban Development for the fiscal year in which the rent is demanded.",
+        "decision": {
+          "decision": "applies",
+          "reason": "Just cause eviction requirements under the Rent Ordinance apply only to fully or partially covered units, excluding exempt units.",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 5996,
+            "end": 6164,
+            "occurrences": 1,
+            "model_span": "In Berkeley, tenants in units that are fully or partially covered by the Rent Ordinance cannot be evicted unless there is \"just cause” (previously called “good cause”).",
+            "source_span": "In Berkeley, tenants in units that are fully or partially covered by the Rent Ordinance cannot be evicted unless there is \"just cause” (previously called “good cause”).",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 1,
+                "model_text": "In Berkeley, tenants in units that are fully or partially covered by the Rent Ordinance cannot be evicted unless there is \"just cause” (previously called “good cause”).",
+                "status": "exact_match",
+                "start": 5996,
+                "end": 6164
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "applies",
+        "unresolved_reason": null
+      },
+      {
+        "condition_id": "S1",
+        "provision_id": "P5",
+        "kind": "exemption",
+        "statement": "Rental units where the tenant shares kitchen or bath facilities with the landlord are exempt from the Rent Ordinance only if the landlord lived in a unit on the same property at the start of the tenancy.",
+        "scope_words": "the unit will be exempt from the Rent Ordinance only if",
+        "condition_evidence": "Where the tenant shares a kitchen or bath facilities with the landlord, the unit will be exempt from the Rent Ordinance only if the landlord lived in a unit on the same property at the start of the tenancy.",
+        "target_ref": "Tenants can no longer be evicted for failing to sign a substantially similar lease",
+        "target_anchor": "A landlord cannot evict a tenant for failing to",
+        "target_quote": "A landlord cannot evict a tenant for failing to sign a substantially similar lease upon expiration of a fixed-term lease.",
+        "decision": {
+          "decision": "applies",
+          "reason": "Eviction protections apply only to units fully or partially covered by the Rent Ordinance, not to exempt units.",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 5996,
+            "end": 6164,
+            "occurrences": 1,
+            "model_span": "In Berkeley, tenants in units that are fully or partially covered by the Rent Ordinance cannot be evicted unless there is \"just cause” (previously called “good cause”).",
+            "source_span": "In Berkeley, tenants in units that are fully or partially covered by the Rent Ordinance cannot be evicted unless there is \"just cause” (previously called “good cause”).",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 1,
+                "model_text": "In Berkeley, tenants in units that are fully or partially covered by the Rent Ordinance cannot be evicted unless there is \"just cause” (previously called “good cause”).",
+                "status": "exact_match",
+                "start": 5996,
+                "end": 6164
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "applies",
+        "unresolved_reason": null
+      },
+      {
+        "condition_id": "S1",
+        "provision_id": "P6",
+        "kind": "exemption",
+        "statement": "Rental units where the tenant shares kitchen or bath facilities with the landlord are exempt from the Rent Ordinance only if the landlord lived in a unit on the same property at the start of the tenancy.",
+        "scope_words": "the unit will be exempt from the Rent Ordinance only if",
+        "condition_evidence": "Where the tenant shares a kitchen or bath facilities with the landlord, the unit will be exempt from the Rent Ordinance only if the landlord lived in a unit on the same property at the start of the tenancy.",
+        "target_ref": "New requirements to evict tenants for violations of a material term of the lease",
+        "target_anchor": "Material lease terms only include mutually agreed upon lease",
+        "target_quote": "Material lease terms only include mutually agreed upon lease terms.\nThe alleged violation must cause substantial, actual damage to the landlord.\nThe landlord must demonstrate that the tenant’s behavior was unreasonable.",
+        "decision": {
+          "decision": "applies",
+          "reason": "Eviction restrictions for lease violations apply only to tenancies fully or partially covered by the Rent Ordinance.",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 5996,
+            "end": 6164,
+            "occurrences": 1,
+            "model_span": "In Berkeley, tenants in units that are fully or partially covered by the Rent Ordinance cannot be evicted unless there is \"just cause” (previously called “good cause”).",
+            "source_span": "In Berkeley, tenants in units that are fully or partially covered by the Rent Ordinance cannot be evicted unless there is \"just cause” (previously called “good cause”).",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 1,
+                "model_text": "In Berkeley, tenants in units that are fully or partially covered by the Rent Ordinance cannot be evicted unless there is \"just cause” (previously called “good cause”).",
+                "status": "exact_match",
+                "start": 5996,
+                "end": 6164
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "applies",
+        "unresolved_reason": null
+      },
+      {
+        "condition_id": "S1",
+        "provision_id": "P7",
+        "kind": "exemption",
+        "statement": "Rental units where the tenant shares kitchen or bath facilities with the landlord are exempt from the Rent Ordinance only if the landlord lived in a unit on the same property at the start of the tenancy.",
+        "scope_words": "the unit will be exempt from the Rent Ordinance only if",
+        "condition_evidence": "Where the tenant shares a kitchen or bath facilities with the landlord, the unit will be exempt from the Rent Ordinance only if the landlord lived in a unit on the same property at the start of the tenancy.",
+        "target_ref": "New requirements related to eviction notices and lawsuits",
+        "target_anchor": "Any notice terminating a tenancy must contain a statement",
+        "target_quote": "Any notice terminating a tenancy must contain a statement that advice about the notice is available from the Rent Board, the current phone number for the Rent Board’s Housing counseling services, and the current address of the Rent Board’s website.",
+        "decision": {
+          "decision": "applies",
+          "reason": "Eviction notice requirements under the Rent Ordinance apply only to units fully or partially covered by the Ordinance.",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 5996,
+            "end": 6164,
+            "occurrences": 1,
+            "model_span": "In Berkeley, tenants in units that are fully or partially covered by the Rent Ordinance cannot be evicted unless there is \"just cause” (previously called “good cause”).",
+            "source_span": "In Berkeley, tenants in units that are fully or partially covered by the Rent Ordinance cannot be evicted unless there is \"just cause” (previously called “good cause”).",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 1,
+                "model_text": "In Berkeley, tenants in units that are fully or partially covered by the Rent Ordinance cannot be evicted unless there is \"just cause” (previously called “good cause”).",
+                "status": "exact_match",
+                "start": 5996,
+                "end": 6164
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "applies",
+        "unresolved_reason": null
+      },
+      {
+        "condition_id": "S1",
+        "provision_id": "P11",
+        "kind": "exemption",
+        "statement": "Rental units where the tenant shares kitchen or bath facilities with the landlord are exempt from the Rent Ordinance only if the landlord lived in a unit on the same property at the start of the tenancy.",
+        "scope_words": "the unit will be exempt from the Rent Ordinance only if",
+        "condition_evidence": "Where the tenant shares a kitchen or bath facilities with the landlord, the unit will be exempt from the Rent Ordinance only if the landlord lived in a unit on the same property at the start of the tenancy.",
+        "target_ref": "LANDLORDS CAN NO LONGER FILE A PETITION FOR RENT INCREASES FOR PLANNED CAPITAL IMPROVEMENTS",
+        "target_anchor": "Landlords can only file a petition for rent increases",
+        "target_quote": "Landlords can only file a petition for rent increases for completed capital improvements (they can no longer petition to have rent increases preliminarily authorized for planned capital improvements).",
+        "decision": {
+          "decision": "applies",
+          "reason": "Rent increase petition rules apply to units under the Rent Ordinance, from which exempt units are excluded.",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 2963,
+            "end": 3063,
+            "occurrences": 1,
+            "model_span": "Rental units in Berkeley can be\nfully covered, partially covered, or exempt\nfrom the Rent Ordinance.",
+            "source_span": "Rental units in Berkeley can be\nfully covered, partially covered, or exempt\nfrom the Rent Ordinance.",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 1,
+                "model_text": "Rental units in Berkeley can be\nfully covered, partially covered, or exempt\nfrom the Rent Ordinance.",
+                "status": "exact_match",
+                "start": 2963,
+                "end": 3063
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "applies",
+        "unresolved_reason": null
+      },
+      {
+        "condition_id": "S1",
+        "provision_id": "P13",
+        "kind": "exemption",
+        "statement": "Rental units where the tenant shares kitchen or bath facilities with the landlord are exempt from the Rent Ordinance only if the landlord lived in a unit on the same property at the start of the tenancy.",
+        "scope_words": "the unit will be exempt from the Rent Ordinance only if",
+        "condition_evidence": "Where the tenant shares a kitchen or bath facilities with the landlord, the unit will be exempt from the Rent Ordinance only if the landlord lived in a unit on the same property at the start of the tenancy.",
+        "target_ref": "CHANGES ANNUAL GENERAL ADJUSTMENT (AGA) CAP TO 5%",
+        "target_anchor": "The AGA is the amount by which the landlord",
+        "target_quote": "The maximum AGA is 5%. This means that, if the formula in the Rent Ordinance results in an AGA that is greater than 5%, the AGA approved by the Board for that year can be no more than 5%. This cap does not prevent a landlord who has “banked” (unused) AGAs from previous years from implementing a rent increase that is greater than 5% in order to raise the rent to the rent ceiling.",
+        "decision": {
+          "decision": "applies",
+          "reason": "The Annual General Adjustment cap applies only to fully-covered rental units and does not apply to exempt units.",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 11511,
+            "end": 11615,
+            "occurrences": 1,
+            "model_span": "The AGA is the amount by which the landlord of a fully-covered rental unit may raise the rent each year.",
+            "source_span": "The AGA is the amount by which the landlord of a fully-covered rental unit may raise the rent each year.",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 1,
+                "model_text": "The AGA is the amount by which the landlord of a fully-covered rental unit may raise the rent each year.",
+                "status": "exact_match",
+                "start": 11511,
+                "end": 11615
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "applies",
+        "unresolved_reason": null
+      },
+      {
+        "condition_id": "S1",
+        "provision_id": "P14",
+        "kind": "exemption",
+        "statement": "Rental units where the tenant shares kitchen or bath facilities with the landlord are exempt from the Rent Ordinance only if the landlord lived in a unit on the same property at the start of the tenancy.",
+        "scope_words": "the unit will be exempt from the Rent Ordinance only if",
+        "condition_evidence": "Where the tenant shares a kitchen or bath facilities with the landlord, the unit will be exempt from the Rent Ordinance only if the landlord lived in a unit on the same property at the start of the tenancy.",
+        "target_ref": "THE RENT BOARD IS NOW REQUIRED TO ANNUALLY ADJUST OWNER MOVE-IN EVICTION RELOCATION ASSISTANCE PAYMENTS",
+        "target_anchor": "The Rent Board must make inflationary adjustments to owner",
+        "target_quote": "The Rent Board must make inflationary adjustments to owner move-in eviction relocation assistance amounts each year.",
+        "decision": {
+          "decision": "does_not_apply",
+          "reason": "This provision governs the Rent Board's administrative duty to make yearly inflationary adjustments rather than an obligation that unit-level exemptions reach.",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 12313,
+            "end": 12429,
+            "occurrences": 1,
+            "model_span": "The Rent Board must make inflationary adjustments to owner move-in eviction relocation assistance amounts each year.",
+            "source_span": "The Rent Board must make inflationary adjustments to owner move-in eviction relocation assistance amounts each year.",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 1,
+                "model_text": "The Rent Board must make inflationary adjustments to owner move-in eviction relocation assistance amounts each year.",
+                "status": "exact_match",
+                "start": 12313,
+                "end": 12429
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "does_not_apply",
+        "unresolved_reason": null
+      }
+    ],
+    "candidate_indices": [],
+    "accepted_count": 0,
+    "rejected_count": 0,
+    "errors": []
+  },
+  "document_status": "review_required",
+  "review_reasons": [
+    "9 candidate record(s) held, not published, because the time of application is unresolved: ['temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force']"
+  ],
+  "warnings": [
+    "candidate 0 held: status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+    "candidate 1 held: status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+    "candidate 2 held: status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+    "candidate 3 held: status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+    "candidate 4 held: status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+    "candidate 5 held: status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+    "candidate 6 held: status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+    "candidate 7 held: status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+    "candidate 8 held: status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+  ],
+  "errors": [],
+  "raw_response_text": "{\n  \"document\": {\n    \"posture\": \"official_explanatory_page\",\n    \"evidence\": \"Measure BB Changes to Berkeley's Rent Ordinance | Berkeley Rent Board\"\n  },\n  \"provisions\": [\n    {\n      \"id\": \"P1\",\n      \"ref\": \"Overview of Measure BB Changes\",\n      \"anchor\": \"Measure BB made several substantive changes to Berkeley’s Rent\",\n      \"summary\": \"Introductory summary list of changes made by Measure BB to Berkeley's Rent Ordinance.\",\n      \"role\": \"boilerplate\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"introductory summary list duplicate of detailed provisions below\"\n    },\n    {\n      \"id\": \"P2\",\n      \"ref\": \"Units where the tenant shares a kitchen or bath facilities with the landlord\",\n      \"anchor\": \"Where the tenant shares a kitchen or bath facilities with\",\n      \"summary\": \"Restricts the Rent Ordinance exemption for units where tenant shares kitchen or bath facilities with landlord to tenancies where landlord resided on property at the start.\",\n      \"role\": \"exemption\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"scope condition / exemption, see global_scope S1\"\n    },\n    {\n      \"id\": \"P3\",\n      \"ref\": \"Government-owned or -subsidized rental units like Section 8 and Shelter + Care units are Now Fully or Partially Covered by the Rent Ordinance\",\n      \"anchor\": \"Landlords of government-owned or -subsidized units must\",\n      \"summary\": \"Registration, fee, and coverage classification rules for government-owned and subsidized rental units.\",\n      \"role\": \"scope_condition\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"registration requirements, annual fees, and general subsidy coverage classifications\"\n    },\n    {\n      \"id\": \"P4\",\n      \"ref\": \"Eviction for nonpayment of rent is no longer allowed for rental debt less than one month of the Fair Market Rent for the unit\",\n      \"anchor\": \"For a landlord to evict a tenant for nonpayment\",\n      \"summary\": \"Sets minimum rental debt threshold of at least one month of Fair Market Rent to evict for nonpayment of rent.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"just_cause_eviction\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P5\",\n      \"ref\": \"Tenants can no longer be evicted for failing to sign a substantially similar lease\",\n      \"anchor\": \"A landlord cannot evict a tenant for failing to\",\n      \"summary\": \"Prohibits evicting a tenant for failing to sign a substantially similar lease upon expiration of a fixed-term lease.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"just_cause_eviction\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P6\",\n      \"ref\": \"New requirements to evict tenants for violations of a material term of the lease\",\n      \"anchor\": \"Material lease terms only include mutually agreed upon lease\",\n      \"summary\": \"Establishes criteria and pre-eviction notice requirements for evicting a tenant for breach of a material lease term.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"just_cause_eviction\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P7\",\n      \"ref\": \"New requirements related to eviction notices and lawsuits\",\n      \"anchor\": \"Any notice terminating a tenancy must contain a statement\",\n      \"summary\": \"Requires eviction notices to include Rent Board contact information and mandates filing eviction notices and lawsuits with the Rent Board within three business days.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"just_cause_eviction\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P8\",\n      \"ref\": \"NEW NOTICE OF TENANT RIGHTS REQUIREMENTS\",\n      \"anchor\": \"For tenancies started on or after December 20, 2024,\",\n      \"summary\": \"Requires landlords to provide written Notice of Tenant Rights to new tenants within 15 days and post it in common areas.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"general tenant rights disclosure notice requirement, not within official categories\"\n    },\n    {\n      \"id\": \"P9\",\n      \"ref\": \"NEW RULES ABOUT PAYING FOR UTILITIES\",\n      \"anchor\": \"For tenancies starting on or after February 6, 2024,\",\n      \"summary\": \"Regulates utility billing for fully covered units, requiring incorporation into base rent or separate metering.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"utility billing regulations, not within official categories\"\n    },\n    {\n      \"id\": \"P10\",\n      \"ref\": \"NEW TENANT RIGHT TO ORGANIZE\",\n      \"anchor\": \"Tenants who live on certain properties now have an\",\n      \"summary\": \"Grants tenants an enforceable right to organize and form tenant associations.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"tenant organizing rights, not within official categories\"\n    },\n    {\n      \"id\": \"P11\",\n      \"ref\": \"LANDLORDS CAN NO LONGER FILE A PETITION FOR RENT INCREASES FOR PLANNED CAPITAL IMPROVEMENTS\",\n      \"anchor\": \"Landlords can only file a petition for rent increases\",\n      \"summary\": \"Restricts rent increase petitions for capital improvements to completed improvements only.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"rent_increase_limits\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P12\",\n      \"ref\": \"CHANGE TO TENANCY REPORTING REQUIREMENTS FOR LANDLORDS OF PARTIALLY COVERED UNITS\",\n      \"anchor\": \"Owners of partially covered units must now report new\",\n      \"summary\": \"Requires owners of partially covered units to report new tenancies within 15 days and update annually.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"tenancy registration and reporting requirements, not within official categories\"\n    },\n    {\n      \"id\": \"P13\",\n      \"ref\": \"CHANGES ANNUAL GENERAL ADJUSTMENT (AGA) CAP TO 5%\",\n      \"anchor\": \"The AGA is the amount by which the landlord\",\n      \"summary\": \"Caps the Annual General Adjustment (AGA) for fully covered units at a maximum of 5%.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"rent_increase_limits\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P14\",\n      \"ref\": \"THE RENT BOARD IS NOW REQUIRED TO ANNUALLY ADJUST OWNER MOVE-IN EVICTION RELOCATION ASSISTANCE PAYMENTS\",\n      \"anchor\": \"The Rent Board must make inflationary adjustments to owner\",\n      \"summary\": \"Requires the Rent Board to make annual inflationary adjustments to owner move-in eviction relocation assistance payments.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"just_cause_eviction\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P15\",\n      \"ref\": \"RENT BOARD EMPOWERED TO IMPLEMENT FINES FOR THE FAILURE TO TIMELY REPORT NEW TENANCIES\",\n      \"anchor\": \"Measure BB gives the Rent Board the power to\",\n      \"summary\": \"Authorizes the Rent Board to adopt regulations implementing fines for failure to timely report new tenancies.\",\n      \"role\": \"enforcement\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"administrative agency authority to adopt fines, not within official categories\"\n    }\n  ],\n  \"global_scope\": [\n    {\n      \"id\": \"S1\",\n      \"kind\": \"exemption\",\n      \"statement\": \"Rental units where the tenant shares kitchen or bath facilities with the landlord are exempt from the Rent Ordinance only if the landlord lived in a unit on the same property at the start of the tenancy.\",\n      \"citation\": \"Measure BB, Units where the tenant shares a kitchen or bath facilities with the landlord\",\n      \"scope_mode\": \"structural\",\n      \"scope_quote\": \"the unit will be exempt from the Rent Ordinance only if\",\n      \"source_provision_id\": \"P2\",\n      \"governed_provision_ids\": null,\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Where the tenant shares a kitchen or bath facilities with the landlord, the unit will be exempt from the Rent Ordinance only if the landlord lived in a unit on the same property at the start of the tenancy.\"\n        }\n      ]\n    }\n  ],\n  \"rules\": [\n    {\n      \"category\": \"just_cause_eviction\",\n      \"citation\": \"Measure BB, Eviction for nonpayment of rent is no longer allowed for rental debt less than one month of the Fair Market Rent for the unit\",\n      \"provision_ids\": [\"P4\"],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"For a landlord to evict a tenant for nonpayment of rent, the tenant must owe an amount of rental debt equal to or greater than one month of the Fair Market Rent (FMR) value for a unit of equivalent size in the metro area Oakland-Fremont, CA HUD Metro FMR as determined by the US Department of Housing and Urban Development for the fiscal year in which the rent is demanded.\"\n        }\n      ],\n      \"title\": \"Minimum Rental Debt Threshold for Nonpayment Eviction\",\n      \"requirement\": \"To evict a tenant for nonpayment of rent, the tenant must owe rental debt equal to or greater than one month of the Fair Market Rent (FMR) for a unit of equivalent size in the Oakland-Fremont, CA HUD Metro FMR as determined by HUD for the fiscal year in which the rent is demanded.\",\n      \"key_value\": \"1 month of Fair Market Rent (FMR)\",\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": \"Measure BB, a ballot measure passed by Berkeley voters in the November 2024 election, makes several changes to Berkeley’s Rent Ordinance that affect tenant and landlord rights and responsibilities.\",\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": null,\n      \"effective_date_evidence_kind\": null,\n      \"effective_date\": null,\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"just_cause_eviction\",\n      \"citation\": \"Measure BB, Tenants can no longer be evicted for failing to sign a substantially similar lease\",\n      \"provision_ids\": [\"P5\"],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"A landlord cannot evict a tenant for failing to sign a substantially similar lease upon expiration of a fixed-term lease.\"\n        }\n      ],\n      \"title\": \"Prohibition on Eviction for Failure to Sign New Lease\",\n      \"requirement\": \"A landlord is prohibited from evicting a tenant for failing to sign a substantially similar lease upon the expiration of a fixed-term lease.\",\n      \"key_value\": null,\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": \"Measure BB, a ballot measure passed by Berkeley voters in the November 2024 election, makes several changes to Berkeley’s Rent Ordinance that affect tenant and landlord rights and responsibilities.\",\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": null,\n      \"effective_date_evidence_kind\": null,\n      \"effective_date\": null,\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"just_cause_eviction\",\n      \"citation\": \"Measure BB, New requirements to evict tenants for violations of a material term of the lease\",\n      \"provision_ids\": [\"P6\"],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Material lease terms only include mutually agreed upon lease terms.\\nThe alleged violation must cause substantial, actual damage to the landlord.\\nThe landlord must demonstrate that the tenant’s behavior was unreasonable.\"\n        }\n      ],\n      \"title\": \"Substantive Requirements for Eviction Based on Lease Violation\",\n      \"requirement\": \"To evict a tenant for violation of a material lease term, the term must be mutually agreed upon, the alleged violation must cause substantial, actual damage to the landlord, and the landlord must demonstrate that the tenant's behavior was unreasonable.\",\n      \"key_value\": null,\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": \"Measure BB, a ballot measure passed by Berkeley voters in the November 2024 election, makes several changes to Berkeley’s Rent Ordinance that affect tenant and landlord rights and responsibilities.\",\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": null,\n      \"effective_date_evidence_kind\": null,\n      \"effective_date\": null,\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"just_cause_eviction\",\n      \"citation\": \"Measure BB, New requirements to evict tenants for violations of a material term of the lease\",\n      \"provision_ids\": [\"P6\"],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"The landlord’s notice to the tenant to stop the violation (which is required before the landlord can serve an eviction notice) must specify the lease term, and describe the violation and resulting harm in enough detail for a reasonable person to understand.\"\n        }\n      ],\n      \"title\": \"Notice to Stop Alleged Lease Violation\",\n      \"requirement\": \"Before serving an eviction notice for an alleged lease violation, a landlord must provide the tenant with a notice to stop the violation that specifies the lease term and describes the violation and resulting harm in enough detail for a reasonable person to understand.\",\n      \"key_value\": null,\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": \"Measure BB, a ballot measure passed by Berkeley voters in the November 2024 election, makes several changes to Berkeley’s Rent Ordinance that affect tenant and landlord rights and responsibilities.\",\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": null,\n      \"effective_date_evidence_kind\": null,\n      \"effective_date\": null,\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"just_cause_eviction\",\n      \"citation\": \"Measure BB, New requirements related to eviction notices and lawsuits\",\n      \"provision_ids\": [\"P7\"],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Any notice terminating a tenancy must contain a statement that advice about the notice is available from the Rent Board, the current phone number for the Rent Board’s Housing counseling services, and the current address of the Rent Board’s website.\"\n        }\n      ],\n      \"title\": \"Eviction Notice Required Information\",\n      \"requirement\": \"Any notice terminating a tenancy must contain a statement that advice about the notice is available from the Rent Board, along with the Rent Board Housing counseling services' current telephone number and website address.\",\n      \"key_value\": null,\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": \"Measure BB, a ballot measure passed by Berkeley voters in the November 2024 election, makes several changes to Berkeley’s Rent Ordinance that affect tenant and landlord rights and responsibilities.\",\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": null,\n      \"effective_date_evidence_kind\": null,\n      \"effective_date\": null,\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"just_cause_eviction\",\n      \"citation\": \"Measure BB, New requirements related to eviction notices and lawsuits\",\n      \"provision_ids\": [\"P7\"],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"The landlord must file with the Rent Board a copy of any notice to terminate a tenancy, notice to quit, and summons and complaint no later than three business days after the tenant was served with the document.\"\n        }\n      ],\n      \"title\": \"Filing Eviction Notices and Pleadings with Rent Board\",\n      \"requirement\": \"A landlord must file a copy of any notice to terminate a tenancy, notice to quit, and summons and complaint with the Rent Board within three business days of serving the tenant.\",\n      \"key_value\": \"3 business days\",\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": \"Measure BB, a ballot measure passed by Berkeley voters in the November 2024 election, makes several changes to Berkeley’s Rent Ordinance that affect tenant and landlord rights and responsibilities.\",\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": null,\n      \"effective_date_evidence_kind\": null,\n      \"effective_date\": null,\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"rent_increase_limits\",\n      \"citation\": \"Measure BB, LANDLORDS CAN NO LONGER FILE A PETITION FOR RENT INCREASES FOR PLANNED CAPITAL IMPROVEMENTS\",\n      \"provision_ids\": [\"P11\"],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Landlords can only file a petition for rent increases for completed capital improvements (they can no longer petition to have rent increases preliminarily authorized for planned capital improvements).\"\n        }\n      ],\n      \"title\": \"Limitation on Capital Improvement Rent Increase Petitions\",\n      \"requirement\": \"Landlords are permitted to file petitions for rent increases only for completed capital improvements, and may not petition for preliminary authorization of rent increases for planned capital improvements.\",\n      \"key_value\": null,\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": \"Measure BB, a ballot measure passed by Berkeley voters in the November 2024 election, makes several changes to Berkeley’s Rent Ordinance that affect tenant and landlord rights and responsibilities.\",\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": null,\n      \"effective_date_evidence_kind\": null,\n      \"effective_date\": null,\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"rent_increase_limits\",\n      \"citation\": \"Measure BB, CHANGES ANNUAL GENERAL ADJUSTMENT (AGA) CAP TO 5%\",\n      \"provision_ids\": [\"P13\"],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"The maximum AGA is 5%. This means that, if the formula in the Rent Ordinance results in an AGA that is greater than 5%, the AGA approved by the Board for that year can be no more than 5%. This cap does not prevent a landlord who has “banked” (unused) AGAs from previous years from implementing a rent increase that is greater than 5% in order to raise the rent to the rent ceiling.\"\n        }\n      ],\n      \"title\": \"Annual General Adjustment Maximum Cap\",\n      \"requirement\": \"The Annual General Adjustment (AGA) approved by the Rent Board for any year is capped at a maximum of 5%, though this cap does not prevent landlords with banked AGAs from implementing increases over 5% up to the rent ceiling.\",\n      \"key_value\": \"5%\",\n      \"coverage_conditions\": \"Applies to fully-covered rental units.\",\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": \"Measure BB, a ballot measure passed by Berkeley voters in the November 2024 election, makes several changes to Berkeley’s Rent Ordinance that affect tenant and landlord rights and responsibilities.\",\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": null,\n      \"effective_date_evidence_kind\": null,\n      \"effective_date\": null,\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"just_cause_eviction\",\n      \"citation\": \"Measure BB, THE RENT BOARD IS NOW REQUIRED TO ANNUALLY ADJUST OWNER MOVE-IN EVICTION RELOCATION ASSISTANCE PAYMENTS\",\n      \"provision_ids\": [\"P14\"],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"The Rent Board must make inflationary adjustments to owner move-in eviction relocation assistance amounts each year.\"\n        }\n      ],\n      \"title\": \"Annual Inflationary Adjustments to Owner Move-In Relocation Assistance\",\n      \"requirement\": \"The Rent Board must make annual inflationary adjustments to the amounts required for owner move-in eviction relocation assistance payments.\",\n      \"key_value\": null,\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": \"Measure BB, a ballot measure passed by Berkeley voters in the November 2024 election, makes several changes to Berkeley’s Rent Ordinance that affect tenant and landlord rights and responsibilities.\",\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": null,\n      \"effective_date_evidence_kind\": null,\n      \"effective_date\": null,\n      \"conflict_note\": null\n    }\n  ],\n  \"no_rules_justification\": null\n}"
+}

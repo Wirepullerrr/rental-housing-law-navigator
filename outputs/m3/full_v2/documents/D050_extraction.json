@@ -1,0 +1,453 @@
+{
+  "disclaimer": "Not legal advice. Automated extraction for a research prototype; verify against the cited source.",
+  "run_at": "2026-10-04T06:34:26+00:00",
+  "source": {
+    "doc_id": "D050",
+    "jurisdiction": "MA",
+    "url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section11",
+    "source_type": "official",
+    "retrieved_at": "2026-10-01T22:37Z",
+    "text_file": "text/D050.txt",
+    "content_sha256": "e15b49b63767d346a4bf35436100e342ec0a9dabfa036f9efebf7b51e9793966",
+    "body_chars": 2282
+  },
+  "provider": "gemini",
+  "model": "gemini-3.8-flash",
+  "prompt_version": "v7",
+  "prompt_sha256": "b3e7feaeecd78a48a1784a1c07e52d2e326a6ae8a72d40a4ad7f35416fc0111f",
+  "response_schema_sha256": "c15306da6f21dc72f06e78405f94ed61dc9e59288138cc98b5b5bf9b62ac403c",
+  "generation_settings": {
+    "temperature": null,
+    "seed": 20261001,
+    "thinking_level": "medium"
+  },
+  "as_of": "2026-10-01",
+  "cache_key": "543b70d08725715a517b93e2e0497e961b8e5cefedb1f6ad96664afabe9104a2",
+  "cache_hit": true,
+  "cache_entry": "cache/extraction/543b70d08725715a517b93e2e0497e961b8e5cefedb1f6ad96664afabe9104a2.json",
+  "provider_metadata": {
+    "api": "interactions.create",
+    "interaction_id": "",
+    "model": "gemini-3.8-flash",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4422,
+      "output_tokens": 1227,
+      "thinking_tokens": 17566,
+      "total_tokens": 23215
+    }
+  },
+  "candidate_count": 2,
+  "accepted_count": 2,
+  "rules": [
+    {
+      "team_rule_id": "r-a54b4d1c97",
+      "jurisdiction": "MA",
+      "level": "state",
+      "category": "just_cause_eviction",
+      "status": "in_force",
+      "title": "Notice to quit and right to cure for nonpayment under written lease",
+      "requirement": "Upon neglect or refusal to pay rent due under a written lease, a landlord's fourteen days' notice to quit given in writing to the tenant is sufficient to determine the lease, unless the tenant pays or tenders all rent then due, with interest and costs of suit, on or before the day the answer is due in an action to recover possession.",
+      "key_value": "14 days",
+      "coverage_conditions": "Applies upon the neglect or refusal to pay the rent due under a written lease.",
+      "exemptions": "The lease is not determined if the tenant pays or tenders to the landlord or the landlord's attorney all rent then due, with interest and costs of suit, on or before the day the answer is due in an action by the landlord to recover possession of the premises.",
+      "overrides": [],
+      "interaction": null,
+      "effective_date": null,
+      "citation": "Chapter 186, Section 11",
+      "source_doc_id": "D050",
+      "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section11",
+      "quoted_span": "Upon the neglect or refusal to pay the rent due under a written lease, fourteen days' notice to quit, given in writing by the landlord to the tenant, shall be sufficient to determine the lease, unless the tenant, on or before the day the answer is due, in an action by the landlord to recover possession of the premises, pays or tenders to the landlord or to his attorney all rent then due, with interest and costs of suit.",
+      "confidence": null,
+      "conflict_flag": false,
+      "conflict_note": null
+    },
+    {
+      "team_rule_id": "r-2d39d82919",
+      "jurisdiction": "MA",
+      "level": "state",
+      "category": "just_cause_eviction",
+      "status": "in_force",
+      "title": "Court continuance and cure protection for delayed government payments",
+      "requirement": "If nonpayment of rent was caused by a failure or delay of the federal government, the commonwealth, or any municipality (or agency thereof) in mailing or delivering a subsistence or rental payment, check, or voucher other than salary, the court must continue the hearing for not less than seven days to notify the agency and must treat the tenancy as not terminated if all rent due with interest and costs of suit is tendered within that time.",
+      "key_value": "not less than seven days",
+      "coverage_conditions": "Applies when neglect or refusal to pay rent due was caused by a failure or delay of the federal government, the commonwealth, or any municipality (or department, agency, or authority thereof) in mailing or delivering any subsistence or rental payment, check, or voucher other than a salary payment to the tenant or landlord.",
+      "exemptions": null,
+      "overrides": [],
+      "interaction": null,
+      "effective_date": null,
+      "citation": "Chapter 186, Section 11",
+      "source_doc_id": "D050",
+      "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section11",
+      "quoted_span": "If the neglect or refusal to pay the rent due was caused by a failure or delay of the federal government, the commonwealth or any municipality, or any departments, agencies or authorities thereof, in the mailing or delivery of any subsistence or rental payment, check or voucher other than a salary payment to either the tenant or the landlord, the court in any such action shall continue the hearing not less than seven days in order to furnish notice of such action to the appropriate agency and shall, if all rent due with interest and costs of suit has been tendered to the landlord within such time, treat the tenancy as not having been terminated.",
+      "confidence": null,
+      "conflict_flag": false,
+      "conflict_note": null
+    }
+  ],
+  "candidates": [
+    {
+      "index": 0,
+      "origin": "primary",
+      "accepted": true,
+      "held": false,
+      "historical": false,
+      "temporal_state": "in_force",
+      "validity": {
+        "resolver": "validity-window/v1",
+        "boundaries": [],
+        "end_exclusive": null,
+        "end_conflict": null,
+        "decision": {
+          "outcome": null,
+          "state": null,
+          "reason": null,
+          "start": null
+        }
+      },
+      "duplicate_of": null,
+      "rejection_reasons": [],
+      "provision_ids": [
+        "P1"
+      ],
+      "source_basis": "operative_text",
+      "status_evidence": null,
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": "The lease is not determined if the tenant pays or tenders to the landlord or the landlord's attorney all rent then due, with interest and costs of suit, on or before the day the answer is due in an action by the landlord to recover possession of the premises.",
+        "coverage_conditions": "Applies upon the neglect or refusal to pay the rent due under a written lease.",
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 324,
+        "end": 747,
+        "occurrences": 1,
+        "model_span": "Upon the neglect or refusal to pay the rent due under a written lease, fourteen days' notice to quit, given in writing by the landlord to the tenant, shall be sufficient to determine the lease, unless the tenant, on or before the day the answer is due, in an action by the landlord to recover possession of the premises, pays or tenders to the landlord or to his attorney all rent then due, with interest and costs of suit.",
+        "source_span": "Upon the neglect or refusal to pay the rent due under a written lease, fourteen days' notice to quit, given in writing by the landlord to the tenant, shall be sufficient to determine the lease, unless the tenant, on or before the day the answer is due, in an action by the landlord to recover possession of the premises, pays or tenders to the landlord or to his attorney all rent then due, with interest and costs of suit.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "Upon the neglect or refusal to pay the rent due under a written lease, fourteen days' notice to quit, given in writing by the landlord to the tenant, shall be sufficient to determine the lease, unless the tenant, on or before the day the answer is due, in an action by the landlord to recover possession of the premises, pays or tenders to the landlord or to his attorney all rent then due, with interest and costs of suit.",
+            "status": "exact_match",
+            "start": 324,
+            "end": 747
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": null,
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": null,
+        "applied_kind": null,
+        "effective_date": null,
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "codified_current_law",
+        "posture_consistent": true
+      },
+      "status_derivation": "enacted; codified current law that states no effective date",
+      "warnings": [],
+      "rule": {
+        "team_rule_id": "r-a54b4d1c97",
+        "jurisdiction": "MA",
+        "level": "state",
+        "category": "just_cause_eviction",
+        "status": "in_force",
+        "title": "Notice to quit and right to cure for nonpayment under written lease",
+        "requirement": "Upon neglect or refusal to pay rent due under a written lease, a landlord's fourteen days' notice to quit given in writing to the tenant is sufficient to determine the lease, unless the tenant pays or tenders all rent then due, with interest and costs of suit, on or before the day the answer is due in an action to recover possession.",
+        "key_value": "14 days",
+        "coverage_conditions": "Applies upon the neglect or refusal to pay the rent due under a written lease.",
+        "exemptions": "The lease is not determined if the tenant pays or tenders to the landlord or the landlord's attorney all rent then due, with interest and costs of suit, on or before the day the answer is due in an action by the landlord to recover possession of the premises.",
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "Chapter 186, Section 11",
+        "source_doc_id": "D050",
+        "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section11",
+        "quoted_span": "Upon the neglect or refusal to pay the rent due under a written lease, fourteen days' notice to quit, given in writing by the landlord to the tenant, shall be sufficient to determine the lease, unless the tenant, on or before the day the answer is due, in an action by the landlord to recover possession of the premises, pays or tenders to the landlord or to his attorney all rent then due, with interest and costs of suit.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "just_cause_eviction",
+        "citation": "Chapter 186, Section 11",
+        "provision_ids": [
+          "P1"
+        ],
+        "source_basis": "operative_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "Upon the neglect or refusal to pay the rent due under a written lease, fourteen days' notice to quit, given in writing by the landlord to the tenant, shall be sufficient to determine the lease, unless the tenant, on or before the day the answer is due, in an action by the landlord to recover possession of the premises, pays or tenders to the landlord or to his attorney all rent then due, with interest and costs of suit."
+          }
+        ],
+        "title": "Notice to quit and right to cure for nonpayment under written lease",
+        "requirement": "Upon neglect or refusal to pay rent due under a written lease, a landlord's fourteen days' notice to quit given in writing to the tenant is sufficient to determine the lease, unless the tenant pays or tenders all rent then due, with interest and costs of suit, on or before the day the answer is due in an action to recover possession.",
+        "key_value": "14 days",
+        "coverage_conditions": "Applies upon the neglect or refusal to pay the rent due under a written lease.",
+        "exemptions": "The lease is not determined if the tenant pays or tenders to the landlord or the landlord's attorney all rent then due, with interest and costs of suit, on or before the day the answer is due in an action by the landlord to recover possession of the premises.",
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": null,
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": null,
+        "effective_date_evidence_kind": null,
+        "effective_date": null,
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 1,
+      "origin": "primary",
+      "accepted": true,
+      "held": false,
+      "historical": false,
+      "temporal_state": "in_force",
+      "validity": {
+        "resolver": "validity-window/v1",
+        "boundaries": [],
+        "end_exclusive": null,
+        "end_conflict": null,
+        "decision": {
+          "outcome": null,
+          "state": null,
+          "reason": null,
+          "start": null
+        }
+      },
+      "duplicate_of": null,
+      "rejection_reasons": [],
+      "provision_ids": [
+        "P1"
+      ],
+      "source_basis": "operative_text",
+      "status_evidence": null,
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": "Applies when neglect or refusal to pay rent due was caused by a failure or delay of the federal government, the commonwealth, or any municipality (or department, agency, or authority thereof) in mailing or delivering any subsistence or rental payment, check, or voucher other than a salary payment to the tenant or landlord.",
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 748,
+        "end": 1401,
+        "occurrences": 1,
+        "model_span": "If the neglect or refusal to pay the rent due was caused by a failure or delay of the federal government, the commonwealth or any municipality, or any departments, agencies or authorities thereof, in the mailing or delivery of any subsistence or rental payment, check or voucher other than a salary payment to either the tenant or the landlord, the court in any such action shall continue the hearing not less than seven days in order to furnish notice of such action to the appropriate agency and shall, if all rent due with interest and costs of suit has been tendered to the landlord within such time, treat the tenancy as not having been terminated.",
+        "source_span": "If the neglect or refusal to pay the rent due was caused by a failure or delay of the federal government, the commonwealth or any municipality, or any departments, agencies or authorities thereof, in the mailing or delivery of any subsistence or rental payment, check or voucher other than a salary payment to either the tenant or the landlord, the court in any such action shall continue the hearing not less than seven days in order to furnish notice of such action to the appropriate agency and shall, if all rent due with interest and costs of suit has been tendered to the landlord within such time, treat the tenancy as not having been terminated.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "If the neglect or refusal to pay the rent due was caused by a failure or delay of the federal government, the commonwealth or any municipality, or any departments, agencies or authorities thereof, in the mailing or delivery of any subsistence or rental payment, check or voucher other than a salary payment to either the tenant or the landlord, the court in any such action shall continue the hearing not less than seven days in order to furnish notice of such action to the appropriate agency and shall, if all rent due with interest and costs of suit has been tendered to the landlord within such time, treat the tenancy as not having been terminated.",
+            "status": "exact_match",
+            "start": 748,
+            "end": 1401
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": null,
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": null,
+        "applied_kind": null,
+        "effective_date": null,
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "codified_current_law",
+        "posture_consistent": true
+      },
+      "status_derivation": "enacted; codified current law that states no effective date",
+      "warnings": [],
+      "rule": {
+        "team_rule_id": "r-2d39d82919",
+        "jurisdiction": "MA",
+        "level": "state",
+        "category": "just_cause_eviction",
+        "status": "in_force",
+        "title": "Court continuance and cure protection for delayed government payments",
+        "requirement": "If nonpayment of rent was caused by a failure or delay of the federal government, the commonwealth, or any municipality (or agency thereof) in mailing or delivering a subsistence or rental payment, check, or voucher other than salary, the court must continue the hearing for not less than seven days to notify the agency and must treat the tenancy as not terminated if all rent due with interest and costs of suit is tendered within that time.",
+        "key_value": "not less than seven days",
+        "coverage_conditions": "Applies when neglect or refusal to pay rent due was caused by a failure or delay of the federal government, the commonwealth, or any municipality (or department, agency, or authority thereof) in mailing or delivering any subsistence or rental payment, check, or voucher other than a salary payment to the tenant or landlord.",
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "Chapter 186, Section 11",
+        "source_doc_id": "D050",
+        "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section11",
+        "quoted_span": "If the neglect or refusal to pay the rent due was caused by a failure or delay of the federal government, the commonwealth or any municipality, or any departments, agencies or authorities thereof, in the mailing or delivery of any subsistence or rental payment, check or voucher other than a salary payment to either the tenant or the landlord, the court in any such action shall continue the hearing not less than seven days in order to furnish notice of such action to the appropriate agency and shall, if all rent due with interest and costs of suit has been tendered to the landlord within such time, treat the tenancy as not having been terminated.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "just_cause_eviction",
+        "citation": "Chapter 186, Section 11",
+        "provision_ids": [
+          "P1"
+        ],
+        "source_basis": "operative_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "If the neglect or refusal to pay the rent due was caused by a failure or delay of the federal government, the commonwealth or any municipality, or any departments, agencies or authorities thereof, in the mailing or delivery of any subsistence or rental payment, check or voucher other than a salary payment to either the tenant or the landlord, the court in any such action shall continue the hearing not less than seven days in order to furnish notice of such action to the appropriate agency and shall, if all rent due with interest and costs of suit has been tendered to the landlord within such time, treat the tenancy as not having been terminated."
+          }
+        ],
+        "title": "Court continuance and cure protection for delayed government payments",
+        "requirement": "If nonpayment of rent was caused by a failure or delay of the federal government, the commonwealth, or any municipality (or agency thereof) in mailing or delivering a subsistence or rental payment, check, or voucher other than salary, the court must continue the hearing for not less than seven days to notify the agency and must treat the tenancy as not terminated if all rent due with interest and costs of suit is tendered within that time.",
+        "key_value": "not less than seven days",
+        "coverage_conditions": "Applies when neglect or refusal to pay rent due was caused by a failure or delay of the federal government, the commonwealth, or any municipality (or department, agency, or authority thereof) in mailing or delivering any subsistence or rental payment, check, or voucher other than a salary payment to the tenant or landlord.",
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": null,
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": null,
+        "effective_date_evidence_kind": null,
+        "effective_date": null,
+        "conflict_note": null
+      }
+    }
+  ],
+  "posture": {
+    "declared": "codified_current_law",
+    "evidence": "General Law - Part II, Title I, Chapter 186, Section 11",
+    "evidence_check": {
+      "status": "exact_match",
+      "normalization": null,
+      "start": 0,
+      "end": 55,
+      "occurrences": 1,
+      "model_span": "General Law - Part II, Title I, Chapter 186, Section 11",
+      "source_span": "General Law - Part II, Title I, Chapter 186, Section 11",
+      "reason": null,
+      "reconstructed": false,
+      "parts": [],
+      "crossed_artifacts": []
+    },
+    "established": "codified_current_law",
+    "basis": "declared posture with verified evidence"
+  },
+  "base_dates": [],
+  "provision_inventory": [
+    {
+      "id": "P1",
+      "ref": "Chapter 186, Section 11",
+      "anchor": "Section 11. Upon the neglect or refusal to pay the rent",
+      "summary": "Notice to quit and right to cure for nonpayment of rent under a written lease, including court continuance for government payment delay.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "just_cause_eviction",
+      "reason": null
+    }
+  ],
+  "global_scope": [],
+  "source_view": {
+    "marker": "[[PAGE BREAK]]",
+    "segment_label": "[[SEGMENT {}]]",
+    "view_sha256": "27733f6554a6d69303460fb95d7096af23959548da21f74e69b3aa91b9d44af7",
+    "segments": [
+      {
+        "id": 1,
+        "raw_start": 0,
+        "raw_end": 2282
+      }
+    ],
+    "artifacts_removed": 0,
+    "artifacts": []
+  },
+  "coverage": {
+    "inventory_valid": true,
+    "anchors_located": "1/1",
+    "after_primary": {
+      "uncovered": [],
+      "unaccepted": [],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "scope_mappings": {
+      "requested": 0,
+      "applies": 0,
+      "does_not_apply": 0,
+      "unresolved": 0
+    },
+    "inventory_items": 1,
+    "in_scope_items": 1,
+    "in_scope_refs": 1,
+    "uncertain": [],
+    "final": {
+      "uncovered": [],
+      "unaccepted": [],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "link_mismatches": [],
+    "provisions": [
+      {
+        "ref": "Chapter 186",
+        "inventory_item": 0,
+        "provision_id": "P1",
+        "summary": "Notice to quit and right to cure for nonpayment of rent under a written lease, including court continuance for government payment delay.",
+        "category": "just_cause_eviction",
+        "candidates": [
+          0,
+          1
+        ],
+        "accepted": [
+          0,
+          1
+        ],
+        "basis": {
+          "0": "provision link; citation names it",
+          "1": "provision link; citation names it"
+        }
+      }
+    ],
+    "unrecorded_subdivisions": []
+  },
+  "scope_challenges": [],
+  "scope_mappings": [],
+  "legislative_session": null,
+  "empty_result": null,
+  "legacy_replay": null,
+  "dedupe": [],
+  "chunking": null,
+  "repair": null,
+  "document_status": "complete",
+  "review_reasons": [],
+  "warnings": [],
+  "errors": [],
+  "raw_response_text": "{\n  \"document\": {\n    \"posture\": \"codified_current_law\",\n    \"evidence\": \"General Law - Part II, Title I, Chapter 186, Section 11\"\n  },\n  \"provisions\": [\n    {\n      \"id\": \"P1\",\n      \"ref\": \"Chapter 186, Section 11\",\n      \"anchor\": \"Section 11. Upon the neglect or refusal to pay the rent\",\n      \"summary\": \"Notice to quit and right to cure for nonpayment of rent under a written lease, including court continuance for government payment delay.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"just_cause_eviction\",\n      \"reason\": null\n    }\n  ],\n  \"global_scope\": [],\n  \"rules\": [\n    {\n      \"category\": \"just_cause_eviction\",\n      \"citation\": \"Chapter 186, Section 11\",\n      \"provision_ids\": [\"P1\"],\n      \"source_basis\": \"operative_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Upon the neglect or refusal to pay the rent due under a written lease, fourteen days' notice to quit, given in writing by the landlord to the tenant, shall be sufficient to determine the lease, unless the tenant, on or before the day the answer is due, in an action by the landlord to recover possession of the premises, pays or tenders to the landlord or to his attorney all rent then due, with interest and costs of suit.\"\n        }\n      ],\n      \"title\": \"Notice to quit and right to cure for nonpayment under written lease\",\n      \"requirement\": \"Upon neglect or refusal to pay rent due under a written lease, a landlord's fourteen days' notice to quit given in writing to the tenant is sufficient to determine the lease, unless the tenant pays or tenders all rent then due, with interest and costs of suit, on or before the day the answer is due in an action to recover possession.\",\n      \"key_value\": \"14 days\",\n      \"coverage_conditions\": \"Applies upon the neglect or refusal to pay the rent due under a written lease.\",\n      \"exemptions\": \"The lease is not determined if the tenant pays or tenders to the landlord or the landlord's attorney all rent then due, with interest and costs of suit, on or before the day the answer is due in an action by the landlord to recover possession of the premises.\",\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": null,\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": null,\n      \"effective_date_evidence_kind\": null,\n      \"effective_date\": null,\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"just_cause_eviction\",\n      \"citation\": \"Chapter 186, Section 11\",\n      \"provision_ids\": [\"P1\"],\n      \"source_basis\": \"operative_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"If the neglect or refusal to pay the rent due was caused by a failure or delay of the federal government, the commonwealth or any municipality, or any departments, agencies or authorities thereof, in the mailing or delivery of any subsistence or rental payment, check or voucher other than a salary payment to either the tenant or the landlord, the court in any such action shall continue the hearing not less than seven days in order to furnish notice of such action to the appropriate agency and shall, if all rent due with interest and costs of suit has been tendered to the landlord within such time, treat the tenancy as not having been terminated.\"\n        }\n      ],\n      \"title\": \"Court continuance and cure protection for delayed government payments\",\n      \"requirement\": \"If nonpayment of rent was caused by a failure or delay of the federal government, the commonwealth, or any municipality (or agency thereof) in mailing or delivering a subsistence or rental payment, check, or voucher other than salary, the court must continue the hearing for not less than seven days to notify the agency and must treat the tenancy as not terminated if all rent due with interest and costs of suit is tendered within that time.\",\n      \"key_value\": \"not less than seven days\",\n      \"coverage_conditions\": \"Applies when neglect or refusal to pay rent due was caused by a failure or delay of the federal government, the commonwealth, or any municipality (or department, agency, or authority thereof) in mailing or delivering any subsistence or rental payment, check, or voucher other than a salary payment to the tenant or landlord.\",\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": null,\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": null,\n      \"effective_date_evidence_kind\": null,\n      \"effective_date\": null,\n      \"conflict_note\": null\n    }\n  ],\n  \"no_rules_justification\": null\n}"
+}

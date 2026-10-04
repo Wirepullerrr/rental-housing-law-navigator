@@ -1,0 +1,189 @@
+{
+  "disclaimer": "Not legal advice. Automated extraction for a research prototype; verify against the cited source.",
+  "run_at": "2026-10-04T06:34:26+00:00",
+  "source": {
+    "doc_id": "D039",
+    "jurisdiction": "Los Angeles, CA",
+    "url": "https://cityclerk.lacity.org/onlinedocs/2024/24-1031_misc_9-03-24.pdf",
+    "source_type": "official",
+    "retrieved_at": "2026-10-01T22:36Z",
+    "text_file": "text/D039.txt",
+    "content_sha256": "a778f2bc625c9b6b8835a944eb484722eafa35234e685e0e0348e68c7d4cd069",
+    "body_chars": 2975
+  },
+  "provider": "gemini",
+  "model": "gemini-3.8-flash",
+  "prompt_version": "v7",
+  "prompt_sha256": "f7f55577f1eb97c8b24958cad553d8364259a0b95fd6a82c2b6a93f3efde3382",
+  "response_schema_sha256": "c15306da6f21dc72f06e78405f94ed61dc9e59288138cc98b5b5bf9b62ac403c",
+  "generation_settings": {
+    "temperature": null,
+    "seed": 20261001,
+    "thinking_level": "medium"
+  },
+  "as_of": "2026-10-01",
+  "cache_key": "f221e3323038bed7657b2c2e5ec4463af26034a188e589d3957688483008cdf4",
+  "cache_hit": true,
+  "cache_entry": "cache/extraction/f221e3323038bed7657b2c2e5ec4463af26034a188e589d3957688483008cdf4.json",
+  "provider_metadata": {
+    "api": "interactions.create",
+    "interaction_id": "",
+    "model": "gemini-3.8-flash",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4567,
+      "output_tokens": 443,
+      "thinking_tokens": 3474,
+      "total_tokens": 8484
+    }
+  },
+  "candidate_count": 0,
+  "accepted_count": 0,
+  "rules": [],
+  "candidates": [],
+  "posture": {
+    "declared": "pending_bill",
+    "evidence": "MOTION\nSEP 0 3 2024",
+    "evidence_check": {
+      "status": "exact_match",
+      "normalization": null,
+      "start": 0,
+      "end": 19,
+      "occurrences": 1,
+      "model_span": "MOTION\nSEP 0 3 2024",
+      "source_span": "MOTION\nSEP 0 3 2024",
+      "reason": null,
+      "reconstructed": false,
+      "parts": [],
+      "crossed_artifacts": []
+    },
+    "established": "pending_bill",
+    "basis": "declared posture with verified evidence"
+  },
+  "base_dates": [],
+  "provision_inventory": [
+    {
+      "id": "P1",
+      "ref": "Motion",
+      "anchor": "I THEREFORE MOVE that the City Council instruct",
+      "summary": "Instructs the Los Angeles Housing Department to report on entities using algorithm-based rent software and the feasibility of instituting a ban on such software.",
+      "role": "procedure",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "Administrative instruction directing a municipal agency to study and report on feasibility; imposes no substantive requirements, prohibitions, or rights applicable to rental housing."
+    },
+    {
+      "id": "P2",
+      "ref": "Recitals",
+      "anchor": "Action is being taken to address the negative impacts",
+      "summary": "Background recitals and legislative findings regarding algorithm-based rent-setting software and litigation.",
+      "role": "boilerplate",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "Informational findings and background recitals that create no legal rights, duties, or prohibitions."
+    }
+  ],
+  "global_scope": [],
+  "source_view": {
+    "marker": "[[PAGE BREAK]]",
+    "segment_label": "[[SEGMENT {}]]",
+    "view_sha256": "4d1dc65b7424fb51bdf476e90fb796c346a59c9534a7a9c209f4e449d9aa60a7",
+    "segments": [
+      {
+        "id": 1,
+        "raw_start": 0,
+        "raw_end": 2975
+      }
+    ],
+    "artifacts_removed": 0,
+    "artifacts": []
+  },
+  "coverage": {
+    "inventory_valid": true,
+    "anchors_located": "2/2",
+    "after_primary": {
+      "uncovered": [],
+      "unaccepted": [],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "scope_mappings": {
+      "requested": 0,
+      "applies": 0,
+      "does_not_apply": 0,
+      "unresolved": 0
+    },
+    "inventory_items": 2,
+    "in_scope_items": 0,
+    "in_scope_refs": 0,
+    "uncertain": [],
+    "final": {
+      "uncovered": [],
+      "unaccepted": [],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "link_mismatches": [],
+    "provisions": [],
+    "unrecorded_subdivisions": []
+  },
+  "scope_challenges": [
+    {
+      "ref": "Motion",
+      "provision_id": "P1",
+      "role": "procedure",
+      "reason": "Administrative instruction directing a municipal agency to study and report on feasibility; imposes no substantive requirements, prohibitions, or rights applicable to rental housing.",
+      "summary": "Instructs the Los Angeles Housing Department to report on entities using algorithm-based rent software and the feasibility of instituting a ban on such software.",
+      "signals": {
+        "in_scope_neighbour": false,
+        "enumeration": false,
+        "normative_language": false,
+        "grounds_or_conditions": false
+      },
+      "challenged": false,
+      "why_not": "too few substantive signals",
+      "raw_start": 20,
+      "raw_end": 363
+    },
+    {
+      "ref": "Recitals",
+      "provision_id": "P2",
+      "role": "boilerplate",
+      "reason": "Informational findings and background recitals that create no legal rights, duties, or prohibitions.",
+      "summary": "Background recitals and legislative findings regarding algorithm-based rent-setting software and litigation.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role boilerplate is decided by other rules"
+    }
+  ],
+  "scope_mappings": [],
+  "legislative_session": null,
+  "empty_result": {
+    "reason": "The document is a city council motion directing a city department to conduct a study and report on the feasibility of an algorithm-based rent-setting ban, and does not contain any operative legal requirements or prohibitions.",
+    "evidence": "I THEREFORE MOVE that the City Council instruct the Los Angeles Housing Department to \nreport on the number of ownership and management entities that are using algorithm-based \nsoftware to establish rents and the feasibility of instituting a ban on the use of this software to set \nrents in the City.",
+    "evidence_check": {
+      "status": "exact_match",
+      "normalization": null,
+      "start": 20,
+      "end": 320,
+      "occurrences": 1,
+      "model_span": "I THEREFORE MOVE that the City Council instruct the Los Angeles Housing Department to \nreport on the number of ownership and management entities that are using algorithm-based \nsoftware to establish rents and the feasibility of instituting a ban on the use of this software to set \nrents in the City.",
+      "source_span": "I THEREFORE MOVE that the City Council instruct the Los Angeles Housing Department to \nreport on the number of ownership and management entities that are using algorithm-based \nsoftware to establish rents and the feasibility of instituting a ban on the use of this software to set \nrents in the City.",
+      "reason": null,
+      "reconstructed": false,
+      "parts": [],
+      "crossed_artifacts": []
+    },
+    "verified": true,
+    "problem": null
+  },
+  "legacy_replay": null,
+  "dedupe": [],
+  "chunking": null,
+  "repair": null,
+  "document_status": "complete",
+  "review_reasons": [],
+  "warnings": [],
+  "errors": [],
+  "raw_response_text": "{\n  \"document\": {\n    \"posture\": \"pending_bill\",\n    \"evidence\": \"MOTION\\nSEP 0 3 2024\"\n  },\n  \"provisions\": [\n    {\n      \"id\": \"P1\",\n      \"ref\": \"Motion\",\n      \"anchor\": \"I THEREFORE MOVE that the City Council instruct\",\n      \"summary\": \"Instructs the Los Angeles Housing Department to report on entities using algorithm-based rent software and the feasibility of instituting a ban on such software.\",\n      \"role\": \"procedure\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"Administrative instruction directing a municipal agency to study and report on feasibility; imposes no substantive requirements, prohibitions, or rights applicable to rental housing.\"\n    },\n    {\n      \"id\": \"P2\",\n      \"ref\": \"Recitals\",\n      \"anchor\": \"Action is being taken to address the negative impacts\",\n      \"summary\": \"Background recitals and legislative findings regarding algorithm-based rent-setting software and litigation.\",\n      \"role\": \"boilerplate\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"Informational findings and background recitals that create no legal rights, duties, or prohibitions.\"\n    }\n  ],\n  \"global_scope\": [],\n  \"rules\": [],\n  \"no_rules_justification\": {\n    \"reason\": \"The document is a city council motion directing a city department to conduct a study and report on the feasibility of an algorithm-based rent-setting ban, and does not contain any operative legal requirements or prohibitions.\",\n    \"evidence\": \"I THEREFORE MOVE that the City Council instruct the Los Angeles Housing Department to \\nreport on the number of ownership and management entities that are using algorithm-based \\nsoftware to establish rents and the feasibility of instituting a ban on the use of this software to set \\nrents in the City.\"\n  }\n}"
+}

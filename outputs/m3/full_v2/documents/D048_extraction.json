@@ -1,0 +1,222 @@
+{
+  "disclaimer": "Not legal advice. Automated extraction for a research prototype; verify against the cited source.",
+  "run_at": "2026-10-04T06:34:26+00:00",
+  "source": {
+    "doc_id": "D048",
+    "jurisdiction": "MA",
+    "url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleVII/Chapter40P/Section4",
+    "source_type": "official",
+    "retrieved_at": "2026-10-01T22:36Z",
+    "text_file": "text/D048.txt",
+    "content_sha256": "b66acf571495358f5cbd390ca07009c4ba5359e44d3ae561ce4d8501b2693a82",
+    "body_chars": 2640
+  },
+  "provider": "gemini",
+  "model": "gemini-3.8-flash",
+  "prompt_version": "v7",
+  "prompt_sha256": "f82d41e788346e08fc16e3279df647b69115258823225361c3f0c23f17e234e7",
+  "response_schema_sha256": "c15306da6f21dc72f06e78405f94ed61dc9e59288138cc98b5b5bf9b62ac403c",
+  "generation_settings": {
+    "temperature": null,
+    "seed": 20261001,
+    "thinking_level": "medium"
+  },
+  "as_of": "2026-10-01",
+  "cache_key": "3a9df5511a914ccf47344394652526dc4d8ccdee6ab0c01f9e28bbdb02862d44",
+  "cache_hit": true,
+  "cache_entry": "cache/extraction/3a9df5511a914ccf47344394652526dc4d8ccdee6ab0c01f9e28bbdb02862d44.json",
+  "provider_metadata": {
+    "api": "interactions.create",
+    "interaction_id": "",
+    "model": "gemini-3.8-flash",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4479,
+      "output_tokens": 669,
+      "thinking_tokens": 14925,
+      "total_tokens": 20073
+    }
+  },
+  "candidate_count": 0,
+  "accepted_count": 0,
+  "rules": [],
+  "candidates": [],
+  "posture": {
+    "declared": "codified_current_law",
+    "evidence": "General Law - Part I, Title VII, Chapter 40P, Section 4",
+    "evidence_check": {
+      "status": "exact_match",
+      "normalization": null,
+      "start": 0,
+      "end": 55,
+      "occurrences": 1,
+      "model_span": "General Law - Part I, Title VII, Chapter 40P, Section 4",
+      "source_span": "General Law - Part I, Title VII, Chapter 40P, Section 4",
+      "reason": null,
+      "reconstructed": false,
+      "parts": [],
+      "crossed_artifacts": []
+    },
+    "established": "codified_current_law",
+    "basis": "declared posture with verified evidence"
+  },
+  "base_dates": [],
+  "provision_inventory": [
+    {
+      "id": "P1",
+      "ref": "§ 4",
+      "anchor": "Section 4. No city or town may enact, maintain or enforce",
+      "summary": "Prohibits cities and towns from enacting, maintaining, or enforcing rent control of any kind, subject to narrow exceptions.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "Preemption of municipal authority; does not impose limits on how much or how often rent may be increased."
+    },
+    {
+      "id": "P2",
+      "ref": "§ 4(a)",
+      "anchor": "(a) after six months from the date of the initial adoption",
+      "summary": "Requires that property owner compliance with any municipal rent control regulation become entirely voluntary after six months.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "Governs municipal rent control regulation terms; does not establish an in-scope rent increase limit."
+    },
+    {
+      "id": "P3",
+      "ref": "§ 4(b)",
+      "anchor": "(b) such regulation may not include the regulation of occupancy,",
+      "summary": "Bar on municipal rent regulation covering occupancy, evictions, units owned by owners with under 10 units, or units with fair market rent over $400.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "Restrictions on municipal regulatory scope; does not establish statewide rent increase limits or just cause eviction standards."
+    },
+    {
+      "id": "P4",
+      "ref": "§ 4(c)",
+      "anchor": "(c) a municipality adopting such regulation shall compensate owners",
+      "summary": "Requires any municipality adopting rent control to compensate unit owners from municipal general funds for below-market rent differences.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "Municipal compensation mandate; does not establish an in-scope housing rule."
+    }
+  ],
+  "global_scope": [],
+  "source_view": {
+    "marker": "[[PAGE BREAK]]",
+    "segment_label": "[[SEGMENT {}]]",
+    "view_sha256": "490195e9de81f6828f3a11338c9dc6bef99f284103908119b7b5129e7eca5ab6",
+    "segments": [
+      {
+        "id": 1,
+        "raw_start": 0,
+        "raw_end": 2640
+      }
+    ],
+    "artifacts_removed": 0,
+    "artifacts": []
+  },
+  "coverage": {
+    "inventory_valid": true,
+    "anchors_located": "4/4",
+    "after_primary": {
+      "uncovered": [],
+      "unaccepted": [],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "scope_mappings": {
+      "requested": 0,
+      "applies": 0,
+      "does_not_apply": 0,
+      "unresolved": 0
+    },
+    "inventory_items": 4,
+    "in_scope_items": 0,
+    "in_scope_refs": 0,
+    "uncertain": [],
+    "final": {
+      "uncovered": [],
+      "unaccepted": [],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "link_mismatches": [],
+    "provisions": [],
+    "unrecorded_subdivisions": []
+  },
+  "scope_challenges": [
+    {
+      "ref": "§ 4",
+      "provision_id": "P1",
+      "role": "operative_rule",
+      "reason": "Preemption of municipal authority; does not impose limits on how much or how often rent may be increased.",
+      "summary": "Prohibits cities and towns from enacting, maintaining, or enforcing rent control of any kind, subject to narrow exceptions.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    },
+    {
+      "ref": "§ 4(a)",
+      "provision_id": "P2",
+      "role": "operative_rule",
+      "reason": "Governs municipal rent control regulation terms; does not establish an in-scope rent increase limit.",
+      "summary": "Requires that property owner compliance with any municipal rent control regulation become entirely voluntary after six months.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    },
+    {
+      "ref": "§ 4(b)",
+      "provision_id": "P3",
+      "role": "operative_rule",
+      "reason": "Restrictions on municipal regulatory scope; does not establish statewide rent increase limits or just cause eviction standards.",
+      "summary": "Bar on municipal rent regulation covering occupancy, evictions, units owned by owners with under 10 units, or units with fair market rent over $400.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    },
+    {
+      "ref": "§ 4(c)",
+      "provision_id": "P4",
+      "role": "operative_rule",
+      "reason": "Municipal compensation mandate; does not establish an in-scope housing rule.",
+      "summary": "Requires any municipality adopting rent control to compensate unit owners from municipal general funds for below-market rent differences.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    }
+  ],
+  "scope_mappings": [],
+  "legislative_session": null,
+  "empty_result": {
+    "reason": "The statute preempts and prohibits municipalities from enacting or enforcing rent control rather than imposing limits on how much or how often rent may be increased or enacting any other in-scope housing requirement.",
+    "evidence": "No city or town may enact, maintain or enforce rent control of any kind",
+    "evidence_check": {
+      "status": "exact_match",
+      "normalization": null,
+      "start": 306,
+      "end": 377,
+      "occurrences": 1,
+      "model_span": "No city or town may enact, maintain or enforce rent control of any kind",
+      "source_span": "No city or town may enact, maintain or enforce rent control of any kind",
+      "reason": null,
+      "reconstructed": false,
+      "parts": [],
+      "crossed_artifacts": []
+    },
+    "verified": true,
+    "problem": null
+  },
+  "legacy_replay": null,
+  "dedupe": [],
+  "chunking": null,
+  "repair": null,
+  "document_status": "complete",
+  "review_reasons": [],
+  "warnings": [],
+  "errors": [],
+  "raw_response_text": "{\n  \"document\": {\n    \"posture\": \"codified_current_law\",\n    \"evidence\": \"General Law - Part I, Title VII, Chapter 40P, Section 4\"\n  },\n  \"provisions\": [\n    {\n      \"id\": \"P1\",\n      \"ref\": \"§ 4\",\n      \"anchor\": \"Section 4. No city or town may enact, maintain or enforce\",\n      \"summary\": \"Prohibits cities and towns from enacting, maintaining, or enforcing rent control of any kind, subject to narrow exceptions.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"Preemption of municipal authority; does not impose limits on how much or how often rent may be increased.\"\n    },\n    {\n      \"id\": \"P2\",\n      \"ref\": \"§ 4(a)\",\n      \"anchor\": \"(a) after six months from the date of the initial adoption\",\n      \"summary\": \"Requires that property owner compliance with any municipal rent control regulation become entirely voluntary after six months.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"Governs municipal rent control regulation terms; does not establish an in-scope rent increase limit.\"\n    },\n    {\n      \"id\": \"P3\",\n      \"ref\": \"§ 4(b)\",\n      \"anchor\": \"(b) such regulation may not include the regulation of occupancy,\",\n      \"summary\": \"Bar on municipal rent regulation covering occupancy, evictions, units owned by owners with under 10 units, or units with fair market rent over $400.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"Restrictions on municipal regulatory scope; does not establish statewide rent increase limits or just cause eviction standards.\"\n    },\n    {\n      \"id\": \"P4\",\n      \"ref\": \"§ 4(c)\",\n      \"anchor\": \"(c) a municipality adopting such regulation shall compensate owners\",\n      \"summary\": \"Requires any municipality adopting rent control to compensate unit owners from municipal general funds for below-market rent differences.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"Municipal compensation mandate; does not establish an in-scope housing rule.\"\n    }\n  ],\n  \"global_scope\": [],\n  \"rules\": [],\n  \"no_rules_justification\": {\n    \"reason\": \"The statute preempts and prohibits municipalities from enacting or enforcing rent control rather than imposing limits on how much or how often rent may be increased or enacting any other in-scope housing requirement.\",\n    \"evidence\": \"No city or town may enact, maintain or enforce rent control of any kind\"\n  }\n}"
+}

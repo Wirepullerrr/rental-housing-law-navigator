@@ -149,7 +149,7 @@ def resolve_targets(targets: list[dict[str, Any]], candidates: list[CandidateRes
         t["repair_scope"] = res["scope"] if res else None
         t["reason"] = res["reason"] if res else None
         t["candidate_indices"] = [c.index for c in covering if c.origin == "repair"]
-        t["accepted_indices"] = [c.index for c in covering if c.accepted]
+        t["accepted_indices"] = [c.index for c in covering if c.validated]
         t["final_resolution"], t["unresolved_reason"] = _final(t, res, repair_ran, repair_problem)
     counts = {"before_repair": len(targets), RESOLVED_BY_RULE: 0, RESOLVED_OUT_OF_SCOPE: 0, "still_unresolved": 0}
     for t in targets:

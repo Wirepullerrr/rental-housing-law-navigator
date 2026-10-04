@@ -19,8 +19,10 @@ Python, not the model, then decides what the evidence may do:
                            null and the status undetermined (the record is held).
   history_note             history metadata only: effective_date null, evidence kept.
                            Accepted as history only if the note has history structure
-                           or a calendar date; a dated note after as_of rejects the
-                           record conservatively (same rule as version_evidence).
+                           or a calendar date. Its dates are classified by the
+                           validity window (validity.py): a future repeal/expiry is an
+                           end, a future amendment date a later start, and any other
+                           future date holds the record.
   operative_condition      effective_date null; kept as an unresolved operative
                            condition. Status is not changed by it.
 Unclassified evidence is rejected. A model-supplied date that its kind may not
@@ -90,8 +92,8 @@ class TemporalDecision:
     audit: dict[str, Any] = field(default_factory=dict)
 
 
-def enclosing_note(raw: str, start: int, end: int) -> str:
-    """The bracketed note that contains raw[start:end], if any, else the span itself."""
+def enclosing_note_span(raw: str, start: int, end: int) -> tuple[int, int]:
+    """Raw offsets of the bracketed note that contains raw[start:end], if any, else of the span."""
     depth = 0
     for i in range(start - 1, max(-1, start - _NOTE_REACH - 1), -1):
         if raw[i] in ")]":
@@ -99,9 +101,15 @@ def enclosing_note(raw: str, start: int, end: int) -> str:
         elif raw[i] in "([":
             if depth == 0:
                 close = min((j for j in (raw.find(")", end), raw.find("]", end)) if j >= 0), default=-1)
-                return raw[i:close + 1] if 0 <= close - end <= _NOTE_REACH else raw[start:end]
+                return (i, close + 1) if 0 <= close - end <= _NOTE_REACH else (start, end)
             depth -= 1
-    return raw[start:end]
+    return start, end
+
+
+def enclosing_note(raw: str, start: int, end: int) -> str:
+    """The bracketed note that contains raw[start:end], if any, else the span itself."""
+    s, e = enclosing_note_span(raw, start, end)
+    return raw[s:e]
 
 
 def looks_like_history_note(text: str) -> bool:
@@ -258,9 +266,6 @@ def resolve_effective_date(rule: ExtractedRule, evidence: CitationCheck | None, 
         if dropped:
             d.warnings.append("review: effective_date from a history/amendment note was not used (its relation to "
                               "this obligation is not established); history evidence kept")
-        if later := [x for x in calendar_dates(context) if x > as_of]:
-            d.rejections.append(f"status: a history note is dated {later[0]}, after as_of {as_of}; the extracted "
-                                "wording may not apply yet")
     else:  # operative_condition
         d.operative.append(OperativeCondition(statement=f"Takes effect upon a non-calendar condition: "
                                                         f"{' '.join(evidence.source_span.split())}",

@@ -63,6 +63,7 @@ def print_summary(summary: dict) -> None:
                   f"(xpage {c['reconstructed_cross_page']})  scope {r['global_scope']['verified']}/"
                   f"{r['global_scope']['proposed']}  est ${r['estimated_new_cost_usd']['total']:.4f}")
             print(f"        posture {r['posture']['declared']} -> {r['posture']['established']}  held {r['held']}  "
+                  f"historical {r.get('historical', 0)}  duplicates suppressed {r.get('suppressed_duplicates', 0)}  "
                   f"relative dates resolved {r['relative_dates_resolved']}  basis {r['source_basis']}  "
                   f"scope challenges {r['scope_challenges']}")
             for reason in r["review_reasons"]:

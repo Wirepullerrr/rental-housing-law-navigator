@@ -1,0 +1,1027 @@
+{
+  "disclaimer": "Not legal advice. Automated extraction for a research prototype; verify against the cited source.",
+  "run_at": "2026-10-04T06:34:27+00:00",
+  "source": {
+    "doc_id": "D084",
+    "jurisdiction": "Santa Ana, CA",
+    "url": "https://santa-ana.gov/departments/rent-stabilization",
+    "source_type": "official",
+    "retrieved_at": "2026-10-01T22:37Z",
+    "text_file": "text/D084.txt",
+    "content_sha256": "e66c93701dc71cb40df8d02ee7a3cd179f06868feff2418b8fd6f12b22e9cb62",
+    "body_chars": 4237
+  },
+  "provider": "gemini",
+  "model": "gemini-3.8-flash",
+  "prompt_version": "v7",
+  "prompt_sha256": "30387fa82e4f8e9b9037234039ebe21ad1aeb9aaa8996efe51468d115ee9970f",
+  "response_schema_sha256": "c15306da6f21dc72f06e78405f94ed61dc9e59288138cc98b5b5bf9b62ac403c",
+  "generation_settings": {
+    "temperature": null,
+    "seed": 20261001,
+    "thinking_level": "medium"
+  },
+  "as_of": "2026-10-01",
+  "cache_key": "0fd8e00717bf5795e0e7237a3ed93b8948e7c4c33d301f1b1b57598752208372",
+  "cache_hit": true,
+  "cache_entry": "cache/extraction/0fd8e00717bf5795e0e7237a3ed93b8948e7c4c33d301f1b1b57598752208372.json",
+  "provider_metadata": {
+    "api": "interactions.create",
+    "interaction_id": "",
+    "model": "gemini-3.8-flash",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4868,
+      "output_tokens": 2356,
+      "thinking_tokens": 7728,
+      "total_tokens": 14952
+    }
+  },
+  "candidate_count": 4,
+  "accepted_count": 1,
+  "rules": [
+    {
+      "team_rule_id": "r-cd3dd36f6c",
+      "jurisdiction": "Santa Ana, CA",
+      "level": "city",
+      "category": "rent_increase_limits",
+      "status": "in_force",
+      "title": "Maximum Allowable Rent Increase (2026–2027)",
+      "requirement": "[Basis: official explanatory text, not operative legal text] The maximum allowable rent increase is 2.87 percent for the period from September 1, 2026 through August 31, 2027.",
+      "key_value": "2.87%",
+      "coverage_conditions": null,
+      "exemptions": null,
+      "overrides": [],
+      "interaction": null,
+      "effective_date": "2026-09-01",
+      "citation": "Current Maximum Allowable Rent Increase",
+      "source_doc_id": "D084",
+      "source_url": "https://santa-ana.gov/departments/rent-stabilization",
+      "quoted_span": "2.87 percent is the maximum allowable rent increase for the period of September 1, 2026 through August 31, 2027.",
+      "confidence": null,
+      "conflict_flag": false,
+      "conflict_note": null
+    }
+  ],
+  "candidates": [
+    {
+      "index": 0,
+      "origin": "primary",
+      "accepted": true,
+      "held": false,
+      "historical": false,
+      "temporal_state": "in_force",
+      "validity": {
+        "resolver": "validity-window/v1",
+        "boundaries": [
+          {
+            "kind": "effective_from",
+            "role": "start",
+            "date": "2026-09-01",
+            "origin": "quoted_span",
+            "history": false,
+            "evidence": "for the period of September 1, 2026 through August 31, 2027",
+            "raw_start": 577,
+            "raw_end": 636
+          },
+          {
+            "kind": "valid_through",
+            "role": "end",
+            "date": "2027-08-31",
+            "origin": "quoted_span",
+            "history": false,
+            "evidence": "for the period of September 1, 2026 through August 31, 2027",
+            "raw_start": 577,
+            "raw_end": 636,
+            "end_exclusive": "2027-09-01",
+            "ambiguous_day": null
+          },
+          {
+            "kind": "unknown_temporal_note",
+            "role": "unknown",
+            "date": "2026-09-01",
+            "origin": "effective_date_evidence",
+            "history": false,
+            "evidence": null,
+            "raw_start": null,
+            "raw_end": null
+          },
+          {
+            "kind": "unknown_temporal_note",
+            "role": "unknown",
+            "date": "2027-08-31",
+            "origin": "effective_date_evidence",
+            "history": false,
+            "evidence": null,
+            "raw_start": null,
+            "raw_end": null
+          }
+        ],
+        "end_exclusive": "2027-09-01",
+        "end_conflict": null,
+        "decision": {
+          "outcome": null,
+          "state": "current_until",
+          "reason": "in force until 2027-09-01 (first day not in force), after as_of 2026-10-01",
+          "start": null
+        }
+      },
+      "duplicate_of": null,
+      "rejection_reasons": [],
+      "provision_ids": [
+        "P1"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": null,
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 525,
+        "end": 637,
+        "occurrences": 1,
+        "model_span": "2.87 percent is the maximum allowable rent increase for the period of September 1, 2026 through August 31, 2027.",
+        "source_span": "2.87 percent is the maximum allowable rent increase for the period of September 1, 2026 through August 31, 2027.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "2.87 percent is the maximum allowable rent increase for the period of September 1, 2026 through August 31, 2027.",
+            "status": "exact_match",
+            "start": 525,
+            "end": 637
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 595,
+        "end": 636,
+        "occurrences": 1,
+        "model_span": "September 1, 2026 through August 31, 2027",
+        "source_span": "September 1, 2026 through August 31, 2027",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [],
+      "temporal": {
+        "model_effective_date": "2026-09-01",
+        "model_kind": "explicit_operative_date",
+        "applied_kind": "explicit_operative_date",
+        "effective_date": "2026-09-01",
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null
+      },
+      "status_derivation": "enacted; effective 2026-09-01 is on or before as_of 2026-10-01; in force until 2027-09-01 (first day not in force), after as_of 2026-10-01",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-cd3dd36f6c",
+        "jurisdiction": "Santa Ana, CA",
+        "level": "city",
+        "category": "rent_increase_limits",
+        "status": "in_force",
+        "title": "Maximum Allowable Rent Increase (2026–2027)",
+        "requirement": "[Basis: official explanatory text, not operative legal text] The maximum allowable rent increase is 2.87 percent for the period from September 1, 2026 through August 31, 2027.",
+        "key_value": "2.87%",
+        "coverage_conditions": null,
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": "2026-09-01",
+        "citation": "Current Maximum Allowable Rent Increase",
+        "source_doc_id": "D084",
+        "source_url": "https://santa-ana.gov/departments/rent-stabilization",
+        "quoted_span": "2.87 percent is the maximum allowable rent increase for the period of September 1, 2026 through August 31, 2027.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "rent_increase_limits",
+        "citation": "Current Maximum Allowable Rent Increase",
+        "provision_ids": [
+          "P1"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "2.87 percent is the maximum allowable rent increase for the period of September 1, 2026 through August 31, 2027."
+          }
+        ],
+        "title": "Maximum Allowable Rent Increase (2026–2027)",
+        "requirement": "The maximum allowable rent increase is 2.87 percent for the period from September 1, 2026 through August 31, 2027.",
+        "key_value": "2.87%",
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": null,
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": "September 1, 2026 through August 31, 2027",
+        "effective_date_evidence_kind": "explicit_operative_date",
+        "effective_date": "2026-09-01",
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 1,
+      "origin": "primary",
+      "accepted": false,
+      "held": true,
+      "historical": false,
+      "temporal_state": "held",
+      "validity": {
+        "resolver": "validity-window/v1",
+        "boundaries": [],
+        "end_exclusive": null,
+        "end_conflict": null,
+        "decision": {
+          "outcome": null,
+          "state": null,
+          "reason": null,
+          "start": null
+        }
+      },
+      "duplicate_of": null,
+      "rejection_reasons": [
+        "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      ],
+      "provision_ids": [
+        "P2"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": null,
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 791,
+        "end": 985,
+        "occurrences": 1,
+        "model_span": "Your landlord can only raise your rent by a certain amount each year. The increase cannot be more than 3% of your current rent or 80% of the Consumer Price Index (CPI) change, whichever is less.",
+        "source_span": "Your landlord can only raise your rent by a certain amount each year. The increase cannot be more than 3% of your current rent or 80% of the Consumer Price Index (CPI) change, whichever is less.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "Your landlord can only raise your rent by a certain amount each year. The increase cannot be more than 3% of your current rent or 80% of the Consumer Price Index (CPI) change, whichever is less.",
+            "status": "exact_match",
+            "start": 791,
+            "end": 985
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": null,
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": null,
+        "applied_kind": null,
+        "effective_date": null,
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null,
+        "unresolved_reason": "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      },
+      "status_derivation": "temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-3174557d5e",
+        "jurisdiction": "Santa Ana, CA",
+        "level": "city",
+        "category": "rent_increase_limits",
+        "status": null,
+        "title": "Annual Rent Increase Limitation Formula",
+        "requirement": "[Basis: official explanatory text, not operative legal text] A landlord may only increase rent once each year, and the increase cannot exceed 3% of the current rent or 80% of the Consumer Price Index change, whichever is less.",
+        "key_value": "lesser of 3% or 80% of CPI change",
+        "coverage_conditions": null,
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "Rent Increase Limits",
+        "source_doc_id": "D084",
+        "source_url": "https://santa-ana.gov/departments/rent-stabilization",
+        "quoted_span": "Your landlord can only raise your rent by a certain amount each year. The increase cannot be more than 3% of your current rent or 80% of the Consumer Price Index (CPI) change, whichever is less.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "rent_increase_limits",
+        "citation": "Rent Increase Limits",
+        "provision_ids": [
+          "P2"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "Your landlord can only raise your rent by a certain amount each year. The increase cannot be more than 3% of your current rent or 80% of the Consumer Price Index (CPI) change, whichever is less."
+          }
+        ],
+        "title": "Annual Rent Increase Limitation Formula",
+        "requirement": "A landlord may only increase rent once each year, and the increase cannot exceed 3% of the current rent or 80% of the Consumer Price Index change, whichever is less.",
+        "key_value": "lesser of 3% or 80% of CPI change",
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": null,
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": null,
+        "effective_date_evidence_kind": null,
+        "effective_date": null,
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 2,
+      "origin": "primary",
+      "accepted": false,
+      "held": true,
+      "historical": false,
+      "temporal_state": "held",
+      "validity": {
+        "resolver": "validity-window/v1",
+        "boundaries": [],
+        "end_exclusive": null,
+        "end_conflict": null,
+        "decision": {
+          "outcome": null,
+          "state": null,
+          "reason": null,
+          "start": null
+        }
+      },
+      "duplicate_of": null,
+      "rejection_reasons": [
+        "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      ],
+      "provision_ids": [
+        "P3"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": null,
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 1027,
+        "end": 1197,
+        "occurrences": 1,
+        "model_span": "Your landlord must have a valid reason to evict you. This could be for not paying rent, breaking the lease, or if the landlord wants to move into the property themselves.",
+        "source_span": "Your landlord must have a valid reason to evict you. This could be for not paying rent, breaking the lease, or if the landlord wants to move into the property themselves.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "Your landlord must have a valid reason to evict you. This could be for not paying rent, breaking the lease, or if the landlord wants to move into the property themselves.",
+            "status": "exact_match",
+            "start": 1027,
+            "end": 1197
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": null,
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": null,
+        "applied_kind": null,
+        "effective_date": null,
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null,
+        "unresolved_reason": "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      },
+      "status_derivation": "temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-52e7fd0fa4",
+        "jurisdiction": "Santa Ana, CA",
+        "level": "city",
+        "category": "just_cause_eviction",
+        "status": null,
+        "title": "Valid Grounds Required for Eviction",
+        "requirement": "[Basis: official explanatory text, not operative legal text] A landlord must have a valid reason to evict a tenant, such as failure to pay rent, violation of the lease, or owner move-in.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "Renter Protections - Just cause evictions",
+        "source_doc_id": "D084",
+        "source_url": "https://santa-ana.gov/departments/rent-stabilization",
+        "quoted_span": "Your landlord must have a valid reason to evict you. This could be for not paying rent, breaking the lease, or if the landlord wants to move into the property themselves.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "just_cause_eviction",
+        "citation": "Renter Protections - Just cause evictions",
+        "provision_ids": [
+          "P3"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "Your landlord must have a valid reason to evict you. This could be for not paying rent, breaking the lease, or if the landlord wants to move into the property themselves."
+          }
+        ],
+        "title": "Valid Grounds Required for Eviction",
+        "requirement": "A landlord must have a valid reason to evict a tenant, such as failure to pay rent, violation of the lease, or owner move-in.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": null,
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": null,
+        "effective_date_evidence_kind": null,
+        "effective_date": null,
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 3,
+      "origin": "primary",
+      "accepted": false,
+      "held": true,
+      "historical": false,
+      "temporal_state": "held",
+      "validity": {
+        "resolver": "validity-window/v1",
+        "boundaries": [],
+        "end_exclusive": null,
+        "end_conflict": null,
+        "decision": {
+          "outcome": null,
+          "state": null,
+          "reason": null,
+          "start": null
+        }
+      },
+      "duplicate_of": null,
+      "rejection_reasons": [
+        "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      ],
+      "provision_ids": [
+        "P4"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": null,
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 1221,
+        "end": 1320,
+        "occurrences": 1,
+        "model_span": "If your landlord evicts you for certain reasons, they might have to help pay for your moving costs.",
+        "source_span": "If your landlord evicts you for certain reasons, they might have to help pay for your moving costs.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "If your landlord evicts you for certain reasons, they might have to help pay for your moving costs.",
+            "status": "exact_match",
+            "start": 1221,
+            "end": 1320
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": null,
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": null,
+        "applied_kind": null,
+        "effective_date": null,
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null,
+        "unresolved_reason": "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      },
+      "status_derivation": "temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-87655925a0",
+        "jurisdiction": "Santa Ana, CA",
+        "level": "city",
+        "category": "just_cause_eviction",
+        "status": null,
+        "title": "Relocation Assistance Requirement",
+        "requirement": "[Basis: official explanatory text, not operative legal text] A landlord may be required to help pay for tenant moving costs if terminating a tenancy or evicting for specified reasons.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "Renter Protections - Relocation assistance",
+        "source_doc_id": "D084",
+        "source_url": "https://santa-ana.gov/departments/rent-stabilization",
+        "quoted_span": "If your landlord evicts you for certain reasons, they might have to help pay for your moving costs.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "just_cause_eviction",
+        "citation": "Renter Protections - Relocation assistance",
+        "provision_ids": [
+          "P4"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "If your landlord evicts you for certain reasons, they might have to help pay for your moving costs."
+          }
+        ],
+        "title": "Relocation Assistance Requirement",
+        "requirement": "A landlord may be required to help pay for tenant moving costs if terminating a tenancy or evicting for specified reasons.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": null,
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": null,
+        "effective_date_evidence_kind": null,
+        "effective_date": null,
+        "conflict_note": null
+      }
+    }
+  ],
+  "posture": {
+    "declared": "official_explanatory_page",
+    "evidence": "Rent Stabilization and Just Cause Eviction - City of Santa Ana",
+    "evidence_check": {
+      "status": "exact_match",
+      "normalization": null,
+      "start": 0,
+      "end": 62,
+      "occurrences": 1,
+      "model_span": "Rent Stabilization and Just Cause Eviction - City of Santa Ana",
+      "source_span": "Rent Stabilization and Just Cause Eviction - City of Santa Ana",
+      "reason": null,
+      "reconstructed": false,
+      "parts": [],
+      "crossed_artifacts": []
+    },
+    "established": "official_explanatory_page",
+    "basis": "declared posture with verified evidence"
+  },
+  "base_dates": [],
+  "provision_inventory": [
+    {
+      "id": "P1",
+      "ref": "Current Maximum Allowable Rent Increase",
+      "anchor": "2.87 percent is the maximum allowable rent increase for the period",
+      "summary": "Establishes a 2.87 percent maximum allowable rent increase for the period of September 1, 2026 through August 31, 2027.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "rent_increase_limits",
+      "reason": null
+    },
+    {
+      "id": "P2",
+      "ref": "Rent Increase Limits",
+      "anchor": "Your landlord can only raise your rent by a certain amount each",
+      "summary": "Limits rent increases to once per year, capped at the lesser of 3 percent or 80 percent of the CPI change.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "rent_increase_limits",
+      "reason": null
+    },
+    {
+      "id": "P3",
+      "ref": "Renter Protections - Just cause evictions",
+      "anchor": "Your landlord must have a valid reason to evict you. This could",
+      "summary": "Requires landlords to have a valid reason to evict a tenant.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "just_cause_eviction",
+      "reason": null
+    },
+    {
+      "id": "P4",
+      "ref": "Renter Protections - Relocation assistance",
+      "anchor": "If your landlord evicts you for certain reasons, they might have",
+      "summary": "Requires landlords to help pay moving costs for evictions based on certain reasons.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "just_cause_eviction",
+      "reason": null
+    },
+    {
+      "id": "P5",
+      "ref": "Petitions",
+      "anchor": "Both landlords and tenants may submit official petitions to request rent",
+      "summary": "Outlines the petition process for rent adjustments, violations, or unauthorized pass-through costs.",
+      "role": "procedure",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "administrative procedure and hearing process without independent substantive housing standards"
+    },
+    {
+      "id": "P6",
+      "ref": "Pass-Through Fee Authorization",
+      "anchor": "The Rent Stabilization and Just Cause Ordinance allows, but does not",
+      "summary": "Permits, but does not require, landlords to charge a registration pass-through fee.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "municipal registration fee pass-through; outside official categories"
+    },
+    {
+      "id": "P7",
+      "ref": "Pass-Through Fee Installment Rule",
+      "anchor": "Landlords cannot charge for previous monthly installments of the pass-through",
+      "summary": "Prohibits charging past monthly installments of the pass-through fee after monthly rent is paid.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "municipal registration fee pass-through timing rule; outside official categories"
+    },
+    {
+      "id": "P8",
+      "ref": "Pass-Through Fee Limit and Reimbursement",
+      "anchor": "If a landlord charges a tenant a pass-through fee greater",
+      "summary": "Limits pass-through fee to $50 per rental unit and mandates reimbursement of overpayments.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "municipal registration fee pass-through amount limit and refund; outside official categories"
+    }
+  ],
+  "global_scope": [],
+  "source_view": {
+    "marker": "[[PAGE BREAK]]",
+    "segment_label": "[[SEGMENT {}]]",
+    "view_sha256": "29e8da95d0d5ba7a1df9f939841d3cfaf8c72640221839e736b44ca3e233a8d0",
+    "segments": [
+      {
+        "id": 1,
+        "raw_start": 0,
+        "raw_end": 4237
+      }
+    ],
+    "artifacts_removed": 0,
+    "artifacts": []
+  },
+  "coverage": {
+    "inventory_valid": true,
+    "anchors_located": "8/8",
+    "after_primary": {
+      "uncovered": [],
+      "unaccepted": [
+        "Rent Increase Limits",
+        "Renter Protections - Just cause evictions",
+        "Renter Protections - Relocation assistance"
+      ],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": [
+        "Petitions"
+      ]
+    },
+    "scope_mappings": {
+      "requested": 0,
+      "applies": 0,
+      "does_not_apply": 0,
+      "unresolved": 0
+    },
+    "after_repair": {
+      "uncovered": [],
+      "unaccepted": [
+        "Rent Increase Limits",
+        "Renter Protections - Just cause evictions",
+        "Renter Protections - Relocation assistance"
+      ],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "repair_targets": {
+      "before_repair": 1,
+      "resolved_by_accepted_rule": 0,
+      "resolved_out_of_scope": 0,
+      "still_unresolved": 1
+    },
+    "inventory_items": 8,
+    "in_scope_items": 4,
+    "in_scope_refs": 4,
+    "uncertain": [],
+    "final": {
+      "uncovered": [],
+      "unaccepted": [
+        "Rent Increase Limits",
+        "Renter Protections - Just cause evictions",
+        "Renter Protections - Relocation assistance"
+      ],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "link_mismatches": [],
+    "provisions": [
+      {
+        "ref": "Current Maximum Allowable Rent Increase",
+        "inventory_item": 0,
+        "provision_id": "P1",
+        "summary": "Establishes a 2.87 percent maximum allowable rent increase for the period of September 1, 2026 through August 31, 2027.",
+        "category": "rent_increase_limits",
+        "candidates": [
+          0
+        ],
+        "accepted": [
+          0
+        ],
+        "basis": {
+          "0": "provision link; citation names it"
+        }
+      },
+      {
+        "ref": "Rent Increase Limits",
+        "inventory_item": 1,
+        "provision_id": "P2",
+        "summary": "Limits rent increases to once per year, capped at the lesser of 3 percent or 80 percent of the CPI change.",
+        "category": "rent_increase_limits",
+        "candidates": [
+          1
+        ],
+        "accepted": [],
+        "basis": {
+          "1": "provision link; citation names it"
+        }
+      },
+      {
+        "ref": "Renter Protections - Just cause evictions",
+        "inventory_item": 2,
+        "provision_id": "P3",
+        "summary": "Requires landlords to have a valid reason to evict a tenant.",
+        "category": "just_cause_eviction",
+        "candidates": [
+          2
+        ],
+        "accepted": [],
+        "basis": {
+          "2": "provision link; citation names it"
+        }
+      },
+      {
+        "ref": "Renter Protections - Relocation assistance",
+        "inventory_item": 3,
+        "provision_id": "P4",
+        "summary": "Requires landlords to help pay moving costs for evictions based on certain reasons.",
+        "category": "just_cause_eviction",
+        "candidates": [
+          3
+        ],
+        "accepted": [],
+        "basis": {
+          "3": "provision link; citation names it"
+        }
+      }
+    ],
+    "unrecorded_subdivisions": []
+  },
+  "scope_challenges": [
+    {
+      "ref": "Petitions",
+      "provision_id": "P5",
+      "role": "procedure",
+      "reason": "administrative procedure and hearing process without independent substantive housing standards",
+      "summary": "Outlines the petition process for rent adjustments, violations, or unauthorized pass-through costs.",
+      "signals": {
+        "in_scope_neighbour": true,
+        "enumeration": true,
+        "normative_language": true,
+        "grounds_or_conditions": true
+      },
+      "challenged": true,
+      "why_not": null,
+      "raw_start": 1331,
+      "raw_end": 3305
+    },
+    {
+      "ref": "Pass-Through Fee Authorization",
+      "provision_id": "P6",
+      "role": "operative_rule",
+      "reason": "municipal registration fee pass-through; outside official categories",
+      "summary": "Permits, but does not require, landlords to charge a registration pass-through fee.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    },
+    {
+      "ref": "Pass-Through Fee Installment Rule",
+      "provision_id": "P7",
+      "role": "operative_rule",
+      "reason": "municipal registration fee pass-through timing rule; outside official categories",
+      "summary": "Prohibits charging past monthly installments of the pass-through fee after monthly rent is paid.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    },
+    {
+      "ref": "Pass-Through Fee Limit and Reimbursement",
+      "provision_id": "P8",
+      "role": "operative_rule",
+      "reason": "municipal registration fee pass-through amount limit and refund; outside official categories",
+      "summary": "Limits pass-through fee to $50 per rental unit and mandates reimbursement of overpayments.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    }
+  ],
+  "scope_mappings": [],
+  "legislative_session": null,
+  "empty_result": null,
+  "legacy_replay": null,
+  "dedupe": [],
+  "chunking": null,
+  "repair": {
+    "invoked": true,
+    "reason": "1 repair target(s) from scope_challenge",
+    "prompt_version": "v7-repair-1",
+    "targets": [
+      {
+        "ref": "Petitions",
+        "sources": [
+          "scope_challenge"
+        ],
+        "provision_id": "P5",
+        "summary": "Outlines the petition process for rent adjustments, violations, or unauthorized pass-through costs.",
+        "role": "procedure",
+        "declared_reason": "administrative procedure and hearing process without independent substantive housing standards",
+        "signals": [
+          "in_scope_neighbour",
+          "enumeration",
+          "normative_language",
+          "grounds_or_conditions"
+        ],
+        "raw_start": 1331,
+        "raw_end": 3305,
+        "pre_repair_state": "declared out_of_scope (procedure: administrative procedure and hearing process without independent substantive housing standards); its text has signals ['in_scope_neighbour', 'enumeration', 'normative_language', 'grounds_or_conditions']",
+        "resolution": {
+          "scope": "out_of_scope",
+          "reason": "The provision outlines administrative petition and hearing procedures without establishing independent substantive standards, obligations, or concrete remedies in an official category.",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 1321,
+            "end": 1569,
+            "occurrences": 1,
+            "model_span": "Petitions\nBoth landlords and tenants may submit official petitions to request rent adjustments, report violations, or contest unauthorized pass-through costs. Our impartial hearing process ensures all parties are treated fairly under the Ordinance.",
+            "source_span": "Petitions\nBoth landlords and tenants may submit official petitions to request rent adjustments, report violations, or contest unauthorized pass-through costs. Our impartial hearing process ensures all parties are treated fairly under the Ordinance.",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 1,
+                "model_text": "Petitions\nBoth landlords and tenants may submit official petitions to request rent adjustments, report violations, or contest unauthorized pass-through costs. Our impartial hearing process ensures all parties are treated fairly under the Ordinance.",
+                "status": "exact_match",
+                "start": 1321,
+                "end": 1569
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": false,
+          "evidence_problem": "evidence is not text of the target subdivision"
+        },
+        "repair_scope": "out_of_scope",
+        "reason": "The provision outlines administrative petition and hearing procedures without establishing independent substantive standards, obligations, or concrete remedies in an official category.",
+        "candidate_indices": [],
+        "accepted_indices": [],
+        "final_resolution": "unresolved",
+        "unresolved_reason": "classified out_of_scope without a reason and verified evidence (evidence is not text of the target subdivision)"
+      }
+    ],
+    "cache_key": "45f9238340efe485915d411570f4524e6e57f7075ad8e46c079a388d70e4bf60",
+    "cache_hit": true,
+    "cache_entry": "cache/extraction/45f9238340efe485915d411570f4524e6e57f7075ad8e46c079a388d70e4bf60.json",
+    "prompt_sha256": "8d5f2df690136d63220b6b448c25b66ebb1092c18901d663b74cfe9521f99dbf",
+    "provider_metadata": {
+      "api": "interactions.create",
+      "interaction_id": "",
+      "model": "gemini-3.8-flash",
+      "status": "completed",
+      "usage": {
+        "input_tokens": 4405,
+        "output_tokens": 163,
+        "thinking_tokens": 1657,
+        "total_tokens": 6225
+      }
+    },
+    "raw_response_text": "{\n  \"target_resolutions\": [\n    {\n      \"ref\": \"Petitions\",\n      \"scope\": \"out_of_scope\",\n      \"reason\": \"The provision outlines administrative petition and hearing procedures without establishing independent substantive standards, obligations, or concrete remedies in an official category.\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Petitions\\nBoth landlords and tenants may submit official petitions to request rent adjustments, report violations, or contest unauthorized pass-through costs. Our impartial hearing process ensures all parties are treated fairly under the Ordinance.\"\n        }\n      ]\n    }\n  ],\n  \"scope_mappings\": [],\n  \"rules\": []\n}",
+    "mappings": [],
+    "candidate_indices": [],
+    "accepted_count": 0,
+    "rejected_count": 0,
+    "errors": []
+  },
+  "document_status": "review_required",
+  "review_reasons": [
+    "3 candidate record(s) held, not published, because the time of application is unresolved: ['temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force']",
+    "repair targets still unresolved: Petitions (classified out_of_scope without a reason and verified evidence (evidence is not text of the target subdivision))"
+  ],
+  "warnings": [
+    "candidate 1 held: status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+    "candidate 2 held: status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+    "candidate 3 held: status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+  ],
+  "errors": [],
+  "raw_response_text": "{\n  \"document\": {\n    \"posture\": \"official_explanatory_page\",\n    \"evidence\": \"Rent Stabilization and Just Cause Eviction - City of Santa Ana\"\n  },\n  \"provisions\": [\n    {\n      \"id\": \"P1\",\n      \"ref\": \"Current Maximum Allowable Rent Increase\",\n      \"anchor\": \"2.87 percent is the maximum allowable rent increase for the period\",\n      \"summary\": \"Establishes a 2.87 percent maximum allowable rent increase for the period of September 1, 2026 through August 31, 2027.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"rent_increase_limits\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P2\",\n      \"ref\": \"Rent Increase Limits\",\n      \"anchor\": \"Your landlord can only raise your rent by a certain amount each\",\n      \"summary\": \"Limits rent increases to once per year, capped at the lesser of 3 percent or 80 percent of the CPI change.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"rent_increase_limits\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P3\",\n      \"ref\": \"Renter Protections - Just cause evictions\",\n      \"anchor\": \"Your landlord must have a valid reason to evict you. This could\",\n      \"summary\": \"Requires landlords to have a valid reason to evict a tenant.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"just_cause_eviction\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P4\",\n      \"ref\": \"Renter Protections - Relocation assistance\",\n      \"anchor\": \"If your landlord evicts you for certain reasons, they might have\",\n      \"summary\": \"Requires landlords to help pay moving costs for evictions based on certain reasons.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"just_cause_eviction\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P5\",\n      \"ref\": \"Petitions\",\n      \"anchor\": \"Both landlords and tenants may submit official petitions to request rent\",\n      \"summary\": \"Outlines the petition process for rent adjustments, violations, or unauthorized pass-through costs.\",\n      \"role\": \"procedure\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"administrative procedure and hearing process without independent substantive housing standards\"\n    },\n    {\n      \"id\": \"P6\",\n      \"ref\": \"Pass-Through Fee Authorization\",\n      \"anchor\": \"The Rent Stabilization and Just Cause Ordinance allows, but does not\",\n      \"summary\": \"Permits, but does not require, landlords to charge a registration pass-through fee.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"municipal registration fee pass-through; outside official categories\"\n    },\n    {\n      \"id\": \"P7\",\n      \"ref\": \"Pass-Through Fee Installment Rule\",\n      \"anchor\": \"Landlords cannot charge for previous monthly installments of the pass-through\",\n      \"summary\": \"Prohibits charging past monthly installments of the pass-through fee after monthly rent is paid.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"municipal registration fee pass-through timing rule; outside official categories\"\n    },\n    {\n      \"id\": \"P8\",\n      \"ref\": \"Pass-Through Fee Limit and Reimbursement\",\n      \"anchor\": \"If a landlord charges a tenant a pass-through fee greater\",\n      \"summary\": \"Limits pass-through fee to $50 per rental unit and mandates reimbursement of overpayments.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"municipal registration fee pass-through amount limit and refund; outside official categories\"\n    }\n  ],\n  \"global_scope\": [],\n  \"rules\": [\n    {\n      \"category\": \"rent_increase_limits\",\n      \"citation\": \"Current Maximum Allowable Rent Increase\",\n      \"provision_ids\": [\n        \"P1\"\n      ],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"2.87 percent is the maximum allowable rent increase for the period of September 1, 2026 through August 31, 2027.\"\n        }\n      ],\n      \"title\": \"Maximum Allowable Rent Increase (2026–2027)\",\n      \"requirement\": \"The maximum allowable rent increase is 2.87 percent for the period from September 1, 2026 through August 31, 2027.\",\n      \"key_value\": \"2.87%\",\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": null,\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": \"September 1, 2026 through August 31, 2027\",\n      \"effective_date_evidence_kind\": \"explicit_operative_date\",\n      \"effective_date\": \"2026-09-01\",\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"rent_increase_limits\",\n      \"citation\": \"Rent Increase Limits\",\n      \"provision_ids\": [\n        \"P2\"\n      ],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Your landlord can only raise your rent by a certain amount each year. The increase cannot be more than 3% of your current rent or 80% of the Consumer Price Index (CPI) change, whichever is less.\"\n        }\n      ],\n      \"title\": \"Annual Rent Increase Limitation Formula\",\n      \"requirement\": \"A landlord may only increase rent once each year, and the increase cannot exceed 3% of the current rent or 80% of the Consumer Price Index change, whichever is less.\",\n      \"key_value\": \"lesser of 3% or 80% of CPI change\",\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": null,\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": null,\n      \"effective_date_evidence_kind\": null,\n      \"effective_date\": null,\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"just_cause_eviction\",\n      \"citation\": \"Renter Protections - Just cause evictions\",\n      \"provision_ids\": [\n        \"P3\"\n      ],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Your landlord must have a valid reason to evict you. This could be for not paying rent, breaking the lease, or if the landlord wants to move into the property themselves.\"\n        }\n      ],\n      \"title\": \"Valid Grounds Required for Eviction\",\n      \"requirement\": \"A landlord must have a valid reason to evict a tenant, such as failure to pay rent, violation of the lease, or owner move-in.\",\n      \"key_value\": null,\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": null,\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": null,\n      \"effective_date_evidence_kind\": null,\n      \"effective_date\": null,\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"just_cause_eviction\",\n      \"citation\": \"Renter Protections - Relocation assistance\",\n      \"provision_ids\": [\n        \"P4\"\n      ],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"If your landlord evicts you for certain reasons, they might have to help pay for your moving costs.\"\n        }\n      ],\n      \"title\": \"Relocation Assistance Requirement\",\n      \"requirement\": \"A landlord may be required to help pay for tenant moving costs if terminating a tenancy or evicting for specified reasons.\",\n      \"key_value\": null,\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": null,\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": null,\n      \"effective_date_evidence_kind\": null,\n      \"effective_date\": null,\n      \"conflict_note\": null\n    }\n  ],\n  \"no_rules_justification\": null\n}"
+}

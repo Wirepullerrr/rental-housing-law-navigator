@@ -1,0 +1,376 @@
+{
+  "disclaimer": "Not legal advice. Automated extraction for a research prototype; verify against the cited source.",
+  "run_at": "2026-10-04T06:34:25+00:00",
+  "source": {
+    "doc_id": "D012",
+    "jurisdiction": "Boston, MA",
+    "url": "https://www.boston.gov/departments/fair-housing-and-equity/boston-fair-housing-regulations",
+    "source_type": "official",
+    "retrieved_at": "2026-10-01T22:35Z",
+    "text_file": "text/D012.txt",
+    "content_sha256": "a627822fa944d706c0a09c13df6561139d10e0f011fd6be4c50db01e7dc57293",
+    "body_chars": 3856
+  },
+  "provider": "gemini",
+  "model": "gemini-3.8-flash",
+  "prompt_version": "v7",
+  "prompt_sha256": "6818b6c0eafd487dd855d714b02c4016636b43780b4da79a1e93aa0d8c0341cd",
+  "response_schema_sha256": "c15306da6f21dc72f06e78405f94ed61dc9e59288138cc98b5b5bf9b62ac403c",
+  "generation_settings": {
+    "temperature": null,
+    "seed": 20261001,
+    "thinking_level": "medium"
+  },
+  "as_of": "2026-10-01",
+  "cache_key": "714affca871881662c25691b3410e22f09f7b887f2bd4956dd263de41e8face1",
+  "cache_hit": true,
+  "cache_entry": "cache/extraction/714affca871881662c25691b3410e22f09f7b887f2bd4956dd263de41e8face1.json",
+  "provider_metadata": {
+    "api": "interactions.create",
+    "interaction_id": "",
+    "model": "gemini-3.8-flash",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4799,
+      "output_tokens": 1012,
+      "thinking_tokens": 12759,
+      "total_tokens": 18570
+    }
+  },
+  "candidate_count": 1,
+  "accepted_count": 0,
+  "rules": [],
+  "candidates": [
+    {
+      "index": 0,
+      "origin": "primary",
+      "accepted": false,
+      "held": true,
+      "historical": false,
+      "temporal_state": "held",
+      "validity": {
+        "resolver": "validity-window/v1",
+        "boundaries": [],
+        "end_exclusive": null,
+        "end_conflict": null,
+        "decision": {
+          "outcome": null,
+          "state": null,
+          "reason": null,
+          "start": null
+        }
+      },
+      "duplicate_of": null,
+      "rejection_reasons": [
+        "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      ],
+      "provision_ids": [
+        "P2"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 1906,
+        "end": 2027,
+        "occurrences": 1,
+        "model_span": "In the City of Boston, it’s illegal to discriminate when renting, buying, selling, or securing financing for any housing.",
+        "source_span": "In the City of Boston, it’s illegal to discriminate when renting, buying, selling, or securing financing for any housing.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": "Applies to renting, buying, selling, or securing financing for any housing in the City of Boston.",
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 1906,
+        "end": 2389,
+        "occurrences": 1,
+        "model_span": "In the City of Boston, it’s illegal to discriminate when renting, buying, selling, or securing financing for any housing.\nYou can’t discriminate someone based on their:\nRace\nColor\nReligion\nDisability\nNational Origin\nAncestry\nSex\nGender Identity\nGender Expression\nAge\nSexual Orientation\nMarital Status\nRental Assistance\n*\nFamily Status\n**\nMilitary Status\n*\nFor example renters using Section 8 voucher\n**\nFor example, a landlord can’t discriminate against someone if they have children",
+        "source_span": "In the City of Boston, it’s illegal to discriminate when renting, buying, selling, or securing financing for any housing.\nYou can’t discriminate someone based on their:\nRace\nColor\nReligion\nDisability\nNational Origin\nAncestry\nSex\nGender Identity\nGender Expression\nAge\nSexual Orientation\nMarital Status\nRental Assistance\n*\nFamily Status\n**\nMilitary Status\n*\nFor example renters using Section 8 voucher\n**\nFor example, a landlord can’t discriminate against someone if they have children",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "In the City of Boston, it’s illegal to discriminate when renting, buying, selling, or securing financing for any housing.\nYou can’t discriminate someone based on their:\nRace\nColor\nReligion\nDisability\nNational Origin\nAncestry\nSex\nGender Identity\nGender Expression\nAge\nSexual Orientation\nMarital Status\nRental Assistance\n*\nFamily Status\n**\nMilitary Status\n*\nFor example renters using Section 8 voucher\n**\nFor example, a landlord can’t discriminate against someone if they have children",
+            "status": "exact_match",
+            "start": 1906,
+            "end": 2389
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": null,
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": null,
+        "applied_kind": null,
+        "effective_date": null,
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null,
+        "unresolved_reason": "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      },
+      "status_derivation": "temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-f809062734",
+        "jurisdiction": "Boston, MA",
+        "level": "city",
+        "category": "screening_restrictions",
+        "status": null,
+        "title": "Housing Discrimination Prohibition",
+        "requirement": "[Basis: official explanatory text, not operative legal text] In the City of Boston, it is illegal to discriminate when renting, buying, selling, or securing financing for any housing based on a person's race, color, religion, disability, national origin, ancestry, sex, gender identity, gender expression, age, sexual orientation, marital status, rental assistance (such as using a Section 8 voucher), family status (such as having children), or military status.",
+        "key_value": null,
+        "coverage_conditions": "Applies to renting, buying, selling, or securing financing for any housing in the City of Boston.",
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "Laws and discrimination",
+        "source_doc_id": "D012",
+        "source_url": "https://www.boston.gov/departments/fair-housing-and-equity/boston-fair-housing-regulations",
+        "quoted_span": "In the City of Boston, it’s illegal to discriminate when renting, buying, selling, or securing financing for any housing.\nYou can’t discriminate someone based on their:\nRace\nColor\nReligion\nDisability\nNational Origin\nAncestry\nSex\nGender Identity\nGender Expression\nAge\nSexual Orientation\nMarital Status\nRental Assistance\n*\nFamily Status\n**\nMilitary Status\n*\nFor example renters using Section 8 voucher\n**\nFor example, a landlord can’t discriminate against someone if they have children",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "screening_restrictions",
+        "citation": "Laws and discrimination",
+        "provision_ids": [
+          "P2"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "In the City of Boston, it’s illegal to discriminate when renting, buying, selling, or securing financing for any housing.\nYou can’t discriminate someone based on their:\nRace\nColor\nReligion\nDisability\nNational Origin\nAncestry\nSex\nGender Identity\nGender Expression\nAge\nSexual Orientation\nMarital Status\nRental Assistance\n*\nFamily Status\n**\nMilitary Status\n*\nFor example renters using Section 8 voucher\n**\nFor example, a landlord can’t discriminate against someone if they have children"
+          }
+        ],
+        "title": "Housing Discrimination Prohibition",
+        "requirement": "In the City of Boston, it is illegal to discriminate when renting, buying, selling, or securing financing for any housing based on a person's race, color, religion, disability, national origin, ancestry, sex, gender identity, gender expression, age, sexual orientation, marital status, rental assistance (such as using a Section 8 voucher), family status (such as having children), or military status.",
+        "key_value": null,
+        "coverage_conditions": "Applies to renting, buying, selling, or securing financing for any housing in the City of Boston.",
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": "In the City of Boston, it’s illegal to discriminate when renting, buying, selling, or securing financing for any housing.",
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": null,
+        "effective_date_evidence_kind": null,
+        "effective_date": null,
+        "conflict_note": null
+      }
+    }
+  ],
+  "posture": {
+    "declared": "official_explanatory_page",
+    "evidence": "Boston Fair Housing Regulations | Boston.gov",
+    "evidence_check": {
+      "status": "exact_match",
+      "normalization": null,
+      "start": 0,
+      "end": 44,
+      "occurrences": 1,
+      "model_span": "Boston Fair Housing Regulations | Boston.gov",
+      "source_span": "Boston Fair Housing Regulations | Boston.gov",
+      "reason": null,
+      "reconstructed": false,
+      "parts": [],
+      "crossed_artifacts": []
+    },
+    "established": "official_explanatory_page",
+    "basis": "declared posture with verified evidence"
+  },
+  "base_dates": [],
+  "provision_inventory": [
+    {
+      "id": "P1",
+      "ref": "Boston Fair Housing Regulations - Overview",
+      "anchor": "We enforce local, state, and federal fair",
+      "summary": "Explains that the Fair Housing Commission enforces local, state, and federal fair housing laws as a Fair Housing Assistance Program.",
+      "role": "enforcement",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "administrative agency enforcement authority and overview"
+    },
+    {
+      "id": "P2",
+      "ref": "Laws and discrimination",
+      "anchor": "In the City of Boston, it’s illegal",
+      "summary": "Prohibits housing discrimination in renting, buying, selling, or securing financing based on protected classes, including rental assistance and family status.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "screening_restrictions",
+      "reason": null
+    },
+    {
+      "id": "P3",
+      "ref": "What is housing discrimination?",
+      "anchor": "Discrimination comes in many forms. Some examples",
+      "summary": "Provides illustrative examples of housing discrimination and instructs how to file a complaint.",
+      "role": "definition",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "informational examples of unlawful conduct and complaint filing instructions"
+    },
+    {
+      "id": "P4",
+      "ref": "Facing housing discrimination?",
+      "anchor": "The first thing you should do is",
+      "summary": "Describes complaint investigation and resolution procedures at the city and state level.",
+      "role": "procedure",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "administrative complaint and dispute resolution procedure"
+    }
+  ],
+  "global_scope": [],
+  "source_view": {
+    "marker": "[[PAGE BREAK]]",
+    "segment_label": "[[SEGMENT {}]]",
+    "view_sha256": "9860616d1f8675ead2e7ac1f7aa6dfcc9d6f79eff36ba719ea4097ce476b32cb",
+    "segments": [
+      {
+        "id": 1,
+        "raw_start": 0,
+        "raw_end": 3856
+      }
+    ],
+    "artifacts_removed": 0,
+    "artifacts": []
+  },
+  "coverage": {
+    "inventory_valid": true,
+    "anchors_located": "4/4",
+    "after_primary": {
+      "uncovered": [],
+      "unaccepted": [
+        "Laws and discrimination"
+      ],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "scope_mappings": {
+      "requested": 0,
+      "applies": 0,
+      "does_not_apply": 0,
+      "unresolved": 0
+    },
+    "inventory_items": 4,
+    "in_scope_items": 1,
+    "in_scope_refs": 1,
+    "uncertain": [],
+    "final": {
+      "uncovered": [],
+      "unaccepted": [
+        "Laws and discrimination"
+      ],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "link_mismatches": [],
+    "provisions": [
+      {
+        "ref": "Laws and discrimination",
+        "inventory_item": 1,
+        "provision_id": "P2",
+        "summary": "Prohibits housing discrimination in renting, buying, selling, or securing financing based on protected classes, including rental assistance and family status.",
+        "category": "screening_restrictions",
+        "candidates": [
+          0
+        ],
+        "accepted": [],
+        "basis": {
+          "0": "provision link; citation names it"
+        }
+      }
+    ],
+    "unrecorded_subdivisions": []
+  },
+  "scope_challenges": [
+    {
+      "ref": "Boston Fair Housing Regulations - Overview",
+      "provision_id": "P1",
+      "role": "enforcement",
+      "reason": "administrative agency enforcement authority and overview",
+      "summary": "Explains that the Fair Housing Commission enforces local, state, and federal fair housing laws as a Fair Housing Assistance Program.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role enforcement is decided by other rules"
+    },
+    {
+      "ref": "What is housing discrimination?",
+      "provision_id": "P3",
+      "role": "definition",
+      "reason": "informational examples of unlawful conduct and complaint filing instructions",
+      "summary": "Provides illustrative examples of housing discrimination and instructs how to file a complaint.",
+      "signals": {
+        "in_scope_neighbour": true,
+        "enumeration": true,
+        "normative_language": false,
+        "grounds_or_conditions": false
+      },
+      "challenged": false,
+      "why_not": "too few substantive signals",
+      "raw_start": 2476,
+      "raw_end": 3255
+    },
+    {
+      "ref": "Facing housing discrimination?",
+      "provision_id": "P4",
+      "role": "procedure",
+      "reason": "administrative complaint and dispute resolution procedure",
+      "summary": "Describes complaint investigation and resolution procedures at the city and state level.",
+      "signals": {
+        "in_scope_neighbour": false,
+        "enumeration": false,
+        "normative_language": false,
+        "grounds_or_conditions": false
+      },
+      "challenged": false,
+      "why_not": "too few substantive signals",
+      "raw_start": 3255,
+      "raw_end": 3856
+    }
+  ],
+  "scope_mappings": [],
+  "legislative_session": null,
+  "empty_result": null,
+  "legacy_replay": null,
+  "dedupe": [],
+  "chunking": null,
+  "repair": null,
+  "document_status": "review_required",
+  "review_reasons": [
+    "1 candidate record(s) held, not published, because the time of application is unresolved: ['temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force']"
+  ],
+  "warnings": [
+    "candidate 0 held: status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+  ],
+  "errors": [],
+  "raw_response_text": "{\n  \"document\": {\n    \"posture\": \"official_explanatory_page\",\n    \"evidence\": \"Boston Fair Housing Regulations | Boston.gov\"\n  },\n  \"provisions\": [\n    {\n      \"id\": \"P1\",\n      \"ref\": \"Boston Fair Housing Regulations - Overview\",\n      \"anchor\": \"We enforce local, state, and federal fair\",\n      \"summary\": \"Explains that the Fair Housing Commission enforces local, state, and federal fair housing laws as a Fair Housing Assistance Program.\",\n      \"role\": \"enforcement\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"administrative agency enforcement authority and overview\"\n    },\n    {\n      \"id\": \"P2\",\n      \"ref\": \"Laws and discrimination\",\n      \"anchor\": \"In the City of Boston, it’s illegal\",\n      \"summary\": \"Prohibits housing discrimination in renting, buying, selling, or securing financing based on protected classes, including rental assistance and family status.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"screening_restrictions\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P3\",\n      \"ref\": \"What is housing discrimination?\",\n      \"anchor\": \"Discrimination comes in many forms. Some examples\",\n      \"summary\": \"Provides illustrative examples of housing discrimination and instructs how to file a complaint.\",\n      \"role\": \"definition\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"informational examples of unlawful conduct and complaint filing instructions\"\n    },\n    {\n      \"id\": \"P4\",\n      \"ref\": \"Facing housing discrimination?\",\n      \"anchor\": \"The first thing you should do is\",\n      \"summary\": \"Describes complaint investigation and resolution procedures at the city and state level.\",\n      \"role\": \"procedure\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"administrative complaint and dispute resolution procedure\"\n    }\n  ],\n  \"global_scope\": [],\n  \"rules\": [\n    {\n      \"category\": \"screening_restrictions\",\n      \"citation\": \"Laws and discrimination\",\n      \"provision_ids\": [\n        \"P2\"\n      ],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"In the City of Boston, it’s illegal to discriminate when renting, buying, selling, or securing financing for any housing.\\nYou can’t discriminate someone based on their:\\nRace\\nColor\\nReligion\\nDisability\\nNational Origin\\nAncestry\\nSex\\nGender Identity\\nGender Expression\\nAge\\nSexual Orientation\\nMarital Status\\nRental Assistance\\n*\\nFamily Status\\n**\\nMilitary Status\\n*\\nFor example renters using Section 8 voucher\\n**\\nFor example, a landlord can’t discriminate against someone if they have children\"\n        }\n      ],\n      \"title\": \"Housing Discrimination Prohibition\",\n      \"requirement\": \"In the City of Boston, it is illegal to discriminate when renting, buying, selling, or securing financing for any housing based on a person's race, color, religion, disability, national origin, ancestry, sex, gender identity, gender expression, age, sexual orientation, marital status, rental assistance (such as using a Section 8 voucher), family status (such as having children), or military status.\",\n      \"key_value\": null,\n      \"coverage_conditions\": \"Applies to renting, buying, selling, or securing financing for any housing in the City of Boston.\",\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": \"In the City of Boston, it’s illegal to discriminate when renting, buying, selling, or securing financing for any housing.\",\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": null,\n      \"effective_date_evidence_kind\": null,\n      \"effective_date\": null,\n      \"conflict_note\": null\n    }\n  ],\n  \"no_rules_justification\": null\n}"
+}

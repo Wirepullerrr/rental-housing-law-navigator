@@ -1,0 +1,760 @@
+{
+  "disclaimer": "Not legal advice. Automated extraction for a research prototype; verify against the cited source.",
+  "run_at": "2026-10-04T06:34:25+00:00",
+  "source": {
+    "doc_id": "D013",
+    "jurisdiction": "Boston, MA",
+    "url": "https://www.boston.gov/housing-stability-notification-act",
+    "source_type": "official",
+    "retrieved_at": "2026-10-01T22:35Z",
+    "text_file": "text/D013.txt",
+    "content_sha256": "f38fc32a86969a73ca39c949495b168638a24089fd7fc0f9b47eba0dd33bd71d",
+    "body_chars": 6183
+  },
+  "provider": "gemini",
+  "model": "gemini-3.8-flash",
+  "prompt_version": "v7",
+  "prompt_sha256": "061c729bb2525ef33bcd89b1d7570ecec939d70c1ee8c2797578992cb6fb96bb",
+  "response_schema_sha256": "c15306da6f21dc72f06e78405f94ed61dc9e59288138cc98b5b5bf9b62ac403c",
+  "generation_settings": {
+    "temperature": null,
+    "seed": 20261001,
+    "thinking_level": "medium"
+  },
+  "as_of": "2026-10-01",
+  "cache_key": "01a2024bd39fd7de361bad4c973fe30c2562d30d311f2820e3bb2cbbba66abf0",
+  "cache_hit": true,
+  "cache_entry": "cache/extraction/01a2024bd39fd7de361bad4c973fe30c2562d30d311f2820e3bb2cbbba66abf0.json",
+  "provider_metadata": {
+    "api": "interactions.create",
+    "interaction_id": "",
+    "model": "gemini-3.8-flash",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 5576,
+      "output_tokens": 1589,
+      "thinking_tokens": 10861,
+      "total_tokens": 18026
+    }
+  },
+  "candidate_count": 3,
+  "accepted_count": 0,
+  "rules": [],
+  "candidates": [
+    {
+      "index": 0,
+      "origin": "primary",
+      "accepted": false,
+      "held": true,
+      "historical": false,
+      "temporal_state": "held",
+      "validity": {
+        "resolver": "validity-window/v1",
+        "boundaries": [],
+        "end_exclusive": null,
+        "end_conflict": null,
+        "decision": {
+          "outcome": null,
+          "state": null,
+          "reason": null,
+          "start": null
+        }
+      },
+      "duplicate_of": null,
+      "rejection_reasons": [
+        "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      ],
+      "provision_ids": [
+        "P1",
+        "P2"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": null,
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": "Applies to all landlords planning to end a tenancy agreement.",
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 1637,
+        "end": 1968,
+        "occurrences": 1,
+        "model_span": "The Housing Stability Notification Act requires\nALL LANDLORDS\nplanning to end a tenancy agreement to provide the tenant with a Notice of Tenants’ Rights and Resources.\nStep 1\nNotify the Tenant:\nThe Notice of Tenants’ Rights and Resources should be delivered at the same time as the Notice to quit or Notice of non-renewal of lease.",
+        "source_span": "The Housing Stability Notification Act requires\nALL LANDLORDS\nplanning to end a tenancy agreement to provide the tenant with a Notice of Tenants’ Rights and Resources.\nStep 1\nNotify the Tenant:\nThe Notice of Tenants’ Rights and Resources should be delivered at the same time as the Notice to quit or Notice of non-renewal of lease.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "The Housing Stability Notification Act requires\nALL LANDLORDS\nplanning to end a tenancy agreement to provide the tenant with a Notice of Tenants’ Rights and Resources.\nStep 1\nNotify the Tenant:\nThe Notice of Tenants’ Rights and Resources should be delivered at the same time as the Notice to quit or Notice of non-renewal of lease.",
+            "status": "exact_match",
+            "start": 1637,
+            "end": 1968
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": null,
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": null,
+        "applied_kind": null,
+        "effective_date": null,
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null,
+        "unresolved_reason": "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      },
+      "status_derivation": "temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-a3de976967",
+        "jurisdiction": "Boston, MA",
+        "level": "city",
+        "category": "just_cause_eviction",
+        "status": null,
+        "title": "Notice of Tenants' Rights and Resources",
+        "requirement": "[Basis: official explanatory text, not operative legal text] Landlords planning to end a tenancy agreement must provide the tenant with a Notice of Tenants' Rights and Resources delivered at the same time as the Notice to quit or Notice of non-renewal of lease.",
+        "key_value": null,
+        "coverage_conditions": "Applies to all landlords planning to end a tenancy agreement.",
+        "exemptions": null,
+        "overrides": [],
+        "interaction": "A landlord's violation of the act does not halt the eviction process.",
+        "effective_date": null,
+        "citation": "Sec. 10-11.7",
+        "source_doc_id": "D013",
+        "source_url": "https://www.boston.gov/housing-stability-notification-act",
+        "quoted_span": "The Housing Stability Notification Act requires\nALL LANDLORDS\nplanning to end a tenancy agreement to provide the tenant with a Notice of Tenants’ Rights and Resources.\nStep 1\nNotify the Tenant:\nThe Notice of Tenants’ Rights and Resources should be delivered at the same time as the Notice to quit or Notice of non-renewal of lease.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "just_cause_eviction",
+        "citation": "Sec. 10-11.7",
+        "provision_ids": [
+          "P1",
+          "P2"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "The Housing Stability Notification Act requires\nALL LANDLORDS\nplanning to end a tenancy agreement to provide the tenant with a Notice of Tenants’ Rights and Resources.\nStep 1\nNotify the Tenant:\nThe Notice of Tenants’ Rights and Resources should be delivered at the same time as the Notice to quit or Notice of non-renewal of lease."
+          }
+        ],
+        "title": "Notice of Tenants' Rights and Resources",
+        "requirement": "Landlords planning to end a tenancy agreement must provide the tenant with a Notice of Tenants' Rights and Resources delivered at the same time as the Notice to quit or Notice of non-renewal of lease.",
+        "key_value": null,
+        "coverage_conditions": "Applies to all landlords planning to end a tenancy agreement.",
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": "A landlord's violation of the act does not halt the eviction process.",
+        "enactment_status": "enacted",
+        "enactment_status_evidence": null,
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": null,
+        "effective_date_evidence_kind": null,
+        "effective_date": null,
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 1,
+      "origin": "primary",
+      "accepted": false,
+      "held": true,
+      "historical": false,
+      "temporal_state": "held",
+      "validity": {
+        "resolver": "validity-window/v1",
+        "boundaries": [],
+        "end_exclusive": null,
+        "end_conflict": null,
+        "decision": {
+          "outcome": null,
+          "state": null,
+          "reason": null,
+          "start": null
+        }
+      },
+      "duplicate_of": null,
+      "rejection_reasons": [
+        "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      ],
+      "provision_ids": [
+        "P3"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": null,
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": "Applies to landlords and foreclosing owners ending a tenancy agreement.",
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 2466,
+        "end": 2888,
+        "occurrences": 1,
+        "model_span": "The Housing Stability Notification Act also requires landlords and foreclosing owners to complete the\nNotice to Quit / Non-renewal of Lease Submission Verification Form\n. Landlords must use this online form to provide tenant contact information and upload a copy of the Notice to Quit or Notice of Non-renewal of Lease.\nSubmit through our online portal\nYou are required to submit this information using our online portal\n.",
+        "source_span": "The Housing Stability Notification Act also requires landlords and foreclosing owners to complete the\nNotice to Quit / Non-renewal of Lease Submission Verification Form\n. Landlords must use this online form to provide tenant contact information and upload a copy of the Notice to Quit or Notice of Non-renewal of Lease.\nSubmit through our online portal\nYou are required to submit this information using our online portal\n.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "The Housing Stability Notification Act also requires landlords and foreclosing owners to complete the\nNotice to Quit / Non-renewal of Lease Submission Verification Form\n. Landlords must use this online form to provide tenant contact information and upload a copy of the Notice to Quit or Notice of Non-renewal of Lease.\nSubmit through our online portal\nYou are required to submit this information using our online portal\n.",
+            "status": "exact_match",
+            "start": 2466,
+            "end": 2888
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": null,
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": null,
+        "applied_kind": null,
+        "effective_date": null,
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null,
+        "unresolved_reason": "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      },
+      "status_derivation": "temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-8fb1759818",
+        "jurisdiction": "Boston, MA",
+        "level": "city",
+        "category": "just_cause_eviction",
+        "status": null,
+        "title": "Notice to City of Tenancy Termination",
+        "requirement": "[Basis: official explanatory text, not operative legal text] Landlords and foreclosing owners must complete the online Notice to Quit / Non-renewal of Lease Submission Verification Form to provide tenant contact information and upload a copy of the Notice to Quit or Notice of Non-renewal of Lease.",
+        "key_value": null,
+        "coverage_conditions": "Applies to landlords and foreclosing owners ending a tenancy agreement.",
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "Sec. 10-11.7",
+        "source_doc_id": "D013",
+        "source_url": "https://www.boston.gov/housing-stability-notification-act",
+        "quoted_span": "The Housing Stability Notification Act also requires landlords and foreclosing owners to complete the\nNotice to Quit / Non-renewal of Lease Submission Verification Form\n. Landlords must use this online form to provide tenant contact information and upload a copy of the Notice to Quit or Notice of Non-renewal of Lease.\nSubmit through our online portal\nYou are required to submit this information using our online portal\n.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "just_cause_eviction",
+        "citation": "Sec. 10-11.7",
+        "provision_ids": [
+          "P3"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "The Housing Stability Notification Act also requires landlords and foreclosing owners to complete the\nNotice to Quit / Non-renewal of Lease Submission Verification Form\n. Landlords must use this online form to provide tenant contact information and upload a copy of the Notice to Quit or Notice of Non-renewal of Lease.\nSubmit through our online portal\nYou are required to submit this information using our online portal\n."
+          }
+        ],
+        "title": "Notice to City of Tenancy Termination",
+        "requirement": "Landlords and foreclosing owners must complete the online Notice to Quit / Non-renewal of Lease Submission Verification Form to provide tenant contact information and upload a copy of the Notice to Quit or Notice of Non-renewal of Lease.",
+        "key_value": null,
+        "coverage_conditions": "Applies to landlords and foreclosing owners ending a tenancy agreement.",
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": null,
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": null,
+        "effective_date_evidence_kind": null,
+        "effective_date": null,
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 2,
+      "origin": "repair",
+      "accepted": false,
+      "held": true,
+      "historical": false,
+      "temporal_state": "held",
+      "validity": {
+        "resolver": "validity-window/v1",
+        "boundaries": [],
+        "end_exclusive": null,
+        "end_conflict": null,
+        "decision": {
+          "outcome": null,
+          "state": null,
+          "reason": null,
+          "start": null
+        }
+      },
+      "duplicate_of": null,
+      "rejection_reasons": [
+        "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      ],
+      "provision_ids": [
+        "P1"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": null,
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 1296,
+        "end": 1464,
+        "occurrences": 1,
+        "model_span": "The Housing Stability Notification Act requires any landlord to provide renters with a Notice of Tenant’s Rights and Resources when planning to end a tenancy agreement.",
+        "source_span": "The Housing Stability Notification Act requires any landlord to provide renters with a Notice of Tenant’s Rights and Resources when planning to end a tenancy agreement.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "The Housing Stability Notification Act requires any landlord to provide renters with a Notice of Tenant’s Rights and Resources when planning to end a tenancy agreement.",
+            "status": "exact_match",
+            "start": 1296,
+            "end": 1464
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": null,
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": null,
+        "applied_kind": null,
+        "effective_date": null,
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null,
+        "unresolved_reason": "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      },
+      "status_derivation": "temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-e2daf8e01a",
+        "jurisdiction": "Boston, MA",
+        "level": "city",
+        "category": "just_cause_eviction",
+        "status": null,
+        "title": "Notice of Tenant’s Rights and Resources Requirement",
+        "requirement": "[Basis: official explanatory text, not operative legal text] Any landlord planning to end a tenancy agreement must provide renters with a Notice of Tenant’s Rights and Resources.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "Housing Stability Notification Act",
+        "source_doc_id": "D013",
+        "source_url": "https://www.boston.gov/housing-stability-notification-act",
+        "quoted_span": "The Housing Stability Notification Act requires any landlord to provide renters with a Notice of Tenant’s Rights and Resources when planning to end a tenancy agreement.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "just_cause_eviction",
+        "citation": "Housing Stability Notification Act",
+        "provision_ids": [
+          "P1"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "The Housing Stability Notification Act requires any landlord to provide renters with a Notice of Tenant’s Rights and Resources when planning to end a tenancy agreement."
+          }
+        ],
+        "title": "Notice of Tenant’s Rights and Resources Requirement",
+        "requirement": "Any landlord planning to end a tenancy agreement must provide renters with a Notice of Tenant’s Rights and Resources.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": null,
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": null,
+        "effective_date_evidence_kind": null,
+        "effective_date": null,
+        "conflict_note": null
+      }
+    }
+  ],
+  "posture": {
+    "declared": "official_explanatory_page",
+    "evidence": "An official website of the City of Boston.",
+    "evidence_check": {
+      "status": "exact_match",
+      "normalization": null,
+      "start": 69,
+      "end": 111,
+      "occurrences": 1,
+      "model_span": "An official website of the City of Boston.",
+      "source_span": "An official website of the City of Boston.",
+      "reason": null,
+      "reconstructed": false,
+      "parts": [],
+      "crossed_artifacts": []
+    },
+    "established": "official_explanatory_page",
+    "basis": "declared posture with verified evidence"
+  },
+  "base_dates": [],
+  "provision_inventory": [
+    {
+      "id": "P1",
+      "ref": "Housing Stability Notification Act",
+      "anchor": "The Housing Stability Notification Act requires any landlord to",
+      "summary": "Overview requiring landlords planning to end a tenancy agreement to provide tenants with a Notice of Tenant's Rights and Resources.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "just_cause_eviction",
+      "reason": null
+    },
+    {
+      "id": "P2",
+      "ref": "Sec. 10-11.7 (Step 1)",
+      "anchor": "The Housing Stability Notification Act requires ALL LANDLORDS",
+      "summary": "Mandates delivery of the Notice of Tenants' Rights and Resources concurrently with a Notice to quit or Notice of non-renewal of lease.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "just_cause_eviction",
+      "reason": null
+    },
+    {
+      "id": "P3",
+      "ref": "Sec. 10-11.7 (Step 2)",
+      "anchor": "The Housing Stability Notification Act also requires landlords",
+      "summary": "Mandates that landlords and foreclosing owners submit tenant contact info and a copy of the Notice to Quit or Notice of Non-renewal through an online portal.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "just_cause_eviction",
+      "reason": null
+    },
+    {
+      "id": "P4",
+      "ref": "Reporting a Landlord",
+      "anchor": "Violations of the act are investigated by the",
+      "summary": "Administrative process for tenants to report violations to Fair Housing and Equity and for Inspectional Services enforcement.",
+      "role": "procedure",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "administrative investigation and complaint filing procedure"
+    },
+    {
+      "id": "P5",
+      "ref": "Sec. 10-11.7",
+      "anchor": "Unless otherwise provided, a person or entity violating",
+      "summary": "Penalties for ordinance violations: warning for first offense, $300 per day for second and subsequent offenses.",
+      "role": "enforcement",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "government enforcement authority and administrative fines; not a private cause of action or tenant remedy"
+    },
+    {
+      "id": "P6",
+      "ref": "Eviction Process Effect",
+      "anchor": "If a landlord violates the act, it",
+      "summary": "Clarifies that a landlord's violation of the act does not halt the eviction process.",
+      "role": "procedure",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "clarification of effect on eviction proceedings; does not create a tenant defense or remedy"
+    }
+  ],
+  "global_scope": [],
+  "source_view": {
+    "marker": "[[PAGE BREAK]]",
+    "segment_label": "[[SEGMENT {}]]",
+    "view_sha256": "c566412879b1ea11aacc8b4fb38584385e618119b2bee35788e2f46e444e5708",
+    "segments": [
+      {
+        "id": 1,
+        "raw_start": 0,
+        "raw_end": 6183
+      }
+    ],
+    "artifacts_removed": 0,
+    "artifacts": []
+  },
+  "coverage": {
+    "inventory_valid": true,
+    "anchors_located": "6/6",
+    "after_primary": {
+      "uncovered": [
+        "Housing Stability Notification Act"
+      ],
+      "unaccepted": [
+        "Sec. 10-11.7 (Step 1)",
+        "Sec. 10-11.7 (Step 2)"
+      ],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "scope_mappings": {
+      "requested": 0,
+      "applies": 0,
+      "does_not_apply": 0,
+      "unresolved": 0
+    },
+    "after_repair": {
+      "uncovered": [],
+      "unaccepted": [
+        "Housing Stability Notification Act",
+        "Sec. 10-11.7 (Step 1)",
+        "Sec. 10-11.7 (Step 2)"
+      ],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "repair_targets": {
+      "before_repair": 1,
+      "resolved_by_accepted_rule": 0,
+      "resolved_out_of_scope": 0,
+      "still_unresolved": 1
+    },
+    "inventory_items": 6,
+    "in_scope_items": 3,
+    "in_scope_refs": 3,
+    "uncertain": [],
+    "final": {
+      "uncovered": [],
+      "unaccepted": [
+        "Housing Stability Notification Act",
+        "Sec. 10-11.7 (Step 1)",
+        "Sec. 10-11.7 (Step 2)"
+      ],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "link_mismatches": [
+      "rule 0 links P1 ('Housing Stability Notification Act') but cites 'Sec. 10-11.7'"
+    ],
+    "provisions": [
+      {
+        "ref": "Housing Stability Notification Act",
+        "inventory_item": 0,
+        "provision_id": "P1",
+        "summary": "Overview requiring landlords planning to end a tenancy agreement to provide tenants with a Notice of Tenant's Rights and Resources.",
+        "category": "just_cause_eviction",
+        "candidates": [
+          2
+        ],
+        "accepted": [],
+        "basis": {
+          "2": "provision link; citation names it"
+        }
+      },
+      {
+        "ref": "Sec. 10-11.7 (Step 1)",
+        "inventory_item": 1,
+        "provision_id": "P2",
+        "summary": "Mandates delivery of the Notice of Tenants' Rights and Resources concurrently with a Notice to quit or Notice of non-renewal of lease.",
+        "category": "just_cause_eviction",
+        "candidates": [
+          0
+        ],
+        "accepted": [],
+        "basis": {
+          "0": "provision link; citation names an ancestor"
+        }
+      },
+      {
+        "ref": "Sec. 10-11.7 (Step 2)",
+        "inventory_item": 2,
+        "provision_id": "P3",
+        "summary": "Mandates that landlords and foreclosing owners submit tenant contact info and a copy of the Notice to Quit or Notice of Non-renewal through an online portal.",
+        "category": "just_cause_eviction",
+        "candidates": [
+          1
+        ],
+        "accepted": [],
+        "basis": {
+          "1": "provision link; citation names an ancestor"
+        }
+      }
+    ],
+    "unrecorded_subdivisions": []
+  },
+  "scope_challenges": [
+    {
+      "ref": "Reporting a Landlord",
+      "provision_id": "P4",
+      "role": "procedure",
+      "reason": "administrative investigation and complaint filing procedure",
+      "summary": "Administrative process for tenants to report violations to Fair Housing and Equity and for Inspectional Services enforcement.",
+      "signals": {
+        "in_scope_neighbour": true,
+        "enumeration": false,
+        "normative_language": true,
+        "grounds_or_conditions": false
+      },
+      "challenged": false,
+      "why_not": "too few substantive signals",
+      "raw_start": 3196,
+      "raw_end": 4173
+    },
+    {
+      "ref": "Sec. 10-11.7",
+      "provision_id": "P5",
+      "role": "enforcement",
+      "reason": "government enforcement authority and administrative fines; not a private cause of action or tenant remedy",
+      "summary": "Penalties for ordinance violations: warning for first offense, $300 per day for second and subsequent offenses.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role enforcement is decided by other rules"
+    },
+    {
+      "ref": "Eviction Process Effect",
+      "provision_id": "P6",
+      "role": "procedure",
+      "reason": "clarification of effect on eviction proceedings; does not create a tenant defense or remedy",
+      "summary": "Clarifies that a landlord's violation of the act does not halt the eviction process.",
+      "signals": {
+        "in_scope_neighbour": false,
+        "enumeration": false,
+        "normative_language": false,
+        "grounds_or_conditions": false
+      },
+      "challenged": false,
+      "why_not": "too few substantive signals",
+      "raw_start": 4573,
+      "raw_end": 6183
+    }
+  ],
+  "scope_mappings": [],
+  "legislative_session": null,
+  "empty_result": null,
+  "legacy_replay": null,
+  "dedupe": [],
+  "chunking": null,
+  "repair": {
+    "invoked": true,
+    "reason": "1 repair target(s) from inventory_uncovered",
+    "prompt_version": "v7-repair-1",
+    "targets": [
+      {
+        "ref": "Housing Stability Notification Act",
+        "sources": [
+          "inventory_uncovered"
+        ],
+        "provision_id": "P1",
+        "summary": "Overview requiring landlords planning to end a tenancy agreement to provide tenants with a Notice of Tenant's Rights and Resources.",
+        "category": "just_cause_eviction",
+        "pre_repair_state": "in-scope inventory provision with no candidate",
+        "resolution": {
+          "scope": "in_scope",
+          "reason": null,
+          "evidence_check": null,
+          "evidence_verified": false,
+          "evidence_problem": null
+        },
+        "repair_scope": "in_scope",
+        "reason": null,
+        "candidate_indices": [
+          2
+        ],
+        "accepted_indices": [],
+        "final_resolution": "unresolved",
+        "unresolved_reason": "classified in_scope, but every candidate was rejected"
+      }
+    ],
+    "cache_key": "5afa30800380d84c70cf6001d8bb059af365fddb968aeaf7b9e2c0a553769060",
+    "cache_hit": true,
+    "cache_entry": "cache/extraction/5afa30800380d84c70cf6001d8bb059af365fddb968aeaf7b9e2c0a553769060.json",
+    "prompt_sha256": "2b2f6c818d64719bb0fefdbed49e46f15b2ba6c5a399a3fb20ed2aa0790136fd",
+    "provider_metadata": {
+      "api": "interactions.create",
+      "interaction_id": "",
+      "model": "gemini-3.8-flash",
+      "status": "completed",
+      "usage": {
+        "input_tokens": 5094,
+        "output_tokens": 378,
+        "thinking_tokens": 13284,
+        "total_tokens": 18756
+      }
+    },
+    "raw_response_text": "{\n  \"target_resolutions\": [\n    {\n      \"ref\": \"Housing Stability Notification Act\",\n      \"scope\": \"in_scope\",\n      \"reason\": null,\n      \"evidence_parts\": []\n    }\n  ],\n  \"scope_mappings\": [],\n  \"rules\": [\n    {\n      \"category\": \"just_cause_eviction\",\n      \"citation\": \"Housing Stability Notification Act\",\n      \"provision_ids\": [\n        \"P1\"\n      ],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"The Housing Stability Notification Act requires any landlord to provide renters with a Notice of Tenant’s Rights and Resources when planning to end a tenancy agreement.\"\n        }\n      ],\n      \"title\": \"Notice of Tenant’s Rights and Resources Requirement\",\n      \"requirement\": \"Any landlord planning to end a tenancy agreement must provide renters with a Notice of Tenant’s Rights and Resources.\",\n      \"key_value\": null,\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": null,\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": null,\n      \"effective_date_evidence_kind\": null,\n      \"effective_date\": null,\n      \"conflict_note\": null\n    }\n  ]\n}",
+    "mappings": [],
+    "candidate_indices": [
+      2
+    ],
+    "accepted_count": 0,
+    "rejected_count": 1,
+    "errors": []
+  },
+  "document_status": "review_required",
+  "review_reasons": [
+    "3 candidate record(s) held, not published, because the time of application is unresolved: ['temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force']",
+    "repair targets still unresolved: Housing Stability Notification Act (classified in_scope, but every candidate was rejected)"
+  ],
+  "warnings": [
+    "candidate 0 held: status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+    "candidate 1 held: status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+    "candidate 2 held: status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+    "review: provision links whose rule citation does not name the provision: 1"
+  ],
+  "errors": [],
+  "raw_response_text": "{\n  \"document\": {\n    \"posture\": \"official_explanatory_page\",\n    \"evidence\": \"An official website of the City of Boston.\"\n  },\n  \"provisions\": [\n    {\n      \"id\": \"P1\",\n      \"ref\": \"Housing Stability Notification Act\",\n      \"anchor\": \"The Housing Stability Notification Act requires any landlord to\",\n      \"summary\": \"Overview requiring landlords planning to end a tenancy agreement to provide tenants with a Notice of Tenant's Rights and Resources.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"just_cause_eviction\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P2\",\n      \"ref\": \"Sec. 10-11.7 (Step 1)\",\n      \"anchor\": \"The Housing Stability Notification Act requires ALL LANDLORDS\",\n      \"summary\": \"Mandates delivery of the Notice of Tenants' Rights and Resources concurrently with a Notice to quit or Notice of non-renewal of lease.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"just_cause_eviction\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P3\",\n      \"ref\": \"Sec. 10-11.7 (Step 2)\",\n      \"anchor\": \"The Housing Stability Notification Act also requires landlords\",\n      \"summary\": \"Mandates that landlords and foreclosing owners submit tenant contact info and a copy of the Notice to Quit or Notice of Non-renewal through an online portal.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"just_cause_eviction\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P4\",\n      \"ref\": \"Reporting a Landlord\",\n      \"anchor\": \"Violations of the act are investigated by the\",\n      \"summary\": \"Administrative process for tenants to report violations to Fair Housing and Equity and for Inspectional Services enforcement.\",\n      \"role\": \"procedure\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"administrative investigation and complaint filing procedure\"\n    },\n    {\n      \"id\": \"P5\",\n      \"ref\": \"Sec. 10-11.7\",\n      \"anchor\": \"Unless otherwise provided, a person or entity violating\",\n      \"summary\": \"Penalties for ordinance violations: warning for first offense, $300 per day for second and subsequent offenses.\",\n      \"role\": \"enforcement\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"government enforcement authority and administrative fines; not a private cause of action or tenant remedy\"\n    },\n    {\n      \"id\": \"P6\",\n      \"ref\": \"Eviction Process Effect\",\n      \"anchor\": \"If a landlord violates the act, it\",\n      \"summary\": \"Clarifies that a landlord's violation of the act does not halt the eviction process.\",\n      \"role\": \"procedure\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"clarification of effect on eviction proceedings; does not create a tenant defense or remedy\"\n    }\n  ],\n  \"global_scope\": [],\n  \"rules\": [\n    {\n      \"category\": \"just_cause_eviction\",\n      \"citation\": \"Sec. 10-11.7\",\n      \"provision_ids\": [\n        \"P1\",\n        \"P2\"\n      ],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"The Housing Stability Notification Act requires\\nALL LANDLORDS\\nplanning to end a tenancy agreement to provide the tenant with a Notice of Tenants’ Rights and Resources.\\nStep 1\\nNotify the Tenant:\\nThe Notice of Tenants’ Rights and Resources should be delivered at the same time as the Notice to quit or Notice of non-renewal of lease.\"\n        }\n      ],\n      \"title\": \"Notice of Tenants' Rights and Resources\",\n      \"requirement\": \"Landlords planning to end a tenancy agreement must provide the tenant with a Notice of Tenants' Rights and Resources delivered at the same time as the Notice to quit or Notice of non-renewal of lease.\",\n      \"key_value\": null,\n      \"coverage_conditions\": \"Applies to all landlords planning to end a tenancy agreement.\",\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": \"A landlord's violation of the act does not halt the eviction process.\",\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": null,\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": null,\n      \"effective_date_evidence_kind\": null,\n      \"effective_date\": null,\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"just_cause_eviction\",\n      \"citation\": \"Sec. 10-11.7\",\n      \"provision_ids\": [\n        \"P3\"\n      ],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"The Housing Stability Notification Act also requires landlords and foreclosing owners to complete the\\nNotice to Quit / Non-renewal of Lease Submission Verification Form\\n. Landlords must use this online form to provide tenant contact information and upload a copy of the Notice to Quit or Notice of Non-renewal of Lease.\\nSubmit through our online portal\\nYou are required to submit this information using our online portal\\n.\"\n        }\n      ],\n      \"title\": \"Notice to City of Tenancy Termination\",\n      \"requirement\": \"Landlords and foreclosing owners must complete the online Notice to Quit / Non-renewal of Lease Submission Verification Form to provide tenant contact information and upload a copy of the Notice to Quit or Notice of Non-renewal of Lease.\",\n      \"key_value\": null,\n      \"coverage_conditions\": \"Applies to landlords and foreclosing owners ending a tenancy agreement.\",\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": null,\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": null,\n      \"effective_date_evidence_kind\": null,\n      \"effective_date\": null,\n      \"conflict_note\": null\n    }\n  ],\n  \"no_rules_justification\": null\n}"
+}

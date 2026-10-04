@@ -26,7 +26,7 @@ from __future__ import annotations
 
 from collections.abc import Sequence
 
-from navigator.extraction.citation import NORMALIZATION, match_anchored, verify_span
+from navigator.extraction.citation import LAYOUT_NORMALIZATION, NORMALIZATION, match_anchored, verify_span
 from navigator.extraction.models import CitationCheck, QuotePart
 from navigator.extraction.source_view import MARKER_PATTERN, PAGE_BREAK_MARKER, Segment, SourceView
 
@@ -110,9 +110,12 @@ def _cross_page(p1: QuotePart, p2: QuotePart, model_span: str, raw: str, view: S
     if gap_before.strip() or gap_after.strip():   # guaranteed by anchoring; checked again, never assumed
         return _failed(model_span, (p1, p2), "text other than the page artifact lies between the quote parts")
     exact = m1[0] == m2[0] == "exact_match"
+    layout = "layout_normalized_match" in (m1[0], m2[0])
+    status = "exact_match" if exact else "layout_normalized_match" if layout else "normalized_match"
     return CitationCheck(
-        status="exact_match" if exact else "normalized_match",
-        normalization=RECONSTRUCTION + ("" if exact else f"; parts matched with: {NORMALIZATION}"),
+        status=status,
+        normalization=RECONSTRUCTION + ("" if exact else
+                                        f"; parts matched with: {LAYOUT_NORMALIZATION if layout else NORMALIZATION}"),
         start=start, end=end, occurrences=raw.count(span), model_span=model_span, source_span=span,
         reconstructed=True,
         parts=[_part_record(p1, m1[0], s1.raw_start + m1[1], s1.raw_start + m1[2]),

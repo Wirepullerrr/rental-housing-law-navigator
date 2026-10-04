@@ -123,11 +123,14 @@ def test_d052_amendment_annotation_never_becomes_the_effective_date(run_fake, ki
     assert any("history" in w for w in c.warnings)
 
 
-def test_d052_amendment_annotation_after_as_of_rejects_conservatively(run_fake):
+def test_d052_amendment_annotation_after_as_of_is_a_later_start(run_fake):
+    # M3.3: an amendment note's own effective date after as_of dates the extracted (amended)
+    # wording: a future START, so not_yet_effective from that date (validity.py), not a rejection.
     candidate = make_candidate(effective_date_evidence=D052_DATE_EVIDENCE, effective_date_evidence_kind="history_note")
     run, _ = run_fake({"rules": [candidate]}, as_of=date(2025, 7, 31))
-    assert not run.candidates[0].accepted
-    assert any("history note is dated 2025-08-01" in r for r in run.candidates[0].rejection_reasons)
+    c = run.candidates[0]
+    assert c.accepted and (c.rule["status"], c.rule["effective_date"]) == ("not_yet_effective", "2025-08-01")
+    assert [b["kind"] for b in c.validity["boundaries"] if b["role"] == "start"] == ["amendment_history"]
 
 
 def test_pending_and_failed_pass_through_only_with_verified_status_evidence(run_fake):

@@ -1,0 +1,2504 @@
+{
+  "disclaimer": "Not legal advice. Automated extraction for a research prototype; verify against the cited source.",
+  "run_at": "2026-10-04T06:34:25+00:00",
+  "source": {
+    "doc_id": "D010",
+    "jurisdiction": "Boston, MA",
+    "url": "https://drive.google.com/file/d/1j4U3fDtmnYuwcUWhx5BMUcXc1bnKT8Ku/view?usp=sharing",
+    "source_type": "official city-linked policy",
+    "retrieved_at": "2026-10-01T22:44Z",
+    "text_file": "text/D010.txt",
+    "content_sha256": "788895840ecdc568a0f1d18edf64e31903e5016e385b484e71aaee79d2fa89f6",
+    "body_chars": 6384
+  },
+  "provider": "gemini",
+  "model": "gemini-3.8-flash",
+  "prompt_version": "v7",
+  "prompt_sha256": "fe1156fe6a9d08a184146e8f0278e866db6ce209c47f79913e4aa74e9860e3df",
+  "response_schema_sha256": "c15306da6f21dc72f06e78405f94ed61dc9e59288138cc98b5b5bf9b62ac403c",
+  "generation_settings": {
+    "temperature": null,
+    "seed": 20261001,
+    "thinking_level": "medium"
+  },
+  "as_of": "2026-10-01",
+  "cache_key": "46e024291f4f5e8a27b1d15c9fd7b6fe97676d49c4146159ee278bbfd3ffc72f",
+  "cache_hit": true,
+  "cache_entry": "cache/extraction/46e024291f4f5e8a27b1d15c9fd7b6fe97676d49c4146159ee278bbfd3ffc72f.json",
+  "provider_metadata": {
+    "api": "interactions.create",
+    "interaction_id": "",
+    "model": "gemini-3.8-flash",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 5334,
+      "output_tokens": 4476,
+      "thinking_tokens": 27609,
+      "total_tokens": 37419
+    }
+  },
+  "candidate_count": 6,
+  "accepted_count": 0,
+  "rules": [],
+  "candidates": [
+    {
+      "index": 0,
+      "origin": "primary",
+      "accepted": false,
+      "held": true,
+      "historical": false,
+      "temporal_state": "held",
+      "validity": {
+        "resolver": "validity-window/v1",
+        "boundaries": [],
+        "end_exclusive": null,
+        "end_conflict": null,
+        "decision": {
+          "outcome": null,
+          "state": null,
+          "reason": null,
+          "start": null
+        }
+      },
+      "duplicate_of": null,
+      "rejection_reasons": [
+        "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      ],
+      "provision_ids": [
+        "P1"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 83,
+        "end": 165,
+        "occurrences": 1,
+        "model_span": "Sheila A. Dillon, Chief & Director \n \n \nBOSTON FAIR CHANCE TENANT SELECTION POLICY",
+        "source_span": "Sheila A. Dillon, Chief & Director \n \n \nBOSTON FAIR CHANCE TENANT SELECTION POLICY",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 236,
+        "end": 630,
+        "occurrences": 1,
+        "model_span": "Housing providers receiving Department of Neighborhood Development (DND) funding and/or \nland, or that have income restricted units created under the Boston Planning and Development \nAgency (BPDA) Inclusionary Development Policy will not impose a blanket policy that denies \nhousing to anyone with arrests and or convictions. Housing providers will consider applicants on \na case-by-case basis.",
+        "source_span": "Housing providers receiving Department of Neighborhood Development (DND) funding and/or \nland, or that have income restricted units created under the Boston Planning and Development \nAgency (BPDA) Inclusionary Development Policy will not impose a blanket policy that denies \nhousing to anyone with arrests and or convictions. Housing providers will consider applicants on \na case-by-case basis.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "Housing providers receiving Department of Neighborhood Development (DND) funding and/or \nland, or that have income restricted units created under the Boston Planning and Development \nAgency (BPDA) Inclusionary Development Policy will not impose a blanket policy that denies \nhousing to anyone with arrests and or convictions. Housing providers will consider applicants on \na case-by-case basis.",
+            "status": "exact_match",
+            "start": 236,
+            "end": 630
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": null,
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [
+        {
+          "id": "S2",
+          "kind": "coverage_condition",
+          "mode": "named_subject",
+          "governed_provision_ids": [
+            "P1"
+          ],
+          "basis": "named-subject mapping to P1 verified by repair",
+          "applied": true
+        }
+      ],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": null,
+        "applied_kind": null,
+        "effective_date": null,
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null,
+        "unresolved_reason": "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      },
+      "status_derivation": "temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-0874f56654",
+        "jurisdiction": "Boston, MA",
+        "level": "city",
+        "category": "screening_restrictions",
+        "status": null,
+        "title": "Blanket Criminal Record Ban Prohibition and Case-by-Case Review",
+        "requirement": "[Basis: official explanatory text, not operative legal text] Housing providers must not impose a blanket policy that denies housing to anyone with arrests or convictions, and must consider applicants on a case-by-case basis.",
+        "key_value": null,
+        "coverage_conditions": "Applies to the Office of Fair Housing and Equity Affirmative Marketing Program. [Affirmative Marketing Scope]",
+        "exemptions": null,
+        "overrides": [],
+        "interaction": "Where federal or state law imposes a criminal history requirement that conflicts with a requirement of this guidance, the federal or state law preempts this policy.",
+        "effective_date": null,
+        "citation": "Lead-in",
+        "source_doc_id": "D010",
+        "source_url": "https://drive.google.com/file/d/1j4U3fDtmnYuwcUWhx5BMUcXc1bnKT8Ku/view?usp=sharing",
+        "quoted_span": "Housing providers receiving Department of Neighborhood Development (DND) funding and/or \nland, or that have income restricted units created under the Boston Planning and Development \nAgency (BPDA) Inclusionary Development Policy will not impose a blanket policy that denies \nhousing to anyone with arrests and or convictions. Housing providers will consider applicants on \na case-by-case basis.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "screening_restrictions",
+        "citation": "Lead-in",
+        "provision_ids": [
+          "P1"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "Housing providers receiving Department of Neighborhood Development (DND) funding and/or \nland, or that have income restricted units created under the Boston Planning and Development \nAgency (BPDA) Inclusionary Development Policy will not impose a blanket policy that denies \nhousing to anyone with arrests and or convictions. Housing providers will consider applicants on \na case-by-case basis."
+          }
+        ],
+        "title": "Blanket Criminal Record Ban Prohibition and Case-by-Case Review",
+        "requirement": "Housing providers must not impose a blanket policy that denies housing to anyone with arrests or convictions, and must consider applicants on a case-by-case basis.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": "Where federal or state law imposes a criminal history requirement that conflicts with a requirement of this guidance, the federal or state law preempts this policy.",
+        "enactment_status": "enacted",
+        "enactment_status_evidence": "Sheila A. Dillon, Chief & Director \n \n \nBOSTON FAIR CHANCE TENANT SELECTION POLICY",
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": null,
+        "effective_date_evidence_kind": null,
+        "effective_date": null,
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 1,
+      "origin": "primary",
+      "accepted": false,
+      "held": true,
+      "historical": false,
+      "temporal_state": "held",
+      "validity": {
+        "resolver": "validity-window/v1",
+        "boundaries": [],
+        "end_exclusive": null,
+        "end_conflict": null,
+        "decision": {
+          "outcome": null,
+          "state": null,
+          "reason": null,
+          "start": null
+        }
+      },
+      "duplicate_of": null,
+      "rejection_reasons": [
+        "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      ],
+      "provision_ids": [
+        "P2"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 83,
+        "end": 165,
+        "occurrences": 1,
+        "model_span": "Sheila A. Dillon, Chief & Director \n \n \nBOSTON FAIR CHANCE TENANT SELECTION POLICY",
+        "source_span": "Sheila A. Dillon, Chief & Director \n \n \nBOSTON FAIR CHANCE TENANT SELECTION POLICY",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": "The policy does not apply where there is a direct relationship between a conviction and the housing sought or an unreasonable risk of substantial harm to the safety of others (considering evidence of rehabilitation, elapsed time, and age at the time of conviction), nor does it apply to current criminal behavior.",
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "normalized_match",
+        "normalization": "Unicode NFC; each whitespace run (incl. line breaks) compared as one space; span ends trimmed",
+        "start": 634,
+        "end": 1639,
+        "occurrences": 1,
+        "model_span": "1. The Developer/Agent (Agent) agrees to not consider any of the following categories when \ndetermining housing eligibility and or considering eviction: \n \na) Arrests that did not result in conviction. This includes dismissed charges, diversion \nprograms, and similar non-convictions. \nb) Convictions that are subject to a form of judicial relief, such as expungement, sealing, \nand certificates for relief from disabilities. \nc) Juvenile records \nd) A conviction more than 5 years old. Tenant selection policy related to arrests and \nconvictions does not apply in situations where there is: \n \n A direct relationship between a conviction and the housing sought and or unreasonable \nrisk of substantial harm to the safety of others.  \n Landlords would consider additional factors such as: evidence of rehabilitation, the time \nthat has elapsed since the conviction occurred, and/or the age of the person at the time \nthe conviction occurred.  \n This guidance does not apply to current criminal behavior.",
+        "source_span": "1. The Developer/Agent (Agent) agrees to not consider any of the following categories when \ndetermining housing eligibility and or considering eviction: \n \na) Arrests that did not result in conviction. This includes dismissed charges, diversion \nprograms, and similar non-convictions. \nb) Convictions that are subject to a form of judicial relief, such as expungement, sealing, \nand certificates for relief from disabilities. \nc) Juvenile records \nd) A conviction more than 5 years old. Tenant selection policy related to arrests and \nconvictions does not apply in situations where there is: \n \n A direct relationship between a conviction and the housing sought and or unreasonable \nrisk of substantial harm to the safety of others.  \n Landlords would consider additional factors such as: evidence of rehabilitation, the time \nthat has elapsed since the conviction occurred, and/or the age of the person at the time \nthe conviction occurred. \n This guidance does not apply to current criminal behavior.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "1. The Developer/Agent (Agent) agrees to not consider any of the following categories when \ndetermining housing eligibility and or considering eviction: \n \na) Arrests that did not result in conviction. This includes dismissed charges, diversion \nprograms, and similar non-convictions. \nb) Convictions that are subject to a form of judicial relief, such as expungement, sealing, \nand certificates for relief from disabilities. \nc) Juvenile records \nd) A conviction more than 5 years old. Tenant selection policy related to arrests and \nconvictions does not apply in situations where there is: \n \n A direct relationship between a conviction and the housing sought and or unreasonable \nrisk of substantial harm to the safety of others.  \n Landlords would consider additional factors such as: evidence of rehabilitation, the time \nthat has elapsed since the conviction occurred, and/or the age of the person at the time \nthe conviction occurred.  \n This guidance does not apply to current criminal behavior.",
+            "status": "normalized_match",
+            "start": 634,
+            "end": 1639
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": null,
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [
+        {
+          "id": "S1",
+          "kind": "coverage_condition",
+          "mode": "named_subject",
+          "governed_provision_ids": [
+            "P2"
+          ],
+          "basis": "named-subject mapping to P2 verified by repair",
+          "applied": true
+        },
+        {
+          "id": "S2",
+          "kind": "coverage_condition",
+          "mode": "named_subject",
+          "governed_provision_ids": [
+            "P2"
+          ],
+          "basis": "named-subject mapping to P2 verified by repair",
+          "applied": true
+        }
+      ],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": null,
+        "applied_kind": null,
+        "effective_date": null,
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null,
+        "unresolved_reason": "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      },
+      "status_derivation": "temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)",
+        "quoted_span matched only after safe normalization; exact source text used in the record"
+      ],
+      "rule": {
+        "team_rule_id": "r-395741be7c",
+        "jurisdiction": "Boston, MA",
+        "level": "city",
+        "category": "screening_restrictions",
+        "status": null,
+        "title": "Prohibited Criminal History Categories in Housing Eligibility and Eviction",
+        "requirement": "[Basis: official explanatory text, not operative legal text] The developer or agent must not consider arrests that did not result in conviction, convictions subject to judicial relief, juvenile records, or convictions more than 5 years old when determining housing eligibility or considering eviction.",
+        "key_value": "5 years",
+        "coverage_conditions": "Applies to housing providers receiving Department of Neighborhood Development (DND) funding and/or land, or that have income restricted units created under the Boston Planning and Development Agency (BPDA) Inclusionary Development Policy. [Lead-in]; Applies to the Office of Fair Housing and Equity Affirmative Marketing Program. [Affirmative Marketing Scope]",
+        "exemptions": "The policy does not apply where there is a direct relationship between a conviction and the housing sought or an unreasonable risk of substantial harm to the safety of others (considering evidence of rehabilitation, elapsed time, and age at the time of conviction), nor does it apply to current criminal behavior.",
+        "overrides": [],
+        "interaction": "Where federal or state law imposes a criminal history requirement that conflicts with a requirement of this guidance, the federal or state law preempts this policy.",
+        "effective_date": null,
+        "citation": "Section 1",
+        "source_doc_id": "D010",
+        "source_url": "https://drive.google.com/file/d/1j4U3fDtmnYuwcUWhx5BMUcXc1bnKT8Ku/view?usp=sharing",
+        "quoted_span": "1. The Developer/Agent (Agent) agrees to not consider any of the following categories when \ndetermining housing eligibility and or considering eviction: \n \na) Arrests that did not result in conviction. This includes dismissed charges, diversion \nprograms, and similar non-convictions. \nb) Convictions that are subject to a form of judicial relief, such as expungement, sealing, \nand certificates for relief from disabilities. \nc) Juvenile records \nd) A conviction more than 5 years old. Tenant selection policy related to arrests and \nconvictions does not apply in situations where there is: \n \n A direct relationship between a conviction and the housing sought and or unreasonable \nrisk of substantial harm to the safety of others.  \n Landlords would consider additional factors such as: evidence of rehabilitation, the time \nthat has elapsed since the conviction occurred, and/or the age of the person at the time \nthe conviction occurred. \n This guidance does not apply to current criminal behavior.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "screening_restrictions",
+        "citation": "Section 1",
+        "provision_ids": [
+          "P2"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "1. The Developer/Agent (Agent) agrees to not consider any of the following categories when \ndetermining housing eligibility and or considering eviction: \n \na) Arrests that did not result in conviction. This includes dismissed charges, diversion \nprograms, and similar non-convictions. \nb) Convictions that are subject to a form of judicial relief, such as expungement, sealing, \nand certificates for relief from disabilities. \nc) Juvenile records \nd) A conviction more than 5 years old. Tenant selection policy related to arrests and \nconvictions does not apply in situations where there is: \n \n A direct relationship between a conviction and the housing sought and or unreasonable \nrisk of substantial harm to the safety of others.  \n Landlords would consider additional factors such as: evidence of rehabilitation, the time \nthat has elapsed since the conviction occurred, and/or the age of the person at the time \nthe conviction occurred.  \n This guidance does not apply to current criminal behavior."
+          }
+        ],
+        "title": "Prohibited Criminal History Categories in Housing Eligibility and Eviction",
+        "requirement": "The developer or agent must not consider arrests that did not result in conviction, convictions subject to judicial relief, juvenile records, or convictions more than 5 years old when determining housing eligibility or considering eviction.",
+        "key_value": "5 years",
+        "coverage_conditions": null,
+        "exemptions": "The policy does not apply where there is a direct relationship between a conviction and the housing sought or an unreasonable risk of substantial harm to the safety of others (considering evidence of rehabilitation, elapsed time, and age at the time of conviction), nor does it apply to current criminal behavior.",
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": "Where federal or state law imposes a criminal history requirement that conflicts with a requirement of this guidance, the federal or state law preempts this policy.",
+        "enactment_status": "enacted",
+        "enactment_status_evidence": "Sheila A. Dillon, Chief & Director \n \n \nBOSTON FAIR CHANCE TENANT SELECTION POLICY",
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": null,
+        "effective_date_evidence_kind": null,
+        "effective_date": null,
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 2,
+      "origin": "primary",
+      "accepted": false,
+      "held": true,
+      "historical": false,
+      "temporal_state": "held",
+      "validity": {
+        "resolver": "validity-window/v1",
+        "boundaries": [],
+        "end_exclusive": null,
+        "end_conflict": null,
+        "decision": {
+          "outcome": null,
+          "state": null,
+          "reason": null,
+          "start": null
+        }
+      },
+      "duplicate_of": null,
+      "rejection_reasons": [
+        "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      ],
+      "provision_ids": [
+        "P8"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 83,
+        "end": 165,
+        "occurrences": 1,
+        "model_span": "Sheila A. Dillon, Chief & Director \n \n \nBOSTON FAIR CHANCE TENANT SELECTION POLICY",
+        "source_span": "Sheila A. Dillon, Chief & Director \n \n \nBOSTON FAIR CHANCE TENANT SELECTION POLICY",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 4274,
+        "end": 4378,
+        "occurrences": 1,
+        "model_span": "  a) The agent agrees not to use the applicant credit score to approve or deny housing    \napplications.",
+        "source_span": "  a) The agent agrees not to use the applicant credit score to approve or deny housing    \napplications.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "  a) The agent agrees not to use the applicant credit score to approve or deny housing    \napplications.",
+            "status": "exact_match",
+            "start": 4274,
+            "end": 4378
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": null,
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [
+        {
+          "id": "S1",
+          "kind": "coverage_condition",
+          "mode": "named_subject",
+          "governed_provision_ids": [
+            "P8"
+          ],
+          "basis": "named-subject mapping to P8 verified by repair",
+          "applied": true
+        },
+        {
+          "id": "S2",
+          "kind": "coverage_condition",
+          "mode": "named_subject",
+          "governed_provision_ids": [
+            "P8"
+          ],
+          "basis": "named-subject mapping to P8 verified by repair",
+          "applied": true
+        }
+      ],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": null,
+        "applied_kind": null,
+        "effective_date": null,
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null,
+        "unresolved_reason": "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      },
+      "status_derivation": "temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-c6b5615291",
+        "jurisdiction": "Boston, MA",
+        "level": "city",
+        "category": "screening_restrictions",
+        "status": null,
+        "title": "Prohibition on Using Credit Score",
+        "requirement": "[Basis: official explanatory text, not operative legal text] The agent must not use an applicant's credit score to approve or deny housing applications.",
+        "key_value": null,
+        "coverage_conditions": "Applies to housing providers receiving Department of Neighborhood Development (DND) funding and/or land, or that have income restricted units created under the Boston Planning and Development Agency (BPDA) Inclusionary Development Policy. [Lead-in]; Applies to the Office of Fair Housing and Equity Affirmative Marketing Program. [Affirmative Marketing Scope]",
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "Section 5(a) (Credit)",
+        "source_doc_id": "D010",
+        "source_url": "https://drive.google.com/file/d/1j4U3fDtmnYuwcUWhx5BMUcXc1bnKT8Ku/view?usp=sharing",
+        "quoted_span": "  a) The agent agrees not to use the applicant credit score to approve or deny housing    \napplications.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "screening_restrictions",
+        "citation": "Section 5(a) (Credit)",
+        "provision_ids": [
+          "P8"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "  a) The agent agrees not to use the applicant credit score to approve or deny housing    \napplications."
+          }
+        ],
+        "title": "Prohibition on Using Credit Score",
+        "requirement": "The agent must not use an applicant's credit score to approve or deny housing applications.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": "Sheila A. Dillon, Chief & Director \n \n \nBOSTON FAIR CHANCE TENANT SELECTION POLICY",
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": null,
+        "effective_date_evidence_kind": null,
+        "effective_date": null,
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 3,
+      "origin": "primary",
+      "accepted": false,
+      "held": true,
+      "historical": false,
+      "temporal_state": "held",
+      "validity": {
+        "resolver": "validity-window/v1",
+        "boundaries": [],
+        "end_exclusive": null,
+        "end_conflict": null,
+        "decision": {
+          "outcome": null,
+          "state": null,
+          "reason": null,
+          "start": null
+        }
+      },
+      "duplicate_of": null,
+      "rejection_reasons": [
+        "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      ],
+      "provision_ids": [
+        "P9"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 83,
+        "end": 165,
+        "occurrences": 1,
+        "model_span": "Sheila A. Dillon, Chief & Director \n \n \nBOSTON FAIR CHANCE TENANT SELECTION POLICY",
+        "source_span": "Sheila A. Dillon, Chief & Director \n \n \nBOSTON FAIR CHANCE TENANT SELECTION POLICY",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 4383,
+        "end": 5036,
+        "occurrences": 1,
+        "model_span": "  b) Property Managers may consider an applicant’s credit history, but such information may \nONLY be used in lieu of rental history to determine an applicant’s ability to pay rent when rental \nhistory is not available. Where insufficient credit is the basis for rejection, mitigating \ncircumstances may include: \n \n a representative payer or other reliable third party who would take written responsibility for \npayment; \n evidence that insufficient credit was the result of a disability;  \n evidence that insufficient credit was the result of other circumstances and there is reason to \nbelieve that applicant will now pay rent promptly and in full.",
+        "source_span": "  b) Property Managers may consider an applicant’s credit history, but such information may \nONLY be used in lieu of rental history to determine an applicant’s ability to pay rent when rental \nhistory is not available. Where insufficient credit is the basis for rejection, mitigating \ncircumstances may include: \n \n a representative payer or other reliable third party who would take written responsibility for \npayment; \n evidence that insufficient credit was the result of a disability;  \n evidence that insufficient credit was the result of other circumstances and there is reason to \nbelieve that applicant will now pay rent promptly and in full.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "  b) Property Managers may consider an applicant’s credit history, but such information may \nONLY be used in lieu of rental history to determine an applicant’s ability to pay rent when rental \nhistory is not available. Where insufficient credit is the basis for rejection, mitigating \ncircumstances may include: \n \n a representative payer or other reliable third party who would take written responsibility for \npayment; \n evidence that insufficient credit was the result of a disability;  \n evidence that insufficient credit was the result of other circumstances and there is reason to \nbelieve that applicant will now pay rent promptly and in full.",
+            "status": "exact_match",
+            "start": 4383,
+            "end": 5036
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": null,
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [
+        {
+          "id": "S1",
+          "kind": "coverage_condition",
+          "mode": "named_subject",
+          "governed_provision_ids": [
+            "P9"
+          ],
+          "basis": "named-subject mapping to P9 verified by repair",
+          "applied": true
+        },
+        {
+          "id": "S2",
+          "kind": "coverage_condition",
+          "mode": "named_subject",
+          "governed_provision_ids": [
+            "P9"
+          ],
+          "basis": "named-subject mapping to P9 verified by repair",
+          "applied": true
+        }
+      ],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": null,
+        "applied_kind": null,
+        "effective_date": null,
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null,
+        "unresolved_reason": "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      },
+      "status_derivation": "temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-f4821e104f",
+        "jurisdiction": "Boston, MA",
+        "level": "city",
+        "category": "screening_restrictions",
+        "status": null,
+        "title": "Permitted Credit History Use and Mitigating Circumstances",
+        "requirement": "[Basis: official explanatory text, not operative legal text] Property managers may only consider credit history in lieu of rental history to determine ability to pay rent when rental history is not available, and must consider specified mitigating circumstances when insufficient credit forms the basis for rejection.",
+        "key_value": null,
+        "coverage_conditions": "Applies to housing providers receiving Department of Neighborhood Development (DND) funding and/or land, or that have income restricted units created under the Boston Planning and Development Agency (BPDA) Inclusionary Development Policy. [Lead-in]; Applies to the Office of Fair Housing and Equity Affirmative Marketing Program. [Affirmative Marketing Scope]",
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "Section 5(b) (Credit)",
+        "source_doc_id": "D010",
+        "source_url": "https://drive.google.com/file/d/1j4U3fDtmnYuwcUWhx5BMUcXc1bnKT8Ku/view?usp=sharing",
+        "quoted_span": "  b) Property Managers may consider an applicant’s credit history, but such information may \nONLY be used in lieu of rental history to determine an applicant’s ability to pay rent when rental \nhistory is not available. Where insufficient credit is the basis for rejection, mitigating \ncircumstances may include: \n \n a representative payer or other reliable third party who would take written responsibility for \npayment; \n evidence that insufficient credit was the result of a disability;  \n evidence that insufficient credit was the result of other circumstances and there is reason to \nbelieve that applicant will now pay rent promptly and in full.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "screening_restrictions",
+        "citation": "Section 5(b) (Credit)",
+        "provision_ids": [
+          "P9"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "  b) Property Managers may consider an applicant’s credit history, but such information may \nONLY be used in lieu of rental history to determine an applicant’s ability to pay rent when rental \nhistory is not available. Where insufficient credit is the basis for rejection, mitigating \ncircumstances may include: \n \n a representative payer or other reliable third party who would take written responsibility for \npayment; \n evidence that insufficient credit was the result of a disability;  \n evidence that insufficient credit was the result of other circumstances and there is reason to \nbelieve that applicant will now pay rent promptly and in full."
+          }
+        ],
+        "title": "Permitted Credit History Use and Mitigating Circumstances",
+        "requirement": "Property managers may only consider credit history in lieu of rental history to determine ability to pay rent when rental history is not available, and must consider specified mitigating circumstances when insufficient credit forms the basis for rejection.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": "Sheila A. Dillon, Chief & Director \n \n \nBOSTON FAIR CHANCE TENANT SELECTION POLICY",
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": null,
+        "effective_date_evidence_kind": null,
+        "effective_date": null,
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 4,
+      "origin": "primary",
+      "accepted": false,
+      "held": true,
+      "historical": false,
+      "temporal_state": "held",
+      "validity": {
+        "resolver": "validity-window/v1",
+        "boundaries": [],
+        "end_exclusive": null,
+        "end_conflict": null,
+        "decision": {
+          "outcome": null,
+          "state": null,
+          "reason": null,
+          "start": null
+        }
+      },
+      "duplicate_of": null,
+      "rejection_reasons": [
+        "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      ],
+      "provision_ids": [
+        "P10"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 83,
+        "end": 165,
+        "occurrences": 1,
+        "model_span": "Sheila A. Dillon, Chief & Director \n \n \nBOSTON FAIR CHANCE TENANT SELECTION POLICY",
+        "source_span": "Sheila A. Dillon, Chief & Director \n \n \nBOSTON FAIR CHANCE TENANT SELECTION POLICY",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 5040,
+        "end": 5488,
+        "occurrences": 1,
+        "model_span": "  c) An applicant’s ability and willingness to pay rent must be demonstrated through an \nidentifiable source of sufficient income to pay rent and prior rental history. The lack of credit \nhistory, as opposed to poor credit history, is not sufficient justification to reject an applicant. An \nAgent must also take into account rent burden if an applicant can demonstrate a history of \nsatisfying a higher rent burden than the Agent normally employs.",
+        "source_span": "  c) An applicant’s ability and willingness to pay rent must be demonstrated through an \nidentifiable source of sufficient income to pay rent and prior rental history. The lack of credit \nhistory, as opposed to poor credit history, is not sufficient justification to reject an applicant. An \nAgent must also take into account rent burden if an applicant can demonstrate a history of \nsatisfying a higher rent burden than the Agent normally employs.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "  c) An applicant’s ability and willingness to pay rent must be demonstrated through an \nidentifiable source of sufficient income to pay rent and prior rental history. The lack of credit \nhistory, as opposed to poor credit history, is not sufficient justification to reject an applicant. An \nAgent must also take into account rent burden if an applicant can demonstrate a history of \nsatisfying a higher rent burden than the Agent normally employs.",
+            "status": "exact_match",
+            "start": 5040,
+            "end": 5488
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": null,
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [
+        {
+          "id": "S1",
+          "kind": "coverage_condition",
+          "mode": "named_subject",
+          "governed_provision_ids": [
+            "P10"
+          ],
+          "basis": "named-subject mapping to P10 verified by repair",
+          "applied": true
+        },
+        {
+          "id": "S2",
+          "kind": "coverage_condition",
+          "mode": "named_subject",
+          "governed_provision_ids": [
+            "P10"
+          ],
+          "basis": "named-subject mapping to P10 verified by repair",
+          "applied": true
+        }
+      ],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": null,
+        "applied_kind": null,
+        "effective_date": null,
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null,
+        "unresolved_reason": "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      },
+      "status_derivation": "temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-5d94a3daa6",
+        "jurisdiction": "Boston, MA",
+        "level": "city",
+        "category": "screening_restrictions",
+        "status": null,
+        "title": "Lack of Credit History and Demonstrated Higher Rent Burden",
+        "requirement": "[Basis: official explanatory text, not operative legal text] A lack of credit history is not sufficient justification to reject an applicant, and an agent must take into account rent burden if an applicant demonstrates a history of satisfying a higher rent burden than the agent normally employs.",
+        "key_value": null,
+        "coverage_conditions": "Applies to housing providers receiving Department of Neighborhood Development (DND) funding and/or land, or that have income restricted units created under the Boston Planning and Development Agency (BPDA) Inclusionary Development Policy. [Lead-in]; Applies to the Office of Fair Housing and Equity Affirmative Marketing Program. [Affirmative Marketing Scope]",
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "Section 5(c) (Credit)",
+        "source_doc_id": "D010",
+        "source_url": "https://drive.google.com/file/d/1j4U3fDtmnYuwcUWhx5BMUcXc1bnKT8Ku/view?usp=sharing",
+        "quoted_span": "  c) An applicant’s ability and willingness to pay rent must be demonstrated through an \nidentifiable source of sufficient income to pay rent and prior rental history. The lack of credit \nhistory, as opposed to poor credit history, is not sufficient justification to reject an applicant. An \nAgent must also take into account rent burden if an applicant can demonstrate a history of \nsatisfying a higher rent burden than the Agent normally employs.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "screening_restrictions",
+        "citation": "Section 5(c) (Credit)",
+        "provision_ids": [
+          "P10"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "  c) An applicant’s ability and willingness to pay rent must be demonstrated through an \nidentifiable source of sufficient income to pay rent and prior rental history. The lack of credit \nhistory, as opposed to poor credit history, is not sufficient justification to reject an applicant. An \nAgent must also take into account rent burden if an applicant can demonstrate a history of \nsatisfying a higher rent burden than the Agent normally employs."
+          }
+        ],
+        "title": "Lack of Credit History and Demonstrated Higher Rent Burden",
+        "requirement": "A lack of credit history is not sufficient justification to reject an applicant, and an agent must take into account rent burden if an applicant demonstrates a history of satisfying a higher rent burden than the agent normally employs.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": "Sheila A. Dillon, Chief & Director \n \n \nBOSTON FAIR CHANCE TENANT SELECTION POLICY",
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": null,
+        "effective_date_evidence_kind": null,
+        "effective_date": null,
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 5,
+      "origin": "primary",
+      "accepted": false,
+      "held": true,
+      "historical": false,
+      "temporal_state": "held",
+      "validity": {
+        "resolver": "validity-window/v1",
+        "boundaries": [],
+        "end_exclusive": null,
+        "end_conflict": null,
+        "decision": {
+          "outcome": null,
+          "state": null,
+          "reason": null,
+          "start": null
+        }
+      },
+      "duplicate_of": null,
+      "rejection_reasons": [
+        "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      ],
+      "provision_ids": [
+        "P11"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 83,
+        "end": 165,
+        "occurrences": 1,
+        "model_span": "Sheila A. Dillon, Chief & Director \n \n \nBOSTON FAIR CHANCE TENANT SELECTION POLICY",
+        "source_span": "Sheila A. Dillon, Chief & Director \n \n \nBOSTON FAIR CHANCE TENANT SELECTION POLICY",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": "If the applicant refuses to provide or give access to verifying information, the agent may choose not to give further consideration to the mitigating circumstance.",
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 5495,
+        "end": 6106,
+        "occurrences": 1,
+        "model_span": "  d) The Agent shall have the right to request information reasonably needed to verify the \nmitigating circumstances, even if such information is of a confidential nature (e.g. verifications \nfrom medical professionals that provide confidential information.). The Agent shall treat all \nsensitive or confidential information with utmost care and return any and all documents \ncontaining such information to the applicant promptly after review. If the applicant refuses to \nprovide or give access to such further information the Agent may choose not to give further \nconsideration to the mitigating circumstance.",
+        "source_span": "  d) The Agent shall have the right to request information reasonably needed to verify the \nmitigating circumstances, even if such information is of a confidential nature (e.g. verifications \nfrom medical professionals that provide confidential information.). The Agent shall treat all \nsensitive or confidential information with utmost care and return any and all documents \ncontaining such information to the applicant promptly after review. If the applicant refuses to \nprovide or give access to such further information the Agent may choose not to give further \nconsideration to the mitigating circumstance.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "  d) The Agent shall have the right to request information reasonably needed to verify the \nmitigating circumstances, even if such information is of a confidential nature (e.g. verifications \nfrom medical professionals that provide confidential information.). The Agent shall treat all \nsensitive or confidential information with utmost care and return any and all documents \ncontaining such information to the applicant promptly after review. If the applicant refuses to \nprovide or give access to such further information the Agent may choose not to give further \nconsideration to the mitigating circumstance.",
+            "status": "exact_match",
+            "start": 5495,
+            "end": 6106
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": null,
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [
+        {
+          "id": "S1",
+          "kind": "coverage_condition",
+          "mode": "named_subject",
+          "governed_provision_ids": [
+            "P11"
+          ],
+          "basis": "named-subject mapping to P11 verified by repair",
+          "applied": true
+        },
+        {
+          "id": "S2",
+          "kind": "coverage_condition",
+          "mode": "named_subject",
+          "governed_provision_ids": [
+            "P11"
+          ],
+          "basis": "named-subject mapping to P11 verified by repair",
+          "applied": true
+        }
+      ],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": null,
+        "applied_kind": null,
+        "effective_date": null,
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null,
+        "unresolved_reason": "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      },
+      "status_derivation": "temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-88357f856b",
+        "jurisdiction": "Boston, MA",
+        "level": "city",
+        "category": "screening_restrictions",
+        "status": null,
+        "title": "Verification and Return of Sensitive Mitigating Information",
+        "requirement": "[Basis: official explanatory text, not operative legal text] The agent may request information needed to verify mitigating circumstances, must treat all sensitive or confidential information with utmost care, and must promptly return all documents containing such information to the applicant after review.",
+        "key_value": null,
+        "coverage_conditions": "Applies to housing providers receiving Department of Neighborhood Development (DND) funding and/or land, or that have income restricted units created under the Boston Planning and Development Agency (BPDA) Inclusionary Development Policy. [Lead-in]; Applies to the Office of Fair Housing and Equity Affirmative Marketing Program. [Affirmative Marketing Scope]",
+        "exemptions": "If the applicant refuses to provide or give access to verifying information, the agent may choose not to give further consideration to the mitigating circumstance.",
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "Section 5(d) (Credit)",
+        "source_doc_id": "D010",
+        "source_url": "https://drive.google.com/file/d/1j4U3fDtmnYuwcUWhx5BMUcXc1bnKT8Ku/view?usp=sharing",
+        "quoted_span": "  d) The Agent shall have the right to request information reasonably needed to verify the \nmitigating circumstances, even if such information is of a confidential nature (e.g. verifications \nfrom medical professionals that provide confidential information.). The Agent shall treat all \nsensitive or confidential information with utmost care and return any and all documents \ncontaining such information to the applicant promptly after review. If the applicant refuses to \nprovide or give access to such further information the Agent may choose not to give further \nconsideration to the mitigating circumstance.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "screening_restrictions",
+        "citation": "Section 5(d) (Credit)",
+        "provision_ids": [
+          "P11"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "  d) The Agent shall have the right to request information reasonably needed to verify the \nmitigating circumstances, even if such information is of a confidential nature (e.g. verifications \nfrom medical professionals that provide confidential information.). The Agent shall treat all \nsensitive or confidential information with utmost care and return any and all documents \ncontaining such information to the applicant promptly after review. If the applicant refuses to \nprovide or give access to such further information the Agent may choose not to give further \nconsideration to the mitigating circumstance."
+          }
+        ],
+        "title": "Verification and Return of Sensitive Mitigating Information",
+        "requirement": "The agent may request information needed to verify mitigating circumstances, must treat all sensitive or confidential information with utmost care, and must promptly return all documents containing such information to the applicant after review.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": "If the applicant refuses to provide or give access to verifying information, the agent may choose not to give further consideration to the mitigating circumstance.",
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": "Sheila A. Dillon, Chief & Director \n \n \nBOSTON FAIR CHANCE TENANT SELECTION POLICY",
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": null,
+        "effective_date_evidence_kind": null,
+        "effective_date": null,
+        "conflict_note": null
+      }
+    }
+  ],
+  "posture": {
+    "declared": "official_explanatory_page",
+    "evidence": "Department of Neighborhood Development (DND) \nSheila A. Dillon, Chief & Director \n \n \nBOSTON FAIR CHANCE TENANT SELECTION POLICY",
+    "evidence_check": {
+      "status": "exact_match",
+      "normalization": null,
+      "start": 37,
+      "end": 165,
+      "occurrences": 1,
+      "model_span": "Department of Neighborhood Development (DND) \nSheila A. Dillon, Chief & Director \n \n \nBOSTON FAIR CHANCE TENANT SELECTION POLICY",
+      "source_span": "Department of Neighborhood Development (DND) \nSheila A. Dillon, Chief & Director \n \n \nBOSTON FAIR CHANCE TENANT SELECTION POLICY",
+      "reason": null,
+      "reconstructed": false,
+      "parts": [],
+      "crossed_artifacts": []
+    },
+    "established": "official_explanatory_page",
+    "basis": "declared posture with verified evidence"
+  },
+  "base_dates": [],
+  "provision_inventory": [
+    {
+      "id": "P1",
+      "ref": "Lead-in",
+      "anchor": "Housing providers receiving Department of Neighborhood Development (DND) funding",
+      "summary": "Prohibits blanket policies denying housing to anyone with arrests or convictions and requires case-by-case assessment.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "screening_restrictions",
+      "reason": null
+    },
+    {
+      "id": "P2",
+      "ref": "Section 1",
+      "anchor": "1. The Developer/Agent (Agent) agrees to not consider",
+      "summary": "Bars consideration of non-conviction arrests, convictions subject to judicial relief, juvenile records, and convictions more than 5 years old, with exceptions.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "screening_restrictions",
+      "reason": null
+    },
+    {
+      "id": "P3",
+      "ref": "Section 2",
+      "anchor": "2. The Agent is strongly encouraged to use",
+      "summary": "Encourages agents to validate CORI through DCJIS.",
+      "role": "procedure",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "Non-binding recommendation to use DCJIS; imposes no mandatory obligation."
+    },
+    {
+      "id": "P4",
+      "ref": "Section 3",
+      "anchor": "3. The Agent is strongly encouraged to assign",
+      "summary": "Encourages assigning the same staff to review CORI for consistency.",
+      "role": "procedure",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "Non-binding recommendation regarding staffing consistency; imposes no mandatory obligation."
+    },
+    {
+      "id": "P5",
+      "ref": "Section 4",
+      "anchor": "4. When feasible, housing providers should provide an",
+      "summary": "Recommends providing an appeals process for conviction-based housing denials when feasible.",
+      "role": "procedure",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "Non-binding recommendation to provide an appeals process when feasible."
+    },
+    {
+      "id": "P6",
+      "ref": "Section 5 (Preemption)",
+      "anchor": "5. Where federal or state law imposes a",
+      "summary": "Provides that conflicting federal or state criminal history requirements preempt this policy.",
+      "role": "boilerplate",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "Preemption and conflict-of-laws clause; see interaction on governed rules."
+    },
+    {
+      "id": "P7",
+      "ref": "Factors to Consider",
+      "anchor": "Factors that a housing provider should consider:",
+      "summary": "Enumerates circumstances and mitigating factors housing providers should consider when assessing applicants.",
+      "role": "procedure",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "Guidance and non-binding factors for providers to consider during applicant assessment."
+    },
+    {
+      "id": "P8",
+      "ref": "Section 5(a) (Credit)",
+      "anchor": "  a) The agent agrees not to use the",
+      "summary": "Prohibits using applicant credit scores to approve or deny housing applications.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "screening_restrictions",
+      "reason": null
+    },
+    {
+      "id": "P9",
+      "ref": "Section 5(b) (Credit)",
+      "anchor": "  b) Property Managers may consider an applicant’s credit",
+      "summary": "Restricts use of credit history to situations where rental history is unavailable, and specifies mitigating circumstances for insufficient credit.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "screening_restrictions",
+      "reason": null
+    },
+    {
+      "id": "P10",
+      "ref": "Section 5(c) (Credit)",
+      "anchor": "  c) An applicant’s ability and willingness to pay",
+      "summary": "Prohibits rejecting applicants for lack of credit history and requires consideration of demonstrated higher rent burden.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "screening_restrictions",
+      "reason": null
+    },
+    {
+      "id": "P11",
+      "ref": "Section 5(d) (Credit)",
+      "anchor": "  d) The Agent shall have the right to",
+      "summary": "Authorizes verification of mitigating circumstances and mandates careful handling and prompt return of confidential documents.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "screening_restrictions",
+      "reason": null
+    },
+    {
+      "id": "P12",
+      "ref": "Affirmative Marketing Scope",
+      "anchor": "This policy will also be applied to the",
+      "summary": "Applies the policy to the Office of Fair Housing and Equity Affirmative Marketing Program.",
+      "role": "scope_condition",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "Scope condition extending coverage to the Affirmative Marketing Program; see global_scope."
+    }
+  ],
+  "global_scope": [
+    {
+      "id": "S1",
+      "kind": "coverage_condition",
+      "statement": "Applies to housing providers receiving Department of Neighborhood Development (DND) funding and/or land, or that have income restricted units created under the Boston Planning and Development Agency (BPDA) Inclusionary Development Policy.",
+      "citation": "Lead-in",
+      "scope_mode": "structural",
+      "scope_quote": "Under this policy, housing providers agree to the following:",
+      "source_provision_id": "P1",
+      "governed_provision_ids": null,
+      "evidence_parts": [
+        {
+          "segment_id": 1,
+          "quoted_text": "Under this policy, housing providers agree to the following: \n \nHousing providers receiving Department of Neighborhood Development (DND) funding and/or \nland, or that have income restricted units created under the Boston Planning and Development \nAgency (BPDA) Inclusionary Development Policy"
+        }
+      ],
+      "evidence_check": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 172,
+        "end": 464,
+        "occurrences": 1,
+        "model_span": "Under this policy, housing providers agree to the following: \n \nHousing providers receiving Department of Neighborhood Development (DND) funding and/or \nland, or that have income restricted units created under the Boston Planning and Development \nAgency (BPDA) Inclusionary Development Policy",
+        "source_span": "Under this policy, housing providers agree to the following: \n \nHousing providers receiving Department of Neighborhood Development (DND) funding and/or \nland, or that have income restricted units created under the Boston Planning and Development \nAgency (BPDA) Inclusionary Development Policy",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "Under this policy, housing providers agree to the following: \n \nHousing providers receiving Department of Neighborhood Development (DND) funding and/or \nland, or that have income restricted units created under the Boston Planning and Development \nAgency (BPDA) Inclusionary Development Policy",
+            "status": "exact_match",
+            "start": 172,
+            "end": 464
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "propagated": true,
+      "problem": null,
+      "scope": {
+        "resolver": "scope-modes/v1",
+        "declared_mode": "structural",
+        "mode": "named_subject",
+        "scope_words": {
+          "scope_quote": "Under this policy, housing providers agree to the following:",
+          "scope_quote_check": "exact_match",
+          "text": "Under this policy, housing providers agree to the following:",
+          "from": "scope_quote"
+        },
+        "detail": null,
+        "propagate_ids": [],
+        "mapping_targets": [
+          "P2",
+          "P8",
+          "P9",
+          "P10",
+          "P11"
+        ],
+        "verification": null
+      }
+    },
+    {
+      "id": "S2",
+      "kind": "coverage_condition",
+      "statement": "Applies to the Office of Fair Housing and Equity Affirmative Marketing Program.",
+      "citation": "Affirmative Marketing Scope",
+      "scope_mode": "structural",
+      "scope_quote": "This policy will also be applied to",
+      "source_provision_id": "P12",
+      "governed_provision_ids": null,
+      "evidence_parts": [
+        {
+          "segment_id": 1,
+          "quoted_text": "This policy will also be applied to the Office of Fair Housing and Equity Affirmative Marketing \nProgram which promotes equal access to publicly funded housing for all persons by establishing \nstandards for public outreach, advertising and tenant/buyer selection criteria."
+        }
+      ],
+      "evidence_check": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 6110,
+        "end": 6382,
+        "occurrences": 1,
+        "model_span": "This policy will also be applied to the Office of Fair Housing and Equity Affirmative Marketing \nProgram which promotes equal access to publicly funded housing for all persons by establishing \nstandards for public outreach, advertising and tenant/buyer selection criteria.",
+        "source_span": "This policy will also be applied to the Office of Fair Housing and Equity Affirmative Marketing \nProgram which promotes equal access to publicly funded housing for all persons by establishing \nstandards for public outreach, advertising and tenant/buyer selection criteria.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "This policy will also be applied to the Office of Fair Housing and Equity Affirmative Marketing \nProgram which promotes equal access to publicly funded housing for all persons by establishing \nstandards for public outreach, advertising and tenant/buyer selection criteria.",
+            "status": "exact_match",
+            "start": 6110,
+            "end": 6382
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "propagated": true,
+      "problem": null,
+      "scope": {
+        "resolver": "scope-modes/v1",
+        "declared_mode": "structural",
+        "mode": "named_subject",
+        "scope_words": {
+          "scope_quote": "This policy will also be applied to",
+          "scope_quote_check": "exact_match",
+          "text": "This policy will also be applied to",
+          "from": "scope_quote"
+        },
+        "detail": null,
+        "propagate_ids": [],
+        "mapping_targets": [
+          "P1",
+          "P2",
+          "P8",
+          "P9",
+          "P10",
+          "P11"
+        ],
+        "verification": null
+      }
+    }
+  ],
+  "source_view": {
+    "marker": "[[PAGE BREAK]]",
+    "segment_label": "[[SEGMENT {}]]",
+    "view_sha256": "992cb15b6d1ad89c64aa313fa70f36260d83f9d0ee4874623468ec82534d116b",
+    "segments": [
+      {
+        "id": 1,
+        "raw_start": 0,
+        "raw_end": 6384
+      }
+    ],
+    "artifacts_removed": 0,
+    "artifacts": []
+  },
+  "coverage": {
+    "inventory_valid": true,
+    "anchors_located": "12/12",
+    "after_primary": {
+      "uncovered": [],
+      "unaccepted": [
+        "Lead-in",
+        "Section 1",
+        "Section 5(a) (Credit)",
+        "Section 5(b) (Credit)",
+        "Section 5(c) (Credit)",
+        "Section 5(d) (Credit)"
+      ],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": [
+        "Factors to Consider"
+      ]
+    },
+    "scope_mappings": {
+      "requested": 11,
+      "applies": 11,
+      "does_not_apply": 0,
+      "unresolved": 0
+    },
+    "after_repair": {
+      "uncovered": [],
+      "unaccepted": [
+        "Lead-in",
+        "Section 1",
+        "Section 5(a) (Credit)",
+        "Section 5(b) (Credit)",
+        "Section 5(c) (Credit)",
+        "Section 5(d) (Credit)"
+      ],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "repair_targets": {
+      "before_repair": 1,
+      "resolved_by_accepted_rule": 0,
+      "resolved_out_of_scope": 1,
+      "still_unresolved": 0
+    },
+    "inventory_items": 12,
+    "in_scope_items": 6,
+    "in_scope_refs": 6,
+    "uncertain": [],
+    "final": {
+      "uncovered": [],
+      "unaccepted": [
+        "Lead-in",
+        "Section 1",
+        "Section 5(a) (Credit)",
+        "Section 5(b) (Credit)",
+        "Section 5(c) (Credit)",
+        "Section 5(d) (Credit)"
+      ],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "link_mismatches": [],
+    "provisions": [
+      {
+        "ref": "Lead-in",
+        "inventory_item": 0,
+        "provision_id": "P1",
+        "summary": "Prohibits blanket policies denying housing to anyone with arrests or convictions and requires case-by-case assessment.",
+        "category": "screening_restrictions",
+        "candidates": [
+          0
+        ],
+        "accepted": [],
+        "basis": {
+          "0": "provision link; citation names it"
+        }
+      },
+      {
+        "ref": "Section 1",
+        "inventory_item": 1,
+        "provision_id": "P2",
+        "summary": "Bars consideration of non-conviction arrests, convictions subject to judicial relief, juvenile records, and convictions more than 5 years old, with exceptions.",
+        "category": "screening_restrictions",
+        "candidates": [
+          1
+        ],
+        "accepted": [],
+        "basis": {
+          "1": "provision link; citation names it"
+        }
+      },
+      {
+        "ref": "Section 5(a) (Credit)",
+        "inventory_item": 7,
+        "provision_id": "P8",
+        "summary": "Prohibits using applicant credit scores to approve or deny housing applications.",
+        "category": "screening_restrictions",
+        "candidates": [
+          2
+        ],
+        "accepted": [],
+        "basis": {
+          "2": "provision link; citation names it"
+        }
+      },
+      {
+        "ref": "Section 5(b) (Credit)",
+        "inventory_item": 8,
+        "provision_id": "P9",
+        "summary": "Restricts use of credit history to situations where rental history is unavailable, and specifies mitigating circumstances for insufficient credit.",
+        "category": "screening_restrictions",
+        "candidates": [
+          3
+        ],
+        "accepted": [],
+        "basis": {
+          "3": "provision link; citation names it"
+        }
+      },
+      {
+        "ref": "Section 5(c) (Credit)",
+        "inventory_item": 9,
+        "provision_id": "P10",
+        "summary": "Prohibits rejecting applicants for lack of credit history and requires consideration of demonstrated higher rent burden.",
+        "category": "screening_restrictions",
+        "candidates": [
+          4
+        ],
+        "accepted": [],
+        "basis": {
+          "4": "provision link; citation names it"
+        }
+      },
+      {
+        "ref": "Section 5(d) (Credit)",
+        "inventory_item": 10,
+        "provision_id": "P11",
+        "summary": "Authorizes verification of mitigating circumstances and mandates careful handling and prompt return of confidential documents.",
+        "category": "screening_restrictions",
+        "candidates": [
+          5
+        ],
+        "accepted": [],
+        "basis": {
+          "5": "provision link; citation names it"
+        }
+      }
+    ],
+    "unrecorded_subdivisions": []
+  },
+  "scope_challenges": [
+    {
+      "ref": "Section 2",
+      "provision_id": "P3",
+      "role": "procedure",
+      "reason": "Non-binding recommendation to use DCJIS; imposes no mandatory obligation.",
+      "summary": "Encourages agents to validate CORI through DCJIS.",
+      "signals": {
+        "in_scope_neighbour": true,
+        "enumeration": false,
+        "normative_language": false,
+        "grounds_or_conditions": false
+      },
+      "challenged": false,
+      "why_not": "too few substantive signals",
+      "raw_start": 1678,
+      "raw_end": 1863
+    },
+    {
+      "ref": "Section 3",
+      "provision_id": "P4",
+      "role": "procedure",
+      "reason": "Non-binding recommendation regarding staffing consistency; imposes no mandatory obligation.",
+      "summary": "Encourages assigning the same staff to review CORI for consistency.",
+      "signals": {
+        "in_scope_neighbour": false,
+        "enumeration": false,
+        "normative_language": false,
+        "grounds_or_conditions": true
+      },
+      "challenged": false,
+      "why_not": "too few substantive signals",
+      "raw_start": 1863,
+      "raw_end": 2021
+    },
+    {
+      "ref": "Section 4",
+      "provision_id": "P5",
+      "role": "procedure",
+      "reason": "Non-binding recommendation to provide an appeals process when feasible.",
+      "summary": "Recommends providing an appeals process for conviction-based housing denials when feasible.",
+      "signals": {
+        "in_scope_neighbour": false,
+        "enumeration": false,
+        "normative_language": false,
+        "grounds_or_conditions": false
+      },
+      "challenged": false,
+      "why_not": "too few substantive signals",
+      "raw_start": 2021,
+      "raw_end": 2240
+    },
+    {
+      "ref": "Section 5 (Preemption)",
+      "provision_id": "P6",
+      "role": "boilerplate",
+      "reason": "Preemption and conflict-of-laws clause; see interaction on governed rules.",
+      "summary": "Provides that conflicting federal or state criminal history requirements preempt this policy.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role boilerplate is decided by other rules"
+    },
+    {
+      "ref": "Factors to Consider",
+      "provision_id": "P7",
+      "role": "procedure",
+      "reason": "Guidance and non-binding factors for providers to consider during applicant assessment.",
+      "summary": "Enumerates circumstances and mitigating factors housing providers should consider when assessing applicants.",
+      "signals": {
+        "in_scope_neighbour": true,
+        "enumeration": true,
+        "normative_language": false,
+        "grounds_or_conditions": true
+      },
+      "challenged": true,
+      "why_not": null,
+      "raw_start": 2412,
+      "raw_end": 4274
+    },
+    {
+      "ref": "Affirmative Marketing Scope",
+      "provision_id": "P12",
+      "role": "scope_condition",
+      "reason": "Scope condition extending coverage to the Affirmative Marketing Program; see global_scope.",
+      "summary": "Applies the policy to the Office of Fair Housing and Equity Affirmative Marketing Program.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role scope_condition is decided by other rules"
+    }
+  ],
+  "scope_mappings": [
+    {
+      "condition_id": "S1",
+      "provision_id": "P2",
+      "kind": "coverage_condition",
+      "statement": "Applies to housing providers receiving Department of Neighborhood Development (DND) funding and/or land, or that have income restricted units created under the Boston Planning and Development Agency (BPDA) Inclusionary Development Policy.",
+      "scope_words": "Under this policy, housing providers agree to the following:",
+      "condition_evidence": "Under this policy, housing providers agree to the following: \n \nHousing providers receiving Department of Neighborhood Development (DND) funding and/or \nland, or that have income restricted units created under the Boston Planning and Development \nAgency (BPDA) Inclusionary Development Policy",
+      "target_ref": "Section 1",
+      "target_anchor": "1. The Developer/Agent (Agent) agrees to not consider",
+      "target_quote": "1. The Developer/Agent (Agent) agrees to not consider any of the following categories when \ndetermining housing eligibility and or considering eviction: \n \na) Arrests that did not result in conviction. This includes dismissed charges, diversion \nprograms, and similar non-convictions. \nb) Convictions that are subject to a form of judicial relief, such as expungement, sealing, \nand certificates for relief from disabilities. \nc) Juvenile records \nd) A conviction more than 5 years old. Tenant selection policy related to arrests and \nconvictions does not apply in situations where there is: \n \n A direct relationship between a conviction and the housing sought and or unreasonable \nrisk of substantial harm to the safety of others.  \n Landlords would consider additional factors such as: evidence of rehabilitation, the time \nthat has elapsed since the conviction occurred, and/or the age of the person at the time \nthe conviction occurred. \n This guidance does not apply to current criminal behavior.",
+      "decision": {
+        "decision": "applies",
+        "reason": "The lead-in establishes the scope of providers agreeing to the screening restrictions enumerated in Section 1.",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 172,
+          "end": 232,
+          "occurrences": 1,
+          "model_span": "Under this policy, housing providers agree to the following:",
+          "source_span": "Under this policy, housing providers agree to the following:",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 1,
+              "model_text": "Under this policy, housing providers agree to the following:",
+              "status": "exact_match",
+              "start": 172,
+              "end": 232
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "applies",
+      "unresolved_reason": null
+    },
+    {
+      "condition_id": "S1",
+      "provision_id": "P8",
+      "kind": "coverage_condition",
+      "statement": "Applies to housing providers receiving Department of Neighborhood Development (DND) funding and/or land, or that have income restricted units created under the Boston Planning and Development Agency (BPDA) Inclusionary Development Policy.",
+      "scope_words": "Under this policy, housing providers agree to the following:",
+      "condition_evidence": "Under this policy, housing providers agree to the following: \n \nHousing providers receiving Department of Neighborhood Development (DND) funding and/or \nland, or that have income restricted units created under the Boston Planning and Development \nAgency (BPDA) Inclusionary Development Policy",
+      "target_ref": "Section 5(a) (Credit)",
+      "target_anchor": "  a) The agent agrees not to use the",
+      "target_quote": "  a) The agent agrees not to use the applicant credit score to approve or deny housing    \napplications.",
+      "decision": {
+        "decision": "applies",
+        "reason": "The lead-in binds covered housing providers to the policy's terms, including the credit score prohibition in Section 5(a).",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 172,
+          "end": 232,
+          "occurrences": 1,
+          "model_span": "Under this policy, housing providers agree to the following:",
+          "source_span": "Under this policy, housing providers agree to the following:",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 1,
+              "model_text": "Under this policy, housing providers agree to the following:",
+              "status": "exact_match",
+              "start": 172,
+              "end": 232
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "applies",
+      "unresolved_reason": null
+    },
+    {
+      "condition_id": "S1",
+      "provision_id": "P9",
+      "kind": "coverage_condition",
+      "statement": "Applies to housing providers receiving Department of Neighborhood Development (DND) funding and/or land, or that have income restricted units created under the Boston Planning and Development Agency (BPDA) Inclusionary Development Policy.",
+      "scope_words": "Under this policy, housing providers agree to the following:",
+      "condition_evidence": "Under this policy, housing providers agree to the following: \n \nHousing providers receiving Department of Neighborhood Development (DND) funding and/or \nland, or that have income restricted units created under the Boston Planning and Development \nAgency (BPDA) Inclusionary Development Policy",
+      "target_ref": "Section 5(b) (Credit)",
+      "target_anchor": "  b) Property Managers may consider an applicant’s credit",
+      "target_quote": "  b) Property Managers may consider an applicant’s credit history, but such information may \nONLY be used in lieu of rental history to determine an applicant’s ability to pay rent when rental \nhistory is not available. Where insufficient credit is the basis for rejection, mitigating \ncircumstances may include: \n \n a representative payer or other reliable third party who would take written responsibility for \npayment; \n evidence that insufficient credit was the result of a disability;  \n evidence that insufficient credit was the result of other circumstances and there is reason to \nbelieve that applicant will now pay rent promptly and in full.",
+      "decision": {
+        "decision": "applies",
+        "reason": "The lead-in binds covered housing providers to the policy's terms, including the credit history restrictions in Section 5(b).",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 172,
+          "end": 232,
+          "occurrences": 1,
+          "model_span": "Under this policy, housing providers agree to the following:",
+          "source_span": "Under this policy, housing providers agree to the following:",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 1,
+              "model_text": "Under this policy, housing providers agree to the following:",
+              "status": "exact_match",
+              "start": 172,
+              "end": 232
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "applies",
+      "unresolved_reason": null
+    },
+    {
+      "condition_id": "S1",
+      "provision_id": "P10",
+      "kind": "coverage_condition",
+      "statement": "Applies to housing providers receiving Department of Neighborhood Development (DND) funding and/or land, or that have income restricted units created under the Boston Planning and Development Agency (BPDA) Inclusionary Development Policy.",
+      "scope_words": "Under this policy, housing providers agree to the following:",
+      "condition_evidence": "Under this policy, housing providers agree to the following: \n \nHousing providers receiving Department of Neighborhood Development (DND) funding and/or \nland, or that have income restricted units created under the Boston Planning and Development \nAgency (BPDA) Inclusionary Development Policy",
+      "target_ref": "Section 5(c) (Credit)",
+      "target_anchor": "  c) An applicant’s ability and willingness to pay",
+      "target_quote": "  c) An applicant’s ability and willingness to pay rent must be demonstrated through an \nidentifiable source of sufficient income to pay rent and prior rental history. The lack of credit \nhistory, as opposed to poor credit history, is not sufficient justification to reject an applicant. An \nAgent must also take into account rent burden if an applicant can demonstrate a history of \nsatisfying a higher rent burden than the Agent normally employs.",
+      "decision": {
+        "decision": "applies",
+        "reason": "The lead-in binds covered housing providers to the policy's terms, including the credit evaluation requirements in Section 5(c).",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 172,
+          "end": 232,
+          "occurrences": 1,
+          "model_span": "Under this policy, housing providers agree to the following:",
+          "source_span": "Under this policy, housing providers agree to the following:",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 1,
+              "model_text": "Under this policy, housing providers agree to the following:",
+              "status": "exact_match",
+              "start": 172,
+              "end": 232
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "applies",
+      "unresolved_reason": null
+    },
+    {
+      "condition_id": "S1",
+      "provision_id": "P11",
+      "kind": "coverage_condition",
+      "statement": "Applies to housing providers receiving Department of Neighborhood Development (DND) funding and/or land, or that have income restricted units created under the Boston Planning and Development Agency (BPDA) Inclusionary Development Policy.",
+      "scope_words": "Under this policy, housing providers agree to the following:",
+      "condition_evidence": "Under this policy, housing providers agree to the following: \n \nHousing providers receiving Department of Neighborhood Development (DND) funding and/or \nland, or that have income restricted units created under the Boston Planning and Development \nAgency (BPDA) Inclusionary Development Policy",
+      "target_ref": "Section 5(d) (Credit)",
+      "target_anchor": "  d) The Agent shall have the right to",
+      "target_quote": "  d) The Agent shall have the right to request information reasonably needed to verify the \nmitigating circumstances, even if such information is of a confidential nature (e.g. verifications \nfrom medical professionals that provide confidential information.). The Agent shall treat all \nsensitive or confidential information with utmost care and return any and all documents \ncontaining such information to the applicant promptly after review. If the applicant refuses to \nprovide or give access to such further information the Agent may choose not to give further \nconsideration to the mitigating circumstance.",
+      "decision": {
+        "decision": "applies",
+        "reason": "The lead-in binds covered housing providers to the policy's terms, including the mitigating circumstances verification rules in Section 5(d).",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 172,
+          "end": 232,
+          "occurrences": 1,
+          "model_span": "Under this policy, housing providers agree to the following:",
+          "source_span": "Under this policy, housing providers agree to the following:",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 1,
+              "model_text": "Under this policy, housing providers agree to the following:",
+              "status": "exact_match",
+              "start": 172,
+              "end": 232
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "applies",
+      "unresolved_reason": null
+    },
+    {
+      "condition_id": "S2",
+      "provision_id": "P1",
+      "kind": "coverage_condition",
+      "statement": "Applies to the Office of Fair Housing and Equity Affirmative Marketing Program.",
+      "scope_words": "This policy will also be applied to",
+      "condition_evidence": "This policy will also be applied to the Office of Fair Housing and Equity Affirmative Marketing \nProgram which promotes equal access to publicly funded housing for all persons by establishing \nstandards for public outreach, advertising and tenant/buyer selection criteria.",
+      "target_ref": "Lead-in",
+      "target_anchor": "Housing providers receiving Department of Neighborhood Development (DND) funding",
+      "target_quote": "Housing providers receiving Department of Neighborhood Development (DND) funding and/or \nland, or that have income restricted units created under the Boston Planning and Development \nAgency (BPDA) Inclusionary Development Policy will not impose a blanket policy that denies \nhousing to anyone with arrests and or convictions. Housing providers will consider applicants on \na case-by-case basis.",
+      "decision": {
+        "decision": "applies",
+        "reason": "The policy as a whole, including the requirement for case-by-case assessment in P1, applies to the Affirmative Marketing Program.",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 6110,
+          "end": 6382,
+          "occurrences": 1,
+          "model_span": "This policy will also be applied to the Office of Fair Housing and Equity Affirmative Marketing \nProgram which promotes equal access to publicly funded housing for all persons by establishing \nstandards for public outreach, advertising and tenant/buyer selection criteria.",
+          "source_span": "This policy will also be applied to the Office of Fair Housing and Equity Affirmative Marketing \nProgram which promotes equal access to publicly funded housing for all persons by establishing \nstandards for public outreach, advertising and tenant/buyer selection criteria.",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 1,
+              "model_text": "This policy will also be applied to the Office of Fair Housing and Equity Affirmative Marketing \nProgram which promotes equal access to publicly funded housing for all persons by establishing \nstandards for public outreach, advertising and tenant/buyer selection criteria.",
+              "status": "exact_match",
+              "start": 6110,
+              "end": 6382
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "applies",
+      "unresolved_reason": null
+    },
+    {
+      "condition_id": "S2",
+      "provision_id": "P2",
+      "kind": "coverage_condition",
+      "statement": "Applies to the Office of Fair Housing and Equity Affirmative Marketing Program.",
+      "scope_words": "This policy will also be applied to",
+      "condition_evidence": "This policy will also be applied to the Office of Fair Housing and Equity Affirmative Marketing \nProgram which promotes equal access to publicly funded housing for all persons by establishing \nstandards for public outreach, advertising and tenant/buyer selection criteria.",
+      "target_ref": "Section 1",
+      "target_anchor": "1. The Developer/Agent (Agent) agrees to not consider",
+      "target_quote": "1. The Developer/Agent (Agent) agrees to not consider any of the following categories when \ndetermining housing eligibility and or considering eviction: \n \na) Arrests that did not result in conviction. This includes dismissed charges, diversion \nprograms, and similar non-convictions. \nb) Convictions that are subject to a form of judicial relief, such as expungement, sealing, \nand certificates for relief from disabilities. \nc) Juvenile records \nd) A conviction more than 5 years old. Tenant selection policy related to arrests and \nconvictions does not apply in situations where there is: \n \n A direct relationship between a conviction and the housing sought and or unreasonable \nrisk of substantial harm to the safety of others.  \n Landlords would consider additional factors such as: evidence of rehabilitation, the time \nthat has elapsed since the conviction occurred, and/or the age of the person at the time \nthe conviction occurred. \n This guidance does not apply to current criminal behavior.",
+      "decision": {
+        "decision": "applies",
+        "reason": "The policy as a whole, including the criminal screening restrictions in Section 1, applies to the Affirmative Marketing Program.",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 6110,
+          "end": 6382,
+          "occurrences": 1,
+          "model_span": "This policy will also be applied to the Office of Fair Housing and Equity Affirmative Marketing \nProgram which promotes equal access to publicly funded housing for all persons by establishing \nstandards for public outreach, advertising and tenant/buyer selection criteria.",
+          "source_span": "This policy will also be applied to the Office of Fair Housing and Equity Affirmative Marketing \nProgram which promotes equal access to publicly funded housing for all persons by establishing \nstandards for public outreach, advertising and tenant/buyer selection criteria.",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 1,
+              "model_text": "This policy will also be applied to the Office of Fair Housing and Equity Affirmative Marketing \nProgram which promotes equal access to publicly funded housing for all persons by establishing \nstandards for public outreach, advertising and tenant/buyer selection criteria.",
+              "status": "exact_match",
+              "start": 6110,
+              "end": 6382
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "applies",
+      "unresolved_reason": null
+    },
+    {
+      "condition_id": "S2",
+      "provision_id": "P8",
+      "kind": "coverage_condition",
+      "statement": "Applies to the Office of Fair Housing and Equity Affirmative Marketing Program.",
+      "scope_words": "This policy will also be applied to",
+      "condition_evidence": "This policy will also be applied to the Office of Fair Housing and Equity Affirmative Marketing \nProgram which promotes equal access to publicly funded housing for all persons by establishing \nstandards for public outreach, advertising and tenant/buyer selection criteria.",
+      "target_ref": "Section 5(a) (Credit)",
+      "target_anchor": "  a) The agent agrees not to use the",
+      "target_quote": "  a) The agent agrees not to use the applicant credit score to approve or deny housing    \napplications.",
+      "decision": {
+        "decision": "applies",
+        "reason": "The policy as a whole, including the credit score ban in Section 5(a), applies to the Affirmative Marketing Program.",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 6110,
+          "end": 6382,
+          "occurrences": 1,
+          "model_span": "This policy will also be applied to the Office of Fair Housing and Equity Affirmative Marketing \nProgram which promotes equal access to publicly funded housing for all persons by establishing \nstandards for public outreach, advertising and tenant/buyer selection criteria.",
+          "source_span": "This policy will also be applied to the Office of Fair Housing and Equity Affirmative Marketing \nProgram which promotes equal access to publicly funded housing for all persons by establishing \nstandards for public outreach, advertising and tenant/buyer selection criteria.",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 1,
+              "model_text": "This policy will also be applied to the Office of Fair Housing and Equity Affirmative Marketing \nProgram which promotes equal access to publicly funded housing for all persons by establishing \nstandards for public outreach, advertising and tenant/buyer selection criteria.",
+              "status": "exact_match",
+              "start": 6110,
+              "end": 6382
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "applies",
+      "unresolved_reason": null
+    },
+    {
+      "condition_id": "S2",
+      "provision_id": "P9",
+      "kind": "coverage_condition",
+      "statement": "Applies to the Office of Fair Housing and Equity Affirmative Marketing Program.",
+      "scope_words": "This policy will also be applied to",
+      "condition_evidence": "This policy will also be applied to the Office of Fair Housing and Equity Affirmative Marketing \nProgram which promotes equal access to publicly funded housing for all persons by establishing \nstandards for public outreach, advertising and tenant/buyer selection criteria.",
+      "target_ref": "Section 5(b) (Credit)",
+      "target_anchor": "  b) Property Managers may consider an applicant’s credit",
+      "target_quote": "  b) Property Managers may consider an applicant’s credit history, but such information may \nONLY be used in lieu of rental history to determine an applicant’s ability to pay rent when rental \nhistory is not available. Where insufficient credit is the basis for rejection, mitigating \ncircumstances may include: \n \n a representative payer or other reliable third party who would take written responsibility for \npayment; \n evidence that insufficient credit was the result of a disability;  \n evidence that insufficient credit was the result of other circumstances and there is reason to \nbelieve that applicant will now pay rent promptly and in full.",
+      "decision": {
+        "decision": "applies",
+        "reason": "The policy as a whole, including the credit history restrictions in Section 5(b), applies to the Affirmative Marketing Program.",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 6110,
+          "end": 6382,
+          "occurrences": 1,
+          "model_span": "This policy will also be applied to the Office of Fair Housing and Equity Affirmative Marketing \nProgram which promotes equal access to publicly funded housing for all persons by establishing \nstandards for public outreach, advertising and tenant/buyer selection criteria.",
+          "source_span": "This policy will also be applied to the Office of Fair Housing and Equity Affirmative Marketing \nProgram which promotes equal access to publicly funded housing for all persons by establishing \nstandards for public outreach, advertising and tenant/buyer selection criteria.",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 1,
+              "model_text": "This policy will also be applied to the Office of Fair Housing and Equity Affirmative Marketing \nProgram which promotes equal access to publicly funded housing for all persons by establishing \nstandards for public outreach, advertising and tenant/buyer selection criteria.",
+              "status": "exact_match",
+              "start": 6110,
+              "end": 6382
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "applies",
+      "unresolved_reason": null
+    },
+    {
+      "condition_id": "S2",
+      "provision_id": "P10",
+      "kind": "coverage_condition",
+      "statement": "Applies to the Office of Fair Housing and Equity Affirmative Marketing Program.",
+      "scope_words": "This policy will also be applied to",
+      "condition_evidence": "This policy will also be applied to the Office of Fair Housing and Equity Affirmative Marketing \nProgram which promotes equal access to publicly funded housing for all persons by establishing \nstandards for public outreach, advertising and tenant/buyer selection criteria.",
+      "target_ref": "Section 5(c) (Credit)",
+      "target_anchor": "  c) An applicant’s ability and willingness to pay",
+      "target_quote": "  c) An applicant’s ability and willingness to pay rent must be demonstrated through an \nidentifiable source of sufficient income to pay rent and prior rental history. The lack of credit \nhistory, as opposed to poor credit history, is not sufficient justification to reject an applicant. An \nAgent must also take into account rent burden if an applicant can demonstrate a history of \nsatisfying a higher rent burden than the Agent normally employs.",
+      "decision": {
+        "decision": "applies",
+        "reason": "The policy as a whole, including the credit assessment standards in Section 5(c), applies to the Affirmative Marketing Program.",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 6110,
+          "end": 6382,
+          "occurrences": 1,
+          "model_span": "This policy will also be applied to the Office of Fair Housing and Equity Affirmative Marketing \nProgram which promotes equal access to publicly funded housing for all persons by establishing \nstandards for public outreach, advertising and tenant/buyer selection criteria.",
+          "source_span": "This policy will also be applied to the Office of Fair Housing and Equity Affirmative Marketing \nProgram which promotes equal access to publicly funded housing for all persons by establishing \nstandards for public outreach, advertising and tenant/buyer selection criteria.",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 1,
+              "model_text": "This policy will also be applied to the Office of Fair Housing and Equity Affirmative Marketing \nProgram which promotes equal access to publicly funded housing for all persons by establishing \nstandards for public outreach, advertising and tenant/buyer selection criteria.",
+              "status": "exact_match",
+              "start": 6110,
+              "end": 6382
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "applies",
+      "unresolved_reason": null
+    },
+    {
+      "condition_id": "S2",
+      "provision_id": "P11",
+      "kind": "coverage_condition",
+      "statement": "Applies to the Office of Fair Housing and Equity Affirmative Marketing Program.",
+      "scope_words": "This policy will also be applied to",
+      "condition_evidence": "This policy will also be applied to the Office of Fair Housing and Equity Affirmative Marketing \nProgram which promotes equal access to publicly funded housing for all persons by establishing \nstandards for public outreach, advertising and tenant/buyer selection criteria.",
+      "target_ref": "Section 5(d) (Credit)",
+      "target_anchor": "  d) The Agent shall have the right to",
+      "target_quote": "  d) The Agent shall have the right to request information reasonably needed to verify the \nmitigating circumstances, even if such information is of a confidential nature (e.g. verifications \nfrom medical professionals that provide confidential information.). The Agent shall treat all \nsensitive or confidential information with utmost care and return any and all documents \ncontaining such information to the applicant promptly after review. If the applicant refuses to \nprovide or give access to such further information the Agent may choose not to give further \nconsideration to the mitigating circumstance.",
+      "decision": {
+        "decision": "applies",
+        "reason": "The policy as a whole, including verification of mitigating circumstances in Section 5(d), applies to the Affirmative Marketing Program.",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 6110,
+          "end": 6382,
+          "occurrences": 1,
+          "model_span": "This policy will also be applied to the Office of Fair Housing and Equity Affirmative Marketing \nProgram which promotes equal access to publicly funded housing for all persons by establishing \nstandards for public outreach, advertising and tenant/buyer selection criteria.",
+          "source_span": "This policy will also be applied to the Office of Fair Housing and Equity Affirmative Marketing \nProgram which promotes equal access to publicly funded housing for all persons by establishing \nstandards for public outreach, advertising and tenant/buyer selection criteria.",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [
+            {
+              "segment_id": 1,
+              "model_text": "This policy will also be applied to the Office of Fair Housing and Equity Affirmative Marketing \nProgram which promotes equal access to publicly funded housing for all persons by establishing \nstandards for public outreach, advertising and tenant/buyer selection criteria.",
+              "status": "exact_match",
+              "start": 6110,
+              "end": 6382
+            }
+          ],
+          "crossed_artifacts": []
+        },
+        "evidence_verified": true
+      },
+      "final": "applies",
+      "unresolved_reason": null
+    }
+  ],
+  "legislative_session": null,
+  "empty_result": null,
+  "legacy_replay": null,
+  "dedupe": [],
+  "chunking": null,
+  "repair": {
+    "invoked": true,
+    "reason": "1 repair target(s) from scope_challenge; 11 scope_mapping_challenge(s)",
+    "prompt_version": "v7-repair-1",
+    "targets": [
+      {
+        "ref": "Factors to Consider",
+        "sources": [
+          "scope_challenge"
+        ],
+        "provision_id": "P7",
+        "summary": "Enumerates circumstances and mitigating factors housing providers should consider when assessing applicants.",
+        "role": "procedure",
+        "declared_reason": "Guidance and non-binding factors for providers to consider during applicant assessment.",
+        "signals": [
+          "in_scope_neighbour",
+          "enumeration",
+          "grounds_or_conditions"
+        ],
+        "raw_start": 2412,
+        "raw_end": 4274,
+        "pre_repair_state": "declared out_of_scope (procedure: Guidance and non-binding factors for providers to consider during applicant assessment.); its text has signals ['in_scope_neighbour', 'enumeration', 'grounds_or_conditions']",
+        "resolution": {
+          "scope": "out_of_scope",
+          "reason": "The provision sets forth non-binding advisory factors and recommendations for housing providers to consider rather than an enforceable requirement or prohibition.",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 2412,
+            "end": 4260,
+            "occurrences": 1,
+            "model_span": "Factors that a housing provider should consider: \n \n1. The circumstances leading to the conviction, such as: \n \na) Whether the conviction arose from a person’s disability, therefore entitling the applicant to \ncivil rights protections for persons with disabilities; \nb) Whether the conviction arose out of a person’s experience as a survivor of domestic \nabuse, sexual assault, dating violence, and/or stalking, therefore entitling the applicant to \nprotection under the Violence Against Women Act (VAWA); \n \n1. The circumstances of the underlying criminal activity, such as: \n \na) The seriousness of the criminal activity; \nb) The relationship between the criminal activity and the safety of other residents on the \nproperty; \nc) The frequency of relevant criminal activity; \nd) The length of time since the criminal activity occurred; \ne) The age of the household member at the time the criminal activity occurred. \n \n2. The circumstances that have taken place since the criminal activity and conviction: \n \na) Whether the applicant has a satisfactory rental history; \nb) Whether the applicant successfully completed the terms of his or her sentence; \nc) If the criminal activity arose from a substance abuse problem, whether the \napplicant has successfully undergone substance abuse treatment; \nd) Other factors to consider include: \n \nPage 3 of 3 (February 2017) \n \n Employment \n Education and/ or work training \n Community involvement, such as church or community groups \n Family support network \n \ne) In determining these factors, the housing provider should give the applicant a list of \nexamples of mitigating evidence, such as letters of recommendations, certificates of \nprogram completion, applicant statements, and other supporting documents. \n \n4. The effect that a denial of admission will have on the household and the community.",
+            "source_span": "Factors that a housing provider should consider: \n \n1. The circumstances leading to the conviction, such as: \n \na) Whether the conviction arose from a person’s disability, therefore entitling the applicant to \ncivil rights protections for persons with disabilities; \nb) Whether the conviction arose out of a person’s experience as a survivor of domestic \nabuse, sexual assault, dating violence, and/or stalking, therefore entitling the applicant to \nprotection under the Violence Against Women Act (VAWA); \n \n1. The circumstances of the underlying criminal activity, such as: \n \na) The seriousness of the criminal activity; \nb) The relationship between the criminal activity and the safety of other residents on the \nproperty; \nc) The frequency of relevant criminal activity; \nd) The length of time since the criminal activity occurred; \ne) The age of the household member at the time the criminal activity occurred. \n \n2. The circumstances that have taken place since the criminal activity and conviction: \n \na) Whether the applicant has a satisfactory rental history; \nb) Whether the applicant successfully completed the terms of his or her sentence; \nc) If the criminal activity arose from a substance abuse problem, whether the \napplicant has successfully undergone substance abuse treatment; \nd) Other factors to consider include: \n \nPage 3 of 3 (February 2017) \n \n Employment \n Education and/ or work training \n Community involvement, such as church or community groups \n Family support network \n \ne) In determining these factors, the housing provider should give the applicant a list of \nexamples of mitigating evidence, such as letters of recommendations, certificates of \nprogram completion, applicant statements, and other supporting documents. \n \n4. The effect that a denial of admission will have on the household and the community.",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 1,
+                "model_text": "Factors that a housing provider should consider: \n \n1. The circumstances leading to the conviction, such as: \n \na) Whether the conviction arose from a person’s disability, therefore entitling the applicant to \ncivil rights protections for persons with disabilities; \nb) Whether the conviction arose out of a person’s experience as a survivor of domestic \nabuse, sexual assault, dating violence, and/or stalking, therefore entitling the applicant to \nprotection under the Violence Against Women Act (VAWA); \n \n1. The circumstances of the underlying criminal activity, such as: \n \na) The seriousness of the criminal activity; \nb) The relationship between the criminal activity and the safety of other residents on the \nproperty; \nc) The frequency of relevant criminal activity; \nd) The length of time since the criminal activity occurred; \ne) The age of the household member at the time the criminal activity occurred. \n \n2. The circumstances that have taken place since the criminal activity and conviction: \n \na) Whether the applicant has a satisfactory rental history; \nb) Whether the applicant successfully completed the terms of his or her sentence; \nc) If the criminal activity arose from a substance abuse problem, whether the \napplicant has successfully undergone substance abuse treatment; \nd) Other factors to consider include: \n \nPage 3 of 3 (February 2017) \n \n Employment \n Education and/ or work training \n Community involvement, such as church or community groups \n Family support network \n \ne) In determining these factors, the housing provider should give the applicant a list of \nexamples of mitigating evidence, such as letters of recommendations, certificates of \nprogram completion, applicant statements, and other supporting documents. \n \n4. The effect that a denial of admission will have on the household and the community.",
+                "status": "exact_match",
+                "start": 2412,
+                "end": 4260
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true,
+          "evidence_problem": null
+        },
+        "repair_scope": "out_of_scope",
+        "reason": "The provision sets forth non-binding advisory factors and recommendations for housing providers to consider rather than an enforceable requirement or prohibition.",
+        "candidate_indices": [],
+        "accepted_indices": [],
+        "final_resolution": "resolved_out_of_scope",
+        "unresolved_reason": null
+      }
+    ],
+    "cache_key": "a52950e9e803cedd1ecff2ec8d4dae3a7eb95e68bdbefaa1d3f007f0f9abd8cc",
+    "cache_hit": true,
+    "cache_entry": "cache/extraction/a52950e9e803cedd1ecff2ec8d4dae3a7eb95e68bdbefaa1d3f007f0f9abd8cc.json",
+    "prompt_sha256": "7a60cb045aa28cbcab1edc3b12dd69a0b55c1bd844253d19f3684cd82b35c665",
+    "provider_metadata": {
+      "api": "interactions.create",
+      "interaction_id": "",
+      "model": "gemini-3.8-flash",
+      "status": "completed",
+      "usage": {
+        "input_tokens": 6672,
+        "output_tokens": 2023,
+        "thinking_tokens": 15923,
+        "total_tokens": 24618
+      }
+    },
+    "raw_response_text": "{\n  \"target_resolutions\": [\n    {\n      \"ref\": \"Factors to Consider\",\n      \"scope\": \"out_of_scope\",\n      \"reason\": \"The provision sets forth non-binding advisory factors and recommendations for housing providers to consider rather than an enforceable requirement or prohibition.\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Factors that a housing provider should consider: \\n \\n1. The circumstances leading to the conviction, such as: \\n \\na) Whether the conviction arose from a person’s disability, therefore entitling the applicant to \\ncivil rights protections for persons with disabilities; \\nb) Whether the conviction arose out of a person’s experience as a survivor of domestic \\nabuse, sexual assault, dating violence, and/or stalking, therefore entitling the applicant to \\nprotection under the Violence Against Women Act (VAWA); \\n \\n1. The circumstances of the underlying criminal activity, such as: \\n \\na) The seriousness of the criminal activity; \\nb) The relationship between the criminal activity and the safety of other residents on the \\nproperty; \\nc) The frequency of relevant criminal activity; \\nd) The length of time since the criminal activity occurred; \\ne) The age of the household member at the time the criminal activity occurred. \\n \\n2. The circumstances that have taken place since the criminal activity and conviction: \\n \\na) Whether the applicant has a satisfactory rental history; \\nb) Whether the applicant successfully completed the terms of his or her sentence; \\nc) If the criminal activity arose from a substance abuse problem, whether the \\napplicant has successfully undergone substance abuse treatment; \\nd) Other factors to consider include: \\n \\nPage 3 of 3 (February 2017) \\n \\n Employment \\n Education and/ or work training \\n Community involvement, such as church or community groups \\n Family support network \\n \\ne) In determining these factors, the housing provider should give the applicant a list of \\nexamples of mitigating evidence, such as letters of recommendations, certificates of \\nprogram completion, applicant statements, and other supporting documents. \\n \\n4. The effect that a denial of admission will have on the household and the community.\"\n        }\n      ]\n    }\n  ],\n  \"scope_mappings\": [\n    {\n      \"condition_id\": \"S1\",\n      \"provision_id\": \"P10\",\n      \"decision\": \"applies\",\n      \"reason\": \"The lead-in binds covered housing providers to the policy's terms, including the credit evaluation requirements in Section 5(c).\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Under this policy, housing providers agree to the following:\"\n        }\n      ]\n    },\n    {\n      \"condition_id\": \"S1\",\n      \"provision_id\": \"P11\",\n      \"decision\": \"applies\",\n      \"reason\": \"The lead-in binds covered housing providers to the policy's terms, including the mitigating circumstances verification rules in Section 5(d).\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Under this policy, housing providers agree to the following:\"\n        }\n      ]\n    },\n    {\n      \"condition_id\": \"S1\",\n      \"provision_id\": \"P2\",\n      \"decision\": \"applies\",\n      \"reason\": \"The lead-in establishes the scope of providers agreeing to the screening restrictions enumerated in Section 1.\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Under this policy, housing providers agree to the following:\"\n        }\n      ]\n    },\n    {\n      \"condition_id\": \"S1\",\n      \"provision_id\": \"P8\",\n      \"decision\": \"applies\",\n      \"reason\": \"The lead-in binds covered housing providers to the policy's terms, including the credit score prohibition in Section 5(a).\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Under this policy, housing providers agree to the following:\"\n        }\n      ]\n    },\n    {\n      \"condition_id\": \"S1\",\n      \"provision_id\": \"P9\",\n      \"decision\": \"applies\",\n      \"reason\": \"The lead-in binds covered housing providers to the policy's terms, including the credit history restrictions in Section 5(b).\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Under this policy, housing providers agree to the following:\"\n        }\n      ]\n    },\n    {\n      \"condition_id\": \"S2\",\n      \"provision_id\": \"P1\",\n      \"decision\": \"applies\",\n      \"reason\": \"The policy as a whole, including the requirement for case-by-case assessment in P1, applies to the Affirmative Marketing Program.\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"This policy will also be applied to the Office of Fair Housing and Equity Affirmative Marketing \\nProgram which promotes equal access to publicly funded housing for all persons by establishing \\nstandards for public outreach, advertising and tenant/buyer selection criteria.\"\n        }\n      ]\n    },\n    {\n      \"condition_id\": \"S2\",\n      \"provision_id\": \"P10\",\n      \"decision\": \"applies\",\n      \"reason\": \"The policy as a whole, including the credit assessment standards in Section 5(c), applies to the Affirmative Marketing Program.\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"This policy will also be applied to the Office of Fair Housing and Equity Affirmative Marketing \\nProgram which promotes equal access to publicly funded housing for all persons by establishing \\nstandards for public outreach, advertising and tenant/buyer selection criteria.\"\n        }\n      ]\n    },\n    {\n      \"condition_id\": \"S2\",\n      \"provision_id\": \"P11\",\n      \"decision\": \"applies\",\n      \"reason\": \"The policy as a whole, including verification of mitigating circumstances in Section 5(d), applies to the Affirmative Marketing Program.\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"This policy will also be applied to the Office of Fair Housing and Equity Affirmative Marketing \\nProgram which promotes equal access to publicly funded housing for all persons by establishing \\nstandards for public outreach, advertising and tenant/buyer selection criteria.\"\n        }\n      ]\n    },\n    {\n      \"condition_id\": \"S2\",\n      \"provision_id\": \"P2\",\n      \"decision\": \"applies\",\n      \"reason\": \"The policy as a whole, including the criminal screening restrictions in Section 1, applies to the Affirmative Marketing Program.\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"This policy will also be applied to the Office of Fair Housing and Equity Affirmative Marketing \\nProgram which promotes equal access to publicly funded housing for all persons by establishing \\nstandards for public outreach, advertising and tenant/buyer selection criteria.\"\n        }\n      ]\n    },\n    {\n      \"condition_id\": \"S2\",\n      \"provision_id\": \"P8\",\n      \"decision\": \"applies\",\n      \"reason\": \"The policy as a whole, including the credit score ban in Section 5(a), applies to the Affirmative Marketing Program.\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"This policy will also be applied to the Office of Fair Housing and Equity Affirmative Marketing \\nProgram which promotes equal access to publicly funded housing for all persons by establishing \\nstandards for public outreach, advertising and tenant/buyer selection criteria.\"\n        }\n      ]\n    },\n    {\n      \"condition_id\": \"S2\",\n      \"provision_id\": \"P9\",\n      \"decision\": \"applies\",\n      \"reason\": \"The policy as a whole, including the credit history restrictions in Section 5(b), applies to the Affirmative Marketing Program.\",\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"This policy will also be applied to the Office of Fair Housing and Equity Affirmative Marketing \\nProgram which promotes equal access to publicly funded housing for all persons by establishing \\nstandards for public outreach, advertising and tenant/buyer selection criteria.\"\n        }\n      ]\n    }\n  ],\n  \"rules\": []\n}",
+    "mappings": [
+      {
+        "condition_id": "S1",
+        "provision_id": "P2",
+        "kind": "coverage_condition",
+        "statement": "Applies to housing providers receiving Department of Neighborhood Development (DND) funding and/or land, or that have income restricted units created under the Boston Planning and Development Agency (BPDA) Inclusionary Development Policy.",
+        "scope_words": "Under this policy, housing providers agree to the following:",
+        "condition_evidence": "Under this policy, housing providers agree to the following: \n \nHousing providers receiving Department of Neighborhood Development (DND) funding and/or \nland, or that have income restricted units created under the Boston Planning and Development \nAgency (BPDA) Inclusionary Development Policy",
+        "target_ref": "Section 1",
+        "target_anchor": "1. The Developer/Agent (Agent) agrees to not consider",
+        "target_quote": "1. The Developer/Agent (Agent) agrees to not consider any of the following categories when \ndetermining housing eligibility and or considering eviction: \n \na) Arrests that did not result in conviction. This includes dismissed charges, diversion \nprograms, and similar non-convictions. \nb) Convictions that are subject to a form of judicial relief, such as expungement, sealing, \nand certificates for relief from disabilities. \nc) Juvenile records \nd) A conviction more than 5 years old. Tenant selection policy related to arrests and \nconvictions does not apply in situations where there is: \n \n A direct relationship between a conviction and the housing sought and or unreasonable \nrisk of substantial harm to the safety of others.  \n Landlords would consider additional factors such as: evidence of rehabilitation, the time \nthat has elapsed since the conviction occurred, and/or the age of the person at the time \nthe conviction occurred. \n This guidance does not apply to current criminal behavior.",
+        "decision": {
+          "decision": "applies",
+          "reason": "The lead-in establishes the scope of providers agreeing to the screening restrictions enumerated in Section 1.",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 172,
+            "end": 232,
+            "occurrences": 1,
+            "model_span": "Under this policy, housing providers agree to the following:",
+            "source_span": "Under this policy, housing providers agree to the following:",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 1,
+                "model_text": "Under this policy, housing providers agree to the following:",
+                "status": "exact_match",
+                "start": 172,
+                "end": 232
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "applies",
+        "unresolved_reason": null
+      },
+      {
+        "condition_id": "S1",
+        "provision_id": "P8",
+        "kind": "coverage_condition",
+        "statement": "Applies to housing providers receiving Department of Neighborhood Development (DND) funding and/or land, or that have income restricted units created under the Boston Planning and Development Agency (BPDA) Inclusionary Development Policy.",
+        "scope_words": "Under this policy, housing providers agree to the following:",
+        "condition_evidence": "Under this policy, housing providers agree to the following: \n \nHousing providers receiving Department of Neighborhood Development (DND) funding and/or \nland, or that have income restricted units created under the Boston Planning and Development \nAgency (BPDA) Inclusionary Development Policy",
+        "target_ref": "Section 5(a) (Credit)",
+        "target_anchor": "  a) The agent agrees not to use the",
+        "target_quote": "  a) The agent agrees not to use the applicant credit score to approve or deny housing    \napplications.",
+        "decision": {
+          "decision": "applies",
+          "reason": "The lead-in binds covered housing providers to the policy's terms, including the credit score prohibition in Section 5(a).",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 172,
+            "end": 232,
+            "occurrences": 1,
+            "model_span": "Under this policy, housing providers agree to the following:",
+            "source_span": "Under this policy, housing providers agree to the following:",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 1,
+                "model_text": "Under this policy, housing providers agree to the following:",
+                "status": "exact_match",
+                "start": 172,
+                "end": 232
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "applies",
+        "unresolved_reason": null
+      },
+      {
+        "condition_id": "S1",
+        "provision_id": "P9",
+        "kind": "coverage_condition",
+        "statement": "Applies to housing providers receiving Department of Neighborhood Development (DND) funding and/or land, or that have income restricted units created under the Boston Planning and Development Agency (BPDA) Inclusionary Development Policy.",
+        "scope_words": "Under this policy, housing providers agree to the following:",
+        "condition_evidence": "Under this policy, housing providers agree to the following: \n \nHousing providers receiving Department of Neighborhood Development (DND) funding and/or \nland, or that have income restricted units created under the Boston Planning and Development \nAgency (BPDA) Inclusionary Development Policy",
+        "target_ref": "Section 5(b) (Credit)",
+        "target_anchor": "  b) Property Managers may consider an applicant’s credit",
+        "target_quote": "  b) Property Managers may consider an applicant’s credit history, but such information may \nONLY be used in lieu of rental history to determine an applicant’s ability to pay rent when rental \nhistory is not available. Where insufficient credit is the basis for rejection, mitigating \ncircumstances may include: \n \n a representative payer or other reliable third party who would take written responsibility for \npayment; \n evidence that insufficient credit was the result of a disability;  \n evidence that insufficient credit was the result of other circumstances and there is reason to \nbelieve that applicant will now pay rent promptly and in full.",
+        "decision": {
+          "decision": "applies",
+          "reason": "The lead-in binds covered housing providers to the policy's terms, including the credit history restrictions in Section 5(b).",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 172,
+            "end": 232,
+            "occurrences": 1,
+            "model_span": "Under this policy, housing providers agree to the following:",
+            "source_span": "Under this policy, housing providers agree to the following:",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 1,
+                "model_text": "Under this policy, housing providers agree to the following:",
+                "status": "exact_match",
+                "start": 172,
+                "end": 232
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "applies",
+        "unresolved_reason": null
+      },
+      {
+        "condition_id": "S1",
+        "provision_id": "P10",
+        "kind": "coverage_condition",
+        "statement": "Applies to housing providers receiving Department of Neighborhood Development (DND) funding and/or land, or that have income restricted units created under the Boston Planning and Development Agency (BPDA) Inclusionary Development Policy.",
+        "scope_words": "Under this policy, housing providers agree to the following:",
+        "condition_evidence": "Under this policy, housing providers agree to the following: \n \nHousing providers receiving Department of Neighborhood Development (DND) funding and/or \nland, or that have income restricted units created under the Boston Planning and Development \nAgency (BPDA) Inclusionary Development Policy",
+        "target_ref": "Section 5(c) (Credit)",
+        "target_anchor": "  c) An applicant’s ability and willingness to pay",
+        "target_quote": "  c) An applicant’s ability and willingness to pay rent must be demonstrated through an \nidentifiable source of sufficient income to pay rent and prior rental history. The lack of credit \nhistory, as opposed to poor credit history, is not sufficient justification to reject an applicant. An \nAgent must also take into account rent burden if an applicant can demonstrate a history of \nsatisfying a higher rent burden than the Agent normally employs.",
+        "decision": {
+          "decision": "applies",
+          "reason": "The lead-in binds covered housing providers to the policy's terms, including the credit evaluation requirements in Section 5(c).",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 172,
+            "end": 232,
+            "occurrences": 1,
+            "model_span": "Under this policy, housing providers agree to the following:",
+            "source_span": "Under this policy, housing providers agree to the following:",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 1,
+                "model_text": "Under this policy, housing providers agree to the following:",
+                "status": "exact_match",
+                "start": 172,
+                "end": 232
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "applies",
+        "unresolved_reason": null
+      },
+      {
+        "condition_id": "S1",
+        "provision_id": "P11",
+        "kind": "coverage_condition",
+        "statement": "Applies to housing providers receiving Department of Neighborhood Development (DND) funding and/or land, or that have income restricted units created under the Boston Planning and Development Agency (BPDA) Inclusionary Development Policy.",
+        "scope_words": "Under this policy, housing providers agree to the following:",
+        "condition_evidence": "Under this policy, housing providers agree to the following: \n \nHousing providers receiving Department of Neighborhood Development (DND) funding and/or \nland, or that have income restricted units created under the Boston Planning and Development \nAgency (BPDA) Inclusionary Development Policy",
+        "target_ref": "Section 5(d) (Credit)",
+        "target_anchor": "  d) The Agent shall have the right to",
+        "target_quote": "  d) The Agent shall have the right to request information reasonably needed to verify the \nmitigating circumstances, even if such information is of a confidential nature (e.g. verifications \nfrom medical professionals that provide confidential information.). The Agent shall treat all \nsensitive or confidential information with utmost care and return any and all documents \ncontaining such information to the applicant promptly after review. If the applicant refuses to \nprovide or give access to such further information the Agent may choose not to give further \nconsideration to the mitigating circumstance.",
+        "decision": {
+          "decision": "applies",
+          "reason": "The lead-in binds covered housing providers to the policy's terms, including the mitigating circumstances verification rules in Section 5(d).",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 172,
+            "end": 232,
+            "occurrences": 1,
+            "model_span": "Under this policy, housing providers agree to the following:",
+            "source_span": "Under this policy, housing providers agree to the following:",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 1,
+                "model_text": "Under this policy, housing providers agree to the following:",
+                "status": "exact_match",
+                "start": 172,
+                "end": 232
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "applies",
+        "unresolved_reason": null
+      },
+      {
+        "condition_id": "S2",
+        "provision_id": "P1",
+        "kind": "coverage_condition",
+        "statement": "Applies to the Office of Fair Housing and Equity Affirmative Marketing Program.",
+        "scope_words": "This policy will also be applied to",
+        "condition_evidence": "This policy will also be applied to the Office of Fair Housing and Equity Affirmative Marketing \nProgram which promotes equal access to publicly funded housing for all persons by establishing \nstandards for public outreach, advertising and tenant/buyer selection criteria.",
+        "target_ref": "Lead-in",
+        "target_anchor": "Housing providers receiving Department of Neighborhood Development (DND) funding",
+        "target_quote": "Housing providers receiving Department of Neighborhood Development (DND) funding and/or \nland, or that have income restricted units created under the Boston Planning and Development \nAgency (BPDA) Inclusionary Development Policy will not impose a blanket policy that denies \nhousing to anyone with arrests and or convictions. Housing providers will consider applicants on \na case-by-case basis.",
+        "decision": {
+          "decision": "applies",
+          "reason": "The policy as a whole, including the requirement for case-by-case assessment in P1, applies to the Affirmative Marketing Program.",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 6110,
+            "end": 6382,
+            "occurrences": 1,
+            "model_span": "This policy will also be applied to the Office of Fair Housing and Equity Affirmative Marketing \nProgram which promotes equal access to publicly funded housing for all persons by establishing \nstandards for public outreach, advertising and tenant/buyer selection criteria.",
+            "source_span": "This policy will also be applied to the Office of Fair Housing and Equity Affirmative Marketing \nProgram which promotes equal access to publicly funded housing for all persons by establishing \nstandards for public outreach, advertising and tenant/buyer selection criteria.",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 1,
+                "model_text": "This policy will also be applied to the Office of Fair Housing and Equity Affirmative Marketing \nProgram which promotes equal access to publicly funded housing for all persons by establishing \nstandards for public outreach, advertising and tenant/buyer selection criteria.",
+                "status": "exact_match",
+                "start": 6110,
+                "end": 6382
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "applies",
+        "unresolved_reason": null
+      },
+      {
+        "condition_id": "S2",
+        "provision_id": "P2",
+        "kind": "coverage_condition",
+        "statement": "Applies to the Office of Fair Housing and Equity Affirmative Marketing Program.",
+        "scope_words": "This policy will also be applied to",
+        "condition_evidence": "This policy will also be applied to the Office of Fair Housing and Equity Affirmative Marketing \nProgram which promotes equal access to publicly funded housing for all persons by establishing \nstandards for public outreach, advertising and tenant/buyer selection criteria.",
+        "target_ref": "Section 1",
+        "target_anchor": "1. The Developer/Agent (Agent) agrees to not consider",
+        "target_quote": "1. The Developer/Agent (Agent) agrees to not consider any of the following categories when \ndetermining housing eligibility and or considering eviction: \n \na) Arrests that did not result in conviction. This includes dismissed charges, diversion \nprograms, and similar non-convictions. \nb) Convictions that are subject to a form of judicial relief, such as expungement, sealing, \nand certificates for relief from disabilities. \nc) Juvenile records \nd) A conviction more than 5 years old. Tenant selection policy related to arrests and \nconvictions does not apply in situations where there is: \n \n A direct relationship between a conviction and the housing sought and or unreasonable \nrisk of substantial harm to the safety of others.  \n Landlords would consider additional factors such as: evidence of rehabilitation, the time \nthat has elapsed since the conviction occurred, and/or the age of the person at the time \nthe conviction occurred. \n This guidance does not apply to current criminal behavior.",
+        "decision": {
+          "decision": "applies",
+          "reason": "The policy as a whole, including the criminal screening restrictions in Section 1, applies to the Affirmative Marketing Program.",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 6110,
+            "end": 6382,
+            "occurrences": 1,
+            "model_span": "This policy will also be applied to the Office of Fair Housing and Equity Affirmative Marketing \nProgram which promotes equal access to publicly funded housing for all persons by establishing \nstandards for public outreach, advertising and tenant/buyer selection criteria.",
+            "source_span": "This policy will also be applied to the Office of Fair Housing and Equity Affirmative Marketing \nProgram which promotes equal access to publicly funded housing for all persons by establishing \nstandards for public outreach, advertising and tenant/buyer selection criteria.",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 1,
+                "model_text": "This policy will also be applied to the Office of Fair Housing and Equity Affirmative Marketing \nProgram which promotes equal access to publicly funded housing for all persons by establishing \nstandards for public outreach, advertising and tenant/buyer selection criteria.",
+                "status": "exact_match",
+                "start": 6110,
+                "end": 6382
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "applies",
+        "unresolved_reason": null
+      },
+      {
+        "condition_id": "S2",
+        "provision_id": "P8",
+        "kind": "coverage_condition",
+        "statement": "Applies to the Office of Fair Housing and Equity Affirmative Marketing Program.",
+        "scope_words": "This policy will also be applied to",
+        "condition_evidence": "This policy will also be applied to the Office of Fair Housing and Equity Affirmative Marketing \nProgram which promotes equal access to publicly funded housing for all persons by establishing \nstandards for public outreach, advertising and tenant/buyer selection criteria.",
+        "target_ref": "Section 5(a) (Credit)",
+        "target_anchor": "  a) The agent agrees not to use the",
+        "target_quote": "  a) The agent agrees not to use the applicant credit score to approve or deny housing    \napplications.",
+        "decision": {
+          "decision": "applies",
+          "reason": "The policy as a whole, including the credit score ban in Section 5(a), applies to the Affirmative Marketing Program.",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 6110,
+            "end": 6382,
+            "occurrences": 1,
+            "model_span": "This policy will also be applied to the Office of Fair Housing and Equity Affirmative Marketing \nProgram which promotes equal access to publicly funded housing for all persons by establishing \nstandards for public outreach, advertising and tenant/buyer selection criteria.",
+            "source_span": "This policy will also be applied to the Office of Fair Housing and Equity Affirmative Marketing \nProgram which promotes equal access to publicly funded housing for all persons by establishing \nstandards for public outreach, advertising and tenant/buyer selection criteria.",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 1,
+                "model_text": "This policy will also be applied to the Office of Fair Housing and Equity Affirmative Marketing \nProgram which promotes equal access to publicly funded housing for all persons by establishing \nstandards for public outreach, advertising and tenant/buyer selection criteria.",
+                "status": "exact_match",
+                "start": 6110,
+                "end": 6382
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "applies",
+        "unresolved_reason": null
+      },
+      {
+        "condition_id": "S2",
+        "provision_id": "P9",
+        "kind": "coverage_condition",
+        "statement": "Applies to the Office of Fair Housing and Equity Affirmative Marketing Program.",
+        "scope_words": "This policy will also be applied to",
+        "condition_evidence": "This policy will also be applied to the Office of Fair Housing and Equity Affirmative Marketing \nProgram which promotes equal access to publicly funded housing for all persons by establishing \nstandards for public outreach, advertising and tenant/buyer selection criteria.",
+        "target_ref": "Section 5(b) (Credit)",
+        "target_anchor": "  b) Property Managers may consider an applicant’s credit",
+        "target_quote": "  b) Property Managers may consider an applicant’s credit history, but such information may \nONLY be used in lieu of rental history to determine an applicant’s ability to pay rent when rental \nhistory is not available. Where insufficient credit is the basis for rejection, mitigating \ncircumstances may include: \n \n a representative payer or other reliable third party who would take written responsibility for \npayment; \n evidence that insufficient credit was the result of a disability;  \n evidence that insufficient credit was the result of other circumstances and there is reason to \nbelieve that applicant will now pay rent promptly and in full.",
+        "decision": {
+          "decision": "applies",
+          "reason": "The policy as a whole, including the credit history restrictions in Section 5(b), applies to the Affirmative Marketing Program.",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 6110,
+            "end": 6382,
+            "occurrences": 1,
+            "model_span": "This policy will also be applied to the Office of Fair Housing and Equity Affirmative Marketing \nProgram which promotes equal access to publicly funded housing for all persons by establishing \nstandards for public outreach, advertising and tenant/buyer selection criteria.",
+            "source_span": "This policy will also be applied to the Office of Fair Housing and Equity Affirmative Marketing \nProgram which promotes equal access to publicly funded housing for all persons by establishing \nstandards for public outreach, advertising and tenant/buyer selection criteria.",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 1,
+                "model_text": "This policy will also be applied to the Office of Fair Housing and Equity Affirmative Marketing \nProgram which promotes equal access to publicly funded housing for all persons by establishing \nstandards for public outreach, advertising and tenant/buyer selection criteria.",
+                "status": "exact_match",
+                "start": 6110,
+                "end": 6382
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "applies",
+        "unresolved_reason": null
+      },
+      {
+        "condition_id": "S2",
+        "provision_id": "P10",
+        "kind": "coverage_condition",
+        "statement": "Applies to the Office of Fair Housing and Equity Affirmative Marketing Program.",
+        "scope_words": "This policy will also be applied to",
+        "condition_evidence": "This policy will also be applied to the Office of Fair Housing and Equity Affirmative Marketing \nProgram which promotes equal access to publicly funded housing for all persons by establishing \nstandards for public outreach, advertising and tenant/buyer selection criteria.",
+        "target_ref": "Section 5(c) (Credit)",
+        "target_anchor": "  c) An applicant’s ability and willingness to pay",
+        "target_quote": "  c) An applicant’s ability and willingness to pay rent must be demonstrated through an \nidentifiable source of sufficient income to pay rent and prior rental history. The lack of credit \nhistory, as opposed to poor credit history, is not sufficient justification to reject an applicant. An \nAgent must also take into account rent burden if an applicant can demonstrate a history of \nsatisfying a higher rent burden than the Agent normally employs.",
+        "decision": {
+          "decision": "applies",
+          "reason": "The policy as a whole, including the credit assessment standards in Section 5(c), applies to the Affirmative Marketing Program.",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 6110,
+            "end": 6382,
+            "occurrences": 1,
+            "model_span": "This policy will also be applied to the Office of Fair Housing and Equity Affirmative Marketing \nProgram which promotes equal access to publicly funded housing for all persons by establishing \nstandards for public outreach, advertising and tenant/buyer selection criteria.",
+            "source_span": "This policy will also be applied to the Office of Fair Housing and Equity Affirmative Marketing \nProgram which promotes equal access to publicly funded housing for all persons by establishing \nstandards for public outreach, advertising and tenant/buyer selection criteria.",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 1,
+                "model_text": "This policy will also be applied to the Office of Fair Housing and Equity Affirmative Marketing \nProgram which promotes equal access to publicly funded housing for all persons by establishing \nstandards for public outreach, advertising and tenant/buyer selection criteria.",
+                "status": "exact_match",
+                "start": 6110,
+                "end": 6382
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "applies",
+        "unresolved_reason": null
+      },
+      {
+        "condition_id": "S2",
+        "provision_id": "P11",
+        "kind": "coverage_condition",
+        "statement": "Applies to the Office of Fair Housing and Equity Affirmative Marketing Program.",
+        "scope_words": "This policy will also be applied to",
+        "condition_evidence": "This policy will also be applied to the Office of Fair Housing and Equity Affirmative Marketing \nProgram which promotes equal access to publicly funded housing for all persons by establishing \nstandards for public outreach, advertising and tenant/buyer selection criteria.",
+        "target_ref": "Section 5(d) (Credit)",
+        "target_anchor": "  d) The Agent shall have the right to",
+        "target_quote": "  d) The Agent shall have the right to request information reasonably needed to verify the \nmitigating circumstances, even if such information is of a confidential nature (e.g. verifications \nfrom medical professionals that provide confidential information.). The Agent shall treat all \nsensitive or confidential information with utmost care and return any and all documents \ncontaining such information to the applicant promptly after review. If the applicant refuses to \nprovide or give access to such further information the Agent may choose not to give further \nconsideration to the mitigating circumstance.",
+        "decision": {
+          "decision": "applies",
+          "reason": "The policy as a whole, including verification of mitigating circumstances in Section 5(d), applies to the Affirmative Marketing Program.",
+          "evidence_check": {
+            "status": "exact_match",
+            "normalization": null,
+            "start": 6110,
+            "end": 6382,
+            "occurrences": 1,
+            "model_span": "This policy will also be applied to the Office of Fair Housing and Equity Affirmative Marketing \nProgram which promotes equal access to publicly funded housing for all persons by establishing \nstandards for public outreach, advertising and tenant/buyer selection criteria.",
+            "source_span": "This policy will also be applied to the Office of Fair Housing and Equity Affirmative Marketing \nProgram which promotes equal access to publicly funded housing for all persons by establishing \nstandards for public outreach, advertising and tenant/buyer selection criteria.",
+            "reason": null,
+            "reconstructed": false,
+            "parts": [
+              {
+                "segment_id": 1,
+                "model_text": "This policy will also be applied to the Office of Fair Housing and Equity Affirmative Marketing \nProgram which promotes equal access to publicly funded housing for all persons by establishing \nstandards for public outreach, advertising and tenant/buyer selection criteria.",
+                "status": "exact_match",
+                "start": 6110,
+                "end": 6382
+              }
+            ],
+            "crossed_artifacts": []
+          },
+          "evidence_verified": true
+        },
+        "final": "applies",
+        "unresolved_reason": null
+      }
+    ],
+    "candidate_indices": [],
+    "accepted_count": 0,
+    "rejected_count": 0,
+    "errors": []
+  },
+  "document_status": "review_required",
+  "review_reasons": [
+    "6 candidate record(s) held, not published, because the time of application is unresolved: ['temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force']"
+  ],
+  "warnings": [
+    "candidate 0 held: status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+    "candidate 1 held: status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+    "candidate 2 held: status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+    "candidate 3 held: status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+    "candidate 4 held: status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+    "candidate 5 held: status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+  ],
+  "errors": [],
+  "raw_response_text": "{\n  \"document\": {\n    \"posture\": \"official_explanatory_page\",\n    \"evidence\": \"Department of Neighborhood Development (DND) \\nSheila A. Dillon, Chief & Director \\n \\n \\nBOSTON FAIR CHANCE TENANT SELECTION POLICY\"\n  },\n  \"provisions\": [\n    {\n      \"id\": \"P1\",\n      \"ref\": \"Lead-in\",\n      \"anchor\": \"Housing providers receiving Department of Neighborhood Development (DND) funding\",\n      \"summary\": \"Prohibits blanket policies denying housing to anyone with arrests or convictions and requires case-by-case assessment.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"screening_restrictions\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P2\",\n      \"ref\": \"Section 1\",\n      \"anchor\": \"1. The Developer/Agent (Agent) agrees to not consider\",\n      \"summary\": \"Bars consideration of non-conviction arrests, convictions subject to judicial relief, juvenile records, and convictions more than 5 years old, with exceptions.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"screening_restrictions\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P3\",\n      \"ref\": \"Section 2\",\n      \"anchor\": \"2. The Agent is strongly encouraged to use\",\n      \"summary\": \"Encourages agents to validate CORI through DCJIS.\",\n      \"role\": \"procedure\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"Non-binding recommendation to use DCJIS; imposes no mandatory obligation.\"\n    },\n    {\n      \"id\": \"P4\",\n      \"ref\": \"Section 3\",\n      \"anchor\": \"3. The Agent is strongly encouraged to assign\",\n      \"summary\": \"Encourages assigning the same staff to review CORI for consistency.\",\n      \"role\": \"procedure\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"Non-binding recommendation regarding staffing consistency; imposes no mandatory obligation.\"\n    },\n    {\n      \"id\": \"P5\",\n      \"ref\": \"Section 4\",\n      \"anchor\": \"4. When feasible, housing providers should provide an\",\n      \"summary\": \"Recommends providing an appeals process for conviction-based housing denials when feasible.\",\n      \"role\": \"procedure\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"Non-binding recommendation to provide an appeals process when feasible.\"\n    },\n    {\n      \"id\": \"P6\",\n      \"ref\": \"Section 5 (Preemption)\",\n      \"anchor\": \"5. Where federal or state law imposes a\",\n      \"summary\": \"Provides that conflicting federal or state criminal history requirements preempt this policy.\",\n      \"role\": \"boilerplate\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"Preemption and conflict-of-laws clause; see interaction on governed rules.\"\n    },\n    {\n      \"id\": \"P7\",\n      \"ref\": \"Factors to Consider\",\n      \"anchor\": \"Factors that a housing provider should consider:\",\n      \"summary\": \"Enumerates circumstances and mitigating factors housing providers should consider when assessing applicants.\",\n      \"role\": \"procedure\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"Guidance and non-binding factors for providers to consider during applicant assessment.\"\n    },\n    {\n      \"id\": \"P8\",\n      \"ref\": \"Section 5(a) (Credit)\",\n      \"anchor\": \"  a) The agent agrees not to use the\",\n      \"summary\": \"Prohibits using applicant credit scores to approve or deny housing applications.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"screening_restrictions\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P9\",\n      \"ref\": \"Section 5(b) (Credit)\",\n      \"anchor\": \"  b) Property Managers may consider an applicant’s credit\",\n      \"summary\": \"Restricts use of credit history to situations where rental history is unavailable, and specifies mitigating circumstances for insufficient credit.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"screening_restrictions\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P10\",\n      \"ref\": \"Section 5(c) (Credit)\",\n      \"anchor\": \"  c) An applicant’s ability and willingness to pay\",\n      \"summary\": \"Prohibits rejecting applicants for lack of credit history and requires consideration of demonstrated higher rent burden.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"screening_restrictions\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P11\",\n      \"ref\": \"Section 5(d) (Credit)\",\n      \"anchor\": \"  d) The Agent shall have the right to\",\n      \"summary\": \"Authorizes verification of mitigating circumstances and mandates careful handling and prompt return of confidential documents.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"screening_restrictions\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P12\",\n      \"ref\": \"Affirmative Marketing Scope\",\n      \"anchor\": \"This policy will also be applied to the\",\n      \"summary\": \"Applies the policy to the Office of Fair Housing and Equity Affirmative Marketing Program.\",\n      \"role\": \"scope_condition\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"Scope condition extending coverage to the Affirmative Marketing Program; see global_scope.\"\n    }\n  ],\n  \"global_scope\": [\n    {\n      \"id\": \"S1\",\n      \"kind\": \"coverage_condition\",\n      \"statement\": \"Applies to housing providers receiving Department of Neighborhood Development (DND) funding and/or land, or that have income restricted units created under the Boston Planning and Development Agency (BPDA) Inclusionary Development Policy.\",\n      \"citation\": \"Lead-in\",\n      \"scope_mode\": \"structural\",\n      \"scope_quote\": \"Under this policy, housing providers agree to the following:\",\n      \"source_provision_id\": \"P1\",\n      \"governed_provision_ids\": null,\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Under this policy, housing providers agree to the following: \\n \\nHousing providers receiving Department of Neighborhood Development (DND) funding and/or \\nland, or that have income restricted units created under the Boston Planning and Development \\nAgency (BPDA) Inclusionary Development Policy\"\n        }\n      ]\n    },\n    {\n      \"id\": \"S2\",\n      \"kind\": \"coverage_condition\",\n      \"statement\": \"Applies to the Office of Fair Housing and Equity Affirmative Marketing Program.\",\n      \"citation\": \"Affirmative Marketing Scope\",\n      \"scope_mode\": \"structural\",\n      \"scope_quote\": \"This policy will also be applied to\",\n      \"source_provision_id\": \"P12\",\n      \"governed_provision_ids\": null,\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"This policy will also be applied to the Office of Fair Housing and Equity Affirmative Marketing \\nProgram which promotes equal access to publicly funded housing for all persons by establishing \\nstandards for public outreach, advertising and tenant/buyer selection criteria.\"\n        }\n      ]\n    }\n  ],\n  \"rules\": [\n    {\n      \"category\": \"screening_restrictions\",\n      \"citation\": \"Lead-in\",\n      \"provision_ids\": [\"P1\"],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"Housing providers receiving Department of Neighborhood Development (DND) funding and/or \\nland, or that have income restricted units created under the Boston Planning and Development \\nAgency (BPDA) Inclusionary Development Policy will not impose a blanket policy that denies \\nhousing to anyone with arrests and or convictions. Housing providers will consider applicants on \\na case-by-case basis.\"\n        }\n      ],\n      \"title\": \"Blanket Criminal Record Ban Prohibition and Case-by-Case Review\",\n      \"requirement\": \"Housing providers must not impose a blanket policy that denies housing to anyone with arrests or convictions, and must consider applicants on a case-by-case basis.\",\n      \"key_value\": null,\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": \"Where federal or state law imposes a criminal history requirement that conflicts with a requirement of this guidance, the federal or state law preempts this policy.\",\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": \"Sheila A. Dillon, Chief & Director \\n \\n \\nBOSTON FAIR CHANCE TENANT SELECTION POLICY\",\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": null,\n      \"effective_date_evidence_kind\": null,\n      \"effective_date\": null,\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"screening_restrictions\",\n      \"citation\": \"Section 1\",\n      \"provision_ids\": [\"P2\"],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"1. The Developer/Agent (Agent) agrees to not consider any of the following categories when \\ndetermining housing eligibility and or considering eviction: \\n \\na) Arrests that did not result in conviction. This includes dismissed charges, diversion \\nprograms, and similar non-convictions. \\nb) Convictions that are subject to a form of judicial relief, such as expungement, sealing, \\nand certificates for relief from disabilities. \\nc) Juvenile records \\nd) A conviction more than 5 years old. Tenant selection policy related to arrests and \\nconvictions does not apply in situations where there is: \\n \\n A direct relationship between a conviction and the housing sought and or unreasonable \\nrisk of substantial harm to the safety of others.  \\n Landlords would consider additional factors such as: evidence of rehabilitation, the time \\nthat has elapsed since the conviction occurred, and/or the age of the person at the time \\nthe conviction occurred.  \\n This guidance does not apply to current criminal behavior.\"\n        }\n      ],\n      \"title\": \"Prohibited Criminal History Categories in Housing Eligibility and Eviction\",\n      \"requirement\": \"The developer or agent must not consider arrests that did not result in conviction, convictions subject to judicial relief, juvenile records, or convictions more than 5 years old when determining housing eligibility or considering eviction.\",\n      \"key_value\": \"5 years\",\n      \"coverage_conditions\": null,\n      \"exemptions\": \"The policy does not apply where there is a direct relationship between a conviction and the housing sought or an unreasonable risk of substantial harm to the safety of others (considering evidence of rehabilitation, elapsed time, and age at the time of conviction), nor does it apply to current criminal behavior.\",\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": \"Where federal or state law imposes a criminal history requirement that conflicts with a requirement of this guidance, the federal or state law preempts this policy.\",\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": \"Sheila A. Dillon, Chief & Director \\n \\n \\nBOSTON FAIR CHANCE TENANT SELECTION POLICY\",\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": null,\n      \"effective_date_evidence_kind\": null,\n      \"effective_date\": null,\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"screening_restrictions\",\n      \"citation\": \"Section 5(a) (Credit)\",\n      \"provision_ids\": [\"P8\"],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"  a) The agent agrees not to use the applicant credit score to approve or deny housing    \\napplications.\"\n        }\n      ],\n      \"title\": \"Prohibition on Using Credit Score\",\n      \"requirement\": \"The agent must not use an applicant's credit score to approve or deny housing applications.\",\n      \"key_value\": null,\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": \"Sheila A. Dillon, Chief & Director \\n \\n \\nBOSTON FAIR CHANCE TENANT SELECTION POLICY\",\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": null,\n      \"effective_date_evidence_kind\": null,\n      \"effective_date\": null,\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"screening_restrictions\",\n      \"citation\": \"Section 5(b) (Credit)\",\n      \"provision_ids\": [\"P9\"],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"  b) Property Managers may consider an applicant’s credit history, but such information may \\nONLY be used in lieu of rental history to determine an applicant’s ability to pay rent when rental \\nhistory is not available. Where insufficient credit is the basis for rejection, mitigating \\ncircumstances may include: \\n \\n a representative payer or other reliable third party who would take written responsibility for \\npayment; \\n evidence that insufficient credit was the result of a disability;  \\n evidence that insufficient credit was the result of other circumstances and there is reason to \\nbelieve that applicant will now pay rent promptly and in full.\"\n        }\n      ],\n      \"title\": \"Permitted Credit History Use and Mitigating Circumstances\",\n      \"requirement\": \"Property managers may only consider credit history in lieu of rental history to determine ability to pay rent when rental history is not available, and must consider specified mitigating circumstances when insufficient credit forms the basis for rejection.\",\n      \"key_value\": null,\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": \"Sheila A. Dillon, Chief & Director \\n \\n \\nBOSTON FAIR CHANCE TENANT SELECTION POLICY\",\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": null,\n      \"effective_date_evidence_kind\": null,\n      \"effective_date\": null,\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"screening_restrictions\",\n      \"citation\": \"Section 5(c) (Credit)\",\n      \"provision_ids\": [\"P10\"],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"  c) An applicant’s ability and willingness to pay rent must be demonstrated through an \\nidentifiable source of sufficient income to pay rent and prior rental history. The lack of credit \\nhistory, as opposed to poor credit history, is not sufficient justification to reject an applicant. An \\nAgent must also take into account rent burden if an applicant can demonstrate a history of \\nsatisfying a higher rent burden than the Agent normally employs.\"\n        }\n      ],\n      \"title\": \"Lack of Credit History and Demonstrated Higher Rent Burden\",\n      \"requirement\": \"A lack of credit history is not sufficient justification to reject an applicant, and an agent must take into account rent burden if an applicant demonstrates a history of satisfying a higher rent burden than the agent normally employs.\",\n      \"key_value\": null,\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": \"Sheila A. Dillon, Chief & Director \\n \\n \\nBOSTON FAIR CHANCE TENANT SELECTION POLICY\",\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": null,\n      \"effective_date_evidence_kind\": null,\n      \"effective_date\": null,\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"screening_restrictions\",\n      \"citation\": \"Section 5(d) (Credit)\",\n      \"provision_ids\": [\"P11\"],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"  d) The Agent shall have the right to request information reasonably needed to verify the \\nmitigating circumstances, even if such information is of a confidential nature (e.g. verifications \\nfrom medical professionals that provide confidential information.). The Agent shall treat all \\nsensitive or confidential information with utmost care and return any and all documents \\ncontaining such information to the applicant promptly after review. If the applicant refuses to \\nprovide or give access to such further information the Agent may choose not to give further \\nconsideration to the mitigating circumstance.\"\n        }\n      ],\n      \"title\": \"Verification and Return of Sensitive Mitigating Information\",\n      \"requirement\": \"The agent may request information needed to verify mitigating circumstances, must treat all sensitive or confidential information with utmost care, and must promptly return all documents containing such information to the applicant after review.\",\n      \"key_value\": null,\n      \"coverage_conditions\": null,\n      \"exemptions\": \"If the applicant refuses to provide or give access to verifying information, the agent may choose not to give further consideration to the mitigating circumstance.\",\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": \"Sheila A. Dillon, Chief & Director \\n \\n \\nBOSTON FAIR CHANCE TENANT SELECTION POLICY\",\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": null,\n      \"effective_date_evidence_kind\": null,\n      \"effective_date\": null,\n      \"conflict_note\": null\n    }\n  ],\n  \"no_rules_justification\": null\n}"
+}

@@ -9,7 +9,9 @@
          against the RAW text (a cross-page quote is reconstructed as one exact raw span)
          -> status evidence -> legislative status of proposals (legislative.py) ->
          effective-date evidence classification and deterministic relative-date
-         resolution -> status derivation (posture-aware) -> structural / explicit-reference
+         resolution -> status derivation (posture-aware) -> validity window (validity.py:
+         a future end keeps the rule current; an end on or before as_of makes it
+         historical, never published) -> structural / explicit-reference
          scope propagation + operative conditions -> trusted metadata +
          team_rule_id -> RuleRecord -> official JSON Schema
       -> completeness: inventory coverage closure + subdivision guard + scope
@@ -20,11 +22,14 @@
          in_scope / out_of_scope / uncertain, and its candidates go through exactly
          the same evaluation
       -> named-subject conditions propagate only where the repair said "applies"
+      -> exact same-source duplicates suppressed (same category and raw passage)
       -> completeness rerun; every target and mapping resolved, or review_required
       -> ExtractionRun audit record, document_status complete | review_required
 
 A candidate is accepted only if every stage passes. A candidate whose only problem is an
-unresolved time of application is HELD: preserved with its evidence, never published.
+unresolved time of application is HELD: preserved with its evidence, never published. A
+candidate that passes every stage but whose verified validity ended on or before as_of is
+HISTORICAL: preserved with its evidence and temporal state, never published as current.
 Rejected candidates are never retried or repaired. A document with no candidate at all is
 complete only with a verified justification that it has no in-scope legal content.
 Vendor-neutral: depends only on the StructuredLLMProvider protocol.
@@ -48,7 +53,8 @@ from navigator.extraction.coverage import (closure, provision_regions, same_ref,
                                            unrecorded_subdivisions)
 from navigator.extraction.legislative import decide as legislative_status
 from navigator.extraction.legislative import find_session
-from navigator.extraction.models import (CandidateResult, ExtractedRule, ExtractionRun, LegacyExtractedRule,
+from navigator.extraction.models import (CandidateResult, CitationCheck, ExtractedRule, ExtractionRun,
+                                         LegacyExtractedRule,
                                          LegacyProvisionNote, LegacyScopeCondition, NoRulesJustification,
                                          ProvisionNote, QuotePart,
                                          RepairPass, RepairResponse, RuleRecord, ScopeCondition, SourceMeta,
@@ -64,9 +70,11 @@ from navigator.extraction.repair import (attach_resolutions, build_targets, cano
 from navigator.extraction.quotes import verify_quote_parts, verify_text
 from navigator.extraction.scope import (attach_mapping_decisions, finalize_mappings, mapping_challenges,
                                         mapping_identity, named_targets, resolve_condition, scope_words)
-from navigator.extraction.review import calendar_dates, unsupported_figures
+from navigator.extraction.review import unsupported_figures
 from navigator.extraction.source_view import PAGE_BREAK_MARKER, SEGMENT_LABEL, SourceView, build_view
-from navigator.extraction.temporal import find_base_dates, resolve_effective_date
+from navigator.extraction.temporal import enclosing_note_span, find_base_dates, resolve_effective_date
+from navigator.extraction.validity import decide as decide_window
+from navigator.extraction.validity import resolve_window
 from navigator.validation import make_rule_validator
 
 _QUOTE_PARTS = TypeAdapter(list[QuotePart])
@@ -275,9 +283,10 @@ def evaluate_primary(run: ExtractionRun, payload: dict[str, Any], source: Source
 
 
 def _publishable(c: CandidateResult) -> bool:
-    """Accepted, or failing only on an unresolved time of application (a hold)."""
+    """Validated (accepted, historical or a suppressed exact duplicate), or failing only on an
+    unresolved time of application (a hold)."""
     reason = c.temporal.get("unresolved_reason")
-    return c.accepted or (bool(reason) and c.rejection_reasons == [reason])
+    return c.validated or (bool(reason) and c.rejection_reasons == [reason])
 
 
 def _scope_mapping_challenges(run: ExtractionRun, ctx: DocContext) -> list[dict[str, Any]]:
@@ -330,11 +339,12 @@ def _parse(text: str, allowed: set[str], errors: list[str], warnings: list[str])
 def _repair_pass(run: ExtractionRun, source: SourceDocument, primary_key: str, ctx: DocContext,
                  targets: list[dict[str, Any]], *, provider_name: str, model: str, cache: ResponseCache,
                  provider: StructuredLLMProvider | None, force: bool, settings: dict[str, Any], as_of: date,
-                 validator) -> RepairPass:
+                 validator, request: PreparedRequest | None = None) -> RepairPass:
     """The single repair request of this run. Its candidates are evaluated exactly like primary
-    ones; the only extra check can only reject (repair.repair_scope_rejection)."""
-    req = prepare_repair_request(source, provider_name, model, settings, primary_key, ctx.scope, targets,
-                                 run.scope_mappings)
+    ones; the only extra check can only reject (repair.repair_scope_rejection). `request`:
+    a prepared repair request built elsewhere (large-document mode sends excerpts only)."""
+    req = request or prepare_repair_request(source, provider_name, model, settings, primary_key, ctx.scope,
+                                            targets, run.scope_mappings)
     kinds = sorted({s for t in targets for s in t["sources"]})
     reason = f"{len(targets)} repair target(s) from {', '.join(kinds) or 'no check'}"
     if run.scope_mappings:
@@ -370,7 +380,8 @@ def _repair_pass(run: ExtractionRun, source: SourceDocument, primary_key: str, c
         c = evaluate_candidate(len(run.candidates), raw, source, as_of, validator, ctx)
         c.origin = "repair"
         if reason := repair_scope_rejection(c, targets):
-            c.accepted = False
+            c.accepted = c.historical = False
+            c.temporal_state = None
             c.rejection_reasons.append(reason)
         run.candidates.append(c)
         rp.candidate_indices.append(c.index)
@@ -428,17 +439,71 @@ def _apply_scope_mappings(run: ExtractionRun) -> None:
                                                           "coverage_condition", inputs.get("operative", []))
 
 
+def _metadata(c: CandidateResult) -> tuple[int, ...]:
+    """Verified structured metadata of a record, compared component-wise by _dedupe_same_source."""
+    return (int(c.rule.get("effective_date") is not None),
+            sum(oc["evidence_check"]["status"] != "failed" for oc in c.operative_conditions),
+            sum(p["applied"] for p in c.propagated_scope),
+            int(c.version_evidence is not None and c.version_evidence.status != "failed"))
+
+
+def _dedupe_same_source(run: ExtractionRun) -> None:
+    """Suppress EXACT same-source duplicates: validated candidates of this document with the
+    same category and the identical published quoted_span (the same raw passage, so also
+    identical raw offsets). One record is published; the earlier (primary) record is kept
+    unless a repair record's verified structured metadata is strictly better. The suppressed
+    record stays in the audit (duplicate_of) with both provenances in run.dedupe. Records
+    that quote DIFFERENT passages are never merged here, however similar."""
+    groups: dict[tuple[str, str, bool], list[CandidateResult]] = {}
+    for c in run.candidates:
+        if (c.accepted or c.historical) and c.rule is not None:
+            groups.setdefault((c.rule["category"], c.rule["quoted_span"], c.historical), []).append(c)
+    for group in groups.values():
+        keep = group[0]
+        for c in group[1:]:
+            mine, theirs = _metadata(c), _metadata(keep)
+            if (c.origin == "repair" and keep.origin == "primary" and all(a >= b for a, b in zip(mine, theirs))
+                    and mine != theirs):
+                keep = c
+        for c in group:
+            if c is keep:
+                continue
+            c.accepted = c.historical = False
+            c.duplicate_of = keep.index
+            c.rejection_reasons.append(f"duplicate: same source passage and category as candidate {keep.index} "
+                                       f"(team_rule_id {keep.rule['team_rule_id']}); suppressed, one record kept")
+            run.dedupe.append({
+                "kept_index": keep.index, "kept_team_rule_id": keep.rule["team_rule_id"],
+                "suppressed_index": c.index, "suppressed_team_rule_id": c.rule["team_rule_id"],
+                "reason": "identical raw quoted_span and category in the same document",
+                "raw_start": keep.citation.start, "raw_end": keep.citation.end,
+                "provenance": {"kept": {"origin": keep.origin, "citation": keep.rule["citation"],
+                                        "provision_ids": keep.provision_ids},
+                               "suppressed": {"origin": c.origin, "citation": c.rule["citation"],
+                                              "provision_ids": c.provision_ids}},
+                "kept_because": ("repair record has strictly better verified metadata"
+                                 if keep.origin == "repair" else "earlier (primary) record")})
+
+
 def finalize(run: ExtractionRun, source: SourceDocument) -> None:
+    for c in run.candidates:   # historical means validated: any rejection voids it
+        if c.historical and c.rejection_reasons:
+            c.historical, c.temporal_state = False, None
     _dedupe(run.candidates)
     _apply_scope_mappings(run)
+    _dedupe_same_source(run)
     for c in run.candidates:   # held: the unresolved time of application is the ONLY problem
         reason = c.temporal.get("unresolved_reason")
         c.held = bool(reason) and not c.accepted and c.rejection_reasons == [reason]
+        c.temporal_state = (c.temporal_state if c.historical else "held" if c.held else
+                            c.rule["status"] if c.accepted else None)
     run.candidate_count = len(run.candidates)
     run.rules = [c.rule for c in run.candidates if c.accepted]
     run.accepted_count = len(run.rules)
     for c in run.candidates:
-        if not c.accepted:
+        if c.historical:
+            run.warnings.append(f"candidate {c.index} historical ({c.temporal_state}): {c.status_derivation}")
+        elif not c.accepted:
             run.warnings.append(f"candidate {c.index} {'held' if c.held else 'rejected'}: "
                                 f"{'; '.join(c.rejection_reasons)}")
 
@@ -703,6 +768,9 @@ def evaluate_candidate(index: int, raw: Any, source: SourceDocument, as_of: date
                             "including the recorded page artifact")
     elif res.citation.status == "normalized_match":
         res.warnings.append("quoted_span matched only after safe normalization; exact source text used in the record")
+    elif res.citation.status == "layout_normalized_match":
+        res.warnings.append("quoted_span matched only after layout normalization (whitespace next to brackets); "
+                            "exact source text used in the record")
 
     # Enactment status: pending and failed must be shown by verified text; compared with the posture.
     if rule.enactment_status_evidence is not None:
@@ -744,16 +812,13 @@ def evaluate_candidate(index: int, raw: Any, source: SourceDocument, as_of: date
         if res.status_derivation.startswith(TEMPORAL_UNRESOLVED):
             res.temporal["unresolved_reason"] = f"status: {res.status_derivation}"
 
-    # Version history is evidence for later temporal modelling, never a conflict.
-    # A verified annotation dated after as_of means the extracted (latest) wording
-    # may not apply yet: reject conservatively rather than publish it as in force.
+    # Version history must be verbatim. Its dates are classified by the validity window below:
+    # a future repeal/expiry is an END (the current wording still applies), a future
+    # amendment date a later START; an unclassified future date holds the record.
     if rule.version_evidence is not None:
         res.version_evidence = verify_text(rule.version_evidence, source.body, source.view)
         if res.version_evidence.status == "failed":
             res.rejection_reasons.append("citation: version_evidence not found in source text")
-        elif later := [d for d in calendar_dates(res.version_evidence.source_span) if d > as_of]:
-            res.rejection_reasons.append(f"status: a version annotation is dated {later[0]}, after as_of {as_of}; "
-                                         "the extracted wording may not apply yet")
     elif rule.version_note is not None:
         res.warnings.append("review: version_note given without verbatim version_evidence")
 
@@ -774,10 +839,12 @@ def evaluate_candidate(index: int, raw: Any, source: SourceDocument, as_of: date
     if operative:
         res.warnings.append("review: applicability depends on an unresolved operative condition")
 
+    status, effective_date = _apply_validity(res, rule, source, status, temporal.effective_date, as_of)
+
     res.scope_inputs.update(exemptions=rule.exemptions, coverage_conditions=rule.coverage_conditions,
                             operative=[oc.statement for oc in operative])
     propagated = _propagate_scope(rule, ctx.scope, source, res)
-    res.rule = build_record(rule, source.meta, res.citation, status, temporal.effective_date, propagated, operative,
+    res.rule = build_record(rule, source.meta, res.citation, status, effective_date, propagated, operative,
                             basis=rule.source_basis)
     if res.citation.status != "failed" and res.rule["quoted_span"] not in source.body:
         res.rejection_reasons.append("citation: published quoted_span is not a contiguous raw substring")  # invariant
@@ -800,8 +867,55 @@ def evaluate_candidate(index: int, raw: Any, source: SourceDocument, as_of: date
     res.schema_valid = not res.schema_errors
     if res.schema_errors:
         res.rejection_reasons.append("official schema: normalized record is invalid")
-    res.accepted = not res.rejection_reasons
+    res.historical = res.historical and not res.rejection_reasons
+    if res.historical:
+        res.rule["status"] = None   # validated as of its own window; never published as current
+    res.accepted = not res.rejection_reasons and not res.historical
+    res.temporal_state = res.temporal_state if res.historical else status if res.accepted else None
     return res
+
+
+def _apply_validity(res: CandidateResult, rule: ExtractedRule, source: SourceDocument, status: str | None,
+                    effective_date: str | None, as_of: date) -> tuple[str | None, str | None]:
+    """The record's validity window (validity.py) from its verified passages, and its
+    consequence for an enacted record. Returns the (possibly changed) status and effective date."""
+    pieces = [("quoted_span", res.citation, False), ("version_evidence", res.version_evidence, True)]
+    ev = res.effective_date_evidence
+    if ev is not None and ev.status != "failed":
+        if res.temporal.get("applied_kind") == "history_note":
+            s, e = enclosing_note_span(source.body, ev.start, ev.end)
+            note = source.body[s:e]
+            pieces.append(("history_note", CitationCheck(status="exact_match", start=s, end=e, occurrences=1,
+                                                         model_span=note, source_span=note), True))
+        else:
+            pieces.append(("effective_date_evidence", ev, False))
+    pieces += [("operative_condition", CitationCheck.model_validate(oc["evidence_check"]), False)
+               for oc in res.operative_conditions if oc["evidence_check"]["status"] != "failed"]
+    res.validity = resolve_window(pieces)
+    if rule.enactment_status != "enacted":
+        return status, effective_date          # proposals: legislative.py decides; window only recorded
+    window = res.validity["decision"] = decide_window(res.validity, as_of)
+    unresolved = res.temporal.get("unresolved_reason")
+    if window["outcome"] == "historical" and status == "not_yet_effective":
+        window = {**window, "outcome": "hold",
+                  "reason": f"a start after as_of but an end on or before it ({window['reason']})"}
+    if window["outcome"] == "historical" and (status == "in_force" or unresolved):
+        if status is None:                     # an unknown start no longer matters: the window has ended
+            res.rejection_reasons.remove(res.temporal.pop("unresolved_reason"))
+        res.historical, res.temporal_state = True, window["state"]
+        res.status_derivation = f"historical ({window['state']}): {window['reason']}"
+        return "in_force", effective_date      # placeholder for validation only (status is never published)
+    if window["outcome"] == "hold" and status is not None:
+        res.status_derivation = f"{TEMPORAL_UNRESOLVED}: {window['reason']}"
+        res.rejection_reasons.append(f"status: {res.status_derivation}")
+        res.temporal["unresolved_reason"] = f"status: {res.status_derivation}"
+        return None, effective_date
+    if window["outcome"] == "not_yet_effective" and status == "in_force":
+        res.status_derivation = f"enacted; {window['reason']}"
+        return "not_yet_effective", window["start"]
+    if window["state"] == "current_until" and status is not None:
+        res.status_derivation += f"; {window['reason']}"
+    return status, effective_date
 
 
 def write_artifact(run: ExtractionRun, path: Path) -> None:

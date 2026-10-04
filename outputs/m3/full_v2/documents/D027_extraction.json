@@ -1,0 +1,2457 @@
+{
+  "disclaimer": "Not legal advice. Automated extraction for a research prototype; verify against the cited source.",
+  "run_at": "2026-10-04T06:34:26+00:00",
+  "source": {
+    "doc_id": "D027",
+    "jurisdiction": "CA",
+    "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=12955",
+    "source_type": "official",
+    "retrieved_at": "2026-10-01T22:35Z",
+    "text_file": "text/D027.txt",
+    "content_sha256": "4b1b7adc8c87f8c4a726604853fdeea010f48ddb24ec653ef391c97e5e40b0fb",
+    "body_chars": 10709
+  },
+  "provider": "gemini",
+  "model": "gemini-3.8-flash",
+  "prompt_version": "v7",
+  "prompt_sha256": "629b3c951b11590e1dc5fad63268bf33c1b596d6e2d9a0bafa5dbd1427eaee58",
+  "response_schema_sha256": "c15306da6f21dc72f06e78405f94ed61dc9e59288138cc98b5b5bf9b62ac403c",
+  "generation_settings": {
+    "temperature": null,
+    "seed": 20261001,
+    "thinking_level": "medium"
+  },
+  "as_of": "2026-10-01",
+  "cache_key": "8b6f1fc70501a1a048649314c1a430aa7f8affca37d4cb1855ba59b6567a90ba",
+  "cache_hit": true,
+  "cache_entry": "cache/extraction/8b6f1fc70501a1a048649314c1a430aa7f8affca37d4cb1855ba59b6567a90ba.json",
+  "provider_metadata": {
+    "api": "interactions.create",
+    "interaction_id": "",
+    "model": "gemini-3.8-flash",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 6394,
+      "output_tokens": 7214,
+      "thinking_tokens": 40010,
+      "total_tokens": 53618
+    }
+  },
+  "candidate_count": 7,
+  "accepted_count": 7,
+  "rules": [
+    {
+      "team_rule_id": "r-433c529583",
+      "jurisdiction": "CA",
+      "level": "state",
+      "category": "screening_restrictions",
+      "status": "in_force",
+      "title": "Prohibition on discrimination and harassment by housing owners",
+      "requirement": "An owner of any housing accommodation is prohibited from discriminating against or harassing any person on the basis of race, color, religion, sex, gender, gender identity, gender expression, sexual orientation, marital status, national origin, ancestry, familial status, source of income, disability, veteran or military status, or genetic information.",
+      "key_value": null,
+      "coverage_conditions": null,
+      "exemptions": null,
+      "overrides": [],
+      "interaction": null,
+      "effective_date": null,
+      "citation": "Gov. Code § 12955(a)",
+      "source_doc_id": "D027",
+      "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=12955",
+      "quoted_span": "It shall be unlawful:\n(a) For the owner of any housing accommodation to discriminate against or harass any person because of the race, color, religion, sex, gender, gender identity, gender expression, sexual orientation, marital status, national origin, ancestry, familial status, source of income, disability, veteran or military status, or genetic information of that person.",
+      "confidence": null,
+      "conflict_flag": false,
+      "conflict_note": null
+    },
+    {
+      "team_rule_id": "r-189aa7dbf1",
+      "jurisdiction": "CA",
+      "level": "state",
+      "category": "screening_restrictions",
+      "status": "in_force",
+      "title": "Prohibition on inquiries regarding protected classes of rental applicants",
+      "requirement": "An owner of any housing accommodation is prohibited from making or causing to be made any written or oral inquiry concerning the race, color, religion, sex, gender, gender identity, gender expression, sexual orientation, marital status, national origin, ancestry, familial status, disability, veteran or military status, or genetic information of any person seeking to purchase, rent, or lease any housing accommodation.",
+      "key_value": null,
+      "coverage_conditions": null,
+      "exemptions": null,
+      "overrides": [],
+      "interaction": null,
+      "effective_date": null,
+      "citation": "Gov. Code § 12955(b)",
+      "source_doc_id": "D027",
+      "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=12955",
+      "quoted_span": "(b) For the owner of any housing accommodation to make or to cause to be made any written or oral inquiry concerning the race, color, religion, sex, gender, gender identity, gender expression, sexual orientation, marital status, national origin, ancestry, familial status, disability, veteran or military status, or genetic information of any person\nseeking to purchase, rent, or lease any housing accommodation.",
+      "confidence": null,
+      "conflict_flag": false,
+      "conflict_note": null
+    },
+    {
+      "team_rule_id": "r-74c157a5a5",
+      "jurisdiction": "CA",
+      "level": "state",
+      "category": "screening_restrictions",
+      "status": "in_force",
+      "title": "Prohibition on denying a dwelling based on discrimination",
+      "requirement": "It is unlawful to otherwise make unavailable or deny a dwelling based on discrimination because of race, color, religion, sex, gender, gender identity, gender expression, sexual orientation, familial status, source of income, disability, genetic information, veteran or military status, or national origin.",
+      "key_value": null,
+      "coverage_conditions": null,
+      "exemptions": null,
+      "overrides": [],
+      "interaction": null,
+      "effective_date": null,
+      "citation": "Gov. Code § 12955(k)",
+      "source_doc_id": "D027",
+      "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=12955",
+      "quoted_span": "(k) To otherwise make unavailable or deny a dwelling based on discrimination because of race, color, religion, sex, gender, gender identity, gender expression, sexual orientation, familial status, source of income, disability, genetic information, veteran or military status, or national origin.",
+      "confidence": null,
+      "conflict_flag": false,
+      "conflict_note": null
+    },
+    {
+      "team_rule_id": "r-9a8a329727",
+      "jurisdiction": "CA",
+      "level": "state",
+      "category": "screening_restrictions",
+      "status": "in_force",
+      "title": "Equal aggregation of co-residents' income in rental standards",
+      "requirement": "In the rental of housing, it is unlawful to use a financial or income standard that fails to account for the aggregate income of persons residing together or proposing to reside together on the same basis as the aggregate income of married persons residing or proposing to reside together.",
+      "key_value": null,
+      "coverage_conditions": null,
+      "exemptions": null,
+      "overrides": [],
+      "interaction": null,
+      "effective_date": null,
+      "citation": "Gov. Code § 12955(n)",
+      "source_doc_id": "D027",
+      "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=12955",
+      "quoted_span": "(n) To use a financial or income standard in the rental of housing that fails to account for the aggregate income of persons residing together or proposing to reside together on the same basis as the aggregate income\nof married persons residing together or proposing to reside together.",
+      "confidence": null,
+      "conflict_flag": false,
+      "conflict_note": null
+    },
+    {
+      "team_rule_id": "r-2e52ee2e95",
+      "jurisdiction": "CA",
+      "level": "state",
+      "category": "screening_restrictions",
+      "status": "in_force",
+      "title": "Income eligibility standard restricted to tenant portion for subsidized applicants",
+      "requirement": "When assessing eligibility for the rental of housing where a government rent subsidy exists, a housing provider is prohibited from using a financial or income standard that is not based on the portion of the rent to be paid by the tenant.",
+      "key_value": null,
+      "coverage_conditions": null,
+      "exemptions": "Subdivision (o) does not limit the ability of the owner of a housing accommodation to request information or documentation to verify employment, to request landlord references, or to verify the identity of a person. [Gov. Code § 12955(o)(2)]",
+      "overrides": [],
+      "interaction": null,
+      "effective_date": null,
+      "citation": "Gov. Code § 12955(o)(1)(A)",
+      "source_doc_id": "D027",
+      "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=12955",
+      "quoted_span": "(A) Use a financial or income standard in assessing eligibility for the rental of housing that is not based on the portion of the rent to be paid by the tenant.",
+      "confidence": null,
+      "conflict_flag": false,
+      "conflict_note": null
+    },
+    {
+      "team_rule_id": "r-8350ad9f7f",
+      "jurisdiction": "CA",
+      "level": "state",
+      "category": "screening_restrictions",
+      "status": "in_force",
+      "title": "Alternative evidence option required when using credit history for subsidized applicants",
+      "requirement": "A housing provider cannot use an applicant's credit history as part of the application process for a rental accommodation without offering the applicant the option, at the applicant's discretion, of providing lawful, verifiable alternative evidence of reasonable ability to pay the tenant's portion of rent, including government benefit payments, pay records, and bank statements.",
+      "key_value": null,
+      "coverage_conditions": null,
+      "exemptions": "Subdivision (o) does not limit the ability of the owner of a housing accommodation to request information or documentation to verify employment, to request landlord references, or to verify the identity of a person. [Gov. Code § 12955(o)(2)]",
+      "overrides": [],
+      "interaction": null,
+      "effective_date": null,
+      "citation": "Gov. Code § 12955(o)(1)(B)(i)",
+      "source_doc_id": "D027",
+      "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=12955",
+      "quoted_span": "(B) (i) Use a person’s credit history as part of the application process for a rental accommodation without offering the applicant the option, at the applicant’s discretion, of providing lawful, verifiable alternative evidence of the applicant’s reasonable ability to pay\nthe portion of the rent to be paid by the tenant, including, but not limited to, government benefit payments, pay records, and bank statements.",
+      "confidence": null,
+      "conflict_flag": false,
+      "conflict_note": null
+    },
+    {
+      "team_rule_id": "r-916661ca5d",
+      "jurisdiction": "CA",
+      "level": "state",
+      "category": "screening_restrictions",
+      "status": "in_force",
+      "title": "Duties when subsidized applicant provides alternative ability-to-pay evidence",
+      "requirement": "If an applicant elects to provide lawful, verifiable alternative evidence of ability to pay, the housing provider must give the applicant reasonable time to respond with that evidence and must reasonably consider it in lieu of credit history when deciding whether to offer the rental accommodation.",
+      "key_value": null,
+      "coverage_conditions": null,
+      "exemptions": "Subdivision (o) does not limit the ability of the owner of a housing accommodation to request information or documentation to verify employment, to request landlord references, or to verify the identity of a person. [Gov. Code § 12955(o)(2)]",
+      "overrides": [],
+      "interaction": null,
+      "effective_date": null,
+      "citation": "Gov. Code § 12955(o)(1)(B)(ii)",
+      "source_doc_id": "D027",
+      "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=12955",
+      "quoted_span": "(ii) If the applicant elects to provide lawful, verifiable alternative evidence of the applicant’s\nreasonable ability to pay pursuant to clause (i), the housing provider shall do both of the following:\n(I) Provide the applicant reasonable time to respond with that alternative evidence.\n(II) Reasonably consider that alternative evidence in lieu of the person’s credit history in determining whether to offer the rental accommodation to the applicant.",
+      "confidence": null,
+      "conflict_flag": false,
+      "conflict_note": null
+    }
+  ],
+  "candidates": [
+    {
+      "index": 0,
+      "origin": "primary",
+      "accepted": true,
+      "held": false,
+      "historical": false,
+      "temporal_state": "in_force",
+      "validity": {
+        "resolver": "validity-window/v1",
+        "boundaries": [
+          {
+            "kind": "amendment_history",
+            "role": "start",
+            "date": "2024-01-01",
+            "origin": "version_evidence",
+            "history": true,
+            "evidence": "Effective January 1, 2024",
+            "raw_start": 10682,
+            "raw_end": 10707
+          },
+          {
+            "kind": "amendment_history",
+            "role": "start",
+            "date": "2024-01-01",
+            "origin": "history_note",
+            "history": true,
+            "evidence": "Effective January 1, 2024",
+            "raw_start": 10682,
+            "raw_end": 10707
+          }
+        ],
+        "end_exclusive": null,
+        "end_conflict": null,
+        "decision": {
+          "outcome": null,
+          "state": null,
+          "reason": null,
+          "start": null
+        }
+      },
+      "duplicate_of": null,
+      "rejection_reasons": [],
+      "provision_ids": [
+        "P1"
+      ],
+      "source_basis": "operative_text",
+      "status_evidence": {
+        "status": "layout_normalized_match",
+        "normalization": "Unicode NFC; each whitespace run (incl. line breaks) compared as one space; span ends trimmed; whitespace immediately adjacent to ( ) [ ] ignored (layout only)",
+        "start": 10627,
+        "end": 10709,
+        "occurrences": 1,
+        "model_span": "( Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024. )",
+        "source_span": "(Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024.)",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 1270,
+        "end": 1647,
+        "occurrences": 1,
+        "model_span": "It shall be unlawful:\n(a) For the owner of any housing accommodation to discriminate against or harass any person because of the race, color, religion, sex, gender, gender identity, gender expression, sexual orientation, marital status, national origin, ancestry, familial status, source of income, disability, veteran or military status, or genetic information of that person.",
+        "source_span": "It shall be unlawful:\n(a) For the owner of any housing accommodation to discriminate against or harass any person because of the race, color, religion, sex, gender, gender identity, gender expression, sexual orientation, marital status, national origin, ancestry, familial status, source of income, disability, veteran or military status, or genetic information of that person.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "It shall be unlawful:\n(a) For the owner of any housing accommodation to discriminate against or harass any person because of the race, color, religion, sex, gender, gender identity, gender expression, sexual orientation, marital status, national origin, ancestry, familial status, source of income, disability, veteran or military status, or genetic information of that person.",
+            "status": "exact_match",
+            "start": 1270,
+            "end": 1647
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 10627,
+        "end": 10709,
+        "occurrences": 1,
+        "model_span": "(Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024.)",
+        "source_span": "(Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024.)",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "version_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 10627,
+        "end": 10709,
+        "occurrences": 1,
+        "model_span": "(Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024.)",
+        "source_span": "(Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024.)",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "operative_conditions": [],
+      "propagated_scope": [],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": "history_note",
+        "applied_kind": "history_note",
+        "effective_date": null,
+        "history_evidence": "(Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024.)",
+        "relative_resolution": null,
+        "posture": "codified_current_law",
+        "posture_consistent": true
+      },
+      "status_derivation": "enacted; codified current law that states no effective date",
+      "warnings": [],
+      "rule": {
+        "team_rule_id": "r-433c529583",
+        "jurisdiction": "CA",
+        "level": "state",
+        "category": "screening_restrictions",
+        "status": "in_force",
+        "title": "Prohibition on discrimination and harassment by housing owners",
+        "requirement": "An owner of any housing accommodation is prohibited from discriminating against or harassing any person on the basis of race, color, religion, sex, gender, gender identity, gender expression, sexual orientation, marital status, national origin, ancestry, familial status, source of income, disability, veteran or military status, or genetic information.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "Gov. Code § 12955(a)",
+        "source_doc_id": "D027",
+        "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=12955",
+        "quoted_span": "It shall be unlawful:\n(a) For the owner of any housing accommodation to discriminate against or harass any person because of the race, color, religion, sex, gender, gender identity, gender expression, sexual orientation, marital status, national origin, ancestry, familial status, source of income, disability, veteran or military status, or genetic information of that person.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "screening_restrictions",
+        "citation": "Gov. Code § 12955(a)",
+        "provision_ids": [
+          "P1"
+        ],
+        "source_basis": "operative_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "It shall be unlawful:\n(a) For the owner of any housing accommodation to discriminate against or harass any person because of the race, color, religion, sex, gender, gender identity, gender expression, sexual orientation, marital status, national origin, ancestry, familial status, source of income, disability, veteran or military status, or genetic information of that person."
+          }
+        ],
+        "title": "Prohibition on discrimination and harassment by housing owners",
+        "requirement": "An owner of any housing accommodation is prohibited from discriminating against or harassing any person on the basis of race, color, religion, sex, gender, gender identity, gender expression, sexual orientation, marital status, national origin, ancestry, familial status, source of income, disability, veteran or military status, or genetic information.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": "( Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024. )",
+        "version_note": "Amended by Stats. 2023, Ch. 776, Sec. 1 (SB 267).",
+        "version_evidence": "(Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024.)",
+        "effective_date_evidence": "(Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024.)",
+        "effective_date_evidence_kind": "history_note",
+        "effective_date": null,
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 1,
+      "origin": "primary",
+      "accepted": true,
+      "held": false,
+      "historical": false,
+      "temporal_state": "in_force",
+      "validity": {
+        "resolver": "validity-window/v1",
+        "boundaries": [
+          {
+            "kind": "amendment_history",
+            "role": "start",
+            "date": "2024-01-01",
+            "origin": "version_evidence",
+            "history": true,
+            "evidence": "Effective January 1, 2024",
+            "raw_start": 10682,
+            "raw_end": 10707
+          },
+          {
+            "kind": "amendment_history",
+            "role": "start",
+            "date": "2024-01-01",
+            "origin": "history_note",
+            "history": true,
+            "evidence": "Effective January 1, 2024",
+            "raw_start": 10682,
+            "raw_end": 10707
+          }
+        ],
+        "end_exclusive": null,
+        "end_conflict": null,
+        "decision": {
+          "outcome": null,
+          "state": null,
+          "reason": null,
+          "start": null
+        }
+      },
+      "duplicate_of": null,
+      "rejection_reasons": [],
+      "provision_ids": [
+        "P2"
+      ],
+      "source_basis": "operative_text",
+      "status_evidence": {
+        "status": "layout_normalized_match",
+        "normalization": "Unicode NFC; each whitespace run (incl. line breaks) compared as one space; span ends trimmed; whitespace immediately adjacent to ( ) [ ] ignored (layout only)",
+        "start": 10627,
+        "end": 10709,
+        "occurrences": 1,
+        "model_span": "( Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024. )",
+        "source_span": "(Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024.)",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 1648,
+        "end": 2060,
+        "occurrences": 1,
+        "model_span": "(b) For the owner of any housing accommodation to make or to cause to be made any written or oral inquiry concerning the race, color, religion, sex, gender, gender identity, gender expression, sexual orientation, marital status, national origin, ancestry, familial status, disability, veteran or military status, or genetic information of any person\nseeking to purchase, rent, or lease any housing accommodation.",
+        "source_span": "(b) For the owner of any housing accommodation to make or to cause to be made any written or oral inquiry concerning the race, color, religion, sex, gender, gender identity, gender expression, sexual orientation, marital status, national origin, ancestry, familial status, disability, veteran or military status, or genetic information of any person\nseeking to purchase, rent, or lease any housing accommodation.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "(b) For the owner of any housing accommodation to make or to cause to be made any written or oral inquiry concerning the race, color, religion, sex, gender, gender identity, gender expression, sexual orientation, marital status, national origin, ancestry, familial status, disability, veteran or military status, or genetic information of any person\nseeking to purchase, rent, or lease any housing accommodation.",
+            "status": "exact_match",
+            "start": 1648,
+            "end": 2060
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 10627,
+        "end": 10709,
+        "occurrences": 1,
+        "model_span": "(Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024.)",
+        "source_span": "(Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024.)",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "version_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 10627,
+        "end": 10709,
+        "occurrences": 1,
+        "model_span": "(Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024.)",
+        "source_span": "(Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024.)",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "operative_conditions": [],
+      "propagated_scope": [],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": "history_note",
+        "applied_kind": "history_note",
+        "effective_date": null,
+        "history_evidence": "(Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024.)",
+        "relative_resolution": null,
+        "posture": "codified_current_law",
+        "posture_consistent": true
+      },
+      "status_derivation": "enacted; codified current law that states no effective date",
+      "warnings": [],
+      "rule": {
+        "team_rule_id": "r-189aa7dbf1",
+        "jurisdiction": "CA",
+        "level": "state",
+        "category": "screening_restrictions",
+        "status": "in_force",
+        "title": "Prohibition on inquiries regarding protected classes of rental applicants",
+        "requirement": "An owner of any housing accommodation is prohibited from making or causing to be made any written or oral inquiry concerning the race, color, religion, sex, gender, gender identity, gender expression, sexual orientation, marital status, national origin, ancestry, familial status, disability, veteran or military status, or genetic information of any person seeking to purchase, rent, or lease any housing accommodation.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "Gov. Code § 12955(b)",
+        "source_doc_id": "D027",
+        "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=12955",
+        "quoted_span": "(b) For the owner of any housing accommodation to make or to cause to be made any written or oral inquiry concerning the race, color, religion, sex, gender, gender identity, gender expression, sexual orientation, marital status, national origin, ancestry, familial status, disability, veteran or military status, or genetic information of any person\nseeking to purchase, rent, or lease any housing accommodation.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "screening_restrictions",
+        "citation": "Gov. Code § 12955(b)",
+        "provision_ids": [
+          "P2"
+        ],
+        "source_basis": "operative_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "(b) For the owner of any housing accommodation to make or to cause to be made any written or oral inquiry concerning the race, color, religion, sex, gender, gender identity, gender expression, sexual orientation, marital status, national origin, ancestry, familial status, disability, veteran or military status, or genetic information of any person\nseeking to purchase, rent, or lease any housing accommodation."
+          }
+        ],
+        "title": "Prohibition on inquiries regarding protected classes of rental applicants",
+        "requirement": "An owner of any housing accommodation is prohibited from making or causing to be made any written or oral inquiry concerning the race, color, religion, sex, gender, gender identity, gender expression, sexual orientation, marital status, national origin, ancestry, familial status, disability, veteran or military status, or genetic information of any person seeking to purchase, rent, or lease any housing accommodation.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": "( Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024. )",
+        "version_note": "Amended by Stats. 2023, Ch. 776, Sec. 1 (SB 267).",
+        "version_evidence": "(Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024.)",
+        "effective_date_evidence": "(Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024.)",
+        "effective_date_evidence_kind": "history_note",
+        "effective_date": null,
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 2,
+      "origin": "primary",
+      "accepted": true,
+      "held": false,
+      "historical": false,
+      "temporal_state": "in_force",
+      "validity": {
+        "resolver": "validity-window/v1",
+        "boundaries": [
+          {
+            "kind": "amendment_history",
+            "role": "start",
+            "date": "2024-01-01",
+            "origin": "version_evidence",
+            "history": true,
+            "evidence": "Effective January 1, 2024",
+            "raw_start": 10682,
+            "raw_end": 10707
+          },
+          {
+            "kind": "amendment_history",
+            "role": "start",
+            "date": "2024-01-01",
+            "origin": "history_note",
+            "history": true,
+            "evidence": "Effective January 1, 2024",
+            "raw_start": 10682,
+            "raw_end": 10707
+          }
+        ],
+        "end_exclusive": null,
+        "end_conflict": null,
+        "decision": {
+          "outcome": null,
+          "state": null,
+          "reason": null,
+          "start": null
+        }
+      },
+      "duplicate_of": null,
+      "rejection_reasons": [],
+      "provision_ids": [
+        "P12"
+      ],
+      "source_basis": "operative_text",
+      "status_evidence": {
+        "status": "layout_normalized_match",
+        "normalization": "Unicode NFC; each whitespace run (incl. line breaks) compared as one space; span ends trimmed; whitespace immediately adjacent to ( ) [ ] ignored (layout only)",
+        "start": 10627,
+        "end": 10709,
+        "occurrences": 1,
+        "model_span": "( Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024. )",
+        "source_span": "(Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024.)",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 6437,
+        "end": 6732,
+        "occurrences": 1,
+        "model_span": "(k) To otherwise make unavailable or deny a dwelling based on discrimination because of race, color, religion, sex, gender, gender identity, gender expression, sexual orientation, familial status, source of income, disability, genetic information, veteran or military status, or national origin.",
+        "source_span": "(k) To otherwise make unavailable or deny a dwelling based on discrimination because of race, color, religion, sex, gender, gender identity, gender expression, sexual orientation, familial status, source of income, disability, genetic information, veteran or military status, or national origin.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "(k) To otherwise make unavailable or deny a dwelling based on discrimination because of race, color, religion, sex, gender, gender identity, gender expression, sexual orientation, familial status, source of income, disability, genetic information, veteran or military status, or national origin.",
+            "status": "exact_match",
+            "start": 6437,
+            "end": 6732
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 10627,
+        "end": 10709,
+        "occurrences": 1,
+        "model_span": "(Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024.)",
+        "source_span": "(Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024.)",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "version_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 10627,
+        "end": 10709,
+        "occurrences": 1,
+        "model_span": "(Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024.)",
+        "source_span": "(Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024.)",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "operative_conditions": [],
+      "propagated_scope": [],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": "history_note",
+        "applied_kind": "history_note",
+        "effective_date": null,
+        "history_evidence": "(Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024.)",
+        "relative_resolution": null,
+        "posture": "codified_current_law",
+        "posture_consistent": true
+      },
+      "status_derivation": "enacted; codified current law that states no effective date",
+      "warnings": [],
+      "rule": {
+        "team_rule_id": "r-74c157a5a5",
+        "jurisdiction": "CA",
+        "level": "state",
+        "category": "screening_restrictions",
+        "status": "in_force",
+        "title": "Prohibition on denying a dwelling based on discrimination",
+        "requirement": "It is unlawful to otherwise make unavailable or deny a dwelling based on discrimination because of race, color, religion, sex, gender, gender identity, gender expression, sexual orientation, familial status, source of income, disability, genetic information, veteran or military status, or national origin.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "Gov. Code § 12955(k)",
+        "source_doc_id": "D027",
+        "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=12955",
+        "quoted_span": "(k) To otherwise make unavailable or deny a dwelling based on discrimination because of race, color, religion, sex, gender, gender identity, gender expression, sexual orientation, familial status, source of income, disability, genetic information, veteran or military status, or national origin.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "screening_restrictions",
+        "citation": "Gov. Code § 12955(k)",
+        "provision_ids": [
+          "P12"
+        ],
+        "source_basis": "operative_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "(k) To otherwise make unavailable or deny a dwelling based on discrimination because of race, color, religion, sex, gender, gender identity, gender expression, sexual orientation, familial status, source of income, disability, genetic information, veteran or military status, or national origin."
+          }
+        ],
+        "title": "Prohibition on denying a dwelling based on discrimination",
+        "requirement": "It is unlawful to otherwise make unavailable or deny a dwelling based on discrimination because of race, color, religion, sex, gender, gender identity, gender expression, sexual orientation, familial status, source of income, disability, genetic information, veteran or military status, or national origin.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": "( Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024. )",
+        "version_note": "Amended by Stats. 2023, Ch. 776, Sec. 1 (SB 267).",
+        "version_evidence": "(Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024.)",
+        "effective_date_evidence": "(Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024.)",
+        "effective_date_evidence_kind": "history_note",
+        "effective_date": null,
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 3,
+      "origin": "primary",
+      "accepted": true,
+      "held": false,
+      "historical": false,
+      "temporal_state": "in_force",
+      "validity": {
+        "resolver": "validity-window/v1",
+        "boundaries": [
+          {
+            "kind": "amendment_history",
+            "role": "start",
+            "date": "2024-01-01",
+            "origin": "version_evidence",
+            "history": true,
+            "evidence": "Effective January 1, 2024",
+            "raw_start": 10682,
+            "raw_end": 10707
+          },
+          {
+            "kind": "amendment_history",
+            "role": "start",
+            "date": "2024-01-01",
+            "origin": "history_note",
+            "history": true,
+            "evidence": "Effective January 1, 2024",
+            "raw_start": 10682,
+            "raw_end": 10707
+          }
+        ],
+        "end_exclusive": null,
+        "end_conflict": null,
+        "decision": {
+          "outcome": null,
+          "state": null,
+          "reason": null,
+          "start": null
+        }
+      },
+      "duplicate_of": null,
+      "rejection_reasons": [],
+      "provision_ids": [
+        "P15"
+      ],
+      "source_basis": "operative_text",
+      "status_evidence": {
+        "status": "layout_normalized_match",
+        "normalization": "Unicode NFC; each whitespace run (incl. line breaks) compared as one space; span ends trimmed; whitespace immediately adjacent to ( ) [ ] ignored (layout only)",
+        "start": 10627,
+        "end": 10709,
+        "occurrences": 1,
+        "model_span": "( Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024. )",
+        "source_span": "(Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024.)",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 7973,
+        "end": 8259,
+        "occurrences": 1,
+        "model_span": "(n) To use a financial or income standard in the rental of housing that fails to account for the aggregate income of persons residing together or proposing to reside together on the same basis as the aggregate income\nof married persons residing together or proposing to reside together.",
+        "source_span": "(n) To use a financial or income standard in the rental of housing that fails to account for the aggregate income of persons residing together or proposing to reside together on the same basis as the aggregate income\nof married persons residing together or proposing to reside together.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "(n) To use a financial or income standard in the rental of housing that fails to account for the aggregate income of persons residing together or proposing to reside together on the same basis as the aggregate income\nof married persons residing together or proposing to reside together.",
+            "status": "exact_match",
+            "start": 7973,
+            "end": 8259
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 10627,
+        "end": 10709,
+        "occurrences": 1,
+        "model_span": "(Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024.)",
+        "source_span": "(Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024.)",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "version_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 10627,
+        "end": 10709,
+        "occurrences": 1,
+        "model_span": "(Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024.)",
+        "source_span": "(Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024.)",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "operative_conditions": [],
+      "propagated_scope": [],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": "history_note",
+        "applied_kind": "history_note",
+        "effective_date": null,
+        "history_evidence": "(Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024.)",
+        "relative_resolution": null,
+        "posture": "codified_current_law",
+        "posture_consistent": true
+      },
+      "status_derivation": "enacted; codified current law that states no effective date",
+      "warnings": [],
+      "rule": {
+        "team_rule_id": "r-9a8a329727",
+        "jurisdiction": "CA",
+        "level": "state",
+        "category": "screening_restrictions",
+        "status": "in_force",
+        "title": "Equal aggregation of co-residents' income in rental standards",
+        "requirement": "In the rental of housing, it is unlawful to use a financial or income standard that fails to account for the aggregate income of persons residing together or proposing to reside together on the same basis as the aggregate income of married persons residing or proposing to reside together.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "Gov. Code § 12955(n)",
+        "source_doc_id": "D027",
+        "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=12955",
+        "quoted_span": "(n) To use a financial or income standard in the rental of housing that fails to account for the aggregate income of persons residing together or proposing to reside together on the same basis as the aggregate income\nof married persons residing together or proposing to reside together.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "screening_restrictions",
+        "citation": "Gov. Code § 12955(n)",
+        "provision_ids": [
+          "P15"
+        ],
+        "source_basis": "operative_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "(n) To use a financial or income standard in the rental of housing that fails to account for the aggregate income of persons residing together or proposing to reside together on the same basis as the aggregate income\nof married persons residing together or proposing to reside together."
+          }
+        ],
+        "title": "Equal aggregation of co-residents' income in rental standards",
+        "requirement": "In the rental of housing, it is unlawful to use a financial or income standard that fails to account for the aggregate income of persons residing together or proposing to reside together on the same basis as the aggregate income of married persons residing or proposing to reside together.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": "( Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024. )",
+        "version_note": "Amended by Stats. 2023, Ch. 776, Sec. 1 (SB 267).",
+        "version_evidence": "(Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024.)",
+        "effective_date_evidence": "(Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024.)",
+        "effective_date_evidence_kind": "history_note",
+        "effective_date": null,
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 4,
+      "origin": "primary",
+      "accepted": true,
+      "held": false,
+      "historical": false,
+      "temporal_state": "in_force",
+      "validity": {
+        "resolver": "validity-window/v1",
+        "boundaries": [
+          {
+            "kind": "amendment_history",
+            "role": "start",
+            "date": "2024-01-01",
+            "origin": "version_evidence",
+            "history": true,
+            "evidence": "Effective January 1, 2024",
+            "raw_start": 10682,
+            "raw_end": 10707
+          },
+          {
+            "kind": "amendment_history",
+            "role": "start",
+            "date": "2024-01-01",
+            "origin": "history_note",
+            "history": true,
+            "evidence": "Effective January 1, 2024",
+            "raw_start": 10682,
+            "raw_end": 10707
+          }
+        ],
+        "end_exclusive": null,
+        "end_conflict": null,
+        "decision": {
+          "outcome": null,
+          "state": null,
+          "reason": null,
+          "start": null
+        }
+      },
+      "duplicate_of": null,
+      "rejection_reasons": [],
+      "provision_ids": [
+        "P17"
+      ],
+      "source_basis": "operative_text",
+      "status_evidence": {
+        "status": "layout_normalized_match",
+        "normalization": "Unicode NFC; each whitespace run (incl. line breaks) compared as one space; span ends trimmed; whitespace immediately adjacent to ( ) [ ] ignored (layout only)",
+        "start": 10627,
+        "end": 10709,
+        "occurrences": 1,
+        "model_span": "( Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024. )",
+        "source_span": "(Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024.)",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 8357,
+        "end": 8517,
+        "occurrences": 1,
+        "model_span": "(A) Use a financial or income standard in assessing eligibility for the rental of housing that is not based on the portion of the rent to be paid by the tenant.",
+        "source_span": "(A) Use a financial or income standard in assessing eligibility for the rental of housing that is not based on the portion of the rent to be paid by the tenant.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "(A) Use a financial or income standard in assessing eligibility for the rental of housing that is not based on the portion of the rent to be paid by the tenant.",
+            "status": "exact_match",
+            "start": 8357,
+            "end": 8517
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 10627,
+        "end": 10709,
+        "occurrences": 1,
+        "model_span": "(Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024.)",
+        "source_span": "(Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024.)",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "version_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 10627,
+        "end": 10709,
+        "occurrences": 1,
+        "model_span": "(Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024.)",
+        "source_span": "(Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024.)",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "operative_conditions": [],
+      "propagated_scope": [
+        {
+          "id": "S2",
+          "kind": "exemption",
+          "mode": "structural",
+          "governed_provision_ids": [
+            "P16",
+            "P17",
+            "P18",
+            "P19",
+            "P20"
+          ],
+          "basis": "structural: rule links reached provision(s) ['P17']",
+          "applied": true
+        }
+      ],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": "history_note",
+        "applied_kind": "history_note",
+        "effective_date": null,
+        "history_evidence": "(Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024.)",
+        "relative_resolution": null,
+        "posture": "codified_current_law",
+        "posture_consistent": true
+      },
+      "status_derivation": "enacted; codified current law that states no effective date",
+      "warnings": [],
+      "rule": {
+        "team_rule_id": "r-2e52ee2e95",
+        "jurisdiction": "CA",
+        "level": "state",
+        "category": "screening_restrictions",
+        "status": "in_force",
+        "title": "Income eligibility standard restricted to tenant portion for subsidized applicants",
+        "requirement": "When assessing eligibility for the rental of housing where a government rent subsidy exists, a housing provider is prohibited from using a financial or income standard that is not based on the portion of the rent to be paid by the tenant.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": "Subdivision (o) does not limit the ability of the owner of a housing accommodation to request information or documentation to verify employment, to request landlord references, or to verify the identity of a person. [Gov. Code § 12955(o)(2)]",
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "Gov. Code § 12955(o)(1)(A)",
+        "source_doc_id": "D027",
+        "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=12955",
+        "quoted_span": "(A) Use a financial or income standard in assessing eligibility for the rental of housing that is not based on the portion of the rent to be paid by the tenant.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "screening_restrictions",
+        "citation": "Gov. Code § 12955(o)(1)(A)",
+        "provision_ids": [
+          "P17"
+        ],
+        "source_basis": "operative_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "(A) Use a financial or income standard in assessing eligibility for the rental of housing that is not based on the portion of the rent to be paid by the tenant."
+          }
+        ],
+        "title": "Income eligibility standard restricted to tenant portion for subsidized applicants",
+        "requirement": "When assessing eligibility for the rental of housing where a government rent subsidy exists, a housing provider is prohibited from using a financial or income standard that is not based on the portion of the rent to be paid by the tenant.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": "( Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024. )",
+        "version_note": "Amended by Stats. 2023, Ch. 776, Sec. 1 (SB 267).",
+        "version_evidence": "(Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024.)",
+        "effective_date_evidence": "(Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024.)",
+        "effective_date_evidence_kind": "history_note",
+        "effective_date": null,
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 5,
+      "origin": "primary",
+      "accepted": true,
+      "held": false,
+      "historical": false,
+      "temporal_state": "in_force",
+      "validity": {
+        "resolver": "validity-window/v1",
+        "boundaries": [
+          {
+            "kind": "amendment_history",
+            "role": "start",
+            "date": "2024-01-01",
+            "origin": "version_evidence",
+            "history": true,
+            "evidence": "Effective January 1, 2024",
+            "raw_start": 10682,
+            "raw_end": 10707
+          },
+          {
+            "kind": "amendment_history",
+            "role": "start",
+            "date": "2024-01-01",
+            "origin": "history_note",
+            "history": true,
+            "evidence": "Effective January 1, 2024",
+            "raw_start": 10682,
+            "raw_end": 10707
+          }
+        ],
+        "end_exclusive": null,
+        "end_conflict": null,
+        "decision": {
+          "outcome": null,
+          "state": null,
+          "reason": null,
+          "start": null
+        }
+      },
+      "duplicate_of": null,
+      "rejection_reasons": [],
+      "provision_ids": [
+        "P18"
+      ],
+      "source_basis": "operative_text",
+      "status_evidence": {
+        "status": "layout_normalized_match",
+        "normalization": "Unicode NFC; each whitespace run (incl. line breaks) compared as one space; span ends trimmed; whitespace immediately adjacent to ( ) [ ] ignored (layout only)",
+        "start": 10627,
+        "end": 10709,
+        "occurrences": 1,
+        "model_span": "( Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024. )",
+        "source_span": "(Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024.)",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 8518,
+        "end": 8933,
+        "occurrences": 1,
+        "model_span": "(B) (i) Use a person’s credit history as part of the application process for a rental accommodation without offering the applicant the option, at the applicant’s discretion, of providing lawful, verifiable alternative evidence of the applicant’s reasonable ability to pay\nthe portion of the rent to be paid by the tenant, including, but not limited to, government benefit payments, pay records, and bank statements.",
+        "source_span": "(B) (i) Use a person’s credit history as part of the application process for a rental accommodation without offering the applicant the option, at the applicant’s discretion, of providing lawful, verifiable alternative evidence of the applicant’s reasonable ability to pay\nthe portion of the rent to be paid by the tenant, including, but not limited to, government benefit payments, pay records, and bank statements.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "(B) (i) Use a person’s credit history as part of the application process for a rental accommodation without offering the applicant the option, at the applicant’s discretion, of providing lawful, verifiable alternative evidence of the applicant’s reasonable ability to pay\nthe portion of the rent to be paid by the tenant, including, but not limited to, government benefit payments, pay records, and bank statements.",
+            "status": "exact_match",
+            "start": 8518,
+            "end": 8933
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 10627,
+        "end": 10709,
+        "occurrences": 1,
+        "model_span": "(Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024.)",
+        "source_span": "(Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024.)",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "version_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 10627,
+        "end": 10709,
+        "occurrences": 1,
+        "model_span": "(Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024.)",
+        "source_span": "(Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024.)",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "operative_conditions": [],
+      "propagated_scope": [
+        {
+          "id": "S2",
+          "kind": "exemption",
+          "mode": "structural",
+          "governed_provision_ids": [
+            "P16",
+            "P17",
+            "P18",
+            "P19",
+            "P20"
+          ],
+          "basis": "structural: rule links reached provision(s) ['P18']",
+          "applied": true
+        }
+      ],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": "history_note",
+        "applied_kind": "history_note",
+        "effective_date": null,
+        "history_evidence": "(Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024.)",
+        "relative_resolution": null,
+        "posture": "codified_current_law",
+        "posture_consistent": true
+      },
+      "status_derivation": "enacted; codified current law that states no effective date",
+      "warnings": [],
+      "rule": {
+        "team_rule_id": "r-8350ad9f7f",
+        "jurisdiction": "CA",
+        "level": "state",
+        "category": "screening_restrictions",
+        "status": "in_force",
+        "title": "Alternative evidence option required when using credit history for subsidized applicants",
+        "requirement": "A housing provider cannot use an applicant's credit history as part of the application process for a rental accommodation without offering the applicant the option, at the applicant's discretion, of providing lawful, verifiable alternative evidence of reasonable ability to pay the tenant's portion of rent, including government benefit payments, pay records, and bank statements.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": "Subdivision (o) does not limit the ability of the owner of a housing accommodation to request information or documentation to verify employment, to request landlord references, or to verify the identity of a person. [Gov. Code § 12955(o)(2)]",
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "Gov. Code § 12955(o)(1)(B)(i)",
+        "source_doc_id": "D027",
+        "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=12955",
+        "quoted_span": "(B) (i) Use a person’s credit history as part of the application process for a rental accommodation without offering the applicant the option, at the applicant’s discretion, of providing lawful, verifiable alternative evidence of the applicant’s reasonable ability to pay\nthe portion of the rent to be paid by the tenant, including, but not limited to, government benefit payments, pay records, and bank statements.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "screening_restrictions",
+        "citation": "Gov. Code § 12955(o)(1)(B)(i)",
+        "provision_ids": [
+          "P18"
+        ],
+        "source_basis": "operative_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "(B) (i) Use a person’s credit history as part of the application process for a rental accommodation without offering the applicant the option, at the applicant’s discretion, of providing lawful, verifiable alternative evidence of the applicant’s reasonable ability to pay\nthe portion of the rent to be paid by the tenant, including, but not limited to, government benefit payments, pay records, and bank statements."
+          }
+        ],
+        "title": "Alternative evidence option required when using credit history for subsidized applicants",
+        "requirement": "A housing provider cannot use an applicant's credit history as part of the application process for a rental accommodation without offering the applicant the option, at the applicant's discretion, of providing lawful, verifiable alternative evidence of reasonable ability to pay the tenant's portion of rent, including government benefit payments, pay records, and bank statements.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": "( Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024. )",
+        "version_note": "Amended by Stats. 2023, Ch. 776, Sec. 1 (SB 267).",
+        "version_evidence": "(Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024.)",
+        "effective_date_evidence": "(Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024.)",
+        "effective_date_evidence_kind": "history_note",
+        "effective_date": null,
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 6,
+      "origin": "primary",
+      "accepted": true,
+      "held": false,
+      "historical": false,
+      "temporal_state": "in_force",
+      "validity": {
+        "resolver": "validity-window/v1",
+        "boundaries": [
+          {
+            "kind": "amendment_history",
+            "role": "start",
+            "date": "2024-01-01",
+            "origin": "version_evidence",
+            "history": true,
+            "evidence": "Effective January 1, 2024",
+            "raw_start": 10682,
+            "raw_end": 10707
+          },
+          {
+            "kind": "amendment_history",
+            "role": "start",
+            "date": "2024-01-01",
+            "origin": "history_note",
+            "history": true,
+            "evidence": "Effective January 1, 2024",
+            "raw_start": 10682,
+            "raw_end": 10707
+          }
+        ],
+        "end_exclusive": null,
+        "end_conflict": null,
+        "decision": {
+          "outcome": null,
+          "state": null,
+          "reason": null,
+          "start": null
+        }
+      },
+      "duplicate_of": null,
+      "rejection_reasons": [],
+      "provision_ids": [
+        "P19"
+      ],
+      "source_basis": "operative_text",
+      "status_evidence": {
+        "status": "layout_normalized_match",
+        "normalization": "Unicode NFC; each whitespace run (incl. line breaks) compared as one space; span ends trimmed; whitespace immediately adjacent to ( ) [ ] ignored (layout only)",
+        "start": 10627,
+        "end": 10709,
+        "occurrences": 1,
+        "model_span": "( Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024. )",
+        "source_span": "(Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024.)",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 8934,
+        "end": 9385,
+        "occurrences": 1,
+        "model_span": "(ii) If the applicant elects to provide lawful, verifiable alternative evidence of the applicant’s\nreasonable ability to pay pursuant to clause (i), the housing provider shall do both of the following:\n(I) Provide the applicant reasonable time to respond with that alternative evidence.\n(II) Reasonably consider that alternative evidence in lieu of the person’s credit history in determining whether to offer the rental accommodation to the applicant.",
+        "source_span": "(ii) If the applicant elects to provide lawful, verifiable alternative evidence of the applicant’s\nreasonable ability to pay pursuant to clause (i), the housing provider shall do both of the following:\n(I) Provide the applicant reasonable time to respond with that alternative evidence.\n(II) Reasonably consider that alternative evidence in lieu of the person’s credit history in determining whether to offer the rental accommodation to the applicant.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "(ii) If the applicant elects to provide lawful, verifiable alternative evidence of the applicant’s\nreasonable ability to pay pursuant to clause (i), the housing provider shall do both of the following:\n(I) Provide the applicant reasonable time to respond with that alternative evidence.\n(II) Reasonably consider that alternative evidence in lieu of the person’s credit history in determining whether to offer the rental accommodation to the applicant.",
+            "status": "exact_match",
+            "start": 8934,
+            "end": 9385
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 10627,
+        "end": 10709,
+        "occurrences": 1,
+        "model_span": "(Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024.)",
+        "source_span": "(Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024.)",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "version_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 10627,
+        "end": 10709,
+        "occurrences": 1,
+        "model_span": "(Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024.)",
+        "source_span": "(Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024.)",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "operative_conditions": [],
+      "propagated_scope": [
+        {
+          "id": "S2",
+          "kind": "exemption",
+          "mode": "structural",
+          "governed_provision_ids": [
+            "P16",
+            "P17",
+            "P18",
+            "P19",
+            "P20"
+          ],
+          "basis": "structural: rule links reached provision(s) ['P19']",
+          "applied": true
+        }
+      ],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": "history_note",
+        "applied_kind": "history_note",
+        "effective_date": null,
+        "history_evidence": "(Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024.)",
+        "relative_resolution": null,
+        "posture": "codified_current_law",
+        "posture_consistent": true
+      },
+      "status_derivation": "enacted; codified current law that states no effective date",
+      "warnings": [],
+      "rule": {
+        "team_rule_id": "r-916661ca5d",
+        "jurisdiction": "CA",
+        "level": "state",
+        "category": "screening_restrictions",
+        "status": "in_force",
+        "title": "Duties when subsidized applicant provides alternative ability-to-pay evidence",
+        "requirement": "If an applicant elects to provide lawful, verifiable alternative evidence of ability to pay, the housing provider must give the applicant reasonable time to respond with that evidence and must reasonably consider it in lieu of credit history when deciding whether to offer the rental accommodation.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": "Subdivision (o) does not limit the ability of the owner of a housing accommodation to request information or documentation to verify employment, to request landlord references, or to verify the identity of a person. [Gov. Code § 12955(o)(2)]",
+        "overrides": [],
+        "interaction": null,
+        "effective_date": null,
+        "citation": "Gov. Code § 12955(o)(1)(B)(ii)",
+        "source_doc_id": "D027",
+        "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=12955",
+        "quoted_span": "(ii) If the applicant elects to provide lawful, verifiable alternative evidence of the applicant’s\nreasonable ability to pay pursuant to clause (i), the housing provider shall do both of the following:\n(I) Provide the applicant reasonable time to respond with that alternative evidence.\n(II) Reasonably consider that alternative evidence in lieu of the person’s credit history in determining whether to offer the rental accommodation to the applicant.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "screening_restrictions",
+        "citation": "Gov. Code § 12955(o)(1)(B)(ii)",
+        "provision_ids": [
+          "P19"
+        ],
+        "source_basis": "operative_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "(ii) If the applicant elects to provide lawful, verifiable alternative evidence of the applicant’s\nreasonable ability to pay pursuant to clause (i), the housing provider shall do both of the following:\n(I) Provide the applicant reasonable time to respond with that alternative evidence.\n(II) Reasonably consider that alternative evidence in lieu of the person’s credit history in determining whether to offer the rental accommodation to the applicant."
+          }
+        ],
+        "title": "Duties when subsidized applicant provides alternative ability-to-pay evidence",
+        "requirement": "If an applicant elects to provide lawful, verifiable alternative evidence of ability to pay, the housing provider must give the applicant reasonable time to respond with that evidence and must reasonably consider it in lieu of credit history when deciding whether to offer the rental accommodation.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": "( Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024. )",
+        "version_note": "Amended by Stats. 2023, Ch. 776, Sec. 1 (SB 267).",
+        "version_evidence": "(Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024.)",
+        "effective_date_evidence": "(Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024.)",
+        "effective_date_evidence_kind": "history_note",
+        "effective_date": null,
+        "conflict_note": null
+      }
+    }
+  ],
+  "posture": {
+    "declared": "codified_current_law",
+    "evidence": "California Code,  GOV 12955",
+    "evidence_check": {
+      "status": "exact_match",
+      "normalization": null,
+      "start": 0,
+      "end": 27,
+      "occurrences": 1,
+      "model_span": "California Code,  GOV 12955",
+      "source_span": "California Code,  GOV 12955",
+      "reason": null,
+      "reconstructed": false,
+      "parts": [],
+      "crossed_artifacts": []
+    },
+    "established": "codified_current_law",
+    "basis": "declared posture with verified evidence"
+  },
+  "base_dates": [],
+  "provision_inventory": [
+    {
+      "id": "P1",
+      "ref": "§ 12955(a)",
+      "anchor": "(a) For the owner of any housing accommodation",
+      "summary": "Prohibits owner discrimination or harassment based on protected personal characteristics, including source of income.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "screening_restrictions",
+      "reason": null
+    },
+    {
+      "id": "P2",
+      "ref": "§ 12955(b)",
+      "anchor": "(b) For the owner of any housing accommodation",
+      "summary": "Prohibits written or oral inquiries concerning protected personal characteristics of persons seeking to purchase, rent, or lease housing.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "screening_restrictions",
+      "reason": null
+    },
+    {
+      "id": "P3",
+      "ref": "§ 12955(c)",
+      "anchor": "(c) For any person to make, print, or",
+      "summary": "Prohibits notices, statements, or advertisements indicating preference, limitation, or discrimination in housing.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "Housing advertisement and notice restrictions, not applicant screening standards."
+    },
+    {
+      "id": "P4",
+      "ref": "§ 12955(d)",
+      "anchor": "(d) For any person subject to the provisions",
+      "summary": "Prohibits discrimination under Civil Code Section 51 and exempts age preferences in federally approved housing programs.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "General public accommodations discrimination under Unruh Act and federal age preferences."
+    },
+    {
+      "id": "P5",
+      "ref": "§ 12955(e)",
+      "anchor": "(e) For any person, bank, mortgage company,",
+      "summary": "Prohibits discrimination in financial assistance and mortgage lending for housing accommodations.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "Mortgage and financial assistance lending practices, not rental applicant screening."
+    },
+    {
+      "id": "P6",
+      "ref": "§ 12955(f)",
+      "anchor": "(f) For any owner of housing accommodations to",
+      "summary": "Prohibits retaliation against persons who have opposed unlawful practices or exercised rights under FEHA.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "Civil rights anti-retaliation provision, not a just cause eviction limit."
+    },
+    {
+      "id": "P7",
+      "ref": "§ 12955(g)",
+      "anchor": "(g) For any person to aid, abet,",
+      "summary": "Prohibits aiding, abetting, inciting, compelling, or coercing acts declared unlawful under this section.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "Secondary liability and aiding/abetting provisions."
+    },
+    {
+      "id": "P8",
+      "ref": "§ 12955(h)",
+      "anchor": "(h) For any person, for profit, to",
+      "summary": "Prohibits blockbusting and inducing sales or rentals through representations about neighborhood demographics.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "Blockbusting and panic peddling prohibitions."
+    },
+    {
+      "id": "P9",
+      "ref": "§ 12955(i)(1)",
+      "anchor": "(i) (1) For any person or other organization",
+      "summary": "Prohibits discrimination in real estate-related transactions.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "Commercial real estate transactions, not rental housing screening."
+    },
+    {
+      "id": "P10",
+      "ref": "§ 12955(i)(2)",
+      "anchor": "(2) For any person or other entity whose",
+      "summary": "Prohibits discrimination in performing real estate appraisal services.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "Appraisal services regulation, not rental housing screening."
+    },
+    {
+      "id": "P11",
+      "ref": "§ 12955(j)",
+      "anchor": "(j) To deny a person access to, or",
+      "summary": "Prohibits discriminatory denial of access to multiple listing services or brokerage organizations.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "Multiple listing service and brokerage organization membership."
+    },
+    {
+      "id": "P12",
+      "ref": "§ 12955(k)",
+      "anchor": "(k) To otherwise make unavailable or deny a",
+      "summary": "Prohibits otherwise making unavailable or denying a dwelling based on protected characteristics.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "screening_restrictions",
+      "reason": null
+    },
+    {
+      "id": "P13",
+      "ref": "§ 12955(l)",
+      "anchor": "(l) To discriminate through public or private land",
+      "summary": "Prohibits discriminatory land use practices, zoning laws, and restrictive covenants.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "Land use, zoning, and restrictive covenant regulation."
+    },
+    {
+      "id": "P14",
+      "ref": "§ 12955(m)",
+      "anchor": "(m) As used in this section, “race, color,",
+      "summary": "Defines protected characteristics to include perceived characteristics and association with protected persons.",
+      "role": "definition",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "Definition of protected characteristics."
+    },
+    {
+      "id": "P15",
+      "ref": "§ 12955(n)",
+      "anchor": "(n) To use a financial or income standard",
+      "summary": "Prohibits using income standards that fail to aggregate co-residents' income on the same basis as married persons.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "screening_restrictions",
+      "reason": null
+    },
+    {
+      "id": "P16",
+      "ref": "§ 12955(o)(1)",
+      "anchor": "(o) (1) In instances in which there is",
+      "summary": "Scope condition applying subdivision (o)(1) rules where there is a government rent subsidy.",
+      "role": "scope_condition",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "Coverage condition for subdivision (o)(1), see global_scope."
+    },
+    {
+      "id": "P17",
+      "ref": "§ 12955(o)(1)(A)",
+      "anchor": "(A) Use a financial or income standard in",
+      "summary": "Requires financial or income eligibility standards to be based only on the portion of rent paid by the tenant when subsidized.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "screening_restrictions",
+      "reason": null
+    },
+    {
+      "id": "P18",
+      "ref": "§ 12955(o)(1)(B)(i)",
+      "anchor": "(B) (i) Use a person’s credit history as",
+      "summary": "Requires offering applicants the option to submit alternative evidence of ability to pay tenant portion before using credit history.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "screening_restrictions",
+      "reason": null
+    },
+    {
+      "id": "P19",
+      "ref": "§ 12955(o)(1)(B)(ii)",
+      "anchor": "(ii) If the applicant elects to provide lawful,",
+      "summary": "Requires providing reasonable time to respond and reasonably considering alternative evidence in lieu of credit history.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "screening_restrictions",
+      "reason": null
+    },
+    {
+      "id": "P20",
+      "ref": "§ 12955(o)(2)",
+      "anchor": "(2) This subdivision does not limit the ability",
+      "summary": "Clarifies that subdivision (o) does not limit requesting employment verification, references, or identity verification.",
+      "role": "exemption",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "Exemption governing subdivision (o), see global_scope."
+    },
+    {
+      "id": "P21",
+      "ref": "§ 12955(p)(1)",
+      "anchor": "(p) (1) For the purposes of this",
+      "summary": "Defines source of income to include public assistance, Section 8 vouchers, and HUD-VASH vouchers.",
+      "role": "definition",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "Definition of source of income."
+    },
+    {
+      "id": "P22",
+      "ref": "§ 12955(p)(2)",
+      "anchor": "(2) For the purposes of this section, it",
+      "summary": "Permits written or oral inquiries concerning the level or source of income.",
+      "role": "exemption",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "Exemption regarding inquiries into level or source of income, see global_scope."
+    }
+  ],
+  "global_scope": [
+    {
+      "id": "S1",
+      "kind": "coverage_condition",
+      "statement": "Applies in instances in which there is a government rent subsidy.",
+      "citation": "Gov. Code § 12955(o)(1)",
+      "scope_mode": "structural",
+      "scope_quote": "In instances in which there is a government rent subsidy, to do either of the following:",
+      "source_provision_id": "P16",
+      "governed_provision_ids": [
+        "P17",
+        "P18",
+        "P19"
+      ],
+      "evidence_parts": [
+        {
+          "segment_id": 1,
+          "quoted_text": "In instances in which there is a government rent subsidy, to do either of the following:"
+        }
+      ],
+      "evidence_check": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 8268,
+        "end": 8356,
+        "occurrences": 1,
+        "model_span": "In instances in which there is a government rent subsidy, to do either of the following:",
+        "source_span": "In instances in which there is a government rent subsidy, to do either of the following:",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "In instances in which there is a government rent subsidy, to do either of the following:",
+            "status": "exact_match",
+            "start": 8268,
+            "end": 8356
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "propagated": true,
+      "problem": null,
+      "scope": {
+        "resolver": "scope-modes/v1",
+        "declared_mode": "structural",
+        "mode": "named_subject",
+        "scope_words": {
+          "scope_quote": "In instances in which there is a government rent subsidy, to do either of the following:",
+          "scope_quote_check": "exact_match",
+          "text": "In instances in which there is a government rent subsidy, to do either of the following:",
+          "from": "scope_quote"
+        },
+        "detail": null,
+        "propagate_ids": [],
+        "mapping_targets": [
+          "P17",
+          "P18",
+          "P19"
+        ],
+        "verification": null
+      }
+    },
+    {
+      "id": "S2",
+      "kind": "exemption",
+      "statement": "Subdivision (o) does not limit the ability of the owner of a housing accommodation to request information or documentation to verify employment, to request landlord references, or to verify the identity of a person.",
+      "citation": "Gov. Code § 12955(o)(2)",
+      "scope_mode": "structural",
+      "scope_quote": "This subdivision does not limit the ability of the owner of a housing accommodation to",
+      "source_provision_id": "P20",
+      "governed_provision_ids": [
+        "P16",
+        "P17",
+        "P18",
+        "P19"
+      ],
+      "evidence_parts": [
+        {
+          "segment_id": 1,
+          "quoted_text": "This subdivision does not limit the ability of the owner of a housing accommodation to request information or documentation to verify employment, to request landlord references, or to verify the identity of a person."
+        }
+      ],
+      "evidence_check": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 9390,
+        "end": 9606,
+        "occurrences": 1,
+        "model_span": "This subdivision does not limit the ability of the owner of a housing accommodation to request information or documentation to verify employment, to request landlord references, or to verify the identity of a person.",
+        "source_span": "This subdivision does not limit the ability of the owner of a housing accommodation to request information or documentation to verify employment, to request landlord references, or to verify the identity of a person.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "This subdivision does not limit the ability of the owner of a housing accommodation to request information or documentation to verify employment, to request landlord references, or to verify the identity of a person.",
+            "status": "exact_match",
+            "start": 9390,
+            "end": 9606
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "propagated": true,
+      "problem": null,
+      "scope": {
+        "resolver": "scope-modes/v1",
+        "declared_mode": "structural",
+        "mode": "structural",
+        "scope_words": {
+          "scope_quote": "This subdivision does not limit the ability of the owner of a housing accommodation to",
+          "scope_quote_check": "exact_match",
+          "text": "This subdivision does not limit the ability of the owner of a housing accommodation to",
+          "from": "scope_quote"
+        },
+        "detail": "This subdivision does",
+        "propagate_ids": [
+          "P16",
+          "P17",
+          "P18",
+          "P19",
+          "P20"
+        ],
+        "mapping_targets": [],
+        "verification": "provisions under 12955 o"
+      }
+    },
+    {
+      "id": "S3",
+      "kind": "exemption",
+      "statement": "It does not constitute discrimination based on source of income to make a written or oral inquiry concerning the level or source of income.",
+      "citation": "Gov. Code § 12955(p)(2)",
+      "scope_mode": "named_subject",
+      "scope_quote": "it shall not constitute discrimination based on source of income to make a written or oral inquiry concerning the level or source of income.",
+      "source_provision_id": "P22",
+      "governed_provision_ids": [
+        "P1",
+        "P12"
+      ],
+      "evidence_parts": [
+        {
+          "segment_id": 1,
+          "quoted_text": "For the purposes of this section, it shall not constitute discrimination based on source of income to make a written or oral inquiry concerning the level or source of income."
+        }
+      ],
+      "evidence_check": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 10452,
+        "end": 10626,
+        "occurrences": 1,
+        "model_span": "For the purposes of this section, it shall not constitute discrimination based on source of income to make a written or oral inquiry concerning the level or source of income.",
+        "source_span": "For the purposes of this section, it shall not constitute discrimination based on source of income to make a written or oral inquiry concerning the level or source of income.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "For the purposes of this section, it shall not constitute discrimination based on source of income to make a written or oral inquiry concerning the level or source of income.",
+            "status": "exact_match",
+            "start": 10452,
+            "end": 10626
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "propagated": true,
+      "problem": null,
+      "scope": {
+        "resolver": "scope-modes/v1",
+        "declared_mode": "named_subject",
+        "mode": "named_subject",
+        "scope_words": {
+          "scope_quote": "it shall not constitute discrimination based on source of income to make a written or oral inquiry concerning the level or source of income.",
+          "scope_quote_check": "exact_match",
+          "text": "it shall not constitute discrimination based on source of income to make a written or oral inquiry concerning the level or source of income.",
+          "from": "scope_quote"
+        },
+        "detail": null,
+        "propagate_ids": [],
+        "mapping_targets": [
+          "P1",
+          "P12"
+        ],
+        "verification": null
+      }
+    }
+  ],
+  "source_view": {
+    "marker": "[[PAGE BREAK]]",
+    "segment_label": "[[SEGMENT {}]]",
+    "view_sha256": "d64d4253d4c70f4cb229811f96b022afe15847fb0e683441073728e9b1ca1bbe",
+    "segments": [
+      {
+        "id": 1,
+        "raw_start": 0,
+        "raw_end": 10709
+      }
+    ],
+    "artifacts_removed": 0,
+    "artifacts": []
+  },
+  "coverage": {
+    "inventory_valid": true,
+    "anchors_located": "22/22",
+    "after_primary": {
+      "uncovered": [],
+      "unaccepted": [],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "scope_mappings": {
+      "requested": 5,
+      "applies": 0,
+      "does_not_apply": 0,
+      "unresolved": 5
+    },
+    "repair_targets": {
+      "before_repair": 0,
+      "resolved_by_accepted_rule": 0,
+      "resolved_out_of_scope": 0,
+      "still_unresolved": 0
+    },
+    "inventory_items": 22,
+    "in_scope_items": 7,
+    "in_scope_refs": 7,
+    "uncertain": [],
+    "final": {
+      "uncovered": [],
+      "unaccepted": [],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "link_mismatches": [],
+    "provisions": [
+      {
+        "ref": "§ 12955(a)",
+        "inventory_item": 0,
+        "provision_id": "P1",
+        "summary": "Prohibits owner discrimination or harassment based on protected personal characteristics, including source of income.",
+        "category": "screening_restrictions",
+        "candidates": [
+          0
+        ],
+        "accepted": [
+          0
+        ],
+        "basis": {
+          "0": "provision link; citation names it"
+        }
+      },
+      {
+        "ref": "§ 12955(b)",
+        "inventory_item": 1,
+        "provision_id": "P2",
+        "summary": "Prohibits written or oral inquiries concerning protected personal characteristics of persons seeking to purchase, rent, or lease housing.",
+        "category": "screening_restrictions",
+        "candidates": [
+          1
+        ],
+        "accepted": [
+          1
+        ],
+        "basis": {
+          "1": "provision link; citation names it"
+        }
+      },
+      {
+        "ref": "§ 12955(k)",
+        "inventory_item": 11,
+        "provision_id": "P12",
+        "summary": "Prohibits otherwise making unavailable or denying a dwelling based on protected characteristics.",
+        "category": "screening_restrictions",
+        "candidates": [
+          2
+        ],
+        "accepted": [
+          2
+        ],
+        "basis": {
+          "2": "provision link; citation names it"
+        }
+      },
+      {
+        "ref": "§ 12955(n)",
+        "inventory_item": 14,
+        "provision_id": "P15",
+        "summary": "Prohibits using income standards that fail to aggregate co-residents' income on the same basis as married persons.",
+        "category": "screening_restrictions",
+        "candidates": [
+          3
+        ],
+        "accepted": [
+          3
+        ],
+        "basis": {
+          "3": "provision link; citation names it"
+        }
+      },
+      {
+        "ref": "§ 12955(o)(1)(A)",
+        "inventory_item": 16,
+        "provision_id": "P17",
+        "summary": "Requires financial or income eligibility standards to be based only on the portion of rent paid by the tenant when subsidized.",
+        "category": "screening_restrictions",
+        "candidates": [
+          4
+        ],
+        "accepted": [
+          4
+        ],
+        "basis": {
+          "4": "provision link; citation names it"
+        }
+      },
+      {
+        "ref": "§ 12955(o)(1)(B)(i)",
+        "inventory_item": 17,
+        "provision_id": "P18",
+        "summary": "Requires offering applicants the option to submit alternative evidence of ability to pay tenant portion before using credit history.",
+        "category": "screening_restrictions",
+        "candidates": [
+          5
+        ],
+        "accepted": [
+          5
+        ],
+        "basis": {
+          "5": "provision link; citation names it"
+        }
+      },
+      {
+        "ref": "§ 12955(o)(1)(B)(ii)",
+        "inventory_item": 18,
+        "provision_id": "P19",
+        "summary": "Requires providing reasonable time to respond and reasonably considering alternative evidence in lieu of credit history.",
+        "category": "screening_restrictions",
+        "candidates": [
+          6
+        ],
+        "accepted": [
+          6
+        ],
+        "basis": {
+          "6": "provision link; citation names it"
+        }
+      }
+    ],
+    "unrecorded_subdivisions": []
+  },
+  "scope_challenges": [
+    {
+      "ref": "§ 12955(c)",
+      "provision_id": "P3",
+      "role": "operative_rule",
+      "reason": "Housing advertisement and notice restrictions, not applicant screening standards.",
+      "summary": "Prohibits notices, statements, or advertisements indicating preference, limitation, or discrimination in housing.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    },
+    {
+      "ref": "§ 12955(d)",
+      "provision_id": "P4",
+      "role": "operative_rule",
+      "reason": "General public accommodations discrimination under Unruh Act and federal age preferences.",
+      "summary": "Prohibits discrimination under Civil Code Section 51 and exempts age preferences in federally approved housing programs.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    },
+    {
+      "ref": "§ 12955(e)",
+      "provision_id": "P5",
+      "role": "operative_rule",
+      "reason": "Mortgage and financial assistance lending practices, not rental applicant screening.",
+      "summary": "Prohibits discrimination in financial assistance and mortgage lending for housing accommodations.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    },
+    {
+      "ref": "§ 12955(f)",
+      "provision_id": "P6",
+      "role": "operative_rule",
+      "reason": "Civil rights anti-retaliation provision, not a just cause eviction limit.",
+      "summary": "Prohibits retaliation against persons who have opposed unlawful practices or exercised rights under FEHA.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    },
+    {
+      "ref": "§ 12955(g)",
+      "provision_id": "P7",
+      "role": "operative_rule",
+      "reason": "Secondary liability and aiding/abetting provisions.",
+      "summary": "Prohibits aiding, abetting, inciting, compelling, or coercing acts declared unlawful under this section.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    },
+    {
+      "ref": "§ 12955(h)",
+      "provision_id": "P8",
+      "role": "operative_rule",
+      "reason": "Blockbusting and panic peddling prohibitions.",
+      "summary": "Prohibits blockbusting and inducing sales or rentals through representations about neighborhood demographics.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    },
+    {
+      "ref": "§ 12955(i)(1)",
+      "provision_id": "P9",
+      "role": "operative_rule",
+      "reason": "Commercial real estate transactions, not rental housing screening.",
+      "summary": "Prohibits discrimination in real estate-related transactions.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    },
+    {
+      "ref": "§ 12955(i)(2)",
+      "provision_id": "P10",
+      "role": "operative_rule",
+      "reason": "Appraisal services regulation, not rental housing screening.",
+      "summary": "Prohibits discrimination in performing real estate appraisal services.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    },
+    {
+      "ref": "§ 12955(j)",
+      "provision_id": "P11",
+      "role": "operative_rule",
+      "reason": "Multiple listing service and brokerage organization membership.",
+      "summary": "Prohibits discriminatory denial of access to multiple listing services or brokerage organizations.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    },
+    {
+      "ref": "§ 12955(l)",
+      "provision_id": "P13",
+      "role": "operative_rule",
+      "reason": "Land use, zoning, and restrictive covenant regulation.",
+      "summary": "Prohibits discriminatory land use practices, zoning laws, and restrictive covenants.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    },
+    {
+      "ref": "§ 12955(m)",
+      "provision_id": "P14",
+      "role": "definition",
+      "reason": "Definition of protected characteristics.",
+      "summary": "Defines protected characteristics to include perceived characteristics and association with protected persons.",
+      "signals": {
+        "in_scope_neighbour": true,
+        "enumeration": true,
+        "normative_language": false,
+        "grounds_or_conditions": false
+      },
+      "challenged": false,
+      "why_not": "too few substantive signals",
+      "raw_start": 7526,
+      "raw_end": 7973
+    },
+    {
+      "ref": "§ 12955(o)(1)",
+      "provision_id": "P16",
+      "role": "scope_condition",
+      "reason": "Coverage condition for subdivision (o)(1), see global_scope.",
+      "summary": "Scope condition applying subdivision (o)(1) rules where there is a government rent subsidy.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role scope_condition is decided by other rules"
+    },
+    {
+      "ref": "§ 12955(o)(2)",
+      "provision_id": "P20",
+      "role": "exemption",
+      "reason": "Exemption governing subdivision (o), see global_scope.",
+      "summary": "Clarifies that subdivision (o) does not limit requesting employment verification, references, or identity verification.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role exemption is decided by other rules"
+    },
+    {
+      "ref": "§ 12955(p)(1)",
+      "provision_id": "P21",
+      "role": "definition",
+      "reason": "Definition of source of income.",
+      "summary": "Defines source of income to include public assistance, Section 8 vouchers, and HUD-VASH vouchers.",
+      "signals": {
+        "in_scope_neighbour": false,
+        "enumeration": true,
+        "normative_language": false,
+        "grounds_or_conditions": false
+      },
+      "challenged": false,
+      "why_not": "too few substantive signals",
+      "raw_start": 9607,
+      "raw_end": 10448
+    },
+    {
+      "ref": "§ 12955(p)(2)",
+      "provision_id": "P22",
+      "role": "exemption",
+      "reason": "Exemption regarding inquiries into level or source of income, see global_scope.",
+      "summary": "Permits written or oral inquiries concerning the level or source of income.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role exemption is decided by other rules"
+    }
+  ],
+  "scope_mappings": [
+    {
+      "condition_id": "S1",
+      "provision_id": "P17",
+      "kind": "coverage_condition",
+      "statement": "Applies in instances in which there is a government rent subsidy.",
+      "scope_words": "In instances in which there is a government rent subsidy, to do either of the following:",
+      "condition_evidence": "In instances in which there is a government rent subsidy, to do either of the following:",
+      "target_ref": "§ 12955(o)(1)(A)",
+      "target_anchor": "(A) Use a financial or income standard in",
+      "target_quote": "(A) Use a financial or income standard in assessing eligibility for the rental of housing that is not based on the portion of the rent to be paid by the tenant.",
+      "final": "unresolved",
+      "unresolved_reason": "repair did not complete: repair needed, but there is no cached repair response and no live provider"
+    },
+    {
+      "condition_id": "S1",
+      "provision_id": "P18",
+      "kind": "coverage_condition",
+      "statement": "Applies in instances in which there is a government rent subsidy.",
+      "scope_words": "In instances in which there is a government rent subsidy, to do either of the following:",
+      "condition_evidence": "In instances in which there is a government rent subsidy, to do either of the following:",
+      "target_ref": "§ 12955(o)(1)(B)(i)",
+      "target_anchor": "(B) (i) Use a person’s credit history as",
+      "target_quote": "(B) (i) Use a person’s credit history as part of the application process for a rental accommodation without offering the applicant the option, at the applicant’s discretion, of providing lawful, verifiable alternative evidence of the applicant’s reasonable ability to pay\nthe portion of the rent to be paid by the tenant, including, but not limited to, government benefit payments, pay records, and bank statements.",
+      "final": "unresolved",
+      "unresolved_reason": "repair did not complete: repair needed, but there is no cached repair response and no live provider"
+    },
+    {
+      "condition_id": "S1",
+      "provision_id": "P19",
+      "kind": "coverage_condition",
+      "statement": "Applies in instances in which there is a government rent subsidy.",
+      "scope_words": "In instances in which there is a government rent subsidy, to do either of the following:",
+      "condition_evidence": "In instances in which there is a government rent subsidy, to do either of the following:",
+      "target_ref": "§ 12955(o)(1)(B)(ii)",
+      "target_anchor": "(ii) If the applicant elects to provide lawful,",
+      "target_quote": "(ii) If the applicant elects to provide lawful, verifiable alternative evidence of the applicant’s\nreasonable ability to pay pursuant to clause (i), the housing provider shall do both of the following:\n(I) Provide the applicant reasonable time to respond with that alternative evidence.\n(II) Reasonably consider that alternative evidence in lieu of the person’s credit history in determining whether to offer the rental accommodation to the applicant.",
+      "final": "unresolved",
+      "unresolved_reason": "repair did not complete: repair needed, but there is no cached repair response and no live provider"
+    },
+    {
+      "condition_id": "S3",
+      "provision_id": "P1",
+      "kind": "exemption",
+      "statement": "It does not constitute discrimination based on source of income to make a written or oral inquiry concerning the level or source of income.",
+      "scope_words": "it shall not constitute discrimination based on source of income to make a written or oral inquiry concerning the level or source of income.",
+      "condition_evidence": "For the purposes of this section, it shall not constitute discrimination based on source of income to make a written or oral inquiry concerning the level or source of income.",
+      "target_ref": "§ 12955(a)",
+      "target_anchor": "(a) For the owner of any housing accommodation",
+      "target_quote": "It shall be unlawful:\n(a) For the owner of any housing accommodation to discriminate against or harass any person because of the race, color, religion, sex, gender, gender identity, gender expression, sexual orientation, marital status, national origin, ancestry, familial status, source of income, disability, veteran or military status, or genetic information of that person.",
+      "final": "unresolved",
+      "unresolved_reason": "repair did not complete: repair needed, but there is no cached repair response and no live provider"
+    },
+    {
+      "condition_id": "S3",
+      "provision_id": "P12",
+      "kind": "exemption",
+      "statement": "It does not constitute discrimination based on source of income to make a written or oral inquiry concerning the level or source of income.",
+      "scope_words": "it shall not constitute discrimination based on source of income to make a written or oral inquiry concerning the level or source of income.",
+      "condition_evidence": "For the purposes of this section, it shall not constitute discrimination based on source of income to make a written or oral inquiry concerning the level or source of income.",
+      "target_ref": "§ 12955(k)",
+      "target_anchor": "(k) To otherwise make unavailable or deny a",
+      "target_quote": "(k) To otherwise make unavailable or deny a dwelling based on discrimination because of race, color, religion, sex, gender, gender identity, gender expression, sexual orientation, familial status, source of income, disability, genetic information, veteran or military status, or national origin.",
+      "final": "unresolved",
+      "unresolved_reason": "repair did not complete: repair needed, but there is no cached repair response and no live provider"
+    }
+  ],
+  "legislative_session": null,
+  "empty_result": null,
+  "legacy_replay": null,
+  "dedupe": [],
+  "chunking": null,
+  "repair": {
+    "invoked": false,
+    "reason": "0 repair target(s) from no check; 5 scope_mapping_challenge(s)",
+    "prompt_version": "v7-repair-1",
+    "targets": [],
+    "cache_key": "160b8c2a4481f896ed8abff058ba305ac29d440335bb7899946140990e0357d6",
+    "cache_hit": false,
+    "cache_entry": "cache/extraction/160b8c2a4481f896ed8abff058ba305ac29d440335bb7899946140990e0357d6.json",
+    "prompt_sha256": "b8c70bf82de221184af89879ed15d63ee56e748a54c874a52331a325115e6569",
+    "provider_metadata": {},
+    "raw_response_text": "",
+    "mappings": [
+      {
+        "condition_id": "S1",
+        "provision_id": "P17",
+        "kind": "coverage_condition",
+        "statement": "Applies in instances in which there is a government rent subsidy.",
+        "scope_words": "In instances in which there is a government rent subsidy, to do either of the following:",
+        "condition_evidence": "In instances in which there is a government rent subsidy, to do either of the following:",
+        "target_ref": "§ 12955(o)(1)(A)",
+        "target_anchor": "(A) Use a financial or income standard in",
+        "target_quote": "(A) Use a financial or income standard in assessing eligibility for the rental of housing that is not based on the portion of the rent to be paid by the tenant.",
+        "final": "unresolved",
+        "unresolved_reason": "repair did not complete: repair needed, but there is no cached repair response and no live provider"
+      },
+      {
+        "condition_id": "S1",
+        "provision_id": "P18",
+        "kind": "coverage_condition",
+        "statement": "Applies in instances in which there is a government rent subsidy.",
+        "scope_words": "In instances in which there is a government rent subsidy, to do either of the following:",
+        "condition_evidence": "In instances in which there is a government rent subsidy, to do either of the following:",
+        "target_ref": "§ 12955(o)(1)(B)(i)",
+        "target_anchor": "(B) (i) Use a person’s credit history as",
+        "target_quote": "(B) (i) Use a person’s credit history as part of the application process for a rental accommodation without offering the applicant the option, at the applicant’s discretion, of providing lawful, verifiable alternative evidence of the applicant’s reasonable ability to pay\nthe portion of the rent to be paid by the tenant, including, but not limited to, government benefit payments, pay records, and bank statements.",
+        "final": "unresolved",
+        "unresolved_reason": "repair did not complete: repair needed, but there is no cached repair response and no live provider"
+      },
+      {
+        "condition_id": "S1",
+        "provision_id": "P19",
+        "kind": "coverage_condition",
+        "statement": "Applies in instances in which there is a government rent subsidy.",
+        "scope_words": "In instances in which there is a government rent subsidy, to do either of the following:",
+        "condition_evidence": "In instances in which there is a government rent subsidy, to do either of the following:",
+        "target_ref": "§ 12955(o)(1)(B)(ii)",
+        "target_anchor": "(ii) If the applicant elects to provide lawful,",
+        "target_quote": "(ii) If the applicant elects to provide lawful, verifiable alternative evidence of the applicant’s\nreasonable ability to pay pursuant to clause (i), the housing provider shall do both of the following:\n(I) Provide the applicant reasonable time to respond with that alternative evidence.\n(II) Reasonably consider that alternative evidence in lieu of the person’s credit history in determining whether to offer the rental accommodation to the applicant.",
+        "final": "unresolved",
+        "unresolved_reason": "repair did not complete: repair needed, but there is no cached repair response and no live provider"
+      },
+      {
+        "condition_id": "S3",
+        "provision_id": "P1",
+        "kind": "exemption",
+        "statement": "It does not constitute discrimination based on source of income to make a written or oral inquiry concerning the level or source of income.",
+        "scope_words": "it shall not constitute discrimination based on source of income to make a written or oral inquiry concerning the level or source of income.",
+        "condition_evidence": "For the purposes of this section, it shall not constitute discrimination based on source of income to make a written or oral inquiry concerning the level or source of income.",
+        "target_ref": "§ 12955(a)",
+        "target_anchor": "(a) For the owner of any housing accommodation",
+        "target_quote": "It shall be unlawful:\n(a) For the owner of any housing accommodation to discriminate against or harass any person because of the race, color, religion, sex, gender, gender identity, gender expression, sexual orientation, marital status, national origin, ancestry, familial status, source of income, disability, veteran or military status, or genetic information of that person.",
+        "final": "unresolved",
+        "unresolved_reason": "repair did not complete: repair needed, but there is no cached repair response and no live provider"
+      },
+      {
+        "condition_id": "S3",
+        "provision_id": "P12",
+        "kind": "exemption",
+        "statement": "It does not constitute discrimination based on source of income to make a written or oral inquiry concerning the level or source of income.",
+        "scope_words": "it shall not constitute discrimination based on source of income to make a written or oral inquiry concerning the level or source of income.",
+        "condition_evidence": "For the purposes of this section, it shall not constitute discrimination based on source of income to make a written or oral inquiry concerning the level or source of income.",
+        "target_ref": "§ 12955(k)",
+        "target_anchor": "(k) To otherwise make unavailable or deny a",
+        "target_quote": "(k) To otherwise make unavailable or deny a dwelling based on discrimination because of race, color, religion, sex, gender, gender identity, gender expression, sexual orientation, familial status, source of income, disability, genetic information, veteran or military status, or national origin.",
+        "final": "unresolved",
+        "unresolved_reason": "repair did not complete: repair needed, but there is no cached repair response and no live provider"
+      }
+    ],
+    "candidate_indices": [],
+    "accepted_count": 0,
+    "rejected_count": 0,
+    "errors": [
+      "repair needed, but there is no cached repair response and no live provider"
+    ]
+  },
+  "document_status": "review_required",
+  "review_reasons": [
+    "named-subject scope mappings unresolved (not applied): ['S1->P17 (repair did not complete: repair needed, but there is no cached repair response and no live provider)', 'S1->P18 (repair did not complete: repair needed, but there is no cached repair response and no live provider)', 'S1->P19 (repair did not complete: repair needed, but there is no cached repair response and no live provider)', 'S3->P1 (repair did not complete: repair needed, but there is no cached repair response and no live provider)', 'S3->P12 (repair did not complete: repair needed, but there is no cached repair response and no live provider)']",
+    "repair pass: repair needed, but there is no cached repair response and no live provider"
+  ],
+  "warnings": [],
+  "errors": [],
+  "raw_response_text": "{\n  \"document\": {\n    \"posture\": \"codified_current_law\",\n    \"evidence\": \"California Code,  GOV 12955\"\n  },\n  \"provisions\": [\n    {\n      \"id\": \"P1\",\n      \"ref\": \"§ 12955(a)\",\n      \"anchor\": \"(a) For the owner of any housing accommodation\",\n      \"summary\": \"Prohibits owner discrimination or harassment based on protected personal characteristics, including source of income.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"screening_restrictions\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P2\",\n      \"ref\": \"§ 12955(b)\",\n      \"anchor\": \"(b) For the owner of any housing accommodation\",\n      \"summary\": \"Prohibits written or oral inquiries concerning protected personal characteristics of persons seeking to purchase, rent, or lease housing.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"screening_restrictions\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P3\",\n      \"ref\": \"§ 12955(c)\",\n      \"anchor\": \"(c) For any person to make, print, or\",\n      \"summary\": \"Prohibits notices, statements, or advertisements indicating preference, limitation, or discrimination in housing.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"Housing advertisement and notice restrictions, not applicant screening standards.\"\n    },\n    {\n      \"id\": \"P4\",\n      \"ref\": \"§ 12955(d)\",\n      \"anchor\": \"(d) For any person subject to the provisions\",\n      \"summary\": \"Prohibits discrimination under Civil Code Section 51 and exempts age preferences in federally approved housing programs.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"General public accommodations discrimination under Unruh Act and federal age preferences.\"\n    },\n    {\n      \"id\": \"P5\",\n      \"ref\": \"§ 12955(e)\",\n      \"anchor\": \"(e) For any person, bank, mortgage company,\",\n      \"summary\": \"Prohibits discrimination in financial assistance and mortgage lending for housing accommodations.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"Mortgage and financial assistance lending practices, not rental applicant screening.\"\n    },\n    {\n      \"id\": \"P6\",\n      \"ref\": \"§ 12955(f)\",\n      \"anchor\": \"(f) For any owner of housing accommodations to\",\n      \"summary\": \"Prohibits retaliation against persons who have opposed unlawful practices or exercised rights under FEHA.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"Civil rights anti-retaliation provision, not a just cause eviction limit.\"\n    },\n    {\n      \"id\": \"P7\",\n      \"ref\": \"§ 12955(g)\",\n      \"anchor\": \"(g) For any person to aid, abet,\",\n      \"summary\": \"Prohibits aiding, abetting, inciting, compelling, or coercing acts declared unlawful under this section.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"Secondary liability and aiding/abetting provisions.\"\n    },\n    {\n      \"id\": \"P8\",\n      \"ref\": \"§ 12955(h)\",\n      \"anchor\": \"(h) For any person, for profit, to\",\n      \"summary\": \"Prohibits blockbusting and inducing sales or rentals through representations about neighborhood demographics.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"Blockbusting and panic peddling prohibitions.\"\n    },\n    {\n      \"id\": \"P9\",\n      \"ref\": \"§ 12955(i)(1)\",\n      \"anchor\": \"(i) (1) For any person or other organization\",\n      \"summary\": \"Prohibits discrimination in real estate-related transactions.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"Commercial real estate transactions, not rental housing screening.\"\n    },\n    {\n      \"id\": \"P10\",\n      \"ref\": \"§ 12955(i)(2)\",\n      \"anchor\": \"(2) For any person or other entity whose\",\n      \"summary\": \"Prohibits discrimination in performing real estate appraisal services.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"Appraisal services regulation, not rental housing screening.\"\n    },\n    {\n      \"id\": \"P11\",\n      \"ref\": \"§ 12955(j)\",\n      \"anchor\": \"(j) To deny a person access to, or\",\n      \"summary\": \"Prohibits discriminatory denial of access to multiple listing services or brokerage organizations.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"Multiple listing service and brokerage organization membership.\"\n    },\n    {\n      \"id\": \"P12\",\n      \"ref\": \"§ 12955(k)\",\n      \"anchor\": \"(k) To otherwise make unavailable or deny a\",\n      \"summary\": \"Prohibits otherwise making unavailable or denying a dwelling based on protected characteristics.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"screening_restrictions\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P13\",\n      \"ref\": \"§ 12955(l)\",\n      \"anchor\": \"(l) To discriminate through public or private land\",\n      \"summary\": \"Prohibits discriminatory land use practices, zoning laws, and restrictive covenants.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"Land use, zoning, and restrictive covenant regulation.\"\n    },\n    {\n      \"id\": \"P14\",\n      \"ref\": \"§ 12955(m)\",\n      \"anchor\": \"(m) As used in this section, “race, color,\",\n      \"summary\": \"Defines protected characteristics to include perceived characteristics and association with protected persons.\",\n      \"role\": \"definition\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"Definition of protected characteristics.\"\n    },\n    {\n      \"id\": \"P15\",\n      \"ref\": \"§ 12955(n)\",\n      \"anchor\": \"(n) To use a financial or income standard\",\n      \"summary\": \"Prohibits using income standards that fail to aggregate co-residents' income on the same basis as married persons.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"screening_restrictions\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P16\",\n      \"ref\": \"§ 12955(o)(1)\",\n      \"anchor\": \"(o) (1) In instances in which there is\",\n      \"summary\": \"Scope condition applying subdivision (o)(1) rules where there is a government rent subsidy.\",\n      \"role\": \"scope_condition\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"Coverage condition for subdivision (o)(1), see global_scope.\"\n    },\n    {\n      \"id\": \"P17\",\n      \"ref\": \"§ 12955(o)(1)(A)\",\n      \"anchor\": \"(A) Use a financial or income standard in\",\n      \"summary\": \"Requires financial or income eligibility standards to be based only on the portion of rent paid by the tenant when subsidized.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"screening_restrictions\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P18\",\n      \"ref\": \"§ 12955(o)(1)(B)(i)\",\n      \"anchor\": \"(B) (i) Use a person’s credit history as\",\n      \"summary\": \"Requires offering applicants the option to submit alternative evidence of ability to pay tenant portion before using credit history.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"screening_restrictions\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P19\",\n      \"ref\": \"§ 12955(o)(1)(B)(ii)\",\n      \"anchor\": \"(ii) If the applicant elects to provide lawful,\",\n      \"summary\": \"Requires providing reasonable time to respond and reasonably considering alternative evidence in lieu of credit history.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"screening_restrictions\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P20\",\n      \"ref\": \"§ 12955(o)(2)\",\n      \"anchor\": \"(2) This subdivision does not limit the ability\",\n      \"summary\": \"Clarifies that subdivision (o) does not limit requesting employment verification, references, or identity verification.\",\n      \"role\": \"exemption\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"Exemption governing subdivision (o), see global_scope.\"\n    },\n    {\n      \"id\": \"P21\",\n      \"ref\": \"§ 12955(p)(1)\",\n      \"anchor\": \"(p) (1) For the purposes of this\",\n      \"summary\": \"Defines source of income to include public assistance, Section 8 vouchers, and HUD-VASH vouchers.\",\n      \"role\": \"definition\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"Definition of source of income.\"\n    },\n    {\n      \"id\": \"P22\",\n      \"ref\": \"§ 12955(p)(2)\",\n      \"anchor\": \"(2) For the purposes of this section, it\",\n      \"summary\": \"Permits written or oral inquiries concerning the level or source of income.\",\n      \"role\": \"exemption\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"Exemption regarding inquiries into level or source of income, see global_scope.\"\n    }\n  ],\n  \"global_scope\": [\n    {\n      \"id\": \"S1\",\n      \"kind\": \"coverage_condition\",\n      \"statement\": \"Applies in instances in which there is a government rent subsidy.\",\n      \"citation\": \"Gov. Code § 12955(o)(1)\",\n      \"scope_mode\": \"structural\",\n      \"scope_quote\": \"In instances in which there is a government rent subsidy, to do either of the following:\",\n      \"source_provision_id\": \"P16\",\n      \"governed_provision_ids\": [\n        \"P17\",\n        \"P18\",\n        \"P19\"\n      ],\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"In instances in which there is a government rent subsidy, to do either of the following:\"\n        }\n      ]\n    },\n    {\n      \"id\": \"S2\",\n      \"kind\": \"exemption\",\n      \"statement\": \"Subdivision (o) does not limit the ability of the owner of a housing accommodation to request information or documentation to verify employment, to request landlord references, or to verify the identity of a person.\",\n      \"citation\": \"Gov. Code § 12955(o)(2)\",\n      \"scope_mode\": \"structural\",\n      \"scope_quote\": \"This subdivision does not limit the ability of the owner of a housing accommodation to\",\n      \"source_provision_id\": \"P20\",\n      \"governed_provision_ids\": [\n        \"P16\",\n        \"P17\",\n        \"P18\",\n        \"P19\"\n      ],\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"This subdivision does not limit the ability of the owner of a housing accommodation to request information or documentation to verify employment, to request landlord references, or to verify the identity of a person.\"\n        }\n      ]\n    },\n    {\n      \"id\": \"S3\",\n      \"kind\": \"exemption\",\n      \"statement\": \"It does not constitute discrimination based on source of income to make a written or oral inquiry concerning the level or source of income.\",\n      \"citation\": \"Gov. Code § 12955(p)(2)\",\n      \"scope_mode\": \"named_subject\",\n      \"scope_quote\": \"it shall not constitute discrimination based on source of income to make a written or oral inquiry concerning the level or source of income.\",\n      \"source_provision_id\": \"P22\",\n      \"governed_provision_ids\": [\n        \"P1\",\n        \"P12\"\n      ],\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"For the purposes of this section, it shall not constitute discrimination based on source of income to make a written or oral inquiry concerning the level or source of income.\"\n        }\n      ]\n    }\n  ],\n  \"rules\": [\n    {\n      \"category\": \"screening_restrictions\",\n      \"citation\": \"Gov. Code § 12955(a)\",\n      \"provision_ids\": [\n        \"P1\"\n      ],\n      \"source_basis\": \"operative_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"It shall be unlawful:\\n(a) For the owner of any housing accommodation to discriminate against or harass any person because of the race, color, religion, sex, gender, gender identity, gender expression, sexual orientation, marital status, national origin, ancestry, familial status, source of income, disability, veteran or military status, or genetic information of that person.\"\n        }\n      ],\n      \"title\": \"Prohibition on discrimination and harassment by housing owners\",\n      \"requirement\": \"An owner of any housing accommodation is prohibited from discriminating against or harassing any person on the basis of race, color, religion, sex, gender, gender identity, gender expression, sexual orientation, marital status, national origin, ancestry, familial status, source of income, disability, veteran or military status, or genetic information.\",\n      \"key_value\": null,\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": \"( Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024. )\",\n      \"version_note\": \"Amended by Stats. 2023, Ch. 776, Sec. 1 (SB 267).\",\n      \"version_evidence\": \"(Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024.)\",\n      \"effective_date_evidence\": \"(Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024.)\",\n      \"effective_date_evidence_kind\": \"history_note\",\n      \"effective_date\": null,\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"screening_restrictions\",\n      \"citation\": \"Gov. Code § 12955(b)\",\n      \"provision_ids\": [\n        \"P2\"\n      ],\n      \"source_basis\": \"operative_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"(b) For the owner of any housing accommodation to make or to cause to be made any written or oral inquiry concerning the race, color, religion, sex, gender, gender identity, gender expression, sexual orientation, marital status, national origin, ancestry, familial status, disability, veteran or military status, or genetic information of any person\\nseeking to purchase, rent, or lease any housing accommodation.\"\n        }\n      ],\n      \"title\": \"Prohibition on inquiries regarding protected classes of rental applicants\",\n      \"requirement\": \"An owner of any housing accommodation is prohibited from making or causing to be made any written or oral inquiry concerning the race, color, religion, sex, gender, gender identity, gender expression, sexual orientation, marital status, national origin, ancestry, familial status, disability, veteran or military status, or genetic information of any person seeking to purchase, rent, or lease any housing accommodation.\",\n      \"key_value\": null,\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": \"( Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024. )\",\n      \"version_note\": \"Amended by Stats. 2023, Ch. 776, Sec. 1 (SB 267).\",\n      \"version_evidence\": \"(Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024.)\",\n      \"effective_date_evidence\": \"(Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024.)\",\n      \"effective_date_evidence_kind\": \"history_note\",\n      \"effective_date\": null,\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"screening_restrictions\",\n      \"citation\": \"Gov. Code § 12955(k)\",\n      \"provision_ids\": [\n        \"P12\"\n      ],\n      \"source_basis\": \"operative_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"(k) To otherwise make unavailable or deny a dwelling based on discrimination because of race, color, religion, sex, gender, gender identity, gender expression, sexual orientation, familial status, source of income, disability, genetic information, veteran or military status, or national origin.\"\n        }\n      ],\n      \"title\": \"Prohibition on denying a dwelling based on discrimination\",\n      \"requirement\": \"It is unlawful to otherwise make unavailable or deny a dwelling based on discrimination because of race, color, religion, sex, gender, gender identity, gender expression, sexual orientation, familial status, source of income, disability, genetic information, veteran or military status, or national origin.\",\n      \"key_value\": null,\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": \"( Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024. )\",\n      \"version_note\": \"Amended by Stats. 2023, Ch. 776, Sec. 1 (SB 267).\",\n      \"version_evidence\": \"(Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024.)\",\n      \"effective_date_evidence\": \"(Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024.)\",\n      \"effective_date_evidence_kind\": \"history_note\",\n      \"effective_date\": null,\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"screening_restrictions\",\n      \"citation\": \"Gov. Code § 12955(n)\",\n      \"provision_ids\": [\n        \"P15\"\n      ],\n      \"source_basis\": \"operative_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"(n) To use a financial or income standard in the rental of housing that fails to account for the aggregate income of persons residing together or proposing to reside together on the same basis as the aggregate income\\nof married persons residing together or proposing to reside together.\"\n        }\n      ],\n      \"title\": \"Equal aggregation of co-residents' income in rental standards\",\n      \"requirement\": \"In the rental of housing, it is unlawful to use a financial or income standard that fails to account for the aggregate income of persons residing together or proposing to reside together on the same basis as the aggregate income of married persons residing or proposing to reside together.\",\n      \"key_value\": null,\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": \"( Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024. )\",\n      \"version_note\": \"Amended by Stats. 2023, Ch. 776, Sec. 1 (SB 267).\",\n      \"version_evidence\": \"(Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024.)\",\n      \"effective_date_evidence\": \"(Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024.)\",\n      \"effective_date_evidence_kind\": \"history_note\",\n      \"effective_date\": null,\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"screening_restrictions\",\n      \"citation\": \"Gov. Code § 12955(o)(1)(A)\",\n      \"provision_ids\": [\n        \"P17\"\n      ],\n      \"source_basis\": \"operative_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"(A) Use a financial or income standard in assessing eligibility for the rental of housing that is not based on the portion of the rent to be paid by the tenant.\"\n        }\n      ],\n      \"title\": \"Income eligibility standard restricted to tenant portion for subsidized applicants\",\n      \"requirement\": \"When assessing eligibility for the rental of housing where a government rent subsidy exists, a housing provider is prohibited from using a financial or income standard that is not based on the portion of the rent to be paid by the tenant.\",\n      \"key_value\": null,\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": \"( Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024. )\",\n      \"version_note\": \"Amended by Stats. 2023, Ch. 776, Sec. 1 (SB 267).\",\n      \"version_evidence\": \"(Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024.)\",\n      \"effective_date_evidence\": \"(Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024.)\",\n      \"effective_date_evidence_kind\": \"history_note\",\n      \"effective_date\": null,\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"screening_restrictions\",\n      \"citation\": \"Gov. Code § 12955(o)(1)(B)(i)\",\n      \"provision_ids\": [\n        \"P18\"\n      ],\n      \"source_basis\": \"operative_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"(B) (i) Use a person’s credit history as part of the application process for a rental accommodation without offering the applicant the option, at the applicant’s discretion, of providing lawful, verifiable alternative evidence of the applicant’s reasonable ability to pay\\nthe portion of the rent to be paid by the tenant, including, but not limited to, government benefit payments, pay records, and bank statements.\"\n        }\n      ],\n      \"title\": \"Alternative evidence option required when using credit history for subsidized applicants\",\n      \"requirement\": \"A housing provider cannot use an applicant's credit history as part of the application process for a rental accommodation without offering the applicant the option, at the applicant's discretion, of providing lawful, verifiable alternative evidence of reasonable ability to pay the tenant's portion of rent, including government benefit payments, pay records, and bank statements.\",\n      \"key_value\": null,\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": \"( Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024. )\",\n      \"version_note\": \"Amended by Stats. 2023, Ch. 776, Sec. 1 (SB 267).\",\n      \"version_evidence\": \"(Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024.)\",\n      \"effective_date_evidence\": \"(Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024.)\",\n      \"effective_date_evidence_kind\": \"history_note\",\n      \"effective_date\": null,\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"screening_restrictions\",\n      \"citation\": \"Gov. Code § 12955(o)(1)(B)(ii)\",\n      \"provision_ids\": [\n        \"P19\"\n      ],\n      \"source_basis\": \"operative_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"(ii) If the applicant elects to provide lawful, verifiable alternative evidence of the applicant’s\\nreasonable ability to pay pursuant to clause (i), the housing provider shall do both of the following:\\n(I) Provide the applicant reasonable time to respond with that alternative evidence.\\n(II) Reasonably consider that alternative evidence in lieu of the person’s credit history in determining whether to offer the rental accommodation to the applicant.\"\n        }\n      ],\n      \"title\": \"Duties when subsidized applicant provides alternative ability-to-pay evidence\",\n      \"requirement\": \"If an applicant elects to provide lawful, verifiable alternative evidence of ability to pay, the housing provider must give the applicant reasonable time to respond with that evidence and must reasonably consider it in lieu of credit history when deciding whether to offer the rental accommodation.\",\n      \"key_value\": null,\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": \"( Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024. )\",\n      \"version_note\": \"Amended by Stats. 2023, Ch. 776, Sec. 1 (SB 267).\",\n      \"version_evidence\": \"(Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024.)\",\n      \"effective_date_evidence\": \"(Amended by Stats. 2023, Ch. 776, Sec. 1.   (SB 267)   Effective January 1, 2024.)\",\n      \"effective_date_evidence_kind\": \"history_note\",\n      \"effective_date\": null,\n      \"conflict_note\": null\n    }\n  ],\n  \"no_rules_justification\": null\n}"
+}

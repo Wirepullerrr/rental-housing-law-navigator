@@ -45,11 +45,12 @@ def test_fabricated_version_evidence_is_rejected(run_fake):
     assert any("version_evidence" in r for r in run.candidates[0].rejection_reasons)
 
 
-def test_version_annotation_dated_after_as_of_is_rejected_conservatively(run_fake):
+def test_version_annotation_dated_after_as_of_is_a_later_version(run_fake):
+    # M3.3 (validity.py): an amendment's own effective date after as_of is a later START of the
+    # extracted wording -> not_yet_effective from that date, never published as in force.
     candidate = make_candidate(version_note="amended", version_evidence=D052_DATE_EVIDENCE)
     run, _ = run_fake({"rules": [candidate]}, as_of=date(2025, 7, 31))
-    assert not run.candidates[0].accepted
-    assert any("dated 2025-08-01, after as_of" in r for r in run.candidates[0].rejection_reasons)
+    assert run.rules[0]["status"] == "not_yet_effective" and run.rules[0]["effective_date"] == "2025-08-01"
 
 
 # ------------------------------------------------------- quote-to-claim figures

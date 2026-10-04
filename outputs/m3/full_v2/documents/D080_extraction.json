@@ -1,0 +1,1074 @@
+{
+  "disclaimer": "Not legal advice. Automated extraction for a research prototype; verify against the cited source.",
+  "run_at": "2026-10-04T06:34:27+00:00",
+  "source": {
+    "doc_id": "D080",
+    "jurisdiction": "San Francisco, CA",
+    "url": "https://www.sf.gov/news--annual-rent-increase-3126-22827-announced",
+    "source_type": "official",
+    "retrieved_at": "2026-10-01T22:37Z",
+    "text_file": "text/D080.txt",
+    "content_sha256": "018d6bb8e8c9a4525c2497547e4a6d0f2a0bee4acad1416a66173a2abf34352e",
+    "body_chars": 976
+  },
+  "provider": "gemini",
+  "model": "gemini-3.8-flash",
+  "prompt_version": "v7",
+  "prompt_sha256": "cd0690e7d808935288e434e2b03b9a241e572fedb261f845443680a3287057d2",
+  "response_schema_sha256": "c15306da6f21dc72f06e78405f94ed61dc9e59288138cc98b5b5bf9b62ac403c",
+  "generation_settings": {
+    "temperature": null,
+    "seed": 20261001,
+    "thinking_level": "medium"
+  },
+  "as_of": "2026-10-01",
+  "cache_key": "9f4d42f2a29fb1db6da40002ebc7f6e375f5673d192e9ab7546f50868d2d4d17",
+  "cache_hit": true,
+  "cache_entry": "cache/extraction/9f4d42f2a29fb1db6da40002ebc7f6e375f5673d192e9ab7546f50868d2d4d17.json",
+  "provider_metadata": {
+    "api": "interactions.create",
+    "interaction_id": "",
+    "model": "gemini-3.8-flash",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4242,
+      "output_tokens": 1248,
+      "thinking_tokens": 5595,
+      "total_tokens": 11085
+    }
+  },
+  "candidate_count": 4,
+  "accepted_count": 1,
+  "rules": [
+    {
+      "team_rule_id": "r-dd4441a314",
+      "jurisdiction": "San Francisco, CA",
+      "level": "city",
+      "category": "rent_increase_limits",
+      "status": "in_force",
+      "title": "Annual Allowable Rent Increase (2026-2027)",
+      "requirement": "[Basis: official explanatory text, not operative legal text] For rent-controlled units, the annual allowable increase amount effective March 1, 2026 through February 28, 2027 is 1.6%.",
+      "key_value": "1.6%",
+      "coverage_conditions": "Applies to rent-controlled units.",
+      "exemptions": null,
+      "overrides": [],
+      "interaction": null,
+      "effective_date": "2026-03-01",
+      "citation": "Annual Rent Increase for 3/1/26 - 2/28/27 Announced",
+      "source_doc_id": "D080",
+      "source_url": "https://www.sf.gov/news--annual-rent-increase-3126-22827-announced",
+      "quoted_span": "For rent-controlled units, the annual allowable increase amount effective March 1, 2026 through February 28, 2027 is 1.6%.",
+      "confidence": null,
+      "conflict_flag": false,
+      "conflict_note": null
+    }
+  ],
+  "candidates": [
+    {
+      "index": 0,
+      "origin": "primary",
+      "accepted": true,
+      "held": false,
+      "historical": false,
+      "temporal_state": "in_force",
+      "validity": {
+        "resolver": "validity-window/v1",
+        "boundaries": [
+          {
+            "kind": "effective_from",
+            "role": "start",
+            "date": "2026-03-01",
+            "origin": "quoted_span",
+            "history": false,
+            "evidence": "effective March 1, 2026 through February 28, 2027",
+            "raw_start": 214,
+            "raw_end": 263
+          },
+          {
+            "kind": "valid_through",
+            "role": "end",
+            "date": "2027-02-28",
+            "origin": "quoted_span",
+            "history": false,
+            "evidence": "effective March 1, 2026 through February 28, 2027",
+            "raw_start": 214,
+            "raw_end": 263,
+            "end_exclusive": "2027-03-01",
+            "ambiguous_day": null
+          },
+          {
+            "kind": "effective_from",
+            "role": "start",
+            "date": "2026-03-01",
+            "origin": "effective_date_evidence",
+            "history": false,
+            "evidence": "effective March 1, 2026 through February 28, 2027",
+            "raw_start": 214,
+            "raw_end": 263
+          },
+          {
+            "kind": "valid_through",
+            "role": "end",
+            "date": "2027-02-28",
+            "origin": "effective_date_evidence",
+            "history": false,
+            "evidence": "effective March 1, 2026 through February 28, 2027",
+            "raw_start": 214,
+            "raw_end": 263,
+            "end_exclusive": "2027-03-01",
+            "ambiguous_day": null
+          }
+        ],
+        "end_exclusive": "2027-03-01",
+        "end_conflict": null,
+        "decision": {
+          "outcome": null,
+          "state": "current_until",
+          "reason": "in force until 2027-03-01 (first day not in force), after as_of 2026-10-01",
+          "start": null
+        }
+      },
+      "duplicate_of": null,
+      "rejection_reasons": [],
+      "provision_ids": [
+        "P1"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": null,
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": "Applies to rent-controlled units.",
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 150,
+        "end": 272,
+        "occurrences": 1,
+        "model_span": "For rent-controlled units, the annual allowable increase amount effective March 1, 2026 through February 28, 2027 is 1.6%.",
+        "source_span": "For rent-controlled units, the annual allowable increase amount effective March 1, 2026 through February 28, 2027 is 1.6%.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "For rent-controlled units, the annual allowable increase amount effective March 1, 2026 through February 28, 2027 is 1.6%.",
+            "status": "exact_match",
+            "start": 150,
+            "end": 272
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 214,
+        "end": 263,
+        "occurrences": 2,
+        "model_span": "effective March 1, 2026 through February 28, 2027",
+        "source_span": "effective March 1, 2026 through February 28, 2027",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [],
+      "temporal": {
+        "model_effective_date": "2026-03-01",
+        "model_kind": "explicit_operative_date",
+        "applied_kind": "explicit_operative_date",
+        "effective_date": "2026-03-01",
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null
+      },
+      "status_derivation": "enacted; effective 2026-03-01 is on or before as_of 2026-10-01; in force until 2027-03-01 (first day not in force), after as_of 2026-10-01",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-dd4441a314",
+        "jurisdiction": "San Francisco, CA",
+        "level": "city",
+        "category": "rent_increase_limits",
+        "status": "in_force",
+        "title": "Annual Allowable Rent Increase (2026-2027)",
+        "requirement": "[Basis: official explanatory text, not operative legal text] For rent-controlled units, the annual allowable increase amount effective March 1, 2026 through February 28, 2027 is 1.6%.",
+        "key_value": "1.6%",
+        "coverage_conditions": "Applies to rent-controlled units.",
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": "2026-03-01",
+        "citation": "Annual Rent Increase for 3/1/26 - 2/28/27 Announced",
+        "source_doc_id": "D080",
+        "source_url": "https://www.sf.gov/news--annual-rent-increase-3126-22827-announced",
+        "quoted_span": "For rent-controlled units, the annual allowable increase amount effective March 1, 2026 through February 28, 2027 is 1.6%.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "rent_increase_limits",
+        "citation": "Annual Rent Increase for 3/1/26 - 2/28/27 Announced",
+        "provision_ids": [
+          "P1"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "For rent-controlled units, the annual allowable increase amount effective March 1, 2026 through February 28, 2027 is 1.6%."
+          }
+        ],
+        "title": "Annual Allowable Rent Increase (2026-2027)",
+        "requirement": "For rent-controlled units, the annual allowable increase amount effective March 1, 2026 through February 28, 2027 is 1.6%.",
+        "key_value": "1.6%",
+        "coverage_conditions": "Applies to rent-controlled units.",
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": null,
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": "effective March 1, 2026 through February 28, 2027",
+        "effective_date_evidence_kind": "explicit_operative_date",
+        "effective_date": "2026-03-01",
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 1,
+      "origin": "primary",
+      "accepted": false,
+      "held": false,
+      "historical": true,
+      "temporal_state": "expired",
+      "validity": {
+        "resolver": "validity-window/v1",
+        "boundaries": [
+          {
+            "kind": "effective_from",
+            "role": "start",
+            "date": "2025-03-01",
+            "origin": "quoted_span",
+            "history": false,
+            "evidence": "effective March 1, 2025 through February 28, 2026",
+            "raw_start": 757,
+            "raw_end": 806
+          },
+          {
+            "kind": "valid_through",
+            "role": "end",
+            "date": "2026-02-28",
+            "origin": "quoted_span",
+            "history": false,
+            "evidence": "effective March 1, 2025 through February 28, 2026",
+            "raw_start": 757,
+            "raw_end": 806,
+            "end_exclusive": "2026-03-01",
+            "ambiguous_day": null
+          },
+          {
+            "kind": "effective_from",
+            "role": "start",
+            "date": "2025-03-01",
+            "origin": "effective_date_evidence",
+            "history": false,
+            "evidence": "effective March 1, 2025 through February 28, 2026",
+            "raw_start": 757,
+            "raw_end": 806
+          },
+          {
+            "kind": "valid_through",
+            "role": "end",
+            "date": "2026-02-28",
+            "origin": "effective_date_evidence",
+            "history": false,
+            "evidence": "effective March 1, 2025 through February 28, 2026",
+            "raw_start": 757,
+            "raw_end": 806,
+            "end_exclusive": "2026-03-01",
+            "ambiguous_day": null
+          }
+        ],
+        "end_exclusive": "2026-03-01",
+        "end_conflict": null,
+        "decision": {
+          "outcome": "historical",
+          "state": "expired",
+          "reason": "its verified validity ended before 2026-03-01 (first day not in force), on or before as_of 2026-10-01: 'effective March 1, 2025 through February 28, 2026'",
+          "start": null
+        }
+      },
+      "duplicate_of": null,
+      "rejection_reasons": [],
+      "provision_ids": [
+        "P3"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": null,
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 720,
+        "end": 815,
+        "occurrences": 1,
+        "model_span": "The annual allowable increase amount effective March 1, 2025 through February 28, 2026 is 1.4%.",
+        "source_span": "The annual allowable increase amount effective March 1, 2025 through February 28, 2026 is 1.4%.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "The annual allowable increase amount effective March 1, 2025 through February 28, 2026 is 1.4%.",
+            "status": "exact_match",
+            "start": 720,
+            "end": 815
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 757,
+        "end": 806,
+        "occurrences": 1,
+        "model_span": "effective March 1, 2025 through February 28, 2026",
+        "source_span": "effective March 1, 2025 through February 28, 2026",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [],
+      "temporal": {
+        "model_effective_date": "2025-03-01",
+        "model_kind": "explicit_operative_date",
+        "applied_kind": "explicit_operative_date",
+        "effective_date": "2025-03-01",
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null
+      },
+      "status_derivation": "historical (expired): its verified validity ended before 2026-03-01 (first day not in force), on or before as_of 2026-10-01: 'effective March 1, 2025 through February 28, 2026'",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-b6a7f5745b",
+        "jurisdiction": "San Francisco, CA",
+        "level": "city",
+        "category": "rent_increase_limits",
+        "status": null,
+        "title": "Annual Allowable Rent Increase (2025-2026)",
+        "requirement": "[Basis: official explanatory text, not operative legal text] The annual allowable increase amount effective March 1, 2025 through February 28, 2026 is 1.4%.",
+        "key_value": "1.4%",
+        "coverage_conditions": null,
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": "2025-03-01",
+        "citation": "Annual Rent Increase for 3/1/26 - 2/28/27 Announced",
+        "source_doc_id": "D080",
+        "source_url": "https://www.sf.gov/news--annual-rent-increase-3126-22827-announced",
+        "quoted_span": "The annual allowable increase amount effective March 1, 2025 through February 28, 2026 is 1.4%.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "rent_increase_limits",
+        "citation": "Annual Rent Increase for 3/1/26 - 2/28/27 Announced",
+        "provision_ids": [
+          "P3"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "The annual allowable increase amount effective March 1, 2025 through February 28, 2026 is 1.4%."
+          }
+        ],
+        "title": "Annual Allowable Rent Increase (2025-2026)",
+        "requirement": "The annual allowable increase amount effective March 1, 2025 through February 28, 2026 is 1.4%.",
+        "key_value": "1.4%",
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": null,
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": "effective March 1, 2025 through February 28, 2026",
+        "effective_date_evidence_kind": "explicit_operative_date",
+        "effective_date": "2025-03-01",
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 2,
+      "origin": "repair",
+      "accepted": false,
+      "held": false,
+      "historical": false,
+      "temporal_state": null,
+      "validity": {
+        "resolver": "validity-window/v1",
+        "boundaries": [
+          {
+            "kind": "effective_from",
+            "role": "start",
+            "date": "2026-03-01",
+            "origin": "quoted_span",
+            "history": false,
+            "evidence": "effective March 1, 2026 through February 28, 2027",
+            "raw_start": 214,
+            "raw_end": 263
+          },
+          {
+            "kind": "valid_through",
+            "role": "end",
+            "date": "2027-02-28",
+            "origin": "quoted_span",
+            "history": false,
+            "evidence": "effective March 1, 2026 through February 28, 2027",
+            "raw_start": 214,
+            "raw_end": 263,
+            "end_exclusive": "2027-03-01",
+            "ambiguous_day": null
+          },
+          {
+            "kind": "effective_from",
+            "role": "start",
+            "date": "2026-03-01",
+            "origin": "effective_date_evidence",
+            "history": false,
+            "evidence": "effective March 1, 2026 through February 28, 2027",
+            "raw_start": 214,
+            "raw_end": 263
+          },
+          {
+            "kind": "valid_through",
+            "role": "end",
+            "date": "2027-02-28",
+            "origin": "effective_date_evidence",
+            "history": false,
+            "evidence": "effective March 1, 2026 through February 28, 2027",
+            "raw_start": 214,
+            "raw_end": 263,
+            "end_exclusive": "2027-03-01",
+            "ambiguous_day": null
+          }
+        ],
+        "end_exclusive": "2027-03-01",
+        "end_conflict": null,
+        "decision": {
+          "outcome": null,
+          "state": "current_until",
+          "reason": "in force until 2027-03-01 (first day not in force), after as_of 2026-10-01",
+          "start": null
+        }
+      },
+      "duplicate_of": null,
+      "rejection_reasons": [
+        "repair: candidate does not answer a repair target (cite it, or link its provision id)"
+      ],
+      "provision_ids": [
+        "P1"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": null,
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": "Rent-controlled units",
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 150,
+        "end": 272,
+        "occurrences": 1,
+        "model_span": "For rent-controlled units, the annual allowable increase amount effective March 1, 2026 through February 28, 2027 is 1.6%.",
+        "source_span": "For rent-controlled units, the annual allowable increase amount effective March 1, 2026 through February 28, 2027 is 1.6%.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "For rent-controlled units, the annual allowable increase amount effective March 1, 2026 through February 28, 2027 is 1.6%.",
+            "status": "exact_match",
+            "start": 150,
+            "end": 272
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 214,
+        "end": 263,
+        "occurrences": 2,
+        "model_span": "effective March 1, 2026 through February 28, 2027",
+        "source_span": "effective March 1, 2026 through February 28, 2027",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [],
+      "temporal": {
+        "model_effective_date": "2026-03-01",
+        "model_kind": "explicit_operative_date",
+        "applied_kind": "explicit_operative_date",
+        "effective_date": "2026-03-01",
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null
+      },
+      "status_derivation": "enacted; effective 2026-03-01 is on or before as_of 2026-10-01; in force until 2027-03-01 (first day not in force), after as_of 2026-10-01",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-dd4441a314",
+        "jurisdiction": "San Francisco, CA",
+        "level": "city",
+        "category": "rent_increase_limits",
+        "status": "in_force",
+        "title": "Annual Allowable Rent Increase (2026-2027)",
+        "requirement": "[Basis: official explanatory text, not operative legal text] For rent-controlled units, the annual allowable increase amount effective March 1, 2026 through February 28, 2027 is 1.6%.",
+        "key_value": "1.6%",
+        "coverage_conditions": "Rent-controlled units",
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": "2026-03-01",
+        "citation": "Annual Rent Increase for 3/1/26 - 2/28/27 Announced",
+        "source_doc_id": "D080",
+        "source_url": "https://www.sf.gov/news--annual-rent-increase-3126-22827-announced",
+        "quoted_span": "For rent-controlled units, the annual allowable increase amount effective March 1, 2026 through February 28, 2027 is 1.6%.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "rent_increase_limits",
+        "citation": "Annual Rent Increase for 3/1/26 - 2/28/27 Announced",
+        "provision_ids": [
+          "P1"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "For rent-controlled units, the annual allowable increase amount effective March 1, 2026 through February 28, 2027 is 1.6%."
+          }
+        ],
+        "title": "Annual Allowable Rent Increase (2026-2027)",
+        "requirement": "For rent-controlled units, the annual allowable increase amount effective March 1, 2026 through February 28, 2027 is 1.6%.",
+        "key_value": "1.6%",
+        "coverage_conditions": "Rent-controlled units",
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": null,
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": "effective March 1, 2026 through February 28, 2027",
+        "effective_date_evidence_kind": "explicit_operative_date",
+        "effective_date": "2026-03-01",
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 3,
+      "origin": "repair",
+      "accepted": false,
+      "held": false,
+      "historical": false,
+      "temporal_state": null,
+      "validity": {
+        "resolver": "validity-window/v1",
+        "boundaries": [
+          {
+            "kind": "effective_from",
+            "role": "start",
+            "date": "2025-03-01",
+            "origin": "quoted_span",
+            "history": false,
+            "evidence": "effective March 1, 2025 through February 28, 2026",
+            "raw_start": 757,
+            "raw_end": 806
+          },
+          {
+            "kind": "valid_through",
+            "role": "end",
+            "date": "2026-02-28",
+            "origin": "quoted_span",
+            "history": false,
+            "evidence": "effective March 1, 2025 through February 28, 2026",
+            "raw_start": 757,
+            "raw_end": 806,
+            "end_exclusive": "2026-03-01",
+            "ambiguous_day": null
+          },
+          {
+            "kind": "effective_from",
+            "role": "start",
+            "date": "2025-03-01",
+            "origin": "effective_date_evidence",
+            "history": false,
+            "evidence": "effective March 1, 2025 through February 28, 2026",
+            "raw_start": 757,
+            "raw_end": 806
+          },
+          {
+            "kind": "valid_through",
+            "role": "end",
+            "date": "2026-02-28",
+            "origin": "effective_date_evidence",
+            "history": false,
+            "evidence": "effective March 1, 2025 through February 28, 2026",
+            "raw_start": 757,
+            "raw_end": 806,
+            "end_exclusive": "2026-03-01",
+            "ambiguous_day": null
+          }
+        ],
+        "end_exclusive": "2026-03-01",
+        "end_conflict": null,
+        "decision": {
+          "outcome": "historical",
+          "state": "expired",
+          "reason": "its verified validity ended before 2026-03-01 (first day not in force), on or before as_of 2026-10-01: 'effective March 1, 2025 through February 28, 2026'",
+          "start": null
+        }
+      },
+      "duplicate_of": null,
+      "rejection_reasons": [
+        "repair: candidate does not answer a repair target (cite it, or link its provision id)"
+      ],
+      "provision_ids": [
+        "P3"
+      ],
+      "source_basis": "official_explanatory_text",
+      "status_evidence": null,
+      "legislative": {},
+      "scope_inputs": {
+        "exemptions": null,
+        "coverage_conditions": null,
+        "operative": [],
+        "carved": {}
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 720,
+        "end": 815,
+        "occurrences": 1,
+        "model_span": "The annual allowable increase amount effective March 1, 2025 through February 28, 2026 is 1.4%.",
+        "source_span": "The annual allowable increase amount effective March 1, 2025 through February 28, 2026 is 1.4%.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "The annual allowable increase amount effective March 1, 2025 through February 28, 2026 is 1.4%.",
+            "status": "exact_match",
+            "start": 720,
+            "end": 815
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 757,
+        "end": 806,
+        "occurrences": 1,
+        "model_span": "effective March 1, 2025 through February 28, 2026",
+        "source_span": "effective March 1, 2025 through February 28, 2026",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [],
+      "temporal": {
+        "model_effective_date": "2025-03-01",
+        "model_kind": "explicit_operative_date",
+        "applied_kind": "explicit_operative_date",
+        "effective_date": "2025-03-01",
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "official_explanatory_page",
+        "posture_consistent": null
+      },
+      "status_derivation": "historical (expired): its verified validity ended before 2026-03-01 (first day not in force), on or before as_of 2026-10-01: 'effective March 1, 2025 through February 28, 2026'",
+      "warnings": [
+        "review: the record rests on official_explanatory_text, not operative legal text (labelled in the published requirement)"
+      ],
+      "rule": {
+        "team_rule_id": "r-b6a7f5745b",
+        "jurisdiction": "San Francisco, CA",
+        "level": "city",
+        "category": "rent_increase_limits",
+        "status": null,
+        "title": "Annual Allowable Rent Increase (2025-2026)",
+        "requirement": "[Basis: official explanatory text, not operative legal text] The annual allowable increase amount effective March 1, 2025 through February 28, 2026 is 1.4%.",
+        "key_value": "1.4%",
+        "coverage_conditions": null,
+        "exemptions": null,
+        "overrides": [],
+        "interaction": null,
+        "effective_date": "2025-03-01",
+        "citation": "Annual Rent Increase for 3/1/26 - 2/28/27 Announced",
+        "source_doc_id": "D080",
+        "source_url": "https://www.sf.gov/news--annual-rent-increase-3126-22827-announced",
+        "quoted_span": "The annual allowable increase amount effective March 1, 2025 through February 28, 2026 is 1.4%.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "rent_increase_limits",
+        "citation": "Annual Rent Increase for 3/1/26 - 2/28/27 Announced",
+        "provision_ids": [
+          "P3"
+        ],
+        "source_basis": "official_explanatory_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "The annual allowable increase amount effective March 1, 2025 through February 28, 2026 is 1.4%."
+          }
+        ],
+        "title": "Annual Allowable Rent Increase (2025-2026)",
+        "requirement": "The annual allowable increase amount effective March 1, 2025 through February 28, 2026 is 1.4%.",
+        "key_value": "1.4%",
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": null,
+        "enactment_status": "enacted",
+        "enactment_status_evidence": null,
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": "effective March 1, 2025 through February 28, 2026",
+        "effective_date_evidence_kind": "explicit_operative_date",
+        "effective_date": "2025-03-01",
+        "conflict_note": null
+      }
+    }
+  ],
+  "posture": {
+    "declared": "official_explanatory_page",
+    "evidence": "Annual Rent Increase for 3/1/26 - 2/28/27 Announced | SF.gov",
+    "evidence_check": {
+      "status": "exact_match",
+      "normalization": null,
+      "start": 0,
+      "end": 60,
+      "occurrences": 1,
+      "model_span": "Annual Rent Increase for 3/1/26 - 2/28/27 Announced | SF.gov",
+      "source_span": "Annual Rent Increase for 3/1/26 - 2/28/27 Announced | SF.gov",
+      "reason": null,
+      "reconstructed": false,
+      "parts": [],
+      "crossed_artifacts": []
+    },
+    "established": "official_explanatory_page",
+    "basis": "declared posture with verified evidence"
+  },
+  "base_dates": [],
+  "provision_inventory": [
+    {
+      "id": "P1",
+      "ref": "Announcement (2026-2027)",
+      "anchor": "For rent-controlled units, the annual allowable increase amount",
+      "summary": "Sets the annual allowable rent increase at 1.6% for rent-controlled units from March 1, 2026 through February 28, 2027.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "rent_increase_limits",
+      "reason": null
+    },
+    {
+      "id": "P2",
+      "ref": "Calculation Guidance",
+      "anchor": "To calculate the dollar amount of the 1.6% annual rent",
+      "summary": "Explains how to calculate the 1.6% rent increase based on base rent, with a numerical example.",
+      "role": "procedure",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "Calculation explanation and example rather than an independent legal requirement."
+    },
+    {
+      "id": "P3",
+      "ref": "Announcement (2025-2026)",
+      "anchor": "The annual allowable increase amount effective March 1, 2025",
+      "summary": "States that the annual allowable rent increase effective March 1, 2025 through February 28, 2026 is 1.4%.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "rent_increase_limits",
+      "reason": null
+    }
+  ],
+  "global_scope": [],
+  "source_view": {
+    "marker": "[[PAGE BREAK]]",
+    "segment_label": "[[SEGMENT {}]]",
+    "view_sha256": "f11cc6a6f4ff0bb2e3d965df76d7aa8e18b58e0e7b41966918de35d0b3470e0c",
+    "segments": [
+      {
+        "id": 1,
+        "raw_start": 0,
+        "raw_end": 976
+      }
+    ],
+    "artifacts_removed": 0,
+    "artifacts": []
+  },
+  "coverage": {
+    "inventory_valid": true,
+    "anchors_located": "3/3",
+    "after_primary": {
+      "uncovered": [
+        "Announcement (2026-2027)",
+        "Announcement (2025-2026)"
+      ],
+      "unaccepted": [],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "scope_mappings": {
+      "requested": 0,
+      "applies": 0,
+      "does_not_apply": 0,
+      "unresolved": 0
+    },
+    "after_repair": {
+      "uncovered": [
+        "Announcement (2026-2027)",
+        "Announcement (2025-2026)"
+      ],
+      "unaccepted": [],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "repair_targets": {
+      "before_repair": 2,
+      "resolved_by_accepted_rule": 0,
+      "resolved_out_of_scope": 0,
+      "still_unresolved": 2
+    },
+    "inventory_items": 3,
+    "in_scope_items": 2,
+    "in_scope_refs": 2,
+    "uncertain": [],
+    "final": {
+      "uncovered": [
+        "Announcement (2026-2027)",
+        "Announcement (2025-2026)"
+      ],
+      "unaccepted": [],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "link_mismatches": [
+      "rule 0 links P1 ('Announcement (2026-2027)') but cites 'Annual Rent Increase for 3/1/26 - 2/28/27 Announced'",
+      "rule 2 links P1 ('Announcement (2026-2027)') but cites 'Annual Rent Increase for 3/1/26 - 2/28/27 Announced'",
+      "rule 1 links P3 ('Announcement (2025-2026)') but cites 'Annual Rent Increase for 3/1/26 - 2/28/27 Announced'",
+      "rule 3 links P3 ('Announcement (2025-2026)') but cites 'Annual Rent Increase for 3/1/26 - 2/28/27 Announced'"
+    ],
+    "provisions": [
+      {
+        "ref": "Announcement (2026-2027)",
+        "inventory_item": 0,
+        "provision_id": "P1",
+        "summary": "Sets the annual allowable rent increase at 1.6% for rent-controlled units from March 1, 2026 through February 28, 2027.",
+        "category": "rent_increase_limits",
+        "candidates": [],
+        "accepted": [],
+        "basis": {}
+      },
+      {
+        "ref": "Announcement (2025-2026)",
+        "inventory_item": 2,
+        "provision_id": "P3",
+        "summary": "States that the annual allowable rent increase effective March 1, 2025 through February 28, 2026 is 1.4%.",
+        "category": "rent_increase_limits",
+        "candidates": [],
+        "accepted": [],
+        "basis": {}
+      }
+    ],
+    "unrecorded_subdivisions": []
+  },
+  "scope_challenges": [
+    {
+      "ref": "Calculation Guidance",
+      "provision_id": "P2",
+      "role": "procedure",
+      "reason": "Calculation explanation and example rather than an independent legal requirement.",
+      "summary": "Explains how to calculate the 1.6% rent increase based on base rent, with a numerical example.",
+      "signals": {
+        "in_scope_neighbour": true,
+        "enumeration": false,
+        "normative_language": false,
+        "grounds_or_conditions": false
+      },
+      "challenged": false,
+      "why_not": "too few substantive signals",
+      "raw_start": 414,
+      "raw_end": 720
+    }
+  ],
+  "scope_mappings": [],
+  "legislative_session": null,
+  "empty_result": null,
+  "legacy_replay": null,
+  "dedupe": [],
+  "chunking": null,
+  "repair": {
+    "invoked": true,
+    "reason": "2 repair target(s) from inventory_uncovered",
+    "prompt_version": "v7-repair-1",
+    "targets": [
+      {
+        "ref": "Announcement (2025-2026)",
+        "sources": [
+          "inventory_uncovered"
+        ],
+        "provision_id": "P3",
+        "summary": "States that the annual allowable rent increase effective March 1, 2025 through February 28, 2026 is 1.4%.",
+        "category": "rent_increase_limits",
+        "pre_repair_state": "in-scope inventory provision with no candidate",
+        "resolution": {
+          "scope": "in_scope",
+          "reason": null,
+          "evidence_check": null,
+          "evidence_verified": false,
+          "evidence_problem": null
+        },
+        "repair_scope": "in_scope",
+        "reason": null,
+        "candidate_indices": [],
+        "accepted_indices": [],
+        "final_resolution": "unresolved",
+        "unresolved_reason": "classified in_scope, but no candidate was produced"
+      },
+      {
+        "ref": "Announcement (2026-2027)",
+        "sources": [
+          "inventory_uncovered"
+        ],
+        "provision_id": "P1",
+        "summary": "Sets the annual allowable rent increase at 1.6% for rent-controlled units from March 1, 2026 through February 28, 2027.",
+        "category": "rent_increase_limits",
+        "pre_repair_state": "in-scope inventory provision with no candidate",
+        "resolution": {
+          "scope": "in_scope",
+          "reason": null,
+          "evidence_check": null,
+          "evidence_verified": false,
+          "evidence_problem": null
+        },
+        "repair_scope": "in_scope",
+        "reason": null,
+        "candidate_indices": [],
+        "accepted_indices": [],
+        "final_resolution": "unresolved",
+        "unresolved_reason": "classified in_scope, but no candidate was produced"
+      }
+    ],
+    "cache_key": "0b04ecfc53904596d221b24e6baf98aad13199d5e85abbf6d1e7fddbcafe1289",
+    "cache_hit": true,
+    "cache_entry": "cache/extraction/0b04ecfc53904596d221b24e6baf98aad13199d5e85abbf6d1e7fddbcafe1289.json",
+    "prompt_sha256": "b5d60dbfe8e4a22d39c3c4d4f7bf9e666196b87bab664b4bb6609dcaa6a79dbd",
+    "provider_metadata": {
+      "api": "interactions.create",
+      "interaction_id": "",
+      "model": "gemini-3.8-flash",
+      "status": "completed",
+      "usage": {
+        "input_tokens": 3854,
+        "output_tokens": 906,
+        "thinking_tokens": 2762,
+        "total_tokens": 7522
+      }
+    },
+    "raw_response_text": "{\n  \"target_resolutions\": [\n    {\n      \"ref\": \"Announcement (2025-2026)\",\n      \"scope\": \"in_scope\",\n      \"reason\": null,\n      \"evidence_parts\": []\n    },\n    {\n      \"ref\": \"Announcement (2026-2027)\",\n      \"scope\": \"in_scope\",\n      \"reason\": null,\n      \"evidence_parts\": []\n    }\n  ],\n  \"scope_mappings\": [],\n  \"rules\": [\n    {\n      \"category\": \"rent_increase_limits\",\n      \"citation\": \"Annual Rent Increase for 3/1/26 - 2/28/27 Announced\",\n      \"provision_ids\": [\n        \"P1\"\n      ],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"For rent-controlled units, the annual allowable increase amount effective March 1, 2026 through February 28, 2027 is 1.6%.\"\n        }\n      ],\n      \"title\": \"Annual Allowable Rent Increase (2026-2027)\",\n      \"requirement\": \"For rent-controlled units, the annual allowable increase amount effective March 1, 2026 through February 28, 2027 is 1.6%.\",\n      \"key_value\": \"1.6%\",\n      \"coverage_conditions\": \"Rent-controlled units\",\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": null,\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": \"effective March 1, 2026 through February 28, 2027\",\n      \"effective_date_evidence_kind\": \"explicit_operative_date\",\n      \"effective_date\": \"2026-03-01\",\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"rent_increase_limits\",\n      \"citation\": \"Annual Rent Increase for 3/1/26 - 2/28/27 Announced\",\n      \"provision_ids\": [\n        \"P3\"\n      ],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"The annual allowable increase amount effective March 1, 2025 through February 28, 2026 is 1.4%.\"\n        }\n      ],\n      \"title\": \"Annual Allowable Rent Increase (2025-2026)\",\n      \"requirement\": \"The annual allowable increase amount effective March 1, 2025 through February 28, 2026 is 1.4%.\",\n      \"key_value\": \"1.4%\",\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": null,\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": \"effective March 1, 2025 through February 28, 2026\",\n      \"effective_date_evidence_kind\": \"explicit_operative_date\",\n      \"effective_date\": \"2025-03-01\",\n      \"conflict_note\": null\n    }\n  ]\n}",
+    "mappings": [],
+    "candidate_indices": [
+      2,
+      3
+    ],
+    "accepted_count": 0,
+    "rejected_count": 2,
+    "errors": []
+  },
+  "document_status": "review_required",
+  "review_reasons": [
+    "repair targets still unresolved: Announcement (2025-2026) (classified in_scope, but no candidate was produced); Announcement (2026-2027) (classified in_scope, but no candidate was produced)"
+  ],
+  "warnings": [
+    "candidate 1 historical (expired): historical (expired): its verified validity ended before 2026-03-01 (first day not in force), on or before as_of 2026-10-01: 'effective March 1, 2025 through February 28, 2026'",
+    "candidate 2 rejected: repair: candidate does not answer a repair target (cite it, or link its provision id)",
+    "candidate 3 rejected: repair: candidate does not answer a repair target (cite it, or link its provision id)",
+    "review: provision links whose rule citation does not name the provision: 4"
+  ],
+  "errors": [],
+  "raw_response_text": "{\n  \"document\": {\n    \"posture\": \"official_explanatory_page\",\n    \"evidence\": \"Annual Rent Increase for 3/1/26 - 2/28/27 Announced | SF.gov\"\n  },\n  \"provisions\": [\n    {\n      \"id\": \"P1\",\n      \"ref\": \"Announcement (2026-2027)\",\n      \"anchor\": \"For rent-controlled units, the annual allowable increase amount\",\n      \"summary\": \"Sets the annual allowable rent increase at 1.6% for rent-controlled units from March 1, 2026 through February 28, 2027.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"rent_increase_limits\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P2\",\n      \"ref\": \"Calculation Guidance\",\n      \"anchor\": \"To calculate the dollar amount of the 1.6% annual rent\",\n      \"summary\": \"Explains how to calculate the 1.6% rent increase based on base rent, with a numerical example.\",\n      \"role\": \"procedure\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"Calculation explanation and example rather than an independent legal requirement.\"\n    },\n    {\n      \"id\": \"P3\",\n      \"ref\": \"Announcement (2025-2026)\",\n      \"anchor\": \"The annual allowable increase amount effective March 1, 2025\",\n      \"summary\": \"States that the annual allowable rent increase effective March 1, 2025 through February 28, 2026 is 1.4%.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"rent_increase_limits\",\n      \"reason\": null\n    }\n  ],\n  \"global_scope\": [],\n  \"rules\": [\n    {\n      \"category\": \"rent_increase_limits\",\n      \"citation\": \"Annual Rent Increase for 3/1/26 - 2/28/27 Announced\",\n      \"provision_ids\": [\"P1\"],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"For rent-controlled units, the annual allowable increase amount effective March 1, 2026 through February 28, 2027 is 1.6%.\"\n        }\n      ],\n      \"title\": \"Annual Allowable Rent Increase (2026-2027)\",\n      \"requirement\": \"For rent-controlled units, the annual allowable increase amount effective March 1, 2026 through February 28, 2027 is 1.6%.\",\n      \"key_value\": \"1.6%\",\n      \"coverage_conditions\": \"Applies to rent-controlled units.\",\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": null,\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": \"effective March 1, 2026 through February 28, 2027\",\n      \"effective_date_evidence_kind\": \"explicit_operative_date\",\n      \"effective_date\": \"2026-03-01\",\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"rent_increase_limits\",\n      \"citation\": \"Annual Rent Increase for 3/1/26 - 2/28/27 Announced\",\n      \"provision_ids\": [\"P3\"],\n      \"source_basis\": \"official_explanatory_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"The annual allowable increase amount effective March 1, 2025 through February 28, 2026 is 1.4%.\"\n        }\n      ],\n      \"title\": \"Annual Allowable Rent Increase (2025-2026)\",\n      \"requirement\": \"The annual allowable increase amount effective March 1, 2025 through February 28, 2026 is 1.4%.\",\n      \"key_value\": \"1.4%\",\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": null,\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": null,\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": \"effective March 1, 2025 through February 28, 2026\",\n      \"effective_date_evidence_kind\": \"explicit_operative_date\",\n      \"effective_date\": \"2025-03-01\",\n      \"conflict_note\": null\n    }\n  ],\n  \"no_rules_justification\": null\n}"
+}

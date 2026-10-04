@@ -1,0 +1,290 @@
+{
+  "disclaimer": "Not legal advice. Automated extraction for a research prototype; verify against the cited source.",
+  "run_at": "2026-10-04T06:34:26+00:00",
+  "source": {
+    "doc_id": "D036",
+    "jurisdiction": "Jersey City, NJ",
+    "url": "https://www.jerseycitynj.gov/landlordtenant",
+    "source_type": "official",
+    "retrieved_at": "2026-10-01T22:36Z",
+    "text_file": "text/D036.txt",
+    "content_sha256": "c05a11bc052b46e55eb0cb86b2e7c889526c75c9231ad7a2245108712b833a28",
+    "body_chars": 7428
+  },
+  "provider": "gemini",
+  "model": "gemini-3.8-flash",
+  "prompt_version": "v7",
+  "prompt_sha256": "b45d196d281158391a4365341449331814ca3a5acc57f90b3c334bbf6c1ce22f",
+  "response_schema_sha256": "c15306da6f21dc72f06e78405f94ed61dc9e59288138cc98b5b5bf9b62ac403c",
+  "generation_settings": {
+    "temperature": null,
+    "seed": 20261001,
+    "thinking_level": "medium"
+  },
+  "as_of": "2026-10-01",
+  "cache_key": "293b7a5cbd2992be9828ebe9c73ab7b8e2197adc75fef5327fab9a3849a97752",
+  "cache_hit": true,
+  "cache_entry": "cache/extraction/293b7a5cbd2992be9828ebe9c73ab7b8e2197adc75fef5327fab9a3849a97752.json",
+  "provider_metadata": {
+    "api": "interactions.create",
+    "interaction_id": "",
+    "model": "gemini-3.8-flash",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 5653,
+      "output_tokens": 873,
+      "thinking_tokens": 4357,
+      "total_tokens": 10883
+    }
+  },
+  "candidate_count": 0,
+  "accepted_count": 0,
+  "rules": [],
+  "candidates": [],
+  "posture": {
+    "declared": "official_explanatory_page",
+    "evidence": "The Office of Landlord Tenant Relations administers and enforces the\nRent Control Ordinance, Chapter 260\nof the Jersey City Municipal Code and provides education, information and referrals to city residents in connection with landlord/tenant issues.",
+    "evidence_check": {
+      "status": "exact_match",
+      "normalization": null,
+      "start": 2958,
+      "end": 3207,
+      "occurrences": 1,
+      "model_span": "The Office of Landlord Tenant Relations administers and enforces the\nRent Control Ordinance, Chapter 260\nof the Jersey City Municipal Code and provides education, information and referrals to city residents in connection with landlord/tenant issues.",
+      "source_span": "The Office of Landlord Tenant Relations administers and enforces the\nRent Control Ordinance, Chapter 260\nof the Jersey City Municipal Code and provides education, information and referrals to city residents in connection with landlord/tenant issues.",
+      "reason": null,
+      "reconstructed": false,
+      "parts": [],
+      "crossed_artifacts": []
+    },
+    "established": "official_explanatory_page",
+    "basis": "declared posture with verified evidence"
+  },
+  "base_dates": [],
+  "provision_inventory": [
+    {
+      "id": "P1",
+      "ref": "Office of Landlord/Tenant Relations",
+      "anchor": "The Office of Landlord Tenant Relations administers and enforces the",
+      "summary": "Describes the administrative and enforcement role of the Office regarding the Rent Control Ordinance.",
+      "role": "enforcement",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "administrative agency description and general enforcement authority"
+    },
+    {
+      "id": "P2",
+      "ref": "Property Rent Control Status Inquiry",
+      "anchor": "If you are looking to inquire some information about a Property’s",
+      "summary": "Explains how to submit a status inquiry via SeeClickFix and notes that 1-4 unit properties are exempt from rent control.",
+      "role": "procedure",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "administrative inquiry procedure and exemption note without substantive rules"
+    },
+    {
+      "id": "P3",
+      "ref": "Rent Control Exemption Request",
+      "anchor": "The Rent Control Ordinance provides certain exemptions from rent regulation.",
+      "summary": "Describes submission of rent control exemption requests for Office review.",
+      "role": "procedure",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "administrative exemption application procedure"
+    },
+    {
+      "id": "P4",
+      "ref": "N.J. Stat. § 40A:10A-1",
+      "anchor": "As of August 5, 2022, The State of New Jersey",
+      "summary": "Mandates liability insurance coverage minimums for rental unit owners and registration compliance.",
+      "role": "operative_rule",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "liability insurance mandates are outside the official categories"
+    },
+    {
+      "id": "P5",
+      "ref": "Tyler Portal Submission",
+      "anchor": "All Landlord Applications for Rent Increases, Annual Registrations, Petitions,",
+      "summary": "Requires landlord applications and petitions to be submitted via the Tyler online portal.",
+      "role": "procedure",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "administrative portal submission procedure"
+    },
+    {
+      "id": "P6",
+      "ref": "Tenant Petitions",
+      "anchor": "A tenant claiming the rent they are being charged is",
+      "summary": "Instructions and service requirements for filing illegal rent and failure to maintain service petitions.",
+      "role": "procedure",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "administrative petition procedure without substantive standards or concrete remedies"
+    }
+  ],
+  "global_scope": [],
+  "source_view": {
+    "marker": "[[PAGE BREAK]]",
+    "segment_label": "[[SEGMENT {}]]",
+    "view_sha256": "9e5738957c5f9faaecb9abec626f0479b8f8c415b9fbe34758a9ca3d2d683a91",
+    "segments": [
+      {
+        "id": 1,
+        "raw_start": 0,
+        "raw_end": 7428
+      }
+    ],
+    "artifacts_removed": 0,
+    "artifacts": []
+  },
+  "coverage": {
+    "inventory_valid": true,
+    "anchors_located": "6/6",
+    "after_primary": {
+      "uncovered": [],
+      "unaccepted": [],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "scope_mappings": {
+      "requested": 0,
+      "applies": 0,
+      "does_not_apply": 0,
+      "unresolved": 0
+    },
+    "inventory_items": 6,
+    "in_scope_items": 0,
+    "in_scope_refs": 0,
+    "uncertain": [],
+    "final": {
+      "uncovered": [],
+      "unaccepted": [],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "link_mismatches": [],
+    "provisions": [],
+    "unrecorded_subdivisions": []
+  },
+  "scope_challenges": [
+    {
+      "ref": "Office of Landlord/Tenant Relations",
+      "provision_id": "P1",
+      "role": "enforcement",
+      "reason": "administrative agency description and general enforcement authority",
+      "summary": "Describes the administrative and enforcement role of the Office regarding the Rent Control Ordinance.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role enforcement is decided by other rules"
+    },
+    {
+      "ref": "Property Rent Control Status Inquiry",
+      "provision_id": "P2",
+      "role": "procedure",
+      "reason": "administrative inquiry procedure and exemption note without substantive rules",
+      "summary": "Explains how to submit a status inquiry via SeeClickFix and notes that 1-4 unit properties are exempt from rent control.",
+      "signals": {
+        "in_scope_neighbour": false,
+        "enumeration": false,
+        "normative_language": false,
+        "grounds_or_conditions": false
+      },
+      "challenged": false,
+      "why_not": "too few substantive signals",
+      "raw_start": 3492,
+      "raw_end": 3944
+    },
+    {
+      "ref": "Rent Control Exemption Request",
+      "provision_id": "P3",
+      "role": "procedure",
+      "reason": "administrative exemption application procedure",
+      "summary": "Describes submission of rent control exemption requests for Office review.",
+      "signals": {
+        "in_scope_neighbour": false,
+        "enumeration": false,
+        "normative_language": true,
+        "grounds_or_conditions": true
+      },
+      "challenged": false,
+      "why_not": "too few substantive signals",
+      "raw_start": 3944,
+      "raw_end": 4228
+    },
+    {
+      "ref": "N.J. Stat. § 40A:10A-1",
+      "provision_id": "P4",
+      "role": "operative_rule",
+      "reason": "liability insurance mandates are outside the official categories",
+      "summary": "Mandates liability insurance coverage minimums for rental unit owners and registration compliance.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role operative_rule is decided by other rules"
+    },
+    {
+      "ref": "Tyler Portal Submission",
+      "provision_id": "P5",
+      "role": "procedure",
+      "reason": "administrative portal submission procedure",
+      "summary": "Requires landlord applications and petitions to be submitted via the Tyler online portal.",
+      "signals": {
+        "in_scope_neighbour": false,
+        "enumeration": false,
+        "normative_language": true,
+        "grounds_or_conditions": false
+      },
+      "challenged": false,
+      "why_not": "too few substantive signals",
+      "raw_start": 4842,
+      "raw_end": 6305
+    },
+    {
+      "ref": "Tenant Petitions",
+      "provision_id": "P6",
+      "role": "procedure",
+      "reason": "administrative petition procedure without substantive standards or concrete remedies",
+      "summary": "Instructions and service requirements for filing illegal rent and failure to maintain service petitions.",
+      "signals": {
+        "in_scope_neighbour": false,
+        "enumeration": false,
+        "normative_language": true,
+        "grounds_or_conditions": true
+      },
+      "challenged": false,
+      "why_not": "too few substantive signals",
+      "raw_start": 6305,
+      "raw_end": 7428
+    }
+  ],
+  "scope_mappings": [],
+  "legislative_session": null,
+  "empty_result": {
+    "reason": "The document is an informational municipal web page providing administrative instructions, application links, and meeting announcements without containing substantive legal rules in any official category.",
+    "evidence": "The Office of Landlord Tenant Relations administers and enforces the\nRent Control Ordinance, Chapter 260\nof the Jersey City Municipal Code and provides education, information and referrals to city residents in connection with landlord/tenant issues.",
+    "evidence_check": {
+      "status": "exact_match",
+      "normalization": null,
+      "start": 2958,
+      "end": 3207,
+      "occurrences": 1,
+      "model_span": "The Office of Landlord Tenant Relations administers and enforces the\nRent Control Ordinance, Chapter 260\nof the Jersey City Municipal Code and provides education, information and referrals to city residents in connection with landlord/tenant issues.",
+      "source_span": "The Office of Landlord Tenant Relations administers and enforces the\nRent Control Ordinance, Chapter 260\nof the Jersey City Municipal Code and provides education, information and referrals to city residents in connection with landlord/tenant issues.",
+      "reason": null,
+      "reconstructed": false,
+      "parts": [],
+      "crossed_artifacts": []
+    },
+    "verified": true,
+    "problem": null
+  },
+  "legacy_replay": null,
+  "dedupe": [],
+  "chunking": null,
+  "repair": null,
+  "document_status": "complete",
+  "review_reasons": [],
+  "warnings": [],
+  "errors": [],
+  "raw_response_text": "{\n  \"document\": {\n    \"posture\": \"official_explanatory_page\",\n    \"evidence\": \"The Office of Landlord Tenant Relations administers and enforces the\\nRent Control Ordinance, Chapter 260\\nof the Jersey City Municipal Code and provides education, information and referrals to city residents in connection with landlord/tenant issues.\"\n  },\n  \"provisions\": [\n    {\n      \"id\": \"P1\",\n      \"ref\": \"Office of Landlord/Tenant Relations\",\n      \"anchor\": \"The Office of Landlord Tenant Relations administers and enforces the\",\n      \"summary\": \"Describes the administrative and enforcement role of the Office regarding the Rent Control Ordinance.\",\n      \"role\": \"enforcement\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"administrative agency description and general enforcement authority\"\n    },\n    {\n      \"id\": \"P2\",\n      \"ref\": \"Property Rent Control Status Inquiry\",\n      \"anchor\": \"If you are looking to inquire some information about a Property’s\",\n      \"summary\": \"Explains how to submit a status inquiry via SeeClickFix and notes that 1-4 unit properties are exempt from rent control.\",\n      \"role\": \"procedure\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"administrative inquiry procedure and exemption note without substantive rules\"\n    },\n    {\n      \"id\": \"P3\",\n      \"ref\": \"Rent Control Exemption Request\",\n      \"anchor\": \"The Rent Control Ordinance provides certain exemptions from rent regulation.\",\n      \"summary\": \"Describes submission of rent control exemption requests for Office review.\",\n      \"role\": \"procedure\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"administrative exemption application procedure\"\n    },\n    {\n      \"id\": \"P4\",\n      \"ref\": \"N.J. Stat. § 40A:10A-1\",\n      \"anchor\": \"As of August 5, 2022, The State of New Jersey\",\n      \"summary\": \"Mandates liability insurance coverage minimums for rental unit owners and registration compliance.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"liability insurance mandates are outside the official categories\"\n    },\n    {\n      \"id\": \"P5\",\n      \"ref\": \"Tyler Portal Submission\",\n      \"anchor\": \"All Landlord Applications for Rent Increases, Annual Registrations, Petitions,\",\n      \"summary\": \"Requires landlord applications and petitions to be submitted via the Tyler online portal.\",\n      \"role\": \"procedure\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"administrative portal submission procedure\"\n    },\n    {\n      \"id\": \"P6\",\n      \"ref\": \"Tenant Petitions\",\n      \"anchor\": \"A tenant claiming the rent they are being charged is\",\n      \"summary\": \"Instructions and service requirements for filing illegal rent and failure to maintain service petitions.\",\n      \"role\": \"procedure\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"administrative petition procedure without substantive standards or concrete remedies\"\n    }\n  ],\n  \"global_scope\": [],\n  \"rules\": [],\n  \"no_rules_justification\": {\n    \"reason\": \"The document is an informational municipal web page providing administrative instructions, application links, and meeting announcements without containing substantive legal rules in any official category.\",\n    \"evidence\": \"The Office of Landlord Tenant Relations administers and enforces the\\nRent Control Ordinance, Chapter 260\\nof the Jersey City Municipal Code and provides education, information and referrals to city residents in connection with landlord/tenant issues.\"\n  }\n}"
+}

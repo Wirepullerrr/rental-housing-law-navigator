@@ -17,6 +17,8 @@ supplied corpus text (manifest-verified; raw text never modified)
        enactment status evidence         required (verified) for pending and failed
        effective-date evidence           classified; relative formulas resolved deterministically (temporal.py)
        status derivation                 deterministic, from enactment_status + effective_date + posture + as_of
+       validity window                   start vs end boundaries from verified evidence (validity.py): a future
+                                         end keeps the rule current; an end on or before as_of -> historical
        legislative status (proposals)    pending vs failed decided deterministically (legislative.py)
        scope propagation                 structural / explicit-reference conditions by provision id (scope.py);
                                          named-subject conditions only after a verified mapping
@@ -27,9 +29,12 @@ supplied corpus text (manifest-verified; raw text never modified)
   -> completeness checks (coverage.py): inventory coverage closure + subdivision guard + scope challenges
   -> repair targets = their merged union (repair.py)
   -> at most ONE repair request; every target classified in_scope / out_of_scope / uncertain
+  -> exact same-source duplicates suppressed (same category and raw passage; one record published)
   -> both completeness checks rerun; every target resolved, or review_required
   -> ExtractionRun audit artifact, document_status complete | review_required
 ```
+
+A candidate whose every stage passes but whose verified validity window ended on or before as_of is **historical** (temporal state `expired` or `repealed`): kept in the audit with its evidence, never published as current, and not a review problem (see Validity windows).
 
 A candidate is **accepted only if every stage passes**. Failures are recorded per stage (`pydantic`, `provision link`, `citation`, `temporal`, `effective_date`, `status`, `official schema`, `duplicate`, `repair`) and rejected candidates are never retried or repaired. A candidate whose **only** problem is an unresolved time of application is **held**: it is preserved with all its evidence, never published, and makes the document `review_required`. Review checks add warnings and never change acceptance.
 
@@ -283,6 +288,7 @@ If the model returns any trusted field, the value is dropped and a warning is re
 
 - `exact_match`: the span is a byte-for-byte substring of the source body.
 - `normalized_match`: the span matches after NFC normalization and with each whitespace run treated as one space. This tolerates double spaces and line breaks in the legal text, nothing else. The published `quoted_span` is then the exact source text at the matched offsets, which is a true substring. The model's original span is kept in the audit record.
+- `layout_normalized_match` (M3.3): as `normalized_match`, and in addition whitespace immediately before or after `(`, `)`, `[` or `]` is ignored on both sides ("( Amended" = "(Amended"; a line break between "(b)" and "." is ignored). No other character may be added, dropped or changed: a removed space between words, changed punctuation, a changed number, changed quote marks, an inserted bracket and omitted words all still fail. There is no edit-distance matching. The published `quoted_span` is the exact raw text at the located offsets.
 - `failed`: anything else (paraphrase, changed word, retyped quote marks). The candidate is rejected.
 
 ## `team_rule_id`
@@ -401,6 +407,47 @@ A cached prompt-v5 response can be re-evaluated under the current post-processin
 
 Everything v5 never stated (posture, anchors, roles, source basis, status evidence) stays undeclared and is listed in `legacy_replay`. Responses older than v4 can only be replayed through the relative-date resolver (`--resolver-only`).
 
+## Validity windows (`validity.py`, M3.3, resolver `validity-window/v1`)
+
+A future date in version or history evidence used to reject a record as "the wording may not apply yet". That was wrong for a sunset clause: "Repealed as of January 1, 2030" on 2026-10-01 means the current text is still operative. Temporal evidence is now classified into internal kinds (audit only; the official RuleRecord is unchanged):
+
+| kind | written as | role |
+|---|---|---|
+| `effective_from` | "effective DATE", "becomes effective on DATE" | start |
+| `operative_from` | "shall become operative on DATE" | start |
+| `amendment_history` | "Effective DATE" inside an amendment/codification note | start of the current wording |
+| `repealed_on` | "repealed as of DATE"; "remain in effect only until DATE, and as of that date is repealed" | end (not in force from DATE) |
+| `expires_on` | "expires on DATE"; "remains in effect until DATE" | end (the day DATE itself is ambiguous) |
+| `valid_through` | "effective DATE through DATE", "for the period of DATE through DATE", "valid through DATE" | end (in force through DATE) |
+| `superseded_on` | reserved; never inferred | end |
+| `unknown_temporal_note` | any other written date in that evidence | none |
+
+Only verified passages are read (quoted_span, version_evidence, effective-date evidence or its enclosing history note, operative-condition evidence), so every boundary keeps raw offsets. For an enacted record:
+
+- **end after as_of:** the rule stays current (`in_force` or `not_yet_effective`); the boundary is recorded. A future end is never a future start.
+- **end on or before as_of:** the record is historical (`expired`, or `repealed` when the end is a repeal), excluded from `rules.json`, kept in the artifact.
+- **end not safely established** (different end dates, or as_of on the ambiguous day of "until" / "expires on"): held, `review_required`.
+- **amendment_history date after as_of:** the extracted wording is a later version: `not_yet_effective` from that date.
+- **any other date after as_of in version/history evidence:** held (never guessed).
+
+Integrity (corpus runner): a historical or suppressed record is never published, and no published record has a verified end on or before as_of.
+
+## Same-source deduplication (`extractor._dedupe_same_source`, M3.3)
+
+After the repair pass, validated candidates of one document with the same category and the identical published `quoted_span` (hence the same raw passage and offsets) are one legal record. One is published: the earlier (primary) record, unless a repair record's verified structured metadata (effective date, operative conditions, applied scope, version evidence) is strictly better. The suppressed record stays in the artifact (`duplicate_of`), and `run.dedupe` records both team_rule_ids, the reason, the raw offsets and both provenances. For coverage and repair targets a suppressed twin counts as covered. Records that quote different passages (a table and the prose stating the same rate, or one quote containing the other) are never merged automatically; the report lists them as `possible_semantic_duplicate`.
+
+## Large-document mode (`chunked.py`, M3.3)
+
+A document over `LARGE_DOCUMENT_CHARS` (100,000) is not sent in one request: its projected completion exceeds the 65,536-token limit. Instead:
+
+1. **Structural chunks** (`structural-chunks/v1`): at most 20,000 characters, cut at the best line start between 10,000 and 20,000 characters after the chunk start. A heading line is preferred, then a paragraph start, then a line after a sentence end, then any line start (never inside a line or a page artifact; a "hard" cut only if a window has no line start). Chunks tile the raw text exactly, with stable ids (`<doc>:cNN`) and the nearest heading before each.
+2. **Extraction:** one request per chunk with the unchanged v7 system instruction and schema. The excerpt is framed as such (`v7-chunk-1`) and keeps the document's own segment numbers, so quotes are verified against the full raw text.
+3. **Merge:** inventories, rules and scope conditions are combined with chunk-namespaced ids (`c03.P5`). A chunk's "whole document" claim is narrowed to that chunk's provisions. The normal pipeline then runs once on the merged response: posture, evaluation, scope propagation, closure, subdivision guard, scope challenges, named-subject mappings and deduplication. A condition reaches another chunk only through verified structural or explicit-reference logic, or a verified named-subject mapping.
+4. **Repair:** at most one request, built from the chunks that contain its targets and mapping pairs.
+5. **Failure mode:** a chunk that cannot be extracted (provider failure, budget gate, unparseable response) is recorded. The document is `review_required` and the other chunks' validated records are kept.
+
+The corpus runner allows one request per excerpt and one repair per document. The cache identity is the composite of the chunk keys.
+
 ## Known limitations (to revisit in M3)
 
 - Each document is extracted on its own. Cross-document conflicts, `overrides`, and jurisdiction scope for documents that cover several jurisdictions are not handled yet.
@@ -411,4 +458,6 @@ Everything v5 never stated (posture, anchors, roles, source basis, status eviden
 - **Structural containers** are verified from ref token prefixes. A governed-ids value of null with "this section" in a multi-section document is accepted as the whole document. The prompt instructs the model to use null only for the whole document.
 - **Legislative status** has a deterministic session resolver for Massachusetts only. Elsewhere, pending vs failed rests on the model's verified status evidence.
 - The scope-challenge heuristic is conservative and keyword-assisted. It cannot see a provision that the inventory omits altogether, or an out_of_scope item whose anchor is not source text.
+- The validity grammar reads written calendar dates ("January 1, 2030") only; numeric dates ("3/01/26") and other end formulas are not classified (a future one in version/history evidence holds the record).
+- In large-document mode a named-subject condition reaches another chunk's records only through a verified mapping that the model proposed. Conditions stated in one excerpt about a law described in another may therefore not be attached.
 - Records are not deduplicated semantically against parent-level records. Repair can only add records for provisions that had no candidate at all, which limits overlap but does not prove its absence.
