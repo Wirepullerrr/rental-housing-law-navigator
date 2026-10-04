@@ -13,7 +13,7 @@ It's a hackathon prototype that works on the supplied corpus. Not legal advice.
 
 <a href="https://leaselens-maverick.streamlit.app/">
   <img
-    src="docs/assets/leaselens-demo.png"
+    src="docs/assets/leaselens-demo-readme.png"
     alt="LeaseLens property lookup showing legal jurisdiction, map, and rule-status summary"
     width="100%"
   >
