@@ -67,6 +67,15 @@ def test_app_opens_on_the_boston_example_with_applies_only_and_t2():
     assert not at.exception
     assert {g.proto.label: g for g in at.get("button_group")}["Show"].value == ["applies", "pending"]
     assert groups["Scenario to explore"].value == "T2"
+    # The sidebar explains its own controls; the as-of date reads as the legal reference date.
+    howto = next(m.value for m in at.sidebar.markdown if "How to use" in m.value)
+    assert all(s in howto for s in ("Pick a property", "Choose the legal reference date", "Review results"))
+    assert at.radio[0].options == ["Demo examples", "All 500"] and len(at.radio[0].proto.captions) == 2
+    assert at.selectbox[0].label == "Property"
+    d = at.date_input[0]
+    assert d.label == "As-of date" and d.value == DEFAULT_AS_OF == date(2026, 10, 1)
+    assert all(s in d.help for s in ("legal reference date", "building was built", "data was collected"))
+    assert any("Check the rules as they stood on this date." in m.value for m in at.sidebar.markdown)
 
 
 def test_map_points_use_m4_coordinates_only(b):

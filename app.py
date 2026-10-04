@@ -25,6 +25,10 @@ from navigator.demo import (CATEGORY_LABELS, DEFAULT_AS_OF, DEMO_EXAMPLES, MISSI
                             status_counts)
 
 DISCLAIMER = "Informational prototype for hackathon purposes. Not legal advice."
+HOW_TO_STEPS = ("Pick a property", "Choose the legal reference date", "Review results on the right")
+AS_OF_HELP = ("**The legal reference date.** It isn't the year the building was built, and it isn't the date the "
+              "data was collected.\n\nThe submitted answers are for 2026-10-01; other dates re-check each rule's "
+              "recorded effective date.")
 STATUS_COLOR = {"applies": "#21a366", "unknown": "#e08a00", "pending": "#3b82f6", "not_yet_effective": "#8b5cf6",
                 "superseded": "#8a8f98"}
 BADGE = {"applies": ":green-badge[Applies]", "unknown": ":orange-badge[Unknown]", "pending": ":blue-badge[Pending]",
@@ -50,13 +54,11 @@ CSS = """
 [data-testid="stMainBlockContainer"] h1 {padding:0 0 .15rem; font-size:2.3rem}
 [data-testid="stAlertContainer"] {padding:.55rem .95rem}
 .ll-tag {opacity:.8; margin:-.45rem 0 .1rem}
-.ll-intro {display:flex;flex-wrap:wrap;gap:.5rem 2rem;align-items:center;border:1px solid rgba(128,128,128,.25);
-  border-radius:10px;padding:.7rem 1rem;background:rgba(128,128,128,.06);margin-bottom:.75rem}
-.ll-intro .txt {flex:3 1 26rem;font-size:.95rem;line-height:1.5}
+.ll-intro {border:1px solid rgba(128,128,128,.25);border-radius:10px;padding:.7rem 1rem;
+  background:rgba(128,128,128,.06);margin-bottom:.75rem;font-size:.95rem;line-height:1.5}
 .ll-intro .hd {font-weight:700;margin-bottom:.1rem}
 .ll-intro .why {font-size:.85rem;opacity:.72;margin-top:.25rem}
-.ll-intro .steps {flex:1 1 11rem;display:flex;flex-direction:column;gap:.3rem;font-size:.9rem;font-weight:600}
-.ll-intro .steps span, .ll-num {display:inline-flex;align-items:center;justify-content:center;width:1.45rem;
+.ll-num {display:inline-flex;align-items:center;justify-content:center;width:1.45rem;
   height:1.45rem;border-radius:50%;margin-right:.5rem;font-size:.8rem;border:1px solid rgba(128,128,128,.5)}
 .ll-card-title {font-size:.76rem;font-weight:700;text-transform:uppercase;letter-spacing:.07em;opacity:.7;
   margin-bottom:.45rem}
@@ -109,6 +111,13 @@ CSS = """
 .ll-mini-stats .l {font-size:.82rem;opacity:.7}
 .ll-step {font-size:1.9rem;font-weight:800;opacity:.3;line-height:1}
 .ll-side-note {font-size:.84rem;opacity:.75;line-height:1.5}
+.ll-howto {font-size:.84rem;line-height:1.35;padding-bottom:.75rem;margin-bottom:1rem;
+  border-bottom:1px solid rgba(128,128,128,.25)}
+.ll-howto .hd {font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.07em;opacity:.7;
+  margin-bottom:.35rem}
+.ll-howto .st {display:flex;align-items:flex-start;gap:.5rem;margin:.3rem 0;opacity:.85}
+.ll-howto .ll-num {margin:0;flex:none;width:1.2rem;height:1.2rem;font-size:.7rem}
+.ll-help {font-size:.8rem;opacity:.68;line-height:1.35;margin:-.6rem 0 1rem}
 </style>
 """
 _MD_SPECIAL = str.maketrans({c: "\\" + c for c in "\\`*_[]<>#|$~"})
@@ -251,26 +260,29 @@ st.title("LeaseLens")
 st.markdown('<div class="ll-tag"><b>Rental Housing Law Navigator</b> · Auditable rental-law guidance by '
             'property, jurisdiction, and date.</div>', unsafe_allow_html=True)
 st.markdown(
-    '<div class="ll-intro"><div class="txt"><div class="hd">What LeaseLens does</div>'
+    '<div class="ll-intro"><div class="hd">What LeaseLens does</div>'
     "Pick a property and date. LeaseLens finds the legal jurisdiction, shows the housing rules that may apply, "
     "and links every answer back to its source. Missing a required fact? It says <b>Unknown</b> instead of "
     "guessing.<div class=\"why\">Why it matters: the mailing city isn't always the legal city, and rules change "
-    "with place, property facts and date.</div></div>"
-    '<div class="steps"><div><span>1</span>Pick a property</div><div><span>2</span>See what applies</div>'
-    "<div><span>3</span>Check the source</div></div></div>", unsafe_allow_html=True)
+    "with place, property facts and date.</div></div>", unsafe_allow_html=True)
 st.warning(DISCLAIMER, icon="⚠️")
 
 # ---------------------------------------------------------------- sidebar: control panel
 with st.sidebar:
-    source = st.radio("Property", ["Demo examples", "All 500"], horizontal=True)
+    st.markdown('<div class="ll-howto"><div class="hd">How to use</div>' + "".join(
+        f'<div class="st"><span class="ll-num">{i}</span>{esc(s)}</div>' for i, s in enumerate(HOW_TO_STEPS, 1))
+        + "</div>", unsafe_allow_html=True)
+    source = st.radio("Property list", ["Demo examples", "All 500"], label_visibility="collapsed",
+                      captions=["Curated properties that show the main LeaseLens features",
+                                "Browse every challenge property"])
     options = list(DEMO_EXAMPLES) if source == "Demo examples" else sorted(b.rows)
-    aid = st.selectbox("Property to look up", options, label_visibility="collapsed", format_func=lambda a: (
+    aid = st.selectbox("Property", options, format_func=lambda a: (
         f"{b.rows[a]['street_address']}, {b.rows[a]['postal_city']} · {DEMO_EXAMPLES[a]}"
         if source == "Demo examples" else address_label(b, a)))
+    st.markdown('<div class="ll-help">Select the rental property you want to check.</div>', unsafe_allow_html=True)
     as_of = st.date_input("As-of date", value=DEFAULT_AS_OF, min_value=date(2026, 1, 1),
-                          max_value=date(2027, 12, 31), format="YYYY-MM-DD",
-                          help="The date the rules are evaluated for. The submitted answers are for 2026-10-01; "
-                               "other dates re-check each rule's recorded effective date.")
+                          max_value=date(2027, 12, 31), format="YYYY-MM-DD", help=AS_OF_HELP)
+    st.markdown('<div class="ll-help">Check the rules as they stood on this date.</div>', unsafe_allow_html=True)
     st.divider()
     st.markdown('<div class="ll-side-note"><b>500 challenge properties</b><br>Results run from saved, validated '
                 'outputs.<br>No live legal or AI calls.</div>', unsafe_allow_html=True)
