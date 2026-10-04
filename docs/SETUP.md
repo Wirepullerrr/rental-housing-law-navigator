@@ -1,6 +1,6 @@
 # Setup
 
-*Not legal advice.* The official participant guide is the repository `README.md` and is left unmodified.
+*Not legal advice.* The official participant guide is preserved unmodified at `docs/challenge_participant_guide.md` (it was the original repository `README.md`).
 
 ## Environment
 

@@ -2,3 +2,5 @@
 #   uv pip compile --universal requirements.in -o requirements.txt
 jsonschema
 pytest
+# LeaseLens demo (app.py); the app needs only this beyond the standard library.
+streamlit
