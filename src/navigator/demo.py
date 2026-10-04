@@ -113,6 +113,23 @@ def address_label(b: Bundle, address_id: str) -> str:
     return f"{address_id} · {row['street_address']}, {row['postal_city']}, {row['state']} {row['zip']}"
 
 
+def map_points(b: Bundle, address_ids: list[str] | None = None,
+               flagged: list[str] | tuple[str, ...] = ()) -> list[dict[str, Any]]:
+    """Plot-ready points from the coordinates M4 already recorded (no geocoding). Addresses without
+    M4 coordinates (unresolved, most overrides) are skipped."""
+    flagged_set = set(flagged)
+    out = []
+    for aid in (address_ids if address_ids is not None else sorted(b.rows)):
+        res, row = b.resolutions[aid], b.rows[aid]
+        if res.get("latitude") is None or res.get("longitude") is None:
+            continue
+        out.append({"address_id": aid, "lat": res["latitude"], "lon": res["longitude"],
+                    "address": f"{row['street_address']}, {row['postal_city']}, {row['state']}",
+                    "jurisdiction": res["local_jurisdiction"] or res["state_jurisdiction"] or "unresolved",
+                    "conflict_flag": "yes" if aid in flagged_set else "no"})
+    return out
+
+
 def change_status(b: Bundle, address_id: str) -> dict[str, str]:
     """Per change test: is this address affected / conflict-flagged in the submitted changes.json?"""
     out = {}
