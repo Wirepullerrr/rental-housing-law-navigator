@@ -1,0 +1,5091 @@
+{
+  "not_legal_advice": true,
+  "engine": "changes/m6-v1",
+  "rule_id_map": "review/m6_change_test_map.json",
+  "held_records_used": {
+    "r-b31a29caea": {
+      "team_rule_id": "r-b31a29caea",
+      "jurisdiction": "CA",
+      "level": "state",
+      "category": "algorithmic_rent_setting",
+      "status": null,
+      "title": "Unlawful Use or Distribution of Common Pricing Algorithm in Restraint of Trade",
+      "requirement": "A person is prohibited from using or distributing a common pricing algorithm as part of a contract, combination in the form of a trust, or conspiracy to restrain trade or commerce.",
+      "key_value": null,
+      "coverage_conditions": null,
+      "exemptions": "The term person does not include the end consumer of a product or service. [Business and Professions Code § 16729(d)(5)]",
+      "overrides": [],
+      "interaction": "Nothing in Section 16729 impairs or limits the applicability of antitrust laws.",
+      "effective_date": null,
+      "citation": "Business and Professions Code § 16729(a)",
+      "source_doc_id": "D022",
+      "source_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB325",
+      "quoted_span": "(a) It shall be unlawful for a person to use or distribute a common pricing algorithm as part of a contract, combination in the form of a trust, or conspiracy to restrain trade or commerce in violation of this chapter.",
+      "confidence": null,
+      "conflict_flag": false,
+      "conflict_note": null
+    },
+    "r-64694ff871": {
+      "team_rule_id": "r-64694ff871",
+      "jurisdiction": "CA",
+      "level": "state",
+      "category": "algorithmic_rent_setting",
+      "status": null,
+      "title": "Coercion to Adopt Recommended Price or Term via Common Pricing Algorithm",
+      "requirement": "A person is prohibited from using or distributing a common pricing algorithm if they coerce another person to set or adopt a price or commercial term recommended by the algorithm for the same or similar products or services within the state.",
+      "key_value": null,
+      "coverage_conditions": null,
+      "exemptions": "The term person does not include the end consumer of a product or service. [Business and Professions Code § 16729(d)(5)]",
+      "overrides": [],
+      "interaction": "Nothing in Section 16729 impairs or limits the applicability of antitrust laws.",
+      "effective_date": null,
+      "citation": "Business and Professions Code § 16729(b)",
+      "source_doc_id": "D022",
+      "source_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB325",
+      "quoted_span": "(b) It shall be unlawful for a person to use or distribute a common pricing algorithm if the person coerces another person to set or adopt a recommended price or commercial term recommended by the common pricing algorithm for the same or similar products or services in the jurisdiction of this state.",
+      "confidence": null,
+      "conflict_flag": false,
+      "conflict_note": null
+    }
+  },
+  "tests": {
+    "T1": {
+      "test": {
+        "test_id": "T1",
+        "title": "California AB 325 / SB 763 takes effect",
+        "type": "as_of",
+        "rule_ids": [
+          "CA-ALG-01"
+        ],
+        "as_of_before": "2025-12-31",
+        "as_of_after": "2026-01-02",
+        "states": [
+          "CA"
+        ],
+        "expected_behavior": "not_yet_effective before, applies after, for every CA address."
+      },
+      "affected": [
+        "A0001",
+        "A0004",
+        "A0005",
+        "A0007",
+        "A0014",
+        "A0016",
+        "A0018",
+        "A0019",
+        "A0021",
+        "A0022",
+        "A0023",
+        "A0025",
+        "A0027",
+        "A0030",
+        "A0031",
+        "A0033",
+        "A0035",
+        "A0037",
+        "A0038",
+        "A0041",
+        "A0045",
+        "A0050",
+        "A0055",
+        "A0058",
+        "A0060",
+        "A0061",
+        "A0062",
+        "A0066",
+        "A0067",
+        "A0069",
+        "A0072",
+        "A0074",
+        "A0079",
+        "A0080",
+        "A0081",
+        "A0084",
+        "A0085",
+        "A0088",
+        "A0091",
+        "A0092",
+        "A0094",
+        "A0097",
+        "A0100",
+        "A0103",
+        "A0105",
+        "A0106",
+        "A0107",
+        "A0109",
+        "A0111",
+        "A0112",
+        "A0113",
+        "A0114",
+        "A0115",
+        "A0117",
+        "A0121",
+        "A0122",
+        "A0126",
+        "A0127",
+        "A0133",
+        "A0135",
+        "A0138",
+        "A0141",
+        "A0142",
+        "A0145",
+        "A0147",
+        "A0150",
+        "A0152",
+        "A0153",
+        "A0154",
+        "A0156",
+        "A0157",
+        "A0158",
+        "A0162",
+        "A0164",
+        "A0165",
+        "A0167",
+        "A0170",
+        "A0172",
+        "A0173",
+        "A0178",
+        "A0179",
+        "A0180",
+        "A0183",
+        "A0184",
+        "A0188",
+        "A0189",
+        "A0192",
+        "A0193",
+        "A0196",
+        "A0197",
+        "A0200",
+        "A0201",
+        "A0202",
+        "A0205",
+        "A0206",
+        "A0207",
+        "A0210",
+        "A0212",
+        "A0213",
+        "A0215",
+        "A0216",
+        "A0219",
+        "A0222",
+        "A0224",
+        "A0225",
+        "A0228",
+        "A0229",
+        "A0231",
+        "A0234",
+        "A0235",
+        "A0236",
+        "A0237",
+        "A0238",
+        "A0239",
+        "A0240",
+        "A0246",
+        "A0247",
+        "A0248",
+        "A0251",
+        "A0252",
+        "A0253",
+        "A0255",
+        "A0257",
+        "A0259",
+        "A0260",
+        "A0262",
+        "A0263",
+        "A0267",
+        "A0268",
+        "A0271",
+        "A0273",
+        "A0274",
+        "A0275",
+        "A0276",
+        "A0277",
+        "A0278",
+        "A0280",
+        "A0281",
+        "A0282",
+        "A0283",
+        "A0285",
+        "A0289",
+        "A0293",
+        "A0303",
+        "A0304",
+        "A0305",
+        "A0309",
+        "A0314",
+        "A0315",
+        "A0316",
+        "A0317",
+        "A0318",
+        "A0319",
+        "A0322",
+        "A0323",
+        "A0324",
+        "A0327",
+        "A0328",
+        "A0330",
+        "A0333",
+        "A0334",
+        "A0335",
+        "A0340",
+        "A0341",
+        "A0345",
+        "A0347",
+        "A0349",
+        "A0351",
+        "A0353",
+        "A0355",
+        "A0357",
+        "A0363",
+        "A0364",
+        "A0365",
+        "A0367",
+        "A0368",
+        "A0369",
+        "A0370",
+        "A0373",
+        "A0374",
+        "A0375",
+        "A0378",
+        "A0379",
+        "A0382",
+        "A0383",
+        "A0385",
+        "A0386",
+        "A0387",
+        "A0391",
+        "A0392",
+        "A0395",
+        "A0396",
+        "A0397",
+        "A0398",
+        "A0401",
+        "A0402",
+        "A0405",
+        "A0407",
+        "A0408",
+        "A0409",
+        "A0411",
+        "A0413",
+        "A0414",
+        "A0417",
+        "A0419",
+        "A0420",
+        "A0421",
+        "A0425",
+        "A0426",
+        "A0427",
+        "A0430",
+        "A0431",
+        "A0432",
+        "A0433",
+        "A0434",
+        "A0437",
+        "A0439",
+        "A0440",
+        "A0441",
+        "A0442",
+        "A0443",
+        "A0445",
+        "A0451",
+        "A0452",
+        "A0454",
+        "A0456",
+        "A0457",
+        "A0458",
+        "A0461",
+        "A0469",
+        "A0470",
+        "A0474",
+        "A0477",
+        "A0478",
+        "A0479",
+        "A0480",
+        "A0481",
+        "A0483",
+        "A0484",
+        "A0486",
+        "A0487",
+        "A0492",
+        "A0493",
+        "A0494",
+        "A0496",
+        "A0497",
+        "A0499",
+        "A0500"
+      ],
+      "conflicts": [],
+      "rules": [
+        {
+          "organizer_rule_id": "CA-ALG-01",
+          "mapping": {
+            "jurisdiction": "CA",
+            "label": "AB 325 (Business and Professions Code § 16729)",
+            "basis": "verified_held_records",
+            "team_rule_ids": [
+              "r-b31a29caea",
+              "r-64694ff871"
+            ],
+            "source_doc_ids": [
+              "D022"
+            ],
+            "note": "Both M3 records have exact quotes and were held only because no effective date is established in D022. The supplied T1 facts place the transition between 2025-12-31 and 2026-01-02. SB 763 appears in no supplied text."
+          },
+          "effective_date_used": "2026-01-02",
+          "effective_basis": "supplied change fact: not in force on 2025-12-31, in force by 2026-01-02 (exact day not in the supplied text)",
+          "effective_evidence": null,
+          "records": [
+            {
+              "team_rule_id": "r-b31a29caea",
+              "citation": "Business and Professions Code § 16729(a)",
+              "quoted_span": "(a) It shall be unlawful for a person to use or distribute a common pricing algorithm as part of a contract, combination in the form of a trust, or conspiracy to restrain trade or commerce in violation of this chapter.",
+              "source_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB325",
+              "source_doc_id": "D022"
+            },
+            {
+              "team_rule_id": "r-64694ff871",
+              "citation": "Business and Professions Code § 16729(b)",
+              "quoted_span": "(b) It shall be unlawful for a person to use or distribute a common pricing algorithm if the person coerces another person to set or adopt a recommended price or commercial term recommended by the common pricing algorithm for the same or similar products or services in the jurisdiction of this state.",
+              "source_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB325",
+              "source_doc_id": "D022"
+            }
+          ]
+        }
+      ],
+      "transition": {
+        "before": "2025-12-31",
+        "after": "2026-01-02"
+      },
+      "undetermined_jurisdiction": [
+        "A0098",
+        "A0128",
+        "A0295",
+        "A0346",
+        "A0352",
+        "A0376",
+        "A0380",
+        "A0384"
+      ],
+      "per_address": {
+        "A0001": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0004": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0005": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0007": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0014": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0016": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0018": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0019": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0021": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0022": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0023": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0025": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0027": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0030": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0031": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0033": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0035": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0037": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0038": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0041": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0045": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0050": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0055": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0058": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0060": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0061": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0062": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0066": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0067": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0069": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0072": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0074": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0079": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0080": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0081": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0084": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0085": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0088": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0091": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0092": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0094": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0097": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0100": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0103": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0105": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0106": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0107": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0109": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0111": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0112": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0113": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0114": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0115": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0117": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0121": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0122": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0126": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0127": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0133": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0135": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0138": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0141": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0142": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0145": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0147": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0150": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0152": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0153": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0154": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0156": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0157": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0158": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0162": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0164": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0165": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0167": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0170": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0172": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0173": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0178": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0179": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0180": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0183": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0184": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0188": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0189": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0192": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0193": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0196": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0197": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0200": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0201": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0202": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0205": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0206": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0207": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0210": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0212": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0213": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0215": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0216": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0219": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0222": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0224": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0225": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0228": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0229": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0231": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0234": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0235": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0236": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0237": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0238": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0239": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0240": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0246": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0247": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0248": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0251": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0252": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0253": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0255": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0257": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0259": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0260": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0262": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0263": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0267": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0268": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0271": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0273": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0274": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0275": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0276": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0277": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0278": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0280": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0281": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0282": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0283": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0285": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0289": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0293": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0303": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0304": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0305": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0309": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0314": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0315": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0316": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0317": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0318": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0319": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0322": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0323": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0324": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0327": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0328": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0330": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0333": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0334": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0335": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0340": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0341": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0345": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0347": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0349": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0351": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0353": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0355": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0357": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0363": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0364": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0365": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0367": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0368": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0369": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0370": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0373": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0374": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0375": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0378": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0379": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0382": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0383": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0385": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0386": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0387": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0391": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0392": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0395": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0396": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0397": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0398": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0401": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0402": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0405": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0407": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0408": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0409": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0411": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0413": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0414": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0417": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0419": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0420": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0421": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0425": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0426": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0427": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0430": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0431": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0432": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0433": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0434": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0437": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0439": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0440": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0441": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0442": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0443": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0445": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0451": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0452": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0454": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0456": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0457": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0458": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0461": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0469": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0470": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0474": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0477": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0478": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0479": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0480": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0481": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0483": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0484": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0486": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0487": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0492": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0493": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0494": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0496": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0497": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0499": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0500": [
+          {
+            "rule": "r-b31a29caea",
+            "before": "not_yet_effective",
+            "after": "applies"
+          },
+          {
+            "rule": "r-64694ff871",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ]
+      }
+    },
+    "T2": {
+      "test": {
+        "test_id": "T2",
+        "title": "Hoboken vs Jersey City local algorithmic bans",
+        "type": "boundary",
+        "rule_ids": [
+          "HOB-ALG-01",
+          "JC-ALG-01"
+        ],
+        "as_of": "2026-10-01",
+        "expected_behavior": "HOB-ALG-01 only for Hoboken addresses; JC-ALG-01 only for Jersey City addresses; neither for Newark."
+      },
+      "affected": [
+        "A0002",
+        "A0008",
+        "A0012",
+        "A0017",
+        "A0026",
+        "A0032",
+        "A0040",
+        "A0042",
+        "A0047",
+        "A0049",
+        "A0051",
+        "A0078",
+        "A0087",
+        "A0089",
+        "A0099",
+        "A0101",
+        "A0102",
+        "A0108",
+        "A0116",
+        "A0119",
+        "A0125",
+        "A0131",
+        "A0136",
+        "A0139",
+        "A0160",
+        "A0161",
+        "A0163",
+        "A0168",
+        "A0171",
+        "A0177",
+        "A0181",
+        "A0182",
+        "A0185",
+        "A0186",
+        "A0187",
+        "A0208",
+        "A0223",
+        "A0227",
+        "A0241",
+        "A0243",
+        "A0244",
+        "A0250",
+        "A0254",
+        "A0256",
+        "A0261",
+        "A0265",
+        "A0266",
+        "A0269",
+        "A0270",
+        "A0279",
+        "A0287",
+        "A0288",
+        "A0299",
+        "A0308",
+        "A0320",
+        "A0321",
+        "A0325",
+        "A0344",
+        "A0348",
+        "A0350",
+        "A0359",
+        "A0360",
+        "A0372",
+        "A0377",
+        "A0388",
+        "A0389",
+        "A0393",
+        "A0394",
+        "A0399",
+        "A0404",
+        "A0410",
+        "A0415",
+        "A0416",
+        "A0418",
+        "A0424",
+        "A0435",
+        "A0436",
+        "A0438",
+        "A0447",
+        "A0450",
+        "A0455",
+        "A0459",
+        "A0462",
+        "A0471",
+        "A0472",
+        "A0475",
+        "A0482",
+        "A0489",
+        "A0490",
+        "A0495"
+      ],
+      "conflicts": [],
+      "by_rule": {
+        "HOB-ALG-01": [
+          "A0002",
+          "A0040",
+          "A0049",
+          "A0087",
+          "A0089",
+          "A0099",
+          "A0102",
+          "A0119",
+          "A0125",
+          "A0136",
+          "A0168",
+          "A0181",
+          "A0182",
+          "A0208",
+          "A0223",
+          "A0227",
+          "A0241",
+          "A0244",
+          "A0254",
+          "A0256",
+          "A0261",
+          "A0269",
+          "A0287",
+          "A0299",
+          "A0308",
+          "A0320",
+          "A0348",
+          "A0359",
+          "A0377",
+          "A0389",
+          "A0399",
+          "A0424",
+          "A0435",
+          "A0436",
+          "A0447",
+          "A0471",
+          "A0472",
+          "A0475",
+          "A0489",
+          "A0490"
+        ],
+        "JC-ALG-01": [
+          "A0008",
+          "A0012",
+          "A0017",
+          "A0026",
+          "A0032",
+          "A0042",
+          "A0047",
+          "A0051",
+          "A0078",
+          "A0101",
+          "A0108",
+          "A0116",
+          "A0131",
+          "A0139",
+          "A0160",
+          "A0161",
+          "A0163",
+          "A0171",
+          "A0177",
+          "A0185",
+          "A0186",
+          "A0187",
+          "A0243",
+          "A0250",
+          "A0265",
+          "A0266",
+          "A0270",
+          "A0279",
+          "A0288",
+          "A0321",
+          "A0325",
+          "A0344",
+          "A0350",
+          "A0360",
+          "A0372",
+          "A0388",
+          "A0393",
+          "A0394",
+          "A0404",
+          "A0410",
+          "A0415",
+          "A0416",
+          "A0418",
+          "A0438",
+          "A0450",
+          "A0455",
+          "A0459",
+          "A0462",
+          "A0482",
+          "A0495"
+        ]
+      },
+      "rules": [
+        {
+          "organizer_rule_id": "HOB-ALG-01",
+          "mapping": {
+            "jurisdiction": "Hoboken, NJ",
+            "label": "Hoboken local algorithmic rent-setting ban",
+            "basis": "supplied_change_fact_only",
+            "team_rule_ids": [],
+            "source_doc_ids": [
+              "D032",
+              "D033",
+              "D034"
+            ],
+            "note": "Sources are link-only (ecode360, manifest status check-terms); no supplied text, so no record can be extracted or cited."
+          }
+        },
+        {
+          "organizer_rule_id": "JC-ALG-01",
+          "mapping": {
+            "jurisdiction": "Jersey City, NJ",
+            "label": "Jersey City local algorithmic rent-setting ban",
+            "basis": "supplied_change_fact_only",
+            "team_rule_ids": [],
+            "source_doc_ids": [
+              "D035",
+              "D037"
+            ],
+            "note": "Sources are link-only secondary reports; the supplied Jersey City text (D036) does not mention the ban. No record can be extracted or cited."
+          }
+        }
+      ],
+      "undetermined_jurisdiction": [
+        "A0098",
+        "A0128",
+        "A0295",
+        "A0346",
+        "A0352",
+        "A0376",
+        "A0380",
+        "A0384"
+      ],
+      "per_address": null
+    },
+    "T3": {
+      "test": {
+        "test_id": "T3",
+        "title": "NJ FAIR Act: enacted, not yet effective; possible preemption",
+        "type": "as_of",
+        "rule_ids": [
+          "NJ-ALG-01"
+        ],
+        "as_of_before": "2026-10-01",
+        "as_of_after": "2027-07-02",
+        "states": [
+          "NJ"
+        ],
+        "conflict_with": [
+          "JC-ALG-01",
+          "HOB-ALG-01"
+        ],
+        "expected_behavior": "not_yet_effective on 2026-10-01, applies on 2027-07-02 for every NJ address; Jersey City and Hoboken addresses carry a conflict flag for human review."
+      },
+      "affected": [
+        "A0002",
+        "A0003",
+        "A0008",
+        "A0011",
+        "A0012",
+        "A0013",
+        "A0017",
+        "A0020",
+        "A0026",
+        "A0028",
+        "A0029",
+        "A0032",
+        "A0040",
+        "A0042",
+        "A0044",
+        "A0047",
+        "A0049",
+        "A0051",
+        "A0057",
+        "A0059",
+        "A0076",
+        "A0078",
+        "A0087",
+        "A0089",
+        "A0090",
+        "A0099",
+        "A0101",
+        "A0102",
+        "A0104",
+        "A0108",
+        "A0110",
+        "A0116",
+        "A0119",
+        "A0120",
+        "A0125",
+        "A0129",
+        "A0130",
+        "A0131",
+        "A0132",
+        "A0136",
+        "A0137",
+        "A0139",
+        "A0146",
+        "A0148",
+        "A0159",
+        "A0160",
+        "A0161",
+        "A0163",
+        "A0168",
+        "A0171",
+        "A0177",
+        "A0181",
+        "A0182",
+        "A0185",
+        "A0186",
+        "A0187",
+        "A0190",
+        "A0204",
+        "A0208",
+        "A0223",
+        "A0227",
+        "A0241",
+        "A0243",
+        "A0244",
+        "A0249",
+        "A0250",
+        "A0254",
+        "A0256",
+        "A0261",
+        "A0264",
+        "A0265",
+        "A0266",
+        "A0269",
+        "A0270",
+        "A0279",
+        "A0287",
+        "A0288",
+        "A0296",
+        "A0297",
+        "A0299",
+        "A0307",
+        "A0308",
+        "A0311",
+        "A0313",
+        "A0320",
+        "A0321",
+        "A0325",
+        "A0326",
+        "A0329",
+        "A0331",
+        "A0337",
+        "A0338",
+        "A0343",
+        "A0344",
+        "A0348",
+        "A0350",
+        "A0358",
+        "A0359",
+        "A0360",
+        "A0371",
+        "A0372",
+        "A0377",
+        "A0381",
+        "A0388",
+        "A0389",
+        "A0390",
+        "A0393",
+        "A0394",
+        "A0399",
+        "A0400",
+        "A0404",
+        "A0410",
+        "A0412",
+        "A0415",
+        "A0416",
+        "A0418",
+        "A0424",
+        "A0428",
+        "A0435",
+        "A0436",
+        "A0438",
+        "A0447",
+        "A0448",
+        "A0449",
+        "A0450",
+        "A0455",
+        "A0459",
+        "A0460",
+        "A0462",
+        "A0471",
+        "A0472",
+        "A0475",
+        "A0476",
+        "A0482",
+        "A0489",
+        "A0490",
+        "A0491",
+        "A0495",
+        "A0498"
+      ],
+      "conflicts": [
+        "A0002",
+        "A0008",
+        "A0012",
+        "A0017",
+        "A0026",
+        "A0032",
+        "A0040",
+        "A0042",
+        "A0047",
+        "A0049",
+        "A0051",
+        "A0078",
+        "A0087",
+        "A0089",
+        "A0099",
+        "A0101",
+        "A0102",
+        "A0108",
+        "A0116",
+        "A0119",
+        "A0125",
+        "A0131",
+        "A0136",
+        "A0139",
+        "A0160",
+        "A0161",
+        "A0163",
+        "A0168",
+        "A0171",
+        "A0177",
+        "A0181",
+        "A0182",
+        "A0185",
+        "A0186",
+        "A0187",
+        "A0208",
+        "A0223",
+        "A0227",
+        "A0241",
+        "A0243",
+        "A0244",
+        "A0250",
+        "A0254",
+        "A0256",
+        "A0261",
+        "A0265",
+        "A0266",
+        "A0269",
+        "A0270",
+        "A0279",
+        "A0287",
+        "A0288",
+        "A0299",
+        "A0308",
+        "A0320",
+        "A0321",
+        "A0325",
+        "A0344",
+        "A0348",
+        "A0350",
+        "A0359",
+        "A0360",
+        "A0372",
+        "A0377",
+        "A0388",
+        "A0389",
+        "A0393",
+        "A0394",
+        "A0399",
+        "A0404",
+        "A0410",
+        "A0415",
+        "A0416",
+        "A0418",
+        "A0424",
+        "A0435",
+        "A0436",
+        "A0438",
+        "A0447",
+        "A0450",
+        "A0455",
+        "A0459",
+        "A0462",
+        "A0471",
+        "A0472",
+        "A0475",
+        "A0482",
+        "A0489",
+        "A0490",
+        "A0495"
+      ],
+      "rules": [
+        {
+          "organizer_rule_id": "NJ-ALG-01",
+          "mapping": {
+            "jurisdiction": "NJ",
+            "label": "NJ FAIR Act, P.L. 2026, c. 43",
+            "basis": "supplied_change_fact_plus_verified_effective_date",
+            "team_rule_ids": [],
+            "rejected_team_rule_ids": [
+              "r-55d95e7274"
+            ],
+            "source_doc_ids": [
+              "D069"
+            ],
+            "effective_date_artifact": "outputs/m6/targeted/D069_extraction.json",
+            "note": "The effective date (2027-07-01) is resolved from verified D069 text ('approved July 20, 2026'; 'first day of the twelfth month next following the date of enactment'). The § 4 record stays rejected: its quote inserts brackets that are not in the source, and the M6 targeted re-extraction returned the same span."
+          },
+          "effective_date_used": "2027-07-01",
+          "effective_basis": "verified source evidence (M3 relative-date resolver)",
+          "effective_evidence": {
+            "date": "2027-07-01",
+            "formula": "This act shall take effect on the first day of\nthe twelfth month next following the date of enactment.",
+            "formula_offsets": [
+              10086,
+              10188
+            ],
+            "base_date": "2026-07-20",
+            "base_evidence": "approved July 20, 2026",
+            "base_offsets": [
+              136,
+              158
+            ],
+            "resolver": "first-day-of-nth-month-next-following/v1",
+            "base_status_check": "exact_match"
+          },
+          "records": []
+        }
+      ],
+      "transition": {
+        "before": "2026-10-01",
+        "after": "2027-07-02"
+      },
+      "undetermined_jurisdiction": [
+        "A0098",
+        "A0128",
+        "A0295",
+        "A0346",
+        "A0352",
+        "A0376",
+        "A0380",
+        "A0384"
+      ],
+      "per_address": {
+        "A0002": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0003": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0008": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0011": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0012": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0013": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0017": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0020": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0026": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0028": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0029": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0032": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0040": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0042": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0044": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0047": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0049": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0051": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0057": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0059": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0076": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0078": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0087": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0089": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0090": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0099": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0101": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0102": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0104": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0108": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0110": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0116": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0119": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0120": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0125": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0129": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0130": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0131": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0132": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0136": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0137": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0139": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0146": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0148": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0159": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0160": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0161": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0163": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0168": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0171": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0177": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0181": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0182": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0185": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0186": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0187": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0190": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0204": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0208": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0223": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0227": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0241": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0243": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0244": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0249": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0250": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0254": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0256": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0261": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0264": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0265": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0266": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0269": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0270": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0279": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0287": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0288": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0296": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0297": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0299": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0307": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0308": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0311": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0313": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0320": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0321": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0325": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0326": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0329": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0331": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0337": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0338": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0343": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0344": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0348": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0350": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0358": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0359": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0360": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0371": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0372": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0377": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0381": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0388": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0389": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0390": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0393": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0394": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0399": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0400": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0404": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0410": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0412": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0415": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0416": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0418": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0424": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0428": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0435": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0436": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0438": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0447": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0448": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0449": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0450": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0455": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0459": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0460": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0462": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0471": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0472": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0475": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0476": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0482": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0489": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0490": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0491": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0495": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ],
+        "A0498": [
+          {
+            "rule": "NJ-ALG-01",
+            "before": "not_yet_effective",
+            "after": "applies"
+          }
+        ]
+      }
+    },
+    "T4": {
+      "test": {
+        "test_id": "T4",
+        "title": "Massachusetts pending bills S.2983 and H.5222",
+        "type": "pending",
+        "rule_ids": [
+          "MA-ALG-P1",
+          "MA-ALG-P2"
+        ],
+        "as_of": "2026-10-01",
+        "states": [
+          "MA"
+        ],
+        "expected_behavior": "Reported as pending (not in force) for every Boston and Cambridge address; affected set = all MA addresses if enacted."
+      },
+      "affected": [
+        "A0006",
+        "A0009",
+        "A0010",
+        "A0015",
+        "A0024",
+        "A0034",
+        "A0036",
+        "A0039",
+        "A0043",
+        "A0046",
+        "A0048",
+        "A0052",
+        "A0053",
+        "A0054",
+        "A0056",
+        "A0063",
+        "A0064",
+        "A0065",
+        "A0068",
+        "A0070",
+        "A0071",
+        "A0073",
+        "A0075",
+        "A0077",
+        "A0082",
+        "A0083",
+        "A0086",
+        "A0093",
+        "A0095",
+        "A0096",
+        "A0118",
+        "A0123",
+        "A0124",
+        "A0134",
+        "A0140",
+        "A0143",
+        "A0144",
+        "A0149",
+        "A0151",
+        "A0155",
+        "A0166",
+        "A0169",
+        "A0174",
+        "A0175",
+        "A0176",
+        "A0191",
+        "A0194",
+        "A0195",
+        "A0198",
+        "A0199",
+        "A0203",
+        "A0209",
+        "A0211",
+        "A0214",
+        "A0217",
+        "A0218",
+        "A0220",
+        "A0221",
+        "A0226",
+        "A0230",
+        "A0232",
+        "A0233",
+        "A0242",
+        "A0245",
+        "A0258",
+        "A0272",
+        "A0284",
+        "A0286",
+        "A0290",
+        "A0291",
+        "A0292",
+        "A0294",
+        "A0298",
+        "A0300",
+        "A0301",
+        "A0302",
+        "A0306",
+        "A0310",
+        "A0312",
+        "A0332",
+        "A0336",
+        "A0339",
+        "A0342",
+        "A0354",
+        "A0356",
+        "A0361",
+        "A0362",
+        "A0366",
+        "A0403",
+        "A0406",
+        "A0422",
+        "A0423",
+        "A0429",
+        "A0444",
+        "A0446",
+        "A0453",
+        "A0463",
+        "A0464",
+        "A0465",
+        "A0466",
+        "A0467",
+        "A0468",
+        "A0473",
+        "A0485",
+        "A0488"
+      ],
+      "conflicts": [],
+      "addresses_missing_pending_record": [],
+      "addresses_reporting_applies": [],
+      "rules": [
+        {
+          "organizer_rule_id": "MA-ALG-P1",
+          "mapping": {
+            "jurisdiction": "MA",
+            "label": "S.2983",
+            "basis": "published_records",
+            "team_rule_ids": [
+              "r-655b2201a6",
+              "r-8e76ddfce9"
+            ],
+            "source_doc_ids": [
+              "D046",
+              "D047"
+            ],
+            "note": "D046 (bill text) and D047 (bill history) capture the same bill; both published as pending."
+          }
+        },
+        {
+          "organizer_rule_id": "MA-ALG-P2",
+          "mapping": {
+            "jurisdiction": "MA",
+            "label": "H.5222",
+            "basis": "published_records",
+            "team_rule_ids": [
+              "r-443a0939a1"
+            ],
+            "source_doc_ids": [
+              "D045"
+            ]
+          }
+        }
+      ],
+      "undetermined_jurisdiction": [
+        "A0098",
+        "A0128",
+        "A0295",
+        "A0346",
+        "A0352",
+        "A0376",
+        "A0380",
+        "A0384"
+      ],
+      "per_address": null
+    },
+    "T5": {
+      "test": {
+        "test_id": "T5",
+        "title": "Massachusetts rent-control ballot question struck",
+        "type": "negative",
+        "rule_ids": [
+          "MA-RENT-P1"
+        ],
+        "as_of": "2026-10-01",
+        "states": [
+          "MA"
+        ],
+        "expected_behavior": "No rent cap reported for any Boston or Cambridge address; IP 25-21 recorded as failed. Affected set is empty."
+      },
+      "affected": [],
+      "conflicts": [],
+      "rent_caps_surfaced_in_states": [],
+      "failed_records_never_surfaced": [
+        "r-b5a6f238b7",
+        "r-d0367744ae"
+      ],
+      "rules": [
+        {
+          "organizer_rule_id": "MA-RENT-P1",
+          "mapping": {
+            "jurisdiction": "MA",
+            "label": "Rent-control ballot question (IP 25-21)",
+            "basis": "supplied_change_fact_only",
+            "team_rule_ids": [],
+            "source_doc_ids": [
+              "D059"
+            ],
+            "note": "D059 is link-only (news report). The failed Boston home-rule petition H.3744 (D011, records r-b5a6f238b7 and r-d0367744ae) is a different measure, also failed, and is never surfaced."
+          }
+        }
+      ],
+      "undetermined_jurisdiction": [
+        "A0098",
+        "A0128",
+        "A0295",
+        "A0346",
+        "A0352",
+        "A0376",
+        "A0380",
+        "A0384"
+      ],
+      "per_address": null
+    }
+  }
+}

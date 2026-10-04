@@ -1,0 +1,63 @@
+{
+  "about": "Reviewed map from the organizer rule ids in dev/change_tests.json to this project's evidence. The starter pack supplies no such mapping (starter-pack audit, item 10). Each entry states its basis; nothing here is a rule record. Not legal advice.",
+  "reviewed_on": "2026-10-04",
+  "rules": {
+    "CA-ALG-01": {
+      "jurisdiction": "CA",
+      "label": "AB 325 (Business and Professions Code § 16729)",
+      "basis": "verified_held_records",
+      "team_rule_ids": ["r-b31a29caea", "r-64694ff871"],
+      "source_doc_ids": ["D022"],
+      "note": "Both M3 records have exact quotes and were held only because no effective date is established in D022. The supplied T1 facts place the transition between 2025-12-31 and 2026-01-02. SB 763 appears in no supplied text."
+    },
+    "HOB-ALG-01": {
+      "jurisdiction": "Hoboken, NJ",
+      "label": "Hoboken local algorithmic rent-setting ban",
+      "basis": "supplied_change_fact_only",
+      "team_rule_ids": [],
+      "source_doc_ids": ["D032", "D033", "D034"],
+      "note": "Sources are link-only (ecode360, manifest status check-terms); no supplied text, so no record can be extracted or cited."
+    },
+    "JC-ALG-01": {
+      "jurisdiction": "Jersey City, NJ",
+      "label": "Jersey City local algorithmic rent-setting ban",
+      "basis": "supplied_change_fact_only",
+      "team_rule_ids": [],
+      "source_doc_ids": ["D035", "D037"],
+      "note": "Sources are link-only secondary reports; the supplied Jersey City text (D036) does not mention the ban. No record can be extracted or cited."
+    },
+    "NJ-ALG-01": {
+      "jurisdiction": "NJ",
+      "label": "NJ FAIR Act, P.L. 2026, c. 43",
+      "basis": "supplied_change_fact_plus_verified_effective_date",
+      "team_rule_ids": [],
+      "rejected_team_rule_ids": ["r-55d95e7274"],
+      "source_doc_ids": ["D069"],
+      "effective_date_artifact": "outputs/m6/targeted/D069_extraction.json",
+      "note": "The effective date (2027-07-01) is resolved from verified D069 text ('approved July 20, 2026'; 'first day of the twelfth month next following the date of enactment'). The § 4 record stays rejected: its quote inserts brackets that are not in the source, and the M6 targeted re-extraction returned the same span."
+    },
+    "MA-ALG-P1": {
+      "jurisdiction": "MA",
+      "label": "S.2983",
+      "basis": "published_records",
+      "team_rule_ids": ["r-655b2201a6", "r-8e76ddfce9"],
+      "source_doc_ids": ["D046", "D047"],
+      "note": "D046 (bill text) and D047 (bill history) capture the same bill; both published as pending."
+    },
+    "MA-ALG-P2": {
+      "jurisdiction": "MA",
+      "label": "H.5222",
+      "basis": "published_records",
+      "team_rule_ids": ["r-443a0939a1"],
+      "source_doc_ids": ["D045"]
+    },
+    "MA-RENT-P1": {
+      "jurisdiction": "MA",
+      "label": "Rent-control ballot question (IP 25-21)",
+      "basis": "supplied_change_fact_only",
+      "team_rule_ids": [],
+      "source_doc_ids": ["D059"],
+      "note": "D059 is link-only (news report). The failed Boston home-rule petition H.3744 (D011, records r-b5a6f238b7 and r-d0367744ae) is a different measure, also failed, and is never surfaced."
+    }
+  }
+}

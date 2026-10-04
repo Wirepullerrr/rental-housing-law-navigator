@@ -1,0 +1,86 @@
+{
+  "not_legal_advice": true,
+  "tests": {
+    "T1": {
+      "type": "as_of",
+      "affected": 248,
+      "conflict_flags": 0,
+      "affected_with_review_geography": 7,
+      "affected_by_local_jurisdiction": {
+        "Los Angeles, CA": 80,
+        "Berkeley, CA": 40,
+        "San Francisco, CA": 79,
+        "San Diego, CA": 49
+      },
+      "bases": [
+        "verified_held_records"
+      ]
+    },
+    "T2": {
+      "type": "boundary",
+      "affected": 90,
+      "conflict_flags": 0,
+      "affected_with_review_geography": 2,
+      "affected_by_local_jurisdiction": {
+        "Hoboken, NJ": 40,
+        "Jersey City, NJ": 50
+      },
+      "bases": [
+        "supplied_change_fact_only"
+      ]
+    },
+    "T3": {
+      "type": "as_of",
+      "affected": 139,
+      "conflict_flags": 90,
+      "affected_with_review_geography": 10,
+      "affected_by_local_jurisdiction": {
+        "Hoboken, NJ": 40,
+        "Newark, NJ": 49,
+        "Jersey City, NJ": 50
+      },
+      "bases": [
+        "supplied_change_fact_plus_verified_effective_date"
+      ]
+    },
+    "T4": {
+      "type": "pending",
+      "affected": 105,
+      "conflict_flags": 0,
+      "affected_with_review_geography": 2,
+      "affected_by_local_jurisdiction": {
+        "Boston, MA": 55,
+        "Cambridge, MA": 50
+      },
+      "bases": [
+        "published_records"
+      ]
+    },
+    "T5": {
+      "type": "negative",
+      "affected": 0,
+      "conflict_flags": 0,
+      "affected_with_review_geography": 0,
+      "affected_by_local_jurisdiction": {},
+      "bases": [
+        "supplied_change_fact_only"
+      ]
+    }
+  },
+  "validation": {
+    "tests_once": true,
+    "keys": [
+      "affected_address_ids",
+      "conflict_flag_address_ids",
+      "notes"
+    ],
+    "address_ids_valid": true,
+    "rule_ids_and_citations_valid": [
+      "r-443a0939a1",
+      "r-64694ff871",
+      "r-655b2201a6",
+      "r-8e76ddfce9",
+      "r-b31a29caea"
+    ]
+  }
+}

@@ -1,0 +1,1025 @@
+{
+  "engine": "applicability/m5-v1",
+  "as_of": "2026-10-01",
+  "not_legal_advice": true,
+  "addresses": {
+    "total": 500,
+    "lookup_rows": 500,
+    "resolved_jurisdiction": 473,
+    "review_jurisdiction": 20,
+    "unresolved_jurisdiction": 7,
+    "with_override": 8,
+    "with_no_surfaced_rule": 0
+  },
+  "rule_results": {
+    "applies": 14508,
+    "unknown": 16131,
+    "superseded": 0,
+    "not_yet_effective": 0,
+    "pending": 662,
+    "omitted_definitely_not_applicable": 135,
+    "omitted_coverage_false": 0,
+    "omitted_exempt": 135,
+    "omitted_failed_status": 1000,
+    "not_candidates_other_jurisdiction": 81564
+  },
+  "unknown": {
+    "addresses_with_unknown": 396,
+    "by_reason": {
+      "owner_occupancy_unknown": 9487,
+      "subsidized_status_unknown": 8913,
+      "local_ordinance_coverage_unknown": 6561,
+      "year_built_missing": 5013,
+      "units_missing": 2695,
+      "jurisdiction_unresolved": 1808,
+      "extraction_scope_condition_unresolved": 1379,
+      "local_program_coverage_unknown": 959,
+      "rent_history_unknown": 560,
+      "owner_type_unknown": 342,
+      "operative_condition_unresolved": 237,
+      "replacement_unit_status_unknown": 231,
+      "exemption_condition_unsupported": 139,
+      "coverage_condition_unsupported": 80,
+      "property_type_uncertain": 58,
+      "year_built_in_cutoff_year": 14
+    },
+    "missing_facts": {
+      "owner_occupancy": 9487,
+      "subsidy_or_deed_restriction": 8913,
+      "local_ordinance_coverage": 6561,
+      "year_built": 5013,
+      "units": 2695,
+      "jurisdiction": 1808,
+      "local_program_coverage": 959,
+      "rent_history": 560,
+      "owner_type": 342,
+      "replacement_unit_status": 231,
+      "property_type": 58,
+      "year_built (cutoff year)": 14
+    },
+    "unknown_only_from_jurisdiction": 1808
+  },
+  "facts": {
+    "year_built_missing": 212,
+    "units_by_source": {
+      "recorded": 255,
+      "missing": 171,
+      "use_description": 71,
+      "conflict": 3
+    },
+    "use_class": {
+      "apartment": 472,
+      "subsidized_housing": 26,
+      "None": 2
+    }
+  },
+  "jurisdiction": {
+    "state_rule_results_by_state": {
+      "CA": 18217,
+      "MA": 3465,
+      "NJ": 3058
+    },
+    "local_rule_results_by_city": {
+      "Berkeley, CA": 520,
+      "Boston, MA": 220,
+      "Los Angeles, CA": 1040,
+      "San Diego, CA": 2499,
+      "San Francisco, CA": 474
+    },
+    "addresses_in_cities_without_published_local_rules": {
+      "Cambridge, MA": 50,
+      "Hoboken, NJ": 40,
+      "Jersey City, NJ": 50,
+      "Newark, NJ": 49
+    }
+  },
+  "category": {
+    "algorithmic_rent_setting": {
+      "applies": 79,
+      "pending": 662,
+      "unknown": 96
+    },
+    "application_screening_fees": {
+      "applies": 1980,
+      "unknown": 366
+    },
+    "just_cause_eviction": {
+      "applies": 1531,
+      "unknown": 8288
+    },
+    "rent_increase_limits": {
+      "applies": 278,
+      "unknown": 2687
+    },
+    "screening_restrictions": {
+      "applies": 601,
+      "unknown": 3950
+    },
+    "security_deposits": {
+      "applies": 10039,
+      "unknown": 744
+    }
+  },
+  "results_by_rule": {
+    "r-009e9ceee5": {
+      "applies": 80,
+      "unknown": 8
+    },
+    "r-00c34181be": {
+      "applies": 54,
+      "unknown": 9
+    },
+    "r-01f92663dc": {
+      "unknown": 57
+    },
+    "r-02173825ee": {
+      "applies": 105,
+      "unknown": 8
+    },
+    "r-0243189feb": {
+      "applies": 248,
+      "unknown": 8
+    },
+    "r-02d606a2e0": {
+      "unknown": 57
+    },
+    "r-0379bd90e8": {
+      "applies": 248,
+      "unknown": 8
+    },
+    "r-039a9b2e3c": {
+      "applies": 248,
+      "unknown": 8
+    },
+    "r-03efb18584": {
+      "unknown": 8
+    },
+    "r-04c9a793b9": {
+      "unknown": 251
+    },
+    "r-04f0222d82": {
+      "applies": 248,
+      "unknown": 8
+    },
+    "r-0596063310": {
+      "unknown": 147
+    },
+    "r-06b62d6845": {
+      "applies": 105,
+      "unknown": 8
+    },
+    "r-07409dafbd": {
+      "unknown": 57
+    },
+    "r-075a8d0d03": {
+      "unknown": 57
+    },
+    "r-0854d98beb": {
+      "unknown": 57
+    },
+    "r-0913308957": {
+      "unknown": 57
+    },
+    "r-09afc65725": {
+      "unknown": 48
+    },
+    "r-0cbfd3c8bf": {
+      "unknown": 57
+    },
+    "r-0ec7a83841": {
+      "unknown": 147
+    },
+    "r-0efe492238": {
+      "unknown": 57
+    },
+    "r-114d7070b8": {
+      "unknown": 88
+    },
+    "r-12bb1d3ade": {
+      "unknown": 147
+    },
+    "r-14de8d76d2": {
+      "applies": 248,
+      "unknown": 8
+    },
+    "r-1570f869f3": {
+      "unknown": 57
+    },
+    "r-1771577a7b": {
+      "applies": 105,
+      "unknown": 8
+    },
+    "r-182248a776": {
+      "unknown": 57
+    },
+    "r-189aa7dbf1": {
+      "applies": 248,
+      "unknown": 8
+    },
+    "r-1956129b9e": {
+      "applies": 105,
+      "unknown": 8
+    },
+    "r-199fb5ce6c": {
+      "unknown": 251
+    },
+    "r-1b22a967b4": {
+      "unknown": 57
+    },
+    "r-1d1538f228": {
+      "applies": 248,
+      "unknown": 8
+    },
+    "r-1deabd230f": {
+      "applies": 248,
+      "unknown": 8
+    },
+    "r-1fa42a638d": {
+      "pending": 49,
+      "unknown": 8
+    },
+    "r-20ab7bd31a": {
+      "unknown": 57
+    },
+    "r-20c97a037e": {
+      "unknown": 147
+    },
+    "r-219e1b1120": {
+      "unknown": 57
+    },
+    "r-22b6f5102b": {
+      "applies": 105,
+      "unknown": 8
+    },
+    "r-23334d51e5": {
+      "unknown": 251
+    },
+    "r-239b5c7c7a": {
+      "applies": 248,
+      "unknown": 8
+    },
+    "r-250c5f9ad5": {
+      "applies": 248,
+      "unknown": 8
+    },
+    "r-262845c139": {
+      "applies": 248,
+      "unknown": 8
+    },
+    "r-26f3239983": {
+      "applies": 105,
+      "unknown": 8
+    },
+    "r-2772618a7a": {
+      "unknown": 88
+    },
+    "r-27cdd705d7": {
+      "unknown": 57
+    },
+    "r-28e835fac1": {
+      "unknown": 88
+    },
+    "r-2bd3cbc740": {
+      "applies": 79,
+      "unknown": 8
+    },
+    "r-2be3ee439a": {
+      "applies": 79,
+      "unknown": 8
+    },
+    "r-2c517685d1": {
+      "applies": 40,
+      "unknown": 8
+    },
+    "r-2d39d82919": {
+      "applies": 105,
+      "unknown": 8
+    },
+    "r-2ded6e8c7d": {
+      "pending": 40,
+      "unknown": 8
+    },
+    "r-2e52ee2e95": {
+      "unknown": 256
+    },
+    "r-2f9673f4d6": {
+      "applies": 105,
+      "unknown": 8
+    },
+    "r-3088ccd96c": {
+      "applies": 105,
+      "unknown": 8
+    },
+    "r-3148c8b77e": {
+      "unknown": 57
+    },
+    "r-32b945322d": {
+      "unknown": 88
+    },
+    "r-32fd741898": {
+      "unknown": 251
+    },
+    "r-36a196fa40": {
+      "unknown": 147
+    },
+    "r-3771a9b466": {
+      "unknown": 57
+    },
+    "r-3ae3e3f1b3": {
+      "applies": 105,
+      "unknown": 8
+    },
+    "r-3b846fd3bc": {
+      "applies": 248,
+      "unknown": 8
+    },
+    "r-3d2d35abbf": {
+      "unknown": 57
+    },
+    "r-3d3fb86fa6": {
+      "applies": 248,
+      "unknown": 8
+    },
+    "r-3e4a0d92b9": {
+      "applies": 248,
+      "unknown": 8
+    },
+    "r-3e90e1c801": {
+      "unknown": 251
+    },
+    "r-40b6abc003": {
+      "unknown": 57
+    },
+    "r-433c529583": {
+      "unknown": 256
+    },
+    "r-43f4fb17d4": {
+      "unknown": 251
+    },
+    "r-443a0939a1": {
+      "pending": 105,
+      "unknown": 8
+    },
+    "r-4470965f2c": {
+      "unknown": 147
+    },
+    "r-44de785e11": {
+      "applies": 79,
+      "unknown": 8
+    },
+    "r-476e1b94b2": {
+      "applies": 248,
+      "unknown": 8
+    },
+    "r-4807c8fdf1": {
+      "unknown": 57
+    },
+    "r-48b1bdcc7f": {
+      "applies": 79,
+      "unknown": 8
+    },
+    "r-498814afa8": {
+      "applies": 40,
+      "unknown": 8
+    },
+    "r-4a8d9a7003": {
+      "unknown": 251
+    },
+    "r-4f0325d5a7": {
+      "applies": 248,
+      "unknown": 8
+    },
+    "r-506982a2cd": {
+      "unknown": 57
+    },
+    "r-521d50dbb1": {
+      "unknown": 251
+    },
+    "r-5250dab16a": {
+      "applies": 248,
+      "unknown": 8
+    },
+    "r-54a4925593": {
+      "unknown": 147
+    },
+    "r-560e8c1159": {
+      "unknown": 251
+    },
+    "r-574cf7cb5b": {
+      "unknown": 251
+    },
+    "r-57c5dbf598": {
+      "unknown": 57
+    },
+    "r-58888eee26": {
+      "unknown": 57
+    },
+    "r-5a557a8d3f": {
+      "unknown": 147
+    },
+    "r-5c6afa69b2": {
+      "unknown": 88
+    },
+    "r-5c91c2b7f3": {
+      "unknown": 8
+    },
+    "r-5ca74141bd": {
+      "unknown": 147
+    },
+    "r-5f1428fdff": {
+      "unknown": 147
+    },
+    "r-5f873a9a20": {
+      "unknown": 57
+    },
+    "r-6411d4acb9": {
+      "unknown": 147
+    },
+    "r-6526821eb0": {
+      "unknown": 57
+    },
+    "r-655b2201a6": {
+      "pending": 105,
+      "unknown": 8
+    },
+    "r-668b8dade7": {
+      "unknown": 88
+    },
+    "r-67273b0fa5": {
+      "unknown": 57
+    },
+    "r-69fa3d774c": {
+      "pending": 40,
+      "unknown": 8
+    },
+    "r-6a9be5e737": {
+      "unknown": 147
+    },
+    "r-6b59170763": {
+      "unknown": 57
+    },
+    "r-6d222e1a6b": {
+      "unknown": 57
+    },
+    "r-6e5f9e83ca": {
+      "applies": 248,
+      "unknown": 8
+    },
+    "r-6e9167f87d": {
+      "unknown": 256
+    },
+    "r-6ec343c0d0": {
+      "unknown": 57
+    },
+    "r-706f3eeb6b": {
+      "unknown": 57
+    },
+    "r-70adeb54a5": {
+      "pending": 40,
+      "unknown": 8
+    },
+    "r-7119b9d969": {
+      "unknown": 251
+    },
+    "r-73b7aba927": {
+      "applies": 248,
+      "unknown": 8
+    },
+    "r-74b1e76113": {
+      "unknown": 57
+    },
+    "r-74c157a5a5": {
+      "unknown": 256
+    },
+    "r-7600a0664e": {
+      "applies": 248,
+      "unknown": 8
+    },
+    "r-79e94844fc": {
+      "applies": 248,
+      "unknown": 8
+    },
+    "r-7a2251b242": {
+      "pending": 49,
+      "unknown": 8
+    },
+    "r-7ab02a2c98": {
+      "applies": 105,
+      "unknown": 8
+    },
+    "r-7b2ebb45b8": {
+      "unknown": 57
+    },
+    "r-7b68aed8dc": {
+      "applies": 248,
+      "unknown": 8
+    },
+    "r-7c9645d3ec": {
+      "applies": 40,
+      "unknown": 8
+    },
+    "r-7d36d698e4": {
+      "unknown": 57
+    },
+    "r-8350ad9f7f": {
+      "unknown": 256
+    },
+    "r-83b47cf4d2": {
+      "unknown": 251
+    },
+    "r-8b3350a892": {
+      "unknown": 8
+    },
+    "r-8bc5453d63": {
+      "applies": 105,
+      "unknown": 8
+    },
+    "r-8c050c904a": {
+      "applies": 54,
+      "unknown": 9
+    },
+    "r-8c0a5f4d74": {
+      "unknown": 251
+    },
+    "r-8ce69072b7": {
+      "unknown": 57
+    },
+    "r-8dc8145a0a": {
+      "applies": 105,
+      "unknown": 8
+    },
+    "r-8df3f9a66c": {
+      "applies": 248,
+      "unknown": 8
+    },
+    "r-8e76ddfce9": {
+      "pending": 105,
+      "unknown": 8
+    },
+    "r-8e8033ba7b": {
+      "applies": 248,
+      "unknown": 8
+    },
+    "r-90babd568a": {
+      "applies": 105,
+      "unknown": 8
+    },
+    "r-916661ca5d": {
+      "unknown": 256
+    },
+    "r-92fcc0b899": {
+      "applies": 248,
+      "unknown": 8
+    },
+    "r-948635128e": {
+      "applies": 105,
+      "unknown": 8
+    },
+    "r-94c10acf47": {
+      "unknown": 88
+    },
+    "r-95886006fc": {
+      "unknown": 57
+    },
+    "r-95aa8abc3b": {
+      "applies": 248,
+      "unknown": 8
+    },
+    "r-96156e615f": {
+      "unknown": 57
+    },
+    "r-9704658c3f": {
+      "applies": 248,
+      "unknown": 8
+    },
+    "r-9a3528e45b": {
+      "unknown": 251
+    },
+    "r-9a8a329727": {
+      "applies": 248,
+      "unknown": 8
+    },
+    "r-9b4e942049": {
+      "applies": 248,
+      "unknown": 8
+    },
+    "r-9bbfd67725": {
+      "applies": 105,
+      "unknown": 8
+    },
+    "r-9fa99232e4": {
+      "pending": 49,
+      "unknown": 8
+    },
+    "r-a01bb5098e": {
+      "applies": 248,
+      "unknown": 8
+    },
+    "r-a0d5ece363": {
+      "applies": 248,
+      "unknown": 8
+    },
+    "r-a13674f0bd": {
+      "unknown": 251
+    },
+    "r-a2768ecde9": {
+      "applies": 248,
+      "unknown": 8
+    },
+    "r-a47b9105cc": {
+      "applies": 105,
+      "unknown": 8
+    },
+    "r-a54b4d1c97": {
+      "applies": 105,
+      "unknown": 8
+    },
+    "r-a63e924b6c": {
+      "applies": 54,
+      "unknown": 9
+    },
+    "r-a739f690c0": {
+      "applies": 105,
+      "unknown": 8
+    },
+    "r-a92c75e54c": {
+      "unknown": 8
+    },
+    "r-ad83f622b4": {
+      "applies": 79,
+      "unknown": 8
+    },
+    "r-aef3f4dd00": {
+      "unknown": 8
+    },
+    "r-af87dcad45": {
+      "unknown": 8
+    },
+    "r-b0bd6da795": {
+      "applies": 105,
+      "unknown": 8
+    },
+    "r-b10f79714c": {
+      "applies": 40,
+      "unknown": 8
+    },
+    "r-b415fab204": {
+      "applies": 40,
+      "unknown": 8
+    },
+    "r-b4bee81e94": {
+      "unknown": 251
+    },
+    "r-b537f00d50": {
+      "unknown": 251
+    },
+    "r-b5394e0e81": {
+      "unknown": 251
+    },
+    "r-b55656b907": {
+      "unknown": 57
+    },
+    "r-b58d284efb": {
+      "unknown": 57
+    },
+    "r-b5a6f238b7": {},
+    "r-b65f5d58cc": {
+      "unknown": 57
+    },
+    "r-b6b715261f": {
+      "applies": 139,
+      "unknown": 8
+    },
+    "r-b826f05ca2": {
+      "applies": 105,
+      "unknown": 8
+    },
+    "r-b859ff4be5": {
+      "applies": 80,
+      "unknown": 8
+    },
+    "r-bae0d10762": {
+      "unknown": 147
+    },
+    "r-bb27dbebff": {
+      "unknown": 147
+    },
+    "r-bb513a46ca": {
+      "unknown": 251
+    },
+    "r-bda7d8578e": {
+      "unknown": 88
+    },
+    "r-bde70a53ee": {
+      "unknown": 147
+    },
+    "r-be32263613": {
+      "applies": 248,
+      "unknown": 8
+    },
+    "r-bea9a82f4e": {
+      "applies": 248,
+      "unknown": 8
+    },
+    "r-bee1638198": {
+      "applies": 105,
+      "unknown": 8
+    },
+    "r-bef1cb3f44": {
+      "unknown": 147
+    },
+    "r-c414ed3e54": {
+      "unknown": 147
+    },
+    "r-cb6dd7a71a": {
+      "unknown": 8
+    },
+    "r-cd3dd36f6c": {
+      "unknown": 8
+    },
+    "r-cfb16bf635": {
+      "unknown": 8
+    },
+    "r-d0367744ae": {},
+    "r-d0d8542824": {
+      "applies": 105,
+      "unknown": 8
+    },
+    "r-d123cee6c9": {
+      "applies": 248,
+      "unknown": 8
+    },
+    "r-d1abe8fd19": {
+      "applies": 105,
+      "unknown": 8
+    },
+    "r-d32256d93a": {
+      "unknown": 88
+    },
+    "r-d3aa020026": {
+      "unknown": 251
+    },
+    "r-d5537f8ee6": {
+      "unknown": 147
+    },
+    "r-d6879c6887": {
+      "unknown": 251
+    },
+    "r-d6ad91ad34": {
+      "applies": 248,
+      "unknown": 8
+    },
+    "r-d6d7620e65": {
+      "applies": 54,
+      "unknown": 9
+    },
+    "r-d6fbb5bc32": {
+      "unknown": 88
+    },
+    "r-d73daa44f6": {
+      "unknown": 251
+    },
+    "r-d79153ba48": {
+      "unknown": 57
+    },
+    "r-d8a2187f26": {
+      "unknown": 57
+    },
+    "r-da3cd18929": {
+      "unknown": 147
+    },
+    "r-db7cfcfc9c": {
+      "unknown": 251
+    },
+    "r-dc68f6a982": {
+      "pending": 40,
+      "unknown": 8
+    },
+    "r-dd4441a314": {
+      "unknown": 87
+    },
+    "r-e08e4f529d": {
+      "unknown": 57
+    },
+    "r-e0e272c728": {
+      "applies": 248,
+      "unknown": 8
+    },
+    "r-e1e58c5c4c": {
+      "applies": 248,
+      "unknown": 8
+    },
+    "r-e28ffe138f": {
+      "applies": 40,
+      "unknown": 8
+    },
+    "r-e50e7b228f": {
+      "unknown": 251
+    },
+    "r-e60b399b1f": {
+      "applies": 105,
+      "unknown": 8
+    },
+    "r-e73d66b70f": {
+      "unknown": 88
+    },
+    "r-e79946b7fd": {
+      "unknown": 57
+    },
+    "r-ea13dc6990": {
+      "applies": 40,
+      "unknown": 8
+    },
+    "r-ea1778b142": {
+      "unknown": 57
+    },
+    "r-eac77be4b9": {
+      "unknown": 147
+    },
+    "r-edf96f464d": {
+      "unknown": 57
+    },
+    "r-ee47f07864": {
+      "unknown": 57
+    },
+    "r-ee55a0417f": {
+      "applies": 105,
+      "unknown": 8
+    },
+    "r-ee8214b727": {
+      "applies": 105,
+      "unknown": 8
+    },
+    "r-eeab7d5194": {
+      "pending": 40,
+      "unknown": 8
+    },
+    "r-f000a37973": {
+      "unknown": 8
+    },
+    "r-f35973ed07": {
+      "applies": 248,
+      "unknown": 8
+    },
+    "r-f3a9f7ba54": {
+      "applies": 248,
+      "unknown": 8
+    },
+    "r-f4ab7ef18c": {
+      "unknown": 251
+    },
+    "r-f7135fa392": {
+      "applies": 248,
+      "unknown": 8
+    },
+    "r-f726c57a12": {
+      "applies": 105,
+      "unknown": 8
+    },
+    "r-f78d3701d6": {
+      "applies": 105,
+      "unknown": 8
+    },
+    "r-f79ceb4f88": {
+      "unknown": 57
+    },
+    "r-fa094f4690": {
+      "unknown": 251
+    },
+    "r-fc02534807": {
+      "applies": 105,
+      "unknown": 8
+    },
+    "r-fcf58959cd": {
+      "unknown": 57
+    },
+    "r-fe6b5b986d": {
+      "unknown": 251
+    },
+    "r-feb39e8ed8": {
+      "unknown": 57
+    },
+    "r-fef1749298": {
+      "unknown": 147
+    }
+  },
+  "condition_inventory": {
+    "rules": 228,
+    "rules_with_coverage_text": 96,
+    "rules_with_exemption_text": 153,
+    "clauses_by_kind": {
+      "coverage:generic": 42,
+      "coverage:operative": 3,
+      "coverage:property": 14,
+      "coverage:situational": 52,
+      "coverage:unsupported": 1,
+      "exemption:property": 866,
+      "exemption:situational": 113,
+      "exemption:unsupported": 1
+    },
+    "rules_by_clause_kind": {
+      "coverage:generic": 42,
+      "coverage:operative": 3,
+      "coverage:property": 14,
+      "coverage:situational": 50,
+      "coverage:unsupported": 1,
+      "exemption:property": 113,
+      "exemption:situational": 99,
+      "exemption:unsupported": 1
+    },
+    "atoms": {
+      "coverage:local_program": 5,
+      "coverage:operative_condition": 3,
+      "coverage:owner_type": 2,
+      "coverage:replacement_unit": 7,
+      "coverage:unsupported": 1,
+      "coverage:year_built": 7,
+      "exemption:certificate_of_occupancy": 81,
+      "exemption:local_ordinance": 46,
+      "exemption:local_program": 8,
+      "exemption:owner_occupancy": 227,
+      "exemption:owner_type": 75,
+      "exemption:property_type": 310,
+      "exemption:rent_history": 7,
+      "exemption:separately_alienable": 75,
+      "exemption:subsidy_restriction": 129,
+      "exemption:units": 161,
+      "exemption:unsupported": 1,
+      "exemption:year_built": 1
+    },
+    "unsupported_clauses": [
+      {
+        "team_rule_id": "r-114d7070b8",
+        "role": "coverage",
+        "clause": "Low, Very Low, and Extremely Low Income households displaced by new development under RPO Option 1."
+      },
+      {
+        "team_rule_id": "r-da3cd18929",
+        "role": "exemption",
+        "clause": "Unless otherwise\nrequired by law"
+      }
+    ]
+  },
+  "extraction_scope_gaps": {
+    "r-433c529583": [
+      {
+        "condition_id": "S3",
+        "kind": "exemption",
+        "statement": "It does not constitute discrimination based on source of income to make a written or oral inquiry concerning the level or source of income.",
+        "target": "§ 12955(a)"
+      }
+    ],
+    "r-74c157a5a5": [
+      {
+        "condition_id": "S3",
+        "kind": "exemption",
+        "statement": "It does not constitute discrimination based on source of income to make a written or oral inquiry concerning the level or source of income.",
+        "target": "§ 12955(k)"
+      }
+    ],
+    "r-2e52ee2e95": [
+      {
+        "condition_id": "S1",
+        "kind": "coverage_condition",
+        "statement": "Applies in instances in which there is a government rent subsidy.",
+        "target": "§ 12955(o)(1)(A)"
+      }
+    ],
+    "r-8350ad9f7f": [
+      {
+        "condition_id": "S1",
+        "kind": "coverage_condition",
+        "statement": "Applies in instances in which there is a government rent subsidy.",
+        "target": "§ 12955(o)(1)(B)(i)"
+      }
+    ],
+    "r-916661ca5d": [
+      {
+        "condition_id": "S1",
+        "kind": "coverage_condition",
+        "statement": "Applies in instances in which there is a government rent subsidy.",
+        "target": "§ 12955(o)(1)(B)(ii)"
+      }
+    ],
+    "r-36a196fa40": [
+      {
+        "condition_id": "S1",
+        "kind": "exemption",
+        "statement": "Dwelling units in owner-occupied premises of not more than four dwelling units are excluded from the definition of rental dwelling unit.",
+        "target": "§ 4(a)(3) (C.46:8-55(a)(3))"
+      }
+    ]
+  },
+  "validation": {
+    "wrapper_matches_template": true,
+    "entry_keys": [
+      "team_rule_id",
+      "result",
+      "explanation",
+      "conflict_flag"
+    ],
+    "all_ids_once": true,
+    "results_in_official_enum": true,
+    "rule_ids_exist": true
+  }
+}

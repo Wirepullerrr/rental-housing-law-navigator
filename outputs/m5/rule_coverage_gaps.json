@@ -1,0 +1,110 @@
+{
+  "not_legal_advice": true,
+  "local_jurisdictions_without_published_rules": [
+    {
+      "jurisdiction": "Cambridge, MA",
+      "addresses": 50,
+      "note": "No published local rule in outputs/m3/full_v2/rules.json; only state rules are evaluated. No local rule is fabricated."
+    },
+    {
+      "jurisdiction": "Hoboken, NJ",
+      "addresses": 40,
+      "note": "No published local rule in outputs/m3/full_v2/rules.json; only state rules are evaluated. No local rule is fabricated."
+    },
+    {
+      "jurisdiction": "Jersey City, NJ",
+      "addresses": 50,
+      "note": "No published local rule in outputs/m3/full_v2/rules.json; only state rules are evaluated. No local rule is fabricated."
+    },
+    {
+      "jurisdiction": "Newark, NJ",
+      "addresses": 49,
+      "note": "No published local rule in outputs/m3/full_v2/rules.json; only state rules are evaluated. No local rule is fabricated."
+    }
+  ],
+  "known_extraction_gaps": [
+    {
+      "doc": "D067",
+      "jurisdiction": "NJ",
+      "categories": [
+        "just_cause_eviction",
+        "security_deposits"
+      ],
+      "note": "NJ Anti-Eviction Act grounds and most NJ security-deposit law exist only in D067, whose 83 records are held (official explanatory guide without effective dates). Not published, not used."
+    },
+    {
+      "doc": "D069",
+      "jurisdiction": "NJ",
+      "categories": [
+        "algorithmic_rent_setting"
+      ],
+      "note": "Rejected record (quote not verifiable without inserted brackets). Not used."
+    },
+    {
+      "doc": "D027",
+      "jurisdiction": "CA",
+      "categories": [
+        "screening_restrictions"
+      ],
+      "note": "7 published records; unresolved scope conditions (S1 government rent subsidy, S3 income inquiry carve-out) make the affected records unknown.",
+      "affected_rules": [
+        "r-2e52ee2e95",
+        "r-433c529583",
+        "r-74c157a5a5",
+        "r-8350ad9f7f",
+        "r-916661ca5d"
+      ]
+    }
+  ],
+  "extraction_scope_gaps": {
+    "r-433c529583": [
+      {
+        "condition_id": "S3",
+        "kind": "exemption",
+        "statement": "It does not constitute discrimination based on source of income to make a written or oral inquiry concerning the level or source of income.",
+        "target": "§ 12955(a)"
+      }
+    ],
+    "r-74c157a5a5": [
+      {
+        "condition_id": "S3",
+        "kind": "exemption",
+        "statement": "It does not constitute discrimination based on source of income to make a written or oral inquiry concerning the level or source of income.",
+        "target": "§ 12955(k)"
+      }
+    ],
+    "r-2e52ee2e95": [
+      {
+        "condition_id": "S1",
+        "kind": "coverage_condition",
+        "statement": "Applies in instances in which there is a government rent subsidy.",
+        "target": "§ 12955(o)(1)(A)"
+      }
+    ],
+    "r-8350ad9f7f": [
+      {
+        "condition_id": "S1",
+        "kind": "coverage_condition",
+        "statement": "Applies in instances in which there is a government rent subsidy.",
+        "target": "§ 12955(o)(1)(B)(i)"
+      }
+    ],
+    "r-916661ca5d": [
+      {
+        "condition_id": "S1",
+        "kind": "coverage_condition",
+        "statement": "Applies in instances in which there is a government rent subsidy.",
+        "target": "§ 12955(o)(1)(B)(ii)"
+      }
+    ],
+    "r-36a196fa40": [
+      {
+        "condition_id": "S1",
+        "kind": "exemption",
+        "statement": "Dwelling units in owner-occupied premises of not more than four dwelling units are excluded from the definition of rental dwelling unit.",
+        "target": "§ 4(a)(3) (C.46:8-55(a)(3))"
+      }
+    ]
+  },
+  "change_test_note": "T2 (Hoboken vs Jersey City algorithmic ordinances) has no published local rule; it is an M6 prerequisite."
+}
