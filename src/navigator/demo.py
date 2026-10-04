@@ -31,10 +31,10 @@ GEO_NOTE = " Jurisdiction flagged for review in M4."      # same suffix as scrip
 # Predefined demo addresses (chosen for what they show, not for their results; nothing legal is hard-coded).
 # The first one is the app's default.
 DEMO_EXAMPLES = {
-    "A0134": "Boston: postal city 'Dorchester', legal city Boston; MA bills pending",
-    "A0500": "California: state + City of Los Angeles rules",
-    "A0495": "New Jersey: Jersey City (change tests T2 and T3)",
-    "A0322": "Missing facts: San Diego (postal 'San Ysidro'), no year built -> unknown",
+    "A0134": "Boston (mailing city Dorchester)",
+    "A0500": "Los Angeles: state + city rules",
+    "A0495": "Jersey City: change tests T2, T3",
+    "A0322": "San Diego (mailing city San Ysidro)",
 }
 
 CATEGORY_LABELS = {
@@ -45,8 +45,61 @@ CATEGORY_LABELS = {
     "application_screening_fees": "Application & screening fees",
     "algorithmic_rent_setting": "Algorithmic rent setting",
 }
-RESULT_LABELS = {"applies": "Applies", "unknown": "Unknown", "pending": "Pending",
-                 "not_yet_effective": "Not yet effective", "superseded": "Superseded"}
+
+
+@dataclass(frozen=True)
+class StatusInfo:
+    key: str            # lookups.json result value
+    label: str          # card, chip and filter label
+    meaning: str        # one-line microcopy under the count
+    help: str           # hover help
+    one: str            # at-a-glance sentence for a count of 1 ({n})
+    many: str           # at-a-glance sentence for any other count ({n})
+
+
+# The ONE status table: the status cards, the filter chips and the at-a-glance summary all take their wording
+# from here and their numbers from status_counts(), so a count can never sit next to another status's label.
+STATUSES = (
+    StatusInfo("applies", "Applies", "Current rule for this property",
+               "In force on this date, and it covers this property.",
+               "{n} rule applies now.", "{n} rules apply now."),
+    StatusInfo("unknown", "Unknown", "Needs a missing property fact",
+               "Whether it covers this property depends on a fact the supplied property data doesn't include, "
+               "so LeaseLens doesn't guess.",
+               "{n} rule remains unknown.", "{n} rules remain unknown."),
+    StatusInfo("pending", "Pending", "Proposal, not current law",
+               "A bill or proposal. It isn't law on this date.",
+               "{n} pending proposal may matter later.", "{n} pending proposals may matter later."),
+    StatusInfo("not_yet_effective", "Not yet effective", "Enacted, starts later",
+               "Enacted, but it takes effect after this date.",
+               "{n} enacted rule takes effect later.", "{n} enacted rules take effect later."),
+    StatusInfo("superseded", "Superseded", "A stricter rule governs",
+               "Covers this property, but a stricter rule at another level governs.",
+               "{n} rule is superseded by a stricter one.", "{n} rules are superseded by stricter ones."),
+)
+STATUS = {s.key: s for s in STATUSES}
+RESULT_LABELS = {s.key: s.label for s in STATUSES}
+
+# Short, user-facing names for the engine's unknown reasons (M5 reason codes). Display only.
+MISSING_FACT_LABELS = {
+    "owner_occupancy_unknown": "Owner occupancy",
+    "subsidized_status_unknown": "Subsidy or deed restriction",
+    "local_ordinance_coverage_unknown": "Local ordinance coverage",
+    "local_program_coverage_unknown": "Local program coverage (RSO, JCO or rent control)",
+    "year_built_missing": "Year built",
+    "year_built_in_cutoff_year": "Exact build date (built in the cutoff year)",
+    "units_missing": "Number of units",
+    "owner_type_unknown": "Owner type",
+    "certificate_of_occupancy_unknown": "Certificate-of-occupancy date",
+    "rent_history_unknown": "Rent history",
+    "replacement_unit_status_unknown": "Replacement-unit status",
+    "property_type_uncertain": "Property type",
+    "operative_condition_unresolved": "A rule condition the source doesn't confirm",
+    "coverage_condition_unsupported": "A coverage condition LeaseLens can't evaluate",
+    "exemption_condition_unsupported": "An exemption LeaseLens can't evaluate",
+    "extraction_scope_condition_unresolved": "A scope condition the source leaves open",
+    "jurisdiction_unresolved": "Legal jurisdiction (Census couldn't place the address)",
+}
 
 
 @dataclass
@@ -98,8 +151,71 @@ def rule_results(b: Bundle, address_id: str, as_of: date) -> list[dict[str, Any]
             continue
         out.append({"rule": b.rules[rid], "team_rule_id": rid, "result": o.result,
                     "explanation": o.explanation + (GEO_NOTE if geo_review else ""),
-                    "missing": [_REASON_TEXT.get(x, x) for x in o.reasons],
+                    "missing": [_REASON_TEXT.get(x, x) for x in o.reasons], "reasons": list(o.reasons),
                     "causes": o.causes})
+    return out
+
+
+def status_counts(results: list[dict[str, Any]]) -> dict[str, int]:
+    """The single status-count object behind the status cards, the filter chips and the summary."""
+    return {s.key: sum(r["result"] == s.key for r in results) for s in STATUSES}
+
+
+def glance_lines(counts: dict[str, int]) -> list[tuple[str, str]]:
+    """(status key, sentence) for every non-zero status, in status order. The wording and the number come from
+    the same status key: {"applies": 43, "unknown": 44} gives "43 rules apply now." and "44 rules remain
+    unknown: ..."."""
+    return [(s.key, (s.one if counts.get(s.key) == 1 else s.many).format(n=counts[s.key]))
+            for s in STATUSES if counts.get(s.key)]
+
+
+def missing_fact_counts(results: list[dict[str, Any]]) -> list[tuple[str, int]]:
+    """Missing facts behind this address's Unknown results: (short label, number of rules), most common first."""
+    counts: dict[str, int] = {}
+    for r in results:
+        if r["result"] == "unknown":
+            for code in r["reasons"]:
+                label = MISSING_FACT_LABELS.get(code, _REASON_TEXT.get(code, code))
+                counts[label] = counts.get(label, 0) + 1
+    return sorted(counts.items(), key=lambda kv: (-kv[1], kv[0]))
+
+
+_REVIEW_REASON_TEXT = {
+    "non_exact_meaningful_difference": "Census matched a slightly different address",
+    "tie_in_attempt_A": "Census returned more than one candidate",
+    "tie_in_attempt_C": "Census returned more than one candidate",
+    "tie_candidates_share_place": "the candidates are all in the same city",
+    "tie_candidates_disagree": "the candidates fall in different cities",
+    "no_match_after_bounded_fallbacks": "Census found no match",
+}
+
+
+def review_reason_text(reason: str) -> str:
+    """Plain wording for an M4 review reason, e.g. 'street_directional_differs (5TH -> N 5TH)'."""
+    code, _, detail = reason.partition(":")
+    base = _REVIEW_REASON_TEXT.get(code.strip(), code.strip().replace("_", " "))
+    detail = detail.strip().replace("_", " ").replace("->", "\u2192")
+    return f"{base}: {detail}" if detail else base
+
+
+def review_signals(b: Bundle, address_id: str) -> list[dict[str, str]]:
+    """Review signals that already exist in the outputs for this address (no new review logic): the M4
+    jurisdiction status and the change-test conflict flags."""
+    res, out = b.resolutions[address_id], []
+    if res["resolution_status"] == "review_required":
+        out.append({"kind": "jurisdiction", "title": "Census match needs review",
+                    "detail": "; ".join(review_reason_text(x) for x in res["review_reasons"])
+                              + ". Results use this jurisdiction."})
+    elif res["resolution_status"] == "unresolved":
+        out.append({"kind": "jurisdiction", "title": "Jurisdiction unresolved",
+                    "detail": "Census couldn't place this address, so LeaseLens doesn't guess a city. "
+                              "Every rule stays Unknown."})
+    titles = {t["test_id"]: t["title"] for t in b.change_tests}
+    for tid, e in b.changes.items():
+        if address_id in e["conflict_flag_address_ids"]:
+            out.append({"kind": "conflict", "title": f"Conflict flag in change scenario {tid}",
+                        "detail": f"{titles.get(tid, tid)}. The state law may preempt a local ordinance here. "
+                                  f"LeaseLens flags this for human review and doesn't resolve it."})
     return out
 
 

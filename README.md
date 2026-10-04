@@ -58,7 +58,7 @@ These numbers come from the committed outputs and the current test run.
 | Jurisdiction | 500 addresses: 473 resolved, 20 flagged for review, 7 unresolved. 33 addresses have a postal city that differs from their legal city. 8 manual overrides, each with recorded evidence. |
 | Applicability | A lookup row for every one of the 500 addresses at 2026-10-01: 14,508 `applies`, 16,131 `unknown`, 662 `pending`. Another 135 results were left out because a property exemption clearly applies. |
 | Change tests | T1–T5 each produced once. T1 covers 248 California addresses. T2 covers 40 in Hoboken and 50 in Jersey City, none in Newark. T3 covers 139 New Jersey addresses, 90 of them flagged for a possible conflict with the local bans. T4 reports 105 Massachusetts addresses as pending. T5 affects none. |
-| Tests | 383 passing. The suite blocks network access, so it runs offline. |
+| Tests | 388 passing. The suite blocks network access, so it runs offline. |
 
 The `unknown` count is high on purpose. The most common missing facts are owner occupancy, subsidy status and whether a local ordinance covers the building, none of which are in the sample data.
 
@@ -89,7 +89,7 @@ The submission files are in [`outputs/submission/`](outputs/submission/): `rules
 ```bash
 uv sync
 uv run streamlit run app.py                      # demo (offline)
-uv run pytest                                    # 383 tests, network blocked
+uv run pytest                                    # 388 tests, network blocked
 uv run python scripts/check_submission.py        # validate outputs/submission/
 ```
 

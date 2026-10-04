@@ -23,7 +23,7 @@ It's a prototype, not legal advice.
 *Screen recording of the live app, https://leaselens-maverick.streamlit.app/. Don't change anything: it opens on **A0134, 101 Norfolk St**, as of 2026-10-01.*
 
 1. *Show the title and the not-legal-advice notice.* This is LeaseLens, opened on 101 Norfolk Street.
-2. *Point to "Dorchester" under the address, then the blue note in the Jurisdiction card.* The mailing address says Dorchester, but Census puts it in Boston. That's why we don't trust the postal city.
+2. *Point to "Dorchester" under the address, then to the line under the map: "Mailing city Dorchester → Legal city Boston, MA".* The mailing address says Dorchester, but Census puts it in Boston. That's why we don't trust the postal city.
 3. *Point to the map.* And here it is on the map.
 4. *Point to the status cards.* 34 rules apply, four of them Boston's own. Three are pending bills, so they're not shown as law.
 5. *Under Just-cause eviction, open "Fourteen Days' Notice to Quit for Nonpayment".* Each rule shows what it requires, the citation, and the source quote.
