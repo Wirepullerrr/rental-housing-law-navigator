@@ -5,40 +5,13 @@ from __future__ import annotations
 
 import pytest
 
-from conftest import D052_DATE_EVIDENCE, FakeProvider, make_candidate
+from conftest import (D052_DATE_EVIDENCE, FakeProvider, make_candidate, page_body, paged, parts,
+                      running_header, synthetic_source)
 from navigator.extraction import extractor
 from navigator.extraction.cache import sha256_hex
 from navigator.extraction.extractor import SourceDocument, extract_document
-from navigator.extraction.models import SourceMeta, generation_json_schema
+from navigator.extraction.models import generation_json_schema
 from navigator.extraction.source_view import PAGE_BREAK_MARKER, build_view
-
-WORDS = ["notice", "deposit", "tenant", "landlord", "payment", "premises", "lease", "inspection", "repair",
-         "record", "receipt", "account", "transfer", "remedy", "waiver", "occupancy"]
-
-
-def page_body(n: int, lines: int = 10) -> list[str]:
-    """Distinct substantive-looking lines (words, not digits, vary)."""
-    return [f"The {WORDS[(n * 3 + i) % 16]} rule requires the {WORDS[(n + 2 * i) % 16]} to follow the "
-            f"{WORDS[(n * 5 + 3 * i) % 16]} procedure in {WORDS[i % 16]} matters." for i in range(lines)]
-
-
-def paged(pages: list[list[str]], header) -> str:
-    out: list[str] = []
-    for n, body in enumerate(pages, start=1):
-        out += header(n) + [""] + body + [""]
-    return "\n".join(out) + "\n"
-
-
-def running_header(n: int) -> list[str]:
-    return ["Ch. Art. Div.", f"9 8 7 {n}", "Example City Municipal Code Chapter 9: Housing", "(3-2024)"]
-
-
-def synthetic_source(body: str) -> SourceDocument:
-    meta = SourceMeta(doc_id="DTEST", jurisdiction="Example City, CA", url="https://example.org/code",
-                      source_type="official", retrieved_at="2026-10-01T00:00Z", text_file="text/DTEST.txt",
-                      content_sha256=sha256_hex(body), body_chars=len(body))
-    return SourceDocument(meta=meta, body=body)
-
 
 # ------------------------------------------------------------ page artifacts
 
@@ -110,7 +83,7 @@ D052_RETURN_SPAN = "The lessor shall, within thirty days after the termination o
 
 def scope(sid="S1", governs=None, evidence=D052_VACATION_EXEMPTION, kind="exemption"):
     return {"id": sid, "kind": kind, "statement": "Vacation rentals of 100 days or less are exempt.",
-            "citation": "M.G.L. c. 186, § 15B(9)", "governs": governs, "evidence": evidence}
+            "citation": "M.G.L. c. 186, § 15B(9)", "governs": governs, "evidence_parts": parts(evidence)}
 
 
 def test_document_wide_exemption_propagates_to_every_rule(run_fake):

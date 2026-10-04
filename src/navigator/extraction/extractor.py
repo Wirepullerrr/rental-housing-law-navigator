@@ -1,15 +1,19 @@
 """Extraction orchestration for ONE supplied corpus document.
 
-    supplied text -> canonical view (page artifacts marked) -> prompt -> [cache | provider] -> raw JSON
-      -> provision inventory (audit) and document-level scope conditions (evidence-verified)
-      -> per candidate: Pydantic ExtractedRule -> citation checks against the RAW text
-         -> status derivation -> scope propagation + operative conditions
-         -> trusted metadata + team_rule_id -> RuleRecord (Pydantic) -> official JSON Schema
-      -> ExtractionRun audit record
+    supplied text -> canonical view (page artifacts marked, segments numbered) -> prompt
+      -> [cache | provider] -> raw JSON
+      -> provision inventory and document-level scope conditions (evidence verified)
+      -> per candidate: Pydantic ExtractedRule -> quote parts verified against the RAW text
+         (a cross-page quote is reconstructed as one exact raw span) -> effective-date
+         evidence classification -> status derivation -> scope propagation + operative
+         conditions -> trusted metadata + team_rule_id -> RuleRecord -> official JSON Schema
+      -> coverage closure over the inventory
+      -> at most ONE targeted repair request, only for in-scope provisions with no
+         candidate at all; its candidates go through exactly the same evaluation
+      -> ExtractionRun audit record, document_status complete | review_required
 
-A candidate is accepted only if every stage passes. Failures stay separate and
-explicit; nothing is retried or repaired here. Vendor-neutral: depends only on
-the StructuredLLMProvider protocol.
+A candidate is accepted only if every stage passes. Rejected candidates are never
+retried or repaired. Vendor-neutral: depends only on the StructuredLLMProvider protocol.
 """
 
 from __future__ import annotations
@@ -25,20 +29,23 @@ from pydantic import TypeAdapter, ValidationError
 
 from navigator import starter_pack as sp
 from navigator.extraction.cache import ResponseCache, cache_key, canonical_json, sha256_hex
-from navigator.extraction.citation import verify_span
 from navigator.extraction.config import DEFAULT_AS_OF, GENERATION_SETTINGS
-from navigator.extraction.models import (CandidateResult, CitationCheck, ExtractedRule, ExtractionRun,
-                                         ProvisionNote, RuleRecord, ScopeCondition, SourceMeta,
+from navigator.extraction.coverage import candidate_citation, closure, unrecorded_subdivisions
+from navigator.extraction.models import (CandidateResult, ExtractedRule, ExtractionRun, ProvisionNote, QuotePart,
+                                         RepairPass, RepairResponse, RuleRecord, ScopeCondition, SourceMeta,
                                          generation_json_schema)
 from navigator.extraction.normalize import build_record, derive_status, split_trusted
-from navigator.extraction.prompt import EXTRACTION_PROMPT_VERSION, render_prompt
-from navigator.extraction.provider import StructuredLLMProvider
-from navigator.extraction.review import calendar_dates, ref_matches, uncovered_provisions, unsupported_figures
-from navigator.extraction.source_view import PAGE_BREAK_MARKER, SourceView, build_view
+from navigator.extraction.prompt import EXTRACTION_PROMPT_VERSION, render_prompt, render_repair_prompt
+from navigator.extraction.provider import ProviderError, StructuredLLMProvider
+from navigator.extraction.quotes import verify_quote_parts, verify_text
+from navigator.extraction.review import calendar_dates, ref_matches, unsupported_figures
+from navigator.extraction.source_view import PAGE_BREAK_MARKER, SEGMENT_LABEL, SourceView, build_view
+from navigator.extraction.temporal import resolve_effective_date
 from navigator.validation import make_rule_validator
 
-_INVENTORY = TypeAdapter(list[ProvisionNote])
+_QUOTE_PARTS = TypeAdapter(list[QuotePart])
 _TOP_LEVEL_KEYS = {"provisions", "global_scope", "rules"}
+_REPAIR_KEYS = {"rules"}
 
 
 class SourceNotAvailable(ValueError):
@@ -56,7 +63,7 @@ class SourceDocument:
 
     @cached_property
     def view(self) -> SourceView:
-        """What the model reads: the raw text with page artifacts replaced by markers."""
+        """What the model reads: page artifacts replaced by markers, segments numbered."""
         return build_view(self.body)
 
 
@@ -86,11 +93,10 @@ def load_source(doc_id: str, root: Path = sp.REPO_ROOT) -> SourceDocument:
     return SourceDocument(meta=meta, body=doc.body)
 
 
-def prepare_request(source: SourceDocument, provider_name: str, model: str,
-                    settings: dict[str, Any] = GENERATION_SETTINGS) -> PreparedRequest:
-    system, user = render_prompt(source.meta, source.view.text)
-    schema = generation_json_schema()
+def _prepared(source: SourceDocument, provider_name: str, model: str, settings: dict[str, Any], system: str,
+              user: str, schema: dict[str, Any], **extra: Any) -> PreparedRequest:
     key_fields = {
+        **extra,
         "source_doc_id": source.meta.doc_id,
         "source_sha256": source.meta.content_sha256,
         "view_sha256": sha256_hex(source.view.text),
@@ -102,6 +108,21 @@ def prepare_request(source: SourceDocument, provider_name: str, model: str,
         "generation_settings": settings,
     }
     return PreparedRequest(system, user, schema, key_fields, cache_key(key_fields))
+
+
+def prepare_request(source: SourceDocument, provider_name: str, model: str,
+                    settings: dict[str, Any] = GENERATION_SETTINGS) -> PreparedRequest:
+    system, user = render_prompt(source.meta, source.view.text)
+    return _prepared(source, provider_name, model, settings, system, user, generation_json_schema(),
+                     **{"pass": "primary"})
+
+
+def prepare_repair_request(source: SourceDocument, provider_name: str, model: str, settings: dict[str, Any],
+                           primary_key: str, scope: list[dict[str, Any]],
+                           provisions: list[dict[str, Any]]) -> PreparedRequest:
+    system, user = render_repair_prompt(source.meta, source.view.text, scope, provisions)
+    return _prepared(source, provider_name, model, settings, system, user, generation_json_schema(RepairResponse),
+                     **{"pass": "repair", "primary_cache_key": primary_key})
 
 
 @lru_cache(maxsize=None)
@@ -120,26 +141,37 @@ def _display_path(path: Path) -> str:
         return path.name
 
 
+def _fetch(req: PreparedRequest, cache: ResponseCache, provider: StructuredLLMProvider | None, force: bool,
+           settings: dict[str, Any]) -> tuple[dict[str, Any] | None, bool]:
+    """(cache entry, cache_hit). Calls the provider only on a miss (or with force); None if it cannot."""
+    entry = None if force else cache.get(req.key)
+    if entry is not None:
+        return entry, True
+    if provider is None:
+        return None, False
+    result = provider.generate(system_instruction=req.system_instruction, prompt=req.prompt,
+                               response_json_schema=req.response_json_schema, settings=settings)
+    entry = {"key": req.key, "key_fields": req.key_fields, "created_at": _now(),
+             "response_text": result.text, "provider_metadata": result.metadata}
+    cache.put(req.key, entry)
+    return entry, False
+
+
 def extract_document(source: SourceDocument, *, provider_name: str, model: str,
                      cache: ResponseCache, provider: StructuredLLMProvider | None = None,
                      as_of: date = DEFAULT_AS_OF, force: bool = False,
                      settings: dict[str, Any] = GENERATION_SETTINGS,
-                     schema_path: Path = sp.REPO_ROOT / sp.SCHEMA_PATH) -> ExtractionRun:
-    """Extract rules from one document. Calls `provider` only on a cache miss (or with force=True)."""
+                     schema_path: Path = sp.REPO_ROOT / sp.SCHEMA_PATH, repair: bool = True) -> ExtractionRun:
+    """Extract rules from one document. Calls `provider` only on a cache miss (or with force=True):
+    once for the primary pass and, if coverage closure finds uncovered provisions, once for repair."""
     if provider is not None and (provider.name, provider.model) != (provider_name, model):
         raise ValueError(f"provider is {provider.name}/{provider.model}, expected {provider_name}/{model}")
     req = prepare_request(source, provider_name, model, settings)
-    entry = None if force else cache.get(req.key)
-    cache_hit = entry is not None
+    entry, cache_hit = _fetch(req, cache, provider, force, settings)
     if entry is None:
-        if provider is None:
-            raise CacheMiss(f"no cached response for {source.meta.doc_id} with these inputs (key {req.key[:12]})")
-        result = provider.generate(system_instruction=req.system_instruction, prompt=req.prompt,
-                                   response_json_schema=req.response_json_schema, settings=settings)
-        entry = {"key": req.key, "key_fields": req.key_fields, "created_at": _now(),
-                 "response_text": result.text, "provider_metadata": result.metadata}
-        cache.put(req.key, entry)
+        raise CacheMiss(f"no cached response for {source.meta.doc_id} with these inputs (key {req.key[:12]})")
 
+    view = source.view
     run = ExtractionRun(
         run_at=_now(), source=source.meta, provider=provider_name, model=model,
         prompt_version=EXTRACTION_PROMPT_VERSION, prompt_sha256=req.key_fields["prompt_sha256"],
@@ -147,77 +179,178 @@ def extract_document(source: SourceDocument, *, provider_name: str, model: str,
         as_of=as_of.isoformat(), cache_key=req.key, cache_hit=cache_hit,
         cache_entry=_display_path(cache.path(req.key)), provider_metadata=entry.get("provider_metadata") or {},
         raw_response_text=entry["response_text"],
-        source_view={"marker": PAGE_BREAK_MARKER, "view_sha256": req.key_fields["view_sha256"],
-                     "artifacts_removed": len(source.view.artifacts),
+        source_view={"marker": PAGE_BREAK_MARKER, "segment_label": SEGMENT_LABEL,
+                     "view_sha256": req.key_fields["view_sha256"],
+                     "segments": [{"id": s.id, "raw_start": s.raw_start, "raw_end": s.raw_end} for s in view.segments],
+                     "artifacts_removed": len(view.artifacts),
                      "artifacts": [{"raw_start": a.raw_start, "raw_end": a.raw_end, "text": a.text}
-                                   for a in source.view.artifacts]},
+                                   for a in view.artifacts]},
     )
-    _evaluate_response(run, source, as_of, _official_validator(Path(schema_path)))
+    validator = _official_validator(Path(schema_path))
+    payload = _parse(run.raw_response_text, _TOP_LEVEL_KEYS, run.errors, run.warnings)
+    if payload is not None:
+        _record_inventory(run, payload.get("provisions"))
+        scope = _verify_global_scope(run, payload.get("global_scope"), source)
+        run.candidates = [evaluate_candidate(i, raw, source, as_of, validator, scope)
+                          for i, raw in enumerate(payload["rules"])]
+        _dedupe(run.candidates)
+        primary = closure(run.provision_inventory, run.candidates)
+        run.coverage["after_primary"] = {"uncovered": primary["uncovered"], "unaccepted": primary["unaccepted"]}
+        if primary["uncovered"]:
+            requested = [{"ref": p["ref"], "summary": p["summary"], "category": p["category"]}
+                         for p in primary["provisions"] if not p["candidates"]]
+            if repair:
+                run.repair = _repair_pass(run, source, req.key, scope, requested, provider_name=provider_name,
+                                          model=model, cache=cache, provider=provider, force=force,
+                                          settings=settings, as_of=as_of, validator=validator)
+            else:
+                run.repair = RepairPass(reason="repair disabled for this run", requested=requested)
+    _finalize(run, source)
     return run
 
 
-def verify_evidence(span: str, source: SourceDocument) -> CitationCheck:
-    """Exact citation policy against the RAW source. A failure is only diagnosed, never repaired."""
-    check = verify_span(span, source.body)
-    if check.status == "failed":
-        if PAGE_BREAK_MARKER in span:
-            check.reason = "quote includes a page-break marker; quotes must stay within one segment"
-        elif " ".join(span.split()) and " ".join(span.split()) in " ".join(source.view.without_markers().split()):
-            check.reason = "quote joins text across a removed page artifact; quotes must stay within one segment"
-    return check
-
-
-def _evaluate_response(run: ExtractionRun, source: SourceDocument, as_of: date, validator) -> None:
+def _parse(text: str, allowed: set[str], errors: list[str], warnings: list[str]) -> dict[str, Any] | None:
     try:
-        payload = json.loads(run.raw_response_text)
+        payload = json.loads(text)
     except json.JSONDecodeError as exc:
-        run.errors.append(f"response is not valid JSON: {exc}")
-        return
+        errors.append(f"response is not valid JSON: {exc}")
+        return None
     if not isinstance(payload, dict) or not isinstance(payload.get("rules"), list):
-        run.errors.append("response must be a JSON object with a 'rules' list")
-        return
-    if set(payload) - _TOP_LEVEL_KEYS:
-        run.warnings.append(f"ignored unexpected top-level keys: {sorted(set(payload) - _TOP_LEVEL_KEYS)}")
-    _record_inventory(run, payload.get("provisions"))
-    scope = _verify_global_scope(run, payload.get("global_scope"), source)
+        errors.append("response must be a JSON object with a 'rules' list")
+        return None
+    if set(payload) - allowed:
+        warnings.append(f"ignored unexpected top-level keys: {sorted(set(payload) - allowed)}")
+    return payload
 
-    run.candidates = [evaluate_candidate(i, raw, source, as_of, validator, scope)
-                      for i, raw in enumerate(payload["rules"])]
+
+def _repair_pass(run: ExtractionRun, source: SourceDocument, primary_key: str, scope: list[dict[str, Any]],
+                 requested: list[dict[str, Any]], *, provider_name: str, model: str, cache: ResponseCache,
+                 provider: StructuredLLMProvider | None, force: bool, settings: dict[str, Any], as_of: date,
+                 validator) -> RepairPass:
+    """The single targeted repair request. Its candidates are evaluated exactly like primary ones;
+    the only extra check can only reject: a candidate must cite a requested provision."""
+    req = prepare_repair_request(source, provider_name, model, settings, primary_key, scope, requested)
+    rp = RepairPass(reason=f"{len(requested)} in-scope provision ref(s) had no candidate after the primary pass",
+                    requested=requested, cache_key=req.key, prompt_sha256=req.key_fields["prompt_sha256"],
+                    cache_entry=_display_path(cache.path(req.key)))
+    try:
+        entry, rp.cache_hit = _fetch(req, cache, provider, force, settings)
+    except ProviderError as exc:
+        rp.invoked = True
+        rp.errors.append(f"repair request failed: {exc}")
+        return rp
+    if entry is None:
+        rp.errors.append("repair needed, but there is no cached repair response and no live provider")
+        return rp
+    rp.invoked = True
+    rp.provider_metadata = entry.get("provider_metadata") or {}
+    rp.raw_response_text = entry["response_text"]
+    payload = _parse(rp.raw_response_text, _REPAIR_KEYS, rp.errors, run.warnings)
+    if payload is None:
+        return rp
+    for raw in payload["rules"]:
+        c = evaluate_candidate(len(run.candidates), raw, source, as_of, validator, scope)
+        c.origin = "repair"
+        cite = candidate_citation(c)
+        if cite is None or not any(ref_matches(r["ref"], cite) for r in requested):
+            c.accepted = False
+            c.rejection_reasons.append("repair: candidate does not cite a requested uncovered provision")
+        run.candidates.append(c)
+        rp.candidate_indices.append(c.index)
+    _dedupe(run.candidates)
+    rp.accepted_count = sum(run.candidates[i].accepted for i in rp.candidate_indices)
+    rp.rejected_count = len(rp.candidate_indices) - rp.accepted_count
+    return rp
+
+
+def _dedupe(candidates: list[CandidateResult]) -> None:
+    """Reject later accepted candidates whose team_rule_id repeats an earlier accepted one (idempotent)."""
     seen: dict[str, int] = {}
-    for c in run.candidates:
-        if c.accepted:
-            rid = c.rule["team_rule_id"]
-            if rid in seen:
-                c.accepted = False
-                c.rejection_reasons.append(f"duplicate: same team_rule_id {rid} as candidate {seen[rid]}")
-            else:
-                seen[rid] = c.index
+    for c in candidates:
+        if not c.accepted:
+            continue
+        rid = c.rule["team_rule_id"]
+        if rid in seen:
+            c.accepted = False
+            c.rejection_reasons.append(f"duplicate: same team_rule_id {rid} as candidate {seen[rid]}")
+        else:
+            seen[rid] = c.index
+
+
+def _finalize(run: ExtractionRun, source: SourceDocument) -> None:
+    _dedupe(run.candidates)
     run.candidate_count = len(run.candidates)
     run.rules = [c.rule for c in run.candidates if c.accepted]
     run.accepted_count = len(run.rules)
     for c in run.candidates:
         if not c.accepted:
             run.warnings.append(f"candidate {c.index} rejected: {'; '.join(c.rejection_reasons)}")
-    # Recall check: any extracted record counts, including ones rejected later (e.g. for status).
-    extracted = [c.rule["citation"] for c in run.candidates if c.rule]
-    if uncovered := uncovered_provisions(run.provision_inventory, extracted):
-        run.warnings.append(f"review: provisions marked in scope but cited by no extracted record: {uncovered}")
+
+    final = closure(run.provision_inventory, run.candidates)
+    if run.repair is not None and run.repair.invoked:
+        run.coverage["after_repair"] = {"uncovered": final["uncovered"], "unaccepted": final["unaccepted"]}
+    in_scope = [p for p in run.provision_inventory if p["scope"] == "in_scope"]
+    run.coverage.update({
+        "inventory_items": len(run.provision_inventory), "in_scope_items": len(in_scope),
+        "in_scope_refs": len(final["provisions"]),
+        "uncertain": [p["ref"] for p in run.provision_inventory if p["scope"] == "uncertain"],
+        "final": {"uncovered": final["uncovered"], "unaccepted": final["unaccepted"]},
+        "link_mismatches": final["link_mismatches"], "provisions": final["provisions"],
+        "unrecorded_subdivisions": unrecorded_subdivisions(run.provision_inventory, run.candidates, source.body)})
+    if run.coverage["uncertain"]:
+        run.warnings.append(f"review: provisions with uncertain scope: {run.coverage['uncertain']}")
+    if final["link_mismatches"]:
+        run.warnings.append(f"review: inventory rule links that do not match the rule's citation: "
+                            f"{len(final['link_mismatches'])}")
+
+    reasons = []
+    if run.errors:
+        reasons.append("the response could not be processed")
+    elif not run.coverage.get("inventory_valid", False):
+        reasons.append("no complete, well-formed provision inventory; coverage cannot be established")
+    elif not run.provision_inventory and run.candidates:
+        reasons.append("the inventory lists no provisions although rules were produced")
+    if final["uncovered"]:
+        reasons.append(f"in-scope provisions with no candidate record: {final['uncovered']}")
+    if final["unaccepted"]:
+        reasons.append(f"in-scope provisions whose candidate records were all rejected: {final['unaccepted']}")
+    if gaps := run.coverage["unrecorded_subdivisions"]:
+        listed = "; ".join(f"{g['ref']}: " + ", ".join(f"({x})" for x in g["unrecorded"]) for g in gaps)
+        reasons.append(f"in-scope provisions covered only in part; source subdivisions with no accepted record: {listed}")
+    if run.repair is not None:
+        reasons += [f"repair pass: {e}" for e in run.repair.errors]
+    run.review_reasons = reasons
+    run.document_status = "review_required" if reasons else "complete"
 
 
 def _record_inventory(run: ExtractionRun, inventory: Any) -> None:
-    """The model's provision inventory is audit-only: a malformed one is a warning, never an error."""
-    if inventory is None:
-        run.warnings.append("review: response has no provision inventory")
+    """Validate the inventory item by item. Malformed items are dropped and make coverage
+    unprovable (document review_required); they never reject a rule."""
+    run.coverage["inventory_valid"] = False
+    if not isinstance(inventory, list):
+        run.warnings.append("review: response has no provision inventory" if inventory is None
+                            else "review: provision inventory is malformed; ignored")
         return
-    try:
-        run.provision_inventory = [n.model_dump() for n in _INVENTORY.validate_python(inventory)]
-    except ValidationError:
-        run.warnings.append("review: provision inventory is malformed; ignored")
+    bad = 0
+    for item in inventory:
+        try:
+            note = ProvisionNote.model_validate(item)
+        except ValidationError:
+            bad += 1
+            continue
+        if (note.scope == "in_scope") != (note.category is not None):
+            run.warnings.append(f"review: inventory {note.ref!r} is {note.scope} with category {note.category!r}")
+        run.provision_inventory.append(note.model_dump())
+    if bad:
+        run.warnings.append(f"review: provision inventory is malformed ({bad} of {len(inventory)} items); "
+                            "malformed items ignored")
+    run.coverage["inventory_valid"] = bad == 0
 
 
 def _verify_global_scope(run: ExtractionRun, items: Any, source: SourceDocument) -> list[dict[str, Any]]:
-    """Document-level scope conditions. Only those whose verbatim evidence is found in the
-    raw source are propagated; every entry is kept in the audit with its check."""
+    """Document-level scope conditions. Only those whose verbatim evidence (one part, or two
+    parts across one page artifact) is verified in the raw source are propagated; every
+    entry is kept in the audit with its check."""
     if items is None:
         run.warnings.append("review: response has no global_scope list")
         return []
@@ -233,13 +366,15 @@ def _verify_global_scope(run: ExtractionRun, items: Any, source: SourceDocument)
             run.warnings.append(f"global_scope id {cond.id!r} is duplicated; later entry not propagated")
             continue
         seen.add(cond.id)
-        check = verify_evidence(cond.evidence, source)
+        check, notes = verify_quote_parts(cond.evidence_parts, source.body, source.view)
         ok = check.status != "failed"
         run.global_scope.append({**cond.model_dump(), "evidence_check": check.model_dump(), "propagated": ok})
+        run.warnings += [f"global_scope {cond.id}: {n}" for n in notes]
         if ok:
-            verified.append(cond.model_dump())
+            verified.append({**cond.model_dump(exclude={"evidence_parts"}), "evidence": check.source_span})
         else:
-            run.warnings.append(f"global_scope {cond.id} evidence not found in source; not propagated")
+            run.warnings.append(f"global_scope {cond.id} evidence not found in source ({check.reason}); "
+                                "not propagated")
     return verified
 
 
@@ -254,7 +389,7 @@ def _propagate_scope(rule: ExtractedRule, scope: list[dict[str, Any]], source: S
         if co.scope_id not in known:
             res.warnings.append(f"review: carve-out names unknown or unverified scope id {co.scope_id!r}; ignored")
             continue
-        check = verify_evidence(co.evidence, source)
+        check = verify_text(co.evidence, source.body, source.view)
         if check.status == "failed":
             res.warnings.append(f"review: carve-out from {co.scope_id} lacks verified evidence; condition still applied")
         else:
@@ -291,26 +426,35 @@ def evaluate_candidate(index: int, raw: Any, source: SourceDocument, as_of: date
     except ValidationError as exc:
         res.pydantic_errors = _pydantic_errors(exc)
         res.rejection_reasons.append("pydantic: candidate does not match the extraction model")
-        if isinstance(semantic.get("quoted_span"), str):  # diagnostic only
-            res.citation = verify_evidence(semantic["quoted_span"], source)
+        try:  # diagnostic only
+            res.citation, _ = verify_quote_parts(_QUOTE_PARTS.validate_python(semantic.get("quote_parts")),
+                                                 source.body, source.view)
+        except ValidationError:
+            pass
         return res
 
-    # Citation integrity: every quote must be found in the raw source.
-    res.citation = verify_evidence(rule.quoted_span, source)
+    # Citation integrity: the quote parts must be verbatim raw text (one span, or two
+    # parts reconstructed into one raw span across exactly one page artifact).
+    res.citation, notes = verify_quote_parts(rule.quote_parts, source.body, source.view)
+    res.warnings += notes
     if res.citation.status == "failed":
-        res.rejection_reasons.append(f"citation: quoted_span not found in source text ({res.citation.reason})")
+        res.rejection_reasons.append(f"citation: quote not found in source text ({res.citation.reason})")
+    elif res.citation.reconstructed:
+        res.warnings.append("quote crosses one page artifact: the published span is the exact raw text, "
+                            "including the recorded page artifact")
     elif res.citation.status == "normalized_match":
         res.warnings.append("quoted_span matched only after safe normalization; exact source text used in the record")
-    evidence_ok = False
-    if rule.effective_date_evidence is not None:
-        res.effective_date_evidence = verify_evidence(rule.effective_date_evidence, source)
-        evidence_ok = res.effective_date_evidence.status != "failed"
-        if not evidence_ok:
-            res.rejection_reasons.append("citation: effective_date_evidence not found in source text")
-    if rule.effective_date is not None and not evidence_ok:
-        res.rejection_reasons.append("effective_date: not supported by verified verbatim evidence")
 
-    status, res.status_derivation = derive_status(rule.enactment_status, rule.effective_date, evidence_ok, as_of)
+    # Effective date: verified evidence, then deterministic consequences of its classification.
+    if rule.effective_date_evidence is not None:
+        res.effective_date_evidence = verify_text(rule.effective_date_evidence, source.body, source.view)
+    temporal = resolve_effective_date(rule, res.effective_date_evidence, source.body, as_of)
+    res.temporal = temporal.audit
+    res.rejection_reasons += temporal.rejections
+    res.warnings += temporal.warnings
+
+    status, res.status_derivation = derive_status(rule.enactment_status, temporal.effective_date,
+                                                  temporal.has_date_evidence, as_of)
     if status is None:
         res.rejection_reasons.append(f"status: {res.status_derivation}")
 
@@ -318,7 +462,7 @@ def evaluate_candidate(index: int, raw: Any, source: SourceDocument, as_of: date
     # A verified annotation dated after as_of means the extracted (latest) wording
     # may not apply yet: reject conservatively rather than publish it as in force.
     if rule.version_evidence is not None:
-        res.version_evidence = verify_evidence(rule.version_evidence, source)
+        res.version_evidence = verify_text(rule.version_evidence, source.body, source.view)
         if res.version_evidence.status == "failed":
             res.rejection_reasons.append("citation: version_evidence not found in source text")
         elif later := [d for d in calendar_dates(res.version_evidence.source_span) if d > as_of]:
@@ -331,19 +475,27 @@ def evaluate_candidate(index: int, raw: Any, source: SourceDocument, as_of: date
     # they are preserved (with verified evidence) so applicability can later be `unknown`.
     operative = []
     for oc in rule.operative_conditions:
-        check = verify_evidence(oc.evidence, source)
+        check = verify_text(oc.evidence, source.body, source.view)
         res.operative_conditions.append({"statement": oc.statement, "evidence_check": check.model_dump()})
         if check.status == "failed":
             res.rejection_reasons.append("citation: operative condition evidence not found in source text")
         else:
             operative.append(oc)
+    for oc in temporal.operative:  # effective-date evidence classified as an operative condition
+        res.operative_conditions.append({"statement": oc.statement, "from": "effective_date_evidence",
+                                         "evidence_check": res.effective_date_evidence.model_dump()})
+        operative.append(oc)
     if operative:
         res.warnings.append("review: applicability depends on an unresolved operative condition")
 
     propagated = _propagate_scope(rule, list(scope), source, res)
-    res.rule = build_record(rule, source.meta, res.citation, status, propagated, operative)
+    res.rule = build_record(rule, source.meta, res.citation, status, temporal.effective_date, propagated, operative)
+    if res.citation.status != "failed" and res.rule["quoted_span"] not in source.body:
+        res.rejection_reasons.append("citation: published quoted_span is not a contiguous raw substring")  # invariant
+    legal_text = " ".join(p["model_text"] for p in res.citation.parts) if res.citation.reconstructed \
+        else res.rule["quoted_span"]  # figure checks ignore page-header text inside a reconstructed span
     for field, text in (("requirement", rule.requirement), ("key_value", rule.key_value)):
-        for figure in unsupported_figures(text or "", res.rule["quoted_span"]):
+        for figure in unsupported_figures(text or "", legal_text):
             res.warnings.append(f"review: {field} states '{figure}', which its quoted_span does not contain")
     try:
         RuleRecord.model_validate(res.rule)

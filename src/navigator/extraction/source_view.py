@@ -22,6 +22,10 @@ three times, bill-history rows) and numbers that do not count upwards (dates,
 regulation numbers) are left untouched. Removed text is recorded verbatim with
 its raw offsets.
 
+The text between artifacts is split into numbered segments, each introduced by
+a [[SEGMENT n]] line, so quotes can name the segment they come from (quotes.py).
+Segments and artifacts tile the raw text exactly.
+
 The raw source is never modified: citations are still verified against it,
 exactly as before. The view only changes what the model reads.
 """
@@ -33,6 +37,8 @@ from collections import Counter, defaultdict
 from dataclasses import dataclass
 
 PAGE_BREAK_MARKER = "[[PAGE BREAK]]"
+SEGMENT_LABEL = "[[SEGMENT {}]]"
+MARKER_PATTERN = re.compile(r"\[\[(?:PAGE BREAK|SEGMENT \d+)\]\]")
 MIN_REPEATS = 3
 MIN_BLOCK_LINES = 2
 MIN_GAP_LINES = 8
@@ -47,9 +53,14 @@ class Artifact:
 
 @dataclass(frozen=True)
 class Segment:
+    id: int          # 1-based, as labelled in the view
     view_start: int
     raw_start: int
     length: int
+
+    @property
+    def raw_end(self) -> int:
+        return self.raw_start + self.length
 
 
 @dataclass(frozen=True)
@@ -59,11 +70,21 @@ class SourceView:
     segments: tuple[Segment, ...]
 
     def to_raw(self, view_offset: int) -> int | None:
-        """Raw offset for a view offset, or None if it falls inside a marker."""
+        """Raw offset for a view offset, or None if it falls inside a marker or label."""
         for s in self.segments:
             if s.view_start <= view_offset < s.view_start + s.length:
                 return s.raw_start + (view_offset - s.view_start)
         return None
+
+    def segment(self, seg_id: int) -> Segment | None:
+        return self.segments[seg_id - 1] if 1 <= seg_id <= len(self.segments) else None
+
+    def segment_containing(self, raw_start: int, raw_end: int) -> Segment | None:
+        return next((s for s in self.segments if s.raw_start <= raw_start and raw_end <= s.raw_end), None)
+
+    def artifacts_between(self, raw_start: int, raw_end: int) -> list[Artifact]:
+        """Artifacts overlapping the raw range [raw_start, raw_end)."""
+        return [a for a in self.artifacts if a.raw_start < raw_end and raw_start < a.raw_end]
 
     def without_markers(self) -> str:
         """Segments joined with the markers dropped (diagnostics only, never for acceptance)."""
@@ -149,7 +170,10 @@ def build_view(raw: str) -> SourceView:
     def keep(raw_start: int, raw_end: int) -> None:
         nonlocal view_len
         if raw_end > raw_start:
-            segments.append(Segment(view_len, raw_start, raw_end - raw_start))
+            label = SEGMENT_LABEL.format(len(segments) + 1) + "\n"
+            parts.append(label)
+            view_len += len(label)
+            segments.append(Segment(len(segments) + 1, view_len, raw_start, raw_end - raw_start))
             parts.append(raw[raw_start:raw_end])
             view_len += raw_end - raw_start
 

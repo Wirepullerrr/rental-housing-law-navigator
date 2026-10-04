@@ -10,7 +10,7 @@ import sys
 
 import pytest
 
-from conftest import NETWORK_ATTEMPTS, FakeProvider, NetworkBlocked, make_candidate
+from conftest import NETWORK_ATTEMPTS, FakeProvider, NetworkBlocked, make_candidate, provision
 from navigator import starter_pack as sp
 from navigator.extraction.cache import ResponseCache
 from navigator.extraction.config import DEFAULT_GEMINI_MODEL, PROVIDER_GEMINI
@@ -61,15 +61,19 @@ def test_doc_id_is_required(capsys):
 
 def test_offline_rerun_from_cache_writes_artifact(paths, d052, capsys):
     args, tmp = paths
-    provider = FakeProvider({"rules": [make_candidate()]}, model=DEFAULT_GEMINI_MODEL)
+    response = {"provisions": [provision("§ 15B(1)(b)", rule_indices=[0])], "global_scope": [],
+                "rules": [make_candidate()]}
+    provider = FakeProvider(response, model=DEFAULT_GEMINI_MODEL)
     provider.name = PROVIDER_GEMINI  # same cache identity the CLI computes
     extract_document(d052, provider_name=PROVIDER_GEMINI, model=DEFAULT_GEMINI_MODEL, provider=provider,
                      cache=ResponseCache(tmp / "cache"))
     assert cli.main(["--doc-id", "D052", *args]) == 0
     artifact = json.loads((tmp / "out" / "artifact.json").read_text(encoding="utf-8"))
     assert artifact["cache_hit"] is True and artifact["accepted_count"] == 1
-    assert artifact["generation_settings"]["thinking_level"] == "low"
-    assert "HIT" in capsys.readouterr().out
+    assert (artifact["document_status"], artifact["repair"]) == ("complete", None)
+    assert artifact["generation_settings"]["thinking_level"] == "medium"
+    out = capsys.readouterr().out
+    assert "HIT" in out and "COMPLETE" in out and "repair     : not needed" in out
 
 
 # ------------------------------------------------------------ network isolation

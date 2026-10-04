@@ -3,9 +3,10 @@
 Trust boundary:
   from the repository  team_rule_id (ids.py), jurisdiction, level, source_doc_id,
                        source_url, overrides ([] at single-document extraction)
-  derived in Python    status, from the model's enactment_status and
-                       effective_date and the query date; document-level scope
-                       conditions propagated to each rule they govern
+  derived in Python    status, from the model's enactment_status and the
+                       effective_date admitted by temporal.py and the query
+                       date; document-level scope conditions propagated to
+                       each rule they govern; quoted_span = verified raw text
   from the model       the semantic fields (category, title, requirement, ...)
   never used           model confidence: dropped, published as null
 """
@@ -98,17 +99,19 @@ def derive_status(enactment_status: str, effective_date: str | None, has_date_ev
 
 
 def build_record(rule: ExtractedRule, meta: SourceMeta, citation: CitationCheck, status: Status | None,
-                 propagated: list[dict[str, Any]] = (),
+                 effective_date: str | None, propagated: list[dict[str, Any]] = (),
                  operative: list[OperativeCondition] = ()) -> dict[str, Any]:
     """Assemble a record in official-schema shape.
 
-    For a normalized_match, quoted_span is the exact source text located by the
-    match (citation.source_span), so the published span is a true substring of
-    the source. The model's original span stays in the audit record.
-    `propagated` are verified document-level scope conditions governing this rule;
-    `operative` are verified operative conditions (status is not changed by them).
+    quoted_span is always the exact raw source text located by the citation check
+    (citation.source_span): for a normalized match, and for a cross-page quote
+    reconstructed from two parts (which then contains the recorded page artifact).
+    The model's own quote parts stay in the audit record. `effective_date` is the
+    value decided by temporal.py, not the model's. `propagated` are verified
+    document-level scope conditions governing this rule; `operative` are verified
+    operative conditions (status is not changed by them).
     """
-    span = citation.source_span if citation.status != "failed" and citation.source_span else rule.quoted_span
+    span = citation.source_span if citation.status != "failed" and citation.source_span else citation.model_span
     return {
         "team_rule_id": make_team_rule_id(source_doc_id=meta.doc_id, category=rule.category,
                                           citation=rule.citation, quoted_span=span),
@@ -124,7 +127,7 @@ def build_record(rule: ExtractedRule, meta: SourceMeta, citation: CitationCheck,
         "exemptions": compose_scope(rule.exemptions, list(propagated), "exemption"),
         "overrides": [],
         "interaction": rule.interaction,
-        "effective_date": rule.effective_date,
+        "effective_date": effective_date,
         "citation": rule.citation,
         "source_doc_id": meta.doc_id,
         "source_url": meta.url,

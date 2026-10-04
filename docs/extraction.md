@@ -4,55 +4,49 @@
 
 ```
 supplied corpus text (manifest-verified; raw text never modified)
-  -> canonical view (source_view.py): page furniture replaced by [[PAGE BREAK]] markers
+  -> canonical view (source_view.py): page furniture replaced by [[PAGE BREAK]], segments numbered [[SEGMENT n]]
   -> versioned prompt (prompt.py)
   -> content-addressed cache, or a live provider call (gemini.py, behind provider.py)
-  -> provision inventory (audit only); global_scope conditions (evidence verified)
+  -> provision inventory; global_scope conditions (evidence verified, quote parts allowed)
   -> per candidate:
        Pydantic ExtractedRule            the model's semantic fields only
-       citation check (RAW text)         quoted_span and every evidence field must be in the raw source
-       status derivation                 deterministic, from enactment_status + effective_date + as_of
+       quote parts (quotes.py, RAW text) one verbatim part, or two across exactly one page artifact,
+                                         reconstructed into one exact raw span; every evidence field verified
+       effective-date evidence           classified; consequences enforced in temporal.py
+       status derivation                 deterministic, from enactment_status + admitted effective_date + as_of
        scope propagation                 verified document-level conditions applied by citation, never similarity
        trusted metadata + team_rule_id   from the repository, not from the model
        Pydantic RuleRecord               the internal mirror of the official schema
        official JSON Schema              schema/rule_record.schema.json
        review checks (review.py)         warnings only
-  -> ExtractionRun audit artifact (outputs/m2/<doc_id>_extraction.json)
+  -> coverage closure (coverage.py): in-scope inventory provisions with no candidate
+  -> at most ONE targeted repair request for those provisions; same evaluation for its candidates
+  -> ExtractionRun audit artifact, document_status complete | review_required
 ```
 
-A candidate is **accepted only if every stage passes**. Failures are recorded per stage (`pydantic`, `citation`, `effective_date`, `status`, `official schema`, `duplicate`) and are never retried or repaired. Review checks add warnings and never change acceptance.
+A candidate is **accepted only if every stage passes**. Failures are recorded per stage (`pydantic`, `citation`, `temporal`, `effective_date`, `status`, `official schema`, `duplicate`, `repair`) and rejected candidates are never retried or repaired. Review checks add warnings and never change acceptance.
 
-## Prompt v3 contract
+## Prompt v4 contract
 
-The prompt (`prompt.py`, `EXTRACTION_PROMPT_VERSION = "v3"`) works in three generated steps, in this order:
+The primary prompt (`prompt.py`, `EXTRACTION_PROMPT_VERSION = "v4"`) works in three generated steps, in this order:
 
-1. **`provisions`:** an inventory of every operative provision with its official category or `null` (audit only).
-2. **`global_scope`:** every exemption or coverage condition that governs a whole document, division or section. Each entry has an id, kind, statement, citation, `governs` (a provision ref, or `null` for the whole document) and verbatim `evidence`.
-3. **`rules`:** one record per distinct obligation, prohibition, entitlement, remedy, procedural requirement or monetary limit in scope.
+1. **`provisions`:** an inventory of every substantive provision. Each item has `ref`, a neutral `summary`, a `scope` decision (`in_scope`, `out_of_scope` or `uncertain`), a `category` if in scope, a `reason` if not, and `rule_indices` (the positions in `rules` of the records produced from it).
+2. **`global_scope`:** every exemption or coverage condition that governs a whole document, division or section, with `governs` (a provision ref, or `null` for the whole document) and verbatim `evidence_parts`.
+3. **`rules`:** one record per distinct obligation, prohibition, entitlement, remedy, procedural requirement or monetary limit in scope. The record's `citation` names the inventory provision it comes from. Field order puts `citation` and `quote_parts` before the claims they support.
 
 Contract details:
 
-- A rule's own `coverage_conditions` and `exemptions` hold only conditions specific to that rule. Global conditions are attached by code, not repeated by the model. A rule escapes a global condition only through a `scope_carve_outs` entry with verbatim evidence.
-- **Quotes:** each `quoted_span` must be the shortest verbatim passage that fully supports the record. It must not include or cross a `[[PAGE BREAK]]` marker; if the supporting text runs across one, the model quotes within one segment or splits the record.
-- **Claims and quotes:** every assertion in `requirement` and `key_value` must be supported by the record's own `quoted_span`.
-- **Time has three separate parts:**
-  - **`enactment_status`:** enacted, pending or failed.
-  - **`effective_date`** plus **`effective_date_evidence`:** when the law or obligation takes effect. Formulas relative to enactment are kept as evidence only and are never computed.
-  - **`operative_conditions`:** non-calendar triggers, such as an agency establishing a portal. These are neither an effective date nor an exemption.
-- **Temporal versions:** amendment history goes in `version_note` with verbatim `version_evidence`. It never goes in `conflict_note`, and an amendment date is not the obligation's `effective_date`.
-- **`interaction`:** only a stated relationship with another legal regime (preemption, override, cumulative application, crediting against other law, savings clauses). A mere citation of another statute or section does not count.
-- **`conflict_note`:** only genuine conflicts or ambiguities that apply at the same time.
-- **No model confidence.** The model is not asked for one. If it supplies one anyway, it is dropped with a warning and the published `confidence` is `null`. Acceptance relies on deterministic signals only.
+- A rule's own `coverage_conditions` and `exemptions` hold only conditions specific to that rule. Global conditions are attached by code. A rule escapes one only through a `scope_carve_outs` entry with verbatim evidence.
+- **Quote parts:** see below. Every other evidence field is one verbatim passage within one segment.
+- **Claims and quotes:** every assertion in `requirement` and `key_value` must be supported by the record's own quote.
+- **Time:** six things are kept apart: operative text, a calendar effective date in operative text, a relative date formula, a legislative or codification history note, amendment or version history, and an operative (non-calendar) condition. See *Effective-date evidence* below.
+- **`interaction`:** only a stated relationship with another legal regime. A mere citation of another statute or section does not count.
+- **`conflict_note`:** only genuine conflicts or ambiguities that apply at the same time, never version history.
+- **No model confidence.** It is not requested. If supplied anyway it is dropped with a warning, and the published `confidence` is `null`.
 
-Deterministic consequences:
+The thinking level (`--thinking-level`, default `medium`) is part of the cache key and the audit record. On D073 in M2.6, `low` used no thinking tokens and omitted core provisions.
 
-- `conflict_flag` comes from `conflict_note` alone.
-- All evidence must be found in the raw source; fabricated evidence rejects the candidate. The exception is a scope condition or carve-out without verified evidence: it is simply not propagated, or not honoured, and a warning is recorded.
-- A verified version annotation dated after `--as-of` rejects the record conservatively.
-- An operative condition never changes `status` or `effective_date`. It is published in `coverage_conditions` as "Operative condition (unresolved ...)" and flagged for review, so the rule engine can later return `unknown`.
-- The thinking level (`--thinking-level`, default `low`) is a generation setting, so it is part of the cache key and the audit record.
-
-## Page artifacts (`source_view.py`)
+## Page artifacts and quote parts (`source_view.py`, `quotes.py`)
 
 PDF-derived text carries running headers and footers in the middle of legal text. They are detected **structurally**, with no legal or document-specific knowledge. A block is treated as page furniture only when all of the following hold:
 
@@ -61,17 +55,71 @@ PDF-derived text carries running headers and footers in the middle of legal text
 - Across those occurrences the text is identical except for numbers that strictly increase (a page counter).
 - The occurrences are at least 8 non-blank lines apart.
 
-Matching blocks are replaced by `[[PAGE BREAK]]` in the text the model reads. Each removed block is recorded verbatim with its raw offsets in the audit (`source_view.artifacts`), and every view segment maps back to identical raw text.
+In the text the model reads, each block is replaced by `[[PAGE BREAK]]`, and each stretch of text between blocks is labelled `[[SEGMENT n]]`. Segments and artifacts tile the raw text exactly. Each removed block is recorded verbatim with its raw offsets (`source_view.artifacts`, `source_view.segments`). Over the 54 local documents this removes only page furniture (in D001, D014, D043 and D073), and consecutive segments are always separated by exactly one artifact.
 
-Citation verification is unchanged and still runs against the raw text. A quote that includes the marker, or that joins text across a removed artifact, is rejected with a diagnosis; it is never accepted.
+The model supports each record with **`quote_parts`**, each a `segment_id` plus verbatim `quoted_text`:
 
-Over the 54 local documents, this removes only page furniture, in D001, D014, D043 and D073. Bill-history rows, regulation numbers, repeated titles and phone listings are left untouched.
+- **One part (normal case):** the unchanged single-span policy. The text must be found verbatim (exact, or after safe NFC/whitespace normalization) in the raw source. It is looked up first in the named segment; a match elsewhere is accepted with a review warning. A match that overlaps removed page furniture is rejected.
+- **Two parts (cross-page case):** all of the following must hold, otherwise the candidate is rejected:
+  - the parts come from adjacent segments n and n+1, in source order;
+  - exactly one detected page artifact lies between them;
+  - part 1 runs flush to the end of segment n and part 2 starts flush at the beginning of segment n+1, so nothing but whitespace and that one artifact lies between them. No legal text may be skipped.
+- **More than two parts:** always rejected.
+
+For two parts, Python publishes `quoted_span = raw[start of part 1 : end of part 2]`. This is an exact, contiguous substring of the untouched source. It therefore **contains the running header**, exactly as the source does. The header is identified separately in the audit (`citation.crossed_artifacts`, `citation.parts` with raw offsets), so a UI can later display a legal-only rendering. Figure review checks run on the legal text of the parts, not on the header. As a final invariant, every published `quoted_span` must be a substring of the raw source.
+
+A single quote that copies the marker, or that joins text across a removed artifact, is rejected with a diagnosis. Nothing is stitched, fuzzily matched or repaired.
+
+## Coverage closure and the targeted repair pass (`coverage.py`)
+
+After the primary pass, every `in_scope` inventory ref (ranges such as "(a)-(c)" expanded) is mapped to candidates deterministically:
+
+- **Citation match:** the candidate's citation names that ref or a subdivision of it.
+- **Declared link:** the inventory lists the candidate's index, *and* the candidate's citation names an ancestor of the ref (e.g. a "(b)(1)" record declared for "(b)(1)(A)"). A declared index whose candidate cites something unrelated is not counted; it is reported as a link mismatch.
+
+A ref is **uncovered** when no candidate maps to it at all, and **all-rejected** when candidates map to it but none was accepted.
+
+Only uncovered refs trigger the **repair pass**: one extra request per document, at most. The request carries:
+
+- the same source view;
+- the verified global-scope metadata;
+- only the uncovered refs, with their summaries and categories;
+- the same categories, quote-part contract and temporal rules.
+
+Its response schema is `{"rules": [...]}` only. Every repair candidate goes through exactly the same evaluation as a primary candidate, with no special acceptance path. The one extra check can only reject: a repair candidate must cite one of the requested refs. Duplicates of earlier accepted records are rejected by `team_rule_id`.
+
+There is no second repair pass, and rejected candidates never trigger one.
+
+**Completeness guard.** The closure can only be as fine as the inventory. On D073 v4, the model inventoried § 98.0709 as one item, so records for (b) to (f) "covered" it, while (a), (g) and (h) had no record. Therefore, when an in-scope ref is covered by accepted records only through some of its subdivisions, `coverage.unrecorded_subdivisions` scans the source near those records. It looks for line-initial labels of the same style ("(a)", "(A)" or "(1)") that continue the cited sequence, stopping at section headings. Any such subdivision without an accepted record makes the document `review_required`. The guard only flags. It does not trigger the repair pass, whose trigger stays "in-scope refs with no candidate", and it never creates, rejects or edits records. Offline, over earlier artifacts, it flags only genuine gaps in the D073 runs, and nothing on D052 or D069.
+
+The repair response is cached under its own key, which includes the primary cache key and the rendered repair prompt. An offline rerun therefore replays both requests. If repair is needed but cannot run (no cached response and no live provider, or a provider error), this is recorded, never silently skipped.
+
+`document_status` is `complete` only when the inventory is present and well-formed and every in-scope ref has at least one accepted record. Otherwise it is `review_required`, and `review_reasons` explains why. The audit records the primary and repair provenance separately: cache keys, cache hits, token usage, raw responses, candidate origins, and uncovered refs before and after repair.
+
+## Effective-date evidence (`temporal.py`)
+
+The model quotes `effective_date_evidence` and classifies it with `effective_date_evidence_kind`. The evidence must verify verbatim in the raw source; fabricated evidence rejects the candidate. Python then enforces the consequences:
+
+| kind | effective_date | status |
+|---|---|---|
+| `explicit_operative_date` | kept only if the date is written in the evidence itself; otherwise rejected | from the date and `--as-of` |
+| `relative_date_formula` | always null (a computed date is discarded with a warning) | undetermined, so the record is rejected (D069 behaviour, unchanged) |
+| `history_note` | always null (a date from the note is discarded with a warning); the enclosing note is kept verbatim as history evidence | unaffected; a note dated after `--as-of` rejects conservatively |
+| `operative_condition` | always null | unaffected; published as an unresolved operative condition |
+| null, with evidence present | rejected | n/a |
+
+Two structural guards apply, both general and neither statute-specific:
+
+- Evidence the model calls `explicit_operative_date` whose enclosing bracketed note has history structure (an amendment verb such as *added, amended, retitled* followed by "by" an instrument) is treated as `history_note`. A note's word "effective" therefore never becomes the start date of an obligation that may be older.
+- Evidence called `history_note` must have that structure or a calendar date. Otherwise it is unresolved and the record is rejected, so a relative formula cannot be laundered into "in force".
+
+Calendar dates are read as written ("August 1, 2025", "2025-08-01" or US numeric "8-1-2025"); nothing is computed.
 
 ## Review checks (`review.py`, warnings only)
 
 - **Figures missing from the quote:** monetary amounts, percentages, durations and calendar dates in `requirement` or `key_value` that are absent from the `quoted_span`. Number words, "per cent" and the drafting style "ten (10) days" are normalized first.
-- **Uncited provisions:** in-scope inventory provisions that no extracted record cites. Refs and citations are compared as token sequences, with ranges such as "(a)-(c)" expanded.
-- **Unresolved operative conditions.**
+- **Coverage:** handled by coverage closure (above), which also lists inventory links that disagree with the rule's citation, and provisions marked `uncertain`.
+- **Unresolved operative conditions**, **history-note dates not used**, and **quote parts found outside the named segment**.
 
 Not implemented, because it would be brittle or statute-specific: entailment checks for non-numeric claims, keyword detection of version history in `conflict_note`, and validating citation formats. Known false positives: fractions written in words, and ordinals ("first month" vs "1 month").
 
@@ -83,14 +131,16 @@ Not implemented, because it would be brittle or statute-specific: entailment che
 | `level` | derived from the manifest jurisdiction (`MA` gives state; `Boston, MA` gives city) |
 | `team_rule_id` | `ids.py`, deterministic |
 | `status` | `normalize.derive_status`, deterministic and relative to `--as-of` (default 2026-10-01) |
+| `effective_date` | the model's date only if `temporal.py` admits it (explicit operative date written in verified evidence) |
+| `quoted_span` | the verified raw source text located from the model's quote parts (`quotes.py`) |
 | `overrides` | always `[]` at single-document extraction; precedence belongs to the rule engine |
-| `category`, `title`, `requirement`, `key_value`, `coverage_conditions`, `exemptions`, `interaction`, `citation`, `quoted_span`, `conflict_note` | model |
-| `version_note`, `version_evidence`, `operative_conditions`, `scope_carve_outs`, `global_scope`, provision inventory | model; verified and kept in the audit artifact. Global scope and operative conditions are also composed into the published `exemptions` and `coverage_conditions` text |
+| `category`, `title`, `requirement`, `key_value`, `coverage_conditions`, `exemptions`, `interaction`, `citation`, `conflict_note` | model |
+| `version_note`, `version_evidence`, `effective_date_evidence(_kind)`, `operative_conditions`, `scope_carve_outs`, `global_scope`, provision inventory | model; verified and kept in the audit artifact. Global scope and operative conditions are also composed into the published `exemptions` and `coverage_conditions` text |
 | `confidence` | never used; published as `null` |
 
 If the model returns any trusted field, the value is dropped and a warning is recorded. `conflict_flag` is true exactly when the model reports a `conflict_note`.
 
-**Status.** The model never sees the query date. It reports `enactment_status` (enacted, pending or failed) and an `effective_date` only when the document states an explicit calendar date. A non-null `effective_date` requires verbatim `effective_date_evidence` that is found in the source. Relative wording (e.g. "the first day of the twelfth month next following the date of enactment") is never converted into a date by the model. Such rules are rejected with a `status:` reason until a deterministic resolver exists.
+**Status.** The model never sees the query date. It reports `enactment_status` (enacted, pending or failed). Python admits an `effective_date` only under the rules in *Effective-date evidence*. Relative wording (e.g. "the first day of the twelfth month next following the date of enactment") is never converted into a date. Such rules are rejected with a `status:` reason until a deterministic resolver exists.
 
 ## Two schemas
 
@@ -109,7 +159,7 @@ If the model returns any trusted field, the value is dropped and a warning is re
 
 ## Cache (`cache.py`)
 
-The key is a SHA-256 over canonical JSON of: source content hash, doc id, provider, model, prompt version, a hash of the rendered prompt, a hash of the generation schema, and the generation settings. It contains no timestamps. Entries store the raw response text, so every rerun re-parses and re-validates with the current deterministic code. `--force` bypasses the cache. An entry whose stored key fields do not hash to its file name is rejected.
+The key is a SHA-256 over canonical JSON of: the pass (`primary` or `repair`), source content hash, view hash, doc id, provider, model, prompt version, a hash of the rendered prompt, a hash of the generation schema, and the generation settings. A repair key also includes the primary key. It contains no timestamps. Entries store the raw response text, so every rerun re-parses and re-validates with the current deterministic code. `--force` bypasses the cache. An entry whose stored key fields do not hash to its file name is rejected.
 
 ## Provider, retries, network safety
 
@@ -122,4 +172,6 @@ The key is a SHA-256 over canonical JSON of: source content hash, doc id, provid
 ## Known limitations (to revisit in M3)
 
 - Each document is extracted on its own. Cross-document conflicts, `overrides`, and jurisdiction scope for documents that cover several jurisdictions are not handled yet.
-- `citation` text is model-produced and is not yet checked against the source (only `quoted_span` and the date evidence are).
+- `citation` text is model-produced and is not yet checked against the source (only the quote and the evidence fields are).
+- Cross-page quotes may span exactly one page artifact. A passage spanning two page breaks must be split into separate records.
+- Records are not deduplicated semantically against parent-level records. Repair can only add records for provisions that had no candidate at all, which limits overlap but does not prove its absence.

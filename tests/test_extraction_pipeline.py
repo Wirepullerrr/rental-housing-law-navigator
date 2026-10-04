@@ -110,12 +110,24 @@ def test_fabricated_effective_date_evidence_is_rejected(run_fake):
     assert run.accepted_count == 0
 
 
-@pytest.mark.parametrize("as_of, expected", [(date(2026, 10, 1), "in_force"), (date(2025, 7, 31), "not_yet_effective")])
-def test_status_is_derived_from_verified_date_and_as_of(run_fake, cache, as_of, expected):
-    candidate = make_candidate(effective_date="2025-08-01", effective_date_evidence=D052_DATE_EVIDENCE)
-    run, _ = run_fake({"rules": [candidate]}, as_of=as_of)
-    assert run.candidates[0].accepted
-    assert run.rules[0]["status"] == expected
+@pytest.mark.parametrize("kind", ["explicit_operative_date", "history_note"])
+def test_d052_amendment_annotation_never_becomes_the_effective_date(run_fake, kind):
+    """The 2025 amendment note is history: whatever the model calls it, effective_date stays null."""
+    candidate = make_candidate(effective_date="2025-08-01", effective_date_evidence=D052_DATE_EVIDENCE,
+                               effective_date_evidence_kind=kind)
+    run, _ = run_fake({"rules": [candidate]})
+    c, rule = run.candidates[0], run.rules[0]
+    assert c.accepted and (rule["effective_date"], rule["status"]) == (None, "in_force")
+    assert c.temporal["applied_kind"] == "history_note"
+    assert c.temporal["history_evidence"].startswith("[ Introductory paragraph")   # enclosing note, verbatim
+    assert any("history" in w for w in c.warnings)
+
+
+def test_d052_amendment_annotation_after_as_of_rejects_conservatively(run_fake):
+    candidate = make_candidate(effective_date_evidence=D052_DATE_EVIDENCE, effective_date_evidence_kind="history_note")
+    run, _ = run_fake({"rules": [candidate]}, as_of=date(2025, 7, 31))
+    assert not run.candidates[0].accepted
+    assert any("history note is dated 2025-08-01" in r for r in run.candidates[0].rejection_reasons)
 
 
 def test_pending_and_failed_pass_through(run_fake):

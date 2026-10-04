@@ -8,10 +8,11 @@ Implemented (general, not statute-specific):
   stated in a claim (`requirement`, `key_value`) but absent from the quoted_span.
   English number words and "per cent" are normalized first, so "30 days" matches
   "thirty days" and "5%" matches "five per cent".
-- uncovered_provisions: provisions the model marked in scope in its own inventory
-  that no extracted record cites (ranges such as "(a)-(c)" expanded).
-- ref_matches: the structural provision matcher also used to propagate
-  document-level scope conditions (token sequences, never similarity).
+- ref_matches / ref_is_ancestor / expand_ref: the structural provision matchers
+  used to propagate document-level scope conditions and for coverage closure
+  (coverage.py). Token sequences with ranges such as "(a)-(c)" expanded; never
+  similarity.
+- calendar_dates: explicit dates ('August 1, 2025', '2025-08-01', '8-1-2025').
 
 Deliberately NOT implemented (brittle or statute-specific):
 - entailment of non-numeric claims (e.g. "key and lock costs" outside the quote);
@@ -39,7 +40,8 @@ _MONTHS = ["january", "february", "march", "april", "may", "june", "july", "augu
            "october", "november", "december"]
 _FIGURE = re.compile(
     r"(?P<money>\$\s?\d[\d,]*(?:\.\d+)?)"
-    r"|(?P<date>\b(?:" + "|".join(_MONTHS) + r")\s+\d{1,2},\s*\d{4}|\b\d{4}-\d{2}-\d{2}\b)"
+    r"|(?P<date>\b(?:" + "|".join(_MONTHS) + r")\s+\d{1,2},\s*\d{4}|\b\d{4}-\d{2}-\d{2}\b"
+    r"|\b\d{1,2}[-/]\d{1,2}[-/]\d{4}\b)"
     r"|(?P<pct>\b\d+(?:\.\d+)?)\s?%"
     r"|(?P<num>\b\d+(?:\.\d+)?)[\s-]*(?:business\s+|calendar\s+)?(?P<unit>hour|day|week|month|year)s?\b",
     re.IGNORECASE)
@@ -72,10 +74,13 @@ def _number(value: str) -> str:
 
 
 def _to_iso(text: str) -> str | None:
-    if re.fullmatch(r"\d{4}-\d{2}-\d{2}", text):
-        return text
-    month, day, year = re.match(r"(\w+)\s+(\d{1,2}),\s*(\d{4})", text).groups()
+    """'August 1, 2025', '2025-08-01' or US numeric '8-1-2025' / '8/1/2025' -> '2025-08-01'."""
     try:
+        if re.fullmatch(r"\d{4}-\d{2}-\d{2}", text):
+            return date.fromisoformat(text).isoformat()
+        if m := re.fullmatch(r"(\d{1,2})[-/](\d{1,2})[-/](\d{4})", text):
+            return date(int(m.group(3)), int(m.group(1)), int(m.group(2))).isoformat()
+        month, day, year = re.match(r"(\w+)\s+(\d{1,2}),\s*(\d{4})", text).groups()
         return date(int(year), _MONTHS.index(month.lower()) + 1, int(day)).isoformat()
     except ValueError:
         return None
@@ -150,7 +155,15 @@ def ref_matches(ref: str, citation: str) -> bool:
     return any(_contains_run(h, n) for n in needles for h in hays)
 
 
-def uncovered_provisions(inventory: list[dict[str, Any]], citations: list[str]) -> list[str]:
-    """In-scope inventory refs (ranges expanded) that no citation names."""
-    return [ref for p in inventory if p.get("category") for ref in _expand_ranges(p["ref"].split(",")[0])
-            if not any(ref_matches(ref, c) for c in citations)]
+def ref_is_ancestor(citation: str, ref: str) -> bool:
+    """Does `citation` name a strict ancestor of provision `ref`? True when the citation
+    ENDS with a proper prefix of the ref's tokens: '... § 98.0704(b)(1)' is an ancestor
+    of '§ 98.0704(b)(1)(A)'; '§ 98.0704(b)(2)' is not."""
+    needles = [_ref_tokens(r) for r in _expand_ranges(ref.split(",")[0])]
+    hays = [_ref_tokens(c) for c in _expand_ranges(citation)]
+    return any(h[-k:] == n[:k] for n in needles for h in hays for k in range(1, len(n)) if len(h) >= k)
+
+
+def expand_ref(ref: str) -> list[str]:
+    """Inventory ref -> the provision refs it names (descriptive suffix dropped, ranges expanded)."""
+    return _expand_ranges(ref.split(",")[0].strip())

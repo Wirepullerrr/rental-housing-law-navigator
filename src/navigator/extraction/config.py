@@ -17,9 +17,10 @@ DEFAULT_GEMINI_MODEL = "gemini-3.5-flash"
 # Temperature is left at the model default (Google advises against lowering it
 # for Gemini 3 models); reproducibility comes from the content-addressed cache,
 # with a fixed seed as a best-effort extra. Thinking tokens are billed as output,
-# so the thinking level is explicit (override with --thinking-level).
+# so the thinking level is explicit (override with --thinking-level). Default
+# "medium": on D073 (M2.6), "low" used no thinking and dropped core provisions.
 THINKING_LEVELS = ("minimal", "low", "medium", "high")
-GENERATION_SETTINGS: dict = {"temperature": None, "seed": 20261001, "thinking_level": "low"}
+GENERATION_SETTINGS: dict = {"temperature": None, "seed": 20261001, "thinking_level": "medium"}
 
 # README section 1: default query date. Used only to derive `status`.
 DEFAULT_AS_OF = date(2026, 10, 1)

@@ -57,3 +57,20 @@ def verify_span(span: str, source: str) -> CitationCheck:
     return CitationCheck(status="normalized_match", normalization=NORMALIZATION, start=s, end=e,
                          occurrences=norm_source.count(norm_span), model_span=span,
                          source_span=nfc_source[s:e])
+
+
+def match_anchored(span: str, text: str, *, at_end: bool) -> tuple[str, int, int] | None:
+    """Locate `span` flush against the end (at_end=True) or the start of `text`: only
+    whitespace may lie between the match and that edge. Same policy as verify_span
+    (exact, else NFC + whitespace runs). Returns (status, start, end) offsets into `text`."""
+    if not span or not span.strip():
+        return None
+    pos = text.rfind(span) if at_end else text.find(span)
+    if pos >= 0 and not (text[pos + len(span):] if at_end else text[:pos]).strip():
+        return "exact_match", pos, pos + len(span)
+    norm_text, index = _collapse_with_map(unicodedata.normalize("NFC", text))
+    norm_span, _ = _collapse_with_map(unicodedata.normalize("NFC", span).strip())
+    pos = norm_text.rfind(norm_span) if at_end else norm_text.find(norm_span)
+    if pos < 0 or (norm_text[pos + len(norm_span):] if at_end else norm_text[:pos]).strip():
+        return None
+    return "normalized_match", index[pos], index[pos + len(norm_span) - 1] + 1
