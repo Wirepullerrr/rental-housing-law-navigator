@@ -1,10 +1,10 @@
 # LeaseLens — submission video scripts
 
-Three scripts, each under 60 seconds at a normal speaking pace (about 130–150 words). Stage directions are in *italics*.
+Three scripts, each under 60 seconds at a normal speaking pace (about 125–130 words each). Stage directions are in *italics*.
 
 ---
 
-## A. Team introduction (~45 s)
+## A. Team introduction (~50 s)
 
 *Face to camera, or the LeaseLens title screen.*
 
@@ -18,32 +18,31 @@ It's a prototype, not legal advice.
 
 ---
 
-## B. Product demo (~55 s)
+## B. Product demo (~50 s)
 
-*Screen recording of `uv run streamlit run app.py`. Demo address: **A0500, 8811 Burnet Ave, Los Angeles**.*
+*Screen recording of the live app, https://leaselens-maverick.streamlit.app/. Don't change anything: it opens on **A0134, 101 Norfolk St**, as of 2026-10-01.*
 
-1. *Show the header and the disclaimer.* This is LeaseLens. The not-legal-advice notice stays on screen the whole time.
-2. *Sidebar: Demo examples → A0500. Leave the date at 2026-10-01.* I'll pick an apartment building in LA. It was built in 1954, it has 36 units, and I'm checking it as of October 1st, 2026.
-3. *Point to B. Jurisdiction.* The Census Geocoder puts it in the City of Los Angeles. So it gets California rules and LA rules.
-4. *Point to the metrics and the green check.* 43 rules apply and 44 are unknown. The green check means this matches the file we submitted.
-5. *Scroll to Security deposits and open a green "Applies" rule.* Each rule shows what it requires, why it applies, the citation, and the exact quote from the source.
-6. *Scroll up to Rent increase limits and open the orange "Gross rental rate increase cap".* California's rent cap comes back unknown here. It depends on whether a local ordinance like LA's rent stabilization covers the building, and whether it's subsidized. The data doesn't say. So, unknown. That's an honest answer, not a failure.
-7. *Click the "Change scenarios" tab and scroll to T1 and T3.* These are the five official change tests. In T1, California's pricing-algorithm law kicks in for 248 addresses. In T3, New Jersey's FAIR Act takes effect in July 2027, and Hoboken and Jersey City get flagged for a possible conflict.
+1. *Show the title and the not-legal-advice notice.* This is LeaseLens, opened on 101 Norfolk Street.
+2. *Point to "Dorchester" under the address, then the blue note in the Jurisdiction card.* The mailing address says Dorchester, but Census puts it in Boston. That's why we don't trust the postal city.
+3. *Point to the map.* And here it is on the map.
+4. *Point to the status cards.* 34 rules apply, four of them Boston's own. Three are pending bills, so they're not shown as law.
+5. *Under Just-cause eviction, open "Fourteen Days' Notice to Quit for Nonpayment".* Each rule shows what it requires, the citation, and the source quote.
+6. *Point to the Unknown card, which shows 0.* No unknowns here. But when the data's missing a fact, like whether the owner lives there, LeaseLens says Unknown instead of guessing.
+7. *Click the "Change scenarios" tab. T2 is already selected; point to the map.* T2 is Hoboken versus Jersey City. Each city's ban stays inside its own border: blue for Hoboken, green for Jersey City.
+8. *Back to the camera, or stay on the map.* None of this is generated live. The LLM read the law ahead of time; plain Python decides what applies.
 
 ---
 
-## C. Technical walkthrough (~58 s)
+## C. Technical walkthrough (~50 s)
 
-*Screen: the README Mermaid diagram, then the code folders.*
+*Screen: the README diagram, then the code folders.*
 
-The main idea: the LLM only does extraction. Everything after that is plain Python.
+The LLM reads the law; Python decides what applies.
 
-First, extraction. Gemini reads each of the 54 legal texts we were given and returns structured rules that fit a strict schema. Responses are cached, so reruns give the same result.
+First, extraction. Gemini reads the 54 public legal texts from the challenge and returns structured rules in a strict schema. Responses are cached, so reruns match.
 
-Second, checking. Every quote has to match the source text, and effective dates have to come from text I can point to, even relative ones like "the first day of the twelfth month after enactment." 228 rules passed. Anything I couldn't verify was held or rejected, not published.
+Next, every quote has to match the source, and effective dates have to come from text I can point to. 228 rules passed. Anything unverified was held back.
 
-Third, jurisdiction. The Census Geocoder places all 500 addresses by legal city, not postal city. 473 resolved, 20 got flagged for review, and 7 stayed unresolved instead of being guessed.
+Then jurisdiction. The Census Geocoder places all 500 addresses by legal city, not postal city: 473 resolved, 20 flagged for review, and 7 left unresolved instead of guessed.
 
-Fourth, the rule engine. It checks each rule's conditions as true, false, or unknown.
-
-Last, the same engine runs T1 through T5. 380 tests pass, all offline.
+Last, the rule engine checks each condition as true, false, or unknown. The same rules drive the T1 to T5 change scenarios, with no LLM after extraction, and the test suite runs offline.

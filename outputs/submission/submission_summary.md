@@ -35,7 +35,7 @@ These are byte-identical copies of the final pipeline outputs. `scripts/check_su
   | T4 | MA bills S.2983 and H.5222 | 105 MA, reported as pending | 0 |
   | T5 | MA rent-control ballot question struck | 0 | 0 |
 
-- **Tests:** 380 passing, with network access blocked.
+- **Tests:** 383 passing, with network access blocked.
 
 ## Known limitations
 

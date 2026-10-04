@@ -34,6 +34,8 @@ BADGE = {"applies": ":green-badge[Applies]", "unknown": ":orange-badge[Unknown]"
 SUMMARY_VERB = {"applies": ("applies", "apply"), "unknown": ("can't be decided from the data",) * 2,
                 "pending": ("is pending", "are pending"), "not_yet_effective": ("isn't in force yet", "aren't in force yet"),
                 "superseded": ("is superseded", "are superseded")}          # (singular, plural)
+CITY_COLORS = [[59, 130, 246], [16, 185, 129]]                  # blue, green (scenario maps)
+DEFAULT_SCENARIO = "T2"                                         # tight Hoboken / Jersey City cluster on the map
 CHANGE_LABEL = {"affected": "Affected", "affected + conflict flag": "Affected, with a conflict flag",
                 "not affected": "Not affected"}
 FRIENDLY_REASON = {"jurisdiction_unresolved": "which city the property is in (Census couldn't place it)"}
@@ -48,6 +50,7 @@ BASIS_TEXT = {
 }
 CSS = """
 <style>
+[data-testid="stMainBlockContainer"] {padding-top:2.5rem}
 .ll-addr {font-size:1.5rem;font-weight:700;line-height:1.25;margin-top:.2rem}
 .ll-sub {opacity:.7;margin-bottom:.6rem}
 .ll-card-title {font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.07em;opacity:.6;
@@ -74,6 +77,13 @@ CSS = """
 .ll-step {font-size:1.9rem;font-weight:800;opacity:.3;line-height:1}
 .ll-dot {display:inline-block;width:.75rem;height:.75rem;border-radius:50%;margin:0 .35rem 0 .1rem;
   vertical-align:-.05rem}
+.ll-intro {display:flex;flex-wrap:wrap;gap:.6rem 2rem;align-items:center;border:1px solid rgba(128,128,128,.25);
+  border-radius:10px;padding:.8rem 1rem;margin:.2rem 0 .9rem;background:rgba(128,128,128,.06)}
+.ll-intro .txt {flex:3 1 26rem;font-size:.95rem;line-height:1.5}
+.ll-intro .why {font-size:.85rem;opacity:.7;margin-top:.3rem}
+.ll-intro .steps {flex:1 1 12rem;display:flex;flex-direction:column;gap:.3rem;font-size:.9rem;font-weight:600}
+.ll-intro .steps span {display:inline-flex;align-items:center;justify-content:center;width:1.45rem;height:1.45rem;
+  border-radius:50%;margin-right:.5rem;font-size:.8rem;border:1px solid rgba(128,128,128,.45)}
 </style>
 """
 _MD_SPECIAL = str.maketrans({c: "\\" + c for c in "\\`*_[]<>#|$~"})
@@ -167,9 +177,9 @@ def property_map(address_id: str) -> None:
     import pydeck as pdk
     others = [p for p in pts if p["address_id"] != address_id]
     draw_map([point_layer(others, [140, 140, 140, 150], 5), point_layer(sel, [230, 57, 70, 240], 11, outline=True)],
-             pdk.ViewState(latitude=sel[0]["lat"], longitude=sel[0]["lon"], zoom=13.5),
-             "<b>{address_id}</b><br/>{address}<br/>{jurisdiction}", height=290)
-    st.caption("Red: this property. Grey: other challenge properties nearby.")
+             pdk.ViewState(latitude=sel[0]["lat"], longitude=sel[0]["lon"], zoom=14),
+             "<b>{address_id}</b><br/>{address}<br/>{jurisdiction}", height=260)
+    st.caption("Red: this property. Grey dots: other challenge properties.")
 
 
 def scenario_map(test_id: str) -> None:
@@ -185,11 +195,20 @@ def scenario_map(test_id: str) -> None:
         return
     import pydeck as pdk
     view = pdk.data_utils.compute_view([[p["lon"], p["lat"]] for p in pts], view_proportion=0.95)
-    draw_map([point_layer([p for p in pts if p["conflict_flag"] == "no"], [59, 130, 246, 210], 6),
-              point_layer([p for p in pts if p["conflict_flag"] == "yes"], [234, 88, 12, 235], 7, outline=True)],
+    plain = [p for p in pts if p["conflict_flag"] == "no"]
+    test = next(x for x in b.change_tests if x["test_id"] == test_id)
+    if test["type"] == "boundary":                           # one colour per city, so the boundary is visible
+        cities = [b.change_map[o]["jurisdiction"] for o in test["rule_ids"]]
+        groups = [(c, [p for p in plain if p["jurisdiction"] == esc(c)], CITY_COLORS[i % len(CITY_COLORS)])
+                  for i, c in enumerate(cities)]
+    else:
+        groups = [("Affected", plain, CITY_COLORS[0])]
+    draw_map([point_layer(g, rgb + [210], 6) for _, g, rgb in groups]
+             + [point_layer([p for p in pts if p["conflict_flag"] == "yes"], [234, 88, 12, 235], 7, outline=True)],
              view, "<b>{address_id}</b><br/>{address}<br/>{jurisdiction}<br/>Conflict flag: {conflict_flag}",
              height=360)
-    legend = '<span class="ll-dot" style="background:#3b82f6"></span>Affected'
+    legend = " &nbsp; ".join(f'<span class="ll-dot" style="background:rgb({rgb[0]},{rgb[1]},{rgb[2]})"></span>'
+                             f'{esc(name)}' for name, g, rgb in groups if g)
     if flagged:
         legend += ' &nbsp; <span class="ll-dot" style="background:#ea580c"></span>Affected, with a conflict flag'
     st.markdown(legend, unsafe_allow_html=True)
@@ -202,6 +221,15 @@ b = bundle()
 # ---------------------------------------------------------------- header
 st.title("LeaseLens")
 st.markdown("**Rental Housing Law Navigator** · Auditable rental-law guidance by property, jurisdiction, and date.")
+st.markdown(
+    '<div class="ll-intro"><div class="txt"><b>What LeaseLens does.</b> Pick one of the supplied rental properties '
+    "and an as-of date in the sidebar. LeaseLens resolves the property's legal jurisdiction, checks which state and "
+    "city housing rules may apply, and shows the source behind each answer. If the data is missing "
+    "something important, it says <b>Unknown</b> instead of guessing."
+    "<div class=\"why\">Why it matters: the mailing city isn't always the legal city, and housing rules change with "
+    "place, property facts, and date.</div></div>"
+    '<div class="steps"><div><span>1</span>Pick a property</div><div><span>2</span>See what applies</div>'
+    "<div><span>3</span>Check the source</div></div></div>", unsafe_allow_html=True)
 st.warning(DISCLAIMER, icon="⚠️")
 
 # ---------------------------------------------------------------- sidebar inputs
@@ -307,22 +335,25 @@ with tab_lookup:
             st.markdown("Change scenarios that touch this property: " + ", ".join(touched) + ".")
         if as_of == DEFAULT_AS_OF:
             if matches_submission(b, aid, results):
-                st.success("Same answers as our submitted lookups.json for this property (as of 2026-10-01).",
-                           icon="✅")
+                st.caption(":green[✓ Same answers as our submitted lookups.json for this property "
+                           "(as of 2026-10-01).]")
             else:
                 st.error("These results differ from the submitted lookups.json row.")
     with right:
-        st.info("**What “Unknown” means**\n\nThe supplied property data is missing a fact needed to decide "
-                "whether the rule applies, such as whether the owner lives in the building. LeaseLens says "
-                "Unknown instead of guessing. It's a gap in the data, not an error.")
+        st.info("**What “Unknown” means**\n\nThe property data is missing a fact the rule depends on, such as "
+                "whether the owner lives there. LeaseLens says Unknown instead of guessing.")
 
     # ---- rules
     st.markdown("### Rules for this property")
     if results:
         available = [k for k in STATUS_ORDER if counts[k]]
-        shown = st.pills("Show", available, selection_mode="multi", default=available,
+        # Confirmed results first; the other statuses are one click away.
+        shown = st.pills("Show", available, selection_mode="multi",
+                         default=["applies"] if counts["applies"] else available,
                          format_func=lambda k: f"{RESULT_LABELS[k]} ({counts[k]})") or []
-        st.caption("Click a rule to see why, what's missing, and the quoted source text.")
+        hidden = sum(counts[k] for k in available if k not in shown)
+        st.caption("Click a rule to see why, what's missing, and the quoted source text."
+                   + (f" {hidden} more are hidden: turn on the other statuses above to see them." if hidden else ""))
         for cat, label in CATEGORY_LABELS.items():
             group = [r for r in results if r["rule"]["category"] == cat and r["result"] in shown]
             if not group:
@@ -372,8 +403,8 @@ with tab_changes:
         col.markdown(f'<div class="ll-tile"><div class="t">{tid}</div><div class="s">{esc(t["title"])}</div>'
                      f'<div class="n">{n}</div><div class="h">affected{f" · {c} flagged" if c else ""}</div></div>', unsafe_allow_html=True)
 
-    tid = st.segmented_control("Scenario to explore", list(tests), default=list(tests)[0], required=True,
-                               key="scenario") or list(tests)[0]
+    tid = st.segmented_control("Scenario to explore", list(tests), default=DEFAULT_SCENARIO, required=True,
+                               key="scenario") or DEFAULT_SCENARIO
     t, e = tests[tid], b.changes[tid]
     affected, flagged = e["affected_address_ids"], e["conflict_flag_address_ids"]
     labels = " and ".join(b.change_map[o]["label"] for o in t["rule_ids"])

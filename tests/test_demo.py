@@ -51,10 +51,22 @@ def test_app_runs_offline_for_each_demo_example_and_another_date():
     for aid in DEMO_EXAMPLES:
         at.selectbox[0].set_value(aid).run()
         assert not at.exception
-        assert any("submitted lookups.json" in s.value for s in at.success)
+        assert any("Same answers as our submitted lookups.json" in c.value for c in at.caption)
         assert len(at.get("deck_gl_json_chart")) == 2          # property map + one scenario map
     at.date_input[0].set_value(date(2027, 7, 2)).run()
     assert not at.exception
+
+
+def test_app_opens_on_the_boston_example_with_applies_only_and_t2():
+    from streamlit.testing.v1 import AppTest
+    at = AppTest.from_file(str(REPO_ROOT / "app.py"), default_timeout=120).run()
+    assert at.selectbox[0].value == "A0134" == next(iter(DEMO_EXAMPLES))
+    groups = {g.proto.label: g for g in at.get("button_group")}
+    assert groups["Show"].value == ["applies"]
+    groups["Show"].select("pending").run()                      # other statuses are one click away
+    assert not at.exception
+    assert {g.proto.label: g for g in at.get("button_group")}["Show"].value == ["applies", "pending"]
+    assert groups["Scenario to explore"].value == "T2"
 
 
 def test_map_points_use_m4_coordinates_only(b):

@@ -29,9 +29,10 @@ DEFAULT_AS_OF = date(2026, 10, 1)
 GEO_NOTE = " Jurisdiction flagged for review in M4."      # same suffix as scripts/build_lookups.py
 
 # Predefined demo addresses (chosen for what they show, not for their results; nothing legal is hard-coded).
+# The first one is the app's default.
 DEMO_EXAMPLES = {
-    "A0500": "California: state + City of Los Angeles rules",
     "A0134": "Boston: postal city 'Dorchester', legal city Boston; MA bills pending",
+    "A0500": "California: state + City of Los Angeles rules",
     "A0495": "New Jersey: Jersey City (change tests T2 and T3)",
     "A0322": "Missing facts: San Diego (postal 'San Ysidro'), no year built -> unknown",
 }
