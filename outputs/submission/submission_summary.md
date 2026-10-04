@@ -5,7 +5,7 @@
 | Project | LeaseLens (Rental Housing Law Navigator) |
 | Team | Maverick |
 | GitHub | `<GITHUB_URL>` (origin remote: https://github.com/Wirepullerrr/rental-housing-law-navigator) |
-| Live demo | `<DEMO_URL>` |
+| Live demo | https://leaselens-maverick.streamlit.app/ |
 | Query date | 2026-10-01 |
 
 Hackathon prototype. Not legal advice.

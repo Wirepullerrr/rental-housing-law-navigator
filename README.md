@@ -14,7 +14,7 @@ Rental rules depend on the state, the city, the building and the date. The posta
 
 ## Demo
 
-- Live demo: `<DEMO_URL>` (not deployed yet)
+- Live demo: https://leaselens-maverick.streamlit.app/
 - Run locally: `uv sync`, then `uv run streamlit run app.py`
 
 Pick one of the demo addresses (or any of the 500) and a date, 2026-10-01 by default. The app shows the property facts, the Census-resolved jurisdiction, and each matching rule with its status, the reason for it, and the quoted source text. The **Change scenarios** tab shows the five official change tests, T1–T5.
