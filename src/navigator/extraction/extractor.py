@@ -7,9 +7,12 @@
          (a cross-page quote is reconstructed as one exact raw span) -> effective-date
          evidence classification -> status derivation -> scope propagation + operative
          conditions -> trusted metadata + team_rule_id -> RuleRecord -> official JSON Schema
-      -> coverage closure over the inventory
-      -> at most ONE targeted repair request, only for in-scope provisions with no
-         candidate at all; its candidates go through exactly the same evaluation
+      -> completeness: inventory coverage closure + subdivision guard (coverage.py)
+      -> repair targets = their merged union (repair.py)
+      -> at most ONE repair request for those targets; each target is classified
+         in_scope / out_of_scope / uncertain, and its candidates go through exactly
+         the same evaluation
+      -> completeness rerun; every target resolved or the document review_required
       -> ExtractionRun audit record, document_status complete | review_required
 
 A candidate is accepted only if every stage passes. Rejected candidates are never
@@ -30,13 +33,16 @@ from pydantic import TypeAdapter, ValidationError
 from navigator import starter_pack as sp
 from navigator.extraction.cache import ResponseCache, cache_key, canonical_json, sha256_hex
 from navigator.extraction.config import DEFAULT_AS_OF, GENERATION_SETTINGS
-from navigator.extraction.coverage import candidate_citation, closure, unrecorded_subdivisions
+from navigator.extraction.coverage import candidate_citation, closure, same_ref, unrecorded_subdivisions
 from navigator.extraction.models import (CandidateResult, ExtractedRule, ExtractionRun, ProvisionNote, QuotePart,
                                          RepairPass, RepairResponse, RuleRecord, ScopeCondition, SourceMeta,
                                          generation_json_schema)
 from navigator.extraction.normalize import build_record, derive_status, split_trusted
-from navigator.extraction.prompt import EXTRACTION_PROMPT_VERSION, render_prompt, render_repair_prompt
+from navigator.extraction.prompt import (EXTRACTION_PROMPT_VERSION, REPAIR_PROMPT_VERSION, render_prompt,
+                                        render_repair_prompt)
 from navigator.extraction.provider import ProviderError, StructuredLLMProvider
+from navigator.extraction.repair import (attach_resolutions, build_targets, canonical_order,
+                                        repair_scope_rejection, resolve_targets, target_identity)
 from navigator.extraction.quotes import verify_quote_parts, verify_text
 from navigator.extraction.review import calendar_dates, ref_matches, unsupported_figures
 from navigator.extraction.source_view import PAGE_BREAK_MARKER, SEGMENT_LABEL, SourceView, build_view
@@ -45,7 +51,7 @@ from navigator.validation import make_rule_validator
 
 _QUOTE_PARTS = TypeAdapter(list[QuotePart])
 _TOP_LEVEL_KEYS = {"provisions", "global_scope", "rules"}
-_REPAIR_KEYS = {"rules"}
+_REPAIR_KEYS = {"target_resolutions", "rules"}
 
 
 class SourceNotAvailable(ValueError):
@@ -119,10 +125,13 @@ def prepare_request(source: SourceDocument, provider_name: str, model: str,
 
 def prepare_repair_request(source: SourceDocument, provider_name: str, model: str, settings: dict[str, Any],
                            primary_key: str, scope: list[dict[str, Any]],
-                           provisions: list[dict[str, Any]]) -> PreparedRequest:
-    system, user = render_repair_prompt(source.meta, source.view.text, scope, provisions)
+                           targets: list[dict[str, Any]]) -> PreparedRequest:
+    """The key names the complete, sorted target set explicitly (as well as through the prompt
+    hash): a different target set never reuses a cached repair response."""
+    system, user = render_repair_prompt(source.meta, source.view.text, scope, canonical_order(targets))
     return _prepared(source, provider_name, model, settings, system, user, generation_json_schema(RepairResponse),
-                     **{"pass": "repair", "primary_cache_key": primary_key})
+                     **{"pass": "repair", "primary_cache_key": primary_key,
+                        "repair_prompt_version": REPAIR_PROMPT_VERSION, "repair_targets": target_identity(targets)})
 
 
 @lru_cache(maxsize=None)
@@ -163,7 +172,7 @@ def extract_document(source: SourceDocument, *, provider_name: str, model: str,
                      settings: dict[str, Any] = GENERATION_SETTINGS,
                      schema_path: Path = sp.REPO_ROOT / sp.SCHEMA_PATH, repair: bool = True) -> ExtractionRun:
     """Extract rules from one document. Calls `provider` only on a cache miss (or with force=True):
-    once for the primary pass and, if coverage closure finds uncovered provisions, once for repair."""
+    once for the primary pass and, if the completeness checks find repair targets, ONCE for repair."""
     if provider is not None and (provider.name, provider.model) != (provider_name, model):
         raise ValueError(f"provider is {provider.name}/{provider.model}, expected {provider_name}/{model}")
     req = prepare_request(source, provider_name, model, settings)
@@ -194,19 +203,28 @@ def extract_document(source: SourceDocument, *, provider_name: str, model: str,
         run.candidates = [evaluate_candidate(i, raw, source, as_of, validator, scope)
                           for i, raw in enumerate(payload["rules"])]
         _dedupe(run.candidates)
-        primary = closure(run.provision_inventory, run.candidates)
-        run.coverage["after_primary"] = {"uncovered": primary["uncovered"], "unaccepted": primary["unaccepted"]}
-        if primary["uncovered"]:
-            requested = [{"ref": p["ref"], "summary": p["summary"], "category": p["category"]}
-                         for p in primary["provisions"] if not p["candidates"]]
+        primary, gaps = _completeness(run, source)
+        run.coverage["after_primary"] = _summary(primary, gaps)
+        if targets := build_targets(primary, gaps):   # every deterministic check runs BEFORE repair
             if repair:
-                run.repair = _repair_pass(run, source, req.key, scope, requested, provider_name=provider_name,
+                run.repair = _repair_pass(run, source, req.key, scope, targets, provider_name=provider_name,
                                           model=model, cache=cache, provider=provider, force=force,
                                           settings=settings, as_of=as_of, validator=validator)
             else:
-                run.repair = RepairPass(reason="repair disabled for this run", requested=requested)
+                run.repair = RepairPass(reason="repair disabled for this run", targets=targets)
     _finalize(run, source)
     return run
+
+
+def _completeness(run: ExtractionRun, source: SourceDocument) -> tuple[dict[str, Any], list[dict[str, Any]]]:
+    """Both deterministic completeness checks over the current candidates."""
+    return (closure(run.provision_inventory, run.candidates),
+            unrecorded_subdivisions(run.provision_inventory, run.candidates, source.body))
+
+
+def _summary(result: dict[str, Any], gaps: list[dict[str, Any]]) -> dict[str, Any]:
+    return {"uncovered": result["uncovered"], "unaccepted": result["unaccepted"],
+            "unrecorded_subdivisions": [s["ref"] for g in gaps for s in g["subdivisions"]]}
 
 
 def _parse(text: str, allowed: set[str], errors: list[str], warnings: list[str]) -> dict[str, Any] | None:
@@ -224,15 +242,17 @@ def _parse(text: str, allowed: set[str], errors: list[str], warnings: list[str])
 
 
 def _repair_pass(run: ExtractionRun, source: SourceDocument, primary_key: str, scope: list[dict[str, Any]],
-                 requested: list[dict[str, Any]], *, provider_name: str, model: str, cache: ResponseCache,
+                 targets: list[dict[str, Any]], *, provider_name: str, model: str, cache: ResponseCache,
                  provider: StructuredLLMProvider | None, force: bool, settings: dict[str, Any], as_of: date,
                  validator) -> RepairPass:
-    """The single targeted repair request. Its candidates are evaluated exactly like primary ones;
-    the only extra check can only reject: a candidate must cite a requested provision."""
-    req = prepare_repair_request(source, provider_name, model, settings, primary_key, scope, requested)
-    rp = RepairPass(reason=f"{len(requested)} in-scope provision ref(s) had no candidate after the primary pass",
-                    requested=requested, cache_key=req.key, prompt_sha256=req.key_fields["prompt_sha256"],
-                    cache_entry=_display_path(cache.path(req.key)))
+    """The single repair request of this run. Its candidates are evaluated exactly like primary
+    ones; the only extra check can only reject (repair.repair_scope_rejection)."""
+    req = prepare_repair_request(source, provider_name, model, settings, primary_key, scope, targets)
+    kinds = sorted({s for t in targets for s in t["sources"]})
+    rp = RepairPass(reason=f"{len(targets)} repair target(s) from {', '.join(kinds)}",
+                    prompt_version=REPAIR_PROMPT_VERSION, targets=targets, cache_key=req.key,
+                    prompt_sha256=req.key_fields["prompt_sha256"], cache_entry=_display_path(cache.path(req.key)))
+    targets = rp.targets            # the audit's own copies: resolutions are attached to these
     try:
         entry, rp.cache_hit = _fetch(req, cache, provider, force, settings)
     except ProviderError as exc:
@@ -248,13 +268,15 @@ def _repair_pass(run: ExtractionRun, source: SourceDocument, primary_key: str, s
     payload = _parse(rp.raw_response_text, _REPAIR_KEYS, rp.errors, run.warnings)
     if payload is None:
         return rp
+    if "target_resolutions" not in payload:
+        run.warnings.append("review: repair response has no target_resolutions")
+    run.warnings += attach_resolutions(payload.get("target_resolutions"), targets, source.body, source.view)
     for raw in payload["rules"]:
         c = evaluate_candidate(len(run.candidates), raw, source, as_of, validator, scope)
         c.origin = "repair"
-        cite = candidate_citation(c)
-        if cite is None or not any(ref_matches(r["ref"], cite) for r in requested):
+        if reason := repair_scope_rejection(candidate_citation(c), targets):
             c.accepted = False
-            c.rejection_reasons.append("repair: candidate does not cite a requested uncovered provision")
+            c.rejection_reasons.append(reason)
         run.candidates.append(c)
         rp.candidate_indices.append(c.index)
     _dedupe(run.candidates)
@@ -286,17 +308,27 @@ def _finalize(run: ExtractionRun, source: SourceDocument) -> None:
         if not c.accepted:
             run.warnings.append(f"candidate {c.index} rejected: {'; '.join(c.rejection_reasons)}")
 
-    final = closure(run.provision_inventory, run.candidates)
-    if run.repair is not None and run.repair.invoked:
-        run.coverage["after_repair"] = {"uncovered": final["uncovered"], "unaccepted": final["unaccepted"]}
+    final, gaps = _completeness(run, source)   # both checks rerun after the (single) repair pass
+    rp = run.repair
+    if rp is not None and rp.invoked:
+        run.coverage["after_repair"] = _summary(final, gaps)
+    targets = rp.targets if rp is not None else []
+    if rp is not None:
+        problem = "; ".join(rp.errors) or (None if rp.invoked else rp.reason)
+        run.coverage["repair_targets"] = resolve_targets(targets, run.candidates, rp.invoked, problem)
+    resolved_out = [t["ref"] for t in targets if t["final_resolution"] == "resolved_out_of_scope"]
+
+    def open_gap(ref: str) -> bool:     # not a target (reported there) and not resolved out of scope
+        return not any(same_ref(ref, t["ref"]) for t in targets) and not any(same_ref(ref, r) for r in resolved_out)
+
     in_scope = [p for p in run.provision_inventory if p["scope"] == "in_scope"]
     run.coverage.update({
         "inventory_items": len(run.provision_inventory), "in_scope_items": len(in_scope),
         "in_scope_refs": len(final["provisions"]),
         "uncertain": [p["ref"] for p in run.provision_inventory if p["scope"] == "uncertain"],
-        "final": {"uncovered": final["uncovered"], "unaccepted": final["unaccepted"]},
+        "final": _summary(final, gaps),
         "link_mismatches": final["link_mismatches"], "provisions": final["provisions"],
-        "unrecorded_subdivisions": unrecorded_subdivisions(run.provision_inventory, run.candidates, source.body)})
+        "unrecorded_subdivisions": gaps})
     if run.coverage["uncertain"]:
         run.warnings.append(f"review: provisions with uncertain scope: {run.coverage['uncertain']}")
     if final["link_mismatches"]:
@@ -310,15 +342,17 @@ def _finalize(run: ExtractionRun, source: SourceDocument) -> None:
         reasons.append("no complete, well-formed provision inventory; coverage cannot be established")
     elif not run.provision_inventory and run.candidates:
         reasons.append("the inventory lists no provisions although rules were produced")
-    if final["uncovered"]:
-        reasons.append(f"in-scope provisions with no candidate record: {final['uncovered']}")
-    if final["unaccepted"]:
-        reasons.append(f"in-scope provisions whose candidate records were all rejected: {final['unaccepted']}")
-    if gaps := run.coverage["unrecorded_subdivisions"]:
-        listed = "; ".join(f"{g['ref']}: " + ", ".join(f"({x})" for x in g["unrecorded"]) for g in gaps)
-        reasons.append(f"in-scope provisions covered only in part; source subdivisions with no accepted record: {listed}")
-    if run.repair is not None:
-        reasons += [f"repair pass: {e}" for e in run.repair.errors]
+    if unresolved := [t for t in targets if t["final_resolution"] == "unresolved"]:
+        reasons.append("repair targets still unresolved: "
+                       + "; ".join(f"{t['ref']} ({t['unresolved_reason']})" for t in unresolved))
+    if refs := [r for r in final["uncovered"] if open_gap(r)]:
+        reasons.append(f"in-scope provisions with no candidate record: {refs}")
+    if refs := [r for r in final["unaccepted"] if open_gap(r)]:
+        reasons.append(f"in-scope provisions whose candidate records were all rejected: {refs}")
+    if refs := [s["ref"] for g in gaps for s in g["subdivisions"] if open_gap(s["ref"])]:
+        reasons.append(f"source subdivisions with no accepted record (not repair targets): {refs}")
+    if rp is not None:
+        reasons += [f"repair pass: {e}" for e in rp.errors]
     run.review_reasons = reasons
     run.document_status = "review_required" if reasons else "complete"
 

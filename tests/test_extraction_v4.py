@@ -11,7 +11,8 @@ import pytest
 from conftest import (FakeProvider, make_candidate, page_body, paged, parts, provision, running_header,
                       synthetic_source)
 from navigator.extraction.cache import ResponseCache
-from navigator.extraction.extractor import extract_document, prepare_request
+from navigator.extraction import extractor
+from navigator.extraction.extractor import extract_document, prepare_repair_request, prepare_request
 from navigator.extraction.models import QuotePart
 from navigator.extraction.prompt import REPAIR_SYSTEM_INSTRUCTION, SYSTEM_INSTRUCTION
 from navigator.extraction.provider import ProviderError
@@ -138,7 +139,7 @@ def test_global_exemption_quoted_across_a_page_break_is_verified_and_propagated(
                                                       "basis": "document-wide"}]
 
 
-# ------------------------------------------- coverage closure and targeted repair
+# ------------------------------------------- completeness checks and the single repair pass
 
 D052_RETURN_SPAN = "The lessor shall, within thirty days after the termination of occupancy under a tenancy-at-will"
 RETURN_RULE = make_candidate(citation="M.G.L. c. 186, § 15B(4)", quoted_span=D052_RETURN_SPAN, title="Return",
@@ -148,31 +149,35 @@ PRIMARY = {"provisions": [provision("§ 15B(1)(b)", rule_indices=[0]), provision
            "global_scope": [], "rules": [make_candidate()]}
 
 
-def test_one_targeted_repair_pass_covers_uncovered_provisions(run_fake):
-    off_target = make_candidate(title="Not requested")               # cites § 15B(1)(b)(iii): not requested
-    result, provider = run_fake(PRIMARY, {"rules": [RETURN_RULE, off_target]})
+def resolution(ref, scope="in_scope", reason=None, evidence=()):
+    return {"ref": ref, "scope": scope, "reason": reason, "evidence_parts": parts(*evidence)}
+
+
+def test_inventory_target_is_repaired_through_the_normal_pipeline(run_fake):
+    off_target = make_candidate(title="Not requested")               # cites § 15B(1)(b)(iii): not a target
+    result, provider = run_fake(PRIMARY, {"target_resolutions": [resolution("§ 15B(4)")],
+                                          "rules": [RETURN_RULE, off_target]})
     assert len(provider.calls) == 2
     repair_call = provider.calls[1]
     assert repair_call["system_instruction"] == REPAIR_SYSTEM_INSTRUCTION != SYSTEM_INSTRUCTION
     assert "- § 15B(4):" in repair_call["prompt"] and "- § 15B(1)(b):" not in repair_call["prompt"]
-    assert list(repair_call["response_json_schema"]["properties"]) == ["rules"]
-    rp = result.repair
-    assert (rp.invoked, rp.requested[0]["ref"], rp.candidate_indices, rp.accepted_count, rp.rejected_count) == \
-        (True, "§ 15B(4)", [1, 2], 1, 1)
+    assert list(repair_call["response_json_schema"]["properties"]) == ["target_resolutions", "rules"]
+    [target] = result.repair.targets
+    assert (target["ref"], target["sources"], target["repair_scope"], target["candidate_indices"],
+            target["accepted_indices"], target["final_resolution"]) == \
+        ("§ 15B(4)", ["inventory_uncovered"], "in_scope", [1], [1], "resolved_by_accepted_rule")
     repaired, off = result.candidates[1], result.candidates[2]
     assert repaired.origin == "repair" and repaired.accepted and repaired.citation.status == "exact_match"
-    assert not off.accepted and "repair: candidate does not cite a requested" in off.rejection_reasons[-1]
-    assert result.coverage["after_primary"]["uncovered"] == ["§ 15B(4)"]
-    assert result.coverage["after_repair"] == {"uncovered": [], "unaccepted": []}
+    assert not off.accepted and "does not cite a repair target" in off.rejection_reasons[-1]
     assert result.document_status == "complete" and result.accepted_count == 2
 
 
 def test_there_is_never_a_second_repair_pass(run_fake, d052, cache):
-    result, provider = run_fake(PRIMARY, {"rules": []}, cache=cache)
+    result, provider = run_fake(PRIMARY, {"target_resolutions": [], "rules": []}, cache=cache)
     assert len(provider.calls) == 2 and result.repair.invoked and result.repair.candidate_indices == []
     assert result.coverage["after_repair"]["uncovered"] == ["§ 15B(4)"]
+    assert result.repair.targets[0]["unresolved_reason"] == "omitted by the repair response"
     assert result.document_status == "review_required"
-    assert any("no candidate record: ['§ 15B(4)']" in r for r in result.review_reasons)
     offline = extract_document(d052, provider_name="fake", model="fake-model", cache=cache)   # both cached
     assert offline.cache_hit and offline.repair.cache_hit and offline.rules == result.rules
 
@@ -181,6 +186,7 @@ def test_repair_that_cannot_run_is_reported_not_skipped(run_fake, d052, cache):
     run_fake(PRIMARY, cache=cache, repair=False)                     # only the primary response is cached
     offline = extract_document(d052, provider_name="fake", model="fake-model", cache=cache)
     assert offline.repair is not None and not offline.repair.invoked
+    assert offline.repair.targets[0]["final_resolution"] == "unresolved"
     assert offline.document_status == "review_required"
     assert any("no cached repair response" in r for r in offline.review_reasons)
 
@@ -199,6 +205,8 @@ def test_repair_provider_failure_keeps_primary_results(run_fake):
     assert result.document_status == "review_required"
 
 
+# A section recorded only through (b) and (c), whose source also has (a) and (d); § 10 is a
+# separate section (its "(e)" is outside § 9). The inventory lists § 9(d) and § 10 in scope.
 REMEDIES_DOC = ("§9 Remedies\n"
                 "(a) A tenant may file an action against a landlord in a court of competent jurisdiction.\n"
                 "(b) A tenant may seek injunctive relief and money damages in a civil action.\n"
@@ -207,25 +215,108 @@ REMEDIES_DOC = ("§9 Remedies\n"
                 "(c) A tenant may raise any violation as an affirmative defense to an eviction.\n"
                 "(d) The City may enforce this section, including through civil penalties.\n"
                 "§10 Notices\n"
+                "A landlord shall deliver every notice under this Division in writing to each tenant.\n"
                 "(e) An unrelated label in the next section about notice delivery rules.\n")
+REMEDY_A = "(a) A tenant may file an action against a landlord in a court of competent jurisdiction."
 REMEDY_B = "A tenant may seek injunctive relief and money damages in a civil action."
 REMEDY_C = "A tenant may raise any violation as an affirmative defense to an eviction."
+REMEDY_D = "The City may enforce this section, including through civil penalties."
+NOTICE = "A landlord shall deliver every notice under this Division in writing to each tenant."
+REMEDIES_PRIMARY = {"provisions": [provision("§ 9", category="just_cause_eviction", rule_indices=[0, 1]),
+                                   provision("§ 9(d)", category="just_cause_eviction"),
+                                   provision("§ 10", category="just_cause_eviction")],
+                    "global_scope": [],
+                    "rules": [rule(parts(REMEDY_B), citation="§ 9(b)"), rule(parts(REMEDY_C), citation="§ 9(c)")]}
 
 
-@pytest.mark.parametrize("parent_cited, expected", [(False, [{"ref": "§ 9", "cited": ["b", "c"],
-                                                              "unrecorded": ["a", "d"]}]), (True, [])])
-def test_parent_covered_only_in_part_is_never_reported_complete(tmp_path, parent_cited, expected):
-    rules = [rule(parts(REMEDY_B), citation="§ 9(b)"), rule(parts(REMEDY_C), citation="§ 9(c)")]
-    if parent_cited:
-        rules.append(rule(parts("(a) A tenant may file an action against a landlord"), citation="§ 9"))
-    response = {"provisions": [provision("§ 9", category="just_cause_eviction", rule_indices=[0, 1])],
-                "global_scope": [], "rules": rules}
-    result, provider = run(synthetic_source(REMEDIES_DOC), response, tmp_path=tmp_path)
-    assert len(provider.calls) == 1 and result.repair is None          # a guard, not a repair trigger
-    assert result.coverage["final"]["uncovered"] == [] and result.coverage["unrecorded_subdivisions"] == expected
-    assert result.document_status == ("complete" if parent_cited else "review_required")
-    if not parent_cited:
-        assert any("§ 9: (a), (d)" in r for r in result.review_reasons)
+def remedies(tmp_path, repair_response, **kwargs):
+    return run(synthetic_source(REMEDIES_DOC), REMEDIES_PRIMARY, repair_response, tmp_path=tmp_path, **kwargs)
+
+
+def test_repair_targets_are_the_deduplicated_union_of_both_checks(tmp_path):
+    result, provider = remedies(tmp_path, {"target_resolutions": [], "rules": []})
+    assert len(provider.calls) == 2                                   # one primary + ONE repair request
+    targets = {tg["ref"]: tg["sources"] for tg in result.repair.targets}
+    assert targets == {"§ 9(a)": ["subdivision_guard"], "§ 9(d)": ["inventory_uncovered", "subdivision_guard"],
+                       "§ 10": ["inventory_uncovered"]}
+    prompt = provider.calls[1]["prompt"]                             # the guard ran BEFORE the repair request
+    assert prompt.count("- § 9(d):") == 1 and "- § 9(a):" in prompt and "- § 10:" in prompt
+    assert "§ 9(e)" not in prompt                                     # the next section's labels are not siblings
+    assert all(tg["pre_repair_state"] and tg["final_resolution"] == "unresolved" for tg in result.repair.targets)
+
+
+def test_structural_target_may_resolve_out_of_scope_and_never_becomes_a_record(tmp_path):
+    forced = rule(parts(REMEDY_A), citation="§ 9(a)")                 # contradicts its own classification
+    response = {"target_resolutions": [
+        resolution("§ 9(a)", "out_of_scope", "A procedural right of action, not a covered requirement.", [REMEDY_A]),
+        resolution("§ 9(d)"), resolution("§ 10")],
+        "rules": [forced, rule(parts(REMEDY_D), citation="§ 9(d)"), rule(parts(NOTICE), citation="§ 10")]}
+    result, provider = remedies(tmp_path, response)
+    assert len(provider.calls) == 2
+    status = {tg["ref"]: tg["final_resolution"] for tg in result.repair.targets}
+    assert status == {"§ 9(a)": "resolved_out_of_scope", "§ 9(d)": "resolved_by_accepted_rule",
+                      "§ 10": "resolved_by_accepted_rule"}
+    assert "classified as out_of_scope" in result.candidates[2].rejection_reasons[-1]
+    assert "§ 9(a)" not in [r["citation"] for r in result.rules]
+    # Both checks were rerun after repair: (d) is now recorded; (a) is still unrecorded but resolved.
+    assert result.coverage["after_primary"]["unrecorded_subdivisions"] == ["§ 9(a)", "§ 9(d)"]
+    assert result.coverage["after_repair"]["unrecorded_subdivisions"] == ["§ 9(a)"]
+    assert result.coverage["after_repair"]["uncovered"] == []
+    assert result.coverage["repair_targets"] == {"before_repair": 3, "resolved_by_accepted_rule": 2,
+                                                 "resolved_out_of_scope": 1, "still_unresolved": 0}
+    assert result.document_status == "complete"
+
+
+@pytest.mark.parametrize("reason, evidence, problem", [
+    ("Not a covered requirement.", [REMEDY_C], "not text of the target subdivision"),
+    ("Not a covered requirement.", ["A tenant may never sue a landlord in any court."], "not found in source"),
+    (None, [REMEDY_A], "without a reason"),
+    ("Not a covered requirement.", [], "without a reason and verified evidence"),
+])
+def test_out_of_scope_needs_a_reason_and_evidence_from_the_target(tmp_path, reason, evidence, problem):
+    response = {"target_resolutions": [resolution("§ 9(a)", "out_of_scope", reason, evidence)], "rules": []}
+    result, _ = remedies(tmp_path, response)
+    target = next(tg for tg in result.repair.targets if tg["ref"] == "§ 9(a)")
+    assert target["final_resolution"] == "unresolved" and problem in target["unresolved_reason"]
+    assert result.document_status == "review_required"
+
+
+def test_uncertain_omitted_and_rejected_targets_stay_unresolved(tmp_path):
+    fabricated = rule(parts("A landlord shall deliver notices by carrier pigeon."), citation="§ 10")
+    response = {"target_resolutions": [resolution("§ 9(a)", "uncertain", "Unclear whether this is a requirement."),
+                                       resolution("§ 10")],
+                "rules": [fabricated]}                                # § 9(d) omitted entirely
+    result, provider = remedies(tmp_path, response)
+    assert len(provider.calls) == 2                                   # unresolved targets never trigger a 2nd repair
+    reasons = {tg["ref"]: tg["unresolved_reason"] for tg in result.repair.targets}
+    assert reasons == {"§ 9(a)": "classified uncertain by the repair pass",
+                       "§ 9(d)": "omitted by the repair response",
+                       "§ 10": "classified in_scope, but every candidate was rejected"}
+    assert result.document_status == "review_required"
+    assert any(r.startswith("repair targets still unresolved") for r in result.review_reasons)
+
+
+def test_repair_cache_identity_names_the_complete_sorted_target_set(d052):
+    a = {"ref": "§ 9(a)", "sources": ["subdivision_guard"], "parent": "§ 9"}
+    d = {"ref": "§ 9(d)", "sources": ["subdivision_guard", "inventory_uncovered"], "parent": "§ 9"}
+    key = lambda targets: prepare_repair_request(d052, "fake", "fake-model", {}, "k", [], targets)  # noqa: E731
+    assert key([a, d]).key == key([d, a]).key                        # order-independent
+    assert key([a, d]).key_fields["repair_targets"] == [
+        {"ref": "§ 9(a)", "sources": ["subdivision_guard"]},
+        {"ref": "§ 9(d)", "sources": ["inventory_uncovered", "subdivision_guard"]}]
+    assert key([d]).key != key([a, d]).key
+
+
+def test_changed_target_set_misses_the_repair_cache_but_reuses_the_primary(tmp_path, monkeypatch):
+    cache = ResponseCache(tmp_path / "cache")
+    with monkeypatch.context() as m:                                 # before the guard existed: inventory targets only
+        m.setattr(extractor, "unrecorded_subdivisions", lambda *args: [])
+        old, old_provider = remedies(tmp_path, {"target_resolutions": [], "rules": []}, cache=cache)
+    assert len(old_provider.calls) == 2 and {tg["ref"] for tg in old.repair.targets} == {"§ 9(d)", "§ 10"}
+    new, new_provider = remedies(tmp_path, {"target_resolutions": [], "rules": []}, cache=cache)
+    assert new.cache_hit and not new.repair.cache_hit                # primary reused; repair re-requested
+    assert len(new_provider.calls) == 1 and new_provider.calls[0]["system_instruction"] == REPAIR_SYSTEM_INSTRUCTION
+    assert new.repair.cache_key != old.repair.cache_key
 
 
 # ------------------------------------------------ effective-date evidence

@@ -19,8 +19,10 @@ supplied corpus text (manifest-verified; raw text never modified)
        Pydantic RuleRecord               the internal mirror of the official schema
        official JSON Schema              schema/rule_record.schema.json
        review checks (review.py)         warnings only
-  -> coverage closure (coverage.py): in-scope inventory provisions with no candidate
-  -> at most ONE targeted repair request for those provisions; same evaluation for its candidates
+  -> completeness checks (coverage.py): inventory coverage closure + subdivision guard
+  -> repair targets = their merged union (repair.py)
+  -> at most ONE repair request; every target classified in_scope / out_of_scope / uncertain
+  -> both completeness checks rerun; every target resolved, or review_required
   -> ExtractionRun audit artifact, document_status complete | review_required
 ```
 
@@ -70,31 +72,77 @@ For two parts, Python publishes `quoted_span = raw[start of part 1 : end of part
 
 A single quote that copies the marker, or that joins text across a removed artifact, is rejected with a diagnosis. Nothing is stitched, fuzzily matched or repaired.
 
-## Coverage closure and the targeted repair pass (`coverage.py`)
+## Completeness checks and the single repair pass (`coverage.py`, `repair.py`)
 
-After the primary pass, every `in_scope` inventory ref (ranges such as "(a)-(c)" expanded) is mapped to candidates deterministically:
+Order of one pipeline run:
+
+```
+primary extraction -> primary validation
+  -> inventory coverage closure  +  subdivision guard
+  -> merged, deduplicated repair targets
+  -> at most ONE repair request
+  -> normal validation of repair candidates
+  -> coverage closure  +  subdivision guard, rerun
+  -> complete | review_required
+```
+
+There is never a second repair request in one run. Unresolved targets after repair make the document `review_required`; they do not trigger another request.
+
+**Inventory coverage closure.** Every `in_scope` inventory ref (ranges such as "(a)-(c)" expanded) is mapped to candidates deterministically:
 
 - **Citation match:** the candidate's citation names that ref or a subdivision of it.
 - **Declared link:** the inventory lists the candidate's index, *and* the candidate's citation names an ancestor of the ref (e.g. a "(b)(1)" record declared for "(b)(1)(A)"). A declared index whose candidate cites something unrelated is not counted; it is reported as a link mismatch.
 
-A ref is **uncovered** when no candidate maps to it at all, and **all-rejected** when candidates map to it but none was accepted.
+**Subdivision guard.** The closure can only be as fine as the inventory. On D073 v4, the model inventoried § 98.0709 as one item, so records for (b) to (f) "covered" it, while (a), (g) and (h) had no record. When an in-scope ref is covered by accepted records only through some of its subdivisions, the guard scans the source near those records. It looks for line-initial labels of the same style ("(a)", "(A)" or "(1)") that continue the cited sequence, stopping at section headings. Each such subdivision without an accepted record is reported with its source range. Subdivisions the inventory itself lists as `out_of_scope` or `uncertain` are left to that decision. Offline, over earlier artifacts, the guard flags only genuine gaps in the D073 runs, and nothing on D052 or D069.
 
-Only uncovered refs trigger the **repair pass**: one extra request per document, at most. The request carries:
+**Repair targets** are the union of both checks, merged by provision. A target found by both carries both sources.
 
-- the same source view;
-- the verified global-scope metadata;
-- only the uncovered refs, with their summaries and categories;
-- the same categories, quote-part contract and temporal rules.
+- `inventory_uncovered`: an in-scope inventory ref with no candidate at all.
+- `subdivision_guard`: a subdivision found by the guard, with no candidate at all.
 
-Its response schema is `{"rules": [...]}` only. Every repair candidate goes through exactly the same evaluation as a primary candidate, with no special acceptance path. The one extra check can only reject: a repair candidate must cite one of the requested refs. Duplicates of earlier accepted records are rejected by `team_rule_id`.
+A ref whose only candidates were rejected is never a target: rejected candidates are not retried. It stays unresolved, and the document is `review_required`.
 
-There is no second repair pass, and rejected candidates never trigger one.
+**The repair request** carries the same source view, the verified global-scope metadata and the target list. The list says how each target was found; structural targets are explicitly described as possibly out of scope. The response schema is `{"target_resolutions": [...], "rules": [...]}`:
 
-**Completeness guard.** The closure can only be as fine as the inventory. On D073 v4, the model inventoried § 98.0709 as one item, so records for (b) to (f) "covered" it, while (a), (g) and (h) had no record. Therefore, when an in-scope ref is covered by accepted records only through some of its subdivisions, `coverage.unrecorded_subdivisions` scans the source near those records. It looks for line-initial labels of the same style ("(a)", "(A)" or "(1)") that continue the cited sequence, stopping at section headings. Any such subdivision without an accepted record makes the document `review_required`. The guard only flags. It does not trigger the repair pass, whose trigger stays "in-scope refs with no candidate", and it never creates, rejects or edits records. Offline, over earlier artifacts, it flags only genuine gaps in the D073 runs, and nothing on D052 or D069.
+- Every target gets a classification: `in_scope`, `out_of_scope` or `uncertain`, with a reason. For `out_of_scope`, verbatim `evidence_parts` from the target provision itself are also required.
+- Records are allowed only for targets classified `in_scope`. The model is never told that a target must become a rule.
 
-The repair response is cached under its own key, which includes the primary cache key and the rendered repair prompt. An offline rerun therefore replays both requests. If repair is needed but cannot run (no cached response and no live provider, or a provider error), this is recorded, never silently skipped.
+Every repair candidate goes through exactly the same evaluation as a primary candidate, with no special acceptance path. The one extra check can only reject: a repair candidate must cite a target, and not one that the same response classified as `out_of_scope` or `uncertain`. Duplicates of earlier accepted records are rejected by `team_rule_id`.
 
-`document_status` is `complete` only when the inventory is present and well-formed and every in-scope ref has at least one accepted record. Otherwise it is `review_required`, and `review_reasons` explains why. The audit records the primary and repair provenance separately: cache keys, cache hits, token usage, raw responses, candidate origins, and uncovered refs before and after repair.
+**Resolution.** After repair, both checks are rerun and each target gets a final resolution:
+
+- `resolved_by_accepted_rule`: an accepted record cites the target or one of its subdivisions.
+- `resolved_out_of_scope`: classified `out_of_scope` with a reason and verified verbatim evidence. For a guard target, the evidence must lie inside that subdivision's source text.
+- `unresolved`: anything else, with the reason recorded. Examples: classified `uncertain`, omitted from the response, every candidate rejected, `out_of_scope` without verified evidence, or repair failed or did not run.
+
+Per target, the audit (`repair.targets`) records:
+
+- the ref and its sources;
+- the pre-repair state;
+- the repair's classification and reason;
+- the evidence check;
+- the produced and accepted candidate indices;
+- the final resolution.
+
+`coverage.repair_targets` counts targets before repair, resolved by a rule, resolved out of scope, and still unresolved. `coverage.after_primary`, `coverage.after_repair` and `coverage.final` record both checks at each stage.
+
+**Repair cache identity.** The repair key includes:
+
+- the primary cache key;
+- `repair_prompt_version`, which is separate from the primary prompt version so that a repair-only change keeps the primary key;
+- the rendered repair prompt;
+- the complete target set as a sorted canonical list (`repair_targets`, each ref with its sources).
+
+A different target set is always a cache miss, and the cached primary response is reused. If repair is needed but cannot run (no cached response and no live provider, or a provider error), this is recorded, never silently skipped.
+
+`document_status` is `complete` only when all of the following hold:
+
+- the inventory is present and well-formed;
+- every target is resolved;
+- no in-scope ref is left with no candidate or with only rejected candidates;
+- the guard reports no unresolved subdivision.
+
+Otherwise it is `review_required`, and `review_reasons` explains why.
 
 ## Effective-date evidence (`temporal.py`)
 

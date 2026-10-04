@@ -49,15 +49,23 @@ def print_summary(run: ExtractionRun, out: Path, body: str) -> None:
           f"{_usage(run.provider_metadata)}")
     rp = run.repair
     if rp is None:
-        print("  repair     : not needed (no in-scope provision without a candidate)")
-    elif not rp.invoked:
-        print(f"  repair     : NEEDED but not run: {'; '.join(rp.errors) or rp.reason}")
+        print("  repair     : not needed (no repair targets after both completeness checks)")
     else:
-        print(f"  repair     : cache {'HIT' if rp.cache_hit else 'MISS (provider called)'} {rp.cache_key[:16]}   "
-              f"{_usage(rp.provider_metadata)}")
-        print(f"               requested {[r['ref'] for r in rp.requested]}")
-        print(f"               candidates {len(rp.candidate_indices)}  accepted {rp.accepted_count}  "
-              f"rejected {rp.rejected_count}  errors {rp.errors or '-'}")
+        if not rp.invoked:
+            print(f"  repair     : NEEDED but not run: {'; '.join(rp.errors) or rp.reason}")
+        else:
+            print(f"  repair     : cache {'HIT' if rp.cache_hit else 'MISS (provider called)'} {rp.cache_key[:16]}   "
+                  f"prompt {rp.prompt_version}   {_usage(rp.provider_metadata)}")
+            print(f"               candidates {len(rp.candidate_indices)}  accepted {rp.accepted_count}  "
+                  f"rejected {rp.rejected_count}  errors {rp.errors or '-'}")
+        print(f"  targets    : {len(rp.targets)} (union of both completeness checks, before repair)")
+        for tg in rp.targets:
+            print(f"    - {tg['ref']:24} from {'+'.join(tg['sources']):40} repair={tg.get('repair_scope')}  "
+                  f"produced {tg.get('candidate_indices')} accepted {tg.get('accepted_indices')}  "
+                  f"=> {tg.get('final_resolution')}" + (f" ({tg['unresolved_reason']})" if tg.get('unresolved_reason')
+                                                     else ""))
+            if tg.get("reason"):
+                print(f"        reason: {tg['reason']}")
     print(f"  source view: {run.source_view.get('artifacts_removed', 0)} page artifacts, "
           f"{len(run.source_view.get('segments', []))} segments   global scope: "
           f"{sum(g['propagated'] for g in run.global_scope)}/{len(run.global_scope)} verified")
@@ -66,7 +74,10 @@ def print_summary(run: ExtractionRun, out: Path, body: str) -> None:
           f"({cov.get('in_scope_refs', 0)} refs)   uncertain {cov.get('uncertain', [])}")
     for stage in ("after_primary", "after_repair"):
         if stage in cov:
-            print(f"  {stage:11}: uncovered {cov[stage]['uncovered']}  all-rejected {cov[stage]['unaccepted']}")
+            print(f"  {stage:11}: uncovered {cov[stage]['uncovered']}  all-rejected {cov[stage]['unaccepted']}  "
+                  f"unrecorded subdivisions {cov[stage]['unrecorded_subdivisions']}")
+    if "repair_targets" in cov:
+        print(f"  resolution : {cov['repair_targets']}")
     accepted = [c for c in run.candidates if c.accepted]
     print(f"  quotes     : accepted single-part {sum(not c.citation.reconstructed for c in accepted)}, "
           f"reconstructed cross-page {sum(c.citation.reconstructed for c in accepted)}; published spans that are "

@@ -129,11 +129,24 @@ class ExtractionResponse(BaseModel):
     rules: list[ExtractedRule]
 
 
-class RepairResponse(BaseModel):
-    """Targeted repair pass: records for the listed uncovered provisions only."""
+class TargetResolution(BaseModel):
+    """The repair pass's decision on one repair target. A target need not become a rule."""
 
     model_config = ConfigDict(extra="forbid", strict=True)
 
+    ref: str = Field(min_length=1, description="The target ref exactly as listed in the request.")
+    scope: ScopeDecision
+    reason: str | None = Field(description="One short sentence; required for out_of_scope and uncertain.")
+    evidence_parts: list[QuotePart] = Field(description="Verbatim text of the target provision itself "
+                                            "(required for out_of_scope); same quote-part rules.")
+
+
+class RepairResponse(BaseModel):
+    """Targeted repair pass: a decision for every target, and records only for in-scope targets."""
+
+    model_config = ConfigDict(extra="forbid", strict=True)
+
+    target_resolutions: list[TargetResolution]
     rules: list[ExtractedRule]
 
 
@@ -247,11 +260,14 @@ class CandidateResult(BaseModel):
 
 
 class RepairPass(BaseModel):
-    """Audit of the (at most one) targeted repair request for uncovered provisions."""
+    """Audit of the (at most one) targeted repair request of a pipeline run."""
 
     invoked: bool = False
     reason: str
-    requested: list[dict[str, Any]] = Field(default_factory=list)   # uncovered in-scope refs sent to the model
+    prompt_version: str | None = None
+    # One entry per target: ref, sources, pre-repair state, the repair's classification,
+    # produced/accepted candidate indices and the final resolution (repair.py).
+    targets: list[dict[str, Any]] = Field(default_factory=list)
     cache_key: str | None = None
     cache_hit: bool | None = None
     cache_entry: str | None = None

@@ -82,9 +82,11 @@ def test_inventory_is_recorded_and_uncovered_in_scope_provisions_make_the_docume
                   provision("(1)(c)", scope="out_of_scope")]
     run, provider = run_fake({"provisions": provisions, "rules": [make_candidate()]}, repair=False)  # cites (1)(b)(iii)
     assert len(run.provision_inventory) == 3 and run.accepted_count == 1 and len(provider.calls) == 1
-    assert run.coverage["after_primary"] == {"uncovered": ["(2)(b)"], "unaccepted": []}
+    assert run.coverage["after_primary"] == {"uncovered": ["(2)(b)"], "unaccepted": [],
+                                         "unrecorded_subdivisions": []}
     assert run.document_status == "review_required"
-    assert any("no candidate record: ['(2)(b)']" in r for r in run.review_reasons)
+    assert any("repair targets still unresolved: (2)(b) (repair did not complete: repair disabled" in r
+               for r in run.review_reasons)
 
 
 def _candidate(index: int, citation: str, accepted: bool = True) -> CandidateResult:
@@ -114,7 +116,8 @@ def test_rejected_records_count_as_candidates_but_not_as_accepted(run_fake):
     candidate = make_candidate(quoted_span="A lessor may never require a deposit above half a month's rent.")
     run, provider = run_fake({"provisions": [provision("(1)(b)", rule_indices=[0])], "rules": [candidate]})
     assert run.accepted_count == 0 and len(provider.calls) == 1                 # not uncovered: no repair
-    assert run.coverage["after_primary"] == {"uncovered": [], "unaccepted": ["(1)(b)"]}
+    assert run.coverage["after_primary"] == {"uncovered": [], "unaccepted": ["(1)(b)"],
+                                         "unrecorded_subdivisions": []}
     assert run.document_status == "review_required"
 
 

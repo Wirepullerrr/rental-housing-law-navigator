@@ -15,6 +15,8 @@ reconstructed in code); inventory with an explicit scope decision, reason and
 rule links, used for coverage closure; a targeted repair prompt for uncovered
 provisions; effective-date evidence classified, with history/codification
 notes kept out of effective_date.
+v4-repair-2 (repair prompt only): targets may be structural subdivisions; every
+target is classified in_scope / out_of_scope / uncertain, and only in-scope targets get rules.
 """
 
 from __future__ import annotations
@@ -25,6 +27,8 @@ from navigator.extraction.models import SourceMeta
 from navigator.extraction.source_view import PAGE_BREAK_MARKER, SEGMENT_LABEL
 
 EXTRACTION_PROMPT_VERSION = "v4"
+# The repair prompt is versioned on its own, so a repair-only change keeps the primary cache key.
+REPAIR_PROMPT_VERSION = "v4-repair-2"
 
 _PREAMBLE = """\
 You are the rule-extraction component of a rental-housing-law research prototype. \
@@ -90,16 +94,23 @@ requirement.""",
 ]
 
 _REPAIR_PROCEDURE = [
-    """An earlier pass over this document identified the provisions listed in the request as in scope \
-but produced no record for them. Fill `rules` ONLY for those listed provisions: one record for every \
-distinct obligation, prohibition, entitlement, remedy, procedural requirement or monetary limit they \
-contain. Read the whole document for context.""",
-    """Each record's `citation` must name one of the listed provisions (that provision or one of its \
-subdivisions). Do not produce records for any other provision and do not restate other rules.""",
+    """An earlier pass over this document left the provisions listed in the request (the repair \
+targets) without an accepted record. Some targets were identified as in scope by that pass. Others were \
+found only from the document's numbering: a subdivision next to provisions that were extracted. Those may \
+well fall outside the official categories. Read the whole document for context.""",
+    """For EVERY target, add exactly one entry to `target_resolutions`: `ref` exactly as listed; `scope`, \
+decided from the document alone: "in_scope" only if the target imposes a requirement in an official \
+category, "out_of_scope" if it does not, "uncertain" if the document leaves it genuinely unclear; \
+`reason`: one short sentence (required for out_of_scope and uncertain); `evidence_parts`: the verbatim \
+text of the target provision itself, following the quote-part rules (required for out_of_scope). Never \
+force a target into a category: out_of_scope and uncertain are correct answers whenever they are true.""",
+    """Then fill `rules` ONLY for targets you classified in_scope: one record for every distinct \
+obligation, prohibition, entitlement, remedy, procedural requirement or monetary limit they contain. \
+Each record's `citation` must name that target (or one of its subdivisions). Produce no record for \
+targets classified out_of_scope or uncertain, none for any other provision, and do not restate other \
+rules. Never invent a requirement.""",
     """The document-level scope conditions listed in the request have already been verified and are \
 attached to the rules by the system. Do not repeat them inside rules and do not add new ones.""",
-    """If a listed provision imposes no requirement in an official category, produce no record for it. \
-Never invent a requirement to fill the list.""",
 ]
 
 _RULE_SCOPE = [
@@ -234,15 +245,24 @@ def render_prompt(meta: SourceMeta, body: str) -> tuple[str, str]:
 
 
 def render_repair_prompt(meta: SourceMeta, body: str, scope: list[dict[str, Any]],
-                         provisions: list[dict[str, Any]]) -> tuple[str, str]:
+                         targets: list[dict[str, Any]]) -> tuple[str, str]:
     """Return (system_instruction, user_prompt) for the targeted repair pass. `scope` holds
-    verified document-level conditions; `provisions` the uncovered in-scope refs only."""
+    verified document-level conditions; `targets` the deterministic repair targets (repair.py)."""
     scope_lines = [f"- {s['id']} [{s['kind']}] {s['statement']} ({s['citation']}; "
                    f"{'whole document' if s['governs'] is None else 'governs ' + s['governs']})" for s in scope]
-    provision_lines = [f"- {p['ref']}: {p.get('summary') or ''} [{p.get('category')}]" for p in provisions]
+    target_lines = []
+    for t in targets:
+        found = []
+        if "inventory_uncovered" in t["sources"]:
+            found.append(f"identified as in scope by the earlier pass ({t.get('summary') or 'no summary'}; "
+                         f"category {t.get('category')})")
+        if "subdivision_guard" in t["sources"]:
+            found.append(f"found from the document's numbering next to extracted subdivisions of {t['parent']}; "
+                         "its scope has not been decided")
+        target_lines.append(f"- {t['ref']}: " + "; and ".join(found))
     user = (_METADATA.format(**_metadata(meta))
             + "\nDocument-level scope conditions already verified (attached by the system; do not repeat):\n"
             + ("\n".join(scope_lines) or "- (none)")
-            + "\n\nProvisions to cover (identified as in scope; no record was produced for them):\n"
-            + "\n".join(provision_lines) + "\n\n" + _DOCUMENT.format(body=body))
+            + "\n\nRepair targets (give a resolution for every one; a target need not become a rule):\n"
+            + "\n".join(target_lines) + "\n\n" + _DOCUMENT.format(body=body))
     return REPAIR_SYSTEM_INSTRUCTION, user
