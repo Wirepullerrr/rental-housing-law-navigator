@@ -49,8 +49,9 @@ def summarize(run: ExtractionRun, before: ExtractionRun) -> dict:
             "scope_targeting": (run.legacy_replay or {}).get("scope_targeting"),
             "global_scope": [{"id": g["id"], "propagated": g["propagated"], "problem": g.get("problem")}
                              for g in run.global_scope],
-            "quotes_unchanged": [c.citation.source_span for c in run.candidates if c.citation] ==
-                                [c.citation.source_span for c in before.candidates if c.citation],
+            "quotes_unchanged": [c.citation.source_span for c in run.candidates if c.citation] ==   # primary only:
+                                [c.citation.source_span for c in before.candidates            # a replay never repairs
+                                 if c.citation and c.origin == "primary"],
             "rules": by_rule, "review_reasons": run.review_reasons}
 
 

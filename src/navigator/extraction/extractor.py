@@ -4,20 +4,23 @@
       -> [cache | provider] -> raw JSON
       -> document posture (posture.py) and enactment dates in the raw text (temporal.py)
       -> provision inventory (ids, anchors, roles) and document-level scope conditions
-         (evidence verified; targeted by provision id)
+         (evidence verified; scope mode decided from their verified scope words, scope.py)
       -> per candidate: Pydantic ExtractedRule -> provision links -> quote parts verified
          against the RAW text (a cross-page quote is reconstructed as one exact raw span)
-         -> status evidence -> effective-date evidence classification and deterministic
-         relative-date resolution -> status derivation (posture-aware) -> scope
-         propagation by provision id + operative conditions -> trusted metadata +
+         -> status evidence -> legislative status of proposals (legislative.py) ->
+         effective-date evidence classification and deterministic relative-date
+         resolution -> status derivation (posture-aware) -> structural / explicit-reference
+         scope propagation + operative conditions -> trusted metadata +
          team_rule_id -> RuleRecord -> official JSON Schema
       -> completeness: inventory coverage closure + subdivision guard + scope
          challenges of out_of_scope items (coverage.py)
-      -> repair targets = their merged union (repair.py)
+      -> repair targets = their merged union (repair.py), plus scope_mapping_challenges
+         for every named-subject (condition, provision) pair (scope.py)
       -> at most ONE repair request for those targets; each target is classified
          in_scope / out_of_scope / uncertain, and its candidates go through exactly
          the same evaluation
-      -> completeness rerun; every target resolved or the document review_required
+      -> named-subject conditions propagate only where the repair said "applies"
+      -> completeness rerun; every target and mapping resolved, or review_required
       -> ExtractionRun audit record, document_status complete | review_required
 
 A candidate is accepted only if every stage passes. A candidate whose only problem is an
@@ -43,11 +46,15 @@ from navigator.extraction.cache import ResponseCache, cache_key, canonical_json,
 from navigator.extraction.config import DEFAULT_AS_OF, GENERATION_SETTINGS
 from navigator.extraction.coverage import (closure, provision_regions, same_ref, scope_challenges,
                                            unrecorded_subdivisions)
+from navigator.extraction.legislative import decide as legislative_status
+from navigator.extraction.legislative import find_session
 from navigator.extraction.models import (CandidateResult, ExtractedRule, ExtractionRun, LegacyExtractedRule,
-                                         LegacyProvisionNote, NoRulesJustification, ProvisionNote, QuotePart,
+                                         LegacyProvisionNote, LegacyScopeCondition, NoRulesJustification,
+                                         ProvisionNote, QuotePart,
                                          RepairPass, RepairResponse, RuleRecord, ScopeCondition, SourceMeta,
                                          generation_json_schema)
-from navigator.extraction.normalize import TEMPORAL_UNRESOLVED, build_record, derive_status, split_trusted
+from navigator.extraction.normalize import (TEMPORAL_UNRESOLVED, build_record, compose_scope, derive_status,
+                                           split_trusted)
 from navigator.extraction.posture import EXPECTED_STATUS, establish_posture, no_date_in_force
 from navigator.extraction.prompt import (EXTRACTION_PROMPT_VERSION, REPAIR_PROMPT_VERSION, render_prompt,
                                         render_repair_prompt)
@@ -55,6 +62,8 @@ from navigator.extraction.provider import ProviderError, StructuredLLMProvider
 from navigator.extraction.repair import (attach_resolutions, build_targets, canonical_order,
                                         repair_scope_rejection, resolve_targets, target_identity)
 from navigator.extraction.quotes import verify_quote_parts, verify_text
+from navigator.extraction.scope import (attach_mapping_decisions, finalize_mappings, mapping_challenges,
+                                        mapping_identity, named_targets, resolve_condition, scope_words)
 from navigator.extraction.review import calendar_dates, unsupported_figures
 from navigator.extraction.source_view import PAGE_BREAK_MARKER, SEGMENT_LABEL, SourceView, build_view
 from navigator.extraction.temporal import find_base_dates, resolve_effective_date
@@ -62,7 +71,7 @@ from navigator.validation import make_rule_validator
 
 _QUOTE_PARTS = TypeAdapter(list[QuotePart])
 _TOP_LEVEL_KEYS = {"document", "provisions", "global_scope", "rules", "no_rules_justification"}
-_REPAIR_KEYS = {"target_resolutions", "rules"}
+_REPAIR_KEYS = {"target_resolutions", "scope_mappings", "rules"}
 
 
 class SourceNotAvailable(ValueError):
@@ -92,7 +101,8 @@ class DocContext:
     posture: dict[str, Any] = field(default_factory=dict)           # posture.establish_posture audit
     base_dates: list[dict[str, Any]] = field(default_factory=list)  # temporal.find_base_dates
     inventory_ids: set[str] | None = None   # ids of a valid inventory; None: links cannot be checked
-    legacy: bool = False                    # replay of a pre-v6 response (replay.py)
+    session: dict[str, Any] | None = None   # the bill's legislative session (legislative.py)
+    legacy: bool = False                    # replay of an older response (replay.py)
 
 
 @dataclass(frozen=True)
@@ -146,14 +156,16 @@ def prepare_request(source: SourceDocument, provider_name: str, model: str,
 
 
 def prepare_repair_request(source: SourceDocument, provider_name: str, model: str, settings: dict[str, Any],
-                           primary_key: str, scope: list[dict[str, Any]],
-                           targets: list[dict[str, Any]]) -> PreparedRequest:
-    """The key names the complete, sorted target set explicitly (as well as through the prompt
-    hash): a different target set never reuses a cached repair response."""
-    system, user = render_repair_prompt(source.meta, source.view.text, scope, canonical_order(targets))
+                           primary_key: str, scope: list[dict[str, Any]], targets: list[dict[str, Any]],
+                           mappings: list[dict[str, Any]] = ()) -> PreparedRequest:
+    """The key names the complete, sorted target set and scope-mapping set explicitly (as well
+    as through the prompt hash): a different set never reuses a cached repair response."""
+    ordered = sorted(mappings, key=lambda m: (m["condition_id"], m["provision_id"]))
+    system, user = render_repair_prompt(source.meta, source.view.text, scope, canonical_order(targets), ordered)
     return _prepared(source, provider_name, model, settings, system, user, generation_json_schema(RepairResponse),
                      **{"pass": "repair", "primary_cache_key": primary_key,
-                        "repair_prompt_version": REPAIR_PROMPT_VERSION, "repair_targets": target_identity(targets)})
+                        "repair_prompt_version": REPAIR_PROMPT_VERSION, "repair_targets": target_identity(targets),
+                        "scope_mappings": mapping_identity(list(mappings))})
 
 
 @lru_cache(maxsize=None)
@@ -221,13 +233,14 @@ def extract_document(source: SourceDocument, *, provider_name: str, model: str,
     payload = _parse(run.raw_response_text, _TOP_LEVEL_KEYS, run.errors, run.warnings)
     if payload is not None:
         ctx, targets = evaluate_primary(run, payload, source, as_of, validator)
-        if targets:   # every deterministic check runs BEFORE repair
+        if targets or run.scope_mappings:   # every deterministic check runs BEFORE repair
             if repair:
                 run.repair = _repair_pass(run, source, req.key, ctx, targets, provider_name=provider_name,
                                           model=model, cache=cache, provider=provider, force=force,
                                           settings=settings, as_of=as_of, validator=validator)
             else:
-                run.repair = RepairPass(reason="repair disabled for this run", targets=targets)
+                run.repair = RepairPass(reason="repair disabled for this run", targets=targets,
+                                        mappings=run.scope_mappings)
     finalize(run, source)
     return run
 
@@ -241,10 +254,13 @@ def evaluate_primary(run: ExtractionRun, payload: dict[str, Any], source: Source
         run.warnings.append("review: response has no document posture")
     _record_inventory(run, payload.get("provisions"), legacy)
     ids = {p["id"] for p in run.provision_inventory} if run.coverage["inventory_valid"] else None
-    ctx = DocContext(posture=run.posture, base_dates=run.base_dates, inventory_ids=ids, legacy=legacy)
-    ctx.scope = _verify_global_scope(run, payload.get("global_scope"), source, ids)
+    run.legislative_session = find_session(source.body, source.meta.jurisdiction)
+    ctx = DocContext(posture=run.posture, base_dates=run.base_dates, inventory_ids=ids,
+                     session=run.legislative_session, legacy=legacy)
+    ctx.scope = _verify_global_scope(run, payload.get("global_scope"), source, ids, legacy)
     run.candidates = [evaluate_candidate(i, raw, source, as_of, validator, ctx) for i, raw in enumerate(payload["rules"])]
     _dedupe(run.candidates)
+    run.scope_mappings = _scope_mapping_challenges(run, ctx)
     _record_empty_result(run, payload.get("no_rules_justification"), source)
     primary, gaps = _completeness(run, source)
     regions = provision_regions(run.provision_inventory, source.body, source.view)
@@ -256,6 +272,32 @@ def evaluate_primary(run: ExtractionRun, payload: dict[str, Any], source: Source
                             "source text; those provisions cannot be scope-challenged")
     run.coverage["after_primary"] = _summary(primary, gaps, run.scope_challenges)
     return ctx, build_targets(primary, gaps, run.scope_challenges)
+
+
+def _publishable(c: CandidateResult) -> bool:
+    """Accepted, or failing only on an unresolved time of application (a hold)."""
+    reason = c.temporal.get("unresolved_reason")
+    return c.accepted or (bool(reason) and c.rejection_reasons == [reason])
+
+
+def _scope_mapping_challenges(run: ExtractionRun, ctx: DocContext) -> list[dict[str, Any]]:
+    """Every (named-subject condition, provision) pair to be verified by the repair pass."""
+    linked = {pid for c in run.candidates if _publishable(c) for pid in c.provision_ids}
+    quotes: dict[str, str] = {}
+    for c in run.candidates:
+        if _publishable(c):
+            for pid in c.provision_ids:
+                quotes.setdefault(pid, c.rule["quoted_span"])
+    named = []
+    for cond in ctx.scope:
+        if cond["scope"]["mode"] == "named_subject":
+            cond["scope"]["mapping_targets"] = named_targets(cond, linked)
+            named.append(cond)
+    for g in run.global_scope:   # the audit copy shows the same targets
+        match = next((c for c in named if c["id"] == g["id"]), None)
+        if match is not None:
+            g["scope"]["mapping_targets"] = match["scope"]["mapping_targets"]
+    return mapping_challenges(named, run.provision_inventory, quotes)
 
 
 def _completeness(run: ExtractionRun, source: SourceDocument) -> tuple[dict[str, Any], list[dict[str, Any]]]:
@@ -291,12 +333,17 @@ def _repair_pass(run: ExtractionRun, source: SourceDocument, primary_key: str, c
                  validator) -> RepairPass:
     """The single repair request of this run. Its candidates are evaluated exactly like primary
     ones; the only extra check can only reject (repair.repair_scope_rejection)."""
-    req = prepare_repair_request(source, provider_name, model, settings, primary_key, ctx.scope, targets)
+    req = prepare_repair_request(source, provider_name, model, settings, primary_key, ctx.scope, targets,
+                                 run.scope_mappings)
     kinds = sorted({s for t in targets for s in t["sources"]})
-    rp = RepairPass(reason=f"{len(targets)} repair target(s) from {', '.join(kinds)}",
-                    prompt_version=REPAIR_PROMPT_VERSION, targets=targets, cache_key=req.key,
-                    prompt_sha256=req.key_fields["prompt_sha256"], cache_entry=_display_path(cache.path(req.key)))
+    reason = f"{len(targets)} repair target(s) from {', '.join(kinds) or 'no check'}"
+    if run.scope_mappings:
+        reason += f"; {len(run.scope_mappings)} scope_mapping_challenge(s)"
+    rp = RepairPass(reason=reason, prompt_version=REPAIR_PROMPT_VERSION, targets=targets,
+                    mappings=run.scope_mappings, cache_key=req.key, prompt_sha256=req.key_fields["prompt_sha256"],
+                    cache_entry=_display_path(cache.path(req.key)))
     targets = rp.targets            # the audit's own copies: resolutions are attached to these
+    run.scope_mappings = rp.mappings
     try:
         entry, rp.cache_hit = _fetch(req, cache, provider, force, settings)
     except ProviderError as exc:
@@ -315,6 +362,10 @@ def _repair_pass(run: ExtractionRun, source: SourceDocument, primary_key: str, c
     if "target_resolutions" not in payload:
         run.warnings.append("review: repair response has no target_resolutions")
     run.warnings += attach_resolutions(payload.get("target_resolutions"), targets, source.body, source.view)
+    if run.scope_mappings and "scope_mappings" not in payload:
+        run.warnings.append("review: repair response has no scope_mappings")
+    run.warnings += attach_mapping_decisions(payload.get("scope_mappings"), run.scope_mappings, source.body,
+                                             source.view)
     for raw in payload["rules"]:
         c = evaluate_candidate(len(run.candidates), raw, source, as_of, validator, ctx)
         c.origin = "repair"
@@ -343,8 +394,43 @@ def _dedupe(candidates: list[CandidateResult]) -> None:
             seen[rid] = c.index
 
 
+def _apply_scope_mappings(run: ExtractionRun) -> None:
+    """Propagate named-subject conditions to records linked to provisions the repair said
+    they apply to, and recompose those records' scope text. Nothing else propagates them."""
+    rp = run.repair
+    problem = None if rp is None else ("; ".join(rp.errors) or (None if rp.invoked else rp.reason))
+    run.coverage["scope_mappings"] = finalize_mappings(run.scope_mappings, rp is not None and rp.invoked,
+                                                       problem if rp is not None else "no repair request")
+    conditions = {g["id"]: g for g in run.global_scope if g["propagated"]}
+    applies = [m for m in run.scope_mappings if m["final"] == "applies"]
+    for c in run.candidates:
+        if c.rule is None:
+            continue
+        added = False
+        for m in applies:
+            if m["provision_id"] not in c.provision_ids or m["condition_id"] in c.scope_inputs.get("carved", {}):
+                continue
+            if any(p["id"] == m["condition_id"] for p in c.propagated_scope):
+                continue
+            c.propagated_scope.append({"id": m["condition_id"], "kind": m["kind"], "mode": "named_subject",
+                                       "governed_provision_ids": [m["provision_id"]],
+                                       "basis": f"named-subject mapping to {m['provision_id']} verified by repair",
+                                       "applied": True})
+            added = True
+        if added:
+            applied = [p["id"] for p in c.propagated_scope if p["applied"]]
+            conds = [{**conditions[i], "governed_provision_ids": conditions[i]["scope"]["propagate_ids"]
+                      if conditions[i]["scope"]["mode"] != "named_subject" else [c.provision_ids[0]]}
+                     for i in conditions if i in applied]
+            inputs = c.scope_inputs
+            c.rule["exemptions"] = compose_scope(inputs.get("exemptions"), conds, "exemption")
+            c.rule["coverage_conditions"] = compose_scope(inputs.get("coverage_conditions"), conds,
+                                                          "coverage_condition", inputs.get("operative", []))
+
+
 def finalize(run: ExtractionRun, source: SourceDocument) -> None:
     _dedupe(run.candidates)
+    _apply_scope_mappings(run)
     for c in run.candidates:   # held: the unresolved time of application is the ONLY problem
         reason = c.temporal.get("unresolved_reason")
         c.held = bool(reason) and not c.accepted and c.rejection_reasons == [reason]
@@ -400,6 +486,18 @@ def finalize(run: ExtractionRun, source: SourceDocument) -> None:
     if mismatch := [c.index for c in run.candidates if c.temporal.get("posture_consistent") is False]:
         reasons.append(f"enactment_status inconsistent with the document posture "
                        f"({run.posture.get('established')}): candidates {mismatch}")
+    if unmapped := [f"{m['condition_id']}->{m['provision_id']} ({m['unresolved_reason']})"
+                    for m in run.scope_mappings if m.get("final") == "unresolved"]:
+        reasons.append(f"named-subject scope mappings unresolved (not applied): {unmapped}")
+    mapped = {(m["condition_id"], m["provision_id"]) for m in run.scope_mappings}
+    linked = {pid for c in run.candidates if c.accepted or c.held for pid in c.provision_ids}
+    if unverified := sorted(f"{g['id']}->{pid}" for g in run.global_scope
+                            if g["propagated"] and g["scope"]["mode"] == "named_subject"
+                            for pid in named_targets(g, linked) if (g["id"], pid) not in mapped):
+        reasons.append(f"named-subject scope mappings never verified (not applied): {unverified}")
+    if legis := [f"candidate {c.index}: {c.legislative['conflict']}" for c in run.candidates
+                 if c.legislative.get("conflict") and c.legislative.get("status") in (None, "pending")]:
+        reasons.append(f"legislative status needs review: {legis}")
     if unpropagated := [g["id"] for g in run.global_scope if not g["propagated"]]:
         reasons.append(f"document-level scope conditions not applied (evidence or governed provisions not "
                        f"established): {unpropagated}")
@@ -468,7 +566,7 @@ def _record_empty_result(run: ExtractionRun, item: Any, source: SourceDocument) 
 
 
 def _verify_global_scope(run: ExtractionRun, items: Any, source: SourceDocument,
-                         inventory_ids: set[str] | None = None) -> list[dict[str, Any]]:
+                         inventory_ids: set[str] | None = None, legacy: bool = False) -> list[dict[str, Any]]:
     """Document-level scope conditions. Only those whose verbatim evidence (one part, or two
     parts across one page artifact) is verified in the raw source, and whose governed
     provisions are the whole document or known inventory ids, are propagated; every entry
@@ -480,7 +578,7 @@ def _verify_global_scope(run: ExtractionRun, items: Any, source: SourceDocument,
     seen: set[str] = set()
     for i, item in enumerate(items if isinstance(items, list) else []):
         try:
-            cond = ScopeCondition.model_validate(item)
+            cond = (LegacyScopeCondition if legacy else ScopeCondition).model_validate(item)
         except ValidationError:
             run.warnings.append(f"global_scope[{i}] is malformed; not propagated")
             continue
@@ -497,11 +595,16 @@ def _verify_global_scope(run: ExtractionRun, items: Any, source: SourceDocument,
             problem = "it names no provision it governs (and is not document-wide)"
         elif governed is not None and inventory_ids is not None and (unknown := sorted(set(governed) - inventory_ids)):
             problem = f"it governs provision ids that are not in the inventory: {unknown}"
+        scope = None
+        if problem is None:
+            words = scope_words(cond.model_dump(), check.start, check.end, source.body, source.view)
+            scope = resolve_condition(cond.model_dump(), words, run.provision_inventory)
         run.global_scope.append({**cond.model_dump(), "evidence_check": check.model_dump(),
-                                 "propagated": problem is None, "problem": problem})
+                                 "propagated": problem is None, "problem": problem, "scope": scope})
         run.warnings += [f"global_scope {cond.id}: {n}" for n in notes]
         if problem is None:
-            verified.append({**cond.model_dump(exclude={"evidence_parts"}), "evidence": check.source_span})
+            verified.append({**cond.model_dump(exclude={"evidence_parts"}), "evidence": check.source_span,
+                             "scope": scope})
         else:
             run.warnings.append(f"global_scope {cond.id}: {problem}; not propagated")
     return verified
@@ -509,10 +612,11 @@ def _verify_global_scope(run: ExtractionRun, items: Any, source: SourceDocument,
 
 def _propagate_scope(rule: ExtractedRule, scope: list[dict[str, Any]], source: SourceDocument,
                      res: CandidateResult) -> list[dict[str, Any]]:
-    """Deterministic propagation by provision id: a condition applies when it governs the
-    whole document (governed_provision_ids=None) or the rule links one of the provision ids
-    it governs. No citation or title text is compared. A rule escapes a condition only
-    through a carve-out whose evidence is verified in the source."""
+    """Deterministic propagation of structural and explicit-reference conditions (scope.py):
+    a condition applies when it reaches every provision (propagate_ids=None) or the rule
+    links one of the provision ids it reaches. No citation or title text is compared.
+    Named-subject conditions are NOT propagated here (only after a verified mapping). A
+    rule escapes a condition only through a carve-out whose evidence is verified."""
     known = {c["id"] for c in scope}
     carved: dict[str, str] = {}
     for co in rule.scope_carve_outs:
@@ -524,19 +628,25 @@ def _propagate_scope(rule: ExtractedRule, scope: list[dict[str, Any]], source: S
             res.warnings.append(f"review: carve-out from {co.scope_id} lacks verified evidence; condition still applied")
         else:
             carved[co.scope_id] = check.source_span
+    res.scope_inputs["carved"] = carved
     applied = []
     for cond in scope:
-        governed = cond["governed_provision_ids"]
+        mode = cond["scope"]["mode"]
+        if mode == "named_subject":
+            continue
+        governed = cond["scope"]["propagate_ids"]
         shared = sorted(set(governed or ()) & set(rule.provision_ids))
         if governed is not None and not shared:
             continue
-        basis = "document-wide" if governed is None else f"rule links governed provision(s) {shared}"
-        entry = {"id": cond["id"], "kind": cond["kind"], "governed_provision_ids": governed, "basis": basis}
+        basis = (f"{mode}: every provision" if governed is None
+                 else f"{mode}: rule links reached provision(s) {shared}")
+        entry = {"id": cond["id"], "kind": cond["kind"], "mode": mode, "governed_provision_ids": governed,
+                 "basis": basis}
         if cond["id"] in carved:
             res.propagated_scope.append({**entry, "applied": False, "carve_out_evidence": carved[cond["id"]]})
             continue
         res.propagated_scope.append({**entry, "applied": True})
-        applied.append(cond)
+        applied.append({**cond, "governed_provision_ids": governed})
     return applied
 
 
@@ -571,7 +681,7 @@ def evaluate_candidate(index: int, raw: Any, source: SourceDocument, as_of: date
     if ctx.inventory_ids is not None and (unknown := [p for p in rule.provision_ids if p not in ctx.inventory_ids]):
         res.rejection_reasons.append(f"provision link: {unknown} are not inventory provision ids")
     if not rule.provision_ids:
-        if any(c["governed_provision_ids"] is not None for c in ctx.scope):
+        if any(c["scope"]["propagate_ids"] is not None or c["scope"]["mode"] == "named_subject" for c in ctx.scope):
             res.rejection_reasons.append("provision link: the record links no inventory provision, so the "
                                          "document's provision-specific scope conditions cannot be applied")
         else:
@@ -617,8 +727,18 @@ def evaluate_candidate(index: int, raw: Any, source: SourceDocument, as_of: date
         res.warnings.append(f"review: enactment_status {rule.enactment_status} is inconsistent with the document "
                             f"posture {ctx.posture['established']}")
 
-    status, res.status_derivation = derive_status(rule.enactment_status, temporal.effective_date,
-                                                  temporal.has_date_evidence, as_of, no_date_in_force(ctx.posture))
+    if rule.enactment_status in ("pending", "failed"):
+        # Proposals: pending vs failed is decided deterministically (legislative.py).
+        res.legislative = legislative_status(rule.enactment_status, source.body, ctx.session, as_of)
+        status = res.legislative["status"]
+        res.status_derivation = (f"legislative: {res.legislative['status_basis']}" if status is not None else
+                                 f"{TEMPORAL_UNRESOLVED}: legislative status undetermined: "
+                                 f"{res.legislative['conflict']}")
+        if res.legislative.get("conflict"):
+            res.warnings.append(f"review: legislative status: {res.legislative['conflict']}")
+    else:
+        status, res.status_derivation = derive_status(rule.enactment_status, temporal.effective_date,
+                                                      temporal.has_date_evidence, as_of, no_date_in_force(ctx.posture))
     if status is None:
         res.rejection_reasons.append(f"status: {res.status_derivation}")
         if res.status_derivation.startswith(TEMPORAL_UNRESOLVED):
@@ -654,6 +774,8 @@ def evaluate_candidate(index: int, raw: Any, source: SourceDocument, as_of: date
     if operative:
         res.warnings.append("review: applicability depends on an unresolved operative condition")
 
+    res.scope_inputs.update(exemptions=rule.exemptions, coverage_conditions=rule.coverage_conditions,
+                            operative=[oc.statement for oc in operative])
     propagated = _propagate_scope(rule, ctx.scope, source, res)
     res.rule = build_record(rule, source.meta, res.citation, status, temporal.effective_date, propagated, operative,
                             basis=rule.source_basis)

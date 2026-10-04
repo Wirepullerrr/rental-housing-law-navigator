@@ -35,6 +35,11 @@ Posture = Literal["codified_current_law", "enacted_session_law", "pending_bill",
                   "bill_status_or_summary_page", "official_explanatory_page", "unknown"]
 # What a record's substantive content rests on. Anything but operative_text is labelled in the record.
 SourceBasis = Literal["operative_text", "official_bill_summary", "official_bill_history", "official_explanatory_text"]
+# How a document-level condition says what it governs (scope.py decides which applies):
+# a structural container ("this Division"), explicit references ("Sections 4 and 5"), or a
+# named legal mechanism ("the rent cap"), which never propagates without verification.
+ScopeMode = Literal["structural", "explicit_reference", "named_subject"]
+MappingDecision = Literal["applies", "does_not_apply", "uncertain"]
 # The legal function of an inventory provision (input to the scope-challenge check, coverage.py).
 Role = Literal["operative_rule", "scope_condition", "exemption", "definition", "remedy", "enforcement",
                "history", "procedure", "boilerplate", "uncertain"]
@@ -83,6 +88,11 @@ class ScopeCondition(BaseModel):
     kind: Literal["exemption", "coverage_condition"]
     statement: str = Field(min_length=1, description="The condition in plain language.")
     citation: str = Field(min_length=1, description="Official citation of the provision stating it.")
+    scope_mode: ScopeMode = Field(description="structural: it names a container ('this section', 'this "
+                                  "Division'); explicit_reference: it cites provisions; named_subject: it names a "
+                                  "legal mechanism ('the rent cap').")
+    scope_quote: str = Field(min_length=1, description="The exact words that say what it governs, verbatim "
+                             "(e.g. 'This Division shall not apply', 'Sections 4 and 5', 'The rent cap').")
     source_provision_id: str | None = Field(description="Inventory id of the provision that states it; null if "
                                             "that text is not an inventory provision.")
     governed_provision_ids: list[str] | None = Field(description="Inventory ids of the provisions it governs; "
@@ -179,6 +189,11 @@ class LegacyProvisionNote(ProvisionNote):
     role: Role | None = None
 
 
+class LegacyScopeCondition(ScopeCondition):
+    scope_mode: ScopeMode | None = None
+    scope_quote: str | None = None
+
+
 class LegacyExtractedRule(ExtractedRule):
     provision_ids: list[str] = Field(default_factory=list)
     source_basis: SourceBasis | None = None
@@ -197,12 +212,27 @@ class TargetResolution(BaseModel):
                                             "(required for out_of_scope); same quote-part rules.")
 
 
+class ScopeMappingDecision(BaseModel):
+    """The repair pass's decision on one (named-subject condition, provision) pair. Never a rule."""
+
+    model_config = ConfigDict(extra="forbid", strict=True)
+
+    condition_id: str = Field(min_length=1, description="The condition id exactly as listed.")
+    provision_id: str = Field(min_length=1, description="The provision id exactly as listed.")
+    decision: MappingDecision
+    reason: str | None = Field(description="One short sentence (required).")
+    evidence_parts: list[QuotePart] = Field(description="Verbatim text supporting the decision (required for "
+                                            "does_not_apply; same quote-part rules).")
+
+
 class RepairResponse(BaseModel):
-    """Targeted repair pass: a decision for every target, and records only for in-scope targets."""
+    """Targeted repair pass: a decision for every target and every scope mapping, and records
+    only for in-scope targets."""
 
     model_config = ConfigDict(extra="forbid", strict=True)
 
     target_resolutions: list[TargetResolution]
+    scope_mappings: list[ScopeMappingDecision]
     rules: list[ExtractedRule]
 
 
@@ -304,6 +334,8 @@ class CandidateResult(BaseModel):
     provision_ids: list[str] = Field(default_factory=list)       # links to inventory ids, as given
     source_basis: str | None = None
     status_evidence: CitationCheck | None = None                  # enactment_status_evidence check
+    legislative: dict[str, Any] = Field(default_factory=dict)     # legislative.py status decision
+    scope_inputs: dict[str, Any] = Field(default_factory=dict)    # rule-specific scope text, to recompose
     pydantic_valid: bool = False
     pydantic_errors: list[str] = Field(default_factory=list)
     schema_valid: bool | None = None   # None: not reached
@@ -335,6 +367,8 @@ class RepairPass(BaseModel):
     prompt_sha256: str | None = None
     provider_metadata: dict[str, Any] = Field(default_factory=dict)
     raw_response_text: str = ""
+    # Named-subject scope mappings verified by this request (scope.py), with their final state.
+    mappings: list[dict[str, Any]] = Field(default_factory=list)
     candidate_indices: list[int] = Field(default_factory=list)
     accepted_count: int = 0
     rejected_count: int = 0
@@ -368,6 +402,8 @@ class ExtractionRun(BaseModel):
     source_view: dict[str, Any] = Field(default_factory=dict)         # removed page artifacts, verbatim
     coverage: dict[str, Any] = Field(default_factory=dict)            # inventory coverage closure
     scope_challenges: list[dict[str, Any]] = Field(default_factory=list)  # out_of_scope items re-examined
+    scope_mappings: list[dict[str, Any]] = Field(default_factory=list)    # named-subject pairs and outcomes
+    legislative_session: dict[str, Any] | None = None                     # legislative.find_session
     empty_result: dict[str, Any] | None = None                        # no-rules justification and its check
     legacy_replay: dict[str, Any] | None = None                       # set only when replaying a pre-v6 response
     repair: RepairPass | None = None

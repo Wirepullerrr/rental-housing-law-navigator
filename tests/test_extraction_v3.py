@@ -81,10 +81,11 @@ D052_VACATION_EXEMPTION = ("The provisions of this section shall not apply to an
 D052_RETURN_SPAN = "The lessor shall, within thirty days after the termination of occupancy under a tenancy-at-will"
 
 
-def scope(sid="S1", governed=None, evidence=D052_VACATION_EXEMPTION, kind="exemption"):
+def scope(sid="S1", governed=None, evidence=D052_VACATION_EXEMPTION, kind="exemption", source=None):
     return {"id": sid, "kind": kind, "statement": "Vacation rentals of 100 days or less are exempt.",
-            "citation": "M.G.L. c. 186, § 15B(9)", "source_provision_id": None, "governed_provision_ids": governed,
-            "evidence_parts": parts(evidence)}
+            "citation": "M.G.L. c. 186, § 15B(9)", "scope_mode": "structural",
+            "scope_quote": "The provisions of this section shall not apply", "source_provision_id": source,
+            "governed_provision_ids": governed, "evidence_parts": parts(evidence)}
 
 
 def test_document_wide_exemption_propagates_to_every_rule(run_fake):
@@ -93,8 +94,9 @@ def test_document_wide_exemption_propagates_to_every_rule(run_fake):
     assert run.accepted_count == 2
     for c, rule in zip(run.candidates, run.rules):
         assert "Vacation rentals of 100 days or less are exempt. [M.G.L. c. 186, § 15B(9); document-wide]" == rule["exemptions"]
-        assert c.propagated_scope == [{"id": "S1", "kind": "exemption", "governed_provision_ids": None,
-                                       "basis": "document-wide", "applied": True}]
+        assert c.propagated_scope == [{"id": "S1", "kind": "exemption", "mode": "structural",
+                                       "governed_provision_ids": None, "basis": "structural: every provision",
+                                       "applied": True}]
     assert run.global_scope[0]["propagated"] and run.global_scope[0]["evidence_check"]["status"] == "exact_match"
 
 
@@ -103,10 +105,10 @@ def test_scoped_condition_applies_only_to_rules_it_governs(run_fake):
              make_candidate(citation="M.G.L. c. 186, § 15B(4)", quoted_span=D052_RETURN_SPAN, title="Return",
                             provision_ids=["P2"])]
     run, _ = run_fake({"provisions": [provision("§ 15B(1)(b)"), provision("§ 15B(4)", id="P2")],
-                       "global_scope": [scope(governed=["P2"])], "rules": rules})
+                       "global_scope": [scope(governed=["P2"], source="P2")], "rules": rules})
     assert run.rules[0]["exemptions"] is None
     assert run.rules[1]["exemptions"] == "Vacation rentals of 100 days or less are exempt. [M.G.L. c. 186, § 15B(9)]"
-    assert run.candidates[1].propagated_scope[0]["basis"] == "rule links governed provision(s) ['P2']"
+    assert run.candidates[1].propagated_scope[0]["basis"] == "structural: rule links reached provision(s) ['P2']"
 
 
 def test_unverified_scope_condition_is_never_propagated(run_fake):

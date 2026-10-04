@@ -17,7 +17,9 @@ supplied corpus text (manifest-verified; raw text never modified)
        enactment status evidence         required (verified) for pending and failed
        effective-date evidence           classified; relative formulas resolved deterministically (temporal.py)
        status derivation                 deterministic, from enactment_status + effective_date + posture + as_of
-       scope propagation                 verified document-level conditions applied by provision id only
+       legislative status (proposals)    pending vs failed decided deterministically (legislative.py)
+       scope propagation                 structural / explicit-reference conditions by provision id (scope.py);
+                                         named-subject conditions only after a verified mapping
        trusted metadata + team_rule_id   from the repository, not from the model
        Pydantic RuleRecord               the internal mirror of the official schema
        official JSON Schema              schema/rule_record.schema.json
@@ -329,9 +331,54 @@ uv run --env-file .env python scripts/run_corpus.py --doc-ids D065,D001 --out-di
 - **What does not stop it:** a `review_required` document, or a document-level failure such as a missing supplied text. These are recorded and the batch continues.
 - **Outputs:** `<out-dir>/documents/<doc_id>_extraction.json`, plus `<out-dir>/<stage name>_summary.json`, which is rewritten after every document. The summary has one row per document (status, calls, cache hits, quote and scope counts, tokens and estimated new cost) and corpus totals.
 
+## Prompt v7 contract (M3.2)
+
+v7 keeps all of v6 and changes two things (`EXTRACTION_PROMPT_VERSION = "v7"`, `REPAIR_PROMPT_VERSION = "v7-repair-1"`, so every v6 cache entry misses):
+
+- **Document-level conditions** also declare a `scope_mode` (`structural`, `explicit_reference` or `named_subject`) and a verbatim `scope_quote` naming what they govern; for a lettered list, the `scope_quote` is the list's lead-in. The prompt says a named mechanism must never be stretched to nearby provisions that impose a different duty.
+- **Legislative status:** the model reports legislative evidence (a status line, a history entry, a session label) in `enactment_status_evidence`. A referral for study does not by itself end a bill. The system decides pending vs failed.
+
+The repair response gains `scope_mappings`, one decision per requested (condition, provision) pair: `applies`, `does_not_apply` or `uncertain`, each with a reason and evidence. The prompt has no document-specific examples and no bill numbers.
+
+## Scope modes (`scope.py`)
+
+Python decides each verified condition's mode from its verified **scope words**: the `scope_quote`, which must be raw text inside or up to 4,000 characters before the evidence. If there is no usable `scope_quote`, the evidence itself is used, plus the lead-in of a lettered list item. The model's declared mode is recorded but not trusted.
+
+| mode | recognised by | propagation |
+|---|---|---|
+| `structural` | a container as the subject or frame of the clause: "This Division shall not apply", "the provisions of this section do not apply", "for purposes of this section", "nothing in this act". A cross-reference such as "as defined in Division 1 of this Code" does not count. | Deterministic, to a verified container: the whole document (governed ids null), or the smallest token-prefix group of the stating provision's ref. That group must contain every proposed id and every in-scope member. |
+| `explicit_reference` | references parsed from the words: "Sections 6 and 7", "subsection (4)". A label-only reference is read relative to the stating section. | Deterministic, **only** to inventory provisions inside those references. Proposed ids outside them are recorded and not used. |
+| `named_subject` | anything else, e.g. "The rent cap does not apply". Also any structural or explicit claim that cannot be verified. | **Never automatic.** Each proposed (condition, provision) pair whose provision is linked by a record becomes a `scope_mapping_challenge`. |
+
+**Scope-mapping challenges:**
+
+- They travel in the **same single repair request** as the other targets. The repair cache key names the sorted pair set.
+- **Outcomes:**
+  - `applies` needs a reason. Any evidence given must verify.
+  - `does_not_apply` needs a reason and verified evidence.
+  - `uncertain`, an omitted pair, unverified evidence or a repair that did not run each leave the pair `unresolved`. Nothing is propagated and the document is `review_required`.
+- **After the repair:** only `applies` pairs propagate, and the affected records' scope text is recomposed. A mapping never creates a record.
+- **Integrity:** the corpus runner treats a named-subject condition applied without an `applies` mapping as a violation.
+
+## Legislative status of proposals (`legislative.py`)
+
+Pending vs failed for a `pending` or `failed` record is decided here, never by the model. An `enacted` record keeps the enacted and effective-date logic.
+
+- **Explicit terminal action:** a source line whose whole text is a terminal disposition gives `failed`. Examples are "No further action taken", "Withdrawn", "Leave to withdraw", "Rejected", "Defeated" and "Vetoed". A qualified line such as "No further action taken on the extension …" does not count.
+- **Massachusetts session resolver (`ma-general-court-session/v1`):** it applies only for MA jurisdictions, using the **first** General Court label on the page, which is the bill's own.
+  - **Session years:** "193rd (2023 - 2024)" or "194th (Current)". The n-th General Court sits in 2023 + 2(n − 193) and the following year. Written years must agree, or the label is ignored.
+  - **Expiry:** a session counts as ended from February 1 after its second year. A query date on or after that, with no enactment evidence, gives `failed` (`session_expired`).
+  - **Open session:** a query date within the session's years gives `pending` (`current_session_pending`), even after a study order or the end of formal sessions.
+  - **Refiles:** a later-session refile or similar bill is a separate object and does not change this.
+- **Enactment conflict:** if the text records an enactment (approval, signing or chapter line) but the record says pending or failed, the status is undetermined and the record is held for review.
+- **Other cases:** with no deterministic basis (another jurisdiction, no label), the record keeps the model's status with verified evidence (`model_status_with_evidence`).
+- **Overrides:** overriding the model from pending to failed (expired session, terminal action) is recorded as a warning. Overriding failed to pending is a review reason.
+
+Each decision is recorded in `candidate.legislative`: session, years, query date, enactment and terminal evidence, resolver version, status basis, and any conflict.
+
 ## Provision ids, scope targeting and scope challenges (M3.1)
 
-- **Propagation:** document-level conditions propagate by provision id only. A condition applies to a record when it is document-wide, or when the record links one of the provision ids it governs. No citation, title or substring is compared, so descriptive titles containing commas are harmless. A condition whose governed ids are empty or not in the inventory is not propagated, and the document is `review_required`. An applied condition that shares no id with its record is a corpus-runner integrity violation.
+- **Propagation:** document-level conditions propagate by provision id only. Since v7, the provision ids are the ones `scope.py` verified (see Scope modes); named-subject conditions propagate only through verified mappings. A condition applies to a record when it is document-wide, or when the record links one of the provision ids it reaches. No citation, title or substring is compared, so descriptive titles containing commas are harmless. A condition whose governed ids are empty or not in the inventory is not propagated, and the document is `review_required`. An applied condition that shares no id with its record is a corpus-runner integrity violation.
 - **Coverage closure:** a record counts for an in-scope provision only if it links the provision's id **and** its citation names the provision, a subdivision or an ancestor. A citation alone never counts.
 - **Scope challenge (`coverage.scope_challenges`):** an `out_of_scope` inventory item is challenged when **all** of the following hold:
   - its role claims it is not operative (definition, procedure, history, boilerplate or uncertain);
@@ -361,5 +408,7 @@ Everything v5 never stated (posture, anchors, roles, source basis, status eviden
 - Cross-page quotes may span exactly one page artifact. A passage spanning two page breaks must be split into separate records.
 - The relative-date resolver supports one formula family. Other formulas stay unresolved, and their records are held.
 - No unstated default effective date is derived (e.g. a state's default operative date for statutes). Session-law records without a stated date are held, and Module C must supply any change-test facts.
+- **Structural containers** are verified from ref token prefixes. A governed-ids value of null with "this section" in a multi-section document is accepted as the whole document. The prompt instructs the model to use null only for the whole document.
+- **Legislative status** has a deterministic session resolver for Massachusetts only. Elsewhere, pending vs failed rests on the model's verified status evidence.
 - The scope-challenge heuristic is conservative and keyword-assisted. It cannot see a provision that the inventory omits altogether, or an out_of_scope item whose anchor is not source text.
 - Records are not deduplicated semantically against parent-level records. Repair can only add records for provisions that had no candidate at all, which limits overlap but does not prove its absence.

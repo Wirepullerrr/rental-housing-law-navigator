@@ -1,0 +1,1740 @@
+{
+  "note": "Code-only replay of cached responses; no provider request, zero spend. Not legal advice.",
+  "as_of": "2026-10-01",
+  "documents": {
+    "D073": {
+      "doc_id": "D073",
+      "replayed_prompt_version": "v4",
+      "cache_key": "6d8b471c0341e5f85f58416eecbcb6903b91e86f6af805c455632adc2c5f765e",
+      "before": {
+        "document_status": "complete",
+        "accepted": 44,
+        "candidates": 44
+      },
+      "after": {
+        "document_status": "review_required",
+        "accepted": 0,
+        "held": 42,
+        "rejected": 0,
+        "candidates": 42
+      },
+      "posture": {
+        "declared": null,
+        "evidence": null,
+        "evidence_check": null,
+        "established": "unknown",
+        "basis": "the response declares no document posture"
+      },
+      "base_dates": [],
+      "scope_targeting": [
+        {
+          "id": "S1",
+          "governs": null,
+          "governed_provision_ids": null,
+          "how": "document-wide (governs null)"
+        },
+        {
+          "id": "S2",
+          "governs": null,
+          "governed_provision_ids": null,
+          "how": "document-wide (governs null)"
+        },
+        {
+          "id": "S3",
+          "governs": null,
+          "governed_provision_ids": null,
+          "how": "document-wide (governs null)"
+        },
+        {
+          "id": "S4",
+          "governs": null,
+          "governed_provision_ids": null,
+          "how": "document-wide (governs null)"
+        },
+        {
+          "id": "S5",
+          "governs": null,
+          "governed_provision_ids": null,
+          "how": "document-wide (governs null)"
+        },
+        {
+          "id": "S6",
+          "governs": null,
+          "governed_provision_ids": null,
+          "how": "document-wide (governs null)"
+        },
+        {
+          "id": "S7",
+          "governs": null,
+          "governed_provision_ids": null,
+          "how": "document-wide (governs null)"
+        },
+        {
+          "id": "S8",
+          "governs": null,
+          "governed_provision_ids": null,
+          "how": "document-wide (governs null)"
+        },
+        {
+          "id": "S9",
+          "governs": null,
+          "governed_provision_ids": null,
+          "how": "document-wide (governs null)"
+        },
+        {
+          "id": "S10",
+          "governs": null,
+          "governed_provision_ids": null,
+          "how": "document-wide (governs null)"
+        },
+        {
+          "id": "S11",
+          "governs": null,
+          "governed_provision_ids": null,
+          "how": "document-wide (governs null)"
+        },
+        {
+          "id": "S12",
+          "governs": null,
+          "governed_provision_ids": null,
+          "how": "document-wide (governs null)"
+        }
+      ],
+      "global_scope": [
+        {
+          "id": "S1",
+          "propagated": true,
+          "problem": null
+        },
+        {
+          "id": "S2",
+          "propagated": true,
+          "problem": null
+        },
+        {
+          "id": "S3",
+          "propagated": true,
+          "problem": null
+        },
+        {
+          "id": "S4",
+          "propagated": true,
+          "problem": null
+        },
+        {
+          "id": "S5",
+          "propagated": true,
+          "problem": null
+        },
+        {
+          "id": "S6",
+          "propagated": true,
+          "problem": null
+        },
+        {
+          "id": "S7",
+          "propagated": true,
+          "problem": null
+        },
+        {
+          "id": "S8",
+          "propagated": true,
+          "problem": null
+        },
+        {
+          "id": "S9",
+          "propagated": true,
+          "problem": null
+        },
+        {
+          "id": "S10",
+          "propagated": true,
+          "problem": null
+        },
+        {
+          "id": "S11",
+          "propagated": true,
+          "problem": null
+        },
+        {
+          "id": "S12",
+          "propagated": true,
+          "problem": null
+        }
+      ],
+      "quotes_unchanged": true,
+      "rules": [
+        {
+          "index": 0,
+          "citation": "§ 98.0704",
+          "provision_ids": [
+            "P4"
+          ],
+          "accepted": false,
+          "held": true,
+          "status": null,
+          "effective_date": null,
+          "relative_resolution": null,
+          "applied_scope": [
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5",
+            "S6",
+            "S7",
+            "S8",
+            "S9",
+            "S10",
+            "S11",
+            "S12"
+          ],
+          "rejection_reasons": [
+            "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+          ]
+        },
+        {
+          "index": 1,
+          "citation": "§ 98.0704(a)",
+          "provision_ids": [
+            "P5"
+          ],
+          "accepted": false,
+          "held": true,
+          "status": null,
+          "effective_date": null,
+          "relative_resolution": null,
+          "applied_scope": [
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5",
+            "S6",
+            "S7",
+            "S8",
+            "S9",
+            "S10",
+            "S11",
+            "S12"
+          ],
+          "rejection_reasons": [
+            "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+          ]
+        },
+        {
+          "index": 2,
+          "citation": "§ 98.0704(b)(1)",
+          "provision_ids": [
+            "P6"
+          ],
+          "accepted": false,
+          "held": true,
+          "status": null,
+          "effective_date": null,
+          "relative_resolution": null,
+          "applied_scope": [
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5",
+            "S6",
+            "S7",
+            "S8",
+            "S9",
+            "S10",
+            "S11",
+            "S12"
+          ],
+          "rejection_reasons": [
+            "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+          ]
+        },
+        {
+          "index": 3,
+          "citation": "§ 98.0704(b)(1)(A)",
+          "provision_ids": [
+            "P7"
+          ],
+          "accepted": false,
+          "held": true,
+          "status": null,
+          "effective_date": null,
+          "relative_resolution": null,
+          "applied_scope": [
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5",
+            "S6",
+            "S7",
+            "S8",
+            "S9",
+            "S10",
+            "S11",
+            "S12"
+          ],
+          "rejection_reasons": [
+            "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+          ]
+        },
+        {
+          "index": 4,
+          "citation": "§ 98.0704(b)(1)(C)",
+          "provision_ids": [
+            "P7"
+          ],
+          "accepted": false,
+          "held": true,
+          "status": null,
+          "effective_date": null,
+          "relative_resolution": null,
+          "applied_scope": [
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5",
+            "S6",
+            "S7",
+            "S8",
+            "S9",
+            "S10",
+            "S11",
+            "S12"
+          ],
+          "rejection_reasons": [
+            "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+          ]
+        },
+        {
+          "index": 5,
+          "citation": "§ 98.0704(b)(1)(D)",
+          "provision_ids": [
+            "P8"
+          ],
+          "accepted": false,
+          "held": true,
+          "status": null,
+          "effective_date": null,
+          "relative_resolution": null,
+          "applied_scope": [
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5",
+            "S6",
+            "S7",
+            "S8",
+            "S9",
+            "S10",
+            "S11",
+            "S12"
+          ],
+          "rejection_reasons": [
+            "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+          ]
+        },
+        {
+          "index": 6,
+          "citation": "§ 98.0704(b)(1)(E)",
+          "provision_ids": [
+            "P9"
+          ],
+          "accepted": false,
+          "held": true,
+          "status": null,
+          "effective_date": null,
+          "relative_resolution": null,
+          "applied_scope": [
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5",
+            "S6",
+            "S7",
+            "S8",
+            "S9",
+            "S10",
+            "S11",
+            "S12"
+          ],
+          "rejection_reasons": [
+            "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+          ]
+        },
+        {
+          "index": 7,
+          "citation": "§ 98.0704(b)(1)(F)",
+          "provision_ids": [
+            "P9"
+          ],
+          "accepted": false,
+          "held": true,
+          "status": null,
+          "effective_date": null,
+          "relative_resolution": null,
+          "applied_scope": [
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5",
+            "S6",
+            "S7",
+            "S8",
+            "S9",
+            "S10",
+            "S11",
+            "S12"
+          ],
+          "rejection_reasons": [
+            "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+          ]
+        },
+        {
+          "index": 8,
+          "citation": "§ 98.0704(b)(1)(H)",
+          "provision_ids": [
+            "P9"
+          ],
+          "accepted": false,
+          "held": true,
+          "status": null,
+          "effective_date": null,
+          "relative_resolution": null,
+          "applied_scope": [
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5",
+            "S6",
+            "S7",
+            "S8",
+            "S9",
+            "S10",
+            "S11",
+            "S12"
+          ],
+          "rejection_reasons": [
+            "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+          ]
+        },
+        {
+          "index": 9,
+          "citation": "§ 98.0704(b)(2)",
+          "provision_ids": [
+            "P10"
+          ],
+          "accepted": false,
+          "held": true,
+          "status": null,
+          "effective_date": null,
+          "relative_resolution": null,
+          "applied_scope": [
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5",
+            "S6",
+            "S7",
+            "S8",
+            "S9",
+            "S10",
+            "S11",
+            "S12"
+          ],
+          "rejection_reasons": [
+            "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+          ]
+        },
+        {
+          "index": 10,
+          "citation": "§ 98.0704(b)(3)",
+          "provision_ids": [
+            "P11"
+          ],
+          "accepted": false,
+          "held": true,
+          "status": null,
+          "effective_date": null,
+          "relative_resolution": null,
+          "applied_scope": [
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5",
+            "S6",
+            "S7",
+            "S8",
+            "S9",
+            "S10",
+            "S11",
+            "S12"
+          ],
+          "rejection_reasons": [
+            "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+          ]
+        },
+        {
+          "index": 11,
+          "citation": "§ 98.0704(b)(3)",
+          "provision_ids": [
+            "P11"
+          ],
+          "accepted": false,
+          "held": true,
+          "status": null,
+          "effective_date": null,
+          "relative_resolution": null,
+          "applied_scope": [
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5",
+            "S6",
+            "S7",
+            "S8",
+            "S9",
+            "S10",
+            "S11",
+            "S12"
+          ],
+          "rejection_reasons": [
+            "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+          ]
+        },
+        {
+          "index": 12,
+          "citation": "§ 98.0704(b)(4)(A)-(B)",
+          "provision_ids": [
+            "P12"
+          ],
+          "accepted": false,
+          "held": true,
+          "status": null,
+          "effective_date": null,
+          "relative_resolution": null,
+          "applied_scope": [
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5",
+            "S6",
+            "S7",
+            "S8",
+            "S9",
+            "S10",
+            "S11",
+            "S12"
+          ],
+          "rejection_reasons": [
+            "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+          ]
+        },
+        {
+          "index": 13,
+          "citation": "§ 98.0704(b)(4)(C)",
+          "provision_ids": [
+            "P12"
+          ],
+          "accepted": false,
+          "held": true,
+          "status": null,
+          "effective_date": null,
+          "relative_resolution": null,
+          "applied_scope": [
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5",
+            "S6",
+            "S7",
+            "S8",
+            "S9",
+            "S10",
+            "S11",
+            "S12"
+          ],
+          "rejection_reasons": [
+            "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+          ]
+        },
+        {
+          "index": 14,
+          "citation": "§ 98.0704(b)(4)(D)",
+          "provision_ids": [
+            "P13"
+          ],
+          "accepted": false,
+          "held": true,
+          "status": null,
+          "effective_date": null,
+          "relative_resolution": null,
+          "applied_scope": [
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5",
+            "S6",
+            "S7",
+            "S8",
+            "S9",
+            "S10",
+            "S11",
+            "S12"
+          ],
+          "rejection_reasons": [
+            "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+          ]
+        },
+        {
+          "index": 15,
+          "citation": "§ 98.0705(a)",
+          "provision_ids": [
+            "P14"
+          ],
+          "accepted": false,
+          "held": true,
+          "status": null,
+          "effective_date": null,
+          "relative_resolution": null,
+          "applied_scope": [
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5",
+            "S6",
+            "S7",
+            "S8",
+            "S9",
+            "S10",
+            "S11",
+            "S12"
+          ],
+          "rejection_reasons": [
+            "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+          ]
+        },
+        {
+          "index": 16,
+          "citation": "§ 98.0705(b)",
+          "provision_ids": [
+            "P14"
+          ],
+          "accepted": false,
+          "held": true,
+          "status": null,
+          "effective_date": null,
+          "relative_resolution": null,
+          "applied_scope": [
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5",
+            "S6",
+            "S7",
+            "S8",
+            "S9",
+            "S10",
+            "S11",
+            "S12"
+          ],
+          "rejection_reasons": [
+            "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+          ]
+        },
+        {
+          "index": 17,
+          "citation": "§ 98.0705(c)",
+          "provision_ids": [
+            "P15"
+          ],
+          "accepted": false,
+          "held": true,
+          "status": null,
+          "effective_date": null,
+          "relative_resolution": null,
+          "applied_scope": [
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5",
+            "S6",
+            "S7",
+            "S8",
+            "S9",
+            "S10",
+            "S11",
+            "S12"
+          ],
+          "rejection_reasons": [
+            "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+          ]
+        },
+        {
+          "index": 18,
+          "citation": "§ 98.0705(d)",
+          "provision_ids": [
+            "P15"
+          ],
+          "accepted": false,
+          "held": true,
+          "status": null,
+          "effective_date": null,
+          "relative_resolution": null,
+          "applied_scope": [
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5",
+            "S6",
+            "S7",
+            "S8",
+            "S9",
+            "S10",
+            "S11",
+            "S12"
+          ],
+          "rejection_reasons": [
+            "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+          ]
+        },
+        {
+          "index": 19,
+          "citation": "§ 98.0706(a)(1)",
+          "provision_ids": [
+            "P16"
+          ],
+          "accepted": false,
+          "held": true,
+          "status": null,
+          "effective_date": null,
+          "relative_resolution": null,
+          "applied_scope": [
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5",
+            "S6",
+            "S7",
+            "S8",
+            "S9",
+            "S10",
+            "S11",
+            "S12"
+          ],
+          "rejection_reasons": [
+            "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+          ]
+        },
+        {
+          "index": 20,
+          "citation": "§ 98.0706(a)(2)",
+          "provision_ids": [
+            "P17"
+          ],
+          "accepted": false,
+          "held": true,
+          "status": null,
+          "effective_date": null,
+          "relative_resolution": null,
+          "applied_scope": [
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5",
+            "S6",
+            "S7",
+            "S8",
+            "S9",
+            "S10",
+            "S11",
+            "S12"
+          ],
+          "rejection_reasons": [
+            "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+          ]
+        },
+        {
+          "index": 21,
+          "citation": "§ 98.0706(b)(1)",
+          "provision_ids": [
+            "P18"
+          ],
+          "accepted": false,
+          "held": true,
+          "status": null,
+          "effective_date": null,
+          "relative_resolution": null,
+          "applied_scope": [
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5",
+            "S6",
+            "S7",
+            "S8",
+            "S9",
+            "S10",
+            "S11",
+            "S12"
+          ],
+          "rejection_reasons": [
+            "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+          ]
+        },
+        {
+          "index": 22,
+          "citation": "§ 98.0706(b)(2)",
+          "provision_ids": [
+            "P19"
+          ],
+          "accepted": false,
+          "held": true,
+          "status": null,
+          "effective_date": null,
+          "relative_resolution": null,
+          "applied_scope": [
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5",
+            "S6",
+            "S7",
+            "S8",
+            "S9",
+            "S10",
+            "S11",
+            "S12"
+          ],
+          "rejection_reasons": [
+            "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+          ]
+        },
+        {
+          "index": 23,
+          "citation": "§ 98.0706(c)(1)",
+          "provision_ids": [
+            "P20"
+          ],
+          "accepted": false,
+          "held": true,
+          "status": null,
+          "effective_date": null,
+          "relative_resolution": null,
+          "applied_scope": [
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5",
+            "S6",
+            "S7",
+            "S8",
+            "S9",
+            "S10",
+            "S11",
+            "S12"
+          ],
+          "rejection_reasons": [
+            "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+          ]
+        },
+        {
+          "index": 24,
+          "citation": "§ 98.0706(c)(2)",
+          "provision_ids": [
+            "P20"
+          ],
+          "accepted": false,
+          "held": true,
+          "status": null,
+          "effective_date": null,
+          "relative_resolution": null,
+          "applied_scope": [
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5",
+            "S6",
+            "S7",
+            "S8",
+            "S9",
+            "S10",
+            "S11",
+            "S12"
+          ],
+          "rejection_reasons": [
+            "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+          ]
+        },
+        {
+          "index": 25,
+          "citation": "§ 98.0706(c)(3)",
+          "provision_ids": [
+            "P21"
+          ],
+          "accepted": false,
+          "held": true,
+          "status": null,
+          "effective_date": null,
+          "relative_resolution": null,
+          "applied_scope": [
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5",
+            "S6",
+            "S7",
+            "S8",
+            "S9",
+            "S10",
+            "S11",
+            "S12"
+          ],
+          "rejection_reasons": [
+            "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+          ]
+        },
+        {
+          "index": 26,
+          "citation": "§ 98.0706(c)(4)",
+          "provision_ids": [
+            "P22"
+          ],
+          "accepted": false,
+          "held": true,
+          "status": null,
+          "effective_date": null,
+          "relative_resolution": null,
+          "applied_scope": [
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5",
+            "S6",
+            "S7",
+            "S8",
+            "S9",
+            "S10",
+            "S11",
+            "S12"
+          ],
+          "rejection_reasons": [
+            "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+          ]
+        },
+        {
+          "index": 27,
+          "citation": "§ 98.0706(c)(5)",
+          "provision_ids": [
+            "P22"
+          ],
+          "accepted": false,
+          "held": true,
+          "status": null,
+          "effective_date": null,
+          "relative_resolution": null,
+          "applied_scope": [
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5",
+            "S6",
+            "S7",
+            "S8",
+            "S9",
+            "S10",
+            "S11",
+            "S12"
+          ],
+          "rejection_reasons": [
+            "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+          ]
+        },
+        {
+          "index": 28,
+          "citation": "§ 98.0706(d)",
+          "provision_ids": [
+            "P23"
+          ],
+          "accepted": false,
+          "held": true,
+          "status": null,
+          "effective_date": null,
+          "relative_resolution": null,
+          "applied_scope": [
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5",
+            "S6",
+            "S7",
+            "S8",
+            "S9",
+            "S10",
+            "S11",
+            "S12"
+          ],
+          "rejection_reasons": [
+            "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+          ]
+        },
+        {
+          "index": 29,
+          "citation": "§ 98.0706(e)",
+          "provision_ids": [
+            "P24"
+          ],
+          "accepted": false,
+          "held": true,
+          "status": null,
+          "effective_date": null,
+          "relative_resolution": null,
+          "applied_scope": [
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5",
+            "S6",
+            "S7",
+            "S8",
+            "S9",
+            "S10",
+            "S11",
+            "S12"
+          ],
+          "rejection_reasons": [
+            "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+          ]
+        },
+        {
+          "index": 30,
+          "citation": "§ 98.0707(a)",
+          "provision_ids": [
+            "P25"
+          ],
+          "accepted": false,
+          "held": true,
+          "status": null,
+          "effective_date": null,
+          "relative_resolution": null,
+          "applied_scope": [
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5",
+            "S6",
+            "S7",
+            "S8",
+            "S9",
+            "S10",
+            "S11",
+            "S12"
+          ],
+          "rejection_reasons": [
+            "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+          ]
+        },
+        {
+          "index": 31,
+          "citation": "§ 98.0707(b)",
+          "provision_ids": [
+            "P25"
+          ],
+          "accepted": false,
+          "held": true,
+          "status": null,
+          "effective_date": null,
+          "relative_resolution": null,
+          "applied_scope": [
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5",
+            "S6",
+            "S7",
+            "S8",
+            "S9",
+            "S10",
+            "S11",
+            "S12"
+          ],
+          "rejection_reasons": [
+            "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+          ]
+        },
+        {
+          "index": 32,
+          "citation": "§ 98.0707(c)",
+          "provision_ids": [
+            "P26"
+          ],
+          "accepted": false,
+          "held": true,
+          "status": null,
+          "effective_date": null,
+          "relative_resolution": null,
+          "applied_scope": [
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5",
+            "S6",
+            "S7",
+            "S8",
+            "S9",
+            "S10",
+            "S11",
+            "S12"
+          ],
+          "rejection_reasons": [
+            "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+          ]
+        },
+        {
+          "index": 33,
+          "citation": "§ 98.0707(d)",
+          "provision_ids": [
+            "P27"
+          ],
+          "accepted": false,
+          "held": true,
+          "status": null,
+          "effective_date": null,
+          "relative_resolution": null,
+          "applied_scope": [
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5",
+            "S6",
+            "S7",
+            "S8",
+            "S9",
+            "S10",
+            "S11",
+            "S12"
+          ],
+          "rejection_reasons": [
+            "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+          ]
+        },
+        {
+          "index": 34,
+          "citation": "§ 98.0707(e)",
+          "provision_ids": [
+            "P27"
+          ],
+          "accepted": false,
+          "held": true,
+          "status": null,
+          "effective_date": null,
+          "relative_resolution": null,
+          "applied_scope": [
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5",
+            "S6",
+            "S7",
+            "S8",
+            "S9",
+            "S10",
+            "S11",
+            "S12"
+          ],
+          "rejection_reasons": [
+            "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+          ]
+        },
+        {
+          "index": 35,
+          "citation": "§ 98.0708",
+          "provision_ids": [
+            "P28"
+          ],
+          "accepted": false,
+          "held": true,
+          "status": null,
+          "effective_date": null,
+          "relative_resolution": null,
+          "applied_scope": [
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5",
+            "S6",
+            "S7",
+            "S8",
+            "S9",
+            "S10",
+            "S11",
+            "S12"
+          ],
+          "rejection_reasons": [
+            "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+          ]
+        },
+        {
+          "index": 36,
+          "citation": "§ 98.0709(b)",
+          "provision_ids": [
+            "P29"
+          ],
+          "accepted": false,
+          "held": true,
+          "status": null,
+          "effective_date": null,
+          "relative_resolution": null,
+          "applied_scope": [
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5",
+            "S6",
+            "S7",
+            "S8",
+            "S9",
+            "S10",
+            "S11",
+            "S12"
+          ],
+          "rejection_reasons": [
+            "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+          ]
+        },
+        {
+          "index": 37,
+          "citation": "§ 98.0709(c)",
+          "provision_ids": [
+            "P29"
+          ],
+          "accepted": false,
+          "held": true,
+          "status": null,
+          "effective_date": null,
+          "relative_resolution": null,
+          "applied_scope": [
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5",
+            "S6",
+            "S7",
+            "S8",
+            "S9",
+            "S10",
+            "S11",
+            "S12"
+          ],
+          "rejection_reasons": [
+            "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+          ]
+        },
+        {
+          "index": 38,
+          "citation": "§ 98.0709(d)",
+          "provision_ids": [
+            "P29"
+          ],
+          "accepted": false,
+          "held": true,
+          "status": null,
+          "effective_date": null,
+          "relative_resolution": null,
+          "applied_scope": [
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5",
+            "S6",
+            "S7",
+            "S8",
+            "S9",
+            "S10",
+            "S11",
+            "S12"
+          ],
+          "rejection_reasons": [
+            "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+          ]
+        },
+        {
+          "index": 39,
+          "citation": "§ 98.0709(e)",
+          "provision_ids": [
+            "P29"
+          ],
+          "accepted": false,
+          "held": true,
+          "status": null,
+          "effective_date": null,
+          "relative_resolution": null,
+          "applied_scope": [
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5",
+            "S6",
+            "S7",
+            "S8",
+            "S9",
+            "S10",
+            "S11",
+            "S12"
+          ],
+          "rejection_reasons": [
+            "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+          ]
+        },
+        {
+          "index": 40,
+          "citation": "§ 98.0709(f)",
+          "provision_ids": [
+            "P29"
+          ],
+          "accepted": false,
+          "held": true,
+          "status": null,
+          "effective_date": null,
+          "relative_resolution": null,
+          "applied_scope": [
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5",
+            "S6",
+            "S7",
+            "S8",
+            "S9",
+            "S10",
+            "S11",
+            "S12"
+          ],
+          "rejection_reasons": [
+            "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+          ]
+        },
+        {
+          "index": 41,
+          "citation": "§ 98.0710",
+          "provision_ids": [
+            "P30"
+          ],
+          "accepted": false,
+          "held": true,
+          "status": null,
+          "effective_date": null,
+          "relative_resolution": null,
+          "applied_scope": [
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5",
+            "S6",
+            "S7",
+            "S8",
+            "S9",
+            "S10",
+            "S11",
+            "S12"
+          ],
+          "rejection_reasons": [
+            "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+          ]
+        }
+      ],
+      "review_reasons": [
+        "42 candidate record(s) held, not published, because the time of application is unresolved: ['temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force']",
+        "repair targets still unresolved: § 98.0704(b)(1)(B) (repair did not complete: replay: a repair request is never made for a cached legacy response); § 98.0704(b)(1)(G) (repair did not complete: replay: a repair request is never made for a cached legacy response)"
+      ]
+    },
+    "D011": {
+      "doc_id": "D011",
+      "replayed_prompt_version": "v6",
+      "cache_key": "d064c269a5a52b9ce6dc70fe37899d2d1447bb47a453deb24d39f40267477cc8",
+      "before": {
+        "document_status": "complete",
+        "accepted": 2,
+        "candidates": 2
+      },
+      "after": {
+        "document_status": "complete",
+        "accepted": 2,
+        "held": 0,
+        "rejected": 0,
+        "candidates": 2
+      },
+      "posture": {
+        "declared": "bill_status_or_summary_page",
+        "evidence": "Displaying  12 actions for Bill H.3744",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 740,
+          "end": 778,
+          "occurrences": 1,
+          "model_span": "Displaying  12 actions for Bill H.3744",
+          "source_span": "Displaying  12 actions for Bill H.3744",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [],
+          "crossed_artifacts": []
+        },
+        "established": "bill_status_or_summary_page",
+        "basis": "declared posture with verified evidence"
+      },
+      "base_dates": [],
+      "scope_targeting": null,
+      "global_scope": [],
+      "quotes_unchanged": true,
+      "rules": [
+        {
+          "index": 0,
+          "citation": "House, No. 3744",
+          "provision_ids": [
+            "P1"
+          ],
+          "accepted": true,
+          "held": false,
+          "status": "failed",
+          "effective_date": null,
+          "relative_resolution": null,
+          "applied_scope": [],
+          "rejection_reasons": []
+        },
+        {
+          "index": 1,
+          "citation": "House, No. 3744",
+          "provision_ids": [
+            "P1"
+          ],
+          "accepted": true,
+          "held": false,
+          "status": "failed",
+          "effective_date": null,
+          "relative_resolution": null,
+          "applied_scope": [],
+          "rejection_reasons": []
+        }
+      ],
+      "review_reasons": []
+    },
+    "D085": {
+      "doc_id": "D085",
+      "replayed_prompt_version": "v6",
+      "cache_key": "a3e97ea3b58a5a8708c95062b9fee112d416a41460ae30cbf34e9105619cdcd6",
+      "before": {
+        "document_status": "complete",
+        "accepted": 9,
+        "candidates": 9
+      },
+      "after": {
+        "document_status": "review_required",
+        "accepted": 9,
+        "held": 0,
+        "rejected": 0,
+        "candidates": 9
+      },
+      "posture": {
+        "declared": "official_explanatory_page",
+        "evidence": "Santa Ana City Council adopts rent stabilization and just cause eviction ordinances, effective Nov. 19 - City of Santa Ana",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 0,
+          "end": 122,
+          "occurrences": 1,
+          "model_span": "Santa Ana City Council adopts rent stabilization and just cause eviction ordinances, effective Nov. 19 - City of Santa Ana",
+          "source_span": "Santa Ana City Council adopts rent stabilization and just cause eviction ordinances, effective Nov. 19 - City of Santa Ana",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [],
+          "crossed_artifacts": []
+        },
+        "established": "official_explanatory_page",
+        "basis": "declared posture with verified evidence"
+      },
+      "base_dates": [],
+      "scope_targeting": null,
+      "global_scope": [
+        {
+          "id": "S1",
+          "propagated": true,
+          "problem": null
+        },
+        {
+          "id": "S2",
+          "propagated": true,
+          "problem": null
+        }
+      ],
+      "quotes_unchanged": true,
+      "rules": [
+        {
+          "index": 0,
+          "citation": "Rent Stabilization Ordinance",
+          "provision_ids": [
+            "P1"
+          ],
+          "accepted": true,
+          "held": false,
+          "status": "in_force",
+          "effective_date": "2021-11-19",
+          "relative_resolution": null,
+          "applied_scope": [],
+          "rejection_reasons": []
+        },
+        {
+          "index": 1,
+          "citation": "Rent Stabilization Ordinance",
+          "provision_ids": [
+            "P4"
+          ],
+          "accepted": true,
+          "held": false,
+          "status": "in_force",
+          "effective_date": "2021-11-19",
+          "relative_resolution": null,
+          "applied_scope": [],
+          "rejection_reasons": []
+        },
+        {
+          "index": 2,
+          "citation": "Rent Stabilization Ordinance",
+          "provision_ids": [
+            "P5"
+          ],
+          "accepted": true,
+          "held": false,
+          "status": "in_force",
+          "effective_date": "2021-11-19",
+          "relative_resolution": null,
+          "applied_scope": [],
+          "rejection_reasons": []
+        },
+        {
+          "index": 3,
+          "citation": "Just Cause Eviction Ordinance",
+          "provision_ids": [
+            "P6"
+          ],
+          "accepted": true,
+          "held": false,
+          "status": "in_force",
+          "effective_date": "2021-11-19",
+          "relative_resolution": null,
+          "applied_scope": [],
+          "rejection_reasons": []
+        },
+        {
+          "index": 4,
+          "citation": "Just Cause Eviction Ordinance",
+          "provision_ids": [
+            "P7"
+          ],
+          "accepted": true,
+          "held": false,
+          "status": "in_force",
+          "effective_date": "2021-11-19",
+          "relative_resolution": null,
+          "applied_scope": [],
+          "rejection_reasons": []
+        },
+        {
+          "index": 5,
+          "citation": "Just Cause Eviction Ordinance",
+          "provision_ids": [
+            "P8"
+          ],
+          "accepted": true,
+          "held": false,
+          "status": "in_force",
+          "effective_date": "2021-11-19",
+          "relative_resolution": null,
+          "applied_scope": [],
+          "rejection_reasons": []
+        },
+        {
+          "index": 6,
+          "citation": "Just Cause Eviction Ordinance",
+          "provision_ids": [
+            "P9"
+          ],
+          "accepted": true,
+          "held": false,
+          "status": "in_force",
+          "effective_date": "2021-11-19",
+          "relative_resolution": null,
+          "applied_scope": [],
+          "rejection_reasons": []
+        },
+        {
+          "index": 7,
+          "citation": "Just Cause Eviction Ordinance",
+          "provision_ids": [
+            "P10"
+          ],
+          "accepted": true,
+          "held": false,
+          "status": "in_force",
+          "effective_date": "2021-11-19",
+          "relative_resolution": null,
+          "applied_scope": [],
+          "rejection_reasons": []
+        },
+        {
+          "index": 8,
+          "citation": "Just Cause Eviction Ordinance",
+          "provision_ids": [
+            "P12"
+          ],
+          "accepted": true,
+          "held": false,
+          "status": "in_force",
+          "effective_date": "2021-11-19",
+          "relative_resolution": null,
+          "applied_scope": [],
+          "rejection_reasons": []
+        }
+      ],
+      "review_reasons": [
+        "named-subject scope mappings unresolved (not applied): ['S1->P1 (repair did not complete: replay: a repair request is never made for a cached legacy response)', 'S1->P4 (repair did not complete: replay: a repair request is never made for a cached legacy response)', 'S1->P5 (repair did not complete: replay: a repair request is never made for a cached legacy response)', 'S2->P6 (repair did not complete: replay: a repair request is never made for a cached legacy response)', 'S2->P7 (repair did not complete: replay: a repair request is never made for a cached legacy response)', 'S2->P8 (repair did not complete: replay: a repair request is never made for a cached legacy response)', 'S2->P9 (repair did not complete: replay: a repair request is never made for a cached legacy response)', 'S2->P10 (repair did not complete: replay: a repair request is never made for a cached legacy response)', 'S2->P12 (repair did not complete: replay: a repair request is never made for a cached legacy response)']"
+      ]
+    },
+    "D022": {
+      "doc_id": "D022",
+      "replayed_prompt_version": "v6",
+      "cache_key": "f03fbcde9eb57288c90a5545cf51e8063cdfe84055a6d3943d57acf86eb7d35e",
+      "before": {
+        "document_status": "review_required",
+        "accepted": 0,
+        "candidates": 2
+      },
+      "after": {
+        "document_status": "review_required",
+        "accepted": 0,
+        "held": 2,
+        "rejected": 0,
+        "candidates": 2
+      },
+      "posture": {
+        "declared": "enacted_session_law",
+        "evidence": "CHAPTER 338",
+        "evidence_check": {
+          "status": "exact_match",
+          "normalization": null,
+          "start": 933,
+          "end": 944,
+          "occurrences": 1,
+          "model_span": "CHAPTER 338",
+          "source_span": "CHAPTER 338",
+          "reason": null,
+          "reconstructed": false,
+          "parts": [],
+          "crossed_artifacts": []
+        },
+        "established": "enacted_session_law",
+        "basis": "declared posture with verified evidence"
+      },
+      "base_dates": [
+        {
+          "event": "approved",
+          "date": "2025-10-06",
+          "start": 1060,
+          "end": 1098,
+          "text": "Approved  by\nGovernor\nOctober 06, 2025"
+        }
+      ],
+      "scope_targeting": null,
+      "global_scope": [
+        {
+          "id": "S1",
+          "propagated": true,
+          "problem": null
+        }
+      ],
+      "quotes_unchanged": true,
+      "rules": [
+        {
+          "index": 0,
+          "citation": "Business and Professions Code § 16729(a)",
+          "provision_ids": [
+            "P1"
+          ],
+          "accepted": false,
+          "held": true,
+          "status": null,
+          "effective_date": null,
+          "relative_resolution": null,
+          "applied_scope": [
+            "S1"
+          ],
+          "rejection_reasons": [
+            "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+          ]
+        },
+        {
+          "index": 1,
+          "citation": "Business and Professions Code § 16729(b)",
+          "provision_ids": [
+            "P2"
+          ],
+          "accepted": false,
+          "held": true,
+          "status": null,
+          "effective_date": null,
+          "relative_resolution": null,
+          "applied_scope": [
+            "S1"
+          ],
+          "rejection_reasons": [
+            "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+          ]
+        }
+      ],
+      "review_reasons": [
+        "2 candidate record(s) held, not published, because the time of application is unresolved: ['temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force']"
+      ]
+    }
+  }
+}

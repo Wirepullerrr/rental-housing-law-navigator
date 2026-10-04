@@ -1,0 +1,247 @@
+{
+  "disclaimer": "Not legal advice. Spend figures are estimates computed from API-reported token usage at the configured rates; they are not the account's billing balance.",
+  "generated_at": "2026-10-04T02:20:28+00:00",
+  "stage_dir": "outputs/m3/m3_2",
+  "selection": [
+    "D085",
+    "D052"
+  ],
+  "model": "gemini-3.8-flash",
+  "settings": {
+    "temperature": null,
+    "seed": 20261001,
+    "thinking_level": "medium"
+  },
+  "pricing_usd_per_million_tokens": {
+    "input": 0.75,
+    "output": 3.75
+  },
+  "budget_usd": 0.4,
+  "stop_reason": null,
+  "estimated_new_spend_usd": {
+    "this_invocation": 0.151692,
+    "stage_ledger_total": 0.240241
+  },
+  "totals": {
+    "selected": 2,
+    "processed": 1,
+    "resumed": 1,
+    "not_run": 0,
+    "errors": 0,
+    "complete": 2,
+    "review_required": 0,
+    "candidates": 26,
+    "accepted_rules": 26,
+    "rejected_candidates": 0,
+    "held_candidates": 0,
+    "accepted_quotes_raw_substring": 26,
+    "exact_citation_rate": 1.0,
+    "reconstructed_cross_page_quotes": 0,
+    "documents_requiring_repair": 0,
+    "repair_targets": 0,
+    "repair_classifications": {},
+    "repair_resolved_by_rule": 0,
+    "repair_resolved_out_of_scope": 0,
+    "unresolved_targets": 0,
+    "primary_provider_calls": 1,
+    "repair_provider_calls": 0,
+    "primary_cache_hits": 0,
+    "repair_cache_hits": 0,
+    "new_tokens": {
+      "primary": {
+        "input_tokens": 9221,
+        "output_tokens": 13043,
+        "thinking_tokens": 25564
+      },
+      "repair": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0
+      }
+    },
+    "estimated_new_cost_usd": 0.151692,
+    "new_cost_per_processed_document_usd": {
+      "mean": 0.151692,
+      "median": 0.151692,
+      "max": 0.151692
+    }
+  },
+  "documents": [
+    {
+      "doc_id": "D085",
+      "jurisdiction": "Santa Ana, CA",
+      "level": "city",
+      "source_type": "official",
+      "body_chars": 5095,
+      "page_artifacts": 0,
+      "model": "gemini-3.8-flash",
+      "reported_model": "gemini-3.8-flash",
+      "thinking_level": "medium",
+      "prompt_version": "v7",
+      "run_mode": "resumed",
+      "primary_cache_hit": false,
+      "repair_cache_hit": false,
+      "primary_provider_calls": 0,
+      "repair_provider_calls": 0,
+      "candidates": 9,
+      "accepted": 9,
+      "rejected": 0,
+      "primary_candidates": 9,
+      "repair_candidates": 0,
+      "repair_targets": 0,
+      "repair_classifications": {},
+      "repair_resolution": {
+        "before_repair": 0,
+        "resolved_by_accepted_rule": 0,
+        "resolved_out_of_scope": 0,
+        "still_unresolved": 0
+      },
+      "unresolved_targets": [],
+      "document_status": "complete",
+      "review_reasons": [],
+      "posture": {
+        "declared": "official_explanatory_page",
+        "established": "official_explanatory_page"
+      },
+      "held": 0,
+      "relative_dates_resolved": 0,
+      "source_basis": {
+        "official_explanatory_text": 9
+      },
+      "scope_challenges": [],
+      "scope_modes": {
+        "S1": "named_subject",
+        "S2": "named_subject",
+        "S3": "named_subject"
+      },
+      "scope_mappings": [
+        "S1->P2: applies",
+        "S2->P2: applies",
+        "S3->P7: applies",
+        "S3->P8: applies",
+        "S3->P9: applies",
+        "S3->P10: applies",
+        "S3->P11: applies",
+        "S3->P13: applies"
+      ],
+      "legislative": [],
+      "empty_result": null,
+      "citations": {
+        "accepted": 9,
+        "exact_match": 9,
+        "normalized_match": 0,
+        "raw_substring": 9,
+        "reconstructed_cross_page": 0
+      },
+      "global_scope": {
+        "proposed": 3,
+        "verified": 3
+      },
+      "errors": [],
+      "tokens_reported": {
+        "primary": {
+          "input_tokens": 5078,
+          "output_tokens": 5924,
+          "thinking_tokens": 12358,
+          "total_tokens": 23360
+        },
+        "repair": {
+          "input_tokens": 5732,
+          "output_tokens": 1208,
+          "thinking_tokens": 1961,
+          "total_tokens": 8901
+        }
+      },
+      "new_tokens": {
+        "primary": {},
+        "repair": {}
+      },
+      "estimated_new_cost_usd": {
+        "primary": 0.0,
+        "repair": 0.0,
+        "total": 0.0
+      },
+      "artifact": "outputs/m3/m3_2/documents/D085_extraction.json"
+    },
+    {
+      "doc_id": "D052",
+      "jurisdiction": "MA",
+      "level": "state",
+      "source_type": "official",
+      "body_chars": 26006,
+      "page_artifacts": 0,
+      "model": "gemini-3.8-flash",
+      "reported_model": "gemini-3.8-flash",
+      "thinking_level": "medium",
+      "prompt_version": "v7",
+      "run_mode": "processed",
+      "primary_cache_hit": false,
+      "repair_cache_hit": null,
+      "primary_provider_calls": 1,
+      "repair_provider_calls": 0,
+      "candidates": 17,
+      "accepted": 17,
+      "rejected": 0,
+      "primary_candidates": 17,
+      "repair_candidates": 0,
+      "repair_targets": 0,
+      "repair_classifications": {},
+      "repair_resolution": null,
+      "unresolved_targets": [],
+      "document_status": "complete",
+      "review_reasons": [],
+      "posture": {
+        "declared": "codified_current_law",
+        "established": "codified_current_law"
+      },
+      "held": 0,
+      "relative_dates_resolved": 0,
+      "source_basis": {
+        "operative_text": 17
+      },
+      "scope_challenges": [],
+      "scope_modes": {
+        "S1": "structural"
+      },
+      "scope_mappings": [],
+      "legislative": [],
+      "empty_result": null,
+      "citations": {
+        "accepted": 17,
+        "exact_match": 17,
+        "normalized_match": 0,
+        "raw_substring": 17,
+        "reconstructed_cross_page": 0
+      },
+      "global_scope": {
+        "proposed": 1,
+        "verified": 1
+      },
+      "errors": [],
+      "tokens_reported": {
+        "primary": {
+          "input_tokens": 9221,
+          "output_tokens": 13043,
+          "thinking_tokens": 25564,
+          "total_tokens": 47828
+        },
+        "repair": {}
+      },
+      "new_tokens": {
+        "primary": {
+          "input_tokens": 9221,
+          "output_tokens": 13043,
+          "thinking_tokens": 25564,
+          "total_tokens": 47828
+        },
+        "repair": {}
+      },
+      "estimated_new_cost_usd": {
+        "primary": 0.151692,
+        "repair": 0.0,
+        "total": 0.151692
+      },
+      "artifact": "outputs/m3/m3_2/documents/D052_extraction.json"
+    }
+  ]
+}

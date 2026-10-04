@@ -45,6 +45,7 @@ from navigator.extraction.normalize import level_for
 from navigator.extraction.prompt import REPAIR_SYSTEM_INSTRUCTION
 from navigator.extraction.provider import ProviderError, ProviderResult, StructuredLLMProvider
 from navigator.extraction.repair import target_identity
+from navigator.extraction.scope import mapping_identity
 
 DISCLAIMER = ("Spend figures are estimates computed from API-reported token usage at the configured rates; "
               "they are not the account's billing balance.")
@@ -159,6 +160,10 @@ def integrity_violations(run: ExtractionRun, source: SourceDocument, cache: Resp
         if bad := [p["id"] for p in c.propagated_scope if p["applied"] and p.get("governed_provision_ids") is not None
                    and not set(p["governed_provision_ids"]) & set(c.provision_ids)]:
             v.append(f"candidate {c.index}: scope condition applied without a shared provision id: {bad}")
+        mapped = {(m["condition_id"], m["provision_id"]) for m in run.scope_mappings if m.get("final") == "applies"}
+        if bad := [p["id"] for p in c.propagated_scope if p["applied"] and p.get("mode") == "named_subject"
+                   and not any((p["id"], pid) in mapped for pid in c.provision_ids)]:
+            v.append(f"candidate {c.index}: named-subject condition applied without a verified mapping: {bad}")
     if any(c.held and c.accepted for c in run.candidates):
         v.append("a held candidate was published")
     if run.cache_key != prepare_request(source, provider_name, model, settings).key:
@@ -167,7 +172,8 @@ def integrity_violations(run: ExtractionRun, source: SourceDocument, cache: Resp
     if rp is not None and rp.invoked and not rp.errors:
         entry = cache.get(rp.cache_key)
         if (entry is None or entry["key_fields"].get("primary_cache_key") != run.cache_key
-                or entry["key_fields"].get("repair_targets") != target_identity(rp.targets)):
+                or entry["key_fields"].get("repair_targets") != target_identity(rp.targets)
+                or entry["key_fields"].get("scope_mappings", []) != mapping_identity(rp.mappings)):
             v.append("cache identity: the repair response does not match this run's primary and target set")
     if sum(c.origin == "repair" for c in run.candidates) and (rp is None or not rp.invoked):
         v.append("repair candidates without a repair request")
@@ -208,6 +214,10 @@ def document_record(run: ExtractionRun, source: SourceDocument, mode: str, calls
                                        for c in run.candidates),
         "source_basis": dict(Counter(str(c.source_basis) for c in accepted)),
         "scope_challenges": [c["ref"] for c in run.scope_challenges if c["challenged"]],
+        "scope_modes": {g["id"]: (g.get("scope") or {}).get("mode") for g in run.global_scope},
+        "scope_mappings": [f"{m['condition_id']}->{m['provision_id']}: {m.get('final')}" for m in run.scope_mappings],
+        "legislative": [{"index": c.index, "status": c.legislative.get("status"),
+                         "basis": c.legislative.get("status_basis")} for c in run.candidates if c.legislative],
         "empty_result": run.empty_result,
         "citations": {"accepted": len(accepted),
                       "exact_match": sum(c.citation.status == "exact_match" for c in accepted),

@@ -248,9 +248,11 @@ def test_scope_challenge_targets_only_a_substantive_looking_out_of_scope_item(tm
 
 def test_a_provision_stated_as_a_verified_scope_condition_is_not_challenged(tmp_path):
     s1 = {"id": "S1", "kind": "coverage_condition", "statement": "Good cause is required.", "citation": "2.2",
-          "source_provision_id": "P2", "governed_provision_ids": ["P1"], "evidence_parts": parts(Q2)}
-    result, provider = run(synthetic_source(CAUSES), causes_primary([s1]), tmp_path=tmp_path)
-    assert not any(c["challenged"] for c in result.scope_challenges) and len(provider.calls) == 1
+          "scope_mode": "named_subject", "scope_quote": "\"Good cause\"", "source_provision_id": "P2",
+          "governed_provision_ids": ["P1"], "evidence_parts": parts(Q2)}
+    result, _ = run(synthetic_source(CAUSES), causes_primary([s1]), tmp_path=tmp_path)
+    assert not any(c["challenged"] for c in result.scope_challenges)
+    assert not any("scope_challenge" in t["sources"] for t in result.repair.targets)
 
 
 @pytest.mark.parametrize("repair, final, status", [
@@ -286,18 +288,24 @@ TITLES = ["Housing Stability Ordinance, Rent Limit", "Housing Stability Ordinanc
 
 def announcement(rules, governed=("P1",)):
     s1 = {"id": "S1", "kind": "exemption", "statement": "Buildings constructed after 2001 are exempt.",
-          "citation": TITLES[1], "source_provision_id": "P2", "governed_provision_ids": list(governed),
-          "evidence_parts": parts(EXEMPT)}
+          "citation": TITLES[1], "scope_mode": "named_subject", "scope_quote": "The rent limit",
+          "source_provision_id": "P2", "governed_provision_ids": list(governed), "evidence_parts": parts(EXEMPT)}
     inventory = [provision(TITLES[0], "in_scope", "rent_increase_limits", anchor=RENT),
                  provision(TITLES[1], "out_of_scope", id="P2", anchor=EXEMPT, role="exemption"),
                  provision(TITLES[2], "in_scope", "rent_increase_limits", id="P3", anchor=NOTICE)]
     return {"provisions": inventory, "global_scope": [s1], "rules": rules, "no_rules_justification": None}
 
 
+APPLIES_P1 = {"target_resolutions": [], "rules": [], "scope_mappings": [
+    {"condition_id": "S1", "provision_id": "P1", "decision": "applies", "reason": "It limits the rent cap.",
+     "evidence_parts": []}]}
+
+
 def test_exemption_follows_provision_ids_not_comma_titles(tmp_path):
     rules = [rule(RENT, TITLES[0], category="rent_increase_limits"),
              rule(NOTICE, TITLES[2], pid="P3", category="rent_increase_limits")]
-    result, _ = run(synthetic_source(ANNOUNCEMENT), announcement(rules), tmp_path=tmp_path)
+    result, provider = run(synthetic_source(ANNOUNCEMENT), announcement(rules), APPLIES_P1, tmp_path=tmp_path)
+    assert len(provider.calls) == 2 and [m["provision_id"] for m in result.scope_mappings] == ["P1"]
     assert result.rules[0]["exemptions"] == f"Buildings constructed after 2001 are exempt. [{TITLES[1]}]"
     assert result.rules[1]["exemptions"] is None                          # shares only a title prefix
     assert [p["id"] for p in result.candidates[1].propagated_scope] == []
@@ -306,8 +314,8 @@ def test_exemption_follows_provision_ids_not_comma_titles(tmp_path):
 def test_no_citation_or_substring_matching_in_scope_propagation(tmp_path):
     # Cites the governed provision's exact title, but links P3: the citation text is never compared.
     rules = [rule(NOTICE, TITLES[0] + " notice", pid="P3", category="rent_increase_limits")]
-    result, _ = run(synthetic_source(ANNOUNCEMENT), announcement(rules), tmp_path=tmp_path)
-    assert result.rules[0]["exemptions"] is None
+    result, _ = run(synthetic_source(ANNOUNCEMENT), announcement(rules), APPLIES_P1, tmp_path=tmp_path)
+    assert result.rules[0]["exemptions"] is None and result.scope_mappings == []    # P1 is linked by no record
 
 
 def test_unknown_provision_ids_never_propagate_or_link(tmp_path):

@@ -27,6 +27,11 @@ test separating substantive provisions from definitions; records link provision 
 document-level scope conditions name the provision ids they govern (no title matching); an
 explicit, evidenced no_rules_justification instead of a silent empty result. The repair
 prompt also handles scope_challenge targets.
+v6 -> v7 (both prompts): every document-level condition declares a scope_mode (structural,
+explicit_reference or named_subject) and the verbatim scope_quote naming what it governs; a
+named mechanism is never stretched to nearby provisions. Legislative status: the model reports
+legislative evidence; a study order alone does not end a bill; the system decides pending vs
+failed. The repair prompt also verifies (condition, provision) scope mappings.
 """
 
 from __future__ import annotations
@@ -36,9 +41,9 @@ from typing import Any
 from navigator.extraction.models import SourceMeta
 from navigator.extraction.source_view import PAGE_BREAK_MARKER, SEGMENT_LABEL
 
-EXTRACTION_PROMPT_VERSION = "v6"
+EXTRACTION_PROMPT_VERSION = "v7"
 # The repair prompt is versioned on its own, so a repair-only change keeps the primary cache key.
-REPAIR_PROMPT_VERSION = "v6-repair-1"
+REPAIR_PROMPT_VERSION = "v7-repair-1"
 
 _PREAMBLE = """\
 You are the rule-extraction component of a rental-housing-law research prototype. \
@@ -139,12 +144,21 @@ global_scope"); null if in_scope.
 chapter, article, division or section rather than a single rule (e.g. "This Division shall not apply to \
 ...", "This section applies only to ..."). One entry per distinct condition (list each lettered exemption \
 separately). For each give an `id` (S1, S2, ...), `kind`, a plain-language `statement`, the `citation` of \
-the provision stating it, `source_provision_id` = the id of the inventory provision stating it (null if \
-none), `governed_provision_ids` = the ids of EVERY inventory provision it governs (e.g. all provisions of \
-the division or section it limits, and no others), or null ONLY if it governs every provision of the \
-document; and `evidence_parts` = the verbatim text stating it (quote-part rules below). Say what a \
-condition governs only through these ids. Do NOT repeat these conditions inside individual rules: the \
-system attaches them to every rule linked to a governed provision.""",
+the provision stating it, `scope_mode`, `scope_quote`, `source_provision_id` = the id of the inventory \
+provision stating it (null if none), `governed_provision_ids`, and `evidence_parts` = the verbatim text \
+stating it (quote-part rules below). Do NOT repeat these conditions inside individual rules: the system \
+attaches them to the rules they govern.
+   - `scope_mode` "structural": its words name a structural container ("this section", "this Division", \
+"the provisions of this act"); `governed_provision_ids` = every provision in that container, or null ONLY \
+if the container is the whole document.
+   - "explicit_reference": its words cite specific provisions ("Sections 4 and 5", "subsection (b)"); \
+`governed_provision_ids` = exactly those provisions.
+   - "named_subject": its words name a legal mechanism or requirement rather than a container or a \
+citation (e.g. "the fee limit does not apply ..."); `governed_provision_ids` = only the provisions that \
+state or directly implement that named mechanism. Never stretch a named mechanism to nearby or related \
+provisions that impose a different duty; the system verifies every such mapping separately.
+   - `scope_quote`: the exact words that say what it governs, copied verbatim (for a lettered list, the \
+lead-in that introduces the list).""",
     """Then fill `rules`: one record for EVERY distinct obligation, prohibition, entitlement, remedy, \
 procedural requirement or monetary limit in an in-scope provision. Do not extract only headline \
 provisions. Treat subordinate paragraphs and clauses as separate records when they impose materially \
@@ -181,6 +195,15 @@ out_of_scope or uncertain, none for any other provision, and do not restate othe
 a requirement.""",
     """The document-level scope conditions listed in the request have already been verified and are \
 attached to the rules by the system. Do not repeat them inside rules and do not add new ones.""",
+    """Scope mappings. Some conditions name a legal mechanism rather than a structural container or \
+specific provisions. For EVERY (condition, provision) pair listed under "Scope mappings to verify", add \
+exactly one entry to `scope_mappings`: `condition_id` and `provision_id` exactly as listed; `decision`: \
+"applies" only if the document shows the condition limits that provision's own requirement, \
+"does_not_apply" if that provision imposes a different duty that the condition's words do not reach, \
+"uncertain" if the document leaves it genuinely unclear; `reason`: one short sentence (always); \
+`evidence_parts`: verbatim text supporting the decision (required for does_not_apply: text showing that \
+the provision concerns another requirement; for applies, text connecting them where the document has \
+it). A mapping is never a rule: produce no record for a mapping.""",
 ]
 
 _RULE_SCOPE = [
@@ -215,8 +238,11 @@ passage with nothing skipped except the removed header or footer.
 _TIME = [
     "enactment_status: \"enacted\" for law in force or adopted (e.g. a code section or adopted "
     "ordinance); \"pending\" for a bill or proposal not yet law; \"failed\" for a proposal the document "
-    "shows was rejected, struck, vetoed, withdrawn or otherwise ended without enactment. Decide only from "
-    "the document, and show it in enactment_status_evidence.",
+    "shows was rejected, struck, vetoed, withdrawn or given no further action. Decide only from the "
+    "document, and show the legislative evidence in enactment_status_evidence (a status line, a "
+    "bill-history entry, a session label). A referral for study, by itself, does not end a bill. For "
+    "proposals the system decides the final pending or failed status deterministically from such "
+    "evidence and the legislative session.",
     """Keep these six things apart:
    A. Operative legal text: the obligation itself (the quote).
    B. A calendar effective date stated in operative text, e.g. "This section shall take effect on \
@@ -319,12 +345,18 @@ def render_prompt(meta: SourceMeta, body: str) -> tuple[str, str]:
 
 
 def render_repair_prompt(meta: SourceMeta, body: str, scope: list[dict[str, Any]],
-                         targets: list[dict[str, Any]]) -> tuple[str, str]:
+                         targets: list[dict[str, Any]], mappings: list[dict[str, Any]] = ()) -> tuple[str, str]:
     """Return (system_instruction, user_prompt) for the targeted repair pass. `scope` holds
-    verified document-level conditions; `targets` the deterministic repair targets (repair.py)."""
-    scope_lines = [f"- {s['id']} [{s['kind']}] {s['statement']} ({s['citation']}; "
-                   + ("whole document" if s["governed_provision_ids"] is None
-                      else "governs " + ", ".join(s["governed_provision_ids"])) + ")" for s in scope]
+    verified document-level conditions; `targets` the deterministic repair targets (repair.py);
+    `mappings` the named-subject (condition, provision) pairs to verify (scope.py)."""
+
+    def reach(s: dict[str, Any]) -> str:
+        if s["scope"]["mode"] == "named_subject":
+            return "named subject; applied only where a mapping below is confirmed"
+        ids = s["scope"]["propagate_ids"]
+        return "whole document" if ids is None else "governs " + ", ".join(ids)
+
+    scope_lines = [f"- {s['id']} [{s['kind']}] {s['statement']} ({s['citation']}; {reach(s)})" for s in scope]
     target_lines = []
     for t in targets:
         found = []
@@ -339,9 +371,19 @@ def render_repair_prompt(meta: SourceMeta, body: str, scope: list[dict[str, Any]
                          f"{t.get('declared_reason')}), but its text shows signs of a substantive rule "
                          f"({', '.join(t.get('signals', []))}); decide its scope afresh with the functional test")
         target_lines.append(f"- {t['ref']} (provision id {t.get('provision_id') or 'none'}): " + "; and ".join(found))
+    mapping_lines = []
+    for m in mappings:
+        target = " ".join((m.get("target_quote") or m.get("target_anchor") or "").split())
+        mapping_lines.append(f"- {m['condition_id']} -> {m['provision_id']}: condition {m['condition_id']} "
+                             f"[{m['kind']}] \"{' '.join(m['condition_evidence'].split())}\" (scope words: "
+                             f"\"{' '.join((m['scope_words'] or '').split())}\"); provision {m['provision_id']} "
+                             f"({m['target_ref']}): \"{target[:400]}\"")
     user = (_METADATA.format(**_metadata(meta))
             + "\nDocument-level scope conditions already verified (attached by the system; do not repeat):\n"
             + ("\n".join(scope_lines) or "- (none)")
             + "\n\nRepair targets (give a resolution for every one; a target need not become a rule):\n"
-            + "\n".join(target_lines) + "\n\n" + _DOCUMENT.format(body=body))
+            + ("\n".join(target_lines) or "- (none)")
+            + "\n\nScope mappings to verify (one decision for every pair; never a rule):\n"
+            + ("\n".join(mapping_lines) or "- (none)")
+            + "\n\n" + _DOCUMENT.format(body=body))
     return REPAIR_SYSTEM_INSTRUCTION, user

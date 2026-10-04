@@ -1,7 +1,10 @@
-"""Code-only replay: re-evaluate a CACHED pre-v6 primary response under the current
+"""Code-only replay: re-evaluate a CACHED older primary response under the current
 deterministic post-processing. No provider is contacted and no repair is requested.
 
-A v5 response lacks fields that prompt v6 asks for. The adapter re-expresses what the
+A v6 response has every field except the v7 scope_mode / scope_quote of its document-level
+conditions: those are left undeclared, and scope.py decides each condition's mode from its
+verified evidence (with the lead-in of a lettered list item). A v4/v5 response (same
+response contract) lacks more of what prompt v6 asks for. The adapter re-expresses what the
 v5 response DID state and leaves the rest undetermined; it never invents content:
 
   inventory ids         P1, P2, ... by inventory position (the v5 order)
@@ -38,7 +41,7 @@ from navigator.extraction.normalize import derive_status
 from navigator.extraction.quotes import verify_text
 from navigator.extraction.temporal import find_base_dates, resolve_relative
 
-REPLAYABLE = ("v5",)
+REPLAYABLE = ("v4", "v5", "v6")
 
 
 def _same(a: str, b: str) -> bool:
@@ -85,7 +88,7 @@ def adapt_v5(payload: dict[str, Any]) -> tuple[dict[str, Any], dict[str, Any]]:
 
 def replay_artifact(source: SourceDocument, artifact: ExtractionRun, *, as_of: date,
                     schema_path: Path = sp.REPO_ROOT / sp.SCHEMA_PATH) -> ExtractionRun:
-    """Re-evaluate the cached primary response of `artifact` (prompt v5) offline."""
+    """Re-evaluate the cached primary response of `artifact` (prompt v4-v6) offline."""
     if artifact.prompt_version not in REPLAYABLE:
         raise ValueError(f"{artifact.source.doc_id}: prompt {artifact.prompt_version} cannot be replayed "
                          f"(supported: {REPLAYABLE})")
@@ -98,17 +101,22 @@ def replay_artifact(source: SourceDocument, artifact: ExtractionRun, *, as_of: d
         as_of=as_of.isoformat(), cache_key=artifact.cache_key, cache_hit=True, cache_entry=artifact.cache_entry,
         provider_metadata=artifact.provider_metadata, raw_response_text=artifact.raw_response_text,
         source_view=artifact.source_view)
-    payload = _parse(run.raw_response_text, _TOP_LEVEL_KEYS | {"provisions"}, run.errors, run.warnings)
+    payload = _parse(run.raw_response_text, _TOP_LEVEL_KEYS, run.errors, run.warnings)
     if payload is not None:
-        adapted, fills = adapt_v5(payload)
+        if artifact.prompt_version == "v6":
+            adapted, fills = payload, {"not_declared": ["scope_mode", "scope_quote"],
+                                       "consequences": ["each condition's mode is decided from its verified "
+                                                        "evidence", "no repair request is made by a replay"]}
+        else:
+            adapted, fills = adapt_v5(payload)
         run.legacy_replay = {"replayed_from_prompt_version": artifact.prompt_version,
                              "note": "cached response re-evaluated by the current post-processing; no provider "
                                      "request", **fills}
         _, targets = evaluate_primary(run, adapted, source, as_of, _official_validator(Path(schema_path)),
                                       legacy=True)
-        if targets:
+        if targets or run.scope_mappings:
             run.repair = RepairPass(reason="replay: a repair request is never made for a cached legacy response",
-                                    targets=targets)
+                                    targets=targets, mappings=run.scope_mappings)
     finalize(run, source)
     return run
 

@@ -1,0 +1,42 @@
+{
+  "disclaimer": "Spend figures are estimates computed from API-reported token usage at the configured rates; they are not the account's billing balance.",
+  "estimated_total_usd": 0.240241,
+  "requests": [
+    {
+      "doc_id": "D085",
+      "pass": "primary",
+      "at": "2026-10-04T02:18:15+00:00",
+      "usage": {
+        "input_tokens": 5078,
+        "output_tokens": 5924,
+        "thinking_tokens": 12358,
+        "total_tokens": 23360
+      },
+      "estimated_cost_usd": 0.072366
+    },
+    {
+      "doc_id": "D085",
+      "pass": "repair",
+      "at": "2026-10-04T02:18:24+00:00",
+      "usage": {
+        "input_tokens": 5732,
+        "output_tokens": 1208,
+        "thinking_tokens": 1961,
+        "total_tokens": 8901
+      },
+      "estimated_cost_usd": 0.01618275
+    },
+    {
+      "doc_id": "D052",
+      "pass": "primary",
+      "at": "2026-10-04T02:20:28+00:00",
+      "usage": {
+        "input_tokens": 9221,
+        "output_tokens": 13043,
+        "thinking_tokens": 25564,
+        "total_tokens": 47828
+      },
+      "estimated_cost_usd": 0.151692
+    }
+  ]
+}

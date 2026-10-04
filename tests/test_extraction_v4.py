@@ -128,15 +128,17 @@ def test_raw_source_and_artifact_provenance_are_preserved(doc, tmp_path):
 
 def test_global_exemption_quoted_across_a_page_break_is_verified_and_propagated(doc, tmp_path):
     scope = {"id": "S1", "kind": "exemption", "statement": "Units owned by natural persons with notice are exempt.",
-             "citation": "Code § 3(l)", "source_provision_id": None, "governed_provision_ids": None,
+             "citation": "Code § 3(l)", "scope_mode": "structural", "scope_quote": "This Division shall not apply",
+             "source_provision_id": None, "governed_provision_ids": None,
              "evidence_parts": parts(EXEMPT_TAIL, EXEMPT_HEAD, first_segment=3)}
     result, _ = run(doc, {"global_scope": [scope], "rules": [rule(parts(TAIL, HEAD))]}, tmp_path=tmp_path)
     entry = result.global_scope[0]
     assert entry["propagated"] and entry["evidence_check"]["reconstructed"]
     assert "Units owned by natural persons with notice are exempt. [Code § 3(l); document-wide]" == \
         result.rules[0]["exemptions"]
-    assert result.candidates[0].propagated_scope == [{"id": "S1", "kind": "exemption", "governed_provision_ids": None,
-                                                      "basis": "document-wide", "applied": True}]
+    assert result.candidates[0].propagated_scope == [{"id": "S1", "kind": "exemption", "mode": "structural",
+                                                      "governed_provision_ids": None,
+                                                      "basis": "structural: every provision", "applied": True}]
 
 
 # ------------------------------------------- completeness checks and the single repair pass
@@ -162,7 +164,7 @@ def test_inventory_target_is_repaired_through_the_normal_pipeline(run_fake):
     repair_call = provider.calls[1]
     assert repair_call["system_instruction"] == REPAIR_SYSTEM_INSTRUCTION != SYSTEM_INSTRUCTION
     assert "- § 15B(4) (provision id P2):" in repair_call["prompt"] and "- § 15B(1)(b)" not in repair_call["prompt"]
-    assert list(repair_call["response_json_schema"]["properties"]) == ["target_resolutions", "rules"]
+    assert list(repair_call["response_json_schema"]["properties"]) == ["target_resolutions", "scope_mappings", "rules"]
     [target] = result.repair.targets
     assert (target["ref"], target["sources"], target["repair_scope"], target["candidate_indices"],
             target["accepted_indices"], target["final_resolution"]) == \

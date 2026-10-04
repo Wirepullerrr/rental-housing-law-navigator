@@ -65,12 +65,12 @@ def _scope_text(statement: str, citation: str, governed: list[str] | None) -> st
 
 
 def compose_scope(rule_text: str | None, propagated: list[dict[str, Any]], kind: str,
-                  operative: list[OperativeCondition] = ()) -> str | None:
+                  operative: list[str] = ()) -> str | None:
     """Rule-specific text first, then propagated document-level conditions of `kind`,
     then unresolved operative conditions. Exact duplicates are dropped."""
     parts = [rule_text] if rule_text else []
     parts += [_scope_text(p["statement"], p["citation"], p["governed_provision_ids"]) for p in propagated if p["kind"] == kind]
-    parts += [f"Operative condition (unresolved; applicability may be unknown): {c.statement}" for c in operative]
+    parts += [f"Operative condition (unresolved; applicability may be unknown): {s}" for s in operative]
     unique = list(dict.fromkeys(p.strip() for p in parts if p and p.strip()))
     return "; ".join(unique) or None
 
@@ -139,7 +139,7 @@ def build_record(rule: ExtractedRule, meta: SourceMeta, citation: CitationCheck,
         "requirement": BASIS_LABELS.get(basis, "") + rule.requirement,
         "key_value": rule.key_value,
         "coverage_conditions": compose_scope(rule.coverage_conditions, list(propagated), "coverage_condition",
-                                             list(operative)),
+                                             [c.statement for c in operative]),
         "exemptions": compose_scope(rule.exemptions, list(propagated), "exemption"),
         "overrides": [],
         "interaction": rule.interaction,
