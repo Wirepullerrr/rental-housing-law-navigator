@@ -1,38 +1,29 @@
 # LeaseLens
 
-**Auditable rental-law guidance by property, jurisdiction and date: every answer cites the exact source text, and the system says "unknown" when the data can't settle a question.**
+LeaseLens is a rental-housing law navigator built by team Maverick for the RealPage challenge at Hack-Nation 2026.
 
-Hack-Nation 2026 · Rental Housing Law Navigator challenge · Team **Rule of One** (solo)
+Give it one of the 500 supplied rental properties and an as-of date. It works out which city the property legally belongs to, finds the state and city rules that cover it, and explains what applies, what is still pending, and what can't be decided from the available property data.
 
-> Informational prototype for hackathon purposes. **Not legal advice.**
+The design rests on one split. Gemini turns messy legal text into structured rule records, and each record carries a quote that is checked against the source. Plain deterministic Python then decides whether each rule applies to a property. When the evidence isn't enough, LeaseLens answers `unknown` and names the missing fact instead of guessing.
 
-## Problem
+It's a hackathon prototype that works on the supplied corpus. Not legal advice.
 
-Rental rules vary by state, city, property characteristics and date. A building's postal city is not necessarily its legal jurisdiction: "Dorchester" is in Boston, and "San Ysidro" is in San Diego. Property records are incomplete: owner occupancy, subsidies and certificate-of-occupancy dates are missing. A tool that guesses confidently in these cases is dangerous. LeaseLens answers only what the evidence supports, and shows its work.
+## Why this is hard
+
+Rental rules depend on the state, the city, the building and the date. The postal city on an address isn't always the legal city: "Dorchester" is part of Boston, and "San Ysidro" is part of San Diego. The property records are also thin. They don't say whether the owner lives in the building, whether it's subsidized, or when its certificate of occupancy was issued, and a lot of rules turn on exactly those facts.
 
 ## Demo
 
-- **Live demo:** `<DEMO_URL>` (placeholder)
-- **Run locally:** `uv sync` then `uv run streamlit run app.py`
+- Live demo: `<DEMO_URL>` (not deployed yet)
+- Run locally: `uv sync`, then `uv run streamlit run app.py`
 
-How to use it:
-1. Pick a demo address, or any of the 500 challenge addresses.
-2. Choose an as-of date (default 2026-10-01).
-3. See the property facts, the Census-resolved jurisdiction and every rule that applies, with a reason and a verbatim quote for each.
-4. Open the **Change scenarios** tab to see the five official tests, T1–T5.
+Pick one of the demo addresses (or any of the 500) and a date, 2026-10-01 by default. The app shows the property facts, the Census-resolved jurisdiction, and each matching rule with its status, the reason for it, and the quoted source text. The **Change scenarios** tab shows the five official change tests, T1–T5.
 
-The app reads only the committed outputs, so it needs no API key, Census call or database.
+The app reads only the committed outputs, so it runs without an API key, Census access or a database.
 
-## What it does
+## How it works
 
-```
-legal source → automated extraction → exact citation verification
-            → jurisdiction resolution → deterministic applicability → temporal / change reasoning
-```
-
-## Architecture
-
-**The LLM is used only to extract rules from unstructured legal text. Applicability is decided by deterministic Python.**
+Extraction is the only step that uses an LLM. Everything after it is ordinary Python that you can rerun offline.
 
 ```mermaid
 flowchart TD
@@ -48,47 +39,50 @@ flowchart TD
     F --> J
 ```
 
-| Stage | What runs | Code |
+| Step | What happens | Code |
 |---|---|---|
-| Extraction | Gemini (`gemini-3.8-flash`) structured output. A content-addressed cache of prompts and provider responses makes reruns reproducible and free. A bounded repair pass handles anything left uncovered. | `src/navigator/extraction/` |
-| Verification | Each quoted span must match the raw source text exactly (or after whitespace and punctuation normalization). Records failing this are rejected, never published. Status, version and date evidence are verified the same way. | `extraction/citation.py`, `quotes.py` |
-| Temporal | Explicit and relative effective dates are resolved from verified text ("first day of the twelfth month next following enactment"). Records with an unclear legislative status, or that are expired, held or pending, are kept separate from in-force law. | `extraction/temporal.py`, `validity.py`, `legislative.py` |
-| Jurisdiction | Census batch and point lookups. Ties and boundary edge cases are inspected, reviewed overrides are recorded with their evidence, and unresolved addresses stay unresolved. | `src/navigator/jurisdiction/` |
-| Applicability | Coverage conditions and exemptions are classified into property facts; three-valued AND/OR logic produces `applies` / `unknown` / omitted, with the missing facts named. | `src/navigator/applicability/` |
-| Change tests | T1–T5 are run deterministically, with no LLM: as-of transitions, a city-boundary test, a pending-bill test and a failed-measure test. | `src/navigator/changes.py` |
+| Extraction | Gemini (`gemini-3.8-flash`) returns rule records against a JSON response schema. Prompts and responses are cached by content hash, so a rerun gives the same output without new API calls. A bounded repair pass revisits provisions the first pass missed. | `src/navigator/extraction/` |
+| Citation checks | Each quote has to match the raw source text, either exactly or after whitespace and punctuation normalization. A record that fails is rejected. Status and date evidence get the same check. | `extraction/citation.py`, `quotes.py` |
+| Dates and status | Effective dates come from verified text, including relative ones such as "the first day of the twelfth month next following the date of enactment". Pending, failed, expired and held records are kept apart from law in force. | `extraction/temporal.py`, `validity.py`, `legislative.py` |
+| Jurisdiction | Census Geocoder batch and point lookups, also cached. Ties and near-boundary matches are flagged for review, manual overrides are recorded with their evidence, and addresses Census can't place stay unresolved. | `src/navigator/jurisdiction/` |
+| Applicability | Each coverage condition and exemption is mapped to a property fact and evaluated as true, false or unknown. Rules that clearly don't apply are left out. Uncertain ones come back as `unknown` with the missing fact named. | `src/navigator/applicability/` |
+| Change tests | T1–T5 run on the same records and jurisdictions, with no LLM involved: two date transitions, a city-boundary check, a pending-bill check and a failed-measure check. | `src/navigator/changes.py` |
 
 ## Results
 
-| Stage | Result |
+These numbers come from the committed outputs and the current test run.
+
+| | |
 |---|---|
-| **M3 Extraction** | 54 supplied-text documents handled; **228 publishable rules**. 0 schema failures, 0 duplicate IDs, 0 citation failures among published records (210 exact + 18 normalized quote matches). 183 records held and 15 rejected rather than published. |
-| **M4 Jurisdiction** | 500 addresses: **473 resolved, 20 review, 7 unresolved**. 33 postal-city ≠ legal-city cases handled (Boston neighbourhoods, San Ysidro). 8 reviewed overrides, each with recorded evidence. |
-| **M5 Applicability** | All 500 lookup rows. 14,508 applies · 16,131 unknown · 662 pending. 135 exempt results omitted. Deterministic and reproducible. Explicit unknowns, never guesses. |
-| **M6 Change tests** | T1–T5 each generated exactly once; all five official scenarios unblocked. T1 248 CA · T2 90 (Hoboken 40, Jersey City 50, no Newark) · T3 139 NJ, 90 conflict-flagged · T4 105 MA pending · T5 0. |
-| **Tests** | **380 passing**, with network access blocked for the whole suite. |
+| Extraction | 54 supplied-text documents processed, 228 rules published. Every published quote matches its source (210 exactly, 18 after normalization), with no schema failures or duplicate IDs. Another 183 records were held and 15 rejected. |
+| Jurisdiction | 500 addresses: 473 resolved, 20 flagged for review, 7 unresolved. 33 addresses have a postal city that differs from their legal city. 8 manual overrides, each with recorded evidence. |
+| Applicability | A lookup row for every one of the 500 addresses at 2026-10-01: 14,508 `applies`, 16,131 `unknown`, 662 `pending`. Another 135 results were left out because a property exemption clearly applies. |
+| Change tests | T1–T5 each produced once. T1 covers 248 California addresses. T2 covers 40 in Hoboken and 50 in Jersey City, none in Newark. T3 covers 139 New Jersey addresses, 90 of them flagged for a possible conflict with the local bans. T4 reports 105 Massachusetts addresses as pending. T5 affects none. |
+| Tests | 380 passing. The suite blocks network access, so it runs offline. |
 
-Estimated Gemini spend, from API-reported tokens: about $0.96 for the final full-corpus run (`outputs/m3/full_v2/spend_ledger.json`), plus about $0.11 for one targeted M6 re-extraction.
+The `unknown` count is high on purpose. The most common missing facts are owner occupancy, subsidy status and whether a local ordinance covers the building, none of which are in the sample data.
 
-Submission files: [`outputs/submission/`](outputs/submission/) holds `rules.json`, `lookups.json`, `changes.json` and `submission_summary.md`.
+Gemini spend, estimated from API-reported token counts, was about $0.96 for the final full-corpus run (`outputs/m3/full_v2/spend_ledger.json`), plus about $0.11 for one targeted re-extraction used in T3.
 
-## Reliability and responsible design
+The submission files are in [`outputs/submission/`](outputs/submission/): `rules.json`, `lookups.json`, `changes.json` and `submission_summary.md`.
 
-- **Exact source citations.** Every published rule carries a quote verified against the supplied text, and the app shows it verbatim.
-- **No fabricated jurisdiction.** The postal city is never trusted. Unresolved addresses are never assigned a city, and every rule is reported `unknown` for them.
-- **Missing facts lead to `unknown`.** The app names the fact it needs, such as owner occupancy or subsidy status.
-- **Law status is kept distinct.** Pending bills show as `pending`, never `applies`. Failed measures are never surfaced. Enacted-but-future law shows as `not_yet_effective`.
-- **Expired rules are excluded** from the current view (3 historical records are kept only in the audit).
-- **Review queues are preserved** for extraction, jurisdiction and change mapping (`review/`, `outputs/m4/jurisdiction_review_queue.json`).
-- **Not legal advice** appears in the app, the outputs and this README.
+## How it avoids guessing
+
+- Every published rule carries a quote checked against the supplied text, and the app shows that quote verbatim.
+- The postal city is never treated as the legal city. If Census can't place an address, it gets no city, and every rule comes back `unknown` for it.
+- When a rule depends on a fact the data doesn't have, the result is `unknown` and the app says which fact.
+- Pending bills show as `pending`, never `applies`, and failed measures don't appear at all. A law that is enacted but not yet in force shows as `not_yet_effective`.
+- Expired rules are left out. The 3 historical records stay in the audit files only.
+- Review decisions live in the repo: the extraction review queue (`outputs/m3/full_v2/review_queue.json`), jurisdiction overrides and the change-test mapping (`review/`), and the jurisdiction review queue (`outputs/m4/jurisdiction_review_queue.json`).
 
 ## Known limitations
 
-1. **Some rules from explanatory pages are held rather than published,** because their current operative dates could not be established safely. Most notably, New Jersey just-cause and deposit guidance (D067) is held.
-2. **The Hoboken and Jersey City ordinance texts (T2) are link-only in the supplied corpus.** The change scenario therefore uses organizer-supplied test facts and Census geography, without fabricating a legal quote.
-3. **The NJ FAIR Act rule stays rejected from the base rule set,** because its model quote inserted bracket characters that are not in the source. T3 uses the effective date verified from the source text (2027-07-01) and the organizer-supplied scenario facts.
-4. **Some applicability remains `unknown`,** because owner occupancy, subsidy status, owner type, certificate-of-occupancy dates and other facts are absent from the challenge dataset. `year_built` stands in for certificate-of-occupancy age only where the challenge README allows it, with the cutoff year treated as unknown.
-5. **No local rules are published for Cambridge, Hoboken, Jersey City or Newark.** Only state rules are evaluated there.
-6. **The app's date picker can move away from 2026-10-01,** but only recorded effective dates are re-checked. The submitted `lookups.json` is for 2026-10-01.
+1. Some rules from explanatory pages, such as government guides rather than statutes, were held instead of published, because a current operative date couldn't be verified. The biggest gap is New Jersey's just-cause and security-deposit guidance (D067).
+2. Many results are `unknown` because the dataset doesn't include owner occupancy, subsidy status, owner type or the exact certificate-of-occupancy date. Where the challenge brief allows it, `year_built` stands in for certificate-of-occupancy age, and a building built in the cutoff year stays unknown.
+3. The Hoboken and Jersey City ordinances behind T2 were link-only in the corpus. T2 therefore uses the organizer-supplied scenario facts and Census geography, and no quote is shown for those ordinances.
+4. The NJ FAIR Act candidate record was rejected because its quote contained bracket characters that aren't in the source. I kept the citation check strict rather than loosen it for one record. T3 uses the effective date verified from the bill text (2027-07-01) and the scenario facts.
+5. Cambridge, Hoboken, Jersey City and Newark have no published local rules, so only state rules are evaluated there.
+6. The app's date picker re-checks recorded effective dates only. The submitted `lookups.json` is for 2026-10-01.
 
 ## Run locally
 
@@ -99,7 +93,12 @@ uv run pytest                                    # 380 tests, network blocked
 uv run python scripts/check_submission.py        # validate outputs/submission/
 ```
 
-The pipeline stages that need network access or an API key are already run, and their outputs are committed: `scripts/extract_rules.py` / `run_corpus.py` (Gemini; reads `GEMINI_API_KEY` from `.env`), `resolve_jurisdictions.py` (Census), `build_lookups.py` and `build_changes.py`. See [docs/SETUP.md](docs/SETUP.md).
+The steps that need network access or an API key have already been run, and their outputs are committed. To rerun them:
+- `scripts/extract_rules.py` and `scripts/run_corpus.py` call Gemini, reading `GEMINI_API_KEY` from `.env`.
+- `scripts/resolve_jurisdictions.py` calls the Census Geocoder.
+- `scripts/build_lookups.py` and `scripts/build_changes.py` run offline.
+
+See [docs/SETUP.md](docs/SETUP.md) for details.
 
 ## Repository structure
 
@@ -120,4 +119,4 @@ corpus/ data/ dev/ schema/ submission_templates/   official starter pack (unmodi
 
 ## Disclaimer
 
-LeaseLens is an informational prototype built for a hackathon. It is **not legal advice**, and it may be incomplete or wrong. Consult the cited sources and a qualified professional before acting.
+LeaseLens is a hackathon prototype. It isn't legal advice and may be incomplete or wrong. Check the cited sources, and talk to a qualified professional before acting on anything here.
