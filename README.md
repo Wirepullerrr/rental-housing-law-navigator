@@ -1,5 +1,7 @@
 # LeaseLens
 
+**[Live Demo](https://leaselens-maverick.streamlit.app/) · Team Maverick**
+
 LeaseLens is a rental-housing law navigator built by team Maverick for the RealPage challenge at Hack-Nation 2026.
 
 Give it one of the 500 supplied rental properties and an as-of date. It works out which city the property legally belongs to, finds the state and city rules that cover it, and explains what applies, what is still pending, and what can't be decided from the available property data.
@@ -7,6 +9,8 @@ Give it one of the 500 supplied rental properties and an as-of date. It works ou
 The design rests on one split. Gemini turns messy legal text into structured rule records, and each record carries a quote that is checked against the source. Plain deterministic Python then decides whether each rule applies to a property. When the evidence isn't enough, LeaseLens answers `unknown` and names the missing fact instead of guessing.
 
 It's a hackathon prototype that works on the supplied corpus. Not legal advice.
+
+[![LeaseLens property lookup showing property details, legal jurisdiction, map, and rule-status summary.](docs/assets/leaselens-demo.png)](https://leaselens-maverick.streamlit.app/)
 
 ## Why this is hard
 
