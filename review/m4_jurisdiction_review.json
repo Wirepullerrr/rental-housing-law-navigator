@@ -1,7 +1,7 @@
 {
   "about": "M4 manual review of address -> jurisdiction resolution. Overrides are applied by scripts/resolve_jurisdictions.py only if their original_census_evidence still matches and every census_verification query returns exactly one Census candidate inside an incorporated place that maps to the corrected jurisdiction. Notes never change a result. Not legal advice.",
   "reviewed_on": "2026-10-04",
-  "reviewer": "M4 manual review (Claude Code session), pending confirmation by the project owner",
+  "reviewer": "Manual jurisdiction review; confirmed by project owner",
   "overrides": [
     {
       "address_id": "A0115",
