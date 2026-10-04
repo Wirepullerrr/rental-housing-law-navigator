@@ -1,0 +1,122 @@
+{
+  "disclaimer": "Not legal advice. Automated extraction for a research prototype; verify against the cited source.",
+  "run_at": "2026-10-04T01:59:31+00:00",
+  "source": {
+    "doc_id": "D011",
+    "jurisdiction": "Boston, MA",
+    "url": "https://malegislature.gov/Bills/193/H3744",
+    "source_type": "official",
+    "retrieved_at": "2026-10-01T22:35Z",
+    "text_file": "text/D011.txt",
+    "content_sha256": "4d58b2a5d39ef77943d25b9e80340ac091466d305eddb3940eb32fcf88edd76c",
+    "body_chars": 3627
+  },
+  "provider": "gemini",
+  "model": "gemini-3.8-flash",
+  "prompt_version": "v5",
+  "prompt_sha256": "9fbcffe54c18d0c93ca3466357e434fced0186af467e56c8ea188de93b8f40cc",
+  "response_schema_sha256": "e026d3eb1843386b41cefc73c797a00d71962f94869af598755dcc32be30d03b",
+  "generation_settings": {
+    "temperature": null,
+    "seed": 20261001,
+    "thinking_level": "medium"
+  },
+  "as_of": "2026-10-01",
+  "cache_key": "8d00b3deaf533e305384d374f763eed77a2ba19a35ed2e8523ed794c6c39cb0b",
+  "cache_hit": true,
+  "cache_entry": "cache/extraction/8d00b3deaf533e305384d374f763eed77a2ba19a35ed2e8523ed794c6c39cb0b.json",
+  "provider_metadata": {
+    "api": "interactions.create",
+    "interaction_id": "",
+    "model": "gemini-3.8-flash",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3655,
+      "output_tokens": 24,
+      "thinking_tokens": 2254,
+      "total_tokens": 5933
+    }
+  },
+  "candidate_count": 0,
+  "accepted_count": 0,
+  "rules": [],
+  "candidates": [],
+  "posture": {
+    "declared": null,
+    "evidence": null,
+    "evidence_check": null,
+    "established": "unknown",
+    "basis": "the response declares no document posture"
+  },
+  "base_dates": [],
+  "provision_inventory": [],
+  "global_scope": [],
+  "source_view": {
+    "marker": "[[PAGE BREAK]]",
+    "segment_label": "[[SEGMENT {}]]",
+    "view_sha256": "f6bbdf7562ca5cc5c7d910c06d76daa9ee9847bfbf5452c569144a974f0391c2",
+    "segments": [
+      {
+        "id": 1,
+        "raw_start": 0,
+        "raw_end": 3627
+      }
+    ],
+    "artifacts_removed": 0,
+    "artifacts": []
+  },
+  "coverage": {
+    "inventory_valid": true,
+    "anchors_located": "0/0",
+    "after_primary": {
+      "uncovered": [],
+      "unaccepted": [],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "inventory_items": 0,
+    "in_scope_items": 0,
+    "in_scope_refs": 0,
+    "uncertain": [],
+    "final": {
+      "uncovered": [],
+      "unaccepted": [],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "link_mismatches": [],
+    "provisions": [],
+    "unrecorded_subdivisions": []
+  },
+  "scope_challenges": [],
+  "empty_result": null,
+  "legacy_replay": {
+    "replayed_from_prompt_version": "v5",
+    "note": "cached response re-evaluated by the current post-processing; no provider request",
+    "provision_ids": "P<n> by v5 inventory position",
+    "rule_links": {},
+    "scope_targeting": [],
+    "not_declared": [
+      "document posture",
+      "inventory anchors",
+      "inventory roles",
+      "source_basis",
+      "enactment_status_evidence",
+      "source_provision_id",
+      "no_rules_justification"
+    ],
+    "consequences": [
+      "posture unknown: an enacted rule without a resolved effective date is held",
+      "no anchors: scope challenges cannot be evaluated",
+      "no repair request is made by a replay"
+    ]
+  },
+  "repair": null,
+  "document_status": "review_required",
+  "review_reasons": [
+    "no rule candidates, and no source-grounded justification that the document has no in-scope legal content"
+  ],
+  "warnings": [],
+  "errors": [],
+  "raw_response_text": "{\n  \"provisions\": [],\n  \"global_scope\": [],\n  \"rules\": []\n}"
+}

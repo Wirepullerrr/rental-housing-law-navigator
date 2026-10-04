@@ -26,9 +26,18 @@ Status = Literal["in_force", "not_yet_effective", "pending", "failed"]
 EnactmentStatus = Literal["enacted", "pending", "failed"]
 CitationStatus = Literal["exact_match", "normalized_match", "failed"]
 ScopeDecision = Literal["in_scope", "out_of_scope", "uncertain"]
-# What a piece of effective-date evidence is. Only an explicit operative date may
-# populate effective_date; temporal.py enforces the consequences of each kind.
+# What a piece of effective-date evidence is. Only an explicit operative date, or a
+# relative formula resolved deterministically (temporal.py), may populate effective_date.
 EvidenceKind = Literal["explicit_operative_date", "relative_date_formula", "history_note", "operative_condition"]
+# What kind of legal source the document is (internal audit metadata; posture.py decides
+# whether the declared posture is established and what it implies for status).
+Posture = Literal["codified_current_law", "enacted_session_law", "pending_bill", "failed_bill",
+                  "bill_status_or_summary_page", "official_explanatory_page", "unknown"]
+# What a record's substantive content rests on. Anything but operative_text is labelled in the record.
+SourceBasis = Literal["operative_text", "official_bill_summary", "official_bill_history", "official_explanatory_text"]
+# The legal function of an inventory provision (input to the scope-challenge check, coverage.py).
+Role = Literal["operative_rule", "scope_condition", "exemption", "definition", "remedy", "enforcement",
+               "history", "procedure", "boilerplate", "uncertain"]
 
 # Same pattern as the official schema's effective_date.
 PartialDate = Annotated[str, StringConstraints(pattern=r"^\d{4}(-\d{2}(-\d{2})?)?$")]
@@ -66,7 +75,7 @@ class ScopeCarveOut(BaseModel):
 
 class ScopeCondition(BaseModel):
     """A document- or division-level exemption or coverage condition, extracted once
-    and propagated deterministically to every rule it governs."""
+    and propagated deterministically, by provision id, to every rule it governs."""
 
     model_config = ConfigDict(extra="forbid", strict=True)
 
@@ -74,9 +83,31 @@ class ScopeCondition(BaseModel):
     kind: Literal["exemption", "coverage_condition"]
     statement: str = Field(min_length=1, description="The condition in plain language.")
     citation: str = Field(min_length=1, description="Official citation of the provision stating it.")
-    governs: str | None = Field(description="Provision ref it governs; null if it governs the whole document.")
+    source_provision_id: str | None = Field(description="Inventory id of the provision that states it; null if "
+                                            "that text is not an inventory provision.")
+    governed_provision_ids: list[str] | None = Field(description="Inventory ids of the provisions it governs; "
+                                                     "null ONLY if it governs every provision of the document.")
     evidence_parts: list[QuotePart] = Field(min_length=1, description="Verbatim text stating the condition: "
                                             "one part, or two parts across one [[PAGE BREAK]].")
+
+
+class DocumentPosture(BaseModel):
+    """What kind of legal source the document is, with the text showing it."""
+
+    model_config = ConfigDict(extra="forbid", strict=True)
+
+    posture: Posture
+    evidence: str | None = Field(description="One verbatim passage showing the posture (e.g. an enactment, "
+                                 "chapter, status or code heading line); null only for unknown.")
+
+
+class NoRulesJustification(BaseModel):
+    """Why a document yields no rule record, grounded in its text."""
+
+    model_config = ConfigDict(extra="forbid", strict=True)
+
+    reason: str = Field(min_length=1, description="One sentence: why the document has no in-scope legal content.")
+    evidence: str = Field(min_length=1, description="One verbatim passage that shows it.")
 
 
 class ExtractedRule(BaseModel):
@@ -87,6 +118,10 @@ class ExtractedRule(BaseModel):
 
     category: Category
     citation: str = Field(min_length=1, description="Official citation as identified in the document.")
+    provision_ids: list[str] = Field(min_length=1, description="Inventory ids of the provision(s) this record "
+                                     "comes from.")
+    source_basis: SourceBasis = Field(description="What the record's substance rests on: operative legal text, "
+                                      "or an official summary, history or explanation of it.")
     quote_parts: list[QuotePart] = Field(min_length=1, description="Verbatim support: one part, or two parts "
                                          "across one [[PAGE BREAK]] (end of segment n, start of segment n+1).")
     title: str = Field(min_length=1, description="Short name of the law or provision.")
@@ -98,6 +133,8 @@ class ExtractedRule(BaseModel):
     operative_conditions: list[OperativeCondition]
     interaction: str | None = Field(description="Stated relationship with another legal regime; not a mere citation.")
     enactment_status: EnactmentStatus = Field(description="enacted law, pending bill/proposal, or failed proposal.")
+    enactment_status_evidence: str | None = Field(description="Verbatim text showing that status (required for "
+                                                  "pending and failed).")
     version_note: str | None = Field(description="History or amendment notes and version history; never an effective date.")
     version_evidence: str | None = Field(description="Verbatim text of the history note or version annotation.")
     effective_date_evidence: str | None = Field(description="Verbatim text stating when this obligation takes effect.")
@@ -109,24 +146,43 @@ class ExtractedRule(BaseModel):
 
 
 class ProvisionNote(BaseModel):
-    """One entry of the model's provision inventory (audit and coverage closure; never published)."""
+    """One entry of the model's provision inventory (audit, coverage closure and scope
+    targeting; never published). Rules link to it by `id`."""
 
     model_config = ConfigDict(extra="forbid", strict=True)
 
+    id: str = Field(min_length=1, description="Stable id in document order: 'P1', 'P2', ...")
     ref: str = Field(min_length=1, description="Provision citation as shown in the document, e.g. '§ 12.34(b)'.")
+    anchor: str = Field(min_length=1, description="The first words of the provision, verbatim (one segment).")
     summary: str = Field(description="Short neutral description of the provision.")
+    role: Role = Field(description="The provision's legal function.")
     scope: ScopeDecision
     category: Category | None = Field(description="Official category if in_scope, else null.")
     reason: str | None = Field(description="Why it is out_of_scope or uncertain; null if in_scope.")
-    rule_indices: list[int] = Field(description="0-based positions in `rules` of the records produced from it.")
 
 
 class ExtractionResponse(BaseModel):
     model_config = ConfigDict(extra="forbid", strict=True)
 
+    document: DocumentPosture
     provisions: list[ProvisionNote]
     global_scope: list[ScopeCondition]
     rules: list[ExtractedRule]
+    no_rules_justification: NoRulesJustification | None = Field(description="Only when `rules` is empty: why the "
+                                                                "document has no in-scope legal content.")
+
+
+# Replay of a cached pre-v6 response (replay.py) only. These relax exactly the fields an
+# older prompt never asked for; the adapter records each fill in the run's legacy_replay audit.
+class LegacyProvisionNote(ProvisionNote):
+    anchor: str | None = None
+    role: Role | None = None
+
+
+class LegacyExtractedRule(ExtractedRule):
+    provision_ids: list[str] = Field(default_factory=list)
+    source_basis: SourceBasis | None = None
+    enactment_status_evidence: str | None = None
 
 
 class TargetResolution(BaseModel):
@@ -242,7 +298,12 @@ class CandidateResult(BaseModel):
     index: int
     origin: Literal["primary", "repair"] = "primary"
     accepted: bool = False
+    # Passed every check except temporal resolution: preserved with its evidence, never published.
+    held: bool = False
     rejection_reasons: list[str] = Field(default_factory=list)
+    provision_ids: list[str] = Field(default_factory=list)       # links to inventory ids, as given
+    source_basis: str | None = None
+    status_evidence: CitationCheck | None = None                  # enactment_status_evidence check
     pydantic_valid: bool = False
     pydantic_errors: list[str] = Field(default_factory=list)
     schema_valid: bool | None = None   # None: not reached
@@ -300,10 +361,15 @@ class ExtractionRun(BaseModel):
     accepted_count: int = 0
     rules: list[dict[str, Any]] = Field(default_factory=list)
     candidates: list[CandidateResult] = Field(default_factory=list)
+    posture: dict[str, Any] = Field(default_factory=dict)             # declared vs established (posture.py)
+    base_dates: list[dict[str, Any]] = Field(default_factory=list)    # enactment dates found in the raw text
     provision_inventory: list[dict[str, Any]] = Field(default_factory=list)
     global_scope: list[dict[str, Any]] = Field(default_factory=list)  # each with its evidence check
     source_view: dict[str, Any] = Field(default_factory=dict)         # removed page artifacts, verbatim
     coverage: dict[str, Any] = Field(default_factory=dict)            # inventory coverage closure
+    scope_challenges: list[dict[str, Any]] = Field(default_factory=list)  # out_of_scope items re-examined
+    empty_result: dict[str, Any] | None = None                        # no-rules justification and its check
+    legacy_replay: dict[str, Any] | None = None                       # set only when replaying a pre-v6 response
     repair: RepairPass | None = None
     document_status: Literal["complete", "review_required"] = "review_required"
     review_reasons: list[str] = Field(default_factory=list)

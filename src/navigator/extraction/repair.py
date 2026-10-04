@@ -1,19 +1,25 @@
 """Repair targets: what the single repair request is about, and when a target is resolved.
 
-Targets are computed deterministically after the primary pass, from BOTH checks,
-and merged by provision (same_ref), so a ref found by both carries both sources:
+Targets are computed deterministically after the primary pass, from ALL three
+checks, and merged by provision (same_ref), so a ref found twice carries both sources:
   inventory_uncovered  an in-scope inventory ref with no candidate at all
   subdivision_guard    a source subdivision next to recorded subdivisions of an
                        in-scope provision, with no candidate at all
+  scope_challenge      an out_of_scope inventory item whose own text has several
+                       signals of a substantive rule (coverage.scope_challenges)
 A ref whose only candidates were rejected is never a target: rejected candidates
 are not retried. It stays unresolved and the document review_required.
 
-A structural target is not presumed to be in scope. The repair response
-classifies every target as in_scope (and gives records), out_of_scope or
-uncertain. After the repair pass, a target is resolved only by
-  - an accepted record citing it (or one of its subdivisions), or
+A structural or challenged target is not presumed to be in scope. The repair
+response classifies every target as in_scope (and gives records), out_of_scope or
+uncertain. A record answers a target when it LINKS the target's provision id
+(inventory and challenge targets; its citation must also name an inventory ref)
+or when its citation names the subdivision (guard targets). After the repair
+pass, a target is resolved only by
+  - an accepted record answering it, or
   - an out_of_scope classification with a reason and verified verbatim evidence;
-    for a guard target the evidence must lie inside that subdivision's source text.
+    for guard and challenge targets the evidence must lie inside that provision's
+    source text. A challenged item confirmed out_of_scope keeps that result.
 Uncertain, omitted, all-candidates-rejected, unverified out_of_scope and a repair
 that did not run all leave the target unresolved.
 """
@@ -27,18 +33,20 @@ from pydantic import ValidationError
 from navigator.extraction.coverage import candidate_citation, same_ref
 from navigator.extraction.models import CandidateResult, TargetResolution
 from navigator.extraction.quotes import verify_quote_parts
-from navigator.extraction.review import _ref_tokens, ref_matches
+from navigator.extraction.review import _ref_tokens, ref_is_ancestor, ref_matches
 from navigator.extraction.source_view import SourceView
 
 INVENTORY = "inventory_uncovered"
 GUARD = "subdivision_guard"
+SCOPE_CHALLENGE = "scope_challenge"
 RESOLVED_BY_RULE = "resolved_by_accepted_rule"
 RESOLVED_OUT_OF_SCOPE = "resolved_out_of_scope"
 UNRESOLVED = "unresolved"
 
 
-def build_targets(closure_result: dict[str, Any], gaps: list[dict[str, Any]]) -> list[dict[str, Any]]:
-    """The union of both target kinds, deduplicated by provision, in canonical order."""
+def build_targets(closure_result: dict[str, Any], gaps: list[dict[str, Any]],
+                  challenges: list[dict[str, Any]] = ()) -> list[dict[str, Any]]:
+    """The union of all target kinds, deduplicated by provision, in canonical order."""
     targets: list[dict[str, Any]] = []
 
     def add(ref: str, source: str, **fields: Any) -> None:
@@ -52,14 +60,22 @@ def build_targets(closure_result: dict[str, Any], gaps: list[dict[str, Any]]) ->
 
     for p in closure_result["provisions"]:
         if not p["candidates"]:
-            add(p["ref"], INVENTORY, summary=p["summary"], category=p["category"],
-                pre_repair_state="in-scope inventory provision with no candidate")
+            add(p["ref"], INVENTORY, provision_id=p.get("provision_id"), summary=p["summary"],
+                category=p["category"], pre_repair_state="in-scope inventory provision with no candidate")
     for gap in gaps:
         for sub in gap["subdivisions"]:
             if not sub["candidates"]:
-                add(sub["ref"], GUARD, parent=gap["ref"], raw_start=sub["raw_start"], raw_end=sub["raw_end"],
+                add(sub["ref"], GUARD, provision_id=gap.get("provision_id"), parent=gap["ref"],
+                    raw_start=sub["raw_start"], raw_end=sub["raw_end"],
                     pre_repair_state=f"source subdivision with no candidate; {gap['ref']} is recorded only "
                                      f"through {', '.join(f'({x})' for x in gap['cited'])}")
+    for ch in challenges:
+        if ch["challenged"]:
+            signals = [k for k, v in ch["signals"].items() if v]
+            add(ch["ref"], SCOPE_CHALLENGE, provision_id=ch["provision_id"], summary=ch["summary"],
+                role=ch["role"], declared_reason=ch["reason"], signals=signals, raw_start=ch["raw_start"],
+                raw_end=ch["raw_end"], pre_repair_state=f"declared out_of_scope ({ch['role']}: {ch['reason']}); "
+                                                        f"its text has signals {signals}")
     return canonical_order(targets)
 
 
@@ -70,6 +86,21 @@ def canonical_order(targets: list[dict[str, Any]]) -> list[dict[str, Any]]:
 def target_identity(targets: list[dict[str, Any]]) -> list[dict[str, Any]]:
     """Sorted canonical target set: part of the repair cache key."""
     return [{"ref": t["ref"], "sources": sorted(t["sources"])} for t in canonical_order(targets)]
+
+
+def answers(t: dict[str, Any], c: CandidateResult) -> bool:
+    """Does candidate `c` answer target `t` (module docstring)?"""
+    cite = candidate_citation(c)
+    if cite is None:
+        return False
+    if GUARD in t["sources"] and ref_matches(t["ref"], cite):
+        return True
+    if t.get("provision_id") and t["provision_id"] in c.provision_ids:
+        if SCOPE_CHALLENGE in t["sources"]:
+            return True
+        if INVENTORY in t["sources"]:
+            return ref_matches(t["ref"], cite) or ref_is_ancestor(cite, t["ref"])
+    return False
 
 
 def match_target(ref: str, targets: list[dict[str, Any]]) -> int | None:
@@ -114,7 +145,7 @@ def resolve_targets(targets: list[dict[str, Any]], candidates: list[CandidateRes
     """Set each target's final resolution after the repair pass; return the counts."""
     for t in targets:
         res = t.get("resolution")
-        covering = [c for c in candidates if candidate_citation(c) and ref_matches(t["ref"], candidate_citation(c))]
+        covering = [c for c in candidates if answers(t, c)]
         t["repair_scope"] = res["scope"] if res else None
         t["reason"] = res["reason"] if res else None
         t["candidate_indices"] = [c.index for c in covering if c.origin == "repair"]
@@ -146,12 +177,12 @@ def _final(t: dict[str, Any], res: dict[str, Any] | None, repair_ran: bool,
                         else "classified in_scope, but no candidate was produced")
 
 
-def repair_scope_rejection(cite: str | None, targets: list[dict[str, Any]]) -> str | None:
-    """The only extra check on a repair candidate, and it can only reject: it must cite a
+def repair_scope_rejection(c: CandidateResult, targets: list[dict[str, Any]]) -> str | None:
+    """The only extra check on a repair candidate, and it can only reject: it must answer a
     target, and not one the same response classified out_of_scope or uncertain."""
-    hits = [t for t in targets if cite and ref_matches(t["ref"], cite)]
+    hits = [t for t in targets if answers(t, c)]
     if not hits:
-        return "repair: candidate does not cite a repair target"
+        return "repair: candidate does not answer a repair target (cite it, or link its provision id)"
     declined = [t for t in hits if t.get("resolution", {}).get("scope") in ("out_of_scope", "uncertain")]
     if len(declined) == len(hits):
         return f"repair: candidate cites a target the repair classified as {declined[0]['resolution']['scope']}"

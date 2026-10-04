@@ -5,8 +5,8 @@ from __future__ import annotations
 
 import pytest
 
-from conftest import (D052_DATE_EVIDENCE, FakeProvider, make_candidate, page_body, paged, parts,
-                      running_header, synthetic_source)
+from conftest import (D052_DATE_EVIDENCE, FakeProvider, codified, make_candidate, page_body, paged, parts,
+                      provision, running_header, synthetic_source)
 from navigator.extraction import extractor
 from navigator.extraction.cache import sha256_hex
 from navigator.extraction.extractor import SourceDocument, extract_document
@@ -81,9 +81,10 @@ D052_VACATION_EXEMPTION = ("The provisions of this section shall not apply to an
 D052_RETURN_SPAN = "The lessor shall, within thirty days after the termination of occupancy under a tenancy-at-will"
 
 
-def scope(sid="S1", governs=None, evidence=D052_VACATION_EXEMPTION, kind="exemption"):
+def scope(sid="S1", governed=None, evidence=D052_VACATION_EXEMPTION, kind="exemption"):
     return {"id": sid, "kind": kind, "statement": "Vacation rentals of 100 days or less are exempt.",
-            "citation": "M.G.L. c. 186, § 15B(9)", "governs": governs, "evidence_parts": parts(evidence)}
+            "citation": "M.G.L. c. 186, § 15B(9)", "source_provision_id": None, "governed_provision_ids": governed,
+            "evidence_parts": parts(evidence)}
 
 
 def test_document_wide_exemption_propagates_to_every_rule(run_fake):
@@ -92,23 +93,27 @@ def test_document_wide_exemption_propagates_to_every_rule(run_fake):
     assert run.accepted_count == 2
     for c, rule in zip(run.candidates, run.rules):
         assert "Vacation rentals of 100 days or less are exempt. [M.G.L. c. 186, § 15B(9); document-wide]" == rule["exemptions"]
-        assert c.propagated_scope == [{"id": "S1", "kind": "exemption", "applied": True, "basis": "document-wide"}]
+        assert c.propagated_scope == [{"id": "S1", "kind": "exemption", "governed_provision_ids": None,
+                                       "basis": "document-wide", "applied": True}]
     assert run.global_scope[0]["propagated"] and run.global_scope[0]["evidence_check"]["status"] == "exact_match"
 
 
 def test_scoped_condition_applies_only_to_rules_it_governs(run_fake):
-    rules = [make_candidate(),  # cites § 15B(1)(b)(iii)
-             make_candidate(citation="M.G.L. c. 186, § 15B(4)", quoted_span=D052_RETURN_SPAN, title="Return")]
-    run, _ = run_fake({"global_scope": [scope(governs="§ 15B(4)")], "rules": rules})
+    rules = [make_candidate(),  # cites § 15B(1)(b)(iii), links P1
+             make_candidate(citation="M.G.L. c. 186, § 15B(4)", quoted_span=D052_RETURN_SPAN, title="Return",
+                            provision_ids=["P2"])]
+    run, _ = run_fake({"provisions": [provision("§ 15B(1)(b)"), provision("§ 15B(4)", id="P2")],
+                       "global_scope": [scope(governed=["P2"])], "rules": rules})
     assert run.rules[0]["exemptions"] is None
-    assert "applies to § 15B(4)" in run.rules[1]["exemptions"]
+    assert run.rules[1]["exemptions"] == "Vacation rentals of 100 days or less are exempt. [M.G.L. c. 186, § 15B(9)]"
+    assert run.candidates[1].propagated_scope[0]["basis"] == "rule links governed provision(s) ['P2']"
 
 
 def test_unverified_scope_condition_is_never_propagated(run_fake):
     run, _ = run_fake({"global_scope": [scope(evidence="This Division does not apply to any building at all.")],
                        "rules": [make_candidate()]})
     assert run.rules[0]["exemptions"] is None and not run.global_scope[0]["propagated"]
-    assert any("S1 evidence not found" in w for w in run.warnings)
+    assert any("S1: evidence not found" in w for w in run.warnings)
 
 
 @pytest.mark.parametrize("evidence, applied", [(D052_DATE_EVIDENCE, False), ("Rule 7 is exempt from S1.", True)])
@@ -162,6 +167,6 @@ def test_thinking_level_is_part_of_cache_identity(d052):
 
 def _run(source: SourceDocument, response, tmp_path):
     from navigator.extraction.cache import ResponseCache
-    provider = FakeProvider(response)
+    provider = FakeProvider(response, document=codified(source))
     return extract_document(source, provider_name=provider.name, model=provider.model, provider=provider,
                             cache=ResponseCache(tmp_path / "cache")), provider

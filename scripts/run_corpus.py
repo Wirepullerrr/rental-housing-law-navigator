@@ -62,6 +62,9 @@ def print_summary(summary: dict) -> None:
                   f"{len(r['unresolved_targets'])}  quotes {c['raw_substring']}/{c['accepted']} "
                   f"(xpage {c['reconstructed_cross_page']})  scope {r['global_scope']['verified']}/"
                   f"{r['global_scope']['proposed']}  est ${r['estimated_new_cost_usd']['total']:.4f}")
+            print(f"        posture {r['posture']['declared']} -> {r['posture']['established']}  held {r['held']}  "
+                  f"relative dates resolved {r['relative_dates_resolved']}  basis {r['source_basis']}  "
+                  f"scope challenges {r['scope_challenges']}")
             for reason in r["review_reasons"]:
                 print(f"        review: {reason}")
             for violation in r.get("integrity_violations", []):

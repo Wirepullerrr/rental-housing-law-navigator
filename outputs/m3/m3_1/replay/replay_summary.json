@@ -1,0 +1,744 @@
+{
+  "note": "Code-only replay of cached responses; no provider request, zero spend. Not legal advice.",
+  "as_of": "2026-10-01",
+  "documents": {
+    "D065": {
+      "doc_id": "D065",
+      "replayed_prompt_version": "v5",
+      "cache_key": "8956a9a82297049d81bdc2107704614145ebe08f70f984ae862f3b5d366ac949",
+      "before": {
+        "document_status": "review_required",
+        "accepted": 0,
+        "candidates": 19
+      },
+      "after": {
+        "document_status": "complete",
+        "accepted": 19,
+        "held": 0,
+        "rejected": 0,
+        "candidates": 19
+      },
+      "posture": {
+        "declared": null,
+        "evidence": null,
+        "evidence_check": null,
+        "established": "unknown",
+        "basis": "the response declares no document posture"
+      },
+      "base_dates": [
+        {
+          "event": "approved",
+          "date": "2021-06-18",
+          "start": 20804,
+          "end": 20826,
+          "text": "Approved June 18, 2021"
+        }
+      ],
+      "scope_targeting": [
+        {
+          "id": "S1",
+          "governs": null,
+          "governed_provision_ids": null,
+          "how": "document-wide (governs null)"
+        }
+      ],
+      "global_scope": [
+        {
+          "id": "S1",
+          "propagated": true,
+          "problem": null
+        }
+      ],
+      "quotes_unchanged": true,
+      "rules": [
+        {
+          "index": 0,
+          "citation": "C.46:8-55(a)(1)",
+          "provision_ids": [
+            "P4"
+          ],
+          "accepted": true,
+          "held": false,
+          "status": "in_force",
+          "effective_date": "2022-01-01",
+          "relative_resolution": "resolved",
+          "applied_scope": [
+            "S1"
+          ],
+          "rejection_reasons": []
+        },
+        {
+          "index": 1,
+          "citation": "C.46:8-55(a)(2)",
+          "provision_ids": [
+            "P5"
+          ],
+          "accepted": true,
+          "held": false,
+          "status": "in_force",
+          "effective_date": "2022-01-01",
+          "relative_resolution": "resolved",
+          "applied_scope": [
+            "S1"
+          ],
+          "rejection_reasons": []
+        },
+        {
+          "index": 2,
+          "citation": "C.46:8-55(a)(3)",
+          "provision_ids": [
+            "P6"
+          ],
+          "accepted": true,
+          "held": false,
+          "status": "in_force",
+          "effective_date": "2022-01-01",
+          "relative_resolution": "resolved",
+          "applied_scope": [
+            "S1"
+          ],
+          "rejection_reasons": []
+        },
+        {
+          "index": 3,
+          "citation": "C.46:8-55(b)",
+          "provision_ids": [
+            "P7"
+          ],
+          "accepted": true,
+          "held": false,
+          "status": "in_force",
+          "effective_date": "2022-01-01",
+          "relative_resolution": "resolved",
+          "applied_scope": [
+            "S1"
+          ],
+          "rejection_reasons": []
+        },
+        {
+          "index": 4,
+          "citation": "C.46:8-55(c)",
+          "provision_ids": [
+            "P8"
+          ],
+          "accepted": true,
+          "held": false,
+          "status": "in_force",
+          "effective_date": "2022-01-01",
+          "relative_resolution": "resolved",
+          "applied_scope": [
+            "S1"
+          ],
+          "rejection_reasons": []
+        },
+        {
+          "index": 5,
+          "citation": "C.46:8-56(a)",
+          "provision_ids": [
+            "P9"
+          ],
+          "accepted": true,
+          "held": false,
+          "status": "in_force",
+          "effective_date": "2022-01-01",
+          "relative_resolution": "resolved",
+          "applied_scope": [
+            "S1"
+          ],
+          "rejection_reasons": []
+        },
+        {
+          "index": 6,
+          "citation": "C.46:8-56(b)",
+          "provision_ids": [
+            "P10"
+          ],
+          "accepted": true,
+          "held": false,
+          "status": "in_force",
+          "effective_date": "2022-01-01",
+          "relative_resolution": "resolved",
+          "applied_scope": [
+            "S1"
+          ],
+          "rejection_reasons": []
+        },
+        {
+          "index": 7,
+          "citation": "C.46:8-56(c)(1)",
+          "provision_ids": [
+            "P11"
+          ],
+          "accepted": true,
+          "held": false,
+          "status": "in_force",
+          "effective_date": "2022-01-01",
+          "relative_resolution": "resolved",
+          "applied_scope": [
+            "S1"
+          ],
+          "rejection_reasons": []
+        },
+        {
+          "index": 8,
+          "citation": "C.46:8-56(c)(2)",
+          "provision_ids": [
+            "P12"
+          ],
+          "accepted": true,
+          "held": false,
+          "status": "in_force",
+          "effective_date": "2022-01-01",
+          "relative_resolution": "resolved",
+          "applied_scope": [
+            "S1"
+          ],
+          "rejection_reasons": []
+        },
+        {
+          "index": 9,
+          "citation": "C.46:8-56(c)(3)",
+          "provision_ids": [
+            "P13"
+          ],
+          "accepted": true,
+          "held": false,
+          "status": "in_force",
+          "effective_date": "2022-01-01",
+          "relative_resolution": "resolved",
+          "applied_scope": [
+            "S1"
+          ],
+          "rejection_reasons": []
+        },
+        {
+          "index": 10,
+          "citation": "C.46:8-56(d)",
+          "provision_ids": [
+            "P14"
+          ],
+          "accepted": true,
+          "held": false,
+          "status": "in_force",
+          "effective_date": "2022-01-01",
+          "relative_resolution": "resolved",
+          "applied_scope": [
+            "S1"
+          ],
+          "rejection_reasons": []
+        },
+        {
+          "index": 11,
+          "citation": "C.46:8-58(a)",
+          "provision_ids": [
+            "P16"
+          ],
+          "accepted": true,
+          "held": false,
+          "status": "in_force",
+          "effective_date": "2022-01-01",
+          "relative_resolution": "resolved",
+          "applied_scope": [
+            "S1"
+          ],
+          "rejection_reasons": []
+        },
+        {
+          "index": 12,
+          "citation": "C.46:8-58(b)",
+          "provision_ids": [
+            "P17"
+          ],
+          "accepted": true,
+          "held": false,
+          "status": "in_force",
+          "effective_date": "2022-01-01",
+          "relative_resolution": "resolved",
+          "applied_scope": [
+            "S1"
+          ],
+          "rejection_reasons": []
+        },
+        {
+          "index": 13,
+          "citation": "C.46:8-58(c)",
+          "provision_ids": [
+            "P18"
+          ],
+          "accepted": true,
+          "held": false,
+          "status": "in_force",
+          "effective_date": "2022-01-01",
+          "relative_resolution": "resolved",
+          "applied_scope": [
+            "S1"
+          ],
+          "rejection_reasons": []
+        },
+        {
+          "index": 14,
+          "citation": "C.46:8-60",
+          "provision_ids": [
+            "P20"
+          ],
+          "accepted": true,
+          "held": false,
+          "status": "in_force",
+          "effective_date": "2022-01-01",
+          "relative_resolution": "resolved",
+          "applied_scope": [
+            "S1"
+          ],
+          "rejection_reasons": []
+        },
+        {
+          "index": 15,
+          "citation": "C.46:8-61",
+          "provision_ids": [
+            "P21"
+          ],
+          "accepted": true,
+          "held": false,
+          "status": "in_force",
+          "effective_date": "2022-01-01",
+          "relative_resolution": "resolved",
+          "applied_scope": [
+            "S1"
+          ],
+          "rejection_reasons": []
+        },
+        {
+          "index": 16,
+          "citation": "C.46:8-63(d)(2)",
+          "provision_ids": [
+            "P26"
+          ],
+          "accepted": true,
+          "held": false,
+          "status": "in_force",
+          "effective_date": "2022-01-01",
+          "relative_resolution": "resolved",
+          "applied_scope": [
+            "S1"
+          ],
+          "rejection_reasons": []
+        },
+        {
+          "index": 17,
+          "citation": "C.46:8-63(d)(3)",
+          "provision_ids": [
+            "P27"
+          ],
+          "accepted": true,
+          "held": false,
+          "status": "in_force",
+          "effective_date": "2022-01-01",
+          "relative_resolution": "resolved",
+          "applied_scope": [
+            "S1"
+          ],
+          "rejection_reasons": []
+        },
+        {
+          "index": 18,
+          "citation": "C.46:8-63(d)(4)",
+          "provision_ids": [
+            "P28"
+          ],
+          "accepted": true,
+          "held": false,
+          "status": "in_force",
+          "effective_date": "2022-01-01",
+          "relative_resolution": "resolved",
+          "applied_scope": [
+            "S1"
+          ],
+          "rejection_reasons": []
+        }
+      ],
+      "review_reasons": []
+    },
+    "D011": {
+      "doc_id": "D011",
+      "replayed_prompt_version": "v5",
+      "cache_key": "8d00b3deaf533e305384d374f763eed77a2ba19a35ed2e8523ed794c6c39cb0b",
+      "before": {
+        "document_status": "complete",
+        "accepted": 0,
+        "candidates": 0
+      },
+      "after": {
+        "document_status": "review_required",
+        "accepted": 0,
+        "held": 0,
+        "rejected": 0,
+        "candidates": 0
+      },
+      "posture": {
+        "declared": null,
+        "evidence": null,
+        "evidence_check": null,
+        "established": "unknown",
+        "basis": "the response declares no document posture"
+      },
+      "base_dates": [],
+      "scope_targeting": [],
+      "global_scope": [],
+      "quotes_unchanged": true,
+      "rules": [],
+      "review_reasons": [
+        "no rule candidates, and no source-grounded justification that the document has no in-scope legal content"
+      ]
+    },
+    "D022": {
+      "doc_id": "D022",
+      "replayed_prompt_version": "v5",
+      "cache_key": "e649ed2f97ab35f224d143ce90724da630c7b7b8223cf457e7fc5f66dd1b956a",
+      "before": {
+        "document_status": "complete",
+        "accepted": 2,
+        "candidates": 2
+      },
+      "after": {
+        "document_status": "review_required",
+        "accepted": 0,
+        "held": 2,
+        "rejected": 0,
+        "candidates": 2
+      },
+      "posture": {
+        "declared": null,
+        "evidence": null,
+        "evidence_check": null,
+        "established": "unknown",
+        "basis": "the response declares no document posture"
+      },
+      "base_dates": [
+        {
+          "event": "approved",
+          "date": "2025-10-06",
+          "start": 1060,
+          "end": 1098,
+          "text": "Approved  by\nGovernor\nOctober 06, 2025"
+        }
+      ],
+      "scope_targeting": [
+        {
+          "id": "S1",
+          "governs": "§ 16729",
+          "governed_provision_ids": [],
+          "how": "no single inventory ref equals it"
+        }
+      ],
+      "global_scope": [
+        {
+          "id": "S1",
+          "propagated": false,
+          "problem": "it names no provision it governs (and is not document-wide)"
+        }
+      ],
+      "quotes_unchanged": true,
+      "rules": [
+        {
+          "index": 0,
+          "citation": "§ 16729(a)",
+          "provision_ids": [
+            "P1"
+          ],
+          "accepted": false,
+          "held": true,
+          "status": null,
+          "effective_date": null,
+          "relative_resolution": null,
+          "applied_scope": [],
+          "rejection_reasons": [
+            "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+          ]
+        },
+        {
+          "index": 1,
+          "citation": "§ 16729(b)",
+          "provision_ids": [
+            "P2"
+          ],
+          "accepted": false,
+          "held": true,
+          "status": null,
+          "effective_date": null,
+          "relative_resolution": null,
+          "applied_scope": [],
+          "rejection_reasons": [
+            "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+          ]
+        }
+      ],
+      "review_reasons": [
+        "2 candidate record(s) held, not published, because the time of application is unresolved: ['temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force']",
+        "document-level scope conditions not applied (evidence or governed provisions not established): ['S1']"
+      ]
+    },
+    "D085": {
+      "doc_id": "D085",
+      "replayed_prompt_version": "v5",
+      "cache_key": "74b136b8934db4dac65c5ed864a1930518b4cc7948efb7864297c7d088d4dea7",
+      "before": {
+        "document_status": "complete",
+        "accepted": 7,
+        "candidates": 7
+      },
+      "after": {
+        "document_status": "review_required",
+        "accepted": 7,
+        "held": 0,
+        "rejected": 0,
+        "candidates": 7
+      },
+      "posture": {
+        "declared": null,
+        "evidence": null,
+        "evidence_check": null,
+        "established": "unknown",
+        "basis": "the response declares no document posture"
+      },
+      "base_dates": [],
+      "scope_targeting": [
+        {
+          "id": "S1",
+          "governs": "Rent Stabilization Ordinance, Rent Increase Limit",
+          "governed_provision_ids": [
+            "P3"
+          ],
+          "how": "exact inventory ref"
+        },
+        {
+          "id": "S2",
+          "governs": "Rent Stabilization Ordinance, Rent Increase Limit",
+          "governed_provision_ids": [
+            "P3"
+          ],
+          "how": "exact inventory ref"
+        },
+        {
+          "id": "S3",
+          "governs": "Just Cause Eviction Ordinance",
+          "governed_provision_ids": [],
+          "how": "no single inventory ref equals it"
+        },
+        {
+          "id": "S4",
+          "governs": "Just Cause Eviction Ordinance",
+          "governed_provision_ids": [],
+          "how": "no single inventory ref equals it"
+        },
+        {
+          "id": "S5",
+          "governs": "Just Cause Eviction Ordinance",
+          "governed_provision_ids": [],
+          "how": "no single inventory ref equals it"
+        },
+        {
+          "id": "S6",
+          "governs": "Just Cause Eviction Ordinance",
+          "governed_provision_ids": [],
+          "how": "no single inventory ref equals it"
+        },
+        {
+          "id": "S7",
+          "governs": "Just Cause Eviction Ordinance",
+          "governed_provision_ids": [],
+          "how": "no single inventory ref equals it"
+        },
+        {
+          "id": "S8",
+          "governs": "Just Cause Eviction Ordinance",
+          "governed_provision_ids": [],
+          "how": "no single inventory ref equals it"
+        }
+      ],
+      "global_scope": [
+        {
+          "id": "S1",
+          "propagated": true,
+          "problem": null
+        },
+        {
+          "id": "S2",
+          "propagated": true,
+          "problem": null
+        },
+        {
+          "id": "S3",
+          "propagated": false,
+          "problem": "it names no provision it governs (and is not document-wide)"
+        },
+        {
+          "id": "S4",
+          "propagated": false,
+          "problem": "it names no provision it governs (and is not document-wide)"
+        },
+        {
+          "id": "S5",
+          "propagated": false,
+          "problem": "it names no provision it governs (and is not document-wide)"
+        },
+        {
+          "id": "S6",
+          "propagated": false,
+          "problem": "it names no provision it governs (and is not document-wide)"
+        },
+        {
+          "id": "S7",
+          "propagated": false,
+          "problem": "it names no provision it governs (and is not document-wide)"
+        },
+        {
+          "id": "S8",
+          "propagated": false,
+          "problem": "it names no provision it governs (and is not document-wide)"
+        }
+      ],
+      "quotes_unchanged": true,
+      "rules": [
+        {
+          "index": 0,
+          "citation": "Rent Stabilization Ordinance, Rent Increase Limit",
+          "provision_ids": [
+            "P3"
+          ],
+          "accepted": true,
+          "held": false,
+          "status": "in_force",
+          "effective_date": "2021-11-19",
+          "relative_resolution": null,
+          "applied_scope": [
+            "S1",
+            "S2"
+          ],
+          "rejection_reasons": []
+        },
+        {
+          "index": 1,
+          "citation": "Rent Stabilization Ordinance, Fair Return Petition",
+          "provision_ids": [
+            "P6"
+          ],
+          "accepted": true,
+          "held": false,
+          "status": "in_force",
+          "effective_date": "2021-11-19",
+          "relative_resolution": null,
+          "applied_scope": [],
+          "rejection_reasons": []
+        },
+        {
+          "index": 2,
+          "citation": "Rent Stabilization Ordinance, Notice Requirements",
+          "provision_ids": [
+            "P7"
+          ],
+          "accepted": true,
+          "held": false,
+          "status": "in_force",
+          "effective_date": "2021-11-19",
+          "relative_resolution": null,
+          "applied_scope": [],
+          "rejection_reasons": []
+        },
+        {
+          "index": 3,
+          "citation": "Just Cause Eviction Ordinance, Just Cause Requirement",
+          "provision_ids": [
+            "P8"
+          ],
+          "accepted": true,
+          "held": false,
+          "status": "in_force",
+          "effective_date": "2021-11-19",
+          "relative_resolution": null,
+          "applied_scope": [],
+          "rejection_reasons": []
+        },
+        {
+          "index": 4,
+          "citation": "Just Cause Eviction Ordinance, Notice of Violation",
+          "provision_ids": [
+            "P11"
+          ],
+          "accepted": true,
+          "held": false,
+          "status": "in_force",
+          "effective_date": "2021-11-19",
+          "relative_resolution": null,
+          "applied_scope": [],
+          "rejection_reasons": []
+        },
+        {
+          "index": 5,
+          "citation": "Just Cause Eviction Ordinance, Relocation Assistance",
+          "provision_ids": [
+            "P12"
+          ],
+          "accepted": true,
+          "held": false,
+          "status": "in_force",
+          "effective_date": "2021-11-19",
+          "relative_resolution": null,
+          "applied_scope": [],
+          "rejection_reasons": []
+        },
+        {
+          "index": 6,
+          "citation": "Just Cause Eviction Ordinance, Notice Requirements",
+          "provision_ids": [
+            "P14"
+          ],
+          "accepted": true,
+          "held": false,
+          "status": "in_force",
+          "effective_date": "2021-11-19",
+          "relative_resolution": null,
+          "applied_scope": [],
+          "rejection_reasons": []
+        }
+      ],
+      "review_reasons": [
+        "document-level scope conditions not applied (evidence or governed provisions not established): ['S3', 'S4', 'S5', 'S6', 'S7', 'S8']"
+      ]
+    },
+    "D069": {
+      "resolver_only": true,
+      "rules": [
+        {
+          "citation": "P.L. 2026, c. 43, § 4(a)",
+          "status": "not_yet_effective",
+          "resolved_date": "2027-07-01",
+          "outcome": "resolved"
+        },
+        {
+          "citation": "P.L. 2026, c. 43, § 4(b)",
+          "status": "not_yet_effective",
+          "resolved_date": "2027-07-01",
+          "outcome": "resolved"
+        },
+        {
+          "citation": "P.L. 2026, c. 43, § 4(c)",
+          "status": "not_yet_effective",
+          "resolved_date": "2027-07-01",
+          "outcome": "resolved"
+        },
+        {
+          "citation": "P.L. 2026, c. 43, § 4(d)",
+          "status": "not_yet_effective",
+          "resolved_date": "2027-07-01",
+          "outcome": "resolved"
+        },
+        {
+          "citation": "P.L. 2026, c. 43, § 4(e)",
+          "status": "not_yet_effective",
+          "resolved_date": "2027-07-01",
+          "outcome": "resolved"
+        }
+      ]
+    }
+  }
+}

@@ -61,8 +61,8 @@ def test_doc_id_is_required(capsys):
 
 def test_offline_rerun_from_cache_writes_artifact(paths, d052, capsys):
     args, tmp = paths
-    response = {"provisions": [provision("§ 15B(1)(b)", rule_indices=[0])], "global_scope": [],
-                "rules": [make_candidate()]}
+    response = {"provisions": [provision("§ 15B(1)(b)")], "global_scope": [], "rules": [make_candidate()],
+                "no_rules_justification": None}
     provider = FakeProvider(response, model=DEFAULT_GEMINI_MODEL)
     provider.name = PROVIDER_GEMINI  # same cache identity the CLI computes
     extract_document(d052, provider_name=PROVIDER_GEMINI, model=DEFAULT_GEMINI_MODEL, provider=provider,

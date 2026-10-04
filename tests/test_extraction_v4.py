@@ -8,7 +8,7 @@ from datetime import date
 
 import pytest
 
-from conftest import (FakeProvider, make_candidate, page_body, paged, parts, provision, running_header,
+from conftest import (FakeProvider, codified, make_candidate, page_body, paged, parts, provision, running_header,
                       synthetic_source)
 from navigator.extraction.cache import ResponseCache
 from navigator.extraction import extractor
@@ -34,7 +34,7 @@ def doc():
 
 
 def run(source, *responses, tmp_path, provider=None, **kwargs):
-    provider = provider or FakeProvider(*responses)
+    provider = provider or FakeProvider(*responses, document=codified(source))
     result = extract_document(source, provider_name=provider.name, model=provider.model, provider=provider,
                               cache=kwargs.pop("cache", None) or ResponseCache(tmp_path / "cache"), **kwargs)
     return result, provider
@@ -128,25 +128,26 @@ def test_raw_source_and_artifact_provenance_are_preserved(doc, tmp_path):
 
 def test_global_exemption_quoted_across_a_page_break_is_verified_and_propagated(doc, tmp_path):
     scope = {"id": "S1", "kind": "exemption", "statement": "Units owned by natural persons with notice are exempt.",
-             "citation": "Code § 3(l)", "governs": None,
+             "citation": "Code § 3(l)", "source_provision_id": None, "governed_provision_ids": None,
              "evidence_parts": parts(EXEMPT_TAIL, EXEMPT_HEAD, first_segment=3)}
     result, _ = run(doc, {"global_scope": [scope], "rules": [rule(parts(TAIL, HEAD))]}, tmp_path=tmp_path)
     entry = result.global_scope[0]
     assert entry["propagated"] and entry["evidence_check"]["reconstructed"]
     assert "Units owned by natural persons with notice are exempt. [Code § 3(l); document-wide]" == \
         result.rules[0]["exemptions"]
-    assert result.candidates[0].propagated_scope == [{"id": "S1", "kind": "exemption", "applied": True,
-                                                      "basis": "document-wide"}]
+    assert result.candidates[0].propagated_scope == [{"id": "S1", "kind": "exemption", "governed_provision_ids": None,
+                                                      "basis": "document-wide", "applied": True}]
 
 
 # ------------------------------------------- completeness checks and the single repair pass
 
 D052_RETURN_SPAN = "The lessor shall, within thirty days after the termination of occupancy under a tenancy-at-will"
 RETURN_RULE = make_candidate(citation="M.G.L. c. 186, § 15B(4)", quoted_span=D052_RETURN_SPAN, title="Return",
-                             requirement="The lessor must return the deposit within thirty days.", key_value="30 days")
-PRIMARY = {"provisions": [provision("§ 15B(1)(b)", rule_indices=[0]), provision("§ 15B(4)"),
-                          provision("§ 15B(9)", scope="out_of_scope")],
-           "global_scope": [], "rules": [make_candidate()]}
+                             requirement="The lessor must return the deposit within thirty days.", key_value="30 days",
+                             provision_ids=["P2"])
+PRIMARY = {"provisions": [provision("§ 15B(1)(b)"), provision("§ 15B(4)", id="P2"),
+                          provision("§ 15B(9)", scope="out_of_scope", id="P3")],
+           "global_scope": [], "rules": [make_candidate()], "no_rules_justification": None}
 
 
 def resolution(ref, scope="in_scope", reason=None, evidence=()):
@@ -160,7 +161,7 @@ def test_inventory_target_is_repaired_through_the_normal_pipeline(run_fake):
     assert len(provider.calls) == 2
     repair_call = provider.calls[1]
     assert repair_call["system_instruction"] == REPAIR_SYSTEM_INSTRUCTION != SYSTEM_INSTRUCTION
-    assert "- § 15B(4):" in repair_call["prompt"] and "- § 15B(1)(b):" not in repair_call["prompt"]
+    assert "- § 15B(4) (provision id P2):" in repair_call["prompt"] and "- § 15B(1)(b)" not in repair_call["prompt"]
     assert list(repair_call["response_json_schema"]["properties"]) == ["target_resolutions", "rules"]
     [target] = result.repair.targets
     assert (target["ref"], target["sources"], target["repair_scope"], target["candidate_indices"],
@@ -168,7 +169,7 @@ def test_inventory_target_is_repaired_through_the_normal_pipeline(run_fake):
         ("§ 15B(4)", ["inventory_uncovered"], "in_scope", [1], [1], "resolved_by_accepted_rule")
     repaired, off = result.candidates[1], result.candidates[2]
     assert repaired.origin == "repair" and repaired.accepted and repaired.citation.status == "exact_match"
-    assert not off.accepted and "does not cite a repair target" in off.rejection_reasons[-1]
+    assert not off.accepted and "does not answer a repair target" in off.rejection_reasons[-1]
     assert result.document_status == "complete" and result.accepted_count == 2
 
 
@@ -222,10 +223,10 @@ REMEDY_B = "A tenant may seek injunctive relief and money damages in a civil act
 REMEDY_C = "A tenant may raise any violation as an affirmative defense to an eviction."
 REMEDY_D = "The City may enforce this section, including through civil penalties."
 NOTICE = "A landlord shall deliver every notice under this Division in writing to each tenant."
-REMEDIES_PRIMARY = {"provisions": [provision("§ 9", category="just_cause_eviction", rule_indices=[0, 1]),
-                                   provision("§ 9(d)", category="just_cause_eviction"),
-                                   provision("§ 10", category="just_cause_eviction")],
-                    "global_scope": [],
+REMEDIES_PRIMARY = {"provisions": [provision("§ 9", category="just_cause_eviction"),
+                                   provision("§ 9(d)", category="just_cause_eviction", id="P2"),
+                                   provision("§ 10", category="just_cause_eviction", id="P3")],
+                    "global_scope": [], "no_rules_justification": None,
                     "rules": [rule(parts(REMEDY_B), citation="§ 9(b)"), rule(parts(REMEDY_C), citation="§ 9(c)")]}
 
 
@@ -240,7 +241,8 @@ def test_repair_targets_are_the_deduplicated_union_of_both_checks(tmp_path):
     assert targets == {"§ 9(a)": ["subdivision_guard"], "§ 9(d)": ["inventory_uncovered", "subdivision_guard"],
                        "§ 10": ["inventory_uncovered"]}
     prompt = provider.calls[1]["prompt"]                             # the guard ran BEFORE the repair request
-    assert prompt.count("- § 9(d):") == 1 and "- § 9(a):" in prompt and "- § 10:" in prompt
+    assert prompt.count("- § 9(d) (provision id P2):") == 1 and "- § 9(a) (provision id P1):" in prompt
+    assert "- § 10 (provision id P3):" in prompt
     assert "§ 9(e)" not in prompt                                     # the next section's labels are not siblings
     assert all(tg["pre_repair_state"] and tg["final_resolution"] == "unresolved" for tg in result.repair.targets)
 
@@ -250,7 +252,8 @@ def test_structural_target_may_resolve_out_of_scope_and_never_becomes_a_record(t
     response = {"target_resolutions": [
         resolution("§ 9(a)", "out_of_scope", "A procedural right of action, not a covered requirement.", [REMEDY_A]),
         resolution("§ 9(d)"), resolution("§ 10")],
-        "rules": [forced, rule(parts(REMEDY_D), citation="§ 9(d)"), rule(parts(NOTICE), citation="§ 10")]}
+        "rules": [forced, rule(parts(REMEDY_D), citation="§ 9(d)", provision_ids=["P2"]),
+                  rule(parts(NOTICE), citation="§ 10", provision_ids=["P3"])]}
     result, provider = remedies(tmp_path, response)
     assert len(provider.calls) == 2
     status = {tg["ref"]: tg["final_resolution"] for tg in result.repair.targets}
@@ -282,7 +285,8 @@ def test_out_of_scope_needs_a_reason_and_evidence_from_the_target(tmp_path, reas
 
 
 def test_uncertain_omitted_and_rejected_targets_stay_unresolved(tmp_path):
-    fabricated = rule(parts("A landlord shall deliver notices by carrier pigeon."), citation="§ 10")
+    fabricated = rule(parts("A landlord shall deliver notices by carrier pigeon."), citation="§ 10",
+                      provision_ids=["P3"])
     response = {"target_resolutions": [resolution("§ 9(a)", "uncertain", "Unclear whether this is a requirement."),
                                        resolution("§ 10")],
                 "rules": [fabricated]}                                # § 9(d) omitted entirely

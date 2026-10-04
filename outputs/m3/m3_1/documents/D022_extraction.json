@@ -1,0 +1,729 @@
+{
+  "disclaimer": "Not legal advice. Automated extraction for a research prototype; verify against the cited source.",
+  "run_at": "2026-10-04T01:59:21+00:00",
+  "source": {
+    "doc_id": "D022",
+    "jurisdiction": "CA",
+    "url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB325",
+    "source_type": "official",
+    "retrieved_at": "2026-10-01T22:35Z",
+    "text_file": "text/D022.txt",
+    "content_sha256": "d42cb41f876285d69e316e253d18a1366d88dc84057179774e7055ead39bd631",
+    "body_chars": 6452
+  },
+  "provider": "gemini",
+  "model": "gemini-3.8-flash",
+  "prompt_version": "v6",
+  "prompt_sha256": "e468cbea657a89329b28c82682dabd321c7626df64a9857243bc3ff330366359",
+  "response_schema_sha256": "b13db0b31d9c8658690ea64e422892f5fd4e31e75d136907e179970e114170da",
+  "generation_settings": {
+    "temperature": null,
+    "seed": 20261001,
+    "thinking_level": "medium"
+  },
+  "as_of": "2026-10-01",
+  "cache_key": "f03fbcde9eb57288c90a5545cf51e8063cdfe84055a6d3943d57acf86eb7d35e",
+  "cache_hit": true,
+  "cache_entry": "cache/extraction/f03fbcde9eb57288c90a5545cf51e8063cdfe84055a6d3943d57acf86eb7d35e.json",
+  "provider_metadata": {
+    "api": "interactions.create",
+    "interaction_id": "",
+    "model": "gemini-3.8-flash",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 5256,
+      "output_tokens": 2220,
+      "thinking_tokens": 21519,
+      "total_tokens": 28995
+    }
+  },
+  "candidate_count": 2,
+  "accepted_count": 0,
+  "rules": [],
+  "candidates": [
+    {
+      "index": 0,
+      "origin": "primary",
+      "accepted": false,
+      "held": true,
+      "rejection_reasons": [
+        "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      ],
+      "provision_ids": [
+        "P1"
+      ],
+      "source_basis": "operative_text",
+      "status_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 933,
+        "end": 944,
+        "occurrences": 1,
+        "model_span": "CHAPTER 338",
+        "source_span": "CHAPTER 338",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 3664,
+        "end": 3878,
+        "occurrences": 1,
+        "model_span": "It shall be unlawful for a person to use or distribute a common pricing algorithm as part of a contract, combination in the form of a trust, or conspiracy to restrain trade or commerce in violation of this chapter.",
+        "source_span": "It shall be unlawful for a person to use or distribute a common pricing algorithm as part of a contract, combination in the form of a trust, or conspiracy to restrain trade or commerce in violation of this chapter.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "It shall be unlawful for a person to use or distribute a common pricing algorithm as part of a contract, combination in the form of a trust, or conspiracy to restrain trade or commerce in violation of this chapter.",
+            "status": "exact_match",
+            "start": 3664,
+            "end": 3878
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": null,
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [
+        {
+          "id": "S1",
+          "kind": "exemption",
+          "governed_provision_ids": [
+            "P1",
+            "P2",
+            "P3",
+            "P4",
+            "P5",
+            "P6",
+            "P7",
+            "P8",
+            "P9"
+          ],
+          "basis": "rule links governed provision(s) ['P1']",
+          "applied": true
+        }
+      ],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": null,
+        "applied_kind": null,
+        "effective_date": null,
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "enacted_session_law",
+        "posture_consistent": true,
+        "unresolved_reason": "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      },
+      "status_derivation": "temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+      "warnings": [],
+      "rule": {
+        "team_rule_id": "r-4da74ccdfd",
+        "jurisdiction": "CA",
+        "level": "state",
+        "category": "algorithmic_rent_setting",
+        "status": null,
+        "title": "Use or Distribution of Common Pricing Algorithm in Restraint of Trade",
+        "requirement": "A person is prohibited from using or distributing a common pricing algorithm as part of a contract, combination in the form of a trust, or conspiracy to restrain trade or commerce.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": "The term person does not include the end consumer of a product or service. [Business and Professions Code § 16729(d)(5)]",
+        "overrides": [],
+        "interaction": "Nothing in this section shall impair or limit the applicability of antitrust laws.",
+        "effective_date": null,
+        "citation": "Business and Professions Code § 16729(a)",
+        "source_doc_id": "D022",
+        "source_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB325",
+        "quoted_span": "It shall be unlawful for a person to use or distribute a common pricing algorithm as part of a contract, combination in the form of a trust, or conspiracy to restrain trade or commerce in violation of this chapter.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "algorithmic_rent_setting",
+        "citation": "Business and Professions Code § 16729(a)",
+        "provision_ids": [
+          "P1"
+        ],
+        "source_basis": "operative_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "It shall be unlawful for a person to use or distribute a common pricing algorithm as part of a contract, combination in the form of a trust, or conspiracy to restrain trade or commerce in violation of this chapter."
+          }
+        ],
+        "title": "Use or Distribution of Common Pricing Algorithm in Restraint of Trade",
+        "requirement": "A person is prohibited from using or distributing a common pricing algorithm as part of a contract, combination in the form of a trust, or conspiracy to restrain trade or commerce.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": "Nothing in this section shall impair or limit the applicability of antitrust laws.",
+        "enactment_status": "enacted",
+        "enactment_status_evidence": "CHAPTER 338",
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": null,
+        "effective_date_evidence_kind": null,
+        "effective_date": null,
+        "conflict_note": null
+      }
+    },
+    {
+      "index": 1,
+      "origin": "primary",
+      "accepted": false,
+      "held": true,
+      "rejection_reasons": [
+        "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      ],
+      "provision_ids": [
+        "P2"
+      ],
+      "source_basis": "operative_text",
+      "status_evidence": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 933,
+        "end": 944,
+        "occurrences": 1,
+        "model_span": "CHAPTER 338",
+        "source_span": "CHAPTER 338",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [],
+        "crossed_artifacts": []
+      },
+      "pydantic_valid": true,
+      "pydantic_errors": [],
+      "schema_valid": true,
+      "schema_errors": [],
+      "citation": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 3883,
+        "end": 4180,
+        "occurrences": 1,
+        "model_span": "It shall be unlawful for a person to use or distribute a common pricing algorithm if the person coerces another person to set or adopt a recommended price or commercial term recommended by the common pricing algorithm for the same or similar products or services in the jurisdiction of this state.",
+        "source_span": "It shall be unlawful for a person to use or distribute a common pricing algorithm if the person coerces another person to set or adopt a recommended price or commercial term recommended by the common pricing algorithm for the same or similar products or services in the jurisdiction of this state.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "It shall be unlawful for a person to use or distribute a common pricing algorithm if the person coerces another person to set or adopt a recommended price or commercial term recommended by the common pricing algorithm for the same or similar products or services in the jurisdiction of this state.",
+            "status": "exact_match",
+            "start": 3883,
+            "end": 4180
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "effective_date_evidence": null,
+      "version_evidence": null,
+      "operative_conditions": [],
+      "propagated_scope": [
+        {
+          "id": "S1",
+          "kind": "exemption",
+          "governed_provision_ids": [
+            "P1",
+            "P2",
+            "P3",
+            "P4",
+            "P5",
+            "P6",
+            "P7",
+            "P8",
+            "P9"
+          ],
+          "basis": "rule links governed provision(s) ['P2']",
+          "applied": true
+        }
+      ],
+      "temporal": {
+        "model_effective_date": null,
+        "model_kind": null,
+        "applied_kind": null,
+        "effective_date": null,
+        "history_evidence": null,
+        "relative_resolution": null,
+        "posture": "enacted_session_law",
+        "posture_consistent": true,
+        "unresolved_reason": "status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+      },
+      "status_derivation": "temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+      "warnings": [],
+      "rule": {
+        "team_rule_id": "r-2f2f64c17e",
+        "jurisdiction": "CA",
+        "level": "state",
+        "category": "algorithmic_rent_setting",
+        "status": null,
+        "title": "Coercion to Adopt Recommendations of Common Pricing Algorithm",
+        "requirement": "A person is prohibited from using or distributing a common pricing algorithm if that person coerces another person to set or adopt a recommended price or commercial term recommended by the common pricing algorithm for the same or similar products or services in California.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": "The term person does not include the end consumer of a product or service. [Business and Professions Code § 16729(d)(5)]",
+        "overrides": [],
+        "interaction": "Nothing in this section shall impair or limit the applicability of antitrust laws.",
+        "effective_date": null,
+        "citation": "Business and Professions Code § 16729(b)",
+        "source_doc_id": "D022",
+        "source_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB325",
+        "quoted_span": "It shall be unlawful for a person to use or distribute a common pricing algorithm if the person coerces another person to set or adopt a recommended price or commercial term recommended by the common pricing algorithm for the same or similar products or services in the jurisdiction of this state.",
+        "confidence": null,
+        "conflict_flag": false,
+        "conflict_note": null
+      },
+      "raw": {
+        "category": "algorithmic_rent_setting",
+        "citation": "Business and Professions Code § 16729(b)",
+        "provision_ids": [
+          "P2"
+        ],
+        "source_basis": "operative_text",
+        "quote_parts": [
+          {
+            "segment_id": 1,
+            "quoted_text": "It shall be unlawful for a person to use or distribute a common pricing algorithm if the person coerces another person to set or adopt a recommended price or commercial term recommended by the common pricing algorithm for the same or similar products or services in the jurisdiction of this state."
+          }
+        ],
+        "title": "Coercion to Adopt Recommendations of Common Pricing Algorithm",
+        "requirement": "A person is prohibited from using or distributing a common pricing algorithm if that person coerces another person to set or adopt a recommended price or commercial term recommended by the common pricing algorithm for the same or similar products or services in California.",
+        "key_value": null,
+        "coverage_conditions": null,
+        "exemptions": null,
+        "scope_carve_outs": [],
+        "operative_conditions": [],
+        "interaction": "Nothing in this section shall impair or limit the applicability of antitrust laws.",
+        "enactment_status": "enacted",
+        "enactment_status_evidence": "CHAPTER 338",
+        "version_note": null,
+        "version_evidence": null,
+        "effective_date_evidence": null,
+        "effective_date_evidence_kind": null,
+        "effective_date": null,
+        "conflict_note": null
+      }
+    }
+  ],
+  "posture": {
+    "declared": "enacted_session_law",
+    "evidence": "CHAPTER 338",
+    "evidence_check": {
+      "status": "exact_match",
+      "normalization": null,
+      "start": 933,
+      "end": 944,
+      "occurrences": 1,
+      "model_span": "CHAPTER 338",
+      "source_span": "CHAPTER 338",
+      "reason": null,
+      "reconstructed": false,
+      "parts": [],
+      "crossed_artifacts": []
+    },
+    "established": "enacted_session_law",
+    "basis": "declared posture with verified evidence"
+  },
+  "base_dates": [
+    {
+      "event": "approved",
+      "date": "2025-10-06",
+      "start": 1060,
+      "end": 1098,
+      "text": "Approved  by\nGovernor\nOctober 06, 2025"
+    }
+  ],
+  "provision_inventory": [
+    {
+      "id": "P1",
+      "ref": "§ 16729(a)",
+      "anchor": "It shall be unlawful for a person to use or distribute a common pricing algorithm as part",
+      "summary": "Makes it unlawful to use or distribute a common pricing algorithm as part of a contract, trust, or conspiracy to restrain trade or commerce.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "algorithmic_rent_setting",
+      "reason": null
+    },
+    {
+      "id": "P2",
+      "ref": "§ 16729(b)",
+      "anchor": "It shall be unlawful for a person to use or distribute a common pricing algorithm if the person coerces",
+      "summary": "Makes it unlawful to use or distribute a common pricing algorithm if the person coerces another to adopt a recommended price or commercial term.",
+      "role": "operative_rule",
+      "scope": "in_scope",
+      "category": "algorithmic_rent_setting",
+      "reason": null
+    },
+    {
+      "id": "P3",
+      "ref": "§ 16729(c)",
+      "anchor": "Nothing in this section shall impair or limit the applicability of antitrust laws.",
+      "summary": "Savings clause preserving the applicability of antitrust laws.",
+      "role": "boilerplate",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "savings clause preserving existing antitrust laws"
+    },
+    {
+      "id": "P4",
+      "ref": "§ 16729(d)(1)",
+      "anchor": "“Antitrust laws” means the provisions of this part.",
+      "summary": "Defines antitrust laws.",
+      "role": "definition",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "definition"
+    },
+    {
+      "id": "P5",
+      "ref": "§ 16729(d)(2)",
+      "anchor": "“Commercial term” includes, without limitation, any of the following:",
+      "summary": "Defines commercial term to include level of service, availability, and output.",
+      "role": "definition",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "definition"
+    },
+    {
+      "id": "P6",
+      "ref": "§ 16729(d)(3)",
+      "anchor": "“Common pricing algorithm” means any methodology, including a computer, software, or other technology,",
+      "summary": "Defines common pricing algorithm.",
+      "role": "definition",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "definition"
+    },
+    {
+      "id": "P7",
+      "ref": "§ 16729(d)(4)",
+      "anchor": "“Distribute,” “distribution,” and “distributing” include selling, licensing, providing access to,",
+      "summary": "Defines distribute, distribution, and distributing.",
+      "role": "definition",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "definition"
+    },
+    {
+      "id": "P8",
+      "ref": "§ 16729(d)(5)",
+      "anchor": "“Person” has the same meaning as defined in Section 16702 and does not include the end consumer",
+      "summary": "Defines person and excludes end consumers of a product or service.",
+      "role": "exemption",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "scope condition, see global_scope"
+    },
+    {
+      "id": "P9",
+      "ref": "§ 16729(d)(6)",
+      "anchor": "“Price” means the amount of money or other thing of value, whether tangible or not,",
+      "summary": "Defines price.",
+      "role": "definition",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "definition"
+    },
+    {
+      "id": "P10",
+      "ref": "§ 16756.1",
+      "anchor": "Notwithstanding any other law, in a complaint for any violation of this chapter,",
+      "summary": "Specifies pleading requirements for complaints alleging violations of the Cartwright Act.",
+      "role": "procedure",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "procedural pleading standard for Cartwright Act complaints"
+    },
+    {
+      "id": "P11",
+      "ref": "Sec. 3",
+      "anchor": "No reimbursement is required by this act pursuant to Section 6 of Article XIII",
+      "summary": "Provides that no state reimbursement is required for local agencies.",
+      "role": "boilerplate",
+      "scope": "out_of_scope",
+      "category": null,
+      "reason": "state mandate reimbursement boilerplate"
+    }
+  ],
+  "global_scope": [
+    {
+      "id": "S1",
+      "kind": "exemption",
+      "statement": "The term person does not include the end consumer of a product or service.",
+      "citation": "Business and Professions Code § 16729(d)(5)",
+      "source_provision_id": "P8",
+      "governed_provision_ids": [
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "P5",
+        "P6",
+        "P7",
+        "P8",
+        "P9"
+      ],
+      "evidence_parts": [
+        {
+          "segment_id": 1,
+          "quoted_text": "“Person” has the same meaning as defined in Section 16702 and does not include the end consumer of a product or service."
+        }
+      ],
+      "evidence_check": {
+        "status": "exact_match",
+        "normalization": null,
+        "start": 5077,
+        "end": 5197,
+        "occurrences": 1,
+        "model_span": "“Person” has the same meaning as defined in Section 16702 and does not include the end consumer of a product or service.",
+        "source_span": "“Person” has the same meaning as defined in Section 16702 and does not include the end consumer of a product or service.",
+        "reason": null,
+        "reconstructed": false,
+        "parts": [
+          {
+            "segment_id": 1,
+            "model_text": "“Person” has the same meaning as defined in Section 16702 and does not include the end consumer of a product or service.",
+            "status": "exact_match",
+            "start": 5077,
+            "end": 5197
+          }
+        ],
+        "crossed_artifacts": []
+      },
+      "propagated": true,
+      "problem": null
+    }
+  ],
+  "source_view": {
+    "marker": "[[PAGE BREAK]]",
+    "segment_label": "[[SEGMENT {}]]",
+    "view_sha256": "f2b286054e11791e9528571ffdd3354cb42b0b427c97abf861ae0e1710bb4366",
+    "segments": [
+      {
+        "id": 1,
+        "raw_start": 0,
+        "raw_end": 6452
+      }
+    ],
+    "artifacts_removed": 0,
+    "artifacts": []
+  },
+  "coverage": {
+    "inventory_valid": true,
+    "anchors_located": "11/11",
+    "after_primary": {
+      "uncovered": [],
+      "unaccepted": [
+        "§ 16729(a)",
+        "§ 16729(b)"
+      ],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "inventory_items": 11,
+    "in_scope_items": 2,
+    "in_scope_refs": 2,
+    "uncertain": [],
+    "final": {
+      "uncovered": [],
+      "unaccepted": [
+        "§ 16729(a)",
+        "§ 16729(b)"
+      ],
+      "unrecorded_subdivisions": [],
+      "scope_challenges": []
+    },
+    "link_mismatches": [],
+    "provisions": [
+      {
+        "ref": "§ 16729(a)",
+        "inventory_item": 0,
+        "provision_id": "P1",
+        "summary": "Makes it unlawful to use or distribute a common pricing algorithm as part of a contract, trust, or conspiracy to restrain trade or commerce.",
+        "category": "algorithmic_rent_setting",
+        "candidates": [
+          0
+        ],
+        "accepted": [],
+        "basis": {
+          "0": "provision link; citation names it"
+        }
+      },
+      {
+        "ref": "§ 16729(b)",
+        "inventory_item": 1,
+        "provision_id": "P2",
+        "summary": "Makes it unlawful to use or distribute a common pricing algorithm if the person coerces another to adopt a recommended price or commercial term.",
+        "category": "algorithmic_rent_setting",
+        "candidates": [
+          1
+        ],
+        "accepted": [],
+        "basis": {
+          "1": "provision link; citation names it"
+        }
+      }
+    ],
+    "unrecorded_subdivisions": []
+  },
+  "scope_challenges": [
+    {
+      "ref": "§ 16729(c)",
+      "provision_id": "P3",
+      "role": "boilerplate",
+      "reason": "savings clause preserving existing antitrust laws",
+      "summary": "Savings clause preserving the applicability of antitrust laws.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role boilerplate is decided by other rules"
+    },
+    {
+      "ref": "§ 16729(d)(1)",
+      "provision_id": "P4",
+      "role": "definition",
+      "reason": "definition",
+      "summary": "Defines antitrust laws.",
+      "signals": {
+        "in_scope_neighbour": false,
+        "enumeration": false,
+        "normative_language": false,
+        "grounds_or_conditions": false
+      },
+      "challenged": false,
+      "why_not": "too few substantive signals",
+      "raw_start": 4335,
+      "raw_end": 4391
+    },
+    {
+      "ref": "§ 16729(d)(2)",
+      "provision_id": "P5",
+      "role": "definition",
+      "reason": "definition",
+      "summary": "Defines commercial term to include level of service, availability, and output.",
+      "signals": {
+        "in_scope_neighbour": false,
+        "enumeration": true,
+        "normative_language": false,
+        "grounds_or_conditions": false
+      },
+      "challenged": false,
+      "why_not": "too few substantive signals",
+      "raw_start": 4391,
+      "raw_end": 4618
+    },
+    {
+      "ref": "§ 16729(d)(3)",
+      "provision_id": "P6",
+      "role": "definition",
+      "reason": "definition",
+      "summary": "Defines common pricing algorithm.",
+      "signals": {
+        "in_scope_neighbour": false,
+        "enumeration": true,
+        "normative_language": false,
+        "grounds_or_conditions": false
+      },
+      "challenged": false,
+      "why_not": "too few substantive signals",
+      "raw_start": 4618,
+      "raw_end": 4868
+    },
+    {
+      "ref": "§ 16729(d)(4)",
+      "provision_id": "P7",
+      "role": "definition",
+      "reason": "definition",
+      "summary": "Defines distribute, distribution, and distributing.",
+      "signals": {
+        "in_scope_neighbour": false,
+        "enumeration": true,
+        "normative_language": false,
+        "grounds_or_conditions": false
+      },
+      "challenged": false,
+      "why_not": "too few substantive signals",
+      "raw_start": 4868,
+      "raw_end": 5073
+    },
+    {
+      "ref": "§ 16729(d)(5)",
+      "provision_id": "P8",
+      "role": "exemption",
+      "reason": "scope condition, see global_scope",
+      "summary": "Defines person and excludes end consumers of a product or service.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role exemption is decided by other rules"
+    },
+    {
+      "ref": "§ 16729(d)(6)",
+      "provision_id": "P9",
+      "role": "definition",
+      "reason": "definition",
+      "summary": "Defines price.",
+      "signals": {
+        "in_scope_neighbour": false,
+        "enumeration": false,
+        "normative_language": true,
+        "grounds_or_conditions": false
+      },
+      "challenged": false,
+      "why_not": "too few substantive signals",
+      "raw_start": 5198,
+      "raw_end": 5535
+    },
+    {
+      "ref": "§ 16756.1",
+      "provision_id": "P10",
+      "role": "procedure",
+      "reason": "procedural pleading standard for Cartwright Act complaints",
+      "summary": "Specifies pleading requirements for complaints alleging violations of the Cartwright Act.",
+      "signals": {
+        "in_scope_neighbour": false,
+        "enumeration": false,
+        "normative_language": true,
+        "grounds_or_conditions": false
+      },
+      "challenged": false,
+      "why_not": "too few substantive signals",
+      "raw_start": 5535,
+      "raw_end": 5928
+    },
+    {
+      "ref": "Sec. 3",
+      "provision_id": "P11",
+      "role": "boilerplate",
+      "reason": "state mandate reimbursement boilerplate",
+      "summary": "Provides that no state reimbursement is required for local agencies.",
+      "signals": {},
+      "challenged": false,
+      "why_not": "role boilerplate is decided by other rules"
+    }
+  ],
+  "empty_result": null,
+  "legacy_replay": null,
+  "repair": null,
+  "document_status": "review_required",
+  "review_reasons": [
+    "2 candidate record(s) held, not published, because the time of application is unresolved: ['temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force']"
+  ],
+  "warnings": [
+    "candidate 0 held: status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force",
+    "candidate 1 held: status: temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force"
+  ],
+  "errors": [],
+  "raw_response_text": "{\n  \"document\": {\n    \"posture\": \"enacted_session_law\",\n    \"evidence\": \"CHAPTER 338\"\n  },\n  \"provisions\": [\n    {\n      \"id\": \"P1\",\n      \"ref\": \"§ 16729(a)\",\n      \"anchor\": \"It shall be unlawful for a person to use or distribute a common pricing algorithm as part\",\n      \"summary\": \"Makes it unlawful to use or distribute a common pricing algorithm as part of a contract, trust, or conspiracy to restrain trade or commerce.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"algorithmic_rent_setting\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P2\",\n      \"ref\": \"§ 16729(b)\",\n      \"anchor\": \"It shall be unlawful for a person to use or distribute a common pricing algorithm if the person coerces\",\n      \"summary\": \"Makes it unlawful to use or distribute a common pricing algorithm if the person coerces another to adopt a recommended price or commercial term.\",\n      \"role\": \"operative_rule\",\n      \"scope\": \"in_scope\",\n      \"category\": \"algorithmic_rent_setting\",\n      \"reason\": null\n    },\n    {\n      \"id\": \"P3\",\n      \"ref\": \"§ 16729(c)\",\n      \"anchor\": \"Nothing in this section shall impair or limit the applicability of antitrust laws.\",\n      \"summary\": \"Savings clause preserving the applicability of antitrust laws.\",\n      \"role\": \"boilerplate\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"savings clause preserving existing antitrust laws\"\n    },\n    {\n      \"id\": \"P4\",\n      \"ref\": \"§ 16729(d)(1)\",\n      \"anchor\": \"“Antitrust laws” means the provisions of this part.\",\n      \"summary\": \"Defines antitrust laws.\",\n      \"role\": \"definition\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"definition\"\n    },\n    {\n      \"id\": \"P5\",\n      \"ref\": \"§ 16729(d)(2)\",\n      \"anchor\": \"“Commercial term” includes, without limitation, any of the following:\",\n      \"summary\": \"Defines commercial term to include level of service, availability, and output.\",\n      \"role\": \"definition\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"definition\"\n    },\n    {\n      \"id\": \"P6\",\n      \"ref\": \"§ 16729(d)(3)\",\n      \"anchor\": \"“Common pricing algorithm” means any methodology, including a computer, software, or other technology,\",\n      \"summary\": \"Defines common pricing algorithm.\",\n      \"role\": \"definition\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"definition\"\n    },\n    {\n      \"id\": \"P7\",\n      \"ref\": \"§ 16729(d)(4)\",\n      \"anchor\": \"“Distribute,” “distribution,” and “distributing” include selling, licensing, providing access to,\",\n      \"summary\": \"Defines distribute, distribution, and distributing.\",\n      \"role\": \"definition\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"definition\"\n    },\n    {\n      \"id\": \"P8\",\n      \"ref\": \"§ 16729(d)(5)\",\n      \"anchor\": \"“Person” has the same meaning as defined in Section 16702 and does not include the end consumer\",\n      \"summary\": \"Defines person and excludes end consumers of a product or service.\",\n      \"role\": \"exemption\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"scope condition, see global_scope\"\n    },\n    {\n      \"id\": \"P9\",\n      \"ref\": \"§ 16729(d)(6)\",\n      \"anchor\": \"“Price” means the amount of money or other thing of value, whether tangible or not,\",\n      \"summary\": \"Defines price.\",\n      \"role\": \"definition\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"definition\"\n    },\n    {\n      \"id\": \"P10\",\n      \"ref\": \"§ 16756.1\",\n      \"anchor\": \"Notwithstanding any other law, in a complaint for any violation of this chapter,\",\n      \"summary\": \"Specifies pleading requirements for complaints alleging violations of the Cartwright Act.\",\n      \"role\": \"procedure\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"procedural pleading standard for Cartwright Act complaints\"\n    },\n    {\n      \"id\": \"P11\",\n      \"ref\": \"Sec. 3\",\n      \"anchor\": \"No reimbursement is required by this act pursuant to Section 6 of Article XIII\",\n      \"summary\": \"Provides that no state reimbursement is required for local agencies.\",\n      \"role\": \"boilerplate\",\n      \"scope\": \"out_of_scope\",\n      \"category\": null,\n      \"reason\": \"state mandate reimbursement boilerplate\"\n    }\n  ],\n  \"global_scope\": [\n    {\n      \"id\": \"S1\",\n      \"kind\": \"exemption\",\n      \"statement\": \"The term person does not include the end consumer of a product or service.\",\n      \"citation\": \"Business and Professions Code § 16729(d)(5)\",\n      \"source_provision_id\": \"P8\",\n      \"governed_provision_ids\": [\"P1\", \"P2\", \"P3\", \"P4\", \"P5\", \"P6\", \"P7\", \"P8\", \"P9\"],\n      \"evidence_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"“Person” has the same meaning as defined in Section 16702 and does not include the end consumer of a product or service.\"\n        }\n      ]\n    }\n  ],\n  \"rules\": [\n    {\n      \"category\": \"algorithmic_rent_setting\",\n      \"citation\": \"Business and Professions Code § 16729(a)\",\n      \"provision_ids\": [\"P1\"],\n      \"source_basis\": \"operative_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"It shall be unlawful for a person to use or distribute a common pricing algorithm as part of a contract, combination in the form of a trust, or conspiracy to restrain trade or commerce in violation of this chapter.\"\n        }\n      ],\n      \"title\": \"Use or Distribution of Common Pricing Algorithm in Restraint of Trade\",\n      \"requirement\": \"A person is prohibited from using or distributing a common pricing algorithm as part of a contract, combination in the form of a trust, or conspiracy to restrain trade or commerce.\",\n      \"key_value\": null,\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": \"Nothing in this section shall impair or limit the applicability of antitrust laws.\",\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": \"CHAPTER 338\",\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": null,\n      \"effective_date_evidence_kind\": null,\n      \"effective_date\": null,\n      \"conflict_note\": null\n    },\n    {\n      \"category\": \"algorithmic_rent_setting\",\n      \"citation\": \"Business and Professions Code § 16729(b)\",\n      \"provision_ids\": [\"P2\"],\n      \"source_basis\": \"operative_text\",\n      \"quote_parts\": [\n        {\n          \"segment_id\": 1,\n          \"quoted_text\": \"It shall be unlawful for a person to use or distribute a common pricing algorithm if the person coerces another person to set or adopt a recommended price or commercial term recommended by the common pricing algorithm for the same or similar products or services in the jurisdiction of this state.\"\n        }\n      ],\n      \"title\": \"Coercion to Adopt Recommendations of Common Pricing Algorithm\",\n      \"requirement\": \"A person is prohibited from using or distributing a common pricing algorithm if that person coerces another person to set or adopt a recommended price or commercial term recommended by the common pricing algorithm for the same or similar products or services in California.\",\n      \"key_value\": null,\n      \"coverage_conditions\": null,\n      \"exemptions\": null,\n      \"scope_carve_outs\": [],\n      \"operative_conditions\": [],\n      \"interaction\": \"Nothing in this section shall impair or limit the applicability of antitrust laws.\",\n      \"enactment_status\": \"enacted\",\n      \"enactment_status_evidence\": \"CHAPTER 338\",\n      \"version_note\": null,\n      \"version_evidence\": null,\n      \"effective_date_evidence\": null,\n      \"effective_date_evidence_kind\": null,\n      \"effective_date\": null,\n      \"conflict_note\": null\n    }\n  ],\n  \"no_rules_justification\": null\n}"
+}

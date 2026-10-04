@@ -7,26 +7,69 @@ supplied corpus text (manifest-verified; raw text never modified)
   -> canonical view (source_view.py): page furniture replaced by [[PAGE BREAK]], segments numbered [[SEGMENT n]]
   -> versioned prompt (prompt.py)
   -> content-addressed cache, or a live provider call (gemini.py, behind provider.py)
-  -> provision inventory; global_scope conditions (evidence verified, quote parts allowed)
+  -> document posture (posture.py) and enactment dates written in the raw text (temporal.py)
+  -> provision inventory (ids, anchors, roles); global_scope conditions (evidence verified, quote
+     parts allowed, targeted by provision id)
   -> per candidate:
-       Pydantic ExtractedRule            the model's semantic fields only
+       Pydantic ExtractedRule            the model's semantic fields only, with provision links
        quote parts (quotes.py, RAW text) one verbatim part, or two across exactly one page artifact,
                                          reconstructed into one exact raw span; every evidence field verified
-       effective-date evidence           classified; consequences enforced in temporal.py
-       status derivation                 deterministic, from enactment_status + admitted effective_date + as_of
-       scope propagation                 verified document-level conditions applied by citation, never similarity
+       enactment status evidence         required (verified) for pending and failed
+       effective-date evidence           classified; relative formulas resolved deterministically (temporal.py)
+       status derivation                 deterministic, from enactment_status + effective_date + posture + as_of
+       scope propagation                 verified document-level conditions applied by provision id only
        trusted metadata + team_rule_id   from the repository, not from the model
        Pydantic RuleRecord               the internal mirror of the official schema
        official JSON Schema              schema/rule_record.schema.json
        review checks (review.py)         warnings only
-  -> completeness checks (coverage.py): inventory coverage closure + subdivision guard
+  -> completeness checks (coverage.py): inventory coverage closure + subdivision guard + scope challenges
   -> repair targets = their merged union (repair.py)
   -> at most ONE repair request; every target classified in_scope / out_of_scope / uncertain
   -> both completeness checks rerun; every target resolved, or review_required
   -> ExtractionRun audit artifact, document_status complete | review_required
 ```
 
-A candidate is **accepted only if every stage passes**. Failures are recorded per stage (`pydantic`, `citation`, `temporal`, `effective_date`, `status`, `official schema`, `duplicate`, `repair`) and rejected candidates are never retried or repaired. Review checks add warnings and never change acceptance.
+A candidate is **accepted only if every stage passes**. Failures are recorded per stage (`pydantic`, `provision link`, `citation`, `temporal`, `effective_date`, `status`, `official schema`, `duplicate`, `repair`) and rejected candidates are never retried or repaired. A candidate whose **only** problem is an unresolved time of application is **held**: it is preserved with all its evidence, never published, and makes the document `review_required`. Review checks add warnings and never change acceptance.
+
+## Prompt v6 contract (M3.1)
+
+The remedy rule of v5 is unchanged. v6 adds, in both prompts, the following (`EXTRACTION_PROMPT_VERSION = "v6"`, `REPAIR_PROMPT_VERSION = "v6-repair-1"`, so every v5 cache entry misses):
+
+- **Document posture.** `document = {posture, evidence}`; the values are listed under *Source posture* below.
+- **Inventory items.** Each item has an `id` (`P1`, `P2`, ... in document order), a verbatim `anchor` (its first words) and a functional `role`. The old `rule_indices` field is gone: records link the other way.
+- **Records.** Each record has:
+  - `provision_ids`, at least one;
+  - `source_basis` (`operative_text`, `official_bill_summary`, `official_bill_history` or `official_explanatory_text`);
+  - `enactment_status_evidence`, required for `pending` and `failed`.
+- **Global scope conditions.** Each one names its `source_provision_id` and its `governed_provision_ids`. The value `null` means the condition governs every provision of the document. The free-text `governs` field is gone.
+- **Functional test.** A provision is substantive, not a mere definition, when removing it would change whether conduct is lawful, permitted, required, prohibited or covered. Examples are grounds for termination, conditions for a rent increase, screening criteria, and triggers of an obligation. This holds however the document words it.
+- **Bill status and summary pages.** For a bill without operative text, an official title, summary or history that states a concrete proposed change in a category becomes a `pending` record (or `failed`, when the document shows the bill failed). The quote is that official text, and no bill language, threshold, exemption or date may be invented.
+- **Empty results.** `no_rules_justification = {reason, evidence}` is required when there are no rules.
+
+The prompt still contains no document-specific wording.
+
+## Source posture (`posture.py`)
+
+The posture is internal audit metadata; the RuleRecord schema is unchanged. Its possible values are:
+
+- `codified_current_law`
+- `enacted_session_law`
+- `pending_bill`
+- `failed_bill`
+- `bill_status_or_summary_page`
+- `official_explanatory_page`
+- `unknown`
+
+The declared posture is **established** only if its evidence verifies in the raw text. A declared `codified_current_law` is not established when the raw text itself records an enactment date ("Approved June 18, 2021"), because that marks session-law material. Nothing is inferred from the URL.
+
+- **Effect on status:** only established codified current law lets an enacted rule with no dated evidence count as `in_force`. For every other posture, including `unknown`, such a rule is **held** for temporal resolution and is not published as in force on every query date (D022 behaviour).
+- **Consistency check:** a posture that implies an enactment status (codified or session law → enacted, pending bill → pending, failed bill → failed) is compared with each record. A mismatch is a review reason and is never corrected silently.
+
+A record whose `source_basis` is not operative text is labelled at the start of its published `requirement`, e.g. "[Basis: official bill summary, not operative legal text] ...". The basis is also kept in the audit.
+
+## Empty results
+
+A document with no candidate at all is `complete` only when the response gives a `no_rules_justification` whose evidence verifies in the source. Otherwise it is `review_required` (D011 behaviour). Inventory provisions of `uncertain` scope also make the document `review_required`.
 
 ## Remedy and enforcement scope (prompt v5)
 
@@ -173,7 +216,7 @@ The model quotes `effective_date_evidence` and classifies it with `effective_dat
 | kind | effective_date | status |
 |---|---|---|
 | `explicit_operative_date` | kept only if the date is written in the evidence itself; otherwise rejected | from the date and `--as-of` |
-| `relative_date_formula` | always null (a computed date is discarded with a warning) | undetermined, so the record is rejected (D069 behaviour, unchanged) |
+| `relative_date_formula` | the deterministic resolution below, or null; a date the model computed is never used | from the resolved date and `--as-of`; unresolved: the record is held |
 | `history_note` | always null (a date from the note is discarded with a warning); the enclosing note is kept verbatim as history evidence | unaffected; a note dated after `--as-of` rejects conservatively |
 | `operative_condition` | always null | unaffected; published as an unresolved operative condition |
 | null, with evidence present | rejected | n/a |
@@ -183,7 +226,24 @@ Two structural guards apply, both general and neither statute-specific:
 - Evidence the model calls `explicit_operative_date` whose enclosing bracketed note has history structure (an amendment verb such as *added, amended, retitled* followed by "by" an instrument) is treated as `history_note`. A note's word "effective" therefore never becomes the start date of an obligation that may be older.
 - Evidence called `history_note` must have that structure or a calendar date. Otherwise it is unresolved and the record is rejected, so a relative formula cannot be laundered into "in force".
 
-Calendar dates are read as written ("August 1, 2025", "2025-08-01" or US numeric "8-1-2025"); nothing is computed.
+Calendar dates are read as written ("August 1, 2025", "2025-08-01" or US numeric "8-1-2025"). The only computed date is the relative-date resolution below.
+
+### Relative-date resolver (`resolve_relative`, rule `first-day-of-nth-month-next-following/v1`)
+
+The resolver is deliberately narrow; it is not a general date interpreter. It resolves a formula only when all of the following hold:
+
+1. **The formula evidence verifies in the raw text** and states exactly one formula of the grammar *take effect | become effective | become operative* [on] *the first day of the* ⟨N⟩ *month next following* [*the date of*] *enactment | approval*. N is an ordinal from 1 to 24, written in words or digits; case and whitespace do not matter. Verified evidence that matches this grammar is treated as a relative formula, whatever the model called it.
+2. **The sentence has no qualification the grammar does not model:**
+   - another effective or operative date;
+   - an applicability clause;
+   - a leading *except*, *notwithstanding*, *unless* or *subject to*.
+
+   A trailing proviso about anticipatory administrative action is allowed.
+3. **The raw text records exactly one distinct base date** for that anchor. A base date is *approved*, *enacted* or *signed* [*by the Governor*] followed by a written calendar date. *Approved* serves both anchors; *enacted* and *signed* serve *enactment*. The base date is always raw source text, never a model value.
+
+The result is the first day of the Nth calendar month after the base date's month. For example, June 18, 2021 + seventh month gives 2022-01-01, and July 20, 2026 + twelfth month gives 2027-07-01.
+
+Every resolution records an audit in `temporal.relative_resolution`: the formula, its evidence and offsets, the base date and its evidence and offsets, the candidate base dates, the rule id, the resolved date, and the outcome with its reason. Anything outside the grammar stays unresolved with its evidence kept, and the record is held. Examples are "90 days after enactment" and "the third month following enactment" (without "next").
 
 ## Review checks (`review.py`, warnings only)
 
@@ -269,9 +329,37 @@ uv run --env-file .env python scripts/run_corpus.py --doc-ids D065,D001 --out-di
 - **What does not stop it:** a `review_required` document, or a document-level failure such as a missing supplied text. These are recorded and the batch continues.
 - **Outputs:** `<out-dir>/documents/<doc_id>_extraction.json`, plus `<out-dir>/<stage name>_summary.json`, which is rewritten after every document. The summary has one row per document (status, calls, cache hits, quote and scope counts, tokens and estimated new cost) and corpus totals.
 
+## Provision ids, scope targeting and scope challenges (M3.1)
+
+- **Propagation:** document-level conditions propagate by provision id only. A condition applies to a record when it is document-wide, or when the record links one of the provision ids it governs. No citation, title or substring is compared, so descriptive titles containing commas are harmless. A condition whose governed ids are empty or not in the inventory is not propagated, and the document is `review_required`. An applied condition that shares no id with its record is a corpus-runner integrity violation.
+- **Coverage closure:** a record counts for an in-scope provision only if it links the provision's id **and** its citation names the provision, a subdivision or an ancestor. A citation alone never counts.
+- **Scope challenge (`coverage.scope_challenges`):** an `out_of_scope` inventory item is challenged when **all** of the following hold:
+  - its role claims it is not operative (definition, procedure, history, boilerplate or uncertain);
+  - a neighbouring item is in scope;
+  - its own source region contains an enumeration;
+  - the region also contains normative or grounds/conditions language.
+
+  The region runs from its verified anchor to the next anchor. Glossaries (two or more "means"), and provisions stating a verified scope condition, are not challenged. A challenge publishes nothing: it becomes a `scope_challenge` repair target in the same single repair request. The repair classifies it:
+  - **in_scope:** records must link the target's provision id;
+  - **out_of_scope:** needs a reason and evidence inside the provision's region, and the result is preserved;
+  - **uncertain:** the document stays `review_required`.
+
+## Code-only replay (`replay.py`, `scripts/replay_cached.py`)
+
+A cached prompt-v5 response can be re-evaluated under the current post-processing without a provider request. The adapter re-expresses what v5 stated:
+
+- inventory ids follow inventory position;
+- record links come from `rule_indices`;
+- `governs` becomes document-wide when it is null. A string maps to an id only when it is **exactly** equal to one inventory ref; anything else is left untargeted.
+
+Everything v5 never stated (posture, anchors, roles, source basis, status evidence) stays undeclared and is listed in `legacy_replay`. Responses older than v4 can only be replayed through the relative-date resolver (`--resolver-only`).
+
 ## Known limitations (to revisit in M3)
 
 - Each document is extracted on its own. Cross-document conflicts, `overrides`, and jurisdiction scope for documents that cover several jurisdictions are not handled yet.
 - `citation` text is model-produced and is not yet checked against the source (only the quote and the evidence fields are).
 - Cross-page quotes may span exactly one page artifact. A passage spanning two page breaks must be split into separate records.
+- The relative-date resolver supports one formula family. Other formulas stay unresolved, and their records are held.
+- No unstated default effective date is derived (e.g. a state's default operative date for statutes). Session-law records without a stated date are held, and Module C must supply any change-test facts.
+- The scope-challenge heuristic is conservative and keyword-assisted. It cannot see a provision that the inventory omits altogether, or an out_of_scope item whose anchor is not source text.
 - Records are not deduplicated semantically against parent-level records. Repair can only add records for provisions that had no candidate at all, which limits overlap but does not prove its absence.

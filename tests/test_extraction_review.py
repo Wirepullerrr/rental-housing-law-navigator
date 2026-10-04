@@ -15,12 +15,15 @@ from navigator.extraction.review import calendar_dates, unsupported_figures
 
 def test_generation_schema_requests_inventory_before_rules():
     schema = generation_json_schema()
-    assert list(schema["properties"]) == ["provisions", "global_scope", "rules"]  # decoded in this order
+    assert list(schema["properties"]) == ["document", "provisions", "global_scope", "rules",
+                                          "no_rules_justification"]                 # decoded in this order
     rule = schema["properties"]["rules"]["items"]
     assert {"version_note", "version_evidence", "operative_conditions", "scope_carve_outs", "quote_parts",
-            "effective_date_evidence_kind"} <= set(rule["required"])
+            "effective_date_evidence_kind", "provision_ids", "source_basis",
+            "enactment_status_evidence"} <= set(rule["required"])
+    assert list(rule["properties"])[:5] == ["category", "citation", "provision_ids", "source_basis", "quote_parts"]
     item = schema["properties"]["provisions"]["items"]
-    assert list(item["properties"]) == ["ref", "summary", "scope", "category", "reason", "rule_indices"]
+    assert list(item["properties"]) == ["id", "ref", "anchor", "summary", "role", "scope", "category", "reason"]
 
 
 # ---------------------------------------------------------- temporal versions
@@ -78,46 +81,48 @@ def test_unsupported_figure_warns_but_does_not_reject(run_fake):
 # ------------------------------------------------------- run-level review
 
 def test_inventory_is_recorded_and_uncovered_in_scope_provisions_make_the_document_review_required(run_fake):
-    provisions = [provision("(1)(b)", rule_indices=[0]), provision("(2)(b)"),
-                  provision("(1)(c)", scope="out_of_scope")]
+    provisions = [provision("(1)(b)"), provision("(2)(b)", id="P2"), provision("(1)(c)", scope="out_of_scope", id="P3")]
     run, provider = run_fake({"provisions": provisions, "rules": [make_candidate()]}, repair=False)  # cites (1)(b)(iii)
     assert len(run.provision_inventory) == 3 and run.accepted_count == 1 and len(provider.calls) == 1
     assert run.coverage["after_primary"] == {"uncovered": ["(2)(b)"], "unaccepted": [],
-                                         "unrecorded_subdivisions": []}
+                                             "unrecorded_subdivisions": [], "scope_challenges": []}
     assert run.document_status == "review_required"
     assert any("repair targets still unresolved: (2)(b) (repair did not complete: repair disabled" in r
                for r in run.review_reasons)
 
 
-def _candidate(index: int, citation: str, accepted: bool = True) -> CandidateResult:
-    return CandidateResult(index=index, accepted=accepted, rule={"citation": citation})
+def _candidate(index: int, citation: str, links: list[str], accepted: bool = True) -> CandidateResult:
+    return CandidateResult(index=index, accepted=accepted, rule={"citation": citation}, provision_ids=links)
 
 
-def test_closure_matches_citations_structurally():
-    inventory = [provision("Section 15B(2)(a), first paragraph"), provision("§ 98.0704 (a)"),
-                 provision("4.a"), provision("Section 15B(5)"), provision("Section 15B(2)(b)"),
-                 provision("§ 98.0709(a)-(c)")]
-    cited = ["M.G.L. c. 186, § 15B(2)(a)", "San Diego Mun. Code §98.0704(a)(1)", "P.L. 2026, c. 43, § 4(a)",
-             "M.G.L. c. 186, § 15B(4)", "§ 98.0709(b)"]
-    result = closure(inventory, [_candidate(i, c) for i, c in enumerate(cited)])
+def test_closure_needs_a_provision_link_with_a_structurally_matching_citation():
+    refs = ["Section 15B(2)(a), first paragraph", "§ 98.0704 (a)", "4.a", "Section 15B(5)", "Section 15B(2)(b)",
+            "§ 98.0709(a)-(c)"]
+    inventory = [provision(ref, id=f"P{n}") for n, ref in enumerate(refs, start=1)]
+    cited = [("M.G.L. c. 186, § 15B(2)(a)", ["P1"]), ("San Diego Mun. Code §98.0704(a)(1)", ["P2"]),
+             ("P.L. 2026, c. 43, § 4(a)", ["P3"]), ("M.G.L. c. 186, § 15B(4)", ["P4"]),
+             ("§ 98.0709(b)", ["P6"]),
+             ("M.G.L. c. 186, § 15B(2)(b)", [])]           # names Section 15B(2)(b), but links nothing
+    result = closure(inventory, [_candidate(i, c, links) for i, (c, links) in enumerate(cited)])
     assert result["uncovered"] == ["Section 15B(5)", "Section 15B(2)(b)", "§ 98.0709(a)", "§ 98.0709(c)"]
+    assert result["link_mismatches"] == ["rule 3 links P4 ('Section 15B(5)') but cites 'M.G.L. c. 186, § 15B(4)'"]
 
 
-def test_declared_link_counts_only_for_an_ancestor_citation():
-    inventory = [provision("§ 98.0704(b)(1)(A)", rule_indices=[0]), provision("§ 98.0704(b)(2)", rule_indices=[0]),
-                 provision("§ 98.0705(c)", rule_indices=[9])]
-    result = closure(inventory, [_candidate(0, "San Diego Mun. Code § 98.0704(b)(1)")])
+def test_a_link_counts_for_an_ancestor_citation_but_not_for_a_sibling():
+    inventory = [provision("§ 98.0704(b)(1)(A)"), provision("§ 98.0704(b)(2)", id="P2"),
+                 provision("§ 98.0705(c)", id="P3")]
+    result = closure(inventory, [_candidate(0, "San Diego Mun. Code § 98.0704(b)(1)", ["P1", "P2"])])
     assert result["uncovered"] == ["§ 98.0704(b)(2)", "§ 98.0705(c)"]
-    assert result["provisions"][0]["basis"] == {"0": "declared link; citation names an ancestor"}
-    assert len(result["link_mismatches"]) == 2       # (b)(1) is not (b)(2); rule 9 does not exist
+    assert result["provisions"][0]["basis"] == {"0": "provision link; citation names an ancestor"}
+    assert len(result["link_mismatches"]) == 1       # (b)(1) is not (b)(2)
 
 
 def test_rejected_records_count_as_candidates_but_not_as_accepted(run_fake):
     candidate = make_candidate(quoted_span="A lessor may never require a deposit above half a month's rent.")
-    run, provider = run_fake({"provisions": [provision("(1)(b)", rule_indices=[0])], "rules": [candidate]})
+    run, provider = run_fake({"provisions": [provision("(1)(b)")], "rules": [candidate]})
     assert run.accepted_count == 0 and len(provider.calls) == 1                 # not uncovered: no repair
     assert run.coverage["after_primary"] == {"uncovered": [], "unaccepted": ["(1)(b)"],
-                                         "unrecorded_subdivisions": []}
+                                             "unrecorded_subdivisions": [], "scope_challenges": []}
     assert run.document_status == "review_required"
 
 
@@ -131,8 +136,8 @@ def test_missing_or_malformed_inventory_never_rejects_rules_but_blocks_completen
 
 
 def test_complete_inventory_coverage_marks_the_document_complete(run_fake):
-    run, _ = run_fake({"provisions": [provision("§ 15B(1)(b)", rule_indices=[0])], "global_scope": [],
-                       "rules": [make_candidate()]})
+    run, _ = run_fake({"provisions": [provision("§ 15B(1)(b)")], "global_scope": [], "rules": [make_candidate()],
+                       "no_rules_justification": None})
     assert (run.document_status, run.review_reasons, run.repair) == ("complete", [], None)
 
 

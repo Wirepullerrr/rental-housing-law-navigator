@@ -9,10 +9,11 @@ from collections import Counter
 
 import pytest
 
-from conftest import make_candidate, provision
+from conftest import D052_POSTURE, make_candidate, no_rules, provision
 from navigator import starter_pack as sp
 from navigator.extraction.cache import ResponseCache
 from navigator.extraction.config import GENERATION_SETTINGS
+from navigator.extraction.extractor import load_source
 from navigator.extraction.corpus import (IntegrityViolation, MeteredProvider, SpendLedger, estimate_cost,
                                          run_stage, summary_path, supplied_documents)
 from navigator.extraction.prompt import REPAIR_SYSTEM_INSTRUCTION
@@ -21,15 +22,22 @@ from navigator.extraction.provider import ProviderResult
 USAGE = {"input_tokens": 1000, "output_tokens": 2000, "thinking_tokens": 3000}
 CALL_COST = (1000 * 0.75 + 5000 * 3.75) / 1e6          # thinking billed as output
 
-EMPTY = {"provisions": [], "global_scope": [], "rules": []}                     # complete, nothing in scope
-COMPLETE_D052 = {"provisions": [provision("§ 15B(1)(b)", rule_indices=[0])], "global_scope": [],
-                 "rules": [make_candidate()]}
-NO_INVENTORY = {"rules": [make_candidate()]}                                       # review_required
-RETURN_RULE = make_candidate(citation="M.G.L. c. 186, § 15B(4)", title="Return", key_value=None,
+def empty(doc_id: str) -> dict:
+    """Complete-empty: no rules, justified by a verbatim line of that document."""
+    line = next(x for x in load_source(doc_id).body.splitlines() if len(x.strip()) > 20).strip()
+    return {"document": {"posture": "unknown", "evidence": None}, "provisions": [], "global_scope": [], "rules": [],
+            "no_rules_justification": no_rules(evidence=line)}
+
+
+EMPTY_81, EMPTY_80 = empty("D081"), empty("D080")
+COMPLETE_D052 = {"document": D052_POSTURE, "provisions": [provision("§ 15B(1)(b)")], "global_scope": [],
+                 "rules": [make_candidate()], "no_rules_justification": None}
+NO_INVENTORY = {"document": D052_POSTURE, "rules": [make_candidate()]}                # review_required
+RETURN_RULE = make_candidate(citation="M.G.L. c. 186, § 15B(4)", title="Return", key_value=None, provision_ids=["P2"],
                              quoted_span="The lessor shall, within thirty days after the termination of occupancy",
                              requirement="The lessor must return the deposit within thirty days.")
-NEEDS_REPAIR_D052 = ({"provisions": [provision("§ 15B(1)(b)", rule_indices=[0]), provision("§ 15B(4)")],
-                      "global_scope": [], "rules": [make_candidate()]},
+NEEDS_REPAIR_D052 = ({"document": D052_POSTURE, "provisions": [provision("§ 15B(1)(b)"), provision("§ 15B(4)", id="P2")],
+                      "global_scope": [], "rules": [make_candidate()], "no_rules_justification": None},
                      {"target_resolutions": [{"ref": "§ 15B(4)", "scope": "in_scope", "reason": None,
                                               "evidence_parts": []}], "rules": [RETURN_RULE]})
 
@@ -80,7 +88,7 @@ def test_discovery_reads_the_manifest_without_assuming_a_corpus_size():
 
 
 def test_only_the_explicit_selection_is_processed_in_order(stage, tmp_path):
-    provider = ScriptedProvider({"D081": (EMPTY,), "D052": (COMPLETE_D052,), "D080": (EMPTY,)})
+    provider = ScriptedProvider({"D081": (EMPTY_81,), "D052": (COMPLETE_D052,), "D080": (EMPTY_80,)})
     summary = stage(["D081", "D052", "D080"], provider)
     assert provider.calls == [("D081", "primary"), ("D052", "primary"), ("D080", "primary")]
     assert sorted(p.name for p in (tmp_path / "stage1" / "documents").iterdir()) == \
@@ -91,7 +99,7 @@ def test_only_the_explicit_selection_is_processed_in_order(stage, tmp_path):
 
 
 def test_resume_reuses_artifacts_and_cached_responses_without_new_requests(stage, tmp_path):
-    first = stage(["D052", "D081"], ScriptedProvider({"D052": (COMPLETE_D052,), "D081": (EMPTY,)}))
+    first = stage(["D052", "D081"], ScriptedProvider({"D052": (COMPLETE_D052,), "D081": (EMPTY_81,)}))
     (tmp_path / "stage1" / "documents" / "D081_extraction.json").unlink()   # interrupted before the write
     again = stage(["D052", "D081"], NoCalls({}))
     rows = by_id(again)
@@ -103,19 +111,19 @@ def test_resume_reuses_artifacts_and_cached_responses_without_new_requests(stage
 
 
 def test_an_artifact_from_other_settings_is_never_overwritten_silently(stage, tmp_path):
-    stage(["D081"], ScriptedProvider({"D081": (EMPTY,)}))
+    stage(["D081"], ScriptedProvider({"D081": (EMPTY_81,)}))
     path = tmp_path / "stage1" / "documents" / "D081_extraction.json"
     before = path.read_text(encoding="utf-8")
     low = {**GENERATION_SETTINGS, "thinking_level": "low"}
-    refused = stage(["D081"], ScriptedProvider({"D081": (EMPTY,)}), settings=low)
+    refused = stage(["D081"], ScriptedProvider({"D081": (EMPTY_81,)}), settings=low)
     assert by_id(refused)["D081"]["run_mode"] == "error" and path.read_text(encoding="utf-8") == before
-    replaced = stage(["D081"], ScriptedProvider({"D081": (EMPTY,)}), settings=low, replace=frozenset({"D081"}))
+    replaced = stage(["D081"], ScriptedProvider({"D081": (EMPTY_81,)}), settings=low, replace=frozenset({"D081"}))
     assert by_id(replaced)["D081"]["run_mode"] == "processed"
     assert [p.read_text(encoding="utf-8") for p in path.parent.glob("D081_extraction.superseded-*.json")] == [before]
 
 
 def test_document_failures_are_isolated_and_review_required_does_not_abort(stage):
-    summary = stage(["D002", "D052", "D081"], ScriptedProvider({"D052": (NO_INVENTORY,), "D081": (EMPTY,)}))
+    summary = stage(["D002", "D052", "D081"], ScriptedProvider({"D052": (NO_INVENTORY,), "D081": (EMPTY_81,)}))
     rows = by_id(summary)
     assert rows["D002"]["run_mode"] == "error" and "no supplied local text" in rows["D002"]["detail"]
     assert rows["D052"]["document_status"] == "review_required"
@@ -123,7 +131,7 @@ def test_document_failures_are_isolated_and_review_required_does_not_abort(stage
 
 
 def test_budget_gate_stops_before_a_new_primary_request(stage):
-    provider = ScriptedProvider({"D052": (COMPLETE_D052,), "D081": (EMPTY,)})
+    provider = ScriptedProvider({"D052": (COMPLETE_D052,), "D081": (EMPTY_81,)})
     summary = stage(["D052", "D081", "D080"], provider, budget=0.01)
     assert provider.calls == [("D052", "primary")]                 # started below the gate; nothing after
     rows = by_id(summary)
@@ -156,7 +164,7 @@ def test_at_most_one_primary_and_one_repair_request_per_document(stage, tmp_path
 
 
 def test_summary_aggregates_outcomes_tokens_and_cost(stage):
-    summary = stage(["D052", "D081"], ScriptedProvider({"D052": NEEDS_REPAIR_D052, "D081": (EMPTY,)}))
+    summary = stage(["D052", "D081"], ScriptedProvider({"D052": NEEDS_REPAIR_D052, "D081": (EMPTY_81,)}))
     t = summary["totals"]
     assert (t["processed"], t["complete"], t["accepted_rules"], t["documents_requiring_repair"],
             t["repair_resolved_by_rule"], t["primary_provider_calls"], t["repair_provider_calls"]) == (2, 2, 2, 1, 1, 2, 1)

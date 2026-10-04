@@ -156,6 +156,11 @@ def integrity_violations(run: ExtractionRun, source: SourceDocument, cache: Resp
             v.append(f"candidate {c.index}: published rule is invalid under the official schema")
         if bad := [p["id"] for p in c.propagated_scope if p["applied"] and p["id"] not in verified_scope]:
             v.append(f"candidate {c.index}: unverified global scope propagated: {bad}")
+        if bad := [p["id"] for p in c.propagated_scope if p["applied"] and p.get("governed_provision_ids") is not None
+                   and not set(p["governed_provision_ids"]) & set(c.provision_ids)]:
+            v.append(f"candidate {c.index}: scope condition applied without a shared provision id: {bad}")
+    if any(c.held and c.accepted for c in run.candidates):
+        v.append("a held candidate was published")
     if run.cache_key != prepare_request(source, provider_name, model, settings).key:
         v.append("cache identity: the primary response does not match the current inputs")
     rp = run.repair
@@ -197,6 +202,13 @@ def document_record(run: ExtractionRun, source: SourceDocument, mode: str, calls
         "repair_resolution": run.coverage.get("repair_targets"),
         "unresolved_targets": [t["ref"] for t in targets if t.get("final_resolution") == "unresolved"],
         "document_status": run.document_status, "review_reasons": run.review_reasons,
+        "posture": {"declared": run.posture.get("declared"), "established": run.posture.get("established")},
+        "held": sum(c.held for c in run.candidates),
+        "relative_dates_resolved": sum((c.temporal.get("relative_resolution") or {}).get("outcome") == "resolved"
+                                       for c in run.candidates),
+        "source_basis": dict(Counter(str(c.source_basis) for c in accepted)),
+        "scope_challenges": [c["ref"] for c in run.scope_challenges if c["challenged"]],
+        "empty_result": run.empty_result,
         "citations": {"accepted": len(accepted),
                       "exact_match": sum(c.citation.status == "exact_match" for c in accepted),
                       "normalized_match": sum(c.citation.status == "normalized_match" for c in accepted),
@@ -334,7 +346,8 @@ def stage_summary(records: list[dict[str, Any]], *, doc_ids: list[str], out_dir:
             "complete": sum(r["document_status"] == "complete" for r in done),
             "review_required": sum(r["document_status"] == "review_required" for r in done),
             "candidates": sum(r["candidates"] for r in done), "accepted_rules": accepted,
-            "rejected_candidates": sum(r["rejected"] for r in done),
+            "rejected_candidates": sum(r["rejected"] - r.get("held", 0) for r in done),
+            "held_candidates": sum(r.get("held", 0) for r in done),
             "accepted_quotes_raw_substring": sum(r["citations"]["raw_substring"] for r in done),
             "exact_citation_rate": (sum(r["citations"]["raw_substring"] for r in done) / accepted) if accepted else None,
             "reconstructed_cross_page_quotes": sum(r["citations"]["reconstructed_cross_page"] for r in done),

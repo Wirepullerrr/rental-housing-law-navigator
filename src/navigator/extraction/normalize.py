@@ -3,10 +3,12 @@
 Trust boundary:
   from the repository  team_rule_id (ids.py), jurisdiction, level, source_doc_id,
                        source_url, overrides ([] at single-document extraction)
-  derived in Python    status, from the model's enactment_status and the
-                       effective_date admitted by temporal.py and the query
-                       date; document-level scope conditions propagated to
-                       each rule they govern; quoted_span = verified raw text
+  derived in Python    status, from the model's enactment_status, the
+                       effective_date admitted or resolved by temporal.py, the
+                       established source posture (posture.py) and the query
+                       date; document-level scope conditions propagated by
+                       provision id; quoted_span = verified raw text; a label
+                       on records whose basis is not operative legal text
   from the model       the semantic fields (category, title, requirement, ...)
   never used           model confidence: dropped, published as null
 """
@@ -26,6 +28,13 @@ TRUSTED_FIELDS = ("team_rule_id", "jurisdiction", "level", "status", "source_doc
                   "overrides", "retrieved_at", "conflict_flag")
 # Model output that is never used for acceptance or applicability (kept only in `raw`).
 IGNORED_FIELDS = ("confidence",)
+# Status explanations that mean "valid, but its time of application is unknown": such a
+# candidate is held (preserved, never published), not rejected as unsound.
+TEMPORAL_UNRESOLVED = "temporal resolution required"
+# Prefix that makes a record's non-operative basis visible in the published record itself.
+BASIS_LABELS = {"official_bill_summary": "[Basis: official bill summary, not operative legal text] ",
+                "official_bill_history": "[Basis: official bill history, not operative legal text] ",
+                "official_explanatory_text": "[Basis: official explanatory text, not operative legal text] "}
 
 
 def level_for(jurisdiction: str) -> str:
@@ -51,8 +60,8 @@ def split_trusted(raw: dict[str, Any], meta: SourceMeta) -> tuple[dict[str, Any]
     return semantic, warnings
 
 
-def _scope_text(statement: str, citation: str, governs: str | None) -> str:
-    return f"{statement} [{citation}; {'document-wide' if governs is None else 'applies to ' + governs}]"
+def _scope_text(statement: str, citation: str, governed: list[str] | None) -> str:
+    return f"{statement} [{citation}" + ("; document-wide]" if governed is None else "]")
 
 
 def compose_scope(rule_text: str | None, propagated: list[dict[str, Any]], kind: str,
@@ -60,7 +69,7 @@ def compose_scope(rule_text: str | None, propagated: list[dict[str, Any]], kind:
     """Rule-specific text first, then propagated document-level conditions of `kind`,
     then unresolved operative conditions. Exact duplicates are dropped."""
     parts = [rule_text] if rule_text else []
-    parts += [_scope_text(p["statement"], p["citation"], p["governs"]) for p in propagated if p["kind"] == kind]
+    parts += [_scope_text(p["statement"], p["citation"], p["governed_provision_ids"]) for p in propagated if p["kind"] == kind]
     parts += [f"Operative condition (unresolved; applicability may be unknown): {c.statement}" for c in operative]
     unique = list(dict.fromkeys(p.strip() for p in parts if p and p.strip()))
     return "; ".join(unique) or None
@@ -78,15 +87,21 @@ def _date_bounds(partial: str) -> tuple[date, date]:
 
 
 def derive_status(enactment_status: str, effective_date: str | None, has_date_evidence: bool,
-                  as_of: date) -> tuple[Status | None, str]:
-    """Return (status, explanation). status is None when it cannot be determined."""
+                  as_of: date, no_date_in_force: bool = True) -> tuple[Status | None, str]:
+    """Return (status, explanation). status is None when it cannot be determined.
+    `no_date_in_force`: may an enacted rule with no dated evidence be read as in force?
+    Only for established codified current law (posture.py); otherwise its time of
+    application is unknown and a status is not assigned."""
     if enactment_status in ("pending", "failed"):
         return enactment_status, f"enactment_status={enactment_status}"
     if effective_date is None:
         if has_date_evidence:
-            return None, ("enacted, but the effective date is stated only in relative or conditional terms; "
-                          "it must be resolved deterministically before a status can be assigned")
-        return "in_force", "enacted; the document states no effective date"
+            return None, (f"{TEMPORAL_UNRESOLVED}: enacted, but the effective date is stated only in relative or "
+                          "conditional terms that were not resolved deterministically")
+        if not no_date_in_force:
+            return None, (f"{TEMPORAL_UNRESOLVED}: enacted, but no effective date is established and the source is "
+                          "not established as codified current law, so it is not assumed to be in force")
+        return "in_force", "enacted; codified current law that states no effective date"
     try:
         earliest, latest = _date_bounds(effective_date)
     except ValueError:
@@ -100,7 +115,7 @@ def derive_status(enactment_status: str, effective_date: str | None, has_date_ev
 
 def build_record(rule: ExtractedRule, meta: SourceMeta, citation: CitationCheck, status: Status | None,
                  effective_date: str | None, propagated: list[dict[str, Any]] = (),
-                 operative: list[OperativeCondition] = ()) -> dict[str, Any]:
+                 operative: list[OperativeCondition] = (), basis: str | None = None) -> dict[str, Any]:
     """Assemble a record in official-schema shape.
 
     quoted_span is always the exact raw source text located by the citation check
@@ -109,7 +124,8 @@ def build_record(rule: ExtractedRule, meta: SourceMeta, citation: CitationCheck,
     The model's own quote parts stay in the audit record. `effective_date` is the
     value decided by temporal.py, not the model's. `propagated` are verified
     document-level scope conditions governing this rule; `operative` are verified
-    operative conditions (status is not changed by them).
+    operative conditions (status is not changed by them). A `basis` other than
+    operative text is stated at the start of `requirement` (BASIS_LABELS).
     """
     span = citation.source_span if citation.status != "failed" and citation.source_span else citation.model_span
     return {
@@ -120,7 +136,7 @@ def build_record(rule: ExtractedRule, meta: SourceMeta, citation: CitationCheck,
         "category": rule.category,
         "status": status,
         "title": rule.title,
-        "requirement": rule.requirement,
+        "requirement": BASIS_LABELS.get(basis, "") + rule.requirement,
         "key_value": rule.key_value,
         "coverage_conditions": compose_scope(rule.coverage_conditions, list(propagated), "coverage_condition",
                                              list(operative)),

@@ -67,21 +67,38 @@ def no_network(monkeypatch):
     assert not attempts, f"test attempted network access: {attempts}"
 
 
+# Verbatim heading of corpus/text/D052.txt: evidence that D052 is codified current law.
+D052_POSTURE = {"posture": "codified_current_law",
+                "evidence": "General Law - Part II, Title I, Chapter 186, Section 15B"}
+
+
+def codified(source) -> dict[str, Any]:
+    """A codified_current_law posture evidenced by the first substantive line of `source`."""
+    line = next(x for x in source.view.without_markers().splitlines() if len(x.strip()) > 20)
+    return {"posture": "codified_current_law", "evidence": line.strip()}
+
+
 class FakeProvider:
     """Deterministic stand-in for a StructuredLLMProvider. Returns `responses` in order
-    (the last one repeats) and records every call."""
+    (the last one repeats) and records every call. A primary response (a dict with
+    `rules`) that has no `document` key is given `document` (default: D052's codified
+    posture), so tests that are not about posture need not repeat it; posture tests set
+    `document` in the response itself."""
 
     name = "fake"
 
-    def __init__(self, *responses: Any, model: str = "fake-model") -> None:
+    def __init__(self, *responses: Any, model: str = "fake-model", document: Any = D052_POSTURE) -> None:
         self.model = model
         self.responses = list(responses)
+        self.document = document
         self.calls: list[dict[str, Any]] = []
 
     def generate(self, *, system_instruction, prompt, response_json_schema, settings) -> ProviderResult:
         self.calls.append({"system_instruction": system_instruction, "prompt": prompt,
                            "response_json_schema": response_json_schema, "settings": settings})
         response = self.responses[min(len(self.calls), len(self.responses)) - 1]
+        if isinstance(response, dict) and "rules" in response and "target_resolutions" not in response:
+            response = {"document": self.document, **response}
         text = response if isinstance(response, str) else json.dumps(response)
         return ProviderResult(text=text, metadata={"fake": True, "call": len(self.calls)})
 
@@ -99,10 +116,13 @@ def parts(*texts: str, first_segment: int = 1) -> list[dict[str, Any]]:
 
 
 def make_candidate(**overrides: Any) -> dict[str, Any]:
-    """A prompt-v4 candidate. `quoted_span=` is shorthand for one quote part in segment 1."""
+    """A prompt-v6 candidate linked to inventory id P1. `quoted_span=` is shorthand for one
+    quote part in segment 1."""
     rule = {
         "category": "security_deposits",
         "citation": "M.G.L. c. 186, § 15B(1)(b)(iii)",
+        "provision_ids": ["P1"],
+        "source_basis": "operative_text",
         "quote_parts": parts(D052_DEPOSIT_SPAN),
         "title": "Security deposit limit",
         "requirement": "A lessor may not require a security deposit greater than the first month's rent.",
@@ -113,6 +133,7 @@ def make_candidate(**overrides: Any) -> dict[str, Any]:
         "operative_conditions": [],
         "interaction": None,
         "enactment_status": "enacted",
+        "enactment_status_evidence": None,
         "version_note": None,
         "version_evidence": None,
         "effective_date_evidence": None,
@@ -126,13 +147,20 @@ def make_candidate(**overrides: Any) -> dict[str, Any]:
     return rule
 
 
-def provision(ref: str, scope: str = "in_scope", category: str | None = "security_deposits",
-              rule_indices: list[int] | None = None, summary: str = "a provision") -> dict[str, Any]:
-    """A prompt-v4 inventory item."""
-    return {"ref": ref, "summary": summary, "scope": scope,
+def provision(ref: str, scope: str = "in_scope", category: str | None = "security_deposits", *, id: str = "P1",
+              anchor: str | None = None, role: str = "operative_rule", summary: str = "a provision",
+              reason: str | None = None) -> dict[str, Any]:
+    """A prompt-v6 inventory item. Records link to it through `provision_ids` = [id]. Without
+    `anchor` the item's anchor is its ref (usually not source text: no region, no challenge)."""
+    return {"id": id, "ref": ref, "anchor": anchor or ref, "summary": summary, "role": role, "scope": scope,
             "category": category if scope == "in_scope" else None,
-            "reason": None if scope == "in_scope" else "not a requirement in an official category",
-            "rule_indices": rule_indices or []}
+            "reason": None if scope == "in_scope" else (reason or "not a requirement in an official category")}
+
+
+def no_rules(reason: str = "The document has no in-scope legal content.",
+             evidence: str = "General Law - Part II, Title I, Chapter 186, Section 15B") -> dict[str, Any]:
+    """A no_rules_justification (default evidence: D052's heading)."""
+    return {"reason": reason, "evidence": evidence}
 
 
 @pytest.fixture(scope="session")

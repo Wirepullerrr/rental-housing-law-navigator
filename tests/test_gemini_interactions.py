@@ -15,7 +15,7 @@ from datetime import datetime, timedelta, timezone
 import httpx
 import pytest
 
-from conftest import make_candidate
+from conftest import D052_POSTURE, make_candidate
 from navigator.extraction import gemini
 from navigator.extraction.cache import ResponseCache
 from navigator.extraction.extractor import extract_document
@@ -227,7 +227,7 @@ def test_completed_without_text_is_rejected(api):
 # ------------------------------------------------- end to end, still offline
 
 def test_pipeline_runs_unchanged_through_interactions_adapter(api, d052, tmp_path):
-    api.script = [ok(text=json.dumps({"rules": [make_candidate()]}))]
+    api.script = [ok(text=json.dumps({"document": D052_POSTURE, "rules": [make_candidate()]}))]
     cache = ResponseCache(tmp_path / "cache")
     run = extract_document(d052, provider_name="gemini", model=MODEL, provider=api.provider, cache=cache)
     assert (run.candidate_count, run.accepted_count, run.errors) == (1, 1, [])

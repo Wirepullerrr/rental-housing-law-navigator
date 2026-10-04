@@ -1,14 +1,13 @@
 """Coverage closure: does every in-scope inventory provision have a candidate record?
 
-Deterministic and structural (review.py matchers; never similarity). For each
-in-scope inventory ref (ranges such as "(a)-(c)" expanded into elements), a
-candidate maps to it when:
-  - the candidate's citation names that ref or a subdivision of it, or
-  - the inventory item lists the candidate's index in `rule_indices` AND the
-    candidate's citation names an ancestor of the ref (a record for "(b)(1)"
-    declared to cover "(b)(1)(A)").
-A declared index whose candidate cites something unrelated is NOT counted; it
-is reported as a link mismatch.
+Deterministic and structural (review.py matchers; never similarity). Records link to
+inventory provisions by id (`provision_ids`, prompt v6). For each in-scope inventory
+ref (ranges such as "(a)-(c)" expanded into elements), a candidate maps to it when it
+LINKS that provision's id AND its citation names the ref, a subdivision of it, or an
+ancestor of it (a record for "(b)(1)" linked to an item "(b)(1)(A)"). A citation alone
+never counts: free-form titles (which may contain commas, or share words with their
+neighbours) cannot make a provision look covered. A link whose citation names
+something unrelated is NOT counted; it is reported as a link mismatch.
 
 A ref is
   uncovered   no candidate at all (accepted or rejected) maps to it; only these
@@ -25,6 +24,24 @@ subdivision without an accepted record is reported with its source range and any
 (rejected) candidates citing it. Subdivisions the inventory itself lists as
 out_of_scope or uncertain are left to that decision. The guard only reports;
 repair.py decides what becomes a repair target.
+
+Scope challenge (scope_challenges): neither check above can see a provision the model
+itself declared out_of_scope. Each inventory item gives a verbatim `anchor` (its first
+words); provision_regions locates it in the raw text. The item's region starts at its
+own label when only a label precedes the anchor on that line (e.g. "(c) "), and runs
+to the next located anchor. An out_of_scope item becomes a scope_challenge only when
+SEVERAL independent signals in its own source text suggest a substantive rule:
+  - its role is definition, procedure or uncertain: a claim that it states no rule.
+    Operative rules of another subject, exemptions/scope conditions, remedies,
+    enforcement, history and boilerplate are decided by other rules;
+  - a neighbouring inventory item (document order) is in scope;
+  - its text contains an enumeration (two or more labelled lines after its own first
+    line, or an inline series after "such as" / "including" / "the following");
+  - and normative language (shall, must, may only, prohibited, ...) or
+    grounds/conditions language (grounds, causes, reasons, conditions, criteria).
+Not challenged: a glossary (two or more "means" definitions), and a provision whose
+content is a verified document-level scope condition (its source_provision_id).
+A challenge never publishes anything; it only makes the item a repair target.
 """
 
 from __future__ import annotations
@@ -34,10 +51,25 @@ from bisect import bisect_right
 from typing import Any
 
 from navigator.extraction.models import CandidateResult
+from navigator.extraction.quotes import verify_text
 from navigator.extraction.review import _ref_tokens, expand_ref, ref_is_ancestor, ref_matches
+from navigator.extraction.source_view import SourceView
 
 _HEADING = re.compile(r"^\s*(?:§|Section\b|SECTION\b|Sec\.|SEC\.)")
 _LABEL = re.compile(r"^\s*\(([a-z]|[A-Z]|\d{1,3})\)")
+MAX_REGION = 2000
+CHALLENGE_ROLES = {"definition", "procedure", "uncertain", None}
+# Only labels (e.g. "(c) ", "1. ", "Sec. 5. ") between the start of a line and an anchor.
+_LEADING_LABELS = re.compile(r"[\s\u00a0]*(?:(?:§+|Sec\.|Section|SEC\.)?[\s\u00a0]*\(?[A-Za-z0-9]{1,4}"
+                             r"(?:[.:-][A-Za-z0-9]{1,4})*[).:]?[\s\u00a0]*){1,4}")
+_LIST_LINE = re.compile(r"^\s*(?:\([A-Za-z0-9]{1,3}\)|\d{1,3}\.|[a-z]\.)\s", re.MULTILINE)
+_SERIES = re.compile(r"\b(?:such\s+as|including|includes|include|the\s+following)\b(?P<rest>[^.]{0,300})",
+                     re.IGNORECASE)
+_NORMATIVE = re.compile(r"\b(?:shall|must|may\s+only|may\s+not|no\s+\w+\s+may|prohibited|unlawful|permitted|"
+                        r"allowed|entitled|required)\b", re.IGNORECASE)
+_GROUNDS = re.compile(r"\b(?:grounds?|causes?|reasons?|conditions?|criteria|criterion|circumstances?)\b",
+                      re.IGNORECASE)
+_MEANS = re.compile(r"\bmeans\b", re.IGNORECASE)
 
 
 def candidate_citation(c: CandidateResult) -> str | None:
@@ -47,31 +79,33 @@ def candidate_citation(c: CandidateResult) -> str | None:
     return raw if isinstance(raw, str) else None
 
 
+def linked(item: dict[str, Any], c: CandidateResult) -> bool:
+    return bool(item.get("id")) and item["id"] in c.provision_ids
+
+
 def closure(inventory: list[dict[str, Any]], candidates: list[CandidateResult]) -> dict[str, Any]:
     cites = {c.index: candidate_citation(c) for c in candidates}
     accepted = {c.index for c in candidates if c.accepted}
-    primary = {c.index for c in candidates if c.origin == "primary"}
     provisions, mismatches = [], []
     for item_no, item in enumerate(inventory):
         if item.get("scope") != "in_scope":
             continue
-        declared = [i for i in item.get("rule_indices") or [] if isinstance(i, int)]
+        declared = [c.index for c in candidates if linked(item, c)]
         for i in declared:
-            if i not in primary:
-                mismatches.append(f"inventory {item['ref']!r} lists rule {i}, which does not exist")
-            elif cites[i] is None or not any(ref_matches(r, cites[i]) or ref_is_ancestor(cites[i], r)
-                                             for r in expand_ref(item["ref"])):
-                mismatches.append(f"inventory {item['ref']!r} lists rule {i}, which cites {cites[i]!r}")
+            if cites[i] is None or not any(ref_matches(r, cites[i]) or ref_is_ancestor(cites[i], r)
+                                           for r in expand_ref(item["ref"])):
+                mismatches.append(f"rule {i} links {item['id']} ({item['ref']!r}) but cites {cites[i]!r}")
         for ref in expand_ref(item["ref"]):
             basis: dict[int, str] = {}
-            for i, cite in cites.items():
-                if cite is None:
+            for i in declared:
+                if cites[i] is None:
                     continue
-                if ref_matches(ref, cite):
-                    basis[i] = "citation"
-                elif i in declared and i in primary and ref_is_ancestor(cite, ref):
-                    basis[i] = "declared link; citation names an ancestor"
-            provisions.append({"ref": ref, "inventory_item": item_no, "summary": item.get("summary"),
+                if ref_matches(ref, cites[i]):
+                    basis[i] = "provision link; citation names it"
+                elif ref_is_ancestor(cites[i], ref):
+                    basis[i] = "provision link; citation names an ancestor"
+            provisions.append({"ref": ref, "inventory_item": item_no, "provision_id": item.get("id"),
+                               "summary": item.get("summary"),
                                "category": item.get("category"), "candidates": sorted(basis),
                                "accepted": sorted(i for i in basis if i in accepted),
                                "basis": {str(i): b for i, b in sorted(basis.items())}})
@@ -138,7 +172,7 @@ def unrecorded_subdivisions(inventory: list[dict[str, Any]], candidates: list[Ca
                                      "candidates": [c.index for c in candidates
                                                     if candidate_citation(c) and ref_matches(sub, candidate_citation(c))]})
             if subdivisions:
-                found.append({"ref": ref, "cited": sorted(labels, key=_order),
+                found.append({"ref": ref, "provision_id": item.get("id"), "cited": sorted(labels, key=_order),
                               "unrecorded": [s["label"] for s in subdivisions], "subdivisions": subdivisions})
     return found
 
@@ -180,3 +214,82 @@ def _neighbours(lines: list[str], starts: list[int], records: list[CandidateResu
                 best = run
     bounds = [n for n, _ in best[1:]] + [bottom + 1]
     return [(label, starts[n], starts[end]) for (n, label), end in zip(best, bounds) if label.lower() not in cited]
+
+
+def provision_regions(inventory: list[dict[str, Any]], raw: str, view: SourceView) -> dict[str, dict[str, Any]]:
+    """Inventory id -> the raw source region of that provision: from its verified anchor
+    to the next located anchor (at most MAX_REGION characters). Items whose anchor is
+    missing or not source text have no region."""
+    located: list[tuple[int, str, str]] = []
+    cursor = 0
+    for item in inventory:
+        if not item.get("id") or not item.get("anchor"):
+            continue
+        check = verify_text(item["anchor"], raw, view)
+        if check.status == "failed":
+            continue
+        start = check.start
+        if check.status == "exact_match" and check.occurrences > 1:   # repeated words: take the next one in order
+            nxt = raw.find(check.source_span, cursor)
+            start = nxt if nxt >= 0 else start
+        cursor = start
+        line_start = raw.rfind("\n", 0, start) + 1
+        if line_start < start and _LEADING_LABELS.fullmatch(raw[line_start:start]):
+            start = line_start                                           # include the provision's own label
+        located.append((start, item["id"], check.status))
+    starts = sorted({s for s, _, _ in located})
+    regions = {}
+    for start, pid, status in located:
+        end = next((s for s in starts if s > start), len(raw))
+        regions[pid] = {"raw_start": start, "raw_end": min(end, start + MAX_REGION), "anchor_check": status}
+    return regions
+
+
+def _enumeration(text: str) -> bool:
+    _, _, rest = text.partition("\n")              # the provision's own first line (its label) does not count
+    if len(_LIST_LINE.findall(rest)) >= 2:
+        return True
+    return any(len(re.findall(r"[,;]", m.group("rest"))) >= 2 for m in _SERIES.finditer(text))
+
+
+def scope_challenges(inventory: list[dict[str, Any]], regions: dict[str, dict[str, Any]], raw: str,
+                     scope_sources: set[str]) -> list[dict[str, Any]]:
+    """Every out_of_scope inventory item, with its signals and whether it is challenged
+    (module docstring). `scope_sources`: ids of provisions that state a verified
+    document-level scope condition."""
+    out = []
+    for k, item in enumerate(inventory):
+        if item.get("scope") != "out_of_scope":
+            continue
+        role = item.get("role")
+        entry: dict[str, Any] = {"ref": item["ref"], "provision_id": item.get("id"), "role": role,
+                                 "reason": item.get("reason"), "summary": item.get("summary"), "signals": {},
+                                 "challenged": False, "why_not": None}
+        out.append(entry)
+        if role not in CHALLENGE_ROLES:
+            entry["why_not"] = f"role {role} is decided by other rules"
+            continue
+        if item.get("id") in scope_sources:
+            entry["why_not"] = "its content is a verified document-level scope condition"
+            continue
+        region = regions.get(item.get("id"))
+        if region is None:
+            entry["why_not"] = "no verified anchor: its source text cannot be located"
+            continue
+        text = raw[region["raw_start"]:region["raw_end"]]
+        entry.update(raw_start=region["raw_start"], raw_end=region["raw_end"])
+        neighbours = [inventory[j] for j in (k - 1, k + 1) if 0 <= j < len(inventory)]
+        signals = entry["signals"] = {
+            "in_scope_neighbour": any(n.get("scope") == "in_scope" for n in neighbours),
+            "enumeration": _enumeration(text),
+            "normative_language": _NORMATIVE.search(text) is not None,
+            "grounds_or_conditions": _GROUNDS.search(text) is not None,
+        }
+        if len(_MEANS.findall(text)) >= 2:
+            entry["why_not"] = "glossary: several 'means' definitions"
+            continue
+        entry["challenged"] = (signals["in_scope_neighbour"] and signals["enumeration"]
+                               and (signals["normative_language"] or signals["grounds_or_conditions"]))
+        if not entry["challenged"]:
+            entry["why_not"] = "too few substantive signals"
+    return out

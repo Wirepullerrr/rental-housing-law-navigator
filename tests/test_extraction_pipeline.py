@@ -130,10 +130,17 @@ def test_d052_amendment_annotation_after_as_of_rejects_conservatively(run_fake):
     assert any("history note is dated 2025-08-01" in r for r in run.candidates[0].rejection_reasons)
 
 
-def test_pending_and_failed_pass_through(run_fake):
-    run, _ = run_fake({"rules": [make_candidate(enactment_status="pending"),
-                                 make_candidate(enactment_status="failed", category="rent_increase_limits")]})
+def test_pending_and_failed_pass_through_only_with_verified_status_evidence(run_fake):
+    shown = "General Law - Part II, Title I, Chapter 186, Section 15B"       # verbatim D052 text
+    run, _ = run_fake({"rules": [
+        make_candidate(enactment_status="pending", enactment_status_evidence=shown),
+        make_candidate(enactment_status="failed", category="rent_increase_limits", enactment_status_evidence=shown),
+        make_candidate(enactment_status="pending", category="screening_restrictions"),          # no evidence
+        make_candidate(enactment_status="failed", category="algorithmic_rent_setting",
+                       enactment_status_evidence="The bill was struck from the ballot.")]})  # not source text
     assert [r["status"] for r in run.rules] == ["pending", "failed"]
+    assert "status: pending without verified enactment_status_evidence" in run.candidates[2].rejection_reasons
+    assert "citation: enactment_status_evidence not found in source text" in run.candidates[3].rejection_reasons
 
 
 def test_duplicate_candidates_are_flagged(run_fake):

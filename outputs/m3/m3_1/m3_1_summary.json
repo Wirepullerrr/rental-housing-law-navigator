@@ -1,0 +1,282 @@
+{
+  "disclaimer": "Not legal advice. Spend figures are estimates computed from API-reported token usage at the configured rates; they are not the account's billing balance.",
+  "generated_at": "2026-10-04T01:59:21+00:00",
+  "stage_dir": "outputs/m3/m3_1",
+  "selection": [
+    "D011",
+    "D085",
+    "D022"
+  ],
+  "model": "gemini-3.8-flash",
+  "settings": {
+    "temperature": null,
+    "seed": 20261001,
+    "thinking_level": "medium"
+  },
+  "pricing_usd_per_million_tokens": {
+    "input": 0.75,
+    "output": 3.75
+  },
+  "budget_usd": 0.0,
+  "stop_reason": null,
+  "estimated_new_spend_usd": {
+    "this_invocation": 0.0,
+    "stage_ledger_total": 0.23744
+  },
+  "totals": {
+    "selected": 3,
+    "processed": 3,
+    "resumed": 0,
+    "not_run": 0,
+    "errors": 0,
+    "complete": 2,
+    "review_required": 1,
+    "candidates": 13,
+    "accepted_rules": 11,
+    "rejected_candidates": 0,
+    "held_candidates": 2,
+    "accepted_quotes_raw_substring": 11,
+    "exact_citation_rate": 1.0,
+    "reconstructed_cross_page_quotes": 0,
+    "documents_requiring_repair": 0,
+    "repair_targets": 0,
+    "repair_classifications": {},
+    "repair_resolved_by_rule": 0,
+    "repair_resolved_out_of_scope": 0,
+    "unresolved_targets": 0,
+    "primary_provider_calls": 0,
+    "repair_provider_calls": 0,
+    "primary_cache_hits": 3,
+    "repair_cache_hits": 0,
+    "new_tokens": {
+      "primary": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0
+      },
+      "repair": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0
+      }
+    },
+    "estimated_new_cost_usd": 0.0,
+    "new_cost_per_processed_document_usd": {
+      "mean": 0.0,
+      "median": 0.0,
+      "max": 0.0
+    }
+  },
+  "documents": [
+    {
+      "doc_id": "D011",
+      "jurisdiction": "Boston, MA",
+      "level": "city",
+      "source_type": "official",
+      "body_chars": 3627,
+      "page_artifacts": 0,
+      "model": "gemini-3.8-flash",
+      "reported_model": "gemini-3.8-flash",
+      "thinking_level": "medium",
+      "prompt_version": "v6",
+      "run_mode": "processed",
+      "primary_cache_hit": true,
+      "repair_cache_hit": null,
+      "primary_provider_calls": 0,
+      "repair_provider_calls": 0,
+      "candidates": 2,
+      "accepted": 2,
+      "rejected": 0,
+      "primary_candidates": 2,
+      "repair_candidates": 0,
+      "repair_targets": 0,
+      "repair_classifications": {},
+      "repair_resolution": null,
+      "unresolved_targets": [],
+      "document_status": "complete",
+      "review_reasons": [],
+      "posture": {
+        "declared": "bill_status_or_summary_page",
+        "established": "bill_status_or_summary_page"
+      },
+      "held": 0,
+      "relative_dates_resolved": 0,
+      "source_basis": {
+        "official_bill_summary": 2
+      },
+      "scope_challenges": [],
+      "empty_result": null,
+      "citations": {
+        "accepted": 2,
+        "exact_match": 2,
+        "normalized_match": 0,
+        "raw_substring": 2,
+        "reconstructed_cross_page": 0
+      },
+      "global_scope": {
+        "proposed": 0,
+        "verified": 0
+      },
+      "errors": [],
+      "tokens_reported": {
+        "primary": {
+          "input_tokens": 4659,
+          "output_tokens": 792,
+          "thinking_tokens": 26814,
+          "total_tokens": 32265
+        },
+        "repair": {}
+      },
+      "new_tokens": {
+        "primary": {},
+        "repair": {}
+      },
+      "estimated_new_cost_usd": {
+        "primary": 0.0,
+        "repair": 0.0,
+        "total": 0.0
+      },
+      "artifact": "outputs/m3/m3_1/documents/D011_extraction.json"
+    },
+    {
+      "doc_id": "D085",
+      "jurisdiction": "Santa Ana, CA",
+      "level": "city",
+      "source_type": "official",
+      "body_chars": 5095,
+      "page_artifacts": 0,
+      "model": "gemini-3.8-flash",
+      "reported_model": "gemini-3.8-flash",
+      "thinking_level": "medium",
+      "prompt_version": "v6",
+      "run_mode": "processed",
+      "primary_cache_hit": true,
+      "repair_cache_hit": null,
+      "primary_provider_calls": 0,
+      "repair_provider_calls": 0,
+      "candidates": 9,
+      "accepted": 9,
+      "rejected": 0,
+      "primary_candidates": 9,
+      "repair_candidates": 0,
+      "repair_targets": 0,
+      "repair_classifications": {},
+      "repair_resolution": null,
+      "unresolved_targets": [],
+      "document_status": "complete",
+      "review_reasons": [],
+      "posture": {
+        "declared": "official_explanatory_page",
+        "established": "official_explanatory_page"
+      },
+      "held": 0,
+      "relative_dates_resolved": 0,
+      "source_basis": {
+        "official_explanatory_text": 9
+      },
+      "scope_challenges": [],
+      "empty_result": null,
+      "citations": {
+        "accepted": 9,
+        "exact_match": 9,
+        "normalized_match": 0,
+        "raw_substring": 9,
+        "reconstructed_cross_page": 0
+      },
+      "global_scope": {
+        "proposed": 2,
+        "verified": 2
+      },
+      "errors": [],
+      "tokens_reported": {
+        "primary": {
+          "input_tokens": 4857,
+          "output_tokens": 5420,
+          "thinking_tokens": 1568,
+          "total_tokens": 11845
+        },
+        "repair": {}
+      },
+      "new_tokens": {
+        "primary": {},
+        "repair": {}
+      },
+      "estimated_new_cost_usd": {
+        "primary": 0.0,
+        "repair": 0.0,
+        "total": 0.0
+      },
+      "artifact": "outputs/m3/m3_1/documents/D085_extraction.json"
+    },
+    {
+      "doc_id": "D022",
+      "jurisdiction": "CA",
+      "level": "state",
+      "source_type": "official",
+      "body_chars": 6452,
+      "page_artifacts": 0,
+      "model": "gemini-3.8-flash",
+      "reported_model": "gemini-3.8-flash",
+      "thinking_level": "medium",
+      "prompt_version": "v6",
+      "run_mode": "processed",
+      "primary_cache_hit": true,
+      "repair_cache_hit": null,
+      "primary_provider_calls": 0,
+      "repair_provider_calls": 0,
+      "candidates": 2,
+      "accepted": 0,
+      "rejected": 2,
+      "primary_candidates": 2,
+      "repair_candidates": 0,
+      "repair_targets": 0,
+      "repair_classifications": {},
+      "repair_resolution": null,
+      "unresolved_targets": [],
+      "document_status": "review_required",
+      "review_reasons": [
+        "2 candidate record(s) held, not published, because the time of application is unresolved: ['temporal resolution required: enacted, but no effective date is established and the source is not established as codified current law, so it is not assumed to be in force']"
+      ],
+      "posture": {
+        "declared": "enacted_session_law",
+        "established": "enacted_session_law"
+      },
+      "held": 2,
+      "relative_dates_resolved": 0,
+      "source_basis": {},
+      "scope_challenges": [],
+      "empty_result": null,
+      "citations": {
+        "accepted": 0,
+        "exact_match": 0,
+        "normalized_match": 0,
+        "raw_substring": 0,
+        "reconstructed_cross_page": 0
+      },
+      "global_scope": {
+        "proposed": 1,
+        "verified": 1
+      },
+      "errors": [],
+      "tokens_reported": {
+        "primary": {
+          "input_tokens": 5256,
+          "output_tokens": 2220,
+          "thinking_tokens": 21519,
+          "total_tokens": 28995
+        },
+        "repair": {}
+      },
+      "new_tokens": {
+        "primary": {},
+        "repair": {}
+      },
+      "estimated_new_cost_usd": {
+        "primary": 0.0,
+        "repair": 0.0,
+        "total": 0.0
+      },
+      "artifact": "outputs/m3/m3_1/documents/D022_extraction.json"
+    }
+  ]
+}

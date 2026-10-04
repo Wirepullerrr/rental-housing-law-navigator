@@ -20,6 +20,13 @@ target is classified in_scope / out_of_scope / uncertain, and only in-scope targ
 v4 -> v5 (both prompts): a general remedy/enforcement scope rule. Concrete consequences tied to
 an in-scope rule are records under that rule's category; authorization to sue, government
 enforcement authority, cumulative-remedies boilerplate and generic procedure are not.
+v5 -> v6 (both prompts; remedy rule unchanged): document posture with evidence; per-record
+source_basis and enactment_status_evidence, with an official-summary mode for bill status
+pages; inventory items get ids, verbatim anchors and a functional role, with a functional
+test separating substantive provisions from definitions; records link provision ids, and
+document-level scope conditions name the provision ids they govern (no title matching); an
+explicit, evidenced no_rules_justification instead of a silent empty result. The repair
+prompt also handles scope_challenge targets.
 """
 
 from __future__ import annotations
@@ -29,9 +36,9 @@ from typing import Any
 from navigator.extraction.models import SourceMeta
 from navigator.extraction.source_view import PAGE_BREAK_MARKER, SEGMENT_LABEL
 
-EXTRACTION_PROMPT_VERSION = "v5"
+EXTRACTION_PROMPT_VERSION = "v6"
 # The repair prompt is versioned on its own, so a repair-only change keeps the primary cache key.
-REPAIR_PROMPT_VERSION = "v5-repair-1"
+REPAIR_PROMPT_VERSION = "v6-repair-1"
 
 _PREAMBLE = """\
 You are the rule-extraction component of a rental-housing-law research prototype. \
@@ -72,44 +79,94 @@ of the records they affect (e.g. remedies that are cumulative with other law).""
     "copy them, and never copy, reconstruct or guess any page header or footer.",
 ]
 
+_FUNCTION = [
+    """Substantive or definitional? A provision is NOT merely a definition, list or explanation when it \
+determines whether conduct is lawful, permitted, prohibited or required, or whether an obligation \
+applies: for example, enumerated grounds on which a tenancy may be ended, enumerated conditions under \
+which a rent increase is allowed, criteria a landlord may or may not use when screening applicants, or \
+conditions that trigger a housing obligation. Functional test: if removing the provision would change \
+whether a landlord's or tenant's conduct is lawful, permitted, required, prohibited or covered, it is \
+substantive (role operative_rule, in scope in its category), even when the document words it as a \
+definition or a list ("includes ...", "means ...", "such as ..."). A provision that only limits who or what \
+is covered by other rules is a scope condition or exemption (see global_scope), not a separate rule.""",
+]
+
+_BASIS = [
+    """`source_basis` of each record: "operative_text" when the quote is operative legal text (a statute, \
+code section, act, ordinance or bill text); "official_bill_summary" when it is an official title, digest \
+or summary of a bill; "official_bill_history" when it is an entry of a bill's official history; \
+"official_explanatory_text" when it is an official explanation or announcement of a law.""",
+    """Bill status and summary pages. When the document gives no operative text of a bill but its official \
+title, summary or history states a concrete proposed change to rental housing law in an official \
+category, make one record per distinct proposed change: quote the official text that states it, set \
+`source_basis` accordingly, `citation` = the bill number as shown, and state in `requirement` only what \
+that text says the bill would do. Never invent bill language, thresholds, exemptions, coverage or dates \
+the page does not state; leave such fields null. If the page shows only procedural history and no \
+substantive proposal in an official category, make no record (see no_rules_justification).""",
+    """`enactment_status_evidence`: verbatim text showing the record's enactment status, such as an \
+approval, chapter or adoption line, a status line or a bill-history entry. Required for "pending" and \
+"failed"; for "enacted" give it if the document shows one, else null.""",
+]
+
 _PRIMARY_PROCEDURE = [
-    """Read the ENTIRE substantive legal text before writing anything. Then fill `provisions`: an \
-inventory of every substantive provision (a section, subsection, paragraph or clause that imposes or \
-changes a legal requirement, or states an exemption or scope condition), in document order. Skip \
+    """Read the ENTIRE document before writing anything. Then fill `document`: its `posture`, one of \
+"codified_current_law" (a current code section or consolidated law text), "enacted_session_law" (an \
+enacted act, chaptered bill or adopted ordinance as passed), "pending_bill" (bill or proposal text not \
+enacted), "failed_bill" (a proposal the document shows was rejected, struck, vetoed, withdrawn or \
+otherwise ended without enactment), "bill_status_or_summary_page" (a legislature's page with a bill's \
+title, summary, status or history), "official_explanatory_page" (an official announcement or explanation \
+of a law) or "unknown"; and `evidence`: one verbatim passage that shows it (e.g. a code heading, an \
+approval or chapter line, a status line), null only for unknown.""",
+    """Then fill `provisions`: an inventory of every substantive provision (a section, subsection, \
+paragraph or clause that imposes or changes a legal requirement, or states an exemption or scope \
+condition; on a bill status or summary page, the official summary of the bill), in document order. Skip \
 navigation, headings and website text. For each provision give:
-   - `ref`: its citation as shown in the document (e.g. "§ 12.34(b)");
+   - `id`: "P1", "P2", ... in document order;
+   - `ref`: its citation as shown in the document (e.g. "§ 12.34(b)"), or a short label if it has none;
+   - `anchor`: the first words of the provision (about 5 to 12 words), copied verbatim from one segment;
    - `summary`: a short neutral description;
+   - `role`: its legal function: "operative_rule" (imposes, prohibits, permits or grants something), \
+"scope_condition", "exemption", "definition", "remedy", "enforcement", "history", "procedure", \
+"boilerplate" or "uncertain" (apply the functional test above);
    - `scope`: "in_scope" if it imposes a requirement in an official category; "out_of_scope" if it does \
-not (purpose statements, definitions, provisions that only state exemptions or scope conditions, other \
-subjects); "uncertain" only if the document leaves it genuinely unclear;
+not (purpose statements, mere definitions, provisions that only state exemptions or scope conditions, \
+other subjects); "uncertain" only if the document leaves it genuinely unclear;
    - `category`: the official category if in_scope, else null;
    - `reason`: why it is out_of_scope or uncertain (e.g. "definitions", "scope condition, see \
-global_scope"); null if in_scope;
-   - `rule_indices`: the 0-based positions in `rules` of the records you produce from it ([] if none).
+global_scope"); null if in_scope.
    Every in_scope provision must have at least one record.""",
     """Then fill `global_scope`: every exemption or coverage condition that governs a whole document, \
 chapter, article, division or section rather than a single rule (e.g. "This Division shall not apply to \
 ...", "This section applies only to ..."). One entry per distinct condition (list each lettered exemption \
 separately). For each give an `id` (S1, S2, ...), `kind`, a plain-language `statement`, the `citation` of \
-the provision stating it, `governs` = the ref of the provision it governs as shown in the document (null \
-if it governs the entire document), and `evidence_parts` = the verbatim text stating it (quote-part rules \
-below). Do NOT repeat these conditions inside individual rules: the system attaches them to every rule \
-they govern.""",
+the provision stating it, `source_provision_id` = the id of the inventory provision stating it (null if \
+none), `governed_provision_ids` = the ids of EVERY inventory provision it governs (e.g. all provisions of \
+the division or section it limits, and no others), or null ONLY if it governs every provision of the \
+document; and `evidence_parts` = the verbatim text stating it (quote-part rules below). Say what a \
+condition governs only through these ids. Do NOT repeat these conditions inside individual rules: the \
+system attaches them to every rule linked to a governed provision.""",
     """Then fill `rules`: one record for EVERY distinct obligation, prohibition, entitlement, remedy, \
 procedural requirement or monetary limit in an in-scope provision. Do not extract only headline \
 provisions. Treat subordinate paragraphs and clauses as separate records when they impose materially \
 different requirements (e.g. a receipt duty, a record-keeping duty, a transfer duty, a forfeiture, a \
 damages remedy, an anti-waiver rule). Do not omit a provision because it cross-references another \
-subsection or continues across a page break. Each record's `citation` must name the inventory provision \
-it comes from (that provision or one of its subdivisions). Do not create two records for the same \
-requirement.""",
+subsection or continues across a page break. Each record's `provision_ids` lists the id(s) of the \
+inventory provision(s) it comes from, and its `citation` must name that provision (or one of its \
+subdivisions). Do not create two records for the same requirement.""",
+    """Finally, `no_rules_justification`: ONLY when `rules` is empty, give `reason` (one sentence: why the \
+document has no in-scope legal content) and `evidence` (one verbatim passage that shows it, e.g. its \
+subject or its procedural-only content). Otherwise null. An empty result without it is treated as \
+incomplete.""",
 ]
 
 _REPAIR_PROCEDURE = [
     """An earlier pass over this document left the provisions listed in the request (the repair \
 targets) without an accepted record. Some targets were identified as in scope by that pass. Others were \
-found only from the document's numbering: a subdivision next to provisions that were extracted. Those may \
-well fall outside the official categories. Read the whole document for context.""",
+found only from the document's numbering: a subdivision next to provisions that were extracted. Others \
+were declared out of scope by that pass, but their text shows signs of a substantive rule (for example \
+an enumeration of grounds or conditions next to in-scope provisions); decide those afresh with the \
+functional test. Any target may well fall outside the official categories. Read the whole document for \
+context.""",
     """For EVERY target, add exactly one entry to `target_resolutions`: `ref` exactly as listed; `scope`, \
 decided from the document alone: "in_scope" only if the target imposes a requirement in an official \
 category, "out_of_scope" if it does not, "uncertain" if the document leaves it genuinely unclear; \
@@ -118,9 +175,10 @@ text of the target provision itself, following the quote-part rules (required fo
 force a target into a category: out_of_scope and uncertain are correct answers whenever they are true.""",
     """Then fill `rules` ONLY for targets you classified in_scope: one record for every distinct \
 obligation, prohibition, entitlement, remedy, procedural requirement or monetary limit they contain. \
-Each record's `citation` must name that target (or one of its subdivisions). Produce no record for \
-targets classified out_of_scope or uncertain, none for any other provision, and do not restate other \
-rules. Never invent a requirement.""",
+Each record's `citation` must name that target (or one of its subdivisions), and its `provision_ids` \
+must contain the provision id listed for that target. Produce no record for targets classified \
+out_of_scope or uncertain, none for any other provision, and do not restate other rules. Never invent \
+a requirement.""",
     """The document-level scope conditions listed in the request have already been verified and are \
 attached to the rules by the system. Do not repeat them inside rules and do not add new ones.""",
 ]
@@ -145,7 +203,8 @@ segment n+1, copied from the first character after the page break. Together they
 passage with nothing skipped except the removed header or footer.
    - Never more than two parts, and never parts from segments that are not adjacent.
    `evidence_parts` of global_scope entries follow the same rules.""",
-    "Every other evidence field (effective_date_evidence, version_evidence, and the evidence of "
+    "Every other evidence field (effective_date_evidence, version_evidence, enactment_status_evidence, "
+    "inventory anchors, the document and no_rules_justification evidence, and the evidence of "
     "operative_conditions and scope_carve_outs) is ONE verbatim passage from one segment.",
     "Every assertion in `requirement` and `key_value` must be supported by that record's quote parts. Do "
     "not mention any condition, amount, exception, deadline or permitted charge that is not in the quoted "
@@ -155,8 +214,9 @@ passage with nothing skipped except the removed header or footer.
 
 _TIME = [
     "enactment_status: \"enacted\" for law in force or adopted (e.g. a code section or adopted "
-    "ordinance); \"pending\" for a bill or proposal not yet law; \"failed\" for a proposal that was "
-    "rejected, struck or withdrawn. Decide only from the document.",
+    "ordinance); \"pending\" for a bill or proposal not yet law; \"failed\" for a proposal the document "
+    "shows was rejected, struck, vetoed, withdrawn or otherwise ended without enactment. Decide only from "
+    "the document, and show it in enactment_status_evidence.",
     """Keep these six things apart:
    A. Operative legal text: the obligation itself (the quote).
    B. A calendar effective date stated in operative text, e.g. "This section shall take effect on \
@@ -175,7 +235,7 @@ version extracted) takes effect; else null. `effective_date_evidence_kind`: "exp
 "relative_date_formula" (C), "history_note" (D or E) or "operative_condition" (F); null when there is no \
 evidence. `effective_date`: ONLY for B, the calendar date exactly as written in that evidence \
 (YYYY-MM-DD; YYYY-MM or YYYY if that is all it states); null in every other case. Never compute a date \
-from a formula.""",
+from a formula: the system resolves supported formulas from the enactment date the document states.""",
     """History notes (D) and version history (E) are NOT effective dates, even when they contain the word \
 "effective". Record them in `version_note` and `version_evidence` and leave `effective_date` null. An \
 amendment or retitling date is never the date an obligation began. A history note describes only the \
@@ -203,7 +263,7 @@ _OTHER = [
     "(e.g. two provisions that cannot both apply, or two different effective dates stated for the same "
     "provision). Never use it for amendment history; use version_note.",
     "Do not analyse any specific address or property, do not give advice, and never suggest ways to avoid "
-    "a rule. If nothing is in scope, return empty lists.",
+    "a rule. If nothing is in scope, return an empty `rules` list with a no_rules_justification.",
 ]
 
 
@@ -219,12 +279,14 @@ def _compose(sections: list[tuple[str, list[str]]]) -> str:
 
 
 SYSTEM_INSTRUCTION = _compose([
-    ("GROUND RULES", _GROUND), ("PROCEDURE", _PRIMARY_PROCEDURE + _RULE_SCOPE), ("QUOTES", _QUOTES),
-    ("STATUS AND TIME (keep these apart)", _TIME), ("OTHER FIELDS", _OTHER)])
+    ("GROUND RULES", _GROUND + _FUNCTION), ("PROCEDURE", _PRIMARY_PROCEDURE + _RULE_SCOPE),
+    ("SOURCE BASIS", _BASIS), ("QUOTES", _QUOTES), ("STATUS AND TIME (keep these apart)", _TIME),
+    ("OTHER FIELDS", _OTHER)])
 
 REPAIR_SYSTEM_INSTRUCTION = _compose([
-    ("GROUND RULES", _GROUND), ("TASK: TARGETED REPAIR", _REPAIR_PROCEDURE + _RULE_SCOPE), ("QUOTES", _QUOTES),
-    ("STATUS AND TIME (keep these apart)", _TIME), ("OTHER FIELDS", _OTHER)])
+    ("GROUND RULES", _GROUND + _FUNCTION), ("TASK: TARGETED REPAIR", _REPAIR_PROCEDURE + _RULE_SCOPE),
+    ("SOURCE BASIS", _BASIS), ("QUOTES", _QUOTES), ("STATUS AND TIME (keep these apart)", _TIME),
+    ("OTHER FIELDS", _OTHER)])
 
 _METADATA = """\
 Trusted document metadata (from the corpus manifest):
@@ -261,7 +323,8 @@ def render_repair_prompt(meta: SourceMeta, body: str, scope: list[dict[str, Any]
     """Return (system_instruction, user_prompt) for the targeted repair pass. `scope` holds
     verified document-level conditions; `targets` the deterministic repair targets (repair.py)."""
     scope_lines = [f"- {s['id']} [{s['kind']}] {s['statement']} ({s['citation']}; "
-                   f"{'whole document' if s['governs'] is None else 'governs ' + s['governs']})" for s in scope]
+                   + ("whole document" if s["governed_provision_ids"] is None
+                      else "governs " + ", ".join(s["governed_provision_ids"])) + ")" for s in scope]
     target_lines = []
     for t in targets:
         found = []
@@ -271,7 +334,11 @@ def render_repair_prompt(meta: SourceMeta, body: str, scope: list[dict[str, Any]
         if "subdivision_guard" in t["sources"]:
             found.append(f"found from the document's numbering next to extracted subdivisions of {t['parent']}; "
                          "its scope has not been decided")
-        target_lines.append(f"- {t['ref']}: " + "; and ".join(found))
+        if "scope_challenge" in t["sources"]:
+            found.append(f"declared out_of_scope by the earlier pass (role {t.get('role')}: "
+                         f"{t.get('declared_reason')}), but its text shows signs of a substantive rule "
+                         f"({', '.join(t.get('signals', []))}); decide its scope afresh with the functional test")
+        target_lines.append(f"- {t['ref']} (provision id {t.get('provision_id') or 'none'}): " + "; and ".join(found))
     user = (_METADATA.format(**_metadata(meta))
             + "\nDocument-level scope conditions already verified (attached by the system; do not repeat):\n"
             + ("\n".join(scope_lines) or "- (none)")
